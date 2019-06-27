@@ -14,8 +14,8 @@ void AFGSkySphere::SetupPreviewDelegate(){ }
 #endif 
 AFGSkySphere::AFGSkySphere(){ }
 void AFGSkySphere::PostActorCreated(){ }
-void AFGSkySphere::PostLoad(){ }
-void AFGSkySphere::BeginDestroy(){ }
+void AFGSkySphere::PostLoad(){ Super::PostLoad(); }
+void AFGSkySphere::BeginDestroy(){ Super::BeginDestroy(); }
 void AFGSkySphere::UpdatePreview_Implementation(){ }
 float AFGSkySphere::GetFloatCurveValue( const FRuntimeFloatCurve& curve, float time ){ return float(); }
 void AFGSkySphere::GetSkySphereSettings( float atTime, FSkySphereSettings& out_settings ) const{ }

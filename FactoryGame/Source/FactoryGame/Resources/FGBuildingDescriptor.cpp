@@ -7,7 +7,7 @@ void UFGBuildingDescriptor::SetupStage(){ }
 FVector UFGBuildingDescriptor::GetCenterOfCollision(){ return FVector(); }
 #endif 
 UFGBuildingDescriptor::UFGBuildingDescriptor(){ }
-void UFGBuildingDescriptor::PostLoad(){ }
+void UFGBuildingDescriptor::PostLoad(){ Super::PostLoad(); }
 TSubclassOf< class AFGBuildable > UFGBuildingDescriptor::GetBuildableClass( TSubclassOf< UFGBuildingDescriptor > inClass ){ return TSubclassOf<class AFGBuildable>(); }
 float UFGBuildingDescriptor::GetPowerConsumption( TSubclassOf< UFGBuildingDescriptor > inClass ){ return float(); }
 float UFGBuildingDescriptor::GetPowerProduction( TSubclassOf< UFGBuildingDescriptor > inClass ){ return float(); }

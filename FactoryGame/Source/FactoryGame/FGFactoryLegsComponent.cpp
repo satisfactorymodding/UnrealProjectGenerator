@@ -3,8 +3,8 @@
 #include "FGFactoryLegsComponent.h"
 
 #if WITH_EDITOR
-void UFGFactoryLegsComponent::OnRegister(){ }
-void UFGFactoryLegsComponent::OnUnregister(){ }
+void UFGFactoryLegsComponent::OnRegister(){ Super::OnRegister(); }
+void UFGFactoryLegsComponent::OnUnregister(){ Super::OnUnregister(); }
 #endif 
 void UFGFactoryLegsComponent::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const{ }
 UFGFactoryLegsComponent::UFGFactoryLegsComponent(){ }

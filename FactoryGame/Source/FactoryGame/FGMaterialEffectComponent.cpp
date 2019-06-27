@@ -3,7 +3,7 @@
 #include "FGMaterialEffectComponent.h"
 
 UFGMaterialEffectComponent::UFGMaterialEffectComponent(){ }
-void UFGMaterialEffectComponent::OnUnregister(){ }
+void UFGMaterialEffectComponent::OnUnregister(){ Super::OnUnregister(); }
 void UFGMaterialEffectComponent::Activate( bool reset ){ }
 void UFGMaterialEffectComponent::Deactivate(){ }
 void UFGMaterialEffectComponent::TickComponent( float deltaTime, ELevelTick tickType, FActorComponentTickFunction* thisTickFunction){ }

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/CoreNet.h"
 #include "FGSaveInterface.h"
 #include "FGCircuit.generated.h"
 

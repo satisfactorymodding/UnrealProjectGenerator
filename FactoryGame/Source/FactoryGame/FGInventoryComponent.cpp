@@ -20,7 +20,7 @@ void UFGInventoryComponent::PostLoadGame_Implementation( int32 saveVersion, int3
 void UFGInventoryComponent::GatherDependencies_Implementation( TArray< UObject* >& out_dependentObjects ){ }
 bool UFGInventoryComponent::NeedTransform_Implementation(){ return bool(); }
 bool UFGInventoryComponent::ShouldSave_Implementation() const{ return bool(); }
-void UFGInventoryComponent::OnRegister(){ }
+void UFGInventoryComponent::OnRegister(){ Super::OnRegister(); }
 void UFGInventoryComponent::SetDefaultSize( int32 defaultSize ){ }
 void UFGInventoryComponent::Resize( int32 newSize ){ }
 void UFGInventoryComponent::SortInventory(){ }

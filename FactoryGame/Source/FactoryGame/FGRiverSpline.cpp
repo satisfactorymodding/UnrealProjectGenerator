@@ -6,4 +6,4 @@
 void AFGRiverSpline::CheckForErrors(){ }
 #endif 
 AFGRiverSpline::AFGRiverSpline(){ }
-void AFGRiverSpline::PostLoad(){ }
+void AFGRiverSpline::PostLoad(){ Super::PostLoad(); }

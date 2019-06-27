@@ -24,7 +24,7 @@ USceneComponent* UFGItemDescriptor::CalculateComponentBounds(  USceneComponent* 
 #endif 
 UFGItemDescriptor::UFGItemDescriptor(){ }
 void UFGItemDescriptor::Serialize( FArchive& ar ){ }
-void UFGItemDescriptor::PostLoad(){ }
+void UFGItemDescriptor::PostLoad(){ Super::PostLoad(); }
 EResourceForm UFGItemDescriptor::GetForm( TSubclassOf< UFGItemDescriptor > inClass ){ return EResourceForm(); }
 float UFGItemDescriptor::GetEnergyValue( TSubclassOf< UFGItemDescriptor > inClass ){ return float(); }
 float UFGItemDescriptor::GetRadioactiveDecay( TSubclassOf< UFGItemDescriptor > inClass ){ return float(); }

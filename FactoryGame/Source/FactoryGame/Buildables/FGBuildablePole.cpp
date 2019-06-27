@@ -7,4 +7,4 @@ void AFGBuildablePole::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& 
 void AFGBuildablePole::BeginPlay(){ }
 void AFGBuildablePole::SetPoleHeight( float height ){ }
 void AFGBuildablePole::SetupConnectionComponent(){ }
-void AFGBuildablePole::PostLoad(){ }
+void AFGBuildablePole::PostLoad(){ Super::PostLoad(); }

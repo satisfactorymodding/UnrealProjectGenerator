@@ -3,8 +3,8 @@
 #include "FGColoredInstanceMeshProxy.h"
 
 UFGColoredInstanceMeshProxy::UFGColoredInstanceMeshProxy(){ }
-void UFGColoredInstanceMeshProxy::OnUnregister(){ }
-void UFGColoredInstanceMeshProxy::OnRegister(){ }
+void UFGColoredInstanceMeshProxy::OnUnregister(){ Super::OnUnregister(); }
+void UFGColoredInstanceMeshProxy::OnRegister(){ Super::OnRegister(); }
 void UFGColoredInstanceMeshProxy::SetColorSlot( uint8 colorSlotIndex ){ }
 void UFGColoredInstanceMeshProxy::BeginPlay(){ }
 void UFGColoredInstanceMeshProxy::instantiateInternal(){ }

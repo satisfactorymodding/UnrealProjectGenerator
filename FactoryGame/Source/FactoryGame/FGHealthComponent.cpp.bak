@@ -6,7 +6,7 @@
 void UFGHealthComponent::PostEditChangeProperty( FPropertyChangedEvent& PropertyChangedEvent ){ }
 #endif 
 void UFGHealthComponent::BeginPlay(){ }
-void UFGHealthComponent::PostLoad(){ }
+void UFGHealthComponent::PostLoad(){ Super::PostLoad(); }
 void UFGHealthComponent::PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ){ }
 void UFGHealthComponent::PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion ){ }
 void UFGHealthComponent::PreLoadGame_Implementation( int32 saveVersion, int32 gameVersion ){ }

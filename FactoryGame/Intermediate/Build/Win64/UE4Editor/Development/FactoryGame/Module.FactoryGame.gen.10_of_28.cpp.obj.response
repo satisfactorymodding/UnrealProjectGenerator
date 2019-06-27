@@ -482,8 +482,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
+/FI"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
 "F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.gen.10_of_28.cpp"
-/FI"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Definitions.h"
+/FI"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Definitions.FactoryGame.h"
 /Fo"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.gen.10_of_28.cpp.obj"
 /TP
 /GR-

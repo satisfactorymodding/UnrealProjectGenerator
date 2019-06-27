@@ -4,6 +4,7 @@
 
 #include "Engine/AssetUserData.h"
 #include "ItemDrop.h"
+#include "Engine/StaticMesh.h"
 #include "FGFoliageResourceUserData.generated.h"
 
 /**

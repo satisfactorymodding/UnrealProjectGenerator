@@ -14,5 +14,5 @@ void AFGBuildablePowerPole::OnBuildEffectFinished(){ }
 UFGPowerCircuit* AFGBuildablePowerPole::GetPowerCircuit() const{ return nullptr; }
 void AFGBuildablePowerPole::OnPowerConnectionChanged( UFGCircuitConnectionComponent* connection){ }
 void AFGBuildablePowerPole::MarkConnectionsDirty(){ }
-void AFGBuildablePowerPole::PostLoad(){ }
+void AFGBuildablePowerPole::PostLoad(){ Super::PostLoad(); }
 void AFGBuildablePowerPole::PostInitializeComponents(){ }

@@ -4,8 +4,8 @@
 
 UFGFactoryConnectionComponent::UFGFactoryConnectionComponent(){ }
 void UFGFactoryConnectionComponent::OnComponentDestroyed( bool isDestroyingHierarchy ){ }
-void UFGFactoryConnectionComponent::OnRegister(){ }
-void UFGFactoryConnectionComponent::OnUnregister(){ }
+void UFGFactoryConnectionComponent::OnRegister(){ Super::OnRegister(); }
+void UFGFactoryConnectionComponent::OnUnregister(){ Super::OnUnregister(); }
 void UFGFactoryConnectionComponent::SetInventory(  UFGInventoryComponent* inventory ){ }
 void UFGFactoryConnectionComponent::SetConnection(  UFGFactoryConnectionComponent* toComponent ){ }
 void UFGFactoryConnectionComponent::ClearConnection(){ }

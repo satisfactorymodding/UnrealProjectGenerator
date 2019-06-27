@@ -30,6 +30,6 @@ FSlateBrush UFGSchematic::GetItemIcon( TSubclassOf< UFGSchematic > inClass ){ re
 TSubclassOf< UFGSchematic > UFGSchematic::GetDependentOnSchematic( TSubclassOf< UFGSchematic > inClass ){ return TSubclassOf<UFGSchematic>(); }
 TArray< TSubclassOf< UFGSchematic > > UFGSchematic::GetAdditionalSchematicDependencies( TSubclassOf< UFGSchematic > inClass ){ return TArray<TSubclassOf<UFGSchematic> >(); }
 bool UFGSchematic::IsIncludedInBuild( TSubclassOf< UFGSchematic > inClass ){ return bool(); }
-void UFGSchematic::PostLoad(){ }
+void UFGSchematic::PostLoad(){ Super::PostLoad(); }
 void UFGSchematic::Serialize( FArchive& ar ){ }
 FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const{ return FPrimaryAssetId(); }
