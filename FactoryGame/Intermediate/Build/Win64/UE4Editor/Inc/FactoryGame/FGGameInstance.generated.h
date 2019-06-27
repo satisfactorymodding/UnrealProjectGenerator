@@ -1,0 +1,296 @@
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ECachedNATType : uint8;
+class UObject;
+class UFGErrorMessage;
+#ifdef FACTORYGAME_FGGameInstance_generated_h
+#error "FGGameInstance.generated.h already included, missing '#pragma once' in FGGameInstance.h"
+#endif
+#define FACTORYGAME_FGGameInstance_generated_h
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_62_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFGModPackage_Statics; \
+	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_18_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FOnJoinSessionData_Statics; \
+	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_93_DELEGATE \
+struct _Script_FactoryGame_eventOnNatTypeUpdated_Parms \
+{ \
+	ECachedNATType natType; \
+}; \
+static inline void FOnNatTypeUpdated_DelegateWrapper(const FMulticastScriptDelegate& OnNatTypeUpdated, ECachedNATType natType) \
+{ \
+	_Script_FactoryGame_eventOnNatTypeUpdated_Parms Parms; \
+	Parms.natType=natType; \
+	OnNatTypeUpdated.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_90_DELEGATE \
+static inline void FOnNewError_DelegateWrapper(const FMulticastScriptDelegate& OnNewError) \
+{ \
+	OnNewError.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetSkipOnboarding) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetSkipOnboarding(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetSkipOnboarding) \
+	{ \
+		P_GET_UBOOL(Z_Param_doSkip); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetSkipOnboarding(Z_Param_doSkip); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFGUGC) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_WeaponClass); \
+		P_GET_OBJECT(UClass,Z_Param_EnemyClass); \
+		P_GET_OBJECT(UClass,Z_Param_BossClass); \
+		P_GET_OBJECT(UClass,Z_Param_PlayerPawnClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetFGUGC(Z_Param_WeaponClass,Z_Param_EnemyClass,Z_Param_BossClass,Z_Param_PlayerPawnClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFindModPackages) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->FindModPackages(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasPlayerSeenAlphaInfoScreen) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasPlayerSeenAlphaInfoScreen(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetHasSeenAlphaInfoScreen) \
+	{ \
+		P_GET_UBOOL(Z_Param_hasSeen); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetHasSeenAlphaInfoScreen(Z_Param_hasSeen); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPeekNextError) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UFGErrorMessage**)Z_Param__Result=UFGGameInstance::PeekNextError(Z_Param_worldContext); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNextError) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UFGErrorMessage**)Z_Param__Result=UFGGameInstance::GetNextError(Z_Param_worldContext); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPushError) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_errorMessage); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGGameInstance::PushError(Z_Param_worldContext,Z_Param_errorMessage); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetSkipOnboarding) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetSkipOnboarding(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetSkipOnboarding) \
+	{ \
+		P_GET_UBOOL(Z_Param_doSkip); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetSkipOnboarding(Z_Param_doSkip); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFGUGC) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_WeaponClass); \
+		P_GET_OBJECT(UClass,Z_Param_EnemyClass); \
+		P_GET_OBJECT(UClass,Z_Param_BossClass); \
+		P_GET_OBJECT(UClass,Z_Param_PlayerPawnClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetFGUGC(Z_Param_WeaponClass,Z_Param_EnemyClass,Z_Param_BossClass,Z_Param_PlayerPawnClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFindModPackages) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->FindModPackages(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasPlayerSeenAlphaInfoScreen) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasPlayerSeenAlphaInfoScreen(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetHasSeenAlphaInfoScreen) \
+	{ \
+		P_GET_UBOOL(Z_Param_hasSeen); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetHasSeenAlphaInfoScreen(Z_Param_hasSeen); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPeekNextError) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UFGErrorMessage**)Z_Param__Result=UFGGameInstance::PeekNextError(Z_Param_worldContext); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNextError) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UFGErrorMessage**)Z_Param__Result=UFGGameInstance::GetNextError(Z_Param_worldContext); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPushError) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_errorMessage); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGGameInstance::PushError(Z_Param_worldContext,Z_Param_errorMessage); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUFGGameInstance(); \
+	friend struct Z_Construct_UClass_UFGGameInstance_Statics; \
+public: \
+	DECLARE_CLASS(UFGGameInstance, UGameInstance, COMPILED_IN_FLAGS(0 | CLASS_Transient), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGGameInstance)
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_INCLASS \
+private: \
+	static void StaticRegisterNativesUFGGameInstance(); \
+	friend struct Z_Construct_UClass_UFGGameInstance_Statics; \
+public: \
+	DECLARE_CLASS(UFGGameInstance, UGameInstance, COMPILED_IN_FLAGS(0 | CLASS_Transient), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(UFGGameInstance)
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UFGGameInstance(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameInstance) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGGameInstance); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameInstance); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGGameInstance(UFGGameInstance&&); \
+	NO_API UFGGameInstance(const UFGGameInstance&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UFGGameInstance(UFGGameInstance&&); \
+	NO_API UFGGameInstance(const UFGGameInstance&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGGameInstance); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameInstance); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGGameInstance)
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mSaveSystem() { return STRUCT_OFFSET(UFGGameInstance, mSaveSystem); } \
+	FORCEINLINE static uint32 __PPO__mOnNewError() { return STRUCT_OFFSET(UFGGameInstance, mOnNewError); } \
+	FORCEINLINE static uint32 __PPO__mErrorList() { return STRUCT_OFFSET(UFGGameInstance, mErrorList); } \
+	FORCEINLINE static uint32 __PPO__mJoinSessionData() { return STRUCT_OFFSET(UFGGameInstance, mJoinSessionData); } \
+	FORCEINLINE static uint32 __PPO__mOnNatTypeUpdated() { return STRUCT_OFFSET(UFGGameInstance, mOnNatTypeUpdated); }
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_95_PROLOG
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_INCLASS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_98_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGameInstance_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

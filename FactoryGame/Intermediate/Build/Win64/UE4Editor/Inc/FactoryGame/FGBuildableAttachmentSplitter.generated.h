@@ -1,0 +1,97 @@
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef FACTORYGAME_FGBuildableAttachmentSplitter_generated_h
+#error "FGBuildableAttachmentSplitter.generated.h already included, missing '#pragma once' in FGBuildableAttachmentSplitter.h"
+#endif
+#define FACTORYGAME_FGBuildableAttachmentSplitter_generated_h
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_15_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FConnectionItemStruct_Statics; \
+	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesAFGBuildableAttachmentSplitter(); \
+	friend struct Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics; \
+public: \
+	DECLARE_CLASS(AFGBuildableAttachmentSplitter, AFGBuildableConveyorAttachment, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(AFGBuildableAttachmentSplitter)
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_INCLASS \
+private: \
+	static void StaticRegisterNativesAFGBuildableAttachmentSplitter(); \
+	friend struct Z_Construct_UClass_AFGBuildableAttachmentSplitter_Statics; \
+public: \
+	DECLARE_CLASS(AFGBuildableAttachmentSplitter, AFGBuildableConveyorAttachment, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(AFGBuildableAttachmentSplitter)
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API AFGBuildableAttachmentSplitter(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableAttachmentSplitter) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGBuildableAttachmentSplitter); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableAttachmentSplitter); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API AFGBuildableAttachmentSplitter(AFGBuildableAttachmentSplitter&&); \
+	NO_API AFGBuildableAttachmentSplitter(const AFGBuildableAttachmentSplitter&); \
+public:
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API AFGBuildableAttachmentSplitter(AFGBuildableAttachmentSplitter&&); \
+	NO_API AFGBuildableAttachmentSplitter(const AFGBuildableAttachmentSplitter&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGBuildableAttachmentSplitter); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableAttachmentSplitter); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableAttachmentSplitter)
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mCurrentOutputIndex() { return STRUCT_OFFSET(AFGBuildableAttachmentSplitter, mCurrentOutputIndex); } \
+	FORCEINLINE static uint32 __PPO__mDistributionTable() { return STRUCT_OFFSET(AFGBuildableAttachmentSplitter, mDistributionTable); }
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_47_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_50_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
