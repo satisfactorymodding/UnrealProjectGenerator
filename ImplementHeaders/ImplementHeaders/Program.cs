@@ -20,7 +20,6 @@ namespace ImplementHeaders
             Implement(args[0], args[1]);
             stopwatch.Stop();
             Console.WriteLine($"Done. Generated {FunctionCount} functions in {stopwatch.ElapsedMilliseconds} ms.");
-            Console.ReadKey();
         }
 
         private static void Implement(string path, string saveLocation)
