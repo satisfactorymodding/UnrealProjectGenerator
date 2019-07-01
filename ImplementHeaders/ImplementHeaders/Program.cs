@@ -82,7 +82,7 @@ namespace ImplementHeaders
         {
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason of many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual ?)?(static ?)?(const ?)?(class ?)?(explicit ?)?([^=()\n{}]*? )?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);"))
+            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual ?)?(static ?)?(const ?)?(class ?)?(explicit ?)?([^=()\n{}]*? )?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
                 string ufunction = function.Groups[1].Value;
@@ -98,6 +98,9 @@ namespace ImplementHeaders
                 string isConst = function.Groups[11].Value;
                 string isOverride = function.Groups[12].Value;
                 string extras = function.Groups[13].Value;
+
+                if (extras.Contains("PURE_VIRTUAL")) // ignore pure virtual macro
+                    continue;
 
                 if (!IsValidFunctionName(functionName))
                     continue;
@@ -130,7 +133,9 @@ namespace ImplementHeaders
                 parameters = Regex.Replace(parameters, @"\/\*.*?\*\/", ""); // fix for commented defaults
                 template = Regex.Replace(template, @"\/\*.*?\*\/", ""); // fix for commented defaults ?
 
-                if (!string.IsNullOrWhiteSpace(ufunction))
+                if (ufunction.Contains("BlueprintImplementableEvent"))
+                    Console.WriteLine($"skipping {className}");
+                else if (!string.IsNullOrWhiteSpace(ufunction))
                 {
                     if (ufunction.Contains("BlueprintNativeEvent") || ufunction.Contains("Server") || ufunction.Contains("Client") || ufunction.Contains("NetMulticast"))
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
@@ -149,15 +154,20 @@ namespace ImplementHeaders
         {
             if (className.Contains("Interface")) // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html
                 return;
-            if (IsValidReturnType(returnType) || functionName.Trim() == className)
+
+            string withoutDestructorThingy = functionName.Trim().Replace("~", "");
+
+            if (IsValidReturnType(returnType) || (withoutDestructorThingy == className && string.IsNullOrWhiteSpace(returnType)))
             {
                 if (!string.IsNullOrWhiteSpace(template))
                     template = FixDefaults(template.Trim().TrimEnd('>')) + '>' + Environment.NewLine;
                 string result = $"{template}{isReturnConst}{returnType}{className}::{functionName}{Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
-                if (parameters.Contains("ObjectInitializer") && functionName.Trim() == className) // if it is constructor of derived class
+                if (parameters.Contains("objectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
+                    result += " : Super(objectInitializer) ";
+                else if (parameters.Contains("ObjectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
                     result += " : Super(ObjectInitializer) ";
-                if (parameters.Replace(" ", "").Contains("FArchive&inInnerArchive"))
-                    result += " : FArchiveProxy(inInnerArchive) ";
+                if (parameters.Replace(" ", "").Contains("FArchive&inInnerArchive")) 
+                     result += " : FArchiveProxy(inInnerArchive) ";
                 if (parameters.Replace(" ", "").Contains("UCharacterMovementComponent"))
                     result += " : FNetworkPredictionData_Client_Character(clientMovement) ";
                 if (functionName.Replace(" ", "").Contains("FObjectReader"))
@@ -196,7 +206,7 @@ namespace ImplementHeaders
 
         private static bool IsValidFunctionName(string functionName)
         {
-            return Regex.Match(functionName.Trim(), @"^([\w\d_]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "const", "struct", "for" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
+            return Regex.Match(functionName.Trim(), @"^([\w\d_~]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "const", "struct", "for" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
         }
 
         private static string GetCustomReturn(string returnType)
