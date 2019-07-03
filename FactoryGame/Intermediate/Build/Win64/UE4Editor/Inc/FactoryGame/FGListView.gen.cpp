@@ -173,6 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListView_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGListView.h" },
 		{ "ModuleRelativePath", "UI/FGListView.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "A vertical box widget is a view panel allowing child widgets to be automatically laid out vertically from an array.\nSupports selection and dynamic data binding to an array through delegates.\n\n* Many Children\n* Flows Vertical\n* Selection Functionality" },
 	};
 #endif
@@ -232,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGListView, 3314387396);
+	IMPLEMENT_CLASS(UFGListView, 396937532);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGListView(Z_Construct_UClass_UFGListView, &UFGListView::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGListView"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGListView);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -184,7 +184,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBase, 4072795913);
+	IMPLEMENT_CLASS(AFGSuitBase, 1495397052);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSuitBase(Z_Construct_UClass_AFGSuitBase, &AFGSuitBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSuitBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSuitBase);
 	void AFGSuitBaseAttachment::StaticRegisterNativesAFGSuitBaseAttachment()
@@ -254,7 +254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 1494559396);
+	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 2663969381);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSuitBaseAttachment(Z_Construct_UClass_AFGSuitBaseAttachment, &AFGSuitBaseAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSuitBaseAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSuitBaseAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

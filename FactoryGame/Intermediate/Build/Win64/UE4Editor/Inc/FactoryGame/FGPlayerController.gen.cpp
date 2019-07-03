@@ -70,6 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_OnStartRespawn();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage();
 	ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -101,7 +102,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	ENGINE_API UClass* Z_Construct_UClass_UInputComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMapAreaTexture_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGAttentionPingActor_NoRegister();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FSoftClassPath();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature_Statics
 	{
@@ -461,6 +461,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 			{ "OnDisabledInputGateChanged", &AFGPlayerController::execOnDisabledInputGateChanged },
 			{ "OnPrimaryFire", &AFGPlayerController::execOnPrimaryFire },
 			{ "OnRep_IsRespawning", &AFGPlayerController::execOnRep_IsRespawning },
+			{ "RegisterRemoteCallObjectClass", &AFGPlayerController::execRegisterRemoteCallObjectClass },
 			{ "Server_DealImpactDamage", &AFGPlayerController::execServer_DealImpactDamage },
 			{ "Server_DealRadialDamage", &AFGPlayerController::execServer_DealRadialDamage },
 			{ "Server_FinishRespawn", &AFGPlayerController::execServer_FinishRespawn },
@@ -1710,6 +1711,44 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics
+	{
+		struct FGPlayerController_eventRegisterRemoteCallObjectClass_Parms
+		{
+			TSubclassOf<UFGRemoteCallObject>  inClass;
+			UFGRemoteCallObject* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerController_eventRegisterRemoteCallObjectClass_Parms, ReturnValue), Z_Construct_UClass_UFGRemoteCallObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGPlayerController_eventRegisterRemoteCallObjectClass_Parms, inClass), Z_Construct_UClass_UFGRemoteCallObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Remote Call Object" },
+		{ "DeterminesOutputType", "inClass" },
+		{ "ModuleRelativePath", "FGPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "RegisterRemoteCallObjectClass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerController_eventRegisterRemoteCallObjectClass_Parms), Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage_Statics
 	{
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_inInstigator;
@@ -2481,11 +2520,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		static void NewProp_mCanAffectAudioVolumes_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mCanAffectAudioVolumes;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultRemoteCallObjectsClassNames_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDefaultRemoteCallObjectsClassNames;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDefaultRemoteCallObjectsClassNames_Inner;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDisabledInputGateChanged_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mDisabledInputGateChanged;
@@ -2554,6 +2588,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		{ &Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning, "OnRep_IsRespawning" }, // 548605411
 		{ &Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind, "OnSetupMovementWind" }, // 1571267787
 		{ &Z_Construct_UFunction_AFGPlayerController_OnStartRespawn, "OnStartRespawn" }, // 2023442392
+		{ &Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass, "RegisterRemoteCallObjectClass" }, // 3472978884
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage, "Server_DealImpactDamage" }, // 749317536
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealRadialDamage, "Server_DealRadialDamage" }, // 3837621206
 		{ &Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn, "Server_FinishRespawn" }, // 2186985884
@@ -2706,14 +2741,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanAffectAudioVolumes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGPlayerController), &Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
-		{ "ToolTip", "These are the default Remote Call Objects for this PlayerController, should be put in config?" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames = { UE4CodeGen_Private::EPropertyClass::Array, "mDefaultRemoteCallObjectsClassNames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000004000, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mDefaultRemoteCallObjectsClassNames), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDefaultRemoteCallObjectsClassNames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000004000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDisabledInputGateChanged_MetaData[] = {
 		{ "ModuleRelativePath", "FGPlayerController.h" },
 	};
@@ -2774,8 +2801,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRemoteCallObjects,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRemoteCallObjects_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDefaultRemoteCallObjectsClassNames_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDisabledInputGateChanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_MapAreaEntered,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInteractionUI,
@@ -2806,7 +2831,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 203425030);
+	IMPLEMENT_CLASS(AFGPlayerController, 2294768143);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerController(Z_Construct_UClass_AFGPlayerController, &AFGPlayerController::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRiverSpline, 268838709);
+	IMPLEMENT_CLASS(AFGRiverSpline, 2939056333);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRiverSpline(Z_Construct_UClass_AFGRiverSpline, &AFGRiverSpline::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRiverSpline"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRiverSpline);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

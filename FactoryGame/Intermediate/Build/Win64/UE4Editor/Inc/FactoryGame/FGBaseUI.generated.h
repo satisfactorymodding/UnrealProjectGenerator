@@ -16,7 +16,7 @@ struct FPopupData;
 #endif
 #define FACTORYGAME_FGBaseUI_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetPopup) \
 	{ \
@@ -57,7 +57,7 @@ struct FPopupData;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetPopup) \
 	{ \
@@ -98,7 +98,7 @@ struct FPopupData;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_EVENT_PARMS \
 	struct FGBaseUI_eventCreatePopupWidget_Parms \
 	{ \
 		FPopupData popupData; \
@@ -112,8 +112,8 @@ struct FPopupData;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBaseUI(); \
 	friend struct Z_Construct_UClass_UFGBaseUI_Statics; \
@@ -122,7 +122,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBaseUI)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBaseUI(); \
 	friend struct Z_Construct_UClass_UFGBaseUI_Statics; \
@@ -131,7 +131,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBaseUI)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBaseUI(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBaseUI) \
@@ -144,7 +144,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGBaseUI(UFGBaseUI&&); \
@@ -155,34 +155,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBaseUI); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBaseUI)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mActivePopup() { return STRUCT_OFFSET(UFGBaseUI, mActivePopup); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_14_PROLOG \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_PROLOG \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_17_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGBaseUI_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

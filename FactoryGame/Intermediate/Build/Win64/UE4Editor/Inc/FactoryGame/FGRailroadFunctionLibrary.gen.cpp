@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadFunctionLibrary_DrawDebugRailroadPathResult_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad|Debug" },
+		{ "Category", "FactoryGame|Railroad|Debug" },
 		{ "CPP_Default_isPersistentLines", "false" },
 		{ "ModuleRelativePath", "FGRailroadFunctionLibrary.h" },
 		{ "ToolTip", "Draw a railroad path." },
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadFunctionLibrary_DrawDebugTrackPosition_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad|Debug" },
+		{ "Category", "FactoryGame|Railroad|Debug" },
 		{ "CPP_Default_isPersistentLines", "false" },
 		{ "ModuleRelativePath", "FGRailroadFunctionLibrary.h" },
 		{ "ToolTip", "Draw a railroad position." },
@@ -199,7 +199,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadFunctionLibrary_GetTrack_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad|TrackPosition" },
+		{ "Category", "FactoryGame|Railroad|TrackPosition" },
 		{ "ModuleRelativePath", "FGRailroadFunctionLibrary.h" },
 		{ "ToolTip", "The track segment this position is on.\n@return Track if valid position; otherwise null." },
 	};
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadFunctionLibrary_GetWorldLocationAndDirection_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad|TrackPosition" },
+		{ "Category", "FactoryGame|Railroad|TrackPosition" },
 		{ "ModuleRelativePath", "FGRailroadFunctionLibrary.h" },
 		{ "ToolTip", "Get the world location and direction of this track position. Zero vectors if the track is not valid." },
 	};
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadFunctionLibrary_IsValid_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad|TrackPosition" },
+		{ "Category", "FactoryGame|Railroad|TrackPosition" },
 		{ "ModuleRelativePath", "FGRailroadFunctionLibrary.h" },
 		{ "ToolTip", "@return Is this a valid track position." },
 	};
@@ -334,11 +334,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRailroadFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_DrawDebugRailroadPathResult, "DrawDebugRailroadPathResult" }, // 1967883607
-		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_DrawDebugTrackPosition, "DrawDebugTrackPosition" }, // 1711673059
-		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_GetTrack, "GetTrack" }, // 1816755426
-		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_GetWorldLocationAndDirection, "GetWorldLocationAndDirection" }, // 2027056338
-		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_IsValid, "IsValid" }, // 4123043799
+		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_DrawDebugRailroadPathResult, "DrawDebugRailroadPathResult" }, // 2130914308
+		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_DrawDebugTrackPosition, "DrawDebugTrackPosition" }, // 85542218
+		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_GetTrack, "GetTrack" }, // 969675277
+		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_GetWorldLocationAndDirection, "GetWorldLocationAndDirection" }, // 3285366278
+		{ &Z_Construct_UFunction_UFGRailroadFunctionLibrary_IsValid, "IsValid" }, // 3909776440
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadFunctionLibrary_Statics::Class_MetaDataParams[] = {
@@ -370,7 +370,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadFunctionLibrary, 1579609028);
+	IMPLEMENT_CLASS(UFGRailroadFunctionLibrary, 3464467760);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadFunctionLibrary(Z_Construct_UClass_UFGRailroadFunctionLibrary, &UFGRailroadFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

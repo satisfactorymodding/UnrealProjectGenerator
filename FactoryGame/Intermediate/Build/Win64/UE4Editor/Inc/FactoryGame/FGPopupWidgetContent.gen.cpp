@@ -303,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidgetContent, 509610967);
+	IMPLEMENT_CLASS(UFGPopupWidgetContent, 1457090125);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPopupWidgetContent(Z_Construct_UClass_UFGPopupWidgetContent, &UFGPopupWidgetContent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPopupWidgetContent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPopupWidgetContent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

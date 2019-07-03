@@ -16,7 +16,7 @@ class AFGCircuitSubsystem;
 #endif
 #define FACTORYGAME_FGCircuitSubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ReplicatedCircuits) \
 	{ \
@@ -45,7 +45,7 @@ class AFGCircuitSubsystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ReplicatedCircuits) \
 	{ \
@@ -74,35 +74,35 @@ class AFGCircuitSubsystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGCircuitSubsystem, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCircuitSubsystem(); \
 	friend struct Z_Construct_UClass_AFGCircuitSubsystem_Statics; \
 public: \
 	DECLARE_CLASS(AFGCircuitSubsystem, AFGSubsystem, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGCircuitSubsystem) \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCircuitSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGCircuitSubsystem(); \
 	friend struct Z_Construct_UClass_AFGCircuitSubsystem_Statics; \
 public: \
 	DECLARE_CLASS(AFGCircuitSubsystem, AFGSubsystem, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGCircuitSubsystem) \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCircuitSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGCircuitSubsystem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCircuitSubsystem) \
@@ -115,7 +115,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGCircuitSubsystem(AFGCircuitSubsystem&&); \
@@ -126,35 +126,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCircuitSubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGCircuitSubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCircuits() { return STRUCT_OFFSET(AFGCircuitSubsystem, mCircuits); } \
 	FORCEINLINE static uint32 __PPO__mReplicatedCircuits() { return STRUCT_OFFSET(AFGCircuitSubsystem, mReplicatedCircuits); }
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_19_PROLOG \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_INCLASS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCircuitSubsystem_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

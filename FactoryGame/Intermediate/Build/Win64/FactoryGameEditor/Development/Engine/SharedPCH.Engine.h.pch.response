@@ -48,6 +48,7 @@
 /I Runtime\MessagingCommon\Public
 /I Runtime\RenderCore\Public
 /I Runtime\ShaderCore\Public
+/I Runtime\Sockets\Public
 /I Runtime\UtilityShaders\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AssetRegistry
 /I Runtime\AssetRegistry\Public
@@ -72,9 +73,11 @@
 /I Runtime\AudioPlatformConfiguration\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MeshDescription
 /I Runtime\MeshDescription\Public
+/I Runtime\PakFile\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
 /I Editor
 /I Programs\UnrealLightmass\Public
+/I Developer\Android\AndroidDeviceDetection\Public\Interfaces
 /I Editor\UnrealEd\Classes
 /I Editor\UnrealEd\Public
 /I Editor\BspMode\Public
@@ -132,7 +135,6 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ContentBrowser
 /I Editor\ContentBrowser\Public
 /I Runtime\NetworkFileSystem\Public
-/I Runtime\Sockets\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
 /I Runtime\UMG\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
@@ -148,6 +150,8 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem
 /I Runtime\NavigationSystem\Public
 /I Developer\MeshBuilder\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MaterialShaderQualitySettings
+/I Runtime\MaterialShaderQualitySettings\Classes
 /I Runtime\Windows
 /I Runtime\Windows\XAudio2\Public
 /I Runtime\AudioMixer\Public
@@ -185,11 +189,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine
-/Yc"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.obj"
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine
+/Yc"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4

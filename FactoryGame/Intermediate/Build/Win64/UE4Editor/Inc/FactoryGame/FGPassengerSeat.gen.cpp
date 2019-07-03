@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPassengerSeat, 590440214);
+	IMPLEMENT_CLASS(AFGPassengerSeat, 4051925135);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPassengerSeat(Z_Construct_UClass_AFGPassengerSeat, &AFGPassengerSeat::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPassengerSeat"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPassengerSeat);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

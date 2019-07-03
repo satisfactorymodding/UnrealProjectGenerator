@@ -355,7 +355,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetAirBrake_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Get the amount of pressure applied to the air brakes in range [0,1]. This is the trains version of hand brake." },
 	};
@@ -389,7 +389,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetDynamicBrake_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Get the amount of dynamic braking in range [0,1]. This is the trains version of a cars engine brake.\nIt is applied when moving forward and applying reverse throttle." },
 	};
@@ -423,7 +423,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Get max dynamic braking force. [N] [kg cm/s^2]" },
 	};
@@ -457,7 +457,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Get maximum tractive force for this vehicle. [N] [kg cm/s^2]" },
 	};
@@ -491,7 +491,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetReverser_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Returns the value of the reverser control. @see SetReverserInput" },
 	};
@@ -525,7 +525,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetThrottle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Get the throttle value in range [0,1]. This is not the same as the raw data passed to SetThrottleInput" },
 	};
@@ -600,7 +600,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetAirBrakeInput_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Set the user input for air brakes (handbrake)." },
 	};
@@ -624,7 +624,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetEmergencyBrake_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Sets all brakes to max and the throttle to zero." },
 	};
@@ -658,7 +658,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetReverserInput_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Set the value of the reverser control.\n 1: Forward, locomotive goes forwards.\n-1: Reverse, locomotive goes backwards.\n 0: Neutral, locomotive goes nowhere!" },
 	};
@@ -692,7 +692,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetSteeringInput_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Set the user input for the vehicle steering\nNegative: Flip turnout ahead to the right.\nPositive: Flip turnout ahead to the left.\nZero: Do nothing and go with the flow." },
 	};
@@ -726,7 +726,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetThrottleInput_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Game|Components|RailroadVehicleMovement" },
+		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
 		{ "ToolTip", "Set the user input for the vehicle throttle. Range [-1, 1].\nIf negative and the vehicle is moving forward this applies dynamic braking (not same as handbrake)." },
 	};
@@ -852,24 +852,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGLocomotiveMovementComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetAirBrake, "GetAirBrake" }, // 3063249338
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetDynamicBrake, "GetDynamicBrake" }, // 1299429832
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort, "GetMaxDynamicBrakingEffort" }, // 1651848731
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort, "GetMaxTractiveEffort" }, // 3172886117
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetReverser, "GetReverser" }, // 681747528
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetThrottle, "GetThrottle" }, // 3794754778
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetAirBrake, "GetAirBrake" }, // 3937007263
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetDynamicBrake, "GetDynamicBrake" }, // 1657970821
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort, "GetMaxDynamicBrakingEffort" }, // 1856155538
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort, "GetMaxTractiveEffort" }, // 3210395964
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetReverser, "GetReverser" }, // 2443961387
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetThrottle, "GetThrottle" }, // 921103136
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_ServerUpdateState, "ServerUpdateState" }, // 3538797027
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetAirBrakeInput, "SetAirBrakeInput" }, // 1499591364
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetEmergencyBrake, "SetEmergencyBrake" }, // 2964595880
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetReverserInput, "SetReverserInput" }, // 3876656988
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetSteeringInput, "SetSteeringInput" }, // 679151644
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetThrottleInput, "SetThrottleInput" }, // 2660180999
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetAirBrakeInput, "SetAirBrakeInput" }, // 1383913720
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetEmergencyBrake, "SetEmergencyBrake" }, // 800012726
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetReverserInput, "SetReverserInput" }, // 467795164
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetSteeringInput, "SetSteeringInput" }, // 1058677005
+		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_SetThrottleInput, "SetThrottleInput" }, // 1237513765
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_UseReplicatedState, "UseReplicatedState" }, // 1957100617
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLocomotiveMovementComponent_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGLocomotiveMovementComponent.h" },
 		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "Movement component for locomotives.\nThis is where input and controlling of the train is happening." },
 	};
 #endif
@@ -1040,7 +1041,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLocomotiveMovementComponent, 33053485);
+	IMPLEMENT_CLASS(UFGLocomotiveMovementComponent, 2368234508);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGLocomotiveMovementComponent(Z_Construct_UClass_UFGLocomotiveMovementComponent, &UFGLocomotiveMovementComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGLocomotiveMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGLocomotiveMovementComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

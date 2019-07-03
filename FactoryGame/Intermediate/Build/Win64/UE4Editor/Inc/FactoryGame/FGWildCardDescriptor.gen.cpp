@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWildCardDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWildCardDescriptor, 2973157580);
+	IMPLEMENT_CLASS(UFGWildCardDescriptor, 695480277);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWildCardDescriptor(Z_Construct_UClass_UFGWildCardDescriptor, &UFGWildCardDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWildCardDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWildCardDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

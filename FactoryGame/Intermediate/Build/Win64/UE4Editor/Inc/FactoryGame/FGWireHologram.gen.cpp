@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWireHologram, 1647880776);
+	IMPLEMENT_CLASS(AFGWireHologram, 2227015552);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWireHologram(Z_Construct_UClass_AFGWireHologram, &AFGWireHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWireHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWireHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

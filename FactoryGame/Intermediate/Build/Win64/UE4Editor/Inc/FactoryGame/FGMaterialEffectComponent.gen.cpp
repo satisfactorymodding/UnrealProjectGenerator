@@ -643,10 +643,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMaterialEffectComponent_Statics::ClassParams = {
 		&UFGMaterialEffectComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A1u,
+		0x00B000A5u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGMaterialEffectComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffectComponent_Statics::Class_MetaDataParams))
@@ -660,7 +660,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 1971414321);
+	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 516726024);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialEffectComponent(Z_Construct_UClass_UFGMaterialEffectComponent, &UFGMaterialEffectComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialEffectComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialEffectComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

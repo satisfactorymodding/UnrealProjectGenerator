@@ -181,7 +181,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoundationSubsystem, 1829511899);
+	IMPLEMENT_CLASS(AFGFoundationSubsystem, 1560854177);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoundationSubsystem(Z_Construct_UClass_AFGFoundationSubsystem, &AFGFoundationSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoundationSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoundationSubsystem);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGFoundationSubsystem)

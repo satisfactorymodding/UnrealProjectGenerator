@@ -305,7 +305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Adds aggro to the specified target\n\n@param aggroTarget - The target to add aggro to.\n@param aggroToAdd - How much aggro do we want to add to the target." },
 	};
@@ -413,7 +413,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Checks to see if we see an actor or not.\n\n@param target - the actor we want to trace against" },
 	};
@@ -437,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
@@ -460,7 +460,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Finds an appropriate target from the list of aggro targets that exist" },
 	};
@@ -484,7 +484,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Gathers all aggro targets into the current list. Note, this doesn't clear the current aggro list" },
 	};
@@ -551,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Returns index of current pattern" },
 	};
@@ -585,7 +585,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Returns the attack class found in the attack pattern" },
 	};
@@ -619,7 +619,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Returns the aggro target that currently has the most aggro" },
 	};
@@ -657,7 +657,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Gets targeting desire from a aggro target" },
 	};
@@ -695,7 +695,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Get targeting desire from an AggroEntry.\n\n@param target - entry to calculate desire for.\n\n@return - the targeting desire." },
 	};
@@ -729,7 +729,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Returns the last valid location for target" },
 	};
@@ -780,7 +780,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Called when gathering aggro targets and cleaning up invalid aggro targets.\nUsed to filter out ignored aggro targets.\n\n@return - If we should ignore this target altogether." },
 	};
@@ -810,7 +810,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Called when we lose an aggro target and have no other target set" },
 	};
@@ -834,7 +834,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Do stuff when we found a new target" },
 	};
@@ -915,7 +915,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Sweeps through all aggro entries and removes the invalid ones" },
 	};
@@ -939,7 +939,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Resets the variable mLastValidLocation to an invalid location" },
 	};
@@ -973,7 +973,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Assigns a new aggrotarget" },
 	};
@@ -1024,7 +1024,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Called when gathering aggro targets and cleaning up invalid aggro targets.\nUse this if you want to filter away aggro targets.\n\n@return - If we should aggro against this target." },
 	};
@@ -1090,7 +1090,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Aggro" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "CPP_Default_fullCheck", "false" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Updates the list of all aggrotargets.\n\n@param deltaTime - time since last update.\n@param full - if a full update should be done. (expensive)\n                                      Extended checks every target if it should still be in the aggro list." },
@@ -1115,7 +1115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI" },
+		{ "Category", "FactoryGame|AI" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 		{ "ToolTip", "Updates the attack from attackpattern to the next in line ( will loop )" },
 	};
@@ -1226,31 +1226,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEnemyController_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget, "AddToAggroByTarget" }, // 859899474
+		{ &Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget, "AddToAggroByTarget" }, // 3421867332
 		{ &Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded, "AggroTargetAdded" }, // 3101132454
 		{ &Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved, "AggroTargetRemoved" }, // 3206723556
-		{ &Z_Construct_UFunction_AFGEnemyController_CanSeeActor, "CanSeeActor" }, // 3973805021
-		{ &Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate, "ClearAllAggroTargetsAndUpdate" }, // 328075934
-		{ &Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget, "FindAndAssignTarget" }, // 327489428
-		{ &Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets, "GatherAggroTargets" }, // 2380303790
+		{ &Z_Construct_UFunction_AFGEnemyController_CanSeeActor, "CanSeeActor" }, // 3579341617
+		{ &Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate, "ClearAllAggroTargetsAndUpdate" }, // 1494928140
+		{ &Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget, "FindAndAssignTarget" }, // 413324910
+		{ &Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets, "GatherAggroTargets" }, // 449663656
 		{ &Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold, "GetAggroThreshold" }, // 798420661
-		{ &Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex, "GetAttackPatternIndex" }, // 449144821
-		{ &Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern, "GetCurrentAttackFromPattern" }, // 1761195464
-		{ &Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget, "GetMostDesirableAggroTarget" }, // 991915433
-		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire, "GetTargetingDesire" }, // 2966240512
-		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry, "GetTargetingDesireFromAggroEntry" }, // 3204149485
-		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation, "GetTargetLastValidLocation" }, // 4281867408
-		{ &Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList, "IsOnIgnoreList" }, // 2502325004
-		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost, "OnAggroTargetLost" }, // 1722889985
-		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated, "OnAggroTargetUpdated" }, // 3960596911
+		{ &Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex, "GetAttackPatternIndex" }, // 1627567392
+		{ &Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern, "GetCurrentAttackFromPattern" }, // 1959774749
+		{ &Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget, "GetMostDesirableAggroTarget" }, // 942889683
+		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire, "GetTargetingDesire" }, // 3297026102
+		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry, "GetTargetingDesireFromAggroEntry" }, // 3710580462
+		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation, "GetTargetLastValidLocation" }, // 1802953615
+		{ &Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList, "IsOnIgnoreList" }, // 3569916670
+		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost, "OnAggroTargetLost" }, // 3240876332
+		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated, "OnAggroTargetUpdated" }, // 1195976520
 		{ &Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage, "OnPawnTakeDamage" }, // 1885123504
-		{ &Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets, "RemoveInvalidAggroTargets" }, // 3629660840
-		{ &Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation, "ResetLastValidTargetLocation" }, // 182916417
-		{ &Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget, "SetCurrentAggroTarget" }, // 3675880115
-		{ &Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget, "ShouldAddAggroTarget" }, // 4127942321
+		{ &Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets, "RemoveInvalidAggroTargets" }, // 2312544754
+		{ &Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation, "ResetLastValidTargetLocation" }, // 3590303944
+		{ &Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget, "SetCurrentAggroTarget" }, // 745275761
+		{ &Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget, "ShouldAddAggroTarget" }, // 2892662436
 		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget, "UpdateAggroAndFindAndAssignTarget" }, // 497342037
-		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets, "UpdateAggroTargets" }, // 4008771051
-		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern, "UpdateAttackPattern" }, // 3948835468
+		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets, "UpdateAggroTargets" }, // 1169209432
+		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern, "UpdateAttackPattern" }, // 1338791652
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::Class_MetaDataParams[] = {
@@ -1454,7 +1454,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEnemyController, 631813845);
+	IMPLEMENT_CLASS(AFGEnemyController, 2350314208);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEnemyController(Z_Construct_UClass_AFGEnemyController, &AFGEnemyController::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEnemyController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEnemyController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

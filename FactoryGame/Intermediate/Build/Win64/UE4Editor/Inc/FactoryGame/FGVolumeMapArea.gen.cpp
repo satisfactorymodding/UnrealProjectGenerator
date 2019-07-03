@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVolumeMapArea, 3140592271);
+	IMPLEMENT_CLASS(AFGVolumeMapArea, 1854150863);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGVolumeMapArea(Z_Construct_UClass_AFGVolumeMapArea, &AFGVolumeMapArea::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGVolumeMapArea"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGVolumeMapArea);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

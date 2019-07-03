@@ -746,7 +746,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDockingStation, 1767681636);
+	IMPLEMENT_CLASS(AFGBuildableDockingStation, 1968059007);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableDockingStation(Z_Construct_UClass_AFGBuildableDockingStation, &AFGBuildableDockingStation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableDockingStation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableDockingStation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

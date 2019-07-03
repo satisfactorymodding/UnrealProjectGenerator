@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHookshot, 2033546508);
+	IMPLEMENT_CLASS(AFGHookshot, 599244144);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHookshot(Z_Construct_UClass_AFGHookshot, &AFGHookshot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHookshot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHookshot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

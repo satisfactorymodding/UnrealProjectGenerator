@@ -343,11 +343,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRewardedRecipes_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mRewardedRecipes;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mRewardedRecipes_Inner;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mProducedIn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mProducedIn;
@@ -402,14 +397,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		{ "ToolTip", "This is a class describing a recipe, subclass this in blueprint to make a new recipe." },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes_MetaData[] = {
-		{ "ModuleRelativePath", "FGRecipe.h" },
-		{ "ToolTip", "@todo Deprecated since 2018-10-23, but have been unused since MAM refactor." },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes = { UE4CodeGen_Private::EPropertyClass::Array, "mRewardedRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000020000000, 1, nullptr, STRUCT_OFFSET(UFGRecipe, mRewardedRecipes_DEPRECATED), METADATA_PARAMS(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mRewardedRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000020000000, 1, nullptr, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_MetaData[] = {
 		{ "Category", "Recipe" },
@@ -468,8 +455,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayNameOverride = { UE4CodeGen_Private::EPropertyClass::Bool, "mDisplayNameOverride", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGRecipe), &Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayNameOverride_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayNameOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRecipe_Statics::NewProp_mDisplayNameOverride_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGRecipe_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mRewardedRecipes_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mProducedIn_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRecipe_Statics::NewProp_mManufactoringDuration,
@@ -503,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipe() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipe, 1358171920);
+	IMPLEMENT_CLASS(UFGRecipe, 2653656083);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRecipe(Z_Construct_UClass_UFGRecipe, &UFGRecipe::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRecipe"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRecipe);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

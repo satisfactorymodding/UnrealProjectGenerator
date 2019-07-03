@@ -26,22 +26,22 @@ class UPrimitiveComponent;
 #endif
 #define FACTORYGAME_FGCharacterBase_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_43_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_47_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffectWater_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_29_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_33_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffect_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_RPC_WRAPPERS \
 	virtual void PlayFootstepEffect_Implementation(int32 footDown, bool playSound); \
 	virtual int32 CalculateFallDamage_Implementation(float zSpeed) const; \
  \
@@ -252,7 +252,7 @@ class UPrimitiveComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void PlayFootstepEffect_Implementation(int32 footDown, bool playSound); \
 	virtual int32 CalculateFallDamage_Implementation(float zSpeed) const; \
  \
@@ -463,7 +463,7 @@ class UPrimitiveComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_EVENT_PARMS \
 	struct FGCharacterBase_eventCalculateFallDamage_Parms \
 	{ \
 		float zSpeed; \
@@ -524,8 +524,8 @@ class UPrimitiveComponent;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCharacterBase(); \
 	friend struct Z_Construct_UClass_AFGCharacterBase_Statics; \
@@ -535,7 +535,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCharacterBase*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGCharacterBase(); \
 	friend struct Z_Construct_UClass_AFGCharacterBase_Statics; \
@@ -545,7 +545,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCharacterBase*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGCharacterBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCharacterBase) \
@@ -558,7 +558,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGCharacterBase(AFGCharacterBase&&); \
@@ -569,7 +569,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCharacterBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCharacterBase)
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFeetNames() { return STRUCT_OFFSET(AFGCharacterBase, mFeetNames); } \
 	FORCEINLINE static uint32 __PPO__mDefaultFootstepEffect() { return STRUCT_OFFSET(AFGCharacterBase, mDefaultFootstepEffect); } \
 	FORCEINLINE static uint32 __PPO__mFootstepEffect() { return STRUCT_OFFSET(AFGCharacterBase, mFootstepEffect); } \
@@ -601,33 +601,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCharacterBase); \
 	FORCEINLINE static uint32 __PPO__mApplyDamageMomentum() { return STRUCT_OFFSET(AFGCharacterBase, mApplyDamageMomentum); } \
 	FORCEINLINE static uint32 __PPO__mIgnoredDamageTypes() { return STRUCT_OFFSET(AFGCharacterBase, mIgnoredDamageTypes); } \
 	FORCEINLINE static uint32 __PPO__mWeakspotMultiplier() { return STRUCT_OFFSET(AFGCharacterBase, mWeakspotMultiplier); } \
-	FORCEINLINE static uint32 __PPO__mWeakspotBoneNames() { return STRUCT_OFFSET(AFGCharacterBase, mWeakspotBoneNames); }
+	FORCEINLINE static uint32 __PPO__mWeakspotBoneNames() { return STRUCT_OFFSET(AFGCharacterBase, mWeakspotBoneNames); } \
+	FORCEINLINE static uint32 __PPO__mNormalDamageMultiplier() { return STRUCT_OFFSET(AFGCharacterBase, mNormalDamageMultiplier); }
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_55_PROLOG \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_59_PROLOG \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_INCLASS \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_INCLASS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCharacterBase_h_58_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCharacterBase_h_62_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

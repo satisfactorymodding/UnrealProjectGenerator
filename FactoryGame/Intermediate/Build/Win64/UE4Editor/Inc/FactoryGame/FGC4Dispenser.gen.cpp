@@ -253,7 +253,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Dispenser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Dispenser, 980930762);
+	IMPLEMENT_CLASS(AFGC4Dispenser, 454378363);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGC4Dispenser(Z_Construct_UClass_AFGC4Dispenser, &AFGC4Dispenser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGC4Dispenser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGC4Dispenser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

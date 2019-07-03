@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Building" },
+		{ "Category", "FactoryGame|Descriptor|Building" },
 		{ "ModuleRelativePath", "Resources/FGBuildingDescriptor.h" },
 		{ "ToolTip", "Get the buildable class for this building descriptor." },
 	};
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Building" },
+		{ "Category", "FactoryGame|Descriptor|Building" },
 		{ "ModuleRelativePath", "Resources/FGBuildingDescriptor.h" },
 		{ "ToolTip", "Get the the power consumption of buildable." },
 	};
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Building" },
+		{ "Category", "FactoryGame|Descriptor|Building" },
 		{ "ModuleRelativePath", "Resources/FGBuildingDescriptor.h" },
 		{ "ToolTip", "Get the the power production of buildable, 0 for non-producers." },
 	};
@@ -171,15 +171,16 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildingDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass, "GetBuildableClass" }, // 2925525316
-		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption, "GetPowerConsumption" }, // 2484306003
-		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction, "GetPowerProduction" }, // 1092205691
+		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass, "GetBuildableClass" }, // 3116856466
+		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption, "GetPowerConsumption" }, // 263058599
+		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction, "GetPowerProduction" }, // 1023899857
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildingDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGBuildingDescriptor.h" },
 		{ "ModuleRelativePath", "Resources/FGBuildingDescriptor.h" },
+		{ "ToolTip", "Build descriptor for buildables." },
 	};
 #endif
 #if WITH_METADATA
@@ -216,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildingDescriptor, 2778481290);
+	IMPLEMENT_CLASS(UFGBuildingDescriptor, 1048939548);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildingDescriptor(Z_Construct_UClass_UFGBuildingDescriptor, &UFGBuildingDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildingDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildingDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpRange_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Attack" },
+		{ "Category", "FactoryGame|Enemy|Attack" },
 		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Range of the jump attack" },
 	};
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpVelocity_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Attack" },
+		{ "Category", "FactoryGame|Enemy|Attack" },
 		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Get Velocity when jumping ( excluding the Z velocity which is handled by the Jump() in Character" },
 	};
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackMeleeJump_GetPreJumpMontage_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Attack" },
+		{ "Category", "FactoryGame|Enemy|Attack" },
 		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Get pre jump montage" },
 	};
@@ -181,9 +181,9 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAttackMeleeJump_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpRange, "GetJumpRange" }, // 3493432178
-		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpVelocity, "GetJumpVelocity" }, // 1930880478
-		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetPreJumpMontage, "GetPreJumpMontage" }, // 3538483459
+		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpRange, "GetJumpRange" }, // 2307143374
+		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpVelocity, "GetJumpVelocity" }, // 3625686930
+		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetPreJumpMontage, "GetPreJumpMontage" }, // 928193173
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackMeleeJump_Statics::Class_MetaDataParams[] = {
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMeleeJump, 1230420778);
+	IMPLEMENT_CLASS(UFGAttackMeleeJump, 4145068123);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackMeleeJump(Z_Construct_UClass_UFGAttackMeleeJump, &UFGAttackMeleeJump::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackMeleeJump"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackMeleeJump);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -398,6 +398,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGColorInterface_Statics::StaticCppClassTypeInfo = {
@@ -423,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColorInterface, 3112327649);
+	IMPLEMENT_CLASS(UFGColorInterface, 1803143435);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColorInterface(Z_Construct_UClass_UFGColorInterface, &UFGColorInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColorInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColorInterface);
 	static FName NAME_UFGColorInterface_GetCanBeColored = FName(TEXT("GetCanBeColored"));

@@ -332,6 +332,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGSaveInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGSaveInterface_Statics::StaticCppClassTypeInfo = {
@@ -357,7 +358,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveInterface, 3068488538);
+	IMPLEMENT_CLASS(UFGSaveInterface, 850047108);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveInterface(Z_Construct_UClass_UFGSaveInterface, &UFGSaveInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveInterface);
 	static FName NAME_UFGSaveInterface_GatherDependencies = FName(TEXT("GatherDependencies"));

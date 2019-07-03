@@ -1056,7 +1056,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCharacterAnimInstance, 1901488290);
+	IMPLEMENT_CLASS(UFGCharacterAnimInstance, 4267619933);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCharacterAnimInstance(Z_Construct_UClass_UFGCharacterAnimInstance, &UFGCharacterAnimInstance::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCharacterAnimInstance"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCharacterAnimInstance);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

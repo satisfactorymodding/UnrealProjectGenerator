@@ -1261,10 +1261,10 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGHealthComponent_Statics::ClassParams = {
 		&UFGHealthComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGHealthComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_UFGHealthComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGHealthComponent_Statics::Class_MetaDataParams))
@@ -1278,7 +1278,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHealthComponent, 3011795079);
+	IMPLEMENT_CLASS(UFGHealthComponent, 4195668266);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHealthComponent(Z_Construct_UClass_UFGHealthComponent, &UFGHealthComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHealthComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHealthComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

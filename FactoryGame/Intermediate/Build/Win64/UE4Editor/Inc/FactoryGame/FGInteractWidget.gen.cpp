@@ -898,7 +898,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInteractWidget, 2721367939);
+	IMPLEMENT_CLASS(UFGInteractWidget, 3935150617);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInteractWidget(Z_Construct_UClass_UFGInteractWidget, &UFGInteractWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInteractWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInteractWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

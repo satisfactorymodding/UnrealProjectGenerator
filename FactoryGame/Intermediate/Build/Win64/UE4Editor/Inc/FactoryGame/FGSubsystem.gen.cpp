@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSubsystem, 2131922609);
+	IMPLEMENT_CLASS(AFGSubsystem, 1792149614);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSubsystem(Z_Construct_UClass_AFGSubsystem, &AFGSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

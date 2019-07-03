@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBeacon, 3673927413);
+	IMPLEMENT_CLASS(AFGBeacon, 1708390669);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBeacon(Z_Construct_UClass_AFGBeacon, &AFGBeacon::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBeacon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBeacon);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

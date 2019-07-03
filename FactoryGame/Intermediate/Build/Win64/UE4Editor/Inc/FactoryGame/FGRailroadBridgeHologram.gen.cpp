@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 2505242929);
+	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 1022559016);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadBridgeHologram(Z_Construct_UClass_AFGRailroadBridgeHologram, &AFGRailroadBridgeHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadBridgeHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadBridgeHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

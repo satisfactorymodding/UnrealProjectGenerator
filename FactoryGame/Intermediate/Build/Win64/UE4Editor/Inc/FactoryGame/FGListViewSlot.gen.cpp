@@ -42,6 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListViewSlot() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListViewSlot_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGListViewSlot.h" },
 		{ "ModuleRelativePath", "UI/FGListViewSlot.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "The Slot for the UFGListView, contains the widget that is laid out in the list." },
 	};
 #endif
@@ -68,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListViewSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGListViewSlot, 1347763076);
+	IMPLEMENT_CLASS(UFGListViewSlot, 1098401229);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGListViewSlot(Z_Construct_UClass_UFGListViewSlot, &UFGListViewSlot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGListViewSlot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGListViewSlot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

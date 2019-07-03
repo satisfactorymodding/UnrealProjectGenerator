@@ -3,8 +3,8 @@
 #include "FGConveyorAttachmentHologram.h"
 
 AFGConveyorAttachmentHologram::AFGConveyorAttachmentHologram(){ }
-void AFGConveyorAttachmentHologram::SetHologramLocationAndRotation( const FHitResult& hitResult ){ }
-bool AFGConveyorAttachmentHologram::TrySnapToActor( const FHitResult& hitResult ){ return bool(); }
-void AFGConveyorAttachmentHologram::ConfigureComponents(  AFGBuildable* inBuildable ) const{ }
+void AFGConveyorAttachmentHologram::SetHologramLocationAndRotation( const FHitResult& hitResult){ }
+bool AFGConveyorAttachmentHologram::TrySnapToActor( const FHitResult& hitResult){ return bool(); }
+void AFGConveyorAttachmentHologram::ConfigureComponents(  AFGBuildable* inBuildable) const{ }
 void AFGConveyorAttachmentHologram::CheckValidPlacement(){ }
 FVector AFGConveyorAttachmentHologram::GetGuideLinesBaseLocation(){ return FVector(); }

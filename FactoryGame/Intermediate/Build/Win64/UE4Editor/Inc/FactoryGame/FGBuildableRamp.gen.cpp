@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRamp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRamp, 2333973771);
+	IMPLEMENT_CLASS(AFGBuildableRamp, 3228967742);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRamp(Z_Construct_UClass_AFGBuildableRamp, &AFGBuildableRamp::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRamp"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRamp);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

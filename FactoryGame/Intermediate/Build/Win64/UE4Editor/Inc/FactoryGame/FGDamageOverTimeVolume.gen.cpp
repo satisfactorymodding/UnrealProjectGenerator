@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 872664071);
+	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 866475054);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDamageOverTimeVolume(Z_Construct_UClass_AFGDamageOverTimeVolume, &AFGDamageOverTimeVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDamageOverTimeVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDamageOverTimeVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

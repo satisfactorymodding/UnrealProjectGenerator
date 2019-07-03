@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGWorldCreationInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGWorldCreationInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGWorldCreationInterface) \
@@ -28,9 +28,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGWorldCreationInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGWorldCreationInterface(UFGWorldCreationInterface&&); \
@@ -41,7 +39,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGWorldCreationInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGWorldCreationInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGWorldCreationInterface(); \
 	friend struct Z_Construct_UClass_UFGWorldCreationInterface_Statics; \
@@ -50,22 +48,22 @@ public: \
 	DECLARE_SERIALIZER(UFGWorldCreationInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGWorldCreationInterface() {} \
 public: \
@@ -74,7 +72,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGWorldCreationInterface() {} \
 public: \
@@ -83,21 +81,21 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_10_PROLOG
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_21_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_PROLOG
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_26_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_21_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWorldCreationInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

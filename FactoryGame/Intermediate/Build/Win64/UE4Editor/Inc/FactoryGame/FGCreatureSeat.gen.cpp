@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSeat, 3153980606);
+	IMPLEMENT_CLASS(AFGCreatureSeat, 1766847271);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreatureSeat(Z_Construct_UClass_AFGCreatureSeat, &AFGCreatureSeat::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreatureSeat"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreatureSeat);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

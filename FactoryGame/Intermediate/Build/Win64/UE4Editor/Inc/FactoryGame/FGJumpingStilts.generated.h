@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGJumpingStilts_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetNormalizedFallSpeedUntilDamaged) \
 	{ \
@@ -58,7 +58,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetNormalizedFallSpeedUntilDamaged) \
 	{ \
@@ -103,7 +103,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGJumpingStilts(); \
 	friend struct Z_Construct_UClass_AFGJumpingStilts_Statics; \
@@ -112,7 +112,7 @@ public: \
 	DECLARE_SERIALIZER(AFGJumpingStilts)
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGJumpingStilts(); \
 	friend struct Z_Construct_UClass_AFGJumpingStilts_Statics; \
@@ -121,7 +121,7 @@ public: \
 	DECLARE_SERIALIZER(AFGJumpingStilts)
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGJumpingStilts(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGJumpingStilts) \
@@ -134,7 +134,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGJumpingStilts(AFGJumpingStilts&&); \
@@ -145,38 +145,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGJumpingStilts); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGJumpingStilts)
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFallDamageCurveOverride() { return STRUCT_OFFSET(AFGJumpingStilts, mFallDamageCurveOverride); } \
 	FORCEINLINE static uint32 __PPO__mSprintSpeedFactor() { return STRUCT_OFFSET(AFGJumpingStilts, mSprintSpeedFactor); } \
 	FORCEINLINE static uint32 __PPO__mJumpSpeedFactor() { return STRUCT_OFFSET(AFGJumpingStilts, mJumpSpeedFactor); }
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_14_PROLOG
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGJumpingStiltsAttachment(); \
 	friend struct Z_Construct_UClass_AFGJumpingStiltsAttachment_Statics; \
@@ -185,7 +185,7 @@ public: \
 	DECLARE_SERIALIZER(AFGJumpingStiltsAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGJumpingStiltsAttachment(); \
 	friend struct Z_Construct_UClass_AFGJumpingStiltsAttachment_Statics; \
@@ -194,7 +194,7 @@ public: \
 	DECLARE_SERIALIZER(AFGJumpingStiltsAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGJumpingStiltsAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGJumpingStiltsAttachment) \
@@ -207,7 +207,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGJumpingStiltsAttachment() { }; \
 private: \
@@ -220,26 +220,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGJumpingStiltsAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGJumpingStiltsAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_66_PROLOG
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_67_PROLOG
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_INCLASS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_INCLASS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_69_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGJumpingStilts_h_70_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

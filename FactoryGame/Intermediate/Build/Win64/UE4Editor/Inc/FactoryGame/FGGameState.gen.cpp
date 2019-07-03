@@ -2026,7 +2026,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameState, 486340125);
+	IMPLEMENT_CLASS(AFGGameState, 1103753685);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGameState(Z_Construct_UClass_AFGGameState, &AFGGameState::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGameState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGameState);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGGameState)

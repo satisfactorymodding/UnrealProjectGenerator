@@ -17,15 +17,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGItemPickup_Spawnable();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGItemPickup();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDrop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryStack();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDrop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDropsInCylinder();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationAndRotation();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_PlaySpawnEffect();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
@@ -38,11 +40,76 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 	{
 		UClass* Class = AFGItemPickup_Spawnable::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AddItemToWorldStackAtLocation", &AFGItemPickup_Spawnable::execAddItemToWorldStackAtLocation },
 			{ "CreateItemDrop", &AFGItemPickup_Spawnable::execCreateItemDrop },
 			{ "CreateItemDropsInCylinder", &AFGItemPickup_Spawnable::execCreateItemDropsInCylinder },
 			{ "FindGroundLocationAndRotation", &AFGItemPickup_Spawnable::execFindGroundLocationAndRotation },
+			{ "FindGroundLocationInfrontOfActor", &AFGItemPickup_Spawnable::execFindGroundLocationInfrontOfActor },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics
+	{
+		struct FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms
+		{
+			UObject* worldContext;
+			FInventoryStack item;
+			FVector spawnLocation;
+			FRotator spawnRotation;
+			TSubclassOf<AFGItemPickup_Spawnable>  itemDropClass;
+			AFGItemPickup_Spawnable* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_itemDropClass;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_spawnRotation;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_spawnLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_item_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_item;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_worldContext;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms, ReturnValue), Z_Construct_UClass_AFGItemPickup_Spawnable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_itemDropClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemDropClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms, itemDropClass), Z_Construct_UClass_AFGItemPickup_Spawnable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_spawnRotation = { UE4CodeGen_Private::EPropertyClass::Struct, "spawnRotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms, spawnRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_spawnLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "spawnLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms, spawnLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_item_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_item = { UE4CodeGen_Private::EPropertyClass::Struct, "item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms, item), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_item_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_item_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_itemDropClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_spawnRotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_spawnLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_item,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::NewProp_worldContext,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ItemDrop" },
+		{ "CPP_Default_itemDropClass", "None" },
+		{ "DefaultToSelf", "worldContext" },
+		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup_Spawnable, "AddItemToWorldStackAtLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04C22401, sizeof(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms), Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDrop_Statics
 	{
@@ -255,6 +322,73 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics
+	{
+		struct FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms
+		{
+			const AActor* sourceActor;
+			float offsetLength;
+			FInventoryStack item;
+			FVector out_location;
+			FRotator out_rotation;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_rotation;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_out_location;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_item_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_item;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_offsetLength;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_sourceActor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_sourceActor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_out_rotation = { UE4CodeGen_Private::EPropertyClass::Struct, "out_rotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms, out_rotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_out_location = { UE4CodeGen_Private::EPropertyClass::Struct, "out_location", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms, out_location), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_item_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_item = { UE4CodeGen_Private::EPropertyClass::Struct, "item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms, item), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_item_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_item_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_offsetLength = { UE4CodeGen_Private::EPropertyClass::Float, "offsetLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms, offsetLength), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_sourceActor_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_sourceActor = { UE4CodeGen_Private::EPropertyClass::Object, "sourceActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000082, 1, nullptr, STRUCT_OFFSET(FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms, sourceActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_sourceActor_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_sourceActor_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_out_rotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_out_location,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_item,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_offsetLength,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::NewProp_sourceActor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ItemDrop" },
+		{ "DefaultToSelf", "worldContext" },
+		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ToolTip", "Finds a suitable drop location in front of an actor, taking into account roofs, walls and such.\n\n@param world - the world we try to find the ground in\n@param fromLocation - the location we want to try to find the ground above/below\n@param actorsToIgnore - the actors we want to ignore when trying to find the ground\n@param out_location - location to put the item on the ground\n@param out_rotation - rotation to put the item on the ground\n\n@return a valid item drop if everything went well" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup_Spawnable, "FindGroundLocationInfrontOfActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04C22401, sizeof(FGItemPickup_Spawnable_eventFindGroundLocationInfrontOfActor_Parms), Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGItemPickup_Spawnable_PlaySpawnEffect_Statics
 	{
 #if WITH_METADATA
@@ -308,9 +442,11 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation, "AddItemToWorldStackAtLocation" }, // 1777158992
 		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDrop, "CreateItemDrop" }, // 643370651
 		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDropsInCylinder, "CreateItemDropsInCylinder" }, // 3916708280
 		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationAndRotation, "FindGroundLocationAndRotation" }, // 4021215133
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor, "FindGroundLocationInfrontOfActor" }, // 251416346
 		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_PlaySpawnEffect, "PlaySpawnEffect" }, // 2770566399
 	};
 #if WITH_METADATA
@@ -365,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 1979375799);
+	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 17543634);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup_Spawnable(Z_Construct_UClass_AFGItemPickup_Spawnable, &AFGItemPickup_Spawnable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup_Spawnable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup_Spawnable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

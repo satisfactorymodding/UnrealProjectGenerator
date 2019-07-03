@@ -607,7 +607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFAnimInstanceFactory, 1481709153);
+	IMPLEMENT_CLASS(UFGFAnimInstanceFactory, 3612985502);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFAnimInstanceFactory(Z_Construct_UClass_UFGFAnimInstanceFactory, &UFGFAnimInstanceFactory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFAnimInstanceFactory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFAnimInstanceFactory);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

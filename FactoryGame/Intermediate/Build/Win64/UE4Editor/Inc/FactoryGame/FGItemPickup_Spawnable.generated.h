@@ -8,18 +8,31 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UObject;
-struct FVector;
 class AActor;
-struct FRotator;
 struct FInventoryStack;
+struct FVector;
+struct FRotator;
+class UObject;
 class AFGItemPickup_Spawnable;
 #ifdef FACTORYGAME_FGItemPickup_Spawnable_generated_h
 #error "FGItemPickup_Spawnable.generated.h already included, missing '#pragma once' in FGItemPickup_Spawnable.h"
 #endif
 #define FACTORYGAME_FGItemPickup_Spawnable_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFindGroundLocationInfrontOfActor) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_sourceActor); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_offsetLength); \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_item); \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_out_location); \
+		P_GET_STRUCT_REF(FRotator,Z_Param_Out_out_rotation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		AFGItemPickup_Spawnable::FindGroundLocationInfrontOfActor(Z_Param_sourceActor,Z_Param_offsetLength,Z_Param_Out_item,Z_Param_Out_out_location,Z_Param_Out_out_rotation); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execFindGroundLocationAndRotation) \
 	{ \
@@ -60,10 +73,36 @@ class AFGItemPickup_Spawnable;
 		P_NATIVE_BEGIN; \
 		*(AFGItemPickup_Spawnable**)Z_Param__Result=AFGItemPickup_Spawnable::CreateItemDrop(Z_Param_worldContext,Z_Param_Out_item,Z_Param_spawnLocation,Z_Param_spawnRotation,Z_Param_itemDropClass); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddItemToWorldStackAtLocation) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_item); \
+		P_GET_STRUCT(FVector,Z_Param_spawnLocation); \
+		P_GET_STRUCT(FRotator,Z_Param_spawnRotation); \
+		P_GET_OBJECT(UClass,Z_Param_itemDropClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGItemPickup_Spawnable**)Z_Param__Result=AFGItemPickup_Spawnable::AddItemToWorldStackAtLocation(Z_Param_worldContext,Z_Param_Out_item,Z_Param_spawnLocation,Z_Param_spawnRotation,Z_Param_itemDropClass); \
+		P_NATIVE_END; \
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFindGroundLocationInfrontOfActor) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_sourceActor); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_offsetLength); \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_item); \
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_out_location); \
+		P_GET_STRUCT_REF(FRotator,Z_Param_Out_out_rotation); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		AFGItemPickup_Spawnable::FindGroundLocationInfrontOfActor(Z_Param_sourceActor,Z_Param_offsetLength,Z_Param_Out_item,Z_Param_Out_out_location,Z_Param_Out_out_rotation); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execFindGroundLocationAndRotation) \
 	{ \
@@ -104,12 +143,25 @@ class AFGItemPickup_Spawnable;
 		P_NATIVE_BEGIN; \
 		*(AFGItemPickup_Spawnable**)Z_Param__Result=AFGItemPickup_Spawnable::CreateItemDrop(Z_Param_worldContext,Z_Param_Out_item,Z_Param_spawnLocation,Z_Param_spawnRotation,Z_Param_itemDropClass); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddItemToWorldStackAtLocation) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_STRUCT_REF(FInventoryStack,Z_Param_Out_item); \
+		P_GET_STRUCT(FVector,Z_Param_spawnLocation); \
+		P_GET_STRUCT(FRotator,Z_Param_spawnRotation); \
+		P_GET_OBJECT(UClass,Z_Param_itemDropClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGItemPickup_Spawnable**)Z_Param__Result=AFGItemPickup_Spawnable::AddItemToWorldStackAtLocation(Z_Param_worldContext,Z_Param_Out_item,Z_Param_spawnLocation,Z_Param_spawnRotation,Z_Param_itemDropClass); \
+		P_NATIVE_END; \
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGItemPickup_Spawnable(); \
 	friend struct Z_Construct_UClass_AFGItemPickup_Spawnable_Statics; \
@@ -118,7 +170,7 @@ public: \
 	DECLARE_SERIALIZER(AFGItemPickup_Spawnable)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGItemPickup_Spawnable(); \
 	friend struct Z_Construct_UClass_AFGItemPickup_Spawnable_Statics; \
@@ -127,7 +179,7 @@ public: \
 	DECLARE_SERIALIZER(AFGItemPickup_Spawnable)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGItemPickup_Spawnable(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGItemPickup_Spawnable) \
@@ -140,7 +192,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGItemPickup_Spawnable(AFGItemPickup_Spawnable&&); \
@@ -151,35 +203,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGItemPickup_Spawnable); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGItemPickup_Spawnable)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMeshComponent() { return STRUCT_OFFSET(AFGItemPickup_Spawnable, mMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__mPlaySpawnEffect() { return STRUCT_OFFSET(AFGItemPickup_Spawnable, mPlaySpawnEffect); }
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_6_PROLOG \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_12_PROLOG \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_INCLASS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_INCLASS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_9_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_Spawnable_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

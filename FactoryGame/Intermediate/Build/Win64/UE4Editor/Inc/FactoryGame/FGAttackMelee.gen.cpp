@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMelee() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMelee, 298155960);
+	IMPLEMENT_CLASS(UFGAttackMelee, 2549737946);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackMelee(Z_Construct_UClass_UFGAttackMelee, &UFGAttackMelee::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackMelee"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackMelee);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

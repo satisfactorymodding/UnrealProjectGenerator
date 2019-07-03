@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameSession, 3259968866);
+	IMPLEMENT_CLASS(AFGGameSession, 3158301549);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGameSession(Z_Construct_UClass_AFGGameSession, &AFGGameSession::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGameSession"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGameSession);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

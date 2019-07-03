@@ -752,6 +752,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGUseableInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGUseableInterface_Statics::StaticCppClassTypeInfo = {
@@ -777,7 +778,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseableInterface, 2372110913);
+	IMPLEMENT_CLASS(UFGUseableInterface, 477287644);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseableInterface(Z_Construct_UClass_UFGUseableInterface, &UFGUseableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseableInterface);
 	static FName NAME_UFGUseableInterface_GetLookAtDecription = FName(TEXT("GetLookAtDecription"));

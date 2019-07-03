@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMinerDispenser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPortableMinerDispenser, 86624357);
+	IMPLEMENT_CLASS(AFGPortableMinerDispenser, 1494965990);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPortableMinerDispenser(Z_Construct_UClass_AFGPortableMinerDispenser, &AFGPortableMinerDispenser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPortableMinerDispenser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPortableMinerDispenser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

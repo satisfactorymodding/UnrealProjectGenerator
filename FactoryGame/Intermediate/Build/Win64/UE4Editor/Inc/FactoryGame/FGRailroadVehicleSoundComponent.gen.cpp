@@ -413,10 +413,10 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::ClassParams = {
 		&UFGRailroadVehicleSoundComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::Class_MetaDataParams))
@@ -430,7 +430,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadVehicleSoundComponent, 1232663117);
+	IMPLEMENT_CLASS(UFGRailroadVehicleSoundComponent, 296304167);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadVehicleSoundComponent(Z_Construct_UClass_UFGRailroadVehicleSoundComponent, &UFGRailroadVehicleSoundComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadVehicleSoundComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadVehicleSoundComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -399,7 +399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUnlockedResearch_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mUnlockedResearch;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mUnlockedResearch_Inner;
+		static const UE4CodeGen_Private::FSoftClassPropertyParams NewProp_mUnlockedResearch_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRewardUsesDropPackage_MetaData[];
 #endif
@@ -513,7 +513,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedResearch = { UE4CodeGen_Private::EPropertyClass::Array, "mUnlockedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGResearchRecipe, mUnlockedResearch), METADATA_PARAMS(Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedResearch_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedResearch_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mUnlockedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedResearch_Inner = { UE4CodeGen_Private::EPropertyClass::SoftClass, "mUnlockedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mRewardUsesDropPackage_MetaData[] = {
 		{ "Category", "Rewards" },
@@ -587,7 +587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchRecipe, 1272851596);
+	IMPLEMENT_CLASS(UFGResearchRecipe, 355697347);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResearchRecipe(Z_Construct_UClass_UFGResearchRecipe, &UFGResearchRecipe::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResearchRecipe"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResearchRecipe);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGResearchRecipe)

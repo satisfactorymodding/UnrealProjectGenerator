@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadVehicleHologram, 1753984658);
+	IMPLEMENT_CLASS(AFGRailroadVehicleHologram, 1368211150);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadVehicleHologram(Z_Construct_UClass_AFGRailroadVehicleHologram, &AFGRailroadVehicleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadVehicleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadVehicleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

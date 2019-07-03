@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGeoThermalGeneratorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 3616353090);
+	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 448995842);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGeoThermalGeneratorHologram(Z_Construct_UClass_AFGGeoThermalGeneratorHologram, &AFGGeoThermalGeneratorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGeoThermalGeneratorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGeoThermalGeneratorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

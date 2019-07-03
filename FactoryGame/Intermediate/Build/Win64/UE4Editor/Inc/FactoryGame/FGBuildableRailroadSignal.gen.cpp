@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 2413091508);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 1685773592);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadSignal(Z_Construct_UClass_AFGBuildableRailroadSignal, &AFGBuildableRailroadSignal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadSignal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadSignal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

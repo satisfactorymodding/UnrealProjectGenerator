@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttentionPingActor, 275257048);
+	IMPLEMENT_CLASS(AFGAttentionPingActor, 2940223776);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAttentionPingActor(Z_Construct_UClass_AFGAttentionPingActor, &AFGAttentionPingActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAttentionPingActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAttentionPingActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

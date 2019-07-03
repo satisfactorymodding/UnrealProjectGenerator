@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 229103712);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 4147590776);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAttachmentMerger(Z_Construct_UClass_AFGBuildableAttachmentMerger, &AFGBuildableAttachmentMerger::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAttachmentMerger"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAttachmentMerger);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

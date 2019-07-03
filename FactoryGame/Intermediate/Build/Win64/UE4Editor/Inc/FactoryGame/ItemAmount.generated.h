@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_ItemAmount_generated_h
 
-#define FactoryGame_Source_FactoryGame_ItemAmount_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_ItemAmount_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemAmount_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 

@@ -418,7 +418,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPortableMiner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPortableMiner, 3833767202);
+	IMPLEMENT_CLASS(AFGPortableMiner, 1537929946);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPortableMiner(Z_Construct_UClass_AFGPortableMiner, &AFGPortableMiner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPortableMiner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPortableMiner);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

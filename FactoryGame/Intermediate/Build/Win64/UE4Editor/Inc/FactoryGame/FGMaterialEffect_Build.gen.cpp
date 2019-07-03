@@ -214,10 +214,10 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::ClassParams = {
 		&UFGMaterialEffect_Build::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A1u,
+		0x00B000A5u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::Class_MetaDataParams))
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 3235547855);
+	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 164421793);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialEffect_Build(Z_Construct_UClass_UFGMaterialEffect_Build, &UFGMaterialEffect_Build::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialEffect_Build"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialEffect_Build);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

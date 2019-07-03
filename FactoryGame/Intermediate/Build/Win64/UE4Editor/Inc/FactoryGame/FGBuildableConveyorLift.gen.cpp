@@ -17,12 +17,41 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorLift();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBase();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform();
 	ENGINE_API UClass* Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTransform();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 // End Cross Module References
 	void AFGBuildableConveyorLift::StaticRegisterNativesAFGBuildableConveyorLift()
 	{
+		UClass* Class = AFGBuildableConveyorLift::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnRep_TopTransform", &AFGBuildableConveyorLift::execOnRep_TopTransform },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ToolTip", "The transform of the top part.\nThe transform of the bottom part is the same as actor.\nIf the input and output is reversed so the input is at the top, the reverse flag is set.\nFrom this the mesh and connection transform is calculated." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConveyorLift, "OnRep_TopTransform", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AFGBuildableConveyorLift_NoRegister()
 	{
@@ -31,6 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 	struct Z_Construct_UClass_AFGBuildableConveyorLift_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -85,6 +115,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 		(UObject* (*)())Z_Construct_UClass_AFGBuildableConveyorBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConveyorLift_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform, "OnRep_TopTransform" }, // 693774121
+	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorLift.h" },
@@ -116,10 +149,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
-		{ "ToolTip", "The transform of the top part.\nThe transform of the bottom part is the same as actor.\nIf the input and output is reversed so the input is at the top, the reverse flag is set.\nFrom this the mesh and connection transform is calculated." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "mTopTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableConveyorLift, mTopTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "mTopTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000101000020, 1, "OnRep_TopTransform", STRUCT_OFFSET(AFGBuildableConveyorLift, mTopTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mShelfMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
@@ -197,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 		&AFGBuildableConveyorLift::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009002A4u,
-		nullptr, 0,
+		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGBuildableConveyorLift_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
@@ -213,7 +245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorLift, 2378536210);
+	IMPLEMENT_CLASS(AFGBuildableConveyorLift, 1148000096);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorLift(Z_Construct_UClass_AFGBuildableConveyorLift, &AFGBuildableConveyorLift::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorLift"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorLift);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

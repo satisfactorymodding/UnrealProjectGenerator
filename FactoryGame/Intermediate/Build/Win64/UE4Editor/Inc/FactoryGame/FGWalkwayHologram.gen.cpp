@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWalkwayHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWalkwayHologram, 2983181946);
+	IMPLEMENT_CLASS(AFGWalkwayHologram, 2896422807);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWalkwayHologram(Z_Construct_UClass_AFGWalkwayHologram, &AFGWalkwayHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWalkwayHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWalkwayHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

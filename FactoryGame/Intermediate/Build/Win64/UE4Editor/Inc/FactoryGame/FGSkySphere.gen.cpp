@@ -553,7 +553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 1080821490);
+	IMPLEMENT_CLASS(AFGSkySphere, 4282667274);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSkySphere(Z_Construct_UClass_AFGSkySphere, &AFGSkySphere::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSkySphere"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSkySphere);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

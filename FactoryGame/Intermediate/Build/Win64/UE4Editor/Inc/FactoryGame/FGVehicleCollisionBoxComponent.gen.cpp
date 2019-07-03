@@ -223,10 +223,10 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::ClassParams = {
 		&UFGVehicleCollisionBoxComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
+		0x00B010A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::Class_MetaDataParams))
@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 3035528762);
+	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 322540195);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleCollisionBoxComponent(Z_Construct_UClass_UFGVehicleCollisionBoxComponent, &UFGVehicleCollisionBoxComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleCollisionBoxComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleCollisionBoxComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

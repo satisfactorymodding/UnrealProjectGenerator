@@ -533,7 +533,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTargetPoint() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTargetPoint, 595264590);
+	IMPLEMENT_CLASS(AFGTargetPoint, 2622706614);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGTargetPoint(Z_Construct_UClass_AFGTargetPoint, &AFGTargetPoint::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGTargetPoint"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGTargetPoint);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

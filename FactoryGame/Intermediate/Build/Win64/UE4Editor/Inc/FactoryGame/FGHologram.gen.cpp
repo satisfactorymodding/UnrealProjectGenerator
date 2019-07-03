@@ -639,7 +639,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHologram, 2188628119);
+	IMPLEMENT_CLASS(AFGHologram, 1029408623);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHologram(Z_Construct_UClass_AFGHologram, &AFGHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

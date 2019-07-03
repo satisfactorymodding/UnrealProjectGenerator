@@ -32,6 +32,8 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipmentAttachment_PlayDetachEffects3P();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGEquipmentAttachment_PlayUseEffect();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EBackEquipment();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EArmEquipment();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipment_NoRegister();
 // End Cross Module References
@@ -456,6 +458,16 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mAttachedTo;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBackAnimation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mBackAnimation;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mBackAnimation_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mArmAnimation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mArmAnimation;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mArmAnimation_Underlying;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAttachSocket_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_mAttachSocket;
@@ -519,6 +531,24 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachedTo = { UE4CodeGen_Private::EPropertyClass::Object, "mAttachedTo", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGEquipmentAttachment, mAttachedTo), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachedTo_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachedTo_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation_MetaData[] = {
+		{ "Category", "Equipment|Animation" },
+		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_BACK)" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation = { UE4CodeGen_Private::EPropertyClass::Enum, "mBackAnimation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentAttachment, mBackAnimation), Z_Construct_UEnum_FactoryGame_EBackEquipment, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation_MetaData[] = {
+		{ "Category", "Equipment|Animation" },
+		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
+		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_ARMS)" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation = { UE4CodeGen_Private::EPropertyClass::Enum, "mArmAnimation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentAttachment, mArmAnimation), Z_Construct_UEnum_FactoryGame_EArmEquipment, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachSocket_MetaData[] = {
 		{ "Category", "Attachment" },
 		{ "ModuleRelativePath", "Equipment/FGEquipmentAttachment.h" },
@@ -545,6 +575,10 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mEquipmentSlot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mEquipmentSlot_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachedTo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mBackAnimation_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mArmAnimation_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mAttachSocket,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mUseLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentAttachment_Statics::NewProp_mEquipmentClass,
@@ -572,7 +606,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentAttachment, 341571923);
+	IMPLEMENT_CLASS(AFGEquipmentAttachment, 4107757932);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEquipmentAttachment(Z_Construct_UClass_AFGEquipmentAttachment, &AFGEquipmentAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEquipmentAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEquipmentAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

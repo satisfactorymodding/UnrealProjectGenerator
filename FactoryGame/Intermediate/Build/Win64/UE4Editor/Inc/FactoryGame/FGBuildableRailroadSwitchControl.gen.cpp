@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::Function_MetaDataParams[] = {
-		{ "Category", "SwitchControl" },
+		{ "Category", "FactoryGame|Railroad|Switch" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadSwitchControl.h" },
 		{ "ToolTip", "Get the current switch location." },
 	};
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition, "GetSwitchPosition" }, // 4093114641
+		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition, "GetSwitchPosition" }, // 2195636280
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::Class_MetaDataParams[] = {
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 3623668127);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 2052678090);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadSwitchControl(Z_Construct_UClass_AFGBuildableRailroadSwitchControl, &AFGBuildableRailroadSwitchControl::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadSwitchControl"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadSwitchControl);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

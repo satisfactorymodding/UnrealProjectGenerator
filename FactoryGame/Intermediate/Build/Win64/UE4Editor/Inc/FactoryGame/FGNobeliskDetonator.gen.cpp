@@ -496,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskDetonator, 1930456006);
+	IMPLEMENT_CLASS(AFGNobeliskDetonator, 1358778456);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGNobeliskDetonator(Z_Construct_UClass_AFGNobeliskDetonator, &AFGNobeliskDetonator::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGNobeliskDetonator"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGNobeliskDetonator);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

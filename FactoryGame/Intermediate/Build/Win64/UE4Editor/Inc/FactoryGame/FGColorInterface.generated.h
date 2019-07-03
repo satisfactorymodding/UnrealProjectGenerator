@@ -15,7 +15,7 @@ struct FLinearColor;
 #endif
 #define FACTORYGAME_FGColorInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_RPC_WRAPPERS \
 	virtual void StopIsAimedAtForColor_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual void StartIsAimedAtForColor_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual bool GetCanBeColored_Implementation() { return false; }; \
@@ -104,7 +104,7 @@ struct FLinearColor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void StopIsAimedAtForColor_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual void StartIsAimedAtForColor_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual bool GetCanBeColored_Implementation() { return false; }; \
@@ -193,7 +193,7 @@ struct FLinearColor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_EVENT_PARMS \
 	struct FGColorInterface_eventGetCanBeColored_Parms \
 	{ \
 		bool ReturnValue; \
@@ -256,8 +256,8 @@ struct FLinearColor;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGColorInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGColorInterface) \
@@ -270,9 +270,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGColorInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGColorInterface(UFGColorInterface&&); \
@@ -283,7 +281,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGColorInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGColorInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGColorInterface(); \
 	friend struct Z_Construct_UClass_UFGColorInterface_Statics; \
@@ -292,22 +290,22 @@ public: \
 	DECLARE_SERIALIZER(UFGColorInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGColorInterface() {} \
 public: \
@@ -325,7 +323,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_13_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_15_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGColorInterface() {} \
 public: \
@@ -343,26 +341,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_10_PROLOG \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_11_PROLOG \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_21_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGColorInterface_h_21_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGColorInterface_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGColorInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGColorInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

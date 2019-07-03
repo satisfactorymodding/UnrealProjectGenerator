@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStackableStorageHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStackableStorageHologram, 2529511332);
+	IMPLEMENT_CLASS(AFGStackableStorageHologram, 3699630016);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStackableStorageHologram(Z_Construct_UClass_AFGStackableStorageHologram, &AFGStackableStorageHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStackableStorageHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStackableStorageHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

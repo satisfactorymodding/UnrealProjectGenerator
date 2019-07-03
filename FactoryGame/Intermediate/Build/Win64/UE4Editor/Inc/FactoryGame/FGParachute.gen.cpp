@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGParachuteCameraShake, 1273794306);
+	IMPLEMENT_CLASS(UFGParachuteCameraShake, 3032965484);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGParachuteCameraShake(Z_Construct_UClass_UFGParachuteCameraShake, &UFGParachuteCameraShake::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGParachuteCameraShake"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGParachuteCameraShake);
 	static FName NAME_AFGParachute_ModifyVelocity = FName(TEXT("ModifyVelocity"));
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachute, 1748566984);
+	IMPLEMENT_CLASS(AFGParachute, 2721545435);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGParachute(Z_Construct_UClass_AFGParachute, &AFGParachute::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGParachute"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGParachute);
 	static FName NAME_AFGParachuteAttachment_OnDeployed = FName(TEXT("OnDeployed"));
@@ -469,7 +469,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachuteAttachment, 2582766948);
+	IMPLEMENT_CLASS(AFGParachuteAttachment, 1148130836);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGParachuteAttachment(Z_Construct_UClass_AFGParachuteAttachment, &AFGParachuteAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGParachuteAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGParachuteAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

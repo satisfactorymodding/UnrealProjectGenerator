@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStandaloneSignHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStandaloneSignHologram, 1391217386);
+	IMPLEMENT_CLASS(AFGStandaloneSignHologram, 2438120926);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStandaloneSignHologram(Z_Construct_UClass_AFGStandaloneSignHologram, &AFGStandaloneSignHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStandaloneSignHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStandaloneSignHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

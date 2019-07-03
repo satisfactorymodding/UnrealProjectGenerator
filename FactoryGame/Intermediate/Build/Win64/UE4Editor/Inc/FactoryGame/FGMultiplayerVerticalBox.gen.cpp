@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 3829074286);
+	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 3430983214);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMultiplayerVerticalBox(Z_Construct_UClass_UFGMultiplayerVerticalBox, &UFGMultiplayerVerticalBox::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMultiplayerVerticalBox"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMultiplayerVerticalBox);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

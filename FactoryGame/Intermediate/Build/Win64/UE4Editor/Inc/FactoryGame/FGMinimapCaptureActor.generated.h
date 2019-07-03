@@ -14,14 +14,14 @@ class UFGMapAreaTexture;
 #endif
 #define FACTORYGAME_FGMinimapCaptureActor_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_34_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGHeightData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGHeightWaterUserData(); \
 	friend struct Z_Construct_UClass_UFGHeightWaterUserData_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHeightWaterUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGHeightWaterUserData(); \
 	friend struct Z_Construct_UClass_UFGHeightWaterUserData_Statics; \
@@ -39,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHeightWaterUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHeightWaterUserData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHeightWaterUserData) \
@@ -52,7 +52,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHeightWaterUserData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -65,33 +65,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGHeightWaterUserData); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHeightWaterUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_PROLOG
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGHeightFoliageUserData(); \
 	friend struct Z_Construct_UClass_UFGHeightFoliageUserData_Statics; \
@@ -100,7 +100,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHeightFoliageUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGHeightFoliageUserData(); \
 	friend struct Z_Construct_UClass_UFGHeightFoliageUserData_Statics; \
@@ -109,7 +109,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHeightFoliageUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHeightFoliageUserData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHeightFoliageUserData) \
@@ -122,7 +122,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHeightFoliageUserData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -135,33 +135,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGHeightFoliageUserData); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHeightFoliageUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_PROLOG
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_PROLOG
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_INCLASS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_22_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGHeightHideUserData(); \
 	friend struct Z_Construct_UClass_UFGHeightHideUserData_Statics; \
@@ -170,7 +170,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHeightHideUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGHeightHideUserData(); \
 	friend struct Z_Construct_UClass_UFGHeightHideUserData_Statics; \
@@ -179,7 +179,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHeightHideUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHeightHideUserData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHeightHideUserData) \
@@ -192,7 +192,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHeightHideUserData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -205,31 +205,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGHeightHideUserData); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHeightHideUserData)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_25_PROLOG
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_PROLOG
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_INCLASS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_28_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetMapAreaTexture) \
 	{ \
@@ -240,7 +240,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetMapAreaTexture) \
 	{ \
@@ -252,7 +252,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #if WITH_EDITOR
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_EDITOR_ONLY_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_EDITOR_ONLY_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execExportHeightData) \
 	{ \
@@ -263,7 +263,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execExportHeightData) \
 	{ \
@@ -275,10 +275,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #else
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_EDITOR_ONLY_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_EDITOR_ONLY_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS
 #endif //WITH_EDITOR
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGMinimapCaptureActor(); \
 	friend struct Z_Construct_UClass_AFGMinimapCaptureActor_Statics; \
@@ -287,7 +287,7 @@ public: \
 	DECLARE_SERIALIZER(AFGMinimapCaptureActor)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGMinimapCaptureActor(); \
 	friend struct Z_Construct_UClass_AFGMinimapCaptureActor_Statics; \
@@ -296,7 +296,7 @@ public: \
 	DECLARE_SERIALIZER(AFGMinimapCaptureActor)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGMinimapCaptureActor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGMinimapCaptureActor) \
@@ -309,7 +309,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGMinimapCaptureActor(AFGMinimapCaptureActor&&); \
@@ -320,31 +320,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGMinimapCaptureActor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGMinimapCaptureActor)
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMapAreaTexture() { return STRUCT_OFFSET(AFGMinimapCaptureActor, mMapAreaTexture); }
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_70_PROLOG
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_PROLOG
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_EDITOR_ONLY_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_EDITOR_ONLY_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_INCLASS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_73_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_EDITOR_ONLY_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_76_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

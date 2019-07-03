@@ -926,7 +926,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTimeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTimeOfDaySubsystem, 2348092773);
+	IMPLEMENT_CLASS(AFGTimeOfDaySubsystem, 3153170719);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGTimeOfDaySubsystem(Z_Construct_UClass_AFGTimeOfDaySubsystem, &AFGTimeOfDaySubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGTimeOfDaySubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGTimeOfDaySubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

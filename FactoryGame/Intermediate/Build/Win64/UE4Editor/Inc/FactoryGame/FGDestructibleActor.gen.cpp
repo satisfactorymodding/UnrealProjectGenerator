@@ -264,7 +264,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDestructibleActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructibleActor, 3360181448);
+	IMPLEMENT_CLASS(AFGDestructibleActor, 1548910943);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDestructibleActor(Z_Construct_UClass_AFGDestructibleActor, &AFGDestructibleActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDestructibleActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDestructibleActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

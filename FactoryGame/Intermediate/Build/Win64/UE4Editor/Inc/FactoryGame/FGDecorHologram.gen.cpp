@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDecorHologram, 2944343142);
+	IMPLEMENT_CLASS(AFGDecorHologram, 4035947495);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDecorHologram(Z_Construct_UClass_AFGDecorHologram, &AFGDecorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDecorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDecorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

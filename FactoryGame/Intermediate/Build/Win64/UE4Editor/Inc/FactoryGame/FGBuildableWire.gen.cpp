@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWire, 404347331);
+	IMPLEMENT_CLASS(AFGBuildableWire, 352398687);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWire(Z_Construct_UClass_AFGBuildableWire, &AFGBuildableWire::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWire"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWire);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildableWire)

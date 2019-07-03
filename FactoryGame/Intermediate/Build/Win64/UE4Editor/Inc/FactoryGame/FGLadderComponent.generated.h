@@ -16,7 +16,7 @@ struct FHitResult;
 #endif
 #define FACTORYGAME_FGLadderComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execEndPotentialClimberOverlap) \
 	{ \
@@ -45,7 +45,7 @@ struct FHitResult;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEndPotentialClimberOverlap) \
 	{ \
@@ -74,25 +74,25 @@ struct FHitResult;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGLadderComponent(); \
 	friend struct Z_Construct_UClass_UFGLadderComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGLadderComponent, UBoxComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGLadderComponent, UBoxComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGLadderComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGLadderComponent(); \
 	friend struct Z_Construct_UClass_UFGLadderComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGLadderComponent, UBoxComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGLadderComponent, UBoxComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGLadderComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGLadderComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGLadderComponent) \
@@ -105,7 +105,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGLadderComponent(UFGLadderComponent&&); \
@@ -116,29 +116,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGLadderComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGLadderComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPotentialClimbers() { return STRUCT_OFFSET(UFGLadderComponent, mPotentialClimbers); }
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_9_PROLOG
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_PROLOG
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_INCLASS \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_INCLASS \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGLadderComponent_h_12_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGLadderComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

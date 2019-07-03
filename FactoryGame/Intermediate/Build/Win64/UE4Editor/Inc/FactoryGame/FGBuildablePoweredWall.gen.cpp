@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePoweredWall() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePoweredWall, 3018217865);
+	IMPLEMENT_CLASS(AFGBuildablePoweredWall, 2830159011);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildablePoweredWall(Z_Construct_UClass_AFGBuildablePoweredWall, &AFGBuildablePoweredWall::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildablePoweredWall"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildablePoweredWall);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

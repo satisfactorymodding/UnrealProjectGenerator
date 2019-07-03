@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJumpingStilts, 966336342);
+	IMPLEMENT_CLASS(AFGJumpingStilts, 3431472214);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGJumpingStilts(Z_Construct_UClass_AFGJumpingStilts, &AFGJumpingStilts::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGJumpingStilts"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGJumpingStilts);
 	void AFGJumpingStiltsAttachment::StaticRegisterNativesAFGJumpingStiltsAttachment()
@@ -364,7 +364,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJumpingStilts() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJumpingStiltsAttachment, 2615446667);
+	IMPLEMENT_CLASS(AFGJumpingStiltsAttachment, 3601217536);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGJumpingStiltsAttachment(Z_Construct_UClass_AFGJumpingStiltsAttachment, &AFGJumpingStiltsAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGJumpingStiltsAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGJumpingStiltsAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

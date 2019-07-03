@@ -63,9 +63,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OffsetZ;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FeetName_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FeetIndex_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FNamePropertyParams NewProp_FeetName;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_FeetIndex;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -108,17 +108,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ = { UE4CodeGen_Private::EPropertyClass::Float, "OffsetZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, OffsetZ), METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetName_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The name of the foot's socket." },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetName = { UE4CodeGen_Private::EPropertyClass::Name, "FeetName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, FeetName), METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetName_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex = { UE4CodeGen_Private::EPropertyClass::Byte, "FeetIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, FeetIndex), nullptr, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FFeetOffset_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
@@ -147,7 +147,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 2042538621U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 1117740284U; }
 	void UFGFactoryLegsComponent::StaticRegisterNativesUFGFactoryLegsComponent()
 	{
 		UClass* Class = UFGFactoryLegsComponent::StaticClass();
@@ -315,7 +315,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
-		{ "ToolTip", "Stored so that we know the offset of the feets" },
+		{ "ToolTip", "Stored so that we know the offset of the feet" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset = { UE4CodeGen_Private::EPropertyClass::Array, "mCachedFeetOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mCachedFeetOffset), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData)) };
@@ -393,10 +393,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::ClassParams = {
 		&UFGFactoryLegsComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
+		0x00A000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams))
@@ -410,7 +410,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 3096384488);
+	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 2825480966);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactoryLegsComponent(Z_Construct_UClass_UFGFactoryLegsComponent, &UFGFactoryLegsComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactoryLegsComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactoryLegsComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

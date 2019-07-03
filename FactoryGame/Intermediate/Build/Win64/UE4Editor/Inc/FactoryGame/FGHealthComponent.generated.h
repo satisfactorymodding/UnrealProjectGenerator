@@ -19,7 +19,7 @@ class UPrimitiveComponent;
 #endif
 #define FACTORYGAME_FGHealthComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_14_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_17_DELEGATE \
 struct _Script_FactoryGame_eventHealDelegate_Parms \
 { \
 	float amount; \
@@ -32,7 +32,7 @@ static inline void FHealDelegate_DelegateWrapper(const FMulticastScriptDelegate&
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_12_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_15_DELEGATE \
 struct _Script_FactoryGame_eventAdjustDamageDelegate_Parms \
 { \
 	AActor* damagedActor; \
@@ -61,7 +61,7 @@ static inline float FAdjustDamageDelegate_DelegateWrapper(const FScriptDelegate&
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_10_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_13_DELEGATE \
 struct _Script_FactoryGame_eventTakeAnyDamageDelegate_Parms \
 { \
 	AActor* damagedActor; \
@@ -82,7 +82,7 @@ static inline void FTakeAnyDamageDelegate_DelegateWrapper(const FMulticastScript
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_8_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_11_DELEGATE \
 struct _Script_FactoryGame_eventDeathDelegate_Parms \
 { \
 	AActor* DeadActor; \
@@ -95,7 +95,7 @@ static inline void FDeathDelegate_DelegateWrapper(const FMulticastScriptDelegate
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_RPC_WRAPPERS \
 	virtual void Client_Heal_Implementation(float amount); \
 	virtual void Client_Died_Implementation(AActor* deadActor); \
 	virtual void Client_TakeRadialDamage_Implementation(AActor* damagedActor, float damage, const UDamageType* damageType, FVector hitLocation, FHitResult hitInfo, AController* instigatedBy, AActor* damageCauser); \
@@ -294,7 +294,7 @@ static inline void FDeathDelegate_DelegateWrapper(const FMulticastScriptDelegate
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Client_Heal_Implementation(float amount); \
 	virtual void Client_Died_Implementation(AActor* deadActor); \
 	virtual void Client_TakeRadialDamage_Implementation(AActor* damagedActor, float damage, const UDamageType* damageType, FVector hitLocation, FHitResult hitInfo, AController* instigatedBy, AActor* damageCauser); \
@@ -493,7 +493,7 @@ static inline void FDeathDelegate_DelegateWrapper(const FMulticastScriptDelegate
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_EVENT_PARMS \
 	struct FGHealthComponent_eventClient_Died_Parms \
 	{ \
 		AActor* deadActor; \
@@ -534,28 +534,28 @@ static inline void FDeathDelegate_DelegateWrapper(const FMulticastScriptDelegate
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGHealthComponent(); \
 	friend struct Z_Construct_UClass_UFGHealthComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGHealthComponent, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGHealthComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGHealthComponent) \
 	virtual UObject* _getUObject() const override { return const_cast<UFGHealthComponent*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGHealthComponent(); \
 	friend struct Z_Construct_UClass_UFGHealthComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGHealthComponent, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGHealthComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGHealthComponent) \
 	virtual UObject* _getUObject() const override { return const_cast<UFGHealthComponent*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHealthComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHealthComponent) \
@@ -568,7 +568,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHealthComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -581,37 +581,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGHealthComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHealthComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mOnAdjustDamage() { return STRUCT_OFFSET(UFGHealthComponent, mOnAdjustDamage); } \
 	FORCEINLINE static uint32 __PPO__mMaxHealth() { return STRUCT_OFFSET(UFGHealthComponent, mMaxHealth); } \
 	FORCEINLINE static uint32 __PPO__mCurrentHealth() { return STRUCT_OFFSET(UFGHealthComponent, mCurrentHealth); } \
 	FORCEINLINE static uint32 __PPO__mRespawnHealthFactor() { return STRUCT_OFFSET(UFGHealthComponent, mRespawnHealthFactor); }
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_16_PROLOG \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_PROLOG \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_INCLASS \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_INCLASS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGHealthComponent_h_19_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGHealthComponent_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

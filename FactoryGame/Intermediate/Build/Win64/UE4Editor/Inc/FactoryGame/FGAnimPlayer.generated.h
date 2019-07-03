@@ -13,19 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGAnimPlayer_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_58_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FBackEquipmentData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
-
-
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_39_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FArmEquipmentData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
-
-
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGAnimPlayer(); \
 	friend struct Z_Construct_UClass_UFGAnimPlayer_Statics; \
@@ -34,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAnimPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGAnimPlayer(); \
 	friend struct Z_Construct_UClass_UFGAnimPlayer_Statics; \
@@ -43,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAnimPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGAnimPlayer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAnimPlayer) \
@@ -56,7 +46,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGAnimPlayer() { }; \
 private: \
@@ -69,26 +59,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGAnimPlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGAnimPlayer)
 
 
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_76_PROLOG
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_14_PROLOG
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_INCLASS \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_79_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGAnimPlayer_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -97,23 +87,4 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGAnimPlayer_h
 
 
-#define FOREACH_ENUM_EBACKEQUIPMENT(op) \
-	op(EBackEquipment::BE_None) \
-	op(EBackEquipment::BE_Jetpack) 
-#define FOREACH_ENUM_EARMEQUIPMENT(op) \
-	op(EArmEquipment::AE_None) \
-	op(EArmEquipment::AE_ChainSaw) \
-	op(EArmEquipment::AE_RebarGun) \
-	op(EArmEquipment::AE_BuildGun) \
-	op(EArmEquipment::AE_Nobelisk) \
-	op(EArmEquipment::AE_ResourceScanner) \
-	op(EArmEquipment::AE_Rifle) \
-	op(EArmEquipment::AE_ColorGun) \
-	op(EArmEquipment::AE_OneHandEquipment) \
-	op(EArmEquipment::AE_Consumables) \
-	op(EArmEquipment::AE_ObjectScanner) \
-	op(EArmEquipment::AE_PortableMiner) \
-	op(EArmEquipment::AE_StunSpear) \
-	op(EArmEquipment::AE_ShockShank) \
-	op(EArmEquipment::AE_ResourceCollector) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

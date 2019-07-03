@@ -14,7 +14,7 @@ class UObject;
 #endif
 #define FACTORYGAME_FGSaveInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_RPC_WRAPPERS \
 	virtual bool NeedTransform_Implementation() { return false; }; \
 	virtual bool ShouldSave_Implementation() const { return false; }; \
 	virtual void GatherDependencies_Implementation(TArray<UObject*>& out_dependentObjects) {}; \
@@ -89,7 +89,7 @@ class UObject;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool NeedTransform_Implementation() { return false; }; \
 	virtual bool ShouldSave_Implementation() const { return false; }; \
 	virtual void GatherDependencies_Implementation(TArray<UObject*>& out_dependentObjects) {}; \
@@ -164,7 +164,7 @@ class UObject;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_EVENT_PARMS \
 	struct FGSaveInterface_eventGatherDependencies_Parms \
 	{ \
 		TArray<UObject*> out_dependentObjects; \
@@ -211,8 +211,8 @@ class UObject;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSaveInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSaveInterface) \
@@ -225,9 +225,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGSaveInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGSaveInterface(UFGSaveInterface&&); \
@@ -238,7 +236,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSaveInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSaveInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGSaveInterface(); \
 	friend struct Z_Construct_UClass_UFGSaveInterface_Statics; \
@@ -247,22 +245,22 @@ public: \
 	DECLARE_SERIALIZER(UFGSaveInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGSaveInterface() {} \
 public: \
@@ -278,7 +276,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGSaveInterface() {} \
 public: \
@@ -294,26 +292,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_46_PROLOG \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_48_PROLOG \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_57_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_61_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_57_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSaveInterface_h_61_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSaveInterface_h_49_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGSaveInterface_h_52_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

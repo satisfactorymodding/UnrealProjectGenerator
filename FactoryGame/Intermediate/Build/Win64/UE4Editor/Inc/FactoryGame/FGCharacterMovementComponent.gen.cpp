@@ -454,7 +454,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCharacterMovementComponent, 2761766179);
+	IMPLEMENT_CLASS(UFGCharacterMovementComponent, 3231325336);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCharacterMovementComponent(Z_Construct_UClass_UFGCharacterMovementComponent, &UFGCharacterMovementComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCharacterMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCharacterMovementComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

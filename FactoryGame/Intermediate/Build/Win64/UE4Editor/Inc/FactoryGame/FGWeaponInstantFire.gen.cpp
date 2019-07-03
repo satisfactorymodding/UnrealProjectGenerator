@@ -196,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponInstantFire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponInstantFire, 305877184);
+	IMPLEMENT_CLASS(AFGWeaponInstantFire, 2058564450);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWeaponInstantFire(Z_Construct_UClass_AFGWeaponInstantFire, &AFGWeaponInstantFire::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWeaponInstantFire"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWeaponInstantFire);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

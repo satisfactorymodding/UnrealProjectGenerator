@@ -1465,7 +1465,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreature, 70274253);
+	IMPLEMENT_CLASS(AFGCreature, 1095354181);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreature(Z_Construct_UClass_AFGCreature, &AFGCreature::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreature"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreature);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

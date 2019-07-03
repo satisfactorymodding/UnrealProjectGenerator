@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWindow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWindow, 1565878860);
+	IMPLEMENT_CLASS(UFGWindow, 367792086);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWindow(Z_Construct_UClass_UFGWindow, &UFGWindow::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWindow"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWindow);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

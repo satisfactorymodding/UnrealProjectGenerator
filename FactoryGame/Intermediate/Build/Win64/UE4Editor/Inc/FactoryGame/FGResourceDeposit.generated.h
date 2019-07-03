@@ -14,7 +14,7 @@ class UFGResourceDescriptor;
 #endif
 #define FACTORYGAME_FGResourceDeposit_generated_h
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ResourceDepositEmptied) \
 	{ \
@@ -41,7 +41,7 @@ class UFGResourceDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ResourceDepositEmptied) \
 	{ \
@@ -68,15 +68,15 @@ class UFGResourceDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_EVENT_PARMS \
 	struct FGResourceDeposit_eventPlayDepletedEffect_Parms \
 	{ \
 		TSubclassOf<UFGResourceDescriptor>  descriptor; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGResourceDeposit(); \
 	friend struct Z_Construct_UClass_AFGResourceDeposit_Statics; \
@@ -85,7 +85,7 @@ public: \
 	DECLARE_SERIALIZER(AFGResourceDeposit)
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGResourceDeposit(); \
 	friend struct Z_Construct_UClass_AFGResourceDeposit_Statics; \
@@ -94,7 +94,7 @@ public: \
 	DECLARE_SERIALIZER(AFGResourceDeposit)
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGResourceDeposit(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGResourceDeposit) \
@@ -107,7 +107,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGResourceDeposit(AFGResourceDeposit&&); \
@@ -118,37 +118,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGResourceDeposit); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGResourceDeposit)
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mResourceDepositPackage() { return STRUCT_OFFSET(AFGResourceDeposit, mResourceDepositPackage); } \
 	FORCEINLINE static uint32 __PPO__mResourceDepositTableIndex() { return STRUCT_OFFSET(AFGResourceDeposit, mResourceDepositTableIndex); } \
 	FORCEINLINE static uint32 __PPO__mIsEmptied() { return STRUCT_OFFSET(AFGResourceDeposit, mIsEmptied); } \
 	FORCEINLINE static uint32 __PPO__mMineAmount() { return STRUCT_OFFSET(AFGResourceDeposit, mMineAmount); }
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_18_PROLOG \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_INCLASS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Resources_FGResourceDeposit_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

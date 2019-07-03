@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapObjectWidget, 3269098209);
+	IMPLEMENT_CLASS(UFGMapObjectWidget, 2321751931);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapObjectWidget(Z_Construct_UClass_UFGMapObjectWidget, &UFGMapObjectWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapObjectWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapObjectWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

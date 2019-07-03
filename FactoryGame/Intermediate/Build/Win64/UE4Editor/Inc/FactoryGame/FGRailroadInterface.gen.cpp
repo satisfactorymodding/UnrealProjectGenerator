@@ -17,11 +17,18 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadInterface();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FRailroadTrackPosition();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack();
 // End Cross Module References
+	int32 IFGRailroadInterface::GetTrackGraphID() const
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_GetTrackGraphID instead.");
+		FGRailroadInterface_eventGetTrackGraphID_Parms Parms;
+		return Parms.ReturnValue;
+	}
 	FRailroadTrackPosition IFGRailroadInterface::GetTrackPosition() const
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_GetTrackPosition instead.");
@@ -40,11 +47,42 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 	{
 		UClass* Class = UFGRailroadInterface::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetTrackGraphID", &IFGRailroadInterface::execGetTrackGraphID },
 			{ "GetTrackPosition", &IFGRailroadInterface::execGetTrackPosition },
 			{ "RegisteredOnTrack", &IFGRailroadInterface::execRegisteredOnTrack },
 			{ "UnregisteredFromTrack", &IFGRailroadInterface::execUnregisteredFromTrack },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics
+	{
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadInterface_eventGetTrackGraphID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|Interface" },
+		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ToolTip", "Get the track id we're on." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadInterface, "GetTrackGraphID", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C020C00, sizeof(FGRailroadInterface_eventGetTrackGraphID_Parms), Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition_Statics
 	{
@@ -61,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad" },
+		{ "Category", "FactoryGame|Railroad|Interface" },
 		{ "ModuleRelativePath", "FGRailroadInterface.h" },
 		{ "ToolTip", "Get the track location." },
 	};
@@ -99,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad" },
+		{ "Category", "FactoryGame|Railroad|Interface" },
 		{ "ModuleRelativePath", "FGRailroadInterface.h" },
 		{ "ToolTip", "When this is registered on a track." },
 	};
@@ -123,7 +161,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Railroad" },
+		{ "Category", "FactoryGame|Railroad|Interface" },
 		{ "ModuleRelativePath", "FGRailroadInterface.h" },
 		{ "ToolTip", "When this is unregistered from a track, e.g. the track is dismantled." },
 	};
@@ -157,15 +195,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRailroadInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition, "GetTrackPosition" }, // 3474987950
-		{ &Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack, "RegisteredOnTrack" }, // 920767127
-		{ &Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack, "UnregisteredFromTrack" }, // 2352640359
+		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackGraphID, "GetTrackGraphID" }, // 1637624541
+		{ &Z_Construct_UFunction_UFGRailroadInterface_GetTrackPosition, "GetTrackPosition" }, // 1186341859
+		{ &Z_Construct_UFunction_UFGRailroadInterface_RegisteredOnTrack, "RegisteredOnTrack" }, // 2092631698
+		{ &Z_Construct_UFunction_UFGRailroadInterface_UnregisteredFromTrack, "UnregisteredFromTrack" }, // 195843544
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGRailroadInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGRailroadInterface_Statics::StaticCppClassTypeInfo = {
@@ -191,9 +231,26 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadInterface, 1810887761);
+	IMPLEMENT_CLASS(UFGRailroadInterface, 1749236179);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadInterface(Z_Construct_UClass_UFGRailroadInterface, &UFGRailroadInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadInterface);
+	static FName NAME_UFGRailroadInterface_GetTrackGraphID = FName(TEXT("GetTrackGraphID"));
+	int32 IFGRailroadInterface::Execute_GetTrackGraphID(const UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UFGRailroadInterface::StaticClass()));
+		FGRailroadInterface_eventGetTrackGraphID_Parms Parms;
+		UFunction* const Func = O->FindFunction(NAME_UFGRailroadInterface_GetTrackGraphID);
+		if (Func)
+		{
+			const_cast<UObject*>(O)->ProcessEvent(Func, &Parms);
+		}
+		else if (auto I = (const IFGRailroadInterface*)(O->GetNativeInterfaceAddress(UFGRailroadInterface::StaticClass())))
+		{
+			Parms.ReturnValue = I->GetTrackGraphID_Implementation();
+		}
+		return Parms.ReturnValue;
+	}
 	static FName NAME_UFGRailroadInterface_GetTrackPosition = FName(TEXT("GetTrackPosition"));
 	FRailroadTrackPosition IFGRailroadInterface::Execute_GetTrackPosition(const UObject* O)
 	{

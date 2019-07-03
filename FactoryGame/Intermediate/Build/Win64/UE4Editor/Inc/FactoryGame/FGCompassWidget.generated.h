@@ -18,7 +18,7 @@ class AFGActorRepresentationManager;
 #endif
 #define FACTORYGAME_FGCompassWidget_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_RPC_WRAPPERS \
 	virtual FVector2D GetCompassLineOffset_Implementation(); \
  \
 	DECLARE_FUNCTION(execOnActorRepresentationUpdated) \
@@ -139,7 +139,7 @@ class AFGActorRepresentationManager;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual FVector2D GetCompassLineOffset_Implementation(); \
  \
 	DECLARE_FUNCTION(execOnActorRepresentationUpdated) \
@@ -260,7 +260,7 @@ class AFGActorRepresentationManager;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_EVENT_PARMS \
 	struct FGCompassWidget_eventGetCompassLineOffset_Parms \
 	{ \
 		FVector2D ReturnValue; \
@@ -284,8 +284,8 @@ class AFGActorRepresentationManager;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGCompassWidget(); \
 	friend struct Z_Construct_UClass_UFGCompassWidget_Statics; \
@@ -294,7 +294,7 @@ public: \
 	DECLARE_SERIALIZER(UFGCompassWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGCompassWidget(); \
 	friend struct Z_Construct_UClass_UFGCompassWidget_Statics; \
@@ -303,7 +303,7 @@ public: \
 	DECLARE_SERIALIZER(UFGCompassWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCompassWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCompassWidget) \
@@ -316,7 +316,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGCompassWidget(UFGCompassWidget&&); \
@@ -327,7 +327,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCompassWidget); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCompassWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCompassPanel() { return STRUCT_OFFSET(UFGCompassWidget, mCompassPanel); } \
 	FORCEINLINE static uint32 __PPO__mContentPanel() { return STRUCT_OFFSET(UFGCompassWidget, mContentPanel); } \
 	FORCEINLINE static uint32 __PPO__mCompassLine() { return STRUCT_OFFSET(UFGCompassWidget, mCompassLine); } \
@@ -341,30 +341,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCompassWidget); \
 	FORCEINLINE static uint32 __PPO__mThresholdForCenteredResourceObjects() { return STRUCT_OFFSET(UFGCompassWidget, mThresholdForCenteredResourceObjects); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_PROLOG \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

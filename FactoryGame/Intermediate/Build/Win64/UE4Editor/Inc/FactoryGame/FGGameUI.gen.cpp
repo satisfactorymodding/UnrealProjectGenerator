@@ -40,6 +40,9 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_GetWindowWantsInventoryAddon();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_HandleFocusLost();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_HandlePendingMessages();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_PopAllWidgets();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_ReceivedMessage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage();
@@ -100,6 +103,24 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	void UFGGameUI::HandlePendingMessages()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_HandlePendingMessages),NULL);
+	}
+	static FName NAME_UFGGameUI_OnRadiationIntensityUpdated = FName(TEXT("OnRadiationIntensityUpdated"));
+	void UFGGameUI::OnRadiationIntensityUpdated(float radiationIntensity, float radiationImmunity)
+	{
+		FGGameUI_eventOnRadiationIntensityUpdated_Parms Parms;
+		Parms.radiationIntensity=radiationIntensity;
+		Parms.radiationImmunity=radiationImmunity;
+		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_OnRadiationIntensityUpdated),&Parms);
+	}
+	static FName NAME_UFGGameUI_OnReceiveRadiationStart = FName(TEXT("OnReceiveRadiationStart"));
+	void UFGGameUI::OnReceiveRadiationStart()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_OnReceiveRadiationStart),NULL);
+	}
+	static FName NAME_UFGGameUI_OnReceiveRadiationStop = FName(TEXT("OnReceiveRadiationStop"));
+	void UFGGameUI::OnReceiveRadiationStop()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UFGGameUI_OnReceiveRadiationStop),NULL);
 	}
 	static FName NAME_UFGGameUI_PopAllWidgets = FName(TEXT("PopAllWidgets"));
 	void UFGGameUI::PopAllWidgets()
@@ -663,6 +684,87 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_radiationImmunity;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_radiationIntensity;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "radiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGGameUI_eventOnRadiationIntensityUpdated_Parms, radiationImmunity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity = { UE4CodeGen_Private::EPropertyClass::Float, "radiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGGameUI_eventOnRadiationIntensityUpdated_Parms, radiationIntensity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ToolTip", "Called when we have updated radiation intensity." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, "OnRadiationIntensityUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, sizeof(FGGameUI_eventOnRadiationIntensityUpdated_Parms), Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ToolTip", "Called when we start receiving radiation." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, "OnReceiveRadiationStart", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ToolTip", "Called when we stop receiving radiation." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUI, "OnReceiveRadiationStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGGameUI_PopAllWidgets_Statics
 	{
 #if WITH_METADATA
@@ -975,6 +1077,9 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		{ &Z_Construct_UFunction_UFGGameUI_GetWindowWantsInventoryAddon, "GetWindowWantsInventoryAddon" }, // 1139155527
 		{ &Z_Construct_UFunction_UFGGameUI_HandleFocusLost, "HandleFocusLost" }, // 3999096934
 		{ &Z_Construct_UFunction_UFGGameUI_HandlePendingMessages, "HandlePendingMessages" }, // 203288894
+		{ &Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 2416612420
+		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 1032914564
+		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 3625446541
 		{ &Z_Construct_UFunction_UFGGameUI_PopAllWidgets, "PopAllWidgets" }, // 2484484686
 		{ &Z_Construct_UFunction_UFGGameUI_ReceivedMessage, "ReceivedMessage" }, // 84262149
 		{ &Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage, "RemoveAudioMessage" }, // 1146092044
@@ -1045,7 +1150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUI, 3247753045);
+	IMPLEMENT_CLASS(UFGGameUI, 3565166709);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameUI(Z_Construct_UClass_UFGGameUI, &UFGGameUI::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameUI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameUI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

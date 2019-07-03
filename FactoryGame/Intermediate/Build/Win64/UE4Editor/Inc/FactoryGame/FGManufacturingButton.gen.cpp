@@ -261,7 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGManufacturingButton, 1601343323);
+	IMPLEMENT_CLASS(UFGManufacturingButton, 399239873);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGManufacturingButton(Z_Construct_UClass_UFGManufacturingButton, &UFGManufacturingButton::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGManufacturingButton"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGManufacturingButton);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

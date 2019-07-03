@@ -17,17 +17,57 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptorNuclearFuel();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 // End Cross Module References
 	void UFGItemDescriptorNuclearFuel::StaticRegisterNativesUFGItemDescriptorNuclearFuel()
 	{
 		UClass* Class = UFGItemDescriptorNuclearFuel::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetAmountWasteCreated", &UFGItemDescriptorNuclearFuel::execGetAmountWasteCreated },
 			{ "GetSpentFuelClass", &UFGItemDescriptorNuclearFuel::execGetSpentFuelClass },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics
+	{
+		struct FGItemDescriptorNuclearFuel_eventGetAmountWasteCreated_Parms
+		{
+			TSubclassOf<UFGItemDescriptorNuclearFuel>  inClass;
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_inClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptorNuclearFuel_eventGetAmountWasteCreated_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptorNuclearFuel_eventGetAmountWasteCreated_Parms, inClass), Z_Construct_UClass_UFGItemDescriptorNuclearFuel_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::NewProp_inClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Descriptor|NuclearFuel" },
+		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ToolTip", "@return The amount of waste to create" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptorNuclearFuel, "GetAmountWasteCreated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptorNuclearFuel_eventGetAmountWasteCreated_Parms), Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass_Statics
 	{
@@ -52,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item" },
+		{ "Category", "FactoryGame|Descriptor|NuclearFuel" },
 		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "@return The descriptor to use when the fuel is removed from the reactor (waste)." },
 	};
@@ -79,6 +119,10 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAmountOfWaste_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mAmountOfWaste;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSpentFuelClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mSpentFuelClass;
@@ -91,15 +135,25 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass, "GetSpentFuelClass" }, // 773103512
+		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated, "GetAmountWasteCreated" }, // 3664722894
+		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass, "GetSpentFuelClass" }, // 3420417838
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ToolTip", "Base descriptor for nuclear fuel." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste_MetaData[] = {
+		{ "Category", "Nuclear Fuel" },
+		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ToolTip", "How much waste to produce" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste = { UE4CodeGen_Private::EPropertyClass::Int, "mAmountOfWaste", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptorNuclearFuel, mAmountOfWaste), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass_MetaData[] = {
 		{ "Category", "Nuclear Fuel" },
@@ -109,6 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass = { UE4CodeGen_Private::EPropertyClass::Class, "mSpentFuelClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptorNuclearFuel, mSpentFuelClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::StaticCppClassTypeInfo = {
@@ -134,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 2961325271);
+	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 3534869629);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptorNuclearFuel(Z_Construct_UClass_UFGItemDescriptorNuclearFuel, &UFGItemDescriptorNuclearFuel::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptorNuclearFuel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptorNuclearFuel);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

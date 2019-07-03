@@ -8,12 +8,10 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AFGBuildableRailroadStation;
+class AFGTrainStationIdentifier;
 class AFGLocomotive;
 struct FRailroadPathFindingResult;
-class UFGRailroadTimeTable;
-class AFGRailroadVehicle;
-struct FTrainData;
+class AFGTrain;
 class UObject;
 class AFGRailroadSubsystem;
 #ifdef FACTORYGAME_FGRailroadSubsystem_generated_h
@@ -21,78 +19,58 @@ class AFGRailroadSubsystem;
 #endif
 #define FACTORYGAME_FGRailroadSubsystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_92_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTrackGraph_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_41_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FTrain_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
-
-
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_20_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FTrainData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
-
-
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetTrainStops) \
+	DECLARE_FUNCTION(execGetAllTrainStations) \
 	{ \
-		P_GET_TARRAY_REF(AFGBuildableRailroadStation*,Z_Param_Out_out_stops); \
+		P_GET_TARRAY_REF(AFGTrainStationIdentifier*,Z_Param_Out_out_stations); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetTrainStops(Z_Param_Out_out_stops); \
+		P_THIS->GetAllTrainStations(Z_Param_Out_out_stations); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetTrainStations) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_trackID); \
+		P_GET_TARRAY_REF(AFGTrainStationIdentifier*,Z_Param_Out_out_stations); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetTrainStations(Z_Param_trackID,Z_Param_Out_out_stations); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execFindPathSync) \
 	{ \
 		P_GET_OBJECT(AFGLocomotive,Z_Param_locomotive); \
-		P_GET_OBJECT(AFGBuildableRailroadStation,Z_Param_stop); \
+		P_GET_OBJECT(AFGTrainStationIdentifier,Z_Param_station); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FRailroadPathFindingResult*)Z_Param__Result=P_THIS->FindPathSync(Z_Param_locomotive,Z_Param_stop); \
+		*(FRailroadPathFindingResult*)Z_Param__Result=P_THIS->FindPathSync(Z_Param_locomotive,Z_Param_station); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execFindOrAddTimeTable) \
+	DECLARE_FUNCTION(execGetAllTrains) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
+		P_GET_TARRAY_REF(AFGTrain*,Z_Param_Out_out_trains); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFGRailroadTimeTable**)Z_Param__Result=P_THIS->FindOrAddTimeTable(Z_Param_trainID); \
+		P_THIS->GetAllTrains(Z_Param_Out_out_trains); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execFindTimeTable) \
+	DECLARE_FUNCTION(execGetTrains) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_trackID); \
+		P_GET_TARRAY_REF(AFGTrain*,Z_Param_Out_out_trains); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFGRailroadTimeTable**)Z_Param__Result=P_THIS->FindTimeTable(Z_Param_trainID); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTrainOrder) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
-		P_GET_OBJECT_REF(AFGRailroadVehicle,Z_Param_Out_out_firstVehicle); \
-		P_GET_OBJECT_REF(AFGRailroadVehicle,Z_Param_Out_out_lastVehicle); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetTrainOrder(Z_Param_trainID,Z_Param_Out_out_firstVehicle,Z_Param_Out_out_lastVehicle); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTrainData) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
-		P_GET_STRUCT_REF(FTrainData,Z_Param_Out_out_trainData); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetTrainData(Z_Param_trainID,Z_Param_Out_out_trainData); \
+		P_THIS->GetTrains(Z_Param_trackID,Z_Param_Out_out_trains); \
 		P_NATIVE_END; \
 	} \
  \
@@ -106,63 +84,53 @@ class AFGRailroadSubsystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetTrainStops) \
+	DECLARE_FUNCTION(execGetAllTrainStations) \
 	{ \
-		P_GET_TARRAY_REF(AFGBuildableRailroadStation*,Z_Param_Out_out_stops); \
+		P_GET_TARRAY_REF(AFGTrainStationIdentifier*,Z_Param_Out_out_stations); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetTrainStops(Z_Param_Out_out_stops); \
+		P_THIS->GetAllTrainStations(Z_Param_Out_out_stations); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetTrainStations) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_trackID); \
+		P_GET_TARRAY_REF(AFGTrainStationIdentifier*,Z_Param_Out_out_stations); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetTrainStations(Z_Param_trackID,Z_Param_Out_out_stations); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execFindPathSync) \
 	{ \
 		P_GET_OBJECT(AFGLocomotive,Z_Param_locomotive); \
-		P_GET_OBJECT(AFGBuildableRailroadStation,Z_Param_stop); \
+		P_GET_OBJECT(AFGTrainStationIdentifier,Z_Param_station); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FRailroadPathFindingResult*)Z_Param__Result=P_THIS->FindPathSync(Z_Param_locomotive,Z_Param_stop); \
+		*(FRailroadPathFindingResult*)Z_Param__Result=P_THIS->FindPathSync(Z_Param_locomotive,Z_Param_station); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execFindOrAddTimeTable) \
+	DECLARE_FUNCTION(execGetAllTrains) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
+		P_GET_TARRAY_REF(AFGTrain*,Z_Param_Out_out_trains); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFGRailroadTimeTable**)Z_Param__Result=P_THIS->FindOrAddTimeTable(Z_Param_trainID); \
+		P_THIS->GetAllTrains(Z_Param_Out_out_trains); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execFindTimeTable) \
+	DECLARE_FUNCTION(execGetTrains) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_trackID); \
+		P_GET_TARRAY_REF(AFGTrain*,Z_Param_Out_out_trains); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFGRailroadTimeTable**)Z_Param__Result=P_THIS->FindTimeTable(Z_Param_trainID); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTrainOrder) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
-		P_GET_OBJECT_REF(AFGRailroadVehicle,Z_Param_Out_out_firstVehicle); \
-		P_GET_OBJECT_REF(AFGRailroadVehicle,Z_Param_Out_out_lastVehicle); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->GetTrainOrder(Z_Param_trainID,Z_Param_Out_out_firstVehicle,Z_Param_Out_out_lastVehicle); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTrainData) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_trainID); \
-		P_GET_STRUCT_REF(FTrainData,Z_Param_Out_out_trainData); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetTrainData(Z_Param_trainID,Z_Param_Out_out_trainData); \
+		P_THIS->GetTrains(Z_Param_trackID,Z_Param_Out_out_trains); \
 		P_NATIVE_END; \
 	} \
  \
@@ -176,33 +144,33 @@ class AFGRailroadSubsystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGRailroadSubsystem, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGRailroadSubsystem(); \
 	friend struct Z_Construct_UClass_AFGRailroadSubsystem_Statics; \
 public: \
 	DECLARE_CLASS(AFGRailroadSubsystem, AFGSubsystem, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGRailroadSubsystem) \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGRailroadSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGRailroadSubsystem(); \
 	friend struct Z_Construct_UClass_AFGRailroadSubsystem_Statics; \
 public: \
 	DECLARE_CLASS(AFGRailroadSubsystem, AFGSubsystem, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGRailroadSubsystem) \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGRailroadSubsystem*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGRailroadSubsystem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRailroadSubsystem) \
@@ -215,7 +183,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGRailroadSubsystem(AFGRailroadSubsystem&&); \
@@ -226,32 +194,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRailroadSubsystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRailroadSubsystem)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mTrains() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrains); } \
-	FORCEINLINE static uint32 __PPO__mTrainStops() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrainStops); } \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mStationNames() { return STRUCT_OFFSET(AFGRailroadSubsystem, mStationNames); } \
-	FORCEINLINE static uint32 __PPO__mTrackGraphs() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrackGraphs); }
+	FORCEINLINE static uint32 __PPO__mTrackGraphs() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrackGraphs); } \
+	FORCEINLINE static uint32 __PPO__mTrainStationIdentifiers() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrainStationIdentifiers); } \
+	FORCEINLINE static uint32 __PPO__mTrains() { return STRUCT_OFFSET(AFGRailroadSubsystem, mTrains); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_113_PROLOG
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_52_PROLOG
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_INCLASS \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_116_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

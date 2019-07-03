@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplinePath, 3743402448);
+	IMPLEMENT_CLASS(AFGSplinePath, 1614257704);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSplinePath(Z_Construct_UClass_AFGSplinePath, &AFGSplinePath::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSplinePath"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSplinePath);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

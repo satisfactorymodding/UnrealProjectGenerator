@@ -14,7 +14,7 @@ struct FHitResult;
 #endif
 #define FACTORYGAME_FGWeaponInstantFire_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_RPC_WRAPPERS \
 	virtual bool Server_NotifyMiss_Validate(); \
 	virtual void Server_NotifyMiss_Implementation(); \
 	virtual bool Server_NotifyHit_Validate(FHitResult const& ); \
@@ -48,7 +48,7 @@ struct FHitResult;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_NotifyMiss_Validate(); \
 	virtual void Server_NotifyMiss_Implementation(); \
 	virtual bool Server_NotifyHit_Validate(FHitResult const& ); \
@@ -82,15 +82,15 @@ struct FHitResult;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_EVENT_PARMS \
 	struct FGWeaponInstantFire_eventServer_NotifyHit_Parms \
 	{ \
 		FHitResult hitResult; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGWeaponInstantFire(); \
 	friend struct Z_Construct_UClass_AFGWeaponInstantFire_Statics; \
@@ -99,7 +99,7 @@ public: \
 	DECLARE_SERIALIZER(AFGWeaponInstantFire)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_INCLASS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGWeaponInstantFire(); \
 	friend struct Z_Construct_UClass_AFGWeaponInstantFire_Statics; \
@@ -108,7 +108,7 @@ public: \
 	DECLARE_SERIALIZER(AFGWeaponInstantFire)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGWeaponInstantFire(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGWeaponInstantFire) \
@@ -121,7 +121,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGWeaponInstantFire(AFGWeaponInstantFire&&); \
@@ -132,31 +132,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWeaponInstantFire); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGWeaponInstantFire)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_8_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_10_PROLOG \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_INCLASS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_11_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponInstantFire_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

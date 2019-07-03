@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 3646847663);
+	IMPLEMENT_CLASS(AFGGasMask, 164978232);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMask(Z_Construct_UClass_AFGGasMask, &AFGGasMask::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMask"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMask);
 	void AFGGasMaskAttachment::StaticRegisterNativesAFGGasMaskAttachment()
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1278185564);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1491350085);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMaskAttachment(Z_Construct_UClass_AFGGasMaskAttachment, &AFGGasMaskAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMaskAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMaskAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

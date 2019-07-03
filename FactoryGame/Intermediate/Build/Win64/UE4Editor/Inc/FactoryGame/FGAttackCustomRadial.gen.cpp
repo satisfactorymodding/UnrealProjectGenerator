@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackCustomRadial() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackCustomRadial, 2549933943);
+	IMPLEMENT_CLASS(UFGAttackCustomRadial, 2660701051);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackCustomRadial(Z_Construct_UClass_UFGAttackCustomRadial, &UFGAttackCustomRadial::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackCustomRadial"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackCustomRadial);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

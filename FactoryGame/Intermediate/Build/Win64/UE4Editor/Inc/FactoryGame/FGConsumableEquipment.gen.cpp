@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConsumableEquipment, 993767612);
+	IMPLEMENT_CLASS(AFGConsumableEquipment, 993914681);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConsumableEquipment(Z_Construct_UClass_AFGConsumableEquipment, &AFGConsumableEquipment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConsumableEquipment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConsumableEquipment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -204,7 +204,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 2337403184);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 1908481832);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAttachmentSplitter(Z_Construct_UClass_AFGBuildableAttachmentSplitter, &AFGBuildableAttachmentSplitter::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAttachmentSplitter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAttachmentSplitter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

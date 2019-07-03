@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 2948876430);
+	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 283910006);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrashSiteDebrisActor(Z_Construct_UClass_AFGCrashSiteDebrisActor, &AFGCrashSiteDebrisActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrashSiteDebrisActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrashSiteDebrisActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -15,12 +15,12 @@ struct FPoleHeightMesh;
 #endif
 #define FACTORYGAME_FGPoleDescriptor_generated_h
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPoleHeightMesh_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetHeightMeshes) \
 	{ \
@@ -33,7 +33,7 @@ struct FPoleHeightMesh;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetHeightMeshes) \
 	{ \
@@ -46,7 +46,7 @@ struct FPoleHeightMesh;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGPoleDescriptor(); \
 	friend struct Z_Construct_UClass_UFGPoleDescriptor_Statics; \
@@ -55,7 +55,7 @@ public: \
 	DECLARE_SERIALIZER(UFGPoleDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_INCLASS \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGPoleDescriptor(); \
 	friend struct Z_Construct_UClass_UFGPoleDescriptor_Statics; \
@@ -64,7 +64,7 @@ public: \
 	DECLARE_SERIALIZER(UFGPoleDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGPoleDescriptor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGPoleDescriptor) \
@@ -77,7 +77,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGPoleDescriptor() { }; \
 private: \
@@ -90,29 +90,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGPoleDescriptor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGPoleDescriptor)
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mHeightMeshes() { return STRUCT_OFFSET(UFGPoleDescriptor, mHeightMeshes); }
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_32_PROLOG
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_PROLOG
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_INCLASS \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_INCLASS \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_35_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

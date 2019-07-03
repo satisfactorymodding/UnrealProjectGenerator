@@ -677,7 +677,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 318476708);
+	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 3159623540);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDynamicExponentialFogVolume(Z_Construct_UClass_AFGDynamicExponentialFogVolume, &AFGDynamicExponentialFogVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDynamicExponentialFogVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDynamicExponentialFogVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

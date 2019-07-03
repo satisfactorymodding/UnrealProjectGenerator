@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStairHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStairHologram, 40690600);
+	IMPLEMENT_CLASS(AFGStairHologram, 4090130381);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStairHologram(Z_Construct_UClass_AFGStairHologram, &AFGStairHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStairHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStairHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

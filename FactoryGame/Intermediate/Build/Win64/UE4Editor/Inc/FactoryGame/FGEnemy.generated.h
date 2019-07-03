@@ -16,7 +16,7 @@ struct FVector;
 #endif
 #define FACTORYGAME_FGEnemy_generated_h
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_RPC_WRAPPERS \
 	virtual void OnCurrentAggroTargetReplicated_Implementation(); \
 	virtual void PerformCustomRadialAttack_Implementation(); \
 	virtual FVector GetAttackLocation_Implementation(); \
@@ -70,7 +70,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnCurrentAggroTargetReplicated_Implementation(); \
 	virtual void PerformCustomRadialAttack_Implementation(); \
 	virtual FVector GetAttackLocation_Implementation(); \
@@ -124,7 +124,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_EVENT_PARMS \
 	struct FGEnemy_eventGetAttackLocation_Parms \
 	{ \
 		FVector ReturnValue; \
@@ -137,8 +137,8 @@ struct FVector;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGEnemy(); \
 	friend struct Z_Construct_UClass_AFGEnemy_Statics; \
@@ -147,7 +147,7 @@ public: \
 	DECLARE_SERIALIZER(AFGEnemy)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGEnemy(); \
 	friend struct Z_Construct_UClass_AFGEnemy_Statics; \
@@ -156,7 +156,7 @@ public: \
 	DECLARE_SERIALIZER(AFGEnemy)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGEnemy(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGEnemy) \
@@ -169,7 +169,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGEnemy(AFGEnemy&&); \
@@ -180,34 +180,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGEnemy); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGEnemy)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCurrentAggroTarget() { return STRUCT_OFFSET(AFGEnemy, mCurrentAggroTarget); }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_12_PROLOG \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_PROLOG \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_INCLASS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Creature_Enemy_FGEnemy_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

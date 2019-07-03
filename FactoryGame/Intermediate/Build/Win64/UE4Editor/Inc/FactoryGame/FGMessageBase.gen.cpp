@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMessageBase, 2770830266);
+	IMPLEMENT_CLASS(UFGMessageBase, 3986613792);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMessageBase(Z_Construct_UClass_UFGMessageBase, &UFGMessageBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMessageBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMessageBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

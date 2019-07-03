@@ -504,10 +504,10 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGResearchMachine_Statics::ClassParams = {
 		&UFGResearchMachine::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::Class_MetaDataParams))
@@ -521,7 +521,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchMachine, 2620365723);
+	IMPLEMENT_CLASS(UFGResearchMachine, 400235788);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResearchMachine(Z_Construct_UClass_UFGResearchMachine, &UFGResearchMachine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResearchMachine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResearchMachine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

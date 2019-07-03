@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRenderTargetStage, 3136013938);
+	IMPLEMENT_CLASS(AFGRenderTargetStage, 96702858);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRenderTargetStage(Z_Construct_UClass_AFGRenderTargetStage, &AFGRenderTargetStage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRenderTargetStage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRenderTargetStage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

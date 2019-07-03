@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 200516514);
+	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 1006059480);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAudioVolumeSubsystem(Z_Construct_UClass_AFGAudioVolumeSubsystem, &AFGAudioVolumeSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAudioVolumeSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAudioVolumeSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

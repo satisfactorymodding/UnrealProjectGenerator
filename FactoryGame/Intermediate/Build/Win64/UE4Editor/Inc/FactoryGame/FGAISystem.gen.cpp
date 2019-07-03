@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_AddToTargetableList_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "Addes this aggro target as a global aggro target" },
 	};
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_ClearAllPardonedActors_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "Removes all actors from the pardoned list" },
 	};
@@ -267,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_GetAggroTargetList_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "Get all available aggro targets" },
 	};
@@ -310,7 +310,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_IsActorPardoned_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "Is this actor pardoned from being targeted?" },
 	};
@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_PardonActor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "Give pardon to a actor" },
 	};
@@ -411,7 +411,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_RemoveFromTargetableList_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "Removes this aggro target as a global aggro target" },
 	};
@@ -445,7 +445,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAISystem_UnpardonActor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "AI|AggroTargets" },
+		{ "Category", "FactoryGame|AI|Aggro" },
 		{ "ModuleRelativePath", "AI/FGAISystem.h" },
 		{ "ToolTip", "removes pardon from an actor" },
 	};
@@ -521,16 +521,16 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAISystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAISystem_AddToTargetableList, "AddToTargetableList" }, // 3402091757
+		{ &Z_Construct_UFunction_UFGAISystem_AddToTargetableList, "AddToTargetableList" }, // 1904479443
 		{ &Z_Construct_UFunction_UFGAISystem_AggroTargetDestroyed, "AggroTargetDestroyed" }, // 810957919
-		{ &Z_Construct_UFunction_UFGAISystem_ClearAllPardonedActors, "ClearAllPardonedActors" }, // 1473578384
+		{ &Z_Construct_UFunction_UFGAISystem_ClearAllPardonedActors, "ClearAllPardonedActors" }, // 1914566687
 		{ &Z_Construct_UFunction_UFGAISystem_CreatureDestroyed, "CreatureDestroyed" }, // 3369376958
-		{ &Z_Construct_UFunction_UFGAISystem_GetAggroTargetList, "GetAggroTargetList" }, // 4209121803
-		{ &Z_Construct_UFunction_UFGAISystem_IsActorPardoned, "IsActorPardoned" }, // 3339007708
-		{ &Z_Construct_UFunction_UFGAISystem_PardonActor, "PardonActor" }, // 1521252441
+		{ &Z_Construct_UFunction_UFGAISystem_GetAggroTargetList, "GetAggroTargetList" }, // 872783407
+		{ &Z_Construct_UFunction_UFGAISystem_IsActorPardoned, "IsActorPardoned" }, // 2280925865
+		{ &Z_Construct_UFunction_UFGAISystem_PardonActor, "PardonActor" }, // 1986917411
 		{ &Z_Construct_UFunction_UFGAISystem_PlayerDestroyed, "PlayerDestroyed" }, // 2696060502
-		{ &Z_Construct_UFunction_UFGAISystem_RemoveFromTargetableList, "RemoveFromTargetableList" }, // 1698490274
-		{ &Z_Construct_UFunction_UFGAISystem_UnpardonActor, "UnpardonActor" }, // 710093561
+		{ &Z_Construct_UFunction_UFGAISystem_RemoveFromTargetableList, "RemoveFromTargetableList" }, // 2397233783
+		{ &Z_Construct_UFunction_UFGAISystem_UnpardonActor, "UnpardonActor" }, // 317756834
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAISystem_Statics::Class_MetaDataParams[] = {
@@ -661,7 +661,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAISystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAISystem, 1006595962);
+	IMPLEMENT_CLASS(UFGAISystem, 443797376);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAISystem(Z_Construct_UClass_UFGAISystem, &UFGAISystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAISystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAISystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -16,7 +16,7 @@ class UFGItemDescriptor;
 #endif
 #define FACTORYGAME_FGBuildableGeneratorFuel_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_FuelInventory) \
 	{ \
@@ -70,7 +70,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_FuelInventory) \
 	{ \
@@ -124,7 +124,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableGeneratorFuel(); \
 	friend struct Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics; \
@@ -133,7 +133,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableGeneratorFuel)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableGeneratorFuel(); \
 	friend struct Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics; \
@@ -142,7 +142,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableGeneratorFuel)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableGeneratorFuel(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableGeneratorFuel) \
@@ -155,7 +155,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableGeneratorFuel(AFGBuildableGeneratorFuel&&); \
@@ -166,34 +166,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGeneratorFuel); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableGeneratorFuel)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mFuelInventoryHandler() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelInventoryHandler); } \
 	FORCEINLINE static uint32 __PPO__mFuelClasses_DEPRECATED() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelClasses_DEPRECATED); } \
 	FORCEINLINE static uint32 __PPO__mDefaultFuelClasses() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mDefaultFuelClasses); } \
 	FORCEINLINE static uint32 __PPO__mAvailableFuelClasses() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mAvailableFuelClasses); } \
 	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mFuelInventory); } \
 	FORCEINLINE static uint32 __PPO__mCurrentFuelAmount() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelAmount); } \
+	FORCEINLINE static uint32 __PPO__mHasFuleCached() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mHasFuleCached); } \
 	FORCEINLINE static uint32 __PPO__mCurrentFuelClass() { return STRUCT_OFFSET(AFGBuildableGeneratorFuel, mCurrentFuelClass); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_11_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_19_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_14_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorFuel_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

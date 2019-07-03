@@ -215,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentChild, 3055849453);
+	IMPLEMENT_CLASS(AFGEquipmentChild, 151836693);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEquipmentChild(Z_Construct_UClass_AFGEquipmentChild, &AFGEquipmentChild::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEquipmentChild"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEquipmentChild);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

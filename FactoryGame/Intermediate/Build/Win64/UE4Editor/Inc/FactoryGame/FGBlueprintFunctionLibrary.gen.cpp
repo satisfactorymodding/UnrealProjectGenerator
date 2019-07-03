@@ -51,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildSubCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -159,6 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "GetAvailableRecipesInCategory", &UFGBlueprintFunctionLibrary::execGetAvailableRecipesInCategory },
 			{ "GetAvailableRecipesInSubCategory", &UFGBlueprintFunctionLibrary::execGetAvailableRecipesInSubCategory },
 			{ "GetAvailableSubCategoriesForCategory", &UFGBlueprintFunctionLibrary::execGetAvailableSubCategoriesForCategory },
+			{ "GetComponentFlagSoftLanding", &UFGBlueprintFunctionLibrary::execGetComponentFlagSoftLanding },
 			{ "GetLanguage", &UFGBlueprintFunctionLibrary::execGetLanguage },
 			{ "GetOuterActor", &UFGBlueprintFunctionLibrary::execGetOuterActor },
 			{ "GetVersionString", &UFGBlueprintFunctionLibrary::execGetVersionString },
@@ -482,7 +484,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Please use AddPopupWithCloseDelegate instead" },
 		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
-		{ "ToolTip", "Adds a popup to the qu?" },
+		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "AddPopup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGBlueprintFunctionLibrary_eventAddPopup_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup_Statics::Function_MetaDataParams)) };
@@ -552,7 +554,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ "CPP_Default_PopupID", "PID_OK" },
 		{ "CPP_Default_popupInstigator", "None" },
 		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
-		{ "ToolTip", "Adds a popup to the qu?" },
+		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "AddPopupWithCloseDelegate", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGBlueprintFunctionLibrary_eventAddPopupWithCloseDelegate_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::Function_MetaDataParams)) };
@@ -1107,6 +1109,39 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventGetComponentFlagSoftLanding_Parms
+		{
+			FName ReturnValue;
+		};
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Name, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetComponentFlagSoftLanding_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Component Flags" },
+		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "GetComponentFlagSoftLanding", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGBlueprintFunctionLibrary_eventGetComponentFlagSoftLanding_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2129,8 +2164,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddFactoryObjectToSignificanceManager, "AddFactoryObjectToSignificanceManager" }, // 121130440
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGainSignificanceObjectToSignificanceManager, "AddGainSignificanceObjectToSignificanceManager" }, // 3764824984
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager, "AddGenericTickObjectToSignificanceManager" }, // 3308731783
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 1358420889
-		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 1424071554
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 3437588772
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 2358229126
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor, "CanBeOnConveyor" }, // 3027723489
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage, "ChangeLanguage" }, // 3098831753
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors, "Cheat_GetAllDescriptors" }, // 2941799195
@@ -2143,6 +2178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory, "GetAvailableRecipesInCategory" }, // 336905501
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory, "GetAvailableRecipesInSubCategory" }, // 1438280385
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory, "GetAvailableSubCategoriesForCategory" }, // 3475156534
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 2530059145
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage, "GetLanguage" }, // 277209262
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor, "GetOuterActor" }, // 3166041889
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetVersionString, "GetVersionString" }, // 4264182988
@@ -2196,7 +2232,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 539663403);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2474298496);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBlueprintFunctionLibrary(Z_Construct_UClass_UFGBlueprintFunctionLibrary, &UFGBlueprintFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBlueprintFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBlueprintFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

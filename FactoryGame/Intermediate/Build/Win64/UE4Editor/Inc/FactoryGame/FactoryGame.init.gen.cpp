@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_BuildableDismantledSignature__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnReplicationDetailActorCreated__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_BuildingStateChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature();
@@ -28,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnDismantleRefundsChanged__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature();
@@ -94,6 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_BuildableDismantledSignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnReplicationDetailActorCreated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_BuildingStateChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature,
@@ -101,6 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnDismantleRefundsChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedNew__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature,
@@ -155,8 +159,8 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/FactoryGame",
 				PKG_CompiledIn | 0x00000000,
-				0x0A1A1092,
-				0x4F0E5856,
+				0xBB9F303D,
+				0x12221BEE,
 				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)
 			};

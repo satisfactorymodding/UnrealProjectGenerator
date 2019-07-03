@@ -14,7 +14,7 @@ class UButton;
 #endif
 #define FACTORYGAME_FGManufacturingButton_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_9_DELEGATE \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_10_DELEGATE \
 struct _Script_FactoryGame_eventManufacturePressed_Parms \
 { \
 	float produceMultiplier; \
@@ -27,7 +27,7 @@ static inline void FManufacturePressed_DelegateWrapper(const FMulticastScriptDel
 }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnReleasedButton) \
 	{ \
@@ -55,7 +55,7 @@ static inline void FManufacturePressed_DelegateWrapper(const FMulticastScriptDel
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnReleasedButton) \
 	{ \
@@ -83,7 +83,7 @@ static inline void FManufacturePressed_DelegateWrapper(const FMulticastScriptDel
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGManufacturingButton(); \
 	friend struct Z_Construct_UClass_UFGManufacturingButton_Statics; \
@@ -92,7 +92,7 @@ public: \
 	DECLARE_SERIALIZER(UFGManufacturingButton)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGManufacturingButton(); \
 	friend struct Z_Construct_UClass_UFGManufacturingButton_Statics; \
@@ -101,7 +101,7 @@ public: \
 	DECLARE_SERIALIZER(UFGManufacturingButton)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGManufacturingButton(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGManufacturingButton) \
@@ -114,7 +114,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGManufacturingButton(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -127,31 +127,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGManufacturingButton); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGManufacturingButton)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMinTimeBetweenPress() { return STRUCT_OFFSET(UFGManufacturingButton, mMinTimeBetweenPress); } \
 	FORCEINLINE static uint32 __PPO__mHoldTimeMax() { return STRUCT_OFFSET(UFGManufacturingButton, mHoldTimeMax); } \
 	FORCEINLINE static uint32 __PPO__mHoldProduceSpeed() { return STRUCT_OFFSET(UFGManufacturingButton, mHoldProduceSpeed); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_14_PROLOG
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_15_PROLOG
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_17_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGManufacturingButton_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

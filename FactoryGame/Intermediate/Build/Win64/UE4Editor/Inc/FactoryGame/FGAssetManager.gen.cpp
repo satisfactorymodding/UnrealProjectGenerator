@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAssetManager, 1388188793);
+	IMPLEMENT_CLASS(UFGAssetManager, 3720883066);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAssetManager(Z_Construct_UClass_UFGAssetManager, &UFGAssetManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAssetManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAssetManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

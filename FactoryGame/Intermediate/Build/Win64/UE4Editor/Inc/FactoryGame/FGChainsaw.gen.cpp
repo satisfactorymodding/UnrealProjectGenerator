@@ -669,7 +669,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChainsaw, 3148767652);
+	IMPLEMENT_CLASS(AFGChainsaw, 1517381460);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGChainsaw(Z_Construct_UClass_AFGChainsaw, &AFGChainsaw::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGChainsaw"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGChainsaw);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

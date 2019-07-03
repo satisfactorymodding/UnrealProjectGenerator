@@ -13,12 +13,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGNetSerialization_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGNetSerialization_h_81_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGNetSerialization_h_83_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCustomFastArraySerializer_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGNetSerialization_h_10_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGNetSerialization_h_12_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 

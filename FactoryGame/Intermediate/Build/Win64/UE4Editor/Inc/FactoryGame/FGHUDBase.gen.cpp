@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUDBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUDBase, 1026877069);
+	IMPLEMENT_CLASS(AFGHUDBase, 3248829875);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHUDBase(Z_Construct_UClass_AFGHUDBase, &AFGHUDBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHUDBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHUDBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

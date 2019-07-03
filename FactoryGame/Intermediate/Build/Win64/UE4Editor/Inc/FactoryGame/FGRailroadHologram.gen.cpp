@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadHologram, 2635204024);
+	IMPLEMENT_CLASS(AFGRailroadHologram, 3612646876);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadHologram(Z_Construct_UClass_AFGRailroadHologram, &AFGRailroadHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -598,7 +598,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSpawner, 1861163769);
+	IMPLEMENT_CLASS(AFGCreatureSpawner, 3519499521);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreatureSpawner(Z_Construct_UClass_AFGCreatureSpawner, &AFGCreatureSpawner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreatureSpawner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreatureSpawner);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

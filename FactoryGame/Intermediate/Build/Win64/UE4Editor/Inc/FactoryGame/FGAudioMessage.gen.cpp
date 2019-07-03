@@ -477,7 +477,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAudioMessage, 1556652178);
+	IMPLEMENT_CLASS(UFGAudioMessage, 1018522708);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAudioMessage(Z_Construct_UClass_UFGAudioMessage, &UFGAudioMessage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAudioMessage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAudioMessage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

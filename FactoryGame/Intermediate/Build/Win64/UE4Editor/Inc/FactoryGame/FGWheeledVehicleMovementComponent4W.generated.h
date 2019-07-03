@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGWheeledVehicleMovementComponent4W_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetLargestLongitudinalSlip) \
 	{ \
@@ -40,7 +40,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetLargestLongitudinalSlip) \
 	{ \
@@ -67,7 +67,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGWheeledVehicleMovementComponent4W(); \
 	friend struct Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics; \
@@ -76,7 +76,7 @@ public: \
 	DECLARE_SERIALIZER(UFGWheeledVehicleMovementComponent4W)
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGWheeledVehicleMovementComponent4W(); \
 	friend struct Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics; \
@@ -85,7 +85,7 @@ public: \
 	DECLARE_SERIALIZER(UFGWheeledVehicleMovementComponent4W)
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGWheeledVehicleMovementComponent4W(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGWheeledVehicleMovementComponent4W) \
@@ -98,7 +98,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGWheeledVehicleMovementComponent4W(UFGWheeledVehicleMovementComponent4W&&); \
@@ -109,26 +109,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGWheeledVehicleMovementComponent4W); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGWheeledVehicleMovementComponent4W)
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_9_PROLOG
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_11_PROLOG
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_INCLASS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_INCLASS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_12_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent4W_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

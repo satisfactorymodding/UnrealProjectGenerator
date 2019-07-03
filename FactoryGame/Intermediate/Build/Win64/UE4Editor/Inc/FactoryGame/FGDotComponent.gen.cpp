@@ -273,10 +273,10 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDotComponent_Statics::ClassParams = {
 		&UFGDotComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
+		0x00A000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGDotComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGDotComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDotComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDotComponent_Statics::Class_MetaDataParams))
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDotComponent, 1000215480);
+	IMPLEMENT_CLASS(UFGDotComponent, 3926395634);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDotComponent(Z_Construct_UClass_UFGDotComponent, &UFGDotComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDotComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDotComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

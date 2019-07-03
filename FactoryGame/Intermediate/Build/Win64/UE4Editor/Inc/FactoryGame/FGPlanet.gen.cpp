@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlanet, 3817199727);
+	IMPLEMENT_CLASS(AFGPlanet, 1554878359);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlanet(Z_Construct_UClass_AFGPlanet, &AFGPlanet::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlanet"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlanet);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

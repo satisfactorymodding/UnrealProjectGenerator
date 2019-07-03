@@ -295,7 +295,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCircuitSubsystem, 1398242565);
+	IMPLEMENT_CLASS(AFGCircuitSubsystem, 1666441599);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCircuitSubsystem(Z_Construct_UClass_AFGCircuitSubsystem, &AFGCircuitSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCircuitSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCircuitSubsystem);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGCircuitSubsystem)

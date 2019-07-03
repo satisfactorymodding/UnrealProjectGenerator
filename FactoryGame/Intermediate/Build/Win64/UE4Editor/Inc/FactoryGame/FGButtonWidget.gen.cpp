@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGButtonWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGButtonWidget, 3492383479);
+	IMPLEMENT_CLASS(UFGButtonWidget, 2559635309);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGButtonWidget(Z_Construct_UClass_UFGButtonWidget, &UFGButtonWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGButtonWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGButtonWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

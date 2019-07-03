@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientVolume, 728419494);
+	IMPLEMENT_CLASS(AFGAmbientVolume, 226239402);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAmbientVolume(Z_Construct_UClass_AFGAmbientVolume, &AFGAmbientVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAmbientVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAmbientVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

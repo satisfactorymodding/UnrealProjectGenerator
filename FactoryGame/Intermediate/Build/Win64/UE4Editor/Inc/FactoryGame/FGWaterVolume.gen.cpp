@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWaterVolume, 1250626789);
+	IMPLEMENT_CLASS(AFGWaterVolume, 4225857760);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWaterVolume(Z_Construct_UClass_AFGWaterVolume, &AFGWaterVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWaterVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWaterVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

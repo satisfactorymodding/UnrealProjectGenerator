@@ -190,10 +190,10 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::ClassParams = {
 		&UFGInventoryComponentEquipment::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponentEquipment_Statics::Class_MetaDataParams))
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentEquipment, 2075548410);
+	IMPLEMENT_CLASS(UFGInventoryComponentEquipment, 1728750422);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentEquipment(Z_Construct_UClass_UFGInventoryComponentEquipment, &UFGInventoryComponentEquipment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentEquipment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentEquipment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

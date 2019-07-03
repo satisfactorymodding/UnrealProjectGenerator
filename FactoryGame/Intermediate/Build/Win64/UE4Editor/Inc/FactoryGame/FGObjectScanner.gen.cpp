@@ -685,7 +685,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScanner, 11278160);
+	IMPLEMENT_CLASS(AFGObjectScanner, 1876571414);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGObjectScanner(Z_Construct_UClass_AFGObjectScanner, &AFGObjectScanner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGObjectScanner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGObjectScanner);
 	static FName NAME_AFGObjectScannerAttachment_UpdateScannerVisuals = FName(TEXT("UpdateScannerVisuals"));
@@ -928,7 +928,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 2569159437);
+	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 4275993380);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGObjectScannerAttachment(Z_Construct_UClass_AFGObjectScannerAttachment, &AFGObjectScannerAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGObjectScannerAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGObjectScannerAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFluffActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFluffActor, 399217165);
+	IMPLEMENT_CLASS(AFGFluffActor, 2833499637);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFluffActor(Z_Construct_UClass_AFGFluffActor, &AFGFluffActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFluffActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFluffActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

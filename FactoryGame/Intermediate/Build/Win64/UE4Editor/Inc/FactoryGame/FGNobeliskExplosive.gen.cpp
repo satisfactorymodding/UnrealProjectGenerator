@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskExplosive, 620141646);
+	IMPLEMENT_CLASS(AFGNobeliskExplosive, 4160105146);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGNobeliskExplosive(Z_Construct_UClass_AFGNobeliskExplosive, &AFGNobeliskExplosive::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGNobeliskExplosive"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGNobeliskExplosive);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

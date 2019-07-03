@@ -2,3 +2,5 @@
 
 #include "FGSignificanceInterface.h"
 
+float IFGSignificanceInterface::GetSignificanceBias(){ return float(); }
+float IFGSignificanceInterface::GetSignificanceRange(){ return float(); }

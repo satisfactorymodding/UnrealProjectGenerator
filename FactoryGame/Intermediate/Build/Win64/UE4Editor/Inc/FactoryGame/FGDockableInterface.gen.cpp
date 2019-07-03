@@ -412,6 +412,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGDockableInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGDockableInterface_Statics::StaticCppClassTypeInfo = {
@@ -437,7 +438,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDockableInterface, 3781497877);
+	IMPLEMENT_CLASS(UFGDockableInterface, 2960773687);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDockableInterface(Z_Construct_UClass_UFGDockableInterface, &UFGDockableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDockableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDockableInterface);
 	static FName NAME_UFGDockableInterface_CanDock = FName(TEXT("CanDock"));

@@ -16,13 +16,13 @@ struct FResearchRecipeReward;
 #endif
 #define FACTORYGAME_FGHardDriveSettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__Schematic() { return STRUCT_OFFSET(FHardDriveSchematicDrop, Schematic); }
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetResearchRewardPackages) \
 	{ \
@@ -35,7 +35,7 @@ struct FResearchRecipeReward;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetResearchRewardPackages) \
 	{ \
@@ -48,7 +48,7 @@ struct FResearchRecipeReward;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGHardDriveSettings(); \
 	friend struct Z_Construct_UClass_UFGHardDriveSettings_Statics; \
@@ -57,7 +57,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHardDriveSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGHardDriveSettings(); \
 	friend struct Z_Construct_UClass_UFGHardDriveSettings_Statics; \
@@ -66,7 +66,7 @@ public: \
 	DECLARE_SERIALIZER(UFGHardDriveSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHardDriveSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHardDriveSettings) \
@@ -79,7 +79,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGHardDriveSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -92,31 +92,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGHardDriveSettings); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGHardDriveSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mUniqueItemCount() { return STRUCT_OFFSET(UFGHardDriveSettings, mUniqueItemCount); } \
 	FORCEINLINE static uint32 __PPO__mPotentialSchematicDrops() { return STRUCT_OFFSET(UFGHardDriveSettings, mPotentialSchematicDrops); } \
 	FORCEINLINE static uint32 __PPO__mFallbackReturnItem() { return STRUCT_OFFSET(UFGHardDriveSettings, mFallbackReturnItem); }
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_36_PROLOG
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_40_PROLOG
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_INCLASS \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_INCLASS \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_39_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

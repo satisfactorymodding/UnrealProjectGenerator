@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 634507607);
+	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 282044072);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAttachmentSplitterHologram(Z_Construct_UClass_AFGAttachmentSplitterHologram, &AFGAttachmentSplitterHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAttachmentSplitterHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAttachmentSplitterHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

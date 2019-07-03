@@ -15,7 +15,7 @@ enum class EFGColorGunTargetType : uint8;
 #endif
 #define FACTORYGAME_FGColorGun_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_RPC_WRAPPERS \
 	virtual bool Sever_SetSecondaryColor_Validate(FLinearColor ); \
 	virtual void Sever_SetSecondaryColor_Implementation(FLinearColor newColor); \
 	virtual bool Sever_SetPrimaryColor_Validate(FLinearColor ); \
@@ -205,7 +205,7 @@ enum class EFGColorGunTargetType : uint8;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Sever_SetSecondaryColor_Validate(FLinearColor ); \
 	virtual void Sever_SetSecondaryColor_Implementation(FLinearColor newColor); \
 	virtual bool Sever_SetPrimaryColor_Validate(FLinearColor ); \
@@ -395,7 +395,7 @@ enum class EFGColorGunTargetType : uint8;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_EVENT_PARMS \
 	struct FGColorGun_eventOnTargetStateChanged_Parms \
 	{ \
 		EFGColorGunTargetType targetType; \
@@ -424,8 +424,8 @@ enum class EFGColorGunTargetType : uint8;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGColorGun(); \
 	friend struct Z_Construct_UClass_AFGColorGun_Statics; \
@@ -434,7 +434,7 @@ public: \
 	DECLARE_SERIALIZER(AFGColorGun)
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGColorGun(); \
 	friend struct Z_Construct_UClass_AFGColorGun_Statics; \
@@ -443,7 +443,7 @@ public: \
 	DECLARE_SERIALIZER(AFGColorGun)
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGColorGun(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGColorGun) \
@@ -456,7 +456,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGColorGun(AFGColorGun&&); \
@@ -467,7 +467,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGColorGun); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGColorGun)
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPrimaryColor_DEPRECATED() { return STRUCT_OFFSET(AFGColorGun, mPrimaryColor_DEPRECATED); } \
 	FORCEINLINE static uint32 __PPO__mSecondaryColor_DEPRECATED() { return STRUCT_OFFSET(AFGColorGun, mSecondaryColor_DEPRECATED); } \
 	FORCEINLINE static uint32 __PPO__mRedundantTargetCrosshairColor() { return STRUCT_OFFSET(AFGColorGun, mRedundantTargetCrosshairColor); } \
@@ -481,30 +481,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGColorGun); \
 	FORCEINLINE static uint32 __PPO__mCurrentColorTarget() { return STRUCT_OFFSET(AFGColorGun, mCurrentColorTarget); }
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_20_PROLOG \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_22_PROLOG \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_INCLASS \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_INCLASS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGColorGun_h_23_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGColorGun_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGColorGun_h_23_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGColorGun_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

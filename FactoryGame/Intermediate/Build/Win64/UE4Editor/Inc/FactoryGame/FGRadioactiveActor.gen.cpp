@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactiveActor, 1916791266);
+	IMPLEMENT_CLASS(AFGRadioactiveActor, 3440885274);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRadioactiveActor(Z_Construct_UClass_AFGRadioactiveActor, &AFGRadioactiveActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRadioactiveActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRadioactiveActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

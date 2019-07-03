@@ -293,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGManta, 3249508902);
+	IMPLEMENT_CLASS(AFGManta, 2122827230);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGManta(Z_Construct_UClass_AFGManta, &AFGManta::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGManta"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGManta);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

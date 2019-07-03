@@ -55,10 +55,10 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::ClassParams = {
 		&UFGProductionIndicatorInstanceComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
+		0x00B010A4u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::Class_MetaDataParams))
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 3120399098);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 2752951606);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGProductionIndicatorInstanceComponent(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent, &UFGProductionIndicatorInstanceComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGProductionIndicatorInstanceComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGProductionIndicatorInstanceComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

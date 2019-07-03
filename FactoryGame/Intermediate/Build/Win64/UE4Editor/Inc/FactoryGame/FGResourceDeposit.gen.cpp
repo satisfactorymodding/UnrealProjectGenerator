@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceDeposit, 377364866);
+	IMPLEMENT_CLASS(AFGResourceDeposit, 626148919);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceDeposit(Z_Construct_UClass_AFGResourceDeposit, &AFGResourceDeposit::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceDeposit"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceDeposit);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

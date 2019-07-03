@@ -2,4 +2,4 @@
 
 #include "FGInventoryComponentTrash.h"
 
-void UFGInventoryComponentTrash::OnItemsAdded( int32 idx, int32 num ){ }
+void UFGInventoryComponentTrash::OnItemsAdded( int32 idx, int32 num){ }

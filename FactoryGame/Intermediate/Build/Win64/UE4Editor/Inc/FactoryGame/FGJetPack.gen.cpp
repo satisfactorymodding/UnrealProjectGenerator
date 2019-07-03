@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPack, 3034076522);
+	IMPLEMENT_CLASS(AFGJetPack, 688523817);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGJetPack(Z_Construct_UClass_AFGJetPack, &AFGJetPack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGJetPack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGJetPack);
 	static FName NAME_AFGJetPackAttachment_OnStartThrusting = FName(TEXT("OnStartThrusting"));
@@ -501,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPackAttachment, 3600689920);
+	IMPLEMENT_CLASS(AFGJetPackAttachment, 3793763418);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGJetPackAttachment(Z_Construct_UClass_AFGJetPackAttachment, &AFGJetPackAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGJetPackAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGJetPackAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

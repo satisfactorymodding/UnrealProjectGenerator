@@ -1,5 +1,5 @@
-F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FactoryGame.Build.cs
-F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\AkAudio.Build.cs
-F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AudiokineticTools\AudiokineticTools.Build.cs
-F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame.Target.cs
-F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGameEditor.Target.cs
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FactoryGame.Build.cs
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\AkAudio.Build.cs
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AudiokineticTools\AudiokineticTools.Build.cs
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame.Target.cs
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGameEditor.Target.cs

@@ -61,10 +61,10 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGConnectionComponent_Statics::ClassParams = {
 		&UFGConnectionComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A1u,
+		0x00B000A5u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_UFGConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGConnectionComponent_Statics::Class_MetaDataParams))
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConnectionComponent, 3705803161);
+	IMPLEMENT_CLASS(UFGConnectionComponent, 1075377935);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConnectionComponent(Z_Construct_UClass_UFGConnectionComponent, &UFGConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConnectionComponent);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGConnectionComponent)

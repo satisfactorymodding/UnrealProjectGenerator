@@ -766,7 +766,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDriveablePawn, 3874630435);
+	IMPLEMENT_CLASS(AFGDriveablePawn, 1521946407);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDriveablePawn(Z_Construct_UClass_AFGDriveablePawn, &AFGDriveablePawn::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDriveablePawn"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDriveablePawn);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

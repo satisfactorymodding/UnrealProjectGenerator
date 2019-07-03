@@ -11,13 +11,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FRailroadTrackPosition;
 enum class ERailroadVehicleCoupler : uint8;
 class AFGRailroadVehicle;
+class AFGTrain;
 class UFGRailroadVehicleMovementComponent;
 #ifdef FACTORYGAME_FGRailroadVehicle_generated_h
 #error "FGRailroadVehicle.generated.h already included, missing '#pragma once' in FGRailroadVehicle.h"
 #endif
 #define FACTORYGAME_FGRailroadVehicle_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetTrackGraphID) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetTrackGraphID(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetTrackPosition) \
 	{ \
@@ -61,11 +70,11 @@ class UFGRailroadVehicleMovementComponent;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetTrainID) \
+	DECLARE_FUNCTION(execGetTrain) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetTrainID(); \
+		*(AFGTrain**)Z_Param__Result=P_THIS->GetTrain(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -78,7 +87,15 @@ class UFGRailroadVehicleMovementComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetTrackGraphID) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetTrackGraphID(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetTrackPosition) \
 	{ \
@@ -122,11 +139,11 @@ class UFGRailroadVehicleMovementComponent;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetTrainID) \
+	DECLARE_FUNCTION(execGetTrain) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetTrainID(); \
+		*(AFGTrain**)Z_Param__Result=P_THIS->GetTrain(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -139,31 +156,31 @@ class UFGRailroadVehicleMovementComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGRailroadVehicle, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGRailroadVehicle(); \
 	friend struct Z_Construct_UClass_AFGRailroadVehicle_Statics; \
 public: \
 	DECLARE_CLASS(AFGRailroadVehicle, AFGVehicle, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGRailroadVehicle) \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGRailroadVehicle(); \
 	friend struct Z_Construct_UClass_AFGRailroadVehicle_Statics; \
 public: \
 	DECLARE_CLASS(AFGRailroadVehicle, AFGVehicle, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGRailroadVehicle) \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGRailroadVehicle(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRailroadVehicle) \
@@ -176,7 +193,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGRailroadVehicle(AFGRailroadVehicle&&); \
@@ -187,34 +204,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRailroadVehicle); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRailroadVehicle)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mTrain() { return STRUCT_OFFSET(AFGRailroadVehicle, mTrain); } \
 	FORCEINLINE static uint32 __PPO__mLength() { return STRUCT_OFFSET(AFGRailroadVehicle, mLength); } \
-	FORCEINLINE static uint32 __PPO__mTrainID() { return STRUCT_OFFSET(AFGRailroadVehicle, mTrainID); } \
-	FORCEINLINE static uint32 __PPO__mMultipleUnitMaster() { return STRUCT_OFFSET(AFGRailroadVehicle, mMultipleUnitMaster); } \
+	FORCEINLINE static uint32 __PPO__mDockedAtPlatform() { return STRUCT_OFFSET(AFGRailroadVehicle, mDockedAtPlatform); } \
 	FORCEINLINE static uint32 __PPO__mCoupledVehicles() { return STRUCT_OFFSET(AFGRailroadVehicle, mCoupledVehicles); } \
 	FORCEINLINE static uint32 __PPO__mIsOrientationReversed() { return STRUCT_OFFSET(AFGRailroadVehicle, mIsOrientationReversed); } \
 	FORCEINLINE static uint32 __PPO__mTrackPosition() { return STRUCT_OFFSET(AFGRailroadVehicle, mTrackPosition); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_23_PROLOG
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_PROLOG
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_INCLASS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_26_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

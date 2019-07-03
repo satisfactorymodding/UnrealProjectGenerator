@@ -2288,7 +2288,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResearchManager, 31173990);
+	IMPLEMENT_CLASS(AFGResearchManager, 836710684);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResearchManager(Z_Construct_UClass_AFGResearchManager, &AFGResearchManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResearchManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResearchManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -335,6 +335,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mHiddenConnections;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mHiddenConnections_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNbWiresConnected_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mNbWiresConnected;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mWires_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mWires;
@@ -378,28 +382,39 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData[] = {
+		{ "Category", "Connection" },
 		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The circuit this connection is connected to. INDEX_NONE if not connected.\n@note - This ID may change at any time when changes occurs in the circuitry. Do not save copies of it!" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID = { UE4CodeGen_Private::EPropertyClass::Int, "mCircuitID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mCircuitID), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID = { UE4CodeGen_Private::EPropertyClass::Int, "mCircuitID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001020021, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mCircuitID), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData[] = {
+		{ "Category", "FGCircuitConnectionComponent" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The non-wired (if this or the other is hidden) connections to this." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections = { UE4CodeGen_Private::EPropertyClass::Array, "mHiddenConnections", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008001000008, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mHiddenConnections), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mHiddenConnections", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections = { UE4CodeGen_Private::EPropertyClass::Array, "mHiddenConnections", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008001020009, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mHiddenConnections), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mHiddenConnections", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00000000000a0008, 1, nullptr, 0, Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mNbWiresConnected_MetaData[] = {
+		{ "Category", "Connection" },
 		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
 		{ "ToolTip", "The wired connections to this." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires = { UE4CodeGen_Private::EPropertyClass::Array, "mWires", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mWires), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mWires", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildableWire_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mNbWiresConnected = { UE4CodeGen_Private::EPropertyClass::Byte, "mNbWiresConnected", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001020021, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mNbWiresConnected), nullptr, METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mNbWiresConnected_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mNbWiresConnected_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData[] = {
+		{ "Category", "Connection" },
+		{ "ModuleRelativePath", "FGCircuitConnectionComponent.h" },
+		{ "ToolTip", "The wired connections to this." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires = { UE4CodeGen_Private::EPropertyClass::Array, "mWires", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001020021, 1, nullptr, STRUCT_OFFSET(UFGCircuitConnectionComponent, mWires), METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mWires", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000020000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildableWire_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mIsHiddenConnection_MetaData[] = {
 		{ "Category", "Connection" },
@@ -424,6 +439,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mCircuitID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mHiddenConnections_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mNbWiresConnected,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mWires_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::NewProp_mIsHiddenConnection,
@@ -435,10 +451,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::ClassParams = {
 		&UFGCircuitConnectionComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCircuitConnectionComponent_Statics::Class_MetaDataParams))
@@ -452,7 +468,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCircuitConnectionComponent, 3575766488);
+	IMPLEMENT_CLASS(UFGCircuitConnectionComponent, 854766223);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCircuitConnectionComponent(Z_Construct_UClass_UFGCircuitConnectionComponent, &UFGCircuitConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCircuitConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCircuitConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

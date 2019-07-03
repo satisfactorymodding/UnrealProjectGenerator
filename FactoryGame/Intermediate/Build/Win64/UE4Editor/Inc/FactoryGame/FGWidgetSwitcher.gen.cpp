@@ -305,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetSwitcher, 2747669897);
+	IMPLEMENT_CLASS(UFGWidgetSwitcher, 2533001755);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWidgetSwitcher(Z_Construct_UClass_UFGWidgetSwitcher, &UFGWidgetSwitcher::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWidgetSwitcher"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWidgetSwitcher);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

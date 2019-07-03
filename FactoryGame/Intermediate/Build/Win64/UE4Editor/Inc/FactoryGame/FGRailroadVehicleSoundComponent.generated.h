@@ -13,29 +13,29 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGRailroadVehicleSoundComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGRailroadVehicleSoundComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGRailroadVehicleSoundComponent, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGRailroadVehicleSoundComponent, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGRailroadVehicleSoundComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGRailroadVehicleSoundComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGRailroadVehicleSoundComponent, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGRailroadVehicleSoundComponent, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGRailroadVehicleSoundComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRailroadVehicleSoundComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadVehicleSoundComponent) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRailroadVehicleSoundComponent(UFGRailroadVehicleSoundComponent&&); \
@@ -59,7 +59,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleSoundComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGRailroadVehicleSoundComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mVehicleMovementComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mVehicleMovementComponent); } \
 	FORCEINLINE static uint32 __PPO__mLocomotiveMovementComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mLocomotiveMovementComponent); } \
 	FORCEINLINE static uint32 __PPO__mWheelsetsAkComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mWheelsetsAkComponent); } \
@@ -67,30 +67,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleSoundComponent); \
 	FORCEINLINE static uint32 __PPO__mAllVehicleCentersAkComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mAllVehicleCentersAkComponent); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_10_PROLOG \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_11_PROLOG \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_INCLASS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_13_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

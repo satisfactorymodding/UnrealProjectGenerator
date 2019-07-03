@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "The static mesh we want the ResourceNode to use when it has this class selected" },
 	};
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "A multiplier for this resource to set if it is fast or slow to pick up. 1.0 = normal" },
 	};
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Texture to show in the compass when this resource has been scanned and found." },
 	};
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Returns the decal this resource use (if any)" },
 	};
@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "If we are using a decal, then this returns how big that decal should be" },
 	};
@@ -278,7 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Returns the material this resource deposit use (if any)" },
 	};
@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "The static mesh we want the Resource Deposit to use when it has this class selected" },
 	};
@@ -354,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Gets particle for when node gets destroyed" },
 	};
@@ -392,7 +392,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Gets particle for factory mining" },
 	};
@@ -430,7 +430,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "The static mesh we want the ResourceNode to use when it has this class selected" },
 	};
@@ -468,7 +468,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Gets name used in audio event for mining manually" },
 	};
@@ -506,7 +506,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Resources" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Gets particle for manual mining" },
 	};
@@ -544,7 +544,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "If this is non-null, then we will use this material instead of the material specified in the mGroundMesh" },
 	};
@@ -582,7 +582,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Resource" },
+		{ "Category", "FactoryGame|Descriptor|Resource" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "The color the ping should have for this material" },
 	};
@@ -669,20 +669,20 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGResourceDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined, "CanBeHandMined" }, // 4230904624
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier, "GetCollectSpeedMultiplier" }, // 2080662989
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture, "GetCompasTexture" }, // 1925403745
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial, "GetDecalMaterial" }, // 1820821934
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize, "GetDecalSize" }, // 4178954724
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial, "GetDepositMaterial" }, // 1702699328
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh, "GetDepositMesh" }, // 3909863154
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle, "GetDestroyedParticle" }, // 3810157697
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle, "GetFactoryMiningParticle" }, // 3492141282
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh, "GetGroundMesh" }, // 1050088869
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName, "GetManualMiningAudioName" }, // 1640973326
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle, "GetManualMiningParticle" }, // 1655779841
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial, "GetMeshOverrideMaterial" }, // 3001708024
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor, "GetPingColor" }, // 2192138895
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined, "CanBeHandMined" }, // 2033232270
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier, "GetCollectSpeedMultiplier" }, // 1919068132
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture, "GetCompasTexture" }, // 635515220
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial, "GetDecalMaterial" }, // 1568386352
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize, "GetDecalSize" }, // 1430996169
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial, "GetDepositMaterial" }, // 3760244501
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh, "GetDepositMesh" }, // 2426889745
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle, "GetDestroyedParticle" }, // 3492087507
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle, "GetFactoryMiningParticle" }, // 1844641115
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh, "GetGroundMesh" }, // 2314956960
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName, "GetManualMiningAudioName" }, // 1178069993
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle, "GetManualMiningParticle" }, // 1950158497
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial, "GetMeshOverrideMaterial" }, // 562119711
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor, "GetPingColor" }, // 2537422822
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::Class_MetaDataParams[] = {
@@ -693,7 +693,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData[] = {
-		{ "Category", "Resources" },
+		{ "Category", "Item|FX" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "name of sound to play when mining by hand" },
 	};
@@ -701,7 +701,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName = { UE4CodeGen_Private::EPropertyClass::Name, "mManualMiningAudioName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mManualMiningAudioName), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData[] = {
-		{ "Category", "Resources" },
+		{ "Category", "Item|FX" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Particle to show when mining with machine" },
 	};
@@ -709,7 +709,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle = { UE4CodeGen_Private::EPropertyClass::Object, "mDestroyedParticle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mDestroyedParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData[] = {
-		{ "Category", "Resources" },
+		{ "Category", "Item|FX" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Particle to show when mining with machine" },
 	};
@@ -717,7 +717,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle = { UE4CodeGen_Private::EPropertyClass::Object, "mFactoryMiningParticle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mFactoryMiningParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle_MetaData[] = {
-		{ "Category", "Resources" },
+		{ "Category", "Item|FX" },
 		{ "ModuleRelativePath", "Resources/FGResourceDescriptor.h" },
 		{ "ToolTip", "Particle to show when mining by hand" },
 	};
@@ -836,7 +836,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptor, 2244961483);
+	IMPLEMENT_CLASS(UFGResourceDescriptor, 143492474);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceDescriptor(Z_Construct_UClass_UFGResourceDescriptor, &UFGResourceDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

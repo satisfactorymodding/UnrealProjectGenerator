@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTradingPostHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTradingPostHologram, 3742960549);
+	IMPLEMENT_CLASS(AFGTradingPostHologram, 2506068929);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGTradingPostHologram(Z_Construct_UClass_AFGTradingPostHologram, &AFGTradingPostHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGTradingPostHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGTradingPostHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

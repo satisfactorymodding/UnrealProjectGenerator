@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Explosive, 603096629);
+	IMPLEMENT_CLASS(AFGC4Explosive, 2631586253);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGC4Explosive(Z_Construct_UClass_AFGC4Explosive, &AFGC4Explosive::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGC4Explosive"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGC4Explosive);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

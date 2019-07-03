@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGDeveloperSettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGDeveloperSettings(); \
 	friend struct Z_Construct_UClass_UFGDeveloperSettings_Statics; \
@@ -26,7 +26,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGDeveloperSettings(); \
 	friend struct Z_Construct_UClass_UFGDeveloperSettings_Statics; \
@@ -37,7 +37,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGDeveloperSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDeveloperSettings) \
@@ -50,7 +50,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGDeveloperSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -63,26 +63,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGDeveloperSettings); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDeveloperSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_6_PROLOG
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_7_PROLOG
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_INCLASS \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_INCLASS \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_9_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGDeveloperSettings_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

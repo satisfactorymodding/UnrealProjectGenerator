@@ -785,7 +785,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCompassWidget, 899211053);
+	IMPLEMENT_CLASS(UFGCompassWidget, 2099362487);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCompassWidget(Z_Construct_UClass_UFGCompassWidget, &UFGCompassWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCompassWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCompassWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

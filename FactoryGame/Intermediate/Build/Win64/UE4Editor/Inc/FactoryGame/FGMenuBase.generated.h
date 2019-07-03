@@ -14,7 +14,7 @@ class UWidget;
 #endif
 #define FACTORYGAME_FGMenuBase_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnMenuExitDone) \
 	{ \
@@ -33,7 +33,7 @@ class UWidget;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnMenuExitDone) \
 	{ \
@@ -52,7 +52,7 @@ class UWidget;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_EVENT_PARMS \
 	struct FGMenuBase_eventOnMenuEnter_Parms \
 	{ \
 		UWidget* prevMenu; \
@@ -64,8 +64,8 @@ class UWidget;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGMenuBase(); \
 	friend struct Z_Construct_UClass_UFGMenuBase_Statics; \
@@ -74,7 +74,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMenuBase)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGMenuBase(); \
 	friend struct Z_Construct_UClass_UFGMenuBase_Statics; \
@@ -83,7 +83,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMenuBase)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMenuBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMenuBase) \
@@ -96,7 +96,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGMenuBase(UFGMenuBase&&); \
@@ -107,34 +107,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMenuBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMenuBase)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCachedOwner() { return STRUCT_OFFSET(UFGMenuBase, mCachedOwner); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_6_PROLOG \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_7_PROLOG \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_9_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGMenuBase_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

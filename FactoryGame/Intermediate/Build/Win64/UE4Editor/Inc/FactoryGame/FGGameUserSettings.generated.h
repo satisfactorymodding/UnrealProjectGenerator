@@ -15,12 +15,12 @@ class UFGGameUserSettings;
 #endif
 #define FACTORYGAME_FGGameUserSettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAudioVolumeMap_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_8_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_11_DELEGATE \
 struct _Script_FactoryGame_eventArachnophobiaModeChangedDelegate_Parms \
 { \
 	bool isArachnophobiaMode; \
@@ -33,7 +33,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execClearRequireRestart) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ClearRequireRestart(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetRequireRestart) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetRequireRestart(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetAnalyticsDisabled) \
 	{ \
@@ -273,7 +289,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execClearRequireRestart) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ClearRequireRestart(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetRequireRestart) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetRequireRestart(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetAnalyticsDisabled) \
 	{ \
@@ -513,7 +545,7 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGGameUserSettings(); \
 	friend struct Z_Construct_UClass_UFGGameUserSettings_Statics; \
@@ -522,7 +554,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameUserSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGGameUserSettings(); \
 	friend struct Z_Construct_UClass_UFGGameUserSettings_Statics; \
@@ -531,7 +563,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameUserSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGameUserSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameUserSettings) \
@@ -544,7 +576,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGameUserSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -557,39 +589,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameUserSettings); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameUserSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAudioVolumes() { return STRUCT_OFFSET(UFGGameUserSettings, mAudioVolumes); } \
-	FORCEINLINE static uint32 __PPO__mIsArachnophobiaMode() { return STRUCT_OFFSET(UFGGameUserSettings, mIsArachnophobiaMode); } \
-	FORCEINLINE static uint32 __PPO__mInvertY() { return STRUCT_OFFSET(UFGGameUserSettings, mInvertY); } \
 	FORCEINLINE static uint32 __PPO__mFOV() { return STRUCT_OFFSET(UFGGameUserSettings, mFOV); } \
 	FORCEINLINE static uint32 __PPO__mMotionBlurQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mMotionBlurQuality); } \
-	FORCEINLINE static uint32 __PPO__mHoldToSprint() { return STRUCT_OFFSET(UFGGameUserSettings, mHoldToSprint); } \
-	FORCEINLINE static uint32 __PPO__mAutoSortInventory() { return STRUCT_OFFSET(UFGGameUserSettings, mAutoSortInventory); } \
 	FORCEINLINE static uint32 __PPO__mCustomKeyMappings() { return STRUCT_OFFSET(UFGGameUserSettings, mCustomKeyMappings); } \
-	FORCEINLINE static uint32 __PPO__mHeadBobScale() { return STRUCT_OFFSET(UFGGameUserSettings, mHeadBobScale); } \
-	FORCEINLINE static uint32 __PPO__mAnalyticsDisabled() { return STRUCT_OFFSET(UFGGameUserSettings, mAnalyticsDisabled); } \
-	FORCEINLINE static uint32 __PPO__mNetworkQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mNetworkQuality); }
+	FORCEINLINE static uint32 __PPO__mNetworkQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mNetworkQuality); } \
+	FORCEINLINE static uint32 __PPO__mHeadBobScale() { return STRUCT_OFFSET(UFGGameUserSettings, mHeadBobScale); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_27_PROLOG
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_PROLOG
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_INCLASS \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_INCLASS \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

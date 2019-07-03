@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGuide, 1344964438);
+	IMPLEMENT_CLASS(AFGBuildGuide, 4009939118);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGuide(Z_Construct_UClass_AFGBuildGuide, &AFGBuildGuide::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGuide"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGuide);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

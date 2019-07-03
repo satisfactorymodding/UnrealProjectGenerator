@@ -142,6 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGChainsawableInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGChainsawableInterface_Statics::StaticCppClassTypeInfo = {
@@ -167,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGChainsawableInterface, 3535282428);
+	IMPLEMENT_CLASS(UFGChainsawableInterface, 2363501477);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGChainsawableInterface(Z_Construct_UClass_UFGChainsawableInterface, &UFGChainsawableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGChainsawableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGChainsawableInterface);
 	static FName NAME_UFGChainsawableInterface_GetMeshComponent = FName(TEXT("GetMeshComponent"));

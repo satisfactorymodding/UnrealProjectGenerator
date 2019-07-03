@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGameGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFactoryGameGameModeBase, 4151252403);
+	IMPLEMENT_CLASS(AFactoryGameGameModeBase, 3277894300);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFactoryGameGameModeBase(Z_Construct_UClass_AFactoryGameGameModeBase, &AFactoryGameGameModeBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFactoryGameGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFactoryGameGameModeBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

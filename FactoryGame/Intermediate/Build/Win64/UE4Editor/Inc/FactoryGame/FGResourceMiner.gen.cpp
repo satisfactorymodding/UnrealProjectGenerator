@@ -339,7 +339,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceMiner, 2024042671);
+	IMPLEMENT_CLASS(AFGResourceMiner, 3587267205);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceMiner(Z_Construct_UClass_AFGResourceMiner, &AFGResourceMiner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceMiner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceMiner);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

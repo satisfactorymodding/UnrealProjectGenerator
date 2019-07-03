@@ -364,6 +364,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGDismantleInterface_Statics::StaticCppClassTypeInfo = {
@@ -389,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleInterface, 3464393714);
+	IMPLEMENT_CLASS(UFGDismantleInterface, 1903124378);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleInterface(Z_Construct_UClass_UFGDismantleInterface, &UFGDismantleInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleInterface);
 	static FName NAME_UFGDismantleInterface_CanDismantle = FName(TEXT("CanDismantle"));

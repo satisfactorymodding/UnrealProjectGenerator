@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 1596477144);
+	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 359585468);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorAttachmentHologram(Z_Construct_UClass_AFGConveyorAttachmentHologram, &AFGConveyorAttachmentHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorAttachmentHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorAttachmentHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

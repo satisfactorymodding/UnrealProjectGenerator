@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 187704066);
+	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 1864819484);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFactoryBuilding(Z_Construct_UClass_AFGBuildableFactoryBuilding, &AFGBuildableFactoryBuilding::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFactoryBuilding"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFactoryBuilding);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

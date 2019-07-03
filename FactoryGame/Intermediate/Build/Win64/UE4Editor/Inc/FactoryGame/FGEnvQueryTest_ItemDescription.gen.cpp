@@ -49,6 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "AI/FGEnvQueryTest_ItemDescription.h" },
 		{ "ModuleRelativePath", "AI/FGEnvQueryTest_ItemDescription.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
@@ -85,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEnvQueryTest_ItemDescription, 1418350074);
+	IMPLEMENT_CLASS(UFGEnvQueryTest_ItemDescription, 1546045819);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEnvQueryTest_ItemDescription(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription, &UFGEnvQueryTest_ItemDescription::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEnvQueryTest_ItemDescription"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEnvQueryTest_ItemDescription);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

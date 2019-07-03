@@ -1610,6 +1610,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNormalDamageMultiplier_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mNormalDamageMultiplier;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mWeakspotBoneNames_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mWeakspotBoneNames;
@@ -1790,6 +1794,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mNormalDamageMultiplier_MetaData[] = {
+		{ "Category", "Damage" },
+		{ "ModuleRelativePath", "FGCharacterBase.h" },
+		{ "ToolTip", "Multiplier for this creature and normal damage taken" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mNormalDamageMultiplier = { UE4CodeGen_Private::EPropertyClass::Float, "mNormalDamageMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterBase, mNormalDamageMultiplier), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mNormalDamageMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mNormalDamageMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mWeakspotBoneNames_MetaData[] = {
 		{ "Category", "Damage" },
@@ -2055,6 +2067,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFeetNames = { UE4CodeGen_Private::EPropertyClass::Array, "mFeetNames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterBase, mFeetNames), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFeetNames_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFeetNames_MetaData)) };
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mFeetNames_Inner = { UE4CodeGen_Private::EPropertyClass::Name, "mFeetNames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCharacterBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mNormalDamageMultiplier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mWeakspotBoneNames,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mWeakspotBoneNames_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterBase_Statics::NewProp_mWeakspotMultiplier,
@@ -2119,7 +2132,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterBase, 761611528);
+	IMPLEMENT_CLASS(AFGCharacterBase, 1544613043);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCharacterBase(Z_Construct_UClass_AFGCharacterBase, &AFGCharacterBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCharacterBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCharacterBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

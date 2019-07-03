@@ -1465,7 +1465,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVehicle, 2859908188);
+	IMPLEMENT_CLASS(AFGVehicle, 2026152901);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGVehicle(Z_Construct_UClass_AFGVehicle, &AFGVehicle::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGVehicle"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGVehicle);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGVehicle)

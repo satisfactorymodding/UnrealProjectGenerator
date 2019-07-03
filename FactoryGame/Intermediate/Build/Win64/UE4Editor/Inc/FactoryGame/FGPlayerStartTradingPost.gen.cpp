@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerStartTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 2582951325);
+	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 1268319631);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerStartTradingPost(Z_Construct_UClass_AFGPlayerStartTradingPost, &AFGPlayerStartTradingPost::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerStartTradingPost"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerStartTradingPost);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

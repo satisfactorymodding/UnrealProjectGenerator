@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGEquipmentDescriptor_GetEquipmentClass_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Equipment" },
+		{ "Category", "FactoryGame|Descriptor|Equipment" },
 		{ "ModuleRelativePath", "Resources/FGEquipmentDescriptor.h" },
 		{ "ToolTip", "Get the equipment that is linked to this descriptor." },
 	};
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGEquipmentDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGEquipmentDescriptor_GetEquipmentClass, "GetEquipmentClass" }, // 2958362179
+		{ &Z_Construct_UFunction_UFGEquipmentDescriptor_GetEquipmentClass, "GetEquipmentClass" }, // 3684312933
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEquipmentDescriptor_Statics::Class_MetaDataParams[] = {
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 1578647600);
+	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 1907546129);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEquipmentDescriptor(Z_Construct_UClass_UFGEquipmentDescriptor, &UFGEquipmentDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEquipmentDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEquipmentDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliagePickup, 1754807392);
+	IMPLEMENT_CLASS(AFGFoliagePickup, 3618663320);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliagePickup(Z_Construct_UClass_AFGFoliagePickup, &AFGFoliagePickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliagePickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliagePickup);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

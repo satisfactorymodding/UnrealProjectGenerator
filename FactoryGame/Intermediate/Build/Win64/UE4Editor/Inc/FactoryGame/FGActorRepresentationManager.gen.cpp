@@ -739,7 +739,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGActorRepresentationManager, 68850787);
+	IMPLEMENT_CLASS(AFGActorRepresentationManager, 874383385);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGActorRepresentationManager(Z_Construct_UClass_AFGActorRepresentationManager, &AFGActorRepresentationManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGActorRepresentationManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGActorRepresentationManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

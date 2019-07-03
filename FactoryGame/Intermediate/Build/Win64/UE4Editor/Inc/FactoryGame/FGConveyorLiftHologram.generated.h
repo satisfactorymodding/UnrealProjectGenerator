@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGConveyorLiftHologram_generated_h
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ArrowDirection) \
 	{ \
@@ -32,7 +32,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ArrowDirection) \
 	{ \
@@ -51,7 +51,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGConveyorLiftHologram(); \
 	friend struct Z_Construct_UClass_AFGConveyorLiftHologram_Statics; \
@@ -60,7 +60,7 @@ public: \
 	DECLARE_SERIALIZER(AFGConveyorLiftHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_INCLASS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGConveyorLiftHologram(); \
 	friend struct Z_Construct_UClass_AFGConveyorLiftHologram_Statics; \
@@ -69,7 +69,7 @@ public: \
 	DECLARE_SERIALIZER(AFGConveyorLiftHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGConveyorLiftHologram(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGConveyorLiftHologram) \
@@ -82,7 +82,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGConveyorLiftHologram(AFGConveyorLiftHologram&&); \
@@ -93,7 +93,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGConveyorLiftHologram); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGConveyorLiftHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mConnectionComponents() { return STRUCT_OFFSET(AFGConveyorLiftHologram, mConnectionComponents); } \
 	FORCEINLINE static uint32 __PPO__mSnappedConnectionComponents() { return STRUCT_OFFSET(AFGConveyorLiftHologram, mSnappedConnectionComponents); } \
 	FORCEINLINE static uint32 __PPO__mUpgradedConveyorLift() { return STRUCT_OFFSET(AFGConveyorLiftHologram, mUpgradedConveyorLift); } \
@@ -106,25 +106,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGConveyorLiftHologram); \
 	FORCEINLINE static uint32 __PPO__mArrowComponent() { return STRUCT_OFFSET(AFGConveyorLiftHologram, mArrowComponent); }
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_11_PROLOG
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_15_PROLOG
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_INCLASS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_INCLASS \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_14_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Hologram_FGConveyorLiftHologram_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

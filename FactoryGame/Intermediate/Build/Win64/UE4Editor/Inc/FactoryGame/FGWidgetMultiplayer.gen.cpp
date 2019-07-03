@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 1065151730);
+	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 2009434472);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWidgetMultiplayer(Z_Construct_UClass_UFGWidgetMultiplayer, &UFGWidgetMultiplayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWidgetMultiplayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWidgetMultiplayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

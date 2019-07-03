@@ -43,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGItemDescriptorBiomass.h" },
 		{ "ModuleRelativePath", "Resources/FGItemDescriptorBiomass.h" },
+		{ "ToolTip", "Base descriptor for types of biomass." },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGItemDescriptorBiomass_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 3940192042);
+	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 2740268876);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptorBiomass(Z_Construct_UClass_UFGItemDescriptorBiomass, &UFGItemDescriptorBiomass::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptorBiomass"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptorBiomass);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

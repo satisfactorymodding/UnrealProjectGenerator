@@ -43,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGRecipeProducerInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGRecipeProducerInterface_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 3793139156);
+	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 406059334);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRecipeProducerInterface(Z_Construct_UClass_UFGRecipeProducerInterface, &UFGRecipeProducerInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRecipeProducerInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRecipeProducerInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

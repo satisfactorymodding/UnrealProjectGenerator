@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 class UFGItemDescriptor;
 class UFGInventoryComponent;
 class UFGRecipe;
@@ -19,7 +20,7 @@ class UFGFactoryConnectionComponent;
 #endif
 #define FACTORYGAME_FGBuildableFactory_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_29_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_37_DELEGATE \
 struct _Script_FactoryGame_eventBuildingStateChanged_Parms \
 { \
 	bool state; \
@@ -32,7 +33,20 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_18_DELEGATE \
+struct _Script_FactoryGame_eventOnReplicationDetailActorCreated_Parms \
+{ \
+	AActor* replicationDetailActorOwner; \
+}; \
+static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulticastScriptDelegate& OnReplicationDetailActorCreated, AActor* replicationDetailActorOwner) \
+{ \
+	_Script_FactoryGame_eventOnReplicationDetailActorCreated_Parms Parms; \
+	Parms.replicationDetailActorOwner=replicationDetailActorOwner; \
+	OnReplicationDetailActorCreated.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
 	virtual void Factory_CollectInput_Implementation(); \
 	virtual bool CanProduce_Implementation() const; \
  \
@@ -51,6 +65,14 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_IsProducing(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnRep_ReplicationDetailActor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_ReplicationDetailActor(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -292,7 +314,7 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Factory_CollectInput_Implementation(); \
 	virtual bool CanProduce_Implementation() const; \
  \
@@ -311,6 +333,14 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_IsProducing(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnRep_ReplicationDetailActor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_ReplicationDetailActor(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -552,7 +582,7 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_EVENT_PARMS \
 	struct FGBuildableFactory_eventCanProduce_Parms \
 	{ \
 		bool ReturnValue; \
@@ -581,8 +611,8 @@ static inline void FBuildingStateChanged_DelegateWrapper(const FMulticastScriptD
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableFactory(); \
 	friend struct Z_Construct_UClass_AFGBuildableFactory_Statics; \
@@ -592,7 +622,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableFactory*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableFactory(); \
 	friend struct Z_Construct_UClass_AFGBuildableFactory_Statics; \
@@ -602,7 +632,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableFactory*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableFactory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableFactory) \
@@ -615,7 +645,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableFactory(AFGBuildableFactory&&); \
@@ -626,7 +656,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableFactory)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPowerInfo() { return STRUCT_OFFSET(AFGBuildableFactory, mPowerInfo); } \
 	FORCEINLINE static uint32 __PPO__mOnHasPowerChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasPowerChanged); } \
 	FORCEINLINE static uint32 __PPO__mOnHasProductionChanged() { return STRUCT_OFFSET(AFGBuildableFactory, mOnHasProductionChanged); } \
@@ -635,43 +665,45 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	FORCEINLINE static uint32 __PPO__mTimeSinceStartStopProducing() { return STRUCT_OFFSET(AFGBuildableFactory, mTimeSinceStartStopProducing); } \
 	FORCEINLINE static uint32 __PPO__mNumCyclesForProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mNumCyclesForProductivity); } \
 	FORCEINLINE static uint32 __PPO__mCanChangePotential() { return STRUCT_OFFSET(AFGBuildableFactory, mCanChangePotential); } \
-	FORCEINLINE static uint32 __PPO__mInventoryPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mInventoryPotential); } \
 	FORCEINLINE static uint32 __PPO__mCurrentPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentPotential); } \
 	FORCEINLINE static uint32 __PPO__mPendingPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mPendingPotential); } \
 	FORCEINLINE static uint32 __PPO__mMinPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mMinPotential); } \
 	FORCEINLINE static uint32 __PPO__mMaxPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mMaxPotential); } \
 	FORCEINLINE static uint32 __PPO__mMaxPotentialIncreasePerCrystal() { return STRUCT_OFFSET(AFGBuildableFactory, mMaxPotentialIncreasePerCrystal); } \
 	FORCEINLINE static uint32 __PPO__mIsProductionPaused() { return STRUCT_OFFSET(AFGBuildableFactory, mIsProductionPaused); } \
+	FORCEINLINE static uint32 __PPO__mReplicationDetailActor() { return STRUCT_OFFSET(AFGBuildableFactory, mReplicationDetailActor); } \
+	FORCEINLINE static uint32 __PPO__OnReplicationDetailActorCreatedEvent() { return STRUCT_OFFSET(AFGBuildableFactory, OnReplicationDetailActorCreatedEvent); } \
+	FORCEINLINE static uint32 __PPO__mInventoryPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mInventoryPotential); } \
 	FORCEINLINE static uint32 __PPO__mCurrentProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentProductivity); } \
 	FORCEINLINE static uint32 __PPO__mSignificanceBias() { return STRUCT_OFFSET(AFGBuildableFactory, mSignificanceBias); } \
 	FORCEINLINE static uint32 __PPO__mEffectUpdateInterval() { return STRUCT_OFFSET(AFGBuildableFactory, mEffectUpdateInterval); } \
 	FORCEINLINE static uint32 __PPO__mAddToSignificanceManager() { return STRUCT_OFFSET(AFGBuildableFactory, mAddToSignificanceManager); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_35_PROLOG \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_43_PROLOG \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_38_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGamePhaseManager() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EGamePhase(EGamePhase_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EGamePhase"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EGamePhase_CRC() { return 1903074789U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EGamePhase_CRC() { return 2294990583U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EGamePhase()
 	{
 #if WITH_HOT_RELOAD
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGamePhaseManager() {}
 				{ "EGP_MidGame", (int64)EGP_MidGame },
 				{ "EGP_LateGame", (int64)EGP_LateGame },
 				{ "EGP_EndGame", (int64)EGP_EndGame },
-				{ "EGP_LaunchTowTruck", (int64)EGP_LaunchTowTruck },
+				{ "EGP_FoodCourt", (int64)EGP_FoodCourt },
 				{ "EGP_Victory", (int64)EGP_Victory },
 			};
 #if WITH_METADATA
@@ -104,8 +104,8 @@ void EmptyLinkFunctionForGeneratedCodeFGGamePhaseManager() {}
 				{ "BlueprintType", "true" },
 				{ "EGP_EarlyGame.DisplayName", "Establishing Phase" },
 				{ "EGP_EndGame.DisplayName", "Retention Phase" },
+				{ "EGP_FoodCourt.DisplayName", "Food Court" },
 				{ "EGP_LateGame.DisplayName", "Expansion Phase" },
-				{ "EGP_LaunchTowTruck.DisplayName", "Launch Tow Truck" },
 				{ "EGP_MidGame.DisplayName", "Development Phase" },
 				{ "EGP_Victory.DisplayName", "Victory!" },
 				{ "ModuleRelativePath", "FGGamePhaseManager.h" },
@@ -859,7 +859,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGamePhaseManager, 1320525923);
+	IMPLEMENT_CLASS(AFGGamePhaseManager, 2125544473);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGamePhaseManager(Z_Construct_UClass_AFGGamePhaseManager, &AFGGamePhaseManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGamePhaseManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGamePhaseManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

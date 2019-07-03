@@ -423,7 +423,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemoval, 3192079500);
+	IMPLEMENT_CLASS(AFGFoliageRemoval, 23794548);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliageRemoval(Z_Construct_UClass_AFGFoliageRemoval, &AFGFoliageRemoval::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliageRemoval"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliageRemoval);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

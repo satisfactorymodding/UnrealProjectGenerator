@@ -15,12 +15,12 @@ class UTexture2D;
 #endif
 #define FACTORYGAME_FGMapAreaTexture_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FColorMapAreaPair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnNewMapAreaVisisted) \
 	{ \
@@ -40,7 +40,7 @@ class UTexture2D;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnNewMapAreaVisisted) \
 	{ \
@@ -60,7 +60,7 @@ class UTexture2D;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGMapAreaTexture(); \
 	friend struct Z_Construct_UClass_UFGMapAreaTexture_Statics; \
@@ -69,7 +69,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMapAreaTexture)
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGMapAreaTexture(); \
 	friend struct Z_Construct_UClass_UFGMapAreaTexture_Statics; \
@@ -78,7 +78,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMapAreaTexture)
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMapAreaTexture(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMapAreaTexture) \
@@ -91,7 +91,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMapAreaTexture(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -104,7 +104,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMapAreaTexture); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMapAreaTexture)
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFogOfWarTexture() { return STRUCT_OFFSET(UFGMapAreaTexture, mFogOfWarTexture); } \
 	FORCEINLINE static uint32 __PPO__mAreaData() { return STRUCT_OFFSET(UFGMapAreaTexture, mAreaData); } \
 	FORCEINLINE static uint32 __PPO__mColorPalette() { return STRUCT_OFFSET(UFGMapAreaTexture, mColorPalette); } \
@@ -114,25 +114,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMapAreaTexture); \
 	FORCEINLINE static uint32 __PPO__mCachedGameState() { return STRUCT_OFFSET(UFGMapAreaTexture, mCachedGameState); }
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_46_PROLOG
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_PROLOG
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_INCLASS \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_49_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGMapAreaTexture_h_52_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

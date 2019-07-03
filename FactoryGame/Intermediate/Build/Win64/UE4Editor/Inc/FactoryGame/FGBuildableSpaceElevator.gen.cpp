@@ -387,7 +387,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpaceElevator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSpaceElevator, 298022090);
+	IMPLEMENT_CLASS(AFGBuildableSpaceElevator, 1327743211);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSpaceElevator(Z_Construct_UClass_AFGBuildableSpaceElevator, &AFGBuildableSpaceElevator::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSpaceElevator"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSpaceElevator);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

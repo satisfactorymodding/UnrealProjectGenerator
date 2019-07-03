@@ -629,7 +629,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChatManager, 3763399283);
+	IMPLEMENT_CLASS(AFGChatManager, 3495196169);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGChatManager(Z_Construct_UClass_AFGChatManager, &AFGChatManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGChatManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGChatManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

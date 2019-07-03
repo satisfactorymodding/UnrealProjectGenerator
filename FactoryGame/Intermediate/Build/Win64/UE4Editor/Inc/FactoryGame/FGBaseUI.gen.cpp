@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use AddPopupWithCloseDelegate instead" },
 		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
-		{ "ToolTip", "Adds a popup to the qu?" },
+		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "AddPopup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGBaseUI_eventAddPopup_Parms), Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams)) };
@@ -314,7 +314,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBaseUI_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 122140673
+		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 3908759871
 		{ &Z_Construct_UFunction_UFGBaseUI_ClosePopup, "ClosePopup" }, // 3392204301
 		{ &Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget, "CreatePopupWidget" }, // 607760847
 		{ &Z_Construct_UFunction_UFGBaseUI_GetPopup, "GetPopup" }, // 1505797349
@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBaseUI, 3984112978);
+	IMPLEMENT_CLASS(UFGBaseUI, 234251771);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBaseUI(Z_Construct_UClass_UFGBaseUI, &UFGBaseUI::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBaseUI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBaseUI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

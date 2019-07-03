@@ -445,7 +445,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidget, 2632950415);
+	IMPLEMENT_CLASS(UFGPopupWidget, 406303662);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPopupWidget(Z_Construct_UClass_UFGPopupWidget, &UFGPopupWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPopupWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPopupWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

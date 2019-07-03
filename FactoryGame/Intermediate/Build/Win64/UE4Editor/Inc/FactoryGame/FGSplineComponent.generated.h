@@ -15,7 +15,7 @@ class UMaterialInterface;
 #endif
 #define FACTORYGAME_FGSplineComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDrawDebugSpline) \
 	{ \
@@ -46,7 +46,7 @@ class UMaterialInterface;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDrawDebugSpline) \
 	{ \
@@ -77,25 +77,25 @@ class UMaterialInterface;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGSplineComponent(); \
 	friend struct Z_Construct_UClass_UFGSplineComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGSplineComponent, USplineComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGSplineComponent, USplineComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGSplineComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGSplineComponent(); \
 	friend struct Z_Construct_UClass_UFGSplineComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGSplineComponent, USplineComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGSplineComponent, USplineComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGSplineComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSplineComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSplineComponent) \
@@ -108,7 +108,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGSplineComponent(UFGSplineComponent&&); \
@@ -119,7 +119,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSplineComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGSplineComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mOverrideMaterial() { return STRUCT_OFFSET(UFGSplineComponent, mOverrideMaterial); } \
 	FORCEINLINE static uint32 __PPO__mUseInstancing() { return STRUCT_OFFSET(UFGSplineComponent, mUseInstancing); } \
 	FORCEINLINE static uint32 __PPO__mSplineMeshComponents() { return STRUCT_OFFSET(UFGSplineComponent, mSplineMeshComponents); } \
@@ -127,25 +127,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSplineComponent); \
 	FORCEINLINE static uint32 __PPO__mSplineCollisionComponents() { return STRUCT_OFFSET(UFGSplineComponent, mSplineCollisionComponents); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_15_PROLOG
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_19_PROLOG
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_INCLASS \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_INCLASS \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSplineComponent_h_18_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSplineComponent_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

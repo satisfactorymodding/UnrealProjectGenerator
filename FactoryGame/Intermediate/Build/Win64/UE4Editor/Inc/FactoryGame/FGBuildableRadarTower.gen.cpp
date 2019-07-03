@@ -435,7 +435,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRadarTower, 977552900);
+	IMPLEMENT_CLASS(AFGBuildableRadarTower, 4098922409);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRadarTower(Z_Construct_UClass_AFGBuildableRadarTower, &AFGBuildableRadarTower::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRadarTower"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRadarTower);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

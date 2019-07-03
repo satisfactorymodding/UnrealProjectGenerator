@@ -17,7 +17,7 @@ struct FInventoryStack;
 #endif
 #define FACTORYGAME_FGDismantleInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_RPC_WRAPPERS \
 	virtual void StopIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual void StartIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual void Dismantle_Implementation() {}; \
@@ -98,7 +98,7 @@ struct FInventoryStack;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void StopIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual void StartIsLookedAtForDismantle_Implementation(AFGCharacterPlayer* byCharacter) {}; \
 	virtual void Dismantle_Implementation() {}; \
@@ -179,7 +179,7 @@ struct FInventoryStack;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_EVENT_PARMS \
 	struct FGDismantleInterface_eventCanDismantle_Parms \
 	{ \
 		bool ReturnValue; \
@@ -220,8 +220,8 @@ struct FInventoryStack;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGDismantleInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDismantleInterface) \
@@ -234,9 +234,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGDismantleInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGDismantleInterface(UFGDismantleInterface&&); \
@@ -247,7 +245,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGDismantleInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDismantleInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGDismantleInterface(); \
 	friend struct Z_Construct_UClass_UFGDismantleInterface_Statics; \
@@ -256,22 +254,22 @@ public: \
 	DECLARE_SERIALIZER(UFGDismantleInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGDismantleInterface() {} \
 public: \
@@ -288,7 +286,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGDismantleInterface() {} \
 public: \
@@ -305,26 +303,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_11_PROLOG \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_PROLOG \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_22_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_22_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGDismantleInterface_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDismantleInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

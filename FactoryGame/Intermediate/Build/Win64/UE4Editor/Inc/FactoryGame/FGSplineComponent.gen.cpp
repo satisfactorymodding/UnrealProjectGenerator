@@ -359,10 +359,10 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSplineComponent_Statics::ClassParams = {
 		&UFGSplineComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::Class_MetaDataParams))
@@ -376,7 +376,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSplineComponent, 1610781236);
+	IMPLEMENT_CLASS(UFGSplineComponent, 159066870);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSplineComponent(Z_Construct_UClass_UFGSplineComponent, &UFGSplineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSplineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSplineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

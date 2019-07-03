@@ -837,7 +837,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebris, 3864816670);
+	IMPLEMENT_CLASS(AFGCrashSiteDebris, 1500789734);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrashSiteDebris(Z_Construct_UClass_AFGCrashSiteDebris, &AFGCrashSiteDebris::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrashSiteDebris"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrashSiteDebris);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

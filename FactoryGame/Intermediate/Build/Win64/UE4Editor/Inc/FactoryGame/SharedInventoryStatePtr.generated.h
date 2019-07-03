@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_SharedInventoryStatePtr_generated_h
 
-#define FactoryGame_Source_FactoryGame_SharedInventoryStatePtr_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_SharedInventoryStatePtr_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__ActorPtr() { return STRUCT_OFFSET(FSharedInventoryStatePtr, ActorPtr); }

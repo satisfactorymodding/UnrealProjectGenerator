@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpeedSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSpeedSign, 644915559);
+	IMPLEMENT_CLASS(AFGBuildableSpeedSign, 937277424);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSpeedSign(Z_Construct_UClass_AFGBuildableSpeedSign, &AFGBuildableSpeedSign::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSpeedSign"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSpeedSign);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -16,7 +16,7 @@ class UFGRecipe;
 #endif
 #define FACTORYGAME_FGWorkBench_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetProduceClickSpeed) \
 	{ \
@@ -165,7 +165,7 @@ class UFGRecipe;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetProduceClickSpeed) \
 	{ \
@@ -314,29 +314,29 @@ class UFGRecipe;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGWorkBench(); \
 	friend struct Z_Construct_UClass_UFGWorkBench_Statics; \
 public: \
-	DECLARE_CLASS(UFGWorkBench, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGWorkBench, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGWorkBench) \
 	virtual UObject* _getUObject() const override { return const_cast<UFGWorkBench*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGWorkBench(); \
 	friend struct Z_Construct_UClass_UFGWorkBench_Statics; \
 public: \
-	DECLARE_CLASS(UFGWorkBench, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGWorkBench, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGWorkBench) \
 	virtual UObject* _getUObject() const override { return const_cast<UFGWorkBench*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGWorkBench(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGWorkBench) \
@@ -349,7 +349,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGWorkBench(UFGWorkBench&&); \
@@ -360,7 +360,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGWorkBench); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGWorkBench)
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPlayerWorkingAtBench() { return STRUCT_OFFSET(UFGWorkBench, mPlayerWorkingAtBench); } \
 	FORCEINLINE static uint32 __PPO__mRecipeRate() { return STRUCT_OFFSET(UFGWorkBench, mRecipeRate); } \
 	FORCEINLINE static uint32 __PPO__mIsProducing() { return STRUCT_OFFSET(UFGWorkBench, mIsProducing); } \
@@ -369,30 +369,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGWorkBench); \
 	FORCEINLINE static uint32 __PPO__mHoldToProduce() { return STRUCT_OFFSET(UFGWorkBench, mHoldToProduce); }
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_PROLOG \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGWorkBench_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWorkBench_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWorkBench_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWorkBench_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

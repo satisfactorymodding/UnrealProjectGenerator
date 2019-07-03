@@ -53,10 +53,10 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRoadConnectionComponent_Statics::ClassParams = {
 		&UFGRoadConnectionComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRoadConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRoadConnectionComponent_Statics::Class_MetaDataParams))
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 3469254680);
+	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 2688148210);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRoadConnectionComponent(Z_Construct_UClass_UFGRoadConnectionComponent, &UFGRoadConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRoadConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRoadConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

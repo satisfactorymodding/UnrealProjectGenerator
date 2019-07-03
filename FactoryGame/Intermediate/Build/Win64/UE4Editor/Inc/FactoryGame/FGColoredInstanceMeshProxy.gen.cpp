@@ -92,10 +92,10 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::ClassParams = {
 		&UFGColoredInstanceMeshProxy::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
+		0x00B010A4u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::Class_MetaDataParams))
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 392497944);
+	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 4080311401);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColoredInstanceMeshProxy(Z_Construct_UClass_UFGColoredInstanceMeshProxy, &UFGColoredInstanceMeshProxy::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColoredInstanceMeshProxy"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColoredInstanceMeshProxy);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

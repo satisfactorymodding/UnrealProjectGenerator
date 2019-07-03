@@ -742,10 +742,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGOutlineComponent_Statics::ClassParams = {
 		&UFGOutlineComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGOutlineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGOutlineComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGOutlineComponent_Statics::Class_MetaDataParams))
@@ -759,7 +759,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOutlineComponent, 3434897435);
+	IMPLEMENT_CLASS(UFGOutlineComponent, 4192816566);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGOutlineComponent(Z_Construct_UClass_UFGOutlineComponent, &UFGOutlineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGOutlineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGOutlineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

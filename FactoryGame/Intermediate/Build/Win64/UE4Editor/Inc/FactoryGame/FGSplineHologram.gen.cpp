@@ -64,22 +64,6 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxIncline_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxIncline;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinBendRadius_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinBendRadius;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinLength_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinLength;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxLength_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxLength;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSplineData_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mSplineData;
@@ -108,38 +92,6 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxIncline_MetaData[] = {
-		{ "Category", "Spline" },
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
-		{ "ToolTip", "What is the maximum incline of the spline (degrees)." },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxIncline = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxIncline", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mMaxIncline), METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxIncline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxIncline_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinBendRadius_MetaData[] = {
-		{ "Category", "Spline" },
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
-		{ "ToolTip", "What is the minimum radius of an arc on this spline." },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinBendRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mMinBendRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mMinBendRadius), METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinBendRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinBendRadius_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinLength_MetaData[] = {
-		{ "Category", "Spline" },
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
-		{ "ToolTip", "What is the minimum length of the spline." },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinLength = { UE4CodeGen_Private::EPropertyClass::Float, "mMinLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mMinLength), METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinLength_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxLength_MetaData[] = {
-		{ "Category", "Spline" },
-		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
-		{ "ToolTip", "What is the maximum length of the spline." },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxLength = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mMaxLength), METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxLength_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
 		{ "ToolTip", "This is the data needed to create the spline component (local space)." },
@@ -149,17 +101,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData[] = {
+		{ "Category", "Spline" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Hologram/FGSplineHologram.h" },
 		{ "ToolTip", "The spline component we're placing." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mSplineComponent), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mSplineComponent), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGSplineHologram_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxIncline,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinBendRadius,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMinLength,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mMaxLength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent,
@@ -187,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplineHologram, 1055317915);
+	IMPLEMENT_CLASS(AFGSplineHologram, 2281275347);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSplineHologram(Z_Construct_UClass_AFGSplineHologram, &AFGSplineHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSplineHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSplineHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -16,7 +16,7 @@ class UDamageType;
 #endif
 #define FACTORYGAME_FGAttack_generated_h
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetAttackMontage) \
 	{ \
@@ -82,7 +82,7 @@ class UDamageType;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetAttackMontage) \
 	{ \
@@ -148,7 +148,7 @@ class UDamageType;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGAttack(); \
 	friend struct Z_Construct_UClass_UFGAttack_Statics; \
@@ -157,7 +157,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAttack)
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_INCLASS \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGAttack(); \
 	friend struct Z_Construct_UClass_UFGAttack_Statics; \
@@ -166,7 +166,7 @@ public: \
 	DECLARE_SERIALIZER(UFGAttack)
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGAttack(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAttack) \
@@ -179,7 +179,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGAttack(UFGAttack&&); \
@@ -190,7 +190,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGAttack); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGAttack)
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAttackMontage() { return STRUCT_OFFSET(UFGAttack, mAttackMontage); } \
 	FORCEINLINE static uint32 __PPO__mStopsMovement() { return STRUCT_OFFSET(UFGAttack, mStopsMovement); } \
 	FORCEINLINE static uint32 __PPO__mAttackRange() { return STRUCT_OFFSET(UFGAttack, mAttackRange); } \
@@ -200,25 +200,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGAttack); \
 	FORCEINLINE static uint32 __PPO__mAttackAngle() { return STRUCT_OFFSET(UFGAttack, mAttackAngle); }
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_8_PROLOG
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_9_PROLOG
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_INCLASS \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_INCLASS \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_AI_FGAttack_h_11_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_AI_FGAttack_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

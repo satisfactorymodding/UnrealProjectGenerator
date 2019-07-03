@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractableMarker, 1145550038);
+	IMPLEMENT_CLASS(AFGInteractableMarker, 4218413870);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGInteractableMarker(Z_Construct_UClass_AFGInteractableMarker, &AFGInteractableMarker::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGInteractableMarker"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGInteractableMarker);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

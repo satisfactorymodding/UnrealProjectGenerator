@@ -24,8 +24,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactivitySubsystem() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorDestroyed();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRadioactivitySubsystem_OnActorSpawned();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDamageType_NoRegister();
 // End Cross Module References
 class UScriptStruct* FRadioactiveSource::StaticStruct()
 {
@@ -244,22 +242,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		static const UE4CodeGen_Private::FMapPropertyParams NewProp_mSources;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mSources_Key_KeyProp;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSources_ValueProp;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadiationDamageType_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mRadiationDamageType;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinDistanceToSource_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinDistanceToSource;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadiationFalloffByDistance_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mRadiationFalloffByDistance;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinRadiationThreshold_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinRadiationThreshold;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -301,60 +283,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources = { UE4CodeGen_Private::EPropertyClass::Map, "mSources", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000000, 1, nullptr, STRUCT_OFFSET(AFGRadioactivitySubsystem, mSources), METADATA_PARAMS(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_Key_KeyProp = { UE4CodeGen_Private::EPropertyClass::Object, "mSources_Key", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000008000000000, 1, nullptr, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_ValueProp = { UE4CodeGen_Private::EPropertyClass::Struct, "mSources", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000008000000000, 1, nullptr, 1, Z_Construct_UScriptStruct_FRadioactiveSource, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationDamageType_MetaData[] = {
-		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
-		{ "ToolTip", "The type of damage radiation deals." },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationDamageType = { UE4CodeGen_Private::EPropertyClass::Class, "mRadiationDamageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGRadioactivitySubsystem, mRadiationDamageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationDamageType_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinDistanceToSource_MetaData[] = {
-		{ "Category", "Radiation" },
-		{ "ClampMax", "100" },
-		{ "ClampMin", "1" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
-		{ "ToolTip", "The closest we can get to any radiation source [centimeters]. This can greatly limit the radiation received from items in the players inventory.." },
-		{ "UIMax", "100" },
-		{ "UIMin", "1" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinDistanceToSource = { UE4CodeGen_Private::EPropertyClass::Float, "mMinDistanceToSource", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGRadioactivitySubsystem, mMinDistanceToSource), METADATA_PARAMS(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinDistanceToSource_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinDistanceToSource_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationFalloffByDistance_MetaData[] = {
-		{ "Category", "Radiation" },
-		{ "ClampMax", "1" },
-		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
-		{ "ToolTip", "How much radiation falls off during distance. (A good number is around 0.08)" },
-		{ "UIMax", "1" },
-		{ "UIMin", "0" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationFalloffByDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationFalloffByDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGRadioactivitySubsystem, mRadiationFalloffByDistance), METADATA_PARAMS(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationFalloffByDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationFalloffByDistance_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinRadiationThreshold_MetaData[] = {
-		{ "Category", "Radiation" },
-		{ "ClampMax", "10" },
-		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGRadioactivitySubsystem.h" },
-		{ "ToolTip", "Radiation levels lower than this are ignored. (A good number is around 0.0001)" },
-		{ "UIMax", "10" },
-		{ "UIMin", "0" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinRadiationThreshold = { UE4CodeGen_Private::EPropertyClass::Float, "mMinRadiationThreshold", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGRadioactivitySubsystem, mMinRadiationThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinRadiationThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinRadiationThreshold_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mAffectedActors,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mAffectedActors_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_Key_KeyProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mSources_ValueProp,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationDamageType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinDistanceToSource,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mRadiationFalloffByDistance,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::NewProp_mMinRadiationThreshold,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGRadioactivitySubsystem_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGRadioactivitySubsystem>::IsAbstract,
@@ -379,7 +313,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactivitySubsystem, 3151414462);
+	IMPLEMENT_CLASS(AFGRadioactivitySubsystem, 1735613337);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRadioactivitySubsystem(Z_Construct_UClass_AFGRadioactivitySubsystem, &AFGRadioactivitySubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRadioactivitySubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRadioactivitySubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

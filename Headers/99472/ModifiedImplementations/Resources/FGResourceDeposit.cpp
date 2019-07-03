@@ -3,8 +3,8 @@
 #include "FGResourceDeposit.h"
 
 AFGResourceDeposit::AFGResourceDeposit(){ }
-void AFGResourceDeposit::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const{ }
-void AFGResourceDeposit::PostLoad(){ }
+void AFGResourceDeposit::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGResourceDeposit::PostLoad(){ Super::PostLoad(); }
 void AFGResourceDeposit::BeginPlay(){ }
 void AFGResourceDeposit::RollResourceType(){ }
 void AFGResourceDeposit::TrySetDesiredResourceType(){ }

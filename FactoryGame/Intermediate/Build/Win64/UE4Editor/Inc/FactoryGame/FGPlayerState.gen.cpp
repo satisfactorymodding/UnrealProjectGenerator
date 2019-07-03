@@ -1204,7 +1204,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerState, 442415343);
+	IMPLEMENT_CLASS(AFGPlayerState, 942884459);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerState(Z_Construct_UClass_AFGPlayerState, &AFGPlayerState::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerState);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGPlayerState)

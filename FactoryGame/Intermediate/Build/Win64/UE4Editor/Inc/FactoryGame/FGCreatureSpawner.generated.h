@@ -15,12 +15,12 @@ class AFGSplinePath;
 #endif
 #define FACTORYGAME_FGCreatureSpawner_generated_h
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSpawnData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_RPC_WRAPPERS \
 	virtual void DestroyCreatures_Implementation(); \
 	virtual void SpawnCreatures_Implementation(); \
  \
@@ -74,7 +74,7 @@ class AFGSplinePath;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void DestroyCreatures_Implementation(); \
 	virtual void SpawnCreatures_Implementation(); \
  \
@@ -128,9 +128,9 @@ class AFGSplinePath;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGCreatureSpawner(); \
 	friend struct Z_Construct_UClass_AFGCreatureSpawner_Statics; \
@@ -140,7 +140,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCreatureSpawner*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_INCLASS \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGCreatureSpawner(); \
 	friend struct Z_Construct_UClass_AFGCreatureSpawner_Statics; \
@@ -150,7 +150,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGCreatureSpawner*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGCreatureSpawner(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGCreatureSpawner) \
@@ -163,7 +163,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGCreatureSpawner(AFGCreatureSpawner&&); \
@@ -174,7 +174,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreatureSpawner); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGCreatureSpawner)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDebugComponent() { return STRUCT_OFFSET(AFGCreatureSpawner, mDebugComponent); } \
 	FORCEINLINE static uint32 __PPO__mEditorSprite() { return STRUCT_OFFSET(AFGCreatureSpawner, mEditorSprite); } \
 	FORCEINLINE static uint32 __PPO__mCapsuleComponent() { return STRUCT_OFFSET(AFGCreatureSpawner, mCapsuleComponent); } \
@@ -188,30 +188,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreatureSpawner); \
 	FORCEINLINE static uint32 __PPO__mRandomSeed() { return STRUCT_OFFSET(AFGCreatureSpawner, mRandomSeed); }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_40_PROLOG \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_PROLOG \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_INCLASS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_INCLASS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_43_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

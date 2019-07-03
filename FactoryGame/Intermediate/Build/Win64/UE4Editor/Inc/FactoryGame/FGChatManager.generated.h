@@ -17,19 +17,19 @@ class AFGChatManager;
 #endif
 #define FACTORYGAME_FGChatManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_26_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_30_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FChatMessageStruct_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_9_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_13_DELEGATE \
 static inline void FChatMessageAdded_DelegateWrapper(const FMulticastScriptDelegate& ChatMessageAdded) \
 { \
 	ChatMessageAdded.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_RPC_WRAPPERS \
 	virtual void Multicast_BroadcastChatMessage_Implementation(FChatMessageStruct const& newMessage); \
  \
 	DECLARE_FUNCTION(execGetMessageVisibleDuration) \
@@ -94,7 +94,7 @@ static inline void FChatMessageAdded_DelegateWrapper(const FMulticastScriptDeleg
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Multicast_BroadcastChatMessage_Implementation(FChatMessageStruct const& newMessage); \
  \
 	DECLARE_FUNCTION(execGetMessageVisibleDuration) \
@@ -159,15 +159,15 @@ static inline void FChatMessageAdded_DelegateWrapper(const FMulticastScriptDeleg
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_EVENT_PARMS \
 	struct FGChatManager_eventMulticast_BroadcastChatMessage_Parms \
 	{ \
 		FChatMessageStruct newMessage; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGChatManager(); \
 	friend struct Z_Construct_UClass_AFGChatManager_Statics; \
@@ -176,7 +176,7 @@ public: \
 	DECLARE_SERIALIZER(AFGChatManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGChatManager(); \
 	friend struct Z_Construct_UClass_AFGChatManager_Statics; \
@@ -185,7 +185,7 @@ public: \
 	DECLARE_SERIALIZER(AFGChatManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGChatManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGChatManager) \
@@ -198,7 +198,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGChatManager(AFGChatManager&&); \
@@ -209,36 +209,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGChatManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGChatManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMaxNumMessagesInHistory() { return STRUCT_OFFSET(AFGChatManager, mMaxNumMessagesInHistory); } \
 	FORCEINLINE static uint32 __PPO__mMessageVisibleDuration() { return STRUCT_OFFSET(AFGChatManager, mMessageVisibleDuration); } \
 	FORCEINLINE static uint32 __PPO__mReceivedMessages() { return STRUCT_OFFSET(AFGChatManager, mReceivedMessages); }
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_59_PROLOG \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_63_PROLOG \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_INCLASS \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_INCLASS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGChatManager_h_62_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGChatManager_h_66_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGChatManager_h_62_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGChatManager_h_66_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

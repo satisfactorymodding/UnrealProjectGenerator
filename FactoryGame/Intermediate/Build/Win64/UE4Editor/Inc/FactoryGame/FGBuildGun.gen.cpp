@@ -1814,7 +1814,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGun, 1462056177);
+	IMPLEMENT_CLASS(AFGBuildGun, 1634118866);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGun(Z_Construct_UClass_AFGBuildGun, &AFGBuildGun::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGun"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGun);
 	void AFGBuildGunAttachment::StaticRegisterNativesAFGBuildGunAttachment()
@@ -1867,7 +1867,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGunAttachment, 3272797406);
+	IMPLEMENT_CLASS(AFGBuildGunAttachment, 4270996662);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGunAttachment(Z_Construct_UClass_AFGBuildGunAttachment, &AFGBuildGunAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGunAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGunAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -14,7 +14,7 @@ struct FTimeTableStop;
 #endif
 #define FACTORYGAME_FGRailroadTimeTable_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTimeTableStop_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
@@ -66,12 +66,29 @@ struct FTimeTableStop;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetStops) \
+	{ \
+		P_GET_TARRAY_REF(FTimeTableStop,Z_Param_Out_stops); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->SetStops(Z_Param_Out_stops); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetStops) \
 	{ \
 		P_GET_TARRAY_REF(FTimeTableStop,Z_Param_Out_out_stops); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetStops(Z_Param_Out_out_stops); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxNumStops) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetMaxNumStops(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -98,7 +115,7 @@ struct FTimeTableStop;
 		P_GET_STRUCT_REF(FTimeTableStop,Z_Param_Out_stop); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AddStop(Z_Param_index,Z_Param_Out_stop); \
+		*(bool*)Z_Param__Result=P_THIS->AddStop(Z_Param_index,Z_Param_Out_stop); \
 		P_NATIVE_END; \
 	}
 
@@ -150,12 +167,29 @@ struct FTimeTableStop;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetStops) \
+	{ \
+		P_GET_TARRAY_REF(FTimeTableStop,Z_Param_Out_stops); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->SetStops(Z_Param_Out_stops); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetStops) \
 	{ \
 		P_GET_TARRAY_REF(FTimeTableStop,Z_Param_Out_out_stops); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetStops(Z_Param_Out_out_stops); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxNumStops) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetMaxNumStops(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -182,58 +216,58 @@ struct FTimeTableStop;
 		P_GET_STRUCT_REF(FTimeTableStop,Z_Param_Out_stop); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AddStop(Z_Param_index,Z_Param_Out_stop); \
+		*(bool*)Z_Param__Result=P_THIS->AddStop(Z_Param_index,Z_Param_Out_stop); \
 		P_NATIVE_END; \
 	}
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUFGRailroadTimeTable(); \
-	friend struct Z_Construct_UClass_UFGRailroadTimeTable_Statics; \
+	static void StaticRegisterNativesAFGRailroadTimeTable(); \
+	friend struct Z_Construct_UClass_AFGRailroadTimeTable_Statics; \
 public: \
-	DECLARE_CLASS(UFGRailroadTimeTable, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGRailroadTimeTable) \
-	virtual UObject* _getUObject() const override { return const_cast<UFGRailroadTimeTable*>(this); }
+	DECLARE_CLASS(AFGRailroadTimeTable, AInfo, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(AFGRailroadTimeTable) \
+	virtual UObject* _getUObject() const override { return const_cast<AFGRailroadTimeTable*>(this); }
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_INCLASS \
 private: \
-	static void StaticRegisterNativesUFGRailroadTimeTable(); \
-	friend struct Z_Construct_UClass_UFGRailroadTimeTable_Statics; \
+	static void StaticRegisterNativesAFGRailroadTimeTable(); \
+	friend struct Z_Construct_UClass_AFGRailroadTimeTable_Statics; \
 public: \
-	DECLARE_CLASS(UFGRailroadTimeTable, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGRailroadTimeTable) \
-	virtual UObject* _getUObject() const override { return const_cast<UFGRailroadTimeTable*>(this); }
+	DECLARE_CLASS(AFGRailroadTimeTable, AInfo, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_SERIALIZER(AFGRailroadTimeTable) \
+	virtual UObject* _getUObject() const override { return const_cast<AFGRailroadTimeTable*>(this); }
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGRailroadTimeTable(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadTimeTable) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGRailroadTimeTable); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadTimeTable); \
+	NO_API AFGRailroadTimeTable(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRailroadTimeTable) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGRailroadTimeTable); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRailroadTimeTable); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGRailroadTimeTable(UFGRailroadTimeTable&&); \
-	NO_API UFGRailroadTimeTable(const UFGRailroadTimeTable&); \
+	NO_API AFGRailroadTimeTable(AFGRailroadTimeTable&&); \
+	NO_API AFGRailroadTimeTable(const AFGRailroadTimeTable&); \
 public:
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UFGRailroadTimeTable(UFGRailroadTimeTable&&); \
-	NO_API UFGRailroadTimeTable(const UFGRailroadTimeTable&); \
+	NO_API AFGRailroadTimeTable(AFGRailroadTimeTable&&); \
+	NO_API AFGRailroadTimeTable(const AFGRailroadTimeTable&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UFGRailroadTimeTable); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadTimeTable); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGRailroadTimeTable)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFGRailroadTimeTable); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRailroadTimeTable); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRailroadTimeTable)
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mStops() { return STRUCT_OFFSET(UFGRailroadTimeTable, mStops); } \
-	FORCEINLINE static uint32 __PPO__mCurrentStop() { return STRUCT_OFFSET(UFGRailroadTimeTable, mCurrentStop); }
+	FORCEINLINE static uint32 __PPO__mStops() { return STRUCT_OFFSET(AFGRailroadTimeTable, mStops); } \
+	FORCEINLINE static uint32 __PPO__mCurrentStop() { return STRUCT_OFFSET(AFGRailroadTimeTable, mCurrentStop); }
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_32_PROLOG

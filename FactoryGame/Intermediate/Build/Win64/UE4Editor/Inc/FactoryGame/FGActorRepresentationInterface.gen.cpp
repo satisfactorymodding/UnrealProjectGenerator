@@ -686,6 +686,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGActorRepresentationInterface_Statics::StaticCppClassTypeInfo = {
@@ -711,7 +712,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 1703558832);
+	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 2894371143);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGActorRepresentationInterface(Z_Construct_UClass_UFGActorRepresentationInterface, &UFGActorRepresentationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGActorRepresentationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGActorRepresentationInterface);
 	static FName NAME_UFGActorRepresentationInterface_AddAsRepresentation = FName(TEXT("AddAsRepresentation"));

@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNodeGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 1085336400);
+	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 977616477);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceNodeGeyser(Z_Construct_UClass_AFGResourceNodeGeyser, &AFGResourceNodeGeyser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceNodeGeyser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceNodeGeyser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

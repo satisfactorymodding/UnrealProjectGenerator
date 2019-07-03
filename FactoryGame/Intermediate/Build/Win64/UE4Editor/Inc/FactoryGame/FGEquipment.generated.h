@@ -20,7 +20,7 @@ class AFGCharacterPlayer;
 #endif
 #define FACTORYGAME_FGEquipment_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_RPC_WRAPPERS \
 	virtual bool Server_ChargeForUse_Validate(); \
 	virtual void Server_ChargeForUse_Implementation(); \
 	virtual void DidNotAffordUse_Implementation(); \
@@ -184,7 +184,7 @@ class AFGCharacterPlayer;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_ChargeForUse_Validate(); \
 	virtual void Server_ChargeForUse_Implementation(); \
 	virtual void DidNotAffordUse_Implementation(); \
@@ -348,7 +348,7 @@ class AFGCharacterPlayer;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_EVENT_PARMS \
 	struct FGEquipment_eventAdjustDamage_Parms \
 	{ \
 		float damageAmount; \
@@ -369,8 +369,8 @@ class AFGCharacterPlayer;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGEquipment(); \
 	friend struct Z_Construct_UClass_AFGEquipment_Statics; \
@@ -380,7 +380,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGEquipment*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_INCLASS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGEquipment(); \
 	friend struct Z_Construct_UClass_AFGEquipment_Statics; \
@@ -390,7 +390,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGEquipment*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGEquipment(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGEquipment) \
@@ -403,7 +403,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGEquipment(AFGEquipment&&); \
@@ -414,40 +414,42 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGEquipment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGEquipment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__m1PAnimClass() { return STRUCT_OFFSET(AFGEquipment, m1PAnimClass); } \
 	FORCEINLINE static uint32 __PPO__mAttachSocket() { return STRUCT_OFFSET(AFGEquipment, mAttachSocket); } \
 	FORCEINLINE static uint32 __PPO__mChildEquipmentClass() { return STRUCT_OFFSET(AFGEquipment, mChildEquipmentClass); } \
 	FORCEINLINE static uint32 __PPO__mCostToUse() { return STRUCT_OFFSET(AFGEquipment, mCostToUse); } \
+	FORCEINLINE static uint32 __PPO__mArmAnimation() { return STRUCT_OFFSET(AFGEquipment, mArmAnimation); } \
+	FORCEINLINE static uint32 __PPO__mBackAnimation() { return STRUCT_OFFSET(AFGEquipment, mBackAnimation); } \
 	FORCEINLINE static uint32 __PPO__mHasPersistentOwner() { return STRUCT_OFFSET(AFGEquipment, mHasPersistentOwner); } \
 	FORCEINLINE static uint32 __PPO__mAttachment() { return STRUCT_OFFSET(AFGEquipment, mAttachment); } \
 	FORCEINLINE static uint32 __PPO__mSecondaryAttachment() { return STRUCT_OFFSET(AFGEquipment, mSecondaryAttachment); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_27_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_32_PROLOG \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_INCLASS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_30_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGEquipment_h_35_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

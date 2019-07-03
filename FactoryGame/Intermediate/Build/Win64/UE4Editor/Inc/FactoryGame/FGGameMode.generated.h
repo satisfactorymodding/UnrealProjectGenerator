@@ -8,13 +8,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFGRemoteCallObject;
 class APlayerState;
 #ifdef FACTORYGAME_FGGameMode_generated_h
 #error "FGGameMode.generated.h already included, missing '#pragma once' in FGGameMode.h"
 #endif
 #define FACTORYGAME_FGGameMode_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execTriggerBundledWorldSave) \
 	{ \
@@ -34,6 +35,15 @@ class APlayerState;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRegisterRemoteCallObjectClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->RegisterRemoteCallObjectClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execKickPlayer) \
 	{ \
 		P_GET_OBJECT(APlayerState,Z_Param_ps); \
@@ -44,7 +54,7 @@ class APlayerState;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execTriggerBundledWorldSave) \
 	{ \
@@ -64,6 +74,15 @@ class APlayerState;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRegisterRemoteCallObjectClass) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->RegisterRemoteCallObjectClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execKickPlayer) \
 	{ \
 		P_GET_OBJECT(APlayerState,Z_Param_ps); \
@@ -74,33 +93,33 @@ class APlayerState;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGGameMode, FACTORYGAME_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGGameMode(); \
 	friend struct Z_Construct_UClass_AFGGameMode_Statics; \
 public: \
 	DECLARE_CLASS(AFGGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), FACTORYGAME_API) \
 	DECLARE_SERIALIZER(AFGGameMode) \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameMode*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGGameMode(); \
 	friend struct Z_Construct_UClass_AFGGameMode_Statics; \
 public: \
 	DECLARE_CLASS(AFGGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), FACTORYGAME_API) \
 	DECLARE_SERIALIZER(AFGGameMode) \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGGameMode*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	FACTORYGAME_API AFGGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGGameMode) \
@@ -113,7 +132,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	FACTORYGAME_API AFGGameMode(AFGGameMode&&); \
@@ -124,7 +143,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGGameMode)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSaveSession() { return STRUCT_OFFSET(AFGGameMode, mSaveSession); } \
 	FORCEINLINE static uint32 __PPO__mLastAutosaveId() { return STRUCT_OFFSET(AFGGameMode, mLastAutosaveId); } \
 	FORCEINLINE static uint32 __PPO__mSessionId_DEPRECATED() { return STRUCT_OFFSET(AFGGameMode, mSessionId_DEPRECATED); } \
@@ -132,28 +151,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameMode); \
 	FORCEINLINE static uint32 __PPO__mSaveSessionName() { return STRUCT_OFFSET(AFGGameMode, mSaveSessionName); } \
 	FORCEINLINE static uint32 __PPO__mStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mStartingPointTagName); } \
 	FORCEINLINE static uint32 __PPO__mDebugStartingPointTagName() { return STRUCT_OFFSET(AFGGameMode, mDebugStartingPointTagName); } \
-	FORCEINLINE static uint32 __PPO__mIsMainMenu() { return STRUCT_OFFSET(AFGGameMode, mIsMainMenu); }
+	FORCEINLINE static uint32 __PPO__mIsMainMenu() { return STRUCT_OFFSET(AFGGameMode, mIsMainMenu); } \
+	FORCEINLINE static uint32 __PPO__mDefaultRemoteCallObjectsClassNames() { return STRUCT_OFFSET(AFGGameMode, mDefaultRemoteCallObjectsClassNames); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_9_PROLOG
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_17_PROLOG
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_INCLASS \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGGameMode_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGGameMode_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameMode_h_12_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameMode_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

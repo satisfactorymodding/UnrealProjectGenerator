@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachmentProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponAttachmentProjectile, 1144371796);
+	IMPLEMENT_CLASS(AFGWeaponAttachmentProjectile, 3391588575);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWeaponAttachmentProjectile(Z_Construct_UClass_AFGWeaponAttachmentProjectile, &AFGWeaponAttachmentProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWeaponAttachmentProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWeaponAttachmentProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -995,7 +995,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGColorGun, 2323006674);
+	IMPLEMENT_CLASS(AFGColorGun, 3456148980);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGColorGun(Z_Construct_UClass_AFGColorGun, &AFGColorGun::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGColorGun"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGColorGun);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

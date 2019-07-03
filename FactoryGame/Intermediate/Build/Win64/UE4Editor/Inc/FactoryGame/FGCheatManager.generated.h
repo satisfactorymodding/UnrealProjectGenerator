@@ -14,7 +14,15 @@ class UFGItemDescriptor;
 #endif
 #define FACTORYGAME_FGCheatManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execPurgeAllTrainState) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PurgeAllTrainState(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execCompleteResearch) \
 	{ \
@@ -694,7 +702,15 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execPurgeAllTrainState) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PurgeAllTrainState(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execCompleteResearch) \
 	{ \
@@ -1374,7 +1390,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGCheatManager(); \
 	friend struct Z_Construct_UClass_UFGCheatManager_Statics; \
@@ -1385,7 +1401,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGCheatManager(); \
 	friend struct Z_Construct_UClass_UFGCheatManager_Statics; \
@@ -1396,7 +1412,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCheatManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCheatManager) \
@@ -1409,7 +1425,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCheatManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -1422,26 +1438,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCheatManager); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCheatManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_17_PROLOG
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

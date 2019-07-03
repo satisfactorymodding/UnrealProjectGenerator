@@ -568,6 +568,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConnectionInventory;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHasConnectedComponent_MetaData[];
+#endif
+		static void NewProp_mHasConnectedComponent_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mHasConnectedComponent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConnectedComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConnectedComponent;
@@ -635,6 +640,16 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectionInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080008, 1, nullptr, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectionInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData[] = {
+		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
+	};
+#endif
+	void Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_SetBit(void* Obj)
+	{
+		((UFGFactoryConnectionComponent*)Obj)->mHasConnectedComponent = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasConnectedComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
@@ -671,6 +686,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection,
@@ -684,10 +700,10 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::ClassParams = {
 		&UFGFactoryConnectionComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams))
@@ -701,7 +717,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 855838671);
+	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 2207351787);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactoryConnectionComponent(Z_Construct_UClass_UFGFactoryConnectionComponent, &UFGFactoryConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactoryConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactoryConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

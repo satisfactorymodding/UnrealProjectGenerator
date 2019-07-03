@@ -68,10 +68,10 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGColoredInstanceManager_Statics::ClassParams = {
 		&UFGColoredInstanceManager::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::Class_MetaDataParams))
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceManager, 3352879233);
+	IMPLEMENT_CLASS(UFGColoredInstanceManager, 2367011225);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColoredInstanceManager(Z_Construct_UClass_UFGColoredInstanceManager, &UFGColoredInstanceManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColoredInstanceManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColoredInstanceManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

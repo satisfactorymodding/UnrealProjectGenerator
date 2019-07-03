@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 		{ "ToolTip", "This is the geyser this generator is placed on" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode = { UE4CodeGen_Private::EPropertyClass::Object, "mExtractResourceNode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode = { UE4CodeGen_Private::EPropertyClass::Object, "mExtractResourceNode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableGeneratorGeoThermal, mExtractResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableGeneratorGeoThermal_Statics::NewProp_mExtractResourceNode,
 	};
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 3439224086);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 69069328);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableGeneratorGeoThermal(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal, &AFGBuildableGeneratorGeoThermal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableGeneratorGeoThermal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableGeneratorGeoThermal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

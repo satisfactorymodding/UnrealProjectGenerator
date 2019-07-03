@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPowerPoleHologram, 2820799218);
+	IMPLEMENT_CLASS(AFGPowerPoleHologram, 3189358074);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPowerPoleHologram(Z_Construct_UClass_AFGPowerPoleHologram, &AFGPowerPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPowerPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPowerPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFoundation, 1581767847);
+	IMPLEMENT_CLASS(AFGBuildableFoundation, 1168762630);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFoundation(Z_Construct_UClass_AFGBuildableFoundation, &AFGBuildableFoundation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFoundation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFoundation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

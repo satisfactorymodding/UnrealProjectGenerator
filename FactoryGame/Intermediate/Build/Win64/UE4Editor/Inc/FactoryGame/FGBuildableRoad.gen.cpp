@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRoad, 630213556);
+	IMPLEMENT_CLASS(AFGBuildableRoad, 1656739613);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRoad(Z_Construct_UClass_AFGBuildableRoad, &AFGBuildableRoad::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRoad"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRoad);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

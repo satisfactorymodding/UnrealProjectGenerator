@@ -15,9 +15,9 @@ class AFGCharacterPlayer;
 #endif
 #define FACTORYGAME_FGItemPickup_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_FullInventory(); \
 	friend struct Z_Construct_UClass_UFGUseState_FullInventory_Statics; \
@@ -26,7 +26,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_FullInventory)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_FullInventory(); \
 	friend struct Z_Construct_UClass_UFGUseState_FullInventory_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_FullInventory)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_FullInventory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_FullInventory) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_FullInventory(UFGUseState_FullInventory&&); \
@@ -59,33 +59,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_FullInventory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_FullInventory)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_PROLOG
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_Collecting(); \
 	friend struct Z_Construct_UClass_UFGUseState_Collecting_Statics; \
@@ -94,7 +94,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_Collecting)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_Collecting(); \
 	friend struct Z_Construct_UClass_UFGUseState_Collecting_Statics; \
@@ -103,7 +103,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_Collecting)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_Collecting(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_Collecting) \
@@ -116,7 +116,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_Collecting(UFGUseState_Collecting&&); \
@@ -127,31 +127,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_Collecting); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_Collecting)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_24_PROLOG
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_PROLOG
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_INCLASS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_INCLASS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_27_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_27_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_PickedUp) \
 	{ \
@@ -221,7 +221,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_PickedUp) \
 	{ \
@@ -291,41 +291,41 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_EVENT_PARMS \
 	struct FGItemPickup_eventOnPickup_Parms \
 	{ \
 		AFGCharacterPlayer* byCharacter; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGItemPickup, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGItemPickup(); \
 	friend struct Z_Construct_UClass_AFGItemPickup_Statics; \
 public: \
 	DECLARE_CLASS(AFGItemPickup, AActor, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGItemPickup) \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGItemPickup*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGItemPickup(); \
 	friend struct Z_Construct_UClass_AFGItemPickup_Statics; \
 public: \
 	DECLARE_CLASS(AFGItemPickup, AActor, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGItemPickup) \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGItemPickup*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGItemPickup(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGItemPickup) \
@@ -338,7 +338,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGItemPickup(AFGItemPickup&&); \
@@ -349,7 +349,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGItemPickup); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGItemPickup)
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mTimeToPickUp() { return STRUCT_OFFSET(AFGItemPickup, mTimeToPickUp); } \
 	FORCEINLINE static uint32 __PPO__mCollector() { return STRUCT_OFFSET(AFGItemPickup, mCollector); } \
 	FORCEINLINE static uint32 __PPO__mCollectingTimerHandle() { return STRUCT_OFFSET(AFGItemPickup, mCollectingTimerHandle); } \
@@ -359,30 +359,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGItemPickup); \
 	FORCEINLINE static uint32 __PPO__mAudioEvent() { return STRUCT_OFFSET(AFGItemPickup, mAudioEvent); }
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_35_PROLOG \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_PROLOG \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_INCLASS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_INCLASS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGItemPickup_h_38_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGItemPickup_h_41_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGItemPickup_h_38_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGItemPickup_h_41_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

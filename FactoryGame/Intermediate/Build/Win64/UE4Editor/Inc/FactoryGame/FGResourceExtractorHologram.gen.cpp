@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 3598429605);
+	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 2621257153);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceExtractorHologram(Z_Construct_UClass_AFGResourceExtractorHologram, &AFGResourceExtractorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceExtractorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceExtractorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

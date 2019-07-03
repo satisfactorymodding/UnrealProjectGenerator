@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWorldSettings_GetLevelStartedAkEvent_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Audio" },
+		{ "Category", "FactoryGame|Level|Audio" },
 		{ "ModuleRelativePath", "FGWorldSettings.h" },
 		{ "ToolTip", "Get the event to post when we start the level" },
 	};
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWorldSettings_UpdateWorldBounds_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
-		{ "Category", "PigmentMap" },
+		{ "Category", "FactoryGame|Level" },
 		{ "ModuleRelativePath", "FGWorldSettings.h" },
 		{ "ToolTip", "Update the world bounds" },
 	};
@@ -189,8 +189,8 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWorldSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWorldSettings_GetLevelStartedAkEvent, "GetLevelStartedAkEvent" }, // 3712314986
-		{ &Z_Construct_UFunction_AFGWorldSettings_UpdateWorldBounds, "UpdateWorldBounds" }, // 544210154
+		{ &Z_Construct_UFunction_AFGWorldSettings_GetLevelStartedAkEvent, "GetLevelStartedAkEvent" }, // 1392088878
+		{ &Z_Construct_UFunction_AFGWorldSettings_UpdateWorldBounds, "UpdateWorldBounds" }, // 1897159165
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWorldSettings_Statics::Class_MetaDataParams[] = {
@@ -370,7 +370,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWorldSettings, 971426686);
+	IMPLEMENT_CLASS(AFGWorldSettings, 2013226387);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWorldSettings(Z_Construct_UClass_AFGWorldSettings, &AFGWorldSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWorldSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWorldSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

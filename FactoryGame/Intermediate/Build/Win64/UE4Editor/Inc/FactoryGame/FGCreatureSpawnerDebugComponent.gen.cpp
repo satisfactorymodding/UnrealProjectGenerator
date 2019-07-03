@@ -54,10 +54,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSpawnerDebugComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCreatureSpawnerDebugComponent_Statics::ClassParams = {
 		&UFGCreatureSpawnerDebugComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCreatureSpawnerDebugComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCreatureSpawnerDebugComponent_Statics::Class_MetaDataParams))
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSpawnerDebugComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCreatureSpawnerDebugComponent, 150618921);
+	IMPLEMENT_CLASS(UFGCreatureSpawnerDebugComponent, 3238015396);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCreatureSpawnerDebugComponent(Z_Construct_UClass_UFGCreatureSpawnerDebugComponent, &UFGCreatureSpawnerDebugComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCreatureSpawnerDebugComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCreatureSpawnerDebugComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

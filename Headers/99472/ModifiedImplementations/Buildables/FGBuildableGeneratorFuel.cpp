@@ -3,20 +3,20 @@
 #include "FGBuildableGeneratorFuel.h"
 
 AFGBuildableGeneratorFuel::AFGBuildableGeneratorFuel(){ }
-void AFGBuildableGeneratorFuel::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const{ }
-void AFGBuildableGeneratorFuel::PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker ){ }
+void AFGBuildableGeneratorFuel::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void AFGBuildableGeneratorFuel::PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void AFGBuildableGeneratorFuel::BeginPlay(){ }
-void AFGBuildableGeneratorFuel::PostLoad(){ }
-void AFGBuildableGeneratorFuel::Factory_Tick( float dt ){ }
-bool AFGBuildableGeneratorFuel::IsValidFuel( TSubclassOf<  UFGItemDescriptor > resource ) const{ return bool(); }
+void AFGBuildableGeneratorFuel::PostLoad(){ Super::PostLoad(); }
+void AFGBuildableGeneratorFuel::Factory_Tick( float dt){ }
+bool AFGBuildableGeneratorFuel::IsValidFuel( TSubclassOf<  UFGItemDescriptor > resource) const{ return bool(); }
 bool AFGBuildableGeneratorFuel::HasFuel() const{ return bool(); }
 float AFGBuildableGeneratorFuel::GetFuelAmount() const{ return float(); }
-void AFGBuildableGeneratorFuel::SetPendingPotential( float newPendingPotential ){ }
+void AFGBuildableGeneratorFuel::SetPendingPotential( float newPendingPotential){ }
 void AFGBuildableGeneratorFuel::Factory_CollectFuel(){ }
 void AFGBuildableGeneratorFuel::LoadFuel(){ }
 bool AFGBuildableGeneratorFuel::CanStartPowerProduction_Implementation() const{ return bool(); }
 void AFGBuildableGeneratorFuel::Factory_StartPowerProduction_Implementation(){ }
 void AFGBuildableGeneratorFuel::Factory_StopPowerProduction_Implementation(){ }
-void AFGBuildableGeneratorFuel::Factory_TickPowerProduction_Implementation( float dt ){ }
-bool AFGBuildableGeneratorFuel::FilterFuelClasses( TSubclassOf< UObject > object, int32 idx ) const{ return bool(); }
+void AFGBuildableGeneratorFuel::Factory_TickPowerProduction_Implementation( float dt){ }
+bool AFGBuildableGeneratorFuel::FilterFuelClasses( TSubclassOf< UObject > object, int32 idx) const{ return bool(); }
 void AFGBuildableGeneratorFuel::OnRep_FuelInventory(){ }

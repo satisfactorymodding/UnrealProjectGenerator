@@ -50,10 +50,10 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::ClassParams = {
 		&UFGInventoryComponentBeltSlot::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::Class_MetaDataParams))
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 1800146227);
+	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 3871029486);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentBeltSlot(Z_Construct_UClass_UFGInventoryComponentBeltSlot, &UFGInventoryComponentBeltSlot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentBeltSlot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentBeltSlot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

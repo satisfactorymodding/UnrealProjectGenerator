@@ -32,6 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGGameUI_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHUD_GetHUDVisibility();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHUD_GetPartialPumpiMode();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHUD_GetPawnHUD();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHUD_GetPreviewTexture();
 	ENGINE_API UClass* Z_Construct_UClass_UTextureRenderTarget2D_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGHUD_GetPumpiMode();
@@ -181,6 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 			{ "GetGameUI", &AFGHUD::execGetGameUI },
 			{ "GetHUDVisibility", &AFGHUD::execGetHUDVisibility },
 			{ "GetPartialPumpiMode", &AFGHUD::execGetPartialPumpiMode },
+			{ "GetPawnHUD", &AFGHUD::execGetPawnHUD },
 			{ "GetPreviewTexture", &AFGHUD::execGetPreviewTexture },
 			{ "GetPumpiMode", &AFGHUD::execGetPumpiMode },
 			{ "GetShowCrosshair", &AFGHUD::execGetShowCrosshair },
@@ -499,6 +501,48 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGHUD_GetPartialPumpiMode_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics
+	{
+		struct FGHUD_eventGetPawnHUD_Parms
+		{
+			UUserWidget* ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGHUD_eventGetPawnHUD_Parms, ReturnValue), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::Function_MetaDataParams[] = {
+		{ "Category", "HUD" },
+		{ "ModuleRelativePath", "FGHUD.h" },
+		{ "ToolTip", "Returns the latest created pawn HUD widget. Can return nullptr" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHUD, "GetPawnHUD", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGHUD_eventGetPawnHUD_Parms), Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGHUD_GetPawnHUD()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGHUD_GetPawnHUD_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1156,6 +1200,10 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPawnHUD_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mPawnHUD;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mPreviewActorClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mPreviewActorClass;
@@ -1237,6 +1285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		{ &Z_Construct_UFunction_AFGHUD_GetGameUI, "GetGameUI" }, // 1014355658
 		{ &Z_Construct_UFunction_AFGHUD_GetHUDVisibility, "GetHUDVisibility" }, // 2702689783
 		{ &Z_Construct_UFunction_AFGHUD_GetPartialPumpiMode, "GetPartialPumpiMode" }, // 95970489
+		{ &Z_Construct_UFunction_AFGHUD_GetPawnHUD, "GetPawnHUD" }, // 1260749542
 		{ &Z_Construct_UFunction_AFGHUD_GetPreviewTexture, "GetPreviewTexture" }, // 1469515264
 		{ &Z_Construct_UFunction_AFGHUD_GetPumpiMode, "GetPumpiMode" }, // 3531840880
 		{ &Z_Construct_UFunction_AFGHUD_GetShowCrosshair, "GetShowCrosshair" }, // 3138044370
@@ -1264,6 +1313,14 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUD_Statics::NewProp_mPawnHUD_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "FGHUD.h" },
+		{ "ToolTip", "The latest created pawn HUD widget" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHUD_Statics::NewProp_mPawnHUD = { UE4CodeGen_Private::EPropertyClass::Object, "mPawnHUD", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGHUD, mPawnHUD), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHUD_Statics::NewProp_mPawnHUD_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::NewProp_mPawnHUD_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHUD_Statics::NewProp_mPreviewActorClass_MetaData[] = {
 		{ "ModuleRelativePath", "FGHUD.h" },
@@ -1378,6 +1435,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGHUD_Statics::NewProp_mGameUIClass = { UE4CodeGen_Private::EPropertyClass::Class, "mGameUIClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGHUD, mGameUIClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGHUD_Statics::NewProp_mGameUIClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::NewProp_mGameUIClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGHUD_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mPawnHUD,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mPreviewActorClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mPreviewStageClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHUD_Statics::NewProp_mPreviewBuildingWorld,
@@ -1418,7 +1476,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUD, 3188392961);
+	IMPLEMENT_CLASS(AFGHUD, 1032372910);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHUD(Z_Construct_UClass_AFGHUD, &AFGHUD::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHUD"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHUD);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

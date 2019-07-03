@@ -257,10 +257,10 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGLadderComponent_Statics::ClassParams = {
 		&UFGLadderComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
+		0x00B010A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::Class_MetaDataParams))
@@ -274,7 +274,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLadderComponent, 3859985089);
+	IMPLEMENT_CLASS(UFGLadderComponent, 2381196442);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGLadderComponent(Z_Construct_UClass_UFGLadderComponent, &UFGLadderComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGLadderComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGLadderComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

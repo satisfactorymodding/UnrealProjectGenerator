@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDecor, 2781534569);
+	IMPLEMENT_CLASS(AFGBuildableDecor, 4129591016);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableDecor(Z_Construct_UClass_AFGBuildableDecor, &AFGBuildableDecor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableDecor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableDecor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

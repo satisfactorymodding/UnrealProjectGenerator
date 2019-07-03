@@ -17,7 +17,7 @@ class UFGActorRepresentation;
 #endif
 #define FACTORYGAME_FGCompassObjectWidget_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_RPC_WRAPPERS \
 	virtual void OnCompassObjectUpdated_Implementation(); \
 	virtual void OnCompassObjectAddedToPanel_Implementation(UCanvasPanelSlot* parentSlot); \
  \
@@ -107,7 +107,7 @@ class UFGActorRepresentation;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnCompassObjectUpdated_Implementation(); \
 	virtual void OnCompassObjectAddedToPanel_Implementation(UCanvasPanelSlot* parentSlot); \
  \
@@ -197,7 +197,7 @@ class UFGActorRepresentation;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_EVENT_PARMS \
 	struct FGCompassObjectWidget_eventOnCompassObjectAddedToPanel_Parms \
 	{ \
 		UCanvasPanelSlot* parentSlot; \
@@ -208,8 +208,8 @@ class UFGActorRepresentation;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGCompassObjectWidget(); \
 	friend struct Z_Construct_UClass_UFGCompassObjectWidget_Statics; \
@@ -218,7 +218,7 @@ public: \
 	DECLARE_SERIALIZER(UFGCompassObjectWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGCompassObjectWidget(); \
 	friend struct Z_Construct_UClass_UFGCompassObjectWidget_Statics; \
@@ -227,7 +227,7 @@ public: \
 	DECLARE_SERIALIZER(UFGCompassObjectWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCompassObjectWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCompassObjectWidget) \
@@ -240,7 +240,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCompassObjectWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -253,7 +253,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCompassObjectWidget); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCompassObjectWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mClampPosition() { return STRUCT_OFFSET(UFGCompassObjectWidget, mClampPosition); } \
 	FORCEINLINE static uint32 __PPO__mShouldFadeInEdges() { return STRUCT_OFFSET(UFGCompassObjectWidget, mShouldFadeInEdges); } \
 	FORCEINLINE static uint32 __PPO__mImage() { return STRUCT_OFFSET(UFGCompassObjectWidget, mImage); } \
@@ -263,30 +263,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCompassObjectWidget); \
 	FORCEINLINE static uint32 __PPO__mIsBlocking() { return STRUCT_OFFSET(UFGCompassObjectWidget, mIsBlocking); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_14_PROLOG \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGCompassObjectWidget_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

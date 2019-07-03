@@ -249,7 +249,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNewsFeedActor, 2913771004);
+	IMPLEMENT_CLASS(AFGNewsFeedActor, 310692356);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGNewsFeedActor(Z_Construct_UClass_AFGNewsFeedActor, &AFGNewsFeedActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGNewsFeedActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGNewsFeedActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

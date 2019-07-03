@@ -2069,10 +2069,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInventoryComponent_Statics::ClassParams = {
 		&UFGInventoryComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
+		0x00A000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGInventoryComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponent_Statics::Class_MetaDataParams))
@@ -2086,7 +2086,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponent, 720333270);
+	IMPLEMENT_CLASS(UFGInventoryComponent, 1078217783);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponent(Z_Construct_UClass_UFGInventoryComponent, &UFGInventoryComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponent);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGInventoryComponent)

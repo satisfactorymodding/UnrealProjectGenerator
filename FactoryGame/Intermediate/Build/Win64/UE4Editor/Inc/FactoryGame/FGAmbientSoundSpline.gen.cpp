@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientSoundSpline, 22182541);
+	IMPLEMENT_CLASS(AFGAmbientSoundSpline, 3195678069);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAmbientSoundSpline(Z_Construct_UClass_AFGAmbientSoundSpline, &AFGAmbientSoundSpline::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAmbientSoundSpline"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAmbientSoundSpline);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

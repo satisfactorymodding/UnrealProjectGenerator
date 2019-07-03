@@ -3,19 +3,9 @@
 #include "FGBuildableConveyorLift.h"
 
 AFGBuildableConveyorLift::AFGBuildableConveyorLift(){ }
-void AFGBuildableConveyorLift::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const{ }
+void AFGBuildableConveyorLift::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableConveyorLift::BeginPlay(){ }
-void AFGBuildableConveyorLift::TickItemTransforms( float dt ){ }
-template< typename MeshConstructor >
-void AFGBuildableConveyorLift::BuildStaticMeshes(
-		USceneComponent* parent,
-		const FTransform& endTransform,
-		UStaticMesh* bottomMesh,
-		UStaticMesh* midMesh,
-		UStaticMesh* topMesh,
-		float stepHeight,
-		TArray< UStaticMeshComponent* >& meshPool,
-		MeshConstructor meshConstructor ){ }
+void AFGBuildableConveyorLift::TickItemTransforms( float dt){ }
 FBoxCenterAndExtent AFGBuildableConveyorLift::FitClearance(
 		const FTransform& endTransform,
 		float stepHeight,

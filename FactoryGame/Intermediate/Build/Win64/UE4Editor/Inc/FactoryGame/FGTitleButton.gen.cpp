@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTitleButton() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGTitleButton, 3723734409);
+	IMPLEMENT_CLASS(UFGTitleButton, 2783513632);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGTitleButton(Z_Construct_UClass_UFGTitleButton, &UFGTitleButton::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGTitleButton"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGTitleButton);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

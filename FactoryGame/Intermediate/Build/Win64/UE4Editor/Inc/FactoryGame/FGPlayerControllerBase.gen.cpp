@@ -22,9 +22,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_DiscardInput();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetIsUsingGamepad();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetKeyNameForAction();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetPresenceString();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_RebindActionKey();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGKeyMapping();
@@ -32,8 +36,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_Server_UpdateCappedBandwidth();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetMouseSensitivity();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled();
 	ENGINE_API UClass* Z_Construct_UClass_UInputComponent_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnInputChanged__DelegateSignature_Statics
@@ -87,17 +89,19 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 			{ "DiscardInput", &AFGPlayerControllerBase::execDiscardInput },
 			{ "FlushPressedKeys", &AFGPlayerControllerBase::execFlushPressedKeys },
 			{ "GetDefaultMouseSensitivity", &AFGPlayerControllerBase::execGetDefaultMouseSensitivity },
+			{ "GetDefaultMouseSensitivityX", &AFGPlayerControllerBase::execGetDefaultMouseSensitivityX },
+			{ "GetDefaultMouseSensitivityY", &AFGPlayerControllerBase::execGetDefaultMouseSensitivityY },
 			{ "GetIsUsingGamepad", &AFGPlayerControllerBase::execGetIsUsingGamepad },
 			{ "GetKeyNameForAction", &AFGPlayerControllerBase::execGetKeyNameForAction },
 			{ "GetMouseSensitivity", &AFGPlayerControllerBase::execGetMouseSensitivity },
+			{ "GetMouseSensitivityX", &AFGPlayerControllerBase::execGetMouseSensitivityX },
+			{ "GetMouseSensitivityY", &AFGPlayerControllerBase::execGetMouseSensitivityY },
 			{ "GetPresenceString", &AFGPlayerControllerBase::execGetPresenceString },
 			{ "RebindActionKey", &AFGPlayerControllerBase::execRebindActionKey },
 			{ "ResetInputBindings", &AFGPlayerControllerBase::execResetInputBindings },
 			{ "Server_UpdateCappedBandwidth", &AFGPlayerControllerBase::execServer_UpdateCappedBandwidth },
 			{ "SetIsUsingGamepad", &AFGPlayerControllerBase::execSetIsUsingGamepad },
 			{ "SetMouseSensitivity", &AFGPlayerControllerBase::execSetMouseSensitivity },
-			{ "SetPresenceEnabled", &AFGPlayerControllerBase::execSetPresenceEnabled },
-			{ "SetSessionEnabled", &AFGPlayerControllerBase::execSetSessionEnabled },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -197,8 +201,9 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
+		{ "DeprecatedFunction", "" },
+		{ "DeprecationMessage", "Use GetDefaultMouseSensitivityX/GetDefaultMouseSensitivityY instead" },
 		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
-		{ "ToolTip", "Get default value for mouse sensitivity" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "GetDefaultMouseSensitivity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerControllerBase_eventGetDefaultMouseSensitivity_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::Function_MetaDataParams)) };
@@ -208,6 +213,74 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics
+	{
+		struct FGPlayerControllerBase_eventGetDefaultMouseSensitivityX_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerControllerBase_eventGetDefaultMouseSensitivityX_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
+		{ "ToolTip", "Get default value for mouse sensitivity in X axis" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "GetDefaultMouseSensitivityX", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerControllerBase_eventGetDefaultMouseSensitivityX_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics
+	{
+		struct FGPlayerControllerBase_eventGetDefaultMouseSensitivityY_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerControllerBase_eventGetDefaultMouseSensitivityY_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
+		{ "ToolTip", "Get default value for mouse sensitivity in Y axis" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "GetDefaultMouseSensitivityY", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerControllerBase_eventGetDefaultMouseSensitivityY_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -317,8 +390,9 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
+		{ "DeprecatedFunction", "" },
+		{ "DeprecationMessage", "Use GetMouseSensitivityX/GetMouseSensitivityY instead" },
 		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
-		{ "ToolTip", "Get current sensitivity" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "GetMouseSensitivity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerControllerBase_eventGetMouseSensitivity_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::Function_MetaDataParams)) };
@@ -328,6 +402,74 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics
+	{
+		struct FGPlayerControllerBase_eventGetMouseSensitivityX_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerControllerBase_eventGetMouseSensitivityX_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
+		{ "ToolTip", "Get current sensitivity in X axis" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "GetMouseSensitivityX", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerControllerBase_eventGetMouseSensitivityX_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics
+	{
+		struct FGPlayerControllerBase_eventGetMouseSensitivityY_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerControllerBase_eventGetMouseSensitivityY_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
+		{ "ToolTip", "Get current sensitivity in X axis" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "GetMouseSensitivityY", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerControllerBase_eventGetMouseSensitivityY_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -528,81 +670,6 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics
-	{
-		struct FGPlayerControllerBase_eventSetPresenceEnabled_Parms
-		{
-			bool enabled;
-		};
-		static void NewProp_enabled_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enabled;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::NewProp_enabled_SetBit(void* Obj)
-	{
-		((FGPlayerControllerBase_eventSetPresenceEnabled_Parms*)Obj)->enabled = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::NewProp_enabled = { UE4CodeGen_Private::EPropertyClass::Bool, "enabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPlayerControllerBase_eventSetPresenceEnabled_Parms), &Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::NewProp_enabled,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
-		{ "ToolTip", "DEBUG FUNCTIONS TO BE REMOVED AFTER https:questions.satisfactorygame.com/6612/frame-drops-every-few-minutes-constant-freezes?show=17767#c17767 is closed" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "SetPresenceEnabled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020601, sizeof(FGPlayerControllerBase_eventSetPresenceEnabled_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics
-	{
-		struct FGPlayerControllerBase_eventSetSessionEnabled_Parms
-		{
-			bool enabled;
-		};
-		static void NewProp_enabled_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enabled;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::NewProp_enabled_SetBit(void* Obj)
-	{
-		((FGPlayerControllerBase_eventSetSessionEnabled_Parms*)Obj)->enabled = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::NewProp_enabled = { UE4CodeGen_Private::EPropertyClass::Bool, "enabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPlayerControllerBase_eventSetSessionEnabled_Parms), &Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::NewProp_enabled,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerControllerBase.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerControllerBase, "SetSessionEnabled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020601, sizeof(FGPlayerControllerBase_eventSetSessionEnabled_Parms), Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_AFGPlayerControllerBase_NoRegister()
 	{
 		return AFGPlayerControllerBase::StaticClass();
@@ -643,18 +710,20 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_Client_UpdateCappedBandwidth, "Client_UpdateCappedBandwidth" }, // 2874647811
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_DiscardInput, "DiscardInput" }, // 1846201594
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_FlushPressedKeys, "FlushPressedKeys" }, // 2566718978
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity, "GetDefaultMouseSensitivity" }, // 2601445163
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivity, "GetDefaultMouseSensitivity" }, // 1766715644
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityX, "GetDefaultMouseSensitivityX" }, // 3614934127
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetDefaultMouseSensitivityY, "GetDefaultMouseSensitivityY" }, // 948738031
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetIsUsingGamepad, "GetIsUsingGamepad" }, // 3946144712
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetKeyNameForAction, "GetKeyNameForAction" }, // 3931401267
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity, "GetMouseSensitivity" }, // 1405116107
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivity, "GetMouseSensitivity" }, // 1172934792
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityX, "GetMouseSensitivityX" }, // 935163067
+		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetMouseSensitivityY, "GetMouseSensitivityY" }, // 3650123178
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_GetPresenceString, "GetPresenceString" }, // 2704509147
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_RebindActionKey, "RebindActionKey" }, // 1278004298
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_ResetInputBindings, "ResetInputBindings" }, // 1187641009
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_Server_UpdateCappedBandwidth, "Server_UpdateCappedBandwidth" }, // 924822193
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetIsUsingGamepad, "SetIsUsingGamepad" }, // 3894533327
 		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetMouseSensitivity, "SetMouseSensitivity" }, // 3015475645
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetPresenceEnabled, "SetPresenceEnabled" }, // 1484367221
-		{ &Z_Construct_UFunction_AFGPlayerControllerBase_SetSessionEnabled, "SetSessionEnabled" }, // 2638530325
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerControllerBase_Statics::Class_MetaDataParams[] = {
@@ -725,7 +794,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerControllerBase, 2205124074);
+	IMPLEMENT_CLASS(AFGPlayerControllerBase, 1802660154);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerControllerBase(Z_Construct_UClass_AFGPlayerControllerBase, &AFGPlayerControllerBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerControllerBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerControllerBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

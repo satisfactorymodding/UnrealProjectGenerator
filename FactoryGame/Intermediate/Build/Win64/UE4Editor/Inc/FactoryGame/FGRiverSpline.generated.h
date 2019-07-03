@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGRiverSpline_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGRiverSpline(); \
 	friend struct Z_Construct_UClass_AFGRiverSpline_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(AFGRiverSpline)
 
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGRiverSpline(); \
 	friend struct Z_Construct_UClass_AFGRiverSpline_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AFGRiverSpline)
 
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGRiverSpline(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRiverSpline) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGRiverSpline(AFGRiverSpline&&); \
@@ -57,32 +57,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRiverSpline); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRiverSpline)
 
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mAudioEvent() { return STRUCT_OFFSET(AFGRiverSpline, mAudioEvent); } \
 	FORCEINLINE static uint32 __PPO__mEmitterInterval() { return STRUCT_OFFSET(AFGRiverSpline, mEmitterInterval); } \
 	FORCEINLINE static uint32 __PPO__mSoundSplineComponent_DEPRECATED() { return STRUCT_OFFSET(AFGRiverSpline, mSoundSplineComponent_DEPRECATED); } \
 	FORCEINLINE static uint32 __PPO__mShouldHaveAudio() { return STRUCT_OFFSET(AFGRiverSpline, mShouldHaveAudio); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_6_PROLOG
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_7_PROLOG
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_INCLASS \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRiverSpline_h_9_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRiverSpline_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -321,7 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 3354960156);
+	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 1174413923);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEquipmentStunSpear(Z_Construct_UClass_AFGEquipmentStunSpear, &AFGEquipmentStunSpear::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEquipmentStunSpear"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEquipmentStunSpear);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

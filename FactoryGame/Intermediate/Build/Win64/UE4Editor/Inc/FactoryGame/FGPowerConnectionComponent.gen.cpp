@@ -206,10 +206,10 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPowerConnectionComponent_Statics::ClassParams = {
 		&UFGPowerConnectionComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGPowerConnectionComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGPowerConnectionComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPowerConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPowerConnectionComponent_Statics::Class_MetaDataParams))
@@ -223,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerConnectionComponent, 1377994638);
+	IMPLEMENT_CLASS(UFGPowerConnectionComponent, 384524329);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerConnectionComponent(Z_Construct_UClass_UFGPowerConnectionComponent, &UFGPowerConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

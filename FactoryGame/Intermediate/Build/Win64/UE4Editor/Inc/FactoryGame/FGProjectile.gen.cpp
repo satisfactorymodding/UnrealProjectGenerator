@@ -588,7 +588,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProjectile, 362576246);
+	IMPLEMENT_CLASS(AFGProjectile, 2863935118);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGProjectile(Z_Construct_UClass_AFGProjectile, &AFGProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

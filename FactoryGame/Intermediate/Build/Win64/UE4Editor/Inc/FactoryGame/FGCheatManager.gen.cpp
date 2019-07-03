@@ -69,6 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PumpiMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PurgeAllBeaconsFromSave();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_PurgeInactiveClientsFromSave();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_RandomizeBuildingsColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCheatManager_RebuildPowerCircuits();
@@ -156,6 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 			{ "PrintStatichMeshesHirarchy", &UFGCheatManager::execPrintStatichMeshesHirarchy },
 			{ "PumpiMode", &UFGCheatManager::execPumpiMode },
 			{ "PurgeAllBeaconsFromSave", &UFGCheatManager::execPurgeAllBeaconsFromSave },
+			{ "PurgeAllTrainState", &UFGCheatManager::execPurgeAllTrainState },
 			{ "PurgeInactiveClientsFromSave", &UFGCheatManager::execPurgeInactiveClientsFromSave },
 			{ "RandomizeBuildingsColorSlot", &UFGCheatManager::execRandomizeBuildingsColorSlot },
 			{ "RebuildPowerCircuits", &UFGCheatManager::execRebuildPowerCircuits },
@@ -1514,6 +1516,28 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGCheatManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCheatManager, "PurgeAllTrainState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020601, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGCheatManager_PurgeInactiveClientsFromSave_Statics
 	{
 		struct FGCheatManager_eventPurgeInactiveClientsFromSave_Parms
@@ -2470,6 +2494,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		{ &Z_Construct_UFunction_UFGCheatManager_PrintStatichMeshesHirarchy, "PrintStatichMeshesHirarchy" }, // 4157011653
 		{ &Z_Construct_UFunction_UFGCheatManager_PumpiMode, "PumpiMode" }, // 1426813856
 		{ &Z_Construct_UFunction_UFGCheatManager_PurgeAllBeaconsFromSave, "PurgeAllBeaconsFromSave" }, // 2022528043
+		{ &Z_Construct_UFunction_UFGCheatManager_PurgeAllTrainState, "PurgeAllTrainState" }, // 2410372410
 		{ &Z_Construct_UFunction_UFGCheatManager_PurgeInactiveClientsFromSave, "PurgeInactiveClientsFromSave" }, // 164652553
 		{ &Z_Construct_UFunction_UFGCheatManager_RandomizeBuildingsColorSlot, "RandomizeBuildingsColorSlot" }, // 3981380611
 		{ &Z_Construct_UFunction_UFGCheatManager_RebuildPowerCircuits, "RebuildPowerCircuits" }, // 1383435270
@@ -2543,7 +2568,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCheatManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCheatManager, 4000429927);
+	IMPLEMENT_CLASS(UFGCheatManager, 2062367137);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCheatManager(Z_Construct_UClass_UFGCheatManager, &UFGCheatManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCheatManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCheatManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

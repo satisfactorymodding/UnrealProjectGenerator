@@ -760,7 +760,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 3288918960);
+	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 4094457802);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliageRemovalSubsystem(Z_Construct_UClass_AFGFoliageRemovalSubsystem, &AFGFoliageRemovalSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliageRemovalSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliageRemovalSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

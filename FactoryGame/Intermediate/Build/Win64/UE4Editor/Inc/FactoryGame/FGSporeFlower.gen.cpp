@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSporeFlower, 263767872);
+	IMPLEMENT_CLASS(AFGSporeFlower, 2962264248);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSporeFlower(Z_Construct_UClass_AFGSporeFlower, &AFGSporeFlower::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSporeFlower"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSporeFlower);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

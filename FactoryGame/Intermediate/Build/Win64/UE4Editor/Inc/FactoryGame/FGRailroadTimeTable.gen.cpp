@@ -15,19 +15,21 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTimeTable() {}
 // Cross Module References
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FTimeTableStop();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableRailroadStation_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadTimeTable_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadTimeTable();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_AddStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetStops();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTrainStationIdentifier_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRailroadTimeTable_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRailroadTimeTable();
+	ENGINE_API UClass* Z_Construct_UClass_AInfo();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_AddStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetStops();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStops();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
 class UScriptStruct* FTimeTableStop::StaticStruct()
@@ -59,9 +61,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Duration;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Stop_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Station_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Stop;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Station;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -85,16 +87,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Duration = { UE4CodeGen_Private::EPropertyClass::Float, "Duration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000004, 1, nullptr, STRUCT_OFFSET(FTimeTableStop, Duration), METADATA_PARAMS(Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Duration_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Duration_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Stop_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Station_MetaData[] = {
 		{ "Category", "TimeTableStop" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Where to stop." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Stop = { UE4CodeGen_Private::EPropertyClass::Object, "Stop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000004, 1, nullptr, STRUCT_OFFSET(FTimeTableStop, Stop), Z_Construct_UClass_AFGBuildableRailroadStation_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Stop_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Stop_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Station = { UE4CodeGen_Private::EPropertyClass::Object, "Station", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000004, 1, nullptr, STRUCT_OFFSET(FTimeTableStop, Station), Z_Construct_UClass_AFGTrainStationIdentifier_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Station_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Station_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FTimeTableStop_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Duration,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Stop,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Station,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FTimeTableStop_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
@@ -123,30 +125,35 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTimeTableStop_CRC() { return 3857928758U; }
-	void UFGRailroadTimeTable::StaticRegisterNativesUFGRailroadTimeTable()
+	uint32 Get_Z_Construct_UScriptStruct_FTimeTableStop_CRC() { return 1151518616U; }
+	void AFGRailroadTimeTable::StaticRegisterNativesAFGRailroadTimeTable()
 	{
-		UClass* Class = UFGRailroadTimeTable::StaticClass();
+		UClass* Class = AFGRailroadTimeTable::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "AddStop", &UFGRailroadTimeTable::execAddStop },
-			{ "GetCurrentStop", &UFGRailroadTimeTable::execGetCurrentStop },
-			{ "GetNumStops", &UFGRailroadTimeTable::execGetNumStops },
-			{ "GetStop", &UFGRailroadTimeTable::execGetStop },
-			{ "GetStops", &UFGRailroadTimeTable::execGetStops },
-			{ "IsValidStop", &UFGRailroadTimeTable::execIsValidStop },
-			{ "RemoveStop", &UFGRailroadTimeTable::execRemoveStop },
-			{ "SetCurrentStop", &UFGRailroadTimeTable::execSetCurrentStop },
-			{ "SetStopDuration", &UFGRailroadTimeTable::execSetStopDuration },
+			{ "AddStop", &AFGRailroadTimeTable::execAddStop },
+			{ "GetCurrentStop", &AFGRailroadTimeTable::execGetCurrentStop },
+			{ "GetMaxNumStops", &AFGRailroadTimeTable::execGetMaxNumStops },
+			{ "GetNumStops", &AFGRailroadTimeTable::execGetNumStops },
+			{ "GetStop", &AFGRailroadTimeTable::execGetStop },
+			{ "GetStops", &AFGRailroadTimeTable::execGetStops },
+			{ "IsValidStop", &AFGRailroadTimeTable::execIsValidStop },
+			{ "RemoveStop", &AFGRailroadTimeTable::execRemoveStop },
+			{ "SetCurrentStop", &AFGRailroadTimeTable::execSetCurrentStop },
+			{ "SetStopDuration", &AFGRailroadTimeTable::execSetStopDuration },
+			{ "SetStops", &AFGRailroadTimeTable::execSetStops },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics
 	{
 		struct FGRailroadTimeTable_eventAddStop_Parms
 		{
 			int32 index;
 			FTimeTableStop stop;
+			bool ReturnValue;
 		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_stop_MetaData[];
 #endif
@@ -158,35 +165,41 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	void Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGRailroadTimeTable_eventAddStop_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGRailroadTimeTable_eventAddStop_Parms), &Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_stop_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_stop_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_stop = { UE4CodeGen_Private::EPropertyClass::Struct, "stop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventAddStop_Parms, stop), Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_stop_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_stop_MetaData)) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventAddStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_stop,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_stop = { UE4CodeGen_Private::EPropertyClass::Struct, "stop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventAddStop_Parms, stop), Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_stop_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_stop_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventAddStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_stop,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Add a stop to the time table." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "AddStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGRailroadTimeTable_eventAddStop_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_AddStop()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "AddStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGRailroadTimeTable_eventAddStop_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_AddStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_AddStop_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics
 	{
 		struct FGRailroadTimeTable_eventGetCurrentStop_Parms
 		{
@@ -199,28 +212,62 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetCurrentStop_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetCurrentStop_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "@return Current stop the train is at or heading to." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "GetCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetCurrentStop_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "GetCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetCurrentStop_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics
+	{
+		struct FGRailroadTimeTable_eventGetMaxNumStops_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetMaxNumStops_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
+		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ToolTip", "Get the number of stops." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "GetMaxNumStops", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetMaxNumStops_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics
 	{
 		struct FGRailroadTimeTable_eventGetNumStops_Parms
 		{
@@ -233,28 +280,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetNumStops_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetNumStops_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get the number of stops." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "GetNumStops", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetNumStops_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "GetNumStops", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetNumStops_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics
 	{
 		struct FGRailroadTimeTable_eventGetStop_Parms
 		{
@@ -269,30 +316,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetStop_Parms, ReturnValue), Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetStop_Parms, ReturnValue), Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get the given stop.\n@return The stop at index, valid or invalid. If the index is invalid it returns an empty stop." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "GetStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetStop_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetStop()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "GetStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventGetStop_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_GetStop_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics
 	{
 		struct FGRailroadTimeTable_eventGetStops_Parms
 		{
@@ -306,30 +353,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops = { UE4CodeGen_Private::EPropertyClass::Array, "out_stops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetStops_Parms, out_stops), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_stops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops_Inner,
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops = { UE4CodeGen_Private::EPropertyClass::Array, "out_stops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventGetStops_Parms, out_stops), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_stops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::NewProp_out_stops_Inner,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get all stops in the time table." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "GetStops", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGRailroadTimeTable_eventGetStops_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_GetStops()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "GetStops", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGRailroadTimeTable_eventGetStops_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetStops()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_GetStops_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics
 	{
 		struct FGRailroadTimeTable_eventIsValidStop_Parms
 		{
@@ -345,34 +392,34 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	void Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	void Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((FGRailroadTimeTable_eventIsValidStop_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGRailroadTimeTable_eventIsValidStop_Parms), &Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventIsValidStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::NewProp_index,
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGRailroadTimeTable_eventIsValidStop_Parms), &Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventIsValidStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Is the index a valid stop.\nChecks if the index is valid and the 'Stop' actor is valid." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "IsValidStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventIsValidStop_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "IsValidStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadTimeTable_eventIsValidStop_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics
 	{
 		struct FGRailroadTimeTable_eventRemoveStop_Parms
 		{
@@ -385,28 +432,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventRemoveStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::NewProp_index,
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventRemoveStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Remove a stop from the time table." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "RemoveStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventRemoveStop_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "RemoveStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventRemoveStop_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics
 	{
 		struct FGRailroadTimeTable_eventSetCurrentStop_Parms
 		{
@@ -419,28 +466,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetCurrentStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::NewProp_index,
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetCurrentStop_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "@param index Set the stop the train is heading to." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "SetCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventSetCurrentStop_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "SetCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventSetCurrentStop_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics
 	{
 		struct FGRailroadTimeTable_eventSetStopDuration_Parms
 		{
@@ -455,34 +502,88 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::NewProp_duration = { UE4CodeGen_Private::EPropertyClass::Float, "duration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStopDuration_Parms, duration), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStopDuration_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::NewProp_duration,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::NewProp_index,
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_duration = { UE4CodeGen_Private::EPropertyClass::Float, "duration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStopDuration_Parms, duration), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStopDuration_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_duration,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams[] = {
-		{ "Category", "TimeTable" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "@param index Which stop to modify, this function does nothing if invalid.\n@param Duration How long the train will stay at the station (seconds)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadTimeTable, "SetStopDuration", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventSetStopDuration_Parms), Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "SetStopDuration", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventSetStopDuration_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	UClass* Z_Construct_UClass_UFGRailroadTimeTable_NoRegister()
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics
 	{
-		return UFGRailroadTimeTable::StaticClass();
+		struct FGRailroadTimeTable_eventSetStops_Parms
+		{
+			TArray<FTimeTableStop> stops;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_stops_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_stops;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_stops_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGRailroadTimeTable_eventSetStops_Parms*)Obj)->ReturnValue = 1;
 	}
-	struct Z_Construct_UClass_UFGRailroadTimeTable_Statics
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGRailroadTimeTable_eventSetStops_Parms), &Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops = { UE4CodeGen_Private::EPropertyClass::Array, "stops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStops_Parms, stops), METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "stops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::NewProp_stops_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
+		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ToolTip", "Set all stops in the time table." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "SetStops", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGRailroadTimeTable_eventSetStops_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStops()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AFGRailroadTimeTable_NoRegister()
+	{
+		return AFGRailroadTimeTable::StaticClass();
+	}
+	struct Z_Construct_UClass_AFGRailroadTimeTable_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
 		static const FClassFunctionLinkInfo FuncInfo[];
@@ -503,78 +604,82 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
-	UObject* (*const Z_Construct_UClass_UFGRailroadTimeTable_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UObject,
+	UObject* (*const Z_Construct_UClass_AFGRailroadTimeTable_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_AInfo,
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
-	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRailroadTimeTable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_AddStop, "AddStop" }, // 3221150192
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_GetCurrentStop, "GetCurrentStop" }, // 2310648943
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_GetNumStops, "GetNumStops" }, // 1844464562
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_GetStop, "GetStop" }, // 2876223121
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_GetStops, "GetStops" }, // 3109558421
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_IsValidStop, "IsValidStop" }, // 2899266662
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_RemoveStop, "RemoveStop" }, // 2572761206
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_SetCurrentStop, "SetCurrentStop" }, // 1642470839
-		{ &Z_Construct_UFunction_UFGRailroadTimeTable_SetStopDuration, "SetStopDuration" }, // 1618964931
+	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRailroadTimeTable_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_AddStop, "AddStop" }, // 1689511582
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop, "GetCurrentStop" }, // 3416755627
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops, "GetMaxNumStops" }, // 3697530272
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops, "GetNumStops" }, // 1182107962
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStop, "GetStop" }, // 592278944
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStops, "GetStops" }, // 1672221149
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop, "IsValidStop" }, // 2889363042
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop, "RemoveStop" }, // 2630993500
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop, "SetCurrentStop" }, // 25312437
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration, "SetStopDuration" }, // 3187617223
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetStops, "SetStops" }, // 3496785460
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadTimeTable_Statics::Class_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTimeTable_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "HideCategories", "Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGRailroadTimeTable.h" },
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Object containing a trains time table and where it is right now." },
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData[] = {
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Current stop the train is at or heading to." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mCurrentStop = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(UFGRailroadTimeTable, mCurrentStop), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGRailroadTimeTable, mCurrentStop), METADATA_PARAMS(Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops_MetaData[] = {
 		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
 		{ "ToolTip", "Array of destinations this train will visit." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops = { UE4CodeGen_Private::EPropertyClass::Array, "mStops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(UFGRailroadTimeTable, mStops), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mStops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGRailroadTimeTable_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mCurrentStop,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRailroadTimeTable_Statics::NewProp_mStops_Inner,
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops = { UE4CodeGen_Private::EPropertyClass::Array, "mStops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGRailroadTimeTable, mStops), METADATA_PARAMS(Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mStops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FTimeTableStop, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRailroadTimeTable_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops_Inner,
 	};
-		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UFGRailroadTimeTable_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UFGSaveInterface_NoRegister, (int32)VTABLE_OFFSET(UFGRailroadTimeTable, IFGSaveInterface), false },
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGRailroadTimeTable_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UFGSaveInterface_NoRegister, (int32)VTABLE_OFFSET(AFGRailroadTimeTable, IFGSaveInterface), false },
 		};
-	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGRailroadTimeTable_Statics::StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<UFGRailroadTimeTable>::IsAbstract,
+	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGRailroadTimeTable_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<AFGRailroadTimeTable>::IsAbstract,
 	};
-	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRailroadTimeTable_Statics::ClassParams = {
-		&UFGRailroadTimeTable::StaticClass,
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRailroadTimeTable_Statics::ClassParams = {
+		&AFGRailroadTimeTable::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGRailroadTimeTable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTimeTable_Statics::PropPointers),
+		Z_Construct_UClass_AFGRailroadTimeTable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadTimeTable_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
 		InterfaceParams, ARRAY_COUNT(InterfaceParams),
-		METADATA_PARAMS(Z_Construct_UClass_UFGRailroadTimeTable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadTimeTable_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_AFGRailroadTimeTable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadTimeTable_Statics::Class_MetaDataParams))
 	};
-	UClass* Z_Construct_UClass_UFGRailroadTimeTable()
+	UClass* Z_Construct_UClass_AFGRailroadTimeTable()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFGRailroadTimeTable_Statics::ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_AFGRailroadTimeTable_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadTimeTable, 1913092901);
-	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadTimeTable(Z_Construct_UClass_UFGRailroadTimeTable, &UFGRailroadTimeTable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadTimeTable"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadTimeTable);
+	IMPLEMENT_CLASS(AFGRailroadTimeTable, 1684731213);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadTimeTable(Z_Construct_UClass_AFGRailroadTimeTable, &AFGRailroadTimeTable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadTimeTable"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadTimeTable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

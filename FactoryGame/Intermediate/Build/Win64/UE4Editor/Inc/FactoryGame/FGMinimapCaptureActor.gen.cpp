@@ -552,7 +552,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGMinimapCaptureActor, 2595311002);
+	IMPLEMENT_CLASS(AFGMinimapCaptureActor, 3481572406);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGMinimapCaptureActor(Z_Construct_UClass_AFGMinimapCaptureActor, &AFGMinimapCaptureActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGMinimapCaptureActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGMinimapCaptureActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

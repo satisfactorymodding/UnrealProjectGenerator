@@ -312,7 +312,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 4085080863);
+	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 2443679483);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWeaponProjectileFire(Z_Construct_UClass_AFGWeaponProjectileFire, &AFGWeaponProjectileFire::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWeaponProjectileFire"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWeaponProjectileFire);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

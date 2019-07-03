@@ -194,6 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mCachedNumConnectionsToPole_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildablePowerPole.h" },
+		{ "NoAutoJson", "TRUE" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mCachedNumConnectionsToPole = { UE4CodeGen_Private::EPropertyClass::Int, "mCachedNumConnectionsToPole", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGBuildablePowerPole, mCachedNumConnectionsToPole), METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mCachedNumConnectionsToPole_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePowerPole_Statics::NewProp_mCachedNumConnectionsToPole_MetaData)) };
@@ -252,7 +253,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePowerPole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePowerPole, 2830646098);
+	IMPLEMENT_CLASS(AFGBuildablePowerPole, 619284950);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildablePowerPole(Z_Construct_UClass_AFGBuildablePowerPole, &AFGBuildablePowerPole::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildablePowerPole"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildablePowerPole);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

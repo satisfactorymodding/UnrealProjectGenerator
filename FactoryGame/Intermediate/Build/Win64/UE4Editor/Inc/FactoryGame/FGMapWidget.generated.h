@@ -16,7 +16,7 @@ struct FVector2D;
 #endif
 #define FACTORYGAME_FGMapWidget_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnActorRepresentationRemoved) \
 	{ \
@@ -54,7 +54,7 @@ struct FVector2D;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnActorRepresentationRemoved) \
 	{ \
@@ -92,7 +92,7 @@ struct FVector2D;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_EVENT_PARMS \
 	struct FGMapWidget_eventOnMapCentered_Parms \
 	{ \
 		FVector2D normalizedWorldLocation; \
@@ -111,8 +111,8 @@ struct FVector2D;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGMapWidget(); \
 	friend struct Z_Construct_UClass_UFGMapWidget_Statics; \
@@ -121,7 +121,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMapWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGMapWidget(); \
 	friend struct Z_Construct_UClass_UFGMapWidget_Statics; \
@@ -130,7 +130,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMapWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMapWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMapWidget) \
@@ -143,7 +143,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMapWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -156,36 +156,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMapWidget); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMapWidget)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFogOfWarTexture() { return STRUCT_OFFSET(UFGMapWidget, mFogOfWarTexture); } \
 	FORCEINLINE static uint32 __PPO__mMapActors() { return STRUCT_OFFSET(UFGMapWidget, mMapActors); } \
 	FORCEINLINE static uint32 __PPO__mActorRepresentationManager() { return STRUCT_OFFSET(UFGMapWidget, mActorRepresentationManager); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_12_PROLOG \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_14_PROLOG \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGMapWidget_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

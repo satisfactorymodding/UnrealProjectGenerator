@@ -125,10 +125,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
-		{ "ToolTip", "The inventory to store everything in." },
+		{ "ToolTip", "The inventory to store everything in. Don't use this directly, use mStorageInventoryHandler->GetActiveInventoryComponent()" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mStorageInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080028, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mStorageInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080008, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStorage, 2373830530);
+	IMPLEMENT_CLASS(AFGBuildableStorage, 1177113915);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableStorage(Z_Construct_UClass_AFGBuildableStorage, &AFGBuildableStorage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableStorage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableStorage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

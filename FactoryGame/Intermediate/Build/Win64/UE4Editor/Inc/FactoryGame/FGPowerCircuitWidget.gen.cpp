@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerCircuitWidget, 1077477409);
+	IMPLEMENT_CLASS(UFGPowerCircuitWidget, 142632379);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerCircuitWidget(Z_Construct_UClass_UFGPowerCircuitWidget, &UFGPowerCircuitWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerCircuitWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerCircuitWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

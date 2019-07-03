@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProceduralStaticMeshActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 2073219846);
+	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 328301577);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGProceduralStaticMeshActor(Z_Construct_UClass_AFGProceduralStaticMeshActor, &AFGProceduralStaticMeshActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGProceduralStaticMeshActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGProceduralStaticMeshActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

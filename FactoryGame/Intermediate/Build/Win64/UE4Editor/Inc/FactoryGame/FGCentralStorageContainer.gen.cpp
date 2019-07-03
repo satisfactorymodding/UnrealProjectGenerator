@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCentralStorageContainer, 497119427);
+	IMPLEMENT_CLASS(AFGCentralStorageContainer, 141070704);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCentralStorageContainer(Z_Construct_UClass_AFGCentralStorageContainer, &AFGCentralStorageContainer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCentralStorageContainer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCentralStorageContainer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

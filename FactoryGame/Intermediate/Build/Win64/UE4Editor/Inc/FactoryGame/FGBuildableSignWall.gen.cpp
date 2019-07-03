@@ -357,7 +357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSignWall, 2323126813);
+	IMPLEMENT_CLASS(AFGBuildableSignWall, 2435747639);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSignWall(Z_Construct_UClass_AFGBuildableSignWall, &AFGBuildableSignWall::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSignWall"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSignWall);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

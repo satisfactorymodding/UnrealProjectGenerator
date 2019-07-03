@@ -238,7 +238,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructiveProjectile, 2908138932);
+	IMPLEMENT_CLASS(AFGDestructiveProjectile, 1114764487);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDestructiveProjectile(Z_Construct_UClass_AFGDestructiveProjectile, &AFGDestructiveProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDestructiveProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDestructiveProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

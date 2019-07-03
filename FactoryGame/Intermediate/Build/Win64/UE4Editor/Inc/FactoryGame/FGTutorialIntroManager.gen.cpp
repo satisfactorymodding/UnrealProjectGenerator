@@ -1524,7 +1524,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTutorialIntroManager, 1219077799);
+	IMPLEMENT_CLASS(AFGTutorialIntroManager, 2024618717);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGTutorialIntroManager(Z_Construct_UClass_AFGTutorialIntroManager, &AFGTutorialIntroManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGTutorialIntroManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGTutorialIntroManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

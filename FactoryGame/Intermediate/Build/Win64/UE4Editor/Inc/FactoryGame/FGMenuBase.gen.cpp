@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMenuBase, 4234646135);
+	IMPLEMENT_CLASS(UFGMenuBase, 3034511341);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMenuBase(Z_Construct_UClass_UFGMenuBase, &UFGMenuBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMenuBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMenuBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

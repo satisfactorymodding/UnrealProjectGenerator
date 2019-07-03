@@ -43,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGWorldCreationInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGWorldCreationInterface_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorldCreationInterface, 984040757);
+	IMPLEMENT_CLASS(UFGWorldCreationInterface, 446862225);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWorldCreationInterface(Z_Construct_UClass_UFGWorldCreationInterface, &UFGWorldCreationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWorldCreationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWorldCreationInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

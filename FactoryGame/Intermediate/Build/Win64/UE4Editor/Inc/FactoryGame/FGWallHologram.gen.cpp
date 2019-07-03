@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWallHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWallHologram, 2016956130);
+	IMPLEMENT_CLASS(AFGWallHologram, 1700009743);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWallHologram(Z_Construct_UClass_AFGWallHologram, &AFGWallHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWallHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWallHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

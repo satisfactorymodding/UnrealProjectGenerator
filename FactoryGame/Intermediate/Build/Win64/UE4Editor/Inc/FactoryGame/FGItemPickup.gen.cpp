@@ -666,7 +666,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup, 3851052382);
+	IMPLEMENT_CLASS(AFGItemPickup, 1520579238);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup(Z_Construct_UClass_AFGItemPickup, &AFGItemPickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGItemPickup)

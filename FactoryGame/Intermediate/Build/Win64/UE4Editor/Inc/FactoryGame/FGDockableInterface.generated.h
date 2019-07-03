@@ -16,7 +16,7 @@ enum class EDockStationType : uint8;
 #endif
 #define FACTORYGAME_FGDockableInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_RPC_WRAPPERS \
 	virtual void OnTransferComplete_Implementation() {}; \
 	virtual void OnBeginUnloadVehicle_Implementation() {}; \
 	virtual void OnBeginLoadVehicle_Implementation() {}; \
@@ -93,7 +93,7 @@ enum class EDockStationType : uint8;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnTransferComplete_Implementation() {}; \
 	virtual void OnBeginUnloadVehicle_Implementation() {}; \
 	virtual void OnBeginLoadVehicle_Implementation() {}; \
@@ -170,7 +170,7 @@ enum class EDockStationType : uint8;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_EVENT_PARMS \
 	struct FGDockableInterface_eventCanDock_Parms \
 	{ \
 		EDockStationType atStation; \
@@ -208,8 +208,8 @@ enum class EDockStationType : uint8;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGDockableInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDockableInterface) \
@@ -222,9 +222,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UFGDockableInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGDockableInterface(UFGDockableInterface&&); \
@@ -235,7 +233,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGDockableInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGDockableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGDockableInterface(); \
 	friend struct Z_Construct_UClass_UFGDockableInterface_Statics; \
@@ -244,22 +242,22 @@ public: \
 	DECLARE_SERIALIZER(UFGDockableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGDockableInterface() {} \
 public: \
@@ -276,7 +274,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGDockableInterface() {} \
 public: \
@@ -293,26 +291,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_24_PROLOG \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_25_PROLOG \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_35_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_38_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_35_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGDockableInterface_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGDockableInterface_h_27_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGDockableInterface_h_29_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

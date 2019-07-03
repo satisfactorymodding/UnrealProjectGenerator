@@ -114,13 +114,13 @@
 /I Runtime\SlateCore\Public\Animation
 /I Runtime\SlateCore\Public\Application
 /I Runtime\SlateCore\Public\Brushes
+/I Runtime\SlateCore\Public\Debugging
 /I Runtime\SlateCore\Public\Fonts
 /I Runtime\SlateCore\Public\Input
 /I Runtime\SlateCore\Public\Layout
 /I Runtime\SlateCore\Public\Logging
 /I Runtime\SlateCore\Public\Rendering
 /I Runtime\SlateCore\Public\Sound
-/I Runtime\SlateCore\Public\Stats
 /I Runtime\SlateCore\Public\Styling
 /I Runtime\SlateCore\Public\Textures
 /I Runtime\SlateCore\Public\Types
@@ -132,15 +132,16 @@
 /I ..\Plugins\Online\OnlineSubsystem\Source
 /I ..\Plugins\Online\OnlineSubsystem\Source\Public
 /I ..\Plugins\Online\OnlineSubsystem\Source\Public\Interfaces
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Source
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
 /I Runtime\Engine
 /I Runtime\Engine\Public\AI
 /I Runtime\Engine\Public\AI\Navigation
+/I Runtime\Engine\Public\Analytics
 /I Runtime\Engine\Public\Animation
 /I Runtime\Engine\Public\Curves
 /I Runtime\Engine\Public\EdGraph
@@ -149,6 +150,8 @@
 /I Runtime\Engine\Public\PacketHandlers
 /I Runtime\Engine\Public\Performance
 /I Runtime\Engine\Public\Physics
+/I Runtime\Engine\Public\Physics\Experimental
+/I Runtime\Engine\Public\Physics\ImmediatePhysics
 /I Runtime\Engine\Public\ProfilingDebugging
 /I Runtime\Engine\Public\Rendering
 /I Runtime\Engine\Public\Slate
@@ -162,6 +165,8 @@
 /I Runtime\RenderCore
 /I Runtime\ShaderCore\Public
 /I Runtime\ShaderCore
+/I Runtime\Sockets\Public
+/I Runtime\Sockets
 /I Runtime\UtilityShaders\Public
 /I Runtime\UtilityShaders
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AssetRegistry
@@ -198,13 +203,17 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MeshDescription
 /I Runtime\MeshDescription\Public
 /I Runtime\MeshDescription
+/I Runtime\PakFile\Public
+/I Runtime\PakFile
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
 /I Editor
 /I Programs\UnrealLightmass\Public
+/I Developer\Android\AndroidDeviceDetection\Public\Interfaces
 /I Editor\UnrealEd\Classes
 /I Editor\UnrealEd\Public
 /I Editor\UnrealEd
 /I Editor\UnrealEd\Public\AutoReimport
+/I Editor\UnrealEd\Public\Bookmarks
 /I Editor\UnrealEd\Public\Commandlets
 /I Editor\UnrealEd\Public\Dialogs
 /I Editor\UnrealEd\Public\DragAndDrop
@@ -311,8 +320,6 @@
 /I Editor\ContentBrowser
 /I Runtime\NetworkFileSystem\Public
 /I Runtime\NetworkFileSystem
-/I Runtime\Sockets\Public
-/I Runtime\Sockets
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
 /I Runtime\UMG\Public
 /I Runtime\UMG
@@ -338,6 +345,7 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
 /I Runtime\MovieSceneTracks\Public
 /I Runtime\MovieSceneTracks
+/I Runtime\MovieSceneTracks\Public\Channels
 /I Runtime\MovieSceneTracks\Public\Evaluation
 /I Runtime\MovieSceneTracks\Public\Sections
 /I Runtime\MovieSceneTracks\Public\Tracks
@@ -356,6 +364,9 @@
 /I Runtime\NavigationSystem\Public\NavMesh
 /I Developer\MeshBuilder\Public
 /I Developer\MeshBuilder
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MaterialShaderQualitySettings
+/I Runtime\MaterialShaderQualitySettings\Classes
+/I Runtime\MaterialShaderQualitySettings
 /I Runtime\Windows
 /I Runtime\Windows\XAudio2\Public
 /I Runtime\Windows\XAudio2
@@ -440,12 +451,12 @@
 /I ..\Plugins\Runtime\ApexDestruction\Source
 /I ..\Plugins\Runtime\ApexDestruction\Source\ApexDestruction\Public
 /I ..\Plugins\Runtime\ApexDestruction\Source\ApexDestruction
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\ThirdParty\include
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\Classes
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\Public
-/I F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\ThirdParty\include
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\Classes
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\Public
+/I C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio
 /I ..\Plugins\Runtime\ReplicationGraph\Intermediate\Build\Win64\UE4Editor\Inc\ReplicationGraph
 /I ..\Plugins\Runtime\ReplicationGraph
 /I ..\Plugins\Runtime\ReplicationGraph\Source\Public
@@ -483,12 +494,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp"
-/FI"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Definitions.FactoryGame.h"
-/Fo"F:\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp.obj"
+/FI"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp"
+/FI"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Definitions.FactoryGame.h"
+/Fo"C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Intermediate\Build\Win64\UE4Editor\Development\FactoryGame\Module.FactoryGame.cpp.obj"
 /TP
 /GR-
 /W4

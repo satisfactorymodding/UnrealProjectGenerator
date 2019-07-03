@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 3090163300);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 1633439633);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWheeledVehicleMovementComponent4W(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, &UFGWheeledVehicleMovementComponent4W::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWheeledVehicleMovementComponent4W"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWheeledVehicleMovementComponent4W);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGToolBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGToolBelt, 2841902511);
+	IMPLEMENT_CLASS(AFGToolBelt, 446592002);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGToolBelt(Z_Construct_UClass_AFGToolBelt, &AFGToolBelt::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGToolBelt"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGToolBelt);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

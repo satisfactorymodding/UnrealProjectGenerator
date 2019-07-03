@@ -435,7 +435,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGMapManager, 3523029195);
+	IMPLEMENT_CLASS(AFGMapManager, 3791238321);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGMapManager(Z_Construct_UClass_AFGMapManager, &AFGMapManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGMapManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGMapManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

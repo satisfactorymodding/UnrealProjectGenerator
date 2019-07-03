@@ -604,7 +604,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceScanner, 2655944193);
+	IMPLEMENT_CLASS(AFGResourceScanner, 937662334);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceScanner(Z_Construct_UClass_AFGResourceScanner, &AFGResourceScanner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceScanner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceScanner);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

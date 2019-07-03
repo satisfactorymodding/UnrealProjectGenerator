@@ -2,7 +2,7 @@
 
 #include "FGBuildableStorage.h"
 
-void AFGBuildableStorage::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const{ }
+void AFGBuildableStorage::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 AFGBuildableStorage::AFGBuildableStorage(){ }
 void AFGBuildableStorage::BeginPlay(){ }
 void AFGBuildableStorage::Factory_CollectInput_Implementation(){ }

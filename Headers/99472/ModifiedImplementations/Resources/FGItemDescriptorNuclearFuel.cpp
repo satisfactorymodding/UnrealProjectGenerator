@@ -2,4 +2,4 @@
 
 #include "FGItemDescriptorNuclearFuel.h"
 
-TSubclassOf< UFGItemDescriptor > UFGItemDescriptorNuclearFuel::GetSpentFuelClass( TSubclassOf< UFGItemDescriptorNuclearFuel > inClass ){ return TSubclassOf<UFGItemDescriptor>(); }
+TSubclassOf< UFGItemDescriptor > UFGItemDescriptorNuclearFuel::GetSpentFuelClass( TSubclassOf< UFGItemDescriptorNuclearFuel > inClass){ return TSubclassOf<UFGItemDescriptor>(); }

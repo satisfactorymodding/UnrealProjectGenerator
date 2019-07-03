@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGC4Dispenser_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_RPC_WRAPPERS \
 	virtual bool Server_DetonatePressed_Validate(); \
 	virtual void Server_DetonatePressed_Implementation(); \
 	virtual bool Server_SpawnC4_Validate(int32 ); \
@@ -55,7 +55,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_DetonatePressed_Validate(); \
 	virtual void Server_DetonatePressed_Implementation(); \
 	virtual bool Server_SpawnC4_Validate(int32 ); \
@@ -97,15 +97,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_EVENT_PARMS \
 	struct FGC4Dispenser_eventServer_SpawnC4_Parms \
 	{ \
 		int32 throwForce; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGC4Dispenser(); \
 	friend struct Z_Construct_UClass_AFGC4Dispenser_Statics; \
@@ -114,7 +114,7 @@ public: \
 	DECLARE_SERIALIZER(AFGC4Dispenser)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_INCLASS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGC4Dispenser(); \
 	friend struct Z_Construct_UClass_AFGC4Dispenser_Statics; \
@@ -123,7 +123,7 @@ public: \
 	DECLARE_SERIALIZER(AFGC4Dispenser)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGC4Dispenser(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGC4Dispenser) \
@@ -136,7 +136,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGC4Dispenser(AFGC4Dispenser&&); \
@@ -147,7 +147,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGC4Dispenser); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGC4Dispenser)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mC4ExplosiveClass() { return STRUCT_OFFSET(AFGC4Dispenser, mC4ExplosiveClass); } \
 	FORCEINLINE static uint32 __PPO__mDispensedExplosives() { return STRUCT_OFFSET(AFGC4Dispenser, mDispensedExplosives); } \
 	FORCEINLINE static uint32 __PPO__mMaxChargeTime() { return STRUCT_OFFSET(AFGC4Dispenser, mMaxChargeTime); } \
@@ -155,30 +155,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGC4Dispenser); \
 	FORCEINLINE static uint32 __PPO__mDelayBetweenExplosions() { return STRUCT_OFFSET(AFGC4Dispenser, mDelayBetweenExplosions); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_11_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_PROLOG \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_14_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGC4Dispenser_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

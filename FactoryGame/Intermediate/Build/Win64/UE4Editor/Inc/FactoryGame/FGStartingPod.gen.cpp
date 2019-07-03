@@ -225,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStartingPod, 2129532853);
+	IMPLEMENT_CLASS(AFGStartingPod, 3250995277);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStartingPod(Z_Construct_UClass_AFGStartingPod, &AFGStartingPod::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStartingPod"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStartingPod);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

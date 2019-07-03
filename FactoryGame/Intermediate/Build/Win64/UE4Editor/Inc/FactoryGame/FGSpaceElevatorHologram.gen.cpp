@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSpaceElevatorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSpaceElevatorHologram, 1283392423);
+	IMPLEMENT_CLASS(AFGSpaceElevatorHologram, 104438723);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSpaceElevatorHologram(Z_Construct_UClass_AFGSpaceElevatorHologram, &AFGSpaceElevatorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSpaceElevatorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSpaceElevatorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

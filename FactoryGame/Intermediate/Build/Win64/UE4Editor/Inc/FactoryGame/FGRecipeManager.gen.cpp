@@ -26,8 +26,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRecipeManager_GetAllAvailableRecipes();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducer();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase();
-	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EGamePhase();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRecipeManager_IsRecipeAvailable();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
@@ -40,7 +38,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 			{ "Get", &AFGRecipeManager::execGet },
 			{ "GetAllAvailableRecipes", &AFGRecipeManager::execGetAllAvailableRecipes },
 			{ "GetAvailableRecipesForProducer", &AFGRecipeManager::execGetAvailableRecipesForProducer },
-			{ "GetAvailableRecipesForProducerAndPhase", &AFGRecipeManager::execGetAvailableRecipesForProducerAndPhase },
 			{ "IsRecipeAvailable", &AFGRecipeManager::execIsRecipeAvailable },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -245,53 +242,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics
-	{
-		struct FGRecipeManager_eventGetAvailableRecipesForProducerAndPhase_Parms
-		{
-			TSubclassOf<UObject>  forProducer;
-			TEnumAsByte<EGamePhase> gamePhase;
-			TArray<TSubclassOf<UFGRecipe> > out_recipes;
-		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_out_recipes;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_out_recipes_Inner;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_gamePhase;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_forProducer;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_out_recipes = { UE4CodeGen_Private::EPropertyClass::Array, "out_recipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGRecipeManager_eventGetAvailableRecipesForProducerAndPhase_Parms, out_recipes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_out_recipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_recipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_gamePhase = { UE4CodeGen_Private::EPropertyClass::Byte, "gamePhase", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRecipeManager_eventGetAvailableRecipesForProducerAndPhase_Parms, gamePhase), Z_Construct_UEnum_FactoryGame_EGamePhase, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_forProducer = { UE4CodeGen_Private::EPropertyClass::Class, "forProducer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGRecipeManager_eventGetAvailableRecipesForProducerAndPhase_Parms, forProducer), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_out_recipes,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_out_recipes_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_gamePhase,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::NewProp_forProducer,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::Function_MetaDataParams[] = {
-		{ "Category", "FactoryGame|Recipe" },
-		{ "DeprecatedFunction", "" },
-		{ "DeprecationMessage", "This functions have some problems with parallel unlock paths (i.e. caterium), talk to G2." },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
-		{ "ToolTip", "Gets the available recipes for the given producer class class and game phase, may not be null." },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRecipeManager, "GetAvailableRecipesForProducerAndPhase", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGRecipeManager_eventGetAvailableRecipesForProducerAndPhase_Parms), Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGRecipeManager_IsRecipeAvailable_Statics
 	{
 		struct FGRecipeManager_eventIsRecipeAvailable_Parms
@@ -366,7 +316,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		{ &Z_Construct_UFunction_AFGRecipeManager_Get, "Get" }, // 2791985158
 		{ &Z_Construct_UFunction_AFGRecipeManager_GetAllAvailableRecipes, "GetAllAvailableRecipes" }, // 3006172427
 		{ &Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducer, "GetAvailableRecipesForProducer" }, // 1182083173
-		{ &Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducerAndPhase, "GetAvailableRecipesForProducerAndPhase" }, // 184467425
 		{ &Z_Construct_UFunction_AFGRecipeManager_IsRecipeAvailable, "IsRecipeAvailable" }, // 3006085528
 	};
 #if WITH_METADATA
@@ -416,7 +365,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRecipeManager, 945820998);
+	IMPLEMENT_CLASS(AFGRecipeManager, 501399782);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRecipeManager(Z_Construct_UClass_AFGRecipeManager, &AFGRecipeManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRecipeManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRecipeManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

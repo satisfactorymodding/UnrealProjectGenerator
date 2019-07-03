@@ -905,7 +905,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStorySubsystem, 1893248723);
+	IMPLEMENT_CLASS(AFGStorySubsystem, 1088172713);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStorySubsystem(Z_Construct_UClass_AFGStorySubsystem, &AFGStorySubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStorySubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStorySubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

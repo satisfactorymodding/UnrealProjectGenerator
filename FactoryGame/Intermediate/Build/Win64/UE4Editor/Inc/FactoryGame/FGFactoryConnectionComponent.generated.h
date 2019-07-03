@@ -18,7 +18,7 @@ class UFGInventoryComponent;
 #endif
 #define FACTORYGAME_FGFactoryConnectionComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execFactory_Internal_GrabOutputInventory) \
 	{ \
@@ -102,7 +102,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execFactory_Internal_GrabOutputInventory) \
 	{ \
@@ -186,25 +186,25 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFactoryConnectionComponent(); \
 	friend struct Z_Construct_UClass_UFGFactoryConnectionComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGFactoryConnectionComponent, UFGConnectionComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGFactoryConnectionComponent, UFGConnectionComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGFactoryConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFactoryConnectionComponent(); \
 	friend struct Z_Construct_UClass_UFGFactoryConnectionComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFGFactoryConnectionComponent, UFGConnectionComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGFactoryConnectionComponent, UFGConnectionComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGFactoryConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFactoryConnectionComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFactoryConnectionComponent) \
@@ -217,7 +217,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGFactoryConnectionComponent(UFGFactoryConnectionComponent&&); \
@@ -228,33 +228,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFactoryConnectionComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGFactoryConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mConnector() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnector); } \
 	FORCEINLINE static uint32 __PPO__mDirection() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mDirection); } \
 	FORCEINLINE static uint32 __PPO__mConnectorClearance() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectorClearance); } \
 	FORCEINLINE static uint32 __PPO__mConnectedComponent() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectedComponent); } \
+	FORCEINLINE static uint32 __PPO__mHasConnectedComponent() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mHasConnectedComponent); } \
 	FORCEINLINE static uint32 __PPO__mConnectionInventory() { return STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectionInventory); }
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_49_PROLOG
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_53_PROLOG
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_INCLASS \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_INCLASS \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_52_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

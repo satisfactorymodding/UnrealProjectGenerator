@@ -169,6 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "FGVehicleDestroyableInterface.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::StaticCppClassTypeInfo = {
@@ -194,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 612975277);
+	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 3348192721);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleDestroyableInterface(Z_Construct_UClass_UFGVehicleDestroyableInterface, &UFGVehicleDestroyableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleDestroyableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleDestroyableInterface);
 	static FName NAME_UFGVehicleDestroyableInterface_GetDestroyAudioEvent = FName(TEXT("GetDestroyAudioEvent"));

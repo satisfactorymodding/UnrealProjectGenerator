@@ -159,10 +159,10 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSoundSplineComponent_Statics::ClassParams = {
 		&UFGSoundSplineComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
+		0x00A000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers),
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams))
@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSoundSplineComponent, 1857380269);
+	IMPLEMENT_CLASS(UFGSoundSplineComponent, 1772224031);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSoundSplineComponent(Z_Construct_UClass_UFGSoundSplineComponent, &UFGSoundSplineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSoundSplineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSoundSplineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

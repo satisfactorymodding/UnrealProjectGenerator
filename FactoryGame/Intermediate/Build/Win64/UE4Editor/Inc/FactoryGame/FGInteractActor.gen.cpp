@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractActor, 699280432);
+	IMPLEMENT_CLASS(AFGInteractActor, 2525395912);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGInteractActor(Z_Construct_UClass_AFGInteractActor, &AFGInteractActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGInteractActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGInteractActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

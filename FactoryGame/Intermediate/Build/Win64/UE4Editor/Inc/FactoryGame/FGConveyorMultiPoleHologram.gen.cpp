@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorMultiPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorMultiPoleHologram, 769933935);
+	IMPLEMENT_CLASS(AFGConveyorMultiPoleHologram, 3976363161);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorMultiPoleHologram(Z_Construct_UClass_AFGConveyorMultiPoleHologram, &AFGConveyorMultiPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorMultiPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorMultiPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

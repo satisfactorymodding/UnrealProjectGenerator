@@ -17,7 +17,7 @@ class UStaticMeshComponent;
 #endif
 #define FACTORYGAME_FGResearchMachine_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ResearchMesh) \
 	{ \
@@ -106,7 +106,7 @@ class UStaticMeshComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ResearchMesh) \
 	{ \
@@ -195,27 +195,27 @@ class UStaticMeshComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGResearchMachine(); \
 	friend struct Z_Construct_UClass_UFGResearchMachine_Statics; \
 public: \
-	DECLARE_CLASS(UFGResearchMachine, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGResearchMachine, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGResearchMachine) \
 	virtual UObject* _getUObject() const override { return const_cast<UFGResearchMachine*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGResearchMachine(); \
 	friend struct Z_Construct_UClass_UFGResearchMachine_Statics; \
 public: \
-	DECLARE_CLASS(UFGResearchMachine, USceneComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGResearchMachine, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGResearchMachine) \
 	virtual UObject* _getUObject() const override { return const_cast<UFGResearchMachine*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGResearchMachine(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGResearchMachine) \
@@ -228,7 +228,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGResearchMachine(UFGResearchMachine&&); \
@@ -239,7 +239,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResearchMachine); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGResearchMachine)
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCurrentResearchRecipe() { return STRUCT_OFFSET(UFGResearchMachine, mCurrentResearchRecipe); } \
 	FORCEINLINE static uint32 __PPO__mPlayerUsingMachine() { return STRUCT_OFFSET(UFGResearchMachine, mPlayerUsingMachine); } \
 	FORCEINLINE static uint32 __PPO__mResearchingMeshComponent() { return STRUCT_OFFSET(UFGResearchMachine, mResearchingMeshComponent); } \
@@ -247,25 +247,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResearchMachine); \
 	FORCEINLINE static uint32 __PPO__mItemScaleCurve() { return STRUCT_OFFSET(UFGResearchMachine, mItemScaleCurve); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_12_PROLOG
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_16_PROLOG
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGResearchMachine_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGResearchMachine_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

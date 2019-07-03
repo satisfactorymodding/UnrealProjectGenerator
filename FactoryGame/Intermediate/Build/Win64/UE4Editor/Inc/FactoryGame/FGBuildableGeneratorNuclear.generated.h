@@ -8,14 +8,35 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFGInventoryComponent;
 #ifdef FACTORYGAME_FGBuildableGeneratorNuclear_generated_h
 #error "FGBuildableGeneratorNuclear.generated.h already included, missing '#pragma once' in FGBuildableGeneratorNuclear.h"
 #endif
 #define FACTORYGAME_FGBuildableGeneratorNuclear_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetWasteInventory) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UFGInventoryComponent**)Z_Param__Result=P_THIS->GetWasteInventory(); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetWasteInventory) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UFGInventoryComponent**)Z_Param__Result=P_THIS->GetWasteInventory(); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableGeneratorNuclear(); \
 	friend struct Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics; \
@@ -24,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableGeneratorNuclear)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableGeneratorNuclear(); \
 	friend struct Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics; \
@@ -33,7 +54,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableGeneratorNuclear)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableGeneratorNuclear(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableGeneratorNuclear) \
@@ -46,7 +67,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableGeneratorNuclear() { }; \
 private: \
@@ -59,29 +80,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableGeneratorNuclear); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableGeneratorNuclear)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mOutputInventory() { return STRUCT_OFFSET(AFGBuildableGeneratorNuclear, mOutputInventory); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_12_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_14_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableGeneratorNuclear_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

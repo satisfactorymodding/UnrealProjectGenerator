@@ -912,6 +912,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "HideCategories", "PlanarMovement Components|Movement|Planar Activation Components|Activation" },
 		{ "IncludePath", "FGWheeledVehicleMovementComponent6W.h" },
 		{ "ModuleRelativePath", "FGWheeledVehicleMovementComponent6W.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "SerializeToFArchive", "" },
 	};
 #endif
@@ -1037,7 +1038,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 1198794971);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 853356683);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWheeledVehicleMovementComponent6W(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, &UFGWheeledVehicleMovementComponent6W::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWheeledVehicleMovementComponent6W"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWheeledVehicleMovementComponent6W);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGWheeledVehicleMovementComponent6W)

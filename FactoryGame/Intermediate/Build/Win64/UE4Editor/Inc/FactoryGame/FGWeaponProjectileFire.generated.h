@@ -13,14 +13,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGWeaponProjectileFire_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FProjectileData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGWeaponProjectileFire(); \
 	friend struct Z_Construct_UClass_AFGWeaponProjectileFire_Statics; \
@@ -29,7 +29,7 @@ public: \
 	DECLARE_SERIALIZER(AFGWeaponProjectileFire)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_INCLASS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGWeaponProjectileFire(); \
 	friend struct Z_Construct_UClass_AFGWeaponProjectileFire_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(AFGWeaponProjectileFire)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGWeaponProjectileFire(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGWeaponProjectileFire) \
@@ -51,7 +51,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGWeaponProjectileFire(AFGWeaponProjectileFire&&); \
@@ -62,29 +62,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWeaponProjectileFire); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGWeaponProjectileFire)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mProjectileData() { return STRUCT_OFFSET(AFGWeaponProjectileFire, mProjectileData); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_79_PROLOG
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_81_PROLOG
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_INCLASS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_82_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGWeaponProjectileFire_h_84_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

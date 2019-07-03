@@ -1428,7 +1428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSchematicManager, 1231199293);
+	IMPLEMENT_CLASS(AFGSchematicManager, 2036727879);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSchematicManager(Z_Construct_UClass_AFGSchematicManager, &AFGSchematicManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSchematicManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSchematicManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

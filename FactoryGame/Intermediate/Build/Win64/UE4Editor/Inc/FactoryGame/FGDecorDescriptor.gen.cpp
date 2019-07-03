@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Item|Decor" },
+		{ "Category", "FactoryGame|Descriptor|Decor" },
 		{ "ModuleRelativePath", "Resources/FGDecorDescriptor.h" },
 		{ "ToolTip", "Get the mesh of the decor." },
 	};
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDecorDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh, "GetDecorMesh" }, // 3521072248
+		{ &Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh, "GetDecorMesh" }, // 3512348685
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDecorDescriptor_Statics::Class_MetaDataParams[] = {
@@ -99,13 +99,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGDecorDescriptor.h" },
 		{ "ModuleRelativePath", "Resources/FGDecorDescriptor.h" },
+		{ "ToolTip", "Descriptor for buildable decor." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData[] = {
 		{ "Category", "Decor" },
 		{ "ModuleRelativePath", "Resources/FGDecorDescriptor.h" },
-		{ "ToolTip", "The static mesh we want to \"plutta ut\" on the ground." },
+		{ "ToolTip", "The static mesh for the decor." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDecorMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGDecorDescriptor, mDecorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData)) };
@@ -135,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDecorDescriptor, 575247191);
+	IMPLEMENT_CLASS(UFGDecorDescriptor, 3740208143);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDecorDescriptor(Z_Construct_UClass_UFGDecorDescriptor, &UFGDecorDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDecorDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDecorDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

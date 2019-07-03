@@ -24,10 +24,9 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterBase();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipment_NoRegister();
@@ -69,6 +68,9 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetOutline();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGOutlineComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGResourceMiner_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner();
@@ -90,14 +92,15 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDamageType_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects();
@@ -114,14 +117,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment();
@@ -129,6 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEvent_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFootstepEffectSurface();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFootstepEffect();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDamageType_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FUseState();
@@ -573,16 +580,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_CameraZoomOut),NULL);
 	}
-	static FName NAME_AFGCharacterPlayer_Client_OnReceiveRadiationStart = FName(TEXT("Client_OnReceiveRadiationStart"));
-	void AFGCharacterPlayer::Client_OnReceiveRadiationStart()
-	{
-		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_Client_OnReceiveRadiationStart),NULL);
-	}
-	static FName NAME_AFGCharacterPlayer_Client_OnReceiveRadiationStop = FName(TEXT("Client_OnReceiveRadiationStop"));
-	void AFGCharacterPlayer::Client_OnReceiveRadiationStop()
-	{
-		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_Client_OnReceiveRadiationStop),NULL);
-	}
 	static FName NAME_AFGCharacterPlayer_Client_Revived = FName(TEXT("Client_Revived"));
 	void AFGCharacterPlayer::Client_Revived()
 	{
@@ -611,6 +608,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		Parms.newValue=newValue;
 		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnDisabledInputGateChanged),&Parms);
 	}
+	static FName NAME_AFGCharacterPlayer_OnRadiationIntensityUpdated = FName(TEXT("OnRadiationIntensityUpdated"));
+	void AFGCharacterPlayer::OnRadiationIntensityUpdated(float radiationIntensity, float radiationImmunity)
+	{
+		FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms Parms;
+		Parms.radiationIntensity=radiationIntensity;
+		Parms.radiationImmunity=radiationImmunity;
+		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnRadiationIntensityUpdated),&Parms);
+	}
 	static FName NAME_AFGCharacterPlayer_OnReceiveRadiationStart = FName(TEXT("OnReceiveRadiationStart"));
 	void AFGCharacterPlayer::OnReceiveRadiationStart()
 	{
@@ -620,15 +625,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	void AFGCharacterPlayer::OnReceiveRadiationStop()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnReceiveRadiationStop),NULL);
-	}
-	static FName NAME_AFGCharacterPlayer_OnReceiveRadiationTick = FName(TEXT("OnReceiveRadiationTick"));
-	void AFGCharacterPlayer::OnReceiveRadiationTick(float amount, float duration, TSubclassOf<UFGDamageType>  damageType)
-	{
-		FGCharacterPlayer_eventOnReceiveRadiationTick_Parms Parms;
-		Parms.amount=amount;
-		Parms.duration=duration;
-		Parms.damageType=damageType;
-		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnReceiveRadiationTick),&Parms);
 	}
 	static FName NAME_AFGCharacterPlayer_OnReviveComplete = FName(TEXT("OnReviveComplete"));
 	void AFGCharacterPlayer::OnReviveComplete()
@@ -741,10 +737,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		UClass* Class = AFGCharacterPlayer::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AddRadiationImmunity", &AFGCharacterPlayer::execAddRadiationImmunity },
 			{ "CameraZoomIn", &AFGCharacterPlayer::execCameraZoomIn },
 			{ "CameraZoomOut", &AFGCharacterPlayer::execCameraZoomOut },
-			{ "Client_OnReceiveRadiationStart", &AFGCharacterPlayer::execClient_OnReceiveRadiationStart },
-			{ "Client_OnReceiveRadiationStop", &AFGCharacterPlayer::execClient_OnReceiveRadiationStop },
 			{ "Client_Revived", &AFGCharacterPlayer::execClient_Revived },
 			{ "EquipEquipment", &AFGCharacterPlayer::execEquipEquipment },
 			{ "GetActiveAttachments", &AFGCharacterPlayer::execGetActiveAttachments },
@@ -767,6 +762,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "GetMesh1P", &AFGCharacterPlayer::execGetMesh1P },
 			{ "GetOutline", &AFGCharacterPlayer::execGetOutline },
 			{ "GetPickupProgress", &AFGCharacterPlayer::execGetPickupProgress },
+			{ "GetRadiationDamageAngle", &AFGCharacterPlayer::execGetRadiationDamageAngle },
+			{ "GetRadiationImmunity", &AFGCharacterPlayer::execGetRadiationImmunity },
+			{ "GetRadiationIntensity", &AFGCharacterPlayer::execGetRadiationIntensity },
 			{ "GetResourceMiner", &AFGCharacterPlayer::execGetResourceMiner },
 			{ "GetResourceScanner", &AFGCharacterPlayer::execGetResourceScanner },
 			{ "GetReviveProgress", &AFGCharacterPlayer::execGetReviveProgress },
@@ -786,7 +784,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "OnRep_ActiveAttachments", &AFGCharacterPlayer::execOnRep_ActiveAttachments },
 			{ "OnRep_ActiveEquipments", &AFGCharacterPlayer::execOnRep_ActiveEquipments },
 			{ "OnRep_DrivenVehicle", &AFGCharacterPlayer::execOnRep_DrivenVehicle },
+			{ "OnRep_InRadioactiveZone", &AFGCharacterPlayer::execOnRep_InRadioactiveZone },
 			{ "OnRep_PickupCounter", &AFGCharacterPlayer::execOnRep_PickupCounter },
+			{ "OnRep_RadiationIntensity", &AFGCharacterPlayer::execOnRep_RadiationIntensity },
 			{ "Server_CycleHandEquipmentPressed", &AFGCharacterPlayer::execServer_CycleHandEquipmentPressed },
 			{ "Server_EquipEquipment", &AFGCharacterPlayer::execServer_EquipEquipment },
 			{ "Server_OnUse", &AFGCharacterPlayer::execServer_OnUse },
@@ -798,19 +798,56 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "SetCameraMode", &AFGCharacterPlayer::execSetCameraMode },
 			{ "SetFirstPersonMode", &AFGCharacterPlayer::execSetFirstPersonMode },
 			{ "SetMeshVisibility", &AFGCharacterPlayer::execSetMeshVisibility },
+			{ "SetRadiationImmunity", &AFGCharacterPlayer::execSetRadiationImmunity },
 			{ "SetThirdPersonMode", &AFGCharacterPlayer::execSetThirdPersonMode },
 			{ "SetWantSprintBobbing", &AFGCharacterPlayer::execSetWantSprintBobbing },
 			{ "SpawnInitialGear", &AFGCharacterPlayer::execSpawnInitialGear },
 			{ "StartFocusAim", &AFGCharacterPlayer::execStartFocusAim },
 			{ "StartFreeRotate3P", &AFGCharacterPlayer::execStartFreeRotate3P },
+			{ "StartReceivingRadiation", &AFGCharacterPlayer::execStartReceivingRadiation },
 			{ "StopFocusAim", &AFGCharacterPlayer::execStopFocusAim },
 			{ "StopFreeRotate3P", &AFGCharacterPlayer::execStopFreeRotate3P },
+			{ "StopReceivingRadiation", &AFGCharacterPlayer::execStopReceivingRadiation },
 			{ "ToggleBuildGun", &AFGCharacterPlayer::execToggleBuildGun },
 			{ "ToggleCameraMode", &AFGCharacterPlayer::execToggleCameraMode },
 			{ "UnequipEquipment", &AFGCharacterPlayer::execUnequipEquipment },
 			{ "UsePreferredCameraMode", &AFGCharacterPlayer::execUsePreferredCameraMode },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics
+	{
+		struct FGCharacterPlayer_eventAddRadiationImmunity_Parms
+		{
+			float toAdd;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_toAdd;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::NewProp_toAdd = { UE4CodeGen_Private::EPropertyClass::Float, "toAdd", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventAddRadiationImmunity_Parms, toAdd), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::NewProp_toAdd,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Adds or removes an amount of radiation" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "AddRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventAddRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics
 	{
@@ -857,54 +894,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
-		{ "ToolTip", "Replication functions for handling radiation effects on client" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Client_OnReceiveRadiationStart", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x01080CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
-		{ "ToolTip", "Replication functions for handling radiation effects on client" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Client_OnReceiveRadiationStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x01080CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1741,6 +1730,108 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics
+	{
+		struct FGCharacterPlayer_eventGetRadiationDamageAngle_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationDamageAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Returns the angle from the players view to the accumulated radiation damage *" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetRadiationDamageAngle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetRadiationDamageAngle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics
+	{
+		struct FGCharacterPlayer_eventGetRadiationImmunity_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationImmunity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Returns accumulated radioation immunity *" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics
+	{
+		struct FGCharacterPlayer_eventGetRadiationIntensity_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationIntensity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Returns accumulated normalized radiation intensity at the the players location *" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetRadiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetRadiationIntensity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics
 	{
 		struct FGCharacterPlayer_eventGetResourceMiner_Parms
@@ -2306,6 +2397,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_radiationImmunity;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_radiationIntensity;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "radiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms, radiationImmunity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity = { UE4CodeGen_Private::EPropertyClass::Float, "radiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms, radiationIntensity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Called when we have updated radiation intensity." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRadiationIntensityUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics
 	{
 #if WITH_METADATA
@@ -2351,42 +2475,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics
-	{
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_damageType;
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_duration;
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_amount;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::NewProp_damageType = { UE4CodeGen_Private::EPropertyClass::Class, "damageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnReceiveRadiationTick_Parms, damageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::NewProp_duration = { UE4CodeGen_Private::EPropertyClass::Float, "duration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnReceiveRadiationTick_Parms, duration), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Float, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnReceiveRadiationTick_Parms, amount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::NewProp_damageType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::NewProp_duration,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::NewProp_amount,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
-		{ "ToolTip", "Called when we are receiving radiation." },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnReceiveRadiationTick", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGCharacterPlayer_eventOnReceiveRadiationTick_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2457,6 +2545,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_InRadioactiveZone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics
 	{
 #if WITH_METADATA
@@ -2476,6 +2586,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_RadiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2869,6 +3001,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics
+	{
+		struct FGCharacterPlayer_eventSetRadiationImmunity_Parms
+		{
+			float newImmunity;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_newImmunity;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::NewProp_newImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "newImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventSetRadiationImmunity_Parms, newImmunity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::NewProp_newImmunity,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Radiation" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Sets an amount of radiation" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventSetRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics
 	{
 #if WITH_METADATA
@@ -3027,6 +3193,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StartReceivingRadiation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics
 	{
 #if WITH_METADATA
@@ -3072,6 +3260,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StopReceivingRadiation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -3192,6 +3402,23 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInRadioactiveZone_MetaData[];
+#endif
+		static void NewProp_mInRadioactiveZone_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mInRadioactiveZone;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadiationImmunity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mRadiationImmunity;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadiationDamageAngle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mRadiationDamageAngle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRadiationIntensity_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mRadiationIntensity;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHealthGenerationWaitTime_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mHealthGenerationWaitTime;
@@ -3227,10 +3454,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDefaultWalkHeadBobShake_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mDefaultWalkHeadBobShake;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxDPSFromRadiation_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxDPSFromRadiation;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReviver_MetaData[];
 #endif
@@ -3416,10 +3639,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCharacterPlayer_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity, "AddRadiationImmunity" }, // 4131439808
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn, "CameraZoomIn" }, // 1023265946
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut, "CameraZoomOut" }, // 127172358
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStart, "Client_OnReceiveRadiationStart" }, // 2301350612
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_OnReceiveRadiationStop, "Client_OnReceiveRadiationStop" }, // 323845813
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived, "Client_Revived" }, // 2466209573
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment, "EquipEquipment" }, // 3297833485
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments, "GetActiveAttachments" }, // 871315436
@@ -3442,6 +3664,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P, "GetMesh1P" }, // 235107286
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetOutline, "GetOutline" }, // 493535227
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress, "GetPickupProgress" }, // 2135813453
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle, "GetRadiationDamageAngle" }, // 1104372252
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity, "GetRadiationImmunity" }, // 3152846021
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity, "GetRadiationIntensity" }, // 1808178099
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner, "GetResourceMiner" }, // 3558534803
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner, "GetResourceScanner" }, // 291886735
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress, "GetReviveProgress" }, // 2211659760
@@ -3458,13 +3683,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 1086641149
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked, "OnInventorySlotsUnlocked" }, // 1196500791
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory, "OnItemAddedToInventory" }, // 675385019
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 487139694
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 2947258268
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 2803271331
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationTick, "OnReceiveRadiationTick" }, // 3651173606
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments, "OnRep_ActiveAttachments" }, // 3854880280
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments, "OnRep_ActiveEquipments" }, // 2997009673
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle, "OnRep_DrivenVehicle" }, // 496748282
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone, "OnRep_InRadioactiveZone" }, // 3649657479
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter, "OnRep_PickupCounter" }, // 2235400158
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity, "OnRep_RadiationIntensity" }, // 492020511
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete, "OnReviveComplete" }, // 1551515358
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker, "OnSpawnDeathMarker" }, // 3828896683
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects, "PlayPickupEffects" }, // 1225697677
@@ -3479,14 +3706,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode, "SetCameraMode" }, // 3559135896
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode, "SetFirstPersonMode" }, // 3222909643
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility, "SetMeshVisibility" }, // 1507613465
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity, "SetRadiationImmunity" }, // 2664600606
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode, "SetThirdPersonMode" }, // 3848740884
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing, "SetWantSprintBobbing" }, // 2121733068
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation, "SnapSpringArmToDesiredLocation" }, // 487614580
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear, "SpawnInitialGear" }, // 1076118661
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim, "StartFocusAim" }, // 3357889769
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P, "StartFreeRotate3P" }, // 3874221431
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation, "StartReceivingRadiation" }, // 2271863784
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim, "StopFocusAim" }, // 3298587092
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P, "StopFreeRotate3P" }, // 2051109391
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation, "StopReceivingRadiation" }, // 1363004754
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun, "ToggleBuildGun" }, // 4225586843
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode, "ToggleCameraMode" }, // 825523200
 		{ &Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment, "UnequipEquipment" }, // 1658241153
@@ -3501,6 +3731,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Base class for all player characters in the game." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Are we in a radioactive zone" },
+	};
+#endif
+	void Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_SetBit(void* Obj)
+	{
+		((AFGCharacterPlayer*)Obj)->mInRadioactiveZone = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone = { UE4CodeGen_Private::EPropertyClass::Bool, "mInRadioactiveZone", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_InRadioActiveZone", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "How much immunity do we have for radiation" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationImmunity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "The angle from the players view to the accumulated radiation damage *" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationDamageAngle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationDamageAngle), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "The accumulated normalized radiation intensity of the players current location" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_RadiationIntensity", STRUCT_OFFSET(AFGCharacterPlayer, mRadiationIntensity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData[] = {
 		{ "Category", "HealthGeneration" },
@@ -3567,14 +3829,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake = { UE4CodeGen_Private::EPropertyClass::Class, "mDefaultWalkHeadBobShake", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mDefaultWalkHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMaxDPSFromRadiation_MetaData[] = {
-		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
-		{ "ToolTip", "How much damage to take from radiation." },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMaxDPSFromRadiation = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxDPSFromRadiation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mMaxDPSFromRadiation), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMaxDPSFromRadiation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMaxDPSFromRadiation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
@@ -3908,6 +4162,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate = { UE4CodeGen_Private::EPropertyClass::Float, "mBaseTurnRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000020015, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mBaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount,
@@ -3917,7 +4175,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMaxDPSFromRadiation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance,
@@ -3998,7 +4255,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 3350383163);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 2573294281);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCharacterPlayer(Z_Construct_UClass_AFGCharacterPlayer, &AFGCharacterPlayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCharacterPlayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCharacterPlayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
