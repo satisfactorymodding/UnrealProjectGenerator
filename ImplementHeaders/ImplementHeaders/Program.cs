@@ -11,22 +11,42 @@ namespace ImplementHeaders
     {
         private static bool CountOnly = false;
         private static int FunctionCount;
+
+        private static string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties" };
         static void Main(string[] args)
         {
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+            if (args.Length == 0)
+            {
+                args = new string[] { "", "", "" };
+                Console.Write("Headers dir: ");
+                args[0] = Console.ReadLine();
+                Console.Write("Cpp dir: ");
+                args[1] = Console.ReadLine();
+                Console.Write("Show only count? (y/N): ");
+                args[2] = Console.ReadLine();
+                if (args[2].ToLower() == "y" || args[2].ToLower() == "yes")
+                    args[2] = "true";
+                else
+                    args[2] = "false";
+            }
             if (args.Length >= 3)
                 CountOnly = bool.Parse(args[2]);
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             Implement(args[0], args[1]);
             stopwatch.Stop();
             Console.WriteLine($"Done. Generated {FunctionCount} functions in {stopwatch.ElapsedMilliseconds} ms.");
+            Console.ReadKey();
         }
 
         private static void Implement(string path, string saveLocation)
         {
-            if(File.Exists(path))
-                ImplementFile(path, saveLocation);
-            else if(Directory.Exists(path))
+            if (File.Exists(path))
+            {
+                if (path.EndsWith(".h"))
+                    ImplementFile(path, saveLocation);
+            }
+            else if (Directory.Exists(path))
             {
                 foreach (string dir in Directory.EnumerateDirectories(path))
                 {
@@ -35,12 +55,15 @@ namespace ImplementHeaders
                     Implement(dir, newSaveLocation);
                 }
                 foreach (string file in Directory.EnumerateFiles(path))
-                    ImplementFile(file, saveLocation);
+                    if (file.EndsWith(".h"))
+                        ImplementFile(file, saveLocation);
             }
         }
 
         private static void ImplementFile(string filePath, string saveDir)
         {
+            if (filePath.EndsWith("FactoryGame.h"))
+                return;
             string fileContents;
             using (StreamReader reader = new StreamReader(filePath))
                 fileContents = reader.ReadToEnd();
@@ -72,8 +95,12 @@ namespace ImplementHeaders
                 writer.WriteLine($"");
                 writer.WriteLine($"#include \"{Path.GetFileName(filePath)}\"");
                 writer.WriteLine($"");
+                if (filePath.Contains("FGCheatBoardWidget.h"))
+                    writer.WriteLine("#if WITH_CHEATS");
                 foreach (string func in implementations)
                     writer.WriteLine(func);
+                if (filePath.Contains("FGCheatBoardWidget.h"))
+                    writer.WriteLine("#endif");
             }
         }
 
@@ -101,7 +128,10 @@ namespace ImplementHeaders
                 if (extras.Contains("PURE_VIRTUAL")) // ignore pure virtual macro
                     continue;
 
-                if (!IsValidFunctionName(functionName))
+                if (!IsValidFunctionName(functionName) && !(functionName.Trim().Replace("~", "") == className && string.IsNullOrWhiteSpace(returnType)))
+                    continue;
+
+                if (!string.IsNullOrWhiteSpace(template)) // All of them end up commented
                     continue;
                 // regex takes too long and it is the only other way to fix UPARAM's closing bracket being matched as parameter closing bracket...
                 int bracketCount = parameters.Count(ch => ch == '(') - parameters.Count(ch => ch == ')');
@@ -126,19 +156,31 @@ namespace ImplementHeaders
                 }
 
 
-                if (extras.Contains('{') || extras.Contains("delete"))
+                if (extras.Contains('{') || extras.Contains("delete") || extras.Contains("="))
                     continue; // already implemented in header and it matched "... { return ...; }"
 
                 parameters = Regex.Replace(parameters, @"\/\*.*?\*\/", ""); // fix for commented defaults
                 template = Regex.Replace(template, @"\/\*.*?\*\/", ""); // fix for commented defaults ?
 
-                if (ufunction.Contains("BlueprintImplementableEvent"))
-                    Console.WriteLine($"skipping {className}");
-                else if (!string.IsNullOrWhiteSpace(ufunction))
+                if (!string.IsNullOrWhiteSpace(ufunction))
                 {
+                    if (ufunction.Contains("BlueprintImplementableEvent"))
+                    {
+                        if (!CountOnly)
+                            Console.WriteLine($"Skipped {className}::{functionName} (BlueprintImplementableEvent)");
+                        continue;
+                    }
                     if (ufunction.Contains("BlueprintNativeEvent") || ufunction.Contains("Server") || ufunction.Contains("Client") || ufunction.Contains("NetMulticast"))
+                    {
+                        if (ufunction.Contains("BlueprintNativeEvent") && className.Contains("Interface"))
+                        {
+                            if (!CountOnly)
+                                Console.WriteLine($"Skipped {className}::{functionName} (BlueprintNativeEvent in Interface)"); // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html
+                            continue;
+                        }
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
-                    else if (ufunction.Contains("BlueprintPure") || ufunction.Contains("BlueprintCallable") || ufunction.ToLower().Contains("exec") || Regex.Replace(Regex.Replace(Regex.Replace(ufunction.Trim(), @"(?:([^\w\d]) (.)|(.) ([^\w\d]))", "$1$2$3$4"), @"(?:([^\w\d]) (.)|(.) ([^\w\d]))", "$1$2$3$4"), @",? *(Category|meta) *= *.*?(,|\))", "") == "UFUNCTION()")
+                    }
+                    else if (ufunction.Contains("BlueprintPure") || ufunction.Contains("BlueprintCallable") || ufunction.ToLower().Contains("exec") || Regex.Replace(TrimUselessSpaces(ufunction), @"((?:Category=".* "|meta=".* "|meta=\(.*\))(,|\))?)", "") == "UFUNCTION()")
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
                     if (ufunction.Contains("WithValidation"))
                         ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic);
@@ -151,16 +193,13 @@ namespace ImplementHeaders
 
         private static void ImplementFunction(List<string> implementations, string className, string isClass, string isReturnConst, string returnType, string functionName, string parameters, string isConst, string template, string isStatic)
         {
-            if (className.Contains("Interface")) // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html
-                return;
-
             string withoutDestructorThingy = functionName.Trim().Replace("~", "");
 
             if (IsValidReturnType(returnType) || (withoutDestructorThingy == className && string.IsNullOrWhiteSpace(returnType)))
             {
                 if (!string.IsNullOrWhiteSpace(template))
                     template = FixDefaults(template.Trim().TrimEnd('>')) + '>' + Environment.NewLine;
-                string result = $"{template}{isReturnConst}{returnType}{className}::{functionName}{Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
+                string result = $"{template}{isReturnConst}{returnType}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
                 if (parameters.Contains("objectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
                     result += " : Super(objectInitializer) ";
                 else if (parameters.Contains("ObjectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
@@ -175,7 +214,11 @@ namespace ImplementHeaders
                     result += " : FObjectWriter(Obj, InBytes) ";
                 result += $"{{ ";
                 if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
+                {
+                    if (NeedsSuper.Contains(functionName.Trim()))
+                        result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters), @"(?:.*? )?(.*?) (.*?)(?:, ?|\)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
                     result += $"}}";
+                }
                 else
                 {
                     result += $"return ";
@@ -210,7 +253,7 @@ namespace ImplementHeaders
 
         private static string GetCustomReturn(string returnType)
         {
-            returnType = Regex.Replace(returnType.Trim(), @"(?:([^\w\d]) ([\w\d])|([\w\d]) ([^\w\d]))", "$1$2$3$4"); // trim spaces between < and character, ( and character, etc.
+            returnType = TrimUselessSpaces(returnType); // trim spaces between < and character, ( and character, etc.
             switch (returnType)
             {
                 case "FReply":
@@ -222,9 +265,14 @@ namespace ImplementHeaders
             }
         }
 
+        private static string TrimUselessSpaces(string str)
+        {
+            return Regex.Replace(str.Trim(), @"(?:([^\w\d])\s+([\w\d])|([\w\d])\s+([^\w\d])|([^\w\d])\s+([^\w\d]))", "$1$2$3$4$5$6");
+        }
+
         private static string FixDefaults(string parameters)
         {
-            string ret = string.Join(",", parameters.Split(',').Select(param => param.Trim().Contains("UPARAM") ? param : param.Split('=')[0]));
+            string ret = string.Join(",", parameters.Trim().TrimStart('(').TrimEnd(')').Split(',').Select(param => param.Trim().Contains("UPARAM") ? param : param.Split('=')[0]));
             return ret;
         }
 
