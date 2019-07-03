@@ -6,7 +6,7 @@ All assets/code related to Satisfactory (found under `Headers` & most of `Factor
 
 ## Contents
 
-`FactoryGame` is the Unreal Engine 4 project which contains all the blueprints in the game.
+`FactoryGame` is the Unreal Engine 4.21.2 project which contains all the blueprints in the game version 101665.
 
 `Headers` contains the `CommunityResources\Headers.zip`, a bit modified, and the generated cpp files
 
