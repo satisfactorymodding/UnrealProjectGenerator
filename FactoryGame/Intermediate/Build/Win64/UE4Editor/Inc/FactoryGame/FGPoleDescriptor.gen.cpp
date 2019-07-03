@@ -237,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPoleDescriptor, 3673627459);
+	IMPLEMENT_CLASS(UFGPoleDescriptor, 1513863143);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPoleDescriptor(Z_Construct_UClass_UFGPoleDescriptor, &UFGPoleDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPoleDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPoleDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

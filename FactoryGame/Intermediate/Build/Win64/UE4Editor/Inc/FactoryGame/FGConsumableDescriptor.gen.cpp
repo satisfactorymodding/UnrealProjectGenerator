@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConsumableDescriptor, 2168516115);
+	IMPLEMENT_CLASS(UFGConsumableDescriptor, 25998796);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConsumableDescriptor(Z_Construct_UClass_UFGConsumableDescriptor, &UFGConsumableDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConsumableDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConsumableDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1038,15 +1038,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName = { UE4CodeGen_Private::EPropertyClass::Text, "mDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData[] = {
+		{ "Category", "FGItemDescriptor" },
 		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
-		{ "ToolTip", "If mDisplayName and mDisplayName is overridden and specified elsewhere.\nThis is specified in the native constructor and is meant to be per class.\nE.g. vehicle descriptors get name and description from the vehicle class so the defaults are useless." },
+		{ "ToolTip", "If mDisplayName and mDisplayName is overridden and specified elsewhere.\nThis is specified in the native constructor and is meant to be per class.\nE.g. vehicle descriptors get name and description from the vehicle class so the defaults are useless.\n        // MODDING EDIT" },
 	};
 #endif
 	void Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit(void* Obj)
 	{
 		((UFGItemDescriptor*)Obj)->mUseDisplayNameAndDescription = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseDisplayNameAndDescription", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000002000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseDisplayNameAndDescription", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000012001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers[] = {
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView,
@@ -1091,7 +1092,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptor, 1543206077);
+	IMPLEMENT_CLASS(UFGItemDescriptor, 4169925240);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptor(Z_Construct_UClass_UFGItemDescriptor, &UFGItemDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptor);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGItemDescriptor)

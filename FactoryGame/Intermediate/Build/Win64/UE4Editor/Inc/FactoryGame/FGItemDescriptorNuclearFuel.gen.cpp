@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 3534869629);
+	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 3765304264);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptorNuclearFuel(Z_Construct_UClass_UFGItemDescriptorNuclearFuel, &UFGItemDescriptorNuclearFuel::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptorNuclearFuel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptorNuclearFuel);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

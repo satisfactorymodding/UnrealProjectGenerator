@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDecorDescriptor, 3740208143);
+	IMPLEMENT_CLASS(UFGDecorDescriptor, 1579393195);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDecorDescriptor(Z_Construct_UClass_UFGDecorDescriptor, &UFGDecorDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDecorDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDecorDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

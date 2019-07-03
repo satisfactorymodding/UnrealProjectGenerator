@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 1907546129);
+	IMPLEMENT_CLASS(UFGEquipmentDescriptor, 1131345828);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEquipmentDescriptor(Z_Construct_UClass_UFGEquipmentDescriptor, &UFGEquipmentDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEquipmentDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEquipmentDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptorGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 1327757599);
+	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 1197094010);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceDescriptorGeyser(Z_Construct_UClass_UFGResourceDescriptorGeyser, &UFGResourceDescriptorGeyser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceDescriptorGeyser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceDescriptorGeyser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

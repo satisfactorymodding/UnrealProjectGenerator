@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/FactoryGame",
 				PKG_CompiledIn | 0x00000000,
-				0xBB9F303D,
+				0xE0A356B3,
 				0x12221BEE,
 				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)

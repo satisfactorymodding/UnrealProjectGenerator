@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 2740268876);
+	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 2441675001);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptorBiomass(Z_Construct_UClass_UFGItemDescriptorBiomass, &UFGItemDescriptorBiomass::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptorBiomass"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptorBiomass);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
