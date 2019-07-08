@@ -13,17 +13,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGLocomotiveMovementComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_56_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_58_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_30_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_32_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_RPC_WRAPPERS \
 	virtual bool ServerUpdateState_Validate(int32 , float , float , float , float ); \
 	virtual void ServerUpdateState_Implementation(int32 inReverserInput, float inSteeringInput, float inThrottleInput, float inDynamicBrakeInput, float inAirBrakeInput); \
  \
@@ -146,7 +146,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool ServerUpdateState_Validate(int32 , float , float , float , float ); \
 	virtual void ServerUpdateState_Implementation(int32 inReverserInput, float inSteeringInput, float inThrottleInput, float inDynamicBrakeInput, float inAirBrakeInput); \
  \
@@ -269,7 +269,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_EVENT_PARMS \
 	struct FGLocomotiveMovementComponent_eventServerUpdateState_Parms \
 	{ \
 		int32 inReverserInput; \
@@ -280,8 +280,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGLocomotiveMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGLocomotiveMovementComponent_Statics; \
@@ -290,7 +290,7 @@ public: \
 	DECLARE_SERIALIZER(UFGLocomotiveMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGLocomotiveMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGLocomotiveMovementComponent_Statics; \
@@ -299,7 +299,7 @@ public: \
 	DECLARE_SERIALIZER(UFGLocomotiveMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGLocomotiveMovementComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGLocomotiveMovementComponent) \
@@ -312,7 +312,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGLocomotiveMovementComponent(UFGLocomotiveMovementComponent&&); \
@@ -323,7 +323,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGLocomotiveMovementComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGLocomotiveMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mReplicatedState() { return STRUCT_OFFSET(UFGLocomotiveMovementComponent, mReplicatedState); } \
 	FORCEINLINE static uint32 __PPO__mRawReverserInput() { return STRUCT_OFFSET(UFGLocomotiveMovementComponent, mRawReverserInput); } \
 	FORCEINLINE static uint32 __PPO__mRawSteeringInput() { return STRUCT_OFFSET(UFGLocomotiveMovementComponent, mRawSteeringInput); } \
@@ -343,30 +343,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGLocomotiveMovementComponent); \
 	FORCEINLINE static uint32 __PPO__mDynamicBrakingEffortCurve() { return STRUCT_OFFSET(UFGLocomotiveMovementComponent, mDynamicBrakingEffortCurve); }
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_87_PROLOG \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_89_PROLOG \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_INCLASS \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_INCLASS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_91_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_93_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

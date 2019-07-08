@@ -245,7 +245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorLift, 1148000096);
+	IMPLEMENT_CLASS(AFGBuildableConveyorLift, 850614530);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorLift(Z_Construct_UClass_AFGBuildableConveyorLift, &AFGBuildableConveyorLift::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorLift"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorLift);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

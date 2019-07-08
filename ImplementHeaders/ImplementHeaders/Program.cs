@@ -12,7 +12,7 @@ namespace ImplementHeaders
         private static bool CountOnly = false;
         private static int FunctionCount;
 
-        private static string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties" };
+        private static string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "CreateRenderState_Concurrent" };
         static void Main(string[] args)
         {
             if (args.Length == 0)
@@ -36,7 +36,6 @@ namespace ImplementHeaders
             Implement(args[0], args[1]);
             stopwatch.Stop();
             Console.WriteLine($"Done. Generated {FunctionCount} functions in {stopwatch.ElapsedMilliseconds} ms.");
-            Console.ReadKey();
         }
 
         private static void Implement(string path, string saveLocation)
@@ -180,7 +179,7 @@ namespace ImplementHeaders
                         }
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
                     }
-                    else if (ufunction.Contains("BlueprintPure") || ufunction.Contains("BlueprintCallable") || ufunction.ToLower().Contains("exec") || Regex.Replace(TrimUselessSpaces(ufunction), @"((?:Category=".* "|meta=".* "|meta=\(.*\))(,|\))?)", "") == "UFUNCTION()")
+                    else if (ufunction.Contains("BlueprintPure") || ufunction.Contains("BlueprintCallable") || ufunction.ToLower().Contains("exec") || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
                     if (ufunction.Contains("WithValidation"))
                         ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic);

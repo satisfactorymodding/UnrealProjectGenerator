@@ -14,6 +14,8 @@ namespace FixHeaders
         private static int FixedCount;
         private static int FixedFileCount;
 
+        private static List<string> HeaderCache = new List<string>();
+
         private static Dictionary<string, string> NeededIncludes = new Dictionary<string, string>()
         {
             {"UENUM", "UObject/Class.h" },
@@ -88,6 +90,7 @@ namespace FixHeaders
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Headers\"", headerUpgradeFolder);
             Run("git.exe", "merge ModdingEdit", headerUpgradeFolder);
+            GenerateHeaderCache(headerUpgradeFolder);
             FixFiles(headerUpgradeFolder);
             Run("git.exe", "add .", headerUpgradeFolder);
             Run("git.exe", "commit -m \"New Modding Edit Headers\"", headerUpgradeFolder);
@@ -97,8 +100,19 @@ namespace FixHeaders
             Console.Write($"Cleaning up... ");
             ForceDeleteDirectory(headerUpgradeFolder);
             Console.WriteLine($"Done.");
-            Console.WriteLine($"Press any key to exit.");
-            Console.ReadKey();
+        }
+
+        private static void GenerateHeaderCache(string path)
+        {
+            if(Directory.Exists(path))
+            {
+                foreach (string dir in Directory.EnumerateDirectories(path))
+                    GenerateHeaderCache(Path.Combine(path, dir));
+                foreach (string file in Directory.EnumerateFiles(path))
+                    HeaderCache.Add(path);
+            }
+            else if(File.Exists(path))
+                HeaderCache.Add(path);
         }
 
         private static void ForceDeleteDirectory(string directory)
@@ -198,11 +212,15 @@ namespace FixHeaders
             foreach(KeyValuePair<string, string> doesInclude in NeededIncludes)
             {
                 if (file.Contains(doesInclude.Key) && !file.Contains($"#include \"{doesInclude.Value}\""))
+                {
                     file = file.Insert(file.Substring(file.IndexOf("#pragma once")).IndexOf("\r\n") + file.IndexOf("#pragma once") + "\r\n".Length, $"#include \"{doesInclude.Value}\"\r\n");
+                    FixedCount++;
+                    hasChanges = true;
+                }
             }
 
             // fix UInterface missing constructor
-            file = Regex.Replace(file, @"(class (.*?) : public UInterface\s*{\s*)GENERATED_UINTERFACE_BODY\(\)[\w\s_&\(\):{}]*(};)", "$1\r\n GENERATED_BODY()\r\n	$2(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} \r\n$3");
+            file = Regex.Replace(file, @"(class (.*?) : public UInterface\s*{\s*)GENERATED_UINTERFACE_BODY\(\)[\w\s_&\(\):{}]*(};)", "$1\r\n    GENERATED_BODY()\r\n    $2(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} \r\n$3");
 
             // fix CustomEventUsing
             int customEventCount = Regex.Matches(file, @", ?CustomEventUsing ?= ?[^\s,\)]*").Count;
@@ -220,26 +238,10 @@ namespace FixHeaders
         private static object GetFileRelative(string root, string file, string relativeTo)
         {
             // https://stackoverflow.com/a/9045399
-            Uri filePath = new Uri(FindFile(root, file), UriKind.Absolute);
+            Uri filePath = new Uri(HeaderCache.Find(path => path.EndsWith(file)), UriKind.Absolute);
             Uri relTo = new Uri(Path.Combine(root, relativeTo), UriKind.Absolute);
 
             return relTo.MakeRelativeUri(filePath).ToString();
-        }
-
-        private static string FindFile(string root, string file)
-        {
-            if (!File.Exists(Path.Combine(root, file)))
-            {
-                foreach(string dir in Directory.EnumerateDirectories(root))
-                {
-                    string find = FindFile(dir, file);
-                    if (find != null)
-                        return find;
-                }
-                return null;
-            }
-            else
-                return Path.Combine(root, file);
         }
 
         // https://stackoverflow.com/a/7064944

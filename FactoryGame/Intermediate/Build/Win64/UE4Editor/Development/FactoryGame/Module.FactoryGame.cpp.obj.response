@@ -428,9 +428,6 @@
 /I ..\Plugins\Online\OnlineSubsystemNull
 /I ..\Plugins\Online\OnlineSubsystemNull\Source\Public
 /I ..\Plugins\Online\OnlineSubsystemNull\Source
-/I ..\Plugins\Online\OnlineSubsystemUtils\Intermediate\Build\Win64\UE4Editor\Inc\OnlineBlueprintSupport
-/I ..\Plugins\Online\OnlineSubsystemUtils\Source\OnlineBlueprintSupport\Classes
-/I ..\Plugins\Online\OnlineSubsystemUtils\Source\OnlineBlueprintSupport
 /I ..\Plugins\Runtime\SignificanceManager\Intermediate\Build\Win64\UE4Editor\Inc\SignificanceManager
 /I ..\Plugins\Runtime\SignificanceManager\Source
 /I ..\Plugins\Runtime\SignificanceManager\Source\SignificanceManager\Public
@@ -461,10 +458,6 @@
 /I ..\Plugins\Runtime\ReplicationGraph
 /I ..\Plugins\Runtime\ReplicationGraph\Source\Public
 /I ..\Plugins\Runtime\ReplicationGraph\Source
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimGraph
-/I Editor\AnimGraph\Classes
-/I Editor\AnimGraph\Public
-/I Editor\AnimGraph
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
