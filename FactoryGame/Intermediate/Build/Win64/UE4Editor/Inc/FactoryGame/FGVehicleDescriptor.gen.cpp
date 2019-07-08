@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDescriptor, 1280894541);
+	IMPLEMENT_CLASS(UFGVehicleDescriptor, 1798460844);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleDescriptor(Z_Construct_UClass_UFGVehicleDescriptor, &UFGVehicleDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

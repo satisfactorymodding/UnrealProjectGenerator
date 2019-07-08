@@ -587,7 +587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchRecipe, 355697347);
+	IMPLEMENT_CLASS(UFGResearchRecipe, 3874173535);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResearchRecipe(Z_Construct_UClass_UFGResearchRecipe, &UFGResearchRecipe::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResearchRecipe"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResearchRecipe);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGResearchRecipe)

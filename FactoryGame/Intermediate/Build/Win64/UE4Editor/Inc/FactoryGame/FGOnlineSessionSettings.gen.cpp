@@ -160,11 +160,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName = { UE4CodeGen_Private::EPropertyClass::Str, "SessionName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FFGOnlineSessionSettings, SessionName), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_SessionName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData[] = {
+		{ "Category", "FGOnlineSessionSettings" },
 		{ "ModuleRelativePath", "FGOnlineSessionSettings.h" },
 		{ "ToolTip", "The build version on the form ++FactoryGame+Main-4.20-CL-123456" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion = { UE4CodeGen_Private::EPropertyClass::Str, "BuildVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FFGOnlineSessionSettings, BuildVersion), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion = { UE4CodeGen_Private::EPropertyClass::Str, "BuildVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FFGOnlineSessionSettings, BuildVersion), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_BuildVersion_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::NewProp_PlayDuration_MetaData[] = {
 		{ "Category", "FGOnlineSessionSettings" },
@@ -240,7 +241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_CRC() { return 2790081848U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_CRC() { return 4153974437U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

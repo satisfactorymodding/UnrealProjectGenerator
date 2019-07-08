@@ -34,6 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_GetTargetPoints();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_HasPath();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_IsSelfDrivingEnabled();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_OnNameChanged();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_ReportSelfDrivingError();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGLocomotive_SetMultipleUnitControlMaster();
@@ -46,6 +47,11 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGPowerConnectionComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FFloatInterval();
 // End Cross Module References
+	static FName NAME_AFGLocomotive_OnNameChanged = FName(TEXT("OnNameChanged"));
+	void AFGLocomotive::OnNameChanged()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGLocomotive_OnNameChanged),NULL);
+	}
 	void AFGLocomotive::StaticRegisterNativesAFGLocomotive()
 	{
 		UClass* Class = AFGLocomotive::StaticClass();
@@ -492,6 +498,30 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|Locomotive" },
+		{ "ModuleRelativePath", "FGLocomotive.h" },
+		{ "ToolTip", "Called when the name of the train this locomotive is part of has changed name" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGLocomotive, "OnNameChanged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGLocomotive_OnNameChanged()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGLocomotive_OnNameChanged_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform_Statics
 	{
 #if WITH_METADATA
@@ -814,6 +844,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		{ &Z_Construct_UFunction_AFGLocomotive_GetTargetPoints, "GetTargetPoints" }, // 778411238
 		{ &Z_Construct_UFunction_AFGLocomotive_HasPath, "HasPath" }, // 1595487560
 		{ &Z_Construct_UFunction_AFGLocomotive_IsSelfDrivingEnabled, "IsSelfDrivingEnabled" }, // 1954038690
+		{ &Z_Construct_UFunction_AFGLocomotive_OnNameChanged, "OnNameChanged" }, // 2299003664
 		{ &Z_Construct_UFunction_AFGLocomotive_OnRep_ReplicatedMovementTransform, "OnRep_ReplicatedMovementTransform" }, // 139640573
 		{ &Z_Construct_UFunction_AFGLocomotive_ReportSelfDrivingError, "ReportSelfDrivingError" }, // 2414345561
 		{ &Z_Construct_UFunction_AFGLocomotive_SetMultipleUnitControlMaster, "SetMultipleUnitControlMaster" }, // 3740525806
@@ -903,7 +934,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGLocomotive, 4259318122);
+	IMPLEMENT_CLASS(AFGLocomotive, 1696118311);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGLocomotive(Z_Construct_UClass_AFGLocomotive, &AFGLocomotive::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGLocomotive"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGLocomotive);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

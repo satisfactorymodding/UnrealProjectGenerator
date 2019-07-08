@@ -8,18 +8,43 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ERepresentationType : uint8;
 struct FVector2D;
 #ifdef FACTORYGAME_FGMapObjectWidget_generated_h
 #error "FGMapObjectWidget.generated.h already included, missing '#pragma once' in FGMapObjectWidget.h"
 #endif
 #define FACTORYGAME_FGMapObjectWidget_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGMapObjectWidget_h_16_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGMapObjectWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_UI_FGMapObjectWidget_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnActorRepresentationFiltered) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_representationType); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnActorRepresentationFiltered(ERepresentationType(Z_Param_representationType),Z_Param_visible); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_UI_FGMapObjectWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnActorRepresentationFiltered) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_representationType); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnActorRepresentationFiltered(ERepresentationType(Z_Param_representationType),Z_Param_visible); \
+		P_NATIVE_END; \
+	}
+
+
 #define FactoryGame_Source_FactoryGame_UI_FGMapObjectWidget_h_16_EVENT_PARMS \
 	struct FGMapObjectWidget_eventOnObjectFiltered_Parms \
 	{ \
-		bool FilteredIn; \
+		bool visible; \
 	}; \
 	struct FGMapObjectWidget_eventOnObjectMoved_Parms \
 	{ \
@@ -75,6 +100,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMapObjectWidget); \
 #define FactoryGame_Source_FactoryGame_UI_FGMapObjectWidget_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mActorRepresentation() { return STRUCT_OFFSET(UFGMapObjectWidget, mActorRepresentation); } \
 	FORCEINLINE static uint32 __PPO__mMapWidget() { return STRUCT_OFFSET(UFGMapObjectWidget, mMapWidget); } \
+	FORCEINLINE static uint32 __PPO__mFilteredVisibility() { return STRUCT_OFFSET(UFGMapObjectWidget, mFilteredVisibility); } \
 	FORCEINLINE static uint32 __PPO__mMinimapCaptureActor() { return STRUCT_OFFSET(UFGMapObjectWidget, mMinimapCaptureActor); }
 
 

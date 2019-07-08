@@ -13,8 +13,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 // Cross Module References
-	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ERepresentationType();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGActorRepresentation_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedCompassShow__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdated__DelegateSignature();
@@ -26,17 +29,109 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_CreateAndAddNewRepresentation();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_CreateAndAddNewRepresentationNoActor();
-	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ERepresentationType();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_Get();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetAllActorRepresentations();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter();
+	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_OnRep_ReplicatedRepresentations();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_RemoveRepresentationOfActor();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_UpdateRepresentation();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms
+		{
+			ERepresentationType representationType;
+			bool visible;
+		};
+		static void NewProp_visible_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_visible;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_representationType;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_representationType_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_visible_SetBit(void* Obj)
+	{
+		((_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms*)Obj)->visible = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms), &Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_representationType = { UE4CodeGen_Private::EPropertyClass::Enum, "representationType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms, representationType), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_representationType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_visible,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_representationType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::NewProp_representationType_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnActorRepresentationTypeFilteredOnCompass__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms
+		{
+			ERepresentationType representationType;
+			bool visible;
+		};
+		static void NewProp_visible_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_visible;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_representationType;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_representationType_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_visible_SetBit(void* Obj)
+	{
+		((_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms*)Obj)->visible = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms), &Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_representationType = { UE4CodeGen_Private::EPropertyClass::Enum, "representationType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms, representationType), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_representationType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_visible,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_representationType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::NewProp_representationType_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnActorRepresentationTypeFilteredOnMap__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature_Statics
 	{
 		struct _Script_FactoryGame_eventOnActorRepresentationUpdatedMapShow_Parms
@@ -223,8 +318,12 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 			{ "CreateAndAddNewRepresentationNoActor", &AFGActorRepresentationManager::execCreateAndAddNewRepresentationNoActor },
 			{ "Get", &AFGActorRepresentationManager::execGet },
 			{ "GetAllActorRepresentations", &AFGActorRepresentationManager::execGetAllActorRepresentations },
+			{ "GetCompassRepresentationTypeFilter", &AFGActorRepresentationManager::execGetCompassRepresentationTypeFilter },
+			{ "GetMapRepresentationTypeFilter", &AFGActorRepresentationManager::execGetMapRepresentationTypeFilter },
 			{ "OnRep_ReplicatedRepresentations", &AFGActorRepresentationManager::execOnRep_ReplicatedRepresentations },
 			{ "RemoveRepresentationOfActor", &AFGActorRepresentationManager::execRemoveRepresentationOfActor },
+			{ "SetCompassRepresentationTypeFilter", &AFGActorRepresentationManager::execSetCompassRepresentationTypeFilter },
+			{ "SetMapRepresentationTypeFilter", &AFGActorRepresentationManager::execSetMapRepresentationTypeFilter },
 			{ "UpdateRepresentation", &AFGActorRepresentationManager::execUpdateRepresentation },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -450,6 +549,106 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics
+	{
+		struct FGActorRepresentationManager_eventGetCompassRepresentationTypeFilter_Parms
+		{
+			APawn* owningPlayerPawn;
+			ERepresentationType type;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_type_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_owningPlayerPawn;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGActorRepresentationManager_eventGetCompassRepresentationTypeFilter_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGActorRepresentationManager_eventGetCompassRepresentationTypeFilter_Parms), &Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Enum, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventGetCompassRepresentationTypeFilter_Parms, type), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_type_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn = { UE4CodeGen_Private::EPropertyClass::Object, "owningPlayerPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventGetCompassRepresentationTypeFilter_Parms, owningPlayerPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_type_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Filtering" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Returns true if representation type is visible on compass" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGActorRepresentationManager, "GetCompassRepresentationTypeFilter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGActorRepresentationManager_eventGetCompassRepresentationTypeFilter_Parms), Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics
+	{
+		struct FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms
+		{
+			APawn* owningPlayerPawn;
+			ERepresentationType type;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_type_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_owningPlayerPawn;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms), &Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Enum, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms, type), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_type_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn = { UE4CodeGen_Private::EPropertyClass::Object, "owningPlayerPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms, owningPlayerPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_type_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Filtering" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Returns true if representation type is visible on map" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGActorRepresentationManager, "GetMapRepresentationTypeFilter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms), Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGActorRepresentationManager_OnRep_ReplicatedRepresentations_Statics
 	{
 #if WITH_METADATA
@@ -512,6 +711,106 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_RemoveRepresentationOfActor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics
+	{
+		struct FGActorRepresentationManager_eventSetCompassRepresentationTypeFilter_Parms
+		{
+			APawn* owningPlayerPawn;
+			ERepresentationType type;
+			bool visible;
+		};
+		static void NewProp_visible_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_visible;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_type_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_owningPlayerPawn;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_visible_SetBit(void* Obj)
+	{
+		((FGActorRepresentationManager_eventSetCompassRepresentationTypeFilter_Parms*)Obj)->visible = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGActorRepresentationManager_eventSetCompassRepresentationTypeFilter_Parms), &Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Enum, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventSetCompassRepresentationTypeFilter_Parms, type), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_type_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn = { UE4CodeGen_Private::EPropertyClass::Object, "owningPlayerPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventSetCompassRepresentationTypeFilter_Parms, owningPlayerPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_visible,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_type_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Filtering" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Set if representation type should be visible on compass" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGActorRepresentationManager, "SetCompassRepresentationTypeFilter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGActorRepresentationManager_eventSetCompassRepresentationTypeFilter_Parms), Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics
+	{
+		struct FGActorRepresentationManager_eventSetMapRepresentationTypeFilter_Parms
+		{
+			APawn* owningPlayerPawn;
+			ERepresentationType type;
+			bool visible;
+		};
+		static void NewProp_visible_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_visible;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_type_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_owningPlayerPawn;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_visible_SetBit(void* Obj)
+	{
+		((FGActorRepresentationManager_eventSetMapRepresentationTypeFilter_Parms*)Obj)->visible = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGActorRepresentationManager_eventSetMapRepresentationTypeFilter_Parms), &Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Enum, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventSetMapRepresentationTypeFilter_Parms, type), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_type_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn = { UE4CodeGen_Private::EPropertyClass::Object, "owningPlayerPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventSetMapRepresentationTypeFilter_Parms, owningPlayerPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_visible,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_type_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::NewProp_owningPlayerPawn,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Filtering" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Set if representation type should be visible on map" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGActorRepresentationManager, "SetMapRepresentationTypeFilter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGActorRepresentationManager_eventSetMapRepresentationTypeFilter_Parms), Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -594,6 +893,14 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mReplicatedRepresentations;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mReplicatedRepresentations_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnActorRepresentationTypeFilteredOnCompass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnActorRepresentationTypeFilteredOnCompass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnActorRepresentationTypeFilteredOnMap_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnActorRepresentationTypeFilteredOnMap;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mOnActorRepresentationUpdatedMapShow_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_mOnActorRepresentationUpdatedMapShow;
@@ -626,8 +933,12 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_CreateAndAddNewRepresentationNoActor, "CreateAndAddNewRepresentationNoActor" }, // 713166200
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_Get, "Get" }, // 851338603
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetAllActorRepresentations, "GetAllActorRepresentations" }, // 320921690
+		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter, "GetCompassRepresentationTypeFilter" }, // 677753779
+		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter, "GetMapRepresentationTypeFilter" }, // 1651582928
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_OnRep_ReplicatedRepresentations, "OnRep_ReplicatedRepresentations" }, // 3961423135
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_RemoveRepresentationOfActor, "RemoveRepresentationOfActor" }, // 2751606883
+		{ &Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter, "SetCompassRepresentationTypeFilter" }, // 526734093
+		{ &Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter, "SetMapRepresentationTypeFilter" }, // 907952792
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_UpdateRepresentation, "UpdateRepresentation" }, // 1885077985
 	};
 #if WITH_METADATA
@@ -663,6 +974,22 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mReplicatedRepresentations = { UE4CodeGen_Private::EPropertyClass::Array, "mReplicatedRepresentations", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_ReplicatedRepresentations", STRUCT_OFFSET(AFGActorRepresentationManager, mReplicatedRepresentations), METADATA_PARAMS(Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mReplicatedRepresentations_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mReplicatedRepresentations_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mReplicatedRepresentations_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mReplicatedRepresentations", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnCompass_MetaData[] = {
+		{ "Category", "Representation" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Called whenever a representation type changes it's filter status on the compass" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnCompass = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnActorRepresentationTypeFilteredOnCompass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGActorRepresentationManager, mOnActorRepresentationTypeFilteredOnCompass), Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnCompass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnCompass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnMap_MetaData[] = {
+		{ "Category", "Representation" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Called whenever a representation type changes it's filter status on the map" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnMap = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnActorRepresentationTypeFilteredOnMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGActorRepresentationManager, mOnActorRepresentationTypeFilteredOnMap), Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnMap_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationUpdatedMapShow_MetaData[] = {
 		{ "Category", "Representation" },
@@ -710,6 +1037,8 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mClientReplicatedRepresentations_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mReplicatedRepresentations,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mReplicatedRepresentations_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnCompass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationTypeFilteredOnMap,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationUpdatedMapShow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationUpdatedCompassShow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGActorRepresentationManager_Statics::NewProp_mOnActorRepresentationUpdated,
@@ -739,7 +1068,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGActorRepresentationManager, 874383385);
+	IMPLEMENT_CLASS(AFGActorRepresentationManager, 2649814053);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGActorRepresentationManager(Z_Construct_UClass_AFGActorRepresentationManager, &AFGActorRepresentationManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGActorRepresentationManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGActorRepresentationManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+class UFGItemCategory;
 class UStaticMesh;
 class UTexture2D;
 struct FSlateBrush;
@@ -25,6 +26,15 @@ enum class EResourceForm : uint8;
 
 
 #define FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetItemCategory) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGItemCategory> *)Z_Param__Result=UFGItemDescriptor::GetItemCategory(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execCanBeDiscarded) \
 	{ \
@@ -147,6 +157,15 @@ enum class EResourceForm : uint8;
 
 
 #define FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetItemCategory) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGItemCategory> *)Z_Param__Result=UFGItemDescriptor::GetItemCategory(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execCanBeDiscarded) \
 	{ \
@@ -326,7 +345,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGItemDescriptor); \
 	FORCEINLINE static uint32 __PPO__mSmallIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon); } \
 	FORCEINLINE static uint32 __PPO__mPersistentBigIcon() { return STRUCT_OFFSET(UFGItemDescriptor, mPersistentBigIcon); } \
 	FORCEINLINE static uint32 __PPO__mConveyorMesh() { return STRUCT_OFFSET(UFGItemDescriptor, mConveyorMesh); } \
-	FORCEINLINE static uint32 __PPO__mPreviewView() { return STRUCT_OFFSET(UFGItemDescriptor, mPreviewView); }
+	FORCEINLINE static uint32 __PPO__mPreviewView() { return STRUCT_OFFSET(UFGItemDescriptor, mPreviewView); } \
+	FORCEINLINE static uint32 __PPO__mItemCategory() { return STRUCT_OFFSET(UFGItemDescriptor, mItemCategory); }
 
 
 #define FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h_72_PROLOG

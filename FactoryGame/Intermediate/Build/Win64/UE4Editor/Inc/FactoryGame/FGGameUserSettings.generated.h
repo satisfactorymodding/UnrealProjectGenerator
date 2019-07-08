@@ -35,6 +35,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetAutosaveInterval) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_newInterval); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetAutosaveInterval(Z_Param_newInterval); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAutosaveInterval) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetAutosaveInterval(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execClearRequireRestart) \
 	{ \
 		P_FINISH; \
@@ -290,6 +307,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetAutosaveInterval) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_newInterval); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetAutosaveInterval(Z_Param_newInterval); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAutosaveInterval) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetAutosaveInterval(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execClearRequireRestart) \
 	{ \
@@ -595,7 +629,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameUserSettings); \
 	FORCEINLINE static uint32 __PPO__mMotionBlurQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mMotionBlurQuality); } \
 	FORCEINLINE static uint32 __PPO__mCustomKeyMappings() { return STRUCT_OFFSET(UFGGameUserSettings, mCustomKeyMappings); } \
 	FORCEINLINE static uint32 __PPO__mNetworkQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mNetworkQuality); } \
-	FORCEINLINE static uint32 __PPO__mHeadBobScale() { return STRUCT_OFFSET(UFGGameUserSettings, mHeadBobScale); }
+	FORCEINLINE static uint32 __PPO__mHeadBobScale() { return STRUCT_OFFSET(UFGGameUserSettings, mHeadBobScale); } \
+	FORCEINLINE static uint32 __PPO__mAutosaveInterval() { return STRUCT_OFFSET(UFGGameUserSettings, mAutosaveInterval); }
 
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_PROLOG

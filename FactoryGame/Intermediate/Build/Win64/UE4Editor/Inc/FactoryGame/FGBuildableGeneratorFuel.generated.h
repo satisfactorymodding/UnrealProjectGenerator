@@ -9,8 +9,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UObject;
-class UFGInventoryComponent;
 class UFGItemDescriptor;
+class UFGInventoryComponent;
 #ifdef FACTORYGAME_FGBuildableGeneratorFuel_generated_h
 #error "FGBuildableGeneratorFuel.generated.h already included, missing '#pragma once' in FGBuildableGeneratorFuel.h"
 #endif
@@ -33,6 +33,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->FilterFuelClasses(Z_Param_object,Z_Param_idx); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentFuelClass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGItemDescriptor> *)Z_Param__Result=P_THIS->GetCurrentFuelClass(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -87,6 +95,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->FilterFuelClasses(Z_Param_object,Z_Param_idx); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentFuelClass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TSubclassOf<UFGItemDescriptor> *)Z_Param__Result=P_THIS->GetCurrentFuelClass(); \
 		P_NATIVE_END; \
 	} \
  \

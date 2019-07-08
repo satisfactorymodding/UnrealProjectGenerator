@@ -8,18 +8,49 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ERepresentationType : uint8;
 class UFGActorRepresentation;
+class APawn;
 class AActor;
 struct FVector;
 class UTexture2D;
 struct FLinearColor;
-enum class ERepresentationType : uint8;
 class UObject;
 class AFGActorRepresentationManager;
 #ifdef FACTORYGAME_FGActorRepresentationManager_generated_h
 #error "FGActorRepresentationManager.generated.h already included, missing '#pragma once' in FGActorRepresentationManager.h"
 #endif
 #define FACTORYGAME_FGActorRepresentationManager_generated_h
+
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_20_DELEGATE \
+struct _Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms \
+{ \
+	ERepresentationType representationType; \
+	bool visible; \
+}; \
+static inline void FOnActorRepresentationTypeFilteredOnCompass_DelegateWrapper(const FMulticastScriptDelegate& OnActorRepresentationTypeFilteredOnCompass, ERepresentationType representationType, bool visible) \
+{ \
+	_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnCompass_Parms Parms; \
+	Parms.representationType=representationType; \
+	Parms.visible=visible ? true : false; \
+	OnActorRepresentationTypeFilteredOnCompass.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_19_DELEGATE \
+struct _Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms \
+{ \
+	ERepresentationType representationType; \
+	bool visible; \
+}; \
+static inline void FOnActorRepresentationTypeFilteredOnMap_DelegateWrapper(const FMulticastScriptDelegate& OnActorRepresentationTypeFilteredOnMap, ERepresentationType representationType, bool visible) \
+{ \
+	_Script_FactoryGame_eventOnActorRepresentationTypeFilteredOnMap_Parms Parms; \
+	Parms.representationType=representationType; \
+	Parms.visible=visible ? true : false; \
+	OnActorRepresentationTypeFilteredOnMap.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_18_DELEGATE \
 struct _Script_FactoryGame_eventOnActorRepresentationUpdatedMapShow_Parms \
@@ -90,13 +121,55 @@ static inline void FOnActorRepresentationAdded_DelegateWrapper(const FMulticastS
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ReplicatedRepresentations) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_ReplicatedRepresentations(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCompassRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetCompassRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMapRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetMapRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetCompassRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetCompassRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetMapRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetMapRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type),Z_Param_visible); \
 		P_NATIVE_END; \
 	} \
  \
@@ -164,13 +237,55 @@ static inline void FOnActorRepresentationAdded_DelegateWrapper(const FMulticastS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ReplicatedRepresentations) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_ReplicatedRepresentations(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCompassRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetCompassRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMapRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetMapRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetCompassRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetCompassRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetMapRepresentationTypeFilter) \
+	{ \
+		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetMapRepresentationTypeFilter(Z_Param_owningPlayerPawn,ERepresentationType(Z_Param_type),Z_Param_visible); \
 		P_NATIVE_END; \
 	} \
  \
@@ -238,7 +353,7 @@ static inline void FOnActorRepresentationAdded_DelegateWrapper(const FMulticastS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGActorRepresentationManager(); \
 	friend struct Z_Construct_UClass_AFGActorRepresentationManager_Statics; \
@@ -247,7 +362,7 @@ public: \
 	DECLARE_SERIALIZER(AFGActorRepresentationManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGActorRepresentationManager(); \
 	friend struct Z_Construct_UClass_AFGActorRepresentationManager_Statics; \
@@ -256,7 +371,7 @@ public: \
 	DECLARE_SERIALIZER(AFGActorRepresentationManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGActorRepresentationManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGActorRepresentationManager) \
@@ -269,7 +384,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGActorRepresentationManager(AFGActorRepresentationManager&&); \
@@ -280,31 +395,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGActorRepresentationManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGActorRepresentationManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mReplicatedRepresentations() { return STRUCT_OFFSET(AFGActorRepresentationManager, mReplicatedRepresentations); } \
 	FORCEINLINE static uint32 __PPO__mClientReplicatedRepresentations() { return STRUCT_OFFSET(AFGActorRepresentationManager, mClientReplicatedRepresentations); } \
 	FORCEINLINE static uint32 __PPO__mLocalRepresentations() { return STRUCT_OFFSET(AFGActorRepresentationManager, mLocalRepresentations); }
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_23_PROLOG
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_25_PROLOG
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_INCLASS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_INCLASS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_26_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentationManager_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

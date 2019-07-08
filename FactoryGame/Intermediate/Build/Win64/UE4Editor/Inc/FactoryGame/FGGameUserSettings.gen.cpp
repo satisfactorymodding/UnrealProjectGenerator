@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUserSettings() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetArachnophobiaMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetAudioVolume();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetAutoSortInventory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetDefaultQualitySetting();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetFGGameUserSettings();
@@ -42,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUserSettings() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetArachnophobiaMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetAudioToDefaults();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetAudioVolume();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetAutoSortInventory();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetFOV();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetHeadBobScale();
@@ -187,6 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 			{ "GetAnalyticsDisabled", &UFGGameUserSettings::execGetAnalyticsDisabled },
 			{ "GetArachnophobiaMode", &UFGGameUserSettings::execGetArachnophobiaMode },
 			{ "GetAudioVolume", &UFGGameUserSettings::execGetAudioVolume },
+			{ "GetAutosaveInterval", &UFGGameUserSettings::execGetAutosaveInterval },
 			{ "GetAutoSortInventory", &UFGGameUserSettings::execGetAutoSortInventory },
 			{ "GetDefaultQualitySetting", &UFGGameUserSettings::execGetDefaultQualitySetting },
 			{ "GetFGGameUserSettings", &UFGGameUserSettings::execGetFGGameUserSettings },
@@ -205,6 +208,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 			{ "SetArachnophobiaMode", &UFGGameUserSettings::execSetArachnophobiaMode },
 			{ "SetAudioToDefaults", &UFGGameUserSettings::execSetAudioToDefaults },
 			{ "SetAudioVolume", &UFGGameUserSettings::execSetAudioVolume },
+			{ "SetAutosaveInterval", &UFGGameUserSettings::execSetAutosaveInterval },
 			{ "SetAutoSortInventory", &UFGGameUserSettings::execSetAutoSortInventory },
 			{ "SetFOV", &UFGGameUserSettings::execSetFOV },
 			{ "SetHeadBobScale", &UFGGameUserSettings::execSetHeadBobScale },
@@ -352,6 +356,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUserSettings_GetAudioVolume_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics
+	{
+		struct FGGameUserSettings_eventGetAutosaveInterval_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGGameUserSettings_eventGetAutosaveInterval_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Settings" },
+		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ToolTip", "Gets the autosave interval" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUserSettings, "GetAutosaveInterval", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGGameUserSettings_eventGetAutosaveInterval_Parms), Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1007,6 +1045,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics
+	{
+		struct FGGameUserSettings_eventSetAutosaveInterval_Parms
+		{
+			int32 newInterval;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_newInterval;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::NewProp_newInterval = { UE4CodeGen_Private::EPropertyClass::Int, "newInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGGameUserSettings_eventSetAutosaveInterval_Parms, newInterval), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::NewProp_newInterval,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Settings" },
+		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ToolTip", "Updates the autosave interval" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameUserSettings, "SetAutosaveInterval", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGGameUserSettings_eventSetAutosaveInterval_Parms), Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGGameUserSettings_SetAutoSortInventory_Statics
 	{
 		struct FGGameUserSettings_eventSetAutoSortInventory_Parms
@@ -1301,6 +1373,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAutosaveInterval_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mAutosaveInterval;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAnalyticsDisabled_MetaData[];
 #endif
 		static void NewProp_mAnalyticsDisabled_SetBit(void* Obj);
@@ -1368,6 +1444,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAnalyticsDisabled, "GetAnalyticsDisabled" }, // 3444365473
 		{ &Z_Construct_UFunction_UFGGameUserSettings_GetArachnophobiaMode, "GetArachnophobiaMode" }, // 46691899
 		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAudioVolume, "GetAudioVolume" }, // 3713588301
+		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAutosaveInterval, "GetAutosaveInterval" }, // 1651291852
 		{ &Z_Construct_UFunction_UFGGameUserSettings_GetAutoSortInventory, "GetAutoSortInventory" }, // 896500403
 		{ &Z_Construct_UFunction_UFGGameUserSettings_GetDefaultQualitySetting, "GetDefaultQualitySetting" }, // 2045100572
 		{ &Z_Construct_UFunction_UFGGameUserSettings_GetFGGameUserSettings, "GetFGGameUserSettings" }, // 3783777148
@@ -1386,6 +1463,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		{ &Z_Construct_UFunction_UFGGameUserSettings_SetArachnophobiaMode, "SetArachnophobiaMode" }, // 2962303354
 		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAudioToDefaults, "SetAudioToDefaults" }, // 3584699546
 		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAudioVolume, "SetAudioVolume" }, // 3595924562
+		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAutosaveInterval, "SetAutosaveInterval" }, // 3968329678
 		{ &Z_Construct_UFunction_UFGGameUserSettings_SetAutoSortInventory, "SetAutoSortInventory" }, // 4270651964
 		{ &Z_Construct_UFunction_UFGGameUserSettings_SetFOV, "SetFOV" }, // 60340184
 		{ &Z_Construct_UFunction_UFGGameUserSettings_SetHeadBobScale, "SetHeadBobScale" }, // 1639893464
@@ -1402,6 +1480,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		{ "ModuleRelativePath", "FGGameUserSettings.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval_MetaData[] = {
+		{ "ModuleRelativePath", "FGGameUserSettings.h" },
+		{ "ToolTip", "How often in seconds to autosave" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval = { UE4CodeGen_Private::EPropertyClass::Int, "mAutosaveInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000004000, 1, nullptr, STRUCT_OFFSET(UFGGameUserSettings, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled_MetaData[] = {
 		{ "ModuleRelativePath", "FGGameUserSettings.h" },
@@ -1511,6 +1596,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OnArachnophobiaModeChangedDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnArachnophobiaModeChangedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(UFGGameUserSettings, OnArachnophobiaModeChangedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OnArachnophobiaModeChangedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_OnArachnophobiaModeChangedDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGGameUserSettings_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutosaveInterval,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAnalyticsDisabled,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mAutoSortInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameUserSettings_Statics::NewProp_mHoldToSprint,
@@ -1549,7 +1635,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUserSettings, 2401923989);
+	IMPLEMENT_CLASS(UFGGameUserSettings, 3834427556);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameUserSettings(Z_Construct_UClass_UFGGameUserSettings, &UFGGameUserSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameUserSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameUserSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

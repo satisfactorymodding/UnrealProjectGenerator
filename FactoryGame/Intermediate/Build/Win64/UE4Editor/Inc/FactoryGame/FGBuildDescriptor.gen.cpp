@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildDescriptor, 3089545611);
+	IMPLEMENT_CLASS(UFGBuildDescriptor, 1311920800);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildDescriptor(Z_Construct_UClass_UFGBuildDescriptor, &UFGBuildDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

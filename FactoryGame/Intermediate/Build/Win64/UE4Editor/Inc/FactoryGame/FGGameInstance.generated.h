@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 enum class ECachedNATType : uint8;
+struct FFGGameNetworkErrorMsg;
 class UObject;
 class UFGErrorMessage;
 #ifdef FACTORYGAME_FGGameInstance_generated_h
@@ -16,17 +17,22 @@ class UFGErrorMessage;
 #endif
 #define FACTORYGAME_FGGameInstance_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_67_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics; \
+	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_68_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGModPackage_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_23_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOnJoinSessionData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_118_DELEGATE \
 struct _Script_FactoryGame_eventOnNatTypeUpdated_Parms \
 { \
 	ECachedNATType natType; \
@@ -39,14 +45,46 @@ static inline void FOnNatTypeUpdated_DelegateWrapper(const FMulticastScriptDeleg
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_95_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_115_DELEGATE \
+struct _Script_FactoryGame_eventOnNetworkErrorRecieved_Parms \
+{ \
+	TEnumAsByte<ENetworkFailure::Type> errorType; \
+	FString errorMsg; \
+}; \
+static inline void FOnNetworkErrorRecieved_DelegateWrapper(const FMulticastScriptDelegate& OnNetworkErrorRecieved, ENetworkFailure::Type errorType, const FString& errorMsg) \
+{ \
+	_Script_FactoryGame_eventOnNetworkErrorRecieved_Parms Parms; \
+	Parms.errorType=errorType; \
+	Parms.errorMsg=errorMsg; \
+	OnNetworkErrorRecieved.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_112_DELEGATE \
 static inline void FOnNewError_DelegateWrapper(const FMulticastScriptDelegate& OnNewError) \
 { \
 	OnNewError.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execPopLatestNetworkError) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PopLatestNetworkError(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLatestNetworkError) \
+	{ \
+		P_GET_STRUCT_REF(FFGGameNetworkErrorMsg,Z_Param_Out_msg); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetLatestNetworkError(Z_Param_Out_msg); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetSkipOnboarding) \
 	{ \
@@ -131,7 +169,24 @@ static inline void FOnNewError_DelegateWrapper(const FMulticastScriptDelegate& O
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execPopLatestNetworkError) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PopLatestNetworkError(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLatestNetworkError) \
+	{ \
+		P_GET_STRUCT_REF(FFGGameNetworkErrorMsg,Z_Param_Out_msg); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetLatestNetworkError(Z_Param_Out_msg); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetSkipOnboarding) \
 	{ \
@@ -216,7 +271,7 @@ static inline void FOnNewError_DelegateWrapper(const FMulticastScriptDelegate& O
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGGameInstance(); \
 	friend struct Z_Construct_UClass_UFGGameInstance_Statics; \
@@ -225,7 +280,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameInstance)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGGameInstance(); \
 	friend struct Z_Construct_UClass_UFGGameInstance_Statics; \
@@ -234,7 +289,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameInstance)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGameInstance(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameInstance) \
@@ -247,7 +302,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGGameInstance(UFGGameInstance&&); \
@@ -258,7 +313,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameInstance); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGGameInstance)
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSaveSystem() { return STRUCT_OFFSET(UFGGameInstance, mSaveSystem); } \
 	FORCEINLINE static uint32 __PPO__mOnNewError() { return STRUCT_OFFSET(UFGGameInstance, mOnNewError); } \
 	FORCEINLINE static uint32 __PPO__mErrorList() { return STRUCT_OFFSET(UFGGameInstance, mErrorList); } \
@@ -266,25 +321,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameInstance); \
 	FORCEINLINE static uint32 __PPO__mOnNatTypeUpdated() { return STRUCT_OFFSET(UFGGameInstance, mOnNatTypeUpdated); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_100_PROLOG
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_120_PROLOG
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_INCLASS \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_INCLASS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGGameInstance_h_103_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGGameInstance_h_123_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGameInstance_h_103_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGGameInstance_h_123_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

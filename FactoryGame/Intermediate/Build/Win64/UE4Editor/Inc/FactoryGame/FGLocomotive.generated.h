@@ -343,6 +343,8 @@ class UFGLocomotiveMovementComponent;
 	}
 
 
+#define FactoryGame_Source_FactoryGame_FGLocomotive_h_22_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGLocomotive_h_22_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGLocomotive_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGLocomotive(); \
@@ -393,12 +395,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGLocomotive); \
 	FORCEINLINE static uint32 __PPO__mVehicleMovement() { return STRUCT_OFFSET(AFGLocomotive, mVehicleMovement); }
 
 
-#define FactoryGame_Source_FactoryGame_FGLocomotive_h_19_PROLOG
+#define FactoryGame_Source_FactoryGame_FGLocomotive_h_19_PROLOG \
+	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_EVENT_PARMS
+
+
 #define FactoryGame_Source_FactoryGame_FGLocomotive_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_CALLBACK_WRAPPERS \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_INCLASS \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_STANDARD_CONSTRUCTORS \
 public: \
@@ -410,6 +416,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_PRIVATE_PROPERTY_OFFSET \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_CALLBACK_WRAPPERS \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_INCLASS_NO_PURE_DECLS \
 	FactoryGame_Source_FactoryGame_FGLocomotive_h_22_ENHANCED_CONSTRUCTORS \
 private: \

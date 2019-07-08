@@ -836,7 +836,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptor, 978430671);
+	IMPLEMENT_CLASS(UFGResourceDescriptor, 3427090916);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceDescriptor(Z_Construct_UClass_UFGResourceDescriptor, &UFGResourceDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

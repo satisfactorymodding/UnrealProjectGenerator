@@ -44,10 +44,11 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSessionLibrary_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSessionLibrary();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGOnlineSessionSettings();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetMySession();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGOnlineSessionSettings();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ESessionVisibility();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession();
@@ -66,9 +67,11 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGNetworkLibrary_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGNetworkLibrary();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECachedNATType();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_IsServer();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId();
@@ -1251,6 +1254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		UClass* Class = UFGSessionLibrary::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CheckIsCompatibleVersion", &UFGSessionLibrary::execCheckIsCompatibleVersion },
 			{ "GetMaxNumberOfPlayers", &UFGSessionLibrary::execGetMaxNumberOfPlayers },
 			{ "GetMySession", &UFGSessionLibrary::execGetMySession },
 			{ "GetSessionSettings", &UFGSessionLibrary::execGetSessionSettings },
@@ -1262,6 +1266,56 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 			{ "SetSessionVisibility", &UFGSessionLibrary::execSetSessionVisibility },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics
+	{
+		struct FGSessionLibrary_eventCheckIsCompatibleVersion_Parms
+		{
+			FFGOnlineSessionSettings session;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_session_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_session;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGSessionLibrary_eventCheckIsCompatibleVersion_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms, session), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online" },
+		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "CheckIsCompatibleVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics
 	{
@@ -1689,6 +1743,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSessionLibrary_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 1602874172
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers, "GetMaxNumberOfPlayers" }, // 3004128871
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMySession, "GetMySession" }, // 1845218155
 		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings, "GetSessionSettings" }, // 3024472161
@@ -1728,7 +1783,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSessionLibrary, 2101912916);
+	IMPLEMENT_CLASS(UFGSessionLibrary, 2234585898);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSessionLibrary(Z_Construct_UClass_UFGSessionLibrary, &UFGSessionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSessionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSessionLibrary);
 	void UFGInviteLibrary::StaticRegisterNativesUFGInviteLibrary()
@@ -2083,8 +2138,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		UClass* Class = UFGNetworkLibrary::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CheckIsCompatibleVersion", &UFGNetworkLibrary::execCheckIsCompatibleVersion },
 			{ "EqualEqual_NetIdNetId", &UFGNetworkLibrary::execEqualEqual_NetIdNetId },
 			{ "GetCachedNATType", &UFGNetworkLibrary::execGetCachedNATType },
+			{ "GetLocalBuildVersion", &UFGNetworkLibrary::execGetLocalBuildVersion },
 			{ "GetNameFromUniqueNetId", &UFGNetworkLibrary::execGetNameFromUniqueNetId },
 			{ "IsServer", &UFGNetworkLibrary::execIsServer },
 			{ "IsValid_UniqueNetId", &UFGNetworkLibrary::execIsValid_UniqueNetId },
@@ -2094,6 +2151,56 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 			{ "SubmitFeedback", &UFGNetworkLibrary::execSubmitFeedback },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics
+	{
+		struct FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms
+		{
+			FFGOnlineSessionSettings session;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_session_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_session;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms, session), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online" },
+		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "CheckIsCompatibleVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics
 	{
@@ -2200,6 +2307,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics
+	{
+		struct FGNetworkLibrary_eventGetLocalBuildVersion_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetLocalBuildVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Online" },
+		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "GetLocalBuildVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGNetworkLibrary_eventGetLocalBuildVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2563,8 +2703,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGNetworkLibrary_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 3492804951
 		{ &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId, "EqualEqual_NetIdNetId" }, // 4182903183
 		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType, "GetCachedNATType" }, // 1698216470
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion, "GetLocalBuildVersion" }, // 2505124071
 		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId, "GetNameFromUniqueNetId" }, // 848504109
 		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsServer, "IsServer" }, // 1827147706
 		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId, "IsValid_UniqueNetId" }, // 1159321116
@@ -2602,7 +2744,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNetworkLibrary, 221090653);
+	IMPLEMENT_CLASS(UFGNetworkLibrary, 4183077739);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGNetworkLibrary(Z_Construct_UClass_UFGNetworkLibrary, &UFGNetworkLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGNetworkLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGNetworkLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

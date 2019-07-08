@@ -16,7 +16,10 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECachedNATType();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature();
+	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ENetworkFailure();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFGModPackage();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FOnJoinSessionData();
 	ENGINE_API UClass* Z_Construct_UClass_ULocalPlayer_NoRegister();
@@ -27,11 +30,13 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_GetFGUGC();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_GetNextError();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGErrorMessage_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_GetSkipOnboarding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenAlphaInfoScreen();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_PeekNextError();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_PushError();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_SetHasSeenAlphaInfoScreen();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_SetSkipOnboarding();
@@ -74,6 +79,43 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics
+	{
+		struct _Script_FactoryGame_eventOnNetworkErrorRecieved_Parms
+		{
+			TEnumAsByte<ENetworkFailure::Type> errorType;
+			FString errorMsg;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_errorMsg;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_errorType;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::NewProp_errorMsg = { UE4CodeGen_Private::EPropertyClass::Str, "errorMsg", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnNetworkErrorRecieved_Parms, errorMsg), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::NewProp_errorType = { UE4CodeGen_Private::EPropertyClass::Byte, "errorType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnNetworkErrorRecieved_Parms, errorType), Z_Construct_UEnum_Engine_ENetworkFailure, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::NewProp_errorMsg,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::NewProp_errorType,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+		{ "ToolTip", "Delegate when a network error has occured, like mismatching version, timeouts and so on" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnNetworkErrorRecieved__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnNetworkErrorRecieved_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature_Statics
 	{
 #if WITH_METADATA
@@ -97,6 +139,97 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 		}
 		return ReturnFunction;
 	}
+class UScriptStruct* FFGGameNetworkErrorMsg::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FGGameNetworkErrorMsg"), sizeof(FFGGameNetworkErrorMsg), Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC());
+	}
+	return Singleton;
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FFGGameNetworkErrorMsg(FFGGameNetworkErrorMsg::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("FGGameNetworkErrorMsg"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGGameNetworkErrorMsg
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFFGGameNetworkErrorMsg()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("FGGameNetworkErrorMsg")),new UScriptStruct::TCppStructOps<FFGGameNetworkErrorMsg>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFFGGameNetworkErrorMsg;
+	struct Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_errorMsg_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_errorMsg;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_errorType_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_errorType;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FFGGameNetworkErrorMsg>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorMsg_MetaData[] = {
+		{ "Category", "FGGameNetworkErrorMsg" },
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorMsg = { UE4CodeGen_Private::EPropertyClass::Str, "errorMsg", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FFGGameNetworkErrorMsg, errorMsg), METADATA_PARAMS(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorMsg_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorMsg_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorType_MetaData[] = {
+		{ "Category", "FGGameNetworkErrorMsg" },
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorType = { UE4CodeGen_Private::EPropertyClass::Byte, "errorType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FFGGameNetworkErrorMsg, errorType), Z_Construct_UEnum_Engine_ENetworkFailure, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorType_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorMsg,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::NewProp_errorType,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"FGGameNetworkErrorMsg",
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		sizeof(FFGGameNetworkErrorMsg),
+		alignof(FFGGameNetworkErrorMsg),
+		Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::PropPointers),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FGGameNetworkErrorMsg"), sizeof(FFGGameNetworkErrorMsg), Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC() { return 3166577420U; }
 class UScriptStruct* FFGModPackage::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -313,10 +446,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		static const FNameNativePtrPair Funcs[] = {
 			{ "FindModPackages", &UFGGameInstance::execFindModPackages },
 			{ "GetFGUGC", &UFGGameInstance::execGetFGUGC },
+			{ "GetLatestNetworkError", &UFGGameInstance::execGetLatestNetworkError },
 			{ "GetNextError", &UFGGameInstance::execGetNextError },
 			{ "GetSkipOnboarding", &UFGGameInstance::execGetSkipOnboarding },
 			{ "HasPlayerSeenAlphaInfoScreen", &UFGGameInstance::execHasPlayerSeenAlphaInfoScreen },
 			{ "PeekNextError", &UFGGameInstance::execPeekNextError },
+			{ "PopLatestNetworkError", &UFGGameInstance::execPopLatestNetworkError },
 			{ "PushError", &UFGGameInstance::execPushError },
 			{ "SetHasSeenAlphaInfoScreen", &UFGGameInstance::execSetHasSeenAlphaInfoScreen },
 			{ "SetSkipOnboarding", &UFGGameInstance::execSetSkipOnboarding },
@@ -405,6 +540,49 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameInstance_GetFGUGC_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics
+	{
+		struct FGGameInstance_eventGetLatestNetworkError_Parms
+		{
+			FFGGameNetworkErrorMsg msg;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_msg;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGGameInstance_eventGetLatestNetworkError_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGGameInstance_eventGetLatestNetworkError_Parms), &Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::NewProp_msg = { UE4CodeGen_Private::EPropertyClass::Struct, "msg", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGGameInstance_eventGetLatestNetworkError_Parms, msg), Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::NewProp_msg,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ErrorHandling" },
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+		{ "ToolTip", "returns true if there were an error, and fills in the enum and string. If there were no error the type and msg will be undefined, and the function returns false. To get the next message or reset the error state, call PopLatestNetworkError function" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameInstance, "GetLatestNetworkError", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14420401, sizeof(FGGameInstance_eventGetLatestNetworkError_Parms), Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -560,6 +738,45 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameInstance_PeekNextError_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics
+	{
+		struct FGGameInstance_eventPopLatestNetworkError_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGGameInstance_eventPopLatestNetworkError_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGGameInstance_eventPopLatestNetworkError_Parms), &Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ErrorHandling" },
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+		{ "ToolTip", "Pops the latest network message, removing it from the queue and resetting the error state. If there is more messages left after the pop it will return true, otherwise false." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameInstance, "PopLatestNetworkError", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGGameInstance_eventPopLatestNetworkError_Parms), Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -731,10 +948,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGGameInstance_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UFGGameInstance_FindModPackages, "FindModPackages" }, // 4092469980
 		{ &Z_Construct_UFunction_UFGGameInstance_GetFGUGC, "GetFGUGC" }, // 2443697033
+		{ &Z_Construct_UFunction_UFGGameInstance_GetLatestNetworkError, "GetLatestNetworkError" }, // 596555387
 		{ &Z_Construct_UFunction_UFGGameInstance_GetNextError, "GetNextError" }, // 1968835417
 		{ &Z_Construct_UFunction_UFGGameInstance_GetSkipOnboarding, "GetSkipOnboarding" }, // 3930403915
 		{ &Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenAlphaInfoScreen, "HasPlayerSeenAlphaInfoScreen" }, // 1090941013
 		{ &Z_Construct_UFunction_UFGGameInstance_PeekNextError, "PeekNextError" }, // 3376304175
+		{ &Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError, "PopLatestNetworkError" }, // 2887329722
 		{ &Z_Construct_UFunction_UFGGameInstance_PushError, "PushError" }, // 1501217412
 		{ &Z_Construct_UFunction_UFGGameInstance_SetHasSeenAlphaInfoScreen, "SetHasSeenAlphaInfoScreen" }, // 4105967970
 		{ &Z_Construct_UFunction_UFGGameInstance_SetSkipOnboarding, "SetSkipOnboarding" }, // 1749882928
@@ -831,7 +1050,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameInstance, 163004384);
+	IMPLEMENT_CLASS(UFGGameInstance, 4212684741);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameInstance(Z_Construct_UClass_UFGGameInstance, &UFGGameInstance::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameInstance"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameInstance);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

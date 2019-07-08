@@ -20,12 +20,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_FilterFuelClasses();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelAmount();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_HasFuel();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_IsValidFuel();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_OnRep_FuelInventory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationDetailInventoryComponent_NoRegister();
 // End Cross Module References
@@ -34,6 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 		UClass* Class = AFGBuildableGeneratorFuel::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "FilterFuelClasses", &AFGBuildableGeneratorFuel::execFilterFuelClasses },
+			{ "GetCurrentFuelClass", &AFGBuildableGeneratorFuel::execGetCurrentFuelClass },
 			{ "GetFuelAmount", &AFGBuildableGeneratorFuel::execGetFuelAmount },
 			{ "GetFuelInventory", &AFGBuildableGeneratorFuel::execGetFuelInventory },
 			{ "HasFuel", &AFGBuildableGeneratorFuel::execHasFuel },
@@ -85,6 +87,40 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableGeneratorFuel_FilterFuelClasses_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics
+	{
+		struct FGBuildableGeneratorFuel_eventGetCurrentFuelClass_Parms
+		{
+			TSubclassOf<UFGItemDescriptor>  ReturnValue;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableGeneratorFuel_eventGetCurrentFuelClass_Parms, ReturnValue), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Power" },
+		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorFuel.h" },
+		{ "ToolTip", "Returns the currently used fuel class" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableGeneratorFuel, "GetCurrentFuelClass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableGeneratorFuel_eventGetCurrentFuelClass_Parms), Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -326,6 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableGeneratorFuel_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_FilterFuelClasses, "FilterFuelClasses" }, // 830751550
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetCurrentFuelClass, "GetCurrentFuelClass" }, // 2980746046
 		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelAmount, "GetFuelAmount" }, // 777080882
 		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_GetFuelInventory, "GetFuelInventory" }, // 533974644
 		{ &Z_Construct_UFunction_AFGBuildableGeneratorFuel_HasFuel, "HasFuel" }, // 2131874303
@@ -444,7 +481,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorFuel, 3941519837);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorFuel, 4041145699);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableGeneratorFuel(Z_Construct_UClass_AFGBuildableGeneratorFuel, &AFGBuildableGeneratorFuel::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableGeneratorFuel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableGeneratorFuel);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

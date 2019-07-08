@@ -13,11 +13,13 @@ class UUserWidget;
 class UObject;
 struct FLinearColor;
 struct FVector;
+class AFGCharacterPlayer;
+class UFGItemCategory;
+class UFGItemDescriptor;
 class UWidget;
 class UFGBuildCategory;
 class UFGBuildSubCategory;
 class UFGRecipe;
-class UFGItemDescriptor;
 class APawn;
 class AActor;
 struct FUseState;
@@ -109,6 +111,26 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGBlueprintFunctionLibrary::IsLocationNearABase(Z_Param_worldContext,Z_Param_inLocation,Z_Param_closeDistance); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCategoriesWithAffordableRecipes) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_playerPawn); \
+		P_GET_OBJECT(UClass,Z_Param_forProducer); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<TSubclassOf<UFGItemCategory> >*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetCategoriesWithAffordableRecipes(Z_Param_playerPawn,Z_Param_forProducer); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAllItemsInCategory) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_itemCategory); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<TSubclassOf<UFGItemDescriptor> >*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetAllItemsInCategory(Z_Param_worldContext,Z_Param_itemCategory); \
 		P_NATIVE_END; \
 	} \
  \
@@ -370,6 +392,16 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FName*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetComponentFlagSoftLanding(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execRoundFloatWithPrecision) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_MaximumFractionalDigits); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGBlueprintFunctionLibrary::RoundFloatWithPrecision(Z_Param_value,Z_Param_MaximumFractionalDigits); \
 		P_NATIVE_END; \
 	} \
  \
@@ -559,6 +591,26 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetCategoriesWithAffordableRecipes) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_playerPawn); \
+		P_GET_OBJECT(UClass,Z_Param_forProducer); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<TSubclassOf<UFGItemCategory> >*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetCategoriesWithAffordableRecipes(Z_Param_playerPawn,Z_Param_forProducer); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAllItemsInCategory) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_worldContext); \
+		P_GET_OBJECT(UClass,Z_Param_itemCategory); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<TSubclassOf<UFGItemDescriptor> >*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetAllItemsInCategory(Z_Param_worldContext,Z_Param_itemCategory); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAllWidgetsOfClassInHierarchy) \
 	{ \
 		P_GET_OBJECT(UWidget,Z_Param_hierarchyContext); \
@@ -817,6 +869,16 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FName*)Z_Param__Result=UFGBlueprintFunctionLibrary::GetComponentFlagSoftLanding(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execRoundFloatWithPrecision) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_MaximumFractionalDigits); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFGBlueprintFunctionLibrary::RoundFloatWithPrecision(Z_Param_value,Z_Param_MaximumFractionalDigits); \
 		P_NATIVE_END; \
 	} \
  \

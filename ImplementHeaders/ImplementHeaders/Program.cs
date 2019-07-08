@@ -12,7 +12,26 @@ namespace ImplementHeaders
         private static bool CountOnly = false;
         private static int FunctionCount;
 
-        private static string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "CreateRenderState_Concurrent" };
+        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "CreateRenderState_Concurrent" };
+
+        private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
+        {
+            {
+            "AFGBuildable::AFGBuildable",
+@"  RootComponent = CreateDefaultSubobject<USceneComponent>(""RootComponent"");
+
+
+    mHighlightLocation = CreateDefaultSubobject<USceneComponent>(TEXT(""HighlightLocation""));
+    mHighlightLocation->SetupAttachment(RootComponent);"
+            },
+            {
+            "AFGBuildableConveyorBelt::AFGBuildableConveyorBelt",
+@"	mSplineComponent = CreateDefaultSubobject<UFGSplineComponent>(TEXT(""SplineComponent""));
+
+    mSplineComponent->SetupAttachment(RootComponent);"
+            }
+        };
+
         static void Main(string[] args)
         {
             if (args.Length == 0)
@@ -79,14 +98,16 @@ namespace ImplementHeaders
                 classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
                 classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UPROPERTY... macros being matched
                 // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
-                foreach (Match ifMacro in Regex.Matches(classContents, @"#if (.*?)\n((?:.|\n)*?)\n#endif(.*)"))
+                foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
                 {
                     implementations.Add($"#if {ifMacro.Groups[1].Value.Trim()}");
                     implementations.AddRange(ImplementFunctions(ifMacro.Groups[2].Value, className));
+                    implementations.AddRange(ImplementStaticVars(ifMacro.Groups[2].Value, className));
                     implementations.Add($"#endif {ifMacro.Groups[3].Value.Trim()}");
                 }
-                classContents = Regex.Replace(classContents, @"#if (.*?)\n((?:.|\n)*?)\n#endif(.*)", "");
+                classContents = Regex.Replace(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
                 implementations.AddRange(ImplementFunctions(classContents, className));
+                implementations.AddRange(ImplementStaticVars(classContents, className));
             }
             using (StreamWriter writer = new StreamWriter($"{saveDir}{Path.DirectorySeparatorChar}{Path.GetFileName(filePath).Replace(".h", ".cpp")}"))
             {
@@ -103,10 +124,22 @@ namespace ImplementHeaders
             }
         }
 
+        private static List<string> ImplementStaticVars(string content, string className)
+        {
+            List<string> implementations = new List<string>();
+            foreach (Match function in Regex.Matches(content, @"(?<!const )static\s+([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
+            {
+                string type = function.Groups[1].Value;
+                string name = function.Groups[2].Value;
+                implementations.Add($"{type} {className}::{name} = {type}();");
+            }
+            return implementations;
+        }
+
         private static List<string> ImplementFunctions(string content, string className)
         {
             List<string> implementations = new List<string>();
-            // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason of many missing implementations...
+            // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
             foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual ?)?(static ?)?(const ?)?(class ?)?(explicit ?)?([^=()\n{}]*? )?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
@@ -212,25 +245,30 @@ namespace ImplementHeaders
                 if (functionName.Replace(" ", "").Contains("FObjectWriter"))
                     result += " : FObjectWriter(Obj, InBytes) ";
                 result += $"{{ ";
-                if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
-                {
-                    if (NeedsSuper.Contains(functionName.Trim()))
-                        result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters), @"(?:.*? )?(.*?) (.*?)(?:, ?|\)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
-                    result += $"}}";
-                }
+                if (CustomImplementation.ContainsKey($"{className}::{functionName}")) // aghhhh
+                    result += $"\r\n{CustomImplementation[$"{className}::{functionName}"]}\r\n}}";
                 else
                 {
-                    result += $"return ";
-                    if (returnType.Trim().EndsWith("&"))
-                        if (returnType.Trim().TrimEnd('&') == className)
-                            result += $"*(this)";
-                        else
-                            result += $"*(new {returnType.Trim().TrimEnd('&')})"; // Brabb3l's life-hacks
-                    else if (returnType.Trim().EndsWith("*"))
-                        result += $"nullptr";
+                    if (returnType.Contains("void") || string.IsNullOrWhiteSpace(returnType))
+                    {
+                        if (NeedsSuper.Contains(functionName.Trim()))
+                            result += $"Super::{functionName}({string.Join(",", Regex.Matches(FixDefaults(parameters), @"(?:.*? )?(.*?) (.*?)(?:, ?|\)|$)").Cast<Match>().Select(match => match.Groups[2].Value))}); ";
+                        result += $"}}";
+                    }
                     else
-                        result += $"{GetCustomReturn(returnType)}";
-                    result += $"; }}";
+                    {
+                        result += $"return ";
+                        if (returnType.Trim().EndsWith("&"))
+                            if (returnType.Trim().TrimEnd('&') == className)
+                                result += $"*(this)";
+                            else
+                                result += $"*(new {returnType.Trim().TrimEnd('&')})"; // Brabb3l's life-hacks
+                        else if (returnType.Trim().EndsWith("*"))
+                            result += $"nullptr";
+                        else
+                            result += $"{GetCustomReturn(returnType)}";
+                        result += $"; }}";
+                    }
                 }
                 if (!implementations.Contains(result))
                     implementations.Add(result);

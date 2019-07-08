@@ -32,6 +32,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassWidget() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCompassWidget_GetCompassObjectWidgetClass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationAdded();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ERepresentationType();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationRemoved();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationUpdated();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGCompassWidget_RemoveAllCompassRepresentations();
@@ -66,6 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassWidget() {}
 			{ "CreatePrimitiveCompassObject", &UFGCompassWidget::execCreatePrimitiveCompassObject },
 			{ "GetCompassLineOffset", &UFGCompassWidget::execGetCompassLineOffset },
 			{ "OnActorRepresentationAdded", &UFGCompassWidget::execOnActorRepresentationAdded },
+			{ "OnActorRepresentationFiltered", &UFGCompassWidget::execOnActorRepresentationFiltered },
 			{ "OnActorRepresentationRemoved", &UFGCompassWidget::execOnActorRepresentationRemoved },
 			{ "OnActorRepresentationUpdated", &UFGCompassWidget::execOnActorRepresentationUpdated },
 			{ "RemoveAllCompassRepresentations", &UFGCompassWidget::execRemoveAllCompassRepresentations },
@@ -449,6 +452,50 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassWidget() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics
+	{
+		struct FGCompassWidget_eventOnActorRepresentationFiltered_Parms
+		{
+			ERepresentationType type;
+			bool visible;
+		};
+		static void NewProp_visible_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_visible;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_type;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_type_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_visible_SetBit(void* Obj)
+	{
+		((FGCompassWidget_eventOnActorRepresentationFiltered_Parms*)Obj)->visible = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCompassWidget_eventOnActorRepresentationFiltered_Parms), &Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Enum, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCompassWidget_eventOnActorRepresentationFiltered_Parms, type), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_type_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_visible,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_type,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::NewProp_type_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "UI/FGCompassWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCompassWidget, "OnActorRepresentationFiltered", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGCompassWidget_eventOnActorRepresentationFiltered_Parms), Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationRemoved_Statics
 	{
 		struct FGCompassWidget_eventOnActorRepresentationRemoved_Parms
@@ -647,6 +694,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassWidget() {}
 		{ &Z_Construct_UFunction_UFGCompassWidget_GetCompassLineOffset, "GetCompassLineOffset" }, // 3740687461
 		{ &Z_Construct_UFunction_UFGCompassWidget_GetCompassObjectWidgetClass, "GetCompassObjectWidgetClass" }, // 3938427840
 		{ &Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationAdded, "OnActorRepresentationAdded" }, // 831060813
+		{ &Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationFiltered, "OnActorRepresentationFiltered" }, // 1688789192
 		{ &Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationRemoved, "OnActorRepresentationRemoved" }, // 582728575
 		{ &Z_Construct_UFunction_UFGCompassWidget_OnActorRepresentationUpdated, "OnActorRepresentationUpdated" }, // 3852092128
 		{ &Z_Construct_UFunction_UFGCompassWidget_RemoveAllCompassRepresentations, "RemoveAllCompassRepresentations" }, // 732487730
@@ -785,7 +833,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCompassWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCompassWidget, 2099362487);
+	IMPLEMENT_CLASS(UFGCompassWidget, 1762858949);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCompassWidget(Z_Construct_UClass_UFGCompassWidget, &UFGCompassWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCompassWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCompassWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -44,10 +44,13 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdated__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedCompassShow__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature();
@@ -119,10 +122,13 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedCompassShow__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationUpdatedMapShow__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnMap__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnActorRepresentationTypeFilteredOnCompass__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_CentralStorageAddedOrRemovedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNewError__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNetworkErrorRecieved__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_OnNatTypeUpdated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_ArachnophobiaModeChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_FactoryGame_DeathDelegate__DelegateSignature,
@@ -159,8 +165,8 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/FactoryGame",
 				PKG_CompiledIn | 0x00000000,
-				0xBBE7DE62,
-				0x6A98025A,
+				0xA69F5295,
+				0x59380562,
 				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)
 			};

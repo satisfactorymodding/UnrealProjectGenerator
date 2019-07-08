@@ -44,6 +44,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllWidgetsOfClassInHierarchy();
 	UMG_API UClass* Z_Construct_UClass_UWidget_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory();
@@ -51,6 +53,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBuildSubCategory_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor();
@@ -77,6 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState();
@@ -156,10 +161,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "CreateSessionAndTravelToMap", &UFGBlueprintFunctionLibrary::execCreateSessionAndTravelToMap },
 			{ "GetAllBuildCategories", &UFGBlueprintFunctionLibrary::execGetAllBuildCategories },
 			{ "GetAllDescriptorsSorted", &UFGBlueprintFunctionLibrary::execGetAllDescriptorsSorted },
+			{ "GetAllItemsInCategory", &UFGBlueprintFunctionLibrary::execGetAllItemsInCategory },
 			{ "GetAllWidgetsOfClassInHierarchy", &UFGBlueprintFunctionLibrary::execGetAllWidgetsOfClassInHierarchy },
 			{ "GetAvailableRecipesInCategory", &UFGBlueprintFunctionLibrary::execGetAvailableRecipesInCategory },
 			{ "GetAvailableRecipesInSubCategory", &UFGBlueprintFunctionLibrary::execGetAvailableRecipesInSubCategory },
 			{ "GetAvailableSubCategoriesForCategory", &UFGBlueprintFunctionLibrary::execGetAvailableSubCategoriesForCategory },
+			{ "GetCategoriesWithAffordableRecipes", &UFGBlueprintFunctionLibrary::execGetCategoriesWithAffordableRecipes },
 			{ "GetComponentFlagSoftLanding", &UFGBlueprintFunctionLibrary::execGetComponentFlagSoftLanding },
 			{ "GetLanguage", &UFGBlueprintFunctionLibrary::execGetLanguage },
 			{ "GetOuterActor", &UFGBlueprintFunctionLibrary::execGetOuterActor },
@@ -181,6 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "RemoveFactoryObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveFactoryObjectFromSignificanceManager },
 			{ "RemoveGainSignificanceObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGainSignificanceObjectFromSignificanceManager },
 			{ "RemoveGenericTickObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGenericTickObjectFromSignificanceManager },
+			{ "RoundFloatWithPrecision", &UFGBlueprintFunctionLibrary::execRoundFloatWithPrecision },
 			{ "ShowOutline", &UFGBlueprintFunctionLibrary::execShowOutline },
 			{ "TravelToMainMenu", &UFGBlueprintFunctionLibrary::execTravelToMainMenu },
 			{ "UpdateUseState", &UFGBlueprintFunctionLibrary::execUpdateUseState },
@@ -913,6 +921,51 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventGetAllItemsInCategory_Parms
+		{
+			UObject* worldContext;
+			TSubclassOf<UFGItemCategory>  itemCategory;
+			TArray<TSubclassOf<UFGItemDescriptor> > ReturnValue;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_itemCategory;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_worldContext;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAllItemsInCategory_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_itemCategory = { UE4CodeGen_Private::EPropertyClass::Class, "itemCategory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAllItemsInCategory_Parms, itemCategory), Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetAllItemsInCategory_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_ReturnValue_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_itemCategory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::NewProp_worldContext,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Item Category" },
+		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Returns all items in a item category" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "GetAllItemsInCategory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGBlueprintFunctionLibrary_eventGetAllItemsInCategory_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllWidgetsOfClassInHierarchy_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventGetAllWidgetsOfClassInHierarchy_Parms
@@ -1109,6 +1162,51 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventGetCategoriesWithAffordableRecipes_Parms
+		{
+			AFGCharacterPlayer* playerPawn;
+			TSubclassOf<UObject>  forProducer;
+			TArray<TSubclassOf<UFGItemCategory> > ReturnValue;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_forProducer;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_playerPawn;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetCategoriesWithAffordableRecipes_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_forProducer = { UE4CodeGen_Private::EPropertyClass::Class, "forProducer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetCategoriesWithAffordableRecipes_Parms, forProducer), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_playerPawn = { UE4CodeGen_Private::EPropertyClass::Object, "playerPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventGetCategoriesWithAffordableRecipes_Parms, playerPawn), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_ReturnValue_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_forProducer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::NewProp_playerPawn,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Item Category" },
+		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Returns all categories that have available recipes in them" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "GetCategoriesWithAffordableRecipes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGBlueprintFunctionLibrary_eventGetCategoriesWithAffordableRecipes_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2018,6 +2116,48 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventRoundFloatWithPrecision_Parms
+		{
+			float value;
+			int32 MaximumFractionalDigits;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaximumFractionalDigits;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRoundFloatWithPrecision_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::NewProp_MaximumFractionalDigits = { UE4CodeGen_Private::EPropertyClass::Int, "MaximumFractionalDigits", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRoundFloatWithPrecision_Parms, MaximumFractionalDigits), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::NewProp_value = { UE4CodeGen_Private::EPropertyClass::Float, "value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRoundFloatWithPrecision_Parms, value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::NewProp_MaximumFractionalDigits,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::NewProp_value,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Math" },
+		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Returns a rounded float with a maximum of fractional digits" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "RoundFloatWithPrecision", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGBlueprintFunctionLibrary_eventRoundFloatWithPrecision_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventShowOutline_Parms
@@ -2174,10 +2314,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CreateSessionAndTravelToMap, "CreateSessionAndTravelToMap" }, // 1257098988
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllBuildCategories, "GetAllBuildCategories" }, // 1260569650
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllDescriptorsSorted, "GetAllDescriptorsSorted" }, // 104524500
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllItemsInCategory, "GetAllItemsInCategory" }, // 334226097
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAllWidgetsOfClassInHierarchy, "GetAllWidgetsOfClassInHierarchy" }, // 586701137
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInCategory, "GetAvailableRecipesInCategory" }, // 336905501
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableRecipesInSubCategory, "GetAvailableRecipesInSubCategory" }, // 1438280385
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetAvailableSubCategoriesForCategory, "GetAvailableSubCategoriesForCategory" }, // 3475156534
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetCategoriesWithAffordableRecipes, "GetCategoriesWithAffordableRecipes" }, // 3854604632
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetComponentFlagSoftLanding, "GetComponentFlagSoftLanding" }, // 2530059145
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetLanguage, "GetLanguage" }, // 277209262
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_GetOuterActor, "GetOuterActor" }, // 3166041889
@@ -2199,6 +2341,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager, "RemoveFactoryObjectFromSignificanceManager" }, // 1596629911
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager, "RemoveGainSignificanceObjectFromSignificanceManager" }, // 1061534588
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager, "RemoveGenericTickObjectFromSignificanceManager" }, // 2149688350
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision, "RoundFloatWithPrecision" }, // 3633297434
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline, "ShowOutline" }, // 2644536250
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu, "TravelToMainMenu" }, // 3344000438
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_UpdateUseState, "UpdateUseState" }, // 1786255609
@@ -2232,7 +2375,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2474298496);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2409902648);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBlueprintFunctionLibrary(Z_Construct_UClass_UFGBlueprintFunctionLibrary, &UFGBlueprintFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBlueprintFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBlueprintFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

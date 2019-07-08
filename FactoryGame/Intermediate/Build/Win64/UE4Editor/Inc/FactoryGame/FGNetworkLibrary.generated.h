@@ -470,6 +470,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_145_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execCheckIsCompatibleVersion) \
+	{ \
+		P_GET_STRUCT_REF(FFGOnlineSessionSettings,Z_Param_Out_session); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGSessionLibrary::CheckIsCompatibleVersion(Z_Param_Out_session); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetMaxNumberOfPlayers) \
 	{ \
 		P_GET_STRUCT_REF(FBlueprintSessionResult,Z_Param_Out_session); \
@@ -556,6 +565,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_145_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCheckIsCompatibleVersion) \
+	{ \
+		P_GET_STRUCT_REF(FFGOnlineSessionSettings,Z_Param_Out_session); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGSessionLibrary::CheckIsCompatibleVersion(Z_Param_Out_session); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetMaxNumberOfPlayers) \
 	{ \
@@ -710,7 +728,7 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDiscardInvite) \
 	{ \
@@ -772,7 +790,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDiscardInvite) \
 	{ \
@@ -834,7 +852,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGInviteLibrary(); \
 	friend struct Z_Construct_UClass_UFGInviteLibrary_Statics; \
@@ -843,7 +861,7 @@ public: \
 	DECLARE_SERIALIZER(UFGInviteLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGInviteLibrary(); \
 	friend struct Z_Construct_UClass_UFGInviteLibrary_Statics; \
@@ -852,7 +870,7 @@ public: \
 	DECLARE_SERIALIZER(UFGInviteLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGInviteLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGInviteLibrary) \
@@ -865,7 +883,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGInviteLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -878,31 +896,48 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGInviteLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGInviteLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_188_PROLOG
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_193_PROLOG
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_INCLASS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_INCLASS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_191_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCheckIsCompatibleVersion) \
+	{ \
+		P_GET_STRUCT_REF(FFGOnlineSessionSettings,Z_Param_Out_session); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGNetworkLibrary::CheckIsCompatibleVersion(Z_Param_Out_session); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLocalBuildVersion) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UFGNetworkLibrary::GetLocalBuildVersion(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execNATTypeToText) \
 	{ \
@@ -990,7 +1025,24 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCheckIsCompatibleVersion) \
+	{ \
+		P_GET_STRUCT_REF(FFGOnlineSessionSettings,Z_Param_Out_session); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGNetworkLibrary::CheckIsCompatibleVersion(Z_Param_Out_session); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetLocalBuildVersion) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UFGNetworkLibrary::GetLocalBuildVersion(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execNATTypeToText) \
 	{ \
@@ -1078,7 +1130,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGNetworkLibrary(); \
 	friend struct Z_Construct_UClass_UFGNetworkLibrary_Statics; \
@@ -1087,7 +1139,7 @@ public: \
 	DECLARE_SERIALIZER(UFGNetworkLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGNetworkLibrary(); \
 	friend struct Z_Construct_UClass_UFGNetworkLibrary_Statics; \
@@ -1096,7 +1148,7 @@ public: \
 	DECLARE_SERIALIZER(UFGNetworkLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGNetworkLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGNetworkLibrary) \
@@ -1109,7 +1161,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGNetworkLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -1122,26 +1174,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGNetworkLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGNetworkLibrary)
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_218_PROLOG
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_223_PROLOG
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_INCLASS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_INCLASS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_221_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

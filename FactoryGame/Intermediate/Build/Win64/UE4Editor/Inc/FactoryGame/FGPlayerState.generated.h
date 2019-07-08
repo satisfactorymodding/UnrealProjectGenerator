@@ -9,6 +9,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+enum class ERepresentationType : uint8;
+class UFGItemCategory;
 class UFGRecipe;
 class UFGHotbarShortcut;
 class UFGMessageBase;
@@ -22,17 +24,17 @@ struct FSlotData;
 #endif
 #define FACTORYGAME_FGPlayerState_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_46_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_48_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMessageData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_29_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSlotData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_19_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_21_DELEGATE \
 struct _Script_FactoryGame_eventOnBuildableConstructedNew_Parms \
 { \
 	TSubclassOf<UFGItemDescriptor>  itemDesc; \
@@ -45,7 +47,15 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS \
+	virtual bool Server_SetCompassFilter_Validate(ERepresentationType , bool ); \
+	virtual void Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible); \
+	virtual bool Server_SetMapFilter_Validate(ERepresentationType , bool ); \
+	virtual void Server_SetMapFilter_Implementation(ERepresentationType representationType, bool visible); \
+	virtual bool Server_SetItemCategoryCollapsed_Validate(TSubclassOf<UFGItemCategory>  , bool ); \
+	virtual void Server_SetItemCategoryCollapsed_Implementation(TSubclassOf<UFGItemCategory>  itemCategory, bool collapsed); \
+	virtual bool Server_SetOnlyShowAffordableRecipes_Validate(bool ); \
+	virtual void Server_SetOnlyShowAffordableRecipes_Implementation(bool enabled); \
 	virtual bool Server_RemoveRecipe_Validate(TSubclassOf<UFGRecipe>  ); \
 	virtual void Server_RemoveRecipe_Implementation(TSubclassOf<UFGRecipe>  recipe); \
  \
@@ -54,6 +64,100 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetCompassFilter) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_representationType); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetCompassFilter_Validate(ERepresentationType(Z_Param_representationType),Z_Param_visible)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetCompassFilter_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetCompassFilter_Implementation(ERepresentationType(Z_Param_representationType),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetMapFilter) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_representationType); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetMapFilter_Validate(ERepresentationType(Z_Param_representationType),Z_Param_visible)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetMapFilter_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetMapFilter_Implementation(ERepresentationType(Z_Param_representationType),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetItemCategoryCollapsed) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_itemCategory); \
+		P_GET_UBOOL(Z_Param_collapsed); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetItemCategoryCollapsed_Validate(Z_Param_itemCategory,Z_Param_collapsed)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetItemCategoryCollapsed_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetItemCategoryCollapsed_Implementation(Z_Param_itemCategory,Z_Param_collapsed); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetItemCategoryCollapsed) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_itemCategory); \
+		P_GET_UBOOL(Z_Param_collapsed); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetItemCategoryCollapsed(Z_Param_itemCategory,Z_Param_collapsed); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCollapsedItemCategories) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<TSubclassOf<UFGItemCategory> >*)Z_Param__Result=P_THIS->GetCollapsedItemCategories(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetOnlyShowAffordableRecipes) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetOnlyShowAffordableRecipes_Validate(Z_Param_enabled)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetOnlyShowAffordableRecipes_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetOnlyShowAffordableRecipes_Implementation(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetOnlyShowAffordableRecipes) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetOnlyShowAffordableRecipes(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetOnlyShowAffordableRecipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetOnlyShowAffordableRecipes(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -207,7 +311,15 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool Server_SetCompassFilter_Validate(ERepresentationType , bool ); \
+	virtual void Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible); \
+	virtual bool Server_SetMapFilter_Validate(ERepresentationType , bool ); \
+	virtual void Server_SetMapFilter_Implementation(ERepresentationType representationType, bool visible); \
+	virtual bool Server_SetItemCategoryCollapsed_Validate(TSubclassOf<UFGItemCategory>  , bool ); \
+	virtual void Server_SetItemCategoryCollapsed_Implementation(TSubclassOf<UFGItemCategory>  itemCategory, bool collapsed); \
+	virtual bool Server_SetOnlyShowAffordableRecipes_Validate(bool ); \
+	virtual void Server_SetOnlyShowAffordableRecipes_Implementation(bool enabled); \
 	virtual bool Server_RemoveRecipe_Validate(TSubclassOf<UFGRecipe>  ); \
 	virtual void Server_RemoveRecipe_Implementation(TSubclassOf<UFGRecipe>  recipe); \
  \
@@ -216,6 +328,100 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetCompassFilter) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_representationType); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetCompassFilter_Validate(ERepresentationType(Z_Param_representationType),Z_Param_visible)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetCompassFilter_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetCompassFilter_Implementation(ERepresentationType(Z_Param_representationType),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetMapFilter) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_representationType); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetMapFilter_Validate(ERepresentationType(Z_Param_representationType),Z_Param_visible)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetMapFilter_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetMapFilter_Implementation(ERepresentationType(Z_Param_representationType),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetItemCategoryCollapsed) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_itemCategory); \
+		P_GET_UBOOL(Z_Param_collapsed); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetItemCategoryCollapsed_Validate(Z_Param_itemCategory,Z_Param_collapsed)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetItemCategoryCollapsed_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetItemCategoryCollapsed_Implementation(Z_Param_itemCategory,Z_Param_collapsed); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetItemCategoryCollapsed) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_itemCategory); \
+		P_GET_UBOOL(Z_Param_collapsed); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetItemCategoryCollapsed(Z_Param_itemCategory,Z_Param_collapsed); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCollapsedItemCategories) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<TSubclassOf<UFGItemCategory> >*)Z_Param__Result=P_THIS->GetCollapsedItemCategories(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_SetOnlyShowAffordableRecipes) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_SetOnlyShowAffordableRecipes_Validate(Z_Param_enabled)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_SetOnlyShowAffordableRecipes_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_SetOnlyShowAffordableRecipes_Implementation(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetOnlyShowAffordableRecipes) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetOnlyShowAffordableRecipes(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetOnlyShowAffordableRecipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetOnlyShowAffordableRecipes(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -369,41 +575,60 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_EVENT_PARMS \
 	struct FGPlayerState_eventServer_RemoveRecipe_Parms \
 	{ \
 		TSubclassOf<UFGRecipe>  recipe; \
+	}; \
+	struct FGPlayerState_eventServer_SetCompassFilter_Parms \
+	{ \
+		ERepresentationType representationType; \
+		bool visible; \
+	}; \
+	struct FGPlayerState_eventServer_SetItemCategoryCollapsed_Parms \
+	{ \
+		TSubclassOf<UFGItemCategory>  itemCategory; \
+		bool collapsed; \
+	}; \
+	struct FGPlayerState_eventServer_SetMapFilter_Parms \
+	{ \
+		ERepresentationType representationType; \
+		bool visible; \
+	}; \
+	struct FGPlayerState_eventServer_SetOnlyShowAffordableRecipes_Parms \
+	{ \
+		bool enabled; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGPlayerState, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGPlayerState(); \
 	friend struct Z_Construct_UClass_AFGPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(AFGPlayerState, APlayerState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGPlayerState) \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGPlayerState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGPlayerState(); \
 	friend struct Z_Construct_UClass_AFGPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(AFGPlayerState, APlayerState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGPlayerState) \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGPlayerState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGPlayerState(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGPlayerState) \
@@ -416,7 +641,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGPlayerState(AFGPlayerState&&); \
@@ -427,7 +652,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerState); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGPlayerState)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mHotbarShortcuts() { return STRUCT_OFFSET(AFGPlayerState, mHotbarShortcuts); } \
 	FORCEINLINE static uint32 __PPO__mDefaultRecipeShortcuts() { return STRUCT_OFFSET(AFGPlayerState, mDefaultRecipeShortcuts); } \
 	FORCEINLINE static uint32 __PPO__mNewRecipes() { return STRUCT_OFFSET(AFGPlayerState, mNewRecipes); } \
@@ -438,33 +663,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerState); \
 	FORCEINLINE static uint32 __PPO__mTutorialSubsystemClass() { return STRUCT_OFFSET(AFGPlayerState, mTutorialSubsystemClass); } \
 	FORCEINLINE static uint32 __PPO__mMessageData() { return STRUCT_OFFSET(AFGPlayerState, mMessageData); } \
 	FORCEINLINE static uint32 __PPO__mRememberedFirstTimeEquipmentClasses() { return STRUCT_OFFSET(AFGPlayerState, mRememberedFirstTimeEquipmentClasses); } \
-	FORCEINLINE static uint32 __PPO__mNumArmSlots() { return STRUCT_OFFSET(AFGPlayerState, mNumArmSlots); }
+	FORCEINLINE static uint32 __PPO__mNumArmSlots() { return STRUCT_OFFSET(AFGPlayerState, mNumArmSlots); } \
+	FORCEINLINE static uint32 __PPO__mOnlyShowAffordableRecipes() { return STRUCT_OFFSET(AFGPlayerState, mOnlyShowAffordableRecipes); } \
+	FORCEINLINE static uint32 __PPO__mCollapsedItemCategories() { return STRUCT_OFFSET(AFGPlayerState, mCollapsedItemCategories); } \
+	FORCEINLINE static uint32 __PPO__mFilteredOutMapTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutMapTypes); } \
+	FORCEINLINE static uint32 __PPO__mFilteredOutCompassTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutCompassTypes); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_64_PROLOG \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_66_PROLOG \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_INCLASS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_67_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_67_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

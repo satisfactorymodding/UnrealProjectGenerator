@@ -10,6 +10,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
 class UFGRecipe;
+class AFGCharacterPlayer;
 class UObject;
 class AFGRecipeManager;
 #ifdef FACTORYGAME_FGRecipeManager_generated_h
@@ -43,6 +44,17 @@ class AFGRecipeManager;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsRecipeAvailable(Z_Param_recipeClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAffordableRecipesForProducer) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
+		P_GET_OBJECT(UClass,Z_Param_forProducer); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGRecipe> ,Z_Param_Out_out_recipes); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAffordableRecipesForProducer(Z_Param_player,Z_Param_forProducer,Z_Param_Out_out_recipes); \
 		P_NATIVE_END; \
 	} \
  \
@@ -101,6 +113,17 @@ class AFGRecipeManager;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsRecipeAvailable(Z_Param_recipeClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAffordableRecipesForProducer) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
+		P_GET_OBJECT(UClass,Z_Param_forProducer); \
+		P_GET_TARRAY_REF(TSubclassOf<UFGRecipe> ,Z_Param_Out_out_recipes); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetAffordableRecipesForProducer(Z_Param_player,Z_Param_forProducer,Z_Param_Out_out_recipes); \
 		P_NATIVE_END; \
 	} \
  \

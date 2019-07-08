@@ -21,6 +21,7 @@ USceneComponent* UFGItemDescriptor::CreatePreviewComponent(  USceneComponent* at
 USceneComponent* UFGItemDescriptor::CalculateComponentBounds(  USceneComponent* attachParent,  UActorComponent* componentTemplate, const FName& componentName){ return nullptr; }
 #endif 
 #if WITH_EDITORONLY_DATA
+UFGItemDescriptor::FGenerateIconContext UFGItemDescriptor::GenerateIconContext = FGenerateIconContext();
 #endif 
 UFGItemDescriptor::UFGItemDescriptor(){ }
 void UFGItemDescriptor::Serialize( FArchive& ar){ Super::Serialize(ar ); }
@@ -38,5 +39,6 @@ UTexture2D* UFGItemDescriptor::GetBigIcon( TSubclassOf< UFGItemDescriptor > inCl
 UStaticMesh* UFGItemDescriptor::GetItemMesh( TSubclassOf< UFGItemDescriptor > inClass){ return nullptr; }
 int32 UFGItemDescriptor::GetStackSize( TSubclassOf< UFGItemDescriptor > inClass){ return int32(); }
 bool UFGItemDescriptor::CanBeDiscarded( TSubclassOf< UFGItemDescriptor > inClass){ return bool(); }
+TSubclassOf< UFGItemCategory > UFGItemDescriptor::GetItemCategory( TSubclassOf< UFGItemDescriptor > inClass){ return TSubclassOf<UFGItemCategory>(); }
 FText UFGItemDescriptor::GetItemNameInternal() const{ return FText(); }
 FText UFGItemDescriptor::GetItemDescriptionInternal() const{ return FText(); }

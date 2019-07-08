@@ -109,7 +109,7 @@ namespace FixHeaders
                 foreach (string dir in Directory.EnumerateDirectories(path))
                     GenerateHeaderCache(Path.Combine(path, dir));
                 foreach (string file in Directory.EnumerateFiles(path))
-                    HeaderCache.Add(path);
+                    HeaderCache.Add(Path.Combine(path, file));
             }
             else if(File.Exists(path))
                 HeaderCache.Add(path);
@@ -238,7 +238,7 @@ namespace FixHeaders
         private static object GetFileRelative(string root, string file, string relativeTo)
         {
             // https://stackoverflow.com/a/9045399
-            Uri filePath = new Uri(HeaderCache.Find(path => path.EndsWith(file)), UriKind.Absolute);
+            Uri filePath = new Uri(HeaderCache.Find(path => path.EndsWith("\\" + file)), UriKind.Absolute);
             Uri relTo = new Uri(Path.Combine(root, relativeTo), UriKind.Absolute);
 
             return relTo.MakeRelativeUri(filePath).ToString();

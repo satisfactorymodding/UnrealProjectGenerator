@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ERepresentationType(ERepresentationType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ERepresentationType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ERepresentationType_CRC() { return 3790703005U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ERepresentationType_CRC() { return 3721155094U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ERepresentationType()
 	{
 #if WITH_HOT_RELOAD
@@ -131,7 +131,10 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 				{ "ERepresentationType::RT_Resource", (int64)ERepresentationType::RT_Resource },
 				{ "ERepresentationType::RT_SpaceElevator", (int64)ERepresentationType::RT_SpaceElevator },
 				{ "ERepresentationType::RT_StartingPod", (int64)ERepresentationType::RT_StartingPod },
+				{ "ERepresentationType::RT_Train", (int64)ERepresentationType::RT_Train },
+				{ "ERepresentationType::RT_TrainStation", (int64)ERepresentationType::RT_TrainStation },
 				{ "ERepresentationType::RT_Vehicle", (int64)ERepresentationType::RT_Vehicle },
+				{ "ERepresentationType::RT_VehicleDockingStation", (int64)ERepresentationType::RT_VehicleDockingStation },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
@@ -147,7 +150,10 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentation() {}
 				{ "RT_Resource.DisplayName", "Resource" },
 				{ "RT_SpaceElevator.DisplayName", "SpaceElevator" },
 				{ "RT_StartingPod.DisplayName", "StartingPod" },
+				{ "RT_Train.DisplayName", "Train" },
+				{ "RT_TrainStation.DisplayName", "TrainStation" },
 				{ "RT_Vehicle.DisplayName", "Vehicle" },
+				{ "RT_VehicleDockingStation.DisplayName", "VehicleDockingStation" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {

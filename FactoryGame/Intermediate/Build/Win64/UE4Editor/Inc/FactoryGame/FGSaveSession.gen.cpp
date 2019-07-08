@@ -816,7 +816,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "How often in seconds to autosave, a value of < 0 means disabled" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mAutosaveInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000004000, 1, nullptr, STRUCT_OFFSET(UFGSaveSession, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mAutosaveInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000002000, 1, nullptr, STRUCT_OFFSET(UFGSaveSession, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData[] = {
 		{ "Category", "Save" },
@@ -853,7 +853,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSession, 3528149259);
+	IMPLEMENT_CLASS(UFGSaveSession, 3712416323);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveSession(Z_Construct_UClass_UFGSaveSession, &UFGSaveSession::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveSession"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveSession);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

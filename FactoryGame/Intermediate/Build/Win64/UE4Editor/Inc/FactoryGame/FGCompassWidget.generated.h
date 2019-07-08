@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ERepresentationType : uint8;
 class UFGActorRepresentation;
 struct FVector2D;
 class UFGCompassObjectWidget;
@@ -20,6 +21,16 @@ class AFGActorRepresentationManager;
 
 #define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_RPC_WRAPPERS \
 	virtual FVector2D GetCompassLineOffset_Implementation(); \
+ \
+	DECLARE_FUNCTION(execOnActorRepresentationFiltered) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnActorRepresentationFiltered(ERepresentationType(Z_Param_type),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnActorRepresentationUpdated) \
 	{ \
@@ -141,6 +152,16 @@ class AFGActorRepresentationManager;
 
 #define FactoryGame_Source_FactoryGame_UI_FGCompassWidget_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual FVector2D GetCompassLineOffset_Implementation(); \
+ \
+	DECLARE_FUNCTION(execOnActorRepresentationFiltered) \
+	{ \
+		P_GET_ENUM(ERepresentationType,Z_Param_type); \
+		P_GET_UBOOL(Z_Param_visible); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnActorRepresentationFiltered(ERepresentationType(Z_Param_type),Z_Param_visible); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnActorRepresentationUpdated) \
 	{ \

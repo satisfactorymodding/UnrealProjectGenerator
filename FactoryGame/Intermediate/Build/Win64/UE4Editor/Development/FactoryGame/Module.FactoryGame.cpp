@@ -208,6 +208,7 @@
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGInventoryComponentEquipment.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGInventoryComponentTrash.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGInventoryLibrary.cpp"
+#include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGItemCategory.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGItemPickup.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGItemPickup_Spawnable.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGJumpingStilts.cpp"

@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AFGCharacterPlayer;
 class UFGRecipe;
 class UObject;
 struct FItemAmount;
@@ -17,6 +18,16 @@ struct FItemAmount;
 #define FACTORYGAME_FGRecipe_generated_h
 
 #define FactoryGame_Source_FactoryGame_FGRecipe_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execIsRecipeAffordable) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetRewardedRecipes) \
 	{ \
@@ -84,6 +95,16 @@ struct FItemAmount;
 
 
 #define FactoryGame_Source_FactoryGame_FGRecipe_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execIsRecipeAffordable) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_player); \
+		P_GET_OBJECT(UClass,Z_Param_recipe); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UFGRecipe::IsRecipeAffordable(Z_Param_player,Z_Param_recipe); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetRewardedRecipes) \
 	{ \
