@@ -48,14 +48,6 @@ class UFGActorRepresentation;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetCompassObjectVisbility) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetCompassObjectVisbility(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetRepresentationType) \
 	{ \
 		P_FINISH; \
@@ -152,14 +144,6 @@ class UFGActorRepresentation;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetCompassObjectVisbility(Z_Param_visibile); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetCompassObjectVisbility) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetCompassObjectVisbility(); \
 		P_NATIVE_END; \
 	} \
  \

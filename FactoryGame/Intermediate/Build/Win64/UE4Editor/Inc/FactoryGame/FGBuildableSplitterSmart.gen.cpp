@@ -449,6 +449,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCurrentInputIndex_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mCurrentInputIndex;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxNumSortRules_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mMaxNumSortRules;
@@ -487,6 +491,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex_MetaData[] = {
+		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+		{ "NoAutoJson", "" },
+		{ "ToolTip", "Cycles through the inputs, stores the input we want to check next. Index is for the mInputs array." },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentInputIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, mCurrentInputIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mMaxNumSortRules_MetaData[] = {
 		{ "Category", "Sort" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
@@ -513,6 +525,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnSortRulesChangedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080010080000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, OnSortRulesChangedDelegate), Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mMaxNumSortRules,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mSortRules,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mSortRules_Inner,
@@ -541,7 +554,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 3787158135);
+	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 3787858971);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSplitterSmart(Z_Construct_UClass_AFGBuildableSplitterSmart, &AFGBuildableSplitterSmart::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSplitterSmart"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSplitterSmart);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

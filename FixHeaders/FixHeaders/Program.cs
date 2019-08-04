@@ -229,6 +229,13 @@ namespace FixHeaders
             FixedCount += customEventCount;
             file = Regex.Replace(file, @", ?CustomEventUsing ?= ?[^\s,\)]*", "");
 
+            // fix CheatBoard
+            int CheatBoardCount = Regex.Matches(file, @",\s*CheatBoard").Count;
+            if (customEventCount > 0)
+                hasChanges = true;
+            FixedCount += customEventCount;
+            file = Regex.Replace(file, @",\s*CheatBoard", "");
+
             if (hasChanges)
                 FixedFileCount++;
 

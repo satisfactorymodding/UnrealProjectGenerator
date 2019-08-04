@@ -58,7 +58,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableAttachmentMerger); \
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentMerger_h_19_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mCurrentInputIndex() { return STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInputIndex); }
+	FORCEINLINE static uint32 __PPO__mCurrentInputIndex() { return STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInputIndex); } \
+	FORCEINLINE static uint32 __PPO__mCurrentInventoryIndex() { return STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInventoryIndex); }
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentMerger_h_16_PROLOG

@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ECompassViewDistance : uint8;
 enum class EFogOfWarRevealType : uint8;
 enum class ERepresentationType : uint8;
 struct FLinearColor;
@@ -20,45 +21,13 @@ class AActor;
 #endif
 #define FACTORYGAME_FGActorRepresentation_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOnRep_FogOfWarRevealRadius) \
+	DECLARE_FUNCTION(execOnRep_ActorRepresentationUpdated) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_FogOfWarRevealRadius(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_FogOfWarRevealType) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_FogOfWarRevealType(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_RepresentationTexture) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_RepresentationTexture(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_RepresentationColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_RepresentationColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_RepresentationText) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_RepresentationText(); \
+		P_THIS->OnRep_ActorRepresentationUpdated(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -75,6 +44,14 @@ class AActor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_ShouldShowInCompass(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCompassViewDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ECompassViewDistance*)Z_Param__Result=P_THIS->GetCompassViewDistance(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -183,45 +160,13 @@ class AActor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnRep_FogOfWarRevealRadius) \
+	DECLARE_FUNCTION(execOnRep_ActorRepresentationUpdated) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_FogOfWarRevealRadius(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_FogOfWarRevealType) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_FogOfWarRevealType(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_RepresentationTexture) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_RepresentationTexture(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_RepresentationColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_RepresentationColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_RepresentationText) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_RepresentationText(); \
+		P_THIS->OnRep_ActorRepresentationUpdated(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -238,6 +183,14 @@ class AActor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_ShouldShowInCompass(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCompassViewDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ECompassViewDistance*)Z_Param__Result=P_THIS->GetCompassViewDistance(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -346,7 +299,7 @@ class AActor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGActorRepresentation(); \
 	friend struct Z_Construct_UClass_UFGActorRepresentation_Statics; \
@@ -355,7 +308,7 @@ public: \
 	DECLARE_SERIALIZER(UFGActorRepresentation)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGActorRepresentation(); \
 	friend struct Z_Construct_UClass_UFGActorRepresentation_Statics; \
@@ -364,7 +317,7 @@ public: \
 	DECLARE_SERIALIZER(UFGActorRepresentation)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGActorRepresentation(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGActorRepresentation) \
@@ -377,7 +330,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGActorRepresentation(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -390,7 +343,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGActorRepresentation); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGActorRepresentation)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mRealActor() { return STRUCT_OFFSET(UFGActorRepresentation, mRealActor); } \
 	FORCEINLINE static uint32 __PPO__mActorLocation() { return STRUCT_OFFSET(UFGActorRepresentation, mActorLocation); } \
 	FORCEINLINE static uint32 __PPO__mActorRotation() { return STRUCT_OFFSET(UFGActorRepresentation, mActorRotation); } \
@@ -402,28 +355,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGActorRepresentation); \
 	FORCEINLINE static uint32 __PPO__mFogOfWarRevealType() { return STRUCT_OFFSET(UFGActorRepresentation, mFogOfWarRevealType); } \
 	FORCEINLINE static uint32 __PPO__mFogOfWarRevealRadius() { return STRUCT_OFFSET(UFGActorRepresentation, mFogOfWarRevealRadius); } \
 	FORCEINLINE static uint32 __PPO__mShouldShowInCompass() { return STRUCT_OFFSET(UFGActorRepresentation, mShouldShowInCompass); } \
-	FORCEINLINE static uint32 __PPO__mShouldShowOnMap() { return STRUCT_OFFSET(UFGActorRepresentation, mShouldShowOnMap); }
+	FORCEINLINE static uint32 __PPO__mShouldShowOnMap() { return STRUCT_OFFSET(UFGActorRepresentation, mShouldShowOnMap); } \
+	FORCEINLINE static uint32 __PPO__mCompassViewDistance() { return STRUCT_OFFSET(UFGActorRepresentation, mCompassViewDistance); }
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_42_PROLOG
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_52_PROLOG
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_INCLASS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_45_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -432,6 +386,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGActorRepresentation_h
 
 
+#define FOREACH_ENUM_ECOMPASSVIEWDISTANCE(op) \
+	op(ECompassViewDistance::CVD_Off) \
+	op(ECompassViewDistance::CVD_Near) \
+	op(ECompassViewDistance::CVD_Mid) \
+	op(ECompassViewDistance::CVD_Far) \
+	op(ECompassViewDistance::CVD_Always) 
 #define FOREACH_ENUM_EFOGOFWARREVEALTYPE(op) \
 	op(EFogOfWarRevealType::FOWRT_None) \
 	op(EFogOfWarRevealType::FOWRT_Static) \

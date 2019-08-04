@@ -46,10 +46,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OffsetBeyond_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OffsetBeyond;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Item;
@@ -71,13 +67,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FConnectionItemStruct>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_OffsetBeyond_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentSplitter.h" },
-		{ "ToolTip", "How far past the conveyor belt length this item is" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_OffsetBeyond = { UE4CodeGen_Private::EPropertyClass::Float, "OffsetBeyond", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FConnectionItemStruct, OffsetBeyond), METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_OffsetBeyond_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_OffsetBeyond_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Item_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentSplitter.h" },
 		{ "ToolTip", "The item to put on the connection" },
@@ -93,7 +82,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Connection = { UE4CodeGen_Private::EPropertyClass::Object, "Connection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080008, 1, nullptr, STRUCT_OFFSET(FConnectionItemStruct, Connection), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Connection_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Connection_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_OffsetBeyond,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Item,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Connection,
 	};
@@ -124,7 +112,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionItemStruct_CRC() { return 1452623519U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionItemStruct_CRC() { return 1748410691U; }
 	void AFGBuildableAttachmentSplitter::StaticRegisterNativesAFGBuildableAttachmentSplitter()
 	{
 	}
@@ -204,7 +192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 1908481832);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 3450796410);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAttachmentSplitter(Z_Construct_UClass_AFGBuildableAttachmentSplitter, &AFGBuildableAttachmentSplitter::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAttachmentSplitter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAttachmentSplitter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

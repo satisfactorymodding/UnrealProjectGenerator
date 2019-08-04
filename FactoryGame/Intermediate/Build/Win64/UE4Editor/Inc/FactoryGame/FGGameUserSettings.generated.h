@@ -35,6 +35,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetShowBreakNotification) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetShowBreakNotification(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetShowBreakNotification) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetShowBreakNotification(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetAutosaveInterval) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_newInterval); \
@@ -149,6 +166,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=P_THIS->GetDefaultQualitySetting(Z_Param_settingName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsHZBOEnabled) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsHZBOEnabled(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetHZBOEnabled) \
+	{ \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetHZBOEnabled(Z_Param_enable); \
 		P_NATIVE_END; \
 	} \
  \
@@ -308,6 +342,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSetShowBreakNotification) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetShowBreakNotification(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetShowBreakNotification) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetShowBreakNotification(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetAutosaveInterval) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_newInterval); \
@@ -422,6 +473,23 @@ static inline void FArachnophobiaModeChangedDelegate_DelegateWrapper(const FMult
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=P_THIS->GetDefaultQualitySetting(Z_Param_settingName); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsHZBOEnabled) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsHZBOEnabled(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetHZBOEnabled) \
+	{ \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetHZBOEnabled(Z_Param_enable); \
 		P_NATIVE_END; \
 	} \
  \
@@ -627,10 +695,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameUserSettings); \
 	FORCEINLINE static uint32 __PPO__mAudioVolumes() { return STRUCT_OFFSET(UFGGameUserSettings, mAudioVolumes); } \
 	FORCEINLINE static uint32 __PPO__mFOV() { return STRUCT_OFFSET(UFGGameUserSettings, mFOV); } \
 	FORCEINLINE static uint32 __PPO__mMotionBlurQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mMotionBlurQuality); } \
+	FORCEINLINE static uint32 __PPO__mHZBOEnabled() { return STRUCT_OFFSET(UFGGameUserSettings, mHZBOEnabled); } \
 	FORCEINLINE static uint32 __PPO__mCustomKeyMappings() { return STRUCT_OFFSET(UFGGameUserSettings, mCustomKeyMappings); } \
 	FORCEINLINE static uint32 __PPO__mNetworkQuality() { return STRUCT_OFFSET(UFGGameUserSettings, mNetworkQuality); } \
 	FORCEINLINE static uint32 __PPO__mHeadBobScale() { return STRUCT_OFFSET(UFGGameUserSettings, mHeadBobScale); } \
-	FORCEINLINE static uint32 __PPO__mAutosaveInterval() { return STRUCT_OFFSET(UFGGameUserSettings, mAutosaveInterval); }
+	FORCEINLINE static uint32 __PPO__mAutosaveInterval() { return STRUCT_OFFSET(UFGGameUserSettings, mAutosaveInterval); } \
+	FORCEINLINE static uint32 __PPO__mShowBreakNotification() { return STRUCT_OFFSET(UFGGameUserSettings, mShowBreakNotification); }
 
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_30_PROLOG

@@ -24,7 +24,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBelt();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBase();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineComponent();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSplineComponent_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineData();
@@ -35,7 +34,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEvent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSoundSplineComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister();
 // End Cross Module References
 	void UFGUseState_ConveyorBeltValid::StaticRegisterNativesUFGUseState_ConveyorBeltValid()
 	{
@@ -199,51 +197,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 	{
 		UClass* Class = AFGBuildableConveyorBelt::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "GetIsSignificant", &AFGBuildableConveyorBelt::execGetIsSignificant },
 			{ "GetSplineComponent", &AFGBuildableConveyorBelt::execGetSplineComponent },
 			{ "GetSplineData", &AFGBuildableConveyorBelt::execGetSplineData },
 			{ "GetSplineMesh", &AFGBuildableConveyorBelt::execGetSplineMesh },
 			{ "OnRep_SplineData", &AFGBuildableConveyorBelt::execOnRep_SplineData },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics
-	{
-		struct FGBuildableConveyorBelt_eventGetIsSignificant_Parms
-		{
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((FGBuildableConveyorBelt_eventGetIsSignificant_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableConveyorBelt_eventGetIsSignificant_Parms), &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBelt.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConveyorBelt, "GetIsSignificant", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableConveyorBelt_eventGetIsSignificant_Parms), Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineComponent_Statics
 	{
@@ -415,7 +374,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_mItemMeshMap_Key_KeyProp;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mItemMeshMap_ValueProp;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -424,7 +382,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetIsSignificant, "GetIsSignificant" }, // 3934410733
 		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineComponent, "GetSplineComponent" }, // 2069735486
 		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineData, "GetSplineData" }, // 16935157
 		{ &Z_Construct_UFunction_AFGBuildableConveyorBelt_GetSplineMesh, "GetSplineMesh" }, // 4156669410
@@ -492,9 +449,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mItemMeshMap_Key_KeyProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::NewProp_mItemMeshMap_ValueProp,
 	};
-		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UFGSignificanceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGBuildableConveyorBelt, IFGSignificanceInterface), false },
-		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGBuildableConveyorBelt>::IsAbstract,
 	};
@@ -506,7 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBelt_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableConveyorBelt()
@@ -518,7 +472,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBelt, 511214921);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBelt, 672114585);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorBelt(Z_Construct_UClass_AFGBuildableConveyorBelt, &AFGBuildableConveyorBelt::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorBelt"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorBelt);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

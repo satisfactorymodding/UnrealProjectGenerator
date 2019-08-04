@@ -54,11 +54,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		static void NewProp_IsValidOffset_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsValidOffset;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShouldShow_MetaData[];
-#endif
-		static void NewProp_ShouldShow_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ShouldShow;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OffsetZ_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OffsetZ;
@@ -81,25 +76,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
-		{ "ToolTip", "Does this foot have a valid offset." },
+		{ "ToolTip", "Does this foot have a valid offset, only used during hologram placement." },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_SetBit(void* Obj)
 	{
 		((FFeetOffset*)Obj)->IsValidOffset = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset = { UE4CodeGen_Private::EPropertyClass::Bool, "IsValidOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFeetOffset), &Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow_MetaData[] = {
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
-		{ "ToolTip", "The foot should potentially be invisible." },
-	};
-#endif
-	void Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow_SetBit(void* Obj)
-	{
-		((FFeetOffset*)Obj)->ShouldShow = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow = { UE4CodeGen_Private::EPropertyClass::Bool, "ShouldShow", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFeetOffset), &Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset = { UE4CodeGen_Private::EPropertyClass::Bool, "IsValidOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FFeetOffset), &Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
@@ -116,7 +100,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex = { UE4CodeGen_Private::EPropertyClass::Byte, "FeetIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, FeetIndex), nullptr, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_ShouldShow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex,
 	};
@@ -147,7 +130,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 1117740284U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 745739224U; }
 	void UFGFactoryLegsComponent::StaticRegisterNativesUFGFactoryLegsComponent()
 	{
 		UClass* Class = UFGFactoryLegsComponent::StaticClass();

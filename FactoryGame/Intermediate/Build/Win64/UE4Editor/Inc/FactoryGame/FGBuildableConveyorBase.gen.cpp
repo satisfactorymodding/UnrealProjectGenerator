@@ -30,7 +30,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorBase() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBase();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister();
 // End Cross Module References
 class UScriptStruct* FConveyorBeltItems::StaticStruct()
 {
@@ -371,6 +373,49 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UPresistentConveyorPackagingData);
 	void AFGBuildableConveyorBase::StaticRegisterNativesAFGBuildableConveyorBase()
 	{
+		UClass* Class = AFGBuildableConveyorBase::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetIsSignificant", &AFGBuildableConveyorBase::execGetIsSignificant },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics
+	{
+		struct FGBuildableConveyorBase_eventGetIsSignificant_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGBuildableConveyorBase_eventGetIsSignificant_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableConveyorBase_eventGetIsSignificant_Parms), &Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Significance" },
+		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConveyorBase, "GetIsSignificant", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableConveyorBase_eventGetIsSignificant_Parms), Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister()
 	{
@@ -379,6 +424,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	struct Z_Construct_UClass_AFGBuildableConveyorBase_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -403,12 +449,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PresistentConveyorPackagingDataObject;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AFGBuildableConveyorBase_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AFGBuildable,
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConveyorBase_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant, "GetIsSignificant" }, // 3704222666
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBase_Statics::Class_MetaDataParams[] = {
@@ -465,6 +515,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UFGSignificanceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGBuildableConveyorBase, IFGSignificanceInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableConveyorBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGBuildableConveyorBase>::IsAbstract,
 	};
@@ -472,11 +525,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		&AFGBuildableConveyorBase::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009002A5u,
-		nullptr, 0,
+		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableConveyorBase()
@@ -488,7 +541,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 3605268707);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 3224304780);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorBase(Z_Construct_UClass_AFGBuildableConveyorBase, &AFGBuildableConveyorBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorBase);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildableConveyorBase)

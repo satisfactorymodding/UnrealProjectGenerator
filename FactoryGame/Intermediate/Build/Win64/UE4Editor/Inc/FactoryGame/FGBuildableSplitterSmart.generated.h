@@ -217,7 +217,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableSplitterSmart); \
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableSplitterSmart_h_47_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__OnSortRulesChangedDelegate() { return STRUCT_OFFSET(AFGBuildableSplitterSmart, OnSortRulesChangedDelegate); } \
 	FORCEINLINE static uint32 __PPO__mSortRules() { return STRUCT_OFFSET(AFGBuildableSplitterSmart, mSortRules); } \
-	FORCEINLINE static uint32 __PPO__mMaxNumSortRules() { return STRUCT_OFFSET(AFGBuildableSplitterSmart, mMaxNumSortRules); }
+	FORCEINLINE static uint32 __PPO__mMaxNumSortRules() { return STRUCT_OFFSET(AFGBuildableSplitterSmart, mMaxNumSortRules); } \
+	FORCEINLINE static uint32 __PPO__mCurrentInputIndex() { return STRUCT_OFFSET(AFGBuildableSplitterSmart, mCurrentInputIndex); }
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableSplitterSmart_h_44_PROLOG

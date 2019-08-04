@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class ECompassViewDistance : uint8;
 enum class EFogOfWarRevealType : uint8;
 enum class ERepresentationType : uint8;
 struct FLinearColor;
@@ -20,6 +21,8 @@ struct FVector;
 #define FACTORYGAME_FGActorRepresentationInterface_generated_h
 
 #define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_RPC_WRAPPERS \
+	virtual ECompassViewDistance SetActorCompassViewDistance_Implementation(ECompassViewDistance compassViewDistance) { return (ECompassViewDistance)0; }; \
+	virtual ECompassViewDistance GetActorCompassViewDistance_Implementation() { return (ECompassViewDistance)0; }; \
 	virtual float GetActorFogOfWarRevealRadius_Implementation() { return 0; }; \
 	virtual EFogOfWarRevealType GetActorFogOfWarRevealType_Implementation() { return (EFogOfWarRevealType)0; }; \
 	virtual bool GetActorShouldShowOnMap_Implementation() { return false; }; \
@@ -35,6 +38,23 @@ struct FVector;
 	virtual bool RemoveAsRepresentation_Implementation() { return false; }; \
 	virtual bool UpdateRepresentation_Implementation() { return false; }; \
 	virtual bool AddAsRepresentation_Implementation() { return false; }; \
+ \
+	DECLARE_FUNCTION(execSetActorCompassViewDistance) \
+	{ \
+		P_GET_ENUM(ECompassViewDistance,Z_Param_compassViewDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ECompassViewDistance*)Z_Param__Result=P_THIS->SetActorCompassViewDistance_Implementation(ECompassViewDistance(Z_Param_compassViewDistance)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetActorCompassViewDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ECompassViewDistance*)Z_Param__Result=P_THIS->GetActorCompassViewDistance_Implementation(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetActorFogOfWarRevealRadius) \
 	{ \
@@ -159,6 +179,8 @@ struct FVector;
 
 
 #define FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual ECompassViewDistance SetActorCompassViewDistance_Implementation(ECompassViewDistance compassViewDistance) { return (ECompassViewDistance)0; }; \
+	virtual ECompassViewDistance GetActorCompassViewDistance_Implementation() { return (ECompassViewDistance)0; }; \
 	virtual float GetActorFogOfWarRevealRadius_Implementation() { return 0; }; \
 	virtual EFogOfWarRevealType GetActorFogOfWarRevealType_Implementation() { return (EFogOfWarRevealType)0; }; \
 	virtual bool GetActorShouldShowOnMap_Implementation() { return false; }; \
@@ -174,6 +196,23 @@ struct FVector;
 	virtual bool RemoveAsRepresentation_Implementation() { return false; }; \
 	virtual bool UpdateRepresentation_Implementation() { return false; }; \
 	virtual bool AddAsRepresentation_Implementation() { return false; }; \
+ \
+	DECLARE_FUNCTION(execSetActorCompassViewDistance) \
+	{ \
+		P_GET_ENUM(ECompassViewDistance,Z_Param_compassViewDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ECompassViewDistance*)Z_Param__Result=P_THIS->SetActorCompassViewDistance_Implementation(ECompassViewDistance(Z_Param_compassViewDistance)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetActorCompassViewDistance) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ECompassViewDistance*)Z_Param__Result=P_THIS->GetActorCompassViewDistance_Implementation(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetActorFogOfWarRevealRadius) \
 	{ \
@@ -308,6 +347,16 @@ struct FVector;
 		{ \
 		} \
 	}; \
+	struct FGActorRepresentationInterface_eventGetActorCompassViewDistance_Parms \
+	{ \
+		ECompassViewDistance ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGActorRepresentationInterface_eventGetActorCompassViewDistance_Parms() \
+			: ReturnValue((ECompassViewDistance)0) \
+		{ \
+		} \
+	}; \
 	struct FGActorRepresentationInterface_eventGetActorFogOfWarRevealRadius_Parms \
 	{ \
 		float ReturnValue; \
@@ -422,6 +471,17 @@ struct FVector;
 		{ \
 		} \
 	}; \
+	struct FGActorRepresentationInterface_eventSetActorCompassViewDistance_Parms \
+	{ \
+		ECompassViewDistance compassViewDistance; \
+		ECompassViewDistance ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGActorRepresentationInterface_eventSetActorCompassViewDistance_Parms() \
+			: ReturnValue((ECompassViewDistance)0) \
+		{ \
+		} \
+	}; \
 	struct FGActorRepresentationInterface_eventSetActorRepresentationText_Parms \
 	{ \
 		FText newText; \
@@ -495,6 +555,7 @@ public: \
 	typedef UFGActorRepresentationInterface UClassType; \
 	typedef IFGActorRepresentationInterface ThisClass; \
 	static bool Execute_AddAsRepresentation(UObject* O); \
+	static ECompassViewDistance Execute_GetActorCompassViewDistance(UObject* O); \
 	static float Execute_GetActorFogOfWarRevealRadius(UObject* O); \
 	static EFogOfWarRevealType Execute_GetActorFogOfWarRevealType(UObject* O); \
 	static FLinearColor Execute_GetActorRepresentationColor(UObject* O); \
@@ -507,6 +568,7 @@ public: \
 	static FRotator Execute_GetRealActorRotation(UObject* O); \
 	static bool Execute_IsActorStatic(UObject* O); \
 	static bool Execute_RemoveAsRepresentation(UObject* O); \
+	static ECompassViewDistance Execute_SetActorCompassViewDistance(UObject* O, ECompassViewDistance compassViewDistance); \
 	static FText Execute_SetActorRepresentationText(UObject* O, FText const& newText); \
 	static bool Execute_UpdateRepresentation(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
@@ -519,6 +581,7 @@ public: \
 	typedef UFGActorRepresentationInterface UClassType; \
 	typedef IFGActorRepresentationInterface ThisClass; \
 	static bool Execute_AddAsRepresentation(UObject* O); \
+	static ECompassViewDistance Execute_GetActorCompassViewDistance(UObject* O); \
 	static float Execute_GetActorFogOfWarRevealRadius(UObject* O); \
 	static EFogOfWarRevealType Execute_GetActorFogOfWarRevealType(UObject* O); \
 	static FLinearColor Execute_GetActorRepresentationColor(UObject* O); \
@@ -531,6 +594,7 @@ public: \
 	static FRotator Execute_GetRealActorRotation(UObject* O); \
 	static bool Execute_IsActorStatic(UObject* O); \
 	static bool Execute_RemoveAsRepresentation(UObject* O); \
+	static ECompassViewDistance Execute_SetActorCompassViewDistance(UObject* O, ECompassViewDistance compassViewDistance); \
 	static FText Execute_SetActorRepresentationText(UObject* O, FText const& newText); \
 	static bool Execute_UpdateRepresentation(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }

@@ -10,6 +10,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 enum class ERepresentationType : uint8;
 class UFGActorRepresentation;
+enum class ECompassViewDistance : uint8;
 class APawn;
 class AActor;
 struct FVector;
@@ -131,6 +132,25 @@ static inline void FOnActorRepresentationAdded_DelegateWrapper(const FMulticastS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetDistanceValueFromCompassViewDistance) \
+	{ \
+		P_GET_ENUM(ECompassViewDistance,Z_Param_compassViewDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetDistanceValueFromCompassViewDistance(ECompassViewDistance(Z_Param_compassViewDistance)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetCompassViewDistanceForActorRepresentation) \
+	{ \
+		P_GET_OBJECT(UFGActorRepresentation,Z_Param_actorRepresentation); \
+		P_GET_ENUM(ECompassViewDistance,Z_Param_viewDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetCompassViewDistanceForActorRepresentation(Z_Param_actorRepresentation,ECompassViewDistance(Z_Param_viewDistance)); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetCompassRepresentationTypeFilter) \
 	{ \
 		P_GET_OBJECT(APawn,Z_Param_owningPlayerPawn); \
@@ -244,6 +264,25 @@ static inline void FOnActorRepresentationAdded_DelegateWrapper(const FMulticastS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_ReplicatedRepresentations(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetDistanceValueFromCompassViewDistance) \
+	{ \
+		P_GET_ENUM(ECompassViewDistance,Z_Param_compassViewDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetDistanceValueFromCompassViewDistance(ECompassViewDistance(Z_Param_compassViewDistance)); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetCompassViewDistanceForActorRepresentation) \
+	{ \
+		P_GET_OBJECT(UFGActorRepresentation,Z_Param_actorRepresentation); \
+		P_GET_ENUM(ECompassViewDistance,Z_Param_viewDistance); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetCompassViewDistanceForActorRepresentation(Z_Param_actorRepresentation,ECompassViewDistance(Z_Param_viewDistance)); \
 		P_NATIVE_END; \
 	} \
  \

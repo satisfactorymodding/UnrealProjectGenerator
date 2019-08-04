@@ -16,6 +16,23 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execRebuildFactoryLegsOneTileAroundPlayer) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RebuildFactoryLegsOneTileAroundPlayer(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetAllFactoryLegsToZero) \
+	{ \
+		P_GET_UBOOL(Z_Param_repopulateEmptyLegs); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetAllFactoryLegsToZero(Z_Param_repopulateEmptyLegs); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execPurgeAllTrainState) \
 	{ \
 		P_FINISH; \
@@ -87,6 +104,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->DumpSchematics(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetRecipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetRecipes(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -328,6 +353,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execHideAllBuildings_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HideAllBuildings_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execHideAllBuildings) \
 	{ \
 		P_GET_UBOOL(Z_Param_inVisibility); \
@@ -445,6 +478,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetFactoryDetailReplication_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->SetFactoryDetailReplication_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetFactoryDetailReplication) \
 	{ \
 		P_GET_UBOOL(Z_Param_enable); \
@@ -476,6 +517,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SplitAllConveyors(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPumpiMode_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PumpiMode_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -513,11 +562,28 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execEnableAudioDebug) \
+	{ \
+		P_GET_UBOOL(Z_Param_isEnabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->EnableAudioDebug(Z_Param_isEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpAllAvailableRecipes) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->DumpAllAvailableRecipes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHideFactoryOnly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HideFactoryOnly_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -530,12 +596,36 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execShowFactoryOnly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->ShowFactoryOnly_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execShowFactoryOnly) \
 	{ \
 		P_GET_UBOOL(Z_Param_environmentHidden); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ShowFactoryOnly(Z_Param_environmentHidden); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetTimeOfDay_minute_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->SetTimeOfDay_minute_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetTimeOfDay_hour_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->SetTimeOfDay_hour_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -582,12 +672,28 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execEnablePlayerFOV_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->EnablePlayerFOV_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execEnablePlayerFOV) \
 	{ \
 		P_GET_UBOOL(Z_Param_enable); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->EnablePlayerFOV(Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEnableBuildableTick_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->EnableBuildableTick_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -664,13 +770,31 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiveItem) \
+	DECLARE_FUNCTION(execGiveItemsSingle) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_resource); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_NumberOfItems); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiveItem(Z_Param_resource,Z_Param_amount); \
+		P_THIS->GiveItemsSingle(Z_Param_resource,Z_Param_NumberOfItems); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGiveItemStacks) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_resource); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_NumberOfStacks); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GiveItemStacks(Z_Param_resource,Z_Param_NumberOfStacks); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTurboMode_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->TurboMode_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -683,12 +807,28 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execNoPower_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->NoPower_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execNoPower) \
 	{ \
 		P_GET_UBOOL(Z_Param_enabled); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->NoPower(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNoCost_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->NoCost_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -704,6 +844,23 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRebuildFactoryLegsOneTileAroundPlayer) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RebuildFactoryLegsOneTileAroundPlayer(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetAllFactoryLegsToZero) \
+	{ \
+		P_GET_UBOOL(Z_Param_repopulateEmptyLegs); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetAllFactoryLegsToZero(Z_Param_repopulateEmptyLegs); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execPurgeAllTrainState) \
 	{ \
 		P_FINISH; \
@@ -775,6 +932,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->DumpSchematics(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetRecipes) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetRecipes(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1016,6 +1181,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execHideAllBuildings_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HideAllBuildings_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execHideAllBuildings) \
 	{ \
 		P_GET_UBOOL(Z_Param_inVisibility); \
@@ -1133,6 +1306,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetFactoryDetailReplication_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->SetFactoryDetailReplication_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetFactoryDetailReplication) \
 	{ \
 		P_GET_UBOOL(Z_Param_enable); \
@@ -1164,6 +1345,14 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SplitAllConveyors(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPumpiMode_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PumpiMode_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1201,11 +1390,28 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execEnableAudioDebug) \
+	{ \
+		P_GET_UBOOL(Z_Param_isEnabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->EnableAudioDebug(Z_Param_isEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpAllAvailableRecipes) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->DumpAllAvailableRecipes(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHideFactoryOnly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HideFactoryOnly_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1218,12 +1424,36 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execShowFactoryOnly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->ShowFactoryOnly_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execShowFactoryOnly) \
 	{ \
 		P_GET_UBOOL(Z_Param_environmentHidden); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ShowFactoryOnly(Z_Param_environmentHidden); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetTimeOfDay_minute_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->SetTimeOfDay_minute_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetTimeOfDay_hour_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->SetTimeOfDay_hour_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1270,12 +1500,28 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execEnablePlayerFOV_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->EnablePlayerFOV_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execEnablePlayerFOV) \
 	{ \
 		P_GET_UBOOL(Z_Param_enable); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->EnablePlayerFOV(Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEnableBuildableTick_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->EnableBuildableTick_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1352,13 +1598,31 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiveItem) \
+	DECLARE_FUNCTION(execGiveItemsSingle) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_resource); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_amount); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_NumberOfItems); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiveItem(Z_Param_resource,Z_Param_amount); \
+		P_THIS->GiveItemsSingle(Z_Param_resource,Z_Param_NumberOfItems); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGiveItemStacks) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_resource); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_NumberOfStacks); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GiveItemStacks(Z_Param_resource,Z_Param_NumberOfStacks); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTurboMode_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->TurboMode_Get(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1371,12 +1635,28 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execNoPower_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->NoPower_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execNoPower) \
 	{ \
 		P_GET_UBOOL(Z_Param_enabled); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->NoPower(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNoCost_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->NoCost_Get(); \
 		P_NATIVE_END; \
 	} \
  \

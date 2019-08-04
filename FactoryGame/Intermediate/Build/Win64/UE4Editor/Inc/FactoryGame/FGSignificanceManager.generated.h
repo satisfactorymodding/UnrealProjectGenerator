@@ -64,7 +64,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSignificanceManager); \
 
 #define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPreviousSignificantFactories() { return STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantFactories); } \
-	FORCEINLINE static uint32 __PPO__mPreviousSignificantConveyorBelts() { return STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantConveyorBelts); }
+	FORCEINLINE static uint32 __PPO__mPreviousSignificantConveyorBases() { return STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantConveyorBases); }
 
 
 #define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_38_PROLOG

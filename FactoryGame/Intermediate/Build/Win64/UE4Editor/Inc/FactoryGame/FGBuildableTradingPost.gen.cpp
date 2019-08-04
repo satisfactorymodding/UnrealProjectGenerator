@@ -185,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableTradingPost, "OnRep_NeedPlayingBuildEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableTradingPost, "OnRep_NeedPlayingBuildEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -441,7 +441,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_AreChildBuildingsLoaded, "AreChildBuildingsLoaded" }, // 2088009160
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetStorageInventory, "GetStorageInventory" }, // 2666724757
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetTradingPostLevel, "GetTradingPostLevel" }, // 3797963937
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect, "OnRep_NeedPlayingBuildEffect" }, // 2710417929
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect, "OnRep_NeedPlayingBuildEffect" }, // 1110940982
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnTradingPostUpgraded, "OnTradingPostUpgraded" }, // 88400288
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateGeneratorVisibility, "UpdateGeneratorVisibility" }, // 143277659
 		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility, "UpdateMAMVisibility" }, // 2125267081
@@ -732,7 +732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableTradingPost, 2920159993);
+	IMPLEMENT_CLASS(AFGBuildableTradingPost, 2163200393);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableTradingPost(Z_Construct_UClass_AFGBuildableTradingPost, &AFGBuildableTradingPost::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableTradingPost"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableTradingPost);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

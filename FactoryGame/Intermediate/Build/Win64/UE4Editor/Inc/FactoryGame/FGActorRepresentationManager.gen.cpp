@@ -37,10 +37,13 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetAllActorRepresentations();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_ECompassViewDistance();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_OnRep_ReplicatedRepresentations();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_RemoveRepresentationOfActor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_UpdateRepresentation();
 // End Cross Module References
@@ -319,10 +322,12 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 			{ "Get", &AFGActorRepresentationManager::execGet },
 			{ "GetAllActorRepresentations", &AFGActorRepresentationManager::execGetAllActorRepresentations },
 			{ "GetCompassRepresentationTypeFilter", &AFGActorRepresentationManager::execGetCompassRepresentationTypeFilter },
+			{ "GetDistanceValueFromCompassViewDistance", &AFGActorRepresentationManager::execGetDistanceValueFromCompassViewDistance },
 			{ "GetMapRepresentationTypeFilter", &AFGActorRepresentationManager::execGetMapRepresentationTypeFilter },
 			{ "OnRep_ReplicatedRepresentations", &AFGActorRepresentationManager::execOnRep_ReplicatedRepresentations },
 			{ "RemoveRepresentationOfActor", &AFGActorRepresentationManager::execRemoveRepresentationOfActor },
 			{ "SetCompassRepresentationTypeFilter", &AFGActorRepresentationManager::execSetCompassRepresentationTypeFilter },
+			{ "SetCompassViewDistanceForActorRepresentation", &AFGActorRepresentationManager::execSetCompassViewDistanceForActorRepresentation },
 			{ "SetMapRepresentationTypeFilter", &AFGActorRepresentationManager::execSetMapRepresentationTypeFilter },
 			{ "UpdateRepresentation", &AFGActorRepresentationManager::execUpdateRepresentation },
 		};
@@ -599,6 +604,46 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics
+	{
+		struct FGActorRepresentationManager_eventGetDistanceValueFromCompassViewDistance_Parms
+		{
+			ECompassViewDistance compassViewDistance;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_compassViewDistance;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_compassViewDistance_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventGetDistanceValueFromCompassViewDistance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::NewProp_compassViewDistance = { UE4CodeGen_Private::EPropertyClass::Enum, "compassViewDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventGetDistanceValueFromCompassViewDistance_Parms, compassViewDistance), Z_Construct_UEnum_FactoryGame_ECompassViewDistance, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::NewProp_compassViewDistance_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::NewProp_compassViewDistance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::NewProp_compassViewDistance_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Filtering" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGActorRepresentationManager, "GetDistanceValueFromCompassViewDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGActorRepresentationManager_eventGetDistanceValueFromCompassViewDistance_Parms), Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter_Statics
 	{
 		struct FGActorRepresentationManager_eventGetMapRepresentationTypeFilter_Parms
@@ -761,6 +806,47 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics
+	{
+		struct FGActorRepresentationManager_eventSetCompassViewDistanceForActorRepresentation_Parms
+		{
+			UFGActorRepresentation* actorRepresentation;
+			ECompassViewDistance viewDistance;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_viewDistance;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_viewDistance_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_actorRepresentation;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::NewProp_viewDistance = { UE4CodeGen_Private::EPropertyClass::Enum, "viewDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventSetCompassViewDistanceForActorRepresentation_Parms, viewDistance), Z_Construct_UEnum_FactoryGame_ECompassViewDistance, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::NewProp_viewDistance_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::NewProp_actorRepresentation = { UE4CodeGen_Private::EPropertyClass::Object, "actorRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGActorRepresentationManager_eventSetCompassViewDistanceForActorRepresentation_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::NewProp_viewDistance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::NewProp_viewDistance_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::NewProp_actorRepresentation,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Filtering" },
+		{ "ModuleRelativePath", "FGActorRepresentationManager.h" },
+		{ "ToolTip", "Sets the actor representations view distance on compass" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGActorRepresentationManager, "SetCompassViewDistanceForActorRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGActorRepresentationManager_eventSetCompassViewDistanceForActorRepresentation_Parms), Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -934,10 +1020,12 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_Get, "Get" }, // 851338603
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetAllActorRepresentations, "GetAllActorRepresentations" }, // 320921690
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetCompassRepresentationTypeFilter, "GetCompassRepresentationTypeFilter" }, // 677753779
+		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetDistanceValueFromCompassViewDistance, "GetDistanceValueFromCompassViewDistance" }, // 1630780537
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_GetMapRepresentationTypeFilter, "GetMapRepresentationTypeFilter" }, // 1651582928
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_OnRep_ReplicatedRepresentations, "OnRep_ReplicatedRepresentations" }, // 3961423135
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_RemoveRepresentationOfActor, "RemoveRepresentationOfActor" }, // 2751606883
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassRepresentationTypeFilter, "SetCompassRepresentationTypeFilter" }, // 526734093
+		{ &Z_Construct_UFunction_AFGActorRepresentationManager_SetCompassViewDistanceForActorRepresentation, "SetCompassViewDistanceForActorRepresentation" }, // 466742460
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_SetMapRepresentationTypeFilter, "SetMapRepresentationTypeFilter" }, // 907952792
 		{ &Z_Construct_UFunction_AFGActorRepresentationManager_UpdateRepresentation, "UpdateRepresentation" }, // 1885077985
 	};
@@ -1068,7 +1156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGActorRepresentationManager, 2649814053);
+	IMPLEMENT_CLASS(AFGActorRepresentationManager, 3985030558);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGActorRepresentationManager(Z_Construct_UClass_AFGActorRepresentationManager, &AFGActorRepresentationManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGActorRepresentationManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGActorRepresentationManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

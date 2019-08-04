@@ -32,6 +32,12 @@ namespace ImplementHeaders
             }
         };
 
+        private static readonly Dictionary<string, string> NestedStructs = new Dictionary<string, string>()
+        {
+            {"ItemHolderHistory", "FConveyorBeltItems::ItemHolderHistory" },
+            {"FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" }
+        };
+
         static void Main(string[] args)
         {
             if (args.Length == 0)
@@ -86,28 +92,13 @@ namespace ImplementHeaders
             using (StreamReader reader = new StreamReader(filePath))
                 fileContents = reader.ReadToEnd();
             List<string> implementations = new List<string>();
-            foreach(Match match in Regex.Matches(fileContents, @"(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^};", RegexOptions.Multiline)) // Match class definition
+            foreach(Match match in Regex.Matches(fileContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match class/struct definition
             {
-                string className = match.Groups[3].Value;
-                string classContents = match.Groups[5].Value;
+                string className = match.Groups[4].Value;
+                string classContents = match.Groups[6].Value;
                 if (!IsValidClassName(className))
                     continue;
-                classContents = Regex.Replace(classContents, @"\/\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
-                classContents = Regex.Replace(classContents, @"\/\/.*", ""); // fix for comments causing some error
-                classContents = Regex.Replace(classContents, @"\s*GENERATED.*?\(\)", ""); // fix for GENERATED... macros being matched
-                classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
-                classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UPROPERTY... macros being matched
-                // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
-                foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
-                {
-                    implementations.Add($"#if {ifMacro.Groups[1].Value.Trim()}");
-                    implementations.AddRange(ImplementFunctions(ifMacro.Groups[2].Value, className));
-                    implementations.AddRange(ImplementStaticVars(ifMacro.Groups[2].Value, className));
-                    implementations.Add($"#endif {ifMacro.Groups[3].Value.Trim()}");
-                }
-                classContents = Regex.Replace(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
-                implementations.AddRange(ImplementFunctions(classContents, className));
-                implementations.AddRange(ImplementStaticVars(classContents, className));
+                implementations.AddRange(ImplementClass(className, classContents));
             }
             using (StreamWriter writer = new StreamWriter($"{saveDir}{Path.DirectorySeparatorChar}{Path.GetFileName(filePath).Replace(".h", ".cpp")}"))
             {
@@ -124,12 +115,53 @@ namespace ImplementHeaders
             }
         }
 
+        private static List<string> ImplementClass(string className, string classContents)
+        {
+            List<string> implementations = new List<string>();
+            classContents = Regex.Replace(classContents, @"\/\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
+            classContents = Regex.Replace(classContents, @"\/\/.*", ""); // fix for comments causing some error
+            classContents = Regex.Replace(classContents, @"\s*GENERATED.*?\(\)", ""); // fix for GENERATED... macros being matched
+            classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
+            classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UPROPERTY... macros being matched
+            // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
+            foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
+            {
+                string ifContents = ifMacro.Groups[2].Value;
+                implementations.Add($"#if {ifMacro.Groups[1].Value.Trim()}");
+                foreach (Match match in Regex.Matches(ifContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
+                {
+                    string innerClassName = match.Groups[4].Value;
+                    string innerClassContents = match.Groups[6].Value;
+                    if (!IsValidClassName(innerClassName))
+                        continue;
+                    implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents));
+                    ifContents = ifContents.Replace(match.Value, "");
+                }
+                implementations.AddRange(ImplementFunctions(ifContents, className));
+                implementations.AddRange(ImplementStaticVars(ifContents, className));
+                implementations.Add($"#endif {ifMacro.Groups[3].Value.Trim()}");
+            }
+            classContents = Regex.Replace(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
+            foreach (Match match in Regex.Matches(classContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
+            {
+                string innerClassName = match.Groups[4].Value;
+                string innerClassContents = match.Groups[6].Value;
+                if (!IsValidClassName(innerClassName))
+                    continue;
+                implementations.AddRange(ImplementClass(className + "::" + innerClassName, innerClassContents));
+                classContents = classContents.Replace(match.Value, "");
+            }
+            implementations.AddRange(ImplementFunctions(classContents, className));
+            implementations.AddRange(ImplementStaticVars(classContents, className));
+            return implementations;
+        }
+
         private static List<string> ImplementStaticVars(string content, string className)
         {
             List<string> implementations = new List<string>();
             foreach (Match function in Regex.Matches(content, @"(?<!const )static\s+([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
             {
-                string type = function.Groups[1].Value;
+                string type = FixReturnType(function.Groups[1].Value).Trim();
                 string name = function.Groups[2].Value;
                 implementations.Add($"{type} {className}::{name} = {type}();");
             }
@@ -226,12 +258,12 @@ namespace ImplementHeaders
         private static void ImplementFunction(List<string> implementations, string className, string isClass, string isReturnConst, string returnType, string functionName, string parameters, string isConst, string template, string isStatic)
         {
             string withoutDestructorThingy = functionName.Trim().Replace("~", "");
-
-            if (IsValidReturnType(returnType) || (withoutDestructorThingy == className && string.IsNullOrWhiteSpace(returnType)))
+            string withoutOuterClass = className.Substring(className.LastIndexOf(":") + 1);
+            if (IsValidReturnType(returnType) || (withoutDestructorThingy == withoutOuterClass && string.IsNullOrWhiteSpace(returnType)))
             {
                 if (!string.IsNullOrWhiteSpace(template))
                     template = FixDefaults(template.Trim().TrimEnd('>')) + '>' + Environment.NewLine;
-                string result = $"{template}{isReturnConst}{returnType}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
+                string result = $"{template}{isReturnConst}{FixReturnType(returnType)}{className}::{functionName}({Regex.Replace(FixDefaults(parameters.Trim().TrimEnd(')')), @"(?<!<)\b(class|struct)\b", "")}){isConst}";
                 if (parameters.Contains("objectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
                     result += " : Super(objectInitializer) ";
                 else if (parameters.Contains("ObjectInitializer") && withoutDestructorThingy == className) // if it is constructor of derived class
@@ -286,6 +318,29 @@ namespace ImplementHeaders
         private static bool IsValidFunctionName(string functionName)
         {
             return Regex.Match(functionName.Trim(), @"^([\w\d_~]+|operator.+)$").Success && !(new string[] { "return", "if", "else", "const", "struct", "for" /* fill with more as they show up */ }).Contains(functionName.Trim()) && !IsAllCaps(functionName.Trim()); // Don't match macros
+        }
+
+        private static string FixReturnType(string returnType)
+        {
+            returnType = returnType.Trim();
+            if (returnType.EndsWith("*"))
+            {
+                if (NestedStructs.ContainsKey(returnType.TrimEnd('*')))
+                    return NestedStructs[returnType.TrimEnd('*')] + "* ";
+            }
+            else if (returnType.EndsWith("&"))
+            {
+                if (NestedStructs.ContainsKey(returnType.TrimEnd('&')))
+                    return NestedStructs[returnType.TrimEnd('&')] + "& ";
+            }
+            else
+            {
+                if (NestedStructs.ContainsKey(returnType))
+                    return NestedStructs[returnType] + " ";
+            }
+            if(!string.IsNullOrWhiteSpace(returnType))
+                return returnType.Trim() + " ";
+            return "";
         }
 
         private static string GetCustomReturn(string returnType)
