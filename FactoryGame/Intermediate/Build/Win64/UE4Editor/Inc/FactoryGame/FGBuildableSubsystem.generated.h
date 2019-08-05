@@ -43,21 +43,21 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_55_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execgetColorSlotSecondaryLinear) \
+	DECLARE_FUNCTION(execGetColorSlotSecondaryLinear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->getColorSlotSecondaryLinear(Z_Param_index); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotSecondaryLinear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execgetColorSlotPrimaryLinear) \
+	DECLARE_FUNCTION(execGetColorSlotPrimaryLinear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->getColorSlotPrimaryLinear(Z_Param_index); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotPrimaryLinear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
@@ -129,21 +129,21 @@ static inline void FOnBuildableConstructedGlobal_DelegateWrapper(const FMulticas
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execgetColorSlotSecondaryLinear) \
+	DECLARE_FUNCTION(execGetColorSlotSecondaryLinear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->getColorSlotSecondaryLinear(Z_Param_index); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotSecondaryLinear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execgetColorSlotPrimaryLinear) \
+	DECLARE_FUNCTION(execGetColorSlotPrimaryLinear) \
 	{ \
 		P_GET_PROPERTY(UByteProperty,Z_Param_index); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(FLinearColor*)Z_Param__Result=P_THIS->getColorSlotPrimaryLinear(Z_Param_index); \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetColorSlotPrimaryLinear(Z_Param_index); \
 		P_NATIVE_END; \
 	} \
  \

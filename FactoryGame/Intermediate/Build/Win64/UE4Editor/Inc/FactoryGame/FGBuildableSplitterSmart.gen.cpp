@@ -29,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSplitterSmart() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSplitterSmart_OnRep_SortRules();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSplitterSmart_RemoveSortRuleAt();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSplitterSmart_SetSortRuleAt();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryItem();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature_Statics
 	{
@@ -449,9 +450,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCurrentInputIndex_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mLastOutputIndex_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mCurrentInputIndex;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_mLastOutputIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mItemToLastOutputMap_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMapPropertyParams NewProp_mItemToLastOutputMap;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mItemToLastOutputMap_Key_KeyProp;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_mItemToLastOutputMap_ValueProp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mLastItem_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mLastItem;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxNumSortRules_MetaData[];
 #endif
@@ -491,13 +502,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
-		{ "NoAutoJson", "" },
-		{ "ToolTip", "Cycles through the inputs, stores the input we want to check next. Index is for the mInputs array." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentInputIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, mCurrentInputIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mLastOutputIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, mLastOutputIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_MetaData[] = {
+		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap = { UE4CodeGen_Private::EPropertyClass::Map, "mItemToLastOutputMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, mItemToLastOutputMap), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_Key_KeyProp = { UE4CodeGen_Private::EPropertyClass::Class, "mItemToLastOutputMap_Key", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_ValueProp = { UE4CodeGen_Private::EPropertyClass::Byte, "mItemToLastOutputMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 1, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem_MetaData[] = {
+		{ "ModuleRelativePath", "Buildables/FGBuildableSplitterSmart.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem = { UE4CodeGen_Private::EPropertyClass::Struct, "mLastItem", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, mLastItem), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mMaxNumSortRules_MetaData[] = {
 		{ "Category", "Sort" },
@@ -525,7 +548,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnSortRulesChangedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080010080000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSplitterSmart, OnSortRulesChangedDelegate), Z_Construct_UDelegateFunction_FactoryGame_OnSortRulesChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_OnSortRulesChangedDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mCurrentInputIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastOutputIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_Key_KeyProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mItemToLastOutputMap_ValueProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mLastItem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mMaxNumSortRules,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mSortRules,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSplitterSmart_Statics::NewProp_mSortRules_Inner,
@@ -554,7 +581,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 3787858971);
+	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 1990204992);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSplitterSmart(Z_Construct_UClass_AFGBuildableSplitterSmart, &AFGBuildableSplitterSmart::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSplitterSmart"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSplitterSmart);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

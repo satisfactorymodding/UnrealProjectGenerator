@@ -26,10 +26,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary();
@@ -263,9 +263,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Get", &AFGBuildableSubsystem::execGet },
 			{ "getColorSlotPrimary", &AFGBuildableSubsystem::execgetColorSlotPrimary },
-			{ "getColorSlotPrimaryLinear", &AFGBuildableSubsystem::execgetColorSlotPrimaryLinear },
+			{ "GetColorSlotPrimaryLinear", &AFGBuildableSubsystem::execGetColorSlotPrimaryLinear },
 			{ "getColorSlotSecondary", &AFGBuildableSubsystem::execgetColorSlotSecondary },
-			{ "getColorSlotSecondaryLinear", &AFGBuildableSubsystem::execgetColorSlotSecondaryLinear },
+			{ "GetColorSlotSecondaryLinear", &AFGBuildableSubsystem::execGetColorSlotSecondaryLinear },
 			{ "GetTypedBuildable", &AFGBuildableSubsystem::execGetTypedBuildable },
 			{ "ReplayBuildingEffects", &AFGBuildableSubsystem::execReplayBuildingEffects },
 			{ "setColorSlotPrimary", &AFGBuildableSubsystem::execsetColorSlotPrimary },
@@ -350,9 +350,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics
 	{
-		struct FGBuildableSubsystem_eventgetColorSlotPrimaryLinear_Parms
+		struct FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms
 		{
 			uint8 index;
 			FLinearColor ReturnValue;
@@ -365,25 +365,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotPrimaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotPrimaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "getColorSlotPrimaryLinear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventgetColorSlotPrimaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "GetColorSlotPrimaryLinear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -424,9 +424,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics
 	{
-		struct FGBuildableSubsystem_eventgetColorSlotSecondaryLinear_Parms
+		struct FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms
 		{
 			uint8 index;
 			FLinearColor ReturnValue;
@@ -439,25 +439,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotSecondaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotSecondaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "getColorSlotSecondaryLinear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventgetColorSlotSecondaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "GetColorSlotSecondaryLinear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -692,9 +692,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableSubsystem_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_Get, "Get" }, // 2837267337
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary, "getColorSlotPrimary" }, // 1460479420
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimaryLinear, "getColorSlotPrimaryLinear" }, // 2332125762
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear, "GetColorSlotPrimaryLinear" }, // 575081935
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary, "getColorSlotSecondary" }, // 820777894
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondaryLinear, "getColorSlotSecondaryLinear" }, // 925000850
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear, "GetColorSlotSecondaryLinear" }, // 3536823358
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable, "GetTypedBuildable" }, // 3079218011
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects, "ReplayBuildingEffects" }, // 1608769726
 		{ &Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary, "setColorSlotPrimary" }, // 2667540674
@@ -890,7 +890,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSubsystem, 1251424737);
+	IMPLEMENT_CLASS(AFGBuildableSubsystem, 3642806442);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSubsystem(Z_Construct_UClass_AFGBuildableSubsystem, &AFGBuildableSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

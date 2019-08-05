@@ -807,6 +807,23 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execNoMessages_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->NoMessages_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNoMessages) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->NoMessages(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execNoPower_Get) \
 	{ \
 		P_FINISH; \
@@ -1632,6 +1649,23 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->TurboMode(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNoMessages_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->NoMessages_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNoMessages) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->NoMessages(Z_Param_enabled); \
 		P_NATIVE_END; \
 	} \
  \
