@@ -770,6 +770,23 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execPlayerFly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PlayerFly_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerFly) \
+	{ \
+		P_GET_UBOOL(Z_Param_flyModeEnabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PlayerFly(Z_Param_flyModeEnabled); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGiveItemsSingle) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_resource); \
@@ -1612,6 +1629,23 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ClearGiveItemPopularList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerFly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PlayerFly_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerFly) \
+	{ \
+		P_GET_UBOOL(Z_Param_flyModeEnabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PlayerFly(Z_Param_flyModeEnabled); \
 		P_NATIVE_END; \
 	} \
  \
