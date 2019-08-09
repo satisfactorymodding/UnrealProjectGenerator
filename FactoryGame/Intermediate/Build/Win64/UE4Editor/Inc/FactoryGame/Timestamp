@@ -144,6 +144,7 @@ C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\Fact
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Replication\FGReplicationDetailActor_Storage.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Replication\FGReplicationDetailInventoryComponent.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Replication\FGReplicationGraph.h
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Resources\FGAnyUndefinedDescriptor.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Resources\FGBuildDescriptor.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Resources\FGBuildingDescriptor.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Resources\FGConsumableDescriptor.h
@@ -325,6 +326,7 @@ C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\Fact
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPlanet.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPlayerController.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPlayerControllerBase.h
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPlayerSettings.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPlayerStartTradingPost.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPlayerState.h
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGPopupInstigatorInterface.h

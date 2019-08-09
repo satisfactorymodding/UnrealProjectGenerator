@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
+struct FLinearColor;
 enum class ERepresentationType : uint8;
 class UFGItemCategory;
 class UFGRecipe;
@@ -18,13 +19,12 @@ struct FMessageData;
 enum class EMessageType : uint8;
 class UFGTutorialSubsystem;
 struct FUniqueNetIdRepl;
-struct FSlotData;
 #ifdef FACTORYGAME_FGPlayerState_generated_h
 #error "FGPlayerState.generated.h already included, missing '#pragma once' in FGPlayerState.h"
 #endif
 #define FACTORYGAME_FGPlayerState_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_48_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_53_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMessageData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
@@ -47,7 +47,7 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_RPC_WRAPPERS \
 	virtual bool Server_SetCompassFilter_Validate(ERepresentationType , bool ); \
 	virtual void Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible); \
 	virtual bool Server_SetMapFilter_Validate(ERepresentationType , bool ); \
@@ -64,6 +64,22 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNametagColor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetNametagColor(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPingColor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetPingColor(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -294,14 +310,6 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetSlotData) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FSlotData>*)Z_Param__Result=P_THIS->GetSlotData(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetSlotNum) \
 	{ \
 		P_FINISH; \
@@ -311,7 +319,7 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_SetCompassFilter_Validate(ERepresentationType , bool ); \
 	virtual void Server_SetCompassFilter_Implementation(ERepresentationType representationType, bool visible); \
 	virtual bool Server_SetMapFilter_Validate(ERepresentationType , bool ); \
@@ -328,6 +336,22 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_HotbarShortcuts(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNametagColor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetNametagColor(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPingColor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FLinearColor*)Z_Param__Result=P_THIS->GetPingColor(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -558,14 +582,6 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetSlotData) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FSlotData>*)Z_Param__Result=P_THIS->GetSlotData(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetSlotNum) \
 	{ \
 		P_FINISH; \
@@ -575,7 +591,7 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_EVENT_PARMS \
 	struct FGPlayerState_eventServer_RemoveRecipe_Parms \
 	{ \
 		TSubclassOf<UFGRecipe>  recipe; \
@@ -601,34 +617,34 @@ static inline void FOnBuildableConstructedNew_DelegateWrapper(const FMulticastSc
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGPlayerState, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGPlayerState(); \
 	friend struct Z_Construct_UClass_AFGPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(AFGPlayerState, APlayerState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGPlayerState) \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGPlayerState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGPlayerState(); \
 	friend struct Z_Construct_UClass_AFGPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(AFGPlayerState, APlayerState, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGPlayerState) \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGPlayerState*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGPlayerState(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGPlayerState) \
@@ -641,7 +657,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGPlayerState(AFGPlayerState&&); \
@@ -652,7 +668,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerState); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGPlayerState)
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mHotbarShortcuts() { return STRUCT_OFFSET(AFGPlayerState, mHotbarShortcuts); } \
 	FORCEINLINE static uint32 __PPO__mDefaultRecipeShortcuts() { return STRUCT_OFFSET(AFGPlayerState, mDefaultRecipeShortcuts); } \
 	FORCEINLINE static uint32 __PPO__mNewRecipes() { return STRUCT_OFFSET(AFGPlayerState, mNewRecipes); } \
@@ -670,30 +686,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPlayerState); \
 	FORCEINLINE static uint32 __PPO__mFilteredOutCompassTypes() { return STRUCT_OFFSET(AFGPlayerState, mFilteredOutCompassTypes); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_66_PROLOG \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_71_PROLOG \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_INCLASS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPlayerState_h_69_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGPlayerState_h_74_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPlayerState_h_69_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGPlayerState_h_74_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -294,6 +294,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execDumpSignificanceManagedObjects) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpSignificanceManagedObjects(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpActorRepresentations) \
 	{ \
 		P_FINISH; \
@@ -767,6 +775,23 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ClearGiveItemPopularList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerNoClipModeOnFly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PlayerNoClipModeOnFly_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerNoClipModeOnFly) \
+	{ \
+		P_GET_UBOOL(Z_Param_gohstMode); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PlayerNoClipModeOnFly(Z_Param_gohstMode); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1156,6 +1181,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execDumpSignificanceManagedObjects) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpSignificanceManagedObjects(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpActorRepresentations) \
 	{ \
 		P_FINISH; \
@@ -1629,6 +1662,23 @@ class UFGItemDescriptor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ClearGiveItemPopularList(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerNoClipModeOnFly_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->PlayerNoClipModeOnFly_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execPlayerNoClipModeOnFly) \
+	{ \
+		P_GET_UBOOL(Z_Param_gohstMode); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PlayerNoClipModeOnFly(Z_Param_gohstMode); \
 		P_NATIVE_END; \
 	} \
  \

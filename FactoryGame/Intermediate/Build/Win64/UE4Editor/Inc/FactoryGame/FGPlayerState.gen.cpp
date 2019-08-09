@@ -34,9 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerState() {}
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EMessageType();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetCollapsedItemCategories();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemCategory_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNametagColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetSlotData();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetPingColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetSlotNum();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetSteamID();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGPlayerState_GetTutorialSubsystem();
@@ -335,9 +336,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 			{ "GetAllMessageData", &AFGPlayerState::execGetAllMessageData },
 			{ "GetAllMessages", &AFGPlayerState::execGetAllMessages },
 			{ "GetCollapsedItemCategories", &AFGPlayerState::execGetCollapsedItemCategories },
+			{ "GetNametagColor", &AFGPlayerState::execGetNametagColor },
 			{ "GetNumArmSlots", &AFGPlayerState::execGetNumArmSlots },
 			{ "GetOnlyShowAffordableRecipes", &AFGPlayerState::execGetOnlyShowAffordableRecipes },
-			{ "GetSlotData", &AFGPlayerState::execGetSlotData },
+			{ "GetPingColor", &AFGPlayerState::execGetPingColor },
 			{ "GetSlotNum", &AFGPlayerState::execGetSlotNum },
 			{ "GetSteamID", &AFGPlayerState::execGetSteamID },
 			{ "GetTutorialSubsystem", &AFGPlayerState::execGetTutorialSubsystem },
@@ -582,6 +584,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics
+	{
+		struct FGPlayerState_eventGetNametagColor_Parms
+		{
+			FLinearColor ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerState_eventGetNametagColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Color" },
+		{ "ModuleRelativePath", "FGPlayerState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, "GetNametagColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54820401, sizeof(FGPlayerState_eventGetNametagColor_Parms), Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_GetNametagColor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetNametagColor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots_Statics
 	{
 		struct FGPlayerState_eventGetNumArmSlots_Parms
@@ -655,40 +690,36 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics
+	struct Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics
 	{
-		struct FGPlayerState_eventGetSlotData_Parms
+		struct FGPlayerState_eventGetPingColor_Parms
 		{
-			TArray<FSlotData> ReturnValue;
+			FLinearColor ReturnValue;
 		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerState_eventGetSlotData_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSlotData, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::NewProp_ReturnValue_Inner,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPlayerState_eventGetPingColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Slots|Colors" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Color" },
 		{ "ModuleRelativePath", "FGPlayerState.h" },
-		{ "ToolTip", "Get different colors for different players over the network, index by slot number" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, "GetSlotData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGPlayerState_eventGetSlotData_Parms), Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGPlayerState_GetSlotData()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerState, "GetPingColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54820401, sizeof(FGPlayerState_eventGetPingColor_Parms), Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGPlayerState_GetPingColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetSlotData_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGPlayerState_GetPingColor_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1359,8 +1390,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSlotData_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mSlotData;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSlotData_Inner;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mSlotData;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSlotNum_MetaData[];
 #endif
@@ -1400,9 +1430,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		{ &Z_Construct_UFunction_AFGPlayerState_GetAllMessageData, "GetAllMessageData" }, // 4040895360
 		{ &Z_Construct_UFunction_AFGPlayerState_GetAllMessages, "GetAllMessages" }, // 835372783
 		{ &Z_Construct_UFunction_AFGPlayerState_GetCollapsedItemCategories, "GetCollapsedItemCategories" }, // 4132815911
+		{ &Z_Construct_UFunction_AFGPlayerState_GetNametagColor, "GetNametagColor" }, // 465467422
 		{ &Z_Construct_UFunction_AFGPlayerState_GetNumArmSlots, "GetNumArmSlots" }, // 2443048849
 		{ &Z_Construct_UFunction_AFGPlayerState_GetOnlyShowAffordableRecipes, "GetOnlyShowAffordableRecipes" }, // 4124432461
-		{ &Z_Construct_UFunction_AFGPlayerState_GetSlotData, "GetSlotData" }, // 2323615411
+		{ &Z_Construct_UFunction_AFGPlayerState_GetPingColor, "GetPingColor" }, // 438459520
 		{ &Z_Construct_UFunction_AFGPlayerState_GetSlotNum, "GetSlotNum" }, // 3568191574
 		{ &Z_Construct_UFunction_AFGPlayerState_GetSteamID, "GetSteamID" }, // 845700876
 		{ &Z_Construct_UFunction_AFGPlayerState_GetTutorialSubsystem, "GetTutorialSubsystem" }, // 2295233421
@@ -1534,13 +1565,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn = { UE4CodeGen_Private::EPropertyClass::Object, "mOwnedPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGPlayerState, mOwnedPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData[] = {
-		{ "Category", "Slots|Colors" },
 		{ "ModuleRelativePath", "FGPlayerState.h" },
-		{ "ToolTip", "The different colors to represent players over the network, @todo: Make this a config variables so that server admins can add to this array if they have lots of players" },
+		{ "ToolTip", "This players color container" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData = { UE4CodeGen_Private::EPropertyClass::Array, "mSlotData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(AFGPlayerState, mSlotData), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSlotData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSlotData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData = { UE4CodeGen_Private::EPropertyClass::Struct, "mSlotData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGPlayerState, mSlotData), Z_Construct_UScriptStruct_FSlotData, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotNum_MetaData[] = {
 		{ "ModuleRelativePath", "FGPlayerState.h" },
@@ -1604,7 +1633,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mHasReceivedInitialItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mOwnedPawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotData_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mSlotNum,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlayerState_Statics::NewProp_mNewRecipes_Inner,
@@ -1640,7 +1668,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerState, 4057079780);
+	IMPLEMENT_CLASS(AFGPlayerState, 3505143561);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerState(Z_Construct_UClass_AFGPlayerState, &AFGPlayerState::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerState);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGPlayerState)

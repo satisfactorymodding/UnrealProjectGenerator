@@ -59,6 +59,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableAttachmentSplitter); \
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableAttachmentSplitter_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCurrentOutputIndex() { return STRUCT_OFFSET(AFGBuildableAttachmentSplitter, mCurrentOutputIndex); } \
+	FORCEINLINE static uint32 __PPO__mCurrentInventoryIndex() { return STRUCT_OFFSET(AFGBuildableAttachmentSplitter, mCurrentInventoryIndex); } \
 	FORCEINLINE static uint32 __PPO__mDistributionTable() { return STRUCT_OFFSET(AFGBuildableAttachmentSplitter, mDistributionTable); }
 
 
