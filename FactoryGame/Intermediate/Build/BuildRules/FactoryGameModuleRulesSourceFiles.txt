@@ -1,4 +1,5 @@
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FactoryGame.Build.cs
+C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Alpakit\Source\Alpakit\Alpakit.Build.cs
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AkAudio\AkAudio.Build.cs
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Plugins\Wwise\Source\AudiokineticTools\AudiokineticTools.Build.cs
 C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame.Target.cs
