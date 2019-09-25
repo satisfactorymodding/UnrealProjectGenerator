@@ -34,7 +34,8 @@ namespace FixHeaders
             {"ULevel", "Engine/Level.h" },
             {"UStaticMesh", "Engine/StaticMesh.h" },
             {"FUpdateTextureRegion2D", "RHI.h" },
-            {"FRuntimeFloatCurve", "Curves/CurveFloat.h" }
+            {"FRuntimeFloatCurve", "Curves/CurveFloat.h" },
+            {"UDeveloperSettings", "Engine/DeveloperSettings.h" }
         };
 
         static void Main(string[] args)
