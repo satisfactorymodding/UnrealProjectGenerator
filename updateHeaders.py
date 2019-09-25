@@ -3,23 +3,41 @@ import subprocess
 import shutil
 
 path = os.path.dirname(os.path.abspath(__file__))
-modifiedHeadersPath = "{0}\\Headers".format(path)
-currentVersion = 0
 
-for entry in os.listdir(modifiedHeadersPath):
-	if os.path.isdir(os.path.join(modifiedHeadersPath, entry)):
-		currentVersion = max(currentVersion, int(entry))
+def getVersion(versionPath):
+    with open(f'{path}\\Headers\\{versionPath}\\currentVersion.txt', 'r') as f:
+        return int(f.read())
 
-print("Detected current version: {0}".format(currentVersion))
+print("Is new version experimental? (y/n): ")
+is_experimental = (input() == 'y')
+
+newHeadersPath = "Experimental" if is_experimental else "EarlyAccess"
+
+if is_experimental:
+    if getVersion("EarlyAccess") >= getVersion("Experimental"):
+        oldHeadersPath = "EarlyAccess"
+    else:
+        oldHeadersPath = "Experimental"
+else:
+    oldHeadersPath = "EarlyAccess"
+
+oldVersion = getVersion(oldHeadersPath)
+
+print(f"Detected old version: {oldVersion} ({oldHeadersPath})")
 print("Update version: ")
 newVersion = input()
 print("Updated headers path: ")
-newPath = input()
+cssHeadersPath = input()
 
-subprocess.call(["{0}\\FixHeaders\\FixHeaders\\bin\\Debug\\FixHeaders.exe".format(path), "{0}\\Headers\\{1}\\OriginalHeaders".format(path, currentVersion), "{0}\\Headers\\{1}\\ModifiedHeaders".format(path, currentVersion), newPath, "{0}\\Headers\\{1}\\ModifiedHeaders".format(path, newVersion)])
+subprocess.call([f"{path}\\FixHeaders\\FixHeaders\\bin\\Debug\\FixHeaders.exe", f"{path}\\Headers\\{oldHeadersPath}\\OriginalHeaders", f"{path}\\Headers\\{oldHeadersPath}\\ModifiedHeaders", cssHeadersPath, f"{path}\\Headers\\{newHeadersPath}\\ModifiedHeaders"])
 
-subprocess.call(["{0}\\ImplementHeaders\\ImplementHeaders\\bin\\Debug\\ImplementHeaders.exe".format(path), "{0}\\Headers\\{1}\\ModifiedHeaders".format(path, newVersion), "{0}\\Headers\\{1}\\ModifiedImplementations".format(path, newVersion)])
+subprocess.call([f"{path}\\ImplementHeaders\\ImplementHeaders\\bin\\Debug\\ImplementHeaders.exe", f"{path}\\Headers\\{newHeadersPath}\\ModifiedHeaders", f"{path}\\Headers\\{newHeadersPath}\\ModifiedImplementations"])
 
-shutil.copytree(newPath, "{0}\\Headers\\{1}\\OriginalHeaders".format(path, newVersion))
+shutil.rmtree(f"{path}\\Headers\\{newHeadersPath}\\OriginalHeaders", ignore_errors=True)
+
+shutil.copytree(cssHeadersPath, f"{path}\\Headers\\{newHeadersPath}\\OriginalHeaders")
+
+with open(f"{path}\\Headers\\{newHeadersPath}\\currentVersion.txt", 'w') as f:
+    f.write(newVersion)
 
 input()
