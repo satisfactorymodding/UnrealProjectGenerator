@@ -119,7 +119,7 @@ public:
 	void UpdateCouplerRotationAndLength();
 
 	/** Get the orientation of this vehicle. */
-	FORCEINLINE float GetOrientation() { return mOrientation; }
+	FORCEINLINE float GetOrientation() const { return mOrientation; }
 	
 	/** Get the total mass (gross) of this vehicle, tare + payload. [kg] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
