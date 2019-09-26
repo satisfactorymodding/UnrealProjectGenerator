@@ -19,7 +19,7 @@ class USplineComponent;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetLength) \
 	{ \
@@ -38,7 +38,7 @@ class USplineComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetLength) \
 	{ \
@@ -57,7 +57,7 @@ class USplineComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableRailroadTrack(); \
 	friend struct Z_Construct_UClass_AFGBuildableRailroadTrack_Statics; \
@@ -66,7 +66,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableRailroadTrack)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableRailroadTrack(); \
 	friend struct Z_Construct_UClass_AFGBuildableRailroadTrack_Statics; \
@@ -75,7 +75,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableRailroadTrack)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableRailroadTrack(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableRailroadTrack) \
@@ -88,7 +88,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableRailroadTrack(AFGBuildableRailroadTrack&&); \
@@ -99,35 +99,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableRailroadTrack); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableRailroadTrack)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMesh() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mMesh); } \
 	FORCEINLINE static uint32 __PPO__mMeshLength() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mMeshLength); } \
 	FORCEINLINE static uint32 __PPO__mSplineComponent() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mSplineComponent); } \
 	FORCEINLINE static uint32 __PPO__mSplineData() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mSplineData); } \
 	FORCEINLINE static uint32 __PPO__mConnections() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mConnections); } \
-	FORCEINLINE static uint32 __PPO__mIsOwnedByPlatform() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mIsOwnedByPlatform); } \
-	FORCEINLINE static uint32 __PPO__mRailroadInterfaces() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mRailroadInterfaces); }
+	FORCEINLINE static uint32 __PPO__mIsOwnedByPlatform() { return STRUCT_OFFSET(AFGBuildableRailroadTrack, mIsOwnedByPlatform); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_101_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_88_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_104_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

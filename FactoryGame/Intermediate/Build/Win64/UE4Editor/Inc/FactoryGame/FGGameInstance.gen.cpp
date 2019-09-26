@@ -35,9 +35,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameInstance() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGErrorMessage_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_GetSkipOnboarding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenAlphaInfoScreen();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_PeekNextError();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_PushError();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_SetHasSeenAlphaInfoScreen();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGGameInstance_SetSkipOnboarding();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMusicManager_NoRegister();
@@ -450,9 +452,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 			{ "GetNextError", &UFGGameInstance::execGetNextError },
 			{ "GetSkipOnboarding", &UFGGameInstance::execGetSkipOnboarding },
 			{ "HasPlayerSeenAlphaInfoScreen", &UFGGameInstance::execHasPlayerSeenAlphaInfoScreen },
+			{ "HasPlayerSeenCloudSaveInfoScreen", &UFGGameInstance::execHasPlayerSeenCloudSaveInfoScreen },
 			{ "PeekNextError", &UFGGameInstance::execPeekNextError },
 			{ "PopLatestNetworkError", &UFGGameInstance::execPopLatestNetworkError },
 			{ "PushError", &UFGGameInstance::execPushError },
+			{ "SetHasPlayerSeenCloudSaveInfoScreen", &UFGGameInstance::execSetHasPlayerSeenCloudSaveInfoScreen },
 			{ "SetHasSeenAlphaInfoScreen", &UFGGameInstance::execSetHasSeenAlphaInfoScreen },
 			{ "SetSkipOnboarding", &UFGGameInstance::execSetSkipOnboarding },
 		};
@@ -702,6 +706,44 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics
+	{
+		struct FGGameInstance_eventHasPlayerSeenCloudSaveInfoScreen_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGGameInstance_eventHasPlayerSeenCloudSaveInfoScreen_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGGameInstance_eventHasPlayerSeenCloudSaveInfoScreen_Parms), &Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+		{ "ToolTip", "Has the player seen the cloud save info and do not want to see it again?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameInstance, "HasPlayerSeenCloudSaveInfoScreen", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGGameInstance_eventHasPlayerSeenCloudSaveInfoScreen_Parms), Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGGameInstance_PeekNextError_Statics
 	{
 		struct FGGameInstance_eventPeekNextError_Parms
@@ -819,6 +861,44 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics
+	{
+		struct FGGameInstance_eventSetHasPlayerSeenCloudSaveInfoScreen_Parms
+		{
+			bool hasSeen;
+		};
+		static void NewProp_hasSeen_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_hasSeen;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_hasSeen_SetBit(void* Obj)
+	{
+		((FGGameInstance_eventSetHasPlayerSeenCloudSaveInfoScreen_Parms*)Obj)->hasSeen = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_hasSeen = { UE4CodeGen_Private::EPropertyClass::Bool, "hasSeen", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGGameInstance_eventSetHasPlayerSeenCloudSaveInfoScreen_Parms), &Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_hasSeen_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::NewProp_hasSeen,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+		{ "ToolTip", "Set if the player has seen cloud save info screen" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGameInstance, "SetHasPlayerSeenCloudSaveInfoScreen", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGGameInstance_eventSetHasPlayerSeenCloudSaveInfoScreen_Parms), Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGGameInstance_SetHasSeenAlphaInfoScreen_Statics
 	{
 		struct FGGameInstance_eventSetHasSeenAlphaInfoScreen_Parms
@@ -908,6 +988,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHasSeenCloudSaveInfo_MetaData[];
+#endif
+		static void NewProp_mHasSeenCloudSaveInfo_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mHasSeenCloudSaveInfo;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMusicManager_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mMusicManager;
@@ -952,9 +1037,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		{ &Z_Construct_UFunction_UFGGameInstance_GetNextError, "GetNextError" }, // 1968835417
 		{ &Z_Construct_UFunction_UFGGameInstance_GetSkipOnboarding, "GetSkipOnboarding" }, // 3930403915
 		{ &Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenAlphaInfoScreen, "HasPlayerSeenAlphaInfoScreen" }, // 1090941013
+		{ &Z_Construct_UFunction_UFGGameInstance_HasPlayerSeenCloudSaveInfoScreen, "HasPlayerSeenCloudSaveInfoScreen" }, // 396934138
 		{ &Z_Construct_UFunction_UFGGameInstance_PeekNextError, "PeekNextError" }, // 3376304175
 		{ &Z_Construct_UFunction_UFGGameInstance_PopLatestNetworkError, "PopLatestNetworkError" }, // 2887329722
 		{ &Z_Construct_UFunction_UFGGameInstance_PushError, "PushError" }, // 1501217412
+		{ &Z_Construct_UFunction_UFGGameInstance_SetHasPlayerSeenCloudSaveInfoScreen, "SetHasPlayerSeenCloudSaveInfoScreen" }, // 443796452
 		{ &Z_Construct_UFunction_UFGGameInstance_SetHasSeenAlphaInfoScreen, "SetHasSeenAlphaInfoScreen" }, // 4105967970
 		{ &Z_Construct_UFunction_UFGGameInstance_SetSkipOnboarding, "SetSkipOnboarding" }, // 1749882928
 	};
@@ -964,6 +1051,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		{ "ModuleRelativePath", "FGGameInstance.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo_MetaData[] = {
+		{ "ModuleRelativePath", "FGGameInstance.h" },
+		{ "ToolTip", "Has the player seen the cloud save info and do not want to see it again?" },
+	};
+#endif
+	void Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo_SetBit(void* Obj)
+	{
+		((UFGGameInstance*)Obj)->mHasSeenCloudSaveInfo = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasSeenCloudSaveInfo", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000004000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGGameInstance), &Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mMusicManager_MetaData[] = {
 		{ "ModuleRelativePath", "FGGameInstance.h" },
@@ -1017,6 +1115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mSaveSystem = { UE4CodeGen_Private::EPropertyClass::Object, "mSaveSystem", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(UFGGameInstance, mSaveSystem), Z_Construct_UClass_UFGSaveSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mSaveSystem_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mSaveSystem_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGGameInstance_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mHasSeenCloudSaveInfo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameInstance_Statics::NewProp_mMusicManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameInstance_Statics::NewProp_ModPackages,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameInstance_Statics::NewProp_ModPackages_Inner,
@@ -1033,10 +1132,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameInstance_Statics::ClassParams = {
 		&UFGGameInstance::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A8u,
+		0x008000ACu,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGGameInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGGameInstance_Statics::PropPointers),
-		nullptr,
+		"Game",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UFGGameInstance_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGGameInstance_Statics::Class_MetaDataParams))
@@ -1050,7 +1149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameInstance, 4212684741);
+	IMPLEMENT_CLASS(UFGGameInstance, 2910851929);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameInstance(Z_Construct_UClass_UFGGameInstance, &UFGGameInstance::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameInstance"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameInstance);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

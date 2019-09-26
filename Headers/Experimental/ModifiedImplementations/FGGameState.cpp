@@ -3,7 +3,7 @@
 #include "FGGameState.h"
 
 AFGGameState::AFGGameState(){ }
-void AFGGameState::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void AFGGameState::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGGameState::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGGameState::PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void AFGGameState::PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }

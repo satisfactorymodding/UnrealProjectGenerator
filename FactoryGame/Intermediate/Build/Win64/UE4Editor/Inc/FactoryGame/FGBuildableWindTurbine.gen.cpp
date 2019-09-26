@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 58500307);
+	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 644296186);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWindTurbine(Z_Construct_UClass_AFGBuildableWindTurbine, &AFGBuildableWindTurbine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWindTurbine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWindTurbine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -10,3 +10,4 @@ void AFGReplicationDetailActor::OnPreSaveGame(){ }
 void AFGReplicationDetailActor::OnDismantleRefund(){ }
 void AFGReplicationDetailActor::FlushReplicationActorStateToOwner(){ }
 bool AFGReplicationDetailActor::HasCompletedInitialReplication() const{ return bool(); }
+bool AFGReplicationDetailActor::IsNetRelevantFor( const AActor* realViewer, const AActor* viewTarget, const FVector& srcLocation) const{ return bool(); }

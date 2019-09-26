@@ -26,6 +26,7 @@ void UFGHealthComponent::Client_TakePointDamage_Implementation( AActor* damagedA
 void UFGHealthComponent::Client_TakeRadialDamage_Implementation( AActor* damagedActor, float damage, const  UDamageType* damageType, FVector hitLocation, FHitResult hitInfo,  AController* instigatedBy, AActor* damageCauser){ }
 void UFGHealthComponent::Client_Died_Implementation( AActor* deadActor){ }
 void UFGHealthComponent::Client_Heal_Implementation( float amount){ }
+void UFGHealthComponent::Heal( float healAmount){ }
 void UFGHealthComponent::ResetHealth(){ }
 void UFGHealthComponent::ResetHealthFromDeath(){ }
 void UFGHealthComponent::ReviveResetHealth(){ }

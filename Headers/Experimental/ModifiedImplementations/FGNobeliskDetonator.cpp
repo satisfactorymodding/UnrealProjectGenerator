@@ -16,6 +16,7 @@ bool AFGNobeliskDetonator::Server_SpawnExplosive_Validate( FTransform spawnTrans
 void AFGNobeliskDetonator::StartDetonations(){ }
 void AFGNobeliskDetonator::Server_StartDetonations_Implementation(){ }
 bool AFGNobeliskDetonator::Server_StartDetonations_Validate(){ return bool(); }
+void AFGNobeliskDetonator::ExecutePrimaryFire(){ }
 void AFGNobeliskDetonator::Server_ExecutePrimaryFire_Implementation(){ }
 bool AFGNobeliskDetonator::Server_ExecutePrimaryFire_Validate(){ return bool(); }
 void AFGNobeliskDetonator::SecondaryFirePressed(){ }

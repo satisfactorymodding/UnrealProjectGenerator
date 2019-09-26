@@ -21,7 +21,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadTrack() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent();
 	ENGINE_API UClass* Z_Construct_UClass_USplineComponent_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
@@ -227,11 +226,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mRailroadInterfaces_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mRailroadInterfaces;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mRailroadInterfaces_Inner;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsOwnedByPlatform_MetaData[];
 #endif
 		static void NewProp_mIsOwnedByPlatform_SetBit(void* Obj);
@@ -277,24 +271,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
-		{ "ToolTip", "Objects registered on this track in the order they're placed on the track beginning from the start, offset 0." },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces = { UE4CodeGen_Private::EPropertyClass::Array, "mRailroadInterfaces", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mRailroadInterfaces), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mRailroadInterfaces", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData[] = {
+		{ "Category", "Track" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
-		{ "ToolTip", "Was this track created and is owned by a platform" },
+		{ "ToolTip", "Was this track created and is owned by a platform." },
 	};
 #endif
 	void Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_SetBit(void* Obj)
 	{
 		((AFGBuildableRailroadTrack*)Obj)->mIsOwnedByPlatform = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsOwnedByPlatform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableRailroadTrack), &Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsOwnedByPlatform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableRailroadTrack), &Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData[] = {
 		{ "EditInline", "true" },
@@ -338,8 +325,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mRailroadInterfaces_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData,
@@ -371,7 +356,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 4091857909);
+	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 532725858);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadTrack(Z_Construct_UClass_AFGBuildableRailroadTrack, &AFGBuildableRailroadTrack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadTrack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadTrack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

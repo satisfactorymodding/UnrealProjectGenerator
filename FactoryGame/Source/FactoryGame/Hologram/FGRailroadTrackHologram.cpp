@@ -10,6 +10,7 @@ bool AFGRailroadTrackHologram::MultiStepPlacement(){ return bool(); }
 void AFGRailroadTrackHologram::ConfigureActor(  AFGBuildable* inBuildable) const{ }
 void AFGRailroadTrackHologram::ConfigureComponents(  AFGBuildable* inBuildable) const{ }
 void AFGRailroadTrackHologram::SetLocationAndRotationFromPlatformConnections(  UFGTrainPlatformConnection* connectionOne,  UFGTrainPlatformConnection* connectionTwo){ }
+TArray<class UFGRailroadTrackConnectionComponent*> AFGRailroadTrackHologram::GetSnappedConnectionComponents(){ return TArray<class UFGRailroadTrackConnectionComponent*>(); }
 void AFGRailroadTrackHologram::CheckValidPlacement(){ }
 void AFGRailroadTrackHologram::CheckValidFloor(){ }
 void AFGRailroadTrackHologram::CheckClearance(){ }

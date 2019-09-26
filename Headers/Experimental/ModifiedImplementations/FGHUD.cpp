@@ -15,6 +15,7 @@ void AFGHUD::ShowRespawnUI(){ }
 void AFGHUD::CloseRespawnUI(){ }
 void AFGHUD::ShowDebugInfo( float& YL, float& YPos){ }
 void AFGHUD::SetPreviewActorClass( TSubclassOf<AActor> actorClass){ }
+void AFGHUD::SetPreviewDistance( float previewDistance){ }
 void AFGHUD::SetPreviewView( const FItemView& view){ }
 UTextureRenderTarget2D* AFGHUD::GetPreviewTexture() const{ return nullptr; }
 void AFGHUD::BeginPreviewActor(){ }

@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorGeoThermal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 69069328);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorGeoThermal, 2617241864);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableGeneratorGeoThermal(Z_Construct_UClass_AFGBuildableGeneratorGeoThermal, &AFGBuildableGeneratorGeoThermal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableGeneratorGeoThermal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableGeneratorGeoThermal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -252,9 +252,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableFactory_StartIdlingLoopEffects),NULL);
 	}
 	static FName NAME_AFGBuildableFactory_StartProductionLoopEffects = FName(TEXT("StartProductionLoopEffects"));
-	void AFGBuildableFactory::StartProductionLoopEffects()
+	void AFGBuildableFactory::StartProductionLoopEffects(bool didStartProducing)
 	{
-		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableFactory_StartProductionLoopEffects),NULL);
+		FGBuildableFactory_eventStartProductionLoopEffects_Parms Parms;
+		Parms.didStartProducing=didStartProducing ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableFactory_StartProductionLoopEffects),&Parms);
 	}
 	static FName NAME_AFGBuildableFactory_StopIdlingLoopEffects = FName(TEXT("StopIdlingLoopEffects"));
 	void AFGBuildableFactory::StopIdlingLoopEffects()
@@ -262,9 +264,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableFactory_StopIdlingLoopEffects),NULL);
 	}
 	static FName NAME_AFGBuildableFactory_StopProductionLoopEffects = FName(TEXT("StopProductionLoopEffects"));
-	void AFGBuildableFactory::StopProductionLoopEffects()
+	void AFGBuildableFactory::StopProductionLoopEffects(bool didStopProducing)
 	{
-		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableFactory_StopProductionLoopEffects),NULL);
+		FGBuildableFactory_eventStopProductionLoopEffects_Parms Parms;
+		Parms.didStopProducing=didStopProducing ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableFactory_StopProductionLoopEffects),&Parms);
 	}
 	void AFGBuildableFactory::StaticRegisterNativesAFGBuildableFactory()
 	{
@@ -1652,19 +1656,30 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 	}
 	struct Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics
 	{
+		static void NewProp_didStartProducing_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_didStartProducing;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	void Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::NewProp_didStartProducing_SetBit(void* Obj)
+	{
+		((FGBuildableFactory_eventStartProductionLoopEffects_Parms*)Obj)->didStartProducing = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::NewProp_didStartProducing = { UE4CodeGen_Private::EPropertyClass::Bool, "didStartProducing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableFactory_eventStartProductionLoopEffects_Parms), &Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::NewProp_didStartProducing_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::NewProp_didStartProducing,
+	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Effects" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableFactory.h" },
-		{ "ToolTip", "Called when we want the looping SFX/VFX for production to start" },
+		{ "ToolTip", "Called when we want the looping SFX/VFX for production to start\n@param didStartProducing - true if factory just started producing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableFactory, "StartProductionLoopEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableFactory, "StartProductionLoopEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, sizeof(FGBuildableFactory_eventStartProductionLoopEffects_Parms), Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1700,19 +1715,30 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 	}
 	struct Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics
 	{
+		static void NewProp_didStopProducing_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_didStopProducing;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	void Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::NewProp_didStopProducing_SetBit(void* Obj)
+	{
+		((FGBuildableFactory_eventStopProductionLoopEffects_Parms*)Obj)->didStopProducing = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::NewProp_didStopProducing = { UE4CodeGen_Private::EPropertyClass::Bool, "didStopProducing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableFactory_eventStopProductionLoopEffects_Parms), &Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::NewProp_didStopProducing_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::NewProp_didStopProducing,
+	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Effects" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableFactory.h" },
-		{ "ToolTip", "Called when we want the looping SFX/VFX for production to stop" },
+		{ "ToolTip", "Called when we want the looping SFX/VFX for production to stop\n@param didStopProducing - true if the production stopped" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableFactory, "StopProductionLoopEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableFactory, "StopProductionLoopEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, sizeof(FGBuildableFactory_eventStopProductionLoopEffects_Parms), Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1891,9 +1917,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		{ &Z_Construct_UFunction_AFGBuildableFactory_SetIsProductionPaused, "SetIsProductionPaused" }, // 3629644534
 		{ &Z_Construct_UFunction_AFGBuildableFactory_SetPendingPotential, "SetPendingPotential" }, // 2124379494
 		{ &Z_Construct_UFunction_AFGBuildableFactory_StartIdlingLoopEffects, "StartIdlingLoopEffects" }, // 590495390
-		{ &Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects, "StartProductionLoopEffects" }, // 2273083659
+		{ &Z_Construct_UFunction_AFGBuildableFactory_StartProductionLoopEffects, "StartProductionLoopEffects" }, // 3808467444
 		{ &Z_Construct_UFunction_AFGBuildableFactory_StopIdlingLoopEffects, "StopIdlingLoopEffects" }, // 734328500
-		{ &Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects, "StopProductionLoopEffects" }, // 3274298009
+		{ &Z_Construct_UFunction_AFGBuildableFactory_StopProductionLoopEffects, "StopProductionLoopEffects" }, // 1866172004
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFactory_Statics::Class_MetaDataParams[] = {
@@ -2184,7 +2210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactory, 93567679);
+	IMPLEMENT_CLASS(AFGBuildableFactory, 2940012169);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFactory(Z_Construct_UClass_AFGBuildableFactory, &AFGBuildableFactory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFactory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFactory);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

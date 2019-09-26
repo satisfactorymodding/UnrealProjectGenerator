@@ -21,13 +21,11 @@ struct FTimeTableStop;
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execSetStopDuration) \
+	DECLARE_FUNCTION(execIncrementCurrentStop) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_duration); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->SetStopDuration(Z_Param_index,Z_Param_duration); \
+		P_THIS->IncrementCurrentStop(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -122,13 +120,11 @@ struct FTimeTableStop;
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execSetStopDuration) \
+	DECLARE_FUNCTION(execIncrementCurrentStop) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_duration); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->SetStopDuration(Z_Param_index,Z_Param_duration); \
+		P_THIS->IncrementCurrentStop(); \
 		P_NATIVE_END; \
 	} \
  \

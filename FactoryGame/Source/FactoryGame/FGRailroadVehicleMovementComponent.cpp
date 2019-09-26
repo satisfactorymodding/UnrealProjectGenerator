@@ -6,13 +6,13 @@ FWheelsetSetup::FWheelsetSetup(){ }
 FCouplerSetup::FCouplerSetup(){ }
 AFGRailroadVehicle* UFGRailroadVehicleMovementComponent::GetOwningRailroadVehicle() const{ return nullptr; }
 void UFGRailroadVehicleMovementComponent::ComputeConstants(){ }
+void UFGRailroadVehicleMovementComponent::UpdateOrientation(){ }
 USkinnedMeshComponent* UFGRailroadVehicleMovementComponent::GetMesh() const{ return nullptr; }
 void UFGRailroadVehicleMovementComponent::FixupSkeletalMesh(){ }
 void UFGRailroadVehicleMovementComponent::TickSlaveInput( float dt, const  UFGLocomotiveMovementComponent* master){ }
 void UFGRailroadVehicleMovementComponent::TickTractionAndFriction( float dt){ }
-float UFGRailroadVehicleMovementComponent::MoveVehicle( float moveDelta){ return float(); }
+void UFGRailroadVehicleMovementComponent::MoveVehicle( float dt, float distance, FRailroadTrackPosition newTrackPosition){ }
 void UFGRailroadVehicleMovementComponent::UpdateCouplerRotationAndLength(){ }
-float UFGRailroadVehicleMovementComponent::GetMass() const{ return float(); }
 float UFGRailroadVehicleMovementComponent::GetWheelsetAngle() const{ return float(); }
 void UFGRailroadVehicleMovementComponent::OnCreatePhysicsState(){ }
 void UFGRailroadVehicleMovementComponent::OnDestroyPhysicsState(){ }

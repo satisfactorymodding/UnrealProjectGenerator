@@ -12,7 +12,6 @@ struct FRailroadTrackPosition;
 struct FVector;
 class AFGBuildableRailroadTrack;
 struct FColor;
-struct FRailroadPathFindingResult;
 #ifdef FACTORYGAME_FGRailroadFunctionLibrary_generated_h
 #error "FGRailroadFunctionLibrary.generated.h already included, missing '#pragma once' in FGRailroadFunctionLibrary.h"
 #endif
@@ -58,17 +57,6 @@ struct FRailroadPathFindingResult;
 		P_NATIVE_BEGIN; \
 		UFGRailroadFunctionLibrary::DrawDebugTrackPosition(Z_Param_Out_position,Z_Param_Out_color,Z_Param_isPersistentLines); \
 		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDrawDebugRailroadPathResult) \
-	{ \
-		P_GET_STRUCT_REF(FRailroadTrackPosition,Z_Param_Out_start); \
-		P_GET_STRUCT_REF(FRailroadPathFindingResult,Z_Param_Out_result); \
-		P_GET_UBOOL(Z_Param_isPersistentLines); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UFGRailroadFunctionLibrary::DrawDebugRailroadPathResult(Z_Param_Out_start,Z_Param_Out_result,Z_Param_isPersistentLines); \
-		P_NATIVE_END; \
 	}
 
 
@@ -111,17 +99,6 @@ struct FRailroadPathFindingResult;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		UFGRailroadFunctionLibrary::DrawDebugTrackPosition(Z_Param_Out_position,Z_Param_Out_color,Z_Param_isPersistentLines); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execDrawDebugRailroadPathResult) \
-	{ \
-		P_GET_STRUCT_REF(FRailroadTrackPosition,Z_Param_Out_start); \
-		P_GET_STRUCT_REF(FRailroadPathFindingResult,Z_Param_Out_result); \
-		P_GET_UBOOL(Z_Param_isPersistentLines); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UFGRailroadFunctionLibrary::DrawDebugRailroadPathResult(Z_Param_Out_start,Z_Param_Out_result,Z_Param_isPersistentLines); \
 		P_NATIVE_END; \
 	}
 

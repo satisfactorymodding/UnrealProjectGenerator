@@ -3,7 +3,6 @@
 #pragma once
 
 #include "FGConnectionComponent.h"
-#include "FGRailroadInterface.h"
 #include "FGBuildableRailroadTrack.h"
 #include "FGRailroadTrackConnectionComponent.generated.h"
 
@@ -12,22 +11,15 @@
  * The actual track connection placed in the editor.
  */
 UCLASS( ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class FACTORYGAME_API UFGRailroadTrackConnectionComponent : public UFGConnectionComponent, public IFGRailroadInterface
+class FACTORYGAME_API UFGRailroadTrackConnectionComponent : public UFGConnectionComponent
 {
 	GENERATED_BODY()
-
-public:	
+public:
 	UFGRailroadTrackConnectionComponent();
 
 	// Begin ActorComponent interface
 	virtual void OnComponentDestroyed( bool isDestroyingHierarchy ) override;
 	// End ActorComponent interface
-
-	// Begin IFGRailroadInterface
-	virtual void RegisteredOnTrack_Implementation( const FRailroadTrackPosition& position ) override;
-	virtual void UnregisteredFromTrack_Implementation() override;
-	virtual FRailroadTrackPosition GetTrackPosition_Implementation() const override;
-	// End IFGRailroadInterface
 
 	/** Return the connectors world location. */
 	FORCEINLINE FVector GetConnectorLocation() const { return GetComponentTransform().GetLocation(); }
@@ -74,16 +66,14 @@ public:
 	/** @return The track position of this connection. */
 	FORCEINLINE FRailroadTrackPosition GetTrackPosition() const { return mTrackPosition; }
 
-	/**
-	 * Set the track position of this component.
-	 * @note Cannot be called after component registration.
-	 */
-	void SetTrackPosition( const FRailroadTrackPosition& position );
+	/** @return Owning track for this connection. */
+	FORCEINLINE class AFGBuildableRailroadTrack* GetTrack() const { return mTrackPosition.Track.Get(); }
 
 	/**
-	 * @return Owning track for this connection.
+	 * @return what part of a switch this connection is.
 	 */
-	FORCEINLINE class AFGBuildableRailroadTrack* GetTrack() const { return mTrackPosition.Track.Get(); }
+	bool IsFacingSwitch() const;
+	bool IsTrailingSwitch() const;
 
 	/**
 	 *  0: Not connected.
@@ -103,21 +93,30 @@ public:
 
 	/**
 	 * Set the current switch position.
-	 * @param position Clamped to the valid range [0,n].
+	 * @param position Will be clamped to the valid range [0,n].
 	 */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Track" )
 	void SetSwitchPosition( int32 position );
 
 	/**
-	 * Gets the attached switch control, if any.
-	 * @note Loops through all attach children, use with care!
+	 * Set the current switch position to match the given connections track.
 	 */
-	class AFGBuildableRailroadSwitchControl* GetAttachedSwitchControl() const;
+	void SetSwitchPosition( class AFGBuildableRailroadTrack* track );
 
-	/**
-	 * Get the connection opposite to this one on the track segment.
-	 */
+	/** @return The switch control, if any. */
+	class AFGBuildableRailroadSwitchControl* GetSwitchControl() const { return mSwitchControl; }
+
+	/** @return The station at the connection, if any. */
+	class AFGBuildableRailroadStation* GetStation() const { return mStation; }
+
+	/** @return The signal at the connection, if any. */
+	class AFGBuildableRailroadSignal* GetSignal() const { return mSignal; }
+
+	/** Get the connection opposite to this one on the track segment. */
 	UFGRailroadTrackConnectionComponent* GetOpposite() const;
+
+	/** Get the next connection along the track from this one, considering switches position. */
+	UFGRailroadTrackConnectionComponent* GetNext() const;
 
 	/** Find the closest overlapping connection matching all search criteria. */
 	static UFGRailroadTrackConnectionComponent* FindOverlappingConnections(
@@ -126,7 +125,14 @@ public:
 		float radius,
 		bool allowPlatformTracks = false );
 
+	/** Functions used by buildings that are built on a track, do not call them unless you know what you're doing. */
+	void SetSwitchControl( class AFGBuildableRailroadSwitchControl* control ) { mSwitchControl = control; }
+	void SetStation( class AFGBuildableRailroadStation* station ) { mStation = station; }
+	void SetSignal( class AFGBuildableRailroadSignal* signal ) { mSignal = signal; }
+	void SetTrackPosition( const FRailroadTrackPosition& position );
+
 private:
+	//@todotrains Verify building switches at both sides of a connection, the weird bug some people report.
 	/** Internal helper functions to add/remove connection. */
 	void AddConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
 	void RemoveConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
@@ -142,4 +148,16 @@ private:
 	/** If this is a switch, this is the switch position. */
 	UPROPERTY( SaveGame )
 	int32 mSwitchPosition;
+
+	/** The switch control associated with this connection, if any. */
+	UPROPERTY()
+	class AFGBuildableRailroadSwitchControl* mSwitchControl;
+
+	/** The station associated with this connection, if any. */
+	UPROPERTY()
+	class AFGBuildableRailroadStation* mStation;
+
+	/** The signal associated with this connection, if any. */
+	UPROPERTY()
+	class AFGBuildableRailroadSignal* mSignal; //@todotrains
 };

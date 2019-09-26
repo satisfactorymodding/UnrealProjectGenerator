@@ -28,3 +28,4 @@ void AFGDropPod::OnOpened_Implementation(){ }
 void AFGDropPod::RollLoot_Implementation(){ }
 FDropPackage AFGDropPod::RollDropPackage(  TArray<TSubclassOf<class UFGItemDescriptor>> includedItems){ return FDropPackage(); }
 void AFGDropPod::GenerateDropPodInventory( TArray<TSubclassOf<class UFGItemDescriptor>> includedItems, int32 numItemsCreated){ }
+void AFGDropPod::OnRep_HasBeenOpened(){ }

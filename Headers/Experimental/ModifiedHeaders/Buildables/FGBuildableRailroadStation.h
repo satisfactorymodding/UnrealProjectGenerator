@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "UObject/Class.h"
 
+#include "FGBuildableTrainPlatform.h"
 #include "FGBuildableFactory.h"
 #include "FGBuildableTrainPlatform.h"
 #include "../FGTrainPlatformConnection.h"
@@ -12,19 +13,13 @@
 #include "FGBuildableRailroadTrack.h"
 #include "FGBuildableRailroadStation.generated.h"
 
-UENUM()
-enum class EStationDockingStatus
-{
-	ESDS_NotDocked,
-	ESDS_DockInProcess,
-	ESDS_DockComplete
-};
 
+//@todotrains Rename to TrainPlatformStation
 /**
  * Base class for rail road stations. Not to be confused railroad docking stations.
  */
 UCLASS()
-class FACTORYGAME_API AFGBuildableRailroadStation : public AFGBuildableTrainPlatform, public IFGRailroadInterface
+class FACTORYGAME_API AFGBuildableRailroadStation : public AFGBuildableTrainPlatform
 {
 	GENERATED_BODY()
 public:
@@ -36,62 +31,53 @@ public:
 	virtual void Destroyed() override;
 	// End Actor interface
 
+	// Begin save interface
+	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	// End save interface
+
 	// Begin IFGDismantlableInterface
 	virtual bool CanDismantle_Implementation() const override;
 	// End IFGDismantlableInterface
-
-	// Begin IFGRailroadInterface
-	virtual void RegisteredOnTrack_Implementation( const FRailroadTrackPosition& position ) override;
-	virtual void UnregisteredFromTrack_Implementation() override;
-	virtual FRailroadTrackPosition GetTrackPosition_Implementation() const override;
-	virtual int32 GetTrackGraphID_Implementation() const override;
-	// End IFGRailroadInterface
-
-	// Begin BuildableTrainPlatform Implementation
-	virtual bool ShouldRegisterOnTrack() override;
-	// End BuildableTrainPlatform Implementation
-
-	// Begin Factory_ interface
-	virtual void Factory_Tick( float dt ) override;
-	// End Factory_ interface
 
 	/** Get the station identifier for this station. Shared between server, client and used in time tables. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Station" )
 	class AFGTrainStationIdentifier* GetStationIdentifier() const { return mStationIdentifier; }
 
-	/** Notify of begin docking procedure */
-	UFUNCTION( BlueprintNativeEvent, Category = "FactoryGame|Railroad|Station" )
-	void OnLocomotiveDocked();
+	/** Called when the name of the station has changed. */
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|Station" )
+	void OnNameChanged();
+
+	/** Returns the component specified as an output (pointing away from the station to its children) */
+	class UFGTrainPlatformConnection* GetStationOutputConnection();
+
+	/** @return true if the given locomotive is valid for docking. */
+	bool CanDock( class AFGLocomotive* locomotive );
+
+	/**
+	 * Start the docking sequence for the given locomotive.
+	 * If docked the station is responsible for releasing the trains when docking is finished.
+	 *
+	 * @return true if we docked; false if we did not, e.g. no freight cars to dock.
+	 */
+	bool StartDocking( class AFGLocomotive* locomotive, float offset );
 
 	/** Called by other platforms after a docking procedure to notify of their status */
 	void NotifyPlatformDockingComplete( class AFGBuildableTrainPlatform* completedPlatform );
 
 	/** Called by relevant docked platforms to get offset to use for position the arm claw */
-	FORCEINLINE float GetDockedVehicleOfset() const { return mDockedPositionOffset; }
+	FORCEINLINE float GetDockedVehicleOffset() const { return mDockedPositionOffset; }
 
-	/** Returns the component specified as an output (pointing away from the station to its children) */
-	class UFGTrainPlatformConnection* GetStationOutputConnection();
-
-	/** Called when the name of the station has changed. */
-	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|Station" )
-	void OnNameChanged();
+protected:
+	// Begin AFGBuildableTrainPlatform
+	virtual void SetupRailroadTrack() override;
+	// End AFGBuildableTrainPlatform
 
 private:
-	/** Temp: Function called when collider is overlaped to test for docking */
-	UFUNCTION()
-	void OnDockingColliderBeginOverlap( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult );
-
-	/** Temp: Function called when collider is unoverlapped to stop testing for docking */
-	UFUNCTION()
-	void OnDockingColliderEndOverlap( UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex );
-
-	/** Called by a timer to check if a train has docked */
-	UFUNCTION()
-	void PerformIsDockedCheck();
+	/** Tries to dock each vehicle in the train to a platform */
+	bool DockVehiclesToPlatforms( class AFGLocomotive* locomotive );
 
 	/** Called when a docking sequence is complete to undock the locomotive and finalize the dock */
 	virtual void FinishDockingSequence() override;
-
 
 public:
 	//@todotrains private
@@ -99,47 +85,15 @@ public:
 	UPROPERTY( Replicated )
 	class AFGTrainStationIdentifier* mStationIdentifier;
 
-protected:
-	/** Enum tracking the status of a docking sequence */
-	UPROPERTY( SaveGame, Replicated, BlueprintReadOnly, Category = "FactoryGame|Railroad|Station" )
-	EStationDockingStatus mStationDockingStatus;
-
+private:
 	/** When docked, this station will fill this array with every potential platform in its tail. 1 for each train segment */
 	UPROPERTY( SaveGame )
 	TArray< class AFGBuildableTrainPlatform* > mDockedPlatformList;
 
-	/** Stores the distance from the perfect center of the platform that a docked loco has stopped. Used to position the claw arm when loading/unloading */
-	float mDockedPositionOffset;
-
-	/** When docked, a TTrainIterator is used to find all trailing (relevant) train carts matching the direction of this station on the track */
-	UPROPERTY()
-	TArray< TWeakObjectPtr< class AFGRailroadVehicle > > mRelevantDockedVehicles;
-
-
-
-private:
-	/** Collider, TEMP I hope, used for detecting overlap with train locomotives for docking */
-	UPROPERTY(EditAnywhere)
-	class UBoxComponent* mStationDockCollider;
-
-	/** TimerHandle for checking the status of a docking sequence and updating it */
-	UPROPERTY()
-	FTimerHandle mUpdateDockingStatusTimer;
-
-	/** Locomotive Docking Reference, presently set by a collider overlap */
+	/** Reference to the docked locomotive. */
 	UPROPERTY( SaveGame )
 	class AFGLocomotive* mDockingLocomotive;
 
-	/** Max speed to consider locomotive docked (if traveling faster than this then locos cannot dock) */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|Station" )
-	float mMaxDockSpeed;
-
-	/** Max offset from track center to allow a locomotive to be considered docked */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|Station" )
-	float mMaxDockDistanceFromCenter;
-
-	/** Where on the track is this station located. */
-	UPROPERTY( SaveGame, Meta = ( NoAutoJson = true ) )
-	FRailroadTrackPosition mTrackPosition;
-
+	/** Stores the distance from the perfect center of the platform that a docked loco has stopped. Used to position the claw arm when loading/unloading. */
+	float mDockedPositionOffset;
 };

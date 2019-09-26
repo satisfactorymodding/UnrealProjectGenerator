@@ -1,6 +1,7 @@
 // Copyright 2016-2018 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
+#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
 #include "Array.h"
 #include "SubclassOf.h"
 #include "UObject/Class.h"

@@ -27,44 +27,44 @@ class UAkAudioEvent;
 #endif
 #define FACTORYGAME_FGWheeledVehicle_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_124_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_125_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FReplicatedAddedVelocitiesState_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_92_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_93_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireParticleCollection_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_77_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_78_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FParticleTemplatePair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_65_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_66_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSurfaceParticlePair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_50_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_51_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireTrackDecalDetails_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_25_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_17_DELEGATE \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_18_DELEGATE \
 static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptDelegate& TranferStatusChanged) \
 { \
 	TranferStatusChanged.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_RPC_WRAPPERS \
 	virtual bool ServerUpdateAssistedVelocitiesState_Validate(bool , float , float ); \
 	virtual void ServerUpdateAssistedVelocitiesState_Implementation(bool inDrifting, float inInputYaw, float inInputPitch); \
 	virtual void CreateInventoryItemDrops_Implementation(); \
@@ -355,7 +355,7 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool ServerUpdateAssistedVelocitiesState_Validate(bool , float , float ); \
 	virtual void ServerUpdateAssistedVelocitiesState_Implementation(bool inDrifting, float inInputYaw, float inInputPitch); \
 	virtual void CreateInventoryItemDrops_Implementation(); \
@@ -646,7 +646,7 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_EVENT_PARMS \
 	struct FGWheeledVehicle_eventGetDriftForceOffset_Parms \
 	{ \
 		FVector ReturnValue; \
@@ -671,8 +671,8 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGWheeledVehicle(); \
 	friend struct Z_Construct_UClass_AFGWheeledVehicle_Statics; \
@@ -683,7 +683,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGWheeledVehicle(); \
 	friend struct Z_Construct_UClass_AFGWheeledVehicle_Statics; \
@@ -694,7 +694,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGWheeledVehicle(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGWheeledVehicle) \
@@ -707,7 +707,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGWheeledVehicle(AFGWheeledVehicle&&); \
@@ -718,7 +718,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWheeledVehicle); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGWheeledVehicle)
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mReplicatedState() { return STRUCT_OFFSET(AFGWheeledVehicle, mReplicatedState); } \
 	FORCEINLINE static uint32 __PPO__mFuelConsumption() { return STRUCT_OFFSET(AFGWheeledVehicle, mFuelConsumption); } \
 	FORCEINLINE static uint32 __PPO__mCurrentFuelAmount() { return STRUCT_OFFSET(AFGWheeledVehicle, mCurrentFuelAmount); } \
@@ -779,30 +779,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWheeledVehicle); \
 	FORCEINLINE static uint32 __PPO__mMinAngleForDrift() { return STRUCT_OFFSET(AFGWheeledVehicle, mMinAngleForDrift); }
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_143_PROLOG \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_144_PROLOG \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_INCLASS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_INCLASS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_146_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

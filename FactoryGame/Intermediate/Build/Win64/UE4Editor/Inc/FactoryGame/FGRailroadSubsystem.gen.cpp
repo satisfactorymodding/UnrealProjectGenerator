@@ -21,15 +21,12 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadSubsystem() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRailroadSubsystem_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGRailroadSubsystem();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGSubsystem();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync();
-	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FRailroadPathFindingResult();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTrainStationIdentifier_NoRegister();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGLocomotive_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_Get();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrains();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTrain_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrainStations();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTrainStationIdentifier_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_GetTrains();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_GetTrainStations();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -136,7 +133,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 	{
 		UClass* Class = AFGRailroadSubsystem::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "FindPathSync", &AFGRailroadSubsystem::execFindPathSync },
 			{ "Get", &AFGRailroadSubsystem::execGet },
 			{ "GetAllTrains", &AFGRailroadSubsystem::execGetAllTrains },
 			{ "GetAllTrainStations", &AFGRailroadSubsystem::execGetAllTrainStations },
@@ -144,48 +140,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 			{ "GetTrainStations", &AFGRailroadSubsystem::execGetTrainStations },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics
-	{
-		struct FGRailroadSubsystem_eventFindPathSync_Parms
-		{
-			AFGLocomotive* locomotive;
-			AFGTrainStationIdentifier* station;
-			FRailroadPathFindingResult ReturnValue;
-		};
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_station;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_locomotive;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadSubsystem_eventFindPathSync_Parms, ReturnValue), Z_Construct_UScriptStruct_FRailroadPathFindingResult, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::NewProp_station = { UE4CodeGen_Private::EPropertyClass::Object, "station", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadSubsystem_eventFindPathSync_Parms, station), Z_Construct_UClass_AFGTrainStationIdentifier_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::NewProp_locomotive = { UE4CodeGen_Private::EPropertyClass::Object, "locomotive", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadSubsystem_eventFindPathSync_Parms, locomotive), Z_Construct_UClass_AFGLocomotive_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::NewProp_station,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::NewProp_locomotive,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::Function_MetaDataParams[] = {
-		{ "Category", "FactoryGame|Railroad" },
-		{ "ModuleRelativePath", "FGRailroadSubsystem.h" },
-		{ "ToolTip", "Finds a path for the given locomotive to the given stop.\n\n@param locomotive The locomotive to find a path for, note that a locomotive can not reverse.\n@param station The station the train should find a path to.\n\n@return Result of the pathfinding; Status code indicate if a path was found or not or if an error occured, e.g. bad params." },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadSubsystem, "FindPathSync", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadSubsystem_eventFindPathSync_Parms), Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFGRailroadSubsystem_Get_Statics
 	{
@@ -437,7 +391,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRailroadSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRailroadSubsystem_FindPathSync, "FindPathSync" }, // 2559252540
 		{ &Z_Construct_UFunction_AFGRailroadSubsystem_Get, "Get" }, // 706150864
 		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrains, "GetAllTrains" }, // 3237902656
 		{ &Z_Construct_UFunction_AFGRailroadSubsystem_GetAllTrainStations, "GetAllTrainStations" }, // 3022802108
@@ -553,7 +506,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadSubsystem, 3262939901);
+	IMPLEMENT_CLASS(AFGRailroadSubsystem, 164438288);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadSubsystem(Z_Construct_UClass_AFGRailroadSubsystem, &AFGRailroadSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadSubsystem);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGRailroadSubsystem)

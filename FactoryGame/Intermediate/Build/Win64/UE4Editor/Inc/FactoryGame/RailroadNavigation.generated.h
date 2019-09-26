@@ -13,16 +13,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_RailroadNavigation_generated_h
 
-#define FactoryGame_Source_FactoryGame_RailroadNavigation_h_60_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FRailroadPathFindingResult_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
-
-
-#define FactoryGame_Source_FactoryGame_RailroadNavigation_h_24_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FRailroadPathPoint_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
-
-
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_RailroadNavigation_h
 

@@ -30,7 +30,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGTrain_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadVehicle_IsCoupledAt();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadVehicle_IsOrientationReversed();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableTrainPlatform_NoRegister();
 // End Cross Module References
 	static UEnum* ERailroadVehicleCoupler_StaticEnum()
 	{
@@ -421,14 +420,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 		static void NewProp_mIsOrientationReversed_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mIsOrientationReversed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCoupledVehicles_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FWeakObjectPropertyParams NewProp_mCoupledVehicles;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDockedAtPlatform_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDockedAtPlatform;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mLength_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mLength;
@@ -482,20 +473,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mIsOrientationReversed = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsOrientationReversed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGRailroadVehicle), &Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mIsOrientationReversed_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mIsOrientationReversed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mIsOrientationReversed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mCoupledVehicles_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
-		{ "ToolTip", "A train is a doubly linked list of AFGRailroadVehicles.\nUse TTrainIterator to iterate over a train (in any direction).\n\nVehicles coupled to this vehicle.\nUse ERailroadVehicleCoupler to access this.\n        // Saved in serialize." },
-	};
-#endif
-	const UE4CodeGen_Private::FWeakObjectPropertyParams Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mCoupledVehicles = { UE4CodeGen_Private::EPropertyClass::WeakObject, "mCoupledVehicles", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000000000, CPP_ARRAY_DIM(mCoupledVehicles, AFGRailroadVehicle), nullptr, STRUCT_OFFSET(AFGRailroadVehicle, mCoupledVehicles), Z_Construct_UClass_AFGRailroadVehicle_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mCoupledVehicles_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mCoupledVehicles_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mDockedAtPlatform_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
-		{ "ToolTip", "Store the platform, if any, this train vehicle is docked at" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mDockedAtPlatform = { UE4CodeGen_Private::EPropertyClass::Object, "mDockedAtPlatform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGRailroadVehicle, mDockedAtPlatform), Z_Construct_UClass_AFGBuildableTrainPlatform_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mDockedAtPlatform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mDockedAtPlatform_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mLength_MetaData[] = {
 		{ "Category", "Vehicle" },
 		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
@@ -513,8 +490,6 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRailroadVehicle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrackPosition,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mIsOrientationReversed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mCoupledVehicles,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mDockedAtPlatform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mLength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrain,
 	};
@@ -541,7 +516,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadVehicle, 240823167);
+	IMPLEMENT_CLASS(AFGRailroadVehicle, 742753718);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadVehicle(Z_Construct_UClass_AFGRailroadVehicle, &AFGRailroadVehicle::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadVehicle"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadVehicle);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGRailroadVehicle)

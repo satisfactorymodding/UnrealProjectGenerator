@@ -2,7 +2,6 @@
 
 #include "FGRailroadFunctionLibrary.h"
 
-void UFGRailroadFunctionLibrary::DrawDebugRailroadPathResult( const FRailroadTrackPosition& start, const FRailroadPathFindingResult& result, bool isPersistentLines ){ }
 void UFGRailroadFunctionLibrary::DrawDebugRailroadPath( FRailroadPathSharedPtr path, int32 currentSegment , bool isPersistentLines ){ }
 void UFGRailroadFunctionLibrary::DrawDebugTrack( AFGBuildableRailroadTrack* track, float startOffset, float endOffset, const FColor& color, bool isPersistentLines ){ }
 void UFGRailroadFunctionLibrary::DrawDebugTrackPosition( const FRailroadTrackPosition& position, const FColor& color, bool isPersistentLines ){ }

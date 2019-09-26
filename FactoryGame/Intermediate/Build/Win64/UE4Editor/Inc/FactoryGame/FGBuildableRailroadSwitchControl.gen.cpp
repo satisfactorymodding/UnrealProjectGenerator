@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 2052678090);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 3364759013);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadSwitchControl(Z_Construct_UClass_AFGBuildableRailroadSwitchControl, &AFGBuildableRailroadSwitchControl::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadSwitchControl"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadSwitchControl);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

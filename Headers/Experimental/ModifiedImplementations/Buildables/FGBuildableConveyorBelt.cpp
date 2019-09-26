@@ -2,7 +2,11 @@
 
 #include "FGBuildableConveyorBelt.h"
 
-AFGBuildableConveyorBelt::AFGBuildableConveyorBelt(){ }
+AFGBuildableConveyorBelt::AFGBuildableConveyorBelt(){ 
+	mSplineComponent = CreateDefaultSubobject<UFGSplineComponent>(TEXT("SplineComponent"));
+
+    mSplineComponent->SetupAttachment(RootComponent);
+}
 void AFGBuildableConveyorBelt::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableConveyorBelt::BeginPlay(){ }
 bool AFGBuildableConveyorBelt::IsComponentRelevantForNavigation( UActorComponent* component) const{ return bool(); }
@@ -28,3 +32,4 @@ void AFGBuildableConveyorBelt::OnUseServerRepInput(  AFGCharacterPlayer* byChara
 bool AFGBuildableConveyorBelt::VerifyDefaults( FString& out_message){ return bool(); }
 void AFGBuildableConveyorBelt::TickItemTransforms( float dt){ }
 void AFGBuildableConveyorBelt::UpdateItemTransformTick( const FConveyorBeltItem& item, TMap<FName, int32>& instanceCounts,  AFGRadioactivitySubsystem* radioactiveSubsystem){ }
+void AFGBuildableConveyorBelt::OnRep_SplineData(){ }

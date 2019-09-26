@@ -14,13 +14,11 @@ class FACTORYGAME_API AFGBuildableRailroadSwitchControl : public AFGBuildableFac
 {
 	GENERATED_BODY()
 public:
-	/** Replication */
-	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
-
-	/** Ctor */
 	AFGBuildableRailroadSwitchControl();
 
 	// Begin AActor interface
+	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+	virtual void BeginPlay() override;
 	virtual void Tick( float dt ) override;
 	// End AActor interface
 

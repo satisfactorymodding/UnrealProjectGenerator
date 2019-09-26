@@ -1,6 +1,7 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
+#include "Serialization/BufferArchive.h"
 #include "Engine/World.h"
 #include "Array.h"
 #include "UnrealString.h"
@@ -112,7 +113,7 @@ public:
 	 * @param out_rawSaveData - the data that was read.
 	 * @return true if the data was read successfully
 	 */
-	bool ReadRawSaveGameData( FString saveGameName, TArray< uint8 >& out_rawSaveData );
+	bool ReadRawSaveGameData( FString saveGameName, TArray< uint8 >& out_rawSaveData ) const;
 
 	/**
 	 * Starts loading a game
@@ -243,6 +244,39 @@ protected:
 private:
 	// We want the game state to be able to trigger save games properly without exposing the nitty gritty details to the interface
 	friend class AFGGameMode;
+
 	void SaveWorldImplementation( FString gameName );
+
+	/** SaveToDiskWithCompression
+	 * Saves the current session at the given absolute file location. The file's contents will be compressed
+	 * with the ZLIB compression (27-08-2019). Important to note is that the header for save file will not
+	 * be compressed as it is read from the game on demand. 
+	 *
+	 * Binary File structure is as follows:
+	 * [[FSaveHeader(uncompressed)], [SaveWorld(compressed)]]
+	 *
+	 * @param fullFilePath - The absolute file path to the file location to save.
+	 * @param memArchive - The SaveWorld archive containing data to be compressed.
+	 * @param saveHeader - The FSaveHeader containing header data for the save file, will not be compressed.
+	 * 
+	 * @return bool - Returns true if file was successfully compressed and saved.
+	 */
+	bool SaveToDiskWithCompression(const FString& fullFilePath, FBufferArchive& memArchive, FSaveHeader& saveHeader );
+	
+	/** Loads a save file that has been compressed. This includes serializing the SaveHeader. */
+	bool LoadCompressedFileFromDisk( const FString& saveGameName );
+
+	/** Loads a save file prior to compressed save versions. This includes serializing the SaveHeader. */
+	bool LoadDeprecatedFileFromDisk( const FString& saveGameName );
+
+	/** Retrieves just the header for any valid save file. Returns true/false if it manages to read the header. */
+	bool PeekAtFileHeader( const FString& fullFilePath, FSaveHeader& out_fileHeader ) const;
+
+	/**
+	* Serializes the Save Session from a loaded and decompressed archive.
+	* @param memArchive - A loaded archive (excluding the header) that is used to serialize the session.
+	* @param includesSaveHeader - Whether or not the archive parameter contains the SaveHeader (which will also be serialized in this case)
+	*/
+	bool SerializeLoadedObjects( FArchive& memArchive, bool includesSaveHeader );
 	void BundledSaveWorldImplementation( FString gameName );
 };

@@ -11,3 +11,4 @@ FBoxCenterAndExtent AFGBuildableConveyorLift::FitClearance(
 		float stepHeight,
 		const FVector2D& extend2D,
 		const FVector& extentBias ){ return FBoxCenterAndExtent(); }
+void AFGBuildableConveyorLift::OnRep_TopTransform(){ }

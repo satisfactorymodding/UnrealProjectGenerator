@@ -70,6 +70,11 @@ inline float kNToN( float kN )
 	return kN * 1000.0f;
 }
 
+inline float NTokN( float kN )
+{
+	return kN / 1000.0f;
+}
+
 inline float RadiansToGrade( float rad )
 {
 	const float clamped = FMath::Min( FMath::Abs( rad ), PI / 4.0f );
@@ -92,6 +97,9 @@ public:
 	/** When vehicle is created we want to precompute some helper data. */
 	virtual void ComputeConstants();
 
+	/** Called when the consist changes. */
+	virtual void UpdateOrientation();
+
 	/** Get the mesh this vehicle is tied to */
 	class USkinnedMeshComponent* GetMesh() const;
 
@@ -104,18 +112,30 @@ public:
 	/** Tick the traction and friction forces acting upon this vehicle. */
 	virtual void TickTractionAndFriction( float dt );
 
-	/**
-	 * Move the train along the track.
-	 * @param delta - How much to move the vehicle in the vehicles direction.
-	 */
-	virtual float MoveVehicle( float moveDelta );
+	/** Move the physics of the vehicle to the new track position. */
+	void MoveVehicle( float dt, float distance, FRailroadTrackPosition newTrackPosition );
 
 	/** Updates the coupler rotation and length, called after move vehicle has been called on the whole train. */
 	void UpdateCouplerRotationAndLength();
 
-	/** Get the total mass of this vehicle, tare + payload. [kg] */
+	/** Get the orientation of this vehicle. */
+	FORCEINLINE float GetOrientation() { return mOrientation; }
+	
+	/** Get the total mass (gross) of this vehicle, tare + payload. [kg] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
-	virtual float GetMass() const;
+	float GetMass() const { return mMass + mPayloadMass; }
+
+	/** Get the unloaded mass of this vehicle, tare. [kg] */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
+	float GetTareMass() const { return mMass; }
+
+	/** Get the current payload mass for vehicle. [kg] */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
+	FORCEINLINE float GetPayloadMass() const { return mPayloadMass; }
+
+	/** Set the current payload mass for vehicle. [kg] */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Movement" )
+	void SetPayloadMass( float payload ) { mPayloadMass = payload; }
 
 	/** If this vehicle is moving. Within a small threshold. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
@@ -127,10 +147,7 @@ public:
 
 	/** Speed of this vehicle in relative to it's orientation. [cm/s] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
-	FORCEINLINE float GetRelativeForwardSpeed() const
-	{
-		return GetOwningRailroadVehicle()->IsOrientationReversed() ? -mVelocity : mVelocity;
-	}
+	FORCEINLINE float GetRelativeForwardSpeed() const { return mVelocity * mOrientation; }
 
 	/** Arbitrary maximum speed of this vehicle along the track. [cm/s] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
@@ -138,6 +155,9 @@ public:
 
 	/** Update the speed of this vehicle to be used in calculations. [cm/s] */
 	FORCEINLINE void SetForwardSpeed( float velocity ) { mVelocity = velocity; }
+
+	/** Get the gravitational force acting on this vehicle. [N] [kg cm/s^2] */
+	float GetGravitationalForce() const { return GetMass() * -GetGravityZ(); }
 
 	/** Get the tractive force for this vehicle, this have a direction. [N] [kg cm/s^2] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
@@ -153,28 +173,25 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
 	FORCEINLINE float GetBrakingForce() const { return mDynamicBrakingForce + mAirBrakingForce; }
 
-	/** Get dynamic braking force. [N] [kg cm/s^2] */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
-	FORCEINLINE float GetDynamicBrakingForce() const { return mDynamicBrakingForce; }
-
 	/** Get air braking force. [N] [kg cm/s^2] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
 	FORCEINLINE float GetAirBrakingForce() const { return mAirBrakingForce; }
 
+	/** Get dynamic braking force. [N] [kg cm/s^2] */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
+	FORCEINLINE float GetDynamicBrakingForce() const { return mDynamicBrakingForce; }
+
+	/** Get maximum tractive force for this vehicle. [N] [kg cm/s^2] */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
+	FORCEINLINE float GetMaxTractiveEffort() const { return mMaxTractiveEffort; }
+
+	/** Get max dynamic braking force. [N] [kg cm/s^2] */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
+	FORCEINLINE float GetMaxDynamicBrakingEffort() const { return mMaxDynamicBrakingEffort; }
+
 	/** Get max air braking force. [N] [kg cm/s^2] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
 	FORCEINLINE float GetMaxAirBrakingEffort() const { return kNToN( MToCm( mMaxAirBrakingEffort ) ) ; }
-
-	/** An estimated braking force that the vehicle can apply in it's operational speed range. [N] [kg cm/s^2] */
-	FORCEINLINE float GetMinBrakingEffort() const { return mMinBrakingEffort; }
-
-	/** Get the current payload mass for vehicle. [kg] */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
-	FORCEINLINE float GetPayloadMass() const { return mPayloadMass; }
-
-	/** Set the current payload mass for vehicle. [kg] */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Movement" )
-	void SetPayloadMass( float payload ) { mPayloadMass = payload; }
 
 	/** Slope of the track. [radians] */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
@@ -273,7 +290,9 @@ protected:
 	float mMass;
 
 	/**
-	 * Rated maximum velocity for this vehicle, actual velocity can be higher or lower, use this for cosmetic calculations, sounds, particles etc. [km/h]
+	 * Rated maximum velocity for this vehicle, actual velocity can be higher or lower. [km/h]
+	 * The self driving code uses this as its maximum speed.
+	 * Useful for cosmetic calculations to get a 0 to 1 range.
 	 */
 	UPROPERTY( EditAnywhere, Category = "VehicleSetup", meta = ( ClampMin = "0.01", UIMin = "0.01" ) )
 	float mMaxVelocity;
@@ -308,11 +327,14 @@ protected:
 	UPROPERTY( EditAnywhere, Category = "VehicleSetup", meta = ( ClampMin = "0.0", UIMin = "0.0" ) )
 	float mMaxAirBrakingEffort;
 
-	/** An estimated braking force that the vehicle can apply in it's operational speed range. [N] [kg cm/s^2] */
-	float mMinBrakingEffort;
+	/** The maximum tractive force [N] [kg cm/s^2] that can be delivered. */
+	float mMaxTractiveEffort;
+
+	/** The maximum dynamic braking force [N] [kg cm/s^2] that can be delivered. */
+	float mMaxDynamicBrakingEffort;
 
 	/** Direction of this vehicle in the consist. */
-	float mOrientation; //@todotrains cache this when the consist changes and use it in all calculations.
+	float mOrientation;
 
 	/**
 	 * Velocity of this vehicle. [cm/s]

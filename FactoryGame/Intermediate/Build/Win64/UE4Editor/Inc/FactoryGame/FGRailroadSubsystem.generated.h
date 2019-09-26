@@ -9,8 +9,6 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AFGTrainStationIdentifier;
-class AFGLocomotive;
-struct FRailroadPathFindingResult;
 class AFGTrain;
 class UObject;
 class AFGRailroadSubsystem;
@@ -42,16 +40,6 @@ class AFGRailroadSubsystem;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetTrainStations(Z_Param_trackID,Z_Param_Out_out_stations); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execFindPathSync) \
-	{ \
-		P_GET_OBJECT(AFGLocomotive,Z_Param_locomotive); \
-		P_GET_OBJECT(AFGTrainStationIdentifier,Z_Param_station); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FRailroadPathFindingResult*)Z_Param__Result=P_THIS->FindPathSync(Z_Param_locomotive,Z_Param_station); \
 		P_NATIVE_END; \
 	} \
  \
@@ -102,16 +90,6 @@ class AFGRailroadSubsystem;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetTrainStations(Z_Param_trackID,Z_Param_Out_out_stations); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execFindPathSync) \
-	{ \
-		P_GET_OBJECT(AFGLocomotive,Z_Param_locomotive); \
-		P_GET_OBJECT(AFGTrainStationIdentifier,Z_Param_station); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FRailroadPathFindingResult*)Z_Param__Result=P_THIS->FindPathSync(Z_Param_locomotive,Z_Param_station); \
 		P_NATIVE_END; \
 	} \
  \

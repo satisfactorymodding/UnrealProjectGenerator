@@ -25,10 +25,10 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTimeTable() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetStop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_GetStops();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStops();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
@@ -136,10 +136,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 			{ "GetNumStops", &AFGRailroadTimeTable::execGetNumStops },
 			{ "GetStop", &AFGRailroadTimeTable::execGetStop },
 			{ "GetStops", &AFGRailroadTimeTable::execGetStops },
+			{ "IncrementCurrentStop", &AFGRailroadTimeTable::execIncrementCurrentStop },
 			{ "IsValidStop", &AFGRailroadTimeTable::execIsValidStop },
 			{ "RemoveStop", &AFGRailroadTimeTable::execRemoveStop },
 			{ "SetCurrentStop", &AFGRailroadTimeTable::execSetCurrentStop },
-			{ "SetStopDuration", &AFGRailroadTimeTable::execSetStopDuration },
 			{ "SetStops", &AFGRailroadTimeTable::execSetStops },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -376,6 +376,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|TimeTable" },
+		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ToolTip", "Increment the current stop to the next one in order." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "IncrementCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics
 	{
 		struct FGRailroadTimeTable_eventIsValidStop_Parms
@@ -487,44 +511,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics
-	{
-		struct FGRailroadTimeTable_eventSetStopDuration_Parms
-		{
-			int32 index;
-			float duration;
-		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_duration;
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_index;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_duration = { UE4CodeGen_Private::EPropertyClass::Float, "duration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStopDuration_Parms, duration), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadTimeTable_eventSetStopDuration_Parms, index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_duration,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::NewProp_index,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams[] = {
-		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
-		{ "ToolTip", "@param index Which stop to modify, this function does nothing if invalid.\n@param Duration How long the train will stay at the station (seconds)" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRailroadTimeTable, "SetStopDuration", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadTimeTable_eventSetStopDuration_Parms), Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics
 	{
 		struct FGRailroadTimeTable_eventSetStops_Parms
@@ -615,10 +601,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops, "GetNumStops" }, // 1182107962
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStop, "GetStop" }, // 592278944
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStops, "GetStops" }, // 1672221149
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop, "IncrementCurrentStop" }, // 4225054399
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop, "IsValidStop" }, // 2889363042
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop, "RemoveStop" }, // 2630993500
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop, "SetCurrentStop" }, // 25312437
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetStopDuration, "SetStopDuration" }, // 3187617223
 		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetStops, "SetStops" }, // 3496785460
 	};
 #if WITH_METADATA
@@ -677,7 +663,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadTimeTable, 1684731213);
+	IMPLEMENT_CLASS(AFGRailroadTimeTable, 2616782661);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadTimeTable(Z_Construct_UClass_AFGRailroadTimeTable, &AFGRailroadTimeTable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadTimeTable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadTimeTable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

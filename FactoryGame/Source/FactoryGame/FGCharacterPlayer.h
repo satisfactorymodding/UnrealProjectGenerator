@@ -1,5 +1,6 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
+#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
 #include "Engine/World.h"
 #include "Array.h"
 #include "GameFramework/Actor.h"

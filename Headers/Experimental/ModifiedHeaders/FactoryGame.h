@@ -33,6 +33,7 @@ static const FName SHOWDEBUG_CIRCUITS( TEXT( "CIRCUITS" ) );
 static const FName SHOWDEBUG_POWER( TEXT( "POWER" ) );
 static const FName SHOWDEBUG_TRAINS( TEXT( "TRAINS" ) );
 static const FName SHOWDEBUG_TRACKS( TEXT( "TRACKS" ) );
+static const FName SHOWDEBUG_STATIONS( TEXT( "STATIONS" ) );
 static const FName SHOWDEBUG_TRAINCOUPLERS( TEXT( "TRAINCOUPLERS" ) );
 static const FName SHOWDEBUG_FOUNDATIONS( TEXT( "FOUNDATIONS" ) );
 static const FName SHOWDEBUG_RADIATION( TEXT( "RADIATION" ) );
@@ -136,6 +137,7 @@ static const FName BuildGunScrollUpAction( TEXT( "BuildGunScrollUp_PhotoModeFOVU
 static const FName BuildGunScrollModeAction( TEXT( "BuildGunScrollMode" ) );
 static const FName BuildGunNoSnapModeAction( TEXT( "ToggleMap_BuildGunNoSnapMode" ) );
 static const FName BuildGunSnapToGuideLinesAction( TEXT( "BuildGunSnapToGuideLines" ) );
+static const FName BuildGunDismantleToggleMultiSelectStateAction( TEXT( "BuildGunDismantle_ToggleMultiSelectState" ) );
 
 /** Color Parameters */
 static const FName PrimaryColor( TEXT( "PrimaryPaintedMetal_Color" ) );

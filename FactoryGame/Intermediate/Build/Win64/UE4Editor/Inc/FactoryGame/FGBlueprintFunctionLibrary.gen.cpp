@@ -33,6 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate();
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_PopupClosed__DelegateSignature();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGItemDescriptor_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage();
@@ -81,6 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu();
@@ -153,6 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "AddGenericTickObjectToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddGenericTickObjectToSignificanceManager },
 			{ "AddPopup", &UFGBlueprintFunctionLibrary::execAddPopup },
 			{ "AddPopupWithCloseDelegate", &UFGBlueprintFunctionLibrary::execAddPopupWithCloseDelegate },
+			{ "AddTrainToSignificanceManager", &UFGBlueprintFunctionLibrary::execAddTrainToSignificanceManager },
 			{ "CanBeOnConveyor", &UFGBlueprintFunctionLibrary::execCanBeOnConveyor },
 			{ "ChangeLanguage", &UFGBlueprintFunctionLibrary::execChangeLanguage },
 			{ "Cheat_GetAllDescriptors", &UFGBlueprintFunctionLibrary::execCheat_GetAllDescriptors },
@@ -188,6 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 			{ "RemoveFactoryObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveFactoryObjectFromSignificanceManager },
 			{ "RemoveGainSignificanceObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGainSignificanceObjectFromSignificanceManager },
 			{ "RemoveGenericTickObjectFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveGenericTickObjectFromSignificanceManager },
+			{ "RemoveTrainFromSignificanceManager", &UFGBlueprintFunctionLibrary::execRemoveTrainFromSignificanceManager },
 			{ "RoundFloatWithPrecision", &UFGBlueprintFunctionLibrary::execRoundFloatWithPrecision },
 			{ "ShowOutline", &UFGBlueprintFunctionLibrary::execShowOutline },
 			{ "TravelToMainMenu", &UFGBlueprintFunctionLibrary::execTravelToMainMenu },
@@ -572,6 +576,45 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventAddTrainToSignificanceManager_Parms
+		{
+			UObject* WorldContextObject;
+			UObject* obj;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_obj;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::NewProp_obj = { UE4CodeGen_Private::EPropertyClass::Object, "obj", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventAddTrainToSignificanceManager_Parms, obj), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::NewProp_WorldContextObject = { UE4CodeGen_Private::EPropertyClass::Object, "WorldContextObject", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventAddTrainToSignificanceManager_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::NewProp_obj,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::NewProp_WorldContextObject,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Trains|Optimization" },
+		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "Adds a train to be handled by significance manager" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "AddTrainToSignificanceManager", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGBlueprintFunctionLibrary_eventAddTrainToSignificanceManager_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2116,6 +2159,45 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics
+	{
+		struct FGBlueprintFunctionLibrary_eventRemoveTrainFromSignificanceManager_Parms
+		{
+			UObject* WorldContextObject;
+			UObject* obj;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_obj;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::NewProp_obj = { UE4CodeGen_Private::EPropertyClass::Object, "obj", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRemoveTrainFromSignificanceManager_Parms, obj), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::NewProp_WorldContextObject = { UE4CodeGen_Private::EPropertyClass::Object, "WorldContextObject", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBlueprintFunctionLibrary_eventRemoveTrainFromSignificanceManager_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::NewProp_obj,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::NewProp_WorldContextObject,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Trains|Optimization" },
+		{ "ModuleRelativePath", "FGBlueprintFunctionLibrary.h" },
+		{ "ToolTip", "removes a train from being handled by significance manager" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBlueprintFunctionLibrary, "RemoveTrainFromSignificanceManager", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGBlueprintFunctionLibrary_eventRemoveTrainFromSignificanceManager_Parms), Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision_Statics
 	{
 		struct FGBlueprintFunctionLibrary_eventRoundFloatWithPrecision_Parms
@@ -2306,6 +2388,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddGenericTickObjectToSignificanceManager, "AddGenericTickObjectToSignificanceManager" }, // 3308731783
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopup, "AddPopup" }, // 3437588772
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddPopupWithCloseDelegate, "AddPopupWithCloseDelegate" }, // 2358229126
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_AddTrainToSignificanceManager, "AddTrainToSignificanceManager" }, // 1877461108
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_CanBeOnConveyor, "CanBeOnConveyor" }, // 3027723489
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ChangeLanguage, "ChangeLanguage" }, // 3098831753
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_Cheat_GetAllDescriptors, "Cheat_GetAllDescriptors" }, // 2941799195
@@ -2341,6 +2424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveFactoryObjectFromSignificanceManager, "RemoveFactoryObjectFromSignificanceManager" }, // 1596629911
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGainSignificanceObjectFromSignificanceManager, "RemoveGainSignificanceObjectFromSignificanceManager" }, // 1061534588
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveGenericTickObjectFromSignificanceManager, "RemoveGenericTickObjectFromSignificanceManager" }, // 2149688350
+		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RemoveTrainFromSignificanceManager, "RemoveTrainFromSignificanceManager" }, // 846099739
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_RoundFloatWithPrecision, "RoundFloatWithPrecision" }, // 3633297434
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_ShowOutline, "ShowOutline" }, // 2644536250
 		{ &Z_Construct_UFunction_UFGBlueprintFunctionLibrary_TravelToMainMenu, "TravelToMainMenu" }, // 3344000438
@@ -2375,7 +2459,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 2409902648);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 3463283799);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBlueprintFunctionLibrary(Z_Construct_UClass_UFGBlueprintFunctionLibrary, &UFGBlueprintFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBlueprintFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBlueprintFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

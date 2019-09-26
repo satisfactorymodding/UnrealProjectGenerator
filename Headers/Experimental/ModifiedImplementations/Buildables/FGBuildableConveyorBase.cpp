@@ -3,6 +3,8 @@
 #include "FGBuildableConveyorBase.h"
 
 void UFGConveyorRemoteCallObject::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
+void UFGConveyorRemoteCallObject::Server_OnUse_Implementation(  AFGBuildableConveyorBelt* target,  AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion){ }
+bool UFGConveyorRemoteCallObject::Server_OnUse_Validate(  AFGBuildableConveyorBelt* target,  AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion){ return bool(); }
 FConveyorBeltItems::FConveyorBeltItems(){ }
 int32 FConveyorBeltItems::GetIndexForItemByRepKey( FG_ConveyorItemRepKeyType itemID){ return int32(); }
 bool FConveyorBeltItems::NetDeltaSerialize( FNetDeltaSerializeInfo& parms){ return bool(); }
@@ -15,7 +17,7 @@ AFGBuildableConveyorBase::AFGBuildableConveyorBase(){ }
 void AFGBuildableConveyorBase::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableConveyorBase::BeginPlay(){ }
 void AFGBuildableConveyorBase::EndPlay( const EEndPlayReason::Type endPlayReason){ }
-void AFGBuildableConveyorBase::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void AFGBuildableConveyorBase::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGBuildableConveyorBase::Tick( float dt){ }
 void AFGBuildableConveyorBase::PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 uint8 AFGBuildableConveyorBase::MaxNumGrab( float dt) const{ return uint8(); }

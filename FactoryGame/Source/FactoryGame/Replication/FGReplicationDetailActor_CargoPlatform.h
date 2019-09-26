@@ -9,14 +9,13 @@
 #include "FGReplicationDetailActor_CargoPlatform.generated.h"
 
 /**
- *	Inventory info replication actor for Train Cargo Platform @todoTrainPlatforms : This is nearly a copy of the storage buildable version. Snutt should double check this since he knows wassup
+ * Inventory info replication actor for Train Cargo Platform.
  */
 UCLASS()
 class FACTORYGAME_API AFGReplicationDetailActor_CargoPlatform : public AFGReplicationDetailActor_BuildableFactory
 {
 	GENERATED_BODY()
-
-	public:
+public:
 	AFGReplicationDetailActor_CargoPlatform();
 
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;

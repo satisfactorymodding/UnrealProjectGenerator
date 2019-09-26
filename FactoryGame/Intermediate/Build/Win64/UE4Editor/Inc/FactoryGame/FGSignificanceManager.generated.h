@@ -13,14 +13,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGSignificanceManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_30_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FGainSignificanceData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGSignificanceManager(); \
 	friend struct Z_Construct_UClass_UFGSignificanceManager_Statics; \
@@ -29,7 +29,7 @@ public: \
 	DECLARE_SERIALIZER(UFGSignificanceManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGSignificanceManager(); \
 	friend struct Z_Construct_UClass_UFGSignificanceManager_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(UFGSignificanceManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSignificanceManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSignificanceManager) \
@@ -51,7 +51,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGSignificanceManager(UFGSignificanceManager&&); \
@@ -62,30 +62,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSignificanceManager); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGSignificanceManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPreviousSignificantFactories() { return STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantFactories); } \
 	FORCEINLINE static uint32 __PPO__mPreviousSignificantConveyorBases() { return STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantConveyorBases); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_38_PROLOG
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_39_PROLOG
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_INCLASS \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_INCLASS \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_41_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

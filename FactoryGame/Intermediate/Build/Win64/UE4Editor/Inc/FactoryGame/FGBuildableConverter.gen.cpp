@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConverter, 727882333);
+	IMPLEMENT_CLASS(AFGBuildableConverter, 1917331769);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConverter(Z_Construct_UClass_AFGBuildableConverter, &AFGBuildableConverter::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

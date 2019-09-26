@@ -15,7 +15,7 @@ class UAkAudioEvent;
 #endif
 #define FACTORYGAME_FGVehicleDestroyableInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_RPC_WRAPPERS \
 	virtual UParticleSystem* GetDestroyEffect_Implementation() { return NULL; }; \
 	virtual UAkAudioEvent* GetDestroyAudioEvent_Implementation() { return NULL; }; \
 	virtual float GetForceThreshold_Implementation() { return 0; }; \
@@ -45,7 +45,7 @@ class UAkAudioEvent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual UParticleSystem* GetDestroyEffect_Implementation() { return NULL; }; \
 	virtual UAkAudioEvent* GetDestroyAudioEvent_Implementation() { return NULL; }; \
 	virtual float GetForceThreshold_Implementation() { return 0; }; \
@@ -75,7 +75,7 @@ class UAkAudioEvent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_EVENT_PARMS \
 	struct FGVehicleDestroyableInterface_eventGetDestroyAudioEvent_Parms \
 	{ \
 		UAkAudioEvent* ReturnValue; \
@@ -108,8 +108,8 @@ class UAkAudioEvent;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGVehicleDestroyableInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGVehicleDestroyableInterface) \
@@ -122,7 +122,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGVehicleDestroyableInterface(UFGVehicleDestroyableInterface&&); \
@@ -133,7 +133,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGVehicleDestroyableInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGVehicleDestroyableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGVehicleDestroyableInterface(); \
 	friend struct Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics; \
@@ -142,22 +142,22 @@ public: \
 	DECLARE_SERIALIZER(UFGVehicleDestroyableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGVehicleDestroyableInterface() {} \
 public: \
@@ -169,7 +169,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGVehicleDestroyableInterface() {} \
 public: \
@@ -181,26 +181,26 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_13_PROLOG \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_14_PROLOG \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_26_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_26_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGVehicleDestroyableInterface_h_18_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

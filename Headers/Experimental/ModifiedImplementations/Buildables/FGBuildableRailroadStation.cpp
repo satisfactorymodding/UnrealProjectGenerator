@@ -6,17 +6,12 @@ AFGBuildableRailroadStation::AFGBuildableRailroadStation(){ }
 void AFGBuildableRailroadStation::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGBuildableRailroadStation::BeginPlay(){ }
 void AFGBuildableRailroadStation::Destroyed(){ }
+void AFGBuildableRailroadStation::PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 bool AFGBuildableRailroadStation::CanDismantle_Implementation() const{ return bool(); }
-void AFGBuildableRailroadStation::RegisteredOnTrack_Implementation( const FRailroadTrackPosition& position){ }
-void AFGBuildableRailroadStation::UnregisteredFromTrack_Implementation(){ }
-FRailroadTrackPosition AFGBuildableRailroadStation::GetTrackPosition_Implementation() const{ return FRailroadTrackPosition(); }
-int32 AFGBuildableRailroadStation::GetTrackGraphID_Implementation() const{ return int32(); }
-bool AFGBuildableRailroadStation::ShouldRegisterOnTrack(){ return bool(); }
-void AFGBuildableRailroadStation::Factory_Tick( float dt){ }
-void AFGBuildableRailroadStation::OnLocomotiveDocked_Implementation(){ }
-void AFGBuildableRailroadStation::NotifyPlatformDockingComplete(  AFGBuildableTrainPlatform* completedPlatform){ }
 UFGTrainPlatformConnection* AFGBuildableRailroadStation::GetStationOutputConnection(){ return nullptr; }
-void AFGBuildableRailroadStation::OnDockingColliderBeginOverlap( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){ }
-void AFGBuildableRailroadStation::OnDockingColliderEndOverlap( UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex){ }
-void AFGBuildableRailroadStation::PerformIsDockedCheck(){ }
+bool AFGBuildableRailroadStation::CanDock(  AFGLocomotive* locomotive){ return bool(); }
+bool AFGBuildableRailroadStation::StartDocking(  AFGLocomotive* locomotive, float offset){ return bool(); }
+void AFGBuildableRailroadStation::NotifyPlatformDockingComplete(  AFGBuildableTrainPlatform* completedPlatform){ }
+void AFGBuildableRailroadStation::SetupRailroadTrack(){ }
+bool AFGBuildableRailroadStation::DockVehiclesToPlatforms(  AFGLocomotive* locomotive){ return bool(); }
 void AFGBuildableRailroadStation::FinishDockingSequence(){ }

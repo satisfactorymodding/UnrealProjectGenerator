@@ -16,6 +16,7 @@ void UFGAISystem::ClearAllPardonedActors(){ }
 void UFGAISystem::PardonActor( AActor* inActor){ }
 void UFGAISystem::UnpardonActor( AActor* inActor){ }
 bool UFGAISystem::IsActorPardoned( AActor* inActor){ return bool(); }
+void UFGAISystem::AddToTargetableListImp( TScriptInterface<class IFGAggroTargetInterface> aggroTarget){ }
 void UFGAISystem::RemoveFromTargetableListImp( TScriptInterface<class IFGAggroTargetInterface> aggroTarget){ }
 void UFGAISystem::OnActorSpawned( AActor* spawnedActor){ }
 void UFGAISystem::AggroTargetDestroyed( AActor* destroyedActor){ }

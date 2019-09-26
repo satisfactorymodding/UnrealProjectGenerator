@@ -5,7 +5,7 @@
 FTrackGraph::FTrackGraph(){ }
 AFGRailroadSubsystem::AFGRailroadSubsystem(){ }
 void AFGRailroadSubsystem::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
-void AFGRailroadSubsystem::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void AFGRailroadSubsystem::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGRailroadSubsystem::BeginPlay(){ }
 void AFGRailroadSubsystem::EndPlay( const EEndPlayReason::Type endPlayReason){ }
 void AFGRailroadSubsystem::Tick( float dt){ }
@@ -25,7 +25,6 @@ void AFGRailroadSubsystem::CoupleTrains( AFGRailroadVehicle* parentVehicle, AFGR
 void AFGRailroadSubsystem::DecoupleTrains( AFGRailroadVehicle* firstVehicle, AFGRailroadVehicle* secondVehicle){ }
 void AFGRailroadSubsystem::GetTrains( int32 trackID, TArray<  AFGTrain* >& out_trains) const{ }
 void AFGRailroadSubsystem::GetAllTrains( TArray<  AFGTrain* >& out_trains) const{ }
-FRailroadPathFindingResult AFGRailroadSubsystem::FindPathSync(  AFGLocomotive* locomotive,  AFGTrainStationIdentifier* station){ return FRailroadPathFindingResult(); }
 FText AFGRailroadSubsystem::GenerateTrainStationName() const{ return FText(); }
 bool AFGRailroadSubsystem::IsTrainStationNameAvailable( const FString& name) const{ return bool(); }
 void AFGRailroadSubsystem::AddTrainStation(  AFGBuildableRailroadStation* station){ }
@@ -34,7 +33,7 @@ void AFGRailroadSubsystem::RemoveTrainStation(  AFGBuildableRailroadStation* sta
 void AFGRailroadSubsystem::GetTrainStations( int32 trackID, TArray<  AFGTrainStationIdentifier* >& out_stations) const{ }
 void AFGRailroadSubsystem::GetAllTrainStations( TArray<  AFGTrainStationIdentifier* >& out_stations) const{ }
 void AFGRailroadSubsystem::UpdateCargoPlatformPowerConnection( int32 trackGraphID,  AFGBuildableTrainPlatformCargo* cargoPlatform){ }
-float AFGRailroadSubsystem::MoveTrackPosition(  FRailroadTrackPosition& position, float delta){ return float(); }
+bool AFGRailroadSubsystem::MoveTrackPosition(  FRailroadTrackPosition& position, float delta, float& out_movedDelta){ return bool(); }
 void AFGRailroadSubsystem::AddTrack(  AFGBuildableRailroadTrack* track){ }
 void AFGRailroadSubsystem::RemoveTrack(  AFGBuildableRailroadTrack* track){ }
 void AFGRailroadSubsystem::TickTrackGraphs( float dt){ }
@@ -42,9 +41,6 @@ void AFGRailroadSubsystem::RefreshPlatformPowerConnectionsFromStation(  AFGBuild
 void AFGRailroadSubsystem::InitializeStationNames(){ }
 AFGTrain* AFGRailroadSubsystem::CreateTrain( AFGRailroadVehicle* vehicle) const{ return nullptr; }
 void AFGRailroadSubsystem::ReconnectTrainToThirdRail( AFGTrain* train){ }
-EGraphAStarResult AFGRailroadSubsystem::FindPathSyncInternal( const FRailroadTrackPosition& start,
-											const FRailroadTrackPosition& end,
-											TArray< FRailroadGraphAStarPathPoint >& out_pathPoints) const{ return EGraphAStarResult(); }
 void AFGRailroadSubsystem::PreTickPhysics( FPhysScene* physScene, uint32 sceneType, float dt){ }
 void AFGRailroadSubsystem::UpdatePhysics( FPhysScene* physScene, uint32 sceneType, float dt){ }
 void AFGRailroadSubsystem::UpdateSimulationData(  AFGTrain* train,  FTrainSimulationData& simData){ }

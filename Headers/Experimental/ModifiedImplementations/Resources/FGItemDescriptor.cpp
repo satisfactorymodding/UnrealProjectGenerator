@@ -26,7 +26,7 @@ bool UFGItemDescriptor::FGenerateIconContext::IsValid() const{ return bool(); }
 UFGItemDescriptor::FGenerateIconContext UFGItemDescriptor::GenerateIconContext = UFGItemDescriptor::FGenerateIconContext();
 #endif 
 UFGItemDescriptor::UFGItemDescriptor(){ }
-void UFGItemDescriptor::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void UFGItemDescriptor::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void UFGItemDescriptor::PostLoad(){ Super::PostLoad(); }
 EResourceForm UFGItemDescriptor::GetForm( TSubclassOf< UFGItemDescriptor > inClass){ return EResourceForm(); }
 float UFGItemDescriptor::GetEnergyValue( TSubclassOf< UFGItemDescriptor > inClass){ return float(); }

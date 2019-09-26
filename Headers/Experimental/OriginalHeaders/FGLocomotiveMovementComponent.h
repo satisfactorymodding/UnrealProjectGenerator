@@ -46,6 +46,8 @@ struct FReplicatedRailroadVehicleState
 	// input replication: air brakes
 	UPROPERTY()
 	float AirBrakeInput;
+
+	//@todotrains Tooot input
 };
 
 USTRUCT()
@@ -151,14 +153,6 @@ public:
 	 */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
 	FORCEINLINE float GetDynamicBrake() const { return mDynamicBrakeInput; }
-
-	/** Get max dynamic braking force. [N] [kg cm/s^2] */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
-	FORCEINLINE float GetMaxDynamicBrakingEffort() const { return mMaxDynamicBrakingEffort; }
-
-	/** Get maximum tractive force for this vehicle. [N] [kg cm/s^2] */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Movement" )
-	FORCEINLINE float GetMaxTractiveEffort() const { return mMaxTractiveEffort; }
 
 protected:
 	/** Get dynamic braking force at the given speed. [N] [kg cm/s^2] */
@@ -271,18 +265,12 @@ protected:
 	UPROPERTY( EditAnywhere, Category = "VehicleSetup" )
 	FRuntimeFloatCurve mTractiveEffortCurve;
 
-	/** The maximum tractive force [N] [kg cm/s^2] that can be delivered. */
-	float mMaxTractiveEffort;
-
 	/** The traction we want, may not get it due to power restrictions. */
 	float mTargetTractiveEffort;
 
 	/** The maximum dynamic braking force [kN] [kg m/s^2 * 1000] that can be delivered at a given speed [km/h]. */
 	UPROPERTY( EditAnywhere, Category = "VehicleSetup" )
 	FRuntimeFloatCurve mDynamicBrakingEffortCurve;
-
-	/** The maximum dynamic braking force [N] [kg cm/s^2] that can be delivered. */
-	float mMaxDynamicBrakingEffort;
 
 	/** How much power do we get [0,1] */
 	float mPowerFactor;

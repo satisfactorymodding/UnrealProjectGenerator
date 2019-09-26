@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFreightWagon, 3326868149);
+	IMPLEMENT_CLASS(AFGFreightWagon, 4133697225);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFreightWagon(Z_Construct_UClass_AFGFreightWagon, &AFGFreightWagon::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFreightWagon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFreightWagon);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -474,7 +474,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGenerator, 3077522788);
+	IMPLEMENT_CLASS(AFGBuildableGenerator, 1818465308);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableGenerator(Z_Construct_UClass_AFGBuildableGenerator, &AFGBuildableGenerator::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableGenerator"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableGenerator);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

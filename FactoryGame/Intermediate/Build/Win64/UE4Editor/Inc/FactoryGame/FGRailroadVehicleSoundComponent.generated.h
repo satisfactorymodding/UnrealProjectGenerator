@@ -13,8 +13,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGRailroadVehicleSoundComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS \
+	virtual void RestartSounds_Implementation(); \
+ \
+	DECLARE_FUNCTION(execRestartSounds) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RestartSounds_Implementation(); \
+		P_NATIVE_END; \
+	}
+
+
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void RestartSounds_Implementation(); \
+ \
+	DECLARE_FUNCTION(execRestartSounds) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RestartSounds_Implementation(); \
+		P_NATIVE_END; \
+	}
+
+
 #define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_EVENT_PARMS
 #define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_INCLASS_NO_PURE_DECLS \
@@ -62,6 +84,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleSoundComponent); \
 #define FactoryGame_Source_FactoryGame_FGRailroadVehicleSoundComponent_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mVehicleMovementComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mVehicleMovementComponent); } \
 	FORCEINLINE static uint32 __PPO__mLocomotiveMovementComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mLocomotiveMovementComponent); } \
+	FORCEINLINE static uint32 __PPO__mTrainOwner() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mTrainOwner); } \
 	FORCEINLINE static uint32 __PPO__mWheelsetsAkComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mWheelsetsAkComponent); } \
 	FORCEINLINE static uint32 __PPO__mEnginesAkComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mEnginesAkComponent); } \
 	FORCEINLINE static uint32 __PPO__mAllVehicleCentersAkComponent() { return STRUCT_OFFSET(UFGRailroadVehicleSoundComponent, mAllVehicleCentersAkComponent); }

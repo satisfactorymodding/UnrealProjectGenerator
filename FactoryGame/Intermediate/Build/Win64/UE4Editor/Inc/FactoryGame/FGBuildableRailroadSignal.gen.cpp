@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 // Cross Module References
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableRailroadSignal_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableRailroadSignal();
-	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableFactory();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 // End Cross Module References
 	void AFGBuildableRailroadSignal::StaticRegisterNativesAFGBuildableRailroadSignal()
@@ -35,13 +35,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AFGBuildableRailroadSignal_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AFGBuildableFactory,
+		(UObject* (*)())Z_Construct_UClass_AFGBuildable,
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadSignal_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableRailroadSignal.h" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadSignal.h" },
+		{ "ToolTip", "A signal for the railroad, these are placed on connection points and separate access to tracks by block signaling." },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBuildableRailroadSignal_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 1685773592);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 1678023817);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadSignal(Z_Construct_UClass_AFGBuildableRailroadSignal, &AFGBuildableRailroadSignal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadSignal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadSignal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

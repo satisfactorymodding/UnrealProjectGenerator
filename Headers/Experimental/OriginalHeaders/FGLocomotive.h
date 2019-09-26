@@ -35,16 +35,9 @@ public:
 	virtual void BeginPlay() override;
 	// End AActor interface
 
-	// Begin APawn interface
-	virtual void PossessedBy( AController* newController ) override;
-	virtual void UnPossessed() override;
-	// End APawn interface
-
 	// Begin ADriveablePawn/AFGVehicle interface
 	virtual bool DriverEnter( class AFGCharacterPlayer* driver ) override;
 	virtual bool DriverLeave( bool keepDriving = false ) override;
-	virtual bool CanSelfDriverEnter( class AAIController* ai ) const override;
-	virtual bool SelfDriverEnter( class AAIController* ai ) override;
 	// End ADriveablePawn/AFGVehicle interface
 		
 	// Begin ARailroadVehicle interface
@@ -79,81 +72,6 @@ public:
 	 */
 	UFUNCTION( BlueprintAuthorityOnly, BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
 	void ClearMultipleUnitControlMaster();
-
-	//@todo Look over authority on the path functions BlueprintAuthorityOnly/if(HasAuthority())
-	/**
-	 * Clears the old path and sets a new one path from a pathfinding result.
-	 * @param The path finding result to set the path from. If result is invalid, old path is cleared but no new path is set.
-	 * @return true if the new path is valid; false otherwise.
-	 */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	bool SetPath( const FRailroadPathFindingResult& result );
-
-	/**
-	 * Clears the locomotives path.
-	 */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	void ClearPath();
-
-	/**
-	 * If this locomotive has a path, only checks if it has a path and not if the path still leads to the goal.
-	 * @return true if path is set; false if path is not set.
-	 */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Locomotive" )
-	bool HasPath() const;
-
-	/**
-	 * Get the path ahead of this train.
-	 * @param out_points Connections to follow, including switches, distance is the distance to the destination.
-	 */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	void GetPath( TArray< FRailroadPathPoint >& out_points );
-
-	/**
-	 * Get the target points ahead of this train.
-	 * @param out_points Target points along the track ahead: connections, switches, signals, stops etc.
-	 *                   Distance is the distance from the locomotive to the target point.
-	 */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	void GetTargetPoints( TArray< FRailroadPathPoint >& out_points );
-
-	/** Check and update where along the path we are. */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	bool UpdatePathSegment();
-
-	/** Update our awareness of connections, switches, signals ahead. */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	void UpdateTargetPoints( float maxDistance );
-
-	/**
-	 * Enable self driving on the train.
-	 */
-	UFUNCTION( BlueprintCallable, BlueprintAuthorityOnly, Category = "FactoryGame|Railroad|Locomotive" )
-	void SetSelfDrivingEnabled( bool isEnabled );
-
-	/**
-	 * Enable self driving on the train.
-	 */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Locomotive" )
-	bool IsSelfDrivingEnabled() const;
-
-	/**
-	 * Report an error to be displayed for the self driving locomotive. This also applies the emergency brakes.
-	 */
-	UFUNCTION( BlueprintAuthorityOnly, BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	void ReportSelfDrivingError( ESelfDrivingLocomotiveError error );
-
-	/**
-	 * Get the self driving error for this locomotive.
-	 */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Locomotive" )
-	ESelfDrivingLocomotiveError GetSelfDrivingError() const;
-
-	/**
-	 * Clear all errors for the self driving locomotive.
-	 */
-	UFUNCTION( BlueprintAuthorityOnly, BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
-	void ClearSelfDrivingError();
 
 	/** Get the power info about this train. If it runs on electricity. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Locomotive" )
@@ -201,17 +119,4 @@ private:
 	/** vehicle simulation component */
 	UPROPERTY( VisibleDefaultsOnly, BlueprintReadOnly, Category = Vehicle, meta = ( AllowPrivateAccess = "true" ) )
 	class UFGLocomotiveMovementComponent* mVehicleMovement;
-
-	/** The path this locomotive follows. */
-	FRailroadPathSharedPtr mPath;
-
-	/** Index of the next path point ahead. */
-	int32 mCurrentPathSegment;
-
-	/**
-	 * Extrapolated array of path points "target points" that we need to pass when moving forward.
-	 * The path only specifies the connections (incl switches) and the stop.
-	 * In addition this specifies signals, signs etc a given distance forward.
-	 */
-	TArray< FRailroadPathPoint > mTargetPoints;
 };

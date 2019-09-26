@@ -4,17 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "FGBuildableTrainPlatform.h"
-#include "FGRailroadInterface.h"
-#include "Buildables/FGBuildableFactory.h"
 #include "FGReplicationDetailInventoryComponent.h"
 #include "FGReplicationDetailActor_CargoPlatform.h"
 #include "FGBuildableTrainPlatformCargo.generated.h"
 
 /**
- *	Train Platform with inputs and outputs that can both load and unload train freight carts. Must be attached to another platform or station
+ * Train Platform with inputs and outputs that can both load and unload train freight carts. Must be attached to another platform or station
  */
 UCLASS()
-class FACTORYGAME_API AFGBuildableTrainPlatformCargo : public AFGBuildableTrainPlatform, public IFGRailroadInterface
+class FACTORYGAME_API AFGBuildableTrainPlatformCargo : public AFGBuildableTrainPlatform
 {
 	GENERATED_BODY()
 	
@@ -29,64 +27,56 @@ public:
 	// End AActor interface
 
 	/** Get the inventory the docked vehicle loads/unloads to  */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|CargoPlatform" )
 	FORCEINLINE class UFGInventoryComponent* GetInventory() const{ return mCargoInventoryHandler->GetActiveInventoryComponent(); }
 
 	/** Get the docked actor if any. */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|CargoPlatform" )
 	FORCEINLINE class AFGRailroadVehicle* GetDockedActor() const{ return mDockedRailroadVehicle; }
 
 	/** Dock an actor to this docking station. */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|CargoPlatform" )
 	virtual bool Dock( class AFGRailroadVehicle* actor );
 
 	/** Undock the docked actor. */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|CargoPlatform" )
 	virtual void Undock();
 
 	/** Set whether this station should load or unload from vehicles */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|CargoPlatform" )
 	virtual void SetIsInLoadMode( bool isInLoadMode );
 
 	/** Get whether this station should load or unload from vehicles */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|CargoPlatform" )
 	virtual bool GetIsInLoadMode() const;
 
 	/** Get whether this station is currently loading or unloading from vehicles */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|CargoPlatform" )
 	virtual bool IsLoadUnloading() const;
 
 	/** Get the docked vehicles offset from the center of the platform */
-	UFUNCTION( BlueprintPure, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|CargoPlatform" )
 	float GetDockedVehicleOffset() const;
 
 	/** Notify for when unload and/or load transfers are completed */
-	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|CargoPlatform" )
 	void OnTransferComplete();
 
 	// ****** Start of Progress Events - Use to trigger animations and attachments from blueprint ******* /
 	/** Called when raising the crane from the platform to send to cart */
-	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|CargoPlatform" )
 	void OnBeginLoadSequence();
 
 	/** Called when sending the crane from the platform to the cart*/
-	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Trains|CargoPlatform" )
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Railroad|CargoPlatform" )
 	void OnBeginUnloadSequence();
 	// ***** End of Progress Events *****//
-
-	// Begin IFGRailroadInterface
-	virtual void RegisteredOnTrack_Implementation( const FRailroadTrackPosition& position ) override;
-	virtual void UnregisteredFromTrack_Implementation() override;
-	virtual FRailroadTrackPosition GetTrackPosition_Implementation() const override;
-	virtual int32 GetTrackGraphID_Implementation() const override;
-	// End IFGRailroadInterface
 
 	// Begin IFGReplicationDetailActorOwnerInterface
 	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_CargoPlatform::StaticClass(); };
 	// End IFGReplicationDetailActorOwnerInterface
 
 	// Begin BuildableTrainPlatform Implementation
-	virtual bool ShouldRegisterOnTrack() override;
 	virtual void NotifyTrainDocked( class AFGRailroadVehicle* railroadVehicle, class AFGBuildableRailroadStation* initiatedByStation ) override;
 	virtual void UpdateDockingSequence() override;
 	// End BuildableTrainPlatform Implementation
@@ -159,11 +149,11 @@ public:
 
 protected:
 	/** SizeX of storage inventory */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	int8 mStorageSizeX;
 
 	/** SizeY of storage inventory */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	int8 mStorageSizeY;
 
 	/** Magic box skeletal mesh component. Plays load / unload animations during partial load / unload sequences */
@@ -178,27 +168,27 @@ protected:
 	class UFGReplicationDetailInventoryComponent* mCargoInventoryHandler;
 
 	/** Indicates that the unloading sequence will be removing the entire contents of the freight car (there is enough room in its inventory to fit the freight cars contents) */
-	UPROPERTY( Replicated, BlueprintReadOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( Replicated, BlueprintReadOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	bool mIsFullUnload;
 
 	/** Indicates that the loading sequence will load an entire new container onto the freight car (its inventory is empty) */
-	UPROPERTY( Replicated, BlueprintReadOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( Replicated, BlueprintReadOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	bool mIsFullLoad;
 
 	/** Time in seconds to complete a unload */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	float mTimeToCompleteLoad;
 
 	/** Time in seconds to show the cargo container and hide platform container (for full loads)*/
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	float mTimeToSwapLoadVisibility;
 
 	/** Time in seconds to complete a load */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	float mTimeToCompleteUnload;
 
 	/** Time in seconds to show freight container and hide platform container (for full unloads) */
-	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Trains|CargoPlatform" )
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Railroad|CargoPlatform" )
 	float mTimeToSwapUnloadVisibility;
 
 	/** All connections that can pull to data to our storage, (References hold by Components array, no need for UPROPERTY) */
@@ -234,9 +224,4 @@ private:
 
 	/** Set during a power outtage to store how much time remains on the toggle platform and freight cargo meshes */
 	float mCachedSwapCargoVisibilityTimeRemaining;
-
-	/** Where on the track is this platform is located. */
-	UPROPERTY( SaveGame, Meta = ( NoAutoJson = true ) )
-	FRailroadTrackPosition mTrackPosition;
-	
 };

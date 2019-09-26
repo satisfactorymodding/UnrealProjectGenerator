@@ -50,6 +50,8 @@ void AFGBuildGun::OnScrollModePressed(){ }
 void AFGBuildGun::OnNoSnapModePressed(){ }
 void AFGBuildGun::OnSnapToGuideLinesPressed(){ }
 void AFGBuildGun::OnSnapToGuideLinesReleased(){ }
+void AFGBuildGun::OnDismantleToggleMultiSelectStatePressed(){ }
+void AFGBuildGun::OnDismantleToggleMultiSelectStateReleased(){ }
 void AFGBuildGun::GotoMenuState(){ }
 void AFGBuildGun::GotoBuildState( TSubclassOf<  UFGRecipe > recipe){ }
 void AFGBuildGun::GotoDismantleState(){ }

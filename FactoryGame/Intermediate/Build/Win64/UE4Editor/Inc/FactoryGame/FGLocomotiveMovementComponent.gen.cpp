@@ -22,8 +22,6 @@ void EmptyLinkFunctionForGeneratedCodeFGLocomotiveMovementComponent() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadVehicleMovementComponent();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetAirBrake();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetDynamicBrake();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetReverser();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetThrottle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_ServerUpdateState();
@@ -322,8 +320,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetAirBrake", &UFGLocomotiveMovementComponent::execGetAirBrake },
 			{ "GetDynamicBrake", &UFGLocomotiveMovementComponent::execGetDynamicBrake },
-			{ "GetMaxDynamicBrakingEffort", &UFGLocomotiveMovementComponent::execGetMaxDynamicBrakingEffort },
-			{ "GetMaxTractiveEffort", &UFGLocomotiveMovementComponent::execGetMaxTractiveEffort },
 			{ "GetReverser", &UFGLocomotiveMovementComponent::execGetReverser },
 			{ "GetThrottle", &UFGLocomotiveMovementComponent::execGetThrottle },
 			{ "ServerUpdateState", &UFGLocomotiveMovementComponent::execServerUpdateState },
@@ -401,74 +397,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetDynamicBrake_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics
-	{
-		struct FGLocomotiveMovementComponent_eventGetMaxDynamicBrakingEffort_Parms
-		{
-			float ReturnValue;
-		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGLocomotiveMovementComponent_eventGetMaxDynamicBrakingEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams[] = {
-		{ "Category", "FactoryGame|Railroad|Movement" },
-		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
-		{ "ToolTip", "Get max dynamic braking force. [N] [kg cm/s^2]" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLocomotiveMovementComponent, "GetMaxDynamicBrakingEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGLocomotiveMovementComponent_eventGetMaxDynamicBrakingEffort_Parms), Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics
-	{
-		struct FGLocomotiveMovementComponent_eventGetMaxTractiveEffort_Parms
-		{
-			float ReturnValue;
-		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGLocomotiveMovementComponent_eventGetMaxTractiveEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams[] = {
-		{ "Category", "FactoryGame|Railroad|Movement" },
-		{ "ModuleRelativePath", "FGLocomotiveMovementComponent.h" },
-		{ "ToolTip", "Get maximum tractive force for this vehicle. [N] [kg cm/s^2]" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLocomotiveMovementComponent, "GetMaxTractiveEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGLocomotiveMovementComponent_eventGetMaxTractiveEffort_Parms), Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -854,8 +782,6 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGLocomotiveMovementComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetAirBrake, "GetAirBrake" }, // 3937007263
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetDynamicBrake, "GetDynamicBrake" }, // 1657970821
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxDynamicBrakingEffort, "GetMaxDynamicBrakingEffort" }, // 1856155538
-		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetMaxTractiveEffort, "GetMaxTractiveEffort" }, // 3210395964
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetReverser, "GetReverser" }, // 2443961387
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_GetThrottle, "GetThrottle" }, // 921103136
 		{ &Z_Construct_UFunction_UFGLocomotiveMovementComponent_ServerUpdateState, "ServerUpdateState" }, // 3538797027
@@ -1041,7 +967,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLocomotiveMovementComponent, 2368234508);
+	IMPLEMENT_CLASS(UFGLocomotiveMovementComponent, 2022143901);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGLocomotiveMovementComponent(Z_Construct_UClass_UFGLocomotiveMovementComponent, &UFGLocomotiveMovementComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGLocomotiveMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGLocomotiveMovementComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -13,6 +13,7 @@ UFGErrorMessage* UFGGameInstance::GetNextError( UObject* worldContext){ return n
 UFGErrorMessage* UFGGameInstance::PeekNextError() const{ return nullptr; }
 UFGErrorMessage* UFGGameInstance::PeekNextError( UObject* worldContext){ return nullptr; }
 void UFGGameInstance::SetHasSeenAlphaInfoScreen( bool hasSeen){ }
+void UFGGameInstance::SetHasPlayerSeenCloudSaveInfoScreen( bool hasSeen){ }
 bool UFGGameInstance::FindModPackages(){ return bool(); }
 void UFGGameInstance::GetFGUGC( UClass* WeaponClass, UClass* EnemyClass, UClass* BossClass, UClass *PlayerPawnClass){ }
 void UFGGameInstance::Shutdown(){ }

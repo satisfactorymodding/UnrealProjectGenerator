@@ -207,8 +207,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRailroadVehicle); \
 #define FactoryGame_Source_FactoryGame_FGRailroadVehicle_h_29_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mTrain() { return STRUCT_OFFSET(AFGRailroadVehicle, mTrain); } \
 	FORCEINLINE static uint32 __PPO__mLength() { return STRUCT_OFFSET(AFGRailroadVehicle, mLength); } \
-	FORCEINLINE static uint32 __PPO__mDockedAtPlatform() { return STRUCT_OFFSET(AFGRailroadVehicle, mDockedAtPlatform); } \
-	FORCEINLINE static uint32 __PPO__mCoupledVehicles() { return STRUCT_OFFSET(AFGRailroadVehicle, mCoupledVehicles); } \
 	FORCEINLINE static uint32 __PPO__mIsOrientationReversed() { return STRUCT_OFFSET(AFGRailroadVehicle, mIsOrientationReversed); } \
 	FORCEINLINE static uint32 __PPO__mTrackPosition() { return STRUCT_OFFSET(AFGRailroadVehicle, mTrackPosition); }
 

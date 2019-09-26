@@ -16,12 +16,32 @@ struct FInventoryStack;
 #endif
 #define FACTORYGAME_FGBuildGunDismantle_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDismantleRefunds_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_29_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_34_DELEGATE \
+struct _Script_FactoryGame_eventOnMultiDismantleStateChanged_Parms \
+{ \
+	bool newState; \
+}; \
+static inline void FOnMultiDismantleStateChanged_DelegateWrapper(const FMulticastScriptDelegate& OnMultiDismantleStateChanged, bool newState) \
+{ \
+	_Script_FactoryGame_eventOnMultiDismantleStateChanged_Parms Parms; \
+	Parms.newState=newState ? true : false; \
+	OnMultiDismantleStateChanged.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_33_DELEGATE \
+static inline void FOnPendingDismantleActorListChanged_DelegateWrapper(const FMulticastScriptDelegate& OnPendingDismantleActorListChanged) \
+{ \
+	OnPendingDismantleActorListChanged.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_32_DELEGATE \
 struct _Script_FactoryGame_eventOnDismantleRefundsChanged_Parms \
 { \
 	UFGBuildGunStateDismantle* dismantleGun; \
@@ -34,9 +54,11 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_RPC_WRAPPERS \
-	virtual bool Server_PeekAtDismantleRefund_Validate(AActor* ); \
-	virtual void Server_PeekAtDismantleRefund_Implementation(AActor* selected); \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS \
+	virtual bool Server_PeekAtDismantleRefund_Validate(TArray<AActor*> const& ); \
+	virtual void Server_PeekAtDismantleRefund_Implementation(TArray<AActor*> const& selectedActors); \
+	virtual bool Server_DismantleActors_Validate(TArray<AActor*> const& ); \
+	virtual void Server_DismantleActors_Implementation(TArray<AActor*> const& selectedActors); \
 	virtual bool Server_DismantleActor_Validate(AActor* ); \
 	virtual void Server_DismantleActor_Implementation(AActor* actorToDismantle); \
  \
@@ -50,15 +72,29 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
  \
 	DECLARE_FUNCTION(execServer_PeekAtDismantleRefund) \
 	{ \
-		P_GET_OBJECT(AActor,Z_Param_selected); \
+		P_GET_TARRAY(AActor*,Z_Param_selectedActors); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_PeekAtDismantleRefund_Validate(Z_Param_selected)) \
+		if (!P_THIS->Server_PeekAtDismantleRefund_Validate(Z_Param_selectedActors)) \
 		{ \
 			RPC_ValidateFailed(TEXT("Server_PeekAtDismantleRefund_Validate")); \
 			return; \
 		} \
-		P_THIS->Server_PeekAtDismantleRefund_Implementation(Z_Param_selected); \
+		P_THIS->Server_PeekAtDismantleRefund_Implementation(Z_Param_selectedActors); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_DismantleActors) \
+	{ \
+		P_GET_TARRAY(AActor*,Z_Param_selectedActors); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_DismantleActors_Validate(Z_Param_selectedActors)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_DismantleActors_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_DismantleActors_Implementation(Z_Param_selectedActors); \
 		P_NATIVE_END; \
 	} \
  \
@@ -100,18 +136,54 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execHasReachedMaxNumPendingDismantleActors) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasReachedMaxNumPendingDismantleActors(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxNumPendingDismantleActors) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetMaxNumPendingDismantleActors(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumPendingDismantleActors) \
+	{ \
+		P_GET_UBOOL(Z_Param_includeAimedAtActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumPendingDismantleActors(Z_Param_includeAimedAtActor); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSelectedActor) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(AActor**)Z_Param__Result=P_THIS->GetSelectedActor(); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetMultiDismantleState) \
+	{ \
+		P_GET_UBOOL(Z_Param_isActive); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetMultiDismantleState(Z_Param_isActive); \
+		P_NATIVE_END; \
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool Server_PeekAtDismantleRefund_Validate(AActor* ); \
-	virtual void Server_PeekAtDismantleRefund_Implementation(AActor* selected); \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool Server_PeekAtDismantleRefund_Validate(TArray<AActor*> const& ); \
+	virtual void Server_PeekAtDismantleRefund_Implementation(TArray<AActor*> const& selectedActors); \
+	virtual bool Server_DismantleActors_Validate(TArray<AActor*> const& ); \
+	virtual void Server_DismantleActors_Implementation(TArray<AActor*> const& selectedActors); \
 	virtual bool Server_DismantleActor_Validate(AActor* ); \
 	virtual void Server_DismantleActor_Implementation(AActor* actorToDismantle); \
  \
@@ -125,15 +197,29 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
  \
 	DECLARE_FUNCTION(execServer_PeekAtDismantleRefund) \
 	{ \
-		P_GET_OBJECT(AActor,Z_Param_selected); \
+		P_GET_TARRAY(AActor*,Z_Param_selectedActors); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		if (!P_THIS->Server_PeekAtDismantleRefund_Validate(Z_Param_selected)) \
+		if (!P_THIS->Server_PeekAtDismantleRefund_Validate(Z_Param_selectedActors)) \
 		{ \
 			RPC_ValidateFailed(TEXT("Server_PeekAtDismantleRefund_Validate")); \
 			return; \
 		} \
-		P_THIS->Server_PeekAtDismantleRefund_Implementation(Z_Param_selected); \
+		P_THIS->Server_PeekAtDismantleRefund_Implementation(Z_Param_selectedActors); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServer_DismantleActors) \
+	{ \
+		P_GET_TARRAY(AActor*,Z_Param_selectedActors); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!P_THIS->Server_DismantleActors_Validate(Z_Param_selectedActors)) \
+		{ \
+			RPC_ValidateFailed(TEXT("Server_DismantleActors_Validate")); \
+			return; \
+		} \
+		P_THIS->Server_DismantleActors_Implementation(Z_Param_selectedActors); \
 		P_NATIVE_END; \
 	} \
  \
@@ -175,28 +261,66 @@ static inline void FOnDismantleRefundsChanged_DelegateWrapper(const FMulticastSc
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execHasReachedMaxNumPendingDismantleActors) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->HasReachedMaxNumPendingDismantleActors(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxNumPendingDismantleActors) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetMaxNumPendingDismantleActors(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNumPendingDismantleActors) \
+	{ \
+		P_GET_UBOOL(Z_Param_includeAimedAtActor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetNumPendingDismantleActors(Z_Param_includeAimedAtActor); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetSelectedActor) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(AActor**)Z_Param__Result=P_THIS->GetSelectedActor(); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetMultiDismantleState) \
+	{ \
+		P_GET_UBOOL(Z_Param_isActive); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetMultiDismantleState(Z_Param_isActive); \
+		P_NATIVE_END; \
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS \
 	struct FGBuildGunStateDismantle_eventServer_DismantleActor_Parms \
 	{ \
 		AActor* actorToDismantle; \
 	}; \
+	struct FGBuildGunStateDismantle_eventServer_DismantleActors_Parms \
+	{ \
+		TArray<AActor*> selectedActors; \
+	}; \
 	struct FGBuildGunStateDismantle_eventServer_PeekAtDismantleRefund_Parms \
 	{ \
-		AActor* selected; \
+		TArray<AActor*> selectedActors; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateDismantle(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateDismantle_Statics; \
@@ -205,7 +329,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateDismantle)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_INCLASS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateDismantle(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateDismantle_Statics; \
@@ -214,7 +338,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateDismantle)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunStateDismantle(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunStateDismantle) \
@@ -227,7 +351,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunStateDismantle(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -240,35 +364,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunStateDismantle); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunStateDismantle)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mSelectedActor() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mSelectedActor); } \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mCurrentlySelectedActor() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mCurrentlySelectedActor); } \
+	FORCEINLINE static uint32 __PPO__mPendingDismantleActors() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mPendingDismantleActors); } \
 	FORCEINLINE static uint32 __PPO__mPeekDismantleRefund() { return STRUCT_OFFSET(UFGBuildGunStateDismantle, mPeekDismantleRefund); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_34_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_40_PROLOG \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_37_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunDismantle_h_43_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

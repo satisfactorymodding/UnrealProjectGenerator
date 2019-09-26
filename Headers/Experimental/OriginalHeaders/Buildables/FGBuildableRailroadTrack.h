@@ -9,11 +9,11 @@
 #include "FGBuildableRailroadTrack.generated.h"
 
 
-
+//@todotrains Move this to separate header, so many use the track position but not the track itself.
 /**
  * This is a way to represent a position on the railroad.
  */
-USTRUCT(BlueprintType)
+USTRUCT( BlueprintType )
 struct FRailroadTrackPosition
 {
 	GENERATED_BODY()
@@ -33,26 +33,16 @@ public:
 	/** Is this a valid track position. */
 	FORCEINLINE bool IsValid() const { return Track.IsValid(); }
 
-	/** Get the world location and direction of this track position. Does nothing if Track is not valid. */
+	/** Get the world location and direction of this track position; zero if invalid. */
 	void GetWorldLocationAndDirection( FVector& out_location, FVector& out_direction ) const;
 
-	/**
-	 * Get the world location.
-	 * @return World location if valid; otherwise a zero vector.
-	 */ 
-	FVector GetWorldLocation() const;
-
-	/**
-	 * Get the world direction.
-	 * @return World direction if valid; otherwise a zero vector.
-	 */
-	FVector GetWorldDirection() const;
-
-	/** @return Offset from the beginning of the track in the forward direction. It's up to the caller to check the validity of the track. */
+	/** @return Offset from the beginning/end of the track in the forward direction if valid; otherwise zero. */
 	float GetForwardOffset() const;
-
-	/** @return Offset from the end of the track in the reverse direction. It's up to the caller to check the validity of the track. */
 	float GetReverseOffset() const;
+
+	/** @return The next track connection in the forward direction if valid; otherwise a nullptr. */
+	class UFGRailroadTrackConnectionComponent* GetForwardConnection() const;
+	class UFGRailroadTrackConnectionComponent* GetReverseConnection() const;
 
 public:
 	/**
@@ -73,9 +63,6 @@ public:
 	 */
 	UPROPERTY()
 	float Forward;
-
-	/** @todotrains The block id, for signals later, a long wagon can possibly be on 2 or more blocks at once. */
-	//int32 Block;
 };
 
 /** Enable custom serialization of FRailroadTrackPosition */
@@ -108,6 +95,7 @@ public:
 
 	// Begin IFGDismantleInterface
 	virtual void Dismantle_Implementation() override;
+	virtual bool CanDismantle_Implementation() const override;
 	// End IFGDismantleInterface
 
 	/** Get the spline for this track. */
@@ -116,7 +104,7 @@ public:
 
 	/** Get the length of this track. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Track" )
-	FORCEINLINE float GetLength() const { return mSplineComponent->GetSplineLength(); }
+	FORCEINLINE float GetLength() const { return mLength; }
 
 	/** Flag the track as being owned by a platform */
 	void SetIsOwnedByPlatform( bool isOwned ) { mIsOwnedByPlatform = isOwned; }
@@ -149,24 +137,10 @@ public:
 		return mConnections[ offset ];
 	}
 
-	/**
-	 * Registers an object on the track, it can be a stop, signal, speed sign etc.
-	 *
-	 * @param object The object to register on this track.
-	 */
-	void RegisterRailroadInterface( UObject* object, const FRailroadTrackPosition& position );
-
-	/**
-	 * Unregisters an object from the track, it can be a stop, signal, speed sign etc.
-	 *
-	 * @param object The object to register on this track.
-	 */
-	void UnregisterRailroadInterface( UObject* object );
-
 	/** @return The track graph this track belongs to. */
 	FORCEINLINE int32 GetTrackGraphID() const { return mTrackGraphID; }
 
-	//@todotrains This could be shared with conveyors later.
+	//@todoconveyor This could be shared with conveyors later.
 	template< typename MeshConstructor >
 	static void BuildSplineMeshes(
 		class USplineComponent* spline,
@@ -220,19 +194,16 @@ private:
 	UPROPERTY( SaveGame )
 	class UFGRailroadTrackConnectionComponent* mConnections[ 2 ];
 
-	/** Was this track created and is owned by a platform */
-	UPROPERTY( SaveGame )
+	/** Was this track created and is owned by a platform. */
+	UPROPERTY( EditDefaultsOnly, Category = "Track" )
 	bool mIsOwnedByPlatform;
 
 	/** The graph this track belongs to. */
 	int32 mTrackGraphID;
 
-	/** Objects registered on this track in the order they're placed on the track beginning from the start, offset 0. */
-	UPROPERTY()
-	TArray< UObject* > mRailroadInterfaces;
+	/** Length of this track. [cm] */
+	float mLength;
 };
-
-
 
 /**
  * Templated function implementations.

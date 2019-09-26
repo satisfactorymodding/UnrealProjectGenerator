@@ -1,6 +1,7 @@
 // Copyright 2016 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
+#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
 #include "Engine/World.h"
 #include "Array.h"
 #include "UnrealString.h"

@@ -1001,9 +1001,9 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildGunAttachment(); \
 	friend struct Z_Construct_UClass_AFGBuildGunAttachment_Statics; \
@@ -1012,7 +1012,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildGunAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_INCLASS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildGunAttachment(); \
 	friend struct Z_Construct_UClass_AFGBuildGunAttachment_Statics; \
@@ -1021,7 +1021,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildGunAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildGunAttachment(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildGunAttachment) \
@@ -1034,7 +1034,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildGunAttachment() { }; \
 private: \
@@ -1047,26 +1047,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildGunAttachment); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildGunAttachment)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_379_PROLOG
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_381_PROLOG
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_INCLASS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_382_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Equipment_FGBuildGun_h_384_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

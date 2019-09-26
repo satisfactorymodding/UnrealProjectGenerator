@@ -24,7 +24,7 @@ struct FVector;
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetCouplerRotationAndExtention) \
 	{ \
@@ -94,23 +94,6 @@ struct FVector;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetPayloadMass) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_payload); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPayloadMass(Z_Param_payload); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPayloadMass) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetPayloadMass(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetMaxAirBrakingEffort) \
 	{ \
 		P_FINISH; \
@@ -119,11 +102,19 @@ struct FVector;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetAirBrakingForce) \
+	DECLARE_FUNCTION(execGetMaxDynamicBrakingEffort) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetAirBrakingForce(); \
+		*(float*)Z_Param__Result=P_THIS->GetMaxDynamicBrakingEffort(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxTractiveEffort) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetMaxTractiveEffort(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -132,6 +123,14 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->GetDynamicBrakingForce(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAirBrakingForce) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetAirBrakingForce(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -183,6 +182,31 @@ struct FVector;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetPayloadMass) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_payload); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetPayloadMass(Z_Param_payload); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPayloadMass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetPayloadMass(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetTareMass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetTareMass(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetMass) \
 	{ \
 		P_FINISH; \
@@ -192,7 +216,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetCouplerRotationAndExtention) \
 	{ \
@@ -262,23 +286,6 @@ struct FVector;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execSetPayloadMass) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_payload); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPayloadMass(Z_Param_payload); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPayloadMass) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetPayloadMass(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetMaxAirBrakingEffort) \
 	{ \
 		P_FINISH; \
@@ -287,11 +294,19 @@ struct FVector;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetAirBrakingForce) \
+	DECLARE_FUNCTION(execGetMaxDynamicBrakingEffort) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetAirBrakingForce(); \
+		*(float*)Z_Param__Result=P_THIS->GetMaxDynamicBrakingEffort(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMaxTractiveEffort) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetMaxTractiveEffort(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -300,6 +315,14 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=P_THIS->GetDynamicBrakingForce(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAirBrakingForce) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetAirBrakingForce(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -351,6 +374,31 @@ struct FVector;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execSetPayloadMass) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_payload); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetPayloadMass(Z_Param_payload); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetPayloadMass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetPayloadMass(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetTareMass) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetTareMass(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetMass) \
 	{ \
 		P_FINISH; \
@@ -360,7 +408,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGRailroadVehicleMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics; \
@@ -369,7 +417,7 @@ public: \
 	DECLARE_SERIALIZER(UFGRailroadVehicleMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGRailroadVehicleMovementComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics; \
@@ -378,7 +426,7 @@ public: \
 	DECLARE_SERIALIZER(UFGRailroadVehicleMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRailroadVehicleMovementComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadVehicleMovementComponent) \
@@ -391,7 +439,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRailroadVehicleMovementComponent(UFGRailroadVehicleMovementComponent&&); \
@@ -402,7 +450,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleMovementComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadVehicleMovementComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mWheelsetSetups() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelsetSetups); } \
 	FORCEINLINE static uint32 __PPO__mWheelRadius() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelRadius); } \
 	FORCEINLINE static uint32 __PPO__mCouplerSetups() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mCouplerSetups); } \
@@ -417,25 +465,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadVehicleMovementComponent); \
 	FORCEINLINE static uint32 __PPO__mMaxAirBrakingEffort() { return STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMaxAirBrakingEffort); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_85_PROLOG
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_90_PROLOG
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_INCLASS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_89_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadVehicleMovementComponent_h_94_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

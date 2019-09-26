@@ -1,4 +1,4 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 #include "Engine/World.h"
@@ -130,23 +130,6 @@ public:
 
 
 	/***************************************************************************************************
-	 * Functions to handle Self Driving.
-	 */
-
-	/**
-	 * Finds a path for the given locomotive to the given stop.
-	 *
-	 * @param locomotive The locomotive to find a path for, note that a locomotive can not reverse.
-	 * @param station The station the train should find a path to.
-	 *
-	 * @return Result of the pathfinding; Status code indicate if a path was found or not or if an error occured, e.g. bad params.
-	 */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad" )
-	FRailroadPathFindingResult FindPathSync( class AFGLocomotive* locomotive, class AFGTrainStationIdentifier* station );
-
-
-
-	/***************************************************************************************************
 	 * Functions to handle Train Stations.
 	 */
 
@@ -180,9 +163,9 @@ public:
 
 	/**
 	 * Move a position along a track, leaving the current segment and entering a new if needed.
-	 * @return Distance moved; may be less than delta, e.g. if the track ends.
+	 * @return true on success, false if we did not move the whole distance.
 	 */
-	static float MoveTrackPosition( struct FRailroadTrackPosition& position, float delta );
+	static bool MoveTrackPosition( struct FRailroadTrackPosition& position, float delta, float& out_movedDelta );
 
 	/**
 	 * Add a new track segment.
@@ -349,19 +332,7 @@ private:
 	/** Reconnects all vehicles in this train to the third rail. */
 	void ReconnectTrainToThirdRail( AFGTrain* train );
 
-	/**
-	 * Finds a path from one railroad position to another.
-	 * @note The path consists of the track connections between start and goal, it does not contain an actual goal actor.
-	 *
-	 * @param start           Position to pathfind from.
-	 * @param end             Place to pathfind to.
-	 * @param out_pathPoints  The resulting path, empty on error.
-	 *
-	 * @return Result of the pathfinding. I.e. if a path was found, goal is unreachable or if an error occurred, e.g. bad params.
-	 */
-	EGraphAStarResult FindPathSyncInternal( const FRailroadTrackPosition& start,
-											const FRailroadTrackPosition& end,
-											TArray< FRailroadGraphAStarPathPoint >& out_pathPoints ) const;
+
 
 	/** The physics is driven by the physics scene. */
 	void PreTickPhysics( FPhysScene* physScene, uint32 sceneType, float dt );

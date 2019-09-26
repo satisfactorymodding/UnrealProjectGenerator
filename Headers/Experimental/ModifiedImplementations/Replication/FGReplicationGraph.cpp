@@ -11,6 +11,7 @@ void UFGReplicationGraph::RouteRemoveNetworkActorToNodes( const FNewReplicatedAc
 int32 UFGReplicationGraph::ServerReplicateActors( float DeltaSeconds){ return int32(); }
 void UFGReplicationGraph::NotifyActorDormancyChange( AActor* Actor, ENetDormancy OldDormancyState){ }
 void UFGReplicationGraph::InitClassReplicationInfo( FClassReplicationInfo& classInfo, UClass* inClass, bool isSpatialized, int32 NetServerMaxTickRate){ }
+void UFGReplicationGraph::AddPersistentDependencyActor(  AFGCharacterPlayer* pawn,  IFGReplicationDependencyActorInterface* depedencyActor){ }
 void UFGReplicationGraph::AddReplicationDependencyActor(  AActor* owner,  AFGReplicationDetailActor* replicationDetailActor){ }
 void UFGReplicationGraph::RemoveReplicationDependencyActor(  AActor* owner,  AFGReplicationDetailActor* replicationDetailActor){ }
 void UFGReplicationGraph::OnReplicationDetailActorStateChange(  IFGReplicationDetailActorOwnerInterface* owner, bool newState){ }
@@ -20,6 +21,7 @@ void UFGReplicationGraph::OnCharacterPlayerFoliagePickupSpawned(  AFGCharacterPl
 void UFGReplicationGraph::OnBuildableRegistedPlayerChanged(  AFGBuildable* buildable,  AFGCharacterPlayer* player, bool isInUse){ }
 void UFGReplicationGraph::OnFactoryProductionStatusChanged(  AFGBuildable* buildable, EProductionStatus oldStatus, EProductionStatus newStatus){ }
 EClassRepPolicy UFGReplicationGraph::GetMappingPolicy( const UClass* inClass){ return EClassRepPolicy(); }
+void UFGReplicationGraph::LogCurrentActorDependencyList( FGlobalActorReplicationInfo& actorInfo, FString& logMarker){ }
 UReplicationGraphNode_AlwaysRelevant_ForConnection* UFGReplicationGraph::GetAlwaysRelevantNodeForConnection( UNetConnection* Connection){ return nullptr; }
 void UFGReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorListsForConnection( const FConnectionGatherActorListParameters& Params){ }
 void UFGReplicationGraphNode_AlwaysRelevant_ForConnection::OnLevelVisibilityAdd( FName levelName, UWorld* world){ }

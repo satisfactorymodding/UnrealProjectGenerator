@@ -25,10 +25,13 @@ bool AFGPlayerController::GetRespawningFromDeath(){ return bool(); }
 void AFGPlayerController::ExecuteShortcut( int32 shortcutIndex){ }
 void AFGPlayerController::GetAllShortcuts( TArray<  UFGHotbarShortcut* >& out_shortcuts){ }
 void AFGPlayerController::GetValidShortcuts( TArray<class UFGHotbarShortcut*>& out_shortcuts){ }
+void AFGPlayerController::SetRecipeShortcutOnIndex( TSubclassOf<  UFGRecipe > recipe, int32 onIndex){ }
 int32 AFGPlayerController::GetRecipeShortcutIndex( TSubclassOf<  UFGRecipe > recipe) const{ return int32(); }
 void AFGPlayerController::SetDismantleShortcutOnIndex( int32 onIndex){ }
 int32 AFGPlayerController::GetDismantleShortcutIndex() const{ return int32(); }
 int32 AFGPlayerController::GetShortcutIndexFromKey( const FKeyEvent& key){ return int32(); }
+void AFGPlayerController::Server_RequestFogOfWarData_Implementation(){ }
+bool AFGPlayerController::Server_RequestFogOfWarData_Validate(){ return bool(); }
 void AFGPlayerController::Client_TransferFogOfWarData_Implementation( const TArray<uint8>& fogOfWarRawData, int32 index){ }
 float AFGPlayerController::GetObjectScreenRadius( AActor* actor, float boundingRadius){ return float(); }
 float AFGPlayerController::GetScreenBasedObjectRadius( AActor* actor, float screenRadius){ return float(); }

@@ -2,13 +2,9 @@
 
 #include "FGMapAreaTexture.h"
 
-#if WITH_EDITORONLY_DATA
-#endif 
 #if WITH_EDITOR
 void UFGMapAreaTexture::PostEditChangeProperty(  FPropertyChangedEvent& propertyChangedEvent){ }
 void UFGMapAreaTexture::GenerateAreaData( bool reopenAssetEditor, TArray<UPackage*>& out_modifiedAddedPackages){ }
-#endif 
-#if WITH_EDITORONLY_DATA
 #endif 
 void UFGMapAreaTexture::InitMapAreaTexture(  AFGMinimapCaptureActor* inCaptureActor){ }
 TSubclassOf< UFGMapArea > UFGMapAreaTexture::GetMapAreaForWorldLocation( FVector worldLocation){ return TSubclassOf<UFGMapArea>(); }

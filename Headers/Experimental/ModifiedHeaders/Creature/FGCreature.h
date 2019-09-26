@@ -152,6 +152,13 @@ public:
 	/** Called when creature died to spawn death item */
 	UFUNCTION( BlueprintNativeEvent, Category = "Creature" )
 	void SpawnDeathItem();
+
+	/** Returns the spawner that created this creature. Can be null */
+	UFUNCTION( BlueprintPure, Category = "Creature" )
+	class AFGCreatureSpawner* GetSpawner() { return mOwningSpawner; }
+
+	/** Sets the spawner for this creature */
+	void SetSpawner( class AFGCreatureSpawner* inSpawner ) { mOwningSpawner = inSpawner; }
 private:
 	UFUNCTION()
 	void OnRep_TargetRotation();
@@ -266,4 +273,8 @@ private:
 	/** How much of day time percentage ( 0.0 - 1.0 ) should count towards night time  */
 	UPROPERTY( EditDefaultsOnly, Category = "Spawning" )
 	float mDayTimePctCountAsNight;
+
+	/** Reference to the spawner that handles this creature */
+	UPROPERTY()
+	class AFGCreatureSpawner* mOwningSpawner;
 };

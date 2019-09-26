@@ -14,7 +14,7 @@ class UFGRailroadTrackConnectionComponent;
 #endif
 #define FACTORYGAME_FGRailroadTrackConnectionComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetSwitchPosition) \
 	{ \
@@ -51,7 +51,7 @@ class UFGRailroadTrackConnectionComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetSwitchPosition) \
 	{ \
@@ -88,27 +88,25 @@ class UFGRailroadTrackConnectionComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGRailroadTrackConnectionComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics; \
 public: \
 	DECLARE_CLASS(UFGRailroadTrackConnectionComponent, UFGConnectionComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGRailroadTrackConnectionComponent) \
-	virtual UObject* _getUObject() const override { return const_cast<UFGRailroadTrackConnectionComponent*>(this); }
+	DECLARE_SERIALIZER(UFGRailroadTrackConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGRailroadTrackConnectionComponent(); \
 	friend struct Z_Construct_UClass_UFGRailroadTrackConnectionComponent_Statics; \
 public: \
 	DECLARE_CLASS(UFGRailroadTrackConnectionComponent, UFGConnectionComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
-	DECLARE_SERIALIZER(UFGRailroadTrackConnectionComponent) \
-	virtual UObject* _getUObject() const override { return const_cast<UFGRailroadTrackConnectionComponent*>(this); }
+	DECLARE_SERIALIZER(UFGRailroadTrackConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRailroadTrackConnectionComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadTrackConnectionComponent) \
@@ -121,7 +119,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRailroadTrackConnectionComponent(UFGRailroadTrackConnectionComponent&&); \
@@ -132,30 +130,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadTrackConnectionComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGRailroadTrackConnectionComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mConnectedComponents() { return STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mConnectedComponents); } \
-	FORCEINLINE static uint32 __PPO__mSwitchPosition() { return STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mSwitchPosition); }
+	FORCEINLINE static uint32 __PPO__mSwitchPosition() { return STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mSwitchPosition); } \
+	FORCEINLINE static uint32 __PPO__mSwitchControl() { return STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mSwitchControl); } \
+	FORCEINLINE static uint32 __PPO__mStation() { return STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mStation); } \
+	FORCEINLINE static uint32 __PPO__mSignal() { return STRUCT_OFFSET(UFGRailroadTrackConnectionComponent, mSignal); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_16_PROLOG
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_17_PROLOG
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_19_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGRailroadTrackConnectionComponent_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

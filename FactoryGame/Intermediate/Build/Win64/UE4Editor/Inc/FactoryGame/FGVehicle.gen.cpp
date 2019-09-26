@@ -41,6 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicle() {}
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryStack();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGVehicle_GetHealthComponent();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGHealthComponent_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGVehicle_GetIsSignificant();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGVehicle_HasAnyPassengerSeatAvailable();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGVehicle_IsDestructible();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGVehicle_IsSelfDriving();
@@ -68,6 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicle() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGAggroTargetInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDockableInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGColorInterface_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSignificanceInterface_NoRegister();
 // End Cross Module References
 class UScriptStruct* FVehicleSeat::StaticStruct()
 {
@@ -506,6 +508,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 			{ "CanSelfDriverEnter", &AFGVehicle::execCanSelfDriverEnter },
 			{ "Died", &AFGVehicle::execDied },
 			{ "GetHealthComponent", &AFGVehicle::execGetHealthComponent },
+			{ "GetIsSignificant", &AFGVehicle::execGetIsSignificant },
 			{ "HasAnyPassengerSeatAvailable", &AFGVehicle::execHasAnyPassengerSeatAvailable },
 			{ "IsDestructible", &AFGVehicle::execIsDestructible },
 			{ "IsSelfDriving", &AFGVehicle::execIsSelfDriving },
@@ -665,6 +668,45 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGVehicle_GetHealthComponent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics
+	{
+		struct FGVehicle_eventGetIsSignificant_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGVehicle_eventGetIsSignificant_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGVehicle_eventGetIsSignificant_Parms), &Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Vehicle|Significance" },
+		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ToolTip", "Getter for significance" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGVehicle, "GetIsSignificant", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGVehicle_eventGetIsSignificant_Parms), Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGVehicle_GetIsSignificant()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGVehicle_GetIsSignificant_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1129,6 +1171,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSignificanceRange_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSignificanceRange;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mAddToSignificanceManager_MetaData[];
+#endif
+		static void NewProp_mAddToSignificanceManager_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mAddToSignificanceManager;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSignificanceBias_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSignificanceBias;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mGasDamageType_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_mGasDamageType;
@@ -1224,6 +1279,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		{ &Z_Construct_UFunction_AFGVehicle_Died, "Died" }, // 526855650
 		{ &Z_Construct_UFunction_AFGVehicle_GetDismantleBlueprintReturns, "GetDismantleBlueprintReturns" }, // 1706641204
 		{ &Z_Construct_UFunction_AFGVehicle_GetHealthComponent, "GetHealthComponent" }, // 343684598
+		{ &Z_Construct_UFunction_AFGVehicle_GetIsSignificant, "GetIsSignificant" }, // 3529362925
 		{ &Z_Construct_UFunction_AFGVehicle_HasAnyPassengerSeatAvailable, "HasAnyPassengerSeatAvailable" }, // 1008518455
 		{ &Z_Construct_UFunction_AFGVehicle_IsDestructible, "IsDestructible" }, // 3787895782
 		{ &Z_Construct_UFunction_AFGVehicle_IsSelfDriving, "IsSelfDriving" }, // 2431377008
@@ -1247,6 +1303,34 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		{ "ToolTip", "Base class for all vehicles in the game, cars, train etc." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceRange_MetaData[] = {
+		{ "Category", "Significance" },
+		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ToolTip", "Range that this vehicle should be significant within" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceRange = { UE4CodeGen_Private::EPropertyClass::Float, "mSignificanceRange", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGVehicle, mSignificanceRange), METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceRange_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager_MetaData[] = {
+		{ "Category", "Significance" },
+		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ToolTip", "Indicates if the vehicle should be handled by significance manager" },
+	};
+#endif
+	void Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager_SetBit(void* Obj)
+	{
+		((AFGVehicle*)Obj)->mAddToSignificanceManager = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager = { UE4CodeGen_Private::EPropertyClass::Bool, "mAddToSignificanceManager", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGVehicle), &Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceBias_MetaData[] = {
+		{ "Category", "Significance" },
+		{ "ModuleRelativePath", "FGVehicle.h" },
+		{ "ToolTip", "A bias to the significance value" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceBias = { UE4CodeGen_Private::EPropertyClass::Float, "mSignificanceBias", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGVehicle, mSignificanceBias), METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceBias_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceBias_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicle_Statics::NewProp_mGasDamageType_MetaData[] = {
 		{ "Category", "Vehicle" },
@@ -1412,6 +1496,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisplayName = { UE4CodeGen_Private::EPropertyClass::Text, "mDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGVehicle, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGVehicle_Statics::NewProp_mDisplayName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGVehicle_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceRange,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mAddToSignificanceManager,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSignificanceBias,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mGasDamageType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedBouyantForce,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGVehicle_Statics::NewProp_mSubmergedLinearDamping,
@@ -1441,6 +1528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 			{ Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, (int32)VTABLE_OFFSET(AFGVehicle, IFGAggroTargetInterface), false },
 			{ Z_Construct_UClass_UFGDockableInterface_NoRegister, (int32)VTABLE_OFFSET(AFGVehicle, IFGDockableInterface), false },
 			{ Z_Construct_UClass_UFGColorInterface_NoRegister, (int32)VTABLE_OFFSET(AFGVehicle, IFGColorInterface), false },
+			{ Z_Construct_UClass_UFGSignificanceInterface_NoRegister, (int32)VTABLE_OFFSET(AFGVehicle, IFGSignificanceInterface), false },
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGVehicle_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFGVehicle>::IsAbstract,
@@ -1465,7 +1553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVehicle, 2026152901);
+	IMPLEMENT_CLASS(AFGVehicle, 1330172578);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGVehicle(Z_Construct_UClass_AFGVehicle, &AFGVehicle::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGVehicle"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGVehicle);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGVehicle)

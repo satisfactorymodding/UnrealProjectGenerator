@@ -4,16 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "FGBuildableTrainPlatform.h"
-#include "FGRailroadInterface.h"
 #include "Buildables/FGBuildableFactory.h"
 #include "FGBuildableTrainPlatformEmpty.generated.h"
 
 /**
- * 
+ * Its an empty platform, no logic, just visuals.
  */
 UCLASS()
 class FACTORYGAME_API AFGBuildableTrainPlatformEmpty : public AFGBuildableTrainPlatform
 {
 	GENERATED_BODY()
-	
 };

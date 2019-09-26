@@ -214,6 +214,9 @@ public:
 
 	/** Called when we have received a invite and gotten full information about it */
 	void OnInviteReceived( const FPendingInvite& invite );
+
+	/** Checks if last logged in user id matches the current logged in user and if not updates the cached value */
+	void RefreshRecentRegisteredEpicIdLogin();
 protected:
 	//~Begin Online Delegates
 	//~Begin OnlineIdentity delegates

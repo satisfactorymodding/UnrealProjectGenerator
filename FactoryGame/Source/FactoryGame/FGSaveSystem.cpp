@@ -5,7 +5,9 @@
 FSaveHeader::FSaveHeader(){ }
 void UFGSaveSystem::Init(){ }
 FString UFGSaveSystem::GetSaveDirectoryPath(){ return FString(); }
-void UFGSaveSystem::GetSourceSaveDirectoriesPaths( TArray<FString>& out_sourceSaves){ }
+bool UFGSaveSystem::GetUserSaveDirectoryPath( const UWorld* world, FString& out_dirPath){ return bool(); }
+FString UFGSaveSystem::GetCommonSaveDirectoryPath(){ return FString(); }
+void UFGSaveSystem::GetSourceSaveDirectoriesPaths( const UWorld* world, TArray<FString>& out_sourceSaves){ }
 UFGSaveSystem* UFGSaveSystem::Get(  UWorld* world){ return nullptr; }
 UFGSaveSystem* UFGSaveSystem::Get(  UObject* worldContext){ return nullptr; }
 void UFGSaveSystem::FindSaveGames( TArray<FSaveHeader>& out_saveGames, bool newestFirst){ }
@@ -16,17 +18,20 @@ bool UFGSaveSystem::IsValidSaveName( FString saveName){ return bool(); }
 bool UFGSaveSystem::SaveGameExists( FString saveName){ return bool(); }
 ESaveExists UFGSaveSystem::GetSaveExists( const FString& saveName, const FString& currentSessionName){ return ESaveExists(); }
 bool UFGSaveSystem::DeleteSave( FString saveName){ return bool(); }
-bool UFGSaveSystem::GetAbsolutePathForSaveGame( const FString& saveName, FString& out_absoluteSaveGame){ return bool(); }
-FString UFGSaveSystem::CreateAbsolutePath( const FString& saveName){ return FString(); }
+bool UFGSaveSystem::GetAbsolutePathForSaveGame( const UWorld* world, const FString& saveName, FString& out_absoluteSaveGame){ return bool(); }
+FString UFGSaveSystem::CreateAbsolutePath( const UWorld* world, const FString& saveName, bool saveInCommonDir){ return FString(); }
 FString UFGSaveSystem::SanitizeMapName( const FString& mapName){ return FString(); }
 SessionNameType UFGSaveSystem::GenerateNewSessionName(){ return SessionNameType(); }
 bool UFGSaveSystem::FindNewMapName( const FString& oldMapName, FString& out_newMapName){ return bool(); }
 bool UFGSaveSystem::FindNewClassName( const FString& oldClassName, FString& out_newClassName){ return bool(); }
 bool UFGSaveSystem::FindNewObjectName( const FString& oldObjectName, FString& out_newObjectName){ return bool(); }
-void UFGSaveSystem::MigrateSavesToNewLocation(){ }
+bool UFGSaveSystem::MoveSaveFileFromCommonToEpicLocation( const UWorld* world, const FString& saveName){ return bool(); }
+bool UFGSaveSystem::SaveFileExistsInCommonSaveDirectory( const FString& saveName){ return bool(); }
+void UFGSaveSystem::MigrateSavesToNewLocation( const FString& oldSaveLocation){ }
 void UFGSaveSystem::FindSaveGames_Internal( const FString& saveDirectory, TArray<FSaveHeader>& out_saveGames){ }
 FString UFGSaveSystem::SaveNameToFileName( const FString& directory, const FString& saveName){ return FString(); }
 UWorld* UFGSaveSystem::GetWorld() const{ return nullptr; }
 void UFGSaveSystem::GatherUsedSaveIds(){ }
+void UFGSaveSystem::RenameDeprecatedSaveFolder(){ }
 bool UFGSaveSystem::mIsVerifyingSaveSystem = bool();
 bool UFGSaveSystem::mIsUsingBundledSaves = bool();

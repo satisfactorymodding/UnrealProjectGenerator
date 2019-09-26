@@ -608,6 +608,14 @@ static inline void FOnReplicationDetailActorCreated_DelegateWrapper(const FMulti
 	struct FGBuildableFactory_eventReceiveUpdateEffects_Parms \
 	{ \
 		float DeltaSeconds; \
+	}; \
+	struct FGBuildableFactory_eventStartProductionLoopEffects_Parms \
+	{ \
+		bool didStartProducing; \
+	}; \
+	struct FGBuildableFactory_eventStopProductionLoopEffects_Parms \
+	{ \
+		bool didStopProducing; \
 	};
 
 

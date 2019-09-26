@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class APawn;
+class AFGCreatureSpawner;
 struct FVector;
 enum class EMoveSpeed : uint8;
 class UFGItemDescriptor;
@@ -58,6 +59,14 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_TargetRotation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSpawner) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGCreatureSpawner**)Z_Param__Result=P_THIS->GetSpawner(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -232,6 +241,14 @@ static inline void FRotationDoneDelegate_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnRep_TargetRotation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetSpawner) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AFGCreatureSpawner**)Z_Param__Result=P_THIS->GetSpawner(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -469,7 +486,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCreature); \
 	FORCEINLINE static uint32 __PPO__mArachnophobia_Sprite() { return STRUCT_OFFSET(AFGCreature, mArachnophobia_Sprite); } \
 	FORCEINLINE static uint32 __PPO__mArachnophobia_Material() { return STRUCT_OFFSET(AFGCreature, mArachnophobia_Material); } \
 	FORCEINLINE static uint32 __PPO__mArachnophobia_Particle() { return STRUCT_OFFSET(AFGCreature, mArachnophobia_Particle); } \
-	FORCEINLINE static uint32 __PPO__mDayTimePctCountAsNight() { return STRUCT_OFFSET(AFGCreature, mDayTimePctCountAsNight); }
+	FORCEINLINE static uint32 __PPO__mDayTimePctCountAsNight() { return STRUCT_OFFSET(AFGCreature, mDayTimePctCountAsNight); } \
+	FORCEINLINE static uint32 __PPO__mOwningSpawner() { return STRUCT_OFFSET(AFGCreature, mOwningSpawner); }
 
 
 #define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_48_PROLOG \

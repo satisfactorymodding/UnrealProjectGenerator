@@ -5,3 +5,4 @@
 void AFGCrabHatcher::GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps) const{ }
 void AFGCrabHatcher::BeginPlay(){ }
 void AFGCrabHatcher::Tick( float deltaTime){ }
+void AFGCrabHatcher::OnRep_DidSpawnCrabs(){ }

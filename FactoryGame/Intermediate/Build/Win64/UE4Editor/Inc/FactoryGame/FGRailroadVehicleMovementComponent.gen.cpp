@@ -27,10 +27,13 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleMovementComponent() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce();
@@ -243,10 +246,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 			{ "GetForwardSpeed", &UFGRailroadVehicleMovementComponent::execGetForwardSpeed },
 			{ "GetMass", &UFGRailroadVehicleMovementComponent::execGetMass },
 			{ "GetMaxAirBrakingEffort", &UFGRailroadVehicleMovementComponent::execGetMaxAirBrakingEffort },
+			{ "GetMaxDynamicBrakingEffort", &UFGRailroadVehicleMovementComponent::execGetMaxDynamicBrakingEffort },
 			{ "GetMaxForwardSpeed", &UFGRailroadVehicleMovementComponent::execGetMaxForwardSpeed },
+			{ "GetMaxTractiveEffort", &UFGRailroadVehicleMovementComponent::execGetMaxTractiveEffort },
 			{ "GetNumWheelsets", &UFGRailroadVehicleMovementComponent::execGetNumWheelsets },
 			{ "GetPayloadMass", &UFGRailroadVehicleMovementComponent::execGetPayloadMass },
 			{ "GetRelativeForwardSpeed", &UFGRailroadVehicleMovementComponent::execGetRelativeForwardSpeed },
+			{ "GetTareMass", &UFGRailroadVehicleMovementComponent::execGetTareMass },
 			{ "GetTrackCurvature", &UFGRailroadVehicleMovementComponent::execGetTrackCurvature },
 			{ "GetTrackGrade", &UFGRailroadVehicleMovementComponent::execGetTrackGrade },
 			{ "GetTractiveForce", &UFGRailroadVehicleMovementComponent::execGetTractiveForce },
@@ -466,10 +472,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Movement" },
 		{ "ModuleRelativePath", "FGRailroadVehicleMovementComponent.h" },
-		{ "ToolTip", "Get the total mass of this vehicle, tare + payload. [kg]" },
+		{ "ToolTip", "Get the total mass (gross) of this vehicle, tare + payload. [kg]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020400, sizeof(FGRailroadVehicleMovementComponent_eventGetMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -513,6 +519,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics
+	{
+		struct FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|Movement" },
+		{ "ModuleRelativePath", "FGRailroadVehicleMovementComponent.h" },
+		{ "ToolTip", "Get max dynamic braking force. [N] [kg cm/s^2]" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMaxDynamicBrakingEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics
 	{
 		struct FGRailroadVehicleMovementComponent_eventGetMaxForwardSpeed_Parms
@@ -544,6 +584,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics
+	{
+		struct FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|Movement" },
+		{ "ModuleRelativePath", "FGRailroadVehicleMovementComponent.h" },
+		{ "ToolTip", "Get maximum tractive force for this vehicle. [N] [kg cm/s^2]" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMaxTractiveEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -646,6 +720,40 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics
+	{
+		struct FGRailroadVehicleMovementComponent_eventGetTareMass_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTareMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|Movement" },
+		{ "ModuleRelativePath", "FGRailroadVehicleMovementComponent.h" },
+		{ "ToolTip", "Get the unloaded mass of this vehicle, tare. [kg]" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetTareMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetTareMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1043,12 +1151,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention, "GetCouplerRotationAndExtention" }, // 2424052886
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce, "GetDynamicBrakingForce" }, // 1791354070
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed, "GetForwardSpeed" }, // 365438481
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass, "GetMass" }, // 122198222
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass, "GetMass" }, // 2441211346
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort, "GetMaxAirBrakingEffort" }, // 1898230000
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort, "GetMaxDynamicBrakingEffort" }, // 3189017068
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed, "GetMaxForwardSpeed" }, // 2081455493
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort, "GetMaxTractiveEffort" }, // 3208242970
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets, "GetNumWheelsets" }, // 3959814359
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass, "GetPayloadMass" }, // 1234262908
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed, "GetRelativeForwardSpeed" }, // 4259226267
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass, "GetTareMass" }, // 2996486759
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature, "GetTrackCurvature" }, // 2458871299
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade, "GetTrackGrade" }, // 1581625861
 		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce, "GetTractiveForce" }, // 2010746147
@@ -1140,7 +1251,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "Category", "VehicleSetup" },
 		{ "ClampMin", "0.01" },
 		{ "ModuleRelativePath", "FGRailroadVehicleMovementComponent.h" },
-		{ "ToolTip", "Rated maximum velocity for this vehicle, actual velocity can be higher or lower, use this for cosmetic calculations, sounds, particles etc. [km/h]" },
+		{ "ToolTip", "Rated maximum velocity for this vehicle, actual velocity can be higher or lower. [km/h]\nThe self driving code uses this as its maximum speed.\nUseful for cosmetic calculations to get a 0 to 1 range." },
 		{ "UIMin", "0.01" },
 	};
 #endif
@@ -1220,7 +1331,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadVehicleMovementComponent, 455566919);
+	IMPLEMENT_CLASS(UFGRailroadVehicleMovementComponent, 1348022225);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadVehicleMovementComponent(Z_Construct_UClass_UFGRailroadVehicleMovementComponent, &UFGRailroadVehicleMovementComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadVehicleMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadVehicleMovementComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

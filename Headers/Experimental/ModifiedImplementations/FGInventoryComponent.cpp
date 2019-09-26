@@ -12,7 +12,7 @@ void UFGInventoryComponent::GetLifetimeReplicatedProps( TArray<FLifetimeProperty
 void UFGInventoryComponent::PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 void UFGInventoryComponent::PreNetReceive(){ }
 UFGInventoryComponent::UFGInventoryComponent(){ }
-void UFGInventoryComponent::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void UFGInventoryComponent::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void UFGInventoryComponent::PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void UFGInventoryComponent::PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void UFGInventoryComponent::PreLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
@@ -48,6 +48,7 @@ bool UFGInventoryComponent::HasEnoughSpaceForStack( const FInventoryStack& stack
 void UFGInventoryComponent::SetStateOnIndex( int32 index, const FSharedInventoryStatePtr& itemState){ }
 int32 UFGInventoryComponent::GetFullestStackIndex(){ return int32(); }
 void UFGInventoryComponent::GetInventoryStacks( TArray< FInventoryStack >& out_stacks) const{ }
+void UFGInventoryComponent::AddArbitrarySlotSize( int32 index, int32 arbitrarySlotSize){ }
 int32 UFGInventoryComponent::GetSlotSize( int32 index, TSubclassOf< UFGItemDescriptor > itemDesc ) const{ return int32(); }
 TSubclassOf< UFGItemDescriptor > UFGInventoryComponent::GetAllowedItemOnIndex( int32 idx){ return TSubclassOf<UFGItemDescriptor>(); }
 void UFGInventoryComponent::SetAllowedItemOnIndex( int32 idx, TSubclassOf< UFGItemDescriptor > allowedItemClass){ }

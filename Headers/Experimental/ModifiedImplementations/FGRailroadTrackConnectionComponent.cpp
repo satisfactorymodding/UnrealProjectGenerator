@@ -4,19 +4,19 @@
 
 UFGRailroadTrackConnectionComponent::UFGRailroadTrackConnectionComponent(){ }
 void UFGRailroadTrackConnectionComponent::OnComponentDestroyed( bool isDestroyingHierarchy){ }
-void UFGRailroadTrackConnectionComponent::RegisteredOnTrack_Implementation( const FRailroadTrackPosition& position){ }
-void UFGRailroadTrackConnectionComponent::UnregisteredFromTrack_Implementation(){ }
-FRailroadTrackPosition UFGRailroadTrackConnectionComponent::GetTrackPosition_Implementation() const{ return FRailroadTrackPosition(); }
 void UFGRailroadTrackConnectionComponent::AddConnection( UFGRailroadTrackConnectionComponent* toComponent){ }
 void UFGRailroadTrackConnectionComponent::RemoveConnection( UFGRailroadTrackConnectionComponent* toComponent){ }
-void UFGRailroadTrackConnectionComponent::SetTrackPosition( const FRailroadTrackPosition& position){ }
+bool UFGRailroadTrackConnectionComponent::IsFacingSwitch() const{ return bool(); }
+bool UFGRailroadTrackConnectionComponent::IsTrailingSwitch() const{ return bool(); }
 void UFGRailroadTrackConnectionComponent::SetSwitchPosition( int32 position){ }
-AFGBuildableRailroadSwitchControl* UFGRailroadTrackConnectionComponent::GetAttachedSwitchControl() const{ return nullptr; }
+void UFGRailroadTrackConnectionComponent::SetSwitchPosition(  AFGBuildableRailroadTrack* track){ }
 UFGRailroadTrackConnectionComponent* UFGRailroadTrackConnectionComponent::GetOpposite() const{ return nullptr; }
+UFGRailroadTrackConnectionComponent* UFGRailroadTrackConnectionComponent::GetNext() const{ return nullptr; }
 UFGRailroadTrackConnectionComponent* UFGRailroadTrackConnectionComponent::FindOverlappingConnections(
 		 UFGRailroadTrackConnectionComponent* component,
 		const FVector& location,
 		float radius,
 		bool allowPlatformTracks ){ return nullptr; }
+void UFGRailroadTrackConnectionComponent::SetTrackPosition( const FRailroadTrackPosition& position){ }
 void UFGRailroadTrackConnectionComponent::AddConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent){ }
 void UFGRailroadTrackConnectionComponent::RemoveConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent){ }

@@ -7,8 +7,6 @@ FString FResearchRecipeReward::ToString() const{ return FString(); }
 void UFGResearchRecipe::PreSave( const  ITargetPlatform* targetPlatform){ }
 void UFGResearchRecipe::UpdateAssetBundleData(){ }
 #endif 
-#if WITH_EDITORONLY_DATA
-#endif 
 UFGResearchRecipe::UFGResearchRecipe(){ }
 FResearchRecipeReward UFGResearchRecipe::GetResearcResults( TSubclassOf<UFGResearchRecipe> inClass){ return FResearchRecipeReward(); }
 float UFGResearchRecipe::GetResearchTime( TSubclassOf<UFGResearchRecipe> inClass){ return float(); }
@@ -18,6 +16,6 @@ bool UFGResearchRecipe::IsExcludedFromBuild( TSubclassOf<UFGResearchRecipe> inCl
 const TArray<TSubclassOf<class UFGResearchRecipe>> UFGResearchRecipe::GetRewardedResearchRecipes() const{ return TArray<TSubclassOf<class UFGResearchRecipe>>(); }
 const TArray<TSubclassOf<class UFGSchematic>> UFGResearchRecipe::GetRewardedSchematics() const{ return TArray<TSubclassOf<class UFGSchematic>>(); }
 FText UFGResearchRecipe::GetDisplayName() const{ return FText(); }
-void UFGResearchRecipe::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void UFGResearchRecipe::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void UFGResearchRecipe::PostLoad(){ Super::PostLoad(); }
 FPrimaryAssetId UFGResearchRecipe::GetPrimaryAssetId() const{ return FPrimaryAssetId(); }

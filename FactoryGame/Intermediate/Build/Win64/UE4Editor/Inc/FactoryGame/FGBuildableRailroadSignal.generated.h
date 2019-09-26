@@ -13,27 +13,27 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGBuildableRailroadSignal_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableRailroadSignal(); \
 	friend struct Z_Construct_UClass_AFGBuildableRailroadSignal_Statics; \
 public: \
-	DECLARE_CLASS(AFGBuildableRailroadSignal, AFGBuildableFactory, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(AFGBuildableRailroadSignal, AFGBuildable, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGBuildableRailroadSignal)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableRailroadSignal(); \
 	friend struct Z_Construct_UClass_AFGBuildableRailroadSignal_Statics; \
 public: \
-	DECLARE_CLASS(AFGBuildableRailroadSignal, AFGBuildableFactory, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(AFGBuildableRailroadSignal, AFGBuildable, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGBuildableRailroadSignal)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableRailroadSignal(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableRailroadSignal) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableRailroadSignal() { }; \
 private: \
@@ -59,26 +59,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableRailroadSignal); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableRailroadSignal)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_12_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_13_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadSignal_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -1,13 +1,17 @@
-// Copyright 2016 Coffee Stain Studios. All Rights Reserved.
+// Copyright 2016-2019 Coffee Stain Studios. All Rights Reserved.
 
 #pragma once
 #include "Array.h"
 #include "UObject/Class.h"
 
 #include "FactoryGame.h"
+#include "GraphAStar.h"
 #include "Buildables/FGBuildableRailroadTrack.h"
 #include "RailroadNavigation.generated.h"
 
+class UFGRailroadTrackConnectionComponent;
+class AFGLocomotive;
+class AFGBuildableRailroadStation;
 
 /** Pathfinding result. */
 UENUM()
@@ -18,24 +22,16 @@ enum class ERailroadPathFindingResult : uint8
 	RNQR_Success = 2		UMETA( DisplayName = "Success" )
 };
 
-USTRUCT(BlueprintType)
 struct FRailroadPathPoint
 {
-	GENERATED_BODY()
 public:
-	/** Ctor */
 	FRailroadPathPoint();
 
 public:
-	/**
-	 * Object along the path, may be a connection, switch, stop, signal, sign etc.
-	 * Must implement IFGRailroadInterface.
-	 */
-	UPROPERTY( BlueprintReadOnly )
-	UObject* Object; //@todo This is UPROPERTY but I've gotten a dynamic cast crash from blueprint on this...
+	/** The track connection to pass through or stop at if this is a station, switch, signal etc. */
+	TWeakObjectPtr< UFGRailroadTrackConnectionComponent > TrackConnection;
 
 	/** The distance this object is from the end. 0 for the last point. */
-	UPROPERTY( BlueprintReadOnly )
 	float Distance;
 };
 
@@ -54,20 +50,19 @@ typedef TWeakPtr< struct FRailroadPath > FRailroadPathWeakPtr;
 /**
  * A navigation result.
  */
-USTRUCT(BlueprintType)
 struct FRailroadPathFindingResult
 {
-	GENERATED_BODY()
 public:
-	/** Ctor */
 	FRailroadPathFindingResult();
 
 public:
+	TWeakObjectPtr< AFGLocomotive > Locomotive;
+	TWeakObjectPtr< UFGRailroadTrackConnectionComponent > Goal;
+
 	/** Shared pointer to the path. */
 	FRailroadPathSharedPtr Path;
 
 	/** Is the path valid, partial or invalid. */
-	UPROPERTY( BlueprintReadOnly )
 	ERailroadPathFindingResult Result;
 };
 
@@ -78,6 +73,7 @@ struct FRailroadGraphAStarPathPoint
 {
 	/** Default constructor, epic passes INDEX_NONE when creating a "null" point. */
 	FRailroadGraphAStarPathPoint( int32 unused = INDEX_NONE );
+	FRailroadGraphAStarPathPoint( UFGRailroadTrackConnectionComponent* connection );
 	FRailroadGraphAStarPathPoint( const FRailroadGraphAStarPathPoint& point );
 	
 	/** Compare two nodes. */
@@ -118,16 +114,6 @@ struct FRailroadGraphAStarHelper
 	
 	/** @return neighbour ref. */
 	FRailroadGraphAStarPathPoint GetNeighbour( const FRailroadGraphAStarPathPoint& nodeRef, const int32 neighbourIndex ) const;
-
-	/**
-	 * Helper used when starting up the algorithm, the start and end locations are track positions and this returns the neighbouring path point (track connection).
-	 *
-	 * @param position Arbitrary location along a track segment.
-	 *
-	 * @return The next path point on the current track segment given the position and forward direction.
-	 *         If position is invalid this returns an invalid path point.
-	 */
-	FRailroadGraphAStarPathPoint GetNeighbour( const FRailroadTrackPosition& position ) const;
 };
 
 /**
@@ -135,7 +121,6 @@ struct FRailroadGraphAStarHelper
  */
 struct FRailroadGraphAStarFilter
 {
-	/** ctor */
 	FRailroadGraphAStarFilter();
 
 	/** Used as GetHeuristicCost's multiplier. */
@@ -156,4 +141,36 @@ struct FRailroadGraphAStarFilter
 public:
 	/** true if a partial solution is valid; false if we only want a path if the goal is reachable. */
 	bool AcceptsPartialSolution;
+};
+
+/** Collection of navigation functions */
+struct FRailroadNavigation
+{
+public:
+	/**
+	 * Finds a path for the given locomotive to the given stop.
+	 *
+	 * @param locomotive The locomotive to find a path for, note that a locomotive can not reverse.
+	 * @param station The station the train should find a path to.
+	 *
+	 * @return Result of the pathfinding; Status code indicate if a path was found or not or if an error occured, e.g. bad params.
+	 */
+	static FRailroadPathFindingResult FindPathSync(
+		AFGLocomotive* locomotive,
+		AFGBuildableRailroadStation* station );
+
+private:
+	/**
+	 * Finds a path from one railroad connection to another.
+	 *
+	 * @param start           Next connection ahead of us.
+	 * @param end             Connection we want to path find to.
+	 * @param out_pathPoints  The resulting path, empty on error.
+	 *
+	 * @return Result of the pathfinding. I.e. if a path was found, goal is unreachable or if an error occurred, e.g. bad params.
+	 */
+	static EGraphAStarResult FindPathSyncInternal(
+		UFGRailroadTrackConnectionComponent* start,
+		UFGRailroadTrackConnectionComponent* end,
+		TArray< FRailroadGraphAStarPathPoint >& out_pathPoints );
 };

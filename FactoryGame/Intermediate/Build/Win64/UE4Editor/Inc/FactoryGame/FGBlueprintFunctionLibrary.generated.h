@@ -248,6 +248,26 @@ enum class EOutlineColor : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRemoveTrainFromSignificanceManager) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::RemoveTrainFromSignificanceManager(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddTrainToSignificanceManager) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::AddTrainToSignificanceManager(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRemoveAmbientSoundSplineFromSignificanceManager) \
 	{ \
 		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
@@ -722,6 +742,26 @@ enum class EOutlineColor : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFGBlueprintFunctionLibrary::ImpactEffectIsRelevant(Z_Param_worldContext,Z_Param_instigator,Z_Param_spawnLocation,Z_Param_visibleCullDistance,Z_Param_alwaysSuccessDistance,Z_Param_skipLOSCheck); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execRemoveTrainFromSignificanceManager) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::RemoveTrainFromSignificanceManager(Z_Param_WorldContextObject,Z_Param_obj); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddTrainToSignificanceManager) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
+		P_GET_OBJECT(UObject,Z_Param_obj); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFGBlueprintFunctionLibrary::AddTrainToSignificanceManager(Z_Param_WorldContextObject,Z_Param_obj); \
 		P_NATIVE_END; \
 	} \
  \

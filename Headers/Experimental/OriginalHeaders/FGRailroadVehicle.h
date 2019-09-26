@@ -40,12 +40,6 @@ public:
 	virtual bool CanDismantle_Implementation() const override;
 	//~ End IFGDismantleInterface
 
-	// Train platform docking events
-	// Does not utilize dockable interface as train platforms are not dockables and it confuses the situation to mix some of the interface calls with new functions
-	virtual void DockedWithPlatform( class AFGBuildableTrainPlatform* dockedPlatform );
-	virtual void UndockedWithPlatform();
-	// End platform docking events 
-
 	/** Update the animations for this vehicle, this is called after the whole train has been moved. */
 	void UpdateAnimation();
 
@@ -62,13 +56,14 @@ public:
 	/** Get the sliding shoe if this vehicle consumes power. */
 	virtual class UFGPowerConnectionComponent* GetSlidingShoe() const { return nullptr; }
 
-	/** Get the sliding shoe if this  */
-
 	/**
 	 * @return The length of this vehicle.
 	 */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Vehicle" )
 	FORCEINLINE float GetLength() const { return mLength; }
+
+	/** Is this vehicle docked to a station. */
+	bool IsDocked() const;
 
 	/**
 	 * If this vehicles orientation is reversed in the train formation.
@@ -108,23 +103,16 @@ public:
 	 */
 	FORCEINLINE void SetTrackPosition( const FRailroadTrackPosition& position ) { mTrackPosition = position; }
 
-	/**	Get if this vehicle is currently docked with a train platform */
-	FORCEINLINE bool GetIsDockedAtPlatform() const { return mDockedAtPlatform != nullptr; }
-
 	/** Debug */
 	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos ) override;
 
 private:
 	bool IsVehicleNetRelevantFor( const class AFGRailroadVehicle* vehicle, const FVector& SrcLocation ) const;
 
-	/**
-	 * @param at Coupler to connect to.
-	 */
+	/** @param at Coupler to connect to. */
 	void CoupleVehicleAt( AFGRailroadVehicle* vehicle, ERailroadVehicleCoupler coupler );
 
-	/**
-	 * @param at Coupler to connect to.
-	 */
+	/** @param at Coupler to connect to. */
 	void DecoupleVehicleAt( ERailroadVehicleCoupler coupler );
 
 protected:
@@ -135,10 +123,6 @@ protected:
 	/** How long is this vehicle. */
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	float mLength;
-
-	/** Store the platform, if any, this train vehicle is docked at */
-	UPROPERTY( Replicated )
-	class AFGBuildableTrainPlatform* mDockedAtPlatform;
 
 private:
 	/** These need access to the vehicles internals. */
@@ -151,8 +135,9 @@ private:
 	 *
 	 * Vehicles coupled to this vehicle.
 	 * Use ERailroadVehicleCoupler to access this.
+	 *
+	 * Saved in serialize.
 	 */
-	UPROPERTY() // Saved in serialize.
 	TWeakObjectPtr< AFGRailroadVehicle > mCoupledVehicles[ 2 ];
 
 	/** If this vehicle is reversed in the train formation. */

@@ -135,6 +135,14 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Game", meta = ( WorldContext = "WorldContextObject" ) )
 	static void RemoveAmbientSoundSplineFromSignificanceManager( UObject* WorldContextObject, UObject* obj );
 
+	/** Adds a train to be handled by significance manager */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Trains|Optimization", meta = ( WorldContext = "WorldContextObject" ) )
+	static void AddTrainToSignificanceManager( UObject* WorldContextObject, UObject* obj );
+
+	/** removes a train from being handled by significance manager */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Trains|Optimization", meta = ( WorldContext = "WorldContextObject" ) )
+	static void RemoveTrainFromSignificanceManager( UObject* WorldContextObject, UObject* obj );
+
 	/**
 	 * Checks if a impact effect is relevant for any local player
 	 *

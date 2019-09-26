@@ -4,7 +4,7 @@
 
 AFGItemPickup::AFGItemPickup(){ }
 void AFGItemPickup::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
-void AFGItemPickup::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void AFGItemPickup::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGItemPickup::BeginPlay(){ }
 void AFGItemPickup::PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void AFGItemPickup::PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
