@@ -35,7 +35,9 @@ namespace FixHeaders
             {"UStaticMesh", "Engine/StaticMesh.h" },
             {"FUpdateTextureRegion2D", "RHI.h" },
             {"FRuntimeFloatCurve", "Curves/CurveFloat.h" },
-            {"UDeveloperSettings", "Engine/DeveloperSettings.h" }
+            {"UDeveloperSettings", "Engine/DeveloperSettings.h" },
+            {"FBufferArchive", "Serialization/BufferArchive.h" },
+            {"UAkAudioEvent", "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h" }
         };
 
         static void Main(string[] args)
