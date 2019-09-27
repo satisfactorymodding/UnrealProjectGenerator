@@ -264,7 +264,6 @@
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRadioactivitySubsystem.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRailroadFunctionLibrary.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRailroadInterface.cpp"
-#include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRailroadSubsystem.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRailroadTimeTable.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRailroadTrackConnectionComponent.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\FGRailroadVehicle.cpp"

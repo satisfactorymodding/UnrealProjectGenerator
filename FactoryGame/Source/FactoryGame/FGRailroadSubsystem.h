@@ -329,6 +329,9 @@ private:
 	/** Creates a new train with vehicle as the first vehicle. */
 	class AFGTrain* CreateTrain( AFGRailroadVehicle* vehicle ) const;
 
+	/** Remove a train and destroy the actor. */
+	void RemoveTrain( class AFGTrain* train );
+
 	/** Reconnects all vehicles in this train to the third rail. */
 	void ReconnectTrainToThirdRail( AFGTrain* train );
 

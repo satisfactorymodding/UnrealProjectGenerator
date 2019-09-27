@@ -40,6 +40,7 @@ void AFGRailroadSubsystem::TickTrackGraphs( float dt){ }
 void AFGRailroadSubsystem::RefreshPlatformPowerConnectionsFromStation(  AFGBuildableRailroadStation* station,  UFGCircuitConnectionComponent* connectTo){ }
 void AFGRailroadSubsystem::InitializeStationNames(){ }
 AFGTrain* AFGRailroadSubsystem::CreateTrain( AFGRailroadVehicle* vehicle) const{ return nullptr; }
+void AFGRailroadSubsystem::RemoveTrain(  AFGTrain* train){ }
 void AFGRailroadSubsystem::ReconnectTrainToThirdRail( AFGTrain* train){ }
 void AFGRailroadSubsystem::PreTickPhysics( FPhysScene* physScene, uint32 sceneType, float dt){ }
 void AFGRailroadSubsystem::UpdatePhysics( FPhysScene* physScene, uint32 sceneType, float dt){ }

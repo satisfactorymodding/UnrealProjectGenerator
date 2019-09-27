@@ -151,6 +151,9 @@ private:
 	/** State bool for whether multi-select is in effect */
 	bool mIsMultiSelectActive;
 
+	/** If true then this state won't broadcast when peek refunds have been updated. Used so that there won't be more than one broadcast per tick. */
+	bool mDisablePeekDismantleRefundsBroadcast;
+
 	/** Currently selected dismantable actor */
 	UPROPERTY( Transient )
 	class AActor* mCurrentlySelectedActor;
