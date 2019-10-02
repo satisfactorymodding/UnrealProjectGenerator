@@ -13,4 +13,5 @@ void UFGCompassObjectWidget::UpdateCompassObjectVisbility(){ }
 void UFGCompassObjectWidget::SetCompassObjectVisbility( bool visibile){ }
 void UFGCompassObjectWidget::UpdateCompassViewDistance(){ }
 float UFGCompassObjectWidget::GetRepresentationDistanceFromPlayer(){ return float(); }
+FVector UFGCompassObjectWidget::GetDirectionFromLocation( FVector location){ return FVector(); }
 float UFGCompassObjectWidget::GetAngleFromDirection( FVector direction){ return float(); }

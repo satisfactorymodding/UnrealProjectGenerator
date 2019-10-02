@@ -9,12 +9,15 @@ void AFGPlayerControllerBase::ClientRestart_Implementation( APawn* newPawn){ }
 void AFGPlayerControllerBase::SetIsUsingGamepad( bool newIsUsingGamepad){ }
 void AFGPlayerControllerBase::OnControlledCharacterDied(  AFGCharacterBase* character){ }
 void AFGPlayerControllerBase::OnControlledCharacterRevived(  AFGCharacterBase* character){ }
+void AFGPlayerControllerBase::FlushPressedKeys(){ }
 bool AFGPlayerControllerBase::RebindActionKey( FFGKeyMapping newKeyMapping){ return bool(); }
 void AFGPlayerControllerBase::ResetInputBindings(){ }
 void AFGPlayerControllerBase::UpdatePlayerInput(){ }
 void AFGPlayerControllerBase::SetMouseSensitivity( float newSense){ }
+float AFGPlayerControllerBase::GetMouseSensitivity(){ return float(); }
 float AFGPlayerControllerBase::GetMouseSensitivityX(){ return float(); }
 float AFGPlayerControllerBase::GetMouseSensitivityY(){ return float(); }
+float AFGPlayerControllerBase::GetDefaultMouseSensitivity(){ return float(); }
 float AFGPlayerControllerBase::GetDefaultMouseSensitivityX(){ return float(); }
 float AFGPlayerControllerBase::GetDefaultMouseSensitivityY(){ return float(); }
 FText AFGPlayerControllerBase::GetKeyNameForAction( FName inAction, bool getGamepadKey){ return FText(); }

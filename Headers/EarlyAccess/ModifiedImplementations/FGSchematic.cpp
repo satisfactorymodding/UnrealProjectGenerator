@@ -10,8 +10,6 @@ void UFGSchematic::PreSave( const  ITargetPlatform* targetPlatform){ }
 #if WITH_EDITOR
 void UFGSchematic::UpdateAssetBundleData(){ }
 #endif 
-#if WITH_EDITORONLY_DATA
-#endif 
 UFGSchematic::UFGSchematic(){ }
 ESchematicType UFGSchematic::GetType( TSubclassOf< UFGSchematic > inClass){ return ESchematicType(); }
 FText UFGSchematic::GetSchematicDisplayName( TSubclassOf< UFGSchematic > inClass){ return FText(); }
@@ -33,5 +31,5 @@ TSubclassOf< UFGSchematic > UFGSchematic::GetDependentOnSchematic( TSubclassOf< 
 TArray< TSubclassOf< UFGSchematic > > UFGSchematic::GetAdditionalSchematicDependencies( TSubclassOf< UFGSchematic > inClass){ return TArray<TSubclassOf<UFGSchematic> >(); }
 bool UFGSchematic::IsIncludedInBuild( TSubclassOf< UFGSchematic > inClass){ return bool(); }
 void UFGSchematic::PostLoad(){ Super::PostLoad(); }
-void UFGSchematic::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void UFGSchematic::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 FPrimaryAssetId UFGSchematic::GetPrimaryAssetId() const{ return FPrimaryAssetId(); }

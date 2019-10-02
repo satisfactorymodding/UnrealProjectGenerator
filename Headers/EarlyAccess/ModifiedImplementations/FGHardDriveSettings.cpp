@@ -6,4 +6,5 @@ TSubclassOf<class UFGSchematic> FHardDriveSchematicDrop::GetSchematic() const{ r
 const TArray<FResearchRecipeReward> UFGHardDriveSettings::GetResearchRewardPackages(  UWorld* world, TSubclassOf<class UFGResearchRecipe> calledByResearch){ return TArray<FResearchRecipeReward>(); }
 int32 UFGHardDriveSettings::GetTotalSchematicDropProbability( const TArray<FHardDriveSchematicDrop>& schematicDrops) const{ return int32(); }
 FResearchRecipeReward UFGHardDriveSettings::ResearchRecipeRewardFactory( TSubclassOf<class UFGSchematic> schematic, TSubclassOf<class UFGResearchRecipe> calledByResearch) const{ return FResearchRecipeReward(); }
+void UFGHardDriveSettings::GetValidSchematicRewardDrops(  AFGSchematicManager* schematicManager, TArray<FHardDriveSchematicDrop>& out_validSchematics) const{ }
 TArray<TSubclassOf<class UFGSchematic>> UFGHardDriveSettings::GetFinalSchematicRewards( const TArray<FHardDriveSchematicDrop>& allValidSchematicDrops) const{ return TArray<TSubclassOf<class UFGSchematic>>(); }

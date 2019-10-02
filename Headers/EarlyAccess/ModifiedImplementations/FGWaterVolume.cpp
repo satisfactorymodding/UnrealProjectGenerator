@@ -8,8 +8,6 @@ void AFGWaterVolume::PreSave( const  ITargetPlatform* targetPlatform){ }
 void AFGWaterVolume::PostEditChangeProperty( FPropertyChangedEvent& propertyChangedEvent){ }
 void AFGWaterVolume::CheckForErrors(){ }
 #endif 
-#if WITH_EDITORONLY_DATA
-#endif 
 AFGWaterVolume::AFGWaterVolume(){ }
 void AFGWaterVolume::BeginPlay(){ }
 void AFGWaterVolume::EndPlay( const EEndPlayReason::Type endPlayReason){ }

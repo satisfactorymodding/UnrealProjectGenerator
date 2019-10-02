@@ -8,6 +8,7 @@ void UFGBuildGunStateDismantle::EndState_Implementation(){ }
 void UFGBuildGunStateDismantle::TickState_Implementation( float deltaTime){ }
 void UFGBuildGunStateDismantle::PrimaryFire_Implementation(){ }
 void UFGBuildGunStateDismantle::SecondaryFire_Implementation(){ }
+AActor* UFGBuildGunStateDismantle::GetSelectedActor() const{ return nullptr; }
 TArray<FInventoryStack> UFGBuildGunStateDismantle::GetPeekDismantleRefund() const{ return TArray<FInventoryStack>(); }
 bool UFGBuildGunStateDismantle::CanDismantle() const{ return bool(); }
 TArray< FInventoryStack > UFGBuildGunStateDismantle::GetDismantleRefund() const{ return TArray<FInventoryStack>(); }

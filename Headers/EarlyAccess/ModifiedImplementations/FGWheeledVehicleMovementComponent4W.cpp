@@ -3,6 +3,7 @@
 #include "FGWheeledVehicleMovementComponent4W.h"
 
 UFGWheeledVehicleMovementComponent4W::UFGWheeledVehicleMovementComponent4W(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) { }
+bool UFGWheeledVehicleMovementComponent4W::GetHandbreakInput() const{ return bool(); }
 void UFGWheeledVehicleMovementComponent4W::UpdateSimulation(float DeltaTime){ }
 void UFGWheeledVehicleMovementComponent4W::GenerateTireForces( UVehicleWheel* Wheel, const FTireShaderInput& Input, FTireShaderOutput& Output){ }
 void UFGWheeledVehicleMovementComponent4W::SetupWheelMassProperties_AssumesLocked(const uint32 NumWheels, physx::PxVehicleWheelsSimData* PWheelsSimData, physx::PxRigidBody* PVehicleActor){ }

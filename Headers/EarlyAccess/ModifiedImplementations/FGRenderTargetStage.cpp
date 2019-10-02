@@ -9,5 +9,6 @@ void AFGRenderTargetStage::EndCapture(){ }
 void AFGRenderTargetStage::CaptureOnce(){ }
 void AFGRenderTargetStage::SetRenderTargetFormat( int32 width, int32 height, EPixelFormat pixelFormat){ }
 void AFGRenderTargetStage::UpdateRenderedComponents(){ }
+void AFGRenderTargetStage::SetPreviewDistance( float distance){ }
 void AFGRenderTargetStage::SetView( const FItemView& view){ }
 UTextureRenderTarget2D* AFGRenderTargetStage::GetRenderTarget() const{ return nullptr; }

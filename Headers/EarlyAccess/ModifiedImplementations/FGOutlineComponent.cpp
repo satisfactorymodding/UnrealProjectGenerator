@@ -22,3 +22,4 @@ void UFGOutlineComponent::HideDismantlePendingMaterialOnActor(  AActor* actorPen
 void UFGOutlineComponent::ShowDismantlePendingMaterialOnProxyMesh(  UProxyInstancedStaticMeshComponent* proxyMesh){ }
 void UFGOutlineComponent::HideDismantlePendingMaterialOnProxyMesh(  UProxyInstancedStaticMeshComponent* proxyMesh){ }
 void UFGOutlineComponent::HideDismantlePendingMaterialOnSplineComponent(  UFGSplineComponent* splineComponent){ }
+bool UFGOutlineComponent::IsOwnedByLocalPlayer(){ return bool(); }

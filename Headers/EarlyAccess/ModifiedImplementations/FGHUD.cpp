@@ -6,7 +6,7 @@
 void AFGHUD::PonderOpeningCheatBoard(){ }
 #endif 
 AFGHUD::AFGHUD(){ }
-void AFGHUD::PostInitializeComponents(){ }
+void AFGHUD::PostInitializeComponents(){ Super::PostInitializeComponents(); }
 void AFGHUD::BeginPlay(){ }
 void AFGHUD::EndPlay( const EEndPlayReason::Type endPlayReason){ }
 void AFGHUD::DrawHUD(){ }
@@ -15,6 +15,7 @@ void AFGHUD::ShowRespawnUI(){ }
 void AFGHUD::CloseRespawnUI(){ }
 void AFGHUD::ShowDebugInfo( float& YL, float& YPos){ }
 void AFGHUD::SetPreviewActorClass( TSubclassOf<AActor> actorClass){ }
+void AFGHUD::SetPreviewDistance( float previewDistance){ }
 void AFGHUD::SetPreviewView( const FItemView& view){ }
 UTextureRenderTarget2D* AFGHUD::GetPreviewTexture() const{ return nullptr; }
 void AFGHUD::BeginPreviewActor(){ }

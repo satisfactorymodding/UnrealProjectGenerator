@@ -35,3 +35,4 @@ void UFGBuildGunStateBuild::ClearHologramScrollValues(){ }
 void UFGBuildGunStateBuild::RestoreHologramScrollValues(){ }
 void UFGBuildGunStateBuild::BeginClearanceOverlap( UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult){ }
 void UFGBuildGunStateBuild::EndClearanceOverlap( UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex){ }
+void UFGBuildGunStateBuild::UpdateClearanceData(){ }

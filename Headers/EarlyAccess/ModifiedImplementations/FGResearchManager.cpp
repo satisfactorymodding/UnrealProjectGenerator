@@ -2,6 +2,7 @@
 
 #include "FGResearchManager.h"
 
+AFGResearchManager::AFGResearchManager(){ }
 void AFGResearchManager::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGResearchManager::PreInitializeComponents(){ }
 AFGResearchManager* AFGResearchManager::Get(  UWorld* world){ return nullptr; }
@@ -42,3 +43,4 @@ void AFGResearchManager::PopulateResearchLists(){ }
 void AFGResearchManager::GiveAccessToDefaultResearch(){ }
 void AFGResearchManager::StartResearch( TSubclassOf<class UFGResearchRecipe> researchRecipe, float researchTime){ }
 void AFGResearchManager::GeneratePendingReward( FCompletedResearch& completedResearch){ }
+void AFGResearchManager::OnResearchTimerComplete( TSubclassOf<class UFGResearchRecipe> researchRecipe){ }

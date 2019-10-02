@@ -14,4 +14,5 @@ void UFGSignCanvasWidget::SetCanvasSize( FVector2D size){ }
 bool UFGSignCanvasWidget::NativeOnDrop( const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation){ return bool(); }
 void UFGSignCanvasWidget::NativeOnDragEnter( const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation){ }
 void UFGSignCanvasWidget::NativeOnDragLeave( const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation){ }
+void UFGSignCanvasWidget::InitializeSlot(  UCanvasPanelSlot* slot){ }
 UFGSignElementWidget* UFGSignCanvasWidget::GetElementWidgetById( int32 id){ return nullptr; }

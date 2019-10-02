@@ -14,6 +14,7 @@ bool UFGSaveSession::LoadGame( FString saveName){ return bool(); }
 bool UFGSaveSession::SerializeHeader( FArchive& Ar, FSaveHeader& saveHeader){ return bool(); }
 FString UFGSaveSession::SaveNameToFileName( const FString& saveName){ return FString(); }
 void UFGSaveSession::SharedInventoryPtrLoaded(  FSharedInventoryStatePtr& ptr){ }
+void UFGSaveSession::Autosave(){ }
 void UFGSaveSession::SetAutosaveInterval( int32 newInterval){ }
 void UFGSaveSession::DeleteSave( FString sessionName, int32 autosaveNum){ }
 UWorld* UFGSaveSession::GetWorld() const{ return nullptr; }
@@ -27,4 +28,5 @@ void UFGSaveSession::GenerateRootSet( TArray<UObject*>& out_rootSet){ }
 void UFGSaveSession::LoadDestroyActors(){ }
 void UFGSaveSession::PrepareLevelActors( bool prepareForLoad){ }
 void UFGSaveSession::OnActorDestroyed( AActor* destroyedActor){ }
+void UFGSaveSession::SaveWorldImplementation( FString gameName){ }
 void UFGSaveSession::BundledSaveWorldImplementation( FString gameName){ }

@@ -5,8 +5,6 @@
 #if WITH_EDITORONLY_DATA && WITH_EDITOR
 const FItemSettings& UFGResourceSettings::GetResourceSettings( TSubclassOf<  UFGItemDescriptor > resourceClass){ return *(new FItemSettings); }
 #endif 
-#if WITH_EDITORONLY_DATA
-#endif 
 UFGResourceSettings::UFGResourceSettings(){ }
 UFGResourceSettings* UFGResourceSettings::Get(){ return nullptr; }
 const FResourceDepositPackage& UFGResourceSettings::GetRandomResourceDepositData( int32& out_resourceDepositPackageIdx, AActor* worldContext){ return *(new FResourceDepositPackage); }

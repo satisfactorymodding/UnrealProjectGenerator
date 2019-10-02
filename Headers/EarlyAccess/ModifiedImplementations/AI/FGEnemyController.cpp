@@ -42,6 +42,7 @@ void AFGEnemyController::StartInitialAggroCollection(){ }
 void AFGEnemyController::UpdateAggroAndFindAndAssignTarget(){ }
 void AFGEnemyController::GatherAggroTargets(){ }
 void AFGEnemyController::UpdateAttackPattern(){ }
+void AFGEnemyController::AggroTargetAdded( TScriptInterface< IFGAggroTargetInterface > aggroTarget){ }
 void AFGEnemyController::AggroTargetRemoved( TScriptInterface< IFGAggroTargetInterface > aggroTarget){ }
 void AFGEnemyController::SubscribeToPawnDamage(){ }
 void AFGEnemyController::UnSubscribeToPawnDamage(){ }

@@ -12,7 +12,7 @@ namespace ImplementHeaders
         private static bool CountOnly = false;
         private static int FunctionCount;
 
-        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "CreateRenderState_Concurrent" };
+        private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent" };
 
         private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
         {

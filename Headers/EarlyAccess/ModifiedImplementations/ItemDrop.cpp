@@ -2,4 +2,5 @@
 
 #include "ItemDrop.h"
 
+int32 FItemDrop::GetRandomItemAmount() const{ return int32(); }
 bool FItemDropWithChance::ShouldDrop() const{ return bool(); }

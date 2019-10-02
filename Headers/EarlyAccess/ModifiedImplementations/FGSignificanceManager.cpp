@@ -7,6 +7,7 @@ void UFGSignificanceManager::RegisterSignificanceObject( UObject* Object, EFGSig
 void UFGSignificanceManager::Update( TArrayView<const FTransform> Viewpoints){ }
 FGainSignificanceData UFGSignificanceManager::GetClosestGainSignificanceData( UObject* inObject, float desiredDistance){ return FGainSignificanceData(); }
 void UFGSignificanceManager::DumpSignificanceManagedObjects(){ }
+void UFGSignificanceManager::UpdateConveyorBelts(){ }
 void UFGSignificanceManager::UpdateFactories(){ }
 FName UFGSignificanceManager::GetTagFromTagEnum( EFGSignificanceType InType){ return FName(); }
 void UFGSignificanceManager::OnComponentActivationChange( UParticleSystemComponent* PSC, bool bActivated){ }

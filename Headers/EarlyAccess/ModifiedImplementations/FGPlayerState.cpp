@@ -3,7 +3,7 @@
 #include "FGPlayerState.h"
 
 AFGPlayerState::AFGPlayerState(){ }
-void AFGPlayerState::Serialize( FArchive& ar){ Super::Serialize(ar); }
+void AFGPlayerState::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGPlayerState::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 bool AFGPlayerState::ReplicateSubobjects(  UActorChannel* channel,  FOutBunch* bunch, FReplicationFlags* repFlags){ return bool(); }
 void AFGPlayerState::BeginPlay(){ }
@@ -19,6 +19,7 @@ void AFGPlayerState::SetSlotData( FSlotData slotData){ }
 FString AFGPlayerState::GetUserName(){ return FString(); }
 FString AFGPlayerState::GetUserID(){ return FString(); }
 FUniqueNetIdRepl AFGPlayerState::GetUniqeNetId(){ return FUniqueNetIdRepl(); }
+FString AFGPlayerState::GetSteamID(){ return FString(); }
 void AFGPlayerState::CreateTutorialSubsystem(){ }
 TArray< TSubclassOf< class UFGMessageBase > > AFGPlayerState::GetAllMessages( EMessageType messageType ){ return TArray<TSubclassOf<class UFGMessageBase> >(); }
 void AFGPlayerState::ReadMessage( TSubclassOf<  UFGMessageBase > inMessage){ }

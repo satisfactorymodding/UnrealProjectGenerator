@@ -32,6 +32,8 @@ void UFGBlueprintFunctionLibrary::RemoveAmbientSoundSplineFromSignificanceManage
 bool UFGBlueprintFunctionLibrary::ImpactEffectIsRelevant( UObject* worldContext, APawn* instigator, FVector spawnLocation, float visibleCullDistance , float alwaysSuccessDistance , bool skipLOSCheck ){ return bool(); }
 bool UFGBlueprintFunctionLibrary::ImpactEffectIsWithinDistance( UObject* worldContext, APawn* instigator, FVector spawnLocation, float visibleCullDistance ){ return bool(); }
 bool UFGBlueprintFunctionLibrary::IsLocallyHumanControlled( APawn* pawn){ return bool(); }
+FString UFGBlueprintFunctionLibrary::GetVersionString(){ return FString(); }
+bool UFGBlueprintFunctionLibrary::IsAlphaBuild(){ return bool(); }
 bool UFGBlueprintFunctionLibrary::CanBeOnConveyor( TSubclassOf< UFGItemDescriptor > inClass){ return bool(); }
 void UFGBlueprintFunctionLibrary::GetAllBuildCategories( UObject* worldContext, UPARAM( ref ) TArray< TSubclassOf<  UFGBuildCategory > >& out_buildCategories){ }
 void UFGBlueprintFunctionLibrary::GetAvailableRecipesInCategory( UObject* worldContext, TSubclassOf< UFGBuildCategory > buildCategory, UPARAM( ref ) TArray< TSubclassOf<  UFGRecipe > >& out_recipes){ }

@@ -32,6 +32,7 @@ void AFGBuildableSubsystem::RegisterFactoryTickFunction( bool shouldRegister){ }
 void AFGBuildableSubsystem::CreateFactoryStatID() const{ }
 void AFGBuildableSubsystem::UpdateReplayEffects( float dt){ }
 void AFGBuildableSubsystem::AddBuildableMeshInstances(  AFGBuildable* buildable){ }
+void AFGBuildableSubsystem::setColorSlotPrimary( uint8 index, FColor color){ }
 void AFGBuildableSubsystem::setColorSlotSecondary( uint8 index, FColor color){ }
 FColor AFGBuildableSubsystem::getColorSlotPrimary( uint8 index){ return FColor(); }
 FColor AFGBuildableSubsystem::getColorSlotSecondary( uint8 index){ return FColor(); }

@@ -13,3 +13,4 @@ TArray<FGuideLineBuildingSweepData> AFGBuildGuide::SweepForAlignedBuildings(  AA
 bool AFGBuildGuide::IsWithinRange( float value, float min, float max, bool inclusive ){ return bool(); }
 AFGBuildGuide::AFGBuildGuide(){ }
 void AFGBuildGuide::SetBuildGuideStartEnd( FVector startPoint, FVector endPoint, float meshSize ){ }
+void AFGBuildGuide::BeginPlay(){ }
