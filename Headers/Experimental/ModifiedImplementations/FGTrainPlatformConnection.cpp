@@ -9,4 +9,5 @@ void UFGTrainPlatformConnection::SetConnectionType( ETrainPlatformConnectionType
 void UFGTrainPlatformConnection::ReverseComponentDirection(){ }
 void UFGTrainPlatformConnection::SetComponentDirection( uint8 componentDirection){ }
 AFGBuildableTrainPlatform* UFGTrainPlatformConnection::GetPlatformOwner(){ return nullptr; }
+bool UFGTrainPlatformConnection::IsConnected() const{ return bool(); }
 void UFGTrainPlatformConnection::DrawDebugDirection(){ }

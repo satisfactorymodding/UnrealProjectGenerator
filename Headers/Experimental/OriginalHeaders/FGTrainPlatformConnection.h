@@ -51,7 +51,7 @@ public:
 	/** Force the component into the reverse direction */
 	void ReverseComponentDirection();
 
-	/** Set the component direction explicity */
+	/** Set the component direction explicitly */
 	void SetComponentDirection( uint8 componentDirection );
 
 	/** Get the direction of the connection */
@@ -69,7 +69,7 @@ public:
 	UFGRailroadTrackConnectionComponent* GetRailroadConnectionReference() const { return mRailroadTrackConnection; } 
 	
 	/** Is this platform connected to another one? */
-	FORCEINLINE bool IsConnected() const { return !(mConnectedTo == nullptr); }
+	bool IsConnected() const;
 
 	/** TEMP: Will remove (TM) */
 	void DrawDebugDirection();
@@ -77,7 +77,7 @@ public:
 
 protected:
 	/** This bool indicates an arbitrary direction of this platform. It is used for stepping through platforms 
-	*	Platforms that connect must have mismatched values for their snapped components ( ie: 1 -> 0 || 0 -> 1 && !(1 -> 1) etc. )
+	*	Platforms that connect must have mismatched values for their snapped components ( i.e: 1 -> 0 || 0 -> 1 && !(1 -> 1) etc. )
 	*/
 	UPROPERTY( SaveGame )
 	uint8 mComponentDirection : 1;

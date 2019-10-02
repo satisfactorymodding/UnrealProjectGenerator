@@ -2,6 +2,11 @@
 
 #include "FGTrain.h"
 
+float TrainConstants::CATCH_DISTANCE = float();
+float TrainConstants::STOP_OFFSET = float();
+float TrainConstants::DOCK_DISTANCE = float();
+float TrainConstants::DOCK_SPEED = float();
+float TrainConstants::RESTRICTED_SPEED = float();
 bool FTrainAtcData::SetPath( const FRailroadPathFindingResult& result){ return bool(); }
 void FTrainAtcData::ClearPath(){ }
 bool FTrainAtcData::HasPath() const{ return bool(); }
@@ -28,6 +33,7 @@ void AFGTrain::GainedSignificance_Implementation(){ }
 void AFGTrain::LostSignificance_Implementation(){ }
 float AFGTrain::GetSignificanceRange(){ return float(); }
 void AFGTrain::SetTrainName( const FText& name){ }
+bool AFGTrain::IsPlayerDriven() const{ return bool(); }
 bool AFGTrain::IsSelfDrivingEnabled() const{ return bool(); }
 void AFGTrain::SetSelfDrivingEnabled( bool isEnabled){ }
 AFGLocomotive* AFGTrain::GetMultipleUnitMaster() const{ return nullptr; }

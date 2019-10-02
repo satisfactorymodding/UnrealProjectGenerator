@@ -14,8 +14,8 @@ FRailroadTrackPosition AFGBuildableTrainPlatform::GetTrackPosition() const{ retu
 int32 AFGBuildableTrainPlatform::GetTrackGraphID() const{ return int32(); }
 AFGBuildableTrainPlatform* AFGBuildableTrainPlatform::GetConnectedPlatformInDirectionOf( uint8 direction){ return nullptr; }
 void AFGBuildableTrainPlatform::NotifyTrainDocked(  AFGRailroadVehicle* railroadVehicle,  AFGBuildableRailroadStation* initiatedByStation){ }
-void AFGBuildableTrainPlatform::SetupRailroadTrack(){ }
 void AFGBuildableTrainPlatform::UpdateDockingSequence(){ }
+void AFGBuildableTrainPlatform::SetupRailroadTrack(){ }
 void AFGBuildableTrainPlatform::FinishDockingSequence(){ }
 void AFGBuildableTrainPlatform::OnRep_UpdateDockingStatus(){ }
 void AFGBuildableTrainPlatform::ReverseConnectionDirections(){ }

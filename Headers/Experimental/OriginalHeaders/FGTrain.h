@@ -50,6 +50,21 @@ enum class ETrainDockingState : uint8
 	TDS_Docked			UMETA( DisplayName = "Docked" )
 };
 
+/** Global constants for trains. */
+struct TrainConstants
+{
+	// At which distance can a station start catching the train. [cm]
+	static float CATCH_DISTANCE;
+	// At which offset should a locomotive stop at a signal or station. [cm]
+	static float STOP_OFFSET;
+	// At which distance a locomotive can dock to a station. [cm]
+	static float DOCK_DISTANCE;
+	// At which speed is docking allowed. [cm/s]
+	static float DOCK_SPEED;
+	// This is the speed on a restricted section, e.g. before docking. [cm/s]
+	static float RESTRICTED_SPEED;
+};
+
 /**
  * Describes the static properties of a train consist.
  * I.e. the locomotives, railcars, length and tare weight.
@@ -142,9 +157,6 @@ public:
 	TWeakObjectPtr< UFGRailroadTrackConnectionComponent > CurrentConnection = nullptr;
 	float CurrentConnectionDistance = 0.f;
 
-	/** The goal connection. */
-	TWeakObjectPtr< UFGRailroadTrackConnectionComponent > GoalConnection = nullptr;
-
 	/**
 	 * Connection points ahead we'll pass on our way forward and the distance to them.
 	 * Does not contain a point that is only a pass-through (not relevant).
@@ -157,9 +169,11 @@ public:
 	float TargetSpeed = 0.f;
 
 	/**
-	 * Next upcoming signal
+	 * Next upcoming signal.
 	 * A signal in this context is something that announces a change in speed, e.g. a station we should dock to.
+	 * This is not necessarily the first signal that appears in target points but rather the most restricting for our speed.
 	 */
+	TWeakObjectPtr< UFGRailroadTrackConnectionComponent > NextSignalConnection = nullptr;
 	float NextSignalSpeed = 0.f;
 	float NextSignalDistance = 0.f;
 	float NextSignalGrade = 0.f; // [%]
@@ -310,6 +324,9 @@ public:
 	/** Get the track for this train. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Train" )
 	int32 GetTrackGraphID() const { return mTrackGraphID; }
+
+	/** Is this train driven by a player. */
+	bool IsPlayerDriven() const;
 
 	/** @return true if the train has the autopilot enabled. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|SelfDriving" )

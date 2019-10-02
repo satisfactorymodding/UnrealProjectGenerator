@@ -74,12 +74,13 @@ struct FRailroadGraphAStarPathPoint
 	/** Default constructor, epic passes INDEX_NONE when creating a "null" point. */
 	FRailroadGraphAStarPathPoint( int32 unused = INDEX_NONE );
 	FRailroadGraphAStarPathPoint( UFGRailroadTrackConnectionComponent* connection );
+	FRailroadGraphAStarPathPoint( UFGRailroadTrackConnectionComponent* connection, bool ignoredStart );
 	FRailroadGraphAStarPathPoint( const FRailroadGraphAStarPathPoint& point );
 	
 	/** Compare two nodes. */
 	FORCEINLINE friend bool operator==( const FRailroadGraphAStarPathPoint& nodeA, const FRailroadGraphAStarPathPoint& nodeB )
 	{
-		return nodeA.TrackConnection == nodeB.TrackConnection;
+		return nodeA.TrackConnection == nodeB.TrackConnection && nodeA.IgnoredStart == nodeB.IgnoredStart;
 	}
 	FORCEINLINE friend bool operator!=( const FRailroadGraphAStarPathPoint& nodeA, const FRailroadGraphAStarPathPoint& nodeB )
 	{
@@ -97,6 +98,9 @@ struct FRailroadGraphAStarPathPoint
 public:
 	/** When navigating though a rail network, we only need to know the next connection to go to. */
 	UFGRailroadTrackConnectionComponent* TrackConnection;
+
+	/** This will ensure that this start does not match the end. */
+	bool IgnoredStart;
 };
 
 /**
@@ -163,14 +167,16 @@ private:
 	/**
 	 * Finds a path from one railroad connection to another.
 	 *
-	 * @param start           Next connection ahead of us.
-	 * @param end             Connection we want to path find to.
-	 * @param out_pathPoints  The resulting path, empty on error.
+	 * @param start				Next connection ahead of us.
+	 * @param end				Connection we want to path find to.
+	 * @param hasStartPassedEnd If the start and end is on the same track but we've passed the stopping point.
+	 * @param out_pathPoints	The resulting path, empty on error.
 	 *
 	 * @return Result of the pathfinding. I.e. if a path was found, goal is unreachable or if an error occurred, e.g. bad params.
 	 */
 	static EGraphAStarResult FindPathSyncInternal(
 		UFGRailroadTrackConnectionComponent* start,
 		UFGRailroadTrackConnectionComponent* end,
+		bool hasStartPassedEnd,
 		TArray< FRailroadGraphAStarPathPoint >& out_pathPoints );
 };

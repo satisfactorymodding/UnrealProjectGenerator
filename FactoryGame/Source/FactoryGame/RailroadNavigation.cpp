@@ -6,6 +6,7 @@ FRailroadPathPoint::FRailroadPathPoint(){ }
 FRailroadPathFindingResult::FRailroadPathFindingResult(){ }
 FRailroadGraphAStarPathPoint::FRailroadGraphAStarPathPoint( int32 unused ){ }
 FRailroadGraphAStarPathPoint::FRailroadGraphAStarPathPoint( UFGRailroadTrackConnectionComponent* connection){ }
+FRailroadGraphAStarPathPoint::FRailroadGraphAStarPathPoint( UFGRailroadTrackConnectionComponent* connection, bool ignoredStart){ }
 FRailroadGraphAStarPathPoint::FRailroadGraphAStarPathPoint( const FRailroadGraphAStarPathPoint& point){ }
 int32 FRailroadGraphAStarHelper::GetNeighbourCount( const FRailroadGraphAStarPathPoint& nodeRef) const{ return int32(); }
 bool FRailroadGraphAStarHelper::IsValidRef( const FRailroadGraphAStarPathPoint& nodeRef) const{ return bool(); }
@@ -22,4 +23,5 @@ FRailroadPathFindingResult FRailroadNavigation::FindPathSync(
 EGraphAStarResult FRailroadNavigation::FindPathSyncInternal(
 		UFGRailroadTrackConnectionComponent* start,
 		UFGRailroadTrackConnectionComponent* end,
+		bool hasStartPassedEnd,
 		TArray< FRailroadGraphAStarPathPoint >& out_pathPoints){ return EGraphAStarResult(); }

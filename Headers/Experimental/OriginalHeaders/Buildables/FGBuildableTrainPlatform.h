@@ -67,14 +67,14 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Platform" )
 	ETrainPlatformDockingStatus GetDockingStatus() const { return mPlatformDockingStatus; }
 
+	/** Timer Sequence Function to progress and handle all logic for docking
+	 *	When a platform is docked, a timer handle is created that updates the dock sequence until its completion that calls this function each step
+	 */
+	virtual	void UpdateDockingSequence();
+
 protected:
 	/** his needs to happed from the hologram and from begin play */
 	virtual void SetupRailroadTrack();
-
-	/** Timer Sequence Function to progress and handle all logic for docking
-	*	When a platform is docked, a timer handle is created that updates the dock sequence until its completion that calls this function each step
-	*/
-	virtual	void UpdateDockingSequence();
 
 	/** Call to clear all docking related properties, overrides should always call super */
 	virtual void FinishDockingSequence();

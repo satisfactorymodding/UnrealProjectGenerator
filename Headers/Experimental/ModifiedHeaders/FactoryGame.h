@@ -56,7 +56,7 @@ DECLARE_LOG_CATEGORY_EXTERN( LogFactory, Warning, All );
 DECLARE_LOG_CATEGORY_EXTERN( LogNetConveyorBelt, Warning, All );
 DECLARE_LOG_CATEGORY_EXTERN( LogNetFoliageRemoval, Warning, All );
 DECLARE_LOG_CATEGORY_EXTERN( LogPower, Warning, All );
-DECLARE_LOG_CATEGORY_EXTERN( LogRailroad, Log, All );
+DECLARE_LOG_CATEGORY_EXTERN( LogRailroad, Warning, All );
 DECLARE_LOG_CATEGORY_EXTERN( LogBuildGun, Warning, All );
 DECLARE_LOG_CATEGORY_EXTERN( LogHologram, Warning, All );
 DECLARE_LOG_CATEGORY_EXTERN( LogSave, Display, All );
