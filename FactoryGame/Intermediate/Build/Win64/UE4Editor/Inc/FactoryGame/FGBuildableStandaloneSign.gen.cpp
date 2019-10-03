@@ -403,7 +403,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStandaloneSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStandaloneSign, 2294776651);
+	IMPLEMENT_CLASS(AFGBuildableStandaloneSign, 3805729245);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableStandaloneSign(Z_Construct_UClass_AFGBuildableStandaloneSign, &AFGBuildableStandaloneSign::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableStandaloneSign"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableStandaloneSign);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 341780952);
+	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 3493690420);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAutomatedWorkBench(Z_Construct_UClass_AFGBuildableAutomatedWorkBench, &AFGBuildableAutomatedWorkBench::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAutomatedWorkBench"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAutomatedWorkBench);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

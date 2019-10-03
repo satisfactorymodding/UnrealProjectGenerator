@@ -356,7 +356,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 532725858);
+	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 447396905);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadTrack(Z_Construct_UClass_AFGBuildableRailroadTrack, &AFGBuildableRailroadTrack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadTrack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadTrack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWalkway() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWalkway, 2536083019);
+	IMPLEMENT_CLASS(AFGBuildableWalkway, 1410793411);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWalkway(Z_Construct_UClass_AFGBuildableWalkway, &AFGBuildableWalkway::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWalkway"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWalkway);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

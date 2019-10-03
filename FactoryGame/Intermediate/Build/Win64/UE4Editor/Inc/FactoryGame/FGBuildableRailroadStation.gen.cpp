@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadStation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadStation, 1330964671);
+	IMPLEMENT_CLASS(AFGBuildableRailroadStation, 110156876);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadStation(Z_Construct_UClass_AFGBuildableRailroadStation, &AFGBuildableRailroadStation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadStation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadStation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

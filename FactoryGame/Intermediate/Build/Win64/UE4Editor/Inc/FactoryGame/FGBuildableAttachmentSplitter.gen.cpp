@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentSplitter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 4138241934);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentSplitter, 3923026405);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAttachmentSplitter(Z_Construct_UClass_AFGBuildableAttachmentSplitter, &AFGBuildableAttachmentSplitter::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAttachmentSplitter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAttachmentSplitter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

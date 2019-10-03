@@ -179,7 +179,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorAttachment, 1585154690);
+	IMPLEMENT_CLASS(AFGBuildableConveyorAttachment, 2728934804);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorAttachment(Z_Construct_UClass_AFGBuildableConveyorAttachment, &AFGBuildableConveyorAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

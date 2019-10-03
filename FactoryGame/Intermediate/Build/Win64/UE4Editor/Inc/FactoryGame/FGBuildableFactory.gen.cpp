@@ -2210,7 +2210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactory, 2940012169);
+	IMPLEMENT_CLASS(AFGBuildableFactory, 3595219550);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFactory(Z_Construct_UClass_AFGBuildableFactory, &AFGBuildableFactory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFactory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFactory);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

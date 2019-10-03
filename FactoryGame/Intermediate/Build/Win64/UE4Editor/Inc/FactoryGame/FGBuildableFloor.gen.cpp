@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFloor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFloor, 3916384018);
+	IMPLEMENT_CLASS(AFGBuildableFloor, 709899930);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFloor(Z_Construct_UClass_AFGBuildableFloor, &AFGBuildableFloor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFloor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFloor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

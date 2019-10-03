@@ -557,7 +557,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableManufacturer, 352336830);
+	IMPLEMENT_CLASS(AFGBuildableManufacturer, 3922955432);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableManufacturer(Z_Construct_UClass_AFGBuildableManufacturer, &AFGBuildableManufacturer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableManufacturer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableManufacturer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

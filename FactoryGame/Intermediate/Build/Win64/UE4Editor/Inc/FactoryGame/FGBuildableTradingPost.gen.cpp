@@ -732,7 +732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableTradingPost, 2732032045);
+	IMPLEMENT_CLASS(AFGBuildableTradingPost, 1577334587);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableTradingPost(Z_Construct_UClass_AFGBuildableTradingPost, &AFGBuildableTradingPost::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableTradingPost"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableTradingPost);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

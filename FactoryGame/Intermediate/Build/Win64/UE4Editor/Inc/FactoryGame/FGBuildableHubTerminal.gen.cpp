@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 2957111166);
+	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 1205048038);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableHubTerminal(Z_Construct_UClass_AFGBuildableHubTerminal, &AFGBuildableHubTerminal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableHubTerminal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableHubTerminal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStair() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStair, 535582115);
+	IMPLEMENT_CLASS(AFGBuildableStair, 2750213887);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableStair(Z_Construct_UClass_AFGBuildableStair, &AFGBuildableStair::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableStair"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableStair);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

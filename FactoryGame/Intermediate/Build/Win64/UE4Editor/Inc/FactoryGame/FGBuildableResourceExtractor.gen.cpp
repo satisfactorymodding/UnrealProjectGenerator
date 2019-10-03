@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 2333007835);
+	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 2010998989);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableResourceExtractor(Z_Construct_UClass_AFGBuildableResourceExtractor, &AFGBuildableResourceExtractor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableResourceExtractor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableResourceExtractor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

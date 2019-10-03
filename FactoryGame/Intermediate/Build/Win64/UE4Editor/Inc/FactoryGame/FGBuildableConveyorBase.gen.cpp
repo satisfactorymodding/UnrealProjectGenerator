@@ -541,7 +541,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 3224304780);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 2977900725);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorBase(Z_Construct_UClass_AFGBuildableConveyorBase, &AFGBuildableConveyorBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorBase);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildableConveyorBase)

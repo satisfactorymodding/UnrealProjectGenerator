@@ -581,7 +581,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 1193337232);
+	IMPLEMENT_CLASS(AFGBuildableSplitterSmart, 3173924693);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSplitterSmart(Z_Construct_UClass_AFGBuildableSplitterSmart, &AFGBuildableSplitterSmart::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSplitterSmart"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSplitterSmart);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

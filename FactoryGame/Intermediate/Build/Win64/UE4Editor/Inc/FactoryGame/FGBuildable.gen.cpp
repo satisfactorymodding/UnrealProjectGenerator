@@ -47,7 +47,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ReapplyColorSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_RemoveHighlightEffect();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildable_ShowHighlightEffect();
-	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRecipe_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FItemAmount();
@@ -57,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFactoryTickFunction();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableHologram_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGDismantleInterface_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
@@ -773,10 +773,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHighlightLocation_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mHighlightLocation;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCachedShapeComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mCachedShapeComponent;
@@ -883,6 +879,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mFactoryTickFunction;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mHighlightVector_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mHighlightVector;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mDescription_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FTextPropertyParams NewProp_mDescription;
@@ -933,15 +933,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		{ "ToolTip", "Base for everything buildable, buildable things can have factory connections, power connections etc.\n\nThere are two tick functions on buildables, PrimaryActorTick and FactoryTick.\nPrimaryActorTick is disabled when the buildable is to far away to to not waste cycles on animations and other effects.\nFactoryTick is always enabled (as long as bCanEverTick is true) so that the factory part of buildings always can simulate." },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightLocation_MetaData[] = {
-		{ "Category", "FGBuildable" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
-		{ "ToolTip", "Component used to determine highlighteffects location" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightLocation = { UE4CodeGen_Private::EPropertyClass::Object, "mHighlightLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080009, 1, nullptr, STRUCT_OFFSET(AFGBuildable, mHighlightLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightLocation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1160,6 +1151,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mFactoryTickFunction = { UE4CodeGen_Private::EPropertyClass::Struct, "mFactoryTickFunction", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildable, mFactoryTickFunction), Z_Construct_UScriptStruct_FFactoryTickFunction, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mFactoryTickFunction_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mFactoryTickFunction_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData[] = {
+		{ "Category", "Buildable" },
+		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
+		{ "ToolTip", "Vector used to determine highlighteffects location" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector = { UE4CodeGen_Private::EPropertyClass::Struct, "mHighlightVector", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildable, mHighlightVector), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDescription_MetaData[] = {
 		{ "Category", "Buildable" },
 		{ "ModuleRelativePath", "Buildables/FGBuildable.h" },
@@ -1185,7 +1184,6 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass = { UE4CodeGen_Private::EPropertyClass::Class, "mHologramClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildable, mHologramClass), Z_Construct_UClass_AFGBuildableHologram_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildable_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mCachedShapeComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuildTimeStamp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mBuiltWithRecipe,
@@ -1213,6 +1211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mSecondaryColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mPrimaryColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mFactoryTickFunction,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHighlightVector,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDescription,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mDisplayName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildable_Statics::NewProp_mHologramClass,
@@ -1246,7 +1245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildable, 262393607);
+	IMPLEMENT_CLASS(AFGBuildable, 2320771547);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildable(Z_Construct_UClass_AFGBuildable, &AFGBuildable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildable);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildable)

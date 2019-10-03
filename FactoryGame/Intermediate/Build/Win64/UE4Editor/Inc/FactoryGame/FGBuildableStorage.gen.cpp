@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStorage, 4168585162);
+	IMPLEMENT_CLASS(AFGBuildableStorage, 77871324);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableStorage(Z_Construct_UClass_AFGBuildableStorage, &AFGBuildableStorage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableStorage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableStorage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

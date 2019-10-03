@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePole, 2673526711);
+	IMPLEMENT_CLASS(AFGBuildablePole, 2506394105);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildablePole(Z_Construct_UClass_AFGBuildablePole, &AFGBuildablePole::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildablePole"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildablePole);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

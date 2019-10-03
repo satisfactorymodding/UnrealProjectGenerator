@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleStackable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 717057235);
+	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 1891825645);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorPoleStackable(Z_Construct_UClass_AFGConveyorPoleStackable, &AFGConveyorPoleStackable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorPoleStackable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorPoleStackable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -354,6 +354,10 @@ public:
 	/** Delegate will trigger whenever the actor's use state has changed (Start, End) */
 	static FOnRegisteredPlayerChanged OnRegisterPlayerChange;
 
+	/** Vector used to determine highlighteffects location */
+	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
+	FVector mHighlightVector;
+
 protected:
 	//@todorefactor With meta = ( ShowOnlyInnerProperties ) it does not show and PrimaryActorTick seems to be all custom properties, so I moved to another category but could not expand.
 	/** Controls if we should receive Factory_Tick and how frequent. */
@@ -504,10 +508,6 @@ private:
 	/** Caching the shapecomponent once we have gotten it */
 	UPROPERTY()
 	UShapeComponent* mCachedShapeComponent;
-
-	/** Component used to determine highlighteffects location */
-	UPROPERTY( EditAnywhere )
-	USceneComponent* mHighlightLocation;
 
 	TMap<class UMeshComponent*, TArray<class UMaterialInterface*>> mCachedMeshMaterials;
 };

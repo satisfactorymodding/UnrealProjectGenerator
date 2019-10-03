@@ -446,8 +446,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildable); \
 	FORCEINLINE static uint32 __PPO__mInteractingPlayers() { return STRUCT_OFFSET(AFGBuildable, mInteractingPlayers); } \
 	FORCEINLINE static uint32 __PPO__mBuiltWithRecipe() { return STRUCT_OFFSET(AFGBuildable, mBuiltWithRecipe); } \
 	FORCEINLINE static uint32 __PPO__mBuildTimeStamp() { return STRUCT_OFFSET(AFGBuildable, mBuildTimeStamp); } \
-	FORCEINLINE static uint32 __PPO__mCachedShapeComponent() { return STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent); } \
-	FORCEINLINE static uint32 __PPO__mHighlightLocation() { return STRUCT_OFFSET(AFGBuildable, mHighlightLocation); }
+	FORCEINLINE static uint32 __PPO__mCachedShapeComponent() { return STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent); }
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_41_PROLOG \
