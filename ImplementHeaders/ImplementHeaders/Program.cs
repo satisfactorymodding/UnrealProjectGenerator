@@ -12,17 +12,14 @@ namespace ImplementHeaders
         private static bool CountOnly = false;
         private static int FunctionCount;
 
+        // TODO: Finish the c++ parser so that these workarounds can be replaced with something that doesn't require maintenance
         private static readonly string[] NeedsSuper = new string[] { "Serialize", "OnRegister", "OnUnregister", "PostLoad", "BeginDestroy", "PostInitProperties", "PostInitializeComponents", "CreateRenderState_Concurrent" };
 
         private static readonly Dictionary<string, string> CustomImplementation = new Dictionary<string, string>()
         {
             {
             "AFGBuildable::AFGBuildable",
-@"  RootComponent = CreateDefaultSubobject<USceneComponent>(""RootComponent"");
-
-
-    mHighlightLocation = CreateDefaultSubobject<USceneComponent>(TEXT(""HighlightLocation""));
-    mHighlightLocation->SetupAttachment(RootComponent);"
+@"  RootComponent = CreateDefaultSubobject<USceneComponent>(""RootComponent"");"
             },
             {
             "AFGBuildableConveyorBelt::AFGBuildableConveyorBelt",
