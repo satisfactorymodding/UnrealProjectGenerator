@@ -15,9 +15,17 @@ TArray< FInventoryStack > UFGBuildGunStateDismantle::GetDismantleRefund() const{
 bool UFGBuildGunStateDismantle::CanBeginBuildGunDelay() const{ return bool(); }
 void UFGBuildGunStateDismantle::BeginBuildGunDelay(){ }
 void UFGBuildGunStateDismantle::ResetBuildGunDelay(){ }
-void UFGBuildGunStateDismantle::SetSelectedActor(  AActor* selected){ }
+void UFGBuildGunStateDismantle::Internal_OnMultiDismantleStateChanged(bool newValue){ }
 void UFGBuildGunStateDismantle::Server_DismantleActor_Implementation(  AActor* actorToDismantle){ }
 bool UFGBuildGunStateDismantle::Server_DismantleActor_Validate(  AActor* actorToDismantle){ return bool(); }
-void UFGBuildGunStateDismantle::Server_PeekAtDismantleRefund_Implementation(  AActor* selected){ }
-bool UFGBuildGunStateDismantle::Server_PeekAtDismantleRefund_Validate(  AActor* selected){ return bool(); }
+void UFGBuildGunStateDismantle::Server_DismantleActors_Implementation( const TArray<class AActor*>& selectedActors){ }
+bool UFGBuildGunStateDismantle::Server_DismantleActors_Validate( const TArray<class AActor*>& selectedActors){ return bool(); }
+void UFGBuildGunStateDismantle::Server_PeekAtDismantleRefund_Implementation( const TArray<class AActor*>& selectedActors){ }
+bool UFGBuildGunStateDismantle::Server_PeekAtDismantleRefund_Validate( const TArray<class AActor*>& selectedActors){ return bool(); }
 void UFGBuildGunStateDismantle::OnRep_PeekDismantleRefund(){ }
+void UFGBuildGunStateDismantle::SetAimedAtActor(  AActor* selected){ }
+void UFGBuildGunStateDismantle::AddPendingDismantleActor(  AActor* selected){ }
+void UFGBuildGunStateDismantle::ClearPendingSelectedActors(){ }
+bool UFGBuildGunStateDismantle::DoesReplicatedPeekDataMatch() const{ return bool(); }
+void UFGBuildGunStateDismantle::UpdatePeekDismantleRefunds(){ }
+void UFGBuildGunStateDismantle::ClearStaleDismantleActors(){ }

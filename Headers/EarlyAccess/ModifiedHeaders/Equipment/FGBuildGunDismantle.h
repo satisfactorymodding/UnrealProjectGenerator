@@ -9,24 +9,30 @@
 #include "../FGInventoryComponent.h"
 #include "FGBuildGunDismantle.generated.h"
 
+static const int MAX_DISMANTLE_LIMIT = 50;
+
 USTRUCT()
 struct FDismantleRefunds
 {
 	GENERATED_BODY()
 
 	/** Ctor */
-		FDismantleRefunds() : SelectedActor(nullptr)
+	FDismantleRefunds()
 	{
+		NumPendingActors = 0;
 	}
 
 	UPROPERTY()
-	class AActor* SelectedActor;
+	uint32 NumPendingActors;
 
 	UPROPERTY()
 	TArray<FInventoryStack> PeekDismantleRefund;
 };
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnDismantleRefundsChanged, class UFGBuildGunStateDismantle*, dismantleGun );
+DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnPendingDismantleActorListChanged );
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnMultiDismantleStateChanged, bool, newState );
+
 
 /**
  * Build guns dismantle state.
@@ -47,12 +53,25 @@ public:
 	virtual void SecondaryFire_Implementation() override;
 	// End UFGBuildGunState
 
-	UPROPERTY( BlueprintAssignable, Category = "BuildGunState|Dismantle" )
-	FOnDismantleRefundsChanged OnPeekRefundsChanged;
+	/** Toggle between whether the multi select should be in effect as actors are being highlighted */
+	UFUNCTION( BlueprintCallable, Category = "BuildGunState|Dismantle" )
+	void SetMultiDismantleState( bool isActive ) { mIsMultiSelectActive = isActive; Internal_OnMultiDismantleStateChanged( isActive ); }
 
 	/** Gets the selected actor; null if none selected. */
 	UFUNCTION( BlueprintPure, Category = "BuildGunState|Dismantle" )
 	class AActor* GetSelectedActor() const;
+
+	/** Returns the number of actors that are pending for dismantle */
+	UFUNCTION( BlueprintPure, Category = "BuildGunState|Dismantle" )
+	FORCEINLINE int32 GetNumPendingDismantleActors( bool includeAimedAtActor ) const { return mCurrentlySelectedActor != nullptr && includeAimedAtActor ? mPendingDismantleActors.Num() + 1 : mPendingDismantleActors.Num(); }
+
+	/** Returns the maximum number of actors that can be selected for mass-dismantle */
+	UFUNCTION( BlueprintPure, Category = "BuildGunState|Dismantle" )
+	FORCEINLINE int32 GetMaxNumPendingDismantleActors() const { return MAX_DISMANTLE_LIMIT; }
+	
+	/** Returns true whether the limit for maximum number of actors pending dismantle has been reached */
+	UFUNCTION( BlueprintPure, Category = "BuildGunState|Dismantle" )
+	FORCEINLINE bool HasReachedMaxNumPendingDismantleActors() const { return GetNumPendingDismantleActors( false ) >= MAX_DISMANTLE_LIMIT; }
 
 	UFUNCTION( BlueprintPure, Category = "BuildGunState|Dismantle" )
 	TArray<FInventoryStack> GetPeekDismantleRefund() const;
@@ -82,25 +101,68 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, Category = "BuildGunState" )
 	void OnStartDismantle();
 
-private:
-	/** Set the selected actor (Simulated on client). */
-	void SetSelectedActor( class AActor* selected );
+public:
+	/** Delegate for when the refunds used to preview dismantle refunds have been updated on local machine */
+	UPROPERTY( BlueprintAssignable, Category = "BuildGunState|Dismantle" )
+	FOnDismantleRefundsChanged OnPeekRefundsChanged;
 
-	/** Client selects actor, then tells the server what to dismantle. This function does that! */
+	UPROPERTY( BlueprintAssignable, Category = "BuildGunState|Dismantle" )
+	FOnPendingDismantleActorListChanged OnPendingDismantleActorsChanged;
+
+	UPROPERTY( BlueprintAssignable, Category = "BuildGunState|Dismantle" )
+	FOnMultiDismantleStateChanged OnMultiDismantleStateChanged;
+
+protected:
+	void Internal_OnMultiDismantleStateChanged(bool newValue);
+
+private:
 	UFUNCTION( Server, Reliable, WithValidation )
 	void Server_DismantleActor( class AActor* actorToDismantle );
 
+	/** Client selects actor, then tells the server what to dismantle. This function does that! */
 	UFUNCTION( Server, Reliable, WithValidation )
-	void Server_PeekAtDismantleRefund( class AActor* selected );
+	void Server_DismantleActors( const TArray<class AActor*>& selectedActors );
+
+	UFUNCTION( Server, Reliable, WithValidation )
+	void Server_PeekAtDismantleRefund( const TArray<class AActor*>& selectedActors );
 
 	UFUNCTION()
 	virtual void OnRep_PeekDismantleRefund();
 
-private:
-	/** The actor to dismantle (simulated locally on client). */
-	UPROPERTY()
-	class AActor* mSelectedActor;
+	/** Set the selected actor (Simulated on client). Deselects the actor is selected param is nullptr */
+	void SetAimedAtActor( class AActor* selected );
 
+	/** Adds dismantlable actors to the list of pending dismantles */
+	void AddPendingDismantleActor( class AActor* selected );
+
+	/** Clears the list of pending dismantable actors */
+	void ClearPendingSelectedActors();
+
+	/** Checks whether or not the replicated data for inventory peeking matches the state for client */
+	bool DoesReplicatedPeekDataMatch() const;
+
+	/** Sends server request to update the current dismantle refunds preview */
+	void UpdatePeekDismantleRefunds();
+
+	/** Validates the list of pending dismantle actors and removes any stale pointers */
+	void ClearStaleDismantleActors();
+
+private:
+	/** State bool for whether multi-select is in effect */
+	bool mIsMultiSelectActive;
+
+	/** If true then this state won't broadcast when peek refunds have been updated. Used so that there won't be more than one broadcast per tick. */
+	bool mDisablePeekDismantleRefundsBroadcast;
+
+	/** Currently selected dismantable actor */
+	UPROPERTY( Transient )
+	class AActor* mCurrentlySelectedActor;
+
+	/** The actor to dismantle (simulated locally on client). */
+	UPROPERTY(Transient)
+	TArray<class AActor*> mPendingDismantleActors;
+	
+	/** Cached dismantle refunds on server that is replicated */
 	UPROPERTY(Transient, ReplicatedUsing = OnRep_PeekDismantleRefund )
 	FDismantleRefunds mPeekDismantleRefund;
 };

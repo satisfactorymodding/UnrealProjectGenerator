@@ -1,4 +1,5 @@
 #pragma once
+#include "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h"
 #include "UObject/Class.h"
 
 #include "Object.h"

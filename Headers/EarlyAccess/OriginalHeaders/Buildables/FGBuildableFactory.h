@@ -215,13 +215,17 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Factory|Significance" )
 	FORCEINLINE bool GetIsSignificant() { return mIsSignificant; }
 
-	/** Called when we want the looping SFX/VFX for production to start */
+	/** Called when we want the looping SFX/VFX for production to start
+	  * @param didStartProducing - true if factory just started producing
+	  */
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "FactoryGame|Factory|Effects" )
-	void StartProductionLoopEffects();
+	void StartProductionLoopEffects( bool didStartProducing );
 
-	/** Called when we want the looping SFX/VFX for production to stop */
+	/** Called when we want the looping SFX/VFX for production to stop 
+	  * @param didStopProducing - true if the production stopped 
+	  */
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "FactoryGame|Factory|Effects" )
-	void StopProductionLoopEffects();
+	void StopProductionLoopEffects( bool didStopProducing );
 
 	/** Called when we want the looping SFX/VFX for idling ( power but no production ) to start */
 	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "FactoryGame|Factory|Effects" )

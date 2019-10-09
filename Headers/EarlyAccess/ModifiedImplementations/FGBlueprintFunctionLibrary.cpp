@@ -29,6 +29,8 @@ void UFGBlueprintFunctionLibrary::AddAudioVolumeToSignificanceManager( UObject* 
 void UFGBlueprintFunctionLibrary::RemoveAudioVolumeFromSignificanceManager( UObject* WorldContextObject, UObject* obj){ }
 void UFGBlueprintFunctionLibrary::AddAmbientSoundSplineToSignificanceManager( UObject* WorldContextObject, UObject* obj){ }
 void UFGBlueprintFunctionLibrary::RemoveAmbientSoundSplineFromSignificanceManager( UObject* WorldContextObject, UObject* obj){ }
+void UFGBlueprintFunctionLibrary::AddTrainToSignificanceManager( UObject* WorldContextObject, UObject* obj){ }
+void UFGBlueprintFunctionLibrary::RemoveTrainFromSignificanceManager( UObject* WorldContextObject, UObject* obj){ }
 bool UFGBlueprintFunctionLibrary::ImpactEffectIsRelevant( UObject* worldContext, APawn* instigator, FVector spawnLocation, float visibleCullDistance , float alwaysSuccessDistance , bool skipLOSCheck ){ return bool(); }
 bool UFGBlueprintFunctionLibrary::ImpactEffectIsWithinDistance( UObject* worldContext, APawn* instigator, FVector spawnLocation, float visibleCullDistance ){ return bool(); }
 bool UFGBlueprintFunctionLibrary::IsLocallyHumanControlled( APawn* pawn){ return bool(); }

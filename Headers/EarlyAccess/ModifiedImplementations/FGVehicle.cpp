@@ -15,6 +15,10 @@ UPawnMovementComponent* AFGVehicle::GetMovementComponent() const{ return nullptr
 void AFGVehicle::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGVehicle::PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void AFGVehicle::PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
+void AFGVehicle::GainedSignificance_Implementation(){ }
+void AFGVehicle::LostSignificance_Implementation(){ }
+float AFGVehicle::GetSignificanceBias(){ return float(); }
+float AFGVehicle::GetSignificanceRange(){ return float(); }
 void AFGVehicle::SetPrimaryColor_Implementation( FLinearColor newColor){ }
 void AFGVehicle::SetSecondaryColor_Implementation( FLinearColor newColor){ }
 FLinearColor AFGVehicle::GetPrimaryColor_Implementation(){ return FLinearColor(); }

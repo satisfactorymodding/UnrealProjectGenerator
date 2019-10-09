@@ -5,6 +5,8 @@
 #include "UObject/Class.h"
 
 #include "CoreMinimal.h"
+#include "Buildables/FGBuildableFactory.h"
+#include "FGBuildableRailroadTrack.h"
 #include "FGBuildableFactory.h"
 #include "FGBuildableTrainPlatform.generated.h"
 
@@ -27,13 +29,12 @@ UCLASS( )
 class FACTORYGAME_API AFGBuildableTrainPlatform : public AFGBuildableFactory
 {
 	GENERATED_BODY()
-	
 public:
-	//ctor
 	AFGBuildableTrainPlatform();
 
-	// Replication
+	// Begin Actor interface
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+	// End Actor interface
 
 	// Begin save interface
 	virtual void PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
@@ -50,44 +51,33 @@ public:
 	virtual bool IsUseable_Implementation() const override;
 	//~ End IFGUseableInterface
 
-	/** Get the platform that preceeds this platform
+	//@todotrains Get rid of the dependency on track position in platforms.
+	FRailroadTrackPosition GetTrackPosition() const;
+	int32 GetTrackGraphID() const;
+
+	/** Get the platform that precedes this platform
 	*	@param direction - 0 or 1 
 	*	@info this can be null if the platform in the specified direction does not exist
 	*/
 	AFGBuildableTrainPlatform* GetConnectedPlatformInDirectionOf( uint8 direction );
 
-	/** Notify the platform of its child track that is constucted by the train platform to be used for dismantling */
-	void AssignChildTrackBuildable( class AFGBuildableRailroadTrack* railroadTrack );
-
-	/** Get the Buildable Track that was constructed from the buildable hologram */
-	class AFGBuildableRailroadTrack* GetChildTrackBuildable();
-
-	/** Returns all the connection components */
-	TArray<class UFGTrainPlatformConnection*> GetPlatformConnectionComponents();
-
-	/** Should this register? Does the subsystem really need to know I exist */
-	virtual bool ShouldRegisterOnTrack();
-
-	/** Reverse the direction of the connection components in this platform */
-	virtual void ReverseConnectionDirections();
-
 	/** When a locomotive docks it will call this on relevant children in the direction of its output. It is up to the platform to decide how to act */
-	virtual void NotifyTrainDocked( class AFGRailroadVehicle* railroadVehicle, class AFGBuildableRailroadStation* initiaedByStation );
-
-	/** Set the orientation in regards to the track. Is it reversed? */
-	void SetIsOrientationReversed( bool isReversed ) { mIsOrientationReversed = isReversed; }
+	virtual void NotifyTrainDocked( class AFGRailroadVehicle* railroadVehicle, class AFGBuildableRailroadStation* initiatedByStation );
 
 	/** Is this platform reversed? */
-	FORCEINLINE bool GetIsOrientationReversed() const { return mIsOrientationReversed; }
+	FORCEINLINE bool IsOrientationReversed() const { return mIsOrientationReversed; }
 
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Railroad|Platform" )
 	ETrainPlatformDockingStatus GetDockingStatus() const { return mPlatformDockingStatus; }
 
-protected:
 	/** Timer Sequence Function to progress and handle all logic for docking
-	*	When a platform is docked, a timer handle is created that updates the dock sequence until its completion that calls this function each step
-	*/
+	 *	When a platform is docked, a timer handle is created that updates the dock sequence until its completion that calls this function each step
+	 */
 	virtual	void UpdateDockingSequence();
+
+protected:
+	/** his needs to happed from the hologram and from begin play */
+	virtual void SetupRailroadTrack();
 
 	/** Call to clear all docking related properties, overrides should always call super */
 	virtual void FinishDockingSequence();
@@ -95,6 +85,11 @@ protected:
 	/** Update the docking status of Clients */
 	UFUNCTION()
 	virtual void OnRep_UpdateDockingStatus();
+
+private:
+	/** Used by the hologram to configure this platform. */
+	void ReverseConnectionDirections();
+	void AssignRailroadTrack( class AFGBuildableRailroadTrack* track );
 
 protected:
 	UPROPERTY( SaveGame )
@@ -104,7 +99,8 @@ protected:
 	*	They are individual components so that they appear correctly in the blueprint editor. If anyone sees this and knows a way to make containers
 	*	of components be editable when inherited @me (dylan)
 	*/
-	TArray<class UFGTrainPlatformConnection*> mPlatformConnections;
+	UPROPERTY()
+	TArray< class UFGTrainPlatformConnection* > mPlatformConnections;
 	
 	UPROPERTY( EditAnywhere )
 	class UFGTrainPlatformConnection* mPlatformConnection0;
@@ -124,7 +120,7 @@ protected:
 	bool mIsOrientationReversed;
 
 	// Where are we in the docking status. Updated by the mDockingSequenceTimer which is set by NotifyTrainDocked
-	UPROPERTY( ReplicatedUsing=OnRep_UpdateDockingStatus )
+	UPROPERTY( ReplicatedUsing = OnRep_UpdateDockingStatus )
 	ETrainPlatformDockingStatus mPlatformDockingStatus;
 
 	// The save state value to write for the stations docking status. It is modified in presave to force a docking reset if saved part way through.
@@ -136,4 +132,6 @@ protected:
 	UPROPERTY()
 	FTimerHandle mDockingSequenceTimerHandle;
 
+private:
+	friend class AFGTrainPlatformHologram; //@todotrains use this instead of setters and getters for everything.
 };

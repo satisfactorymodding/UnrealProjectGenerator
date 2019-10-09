@@ -235,6 +235,8 @@ public:
 	void OnNoSnapModePressed();
 	void OnSnapToGuideLinesPressed();
 	void OnSnapToGuideLinesReleased();
+	void OnDismantleToggleMultiSelectStatePressed();
+	void OnDismantleToggleMultiSelectStateReleased();
 
 	/**
 	 * Only the client handles categories, recipes.

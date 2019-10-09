@@ -36,6 +36,9 @@ public:
 	 */
 	void SetLocationAndRotationFromPlatformConnections( class UFGTrainPlatformConnection* connectionOne, class UFGTrainPlatformConnection* connectionTwo );
 
+	/** Get a reference to the stored snapped connection references (excludes null snapped compoents ) */
+	TArray<class UFGRailroadTrackConnectionComponent*> GetSnappedConnectionComponents();
+
 protected:
 	// Begin AFGBuildableHologram interface
 	virtual void CheckValidPlacement() override;

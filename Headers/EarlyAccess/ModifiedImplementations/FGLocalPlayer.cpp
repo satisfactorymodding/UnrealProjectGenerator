@@ -20,6 +20,7 @@ void UFGLocalPlayer::SetupServerAndTravelToMap( const FString& mapName, const FS
 void UFGLocalPlayer::CopySessionPresence( const TSharedRef<FOnlineUserPresence>& presence){ }
 void UFGLocalPlayer::UpdatePresence(){ }
 void UFGLocalPlayer::OnInviteReceived( const FPendingInvite& invite){ }
+void UFGLocalPlayer::RefreshRecentRegisteredEpicIdLogin(){ }
 void UFGLocalPlayer::OnLoginStatusChanged( int32 localUserNum, ELoginStatus::Type previous, ELoginStatus::Type current, const FUniqueNetId& userId){ }
 void UFGLocalPlayer::OnLoginComplete( int32 localUserNum, bool wasSuccessful, const FUniqueNetId& userId, const FString& error){ }
 void UFGLocalPlayer::OnAutoLoginComplete( int32 localUserNum, bool wasSuccessful, const FUniqueNetId& userId, const FString& error){ }

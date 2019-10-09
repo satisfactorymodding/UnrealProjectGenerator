@@ -8,19 +8,18 @@ FRailroadTrackPosition::FRailroadTrackPosition( const FRailroadTrackPosition& po
 FRailroadTrackPosition::~FRailroadTrackPosition(){ }
 bool FRailroadTrackPosition::Serialize( FArchive& ar){ return bool(); }
 void FRailroadTrackPosition::GetWorldLocationAndDirection( FVector& out_location, FVector& out_direction) const{ }
-FVector FRailroadTrackPosition::GetWorldLocation() const{ return FVector(); }
-FVector FRailroadTrackPosition::GetWorldDirection() const{ return FVector(); }
 float FRailroadTrackPosition::GetForwardOffset() const{ return float(); }
 float FRailroadTrackPosition::GetReverseOffset() const{ return float(); }
+UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetForwardConnection() const{ return nullptr; }
+UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetReverseConnection() const{ return nullptr; }
 AFGBuildableRailroadTrack::AFGBuildableRailroadTrack(){ }
 void AFGBuildableRailroadTrack::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableRailroadTrack::BeginPlay(){ }
 void AFGBuildableRailroadTrack::Destroyed(){ }
 void AFGBuildableRailroadTrack::Dismantle_Implementation(){ }
+bool AFGBuildableRailroadTrack::CanDismantle_Implementation() const{ return bool(); }
 FRailroadTrackPosition AFGBuildableRailroadTrack::FindTrackPositionClosestToWorldLocation( const FVector& worldLocation){ return FRailroadTrackPosition(); }
 void AFGBuildableRailroadTrack::GetWorldLocationAndDirectionAtPosition( const  FRailroadTrackPosition& position, FVector& out_location, FVector& out_direction) const{ }
-void AFGBuildableRailroadTrack::RegisterRailroadInterface( UObject* object, const FRailroadTrackPosition& position){ }
-void AFGBuildableRailroadTrack::UnregisterRailroadInterface( UObject* object){ }
 void AFGBuildableRailroadTrack::BuildSplineCollisions(
 		 USplineComponent* spline,
 		const FVector& collisionExtent,

@@ -17,4 +17,4 @@ void AFGRailroadTimeTable::GetStops( TArray< FTimeTableStop >& out_stops) const{
 bool AFGRailroadTimeTable::SetStops( const TArray< FTimeTableStop >& stops){ return bool(); }
 bool AFGRailroadTimeTable::IsValidStop( int32 index) const{ return bool(); }
 FTimeTableStop AFGRailroadTimeTable::GetStop( int32 index) const{ return FTimeTableStop(); }
-void AFGRailroadTimeTable::SetStopDuration( int32 index, float duration){ }
+void AFGRailroadTimeTable::IncrementCurrentStop(){ }

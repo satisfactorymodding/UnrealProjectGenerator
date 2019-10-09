@@ -12,11 +12,6 @@ void AFGBuildableTrainPlatformCargo::SetIsInLoadMode( bool isInLoadMode){ }
 bool AFGBuildableTrainPlatformCargo::GetIsInLoadMode() const{ return bool(); }
 bool AFGBuildableTrainPlatformCargo::IsLoadUnloading() const{ return bool(); }
 float AFGBuildableTrainPlatformCargo::GetDockedVehicleOffset() const{ return float(); }
-void AFGBuildableTrainPlatformCargo::RegisteredOnTrack_Implementation( const FRailroadTrackPosition& position){ }
-void AFGBuildableTrainPlatformCargo::UnregisteredFromTrack_Implementation(){ }
-FRailroadTrackPosition AFGBuildableTrainPlatformCargo::GetTrackPosition_Implementation() const{ return FRailroadTrackPosition(); }
-int32 AFGBuildableTrainPlatformCargo::GetTrackGraphID_Implementation() const{ return int32(); }
-bool AFGBuildableTrainPlatformCargo::ShouldRegisterOnTrack(){ return bool(); }
 void AFGBuildableTrainPlatformCargo::NotifyTrainDocked(  AFGRailroadVehicle* railroadVehicle,  AFGBuildableRailroadStation* initiatedByStation){ }
 void AFGBuildableTrainPlatformCargo::UpdateDockingSequence(){ }
 void AFGBuildableTrainPlatformCargo::UpdatePowerConnectionFromTrack(){ }

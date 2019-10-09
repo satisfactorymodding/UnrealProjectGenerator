@@ -21,10 +21,6 @@ public:
 	 */
 
 	/** Draw a railroad path. */
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|Debug" )
-	static void DrawDebugRailroadPathResult( const FRailroadTrackPosition& start, const FRailroadPathFindingResult& result, bool isPersistentLines = false );
-
-	/** Draw a railroad path. */
 	static void DrawDebugRailroadPath( FRailroadPathSharedPtr path, int32 currentSegment = INDEX_NONE, bool isPersistentLines = false );
 
 	/** Draw a track segment. */

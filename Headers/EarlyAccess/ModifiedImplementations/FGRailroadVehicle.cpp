@@ -10,10 +10,9 @@ void AFGRailroadVehicle::Destroyed(){ }
 void AFGRailroadVehicle::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGRailroadVehicle::Tick( float dt){ }
 bool AFGRailroadVehicle::CanDismantle_Implementation() const{ return bool(); }
-void AFGRailroadVehicle::DockedWithPlatform(  AFGBuildableTrainPlatform* dockedPlatform){ }
-void AFGRailroadVehicle::UndockedWithPlatform(){ }
 void AFGRailroadVehicle::UpdateAnimation(){ }
 UFGRailroadVehicleMovementComponent* AFGRailroadVehicle::GetRailroadVehicleMovementComponent() const{ return nullptr; }
+bool AFGRailroadVehicle::IsDocked() const{ return bool(); }
 void AFGRailroadVehicle::DisplayDebug(  UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 bool AFGRailroadVehicle::IsVehicleNetRelevantFor( const  AFGRailroadVehicle* vehicle, const FVector& SrcLocation) const{ return bool(); }
 void AFGRailroadVehicle::CoupleVehicleAt( AFGRailroadVehicle* vehicle, ERailroadVehicleCoupler coupler){ }

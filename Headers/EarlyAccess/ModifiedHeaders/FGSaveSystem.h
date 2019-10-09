@@ -167,8 +167,14 @@ public:
 	/** Get the path to the save folder */
 	static FString GetSaveDirectoryPath();
 
+	/** Get the path to the save folder for EPIC user ID, will return path to common directory if it fails to get EPIC user ID */
+	static bool GetUserSaveDirectoryPath( const UWorld* world, FString& out_dirPath );
+
+	/** Get the path to the save folder for saves not connected to an EPIC user ID */
+	static FString GetCommonSaveDirectoryPath();
+
 	/** All directories to find save data from */
-	static void GetSourceSaveDirectoriesPaths( TArray<FString>& out_sourceSaves );
+	static void GetSourceSaveDirectoriesPaths( const UWorld* world, TArray<FString>& out_sourceSaves );
 
 	/** Get the save system from a world */
 	static class UFGSaveSystem* Get( class UWorld* world );
@@ -226,7 +232,7 @@ public:
 	 * @param out_absoluteSaveGame - if the function returns true, then the save give outputted here
 	 * @return true if we manage to find a valid save game
 	 */
-	static bool GetAbsolutePathForSaveGame( const FString& saveName, FString& out_absoluteSaveGame );
+	static bool GetAbsolutePathForSaveGame( const UWorld* world, const FString& saveName, FString& out_absoluteSaveGame );
 
 	/**
 	 * Creates a absolute path for a new save game (or when to overwrite a save gave)
@@ -234,7 +240,7 @@ public:
 	 * @param saveName - save name without file extension
 	 * @return the absolute path of the save
 	 */
-	static FString CreateAbsolutePath( const FString& saveName );
+	static FString CreateAbsolutePath( const UWorld* world, const FString& saveName, bool saveInCommonDir );
 
 	/** Sanitize the name of the map, used when saving */
 	static FString SanitizeMapName( const FString& mapName );
@@ -272,6 +278,12 @@ public:
 	 */
 	static bool FindNewObjectName( const FString& oldObjectName, FString& out_newObjectName );
 
+	/** Moves a save file present in /common/ to the currently logged in player's epic ID folder */
+	static bool MoveSaveFileFromCommonToEpicLocation( const UWorld* world, const FString& saveName );
+
+	/** Checks whether or not a save file is present in the common directory */
+	static bool SaveFileExistsInCommonSaveDirectory( const FString& saveName );
+
 	/** Set so that we use our internal saves */
 	static FORCEINLINE void SetUseBundledSaves( bool useInternal ){ mIsUsingBundledSaves = useInternal; }
 
@@ -285,7 +297,7 @@ public:
 	static FORCEINLINE void SetIsVerifyingSaveSystem( bool inVerifying ){ mIsVerifyingSaveSystem = inVerifying; }
 protected:
 	/** Migrate saves to new save location */
-	void MigrateSavesToNewLocation();
+	void MigrateSavesToNewLocation( const FString& oldSaveLocation );
 
 	/** Does the actual searching, searches on SaveLocation for save games */
 	void FindSaveGames_Internal( const FString& saveDirectory, TArray<FSaveHeader>& out_saveGames );
@@ -311,4 +323,8 @@ protected:
 
 	/** We are currently using internal saves */
 	static bool mIsUsingBundledSaves;
+
+private:
+	/** If the old SaveGames folder exists under MyDocuments it will rename it  */
+	void RenameDeprecatedSaveFolder();
 };

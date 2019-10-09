@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGUseableInterface.h"
+#include "FGSignificanceInterface.h"
 #include "FGSaveInterface.h"
 #include "FGAggroTargetInterface.h"
 #include "FGDriveablePawn.h"
@@ -106,7 +107,7 @@ struct FVehicleSeat
  * Base class for all vehicles in the game, cars, train etc.
  */
 UCLASS()
-class FACTORYGAME_API AFGVehicle : public AFGDriveablePawn, public IFGUseableInterface, public IFGDismantleInterface, public IFGAggroTargetInterface, public IFGDockableInterface, public IFGColorInterface
+class FACTORYGAME_API AFGVehicle : public AFGDriveablePawn, public IFGUseableInterface, public IFGDismantleInterface, public IFGAggroTargetInterface, public IFGDockableInterface, public IFGColorInterface, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:
@@ -135,6 +136,13 @@ public:
 	virtual void PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	// End IFSaveInterface
+
+	//Begin IFGSignificanceInterface
+	virtual void GainedSignificance_Implementation() override;
+	virtual	void LostSignificance_Implementation() override;
+	virtual	float GetSignificanceBias() override;
+	virtual float GetSignificanceRange() override;
+	//End IFGSignificanceInterface
 
 	//~ Begin IFGColorInterface
 	void SetPrimaryColor_Implementation( FLinearColor newColor );
@@ -190,6 +198,10 @@ public:
 	virtual bool IsAlive_Implementation() const override;
 	virtual FVector GetAttackLocation_Implementation() const override;
 	// End IFGAggroTargetInterface
+
+	/** Getter for significance */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Vehicle|Significance" )
+	FORCEINLINE bool GetIsSignificant() { return mIsSignificant; }
 
 	/** Set the dismantle refund for this vehicle when built. */
 	FORCEINLINE void SetDismantleRefund( TArray< FItemAmount > refundableCost ){ mDismantleRefund = refundableCost; }
@@ -399,4 +411,19 @@ private:
 	/** Gas damage typ that should be redirected to the driver*/
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	TSubclassOf< class UFGDamageType > mGasDamageType; 
+
+	/** Indicates if the vehicle is within significance distance */
+	uint8 mIsSignificant : 1;
+
+	/** A bias to the significance value */
+	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
+	float mSignificanceBias;
+protected:
+	/** Indicates if the vehicle should be handled by significance manager */
+	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
+	uint8 mAddToSignificanceManager : 1;
+
+	/** Range that this vehicle should be significant within */
+	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
+	float mSignificanceRange;
 };

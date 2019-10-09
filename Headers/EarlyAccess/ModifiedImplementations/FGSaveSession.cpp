@@ -9,7 +9,7 @@ UFGSaveSession* UFGSaveSession::Get(  UWorld* world){ return nullptr; }
 UFGSaveSession* UFGSaveSession::Get(  UObject* worldContext){ return nullptr; }
 void UFGSaveSession::RoutePostLoadGame(){ }
 bool UFGSaveSession::SaveGame( FString fileName){ return bool(); }
-bool UFGSaveSession::ReadRawSaveGameData( FString saveGameName, TArray< uint8 >& out_rawSaveData){ return bool(); }
+bool UFGSaveSession::ReadRawSaveGameData( FString saveGameName, TArray< uint8 >& out_rawSaveData) const{ return bool(); }
 bool UFGSaveSession::LoadGame( FString saveName){ return bool(); }
 bool UFGSaveSession::SerializeHeader( FArchive& Ar, FSaveHeader& saveHeader){ return bool(); }
 FString UFGSaveSession::SaveNameToFileName( const FString& saveName){ return FString(); }
@@ -29,4 +29,9 @@ void UFGSaveSession::LoadDestroyActors(){ }
 void UFGSaveSession::PrepareLevelActors( bool prepareForLoad){ }
 void UFGSaveSession::OnActorDestroyed( AActor* destroyedActor){ }
 void UFGSaveSession::SaveWorldImplementation( FString gameName){ }
+bool UFGSaveSession::SaveToDiskWithCompression(const FString& fullFilePath, FBufferArchive& memArchive, FSaveHeader& saveHeader){ return bool(); }
+bool UFGSaveSession::LoadCompressedFileFromDisk( const FString& saveGameName){ return bool(); }
+bool UFGSaveSession::LoadDeprecatedFileFromDisk( const FString& saveGameName){ return bool(); }
+bool UFGSaveSession::PeekAtFileHeader( const FString& fullFilePath, FSaveHeader& out_fileHeader) const{ return bool(); }
+bool UFGSaveSession::SerializeLoadedObjects( FArchive& memArchive, bool includesSaveHeader){ return bool(); }
 void UFGSaveSession::BundledSaveWorldImplementation( FString gameName){ }

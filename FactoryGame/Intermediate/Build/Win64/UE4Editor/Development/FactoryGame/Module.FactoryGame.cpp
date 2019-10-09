@@ -15,6 +15,7 @@
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\ArchiveObjectTOCProxy.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\BuildableColorSlotBase.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Buildables\Animation\FGFAnimInstanceFactory.cpp"
+#include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Buildables\FGBuildable.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Buildables\FGBuildableAttachmentMerger.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Buildables\FGBuildableAttachmentSplitter.cpp"
 #include "C:\Users\Mircea\SatisfactoryModding\satisfactory-modding\FactoryGame\Source\FactoryGame\Buildables\FGBuildableAutomatedWorkBench.cpp"

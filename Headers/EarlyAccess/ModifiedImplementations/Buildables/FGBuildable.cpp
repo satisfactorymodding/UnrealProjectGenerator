@@ -11,10 +11,6 @@ void AFGBuildable::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLif
 void AFGBuildable::PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker){ }
 AFGBuildable::AFGBuildable(){ 
   RootComponent = CreateDefaultSubobject<USceneComponent>("RootComponent");
-
-
-    mHighlightLocation = CreateDefaultSubobject<USceneComponent>(TEXT("HighlightLocation"));
-    mHighlightLocation->SetupAttachment(RootComponent);
 }
 void AFGBuildable::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGBuildable::OnConstruction( const FTransform& transform){ }

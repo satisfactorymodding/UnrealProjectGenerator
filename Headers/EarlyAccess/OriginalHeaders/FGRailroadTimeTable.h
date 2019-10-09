@@ -93,12 +93,9 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|TimeTable" )
 	void SetCurrentStop( int32 index ) { mCurrentStop = index; }
 
-	/**
-	 * @param index Which stop to modify, this function does nothing if invalid.
-	 * @param Duration How long the train will stay at the station (seconds)
-	 */
+	/** Increment the current stop to the next one in order. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Railroad|TimeTable" )
-	void SetStopDuration( int32 index, float duration ); //@todotrains remove if unused after pontus is finished.
+	void IncrementCurrentStop();
 
 private:
 	const int32 MAX_STOPS = 100;

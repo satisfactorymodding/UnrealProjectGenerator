@@ -28,6 +28,8 @@ float UFGSignificanceManager::AudioVolumeSignificance( FManagedObjectInfo* Objec
 void UFGSignificanceManager::AudioVolumePostSignificance( FManagedObjectInfo* ObjectInfo, float OldSignificance, float NewSignificance, bool bFinal){ }
 float UFGSignificanceManager::AmbientSoundSplineSignificance( FManagedObjectInfo* Object, const FTransform& Viewpoint){ return float(); }
 void UFGSignificanceManager::AmbientSoundSplinePostSignificance( FManagedObjectInfo* ObjectInfo, float OldSignificance, float NewSignificance, bool bFinal){ }
+float UFGSignificanceManager::TrainSignificance( FManagedObjectInfo* Object, const FTransform& Viewpoint){ return float(); }
+void UFGSignificanceManager::TrainPostSignificance( FManagedObjectInfo* ObjectInfo, float OldSignificance, float NewSignificance, bool bFinal){ }
 FVector UFGSignificanceManager::GetObjectLocation( UObject* obj){ return FVector(); }
 void UFGSignificanceManager::SetObjectTickRate( UObject* obj, float newTickRate){ }
 void UFGSignificanceManager::SetObjectTicks( UObject* obj, bool newTicks){ }

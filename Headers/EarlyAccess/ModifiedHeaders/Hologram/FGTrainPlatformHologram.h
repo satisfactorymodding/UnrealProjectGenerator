@@ -41,6 +41,7 @@ protected:
 	virtual void ConfigureComponents( class AFGBuildable* inBuildable ) const override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
 	virtual int32 GetRotationStep() const override;
+	virtual void CheckClearance() override;
 	// End AFGHologram interface
 
 	/** Check for platform connections to snap to */

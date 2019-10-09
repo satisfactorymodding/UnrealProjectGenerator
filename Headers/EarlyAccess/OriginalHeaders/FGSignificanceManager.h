@@ -19,6 +19,7 @@ enum class EFGSignificanceType : uint8
 	AmbientSoundSpline,
 	CustomDistanceGainSignificance,
 	ParticleSignificance,
+	TrainSignificance,
 	MAX
 };
 
@@ -105,6 +106,10 @@ private:
 	//Ambient sound spline functions
 	static float AmbientSoundSplineSignificance( FManagedObjectInfo* Object, const FTransform& Viewpoint );
 	static void AmbientSoundSplinePostSignificance( FManagedObjectInfo* ObjectInfo, float OldSignificance, float NewSignificance, bool bFinal );
+
+	//Ambient sound spline functions
+	static float TrainSignificance( FManagedObjectInfo* Object, const FTransform& Viewpoint );
+	static void TrainPostSignificance( FManagedObjectInfo* ObjectInfo, float OldSignificance, float NewSignificance, bool bFinal );
 
 	/** Helper functions for getting location and setting tick rates */
 	FORCEINLINE static FVector GetObjectLocation( FManagedObjectInfo* objInfo ){ return GetObjectLocation( objInfo->GetObject() ); }

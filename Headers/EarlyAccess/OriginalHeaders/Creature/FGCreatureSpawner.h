@@ -17,7 +17,8 @@ struct FSpawnData
 		SpawnLocation( FVector( 0, 0, 0 ) ),
 		Creature( nullptr ),
 		WasKilled( false ),
-		KilledOnDayNr( -1 )
+		KilledOnDayNr( -1 ),
+		CreatureClassOverride( nullptr )
 	{}
 
 	/** Location where we want to spawn */
@@ -35,6 +36,10 @@ struct FSpawnData
 	/** What day we were killed ( -1 if we haven't been killed yet ) */
 	UPROPERTY( SaveGame )
 	int32 KilledOnDayNr;
+
+	/** Overriden subclass of creature to spawn */
+	UPROPERTY( SaveGame )
+	TSubclassOf< class AFGCreature > CreatureClassOverride;
 };
 
 UCLASS()
@@ -118,6 +123,10 @@ public:
 	**/
 	UFUNCTION( BlueprintCallable, Category = "Spawning", meta = ( CallInEditor = "true" ) )
 	bool CalculateSpawningLocations();
+
+	/** Adds a creature to be handled by spawner */
+	UFUNCTION( BlueprintCallable, Category = "Spawning" ) 
+	void AddCreature( class AFGCreature* newCreature );
 protected:
 	/** Randoms a location within range of this actor, and randoms new locations trying to find a unused location numRetries times */
 	bool TryFindNonOverlappingLocation( const TArray<FVector2D>& usedSpawnLocations, float spawnRadius, int32 maxRetries, FVector2D& out_location );
