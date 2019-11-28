@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSoundSplineComponent, 1772224031);
+	IMPLEMENT_CLASS(UFGSoundSplineComponent, 1345315193);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSoundSplineComponent(Z_Construct_UClass_UFGSoundSplineComponent, &UFGSoundSplineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSoundSplineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSoundSplineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
