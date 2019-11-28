@@ -7,7 +7,7 @@ path = os.path.dirname(os.path.abspath(__file__))
 with open(f'{path}\\Headers\\currentVersion.txt', 'r') as f:
     oldVersion = int(f.read())
 
-print(f"Detected old version: {oldVersion} ({oldHeadersPath})")
+print(f"Detected old version: {oldVersion}")
 print("Update version: ")
 newVersion = input()
 print("Updated headers path: ")
