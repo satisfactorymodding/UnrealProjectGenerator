@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventGetCollisionSphere_Parms, ReturnValue), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventGetCollisionSphere_Parms, ReturnValue), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::NewProp_ReturnValue,
 	};
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Returns the collision sphere" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "GetCollisionSphere", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGProjectile_eventGetCollisionSphere_Parms), Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "GetCollisionSphere", sizeof(FGProjectile_eventGetCollisionSphere_Parms), Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetCollisionSphere_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_GetCollisionSphere()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventGetProjectileTargetLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventGetProjectileTargetLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::NewProp_ReturnValue,
 	};
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Returns the location we are aiming for ( if any )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "GetProjectileTargetLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14820401, sizeof(FGProjectile_eventGetProjectileTargetLocation_Parms), Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "GetProjectileTargetLocation", sizeof(FGProjectile_eventGetProjectileTargetLocation_Parms), Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -162,13 +162,13 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity = { UE4CodeGen_Private::EPropertyClass::Struct, "hitVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventOnBounce_Parms, hitVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity = { "hitVelocity", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventOnBounce_Parms, hitVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult = { UE4CodeGen_Private::EPropertyClass::Struct, "hitResult", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventOnBounce_Parms, hitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult = { "hitResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventOnBounce_Parms, hitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitVelocity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::NewProp_hitResult,
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "handle bounce" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "OnBounce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00C20400, sizeof(FGProjectile_eventOnBounce_Parms), Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "OnBounce", sizeof(FGProjectile_eventOnBounce_Parms), Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnBounce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_OnBounce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult = { UE4CodeGen_Private::EPropertyClass::Struct, "hitResult", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventOnImpact_Parms, hitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult = { "hitResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventOnImpact_Parms, hitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::NewProp_hitResult,
 	};
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "handle hit" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "OnImpact", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00420400, sizeof(FGProjectile_eventOnImpact_Parms), Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "OnImpact", sizeof(FGProjectile_eventOnImpact_Parms), Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnImpact_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_OnImpact()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "[client] explosion happened" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "OnRep_Exploded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "OnRep_Exploded", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnRep_Exploded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_OnRep_Exploded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -265,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ModuleRelativePath", "FGProjectile.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "OnRep_InitialVelocity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "OnRep_InitialVelocity", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Called when we attach this actor to something like the world, a factory, a character" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "PlayAttachEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "PlayAttachEffect", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_PlayAttachEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_PlayAttachEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -313,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Function to set up explosion effects in Blueprint" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "PlayExplosionEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "PlayExplosionEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -336,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::NewProp_inVelocity = { UE4CodeGen_Private::EPropertyClass::Struct, "inVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventSetInitialVelocity_Parms, inVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::NewProp_inVelocity = { "inVelocity", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventSetInitialVelocity_Parms, inVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::NewProp_inVelocity,
 	};
@@ -347,7 +347,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Sets the initial velocity so that it can be replicated to clients" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "SetInitialVelocity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGProjectile_eventSetInitialVelocity_Parms), Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "SetInitialVelocity", sizeof(FGProjectile_eventSetInitialVelocity_Parms), Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetInitialVelocity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_SetInitialVelocity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -370,7 +370,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::NewProp_targetLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "targetLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGProjectile_eventSetTargetLocation_Parms, targetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::NewProp_targetLocation = { "targetLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGProjectile_eventSetTargetLocation_Parms, targetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::NewProp_targetLocation,
 	};
@@ -381,7 +381,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Returns the location we are aiming for ( if any )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, "SetTargetLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGProjectile_eventSetTargetLocation_Parms), Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGProjectile, nullptr, "SetTargetLocation", sizeof(FGProjectile_eventSetTargetLocation_Parms), Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGProjectile_SetTargetLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGProjectile_SetTargetLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -451,16 +451,16 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGProjectile_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGProjectile_GetCollisionSphere, "GetCollisionSphere" }, // 2335415562
-		{ &Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation, "GetProjectileTargetLocation" }, // 1644735445
-		{ &Z_Construct_UFunction_AFGProjectile_OnBounce, "OnBounce" }, // 2437114431
-		{ &Z_Construct_UFunction_AFGProjectile_OnImpact, "OnImpact" }, // 1953743711
-		{ &Z_Construct_UFunction_AFGProjectile_OnRep_Exploded, "OnRep_Exploded" }, // 1617373392
-		{ &Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity, "OnRep_InitialVelocity" }, // 3484040355
-		{ &Z_Construct_UFunction_AFGProjectile_PlayAttachEffect, "PlayAttachEffect" }, // 1403947291
-		{ &Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects, "PlayExplosionEffects" }, // 787990146
-		{ &Z_Construct_UFunction_AFGProjectile_SetInitialVelocity, "SetInitialVelocity" }, // 2940286341
-		{ &Z_Construct_UFunction_AFGProjectile_SetTargetLocation, "SetTargetLocation" }, // 1552409634
+		{ &Z_Construct_UFunction_AFGProjectile_GetCollisionSphere, "GetCollisionSphere" }, // 3642347848
+		{ &Z_Construct_UFunction_AFGProjectile_GetProjectileTargetLocation, "GetProjectileTargetLocation" }, // 3301424782
+		{ &Z_Construct_UFunction_AFGProjectile_OnBounce, "OnBounce" }, // 237637872
+		{ &Z_Construct_UFunction_AFGProjectile_OnImpact, "OnImpact" }, // 1367743877
+		{ &Z_Construct_UFunction_AFGProjectile_OnRep_Exploded, "OnRep_Exploded" }, // 2764983391
+		{ &Z_Construct_UFunction_AFGProjectile_OnRep_InitialVelocity, "OnRep_InitialVelocity" }, // 1635662378
+		{ &Z_Construct_UFunction_AFGProjectile_PlayAttachEffect, "PlayAttachEffect" }, // 2097323365
+		{ &Z_Construct_UFunction_AFGProjectile_PlayExplosionEffects, "PlayExplosionEffects" }, // 3582114645
+		{ &Z_Construct_UFunction_AFGProjectile_SetInitialVelocity, "SetInitialVelocity" }, // 3273137485
+		{ &Z_Construct_UFunction_AFGProjectile_SetTargetLocation, "SetTargetLocation" }, // 1615098143
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::Class_MetaDataParams[] = {
@@ -474,7 +474,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Caching the PC so that we can do damage even without a valid weapon" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedPC", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGProjectile, mCachedPC), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC = { "mCachedPC", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mCachedPC), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -486,7 +486,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	{
 		((AFGProjectile*)Obj)->mExplodeAtEndOfLife = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife = { UE4CodeGen_Private::EPropertyClass::Bool, "mExplodeAtEndOfLife", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife = { "mExplodeAtEndOfLife", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -498,14 +498,14 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	{
 		((AFGProjectile*)Obj)->mCanTriggerExplodeBySameClass = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanTriggerExplodeBySameClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass = { "mCanTriggerExplodeBySameClass", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCanTriggerExplodeBySameClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation_MetaData[] = {
 		{ "ModuleRelativePath", "FGProjectile.h" },
 		{ "ToolTip", "Location we are aiming at ( if any )" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "mTargetLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGProjectile, mTargetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation = { "mTargetLocation", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mTargetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mTargetLocation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -515,7 +515,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Projectile movement component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement = { UE4CodeGen_Private::EPropertyClass::Object, "mProjectileMovement", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(AFGProjectile, mProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement = { "mProjectileMovement", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileMovement_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -524,14 +524,14 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp = { UE4CodeGen_Private::EPropertyClass::Object, "mCollisionComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(AFGProjectile, mCollisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp = { "mCollisionComp", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mCollisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCollisionComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData[] = {
 		{ "ModuleRelativePath", "FGProjectile.h" },
 		{ "ToolTip", "Used to get the velocity over to clients" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity = { UE4CodeGen_Private::EPropertyClass::Struct, "mInitialVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_InitialVelocity", STRUCT_OFFSET(AFGProjectile, mInitialVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity = { "mInitialVelocity", "OnRep_InitialVelocity", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mInitialVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mInitialVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_MetaData[] = {
 		{ "ModuleRelativePath", "FGProjectile.h" },
@@ -542,7 +542,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	{
 		((AFGProjectile*)Obj)->mHasExploded = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasExploded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100002020, 1, "OnRep_Exploded", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded = { "mHasExploded", "OnRep_Exploded", (EPropertyFlags)0x0020080100002020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGProjectile), &Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mHasExploded_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -550,7 +550,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		{ "ToolTip", "projectile data" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData = { UE4CodeGen_Private::EPropertyClass::Struct, "mProjectileData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001010001, 1, nullptr, STRUCT_OFFSET(AFGProjectile, mProjectileData), Z_Construct_UScriptStruct_FProjectileData, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData = { "mProjectileData", nullptr, (EPropertyFlags)0x0020080001010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGProjectile, mProjectileData), Z_Construct_UScriptStruct_FProjectileData, METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::NewProp_mProjectileData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGProjectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGProjectile_Statics::NewProp_mCachedPC,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGProjectile_Statics::NewProp_mExplodeAtEndOfLife,
@@ -570,13 +570,17 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGProjectile_Statics::ClassParams = {
 		&AFGProjectile::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGProjectile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::PropPointers),
 		"Game",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGProjectile_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGProjectile()
@@ -588,7 +592,11 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProjectile, 2863935118);
+	IMPLEMENT_CLASS(AFGProjectile, 2137828266);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGProjectile>()
+	{
+		return AFGProjectile::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGProjectile(Z_Construct_UClass_AFGProjectile, &AFGProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

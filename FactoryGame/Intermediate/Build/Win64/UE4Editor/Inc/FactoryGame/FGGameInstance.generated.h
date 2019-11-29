@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,15 +22,21 @@ class UFGErrorMessage;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGGameNetworkErrorMsg>();
+
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_68_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGModPackage_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGModPackage>();
+
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOnJoinSessionData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FOnJoinSessionData>();
 
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_118_DELEGATE \
 struct _Script_FactoryGame_eventOnNatTypeUpdated_Parms \
@@ -120,23 +126,6 @@ static inline void FOnNewError_DelegateWrapper(const FMulticastScriptDelegate& O
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->FindModPackages(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execHasPlayerSeenCloudSaveInfoScreen) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->HasPlayerSeenCloudSaveInfoScreen(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetHasPlayerSeenCloudSaveInfoScreen) \
-	{ \
-		P_GET_UBOOL(Z_Param_hasSeen); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetHasPlayerSeenCloudSaveInfoScreen(Z_Param_hasSeen); \
 		P_NATIVE_END; \
 	} \
  \
@@ -242,23 +231,6 @@ static inline void FOnNewError_DelegateWrapper(const FMulticastScriptDelegate& O
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execHasPlayerSeenCloudSaveInfoScreen) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->HasPlayerSeenCloudSaveInfoScreen(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetHasPlayerSeenCloudSaveInfoScreen) \
-	{ \
-		P_GET_UBOOL(Z_Param_hasSeen); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetHasPlayerSeenCloudSaveInfoScreen(Z_Param_hasSeen); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execHasPlayerSeenAlphaInfoScreen) \
 	{ \
 		P_FINISH; \
@@ -310,7 +282,7 @@ private: \
 	static void StaticRegisterNativesUFGGameInstance(); \
 	friend struct Z_Construct_UClass_UFGGameInstance_Statics; \
 public: \
-	DECLARE_CLASS(UFGGameInstance, UGameInstance, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGGameInstance, UGameInstance, COMPILED_IN_FLAGS(0 | CLASS_Transient), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGGameInstance)
 
 
@@ -319,7 +291,7 @@ private: \
 	static void StaticRegisterNativesUFGGameInstance(); \
 	friend struct Z_Construct_UClass_UFGGameInstance_Statics; \
 public: \
-	DECLARE_CLASS(UFGGameInstance, UGameInstance, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
+	DECLARE_CLASS(UFGGameInstance, UGameInstance, COMPILED_IN_FLAGS(0 | CLASS_Transient), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGGameInstance)
 
 
@@ -352,8 +324,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameInstance); \
 	FORCEINLINE static uint32 __PPO__mOnNewError() { return STRUCT_OFFSET(UFGGameInstance, mOnNewError); } \
 	FORCEINLINE static uint32 __PPO__mErrorList() { return STRUCT_OFFSET(UFGGameInstance, mErrorList); } \
 	FORCEINLINE static uint32 __PPO__mJoinSessionData() { return STRUCT_OFFSET(UFGGameInstance, mJoinSessionData); } \
-	FORCEINLINE static uint32 __PPO__mOnNatTypeUpdated() { return STRUCT_OFFSET(UFGGameInstance, mOnNatTypeUpdated); } \
-	FORCEINLINE static uint32 __PPO__mHasSeenCloudSaveInfo() { return STRUCT_OFFSET(UFGGameInstance, mHasSeenCloudSaveInfo); }
+	FORCEINLINE static uint32 __PPO__mOnNatTypeUpdated() { return STRUCT_OFFSET(UFGGameInstance, mOnNatTypeUpdated); }
 
 
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_120_PROLOG
@@ -378,6 +349,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGGameInstance>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGameInstance_h

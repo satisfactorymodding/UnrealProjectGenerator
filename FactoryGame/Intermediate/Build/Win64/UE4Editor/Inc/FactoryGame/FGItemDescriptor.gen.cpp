@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EStackSize>()
+	{
+		return EStackSize_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EStackSize(EStackSize_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EStackSize"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EStackSize_CRC() { return 2191352509U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EStackSize_Hash() { return 2051193761U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EStackSize()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EStackSize"), 0, Get_Z_Construct_UEnum_FactoryGame_EStackSize_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EStackSize"), 0, Get_Z_Construct_UEnum_FactoryGame_EStackSize_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -86,14 +90,14 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EStackSize",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EStackSize",
 				"EStackSize",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -109,13 +113,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EResourceForm>()
+	{
+		return EResourceForm_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EResourceForm(EResourceForm_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EResourceForm"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourceForm_CRC() { return 1909696876U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourceForm_Hash() { return 1464297004U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EResourceForm()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EResourceForm"), 0, Get_Z_Construct_UEnum_FactoryGame_EResourceForm_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EResourceForm"), 0, Get_Z_Construct_UEnum_FactoryGame_EResourceForm_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -144,14 +152,14 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EResourceForm",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EResourceForm",
 				"EResourceForm",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -163,10 +171,14 @@ class UScriptStruct* FItemView::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemView, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemView"), sizeof(FItemView), Get_Z_Construct_UScriptStruct_FItemView_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemView_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemView, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemView"), sizeof(FItemView), Get_Z_Construct_UScriptStruct_FItemView_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FItemView>()
+{
+	return FItemView::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FItemView(FItemView::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ItemView"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
@@ -214,7 +226,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "How much \"down or up\" the camera should be angeled (in degrees) when crating the view" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch = { UE4CodeGen_Private::EPropertyClass::Float, "CameraPitch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FItemView, CameraPitch), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch = { "CameraPitch", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemView, CameraPitch), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset_MetaData[] = {
 		{ "Category", "View" },
@@ -223,7 +235,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Where should the camera focus offsetted on the mesh" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "FocalOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FItemView, FocalOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset = { "FocalOffset", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemView, FocalOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance_MetaData[] = {
 		{ "Category", "View" },
@@ -231,7 +243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The distance to the object when creating it's view" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance = { UE4CodeGen_Private::EPropertyClass::Float, "Distance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FItemView, Distance), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance = { "Distance", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemView, Distance), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FItemView_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset,
@@ -242,19 +254,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		nullptr,
 		&NewStructOps,
 		"ItemView",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FItemView),
 		alignof(FItemView),
-		Z_Construct_UScriptStruct_FItemView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FItemView_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemView()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FItemView_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemView"), sizeof(FItemView), Get_Z_Construct_UScriptStruct_FItemView_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemView"), sizeof(FItemView), Get_Z_Construct_UScriptStruct_FItemView_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -264,7 +277,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC() { return 2116303488U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemView_Hash() { return 1708585902U; }
 	void UFGItemDescriptor::StaticRegisterNativesUFGItemDescriptor()
 	{
 		UClass* Class = UFGItemDescriptor::StaticClass();
@@ -306,8 +319,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	{
 		((FGItemDescriptor_eventCanBeDiscarded_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGItemDescriptor_eventCanBeDiscarded_Parms), &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventCanBeDiscarded_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGItemDescriptor_eventCanBeDiscarded_Parms), &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventCanBeDiscarded_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::NewProp_inClass,
@@ -319,7 +332,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Returns if this item can be discarded" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "CanBeDiscarded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventCanBeDiscarded_Parms), Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "CanBeDiscarded", sizeof(FGItemDescriptor_eventCanBeDiscarded_Parms), Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -344,8 +357,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetBigIcon_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetBigIcon_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetBigIcon_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetBigIcon_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::NewProp_inClass,
@@ -357,7 +370,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The big icon of the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetBigIcon", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetBigIcon_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetBigIcon", sizeof(FGItemDescriptor_eventGetBigIcon_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -382,8 +395,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetEnergyValue_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetEnergyValue_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetEnergyValue_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetEnergyValue_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::NewProp_inClass,
@@ -395,7 +408,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Energy value for this resource if used as fuel." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetEnergyValue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetEnergyValue_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetEnergyValue", sizeof(FGItemDescriptor_eventGetEnergyValue_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -421,9 +434,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetForm_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetForm_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetForm_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetForm_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::NewProp_ReturnValue_Underlying,
@@ -436,7 +449,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The state of this resource." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetForm", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetForm_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetForm", sizeof(FGItemDescriptor_eventGetForm_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetForm()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -461,8 +474,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::NewProp_out_itemView = { UE4CodeGen_Private::EPropertyClass::Struct, "out_itemView", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetIconView_Parms, out_itemView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetIconView_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::NewProp_out_itemView = { "out_itemView", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetIconView_Parms, out_itemView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetIconView_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::NewProp_out_itemView,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::NewProp_inClass,
@@ -475,7 +488,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Get the view to use when previewing this item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetIconView", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGItemDescriptor_eventGetIconView_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetIconView", sizeof(FGItemDescriptor_eventGetIconView_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetIconView()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -500,8 +513,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemCategory_Parms, ReturnValue), Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemCategory_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemCategory_Parms, ReturnValue), Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemCategory_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::NewProp_inClass,
@@ -513,7 +526,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Returns the item category" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetItemCategory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetItemCategory_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetItemCategory", sizeof(FGItemDescriptor_eventGetItemCategory_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -538,8 +551,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemDescription_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemDescription_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemDescription_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemDescription_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::NewProp_inClass,
@@ -551,7 +564,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Used to get the resource description in blueprints" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetItemDescription", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetItemDescription_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetItemDescription", sizeof(FGItemDescriptor_eventGetItemDescription_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -576,8 +589,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemIcon_Parms, ReturnValue), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemIcon_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemIcon_Parms, ReturnValue), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemIcon_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::NewProp_inClass,
@@ -591,7 +604,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The icon to be used in UI." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetItemIcon", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetItemIcon_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetItemIcon", sizeof(FGItemDescriptor_eventGetItemIcon_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -616,8 +629,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemMesh_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemMesh_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::NewProp_inClass,
@@ -629,7 +642,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The static mesh we want for representing the resource when they are in the production line.\n@return The items mesh; a default mesh if the item has no mesh specified, nullptr if inClass is nullptr." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetItemMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetItemMesh_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetItemMesh", sizeof(FGItemDescriptor_eventGetItemMesh_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -654,8 +667,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetItemName_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetItemName_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::NewProp_inClass,
@@ -667,7 +680,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Used to get the resource name in blueprints" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetItemName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetItemName_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetItemName", sizeof(FGItemDescriptor_eventGetItemName_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetItemName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -692,8 +705,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::NewProp_out_previewView = { UE4CodeGen_Private::EPropertyClass::Struct, "out_previewView", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetPreviewView_Parms, out_previewView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetPreviewView_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::NewProp_out_previewView = { "out_previewView", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetPreviewView_Parms, out_previewView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetPreviewView_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::NewProp_out_previewView,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::NewProp_inClass,
@@ -705,7 +718,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Get the view to use when previewing this item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetPreviewView", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGItemDescriptor_eventGetPreviewView_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetPreviewView", sizeof(FGItemDescriptor_eventGetPreviewView_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -730,8 +743,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetRadioactiveDecay_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetRadioactiveDecay_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetRadioactiveDecay_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetRadioactiveDecay_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::NewProp_inClass,
@@ -743,7 +756,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "How much radiation this item gives out, 0 means it's not radioactive." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetRadioactiveDecay", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetRadioactiveDecay_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetRadioactiveDecay", sizeof(FGItemDescriptor_eventGetRadioactiveDecay_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -768,8 +781,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetSmallIcon_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetSmallIcon_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetSmallIcon_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetSmallIcon_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::NewProp_inClass,
@@ -781,7 +794,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The small icon of the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetSmallIcon", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetSmallIcon_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetSmallIcon", sizeof(FGItemDescriptor_eventGetSmallIcon_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -806,8 +819,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetStackSize_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGItemDescriptor_eventGetStackSize_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetStackSize_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemDescriptor_eventGetStackSize_Parms, inClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::NewProp_inClass,
@@ -819,7 +832,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Returns the number of items of a certain type we can stack in one inventory slot" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, "GetStackSize", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGItemDescriptor_eventGetStackSize_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGItemDescriptor, nullptr, "GetStackSize", sizeof(FGItemDescriptor_eventGetStackSize_Parms), Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGItemDescriptor_GetStackSize()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -921,20 +934,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGItemDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded, "CanBeDiscarded" }, // 2325616794
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon, "GetBigIcon" }, // 2567019252
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue, "GetEnergyValue" }, // 1884830668
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetForm, "GetForm" }, // 4110883313
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetIconView, "GetIconView" }, // 2591459172
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory, "GetItemCategory" }, // 874524611
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription, "GetItemDescription" }, // 43972647
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon, "GetItemIcon" }, // 2015961453
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh, "GetItemMesh" }, // 3907276095
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemName, "GetItemName" }, // 1693631394
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView, "GetPreviewView" }, // 814638394
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay, "GetRadioactiveDecay" }, // 3625666009
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon, "GetSmallIcon" }, // 1165635708
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetStackSize, "GetStackSize" }, // 3423175679
+		{ &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded, "CanBeDiscarded" }, // 1519059111
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon, "GetBigIcon" }, // 2598849795
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue, "GetEnergyValue" }, // 2822749993
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetForm, "GetForm" }, // 4215050466
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetIconView, "GetIconView" }, // 648452296
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory, "GetItemCategory" }, // 1783782999
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription, "GetItemDescription" }, // 1972233290
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon, "GetItemIcon" }, // 1757202795
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh, "GetItemMesh" }, // 2861679504
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemName, "GetItemName" }, // 3064578526
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView, "GetPreviewView" }, // 350938651
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay, "GetRadioactiveDecay" }, // 1300904521
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon, "GetSmallIcon" }, // 3176715603
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetStackSize, "GetStackSize" }, // 593805633
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::Class_MetaDataParams[] = {
@@ -958,7 +971,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The distance to the object when rendering the icon" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView = { UE4CodeGen_Private::EPropertyClass::Struct, "mIconView", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080800010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mIconView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView = { "mIconView", nullptr, (EPropertyFlags)0x0020080800010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mIconView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw_MetaData[] = {
 		{ "Category", "Icon" },
@@ -967,7 +980,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The jaw of the object when rendering the icon" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw = { UE4CodeGen_Private::EPropertyClass::Float, "mIconYaw", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080800010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mIconYaw), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw = { "mIconYaw", nullptr, (EPropertyFlags)0x0020080800010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mIconYaw), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw_MetaData)) };
 #endif // WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory_MetaData[] = {
@@ -976,7 +989,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The category for this item" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory = { UE4CodeGen_Private::EPropertyClass::Class, "mItemCategory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mItemCategory), Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory = { "mItemCategory", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mItemCategory), Z_Construct_UClass_UFGItemCategory_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView_MetaData[] = {
 		{ "Category", "Preview" },
@@ -986,7 +999,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The view in the build menu for this item" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView = { UE4CodeGen_Private::EPropertyClass::Struct, "mPreviewView", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mPreviewView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView = { "mPreviewView", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mPreviewView), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh_MetaData[] = {
 		{ "Category", "Item" },
@@ -994,7 +1007,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The static mesh we want for representing the resource when they are in the production line." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mConveyorMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mConveyorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh = { "mConveyorMesh", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mConveyorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon_MetaData[] = {
 		{ "Category", "UI" },
@@ -1003,7 +1016,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Big icon of the item, SHOULD only be loaded by demand, but right now persistent in memory" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon = { UE4CodeGen_Private::EPropertyClass::Object, "mPersistentBigIcon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mPersistentBigIcon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon = { "mPersistentBigIcon", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mPersistentBigIcon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData[] = {
 		{ "Category", "UI" },
@@ -1011,7 +1024,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Small icon of the item, always in memory" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon = { UE4CodeGen_Private::EPropertyClass::Object, "mSmallIcon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon = { "mSmallIcon", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon_MetaData[] = {
 		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
@@ -1019,7 +1032,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Old brush used for UI, can't be DEPRECATED_ as it won't work in shipping builds during conversion then" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon = { UE4CodeGen_Private::EPropertyClass::Struct, "mInventoryIcon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mInventoryIcon), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon = { "mInventoryIcon", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mInventoryIcon), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData[] = {
 		{ "Category", "Item" },
@@ -1027,8 +1040,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "The state of this resource (cannot change during it's lifetime)." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm = { UE4CodeGen_Private::EPropertyClass::Enum, "mForm", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mForm), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm = { "mForm", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mForm), Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData[] = {
 		{ "Category", "Item" },
@@ -1039,7 +1052,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay = { UE4CodeGen_Private::EPropertyClass::Float, "mRadioactiveDecay", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mRadioactiveDecay), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay = { "mRadioactiveDecay", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mRadioactiveDecay), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData[] = {
 		{ "Category", "Item" },
@@ -1047,7 +1060,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Energy value for this resource if used as fuel. In megawatt seconds (MWs), a.k.a. mega joule (MJ)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue = { UE4CodeGen_Private::EPropertyClass::Float, "mEnergyValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mEnergyValue), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue = { "mEnergyValue", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mEnergyValue), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData[] = {
 		{ "Category", "Item" },
@@ -1059,7 +1072,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	{
 		((UFGItemDescriptor*)Obj)->mCanBeDiscarded = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanBeDiscarded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded = { "mCanBeDiscarded", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_MetaData[] = {
 		{ "Category", "Item" },
@@ -1067,8 +1080,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "How many of this item can be in the same slot in an inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize = { UE4CodeGen_Private::EPropertyClass::Enum, "mStackSize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mStackSize), Z_Construct_UEnum_FactoryGame_EStackSize, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize = { "mStackSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mStackSize), Z_Construct_UEnum_FactoryGame_EStackSize, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription_MetaData[] = {
 		{ "Category", "Item" },
@@ -1079,7 +1092,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Readable description of the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription = { UE4CodeGen_Private::EPropertyClass::Text, "mDescription", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mDescription), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription = { "mDescription", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mDescription), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDescription_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Item" },
@@ -1089,7 +1102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "ToolTip", "Readable name of the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName = { UE4CodeGen_Private::EPropertyClass::Text, "mDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName = { "mDisplayName", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGItemDescriptor, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mDisplayName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData[] = {
 		{ "Category", "FGItemDescriptor" },
@@ -1101,7 +1114,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	{
 		((UFGItemDescriptor*)Obj)->mUseDisplayNameAndDescription = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseDisplayNameAndDescription", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000012001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription = { "mUseDisplayNameAndDescription", nullptr, (EPropertyFlags)0x0010000000012001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGItemDescriptor), &Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers[] = {
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView,
@@ -1129,13 +1142,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGItemDescriptor_Statics::ClassParams = {
 		&UFGItemDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::PropPointers),
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGItemDescriptor()
@@ -1147,7 +1164,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptor, 1649951314);
+	IMPLEMENT_CLASS(UFGItemDescriptor, 858011337);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptor>()
+	{
+		return UFGItemDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptor(Z_Construct_UClass_UFGItemDescriptor, &UFGItemDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptor);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGItemDescriptor)

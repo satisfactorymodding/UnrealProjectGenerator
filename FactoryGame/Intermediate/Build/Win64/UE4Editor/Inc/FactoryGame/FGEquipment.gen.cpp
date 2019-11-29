@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -61,13 +61,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EEquipmentSlot>()
+	{
+		return EEquipmentSlot_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEquipmentSlot(EEquipmentSlot_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EEquipmentSlot"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EEquipmentSlot_CRC() { return 3015524057U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EEquipmentSlot_Hash() { return 890801681U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EEquipmentSlot()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EEquipmentSlot"), 0, Get_Z_Construct_UEnum_FactoryGame_EEquipmentSlot_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EEquipmentSlot"), 0, Get_Z_Construct_UEnum_FactoryGame_EEquipmentSlot_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -92,14 +96,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EEquipmentSlot",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EEquipmentSlot",
 				"EEquipmentSlot",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -184,16 +188,16 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageCauser = { UE4CodeGen_Private::EPropertyClass::Object, "damageCauser", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, damageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_instigatedBy = { UE4CodeGen_Private::EPropertyClass::Object, "instigatedBy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, instigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageCauser = { "damageCauser", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, damageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_instigatedBy = { "instigatedBy", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, instigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType = { UE4CodeGen_Private::EPropertyClass::Object, "damageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000082, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, damageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType_MetaData)) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageAmount = { UE4CodeGen_Private::EPropertyClass::Float, "damageAmount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, damageAmount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType = { "damageType", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, damageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageType_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageAmount = { "damageAmount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventAdjustDamage_Parms, damageAmount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::NewProp_damageCauser,
@@ -208,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Called whenever our owner is damaged and gives us a chance to adjust it\nSERVER ONLY\n\n@param damageAmount - how much damage we receive\n@param damageType - what damage type the damage is that we receive\n@param instigatedBy - who instigated the damage (Controller)\n@param damageCauser - the actor who damaged us\n@return the adjusted damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "AdjustDamage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGEquipment_eventAdjustDamage_Parms), Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "AdjustDamage", sizeof(FGEquipment_eventAdjustDamage_Parms), Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_AdjustDamage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_AdjustDamage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -236,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	{
 		((FGEquipment_eventCanAffordUse_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEquipment_eventCanAffordUse_Parms), &Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEquipment_eventCanAffordUse_Parms), &Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::NewProp_ReturnValue,
 	};
@@ -247,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "True if we can afford the cost of using this equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "CanAffordUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGEquipment_eventCanAffordUse_Parms), Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "CanAffordUse", sizeof(FGEquipment_eventCanAffordUse_Parms), Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_CanAffordUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_CanAffordUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -271,7 +275,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Consumes the cost of using this equipment, will call Server_ChargeForUse if we don't have authority" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "ChargeForUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "ChargeForUse", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_ChargeForUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_ChargeForUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -295,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Called if we couldn't afford to use the equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "DidNotAffordUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "DidNotAffordUse", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_DidNotAffordUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_DidNotAffordUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -318,7 +322,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_Equip_Statics::NewProp_character = { UE4CodeGen_Private::EPropertyClass::Object, "character", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventEquip_Parms, character), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_Equip_Statics::NewProp_character = { "character", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventEquip_Parms, character), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_Equip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_Equip_Statics::NewProp_character,
 	};
@@ -329,7 +333,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Equips the equipment." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Equip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "Equip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020400, sizeof(FGEquipment_eventEquip_Parms), Z_Construct_UFunction_AFGEquipment_Equip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Equip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Equip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Equip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Equip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "Equip", sizeof(FGEquipment_eventEquip_Parms), Z_Construct_UFunction_AFGEquipment_Equip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Equip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Equip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Equip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_Equip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -352,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventGetAttachment_Parms, ReturnValue), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetAttachment_Parms, ReturnValue), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::NewProp_ReturnValue,
 	};
@@ -363,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Get the attachment for this equipment." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "GetAttachment", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEquipment_eventGetAttachment_Parms), Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetAttachment", sizeof(FGEquipment_eventGetAttachment_Parms), Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetAttachment_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_GetAttachment()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -389,9 +393,9 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventGetEquipmentSlot_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventGetEquipmentSlot_Parms, inClass), Z_Construct_UClass_AFGEquipment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetEquipmentSlot_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetEquipmentSlot_Parms, inClass), Z_Construct_UClass_AFGEquipment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::NewProp_ReturnValue_Underlying,
@@ -404,7 +408,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Returns the enum for the equipment slot, ARMS, BACK etc." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "GetEquipmentSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGEquipment_eventGetEquipmentSlot_Parms), Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetEquipmentSlot", sizeof(FGEquipment_eventGetEquipmentSlot_Parms), Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -427,7 +431,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventGetInstigatorCharacter_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetInstigatorCharacter_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::NewProp_ReturnValue,
 	};
@@ -438,7 +442,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Convenience blueprint function to return Instigator as a FGCharacterPlayer\n@return The instigator for this equipment; nullptr if not equipped or Instigator is not an FGCharacterPlayer." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "GetInstigatorCharacter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEquipment_eventGetInstigatorCharacter_Parms), Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetInstigatorCharacter", sizeof(FGEquipment_eventGetInstigatorCharacter_Parms), Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -461,7 +465,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventGetSecondaryAttachment_Parms, ReturnValue), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventGetSecondaryAttachment_Parms, ReturnValue), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::NewProp_ReturnValue,
 	};
@@ -471,7 +475,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "GetSecondaryAttachment", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEquipment_eventGetSecondaryAttachment_Parms), Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "GetSecondaryAttachment", sizeof(FGEquipment_eventGetSecondaryAttachment_Parms), Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -499,7 +503,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	{
 		((FGEquipment_eventIsEquipped_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEquipment_eventIsEquipped_Parms), &Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEquipment_eventIsEquipped_Parms), &Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::NewProp_ReturnValue,
 	};
@@ -510,7 +514,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Is this equipment equipped.\n@return - true if equiped; otherwise false." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "IsEquipped", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEquipment_eventIsEquipped_Parms), Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "IsEquipped", sizeof(FGEquipment_eventIsEquipped_Parms), Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsEquipped_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_IsEquipped()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -538,7 +542,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	{
 		((FGEquipment_eventIsLocalInstigator_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEquipment_eventIsLocalInstigator_Parms), &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEquipment_eventIsLocalInstigator_Parms), &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::NewProp_ReturnValue,
 	};
@@ -549,7 +553,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "@return Is the instigator locally controlled; false if no instigator." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "IsLocalInstigator", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEquipment_eventIsLocalInstigator_Parms), Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "IsLocalInstigator", sizeof(FGEquipment_eventIsLocalInstigator_Parms), Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_IsLocalInstigator_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_IsLocalInstigator()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -572,7 +576,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Will call ChargeForUse_Internal on server" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "Server_ChargeForUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80280CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "Server_ChargeForUse", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -591,7 +595,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::NewProp_newUseState = { UE4CodeGen_Private::EPropertyClass::Int, "newUseState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipment_eventServer_UpdateAttachmentUseState_Parms, newUseState), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::NewProp_newUseState = { "newUseState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipment_eventServer_UpdateAttachmentUseState_Parms, newUseState), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::NewProp_newUseState,
 	};
@@ -602,7 +606,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "This is called to update the relevant attachments' use state so that animations can be played etc." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "Server_UpdateAttachmentUseState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x84220CC0, sizeof(FGEquipment_eventServer_UpdateAttachmentUseState_Parms), Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "Server_UpdateAttachmentUseState", sizeof(FGEquipment_eventServer_UpdateAttachmentUseState_Parms), Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x84220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -630,7 +634,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	{
 		((FGEquipment_eventShouldShowStinger_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEquipment_eventShouldShowStinger_Parms), &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEquipment_eventShouldShowStinger_Parms), &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::NewProp_ReturnValue,
 	};
@@ -641,7 +645,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Should we play stinger animation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "ShouldShowStinger", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGEquipment_eventShouldShowStinger_Parms), Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "ShouldShowStinger", sizeof(FGEquipment_eventShouldShowStinger_Parms), Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_ShouldShowStinger_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_ShouldShowStinger()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -665,7 +669,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Put the equipment away." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "UnEquip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020400, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "UnEquip", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_UnEquip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_UnEquip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -689,7 +693,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Was the equipment equipped." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "WasEquipped", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "WasEquipped", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_WasEquipped_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_WasEquipped()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -713,7 +717,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Was the equipment put away." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, "WasUnEquipped", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipment, nullptr, "WasUnEquipped", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipment_WasUnEquipped_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipment_WasUnEquipped()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -817,23 +821,23 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipment_AdjustDamage, "AdjustDamage" }, // 2908622941
-		{ &Z_Construct_UFunction_AFGEquipment_CanAffordUse, "CanAffordUse" }, // 1753526091
-		{ &Z_Construct_UFunction_AFGEquipment_ChargeForUse, "ChargeForUse" }, // 1142798788
-		{ &Z_Construct_UFunction_AFGEquipment_DidNotAffordUse, "DidNotAffordUse" }, // 4211037403
-		{ &Z_Construct_UFunction_AFGEquipment_Equip, "Equip" }, // 2745203960
-		{ &Z_Construct_UFunction_AFGEquipment_GetAttachment, "GetAttachment" }, // 1739568125
-		{ &Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot, "GetEquipmentSlot" }, // 1042446205
-		{ &Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter, "GetInstigatorCharacter" }, // 678035488
-		{ &Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment, "GetSecondaryAttachment" }, // 682956381
-		{ &Z_Construct_UFunction_AFGEquipment_IsEquipped, "IsEquipped" }, // 4059277606
-		{ &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator, "IsLocalInstigator" }, // 4204599216
-		{ &Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse, "Server_ChargeForUse" }, // 3600930508
-		{ &Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState, "Server_UpdateAttachmentUseState" }, // 2857878532
-		{ &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger, "ShouldShowStinger" }, // 1848899036
-		{ &Z_Construct_UFunction_AFGEquipment_UnEquip, "UnEquip" }, // 1265545390
-		{ &Z_Construct_UFunction_AFGEquipment_WasEquipped, "WasEquipped" }, // 1505020507
-		{ &Z_Construct_UFunction_AFGEquipment_WasUnEquipped, "WasUnEquipped" }, // 2546260399
+		{ &Z_Construct_UFunction_AFGEquipment_AdjustDamage, "AdjustDamage" }, // 3619945697
+		{ &Z_Construct_UFunction_AFGEquipment_CanAffordUse, "CanAffordUse" }, // 3445129838
+		{ &Z_Construct_UFunction_AFGEquipment_ChargeForUse, "ChargeForUse" }, // 1745862750
+		{ &Z_Construct_UFunction_AFGEquipment_DidNotAffordUse, "DidNotAffordUse" }, // 3500450655
+		{ &Z_Construct_UFunction_AFGEquipment_Equip, "Equip" }, // 841801913
+		{ &Z_Construct_UFunction_AFGEquipment_GetAttachment, "GetAttachment" }, // 1355050489
+		{ &Z_Construct_UFunction_AFGEquipment_GetEquipmentSlot, "GetEquipmentSlot" }, // 2939788128
+		{ &Z_Construct_UFunction_AFGEquipment_GetInstigatorCharacter, "GetInstigatorCharacter" }, // 664701142
+		{ &Z_Construct_UFunction_AFGEquipment_GetSecondaryAttachment, "GetSecondaryAttachment" }, // 2275757078
+		{ &Z_Construct_UFunction_AFGEquipment_IsEquipped, "IsEquipped" }, // 4230900845
+		{ &Z_Construct_UFunction_AFGEquipment_IsLocalInstigator, "IsLocalInstigator" }, // 2840923305
+		{ &Z_Construct_UFunction_AFGEquipment_Server_ChargeForUse, "Server_ChargeForUse" }, // 3422267886
+		{ &Z_Construct_UFunction_AFGEquipment_Server_UpdateAttachmentUseState, "Server_UpdateAttachmentUseState" }, // 3804148483
+		{ &Z_Construct_UFunction_AFGEquipment_ShouldShowStinger, "ShouldShowStinger" }, // 3105702491
+		{ &Z_Construct_UFunction_AFGEquipment_UnEquip, "UnEquip" }, // 1712762649
+		{ &Z_Construct_UFunction_AFGEquipment_WasEquipped, "WasEquipped" }, // 1980839195
+		{ &Z_Construct_UFunction_AFGEquipment_WasUnEquipped, "WasUnEquipped" }, // 540561654
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::Class_MetaDataParams[] = {
@@ -849,14 +853,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "This is a potential secondary attachment" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment = { UE4CodeGen_Private::EPropertyClass::Object, "mSecondaryAttachment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mSecondaryAttachment), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment = { "mSecondaryAttachment", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mSecondaryAttachment), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment_MetaData[] = {
 		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
 		{ "ToolTip", "This is the attachment of this equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment = { UE4CodeGen_Private::EPropertyClass::Object, "mAttachment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mAttachment), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment = { "mAttachment", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mAttachment), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -868,7 +872,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	{
 		((AFGEquipment*)Obj)->mHasPersistentOwner = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasPersistentOwner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200c0000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGEquipment), &Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner = { "mHasPersistentOwner", nullptr, (EPropertyFlags)0x00200c0000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGEquipment), &Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mHasPersistentOwner_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_MetaData[] = {
 		{ "Category", "Equipment|Animation" },
@@ -876,8 +880,8 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_BACK)" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation = { UE4CodeGen_Private::EPropertyClass::Enum, "mBackAnimation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mBackAnimation), Z_Construct_UEnum_FactoryGame_EBackEquipment, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation = { "mBackAnimation", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mBackAnimation), Z_Construct_UEnum_FactoryGame_EBackEquipment, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mBackAnimation_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_MetaData[] = {
 		{ "Category", "Equipment|Animation" },
@@ -885,8 +889,8 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Arms animation this should play on the when the equipment is equipped (only used if mEquipmentSlot == ES_ARMS)" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation = { UE4CodeGen_Private::EPropertyClass::Enum, "mArmAnimation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mArmAnimation), Z_Construct_UEnum_FactoryGame_EArmEquipment, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation = { "mArmAnimation", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mArmAnimation), Z_Construct_UEnum_FactoryGame_EArmEquipment, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mArmAnimation_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -894,8 +898,8 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "The cost of using this equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse = { UE4CodeGen_Private::EPropertyClass::Array, "mCostToUse", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mCostToUse), METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mCostToUse", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse = { "mCostToUse", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mCostToUse), METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mCostToUse_Inner = { "mCostToUse", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -903,7 +907,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "The class (if any) to use to spawn a child equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass = { UE4CodeGen_Private::EPropertyClass::Class, "mChildEquipmentClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mChildEquipmentClass), Z_Construct_UClass_AFGEquipmentChild_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass = { "mChildEquipmentClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mChildEquipmentClass), Z_Construct_UClass_AFGEquipmentChild_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipmentClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -911,7 +915,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "If this equipment should attach to a socket, this is the socket." },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket = { UE4CodeGen_Private::EPropertyClass::Name, "mAttachSocket", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mAttachSocket), METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket = { "mAttachSocket", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mAttachSocket), METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachSocket_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -919,14 +923,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "The AnimBlueprint class to use for the 1p anim for our pawn, specifying none here means that the pawn default 1p anim will be used" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass = { UE4CodeGen_Private::EPropertyClass::Class, "m1PAnimClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, m1PAnimClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass = { "m1PAnimClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, m1PAnimClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_m1PAnimClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment_MetaData[] = {
 		{ "ModuleRelativePath", "Equipment/FGEquipment.h" },
 		{ "ToolTip", "Holds a reference to the child equipment that may be spawned with this" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment = { UE4CodeGen_Private::EPropertyClass::Object, "mChildEquipment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000020, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mChildEquipment), Z_Construct_UClass_AFGEquipmentChild_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment = { "mChildEquipment", nullptr, (EPropertyFlags)0x0010000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mChildEquipment), Z_Construct_UClass_AFGEquipmentChild_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mChildEquipment_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget_MetaData[] = {
 		{ "Category", "UI" },
@@ -934,7 +938,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Class of widget to add when equipping this equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget = { UE4CodeGen_Private::EPropertyClass::Class, "mEquipmentWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mEquipmentWidget), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget = { "mEquipmentWidget", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mEquipmentWidget), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound_MetaData[] = {
 		{ "Category", "Sound" },
@@ -942,7 +946,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Sound played when unequipping" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound = { UE4CodeGen_Private::EPropertyClass::Object, "mUnequipSound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mUnequipSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound = { "mUnequipSound", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mUnequipSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mUnequipSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound_MetaData[] = {
 		{ "Category", "Sound" },
@@ -950,7 +954,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Sound played when equipping" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound = { UE4CodeGen_Private::EPropertyClass::Object, "mEquipSound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mEquipSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound = { "mEquipSound", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mEquipSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -958,7 +962,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "Camera shake to play when sprinting" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake = { UE4CodeGen_Private::EPropertyClass::Class, "mSprintHeadBobShake", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mSprintHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake = { "mSprintHeadBobShake", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mSprintHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSprintHeadBobShake_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -966,8 +970,8 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "To what slot is this limited to?" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot = { UE4CodeGen_Private::EPropertyClass::Enum, "mEquipmentSlot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mEquipmentSlot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot = { "mEquipmentSlot", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mEquipmentSlot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mEquipmentSlot_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -975,7 +979,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "This is the secondary attachment for this class" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass = { UE4CodeGen_Private::EPropertyClass::Class, "mSecondaryAttachmentClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mSecondaryAttachmentClass), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass = { "mSecondaryAttachmentClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mSecondaryAttachmentClass), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachmentClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -983,7 +987,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		{ "ToolTip", "This is the attachment for this class" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass = { UE4CodeGen_Private::EPropertyClass::Class, "mAttachmentClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipment, mAttachmentClass), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass = { "mAttachmentClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipment, mAttachmentClass), Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachmentClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGEquipment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mSecondaryAttachment,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipment_Statics::NewProp_mAttachment,
@@ -1016,13 +1020,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGEquipment_Statics::ClassParams = {
 		&AFGEquipment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGEquipment_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGEquipment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGEquipment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGEquipment()
@@ -1034,7 +1042,11 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipment, 3422311548);
+	IMPLEMENT_CLASS(AFGEquipment, 3968149455);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipment>()
+	{
+		return AFGEquipment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEquipment(Z_Construct_UClass_AFGEquipment, &AFGEquipment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEquipment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEquipment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

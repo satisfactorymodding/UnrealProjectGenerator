@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -78,26 +78,26 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult = { UE4CodeGen_Private::EPropertyClass::Struct, "sweepResult", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, sweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult = { "sweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, sweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult_MetaData)) };
 	void Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_fromSweep_SetBit(void* Obj)
 	{
 		((FGWaterVolume_eventOnPrimitiveComponentEntered_Parms*)Obj)->fromSweep = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_fromSweep = { UE4CodeGen_Private::EPropertyClass::Bool, "fromSweep", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms), &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_fromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherBodyIndex = { UE4CodeGen_Private::EPropertyClass::Int, "otherBodyIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_fromSweep = { "fromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms), &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_fromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherBodyIndex = { "otherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp = { UE4CodeGen_Private::EPropertyClass::Object, "otherComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_other = { UE4CodeGen_Private::EPropertyClass::Object, "other", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp = { "otherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_otherComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_other = { "other", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp = { UE4CodeGen_Private::EPropertyClass::Object, "overlappedComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp = { "overlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_overlappedComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_sweepResult,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::NewProp_fromSweep,
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ToolTip", "Called whenever a primitive component enters the water, used to create effects on the water surface" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWaterVolume, "OnPrimitiveComponentEntered", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00480400, sizeof(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms), Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWaterVolume, nullptr, "OnPrimitiveComponentEntered", sizeof(FGWaterVolume_eventOnPrimitiveComponentEntered_Parms), Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -147,20 +147,20 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherBodyIndex = { UE4CodeGen_Private::EPropertyClass::Int, "otherBodyIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherBodyIndex = { "otherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp = { UE4CodeGen_Private::EPropertyClass::Object, "otherComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_other = { UE4CodeGen_Private::EPropertyClass::Object, "other", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp = { "otherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_other = { "other", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp = { UE4CodeGen_Private::EPropertyClass::Object, "overlappedComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp = { "overlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWaterVolume_eventOnPrimitiveComponentExited_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_overlappedComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherBodyIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::NewProp_otherComp,
@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ToolTip", "Called whenever a primitive component exits the water, used to create effects on the water surface" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWaterVolume, "OnPrimitiveComponentExited", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080400, sizeof(FGWaterVolume_eventOnPrimitiveComponentExited_Parms), Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWaterVolume, nullptr, "OnPrimitiveComponentExited", sizeof(FGWaterVolume_eventOnPrimitiveComponentExited_Parms), Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -224,8 +224,8 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWaterVolume_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 971084989
-		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited, "OnPrimitiveComponentExited" }, // 2496687429
+		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 1683102450
+		{ &Z_Construct_UFunction_AFGWaterVolume_OnPrimitiveComponentExited, "OnPrimitiveComponentExited" }, // 666422828
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::Class_MetaDataParams[] = {
@@ -242,7 +242,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ToolTip", "Old deprecated data that isn't used anymore, but we want to be sure that the post process volumes will be deleted" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume = { UE4CodeGen_Private::EPropertyClass::Object, "mAssociatedPostProcessVolume", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080820000000, 1, nullptr, STRUCT_OFFSET(AFGWaterVolume, mAssociatedPostProcessVolume_DEPRECATED), Z_Construct_UClass_APostProcessVolume_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume = { "mAssociatedPostProcessVolume", nullptr, (EPropertyFlags)0x0020080820000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mAssociatedPostProcessVolume_DEPRECATED), Z_Construct_UClass_APostProcessVolume_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume_MetaData)) };
 #endif // WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData[] = {
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ToolTip", "A template of settings for our post process settings" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings = { UE4CodeGen_Private::EPropertyClass::Class, "mPostProcessSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000801, 1, nullptr, STRUCT_OFFSET(AFGWaterVolume, mPostProcessSettings), Z_Construct_UClass_UFGSharedPostProcessSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings = { "mPostProcessSettings", nullptr, (EPropertyFlags)0x0024080000000801, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mPostProcessSettings), Z_Construct_UClass_UFGSharedPostProcessSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mPostProcessSettings_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData[] = {
 		{ "Category", "Audio" },
@@ -259,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ToolTip", "Audio settings for the this water volume" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio = { UE4CodeGen_Private::EPropertyClass::Class, "mWaterAudio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000801, 1, nullptr, STRUCT_OFFSET(AFGWaterVolume, mWaterAudio), Z_Construct_UClass_UFGWaterAudio_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio = { "mWaterAudio", nullptr, (EPropertyFlags)0x0024080000000801, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mWaterAudio), Z_Construct_UClass_UFGWaterAudio_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mWaterAudio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData[] = {
 		{ "Category", "Navigation" },
@@ -267,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		{ "ToolTip", "Specify what typ of nav area blocker this is ( defaults to null )" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass = { UE4CodeGen_Private::EPropertyClass::Class, "mAreaClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGWaterVolume, mAreaClass), Z_Construct_UClass_UNavArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass = { "mAreaClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWaterVolume, mAreaClass), Z_Construct_UClass_UNavArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAreaClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGWaterVolume_Statics::PropPointers[] = {
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWaterVolume_Statics::NewProp_mAssociatedPostProcessVolume,
@@ -286,13 +286,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGWaterVolume_Statics::ClassParams = {
 		&AFGWaterVolume::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGWaterVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGWaterVolume_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGWaterVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGWaterVolume_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGWaterVolume()
@@ -304,7 +308,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWaterVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWaterVolume, 4225857760);
+	IMPLEMENT_CLASS(AFGWaterVolume, 1613847027);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGWaterVolume>()
+	{
+		return AFGWaterVolume::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWaterVolume(Z_Construct_UClass_AFGWaterVolume, &AFGWaterVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWaterVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWaterVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

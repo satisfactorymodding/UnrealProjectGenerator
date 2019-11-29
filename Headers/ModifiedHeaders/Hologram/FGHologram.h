@@ -247,6 +247,10 @@ public:
 	/** Empty the array of construct disqualifiers */
 	void ResetConstructDisqualifiers();
 
+	bool CanBuildingSnap(){
+		return mCanBuildingSnapp;
+	}
+
 protected:
 	/** Setup clearance if possible and needed */
 	virtual void SetupClearance( class UBoxComponent* boxComponent );
@@ -328,6 +332,7 @@ protected:
 	 * @return The rotation with the users rotation applied.
 	 */
 	float ApplyScrollRotationTo( float base, bool onlyUseBaseForAlignment = false ) const;
+
 
 private:
 	/**
@@ -411,6 +416,11 @@ protected:
 	
 	/** Should we use the simplified material for valid placement? */
 	bool mUseSimplifiedHologramMaterial;
+
+
+
+	bool mCanBuildingSnapp = false;
+
 private:
 	/** Who is building */
 	UPROPERTY( Replicated )
@@ -423,6 +433,7 @@ private:
 	/** If the hologram has changed, i.e. multi step placement or rotation. */
 	UPROPERTY( Replicated )
 	bool mIsChanged;
+
 
 	/** The reason why we couldn't construct this hologram, if it's empty then we can construct it */
 	TArray< TSubclassOf< class UFGConstructDisqualifier > > mConstructDisqualifiers;

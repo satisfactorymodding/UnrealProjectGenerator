@@ -2,12 +2,17 @@
 
 #include "FGBuildableRadarTower.h"
 
+#if WITH_EDITOR
+void AFGBuildableRadarTower::PostEditChangeProperty( FPropertyChangedEvent& PropertyChangedEvent){ }
+#endif 
 AFGBuildableRadarTower::AFGBuildableRadarTower(){ }
 void AFGBuildableRadarTower::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
+void AFGBuildableRadarTower::PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void AFGBuildableRadarTower::Factory_StartProducing(){ }
 void AFGBuildableRadarTower::Factory_StopProducing(){ }
 void AFGBuildableRadarTower::Factory_TickProducing( float dt){ }
-void AFGBuildableRadarTower::PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 float AFGBuildableRadarTower::GetCurrentRevealRadius(){ return float(); }
-void AFGBuildableRadarTower::Destroyed(){ }
-void AFGBuildableRadarTower::Multicast_ExpandRadarRadius_Implementation(){ }
+float AFGBuildableRadarTower::GetNormalizedProgressValueForStep( int32 step){ return float(); }
+void AFGBuildableRadarTower::OnRep_OnRadiusUpdated(){ }
+float AFGBuildableRadarTower::GetRevealRadiusOnStep( int32 step){ return float(); }
+bool AFGBuildableRadarTower::IsRadarExpandedToMax(){ return bool(); }

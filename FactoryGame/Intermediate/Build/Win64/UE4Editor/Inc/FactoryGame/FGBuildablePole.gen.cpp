@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -90,14 +90,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	{
 		((AFGBuildablePole*)Obj)->mUseStaticHeight = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseStaticHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildablePole), &Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight = { "mUseStaticHeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildablePole), &Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "This poles mesh. @save 2018-10-24, this is here so old poles < alpha 2 path will still have a correct mesh, resaving an old save" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mPoleMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildablePole, mPoleMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh = { "mPoleMesh", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mPoleMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData[] = {
 		{ "Category", "Pole" },
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		{ "ToolTip", "Connection component used" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0 = { UE4CodeGen_Private::EPropertyClass::Object, "mSnapOnly0", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildablePole, mSnapOnly0), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0 = { "mSnapOnly0", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mSnapOnly0), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mSnapOnly0_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy_MetaData[] = {
 		{ "Category", "Pole" },
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		{ "ToolTip", "The component we want to use with the pole" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy = { UE4CodeGen_Private::EPropertyClass::Object, "mPoleComponentProxy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildablePole, mPoleComponentProxy), Z_Construct_UClass_UFGColoredInstanceMeshProxy_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy = { "mPoleComponentProxy", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mPoleComponentProxy), Z_Construct_UClass_UFGColoredInstanceMeshProxy_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleComponentProxy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight_MetaData[] = {
 		{ "Category", "Pole" },
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		{ "ToolTip", "Height between two stacked poles excluding the poles height." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight = { UE4CodeGen_Private::EPropertyClass::Float, "mStackHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildablePole, mStackHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight = { "mStackHeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mStackHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mStackHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData[] = {
 		{ "Category", "Pole" },
@@ -135,14 +135,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	{
 		((AFGBuildablePole*)Obj)->mCanStack = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanStack", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildablePole), &Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack = { "mCanStack", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildablePole), &Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mCanStack_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildablePole.h" },
 		{ "ToolTip", "This poles height." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight = { UE4CodeGen_Private::EPropertyClass::Float, "mHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildablePole, mHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight = { "mHeight", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildablePole, mHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mHeight_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildablePole_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mUseStaticHeight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildablePole_Statics::NewProp_mPoleMesh,
@@ -157,13 +157,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildablePole_Statics::ClassParams = {
 		&AFGBuildablePole::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGBuildablePole_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGBuildablePole_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildablePole_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildablePole_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildablePole()
@@ -175,7 +179,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePole() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePole, 2506394105);
+	IMPLEMENT_CLASS(AFGBuildablePole, 2372926730);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildablePole>()
+	{
+		return AFGBuildablePole::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildablePole(Z_Construct_UClass_AFGBuildablePole, &AFGBuildablePole::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildablePole"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildablePole);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -147,6 +147,9 @@ public:
 	UFUNCTION()
 	void OnRep_GamePhase();
 
+	/** Debug */
+	void Debug_DumpStateToLog();
+
 	/** Resets the game phases to the defaults. Used for resetting progression for testing. */
 	void ResetGamePhase();
 
@@ -161,7 +164,7 @@ protected:
 
 	/** Speciefies what the different tiers cost */
 	UPROPERTY( EditDefaultsOnly, SaveGame, Replicated, Category = "Progression" )
-	TArray< FPhaseCost > mGamePhaseCosts;	
+	TArray< FPhaseCost > mGamePhaseCosts;
 public: 
 	/** Called when the game phase is updated */
 	UPROPERTY( BlueprintAssignable, Category = "Recipe" )

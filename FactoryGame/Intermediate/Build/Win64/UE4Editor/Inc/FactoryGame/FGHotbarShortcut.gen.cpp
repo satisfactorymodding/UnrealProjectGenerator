@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::NewProp_owner = { UE4CodeGen_Private::EPropertyClass::Object, "owner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGHotbarShortcut_eventExecute_Parms, owner), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::NewProp_owner = { "owner", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGHotbarShortcut_eventExecute_Parms, owner), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::NewProp_owner,
 	};
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		{ "ToolTip", "End IFSaveInterface" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, "Execute", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGHotbarShortcut_eventExecute_Parms), Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, nullptr, "Execute", sizeof(FGHotbarShortcut_eventExecute_Parms), Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_Execute_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGHotbarShortcut_Execute()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGHotbarShortcut_eventGetDisplayImage_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGHotbarShortcut_eventGetDisplayImage_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::NewProp_ReturnValue,
 	};
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		{ "ModuleRelativePath", "FGHotbarShortcut.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, "GetDisplayImage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C020C00, sizeof(FGHotbarShortcut_eventGetDisplayImage_Parms), Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, nullptr, "GetDisplayImage", sizeof(FGHotbarShortcut_eventGetDisplayImage_Parms), Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -140,8 +140,8 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 	{
 		((FGHotbarShortcut_eventIsActive_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGHotbarShortcut_eventIsActive_Parms), &Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_owner = { UE4CodeGen_Private::EPropertyClass::Object, "owner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGHotbarShortcut_eventIsActive_Parms, owner), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHotbarShortcut_eventIsActive_Parms), &Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_owner = { "owner", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGHotbarShortcut_eventIsActive_Parms, owner), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::NewProp_owner,
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		{ "ModuleRelativePath", "FGHotbarShortcut.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, "IsActive", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C020C00, sizeof(FGHotbarShortcut_eventIsActive_Parms), Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, nullptr, "IsActive", sizeof(FGHotbarShortcut_eventIsActive_Parms), Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsActive_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGHotbarShortcut_IsActive()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -177,8 +177,8 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 	{
 		((FGHotbarShortcut_eventIsValidShortcut_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGHotbarShortcut_eventIsValidShortcut_Parms), &Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_owner = { UE4CodeGen_Private::EPropertyClass::Object, "owner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGHotbarShortcut_eventIsValidShortcut_Parms, owner), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHotbarShortcut_eventIsValidShortcut_Parms), &Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_owner = { "owner", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGHotbarShortcut_eventIsValidShortcut_Parms, owner), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::NewProp_owner,
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		{ "ModuleRelativePath", "FGHotbarShortcut.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, "IsValidShortcut", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C020C00, sizeof(FGHotbarShortcut_eventIsValidShortcut_Parms), Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGHotbarShortcut, nullptr, "IsValidShortcut", sizeof(FGHotbarShortcut_eventIsValidShortcut_Parms), Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -219,10 +219,10 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGHotbarShortcut_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGHotbarShortcut_Execute, "Execute" }, // 2908109425
-		{ &Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage, "GetDisplayImage" }, // 2687545937
-		{ &Z_Construct_UFunction_UFGHotbarShortcut_IsActive, "IsActive" }, // 320861054
-		{ &Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut, "IsValidShortcut" }, // 480622442
+		{ &Z_Construct_UFunction_UFGHotbarShortcut_Execute, "Execute" }, // 2513342499
+		{ &Z_Construct_UFunction_UFGHotbarShortcut_GetDisplayImage, "GetDisplayImage" }, // 3242216303
+		{ &Z_Construct_UFunction_UFGHotbarShortcut_IsActive, "IsActive" }, // 3377018231
+		{ &Z_Construct_UFunction_UFGHotbarShortcut_IsValidShortcut, "IsValidShortcut" }, // 4015049014
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHotbarShortcut_Statics::Class_MetaDataParams[] = {
@@ -240,13 +240,17 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGHotbarShortcut_Statics::ClassParams = {
 		&UFGHotbarShortcut::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		ARRAY_COUNT(InterfaceParams),
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGHotbarShortcut_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGHotbarShortcut_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGHotbarShortcut()
@@ -258,7 +262,11 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHotbarShortcut, 1896810454);
+	IMPLEMENT_CLASS(UFGHotbarShortcut, 932434625);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGHotbarShortcut>()
+	{
+		return UFGHotbarShortcut::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHotbarShortcut(Z_Construct_UClass_UFGHotbarShortcut, &UFGHotbarShortcut::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHotbarShortcut"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHotbarShortcut);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -25,11 +25,12 @@ void AFGBuildableConveyorBelt::TogglePendingDismantleMaterial( bool enabled){ }
 FVector AFGBuildableConveyorBelt::GetVelocityForBase(  AActor* basedActor,  UPrimitiveComponent* baseComponent) const{ return FVector(); }
 FVector AFGBuildableConveyorBelt::GetRefundSpawnLocationAndArea_Implementation( const FVector& aimHitLocation, float& out_radius) const{ return FVector(); }
 void AFGBuildableConveyorBelt::Upgrade_Implementation( AActor* newActor){ }
-TArray< AFGBuildableConveyorBelt* > AFGBuildableConveyorBelt::Split( AFGBuildableConveyorBelt* conveyor, float offset){ return TArray<AFGBuildableConveyorBelt*>(); }
+TArray< AFGBuildableConveyorBelt* > AFGBuildableConveyorBelt::Split( AFGBuildableConveyorBelt* conveyor, float offset, bool connectNewConveyors){ return TArray<AFGBuildableConveyorBelt*>(); }
 AFGBuildableConveyorBelt* AFGBuildableConveyorBelt::Merge( TArray< AFGBuildableConveyorBelt* > conveyors){ return nullptr; }
 AFGBuildableConveyorBelt* AFGBuildableConveyorBelt::Respline( AFGBuildableConveyorBelt* conveyor, const TArray< FSplinePointData >& newSplineData){ return nullptr; }
 void AFGBuildableConveyorBelt::OnUseServerRepInput(  AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion){ }
 bool AFGBuildableConveyorBelt::VerifyDefaults( FString& out_message){ return bool(); }
 void AFGBuildableConveyorBelt::TickItemTransforms( float dt){ }
 void AFGBuildableConveyorBelt::UpdateItemTransformTick( const FConveyorBeltItem& item, TMap<FName, int32>& instanceCounts,  AFGRadioactivitySubsystem* radioactiveSubsystem){ }
+void AFGBuildableConveyorBelt::GetConveyorMaterials( TArray<UMaterialInterface*, TInlineAllocator<4>>& out_materials){ }
 void AFGBuildableConveyorBelt::OnRep_SplineData(){ }

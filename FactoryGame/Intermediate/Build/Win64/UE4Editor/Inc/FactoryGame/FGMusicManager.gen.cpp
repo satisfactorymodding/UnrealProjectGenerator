@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -91,8 +91,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMusicManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_UFGMusicManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMusicManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMusicManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_UFGMusicManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMusicManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMusicManager_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMusicManager_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMusicManager_Get_Statics::NewProp_worldContext,
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "To easy access the music manager from anywhere, can return null if world context is invalid or no music manager is spawned." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMusicManager_eventGet_Parms), Z_Construct_UFunction_UFGMusicManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "Get", sizeof(FGMusicManager_eventGet_Parms), Z_Construct_UFunction_UFGMusicManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -126,8 +126,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::NewProp_worldSettings = { UE4CodeGen_Private::EPropertyClass::Object, "worldSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMusicManager_eventNotifyPostLoadMap_Parms, worldSettings), Z_Construct_UClass_AWorldSettings_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::NewProp_loadedWorld = { UE4CodeGen_Private::EPropertyClass::Object, "loadedWorld", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMusicManager_eventNotifyPostLoadMap_Parms, loadedWorld), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::NewProp_worldSettings = { "worldSettings", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMusicManager_eventNotifyPostLoadMap_Parms, worldSettings), Z_Construct_UClass_AWorldSettings_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::NewProp_loadedWorld = { "loadedWorld", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMusicManager_eventNotifyPostLoadMap_Parms, loadedWorld), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::NewProp_worldSettings,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::NewProp_loadedWorld,
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Notify that a new map has been loaded." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "NotifyPostLoadMap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMusicManager_eventNotifyPostLoadMap_Parms), Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "NotifyPostLoadMap", sizeof(FGMusicManager_eventNotifyPostLoadMap_Parms), Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::NewProp_mapArea = { UE4CodeGen_Private::EPropertyClass::Class, "mapArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMusicManager_eventOnPlayerEnteredArea_Parms, mapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::NewProp_mapArea = { "mapArea", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMusicManager_eventOnPlayerEnteredArea_Parms, mapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::NewProp_mapArea,
 	};
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Called whenever a player enters an area" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "OnPlayerEnteredArea", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMusicManager_eventOnPlayerEnteredArea_Parms), Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "OnPlayerEnteredArea", sizeof(FGMusicManager_eventOnPlayerEnteredArea_Parms), Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 	{
 		((FGMusicManager_eventOnPlayerNearBaseChanged_Parms*)Obj)->isNear = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::NewProp_isNear = { UE4CodeGen_Private::EPropertyClass::Bool, "isNear", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGMusicManager_eventOnPlayerNearBaseChanged_Parms), &Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::NewProp_isNear_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::NewProp_isNear = { "isNear", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGMusicManager_eventOnPlayerNearBaseChanged_Parms), &Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::NewProp_isNear_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::NewProp_isNear,
 	};
@@ -205,7 +205,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Called whenever a player enters" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "OnPlayerNearBaseChanged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMusicManager_eventOnPlayerNearBaseChanged_Parms), Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "OnPlayerNearBaseChanged", sizeof(FGMusicManager_eventOnPlayerNearBaseChanged_Parms), Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -229,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Pause music playback." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Pause_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "Pause", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Pause_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Pause_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Pause_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "Pause", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Pause_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Pause_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_Pause()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -253,7 +253,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Start/Continue music playback." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Play_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "Play", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Play_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Play_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Play_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "Play", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Play_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Play_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_Play()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -277,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Stop music playback." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Stop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, "Stop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Stop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Stop_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMusicManager_Stop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMusicManager, nullptr, "Stop", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMusicManager_Stop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMusicManager_Stop_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMusicManager_Stop()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -319,13 +319,13 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMusicManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMusicManager_Get, "Get" }, // 3404055422
-		{ &Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap, "NotifyPostLoadMap" }, // 3442139316
-		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea, "OnPlayerEnteredArea" }, // 67089674
-		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged, "OnPlayerNearBaseChanged" }, // 3885054791
-		{ &Z_Construct_UFunction_UFGMusicManager_Pause, "Pause" }, // 3461685207
-		{ &Z_Construct_UFunction_UFGMusicManager_Play, "Play" }, // 1193458378
-		{ &Z_Construct_UFunction_UFGMusicManager_Stop, "Stop" }, // 3373110234
+		{ &Z_Construct_UFunction_UFGMusicManager_Get, "Get" }, // 1879584131
+		{ &Z_Construct_UFunction_UFGMusicManager_NotifyPostLoadMap, "NotifyPostLoadMap" }, // 1840100226
+		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerEnteredArea, "OnPlayerEnteredArea" }, // 765309870
+		{ &Z_Construct_UFunction_UFGMusicManager_OnPlayerNearBaseChanged, "OnPlayerNearBaseChanged" }, // 524045429
+		{ &Z_Construct_UFunction_UFGMusicManager_Pause, "Pause" }, // 788048311
+		{ &Z_Construct_UFunction_UFGMusicManager_Play, "Play" }, // 1388297259
+		{ &Z_Construct_UFunction_UFGMusicManager_Stop, "Stop" }, // 1474362068
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::Class_MetaDataParams[] = {
@@ -341,7 +341,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "Music manager class name" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName = { UE4CodeGen_Private::EPropertyClass::Struct, "mMusicManagerClassName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000044000, 1, nullptr, STRUCT_OFFSET(UFGMusicManager, mMusicManagerClassName), Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName = { "mMusicManagerClassName", nullptr, (EPropertyFlags)0x0040000000044000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMusicManager, mMusicManagerClassName), Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance_MetaData[] = {
 		{ "Category", "Audio" },
@@ -349,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "The distance that we considers a factory as close" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mFactoryCloseDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGMusicManager, mFactoryCloseDistance), METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance = { "mFactoryCloseDistance", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMusicManager, mFactoryCloseDistance), METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval_MetaData[] = {
 		{ "Category", "Audio" },
@@ -357,7 +357,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		{ "ToolTip", "How often (in seconds) we want to check if we are close to a factory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mUpdateInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGMusicManager, mUpdateInterval), METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval = { "mUpdateInterval", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMusicManager, mUpdateInterval), METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mUpdateInterval_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMusicManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mMusicManagerClassName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMusicManager_Statics::NewProp_mFactoryCloseDistance,
@@ -368,13 +368,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMusicManager_Statics::ClassParams = {
 		&UFGMusicManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMusicManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMusicManager_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::PropPointers),
+		0,
+		0x000000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMusicManager()
@@ -386,7 +390,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMusicManager, 3386893561);
+	IMPLEMENT_CLASS(UFGMusicManager, 29999272);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMusicManager>()
+	{
+		return UFGMusicManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMusicManager(Z_Construct_UClass_UFGMusicManager, &UFGMusicManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMusicManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMusicManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

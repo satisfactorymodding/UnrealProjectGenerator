@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		{ "UIMin", "1.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness = { UE4CodeGen_Private::EPropertyClass::Float, "mCamberStiffness", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleWheel, mCamberStiffness), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness = { "mCamberStiffness", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleWheel, mCamberStiffness), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop_MetaData[] = {
 		{ "Category", "Wheel" },
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		{ "ToolTip", "Wheel camber angle IN DEGREES" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop = { UE4CodeGen_Private::EPropertyClass::Float, "mCamberAtMaxDroop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleWheel, mCamberAtMaxDroop), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop = { "mCamberAtMaxDroop", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleWheel, mCamberAtMaxDroop), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression_MetaData[] = {
 		{ "Category", "Wheel" },
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		{ "ToolTip", "Wheel camber angle IN DEGREES" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression = { UE4CodeGen_Private::EPropertyClass::Float, "mCamberAtMaxCompression", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleWheel, mCamberAtMaxCompression), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression = { "mCamberAtMaxCompression", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleWheel, mCamberAtMaxCompression), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest_MetaData[] = {
 		{ "Category", "Wheel" },
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		{ "ToolTip", "Wheel camber angle IN DEGREES" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest = { UE4CodeGen_Private::EPropertyClass::Float, "mCamberAtRest", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleWheel, mCamberAtRest), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest = { "mCamberAtRest", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleWheel, mCamberAtRest), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_MetaData[] = {
 		{ "Category", "Wheel" },
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 	{
 		((UFGVehicleWheel*)Obj)->mAutoGenerateCollisionCylinder = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder = { UE4CodeGen_Private::EPropertyClass::Bool, "mAutoGenerateCollisionCylinder", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGVehicleWheel), &Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder = { "mAutoGenerateCollisionCylinder", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGVehicleWheel), &Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_MetaData[] = {
 		{ "Category", "Wheel" },
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 	{
 		((UFGVehicleWheel*)Obj)->mInvertSteering = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering = { UE4CodeGen_Private::EPropertyClass::Bool, "mInvertSteering", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGVehicleWheel), &Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering = { "mInvertSteering", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGVehicleWheel), &Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGVehicleWheel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop,
@@ -144,13 +144,17 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGVehicleWheel_Statics::ClassParams = {
 		&UFGVehicleWheel::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGVehicleWheel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGVehicleWheel_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVehicleWheel_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleWheel_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGVehicleWheel()
@@ -162,7 +166,11 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleWheel, 2933017861);
+	IMPLEMENT_CLASS(UFGVehicleWheel, 3882955686);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGVehicleWheel>()
+	{
+		return UFGVehicleWheel::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleWheel(Z_Construct_UClass_UFGVehicleWheel, &UFGVehicleWheel::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleWheel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleWheel);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

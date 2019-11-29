@@ -11,6 +11,7 @@
 #include "FGPlayerController.generated.h"
 
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FPawnChangedDelegate, APawn*, newPawn );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FPlayerEnteredAreaDelegate, TSubclassOf< class UFGMapArea >, mapArea );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FDisabledInputGateDelegate, FDisabledInputGate, newDisabledInputGate );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnToggleInventory, bool, isOpen );
@@ -139,6 +140,10 @@ public:
 	UPROPERTY( BlueprintAssignable, Category = "Map Area", DisplayName = "OnMapAreaEntered" )
 	FPlayerEnteredAreaDelegate MapAreaEntered;
 
+	/** Called when the pawn this controller is controlling changes to other than nullPeter */
+	UPROPERTY( BlueprintAssignable, Category = "Pawn", DisplayName = "OnPawnChanged" )
+	FPawnChangedDelegate PawnChanged;
+
 	/** Tells the server to start transferring fog of war data to the requesting client  */
 	UFUNCTION( Reliable, Server, WithValidation )
 	void Server_RequestFogOfWarData();
@@ -265,6 +270,10 @@ protected:
 
 	/** Sends a ping to the other players at the look at location */
 	void OnAttentionPingPressed();
+
+	/** Temp Nativized event to reduce refernces in RCO.*/
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Portable Miner")
+	void OnDismantlePortableMiner(class AFGPortableMiner* PortableMiner);
 
 	/** Function that checks which map area our pawn is in */
 	UFUNCTION()
@@ -428,4 +437,8 @@ private:
 
 	UPROPERTY()
 	class UInputComponent* mPhotomodeInputComponent;
+
+	/** Subsystem that keeps track of effects in proximity to the player */
+	UPROPERTY()
+	class AFGProximitySubsystem* mProximitySubsystem;
 };

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableDecor_eventGetDecorMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDecor_eventGetDecorMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::NewProp_ReturnValue,
 	};
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		{ "ToolTip", "Get the mesh of the decor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDecor, "GetDecorMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableDecor_eventGetDecorMesh_Parms), Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDecor, nullptr, "GetDecorMesh", sizeof(FGBuildableDecor_eventGetDecorMesh_Parms), Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -77,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::NewProp_mesh = { UE4CodeGen_Private::EPropertyClass::Object, "mesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableDecor_eventSetDecorMesh_Parms, mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDecor_eventSetDecorMesh_Parms, mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::NewProp_mesh,
 	};
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		{ "ToolTip", "Set the mesh for this decor, should not be called after it has been properly replicated" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDecor, "SetDecorMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBuildableDecor_eventSetDecorMesh_Parms), Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDecor, nullptr, "SetDecorMesh", sizeof(FGBuildableDecor_eventSetDecorMesh_Parms), Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -122,8 +122,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableDecor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh, "GetDecorMesh" }, // 1962119937
-		{ &Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh, "SetDecorMesh" }, // 3144592344
+		{ &Z_Construct_UFunction_AFGBuildableDecor_GetDecorMesh, "GetDecorMesh" }, // 1485750601
+		{ &Z_Construct_UFunction_AFGBuildableDecor_SetDecorMesh, "SetDecorMesh" }, // 3339737840
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDecor_Statics::Class_MetaDataParams[] = {
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		{ "ToolTip", "The mesh we want to have for the decor" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDecorMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableDecor, mDecorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh = { "mDecorMesh", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDecor, mDecorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableDecor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDecor_Statics::NewProp_mDecorMesh,
 	};
@@ -148,13 +148,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableDecor_Statics::ClassParams = {
 		&AFGBuildableDecor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableDecor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDecor_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableDecor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDecor_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDecor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDecor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableDecor()
@@ -166,7 +170,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDecor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDecor, 968223984);
+	IMPLEMENT_CLASS(AFGBuildableDecor, 481939299);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableDecor>()
+	{
+		return AFGBuildableDecor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableDecor(Z_Construct_UClass_AFGBuildableDecor, &AFGBuildableDecor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableDecor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableDecor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

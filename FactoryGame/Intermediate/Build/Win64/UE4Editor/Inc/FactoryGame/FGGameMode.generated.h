@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -44,6 +44,14 @@ class APlayerState;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIsMainMenuGameMode) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsMainMenuGameMode(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execKickPlayer) \
 	{ \
 		P_GET_OBJECT(APlayerState,Z_Param_ps); \
@@ -80,6 +88,14 @@ class APlayerState;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->RegisterRemoteCallObjectClass(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsMainMenuGameMode) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsMainMenuGameMode(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -177,6 +193,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGGameMode>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGameMode_h

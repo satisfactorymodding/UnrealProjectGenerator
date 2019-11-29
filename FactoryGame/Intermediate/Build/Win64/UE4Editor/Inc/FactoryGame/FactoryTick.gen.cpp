@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,10 +22,14 @@ class UScriptStruct* FFactoryTickFunction::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFactoryTickFunction, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FactoryTickFunction"), sizeof(FFactoryTickFunction), Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFactoryTickFunction, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FactoryTickFunction"), sizeof(FFactoryTickFunction), Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FFactoryTickFunction>()
+{
+	return FFactoryTickFunction::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FFactoryTickFunction(FFactoryTickFunction::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("FactoryTickFunction"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunction
@@ -58,19 +62,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		Z_Construct_UScriptStruct_FTickFunction,
 		&NewStructOps,
 		"FactoryTickFunction",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FFactoryTickFunction),
 		alignof(FFactoryTickFunction),
-		nullptr, 0,
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFactoryTickFunction_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryTickFunction_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFactoryTickFunction()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FactoryTickFunction"), sizeof(FFactoryTickFunction), Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FactoryTickFunction"), sizeof(FFactoryTickFunction), Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -80,7 +85,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC() { return 1646029032U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash() { return 621079230U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

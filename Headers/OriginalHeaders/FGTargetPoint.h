@@ -95,6 +95,6 @@ private:
 	float mDefaultWaitTime;
 public:
 	/** Target speed at this node */ 
-	UPROPERTY( BlueprintReadOnly, SaveGame, Meta = ( ExposeOnSpawn = "true" ), Category = "Target Point" )
+	UPROPERTY( Replicated, BlueprintReadOnly, SaveGame, Meta = ( ExposeOnSpawn = "true" ), Category = "Target Point" )
 	int32 mTargetSpeed;
 };

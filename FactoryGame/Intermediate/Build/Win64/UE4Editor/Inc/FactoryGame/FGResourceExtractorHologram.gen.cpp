@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -65,16 +65,16 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		{ "ToolTip", "The resource node we snapped to." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedResourceNode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGResourceExtractorHologram, mSnappedResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode = { "mSnappedResourceNode", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mSnappedResourceNode), Z_Construct_UClass_AFGResourceNode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGResourceExtractorHologram.h" },
 		{ "ToolTip", "What form can the overlapping resources be in." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms = { UE4CodeGen_Private::EPropertyClass::Array, "mAllowedResourceForms", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGResourceExtractorHologram, mAllowedResourceForms), METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData)) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner = { UE4CodeGen_Private::EPropertyClass::Enum, "mAllowedResourceForms", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms = { "mAllowedResourceForms", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResourceExtractorHologram, mAllowedResourceForms), METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner = { "mAllowedResourceForms", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_FactoryGame_EResourceForm, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGResourceExtractorHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mSnappedResourceNode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResourceExtractorHologram_Statics::NewProp_mAllowedResourceForms,
@@ -86,13 +86,17 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGResourceExtractorHologram_Statics::ClassParams = {
 		&AFGResourceExtractorHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGResourceExtractorHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGResourceExtractorHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGResourceExtractorHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGResourceExtractorHologram()
@@ -104,7 +108,11 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceExtractorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 2621257153);
+	IMPLEMENT_CLASS(AFGResourceExtractorHologram, 2514663477);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGResourceExtractorHologram>()
+	{
+		return AFGResourceExtractorHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceExtractorHologram(Z_Construct_UClass_AFGResourceExtractorHologram, &AFGResourceExtractorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceExtractorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceExtractorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGTitleButton() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGTitleButton_Statics::ClassParams = {
 		&UFGTitleButton::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGTitleButton_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGTitleButton_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGTitleButton()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGTitleButton() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGTitleButton, 2783513632);
+	IMPLEMENT_CLASS(UFGTitleButton, 92660758);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGTitleButton>()
+	{
+		return UFGTitleButton::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGTitleButton(Z_Construct_UClass_UFGTitleButton, &UFGTitleButton::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGTitleButton"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGTitleButton);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

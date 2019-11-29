@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 	{
 		((FGNobeliskDetonatorAttachment_eventMulticast_SetIsLoaded_Parms*)Obj)->isLoaded = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::NewProp_isLoaded = { UE4CodeGen_Private::EPropertyClass::Bool, "isLoaded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNobeliskDetonatorAttachment_eventMulticast_SetIsLoaded_Parms), &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::NewProp_isLoaded_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::NewProp_isLoaded = { "isLoaded", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNobeliskDetonatorAttachment_eventMulticast_SetIsLoaded_Parms), &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::NewProp_isLoaded_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::NewProp_isLoaded,
 	};
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 		{ "ModuleRelativePath", "FGNobeliskDetonatorAttachment.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonatorAttachment, "Multicast_SetIsLoaded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00024C40, sizeof(FGNobeliskDetonatorAttachment_eventMulticast_SetIsLoaded_Parms), Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonatorAttachment, nullptr, "Multicast_SetIsLoaded", sizeof(FGNobeliskDetonatorAttachment_eventMulticast_SetIsLoaded_Parms), Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 		{ "ModuleRelativePath", "FGNobeliskDetonatorAttachment.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonatorAttachment, "OnIsLoadedSet", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonatorAttachment, nullptr, "OnIsLoadedSet", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -122,8 +122,8 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded, "Multicast_SetIsLoaded" }, // 1031508499
-		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet, "OnIsLoadedSet" }, // 178329494
+		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded, "Multicast_SetIsLoaded" }, // 2979714395
+		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet, "OnIsLoadedSet" }, // 2417500603
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::Class_MetaDataParams[] = {
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 	{
 		((AFGNobeliskDetonatorAttachment*)Obj)->mIsLoaded = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsLoaded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000004, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGNobeliskDetonatorAttachment), &Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded = { "mIsLoaded", nullptr, (EPropertyFlags)0x0020080000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGNobeliskDetonatorAttachment), &Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded,
 	};
@@ -151,13 +151,17 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::ClassParams = {
 		&AFGNobeliskDetonatorAttachment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGNobeliskDetonatorAttachment()
@@ -169,7 +173,11 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskDetonatorAttachment, 2141070351);
+	IMPLEMENT_CLASS(AFGNobeliskDetonatorAttachment, 1517850027);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGNobeliskDetonatorAttachment>()
+	{
+		return AFGNobeliskDetonatorAttachment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGNobeliskDetonatorAttachment(Z_Construct_UClass_AFGNobeliskDetonatorAttachment, &AFGNobeliskDetonatorAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGNobeliskDetonatorAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGNobeliskDetonatorAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,9 +19,9 @@ public:
 	FRadiationVisualization(){}
 	FRadiationVisualization( FName Case, int32 ItemAmount, float Decay, int32 UnitMultiplier ) :
 		Case( Case ),
-		UnitMultiplier( UnitMultiplier ),
-		ItemAmount( ItemAmount ),
-		Decay( Decay )
+		ItemAmount(ItemAmount),
+		Decay(Decay),
+		UnitMultiplier( UnitMultiplier )
 	{}
 	
 

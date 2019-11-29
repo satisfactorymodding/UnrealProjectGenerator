@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceManager() {}
 		{ "ModuleRelativePath", "FGProductionIndicatorInstanceManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mInstanceComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mInstanceComponents, UFGProductionIndicatorInstanceManager), nullptr, STRUCT_OFFSET(UFGProductionIndicatorInstanceManager, mInstanceComponents), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents = { "mInstanceComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mInstanceComponents, UFGProductionIndicatorInstanceManager), STRUCT_OFFSET(UFGProductionIndicatorInstanceManager, mInstanceComponents), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::NewProp_mInstanceComponents,
 	};
@@ -68,13 +68,17 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceManager() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::ClassParams = {
 		&UFGProductionIndicatorInstanceManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::PropPointers),
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGProductionIndicatorInstanceManager()
@@ -86,7 +90,11 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceManager, 2783237631);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceManager, 346085157);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGProductionIndicatorInstanceManager>()
+	{
+		return UFGProductionIndicatorInstanceManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGProductionIndicatorInstanceManager(Z_Construct_UClass_UFGProductionIndicatorInstanceManager, &UFGProductionIndicatorInstanceManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGProductionIndicatorInstanceManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGProductionIndicatorInstanceManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

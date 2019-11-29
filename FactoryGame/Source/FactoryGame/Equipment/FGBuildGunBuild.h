@@ -17,8 +17,8 @@ struct FConnectionRepresentation
 	GENERATED_BODY()
 
 	FConnectionRepresentation() :
-		mConnectionRepresentation( nullptr ),
-		mConnectionComponent( nullptr )
+		mConnectionComponent( nullptr ),
+		mConnectionRepresentation( nullptr )
 	{
 	}
 

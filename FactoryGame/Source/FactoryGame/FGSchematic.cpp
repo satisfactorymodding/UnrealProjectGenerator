@@ -10,12 +10,16 @@ void UFGSchematic::PreSave( const  ITargetPlatform* targetPlatform){ }
 #if WITH_EDITOR
 void UFGSchematic::UpdateAssetBundleData(){ }
 #endif 
+#if WITH_EDITORONLY_DATA
+void UFGSchematic::MigrateDataToNewUnlockSystem(){ }
+#endif 
 UFGSchematic::UFGSchematic(){ }
 ESchematicType UFGSchematic::GetType( TSubclassOf< UFGSchematic > inClass){ return ESchematicType(); }
 FText UFGSchematic::GetSchematicDisplayName( TSubclassOf< UFGSchematic > inClass){ return FText(); }
 ESchematicCategory UFGSchematic::GetSchematicCategory( TSubclassOf< UFGSchematic > inClass){ return ESchematicCategory(); }
 TArray< FItemAmount > UFGSchematic::GetCost( TSubclassOf< UFGSchematic > inClass){ return TArray<FItemAmount>(); }
 TArray< TSubclassOf< class UFGRecipe > > UFGSchematic::GetRecipes( TSubclassOf< UFGSchematic > inClass){ return TArray<TSubclassOf<class UFGRecipe> >(); }
+TArray< UFGUnlock* > UFGSchematic::GetUnlocks( TSubclassOf< UFGSchematic > inClass){ return TArray<UFGUnlock*>(); }
 int32 UFGSchematic::GetTechTier( TSubclassOf< UFGSchematic > inClass){ return int32(); }
 float UFGSchematic::GetShipTravelTimeAfterPurchase( TSubclassOf< UFGSchematic > inClass){ return float(); }
 TArray< TSubclassOf< class UFGResourceDescriptor > > UFGSchematic::GetResourceToAddToScanner( TSubclassOf< UFGSchematic > inClass){ return TArray<TSubclassOf<class UFGResourceDescriptor> >(); }

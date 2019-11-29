@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 		{ "ToolTip", "Character this anim belongs to" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "mCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGAnimPlayer, mCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter = { "mCharacter", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAnimPlayer, mCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_MetaData[] = {
 		{ "Category", "Anim Player" },
@@ -84,8 +84,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 		{ "ToolTip", "Saved value of back equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType = { UE4CodeGen_Private::EPropertyClass::Enum, "mBacklotType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGAnimPlayer, mBacklotType), Z_Construct_UEnum_FactoryGame_EBackEquipment, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType = { "mBacklotType", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAnimPlayer, mBacklotType), Z_Construct_UEnum_FactoryGame_EBackEquipment, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_MetaData[] = {
 		{ "Category", "Anim Player" },
@@ -93,8 +93,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 		{ "ToolTip", "Saved value of arm equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType = { UE4CodeGen_Private::EPropertyClass::Enum, "mArmSlotType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGAnimPlayer, mArmSlotType), Z_Construct_UEnum_FactoryGame_EArmEquipment, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType = { "mArmSlotType", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAnimPlayer, mArmSlotType), Z_Construct_UEnum_FactoryGame_EArmEquipment, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_MetaData[] = {
 		{ "Category", "Anim Player" },
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 	{
 		((UFGAnimPlayer*)Obj)->mIsFirstPerson = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsFirstPerson", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGAnimPlayer), &Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson = { "mIsFirstPerson", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGAnimPlayer), &Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGAnimPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType,
@@ -120,13 +120,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAnimPlayer_Statics::ClassParams = {
 		&UFGAnimPlayer::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A8u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGAnimPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGAnimPlayer_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::PropPointers),
+		0,
+		0x009000A8u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAnimPlayer_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAnimPlayer_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAnimPlayer()
@@ -138,7 +142,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimPlayer, 3060952701);
+	IMPLEMENT_CLASS(UFGAnimPlayer, 3443770524);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGAnimPlayer>()
+	{
+		return UFGAnimPlayer::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimPlayer(Z_Construct_UClass_UFGAnimPlayer, &UFGAnimPlayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimPlayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimPlayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

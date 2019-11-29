@@ -116,7 +116,12 @@ public:
 	virtual void OnRep_Controller() override;
 	virtual void AddControllerPitchInput( float Val ) override;
 	virtual void Jump() override;
+	virtual void OnJumped_Implementation()override;
 	// End Pawn Interface
+
+	// Begin ACharacter Interface
+	virtual void OnEndCrouch( float HalfHeightAdjust, float ScaledHalfHeightAdjust );
+	// End ACharacter Interface
 
 	// Begin AFGCharacterBase interface
 	virtual void Died( AActor* died ) override;
@@ -159,6 +164,10 @@ public:
 	virtual bool ShouldSave_Implementation() const override;
 	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
 	//~End IFGSaveInterface
+
+	/** Blueprint function that ticks visual things not needed on dedicated server */
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Character" )
+	void TickVisuals( float dt );
 
 	/** Must be called on the owning client for the client to be able to switch the weapon */
 	UFUNCTION( BlueprintCallable, Category = "Equipment" )
@@ -288,6 +297,15 @@ public:
 	/** Start and stop sprinting, called when player presses/releases Left Shift, as standard. */
 	void SprintPressed();
 	void SprintReleased();
+
+	/** Start and stop crouch, called when player presses/releases Left Ctrl, as standard. */
+	UFUNCTION( BlueprintCallable, Category = "Crouch" )
+	void CrouchPressed();
+	UFUNCTION( BlueprintCallable, Category = "Crouch" )
+	void CrouchReleased();
+
+	/** Updates the camera with crouch settings */
+	void TickCameraOffset( float dt );
 
 	/** Cycles hand equipments in equipment slots */
 	void CycleHandEquipmentPressedUp();
@@ -432,6 +450,19 @@ public:
 	virtual void CheatTeleport();
 	//End cheats
 
+	/** Called when a slide has started*/
+	void OnSlideStart();
+
+	/** Called when a slide has started, local only */
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Movment" )
+	void OnSlideStartLocal();
+
+	/** Called when a slide has ended*/
+	void OnSlideEnd();
+
+	/** Called when a slide has ended, local only*/
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Movment" )
+	void OnSlideEndLocal();
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent( class UInputComponent* InputComponent ) override;
@@ -457,7 +488,7 @@ protected:
 	void SetMeshVisibility( bool isFirstPerson );
 
 	/** Blueprint accessor for when an item was picked up, called on client/server/remote */
-	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "Character" )
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, BlueprintCosmetic, Category = "Character" )
 	void PlayPickupEffects();
 
 	/** For playing 1P events */
@@ -594,8 +625,13 @@ protected:
 
 	/** Start the pending removal of the character */
 	virtual void TornOff() override;
-public:
 
+	/** Returns the arm bone location offset we want to use depending on crouch/stand state **/
+	UFUNCTION( BlueprintPure, Category = "Movement" )
+	FORCEINLINE float GetArmBoneLocation() const { return mArmBoneLocation; }
+
+	void DebugBuildablesInFrustum();
+public:
 	// Callbacks used by the replication graph to build dependency lists
 	/** Event for when equipment that is should always be replicated on the player is spawned */
 	static FOnPersistentEquipmentSpawned OnPersistentEquipmentSpawned;
@@ -615,6 +651,13 @@ public:
 
 	/** Update what crosshair to show */
 	void UpdateHUDCrosshair();
+
+	/** Gets sliding status */
+	UFUNCTION( BlueprintPure, Category = "Use" )
+	bool IsSliding();
+
+	/** Gets mTryToUnSlide */
+	inline bool IsTryingToUnslide(){ return mTryToUnSlide; }
 private:
 	/**
 	 * Spawn a new equipment.
@@ -648,6 +691,12 @@ private:
 	/** Update the UI with radiation intensity*/
 	void UpdateGameUIRadiationIntensity();
 
+	UFUNCTION( BlueprintPure, Category = "General" )
+	int32 GetTotalPlayerInventorySlots() const;
+
+	UFUNCTION( BlueprintPure, Category = "General" )
+	int32 GetTotalPlayerArmEquipmentSlots() const;
+
 	/** Server function that are called from public clients of the same name */
 	UFUNCTION( Reliable, Server, WithValidation )
 	void Server_EquipEquipment( AFGEquipment* newEquipment );
@@ -661,6 +710,9 @@ private:
 	void Server_OnUseReleased();
 	UFUNCTION( Reliable, Server, WithValidation )
 	void Server_PickUpItem( class AFGItemPickup* itemPickup );
+
+	/** Called when slide status changes so we can change capsule size accordingly */
+	void OnSlideStatusUpdated();
 
 
 	/** OnReps */
@@ -676,7 +728,8 @@ private:
 	void OnRep_InRadioactiveZone();
 	UFUNCTION()
 	void OnRep_RadiationIntensity();
-
+	UFUNCTION()
+	void OnRep_IsSliding();
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY( VisibleAnywhere, BlueprintReadOnly, Category = Camera )
@@ -784,18 +837,20 @@ protected:
 	UPROPERTY( SaveGame )
 	FVector mLastSafeGroundPositions[ MAX_SAFE_GROUND_POS_BUFFER_SIZE ];
 
-	//* used for knowing which is the latest written safe ground position
+	/** used for knowing which is the latest written safe ground position */
 	UPROPERTY( SaveGame )
 	int32 mLastSafeGroundPositionLoopHead = 0;
 private:
 	void InitializePreferredCameraMode();
 
+	/** Character can unslide, no collision is blocking */
+	void DoUnSlide();
 private:
 	friend class AFGPlayerController;
 	friend class UFGInventoryComponentEquipment;
 
 	/** Player camera */
-	UPROPERTY()
+	UPROPERTY( EditAnywhere )
 	class UCameraComponent* mCameraComponent;
 
 	/** Spring arm for camera */
@@ -932,4 +987,56 @@ private:
 	UPROPERTY( ReplicatedUsing=OnRep_InRadioActiveZone )
 	bool mInRadioactiveZone;
 
+	/** Number of starting slots for players inventory */
+	int32 mDefaultPlayerInventorySlots;
+
+	/** Number of starting slots for players arm equipments */
+	int32 mDefaultPlayerArmEquipmentSlots;
+
+	/** Current offset when blending the camera between stand and crouch */
+	float mCurrentCameraRelativeOffset;
+
+	/** Z location offset for  the arms mesh  */
+	float mArmBoneLocation;
+
+	/** Current blend value */
+	float mCameraOffsetBlend;
+
+	/** How fast the blend is */
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Movement|Crouch" )
+	float mCameraOffsetBlendSpeed;
+
+	/** Replicated value of sliding status. Used to let non owning player know whats happening */
+	UPROPERTY( replicatedUsing = OnRep_IsSliding )
+	bool mReplicatedIsSliding;
+
+	/** Keep track of what status was for mReplicatedIsSliding */
+	bool mLastSlideStatus;
+
+	/** New offset that we want to have */
+	float mTargetCameraRelativeOffset;
+
+	/* Old offset we are interpolating from */
+	float mOldCameraRelativeOffset;
+
+	/** How fast the blend is for crouch and slide */
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Movement|Crouch" )
+	float mCrouchSpeed;
+
+	/** How fast the blend is from crouch/slide to stand */
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Movement|Crouch" )
+	float mStandSpeed;
+
+	/** How fast the blend is from slide to crouch */
+	UPROPERTY( EditDefaultsOnly, Category = "FactoryGame|Movement|Crouch" )
+	float mSlideToCrouchSpeed;
+
+	/** Saving the default value of the crouch height since we manipulate it when sliding */
+	float mDefaultCrouchHalfHeight;
+
+	/** We are trying to raise capsule collision to default size after a slide has ended */
+	bool mTryToUnSlide;
+public:
+	UPROPERTY( BlueprintReadWrite, Category = "FactoryGame|Movement|Crouch" )
+	bool mNoUpdate;
 };

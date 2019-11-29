@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -91,8 +91,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "What does this foliage identify itself as" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers = { UE4CodeGen_Private::EPropertyClass::Array, "mFoliageIdentifiers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mFoliageIdentifiers), METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mFoliageIdentifiers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGFoliageIdentifier_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers = { "mFoliageIdentifiers", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mFoliageIdentifiers), METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_Inner = { "mFoliageIdentifiers", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGFoliageIdentifier_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "Specifies priority for spawning against other effects. Must be implemented by the spawning class. ex: FGDestructiveProjectile" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority = { UE4CodeGen_Private::EPropertyClass::Int, "mFXPriority", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mFXPriority), METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority = { "mFXPriority", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mFXPriority), METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFXPriority_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "The effect to play when destroyed by an explosive. If one is not specified it may fall back to either the vehicle effect or pickup effect" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect = { UE4CodeGen_Private::EPropertyClass::Object, "mExplosionDestroyedEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mExplosionDestroyedEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect = { "mExplosionDestroyedEffect", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mExplosionDestroyedEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mExplosionDestroyedEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "The effect to play when run over by a vehicle, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect = { UE4CodeGen_Private::EPropertyClass::Object, "mVehicleDestroyedEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mVehicleDestroyedEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect = { "mVehicleDestroyedEffect", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mVehicleDestroyedEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "Audio event to be posted when run over by a vehicle, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent = { UE4CodeGen_Private::EPropertyClass::Object, "mVehicleDestroyedEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mVehicleDestroyedEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent = { "mVehicleDestroyedEvent", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mVehicleDestroyedEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mVehicleDestroyedEvent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "The effect to play where the pickup was, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect = { UE4CodeGen_Private::EPropertyClass::Object, "mPickupEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mPickupEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect = { "mPickupEffect", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mPickupEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "Audio event to be posted when picked up, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent = { UE4CodeGen_Private::EPropertyClass::Object, "mPickupEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mPickupEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent = { "mPickupEvent", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mPickupEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupEvent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_MetaData[] = {
 		{ "Category", "FGFoliageResourceUserData" },
@@ -148,8 +148,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		{ "ToolTip", "Items we should gain when picking up the item, @todo: Remove BlueprintReadOnly" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems = { UE4CodeGen_Private::EPropertyClass::Array, "mPickupItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(UFGFoliageResourceUserData, mPickupItems), METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mPickupItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemDropWithChance, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems = { "mPickupItems", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFoliageResourceUserData, mPickupItems), METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mPickupItems_Inner = { "mPickupItems", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemDropWithChance, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFoliageResourceUserData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFoliageResourceUserData_Statics::NewProp_mFoliageIdentifiers_Inner,
@@ -167,13 +167,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageResourceUserData_Statics::ClassParams = {
 		&UFGFoliageResourceUserData::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x003010A0u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGFoliageResourceUserData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGFoliageResourceUserData_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::PropPointers),
+		0,
+		0x003010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageResourceUserData_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageResourceUserData()
@@ -185,7 +189,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageResourceUserData() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageResourceUserData, 973959495);
+	IMPLEMENT_CLASS(UFGFoliageResourceUserData, 504681205);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageResourceUserData>()
+	{
+		return UFGFoliageResourceUserData::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageResourceUserData(Z_Construct_UClass_UFGFoliageResourceUserData, &UFGFoliageResourceUserData::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageResourceUserData"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageResourceUserData);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

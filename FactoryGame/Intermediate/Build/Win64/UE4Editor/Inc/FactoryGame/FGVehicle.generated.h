@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -25,10 +25,14 @@ struct FInventoryStack;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleSeat>();
+
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehiclePhysicsData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehiclePhysicsData>();
 
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_46_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_46_RPC_WRAPPERS_NO_PURE_DECLS
@@ -98,6 +102,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleHasDriver>();
+
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_57_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_57_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_57_INCLASS_NO_PURE_DECLS \
@@ -165,6 +171,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleInWater>();
 
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_68_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_68_RPC_WRAPPERS_NO_PURE_DECLS
@@ -234,6 +242,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_VehicleOccupied>();
+
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_117_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execUpdatePhysicsVolume) \
@@ -242,22 +252,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->UpdatePhysicsVolume(Z_Param_physicsVolume); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_SecondaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_SecondaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_PrimaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_PrimaryColor(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -358,22 +352,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->UpdatePhysicsVolume(Z_Param_physicsVolume); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_SecondaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_SecondaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_PrimaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_PrimaryColor(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -582,6 +560,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGVehicle>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGVehicle_h

@@ -9,7 +9,9 @@ void UFGCheatManager::NoPower( bool enabled){ }
 bool UFGCheatManager::NoPower_Get(){ return bool(); }
 void UFGCheatManager::NoMessages( bool enabled){ }
 bool UFGCheatManager::NoMessages_Get(){ return bool(); }
-void UFGCheatManager::TurboMode( bool enabled){ }
+void UFGCheatManager::TurboBuildMode( bool enabled){ }
+bool UFGCheatManager::TurboBuildMode_Get(){ return bool(); }
+void UFGCheatManager::TurboProductionMode( bool enabled){ }
 bool UFGCheatManager::TurboMode_Get(){ return bool(); }
 void UFGCheatManager::GiveItemStacks( TSubclassOf<  UFGItemDescriptor > resource, int32 NumberOfStacks){ }
 void UFGCheatManager::GiveItemsSingle( TSubclassOf<  UFGItemDescriptor > resource, int32 NumberOfItems){ }
@@ -18,12 +20,12 @@ bool UFGCheatManager::PlayerFly_Get(){ return bool(); }
 void UFGCheatManager::PlayerNoClipModeOnFly( bool gohstMode){ }
 bool UFGCheatManager::PlayerNoClipModeOnFly_Get(){ return bool(); }
 void UFGCheatManager::ClearGiveItemPopularList(){ }
-void UFGCheatManager::GiefALLSchematics(){ }
-void UFGCheatManager::GiefAllSchematicsAndPhases(){ }
-void UFGCheatManager::GiefAvailableSchematics(){ }
-void UFGCheatManager::GiefCheatSchematics(){ }
-void UFGCheatManager::GiefStorySchematics(){ }
-void UFGCheatManager::GiefStartingResearch(){ }
+void UFGCheatManager::GiveALLSchematics(){ }
+void UFGCheatManager::GiveAllSchematicsAndPhases(){ }
+void UFGCheatManager::GiveAvailableSchematics(){ }
+void UFGCheatManager::GiveCheatSchematics(){ }
+void UFGCheatManager::GiveStorySchematics(){ }
+void UFGCheatManager::GiveStartingResearch(){ }
 void UFGCheatManager::RebuildPowerCircuits(){ }
 void UFGCheatManager::EnableBuildableTick( bool enable){ }
 bool UFGCheatManager::EnableBuildableTick_Get(){ return bool(); }
@@ -55,7 +57,7 @@ bool UFGCheatManager::SetFactoryDetailReplication_Get(){ return bool(); }
 void UFGCheatManager::ResetFuses(){ }
 void UFGCheatManager::ToggleCameraMode(){ }
 void UFGCheatManager::DumpFactoryStatsToLog(){ }
-void UFGCheatManager::GiefSchematicsOfTier( int32 tier){ }
+void UFGCheatManager::GiveSchematicsOfTier( int32 tier){ }
 void UFGCheatManager::SetGamePhase( EGamePhase phase){ }
 void UFGCheatManager::TestSharedInventoryPtr(){ }
 void UFGCheatManager::ForceSpawnCreatures(){ }
@@ -75,6 +77,7 @@ void UFGCheatManager::DumpPlayerStates(){ }
 void UFGCheatManager::EnableInstancingOnFactory( bool enabled){ }
 void UFGCheatManager::DumpActorRepresentations(){ }
 void UFGCheatManager::DumpSignificanceManagedObjects(){ }
+void UFGCheatManager::DumpDynamicOptionsSettings(){ }
 void UFGCheatManager::PurgeInactiveClientsFromSave( bool fetchInventories){ }
 void UFGCheatManager::PurgeAllBeaconsFromSave(){ }
 void UFGCheatManager::ListItemPickups(){ }
@@ -108,3 +111,6 @@ void UFGCheatManager::CompleteResearch(){ }
 void UFGCheatManager::PurgeAllTrainState(){ }
 void UFGCheatManager::ResetAllFactoryLegsToZero( bool repopulateEmptyLegs){ }
 void UFGCheatManager::RebuildFactoryLegsOneTileAroundPlayer(){ }
+void UFGCheatManager::ResetGamePhases(){ }
+void UFGCheatManager::DumpGamePhases(){ }
+void UFGCheatManager::ToggleTrainSelfDriving(){ }

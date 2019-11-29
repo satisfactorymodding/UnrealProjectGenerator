@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -19,6 +19,8 @@ class UObject;
 	friend struct Z_Construct_UScriptStruct_FTutorialData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTutorialData>();
 
 #define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_RPC_WRAPPERS \
  \
@@ -153,6 +155,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGTutorialSubsystem>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h

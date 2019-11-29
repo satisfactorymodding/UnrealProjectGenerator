@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,8 +60,8 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::NewProp_out_numConsumeable = { UE4CodeGen_Private::EPropertyClass::Int, "out_numConsumeable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGConsumableEquipment_eventGetConsumeable_Parms, out_numConsumeable), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::NewProp_out_consumeable = { UE4CodeGen_Private::EPropertyClass::Class, "out_consumeable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGConsumableEquipment_eventGetConsumeable_Parms, out_consumeable), Z_Construct_UClass_UFGConsumableDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::NewProp_out_numConsumeable = { "out_numConsumeable", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConsumableEquipment_eventGetConsumeable_Parms, out_numConsumeable), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::NewProp_out_consumeable = { "out_consumeable", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConsumableEquipment_eventGetConsumeable_Parms, out_consumeable), Z_Construct_UClass_UFGConsumableDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::NewProp_out_numConsumeable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::NewProp_out_consumeable,
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		{ "ToolTip", "Get the consumeable currently in hands" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConsumableEquipment, "GetConsumeable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGConsumableEquipment_eventGetConsumeable_Parms), Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConsumableEquipment, nullptr, "GetConsumeable", sizeof(FGConsumableEquipment_eventGetConsumeable_Parms), Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::NewProp_consumable = { UE4CodeGen_Private::EPropertyClass::Object, "consumable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGConsumableEquipment_eventPlayConsumeEffects_Parms, consumable), Z_Construct_UClass_UFGConsumableDescriptor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::NewProp_consumable = { "consumable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConsumableEquipment_eventPlayConsumeEffects_Parms, consumable), Z_Construct_UClass_UFGConsumableDescriptor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::NewProp_consumable,
 	};
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		{ "ToolTip", "Plays effects when consuming stuff" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConsumableEquipment, "PlayConsumeEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGConsumableEquipment_eventPlayConsumeEffects_Parms), Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConsumableEquipment, nullptr, "PlayConsumeEffects", sizeof(FGConsumableEquipment_eventPlayConsumeEffects_Parms), Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		{ "ToolTip", "Only server implementation of primary fire" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConsumableEquipment, "Server_PrimaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80220CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConsumableEquipment, nullptr, "Server_PrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -155,9 +155,9 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGConsumableEquipment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable, "GetConsumeable" }, // 4058287089
-		{ &Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects, "PlayConsumeEffects" }, // 899784107
-		{ &Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire, "Server_PrimaryFire" }, // 764286891
+		{ &Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable, "GetConsumeable" }, // 1049992893
+		{ &Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects, "PlayConsumeEffects" }, // 678463733
+		{ &Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire, "Server_PrimaryFire" }, // 3397836138
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConsumableEquipment_Statics::Class_MetaDataParams[] = {
@@ -171,13 +171,17 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGConsumableEquipment_Statics::ClassParams = {
 		&AFGConsumableEquipment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGConsumableEquipment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGConsumableEquipment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGConsumableEquipment()
@@ -189,7 +193,11 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConsumableEquipment, 993914681);
+	IMPLEMENT_CLASS(AFGConsumableEquipment, 3150478711);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGConsumableEquipment>()
+	{
+		return AFGConsumableEquipment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConsumableEquipment(Z_Construct_UClass_AFGConsumableEquipment, &AFGConsumableEquipment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConsumableEquipment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConsumableEquipment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventGetActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventGetActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::NewProp_ReturnValue,
 	};
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "GetActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGAggroTargetInterface_eventGetActor_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "GetActor", sizeof(FGAggroTargetInterface_eventGetActor_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetActor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_GetActor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventGetAttackLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventGetAttackLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::NewProp_ReturnValue,
 	};
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "GetAttackLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C820C00, sizeof(FGAggroTargetInterface_eventGetAttackLocation_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "GetAttackLocation", sizeof(FGAggroTargetInterface_eventGetAttackLocation_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -157,8 +157,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventGetEnemyTargetDesirability_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::NewProp_forController = { UE4CodeGen_Private::EPropertyClass::Object, "forController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventGetEnemyTargetDesirability_Parms, forController), Z_Construct_UClass_AFGEnemyController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventGetEnemyTargetDesirability_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::NewProp_forController = { "forController", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventGetEnemyTargetDesirability_Parms, forController), Z_Construct_UClass_AFGEnemyController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::NewProp_forController,
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "GetEnemyTargetDesirability", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGAggroTargetInterface_eventGetEnemyTargetDesirability_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "GetEnemyTargetDesirability", sizeof(FGAggroTargetInterface_eventGetEnemyTargetDesirability_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -196,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventGetTargetComponent_Parms, ReturnValue), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventGetTargetComponent_Parms, ReturnValue), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::NewProp_ReturnValue,
 	};
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ToolTip", "Primitive component that we will try to attack" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "GetTargetComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGAggroTargetInterface_eventGetTargetComponent_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "GetTargetComponent", sizeof(FGAggroTargetInterface_eventGetTargetComponent_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 	{
 		((FGAggroTargetInterface_eventIsAlive_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGAggroTargetInterface_eventIsAlive_Parms), &Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGAggroTargetInterface_eventIsAlive_Parms), &Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::NewProp_ReturnValue,
 	};
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "IsAlive", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C020C00, sizeof(FGAggroTargetInterface_eventIsAlive_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "IsAlive", sizeof(FGAggroTargetInterface_eventIsAlive_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::NewProp_forController = { UE4CodeGen_Private::EPropertyClass::Object, "forController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventRegisterIncomingAttacker_Parms, forController), Z_Construct_UClass_AFGEnemyController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::NewProp_forController = { "forController", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventRegisterIncomingAttacker_Parms, forController), Z_Construct_UClass_AFGEnemyController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::NewProp_forController,
 	};
@@ -270,7 +270,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "RegisterIncomingAttacker", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGAggroTargetInterface_eventRegisterIncomingAttacker_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "RegisterIncomingAttacker", sizeof(FGAggroTargetInterface_eventRegisterIncomingAttacker_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 	{
 		((FGAggroTargetInterface_eventShouldAutoregisterAsTargetable_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGAggroTargetInterface_eventShouldAutoregisterAsTargetable_Parms), &Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGAggroTargetInterface_eventShouldAutoregisterAsTargetable_Parms), &Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::NewProp_ReturnValue,
 	};
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "ShouldAutoregisterAsTargetable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48020C00, sizeof(FGAggroTargetInterface_eventShouldAutoregisterAsTargetable_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "ShouldAutoregisterAsTargetable", sizeof(FGAggroTargetInterface_eventShouldAutoregisterAsTargetable_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -323,7 +323,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::NewProp_forController = { UE4CodeGen_Private::EPropertyClass::Object, "forController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGAggroTargetInterface_eventUnregisterAttacker_Parms, forController), Z_Construct_UClass_AFGEnemyController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::NewProp_forController = { "forController", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAggroTargetInterface_eventUnregisterAttacker_Parms, forController), Z_Construct_UClass_AFGEnemyController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::NewProp_forController,
 	};
@@ -333,7 +333,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		{ "ModuleRelativePath", "AI/FGAggroTargetInterface.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, "UnregisterAttacker", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGAggroTargetInterface_eventUnregisterAttacker_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAggroTargetInterface, nullptr, "UnregisterAttacker", sizeof(FGAggroTargetInterface_eventUnregisterAttacker_Parms), Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -362,14 +362,14 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAggroTargetInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetActor, "GetActor" }, // 1140197103
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation, "GetAttackLocation" }, // 2128867091
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability, "GetEnemyTargetDesirability" }, // 4254201681
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent, "GetTargetComponent" }, // 742485107
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive, "IsAlive" }, // 2445672867
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker, "RegisterIncomingAttacker" }, // 4114876997
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable, "ShouldAutoregisterAsTargetable" }, // 1789450348
-		{ &Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker, "UnregisterAttacker" }, // 1200209968
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetActor, "GetActor" }, // 3714573534
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetAttackLocation, "GetAttackLocation" }, // 2181728308
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetEnemyTargetDesirability, "GetEnemyTargetDesirability" }, // 3469794637
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_GetTargetComponent, "GetTargetComponent" }, // 3418434113
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_IsAlive, "IsAlive" }, // 3716727151
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_RegisterIncomingAttacker, "RegisterIncomingAttacker" }, // 3037614473
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_ShouldAutoregisterAsTargetable, "ShouldAutoregisterAsTargetable" }, // 1047622369
+		{ &Z_Construct_UFunction_UFGAggroTargetInterface_UnregisterAttacker, "UnregisterAttacker" }, // 2669125451
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAggroTargetInterface_Statics::Class_MetaDataParams[] = {
@@ -384,13 +384,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAggroTargetInterface_Statics::ClassParams = {
 		&UFGAggroTargetInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAggroTargetInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAggroTargetInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAggroTargetInterface()
@@ -402,7 +406,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAggroTargetInterface, 1676828775);
+	IMPLEMENT_CLASS(UFGAggroTargetInterface, 2932723611);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGAggroTargetInterface>()
+	{
+		return UFGAggroTargetInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAggroTargetInterface(Z_Construct_UClass_UFGAggroTargetInterface, &UFGAggroTargetInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAggroTargetInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAggroTargetInterface);
 	static FName NAME_UFGAggroTargetInterface_GetActor = FName(TEXT("GetActor"));

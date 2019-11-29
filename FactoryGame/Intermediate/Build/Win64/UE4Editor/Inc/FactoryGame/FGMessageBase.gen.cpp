@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -33,13 +33,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EMessageType>()
+	{
+		return EMessageType_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMessageType(EMessageType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EMessageType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EMessageType_CRC() { return 625593413U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EMessageType_Hash() { return 699706088U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EMessageType()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EMessageType"), 0, Get_Z_Construct_UEnum_FactoryGame_EMessageType_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EMessageType"), 0, Get_Z_Construct_UEnum_FactoryGame_EMessageType_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -63,14 +67,14 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EMessageType",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EMessageType",
 				"EMessageType",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -100,8 +104,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMessageBase_eventGetMessageDefaultObject_Parms, ReturnValue), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMessageBase_eventGetMessageDefaultObject_Parms, inClass), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMessageBase_eventGetMessageDefaultObject_Parms, ReturnValue), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMessageBase_eventGetMessageDefaultObject_Parms, inClass), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::NewProp_inClass,
@@ -114,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		{ "ToolTip", "Gets the default object of the message class" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMessageBase, "GetMessageDefaultObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMessageBase_eventGetMessageDefaultObject_Parms), Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMessageBase, nullptr, "GetMessageDefaultObject", sizeof(FGMessageBase_eventGetMessageDefaultObject_Parms), Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -171,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMessageBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject, "GetMessageDefaultObject" }, // 3165159667
+		{ &Z_Construct_UFunction_UFGMessageBase_GetMessageDefaultObject, "GetMessageDefaultObject" }, // 1440512439
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::Class_MetaDataParams[] = {
@@ -188,8 +192,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		{ "ToolTip", "Images to display in the codex" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages = { UE4CodeGen_Private::EPropertyClass::Array, "mImages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageBase, mImages), METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mImages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages = { "mImages", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageBase, mImages), METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_Inner = { "mImages", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_MetaData[] = {
 		{ "Category", "Message" },
@@ -197,8 +201,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		{ "ToolTip", "What type is it" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType = { UE4CodeGen_Private::EPropertyClass::Enum, "mType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageBase, mType), Z_Construct_UEnum_FactoryGame_EMessageType, METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType = { "mType", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageBase, mType), Z_Construct_UEnum_FactoryGame_EMessageType, METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass_MetaData[] = {
 		{ "Category", "Message" },
@@ -206,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		{ "ToolTip", "Who sent the message" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass = { UE4CodeGen_Private::EPropertyClass::Class, "mSenderClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageBase, mSenderClass), Z_Construct_UClass_UFGMessageSender_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass = { "mSenderClass", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageBase, mSenderClass), Z_Construct_UClass_UFGMessageSender_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mSenderClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_MetaData[] = {
 		{ "Category", "Message" },
@@ -218,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 	{
 		((UFGMessageBase*)Obj)->mIsPopup = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsPopup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGMessageBase), &Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup = { "mIsPopup", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGMessageBase), &Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mIsPopup_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText_MetaData[] = {
 		{ "Category", "Message" },
@@ -226,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		{ "ToolTip", "Preview text when a message is added" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText = { UE4CodeGen_Private::EPropertyClass::Text, "mPreviewText", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageBase, mPreviewText), METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText = { "mPreviewText", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageBase, mPreviewText), METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mPreviewText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle_MetaData[] = {
 		{ "Category", "Message" },
@@ -234,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		{ "ToolTip", "I think this may be the title" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle = { UE4CodeGen_Private::EPropertyClass::Text, "mTitle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageBase, mTitle), METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle = { "mTitle", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageBase, mTitle), METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mTitle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMessageBase_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMessageBase_Statics::NewProp_mImages_Inner,
@@ -250,13 +254,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMessageBase_Statics::ClassParams = {
 		&UFGMessageBase::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMessageBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMessageBase_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::PropPointers),
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMessageBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMessageBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMessageBase()
@@ -268,7 +276,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMessageBase, 3986613792);
+	IMPLEMENT_CLASS(UFGMessageBase, 1420781500);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMessageBase>()
+	{
+		return UFGMessageBase::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMessageBase(Z_Construct_UClass_UFGMessageBase, &UFGMessageBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMessageBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMessageBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

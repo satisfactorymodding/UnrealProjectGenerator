@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -9,7 +9,6 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGMapArea;
-class UFGSchematic;
 struct FColor;
 class UFGMessageBase;
 class APlayerController;
@@ -25,19 +24,6 @@ class AFGSchematicManager;
 #define FACTORYGAME_FGGameState_generated_h
 
 #define FactoryGame_Source_FactoryGame_FGGameState_h_21_DELEGATE \
-struct _Script_FactoryGame_eventUnlockMoreInventorySlots_Parms \
-{ \
-	int32 newUnlockedSlots; \
-}; \
-static inline void FUnlockMoreInventorySlots_DelegateWrapper(const FMulticastScriptDelegate& UnlockMoreInventorySlots, int32 newUnlockedSlots) \
-{ \
-	_Script_FactoryGame_eventUnlockMoreInventorySlots_Parms Parms; \
-	Parms.newUnlockedSlots=newUnlockedSlots; \
-	UnlockMoreInventorySlots.ProcessMulticastDelegate<UObject>(&Parms); \
-}
-
-
-#define FactoryGame_Source_FactoryGame_FGGameState_h_20_DELEGATE \
 struct _Script_FactoryGame_eventVisitedMapAreaDelegate_Parms \
 { \
 	TSubclassOf<UFGMapArea>  mapArea; \
@@ -53,15 +39,6 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 #define FactoryGame_Source_FactoryGame_FGGameState_h_29_RPC_WRAPPERS \
 	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
 	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
- \
-	DECLARE_FUNCTION(execOnSchematicPurchased) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_newSchematic); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnSchematicPurchased(Z_Param_newSchematic); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execOnRep_BuildingColorSlot) \
 	{ \
@@ -100,62 +77,6 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayDuration(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTotalPlayerArmEquipmentSlots) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerArmEquipmentSlots(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumArmEquipmentSlotsUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetNumArmEquipmentSlotsUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTotalPlayerInventorySlots) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerInventorySlots(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetBuildingOverclockUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetBuildingOverclockUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetBuildingEfficiencyUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetBuildingEfficiencyUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumInventorySlotsUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetNumInventorySlotsUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetIsMapUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetIsMapUnlocked(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -244,14 +165,6 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetVisitedMapAreas(Z_Param_Out_out_VisitedAreas); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRemoveAllScannableResources) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->RemoveAllScannableResources(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -341,15 +254,6 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 	virtual bool SetAndReplicateBuildingColorInSlot_Validate(uint8 , FColor , FColor ); \
 	virtual void SetAndReplicateBuildingColorInSlot_Implementation(uint8 slot, FColor pColor, FColor sColor); \
  \
-	DECLARE_FUNCTION(execOnSchematicPurchased) \
-	{ \
-		P_GET_OBJECT(UClass,Z_Param_newSchematic); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnSchematicPurchased(Z_Param_newSchematic); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execOnRep_BuildingColorSlot) \
 	{ \
 		P_FINISH; \
@@ -387,62 +291,6 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayDuration(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTotalPlayerArmEquipmentSlots) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerArmEquipmentSlots(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumArmEquipmentSlotsUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetNumArmEquipmentSlotsUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetTotalPlayerInventorySlots) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerInventorySlots(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetBuildingOverclockUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetBuildingOverclockUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetBuildingEfficiencyUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetBuildingEfficiencyUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumInventorySlotsUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->GetNumInventorySlotsUnlocked(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetIsMapUnlocked) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetIsMapUnlocked(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -531,14 +379,6 @@ static inline void FVisitedMapAreaDelegate_DelegateWrapper(const FMulticastScrip
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->GetVisitedMapAreas(Z_Param_Out_out_VisitedAreas); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRemoveAllScannableResources) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->RemoveAllScannableResources(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -685,11 +525,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 
 
 #define FactoryGame_Source_FactoryGame_FGGameState_h_29_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mMapUnlockedMessage() { return STRUCT_OFFSET(AFGGameState, mMapUnlockedMessage); } \
-	FORCEINLINE static uint32 __PPO__mInventorySlotUnlockedMessage() { return STRUCT_OFFSET(AFGGameState, mInventorySlotUnlockedMessage); } \
-	FORCEINLINE static uint32 __PPO__mBuildingEfficiencyUnlockedMessage() { return STRUCT_OFFSET(AFGGameState, mBuildingEfficiencyUnlockedMessage); } \
-	FORCEINLINE static uint32 __PPO__mBuildingOverclockUnlockedMessage() { return STRUCT_OFFSET(AFGGameState, mBuildingOverclockUnlockedMessage); } \
-	FORCEINLINE static uint32 __PPO__mArmEquipmentSlotUnlockedMessage() { return STRUCT_OFFSET(AFGGameState, mArmEquipmentSlotUnlockedMessage); } \
 	FORCEINLINE static uint32 __PPO__mTimeSubsystem() { return STRUCT_OFFSET(AFGGameState, mTimeSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mStorySubsystem() { return STRUCT_OFFSET(AFGGameState, mStorySubsystem); } \
 	FORCEINLINE static uint32 __PPO__mRailroadSubsystem() { return STRUCT_OFFSET(AFGGameState, mRailroadSubsystem); } \
@@ -704,25 +539,18 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGGameState); \
 	FORCEINLINE static uint32 __PPO__mRadioactivitySubsystem() { return STRUCT_OFFSET(AFGGameState, mRadioactivitySubsystem); } \
 	FORCEINLINE static uint32 __PPO__mChatManager() { return STRUCT_OFFSET(AFGGameState, mChatManager); } \
 	FORCEINLINE static uint32 __PPO__mCentralStorageSubsystem() { return STRUCT_OFFSET(AFGGameState, mCentralStorageSubsystem); } \
-	FORCEINLINE static uint32 __PPO__mScannableResources() { return STRUCT_OFFSET(AFGGameState, mScannableResources); } \
+	FORCEINLINE static uint32 __PPO__mUnlockSubsystem() { return STRUCT_OFFSET(AFGGameState, mUnlockSubsystem); } \
 	FORCEINLINE static uint32 __PPO__mVisitedMapAreas() { return STRUCT_OFFSET(AFGGameState, mVisitedMapAreas); } \
 	FORCEINLINE static uint32 __PPO__mCheatNoCost() { return STRUCT_OFFSET(AFGGameState, mCheatNoCost); } \
 	FORCEINLINE static uint32 __PPO__mCheatNoPower() { return STRUCT_OFFSET(AFGGameState, mCheatNoPower); } \
-	FORCEINLINE static uint32 __PPO__mIsMapUnlocked() { return STRUCT_OFFSET(AFGGameState, mIsMapUnlocked); } \
-	FORCEINLINE static uint32 __PPO__mNumAdditionalInventorySlots() { return STRUCT_OFFSET(AFGGameState, mNumAdditionalInventorySlots); } \
-	FORCEINLINE static uint32 __PPO__mIsBuildingEfficiencyUnlocked() { return STRUCT_OFFSET(AFGGameState, mIsBuildingEfficiencyUnlocked); } \
-	FORCEINLINE static uint32 __PPO__mIsBuildingOverclockUnlocked() { return STRUCT_OFFSET(AFGGameState, mIsBuildingOverclockUnlocked); } \
 	FORCEINLINE static uint32 __PPO__mIsTradingPostBuilt() { return STRUCT_OFFSET(AFGGameState, mIsTradingPostBuilt); } \
 	FORCEINLINE static uint32 __PPO__mHasInitalTradingPostLandAnimPlayed() { return STRUCT_OFFSET(AFGGameState, mHasInitalTradingPostLandAnimPlayed); } \
 	FORCEINLINE static uint32 __PPO__mIsSpaceElevatorBuilt() { return STRUCT_OFFSET(AFGGameState, mIsSpaceElevatorBuilt); } \
-	FORCEINLINE static uint32 __PPO__mDefaultPlayerInventorySlots() { return STRUCT_OFFSET(AFGGameState, mDefaultPlayerInventorySlots); } \
 	FORCEINLINE static uint32 __PPO__mHubPartClass() { return STRUCT_OFFSET(AFGGameState, mHubPartClass); } \
 	FORCEINLINE static uint32 __PPO__mPlayDurationWhenLoaded() { return STRUCT_OFFSET(AFGGameState, mPlayDurationWhenLoaded); } \
 	FORCEINLINE static uint32 __PPO__mReplicatedSessionName() { return STRUCT_OFFSET(AFGGameState, mReplicatedSessionName); } \
 	FORCEINLINE static uint32 __PPO__mForceAddHubPartOnSpawn() { return STRUCT_OFFSET(AFGGameState, mForceAddHubPartOnSpawn); } \
-	FORCEINLINE static uint32 __PPO__mBuildingColorSlots() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlots); } \
-	FORCEINLINE static uint32 __PPO__mResourcesScannedFor() { return STRUCT_OFFSET(AFGGameState, mResourcesScannedFor); } \
-	FORCEINLINE static uint32 __PPO__mNumAdditionalArmEquipmentSlots() { return STRUCT_OFFSET(AFGGameState, mNumAdditionalArmEquipmentSlots); }
+	FORCEINLINE static uint32 __PPO__mBuildingColorSlots() { return STRUCT_OFFSET(AFGGameState, mBuildingColorSlots); }
 
 
 #define FactoryGame_Source_FactoryGame_FGGameState_h_26_PROLOG \
@@ -752,6 +580,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGGameState>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGameState_h

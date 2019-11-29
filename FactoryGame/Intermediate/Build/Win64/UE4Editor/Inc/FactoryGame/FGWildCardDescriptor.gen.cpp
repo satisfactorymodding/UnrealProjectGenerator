@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWildCardDescriptor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWildCardDescriptor_Statics::ClassParams = {
 		&UFGWildCardDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWildCardDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWildCardDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWildCardDescriptor()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWildCardDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWildCardDescriptor, 3988581195);
+	IMPLEMENT_CLASS(UFGWildCardDescriptor, 2784627706);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGWildCardDescriptor>()
+	{
+		return UFGWildCardDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWildCardDescriptor(Z_Construct_UClass_UFGWildCardDescriptor, &UFGWildCardDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWildCardDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWildCardDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

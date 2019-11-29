@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -27,10 +27,14 @@ class UScriptStruct* FProjectileData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FProjectileData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FProjectileData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ProjectileData"), sizeof(FProjectileData), Get_Z_Construct_UScriptStruct_FProjectileData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FProjectileData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ProjectileData"), sizeof(FProjectileData), Get_Z_Construct_UScriptStruct_FProjectileData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FProjectileData>()
+{
+	return FProjectileData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FProjectileData(FProjectileData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ProjectileData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
@@ -112,7 +116,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "type of damage used for detonation" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode = { UE4CodeGen_Private::EPropertyClass::Class, "DamageTypeExplode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, DamageTypeExplode), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode = { "DamageTypeExplode", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, DamageTypeExplode), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -120,7 +124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "type of damage used for impact damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType = { UE4CodeGen_Private::EPropertyClass::Class, "DamageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, DamageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType = { "DamageType", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, DamageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -132,7 +136,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 	{
 		((FProjectileData*)Obj)->ExplodeAtEndOfLife = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife = { UE4CodeGen_Private::EPropertyClass::Bool, "ExplodeAtEndOfLife", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FProjectileData), &Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife = { "ExplodeAtEndOfLife", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FProjectileData), &Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplodeAtEndOfLife_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -144,7 +148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 	{
 		((FProjectileData*)Obj)->CanTriggerExplodeBySameClass = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass = { UE4CodeGen_Private::EPropertyClass::Bool, "CanTriggerExplodeBySameClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FProjectileData), &Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass = { "CanTriggerExplodeBySameClass", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FProjectileData), &Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_CanTriggerExplodeBySameClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -156,7 +160,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 	{
 		((FProjectileData*)Obj)->ShouldExplodeOnImpact = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact = { UE4CodeGen_Private::EPropertyClass::Bool, "ShouldExplodeOnImpact", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FProjectileData), &Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact = { "ShouldExplodeOnImpact", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FProjectileData), &Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ShouldExplodeOnImpact_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -164,7 +168,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "Damage dealt to actor that get hit or impacted by this projectile" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage = { UE4CodeGen_Private::EPropertyClass::Int, "ImpactDamage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, ImpactDamage), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage = { "ImpactDamage", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, ImpactDamage), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ImpactDamage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -172,7 +176,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "radius of damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius = { UE4CodeGen_Private::EPropertyClass::Float, "ExplosionRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, ExplosionRadius), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius = { "ExplosionRadius", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, ExplosionRadius), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -180,7 +184,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "damage at impact point" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage = { UE4CodeGen_Private::EPropertyClass::Int, "ExplosionDamage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, ExplosionDamage), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage = { "ExplosionDamage", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, ExplosionDamage), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ExplosionDamage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -188,7 +192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "How long the projectile will live after it has gotten stuck to something" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan = { UE4CodeGen_Private::EPropertyClass::Float, "ProjectileStickSpan", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, ProjectileStickSpan), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan = { "ProjectileStickSpan", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, ProjectileStickSpan), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileStickSpan_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -196,7 +200,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "life time" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan = { UE4CodeGen_Private::EPropertyClass::Float, "ProjectileLifeSpan", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, ProjectileLifeSpan), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan = { "ProjectileLifeSpan", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, ProjectileLifeSpan), METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileLifeSpan_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -204,7 +208,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "projectile class" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass = { UE4CodeGen_Private::EPropertyClass::Class, "ProjectileClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001010001, 1, nullptr, STRUCT_OFFSET(FProjectileData, ProjectileClass), Z_Construct_UClass_AFGProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FProjectileData, ProjectileClass), Z_Construct_UClass_AFGProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_ProjectileClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageTypeExplode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FProjectileData_Statics::NewProp_DamageType,
@@ -223,19 +227,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		nullptr,
 		&NewStructOps,
 		"ProjectileData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FProjectileData),
 		alignof(FProjectileData),
-		Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FProjectileData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FProjectileData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ProjectileData"), sizeof(FProjectileData), Get_Z_Construct_UScriptStruct_FProjectileData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ProjectileData"), sizeof(FProjectileData), Get_Z_Construct_UScriptStruct_FProjectileData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -245,7 +250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FProjectileData_CRC() { return 1926275434U; }
+	uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash() { return 2888699281U; }
 	void AFGWeaponProjectileFire::StaticRegisterNativesAFGWeaponProjectileFire()
 	{
 	}
@@ -285,7 +290,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		{ "ToolTip", "weapon config" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData = { UE4CodeGen_Private::EPropertyClass::Struct, "mProjectileData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGWeaponProjectileFire, mProjectileData), Z_Construct_UScriptStruct_FProjectileData, METADATA_PARAMS(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData = { "mProjectileData", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGWeaponProjectileFire, mProjectileData), Z_Construct_UScriptStruct_FProjectileData, METADATA_PARAMS(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGWeaponProjectileFire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWeaponProjectileFire_Statics::NewProp_mProjectileData,
 	};
@@ -294,13 +299,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGWeaponProjectileFire_Statics::ClassParams = {
 		&AFGWeaponProjectileFire::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGWeaponProjectileFire_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGWeaponProjectileFire_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponProjectileFire_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGWeaponProjectileFire()
@@ -312,7 +321,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 2443679483);
+	IMPLEMENT_CLASS(AFGWeaponProjectileFire, 2649348448);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponProjectileFire>()
+	{
+		return AFGWeaponProjectileFire::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWeaponProjectileFire(Z_Construct_UClass_AFGWeaponProjectileFire, &AFGWeaponProjectileFire::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWeaponProjectileFire"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWeaponProjectileFire);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

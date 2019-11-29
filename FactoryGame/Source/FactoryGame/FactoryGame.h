@@ -24,7 +24,6 @@ DECLARE_STATS_GROUP( TEXT( "FactoryTick" ), STATGROUP_FactoryTick, STATCAT_Advan
 /** Debug flags */
 #define DEBUG_SPLINE_HOLOGRAM_AUTO_ROUTER 0
 #define DEBUG_FACTORY_IO 0
-#define DEBUG_STORAGES_WITH_NO_OUTPUT_SINK_RESOURCES 0
 
 /** Show debug names */
 static const FName SHOWDEBUG_FACTORY( TEXT( "FACTORY" ) );
@@ -137,11 +136,14 @@ static const FName BuildGunScrollUpAction( TEXT( "BuildGunScrollUp_PhotoModeFOVU
 static const FName BuildGunScrollModeAction( TEXT( "BuildGunScrollMode" ) );
 static const FName BuildGunNoSnapModeAction( TEXT( "ToggleMap_BuildGunNoSnapMode" ) );
 static const FName BuildGunSnapToGuideLinesAction( TEXT( "BuildGunSnapToGuideLines" ) );
-static const FName BuildGunDismantleToggleMultiSelectStateAction( TEXT( "BuildGunDismantle_ToggleMultiSelectState" ) );
+static const FName BuildGunDismantleToggleMultiSelectStateAction( TEXT("BuildGunDismantle_ToggleMultiSelectState") );
 
 /** Color Parameters */
 static const FName PrimaryColor( TEXT( "PrimaryPaintedMetal_Color" ) );
 static const FName SecondaryColor( TEXT( "SecondaryPaintedMetal_Color" ) );
+
+/** Conveyor Parameters */
+static const FName ConveyorSpeed( TEXT( "ConveyorSpeed" ) );
 
 /** Level names @todo - move this to config */
 static const FName FrontEndMap( TEXT( "FrontEndMap" ) );
@@ -193,8 +195,30 @@ FORCEINLINE FString VarToFString( MyClass var ){ return FString::Printf( TEXT( "
 
 #define SHOWMAP( x ) *FString::Printf( TEXT( "%s \n%s" ), TEXT( #x ), *MapToFString< decltype( x ) >( x ) )
 
+inline FString NetmodeToString( ENetMode NM )
+{
+	switch( NM )
+	{
+	case NM_Standalone:
+		return TEXT("Standalone");
+	case NM_DedicatedServer:
+		return TEXT("DedicatedServer");
+	case NM_ListenServer:
+		return TEXT("ListenServer");
+	case NM_Client:
+		return FString::Printf( TEXT("Client %d"), GPlayInEditorID - 1 );
+	case NM_MAX:
+		return TEXT("MAX");
+	default:
+		return TEXT("BadValue");
+	}
+}
+
+
 #define NETMODE_STRING ( NETMODE_STRING_WORLD( GetWorld() ) )
-#define NETMODE_STRING_WORLD( world ) ( (world) ? ( (world)->GetNetMode() != NM_Client ? TEXT("Server") : *FString::Printf( TEXT("Client %d"), GPlayInEditorID - 1 ) ) : TEXT("Unknown netmode") )
+#define NETMODE_STRING_WORLD( world ) ( (world) ? *NetmodeToString( (world)->GetNetMode() ) : TEXT("Unknown NetMode") )
+
+	
 #define NETMODE_STRING_CONTEXT( context ) ( NETMODE_STRING_WORLD( (context)->GetWorld() )
 #define QUICKNETMODE UE_LOG( LogTemp, Log, TEXT( "%s %s" ), *GetName(), NETMODE_STRING );
 

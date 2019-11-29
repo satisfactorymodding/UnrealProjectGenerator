@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -30,13 +30,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EGuideLineType>()
+	{
+		return EGuideLineType_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EGuideLineType(EGuideLineType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EGuideLineType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EGuideLineType_CRC() { return 1860962191U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EGuideLineType_Hash() { return 1541542523U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EGuideLineType()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EGuideLineType"), 0, Get_Z_Construct_UEnum_FactoryGame_EGuideLineType_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EGuideLineType"), 0, Get_Z_Construct_UEnum_FactoryGame_EGuideLineType_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -55,14 +59,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EGuideLineType",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EGuideLineType",
 				"EGuideLineType",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -94,9 +98,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_meshSize = { UE4CodeGen_Private::EPropertyClass::Float, "meshSize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGuide_eventSetBuildGuideStartEnd_Parms, meshSize), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_endPoint = { UE4CodeGen_Private::EPropertyClass::Struct, "endPoint", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGuide_eventSetBuildGuideStartEnd_Parms, endPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_startPoint = { UE4CodeGen_Private::EPropertyClass::Struct, "startPoint", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGuide_eventSetBuildGuideStartEnd_Parms, startPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_meshSize = { "meshSize", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGuide_eventSetBuildGuideStartEnd_Parms, meshSize), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_endPoint = { "endPoint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGuide_eventSetBuildGuideStartEnd_Parms, endPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_startPoint = { "startPoint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGuide_eventSetBuildGuideStartEnd_Parms, startPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_meshSize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::NewProp_endPoint,
@@ -110,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		{ "ToolTip", "Sets the start and end points of the build guide, similar to DrawDebugLines()" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGuide, "SetBuildGuideStartEnd", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildGuide_eventSetBuildGuideStartEnd_Parms), Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGuide, nullptr, "SetBuildGuideStartEnd", sizeof(FGBuildGuide_eventSetBuildGuideStartEnd_Parms), Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -145,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildGuide_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd, "SetBuildGuideStartEnd" }, // 985956978
+		{ &Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd, "SetBuildGuideStartEnd" }, // 3090377462
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGuide_Statics::Class_MetaDataParams[] = {
@@ -160,8 +164,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		{ "ToolTip", "Defines what type of build guide line this is." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType = { UE4CodeGen_Private::EPropertyClass::Enum, "mGuideLineType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGBuildGuide, mGuideLineType), Z_Construct_UEnum_FactoryGame_EGuideLineType, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType = { "mGuideLineType", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGuide, mGuideLineType), Z_Construct_UEnum_FactoryGame_EGuideLineType, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildGuide_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_Underlying,
@@ -171,13 +175,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildGuide_Statics::ClassParams = {
 		&AFGBuildGuide::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildGuide_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGuide_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildGuide_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildGuide_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildGuide_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGuide_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildGuide()
@@ -189,7 +197,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGuide, 4009939118);
+	IMPLEMENT_CLASS(AFGBuildGuide, 2984544916);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGuide>()
+	{
+		return AFGBuildGuide::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGuide(Z_Construct_UClass_AFGBuildGuide, &AFGBuildGuide::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGuide"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGuide);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

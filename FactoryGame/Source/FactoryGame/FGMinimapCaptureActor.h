@@ -36,11 +36,12 @@ struct FFGHeightData
 {
 	GENERATED_BODY()
 
-	FFGHeightData(){
-		lowestZ = 9999999.0f;
-		highestZ = -9999999.0f;
-		minZ = -9999999.0f;
-		maxZ = 9999999.0f;
+	FFGHeightData() :
+		minZ( -9999999.0f ),
+		maxZ( 9999999.0f ),
+		lowestZ( 9999999.0f ),
+		highestZ( -9999999.0f )
+	{
 	}
 
 	float minZ;

@@ -180,14 +180,6 @@ public:
 	UFUNCTION( BlueprintCallable )
 	FORCEINLINE bool HasPlayerSeenAlphaInfoScreen() const { return mHasSeenAlphaInfo; }
 
-	/** Set if the player has seen cloud save info screen */
-	UFUNCTION( BlueprintCallable )
-	void SetHasPlayerSeenCloudSaveInfoScreen( bool hasSeen );
-
-	/** Has the player seen the cloud save info and do not want to see it again? */
-	UFUNCTION( BlueprintCallable )
-	FORCEINLINE bool HasPlayerSeenCloudSaveInfoScreen() const { return mHasSeenCloudSaveInfo; }
-
 	// Finds non-original content and populates ModPackages
 	UFUNCTION( BlueprintCallable, Category = "Modding" )
 	bool FindModPackages();
@@ -306,8 +298,4 @@ public:
 
 	/** Has the player seen the alpha info screen, used to only show it once per session */
 	bool mHasSeenAlphaInfo;
-private:
-	/** Has the player seen the cloud save info and do not want to see it again? */
-	UPROPERTY( config )
-	bool mHasSeenCloudSaveInfo;
 };

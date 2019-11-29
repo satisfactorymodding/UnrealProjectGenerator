@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "IntroSequenceStateUpdate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "IntroSequenceStateUpdate__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -85,13 +85,17 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EIntroTutorialSteps>()
+	{
+		return EIntroTutorialSteps_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EIntroTutorialSteps(EIntroTutorialSteps_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EIntroTutorialSteps"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps_CRC() { return 3313541212U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps_Hash() { return 1775603076U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EIntroTutorialSteps"), 0, Get_Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EIntroTutorialSteps"), 0, Get_Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -132,14 +136,14 @@ void EmptyLinkFunctionForGeneratedCodeFGTutorialIntroManager() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EIntroTutorialSteps",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EIntroTutorialSteps",
 				"EIntroTutorialSteps",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -151,10 +155,14 @@ class UScriptStruct* FTutorialHintData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FTutorialHintData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("TutorialHintData"), sizeof(FTutorialHintData), Get_Z_Construct_UScriptStruct_FTutorialHintData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FTutorialHintData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("TutorialHintData"), sizeof(FTutorialHintData), Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FTutorialHintData>()
+{
+	return FTutorialHintData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FTutorialHintData(FTutorialHintData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("TutorialHintData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
@@ -207,30 +215,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message = { UE4CodeGen_Private::EPropertyClass::Class, "Message", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010015, 1, nullptr, STRUCT_OFFSET(FTutorialHintData, Message), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message = { "Message", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTutorialHintData, Message), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_MetaData[] = {
 		{ "Category", "Tutorial" },
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts = { UE4CodeGen_Private::EPropertyClass::Array, "HintTexts", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(FTutorialHintData, HintTexts), METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_MetaData)) };
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_Inner = { UE4CodeGen_Private::EPropertyClass::Text, "HintTexts", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts = { "HintTexts", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTutorialHintData, HintTexts), METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts_Inner = { "HintTexts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title_MetaData[] = {
 		{ "Category", "Tutorial" },
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title = { UE4CodeGen_Private::EPropertyClass::Text, "Title", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(FTutorialHintData, Title), METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTutorialHintData, Title), METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Title_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_MetaData[] = {
 		{ "Category", "Tutorial" },
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID = { UE4CodeGen_Private::EPropertyClass::Enum, "ID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(FTutorialHintData, ID), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID = { "ID", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FTutorialHintData, ID), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_ID_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_Message,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTutorialHintData_Statics::NewProp_HintTexts,
@@ -244,19 +252,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		nullptr,
 		&NewStructOps,
 		"TutorialHintData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FTutorialHintData),
 		alignof(FTutorialHintData),
-		Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FTutorialHintData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("TutorialHintData"), sizeof(FTutorialHintData), Get_Z_Construct_UScriptStruct_FTutorialHintData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("TutorialHintData"), sizeof(FTutorialHintData), Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -266,7 +275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_CRC() { return 2706752278U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash() { return 1152445765U; }
 	void AFGTutorialIntroManager::StaticRegisterNativesAFGTutorialIntroManager()
 	{
 		UClass* Class = AFGTutorialIntroManager::StaticClass();
@@ -308,7 +317,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "CancelSkipIntroSequence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "CancelSkipIntroSequence", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -332,7 +341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Completes the tutorial" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "CompleteTutorial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "CompleteTutorial", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -355,7 +364,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "EndSkipIntroSequence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "EndSkipIntroSequence", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -380,8 +389,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGTutorialIntroManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGTutorialIntroManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::NewProp_worldContext,
@@ -395,7 +404,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Get thetutorial intro manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGTutorialIntroManager_eventGet_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "Get", sizeof(FGTutorialIntroManager_eventGet_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -423,7 +432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((FGTutorialIntroManager_eventGetCanSkipTutorial_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGTutorialIntroManager_eventGetCanSkipTutorial_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGTutorialIntroManager_eventGetCanSkipTutorial_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::NewProp_ReturnValue,
 	};
@@ -433,7 +442,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "GetCanSkipTutorial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGTutorialIntroManager_eventGetCanSkipTutorial_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "GetCanSkipTutorial", sizeof(FGTutorialIntroManager_eventGetCanSkipTutorial_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -457,8 +466,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventGetCurrentTutorialStep_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventGetCurrentTutorialStep_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::NewProp_ReturnValue_Underlying,
@@ -470,7 +479,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Gets the current step we are at" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "GetCurrentTutorialStep", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGTutorialIntroManager_eventGetCurrentTutorialStep_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "GetCurrentTutorialStep", sizeof(FGTutorialIntroManager_eventGetCurrentTutorialStep_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -498,7 +507,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((FGTutorialIntroManager_eventGetIsIntroSequenceDone_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGTutorialIntroManager_eventGetIsIntroSequenceDone_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGTutorialIntroManager_eventGetIsIntroSequenceDone_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::NewProp_ReturnValue,
 	};
@@ -508,7 +517,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "GetIsIntroSequenceDone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGTutorialIntroManager_eventGetIsIntroSequenceDone_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "GetIsIntroSequenceDone", sizeof(FGTutorialIntroManager_eventGetIsIntroSequenceDone_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -536,7 +545,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((FGTutorialIntroManager_eventGetIsTutorialCompleted_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGTutorialIntroManager_eventGetIsTutorialCompleted_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGTutorialIntroManager_eventGetIsTutorialCompleted_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::NewProp_ReturnValue,
 	};
@@ -547,7 +556,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Are we done with the tutorial?" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "GetIsTutorialCompleted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGTutorialIntroManager_eventGetIsTutorialCompleted_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "GetIsTutorialCompleted", sizeof(FGTutorialIntroManager_eventGetIsTutorialCompleted_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -570,7 +579,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventGetNormalizedProgressToSkip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventGetNormalizedProgressToSkip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::NewProp_ReturnValue,
 	};
@@ -580,7 +589,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "GetNormalizedProgressToSkip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGTutorialIntroManager_eventGetNormalizedProgressToSkip_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "GetNormalizedProgressToSkip", sizeof(FGTutorialIntroManager_eventGetNormalizedProgressToSkip_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -603,7 +612,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventGetTradingPostLevel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventGetTradingPostLevel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::NewProp_ReturnValue,
 	};
@@ -613,7 +622,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "GetTradingPostLevel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGTutorialIntroManager_eventGetTradingPostLevel_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "GetTradingPostLevel", sizeof(FGTutorialIntroManager_eventGetTradingPostLevel_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -641,7 +650,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::NewProp_ReturnValue,
 	};
@@ -652,7 +661,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Checks if a tradingpost has ever been built" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "HasTradingpostBeenBuilt", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "HasTradingpostBeenBuilt", sizeof(FGTutorialIntroManager_eventHasTradingpostBeenBuilt_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -676,7 +685,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Called when the intro cinematic is done @SERVERONLY" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "IntroDone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "IntroDone", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -699,7 +708,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::NewProp_buildable = { UE4CodeGen_Private::EPropertyClass::Object, "buildable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventOnBuildingBuiltGlobal_Parms, buildable), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::NewProp_buildable = { "buildable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventOnBuildingBuiltGlobal_Parms, buildable), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::NewProp_buildable,
 	};
@@ -709,7 +718,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Called when the local player builds anything" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "OnBuildingBuiltGlobal", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGTutorialIntroManager_eventOnBuildingBuiltGlobal_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "OnBuildingBuiltGlobal", sizeof(FGTutorialIntroManager_eventOnBuildingBuiltGlobal_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -734,8 +743,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::NewProp_numAdded = { UE4CodeGen_Private::EPropertyClass::Int, "numAdded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::NewProp_numAdded = { "numAdded", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::NewProp_numAdded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::NewProp_itemClass,
@@ -746,7 +755,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Called when a player gets an item in its arm slot" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "OnPlayerAddedItemToArmSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "OnPlayerAddedItemToArmSlot", sizeof(FGTutorialIntroManager_eventOnPlayerAddedItemToArmSlot_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -771,8 +780,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::NewProp_numAdded = { UE4CodeGen_Private::EPropertyClass::Int, "numAdded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToInventory_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToInventory_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::NewProp_numAdded = { "numAdded", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToInventory_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventOnPlayerAddedItemToInventory_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::NewProp_numAdded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::NewProp_itemClass,
@@ -783,7 +792,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Called when a player gets an item in its inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "OnPlayerAddedItemToInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGTutorialIntroManager_eventOnPlayerAddedItemToInventory_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "OnPlayerAddedItemToInventory", sizeof(FGTutorialIntroManager_eventOnPlayerAddedItemToInventory_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -805,7 +814,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "OnRep_TradingPostLevel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "OnRep_TradingPostLevel", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -828,7 +837,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::NewProp_newSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "newSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventOnSchematicPurchased_Parms, newSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::NewProp_newSchematic = { "newSchematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventOnSchematicPurchased_Parms, newSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::NewProp_newSchematic,
 	};
@@ -838,7 +847,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Called when a schematic is unlocked" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "OnSchematicPurchased", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGTutorialIntroManager_eventOnSchematicPurchased_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "OnSchematicPurchased", sizeof(FGTutorialIntroManager_eventOnSchematicPurchased_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -866,7 +875,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((FGTutorialIntroManager_eventSetCanSkipTutorialIntro_Parms*)Obj)->canSkip = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::NewProp_canSkip = { UE4CodeGen_Private::EPropertyClass::Bool, "canSkip", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGTutorialIntroManager_eventSetCanSkipTutorialIntro_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::NewProp_canSkip_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::NewProp_canSkip = { "canSkip", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGTutorialIntroManager_eventSetCanSkipTutorialIntro_Parms), &Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::NewProp_canSkip_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::NewProp_canSkip,
 	};
@@ -876,7 +885,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "SetCanSkipTutorialIntro", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGTutorialIntroManager_eventSetCanSkipTutorialIntro_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "SetCanSkipTutorialIntro", sizeof(FGTutorialIntroManager_eventSetCanSkipTutorialIntro_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -899,7 +908,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::NewProp_playerController = { UE4CodeGen_Private::EPropertyClass::Object, "playerController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventSetInputGatesFromTutorialLevel_Parms, playerController), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::NewProp_playerController = { "playerController", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventSetInputGatesFromTutorialLevel_Parms, playerController), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::NewProp_playerController,
 	};
@@ -910,7 +919,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Based on tutorial progression set player input gates" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "SetInputGatesFromTutorialLevel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGTutorialIntroManager_eventSetInputGatesFromTutorialLevel_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "SetInputGatesFromTutorialLevel", sizeof(FGTutorialIntroManager_eventSetInputGatesFromTutorialLevel_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -933,7 +942,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "StartSkipIntroSequence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "StartSkipIntroSequence", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -957,8 +966,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::NewProp_nextTutorialStep = { UE4CodeGen_Private::EPropertyClass::Enum, "nextTutorialStep", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGTutorialIntroManager_eventUpdateTutorial_Parms, nextTutorialStep), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::NewProp_nextTutorialStep_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::NewProp_nextTutorialStep = { "nextTutorialStep", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGTutorialIntroManager_eventUpdateTutorial_Parms, nextTutorialStep), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::NewProp_nextTutorialStep_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::NewProp_nextTutorialStep,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::NewProp_nextTutorialStep_Underlying,
@@ -970,7 +979,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Updates progress in the tutorial to next step specified" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, "UpdateTutorial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(FGTutorialIntroManager_eventUpdateTutorial_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGTutorialIntroManager, nullptr, "UpdateTutorial", sizeof(FGTutorialIntroManager_eventUpdateTutorial_Parms), Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1143,27 +1152,27 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGTutorialIntroManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence, "CancelSkipIntroSequence" }, // 725013546
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial, "CompleteTutorial" }, // 1743787239
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence, "EndSkipIntroSequence" }, // 1225938610
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_Get, "Get" }, // 2850619609
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial, "GetCanSkipTutorial" }, // 1878064325
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep, "GetCurrentTutorialStep" }, // 3476775502
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone, "GetIsIntroSequenceDone" }, // 3508714873
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted, "GetIsTutorialCompleted" }, // 3531873
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip, "GetNormalizedProgressToSkip" }, // 3716015177
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel, "GetTradingPostLevel" }, // 1134377903
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt, "HasTradingpostBeenBuilt" }, // 1878960023
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone, "IntroDone" }, // 2044190728
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal, "OnBuildingBuiltGlobal" }, // 1295079974
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot, "OnPlayerAddedItemToArmSlot" }, // 2531728225
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory, "OnPlayerAddedItemToInventory" }, // 2337288569
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel, "OnRep_TradingPostLevel" }, // 2442391374
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased, "OnSchematicPurchased" }, // 2850057496
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro, "SetCanSkipTutorialIntro" }, // 3160821951
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel, "SetInputGatesFromTutorialLevel" }, // 1808090475
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence, "StartSkipIntroSequence" }, // 2824196021
-		{ &Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial, "UpdateTutorial" }, // 1406623734
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_CancelSkipIntroSequence, "CancelSkipIntroSequence" }, // 995625311
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_CompleteTutorial, "CompleteTutorial" }, // 1040055193
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_EndSkipIntroSequence, "EndSkipIntroSequence" }, // 413549700
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_Get, "Get" }, // 1613373758
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetCanSkipTutorial, "GetCanSkipTutorial" }, // 3219979680
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetCurrentTutorialStep, "GetCurrentTutorialStep" }, // 1733951600
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsIntroSequenceDone, "GetIsIntroSequenceDone" }, // 3495968706
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetIsTutorialCompleted, "GetIsTutorialCompleted" }, // 706554158
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetNormalizedProgressToSkip, "GetNormalizedProgressToSkip" }, // 2334274137
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_GetTradingPostLevel, "GetTradingPostLevel" }, // 3479345643
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_HasTradingpostBeenBuilt, "HasTradingpostBeenBuilt" }, // 1444240947
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_IntroDone, "IntroDone" }, // 1706571407
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnBuildingBuiltGlobal, "OnBuildingBuiltGlobal" }, // 738304209
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToArmSlot, "OnPlayerAddedItemToArmSlot" }, // 2358970123
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnPlayerAddedItemToInventory, "OnPlayerAddedItemToInventory" }, // 2276994113
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnRep_TradingPostLevel, "OnRep_TradingPostLevel" }, // 1126642885
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_OnSchematicPurchased, "OnSchematicPurchased" }, // 645277905
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_SetCanSkipTutorialIntro, "SetCanSkipTutorialIntro" }, // 3960710479
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_SetInputGatesFromTutorialLevel, "SetInputGatesFromTutorialLevel" }, // 936999428
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_StartSkipIntroSequence, "StartSkipIntroSequence" }, // 1901471298
+		{ &Z_Construct_UFunction_AFGTutorialIntroManager_UpdateTutorial, "UpdateTutorial" }, // 2974236812
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::Class_MetaDataParams[] = {
@@ -1178,7 +1187,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle = { UE4CodeGen_Private::EPropertyClass::Struct, "mHoldToSkipTimerHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mHoldToSkipTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle = { "mHoldToSkipTimerHandle", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mHoldToSkipTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1186,7 +1195,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Time required to" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro = { UE4CodeGen_Private::EPropertyClass::Float, "mHoldTimeToSkipIntro", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mHoldTimeToSkipIntro), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro = { "mHoldTimeToSkipIntro", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mHoldTimeToSkipIntro), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1194,7 +1203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Time to wait after completing a trading post step and displaying the next" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep = { UE4CodeGen_Private::EPropertyClass::Float, "mWaitTimeAfterCompletingHubStep", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mWaitTimeAfterCompletingHubStep), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep = { "mWaitTimeAfterCompletingHubStep", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mWaitTimeAfterCompletingHubStep), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingHubStep_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1202,14 +1211,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Time to wait after completing a minor tutorial step and displaying the next" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep = { UE4CodeGen_Private::EPropertyClass::Float, "mWaitTimeAfterCompletingMinorStep", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mWaitTimeAfterCompletingMinorStep), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep = { "mWaitTimeAfterCompletingMinorStep", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mWaitTimeAfterCompletingMinorStep), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mWaitTimeAfterCompletingMinorStep_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 		{ "ToolTip", "The upgrade level we have on our trading post" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel = { UE4CodeGen_Private::EPropertyClass::Int, "mTradingPostLevel", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000101000020, 1, "OnRep_TradingPostLevel", STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPostLevel), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel = { "mTradingPostLevel", "OnRep_TradingPostLevel", (EPropertyFlags)0x0040000101000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPostLevel), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostLevel_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1221,14 +1230,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mSkipTutorialInPIE = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE = { UE4CodeGen_Private::EPropertyClass::Bool, "mSkipTutorialInPIE", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE = { "mSkipTutorialInPIE", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mSkipTutorialInPIE_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 		{ "ToolTip", "Reference to starting pod ( server only )" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod = { UE4CodeGen_Private::EPropertyClass::Object, "mStartingPod", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStartingPod), Z_Construct_UClass_AFGStartingPod_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod = { "mStartingPod", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStartingPod), Z_Construct_UClass_AFGStartingPod_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPod_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1236,7 +1245,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Class of drop pod to spawn" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass = { UE4CodeGen_Private::EPropertyClass::Class, "mStartingPodClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStartingPodClass), Z_Construct_UClass_AFGStartingPod_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass = { "mStartingPodClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStartingPodClass), Z_Construct_UClass_AFGStartingPod_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStartingPodClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1247,7 +1256,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidStep5Upgrade = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidStep5Upgrade", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade = { "mDidStep5Upgrade", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep5Upgrade_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1255,7 +1264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Reference to the class step 5 tutorial schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mStep5UpgradeSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStep5UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic = { "mStep5UpgradeSchematic", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStep5UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep5UpgradeSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1266,7 +1275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidStep4Upgrade = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidStep4Upgrade", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade = { "mDidStep4Upgrade", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep4Upgrade_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1274,7 +1283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Reference to the class step 4 tutorial schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mStep4UpgradeSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStep4UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic = { "mStep4UpgradeSchematic", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStep4UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep4UpgradeSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1285,7 +1294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidStep3Upgrade = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidStep3Upgrade", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade = { "mDidStep3Upgrade", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep3Upgrade_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1293,7 +1302,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Reference to the class step 3 tutorial schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mStep3UpgradeSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStep3UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic = { "mStep3UpgradeSchematic", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStep3UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep3UpgradeSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1304,7 +1313,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidStep2Upgrade = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidStep2Upgrade", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade = { "mDidStep2Upgrade", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep2Upgrade_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1312,7 +1321,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Reference to the class step 2 tutorial schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mStep2UpgradeSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStep2UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic = { "mStep2UpgradeSchematic", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStep2UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep2UpgradeSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1323,7 +1332,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidStep1Upgrade = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidStep1Upgrade", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade = { "mDidStep1Upgrade", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidStep1Upgrade_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1331,7 +1340,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Reference to the class step 1 tutorial schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mStep1UpgradeSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStep1UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic = { "mStep1UpgradeSchematic", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStep1UpgradeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStep1UpgradeSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1342,7 +1351,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidEquipStunSpear = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidEquipStunSpear", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear = { "mDidEquipStunSpear", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidEquipStunSpear_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1350,7 +1359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "class to identify the stun spear" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass = { UE4CodeGen_Private::EPropertyClass::Class, "mStunSpearItemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mStunSpearItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass = { "mStunSpearItemClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mStunSpearItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mStunSpearItemClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1361,7 +1370,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidDismantleDropPod = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidDismantleDropPod", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod = { "mDidDismantleDropPod", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidDismantleDropPod_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1369,7 +1378,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "An item you receive when dismantling the drop pod so we can identify it" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass = { UE4CodeGen_Private::EPropertyClass::Class, "mDropPodItemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mDropPodItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass = { "mDropPodItemClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mDropPodItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDropPodItemClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1379,7 +1388,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mDidPickUpIronOre = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidPickUpIronOre", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre = { "mDidPickUpIronOre", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mDidPickUpIronOre_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1387,7 +1396,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Class of Iron Resource Descriptor" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor = { UE4CodeGen_Private::EPropertyClass::Class, "mIronOreDescriptor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mIronOreDescriptor), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor = { "mIronOreDescriptor", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mIronOreDescriptor), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIronOreDescriptor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1395,15 +1404,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Data used for the intro tutorial" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData = { UE4CodeGen_Private::EPropertyClass::Array, "mIntroTutorialData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mIntroTutorialData), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mIntroTutorialData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FTutorialHintData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData = { "mIntroTutorialData", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mIntroTutorialData), METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mIntroTutorialData_Inner = { "mIntroTutorialData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FTutorialHintData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 		{ "ToolTip", "Cached reference of trading post" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost = { UE4CodeGen_Private::EPropertyClass::Object, "mTradingPost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPost), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost = { "mTradingPost", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPost), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPost_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1411,7 +1420,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "The class of the trading post" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor = { UE4CodeGen_Private::EPropertyClass::Class, "mTradingPostDescriptor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPostDescriptor), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor = { "mTradingPostDescriptor", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mTradingPostDescriptor), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostDescriptor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1422,7 +1431,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mHasCompletedIntroSequence = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasCompletedIntroSequence", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence = { "mHasCompletedIntroSequence", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroSequence_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1434,15 +1443,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mHasCompletedIntroTutorial = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasCompletedIntroTutorial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001010021, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial = { "mHasCompletedIntroTutorial", nullptr, (EPropertyFlags)0x0040000001010021, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHasCompletedIntroTutorial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
 		{ "ToolTip", "Array of pending tutorial IDs that should be shown when possible ( no other widgets on screen etc )" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial = { UE4CodeGen_Private::EPropertyClass::Enum, "mPendingTutorial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mPendingTutorial), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial = { "mPendingTutorial", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mPendingTutorial), Z_Construct_UEnum_FactoryGame_EIntroTutorialSteps, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mPendingTutorial_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_MetaData[] = {
 		{ "ModuleRelativePath", "FGTutorialIntroManager.h" },
@@ -1453,7 +1462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	{
 		((AFGTutorialIntroManager*)Obj)->mTradingPostBuilt = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt = { UE4CodeGen_Private::EPropertyClass::Bool, "mTradingPostBuilt", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt = { "mTradingPostBuilt", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGTutorialIntroManager), &Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mTradingPostBuilt_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData[] = {
 		{ "Category", "Tutorial" },
@@ -1461,7 +1470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		{ "ToolTip", "Called when mHasCompletedIntroSequence updates" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnIntroSequenceStateUpdated", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGTutorialIntroManager, mOnIntroSequenceStateUpdated), Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated = { "mOnIntroSequenceStateUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGTutorialIntroManager, mOnIntroSequenceStateUpdated), Z_Construct_UDelegateFunction_FactoryGame_IntroSequenceStateUpdate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mOnIntroSequenceStateUpdated_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGTutorialIntroManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldToSkipTimerHandle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGTutorialIntroManager_Statics::NewProp_mHoldTimeToSkipIntro,
@@ -1506,13 +1515,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGTutorialIntroManager_Statics::ClassParams = {
 		&AFGTutorialIntroManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGTutorialIntroManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGTutorialIntroManager_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGTutorialIntroManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGTutorialIntroManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGTutorialIntroManager()
@@ -1524,7 +1537,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGTutorialIntroManager, 2024618717);
+	IMPLEMENT_CLASS(AFGTutorialIntroManager, 1937304805);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGTutorialIntroManager>()
+	{
+		return AFGTutorialIntroManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGTutorialIntroManager(Z_Construct_UClass_AFGTutorialIntroManager, &AFGTutorialIntroManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGTutorialIntroManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGTutorialIntroManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -27,15 +27,21 @@ class AFGResearchManager;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCompletedResearch>();
+
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_67_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchTime_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchTime>();
+
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchCost_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchCost>();
 
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_19_DELEGATE \
 struct _Script_FactoryGame_eventResearchNewAvailable_Parms \
@@ -822,6 +828,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGResearchManager>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGResearchManager_h

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -74,13 +74,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_FullInventory_Statics::ClassParams = {
 		&UFGUseState_FullInventory::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_FullInventory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_FullInventory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_FullInventory()
@@ -92,7 +96,11 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_FullInventory, 1493801602);
+	IMPLEMENT_CLASS(UFGUseState_FullInventory, 3300907226);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_FullInventory>()
+	{
+		return UFGUseState_FullInventory::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_FullInventory(Z_Construct_UClass_UFGUseState_FullInventory, &UFGUseState_FullInventory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_FullInventory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_FullInventory);
 	void UFGUseState_Collecting::StaticRegisterNativesUFGUseState_Collecting()
@@ -127,13 +135,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_Collecting_Statics::ClassParams = {
 		&UFGUseState_Collecting::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Collecting_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Collecting_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_Collecting()
@@ -145,7 +157,11 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Collecting, 437923691);
+	IMPLEMENT_CLASS(UFGUseState_Collecting, 3794830004);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_Collecting>()
+	{
+		return UFGUseState_Collecting::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_Collecting(Z_Construct_UClass_UFGUseState_Collecting, &UFGUseState_Collecting::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_Collecting"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_Collecting);
 	static FName NAME_AFGItemPickup_OnPickup = FName(TEXT("OnPickup"));
@@ -188,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventGetNormalizedCollectionProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventGetNormalizedCollectionProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::NewProp_ReturnValue,
 	};
@@ -199,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Returns the normalized progress until collection is complete" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "GetNormalizedCollectionProgress", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGItemPickup_eventGetNormalizedCollectionProgress_Parms), Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "GetNormalizedCollectionProgress", sizeof(FGItemPickup_eventGetNormalizedCollectionProgress_Parms), Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -222,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventGetNumItems_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventGetNumItems_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::NewProp_ReturnValue,
 	};
@@ -233,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Get the number of items the pickup have" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "GetNumItems", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGItemPickup_eventGetNumItems_Parms), Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "GetNumItems", sizeof(FGItemPickup_eventGetNumItems_Parms), Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_GetNumItems()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -256,7 +272,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventGetPickupItems_Parms, ReturnValue), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventGetPickupItems_Parms, ReturnValue), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::NewProp_ReturnValue,
 	};
@@ -267,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Get the pickup items" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "GetPickupItems", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGItemPickup_eventGetPickupItems_Parms), Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "GetPickupItems", sizeof(FGItemPickup_eventGetPickupItems_Parms), Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_GetPickupItems()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -295,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	{
 		((FGItemPickup_eventIsPickedUp_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGItemPickup_eventIsPickedUp_Parms), &Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGItemPickup_eventIsPickedUp_Parms), &Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::NewProp_ReturnValue,
 	};
@@ -306,7 +322,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Get if the item is picked up" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "IsPickedUp", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGItemPickup_eventIsPickedUp_Parms), Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "IsPickedUp", sizeof(FGItemPickup_eventIsPickedUp_Parms), Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_IsPickedUp()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -325,7 +341,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventOnPickup_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventOnPickup_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::NewProp_byCharacter,
 	};
@@ -335,7 +351,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "SERVER and Client picking up: Called right after this item is added to the players inventory, for GameplayEffects.\nIf you want to do something only on the picking up client, check if byCharacter is locally controlled" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "OnPickup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGItemPickup_eventOnPickup_Parms), Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "OnPickup", sizeof(FGItemPickup_eventOnPickup_Parms), Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_OnPickup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -358,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Replicated and set when we are picked up" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "OnRep_PickedUp", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "OnRep_PickedUp", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -388,8 +404,8 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	{
 		((FGItemPickup_eventPickupByAmount_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGItemPickup_eventPickupByAmount_Parms), &Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventPickupByAmount_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGItemPickup_eventPickupByAmount_Parms), &Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventPickupByAmount_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::NewProp_amount,
@@ -401,7 +417,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Pickup functionality so that we can pickup x amount of items and can be used by other than character\n\n@return true if there was enough items for pickup" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "PickupByAmount", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGItemPickup_eventPickupByAmount_Parms), Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "PickupByAmount", sizeof(FGItemPickup_eventPickupByAmount_Parms), Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_PickupByAmount()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -424,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventPickUpByCharacter_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventPickUpByCharacter_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::NewProp_byCharacter,
 	};
@@ -434,7 +450,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "SERVER and CLIENT picking up: Handles regular pick up logic. Only to be called from the Character when they are picking up the item from PickUpItem()." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "PickUpByCharacter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGItemPickup_eventPickUpByCharacter_Parms), Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "PickUpByCharacter", sizeof(FGItemPickup_eventPickUpByCharacter_Parms), Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -457,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Multicast to everyone so picking up clients can see effects" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "PlayPickupEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020808, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "PlayPickupEffect", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -480,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::NewProp_numItems = { UE4CodeGen_Private::EPropertyClass::Int, "numItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGItemPickup_eventSetNumItems_Parms, numItems), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::NewProp_numItems = { "numItems", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGItemPickup_eventSetNumItems_Parms, numItems), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::NewProp_numItems,
 	};
@@ -491,7 +507,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "Set the number of items" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, "SetNumItems", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080405, sizeof(FGItemPickup_eventSetNumItems_Parms), Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup, nullptr, "SetNumItems", sizeof(FGItemPickup_eventSetNumItems_Parms), Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080405, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGItemPickup_SetNumItems()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -551,16 +567,16 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGItemPickup_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress, "GetNormalizedCollectionProgress" }, // 3190390598
-		{ &Z_Construct_UFunction_AFGItemPickup_GetNumItems, "GetNumItems" }, // 2122380296
-		{ &Z_Construct_UFunction_AFGItemPickup_GetPickupItems, "GetPickupItems" }, // 3226405928
-		{ &Z_Construct_UFunction_AFGItemPickup_IsPickedUp, "IsPickedUp" }, // 1264545500
-		{ &Z_Construct_UFunction_AFGItemPickup_OnPickup, "OnPickup" }, // 238537278
-		{ &Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp, "OnRep_PickedUp" }, // 470444625
-		{ &Z_Construct_UFunction_AFGItemPickup_PickupByAmount, "PickupByAmount" }, // 2995895481
-		{ &Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter, "PickUpByCharacter" }, // 2833030810
-		{ &Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect, "PlayPickupEffect" }, // 2413956759
-		{ &Z_Construct_UFunction_AFGItemPickup_SetNumItems, "SetNumItems" }, // 523664539
+		{ &Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress, "GetNormalizedCollectionProgress" }, // 3237026286
+		{ &Z_Construct_UFunction_AFGItemPickup_GetNumItems, "GetNumItems" }, // 3176784724
+		{ &Z_Construct_UFunction_AFGItemPickup_GetPickupItems, "GetPickupItems" }, // 4137214873
+		{ &Z_Construct_UFunction_AFGItemPickup_IsPickedUp, "IsPickedUp" }, // 3206946985
+		{ &Z_Construct_UFunction_AFGItemPickup_OnPickup, "OnPickup" }, // 510298708
+		{ &Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp, "OnRep_PickedUp" }, // 3725104176
+		{ &Z_Construct_UFunction_AFGItemPickup_PickupByAmount, "PickupByAmount" }, // 2222771608
+		{ &Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter, "PickUpByCharacter" }, // 4095415912
+		{ &Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect, "PlayPickupEffect" }, // 2863560598
+		{ &Z_Construct_UFunction_AFGItemPickup_SetNumItems, "SetNumItems" }, // 2030374360
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::Class_MetaDataParams[] = {
@@ -577,7 +593,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "The ak event to post for the sound" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent = { UE4CodeGen_Private::EPropertyClass::Object, "mAudioEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGItemPickup, mAudioEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent = { "mAudioEvent", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGItemPickup, mAudioEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent_MetaData[] = {
 		{ "Category", "Audio" },
@@ -586,7 +602,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "ak component that plays sound" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSoundComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000b0009, 1, nullptr, STRUCT_OFFSET(AFGItemPickup, mSoundComponent), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent = { "mSoundComponent", nullptr, (EPropertyFlags)0x00200800000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGItemPickup, mSoundComponent), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_MetaData[] = {
 		{ "Category", "Item" },
@@ -598,7 +614,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	{
 		((AFGItemPickup*)Obj)->mDestroyOnPickup = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup = { UE4CodeGen_Private::EPropertyClass::Bool, "mDestroyOnPickup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGItemPickup), &Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup = { "mDestroyOnPickup", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGItemPickup), &Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData[] = {
 		{ "Category", "Item" },
@@ -606,21 +622,21 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "The items we want to be able to pickup" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems = { UE4CodeGen_Private::EPropertyClass::Struct, "mPickupItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080101000021, 1, "OnRep_PickedUp", STRUCT_OFFSET(AFGItemPickup, mPickupItems), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems = { "mPickupItems", "OnRep_PickedUp", (EPropertyFlags)0x0020080101000021, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGItemPickup, mPickupItems), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData[] = {
 		{ "ModuleRelativePath", "FGItemPickup.h" },
 		{ "ToolTip", "/ Timer handler for item being picked up" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle = { UE4CodeGen_Private::EPropertyClass::Struct, "mCollectingTimerHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGItemPickup, mCollectingTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle = { "mCollectingTimerHandle", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGItemPickup, mCollectingTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector_MetaData[] = {
 		{ "ModuleRelativePath", "FGItemPickup.h" },
 		{ "ToolTip", "/ The player collecting the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector = { UE4CodeGen_Private::EPropertyClass::Object, "mCollector", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGItemPickup, mCollector), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector = { "mCollector", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGItemPickup, mCollector), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp_MetaData[] = {
 		{ "Category", "Item" },
@@ -628,7 +644,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		{ "ToolTip", "/ The amount of time required to pickup < 0 == instant" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp = { UE4CodeGen_Private::EPropertyClass::Float, "mTimeToPickUp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGItemPickup, mTimeToPickUp), METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp = { "mTimeToPickUp", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGItemPickup, mTimeToPickUp), METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGItemPickup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent,
@@ -648,13 +664,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGItemPickup_Statics::ClassParams = {
 		&AFGItemPickup::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGItemPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGItemPickup_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x008000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGItemPickup()
@@ -666,7 +686,11 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup, 1520579238);
+	IMPLEMENT_CLASS(AFGItemPickup, 202607380);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGItemPickup>()
+	{
+		return AFGItemPickup::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup(Z_Construct_UClass_AFGItemPickup, &AFGItemPickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGItemPickup)

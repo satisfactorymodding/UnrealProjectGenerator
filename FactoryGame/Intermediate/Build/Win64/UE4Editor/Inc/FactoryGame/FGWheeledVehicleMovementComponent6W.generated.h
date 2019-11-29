@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -18,25 +18,35 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleTransmissionData6W>();
+
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_91_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleGearData6W_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleGearData6W>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_57_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleEngineData6W>();
+
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_47_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleDifferential6WData>();
+
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDifferentialSetup6W>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_147_RPC_WRAPPERS \
  \
@@ -174,6 +184,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGWheeledVehicleMovementComponent6W>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h

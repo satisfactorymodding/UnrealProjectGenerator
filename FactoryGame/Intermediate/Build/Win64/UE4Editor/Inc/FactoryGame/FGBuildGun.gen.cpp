@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::NewProp_newRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "newRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms, newRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::NewProp_newRecipe = { "newRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms, newRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::NewProp_newRecipe,
 	};
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnBuildGunRecipeChanged__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnBuildGunRecipeChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnBuildGunRecipeChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -119,8 +119,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::NewProp_newState = { UE4CodeGen_Private::EPropertyClass::Enum, "newState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnBuildGunStateChanged_Parms, newState), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::NewProp_newState_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::NewProp_newState = { "newState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnBuildGunStateChanged_Parms, newState), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::NewProp_newState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::NewProp_newState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::NewProp_newState_Underlying,
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnBuildGunStateChanged__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnBuildGunStateChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnBuildGunStateChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnBuildGunStateChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -149,13 +149,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EBuildGunState>()
+	{
+		return EBuildGunState_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EBuildGunState(EBuildGunState_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EBuildGunState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EBuildGunState_CRC() { return 1322740172U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EBuildGunState_Hash() { return 3195570478U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EBuildGunState()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EBuildGunState"), 0, Get_Z_Construct_UEnum_FactoryGame_EBuildGunState_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EBuildGunState"), 0, Get_Z_Construct_UEnum_FactoryGame_EBuildGunState_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -182,14 +186,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EBuildGunState",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EBuildGunState",
 				"EBuildGunState",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -289,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "BeginBuildGunDelay", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020400, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "BeginBuildGunDelay", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -313,7 +317,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Enter this state." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "BeginState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "BeginState", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BeginState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_BeginState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -341,7 +345,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGunState_eventBuildGunDelayIsComplete_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGunState_eventBuildGunDelayIsComplete_Parms), &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGunState_eventBuildGunDelayIsComplete_Parms), &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::NewProp_ReturnValue,
 	};
@@ -352,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "@return true if the build gun delay is complete, or is 0 (ie. always complete)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "BuildGunDelayIsComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGBuildGunState_eventBuildGunDelayIsComplete_Parms), Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "BuildGunDelayIsComplete", sizeof(FGBuildGunState_eventBuildGunDelayIsComplete_Parms), Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -376,7 +380,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGunState_eventChangeGuideLinesSnapMode_Parms*)Obj)->enabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::NewProp_enabled = { UE4CodeGen_Private::EPropertyClass::Bool, "enabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGunState_eventChangeGuideLinesSnapMode_Parms), &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::NewProp_enabled = { "enabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGunState_eventChangeGuideLinesSnapMode_Parms), &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::NewProp_enabled,
 	};
@@ -386,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "ChangeGuideLinesSnapMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGBuildGunState_eventChangeGuideLinesSnapMode_Parms), Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ChangeGuideLinesSnapMode", sizeof(FGBuildGunState_eventChangeGuideLinesSnapMode_Parms), Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -410,7 +414,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "ChangeNoSnapMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ChangeNoSnapMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -434,7 +438,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "ChangeScrollMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ChangeScrollMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -458,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Exit this state." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "EndState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "EndState", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_EndState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_EndState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -481,7 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGunState_eventGetBuildGun_Parms, ReturnValue), Z_Construct_UClass_AFGBuildGun_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGunState_eventGetBuildGun_Parms, ReturnValue), Z_Construct_UClass_AFGBuildGun_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::NewProp_ReturnValue,
 	};
@@ -492,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Get the owning build gun.\n@return A valid build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "GetBuildGun", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGunState_eventGetBuildGun_Parms), Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "GetBuildGun", sizeof(FGBuildGunState_eventGetBuildGun_Parms), Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGun_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_GetBuildGun()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -515,7 +519,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGunState_eventGetBuildGunDelayMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGunState_eventGetBuildGunDelayMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::NewProp_ReturnValue,
 	};
@@ -526,7 +530,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Get's the build delay message" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "GetBuildGunDelayMessage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGunState_eventGetBuildGunDelayMessage_Parms), Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "GetBuildGunDelayMessage", sizeof(FGBuildGunState_eventGetBuildGunDelayMessage_Parms), Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -549,7 +553,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGunState_eventGetBuildGunDelayPercentage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGunState_eventGetBuildGunDelayPercentage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::NewProp_ReturnValue,
 	};
@@ -560,7 +564,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Get's current percentage of Build delay progress.\n@return Returns between 0-1. Returns 0 if no build is in progress" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "GetBuildGunDelayPercentage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGunState_eventGetBuildGunDelayPercentage_Parms), Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "GetBuildGunDelayPercentage", sizeof(FGBuildGunState_eventGetBuildGunDelayPercentage_Parms), Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -588,7 +592,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGunState_eventHasAuthority_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGunState_eventHasAuthority_Parms), &Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGunState_eventHasAuthority_Parms), &Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::NewProp_ReturnValue,
 	};
@@ -599,7 +603,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Checks if the outer build gun has authority." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "HasAuthority", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGunState_eventHasAuthority_Parms), Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "HasAuthority", sizeof(FGBuildGunState_eventHasAuthority_Parms), Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasAuthority_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_HasAuthority()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -627,7 +631,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGunState_eventHasBuildGunDelay_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGunState_eventHasBuildGunDelay_Parms), &Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGunState_eventHasBuildGunDelay_Parms), &Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::NewProp_ReturnValue,
 	};
@@ -638,7 +642,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "@return true if there is an delay on this state." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "HasBuildGunDelay", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGBuildGunState_eventHasBuildGunDelay_Parms), Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "HasBuildGunDelay", sizeof(FGBuildGunState_eventHasBuildGunDelay_Parms), Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -666,7 +670,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGunState_eventIsActive_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGunState_eventIsActive_Parms), &Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGunState_eventIsActive_Parms), &Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::NewProp_ReturnValue,
 	};
@@ -677,7 +681,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Is this state active." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "IsActive", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGunState_eventIsActive_Parms), Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "IsActive", sizeof(FGBuildGunState_eventIsActive_Parms), Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_IsActive_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_IsActive()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -701,7 +705,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "PrimaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "PrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_PrimaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_PrimaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -725,7 +729,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "sets mActionStartTime to 0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "ResetBuildGunDelay", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020400, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ResetBuildGunDelay", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -749,7 +753,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "ScrollDown", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ScrollDown", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ScrollDown_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_ScrollDown()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -773,7 +777,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "ScrollUp", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "ScrollUp", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_ScrollUp_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_ScrollUp()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -797,7 +801,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Redirected from the build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "SecondaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "SecondaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_SecondaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_SecondaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -816,7 +820,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::NewProp_deltaTime = { UE4CodeGen_Private::EPropertyClass::Float, "deltaTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGunState_eventTickState_Parms, deltaTime), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::NewProp_deltaTime = { "deltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGunState_eventTickState_Parms, deltaTime), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::NewProp_deltaTime,
 	};
@@ -827,7 +831,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Tick this state." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, "TickState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGBuildGunState_eventTickState_Parms), Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunState, nullptr, "TickState", sizeof(FGBuildGunState_eventTickState_Parms), Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunState_TickState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildGunState_TickState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -865,25 +869,25 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildGunState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay, "BeginBuildGunDelay" }, // 1238641622
-		{ &Z_Construct_UFunction_UFGBuildGunState_BeginState, "BeginState" }, // 993906248
-		{ &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete, "BuildGunDelayIsComplete" }, // 1202163408
-		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode, "ChangeGuideLinesSnapMode" }, // 242711830
-		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode, "ChangeNoSnapMode" }, // 3470590562
-		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode, "ChangeScrollMode" }, // 4006045376
-		{ &Z_Construct_UFunction_UFGBuildGunState_EndState, "EndState" }, // 2063250926
-		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGun, "GetBuildGun" }, // 3936438271
-		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage, "GetBuildGunDelayMessage" }, // 78128508
-		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage, "GetBuildGunDelayPercentage" }, // 2294997770
-		{ &Z_Construct_UFunction_UFGBuildGunState_HasAuthority, "HasAuthority" }, // 1652797409
-		{ &Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay, "HasBuildGunDelay" }, // 2978543844
-		{ &Z_Construct_UFunction_UFGBuildGunState_IsActive, "IsActive" }, // 2661711326
-		{ &Z_Construct_UFunction_UFGBuildGunState_PrimaryFire, "PrimaryFire" }, // 4098550375
-		{ &Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay, "ResetBuildGunDelay" }, // 367545029
-		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollDown, "ScrollDown" }, // 633204481
-		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollUp, "ScrollUp" }, // 3821915760
-		{ &Z_Construct_UFunction_UFGBuildGunState_SecondaryFire, "SecondaryFire" }, // 2763339569
-		{ &Z_Construct_UFunction_UFGBuildGunState_TickState, "TickState" }, // 3278997130
+		{ &Z_Construct_UFunction_UFGBuildGunState_BeginBuildGunDelay, "BeginBuildGunDelay" }, // 3930631018
+		{ &Z_Construct_UFunction_UFGBuildGunState_BeginState, "BeginState" }, // 3787840755
+		{ &Z_Construct_UFunction_UFGBuildGunState_BuildGunDelayIsComplete, "BuildGunDelayIsComplete" }, // 2281071656
+		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeGuideLinesSnapMode, "ChangeGuideLinesSnapMode" }, // 3931995086
+		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeNoSnapMode, "ChangeNoSnapMode" }, // 2384149572
+		{ &Z_Construct_UFunction_UFGBuildGunState_ChangeScrollMode, "ChangeScrollMode" }, // 4293768472
+		{ &Z_Construct_UFunction_UFGBuildGunState_EndState, "EndState" }, // 2608376391
+		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGun, "GetBuildGun" }, // 1201442245
+		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayMessage, "GetBuildGunDelayMessage" }, // 562267842
+		{ &Z_Construct_UFunction_UFGBuildGunState_GetBuildGunDelayPercentage, "GetBuildGunDelayPercentage" }, // 3593829898
+		{ &Z_Construct_UFunction_UFGBuildGunState_HasAuthority, "HasAuthority" }, // 1168352917
+		{ &Z_Construct_UFunction_UFGBuildGunState_HasBuildGunDelay, "HasBuildGunDelay" }, // 2378604941
+		{ &Z_Construct_UFunction_UFGBuildGunState_IsActive, "IsActive" }, // 1488687704
+		{ &Z_Construct_UFunction_UFGBuildGunState_PrimaryFire, "PrimaryFire" }, // 1363611746
+		{ &Z_Construct_UFunction_UFGBuildGunState_ResetBuildGunDelay, "ResetBuildGunDelay" }, // 1110326921
+		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollDown, "ScrollDown" }, // 2747470315
+		{ &Z_Construct_UFunction_UFGBuildGunState_ScrollUp, "ScrollUp" }, // 1358528872
+		{ &Z_Construct_UFunction_UFGBuildGunState_SecondaryFire, "SecondaryFire" }, // 3900099140
+		{ &Z_Construct_UFunction_UFGBuildGunState_TickState, "TickState" }, // 1848428936
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunState_Statics::Class_MetaDataParams[] = {
@@ -901,7 +905,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Text to show while action is in progress" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage = { UE4CodeGen_Private::EPropertyClass::Text, "mActionMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(UFGBuildGunState, mActionMessage), METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage = { "mActionMessage", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGBuildGunState, mActionMessage), METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay_MetaData[] = {
 		{ "Category", "BuildGunState" },
@@ -909,7 +913,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Time (in seconds) it takes for the action (eg. Build, dismantle)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay = { UE4CodeGen_Private::EPropertyClass::Float, "mActionDelay", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(UFGBuildGunState, mActionDelay), METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay = { "mActionDelay", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGBuildGunState, mActionDelay), METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGBuildGunState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionMessage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGBuildGunState_Statics::NewProp_mActionDelay,
@@ -919,13 +923,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGBuildGunState_Statics::ClassParams = {
 		&UFGBuildGunState::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGBuildGunState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGBuildGunState_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunState_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunState_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGBuildGunState()
@@ -937,7 +945,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunState, 2005748096);
+	IMPLEMENT_CLASS(UFGBuildGunState, 347845125);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildGunState>()
+	{
+		return UFGBuildGunState::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildGunState(Z_Construct_UClass_UFGBuildGunState, &UFGBuildGunState::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildGunState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildGunState);
 	static FName NAME_AFGBuildGun_Server_GotoBuildState = FName(TEXT("Server_GotoBuildState"));
@@ -1030,8 +1042,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGun_eventCompareActiveRecipeTo_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGun_eventCompareActiveRecipeTo_Parms), &Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventCompareActiveRecipeTo_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGun_eventCompareActiveRecipeTo_Parms), &Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventCompareActiveRecipeTo_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::NewProp_recipe,
@@ -1043,7 +1055,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "@return true if the produce the same buildable; false if not." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "CompareActiveRecipeTo", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBuildGun_eventCompareActiveRecipeTo_Parms), Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "CompareActiveRecipeTo", sizeof(FGBuildGun_eventCompareActiveRecipeTo_Parms), Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1067,8 +1079,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::NewProp_out_recipes = { UE4CodeGen_Private::EPropertyClass::Array, "out_recipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetAvailableRecipes_Parms, out_recipes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::NewProp_out_recipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_recipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::NewProp_out_recipes = { "out_recipes", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetAvailableRecipes_Parms, out_recipes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::NewProp_out_recipes_Inner = { "out_recipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::NewProp_out_recipes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::NewProp_out_recipes_Inner,
@@ -1080,7 +1092,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Gets all the recipes that can be built using this build gun.\n@note This is an expensive operation so cache the result.\n@param out_recipes Returns all recipes available to this build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GetAvailableRecipes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGBuildGun_eventGetAvailableRecipes_Parms), Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GetAvailableRecipes", sizeof(FGBuildGun_eventGetAvailableRecipes_Parms), Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1106,9 +1118,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetBuildGunStateFor_Parms, ReturnValue), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_gunState = { UE4CodeGen_Private::EPropertyClass::Enum, "gunState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetBuildGunStateFor_Parms, gunState), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_gunState_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetBuildGunStateFor_Parms, ReturnValue), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_gunState = { "gunState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetBuildGunStateFor_Parms, gunState), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_gunState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::NewProp_gunState,
@@ -1121,7 +1133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Gets BuildGunState depending on the enum passed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GetBuildGunStateFor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGun_eventGetBuildGunStateFor_Parms), Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GetBuildGunStateFor", sizeof(FGBuildGun_eventGetBuildGunStateFor_Parms), Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1147,9 +1159,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetCostForRecipe_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetCostForRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetCostForRecipe_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetCostForRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::NewProp_ReturnValue_Inner,
@@ -1162,7 +1174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Convenience function to get the cost for a recipe." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GetCostForRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGun_eventGetCostForRecipe_Parms), Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GetCostForRecipe", sizeof(FGBuildGun_eventGetCostForRecipe_Parms), Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1185,7 +1197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetCurrentBuildGunDelayMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetCurrentBuildGunDelayMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::NewProp_ReturnValue,
 	};
@@ -1196,7 +1208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Gets the build gun delay message from current state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GetCurrentBuildGunDelayMessage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGun_eventGetCurrentBuildGunDelayMessage_Parms), Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GetCurrentBuildGunDelayMessage", sizeof(FGBuildGun_eventGetCurrentBuildGunDelayMessage_Parms), Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1219,7 +1231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetCurrentBuildGunDelayPercentage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetCurrentBuildGunDelayPercentage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::NewProp_ReturnValue,
 	};
@@ -1230,7 +1242,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Gets the build gun delay progress from current state as a percentage between 0-1" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GetCurrentBuildGunDelayPercentage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGun_eventGetCurrentBuildGunDelayPercentage_Parms), Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GetCurrentBuildGunDelayPercentage", sizeof(FGBuildGun_eventGetCurrentBuildGunDelayPercentage_Parms), Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1261,7 +1273,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::NewProp_ReturnValue,
 	};
@@ -1272,7 +1284,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Get the inventory to charge when building and refunding when dismantling." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GetInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildGun_eventGetInventory_Parms), Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GetInventory", sizeof(FGBuildGun_eventGetInventory_Parms), Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GetInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GetInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1295,7 +1307,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventGotoBuildState_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventGotoBuildState_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::NewProp_recipe,
 	};
@@ -1306,7 +1318,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "(Simulated)\nSet the build gun in building mode and activates the given recipe.\n@note Must be called on the local player.\n\n@param recipe The recipe to set as active. This may be nullptr, e.g. to hide hologram." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GotoBuildState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBuildGun_eventGotoBuildState_Parms), Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GotoBuildState", sizeof(FGBuildGun_eventGotoBuildState_Parms), Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoBuildState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GotoBuildState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1330,7 +1342,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "(Simulated)\nSet the build gun in dismantling mode.\n@note Must be called on the local player." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GotoDismantleState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GotoDismantleState", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoDismantleState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GotoDismantleState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1354,7 +1366,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "(Simulated)\nSet the build gun in dismantling mode.\n@note Must be called on the local player." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "GotoMenuState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "GotoMenuState", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_GotoMenuState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_GotoMenuState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1385,9 +1397,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	{
 		((FGBuildGun_eventIsInState_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildGun_eventIsInState_Parms), &Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_inState = { UE4CodeGen_Private::EPropertyClass::Enum, "inState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventIsInState_Parms, inState), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_inState_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildGun_eventIsInState_Parms), &Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_inState = { "inState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventIsInState_Parms, inState), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_inState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::NewProp_inState,
@@ -1400,7 +1412,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Checks if the buildgun is in the state we send in" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "IsInState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBuildGun_eventIsInState_Parms), Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "IsInState", sizeof(FGBuildGun_eventIsInState_Parms), Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_IsInState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_IsInState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1419,7 +1431,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventServer_GotoBuildState_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventServer_GotoBuildState_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::NewProp_recipe,
 	};
@@ -1429,7 +1441,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server switch to build state." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_GotoBuildState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGBuildGun_eventServer_GotoBuildState_Parms), Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_GotoBuildState", sizeof(FGBuildGun_eventServer_GotoBuildState_Parms), Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1449,8 +1461,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::NewProp_state = { UE4CodeGen_Private::EPropertyClass::Enum, "state", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildGun_eventServer_GotoState_Parms, state), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::NewProp_state_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildGun_eventServer_GotoState_Parms, state), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::NewProp_state_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::NewProp_state,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::NewProp_state_Underlying,
@@ -1461,7 +1473,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server switch state." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_GotoState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGBuildGun_eventServer_GotoState_Parms), Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_GotoState", sizeof(FGBuildGun_eventServer_GotoState_Parms), Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_GotoState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_GotoState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1484,7 +1496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_NoSnapMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_NoSnapMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1507,7 +1519,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_PrimaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_PrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1530,7 +1542,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_ScrollDown", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_ScrollDown", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1553,7 +1565,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_ScrollMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_ScrollMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1576,7 +1588,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_ScrollUp", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_ScrollUp", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1599,7 +1611,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Lets the server handle the action." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, "Server_SecondaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildGun, nullptr, "Server_SecondaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1671,25 +1683,25 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildGun_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo, "CompareActiveRecipeTo" }, // 3180067608
-		{ &Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes, "GetAvailableRecipes" }, // 1630888113
-		{ &Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor, "GetBuildGunStateFor" }, // 3392886385
-		{ &Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe, "GetCostForRecipe" }, // 78375491
-		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage, "GetCurrentBuildGunDelayMessage" }, // 1461414686
-		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage, "GetCurrentBuildGunDelayPercentage" }, // 1100162529
-		{ &Z_Construct_UFunction_AFGBuildGun_GetInventory, "GetInventory" }, // 2490789846
-		{ &Z_Construct_UFunction_AFGBuildGun_GotoBuildState, "GotoBuildState" }, // 2732184709
-		{ &Z_Construct_UFunction_AFGBuildGun_GotoDismantleState, "GotoDismantleState" }, // 3584642446
-		{ &Z_Construct_UFunction_AFGBuildGun_GotoMenuState, "GotoMenuState" }, // 3690852886
-		{ &Z_Construct_UFunction_AFGBuildGun_IsInState, "IsInState" }, // 534273894
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState, "Server_GotoBuildState" }, // 3749650786
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoState, "Server_GotoState" }, // 333650454
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode, "Server_NoSnapMode" }, // 4274371879
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire, "Server_PrimaryFire" }, // 3939015933
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown, "Server_ScrollDown" }, // 2453947841
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode, "Server_ScrollMode" }, // 148419510
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp, "Server_ScrollUp" }, // 3418520645
-		{ &Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire, "Server_SecondaryFire" }, // 364712617
+		{ &Z_Construct_UFunction_AFGBuildGun_CompareActiveRecipeTo, "CompareActiveRecipeTo" }, // 4158286154
+		{ &Z_Construct_UFunction_AFGBuildGun_GetAvailableRecipes, "GetAvailableRecipes" }, // 3090392972
+		{ &Z_Construct_UFunction_AFGBuildGun_GetBuildGunStateFor, "GetBuildGunStateFor" }, // 3873904944
+		{ &Z_Construct_UFunction_AFGBuildGun_GetCostForRecipe, "GetCostForRecipe" }, // 1612393034
+		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayMessage, "GetCurrentBuildGunDelayMessage" }, // 4008069817
+		{ &Z_Construct_UFunction_AFGBuildGun_GetCurrentBuildGunDelayPercentage, "GetCurrentBuildGunDelayPercentage" }, // 3874392914
+		{ &Z_Construct_UFunction_AFGBuildGun_GetInventory, "GetInventory" }, // 3603403598
+		{ &Z_Construct_UFunction_AFGBuildGun_GotoBuildState, "GotoBuildState" }, // 3194144982
+		{ &Z_Construct_UFunction_AFGBuildGun_GotoDismantleState, "GotoDismantleState" }, // 1682580182
+		{ &Z_Construct_UFunction_AFGBuildGun_GotoMenuState, "GotoMenuState" }, // 1729647367
+		{ &Z_Construct_UFunction_AFGBuildGun_IsInState, "IsInState" }, // 3651198268
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoBuildState, "Server_GotoBuildState" }, // 2396917326
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_GotoState, "Server_GotoState" }, // 345225899
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_NoSnapMode, "Server_NoSnapMode" }, // 3699604190
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_PrimaryFire, "Server_PrimaryFire" }, // 836552304
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollDown, "Server_ScrollDown" }, // 3360729330
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollMode, "Server_ScrollMode" }, // 566710216
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_ScrollUp, "Server_ScrollUp" }, // 947693500
+		{ &Z_Construct_UFunction_AFGBuildGun_Server_SecondaryFire, "Server_SecondaryFire" }, // 2434080841
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::Class_MetaDataParams[] = {
@@ -1704,29 +1716,29 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "@see mCurrentStateIndex." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState = { UE4CodeGen_Private::EPropertyClass::Object, "mCurrentState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mCurrentState), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState = { "mCurrentState", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mCurrentState), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_MetaData[] = {
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 		{ "ToolTip", "(Simulated)\nCurrent build gun state.\nThe client sets this locally and tells the server I want this state." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum = { UE4CodeGen_Private::EPropertyClass::Enum, "mCurrentStateEnum", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mCurrentStateEnum), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum = { "mCurrentStateEnum", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mCurrentStateEnum), Z_Construct_UEnum_FactoryGame_EBuildGunState, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData[] = {
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 		{ "ToolTip", "Result of the latest trace." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult = { UE4CodeGen_Private::EPropertyClass::Struct, "mHitResult", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mHitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult = { "mHitResult", nullptr, (EPropertyFlags)0x0040008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mHitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mHitResult_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates_MetaData[] = {
 		{ "ModuleRelativePath", "Equipment/FGBuildGun.h" },
 		{ "ToolTip", "All the states." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates = { UE4CodeGen_Private::EPropertyClass::Object, "mStates", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, CPP_ARRAY_DIM(mStates, AFGBuildGun), nullptr, STRUCT_OFFSET(AFGBuildGun, mStates), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates = { "mStates", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mStates, AFGBuildGun), STRUCT_OFFSET(AFGBuildGun, mStates), Z_Construct_UClass_UFGBuildGunState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mStates_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass_MetaData[] = {
 		{ "Category", "BuildGun|State" },
@@ -1734,7 +1746,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "The state to use when dismantling." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass = { UE4CodeGen_Private::EPropertyClass::Class, "mDismantleStateClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mDismantleStateClass), Z_Construct_UClass_UFGBuildGunStateDismantle_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass = { "mDismantleStateClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mDismantleStateClass), Z_Construct_UClass_UFGBuildGunStateDismantle_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mDismantleStateClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass_MetaData[] = {
 		{ "Category", "BuildGun|State" },
@@ -1742,7 +1754,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "The state to use when building." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass = { UE4CodeGen_Private::EPropertyClass::Class, "mBuildStateClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mBuildStateClass), Z_Construct_UClass_UFGBuildGunStateBuild_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass = { "mBuildStateClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mBuildStateClass), Z_Construct_UClass_UFGBuildGunStateBuild_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildStateClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass_MetaData[] = {
 		{ "Category", "BuildGun|State" },
@@ -1750,7 +1762,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "The state to use when operating the menus." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass = { UE4CodeGen_Private::EPropertyClass::Class, "mMenuStateClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mMenuStateClass), Z_Construct_UClass_UFGBuildGunState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass = { "mMenuStateClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mMenuStateClass), Z_Construct_UClass_UFGBuildGunState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mMenuStateClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData[] = {
 		{ "Category", "BuildGun" },
@@ -1758,7 +1770,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Trace distance for this build gun when building and dismantling." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax = { UE4CodeGen_Private::EPropertyClass::Float, "mBuildDistanceMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mBuildDistanceMax), METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax = { "mBuildDistanceMax", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mBuildDistanceMax), METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mBuildDistanceMax_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData[] = {
 		{ "Category", "BuildGun|Recipe" },
@@ -1766,7 +1778,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Called when the build gun build state receives a new recipe. This May be called prior to OnStateChanged." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnRecipeChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mOnRecipeChanged), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged = { "mOnRecipeChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mOnRecipeChanged), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunRecipeChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnRecipeChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged_MetaData[] = {
 		{ "Category", "BuildGun|State" },
@@ -1774,7 +1786,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		{ "ToolTip", "Called when the build gun state changes." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnStateChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGBuildGun, mOnStateChanged), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged = { "mOnStateChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildGun, mOnStateChanged), Z_Construct_UDelegateFunction_FactoryGame_OnBuildGunStateChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mOnStateChanged_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildGun_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildGun_Statics::NewProp_mCurrentStateEnum,
@@ -1796,13 +1808,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildGun_Statics::ClassParams = {
 		&AFGBuildGun::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildGun_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildGun_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildGun_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGun_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildGun()
@@ -1814,7 +1830,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGun, 1634118866);
+	IMPLEMENT_CLASS(AFGBuildGun, 3706589676);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGun>()
+	{
+		return AFGBuildGun::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGun(Z_Construct_UClass_AFGBuildGun, &AFGBuildGun::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGun"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGun);
 	void AFGBuildGunAttachment::StaticRegisterNativesAFGBuildGunAttachment()
@@ -1849,13 +1869,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildGunAttachment_Statics::ClassParams = {
 		&AFGBuildGunAttachment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildGunAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGunAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildGunAttachment()
@@ -1867,7 +1891,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGunAttachment, 4270996662);
+	IMPLEMENT_CLASS(AFGBuildGunAttachment, 308281426);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGunAttachment>()
+	{
+		return AFGBuildGunAttachment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGunAttachment(Z_Construct_UClass_AFGBuildGunAttachment, &AFGBuildGunAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGunAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGunAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

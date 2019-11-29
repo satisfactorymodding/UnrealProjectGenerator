@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -23,10 +23,14 @@ struct FInventoryItem;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FInventoryStack>();
+
 #define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FInventoryItem_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FInventoryItem>();
 
 #define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_114_DELEGATE \
 struct _Script_FactoryGame_eventOnItemRemoved_Parms \
@@ -180,6 +184,16 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->AddArbitrarySlotSize(Z_Param_index,Z_Param_arbitrarySlotSize); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetRelevantStackIndexes) \
+	{ \
+		P_GET_TARRAY(TSubclassOf<UFGItemDescriptor> ,Z_Param_relevantClasses); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_stackLimit); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<int32>*)Z_Param__Result=P_THIS->GetRelevantStackIndexes(Z_Param_relevantClasses,Z_Param_stackLimit); \
 		P_NATIVE_END; \
 	} \
  \
@@ -507,6 +521,16 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->AddArbitrarySlotSize(Z_Param_index,Z_Param_arbitrarySlotSize); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetRelevantStackIndexes) \
+	{ \
+		P_GET_TARRAY(TSubclassOf<UFGItemDescriptor> ,Z_Param_relevantClasses); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_stackLimit); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<int32>*)Z_Param__Result=P_THIS->GetRelevantStackIndexes(Z_Param_relevantClasses,Z_Param_stackLimit); \
 		P_NATIVE_END; \
 	} \
  \
@@ -838,6 +862,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGInventoryComponent>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGInventoryComponent_h

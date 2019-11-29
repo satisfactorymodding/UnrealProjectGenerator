@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -46,10 +46,10 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_damageType = { UE4CodeGen_Private::EPropertyClass::Class, "damageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, damageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_direction = { UE4CodeGen_Private::EPropertyClass::Struct, "direction", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, direction), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_duration = { UE4CodeGen_Private::EPropertyClass::Float, "duration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, duration), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Float, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_damageType = { "damageType", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, damageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_direction = { "direction", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, direction), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_duration = { "duration", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, duration), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRadiationInterface_eventReceiveRadiation_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_damageType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::NewProp_direction,
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		{ "ToolTip", "@param amount                How much radiation we're exposed to. [units/s]\n@param duration              For how long we've been exposed. [s]\n@param damageType    The type of damage you take from this radiation." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRadiationInterface, "ReceiveRadiation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGRadiationInterface_eventReceiveRadiation_Parms), Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRadiationInterface, nullptr, "ReceiveRadiation", sizeof(FGRadiationInterface_eventReceiveRadiation_Parms), Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRadiationInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation, "ReceiveRadiation" }, // 2411792325
+		{ &Z_Construct_UFunction_UFGRadiationInterface_ReceiveRadiation, "ReceiveRadiation" }, // 463502682
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRadiationInterface_Statics::Class_MetaDataParams[] = {
@@ -107,13 +107,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRadiationInterface_Statics::ClassParams = {
 		&UFGRadiationInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRadiationInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRadiationInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRadiationInterface()
@@ -125,7 +129,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRadiationInterface, 3401195065);
+	IMPLEMENT_CLASS(UFGRadiationInterface, 1588920146);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGRadiationInterface>()
+	{
+		return UFGRadiationInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRadiationInterface(Z_Construct_UClass_UFGRadiationInterface, &UFGRadiationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRadiationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRadiationInterface);
 	static FName NAME_UFGRadiationInterface_ReceiveRadiation = FName(TEXT("ReceiveRadiation"));

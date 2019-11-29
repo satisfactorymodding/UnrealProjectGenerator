@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -23,8 +23,6 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGColorInterface_SetColorSlot();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGCharacterPlayer_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor();
@@ -57,14 +55,6 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_SetColorSlot instead.");
 	}
-	void IFGColorInterface::SetPrimaryColor(FLinearColor newColor)
-	{
-		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_SetPrimaryColor instead.");
-	}
-	void IFGColorInterface::SetSecondaryColor(FLinearColor newColor)
-	{
-		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_SetSecondaryColor instead.");
-	}
 	void IFGColorInterface::StartIsAimedAtForColor(AFGCharacterPlayer* byCharacter)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_StartIsAimedAtForColor instead.");
@@ -82,8 +72,6 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 			{ "GetPrimaryColor", &IFGColorInterface::execGetPrimaryColor },
 			{ "GetSecondaryColor", &IFGColorInterface::execGetSecondaryColor },
 			{ "SetColorSlot", &IFGColorInterface::execSetColorSlot },
-			{ "SetPrimaryColor", &IFGColorInterface::execSetPrimaryColor },
-			{ "SetSecondaryColor", &IFGColorInterface::execSetSecondaryColor },
 			{ "StartIsAimedAtForColor", &IFGColorInterface::execStartIsAimedAtForColor },
 			{ "StopIsAimedAtForColor", &IFGColorInterface::execStopIsAimedAtForColor },
 		};
@@ -103,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 	{
 		((FGColorInterface_eventGetCanBeColored_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGColorInterface_eventGetCanBeColored_Parms), &Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGColorInterface_eventGetCanBeColored_Parms), &Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::NewProp_ReturnValue,
 	};
@@ -114,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Returns wherther the building can be colored right now or not" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "GetCanBeColored", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGColorInterface_eventGetCanBeColored_Parms), Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "GetCanBeColored", sizeof(FGColorInterface_eventGetCanBeColored_Parms), Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_GetCanBeColored()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -133,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Byte, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventGetColorSlot_Parms, ReturnValue), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorInterface_eventGetColorSlot_Parms, ReturnValue), nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::NewProp_ReturnValue,
 	};
@@ -144,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Returns the color slot index of this building" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "GetColorSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGColorInterface_eventGetColorSlot_Parms), Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "GetColorSlot", sizeof(FGColorInterface_eventGetColorSlot_Parms), Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_GetColorSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -163,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventGetPrimaryColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorInterface_eventGetPrimaryColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::NewProp_ReturnValue,
 	};
@@ -174,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Returns the primary color of this building" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "GetPrimaryColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGColorInterface_eventGetPrimaryColor_Parms), Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "GetPrimaryColor", sizeof(FGColorInterface_eventGetPrimaryColor_Parms), Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -193,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventGetSecondaryColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorInterface_eventGetSecondaryColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::NewProp_ReturnValue,
 	};
@@ -204,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Returns the primary color of this building" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "GetSecondaryColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGColorInterface_eventGetSecondaryColor_Parms), Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "GetSecondaryColor", sizeof(FGColorInterface_eventGetSecondaryColor_Parms), Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -223,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventSetColorSlot_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorInterface_eventSetColorSlot_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::NewProp_index,
 	};
@@ -234,73 +222,13 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Sets the color slot for the buildable" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "SetColorSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGColorInterface_eventSetColorSlot_Parms), Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "SetColorSlot", sizeof(FGColorInterface_eventSetColorSlot_Parms), Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_SetColorSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics
-	{
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_newColor;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::NewProp_newColor = { UE4CodeGen_Private::EPropertyClass::Struct, "newColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventSetPrimaryColor_Parms, newColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::NewProp_newColor,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
-		{ "ToolTip", "Sets the primary color for the buildable" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "SetPrimaryColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGColorInterface_eventSetPrimaryColor_Parms), Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics
-	{
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_newColor;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::NewProp_newColor = { UE4CodeGen_Private::EPropertyClass::Struct, "newColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventSetSecondaryColor_Parms, newColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::NewProp_newColor,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
-		{ "ToolTip", "Sets the secondary color for the buildable" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "SetSecondaryColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGColorInterface_eventSetSecondaryColor_Parms), Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -313,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventStartIsAimedAtForColor_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorInterface_eventStartIsAimedAtForColor_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::NewProp_byCharacter,
 	};
@@ -324,7 +252,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Called on by the interface if we are looking at something that's useable" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "StartIsAimedAtForColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGColorInterface_eventStartIsAimedAtForColor_Parms), Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "StartIsAimedAtForColor", sizeof(FGColorInterface_eventStartIsAimedAtForColor_Parms), Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -343,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGColorInterface_eventStopIsAimedAtForColor_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGColorInterface_eventStopIsAimedAtForColor_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::NewProp_byCharacter,
 	};
@@ -354,7 +282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		{ "ToolTip", "Called when we stop looking at the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, "StopIsAimedAtForColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGColorInterface_eventStopIsAimedAtForColor_Parms), Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGColorInterface, nullptr, "StopIsAimedAtForColor", sizeof(FGColorInterface_eventStopIsAimedAtForColor_Parms), Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -383,15 +311,13 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGColorInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGColorInterface_GetCanBeColored, "GetCanBeColored" }, // 3818106438
-		{ &Z_Construct_UFunction_UFGColorInterface_GetColorSlot, "GetColorSlot" }, // 4086471325
-		{ &Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor, "GetPrimaryColor" }, // 1863479996
-		{ &Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor, "GetSecondaryColor" }, // 805787
-		{ &Z_Construct_UFunction_UFGColorInterface_SetColorSlot, "SetColorSlot" }, // 1906623779
-		{ &Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor, "SetPrimaryColor" }, // 1970121387
-		{ &Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor, "SetSecondaryColor" }, // 1039925950
-		{ &Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor, "StartIsAimedAtForColor" }, // 541473653
-		{ &Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor, "StopIsAimedAtForColor" }, // 215107436
+		{ &Z_Construct_UFunction_UFGColorInterface_GetCanBeColored, "GetCanBeColored" }, // 3011003360
+		{ &Z_Construct_UFunction_UFGColorInterface_GetColorSlot, "GetColorSlot" }, // 1625478900
+		{ &Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor, "GetPrimaryColor" }, // 1509126815
+		{ &Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor, "GetSecondaryColor" }, // 3609883712
+		{ &Z_Construct_UFunction_UFGColorInterface_SetColorSlot, "SetColorSlot" }, // 1341159115
+		{ &Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor, "StartIsAimedAtForColor" }, // 3535004603
+		{ &Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor, "StopIsAimedAtForColor" }, // 1315259319
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGColorInterface_Statics::Class_MetaDataParams[] = {
@@ -406,13 +332,17 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGColorInterface_Statics::ClassParams = {
 		&UFGColorInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGColorInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGColorInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGColorInterface()
@@ -424,7 +354,11 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColorInterface, 1803143435);
+	IMPLEMENT_CLASS(UFGColorInterface, 2063434147);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGColorInterface>()
+	{
+		return UFGColorInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColorInterface(Z_Construct_UClass_UFGColorInterface, &UFGColorInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColorInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColorInterface);
 	static FName NAME_UFGColorInterface_GetCanBeColored = FName(TEXT("GetCanBeColored"));
@@ -510,40 +444,6 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		else if (auto I = (IFGColorInterface*)(O->GetNativeInterfaceAddress(UFGColorInterface::StaticClass())))
 		{
 			I->SetColorSlot_Implementation(index);
-		}
-	}
-	static FName NAME_UFGColorInterface_SetPrimaryColor = FName(TEXT("SetPrimaryColor"));
-	void IFGColorInterface::Execute_SetPrimaryColor(UObject* O, FLinearColor newColor)
-	{
-		check(O != NULL);
-		check(O->GetClass()->ImplementsInterface(UFGColorInterface::StaticClass()));
-		FGColorInterface_eventSetPrimaryColor_Parms Parms;
-		UFunction* const Func = O->FindFunction(NAME_UFGColorInterface_SetPrimaryColor);
-		if (Func)
-		{
-			Parms.newColor=newColor;
-			O->ProcessEvent(Func, &Parms);
-		}
-		else if (auto I = (IFGColorInterface*)(O->GetNativeInterfaceAddress(UFGColorInterface::StaticClass())))
-		{
-			I->SetPrimaryColor_Implementation(newColor);
-		}
-	}
-	static FName NAME_UFGColorInterface_SetSecondaryColor = FName(TEXT("SetSecondaryColor"));
-	void IFGColorInterface::Execute_SetSecondaryColor(UObject* O, FLinearColor newColor)
-	{
-		check(O != NULL);
-		check(O->GetClass()->ImplementsInterface(UFGColorInterface::StaticClass()));
-		FGColorInterface_eventSetSecondaryColor_Parms Parms;
-		UFunction* const Func = O->FindFunction(NAME_UFGColorInterface_SetSecondaryColor);
-		if (Func)
-		{
-			Parms.newColor=newColor;
-			O->ProcessEvent(Func, &Parms);
-		}
-		else if (auto I = (IFGColorInterface*)(O->GetNativeInterfaceAddress(UFGColorInterface::StaticClass())))
-		{
-			I->SetSecondaryColor_Implementation(newColor);
 		}
 	}
 	static FName NAME_UFGColorInterface_StartIsAimedAtForColor = FName(TEXT("StartIsAimedAtForColor"));

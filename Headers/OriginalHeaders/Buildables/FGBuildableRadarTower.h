@@ -5,8 +5,8 @@
 #include "Buildables/FGBuildableFactory.h"
 #include "FGBuildableRadarTower.generated.h"
 
-
-DECLARE_DYNAMIC_MULTICAST_DELEGATE( FRadarTowerRadiusExpanded );
+DECLARE_DYNAMIC_MULTICAST_DELEGATE( FRadarTowerRadiusUpdated );
+DECLARE_LOG_CATEGORY_EXTERN( LogRadarTower, Log, All );
 
 /**
  * Radar Tower reveals nearby fog of war on the Map. Expanding over time until it reaches its max limit.
@@ -21,23 +21,32 @@ class FACTORYGAME_API AFGBuildableRadarTower : public AFGBuildableFactory
 public:
 	// Replication
 	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+	
+	// Begin Actor Interface
+#if WITH_EDITOR
+	virtual void PostEditChangeProperty( FPropertyChangedEvent& PropertyChangedEvent ) override;
+#endif
+	// End Actor Interface
 
-	// Begin Factory_ Interface
+	// Begin Save Interface
+	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	// End Save Interface
+
+	// Begin Factory Interface
 	virtual void Factory_StartProducing() override;
 	virtual void Factory_StopProducing() override;
 	virtual void Factory_TickProducing( float dt ) override;
-	// End Factory_ Interface
+	// End Factory Interface
 
-	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
-	
 	UFUNCTION( BlueprintPure, Category = "Radar Tower" )
 	float GetCurrentRevealRadius();
 
 	UFUNCTION( BlueprintPure, Category = "Radar Tower" )
 	FORCEINLINE float GetTimeToNextExpansion(){ return mTimeToNextExpansion; };
 	
+	/** Returns a which step we are currently on, will never return higher than mNumRadarExpansionSteps */
 	UFUNCTION( BlueprintPure, Category = "Radar Tower" )
-	FORCEINLINE int32 GetCurrentExpansionStep(){ return mCurrentExpansionStep; }
+	FORCEINLINE int32 GetCurrentExpansionStep(){ return FMath::Min(mCurrentExpansionStep, mNumRadarExpansionSteps-1); }
 
 	UFUNCTION( BlueprintPure, Category = "Radar Tower" )
 	FORCEINLINE int32 GetNumRadarExpansionSteps(){ return mNumRadarExpansionSteps; }
@@ -48,19 +57,28 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Radar Tower" )
 	FORCEINLINE float GetMaxRevealRadius(){ return mMaxRevealRadius; }
 
-
-protected:
-	// Begin AActor interface
-	virtual void Destroyed() override;
-	//End AActor interface
+	/** Returns a normalized value for how much we will have revealed of the max reveal radius on a certain step */
+	UFUNCTION( BlueprintPure, Category = "Radar Tower" )
+	float GetNormalizedProgressValueForStep( int32 step );
 
 private:
-	UFUNCTION( Reliable, NetMulticast )
-	void Multicast_ExpandRadarRadius();
+
+	/** 
+	* Broadcast that the radius of the radar tower have been updated. 
+	* If this is called from non game thread we schedule a call to be made on game thread.
+	*/
+	UFUNCTION()
+	void OnRep_OnRadiusUpdated();
+
+	/** Returns how much we will have revealed on a certain step */
+	float GetRevealRadiusOnStep( int32 step );
+
+	/** returns true if this radar tower is expanded to it's maximum range */
+	bool IsRadarExpandedToMax();
 
 public:
 	UPROPERTY( BlueprintAssignable, Category = "Radar Tower" )
-	FRadarTowerRadiusExpanded OnRadarTowerRadiusExpanded;
+	FRadarTowerRadiusUpdated OnRadarTowerRadiusUpdated;
 
 protected:	
 	/** The initial reveal radius */
@@ -81,13 +99,12 @@ protected:
 
 private:
 	
-	/** The current expansion step  */
-	UPROPERTY( SaveGame )
+	/** The step we are on right now between 0 and mNumRadarExpansionSteps-1  */
+	UPROPERTY( ReplicatedUsing=OnRep_OnRadiusUpdated, SaveGame )
 	int32 mCurrentExpansionStep;
 
-	/** The timer handle for when we expand the radar towers area of effect  */
-	FTimerHandle mExpansionTimerHandle;
-
+	/** Time left until we expand the reveal area  */
 	UPROPERTY( Replicated, SaveGame )
 	float mTimeToNextExpansion;
+
 };

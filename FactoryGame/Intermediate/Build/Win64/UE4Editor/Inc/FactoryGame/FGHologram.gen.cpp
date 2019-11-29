@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -45,13 +45,17 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EHologramScrollMode>()
+	{
+		return EHologramScrollMode_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EHologramScrollMode(EHologramScrollMode_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EHologramScrollMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EHologramScrollMode_CRC() { return 956374301U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EHologramScrollMode_Hash() { return 979681766U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EHologramScrollMode()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EHologramScrollMode"), 0, Get_Z_Construct_UEnum_FactoryGame_EHologramScrollMode_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EHologramScrollMode"), 0, Get_Z_Construct_UEnum_FactoryGame_EHologramScrollMode_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -76,14 +80,14 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EHologramScrollMode",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EHologramScrollMode",
 				"EHologramScrollMode",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -131,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::NewProp_hitClass = { UE4CodeGen_Private::EPropertyClass::Class, "hitClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGHologram_eventAddValidHitClass_Parms, hitClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::NewProp_hitClass = { "hitClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGHologram_eventAddValidHitClass_Parms, hitClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::NewProp_hitClass,
 	};
@@ -142,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "Use this to add a valid hit class for this hologram in blueprints begin play." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "AddValidHitClass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(FGHologram_eventAddValidHitClass_Parms), Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "AddValidHitClass", sizeof(FGHologram_eventAddValidHitClass_Parms), Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_AddValidHitClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_AddValidHitClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -170,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((FGHologram_eventCanConstruct_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGHologram_eventCanConstruct_Parms), &Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHologram_eventCanConstruct_Parms), &Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::NewProp_ReturnValue,
 	};
@@ -181,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "@return true if the hologram can be constructed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "CanConstruct", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGHologram_eventCanConstruct_Parms), Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "CanConstruct", sizeof(FGHologram_eventCanConstruct_Parms), Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_CanConstruct_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_CanConstruct()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -204,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "Play snapping sound. @todo Now when things are simulated, this can be done locally" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "Client_PlaySnapSound", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x01040CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "Client_PlaySnapSound", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x01040CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -228,8 +232,8 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::NewProp_out_constructResults = { UE4CodeGen_Private::EPropertyClass::Array, "out_constructResults", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGHologram_eventGetConstructDisqualifiers_Parms, out_constructResults), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::NewProp_out_constructResults_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_constructResults", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGConstructDisqualifier_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::NewProp_out_constructResults = { "out_constructResults", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGHologram_eventGetConstructDisqualifiers_Parms, out_constructResults), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::NewProp_out_constructResults_Inner = { "out_constructResults", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGConstructDisqualifier_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::NewProp_out_constructResults,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::NewProp_out_constructResults_Inner,
@@ -241,7 +245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "@return true if the hologram can be constructed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "GetConstructDisqualifiers", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGHologram_eventGetConstructDisqualifiers_Parms), Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "GetConstructDisqualifiers", sizeof(FGHologram_eventGetConstructDisqualifiers_Parms), Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -269,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((FGHologram_eventGetNoSnapMode_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGHologram_eventGetNoSnapMode_Parms), &Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHologram_eventGetNoSnapMode_Parms), &Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::NewProp_ReturnValue,
 	};
@@ -280,7 +284,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "@return true if no snap mode is enabled; false otherwise." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "GetNoSnapMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGHologram_eventGetNoSnapMode_Parms), Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "GetNoSnapMode", sizeof(FGHologram_eventGetNoSnapMode_Parms), Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_GetNoSnapMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_GetNoSnapMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -308,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((FGHologram_eventIsChanged_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_IsChanged_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGHologram_eventIsChanged_Parms), &Z_Construct_UFunction_AFGHologram_IsChanged_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_IsChanged_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHologram_eventIsChanged_Parms), &Z_Construct_UFunction_AFGHologram_IsChanged_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_IsChanged_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_IsChanged_Statics::NewProp_ReturnValue,
 	};
@@ -319,7 +323,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "If the hologram contains changes that can be reset using the right mouse button, e.g. multi step placement and rotation.\n@return true if the hologram has changes; false if the hologram is in vanilla condition." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_IsChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "IsChanged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020400, sizeof(FGHologram_eventIsChanged_Parms), Z_Construct_UFunction_AFGHologram_IsChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_IsChanged_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_IsChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_IsChanged_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_IsChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "IsChanged", sizeof(FGHologram_eventIsChanged_Parms), Z_Construct_UFunction_AFGHologram_IsChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_IsChanged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_IsChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_IsChanged_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_IsChanged()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -341,7 +345,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "OnRep_InitialScrollModeValue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "OnRep_InitialScrollModeValue", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -364,7 +368,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "So we can set the material on client." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "OnRep_PlacementMaterial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "OnRep_PlacementMaterial", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -388,7 +392,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((FGHologram_eventServer_SetSnapToGuideLines_Parms*)Obj)->isEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled = { UE4CodeGen_Private::EPropertyClass::Bool, "isEnabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGHologram_eventServer_SetSnapToGuideLines_Parms), &Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled = { "isEnabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGHologram_eventServer_SetSnapToGuideLines_Parms), &Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::NewProp_isEnabled,
 	};
@@ -398,7 +402,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "Set hologram to snap to guide lines on server" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, "Server_SetSnapToGuideLines", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80220CC0, sizeof(FGHologram_eventServer_SetSnapToGuideLines_Parms), Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGHologram, nullptr, "Server_SetSnapToGuideLines", sizeof(FGHologram_eventServer_SetSnapToGuideLines_Parms), Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -481,15 +485,15 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGHologram_AddValidHitClass, "AddValidHitClass" }, // 1692412473
-		{ &Z_Construct_UFunction_AFGHologram_CanConstruct, "CanConstruct" }, // 554549142
-		{ &Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound, "Client_PlaySnapSound" }, // 1778717988
-		{ &Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers, "GetConstructDisqualifiers" }, // 1420932822
-		{ &Z_Construct_UFunction_AFGHologram_GetNoSnapMode, "GetNoSnapMode" }, // 562586018
-		{ &Z_Construct_UFunction_AFGHologram_IsChanged, "IsChanged" }, // 442108112
-		{ &Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue, "OnRep_InitialScrollModeValue" }, // 1849818692
-		{ &Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial, "OnRep_PlacementMaterial" }, // 547970754
-		{ &Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines, "Server_SetSnapToGuideLines" }, // 1675136345
+		{ &Z_Construct_UFunction_AFGHologram_AddValidHitClass, "AddValidHitClass" }, // 3442251214
+		{ &Z_Construct_UFunction_AFGHologram_CanConstruct, "CanConstruct" }, // 1907695432
+		{ &Z_Construct_UFunction_AFGHologram_Client_PlaySnapSound, "Client_PlaySnapSound" }, // 3545068823
+		{ &Z_Construct_UFunction_AFGHologram_GetConstructDisqualifiers, "GetConstructDisqualifiers" }, // 3920059103
+		{ &Z_Construct_UFunction_AFGHologram_GetNoSnapMode, "GetNoSnapMode" }, // 3325947803
+		{ &Z_Construct_UFunction_AFGHologram_IsChanged, "IsChanged" }, // 1293964081
+		{ &Z_Construct_UFunction_AFGHologram_OnRep_InitialScrollModeValue, "OnRep_InitialScrollModeValue" }, // 4162046564
+		{ &Z_Construct_UFunction_AFGHologram_OnRep_PlacementMaterial, "OnRep_PlacementMaterial" }, // 2312105897
+		{ &Z_Construct_UFunction_AFGHologram_Server_SetSnapToGuideLines, "Server_SetSnapToGuideLines" }, // 700757432
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::Class_MetaDataParams[] = {
@@ -505,7 +509,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "The client needs to know the initial saved scroll mode value from the BuildGun." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue = { UE4CodeGen_Private::EPropertyClass::Int, "mInitialScrollModeValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_InitialScrollModeValue", STRUCT_OFFSET(AFGHologram, mInitialScrollModeValue), METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue = { "mInitialScrollModeValue", "OnRep_InitialScrollModeValue", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mInitialScrollModeValue), METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
@@ -516,7 +520,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((AFGHologram*)Obj)->mIsChanged = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGHologram), &Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged = { "mIsChanged", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGHologram), &Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
@@ -527,36 +531,36 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((AFGHologram*)Obj)->mIsDisabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsDisabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGHologram), &Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled = { "mIsDisabled", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGHologram), &Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsDisabled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
 		{ "ToolTip", "Who is building" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator = { UE4CodeGen_Private::EPropertyClass::Object, "mConstructionInstigator", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGHologram, mConstructionInstigator), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator = { "mConstructionInstigator", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mConstructionInstigator), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mConstructionInstigator_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
 		{ "ToolTip", "Enables composite holograms.\nChildren are included in the cost and are constructed together with this hologram.\nChildren can be optionally disabled with mIsDisabled.\n\nYou're responsible for:\n - updating the childrens location/rotation.\n - validate placement for children.\n - set correct materials on children." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren = { UE4CodeGen_Private::EPropertyClass::Array, "mChildren", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGHologram, mChildren), METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mChildren", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGHologram_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren = { "mChildren", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mChildren), METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mChildren_Inner = { "mChildren", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGHologram_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
 		{ "ToolTip", "Material on hologram for invalid placement." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mInvalidPlacementMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGHologram, mInvalidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial = { "mInvalidPlacementMaterial", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mInvalidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mInvalidPlacementMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
 		{ "ToolTip", "Material on hologram for valid placement." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mValidPlacementMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGHologram, mValidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial = { "mValidPlacementMaterial", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mValidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidPlacementMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
@@ -567,7 +571,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	{
 		((AFGHologram*)Obj)->mPlacementMaterial = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial = { UE4CodeGen_Private::EPropertyClass::Bool, "mPlacementMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_PlacementMaterial", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGHologram), &Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial = { "mPlacementMaterial", "OnRep_PlacementMaterial", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGHologram), &Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mPlacementMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector_MetaData[] = {
 		{ "EditInline", "true" },
@@ -575,7 +579,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "Clearance detector box" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceDetector", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGHologram, mClearanceDetector), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector = { "mClearanceDetector", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mClearanceDetector), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mClearanceDetector_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound_MetaData[] = {
 		{ "EditInline", "true" },
@@ -583,14 +587,14 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "Looping sound to play on holograms" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound = { UE4CodeGen_Private::EPropertyClass::Object, "mLoopSound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGHologram, mLoopSound), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound = { "mLoopSound", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mLoopSound), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mLoopSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGHologram.h" },
 		{ "ToolTip", "The recipe for this hologram." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "mRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000020, 1, nullptr, STRUCT_OFFSET(AFGHologram, mRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe = { "mRecipe", nullptr, (EPropertyFlags)0x0024080000000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_MetaData[] = {
 		{ "Category", "Hologram" },
@@ -598,8 +602,8 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		{ "ToolTip", "These classes will be considered a valid hit when checking is valid hit result.\nBy default all static geometry is considered valid.\nBuildings, vehicles and pawns are not considered valid by default." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses = { UE4CodeGen_Private::EPropertyClass::Array, "mValidHitClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000030001, 1, nullptr, STRUCT_OFFSET(AFGHologram, mValidHitClasses), METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mValidHitClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000020000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses = { "mValidHitClasses", nullptr, (EPropertyFlags)0x0024080000030001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGHologram, mValidHitClasses), METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGHologram_Statics::NewProp_mValidHitClasses_Inner = { "mValidHitClasses", nullptr, (EPropertyFlags)0x0004000000020000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHologram_Statics::NewProp_mInitialScrollModeValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGHologram_Statics::NewProp_mIsChanged,
@@ -621,13 +625,17 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGHologram_Statics::ClassParams = {
 		&AFGHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGHologram()
@@ -639,7 +647,11 @@ void EmptyLinkFunctionForGeneratedCodeFGHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHologram, 1029408623);
+	IMPLEMENT_CLASS(AFGHologram, 3881846248);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGHologram>()
+	{
+		return AFGHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHologram(Z_Construct_UClass_AFGHologram, &AFGHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

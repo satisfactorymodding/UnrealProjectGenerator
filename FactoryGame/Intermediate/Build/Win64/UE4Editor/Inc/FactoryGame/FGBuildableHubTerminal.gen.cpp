@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableHubTerminal_eventGetTradingPost_Parms, ReturnValue), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableHubTerminal_eventGetTradingPost_Parms, ReturnValue), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::NewProp_ReturnValue,
 	};
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		{ "ToolTip", "Get the trading post" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableHubTerminal, "GetTradingPost", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableHubTerminal_eventGetTradingPost_Parms), Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableHubTerminal, nullptr, "GetTradingPost", sizeof(FGBuildableHubTerminal_eventGetTradingPost_Parms), Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableHubTerminal_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost, "GetTradingPost" }, // 2825051684
+		{ &Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost, "GetTradingPost" }, // 253772386
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHubTerminal_Statics::Class_MetaDataParams[] = {
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		{ "ModuleRelativePath", "Buildables/FGBuildableHubTerminal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost = { UE4CodeGen_Private::EPropertyClass::Object, "mTradingPost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableHubTerminal, mTradingPost), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost = { "mTradingPost", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableHubTerminal, mTradingPost), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableHubTerminal_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost,
 	};
@@ -108,13 +108,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableHubTerminal_Statics::ClassParams = {
 		&AFGBuildableHubTerminal::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableHubTerminal_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableHubTerminal_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableHubTerminal()
@@ -126,7 +130,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 1205048038);
+	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 2375132017);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableHubTerminal>()
+	{
+		return AFGBuildableHubTerminal::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableHubTerminal(Z_Construct_UClass_AFGBuildableHubTerminal, &AFGBuildableHubTerminal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableHubTerminal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableHubTerminal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

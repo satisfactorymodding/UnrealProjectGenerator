@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -382,6 +382,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGActorRepresentation>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGActorRepresentation_h
 
@@ -392,11 +394,19 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ECompassViewDistance::CVD_Mid) \
 	op(ECompassViewDistance::CVD_Far) \
 	op(ECompassViewDistance::CVD_Always) 
+
+enum class ECompassViewDistance : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ECompassViewDistance>();
+
 #define FOREACH_ENUM_EFOGOFWARREVEALTYPE(op) \
 	op(EFogOfWarRevealType::FOWRT_None) \
 	op(EFogOfWarRevealType::FOWRT_Static) \
 	op(EFogOfWarRevealType::FOWRT_Intermittent) \
 	op(EFogOfWarRevealType::FOWRT_Dynamic) 
+
+enum class EFogOfWarRevealType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFogOfWarRevealType>();
+
 #define FOREACH_ENUM_EREPRESENTATIONTYPE(op) \
 	op(ERepresentationType::RT_Default) \
 	op(ERepresentationType::RT_Beacon) \
@@ -412,4 +422,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ERepresentationType::RT_TrainStation) \
 	op(ERepresentationType::RT_Vehicle) \
 	op(ERepresentationType::RT_VehicleDockingStation) 
+
+enum class ERepresentationType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ERepresentationType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

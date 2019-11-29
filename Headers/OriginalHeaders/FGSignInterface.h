@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FGSaveInterface.h"
 #include "UObject/Interface.h"
+#include "FGBuildable.h"
 #include "FGSignInterface.generated.h"
 
 
@@ -21,7 +23,7 @@ enum class ESignElementType : uint8
 {
 	ESET_Scene			UMETA( DisplayName = "Scene Component" ),
 	ESET_Text			UMETA( DisplayName = "Text Input" ),
-	ESET_SpriteIcon		UMETA( DisplayName = "Image")
+	ESET_SpriteIcon		UMETA( DisplayName = "Image" )
 };
 
 
@@ -29,14 +31,14 @@ USTRUCT( BlueprintType )
 struct FSignElementConstraints
 {
 	GENERATED_BODY()
-	
-	FSignElementConstraints() :
+
+		FSignElementConstraints() :
 		MinTranslationOffset( FVector2D( -100.f, 100.f ) ),
-		MaxTranslationOffset( FVector2D( 100.f, 100.f) ),
-		MinScale ( 0.1f ),
-		MaxScale ( 5.f )
+		MaxTranslationOffset( FVector2D( 100.f, 100.f ) ),
+		MinScale( 0.1f ),
+		MaxScale( 5.f )
 	{}
-	
+
 	UPROPERTY( EditDefaultsOnly, Category = "SignData" )
 	FVector2D MinTranslationOffset;
 	UPROPERTY( EditDefaultsOnly, Category = "SignData" )
@@ -48,51 +50,159 @@ struct FSignElementConstraints
 
 };
 
-UCLASS(BlueprintType)
-class FACTORYGAME_API UFGSignElementData : public UObject
+USTRUCT( BlueprintType )
+struct FACTORYGAME_API FSignPixelColumn
+{
+	GENERATED_BODY()
+	
+	FSignPixelColumn()
+	{}
+	
+	FSignPixelColumn( int32 size ) 
+	{
+		Column.SetNum( size );
+	}
+	
+	UPROPERTY( SaveGame )
+	TArray< class UFGSignPixelData* > Column;
+
+	class UFGSignPixelData* operator[]( int32 index )
+	{
+		if( Column.IsValidIndex( index ) )
+		{
+			return Column[ index ];
+		}
+		else
+		{
+			return nullptr;
+		}
+	}
+};
+
+UCLASS( BlueprintType )
+class FACTORYGAME_API UFGSignLayer : public UObject, public IFGSaveInterface
+{
+	GENERATED_BODY()
+	
+public:
+
+	UFGSignLayer()
+	{
+	}
+
+	// Begin IFGSaveInterface
+	virtual bool NeedTransform_Implementation() override;
+	virtual bool ShouldSave_Implementation() const override;
+	// End IFSaveInterface
+
+	void Init( int32 layerID, FVector2D canvasDimensions, FVector2D pixelDimensions )
+	{
+		mLayerID = layerID;
+		mPixelDimensions = pixelDimensions;
+		mPixelColumns.SetNum( ( int32 )( canvasDimensions.X / pixelDimensions.X ) );
+		for( int i = 0; i < ( int32 )( canvasDimensions.X / pixelDimensions.X ); ++i )
+		{
+			mPixelColumns[ i ] = FSignPixelColumn( ( int32 )( canvasDimensions.Y / pixelDimensions.Y ) );
+		}
+	}
+
+	// Layer index, used to determine sorting. Layer 0 is the background layer
+	UPROPERTY( SaveGame )
+	uint8 mLayerID;
+
+	UPROPERTY( SaveGame )
+	TArray< FSignPixelColumn > mPixelColumns;
+
+	UPROPERTY( SaveGame )
+	TArray< class UFGSignElementData* > mLayerElements;
+
+	UPROPERTY( SaveGame )
+	FVector2D mPixelDimensions;
+
+};
+
+//@todoSigns : Change all blueprint read / write properties over to getters / setters where applicable
+UCLASS( BlueprintType )
+class FACTORYGAME_API UFGSignElementData : public UObject, public IFGSaveInterface
 {
 	GENERATED_BODY()
 
 public:
 	UFGSignElementData()
 	{
-		SignElementID = 0;
-		ColorIndex = 0;
-		TranslationOffset = FVector2D::ZeroVector;
-		Rotation = 0.f;
-		Scale = 1.f;
+		mSignElementID = 0;
+		mColorIndex = 0;
+		mTranslationOffset = FVector2D::ZeroVector;
+		mRotation = 0.f;
+		mScale = 1.f;
 	}
-	
+
 	UFGSignElementData( int32 uniqueID )
 	{
-		SignElementID = uniqueID;
-		ColorIndex = 0;
-		TranslationOffset = FVector2D::ZeroVector;
-		Rotation = 0.f;
-		Scale = 1.f;
+		mSignElementID = uniqueID;
+		mColorIndex = 0;
+		mTranslationOffset = FVector2D::ZeroVector;
+		mRotation = 0.f;
+		mScale = 1.f;
 	}
+
+	// Begin IFGSaveInterface
+	virtual void PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	virtual void PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	virtual void PreLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	virtual void GatherDependencies_Implementation( TArray< UObject* >& out_dependentObjects ) override;
+	virtual bool NeedTransform_Implementation() override;
+	virtual bool ShouldSave_Implementation() const override;
+	// End IFSaveInterface
 
 	/** unique id to identify this element by buildable signs */
 	UPROPERTY( SaveGame )
-	int32 SignElementID;
+	int32 mSignElementID;
 
 	/** Index pointing to a location in the FGSignSettings Color Array */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	int32 ColorIndex;
+	int32 mColorIndex;
 
 	/** Position offset from center */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	FVector2D TranslationOffset;
+	FVector2D mTranslationOffset;
 
 	/** Roll Rotation */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	float Rotation;
+	float mRotation;
 
 	/** Global uniform scale factor */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	float Scale;
+	float mScale;
+
+	/** If embedded, this indicates that the element should not be given its own element list widget ( tex. the background pixels in layers ) */
+	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
+	bool mEmbeddedInLayer;
+
+	UPROPERTY( BlueprintReadOnly, Category = "SignData" )
+	bool mIsElementStatic;
+};
+
+UCLASS( BlueprintType )
+class FACTORYGAME_API UFGSignPixelData : public UFGSignElementData
+{
+	GENERATED_BODY()
+	
+public:
+
+	UFGSignPixelData()
+	{}
+
+	UFGSignPixelData( int32 uniqueID ) : Super( uniqueID )
+	{
+	}
+	
+	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
+	FVector2D mDimensions;
 
 };
+
 
 UCLASS( BlueprintType )
 class FACTORYGAME_API UFGSignTextData : public UFGSignElementData
@@ -102,28 +212,28 @@ class FACTORYGAME_API UFGSignTextData : public UFGSignElementData
 public:
 	UFGSignTextData() : Super()
 	{
-		SignText = "Sign Text";
-		FontSize = 18;
-		TextAlignmentHorizontal = EHorizontalSignTextAlignment::EHSTA_Center;
+		mSignText = "Sign Text";
+		mFontSize = 24;
+		mTextAlignmentHorizontal = EHorizontalSignTextAlignment::EHSTA_Center;
 	}
-	
+
 	UFGSignTextData( int32 uniqueID ) : Super( uniqueID )
 	{
-		SignText = "Sign Text";
-		FontSize = 18;
-		TextAlignmentHorizontal = EHorizontalSignTextAlignment::EHSTA_Center;
+		mSignText = "Sign Text";
+		mFontSize = 24;
+		mTextAlignmentHorizontal = EHorizontalSignTextAlignment::EHSTA_Center;
 	}
-	
+
 	/** Text field to be displayed on the sign */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	FString SignText;
+	FString mSignText;
 
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	int32 FontSize;
-	
+	int32 mFontSize;
+
 	/** Text align horizontal */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	EHorizontalSignTextAlignment TextAlignmentHorizontal;
+	EHorizontalSignTextAlignment mTextAlignmentHorizontal;
 
 };
 
@@ -135,17 +245,17 @@ class FACTORYGAME_API UFGSignIconData : public UFGSignElementData
 public:
 	UFGSignIconData() : Super()
 	{
-		IconIndex = 0;
+		mIconIndex = 0;
 	}
 
 	UFGSignIconData( int32 uniqueID ) : Super( uniqueID )
 	{
-		IconIndex = 0;
+		mIconIndex = 0;
 	}
-	
+
 	// Index pointing to a location in the FGSignSettings Icon array
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
-	int32 IconIndex;
+	int32 mIconIndex;
 };
 
 
@@ -154,37 +264,18 @@ struct FSignData
 {
 	GENERATED_BODY()
 
-	FSignData( ) :
+	FSignData() :
 		BackgroundColorIndex( 0 )
 	{
 	}
 
-	FSignData( TArray<UFGSignElementData*> elementData, int32 backgroundColorIndex )
-	{
-		for( UFGSignElementData* data : elementData )
-		{
-			SignElementData.Add( DuplicateObject( data, nullptr ) );
-		}
-
-		BackgroundColorIndex = BackgroundColorIndex;
-	}
-
-	// Copy Constructor (no outer is specified so DuplicateObject will only perform a shallow copy)
-	// This is as intended as their are not pointer references in the UFGSignElementData class
-	FSignData( const FSignData& data )
-	{
-		for( UFGSignElementData* elementData : data.SignElementData )
-		{
-			SignElementData.Add( Cast<UFGSignElementData>( DuplicateObject( elementData, nullptr ) ) );
-		}
-
-		BackgroundColorIndex = BackgroundColorIndex;
-	}
+	// Copy Constructor, outer is set to ensure proper save integration (thus the copy must contain a valid reference to the buildable as outer)
+	FSignData( const FSignData& data );
 
 	template<typename ElementType>
 	void GetAllElementsOfType( TArray<ElementType*>& out_Elements )
 	{
-		for(UFGSignElementData* elem : SignElementData )
+		for( UFGSignElementData* elem : SignElementData )
 		{
 			if( Cast<ElementType>( elem ) )
 			{
@@ -193,18 +284,18 @@ struct FSignData
 		}
 	}
 
-	UFGSignElementData* GetElementWithId( int32 id, UFGSignElementData& out_elementData ) const
-	{
-		for( UFGSignElementData* elem : SignElementData )
-		{
-			if( elem->SignElementID == id )
-			{
-				return elem;
-			}
-		}
+	/** First time Initialization. Should be called by owning buildable to prepare the data elements neccessary */
+	void Init( class IFGSignInterface* signInterface );
 
-		return nullptr;
-	}
+	/** Function called when serializing this struct to a FArchive. */
+	bool Serialize( FArchive& ar );
+	friend FArchive& operator<<( FArchive& ar, FSignData& item );
+
+	UFGSignElementData* GetElementWithId( int32 id, UFGSignElementData& out_elementData ) const;
+
+	/** All additional layers in this sign. Each layer holds an array of all elements in that layer */
+	UPROPERTY( SaveGame, BlueprintReadOnly, Category = "SignData" )
+	TArray< UFGSignLayer* > SignLayers;
 
 	/** All sign elements in this sign */
 	UPROPERTY( SaveGame, BlueprintReadOnly, Category = "SignData" )
@@ -213,6 +304,18 @@ struct FSignData
 	/** Index of the selected color for the background from the FGSignSettings color data array  */
 	UPROPERTY( SaveGame, BlueprintReadWrite, Category = "SignData" )
 	int32 BackgroundColorIndex;
+
+
+};
+
+/** Enable custom serialization of FRailroadTrackPosition */
+template<>
+struct TStructOpsTypeTraits< FSignData > : public TStructOpsTypeTraitsBase2< FSignData >
+{
+	enum
+	{
+		WithSerializer = true
+	};
 };
 
 
@@ -231,6 +334,10 @@ class FACTORYGAME_API IFGSignInterface
 	GENERATED_BODY()
 
 public:
+	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "SignData" )
+	AFGBuildable* GetBuildable();
+	
+
 	/** Sets the sign data with optional update parameter */
 	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "SignData" )
 	void SetSignData( const FSignData& data, bool bUpdate = true );
@@ -248,8 +355,13 @@ public:
 	/** Get the world scale dimensions (width / height) of the sign
 	* @note from world space Y maps to X and Z maps to Y in the return value
 	*/
-	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "SignData")
+	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "SignData" )
 	FVector2D GetSignDimensions();
 
+	/** Get the dimensions of the grid size ( the size of 1 grid square )
+	*	Is used for creating "pixel" layouts on each layer
+	*/
+	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "SignData" )
+	FVector2D GetGridSquareDimensions();
 
 };

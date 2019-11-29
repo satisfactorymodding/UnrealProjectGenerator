@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -25,10 +25,14 @@ class UScriptStruct* FFoundationSideSelectionFlags::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FoundationSideSelectionFlags"), sizeof(FFoundationSideSelectionFlags), Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FoundationSideSelectionFlags"), sizeof(FFoundationSideSelectionFlags), Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FFoundationSideSelectionFlags>()
+{
+	return FFoundationSideSelectionFlags::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FFoundationSideSelectionFlags(FFoundationSideSelectionFlags::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("FoundationSideSelectionFlags"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSelectionFlags
@@ -98,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	{
 		((FFoundationSideSelectionFlags*)Obj)->Bottom = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom = { UE4CodeGen_Private::EPropertyClass::Bool, "Bottom", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom = { "Bottom", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_MetaData[] = {
 		{ "Category", "Sides" },
@@ -109,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	{
 		((FFoundationSideSelectionFlags*)Obj)->Top = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top = { UE4CodeGen_Private::EPropertyClass::Bool, "Top", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top = { "Top", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_MetaData[] = {
 		{ "Category", "Sides" },
@@ -120,7 +124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	{
 		((FFoundationSideSelectionFlags*)Obj)->Left = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left = { UE4CodeGen_Private::EPropertyClass::Bool, "Left", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left = { "Left", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Left_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_MetaData[] = {
 		{ "Category", "Sides" },
@@ -131,7 +135,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	{
 		((FFoundationSideSelectionFlags*)Obj)->Back = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back = { UE4CodeGen_Private::EPropertyClass::Bool, "Back", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back = { "Back", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Back_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_MetaData[] = {
 		{ "Category", "Sides" },
@@ -142,7 +146,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	{
 		((FFoundationSideSelectionFlags*)Obj)->Right = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right = { UE4CodeGen_Private::EPropertyClass::Bool, "Right", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right = { "Right", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Right_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_MetaData[] = {
 		{ "Category", "Sides" },
@@ -153,7 +157,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	{
 		((FFoundationSideSelectionFlags*)Obj)->Front = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front = { UE4CodeGen_Private::EPropertyClass::Bool, "Front", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front = { "Front", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FFoundationSideSelectionFlags), &Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Front_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Bottom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::NewProp_Top,
@@ -167,19 +171,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		nullptr,
 		&NewStructOps,
 		"FoundationSideSelectionFlags",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FFoundationSideSelectionFlags),
 		alignof(FFoundationSideSelectionFlags),
-		Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFoundationSideSelectionFlags()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FoundationSideSelectionFlags"), sizeof(FFoundationSideSelectionFlags), Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FoundationSideSelectionFlags"), sizeof(FFoundationSideSelectionFlags), Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -189,7 +194,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC() { return 2925859095U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash() { return 1773506502U; }
 	void AFGBuildableFactoryBuilding::StaticRegisterNativesAFGBuildableFactoryBuilding()
 	{
 	}
@@ -230,7 +235,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		{ "ToolTip", "Mesh component for the factory building." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy = { UE4CodeGen_Private::EPropertyClass::Object, "mMeshComponentProxy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableFactoryBuilding, mMeshComponentProxy), Z_Construct_UClass_UFGColoredInstanceMeshProxy_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy = { "mMeshComponentProxy", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableFactoryBuilding, mMeshComponentProxy), Z_Construct_UClass_UFGColoredInstanceMeshProxy_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::NewProp_mMeshComponentProxy,
 	};
@@ -239,13 +244,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::ClassParams = {
 		&AFGBuildableFactoryBuilding::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableFactoryBuilding_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableFactoryBuilding()
@@ -257,7 +266,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 2538542747);
+	IMPLEMENT_CLASS(AFGBuildableFactoryBuilding, 3224162847);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableFactoryBuilding>()
+	{
+		return AFGBuildableFactoryBuilding::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFactoryBuilding(Z_Construct_UClass_AFGBuildableFactoryBuilding, &AFGBuildableFactoryBuilding::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFactoryBuilding"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFactoryBuilding);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

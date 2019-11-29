@@ -167,6 +167,8 @@ public:
 	/** Debug */
 	void DisplayDebug( int32 connectionIndex, class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos );
 
+	class AFGBuildable* GetOuterBuildable() const { return mOuterBuildable; }
+
 	/**
 	 * Sort the components by name
 	 * 
@@ -176,10 +178,13 @@ public:
 
 	/**
 	 * This function tells us the maximum amounts of grabs this building can make this frame
-	 *
-	 * @ param out_availableSpace - the amount of space until next item.
 	 */
 	virtual uint8 MaxNumGrab( float delta ) const;
+	
+	/**
+	*	This function returns the estimated max num grabs this building can make. As a result of it being thread safe, it is only an estimate as the buildable may not have been updated yet this frame
+	*/
+	virtual uint8 EstimatedMaxNumGrab_ThreadSafe( float delta) const;
 
 	/** Same as FindOverlappingConnections but finds a connection compatible with the passed connection. */
 	static UFGFactoryConnectionComponent* FindCompatibleOverlappingConnections(

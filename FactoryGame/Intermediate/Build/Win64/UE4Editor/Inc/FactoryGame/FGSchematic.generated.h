@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -11,6 +11,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGSchematic;
 struct FSlateBrush;
 class UFGResourceDescriptor;
+class UFGUnlock;
 class UFGRecipe;
 struct FItemAmount;
 enum class ESchematicCategory : uint8;
@@ -24,6 +25,8 @@ enum class ESchematicType : uint8;
 	friend struct Z_Construct_UScriptStruct_FMultipleItemStruct_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruct>();
 
 #define FactoryGame_Source_FactoryGame_FGSchematic_h_57_RPC_WRAPPERS \
  \
@@ -150,6 +153,15 @@ enum class ESchematicType : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(int32*)Z_Param__Result=UFGSchematic::GetTechTier(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUnlocks) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<UFGUnlock*>*)Z_Param__Result=UFGSchematic::GetUnlocks(Z_Param_inClass); \
 		P_NATIVE_END; \
 	} \
  \
@@ -327,6 +339,15 @@ enum class ESchematicType : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetUnlocks) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_inClass); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<UFGUnlock*>*)Z_Param__Result=UFGSchematic::GetUnlocks(Z_Param_inClass); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetRecipes) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_inClass); \
@@ -428,6 +449,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSchematic); \
 	FORCEINLINE static uint32 __PPO__mTechTier() { return STRUCT_OFFSET(UFGSchematic, mTechTier); } \
 	FORCEINLINE static uint32 __PPO__mCost() { return STRUCT_OFFSET(UFGSchematic, mCost); } \
 	FORCEINLINE static uint32 __PPO__mShipTravelTimeAfterPurchase() { return STRUCT_OFFSET(UFGSchematic, mShipTravelTimeAfterPurchase); } \
+	FORCEINLINE static uint32 __PPO__mUnlocks() { return STRUCT_OFFSET(UFGSchematic, mUnlocks); } \
 	FORCEINLINE static uint32 __PPO__mRecipes() { return STRUCT_OFFSET(UFGSchematic, mRecipes); } \
 	FORCEINLINE static uint32 __PPO__mResourcesToAddToScanner() { return STRUCT_OFFSET(UFGSchematic, mResourcesToAddToScanner); } \
 	FORCEINLINE static uint32 __PPO__mUnlocksMap() { return STRUCT_OFFSET(UFGSchematic, mUnlocksMap); } \
@@ -464,6 +486,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGSchematic>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGSchematic_h
 
@@ -477,9 +501,17 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ESchematicType::EST_Story) \
 	op(ESchematicType::EST_TradingPostUpgrade) \
 	op(ESchematicType::EST_MAM) 
+
+enum class ESchematicType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ESchematicType>();
+
 #define FOREACH_ENUM_ESCHEMATICCATEGORY(op) \
 	op(ESchematicCategory::ESC_LOGISTICS) \
 	op(ESchematicCategory::ESC_PRODUCTION) \
 	op(ESchematicCategory::ESC_EQUIPMENT) \
 	op(ESchematicCategory::ESC_ORGANISATION) 
+
+enum class ESchematicCategory : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ESchematicCategory>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

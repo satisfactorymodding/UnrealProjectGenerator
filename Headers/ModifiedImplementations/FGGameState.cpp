@@ -21,7 +21,6 @@ bool AFGGameState::IsTradingPostBuilt() const{ return bool(); }
 bool AFGGameState::HasInitalTradingPostLandAnimPlayed() const{ return bool(); }
 void AFGGameState::SetHasInitalTradingPostLandAnimPlayed(){ }
 bool AFGGameState::IsSpaceElevatorBuilt() const{ return bool(); }
-void AFGGameState::AddScannableResource( TSubclassOf< UFGResourceDescriptor > newResource){ }
 void AFGGameState::GetVisitedMapAreas( UPARAM( ref ) TArray< TSubclassOf< UFGMapArea > >& out_VisitedAreas){ }
 bool AFGGameState::IsMapAreaVisisted( TSubclassOf< UFGMapArea > inArea){ return bool(); }
 void AFGGameState::AddUniqueVisistedMapArea( TSubclassOf< UFGMapArea > mapArea){ }
@@ -29,18 +28,12 @@ void AFGGameState::OnRep_MapAreaVisited(){ }
 void AFGGameState::NotifyPlayerAdded(  AFGCharacterPlayer* inPlayer){ }
 void AFGGameState::SendMessageToAllPlayers( TSubclassOf<  UFGMessageBase > inMessage){ }
 void AFGGameState::SendMessageToPlayer( TSubclassOf<  UFGMessageBase > inMessage,  APlayerController* controller){ }
-int32 AFGGameState::GetTotalPlayerInventorySlots() const{ return int32(); }
-void AFGGameState::SetNumAdditionalArmEquipmentSlots( int32 newNum){ }
-int32 AFGGameState::GetTotalPlayerArmEquipmentSlots() const{ return int32(); }
 int32 AFGGameState::GetTotalPlayDuration() const{ return int32(); }
-void AFGGameState::AddResourceScannedFor( TSubclassOf< UFGResourceDescriptor > resourceScannedFor){ }
 void AFGGameState::SetupColorSlots( const FColor *mColorSlotsPrimary, const FColor *mColorSlotsSecondary, const  uint8 startINdex, const uint8 writeCount){ }
 void AFGGameState::SetAndReplicateBuildingColorInSlot_Implementation( uint8 slot, FColor pColor, FColor sColor){ }
 bool AFGGameState::SetAndReplicateBuildingColorInSlot_Validate( uint8 slot, FColor pColor, FColor sColor){ return bool(); }
 FColor AFGGameState::GetBuildingColorPrimary( uint8 slot){ return FColor(); }
 FColor AFGGameState::GetBuildingColorSecondary( uint8 slot){ return FColor(); }
 void AFGGameState::OnRep_BuildingColorSlot(){ }
-void AFGGameState::SetNumberOfAdditionalInventorySlots( int32 numberOfSlots){ }
 void AFGGameState::ClaimPlayerColor( AFGPlayerState* playerState){ }
 void AFGGameState::ReleasePlayerColor( AFGPlayerState* playerState){ }
-void AFGGameState::OnSchematicPurchased( TSubclassOf<  UFGSchematic > newSchematic){ }

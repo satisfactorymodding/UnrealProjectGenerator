@@ -11,6 +11,7 @@ void AFGCharacterBase::Tick( float deltaTime){ }
 float AFGCharacterBase::TakeDamage( float DamageAmount,  FDamageEvent const& DamageEvent,  AController* EventInstigator, AActor* DamageCauser){ return float(); }
 void AFGCharacterBase::ApplyDamageMomentum( float DamageTaken, FDamageEvent const& DamageEvent, APawn* PawnInstigator, AActor* DamageCauser){ }
 void AFGCharacterBase::PossessedBy( AController* NewController){ }
+void AFGCharacterBase::UnPossessed(){ }
 void AFGCharacterBase::PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void AFGCharacterBase::PostSaveGame_Implementation( int32 saveVersion, int32 gameVersion){ }
 void AFGCharacterBase::PreLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
@@ -34,6 +35,7 @@ const FFootstepEffect& AFGCharacterBase::GetFootstepEffect( const FHitResult& hi
 void AFGCharacterBase::RagdollCharacter( bool newRagdoll){ }
 USkeletalMeshComponent* AFGCharacterBase::GetMesh3P() const{ return nullptr; }
 void AFGCharacterBase::CheckFallDamage( float zSpeed){ }
+void AFGCharacterBase::SetLocallyPossessed( bool inPossessed){ }
 UAkAudioEvent* AFGCharacterBase::GetFootstepEvent( int32 footDown) const{ return nullptr; }
 float AFGCharacterBase::AdjustDamage( AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ return float(); }
 void AFGCharacterBase::PlayFootstepAudio( int32 footIndex, const FHitResult& hitInfo, float waterDepth){ }
@@ -46,4 +48,5 @@ void AFGCharacterBase::TryGetUpFromRagdoll(){ }
 void AFGCharacterBase::SyncRagdoll(){ }
 void AFGCharacterBase::SetupDestroyTimer(){ }
 void AFGCharacterBase::OnRep_IsRagdolled(){ }
+void AFGCharacterBase::OnRep_IsPossessed(){ }
 FVector AFGCharacterBase::FindSafePlaceToGetUp(){ return FVector(); }

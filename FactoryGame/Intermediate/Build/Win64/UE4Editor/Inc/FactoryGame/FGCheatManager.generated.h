@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -14,7 +14,31 @@ class UFGItemDescriptor;
 #endif
 #define FACTORYGAME_FGCheatManager_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execToggleTrainSelfDriving) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ToggleTrainSelfDriving(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDumpGamePhases) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpGamePhases(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetGamePhases) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetGamePhases(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execRebuildFactoryLegsOneTileAroundPlayer) \
 	{ \
@@ -294,6 +318,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execDumpDynamicOptionsSettings) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpDynamicOptionsSettings(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpSignificanceManagedObjects) \
 	{ \
 		P_FINISH; \
@@ -453,12 +485,12 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefSchematicsOfTier) \
+	DECLARE_FUNCTION(execGiveSchematicsOfTier) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_tier); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefSchematicsOfTier(Z_Param_tier); \
+		P_THIS->GiveSchematicsOfTier(Z_Param_tier); \
 		P_NATIVE_END; \
 	} \
  \
@@ -722,51 +754,51 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefStartingResearch) \
+	DECLARE_FUNCTION(execGiveStartingResearch) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefStartingResearch(); \
+		P_THIS->GiveStartingResearch(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefStorySchematics) \
+	DECLARE_FUNCTION(execGiveStorySchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefStorySchematics(); \
+		P_THIS->GiveStorySchematics(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefCheatSchematics) \
+	DECLARE_FUNCTION(execGiveCheatSchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefCheatSchematics(); \
+		P_THIS->GiveCheatSchematics(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefAvailableSchematics) \
+	DECLARE_FUNCTION(execGiveAvailableSchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefAvailableSchematics(); \
+		P_THIS->GiveAvailableSchematics(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefAllSchematicsAndPhases) \
+	DECLARE_FUNCTION(execGiveAllSchematicsAndPhases) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefAllSchematicsAndPhases(); \
+		P_THIS->GiveAllSchematicsAndPhases(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefALLSchematics) \
+	DECLARE_FUNCTION(execGiveALLSchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefALLSchematics(); \
+		P_THIS->GiveALLSchematics(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -840,12 +872,29 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execTurboMode) \
+	DECLARE_FUNCTION(execTurboProductionMode) \
 	{ \
 		P_GET_UBOOL(Z_Param_enabled); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->TurboMode(Z_Param_enabled); \
+		P_THIS->TurboProductionMode(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTurboBuildMode_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->TurboBuildMode_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTurboBuildMode) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TurboBuildMode(Z_Param_enabled); \
 		P_NATIVE_END; \
 	} \
  \
@@ -901,7 +950,31 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execToggleTrainSelfDriving) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ToggleTrainSelfDriving(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDumpGamePhases) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpGamePhases(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execResetGamePhases) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetGamePhases(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execRebuildFactoryLegsOneTileAroundPlayer) \
 	{ \
@@ -1181,6 +1254,14 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execDumpDynamicOptionsSettings) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DumpDynamicOptionsSettings(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDumpSignificanceManagedObjects) \
 	{ \
 		P_FINISH; \
@@ -1340,12 +1421,12 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefSchematicsOfTier) \
+	DECLARE_FUNCTION(execGiveSchematicsOfTier) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_tier); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefSchematicsOfTier(Z_Param_tier); \
+		P_THIS->GiveSchematicsOfTier(Z_Param_tier); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1609,51 +1690,51 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefStartingResearch) \
+	DECLARE_FUNCTION(execGiveStartingResearch) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefStartingResearch(); \
+		P_THIS->GiveStartingResearch(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefStorySchematics) \
+	DECLARE_FUNCTION(execGiveStorySchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefStorySchematics(); \
+		P_THIS->GiveStorySchematics(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefCheatSchematics) \
+	DECLARE_FUNCTION(execGiveCheatSchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefCheatSchematics(); \
+		P_THIS->GiveCheatSchematics(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefAvailableSchematics) \
+	DECLARE_FUNCTION(execGiveAvailableSchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefAvailableSchematics(); \
+		P_THIS->GiveAvailableSchematics(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefAllSchematicsAndPhases) \
+	DECLARE_FUNCTION(execGiveAllSchematicsAndPhases) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefAllSchematicsAndPhases(); \
+		P_THIS->GiveAllSchematicsAndPhases(); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGiefALLSchematics) \
+	DECLARE_FUNCTION(execGiveALLSchematics) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GiefALLSchematics(); \
+		P_THIS->GiveALLSchematics(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1727,12 +1808,29 @@ class UFGItemDescriptor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execTurboMode) \
+	DECLARE_FUNCTION(execTurboProductionMode) \
 	{ \
 		P_GET_UBOOL(Z_Param_enabled); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->TurboMode(Z_Param_enabled); \
+		P_THIS->TurboProductionMode(Z_Param_enabled); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTurboBuildMode_Get) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->TurboBuildMode_Get(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execTurboBuildMode) \
+	{ \
+		P_GET_UBOOL(Z_Param_enabled); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->TurboBuildMode(Z_Param_enabled); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1788,7 +1886,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGCheatManager(); \
 	friend struct Z_Construct_UClass_UFGCheatManager_Statics; \
@@ -1799,7 +1897,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGCheatManager(); \
 	friend struct Z_Construct_UClass_UFGCheatManager_Statics; \
@@ -1810,7 +1908,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCheatManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCheatManager) \
@@ -1823,7 +1921,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGCheatManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -1836,29 +1934,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCheatManager); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGCheatManager)
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_17_PROLOG
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_15_PROLOG
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_INCLASS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGCheatManager_h_20_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGCheatManager_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGCheatManager_h_20_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGCheatManager_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCheatManager>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGCheatManager_h

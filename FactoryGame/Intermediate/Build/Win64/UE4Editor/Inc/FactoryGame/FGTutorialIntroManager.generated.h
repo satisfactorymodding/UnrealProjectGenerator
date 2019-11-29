@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,6 +24,8 @@ class AFGTutorialIntroManager;
 	friend struct Z_Construct_UScriptStruct_FTutorialHintData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTutorialHintData>();
 
 #define FactoryGame_Source_FactoryGame_FGTutorialIntroManager_h_16_DELEGATE \
 static inline void FIntroSequenceStateUpdate_DelegateWrapper(const FMulticastScriptDelegate& IntroSequenceStateUpdate) \
@@ -495,6 +497,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGTutorialIntroManager>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGTutorialIntroManager_h
 
@@ -512,4 +516,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EIntroTutorialSteps::ITS_HUB_LVL4) \
 	op(EIntroTutorialSteps::ITS_HUB_LVL5) \
 	op(EIntroTutorialSteps::ITS_DONE) 
+
+enum class EIntroTutorialSteps : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EIntroTutorialSteps>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

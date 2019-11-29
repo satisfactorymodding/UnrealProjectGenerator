@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -55,9 +55,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 	{
 		((FGBuildableConverter_eventFilterIngredientClasses_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableConverter_eventFilterIngredientClasses_Parms), &Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_idx = { UE4CodeGen_Private::EPropertyClass::Int, "idx", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableConverter_eventFilterIngredientClasses_Parms, idx), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_object = { UE4CodeGen_Private::EPropertyClass::Class, "object", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableConverter_eventFilterIngredientClasses_Parms, object), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableConverter_eventFilterIngredientClasses_Parms), &Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_idx = { "idx", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableConverter_eventFilterIngredientClasses_Parms, idx), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_object = { "object", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableConverter_eventFilterIngredientClasses_Parms, object), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::NewProp_idx,
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		{ "ToolTip", "Bound to mItemFilter to filter what items can be used in the item slots." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConverter, "FilterIngredientClasses", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x40080401, sizeof(FGBuildableConverter_eventFilterIngredientClasses_Parms), Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConverter, nullptr, "FilterIngredientClasses", sizeof(FGBuildableConverter_eventFilterIngredientClasses_Parms), Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableConverter_eventGetNumberOfInputs_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableConverter_eventGetNumberOfInputs_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::NewProp_ReturnValue,
 	};
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		{ "ToolTip", "@todo Converter can maybe use a recipe with the wildcard resource so the UI does not need to cast and take different path depending on if it's a converter or manufacturer, or move this to base.\nGet number of input connections" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConverter, "GetNumberOfInputs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableConverter_eventGetNumberOfInputs_Parms), Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConverter, nullptr, "GetNumberOfInputs", sizeof(FGBuildableConverter_eventGetNumberOfInputs_Parms), Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		{ "ToolTip", "Setups the item filter without crashing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConverter, "SetupItemFilter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConverter, nullptr, "SetupItemFilter", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -160,9 +160,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConverter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses, "FilterIngredientClasses" }, // 3964171119
-		{ &Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs, "GetNumberOfInputs" }, // 405970902
-		{ &Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter, "SetupItemFilter" }, // 2121466158
+		{ &Z_Construct_UFunction_AFGBuildableConverter_FilterIngredientClasses, "FilterIngredientClasses" }, // 1470495264
+		{ &Z_Construct_UFunction_AFGBuildableConverter_GetNumberOfInputs, "GetNumberOfInputs" }, // 1283480066
+		{ &Z_Construct_UFunction_AFGBuildableConverter_SetupItemFilter, "SetupItemFilter" }, // 1101684865
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConverter_Statics::Class_MetaDataParams[] = {
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		{ "ToolTip", "Number of ingredients needed to consume to produce" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded = { UE4CodeGen_Private::EPropertyClass::Int, "mNumberOfIngredientsNeeded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableConverter, mNumberOfIngredientsNeeded), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded = { "mNumberOfIngredientsNeeded", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConverter, mNumberOfIngredientsNeeded), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableConverter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConverter_Statics::NewProp_mNumberOfIngredientsNeeded,
 	};
@@ -189,13 +189,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableConverter_Statics::ClassParams = {
 		&AFGBuildableConverter::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableConverter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConverter_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableConverter_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConverter_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConverter_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConverter_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableConverter()
@@ -207,7 +211,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConverter, 112792205);
+	IMPLEMENT_CLASS(AFGBuildableConverter, 2375885934);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConverter>()
+	{
+		return AFGBuildableConverter::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConverter(Z_Construct_UClass_AFGBuildableConverter, &AFGBuildableConverter::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

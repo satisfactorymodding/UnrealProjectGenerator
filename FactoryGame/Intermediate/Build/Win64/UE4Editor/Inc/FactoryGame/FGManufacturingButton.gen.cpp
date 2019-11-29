@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::NewProp_produceMultiplier = { UE4CodeGen_Private::EPropertyClass::Float, "produceMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventManufacturePressed_Parms, produceMultiplier), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::NewProp_produceMultiplier = { "produceMultiplier", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventManufacturePressed_Parms, produceMultiplier), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::NewProp_produceMultiplier,
 	};
@@ -45,7 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ManufacturePressed__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventManufacturePressed_Parms), Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ManufacturePressed__DelegateSignature", sizeof(_Script_FactoryGame_eventManufacturePressed_Parms), Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "Internal button was pressed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGManufacturingButton, "OnPressedButton", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGManufacturingButton, nullptr, "OnPressedButton", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "Internal button was released, added BlueprintCallable to be able to simulate button release" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGManufacturingButton, "OnReleasedButton", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGManufacturingButton, nullptr, "OnReleasedButton", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton = { UE4CodeGen_Private::EPropertyClass::Object, "inButton", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGManufacturingButton_eventSetButton_Parms, inButton), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton = { "inButton", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGManufacturingButton_eventSetButton_Parms, inButton), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::NewProp_inButton,
 	};
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "Sets our internal button that will be used for focus handling" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGManufacturingButton, "SetButton", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGManufacturingButton_eventSetButton_Parms), Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGManufacturingButton, nullptr, "SetButton", sizeof(FGManufacturingButton_eventSetButton_Parms), Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGManufacturingButton_SetButton()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -190,9 +190,9 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGManufacturingButton_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton, "OnPressedButton" }, // 3154813816
-		{ &Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton, "OnReleasedButton" }, // 309416771
-		{ &Z_Construct_UFunction_UFGManufacturingButton_SetButton, "SetButton" }, // 3989733624
+		{ &Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton, "OnPressedButton" }, // 3548519493
+		{ &Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton, "OnReleasedButton" }, // 370459581
+		{ &Z_Construct_UFunction_UFGManufacturingButton_SetButton, "SetButton" }, // 1118204493
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::Class_MetaDataParams[] = {
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "produce speed when holding the button" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mHoldProduceSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGManufacturingButton, mHoldProduceSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed = { "mHoldProduceSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGManufacturingButton, mHoldProduceSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
@@ -215,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "How long to hold for a manufacture to be called" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax = { UE4CodeGen_Private::EPropertyClass::Float, "mHoldTimeMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGManufacturingButton, mHoldTimeMax), METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax = { "mHoldTimeMax", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGManufacturingButton, mHoldTimeMax), METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
@@ -223,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "Minimum time between button presses to register a manufacture event" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress = { UE4CodeGen_Private::EPropertyClass::Float, "mMinTimeBetweenPress", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGManufacturingButton, mMinTimeBetweenPress), METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress = { "mMinTimeBetweenPress", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGManufacturingButton, mMinTimeBetweenPress), METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		{ "ToolTip", "Called when a valid press on manufacture happens" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnManufacturePressed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(UFGManufacturingButton, OnManufacturePressed), Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed = { "OnManufacturePressed", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGManufacturingButton, OnManufacturePressed), Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGManufacturingButton_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax,
@@ -243,13 +243,17 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGManufacturingButton_Statics::ClassParams = {
 		&UFGManufacturingButton::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGManufacturingButton_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGManufacturingButton_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::PropPointers),
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGManufacturingButton_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGManufacturingButton_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGManufacturingButton()
@@ -261,7 +265,11 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGManufacturingButton, 399239873);
+	IMPLEMENT_CLASS(UFGManufacturingButton, 2696940720);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGManufacturingButton>()
+	{
+		return UFGManufacturingButton::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGManufacturingButton(Z_Construct_UClass_UFGManufacturingButton, &UFGManufacturingButton::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGManufacturingButton"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGManufacturingButton);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -93,6 +93,8 @@ protected:
 	UFUNCTION()
 	void OnRep_OnAnimationStateUpdated();
 
+	/** Sets tick status for actor and all components */
+	void SetAttachmentTicks( bool inTick );
 public:
 
 	/** The class of the equipment that spawned this attachment */

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -18,6 +18,8 @@ struct FSplitterSortRule;
 	friend struct Z_Construct_UScriptStruct_FSplitterSortRule_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSplitterSortRule>();
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableSplitterSmart_h_12_DELEGATE \
 static inline void FOnSortRulesChanged_DelegateWrapper(const FMulticastScriptDelegate& OnSortRulesChanged) \
@@ -245,6 +247,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableSplitterSmart>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableSplitterSmart_h

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		{ "ToolTip", "For client only" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, "ClientPlayReloadEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, nullptr, "ClientPlayReloadEffect", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		{ "ToolTip", "Called on all relevant attachments" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, "Multicast_PlayReloadEffectMulticast", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00024C40, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, nullptr, "Multicast_PlayReloadEffectMulticast", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "newFlashLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000082, 1, nullptr, STRUCT_OFFSET(FGWeaponAttachment_eventMulticast_SetFlashLocation_Parms, newFlashLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation = { "newFlashLocation", nullptr, (EPropertyFlags)0x0010000008000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWeaponAttachment_eventMulticast_SetFlashLocation_Parms, newFlashLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::NewProp_newFlashLocation,
 	};
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		{ "ToolTip", "Called on all relevant attachments" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, "Multicast_SetFlashLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00824C40, sizeof(FGWeaponAttachment_eventMulticast_SetFlashLocation_Parms), Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, nullptr, "Multicast_SetFlashLocation", sizeof(FGWeaponAttachment_eventMulticast_SetFlashLocation_Parms), Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00824C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::NewProp_flashLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "flashLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWeaponAttachment_eventPlayFireEffect_Parms, flashLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::NewProp_flashLocation = { "flashLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWeaponAttachment_eventPlayFireEffect_Parms, flashLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::NewProp_flashLocation,
 	};
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		{ "ToolTip", "Handles playing of effects on remote clients" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, "PlayFireEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGWeaponAttachment_eventPlayFireEffect_Parms), Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponAttachment, nullptr, "PlayFireEffect", sizeof(FGWeaponAttachment_eventPlayFireEffect_Parms), Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -192,10 +192,10 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWeaponAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect, "ClientPlayReloadEffect" }, // 3848046953
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast, "Multicast_PlayReloadEffectMulticast" }, // 3324125595
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation, "Multicast_SetFlashLocation" }, // 3058541330
-		{ &Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect, "PlayFireEffect" }, // 2827537297
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_ClientPlayReloadEffect, "ClientPlayReloadEffect" }, // 1391095339
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_PlayReloadEffectMulticast, "Multicast_PlayReloadEffectMulticast" }, // 2298775770
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_Multicast_SetFlashLocation, "Multicast_SetFlashLocation" }, // 2768745238
+		{ &Z_Construct_UFunction_AFGWeaponAttachment_PlayFireEffect, "PlayFireEffect" }, // 2701147049
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponAttachment_Statics::Class_MetaDataParams[] = {
@@ -208,13 +208,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGWeaponAttachment_Statics::ClassParams = {
 		&AFGWeaponAttachment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGWeaponAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGWeaponAttachment()
@@ -226,7 +230,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponAttachment, 3121254802);
+	IMPLEMENT_CLASS(AFGWeaponAttachment, 3361053024);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponAttachment>()
+	{
+		return AFGWeaponAttachment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWeaponAttachment(Z_Construct_UClass_AFGWeaponAttachment, &AFGWeaponAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWeaponAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWeaponAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

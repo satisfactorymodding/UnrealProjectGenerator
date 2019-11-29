@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,6 +22,8 @@ class UObject;
 	friend struct Z_Construct_UScriptStruct_FSchematicCost_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSchematicCost>();
 
 #define FactoryGame_Source_FactoryGame_FGSchematicManager_h_18_DELEGATE \
 struct _Script_FactoryGame_eventOnActiveSchematicChanged_Parms \
@@ -568,6 +570,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGSchematicManager>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGSchematicManager_h

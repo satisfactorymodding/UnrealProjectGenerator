@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 	{
 		((UFGAnimNotify_FootDown*)Obj)->mPlaySound = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound = { UE4CodeGen_Private::EPropertyClass::Bool, "mPlaySound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000011, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGAnimNotify_FootDown), &Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound = { "mPlaySound", nullptr, (EPropertyFlags)0x0020080000000011, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGAnimNotify_FootDown), &Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex_MetaData[] = {
 		{ "Category", "Foot" },
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 		{ "ToolTip", "Foot" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mFootIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000011, 1, nullptr, STRUCT_OFFSET(UFGAnimNotify_FootDown, mFootIndex), METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex = { "mFootIndex", nullptr, (EPropertyFlags)0x0020080000000011, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAnimNotify_FootDown, mFootIndex), METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex,
@@ -84,13 +84,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::ClassParams = {
 		&UFGAnimNotify_FootDown::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000120A0u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers),
+		0,
+		0x000120A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAnimNotify_FootDown()
@@ -102,7 +106,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 171249780);
+	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 2081758282);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGAnimNotify_FootDown>()
+	{
+		return UFGAnimNotify_FootDown::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimNotify_FootDown(Z_Construct_UClass_UFGAnimNotify_FootDown, &UFGAnimNotify_FootDown::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimNotify_FootDown"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimNotify_FootDown);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

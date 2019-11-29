@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -47,8 +47,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMaterialEffect_Build_eventGetCost_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialEffect_Build_eventGetCost_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::NewProp_ReturnValue_Inner,
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		{ "ToolTip", "How much did the thing cost." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialEffect_Build, "GetCost", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44020401, sizeof(FGMaterialEffect_Build_eventGetCost_Parms), Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialEffect_Build, nullptr, "GetCost", sizeof(FGMaterialEffect_Build_eventGetCost_Parms), Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMaterialEffect_Build_eventGetInstigator_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialEffect_Build_eventGetInstigator_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::NewProp_ReturnValue,
 	};
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		{ "ToolTip", "Who build the thing." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialEffect_Build, "GetInstigator", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGMaterialEffect_Build_eventGetInstigator_Parms), Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialEffect_Build, nullptr, "GetInstigator", sizeof(FGMaterialEffect_Build_eventGetInstigator_Parms), Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMaterialEffect_Build_eventGetSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialEffect_Build_eventGetSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::NewProp_ReturnValue,
 	};
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		{ "ToolTip", "How fast is the thing built. [cm/s]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialEffect_Build, "GetSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGMaterialEffect_Build_eventGetSpeed_Parms), Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialEffect_Build, nullptr, "GetSpeed", sizeof(FGMaterialEffect_Build_eventGetSpeed_Parms), Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -168,9 +168,9 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMaterialEffect_Build_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost, "GetCost" }, // 2599726790
-		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator, "GetInstigator" }, // 1351004246
-		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed, "GetSpeed" }, // 3961213222
+		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost, "GetCost" }, // 2270216818
+		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator, "GetInstigator" }, // 2949617934
+		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed, "GetSpeed" }, // 3145621647
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::Class_MetaDataParams[] = {
@@ -186,22 +186,22 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		{ "ToolTip", "The speed of this effect." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMaterialEffect_Build, mSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed = { "mSpeed", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMaterialEffect_Build, mSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_MetaData[] = {
 		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
 		{ "ToolTip", "How much did this cost" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost = { UE4CodeGen_Private::EPropertyClass::Array, "mCost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMaterialEffect_Build, mCost), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mCost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost = { "mCost", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMaterialEffect_Build, mCost), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_Inner = { "mCost", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator_MetaData[] = {
 		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
 		{ "ToolTip", "Who built this" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator = { UE4CodeGen_Private::EPropertyClass::Object, "mInstigator", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMaterialEffect_Build, mInstigator), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator = { "mInstigator", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMaterialEffect_Build, mInstigator), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost,
@@ -213,13 +213,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::ClassParams = {
 		&UFGMaterialEffect_Build::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A5u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::PropPointers),
+		0,
+		0x00B000A5u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMaterialEffect_Build()
@@ -231,7 +235,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 164421793);
+	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 634025707);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMaterialEffect_Build>()
+	{
+		return UFGMaterialEffect_Build::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialEffect_Build(Z_Construct_UClass_UFGMaterialEffect_Build, &UFGMaterialEffect_Build::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialEffect_Build"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialEffect_Build);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

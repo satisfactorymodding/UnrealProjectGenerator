@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -23,10 +23,14 @@ class UScriptStruct* FItemAmount::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemAmount_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemAmount, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemAmount"), sizeof(FItemAmount), Get_Z_Construct_UScriptStruct_FItemAmount_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemAmount, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemAmount"), sizeof(FItemAmount), Get_Z_Construct_UScriptStruct_FItemAmount_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FItemAmount>()
+{
+	return FItemAmount::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FItemAmount(FItemAmount::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ItemAmount"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
@@ -72,7 +76,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		{ "ToolTip", "The amount of this item." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount = { UE4CodeGen_Private::EPropertyClass::Int, "Amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000005, 1, nullptr, STRUCT_OFFSET(FItemAmount, Amount), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000001000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemAmount, Amount), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "Item" },
@@ -80,7 +84,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		{ "ToolTip", "The item." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass = { UE4CodeGen_Private::EPropertyClass::Class, "ItemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001000005, 1, nullptr, STRUCT_OFFSET(FItemAmount, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass = { "ItemClass", nullptr, (EPropertyFlags)0x0014000001000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemAmount, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_Amount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemAmount_Statics::NewProp_ItemClass,
@@ -90,19 +94,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		nullptr,
 		&NewStructOps,
 		"ItemAmount",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FItemAmount),
 		alignof(FItemAmount),
-		Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemAmount_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemAmount()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FItemAmount_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemAmount"), sizeof(FItemAmount), Get_Z_Construct_UScriptStruct_FItemAmount_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemAmount"), sizeof(FItemAmount), Get_Z_Construct_UScriptStruct_FItemAmount_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -112,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_CRC() { return 1926732149U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash() { return 1295168897U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

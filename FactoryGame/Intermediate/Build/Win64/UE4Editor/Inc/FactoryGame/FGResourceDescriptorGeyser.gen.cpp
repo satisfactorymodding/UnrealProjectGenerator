@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptorGeyser() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGResourceDescriptorGeyser_Statics::ClassParams = {
 		&UFGResourceDescriptorGeyser::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptorGeyser_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptorGeyser_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGResourceDescriptorGeyser()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptorGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 4235422581);
+	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 3873763760);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGResourceDescriptorGeyser>()
+	{
+		return UFGResourceDescriptorGeyser::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceDescriptorGeyser(Z_Construct_UClass_UFGResourceDescriptorGeyser, &UFGResourceDescriptorGeyser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceDescriptorGeyser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceDescriptorGeyser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

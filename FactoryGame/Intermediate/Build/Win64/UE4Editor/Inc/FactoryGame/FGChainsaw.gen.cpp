@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -41,10 +41,14 @@ class UScriptStruct* FPickedUpInstance::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPickedUpInstance, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PickedUpInstance"), sizeof(FPickedUpInstance), Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPickedUpInstance, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PickedUpInstance"), sizeof(FPickedUpInstance), Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FPickedUpInstance>()
+{
+	return FPickedUpInstance::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPickedUpInstance(FPickedUpInstance::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("PickedUpInstance"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
@@ -85,13 +89,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ModuleRelativePath", "Equipment/FGChainsaw.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location = { UE4CodeGen_Private::EPropertyClass::Struct, "Location", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FPickedUpInstance, Location), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPickedUpInstance, Location), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Equipment/FGChainsaw.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh = { UE4CodeGen_Private::EPropertyClass::Object, "InstanceMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FPickedUpInstance, InstanceMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh = { "InstanceMesh", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPickedUpInstance, InstanceMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_Location,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPickedUpInstance_Statics::NewProp_InstanceMesh,
@@ -101,19 +105,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		nullptr,
 		&NewStructOps,
 		"PickedUpInstance",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FPickedUpInstance),
 		alignof(FPickedUpInstance),
-		Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPickedUpInstance()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PickedUpInstance"), sizeof(FPickedUpInstance), Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PickedUpInstance"), sizeof(FPickedUpInstance), Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -123,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC() { return 2895702461U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash() { return 3814665210U; }
 	static FName NAME_AFGChainsaw_BroadcastPickup = FName(TEXT("BroadcastPickup"));
 	void AFGChainsaw::BroadcastPickup(TArray<FPickedUpInstance> const& pickups, AFGFoliagePickup* instigatorPlayer)
 	{
@@ -189,14 +194,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_instigatorPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "instigatorPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventBroadcastPickup_Parms, instigatorPlayer), Z_Construct_UClass_AFGFoliagePickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_instigatorPlayer = { "instigatorPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventBroadcastPickup_Parms, instigatorPlayer), Z_Construct_UClass_AFGFoliagePickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups = { UE4CodeGen_Private::EPropertyClass::Array, "pickups", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000082, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventBroadcastPickup_Parms, pickups), METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "pickups", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FPickedUpInstance, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups = { "pickups", nullptr, (EPropertyFlags)0x0010000008000082, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventBroadcastPickup_Parms, pickups), METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups_Inner = { "pickups", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPickedUpInstance, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_instigatorPlayer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::NewProp_pickups,
@@ -207,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ModuleRelativePath", "Equipment/FGChainsaw.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "BroadcastPickup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00084C40, sizeof(FGChainsaw_eventBroadcastPickup_Parms), Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "BroadcastPickup", sizeof(FGChainsaw_eventBroadcastPickup_Parms), Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00084C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_BroadcastPickup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_BroadcastPickup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -231,7 +236,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	{
 		((FGChainsaw_eventCanStartSawing_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGChainsaw_eventCanStartSawing_Parms), &Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGChainsaw_eventCanStartSawing_Parms), &Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::NewProp_ReturnValue,
 	};
@@ -241,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ModuleRelativePath", "Equipment/FGChainsaw.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "CanStartSawing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080C00, sizeof(FGChainsaw_eventCanStartSawing_Parms), Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "CanStartSawing", sizeof(FGChainsaw_eventCanStartSawing_Parms), Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_CanStartSawing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_CanStartSawing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -264,7 +269,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventGetFuelClass_Parms, ReturnValue), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventGetFuelClass_Parms, ReturnValue), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::NewProp_ReturnValue,
 	};
@@ -275,7 +280,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "Returns the current fuel class used for the chainsaw" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "GetFuelClass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGChainsaw_eventGetFuelClass_Parms), Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "GetFuelClass", sizeof(FGChainsaw_eventGetFuelClass_Parms), Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_GetFuelClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_GetFuelClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -303,7 +308,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	{
 		((FGChainsaw_eventHasAnyFuel_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGChainsaw_eventHasAnyFuel_Parms), &Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGChainsaw_eventHasAnyFuel_Parms), &Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::NewProp_ReturnValue,
 	};
@@ -314,7 +319,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "Return true we have any energy stored or if our owner has any fuel" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "HasAnyFuel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGChainsaw_eventHasAnyFuel_Parms), Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "HasAnyFuel", sizeof(FGChainsaw_eventHasAnyFuel_Parms), Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_HasAnyFuel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_HasAnyFuel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -342,7 +347,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	{
 		((FGChainsaw_eventIsSawEngaged_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGChainsaw_eventIsSawEngaged_Parms), &Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGChainsaw_eventIsSawEngaged_Parms), &Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::NewProp_ReturnValue,
 	};
@@ -353,7 +358,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "@return true if we are sawing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "IsSawEngaged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGChainsaw_eventIsSawEngaged_Parms), Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "IsSawEngaged", sizeof(FGChainsaw_eventIsSawEngaged_Parms), Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawEngaged_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_IsSawEngaged()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -381,7 +386,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	{
 		((FGChainsaw_eventIsSawing_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGChainsaw_eventIsSawing_Parms), &Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGChainsaw_eventIsSawing_Parms), &Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::NewProp_ReturnValue,
 	};
@@ -392,7 +397,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "@return true if we are sawing AND we have a valid saw component" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "IsSawing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGChainsaw_eventIsSawing_Parms), Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "IsSawing", sizeof(FGChainsaw_eventIsSawing_Parms), Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_IsSawing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_IsSawing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -415,7 +420,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventSawProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventSawProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::NewProp_ReturnValue,
 	};
@@ -426,7 +431,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "In percent, how long into our progress have we gone into sawing down our current tree" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "SawProgress", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGChainsaw_eventSawProgress_Parms), Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "SawProgress", sizeof(FGChainsaw_eventSawProgress_Parms), Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_SawProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_SawProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -450,14 +455,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_effectLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "effectLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventServer_RemoveChainsawedObject_Parms, effectLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_foliageToRemoveTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "foliageToRemoveTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventServer_RemoveChainsawedObject_Parms, foliageToRemoveTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_effectLocation = { "effectLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventServer_RemoveChainsawedObject_Parms, effectLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_foliageToRemoveTransform = { "foliageToRemoveTransform", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventServer_RemoveChainsawedObject_Parms, foliageToRemoveTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent = { UE4CodeGen_Private::EPropertyClass::Object, "sawingComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGChainsaw_eventServer_RemoveChainsawedObject_Parms, sawingComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent = { "sawingComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChainsaw_eventServer_RemoveChainsawedObject_Parms, sawingComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_sawingComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_effectLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::NewProp_foliageToRemoveTransform,
@@ -469,7 +474,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "Removes the foliage we just cut down" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "Server_RemoveChainsawedObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80A80CC0, sizeof(FGChainsaw_eventServer_RemoveChainsawedObject_Parms), Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "Server_RemoveChainsawedObject", sizeof(FGChainsaw_eventServer_RemoveChainsawedObject_Parms), Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A80CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -492,7 +497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "Calls StartSawing on server" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_Server_StartSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "Server_StartSawing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80280CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_StartSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_StartSawing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_Server_StartSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "Server_StartSawing", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_StartSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_StartSawing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_Server_StartSawing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -515,7 +520,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "Calls StopSawing on server" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_Server_StopSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, "Server_StopSawing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80280CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_StopSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_StopSawing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChainsaw_Server_StopSawing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChainsaw, nullptr, "Server_StopSawing", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChainsaw_Server_StopSawing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChainsaw_Server_StopSawing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChainsaw_Server_StopSawing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -570,16 +575,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGChainsaw_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGChainsaw_BroadcastPickup, "BroadcastPickup" }, // 2428272209
-		{ &Z_Construct_UFunction_AFGChainsaw_CanStartSawing, "CanStartSawing" }, // 2987855856
-		{ &Z_Construct_UFunction_AFGChainsaw_GetFuelClass, "GetFuelClass" }, // 2073912636
-		{ &Z_Construct_UFunction_AFGChainsaw_HasAnyFuel, "HasAnyFuel" }, // 282727684
-		{ &Z_Construct_UFunction_AFGChainsaw_IsSawEngaged, "IsSawEngaged" }, // 4217514991
-		{ &Z_Construct_UFunction_AFGChainsaw_IsSawing, "IsSawing" }, // 1891767878
-		{ &Z_Construct_UFunction_AFGChainsaw_SawProgress, "SawProgress" }, // 3352400730
-		{ &Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject, "Server_RemoveChainsawedObject" }, // 2726982173
-		{ &Z_Construct_UFunction_AFGChainsaw_Server_StartSawing, "Server_StartSawing" }, // 2980500663
-		{ &Z_Construct_UFunction_AFGChainsaw_Server_StopSawing, "Server_StopSawing" }, // 4159211472
+		{ &Z_Construct_UFunction_AFGChainsaw_BroadcastPickup, "BroadcastPickup" }, // 3833885282
+		{ &Z_Construct_UFunction_AFGChainsaw_CanStartSawing, "CanStartSawing" }, // 3863354115
+		{ &Z_Construct_UFunction_AFGChainsaw_GetFuelClass, "GetFuelClass" }, // 2422643477
+		{ &Z_Construct_UFunction_AFGChainsaw_HasAnyFuel, "HasAnyFuel" }, // 3124352494
+		{ &Z_Construct_UFunction_AFGChainsaw_IsSawEngaged, "IsSawEngaged" }, // 2872334340
+		{ &Z_Construct_UFunction_AFGChainsaw_IsSawing, "IsSawing" }, // 2516498877
+		{ &Z_Construct_UFunction_AFGChainsaw_SawProgress, "SawProgress" }, // 439783489
+		{ &Z_Construct_UFunction_AFGChainsaw_Server_RemoveChainsawedObject, "Server_RemoveChainsawedObject" }, // 2721557579
+		{ &Z_Construct_UFunction_AFGChainsaw_Server_StartSawing, "Server_StartSawing" }, // 3596681453
+		{ &Z_Construct_UFunction_AFGChainsaw_Server_StopSawing, "Server_StopSawing" }, // 1160827145
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChainsaw_Statics::Class_MetaDataParams[] = {
@@ -593,7 +598,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "How much energy do we have stored left in the chainsaw (when we consume fuel from owners inventory\nthen this is the energy stored here)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored = { UE4CodeGen_Private::EPropertyClass::Float, "mEnergyStored", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGChainsaw, mEnergyStored), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored = { "mEnergyStored", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChainsaw, mEnergyStored), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_MetaData[] = {
 		{ "Category", "Chainsaw|Collateral" },
@@ -605,7 +610,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	{
 		((AFGChainsaw*)Obj)->mExcludeChainsawableFoliage = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage = { UE4CodeGen_Private::EPropertyClass::Bool, "mExcludeChainsawableFoliage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGChainsaw), &Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage = { "mExcludeChainsawableFoliage", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGChainsaw), &Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius_MetaData[] = {
 		{ "Category", "Chainsaw|Collateral" },
@@ -613,7 +618,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "How large radius of automatic pick up of foliage is when using chainsaw" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mCollateralPickupRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGChainsaw, mCollateralPickupRadius), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius = { "mCollateralPickupRadius", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChainsaw, mCollateralPickupRadius), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mCollateralPickupRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime_MetaData[] = {
 		{ "Category", "Chainsaw" },
@@ -621,7 +626,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "How many seconds should it take to saw down a tree" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime = { UE4CodeGen_Private::EPropertyClass::Float, "mSawDownTreeTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGChainsaw, mSawDownTreeTime), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime = { "mSawDownTreeTime", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChainsaw, mSawDownTreeTime), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mSawDownTreeTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption_MetaData[] = {
 		{ "Category", "Chainsaw|Fuel" },
@@ -629,7 +634,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "How much energy the chainsaw consumes. In megawatt seconds (MWs)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption = { UE4CodeGen_Private::EPropertyClass::Float, "mEnergyConsumption", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGChainsaw, mEnergyConsumption), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption = { "mEnergyConsumption", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChainsaw, mEnergyConsumption), METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyConsumption_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass_MetaData[] = {
 		{ "Category", "Chainsaw|Fuel" },
@@ -637,7 +642,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		{ "ToolTip", "The fuel we want to be able to use with the chainsaw" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass = { UE4CodeGen_Private::EPropertyClass::Class, "mFuelClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGChainsaw, mFuelClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass = { "mFuelClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChainsaw, mFuelClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mFuelClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGChainsaw_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mEnergyStored,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGChainsaw_Statics::NewProp_mExcludeChainsawableFoliage,
@@ -651,13 +656,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGChainsaw_Statics::ClassParams = {
 		&AFGChainsaw::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGChainsaw_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGChainsaw_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::PropPointers),
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGChainsaw()
@@ -669,7 +678,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChainsaw, 1517381460);
+	IMPLEMENT_CLASS(AFGChainsaw, 4160383161);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGChainsaw>()
+	{
+		return AFGChainsaw::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGChainsaw(Z_Construct_UClass_AFGChainsaw, &AFGChainsaw::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGChainsaw"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGChainsaw);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

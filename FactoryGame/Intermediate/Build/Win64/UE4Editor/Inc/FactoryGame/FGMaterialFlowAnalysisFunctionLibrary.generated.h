@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,15 +22,21 @@ class AFGRecipeManager;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMaterialFlowNode>();
+
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_50_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMaterialFlowConnection>();
+
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMaterialFlowGraph_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMaterialFlowGraph>();
 
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_110_RPC_WRAPPERS \
  \
@@ -163,6 +169,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGMaterialFlowAnalysisFunctionLibrary>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h

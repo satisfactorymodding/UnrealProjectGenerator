@@ -77,6 +77,7 @@ public:
 	*	@param C The controller possessing this pawn
 	*/
 	virtual void PossessedBy( AController* NewController );
+	virtual void UnPossessed() override;
 
 	// Begin IFGSaveInterface
 	virtual void PreSaveGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
@@ -211,6 +212,13 @@ public:
 
 	/** Check if fall damage should be applied */
 	void CheckFallDamage( float zSpeed );
+
+	/** Sets if this pawn is possessed and locally playable */
+	void SetLocallyPossessed( bool inPossessed );
+
+	/** Event called when a locally controlled pawn gets possessed/unpossessed */
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Character" )
+	void OnLocallyPossessedChanged( bool isLocallyPossessed );
 protected:
 	/**
 	 * Get the audio event for the foot down
@@ -294,6 +302,9 @@ protected:
 private:
 	UFUNCTION()
 	void OnRep_IsRagdolled();
+
+	UFUNCTION()
+	void OnRep_IsPossessed();
 
 	FVector FindSafePlaceToGetUp();
 
@@ -458,4 +469,11 @@ protected:
 	/** Multiplier for this creature and normal damage taken */
 	UPROPERTY( EditDefaultsOnly, Category = "Damage" )
 	float mNormalDamageMultiplier;
+private:
+	/** Used to keep track if we are locally possessed */
+	bool mIsLocallyPossessed;
+
+	/** Used to let client know when a pawn gets possessed/unpossessed */
+	UPROPERTY( ReplicatedUsing = OnRep_IsPossessed )
+	bool mIsPossessed;
 };

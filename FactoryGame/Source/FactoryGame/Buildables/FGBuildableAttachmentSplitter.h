@@ -39,6 +39,8 @@ protected:
 	virtual bool Factory_GrabOutput_Implementation( UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf< UFGItemDescriptor > type ) override;
 	// End Factory_ interface
 
+	// Populate the elements of the distribution table. The algorithm vaires between normal splitters and smart splitters. 
+	// The goal is to get all possible items assigned to an output while maintaining throughput and evenly splitting items between belts
 	virtual void FillDistributionTable();
 
 protected:
@@ -50,6 +52,7 @@ protected:
 	UPROPERTY( SaveGame, Meta = ( NoAutoJson ) )
 	int32 mCurrentInventoryIndex;
 
+	/** Table of all items in the inventory mapped to a desired output. The array is filled from a call to FillDistributionTable which runs in factory tick */
 	UPROPERTY()
 	TArray< FConnectionItemStruct > mDistributionTable;
 

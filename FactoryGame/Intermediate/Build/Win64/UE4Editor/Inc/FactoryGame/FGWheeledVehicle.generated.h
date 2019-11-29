@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -11,6 +11,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UPrimitiveComponent;
 class AActor;
 struct FHitResult;
+class UParticleSystem;
+class UAkAudioEvent;
+struct FVector;
 class AFGTargetPoint;
 class UFGTargetPointLinkedList;
 class UFloatingPawnMovement;
@@ -19,9 +22,7 @@ class UFGItemDescriptor;
 class UFGInventoryComponent;
 struct FTireData;
 class UWheeledVehicleMovementComponent;
-struct FVector;
-class UParticleSystem;
-class UAkAudioEvent;
+class AFGCharacterPlayer;
 #ifdef FACTORYGAME_FGWheeledVehicle_generated_h
 #error "FGWheeledVehicle.generated.h already included, missing '#pragma once' in FGWheeledVehicle.h"
 #endif
@@ -32,30 +33,42 @@ class UAkAudioEvent;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FReplicatedAddedVelocitiesState>();
+
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_93_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireParticleCollection_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTireParticleCollection>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_78_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FParticleTemplatePair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FParticleTemplatePair>();
+
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_66_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSurfaceParticlePair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSurfaceParticlePair>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_51_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireTrackDecalDetails_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTireTrackDecalDetails>();
+
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_25_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FTireData>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_18_DELEGATE \
 static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptDelegate& TranferStatusChanged) \
@@ -68,6 +81,7 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 	virtual bool ServerUpdateAssistedVelocitiesState_Validate(bool , float , float ); \
 	virtual void ServerUpdateAssistedVelocitiesState_Implementation(bool inDrifting, float inInputYaw, float inInputPitch); \
 	virtual void CreateInventoryItemDrops_Implementation(); \
+	virtual void Multicast_PlayFoliageDestroyedEffect_Implementation(UParticleSystem* destroyEffect, UAkAudioEvent* destroyAudioEvent, FVector location); \
  \
 	DECLARE_FUNCTION(execOnRep_TransferStatusChanged) \
 	{ \
@@ -191,6 +205,17 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMulticast_PlayFoliageDestroyedEffect) \
+	{ \
+		P_GET_OBJECT(UParticleSystem,Z_Param_destroyEffect); \
+		P_GET_OBJECT(UAkAudioEvent,Z_Param_destroyAudioEvent); \
+		P_GET_STRUCT(FVector,Z_Param_location); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Multicast_PlayFoliageDestroyedEffect_Implementation(Z_Param_destroyEffect,Z_Param_destroyAudioEvent,Z_Param_location); \
 		P_NATIVE_END; \
 	} \
  \
@@ -359,6 +384,7 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 	virtual bool ServerUpdateAssistedVelocitiesState_Validate(bool , float , float ); \
 	virtual void ServerUpdateAssistedVelocitiesState_Implementation(bool inDrifting, float inInputYaw, float inInputPitch); \
 	virtual void CreateInventoryItemDrops_Implementation(); \
+	virtual void Multicast_PlayFoliageDestroyedEffect_Implementation(UParticleSystem* destroyEffect, UAkAudioEvent* destroyAudioEvent, FVector location); \
  \
 	DECLARE_FUNCTION(execOnRep_TransferStatusChanged) \
 	{ \
@@ -482,6 +508,17 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMulticast_PlayFoliageDestroyedEffect) \
+	{ \
+		P_GET_OBJECT(UParticleSystem,Z_Param_destroyEffect); \
+		P_GET_OBJECT(UAkAudioEvent,Z_Param_destroyAudioEvent); \
+		P_GET_STRUCT(FVector,Z_Param_location); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Multicast_PlayFoliageDestroyedEffect_Implementation(Z_Param_destroyEffect,Z_Param_destroyAudioEvent,Z_Param_location); \
 		P_NATIVE_END; \
 	} \
  \
@@ -647,6 +684,16 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_147_EVENT_PARMS \
+	struct FGWheeledVehicle_eventClient_PlayFoliageDestroyedEffect_Parms \
+	{ \
+		UParticleSystem* destroyEffect; \
+		UAkAudioEvent* destroyAudioEvent; \
+		FVector location; \
+	}; \
+	struct FGWheeledVehicle_eventCloseVehicleTrunk_Parms \
+	{ \
+		AFGCharacterPlayer* player; \
+	}; \
 	struct FGWheeledVehicle_eventGetDriftForceOffset_Parms \
 	{ \
 		FVector ReturnValue; \
@@ -657,11 +704,15 @@ static inline void FTranferStatusChanged_DelegateWrapper(const FMulticastScriptD
 		{ \
 		} \
 	}; \
-	struct FGWheeledVehicle_eventPlayFoliageDestroyedEffect_Parms \
+	struct FGWheeledVehicle_eventMulticast_PlayFoliageDestroyedEffect_Parms \
 	{ \
 		UParticleSystem* destroyEffect; \
 		UAkAudioEvent* destroyAudioEvent; \
 		FVector location; \
+	}; \
+	struct FGWheeledVehicle_eventOpenVehicleTrunk_Parms \
+	{ \
+		AFGCharacterPlayer* player; \
 	}; \
 	struct FGWheeledVehicle_eventServerUpdateAssistedVelocitiesState_Parms \
 	{ \
@@ -750,6 +801,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGWheeledVehicle); \
 	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGWheeledVehicle, mFuelInventory); } \
 	FORCEINLINE static uint32 __PPO__mStorageInventory() { return STRUCT_OFFSET(AFGWheeledVehicle, mStorageInventory); } \
 	FORCEINLINE static uint32 __PPO__mInventorySize() { return STRUCT_OFFSET(AFGWheeledVehicle, mInventorySize); } \
+	FORCEINLINE static uint32 __PPO__mTireParticleCollection() { return STRUCT_OFFSET(AFGWheeledVehicle, mTireParticleCollection); } \
 	FORCEINLINE static uint32 __PPO__mVehicleParticeMap() { return STRUCT_OFFSET(AFGWheeledVehicle, mVehicleParticeMap); } \
 	FORCEINLINE static uint32 __PPO__mActiveParticleAndTemplate() { return STRUCT_OFFSET(AFGWheeledVehicle, mActiveParticleAndTemplate); } \
 	FORCEINLINE static uint32 __PPO__mTireEffectSocketName() { return STRUCT_OFFSET(AFGWheeledVehicle, mTireEffectSocketName); } \
@@ -806,6 +858,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGWheeledVehicle>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGWheeledVehicle_h

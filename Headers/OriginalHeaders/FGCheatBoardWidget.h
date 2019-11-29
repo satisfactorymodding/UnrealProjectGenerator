@@ -60,6 +60,9 @@ public:
 	/** Propmts the user to input a color */
 	void ShowInputWindowFor( FLinearColor color );	
 
+	/** Propmts the user to select an enum vlaue */
+	void ShowInputWindowFor( UEnum* enumProp );
+
 	void SetFilterTextboxFocus() const;
 	void ResetMenu();
 
@@ -93,6 +96,9 @@ public:
 
 	/** If the user presses on a resource, this triggers and gives us the value */
 	FReply OnClassParm( UClass* inClass );
+
+	/** If the user presses on true or false, this triggers and gives us the value */
+	FReply OnNumInputClicked( int32 value );
 
 	void OnClassParmAction( UClass* inClass );
 	/** Result from the colorpicker */

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -68,26 +68,26 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult = { UE4CodeGen_Private::EPropertyClass::Struct, "SweepResult", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult_MetaData)) };
 	void Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit(void* Obj)
 	{
 		((FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms*)Obj)->bFromSweep = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_bFromSweep = { UE4CodeGen_Private::EPropertyClass::Bool, "bFromSweep", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms), &Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherBodyIndex = { UE4CodeGen_Private::EPropertyClass::Int, "OtherBodyIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OtherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms), &Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherBodyIndex = { "OtherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OtherBodyIndex), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp = { UE4CodeGen_Private::EPropertyClass::Object, "OtherComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherActor = { UE4CodeGen_Private::EPropertyClass::Object, "OtherActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp = { UE4CodeGen_Private::EPropertyClass::Object, "OverlappedComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OverlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp = { "OverlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms, OverlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_OverlappedComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_SweepResult,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::NewProp_bFromSweep,
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleCollisionBoxComponent, "OnOverlapBegin", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00420401, sizeof(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms), Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleCollisionBoxComponent, nullptr, "OnOverlapBegin", sizeof(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms), Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin, "OnOverlapBegin" }, // 2726066099
+		{ &Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin, "OnOverlapBegin" }, // 3813027215
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::Class_MetaDataParams[] = {
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "ToolTip", "The minimum velocity required for any fudged Z values to take effect. This helps when player just runs against the vehicle." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ = { UE4CodeGen_Private::EPropertyClass::Float, "mMinVelocityForAddedZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mMinVelocityForAddedZ), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ = { "mMinVelocityForAddedZ", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mMinVelocityForAddedZ), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
@@ -177,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "ToolTip", "The maximum velocity that can be added on a collision." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxCollisionVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mMaxCollisionVelocity), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity = { "mMaxCollisionVelocity", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mMaxCollisionVelocity), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
@@ -185,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "ToolTip", "The maximum Z velocity that can be added on a collision." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxAddedZVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mMaxAddedZVelocity), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity = { "mMaxAddedZVelocity", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mMaxAddedZVelocity), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor = { UE4CodeGen_Private::EPropertyClass::Float, "mAddedZVelocityFactor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mAddedZVelocityFactor), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor = { "mAddedZVelocityFactor", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mAddedZVelocityFactor), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mAddedZVelocityFactor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "UIMin", "0.1" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor = { UE4CodeGen_Private::EPropertyClass::Float, "mFudgeFactor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mFudgeFactor), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor = { "mFudgeFactor", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGVehicleCollisionBoxComponent, mFudgeFactor), METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mFudgeFactor_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity,
@@ -222,13 +222,17 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::ClassParams = {
 		&UFGVehicleCollisionBoxComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::PropPointers),
+		0,
+		0x00B010A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGVehicleCollisionBoxComponent()
@@ -240,7 +244,11 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 322540195);
+	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 1623507165);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGVehicleCollisionBoxComponent>()
+	{
+		return UFGVehicleCollisionBoxComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleCollisionBoxComponent(Z_Construct_UClass_UFGVehicleCollisionBoxComponent, &UFGVehicleCollisionBoxComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleCollisionBoxComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleCollisionBoxComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

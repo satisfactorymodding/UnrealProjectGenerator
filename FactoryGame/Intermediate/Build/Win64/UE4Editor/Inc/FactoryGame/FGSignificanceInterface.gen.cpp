@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		{ "ToolTip", "Call when actor gained significance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, "GainedSignificance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "GainedSignificance", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSignificanceInterface_eventGetSignificanceBias_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSignificanceInterface_eventGetSignificanceBias_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::NewProp_ReturnValue,
 	};
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		{ "ToolTip", "Defaults to 0.0f" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, "GetSignificanceBias", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020400, sizeof(FGSignificanceInterface_eventGetSignificanceBias_Parms), Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "GetSignificanceBias", sizeof(FGSignificanceInterface_eventGetSignificanceBias_Parms), Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSignificanceInterface_eventGetSignificanceRange_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSignificanceInterface_eventGetSignificanceRange_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::NewProp_ReturnValue,
 	};
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		{ "ToolTip", "Defaults to 10000.0ff" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, "GetSignificanceRange", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020400, sizeof(FGSignificanceInterface_eventGetSignificanceRange_Parms), Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "GetSignificanceRange", sizeof(FGSignificanceInterface_eventGetSignificanceRange_Parms), Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		{ "ToolTip", "Call when actor gained significance" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, "LostSignificance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignificanceInterface, nullptr, "LostSignificance", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -174,10 +174,10 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSignificanceInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance, "GainedSignificance" }, // 1274076365
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias, "GetSignificanceBias" }, // 684705353
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange, "GetSignificanceRange" }, // 2872826756
-		{ &Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance, "LostSignificance" }, // 4199096359
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GainedSignificance, "GainedSignificance" }, // 131544425
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceBias, "GetSignificanceBias" }, // 1810399280
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_GetSignificanceRange, "GetSignificanceRange" }, // 3759457827
+		{ &Z_Construct_UFunction_UFGSignificanceInterface_LostSignificance, "LostSignificance" }, // 1192939176
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams[] = {
@@ -191,13 +191,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSignificanceInterface_Statics::ClassParams = {
 		&UFGSignificanceInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSignificanceInterface()
@@ -209,7 +213,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceInterface, 2781362459);
+	IMPLEMENT_CLASS(UFGSignificanceInterface, 556002989);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSignificanceInterface>()
+	{
+		return UFGSignificanceInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSignificanceInterface(Z_Construct_UClass_UFGSignificanceInterface, &UFGSignificanceInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSignificanceInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSignificanceInterface);
 	static FName NAME_UFGSignificanceInterface_GainedSignificance = FName(TEXT("GainedSignificance"));

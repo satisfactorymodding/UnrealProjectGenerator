@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 		{ "ToolTip", "Class of what descriptor we are looking for" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass = { UE4CodeGen_Private::EPropertyClass::Class, "mItemDescriptorClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000001, 1, nullptr, STRUCT_OFFSET(UFGEnvQueryTest_ItemDescription, mItemDescriptorClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass = { "mItemDescriptorClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGEnvQueryTest_ItemDescription, mItemDescriptorClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass,
 	};
@@ -68,13 +68,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::ClassParams = {
 		&UFGEnvQueryTest_ItemDescription::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGEnvQueryTest_ItemDescription()
@@ -86,7 +90,11 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEnvQueryTest_ItemDescription, 1546045819);
+	IMPLEMENT_CLASS(UFGEnvQueryTest_ItemDescription, 526529579);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGEnvQueryTest_ItemDescription>()
+	{
+		return UFGEnvQueryTest_ItemDescription::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEnvQueryTest_ItemDescription(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription, &UFGEnvQueryTest_ItemDescription::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEnvQueryTest_ItemDescription"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEnvQueryTest_ItemDescription);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

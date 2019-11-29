@@ -58,6 +58,7 @@ void AFGPlayerController::OnPrimaryFire(){ }
 void AFGPlayerController::SetupInputComponent(){ }
 void AFGPlayerController::BuildInputStack( TArray< UInputComponent* >& inputStack){ }
 void AFGPlayerController::OnAttentionPingPressed(){ }
+void AFGPlayerController::OnDismantlePortableMiner_Implementation( AFGPortableMiner* PortableMiner){ }
 void AFGPlayerController::CheckPawnMapArea(){ }
 bool AFGPlayerController::InitMapAreaCheckFunction(){ return bool(); }
 TSubclassOf< UFGMapArea > AFGPlayerController::GetCurrentMapArea() const{ return TSubclassOf<UFGMapArea>(); }

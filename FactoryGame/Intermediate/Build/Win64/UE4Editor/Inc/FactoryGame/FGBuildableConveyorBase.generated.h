@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -20,10 +20,14 @@ class AFGCharacterPlayer;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConveyorBeltItems>();
+
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_55_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConveyorBeltItem_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConveyorBeltItem>();
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_26_RPC_WRAPPERS \
 	virtual bool Server_OnUse_Validate(AFGBuildableConveyorBelt* , AFGCharacterPlayer* , int32 , int8 ); \
@@ -153,6 +157,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGConveyorRemoteCallObject>();
+
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_INCLASS_NO_PURE_DECLS \
@@ -222,6 +228,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UPresistentConveyorPackagingData>();
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_RPC_WRAPPERS \
  \
@@ -324,6 +332,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableConveyorBase>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h

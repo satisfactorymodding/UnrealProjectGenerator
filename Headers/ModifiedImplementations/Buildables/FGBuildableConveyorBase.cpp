@@ -20,11 +20,13 @@ void AFGBuildableConveyorBase::EndPlay( const EEndPlayReason::Type endPlayReason
 void AFGBuildableConveyorBase::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGBuildableConveyorBase::Tick( float dt){ }
 void AFGBuildableConveyorBase::PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion){ }
+void AFGBuildableConveyorBase::Factory_Tick( float deltaTime){ }
 uint8 AFGBuildableConveyorBase::MaxNumGrab( float dt) const{ return uint8(); }
+uint8 AFGBuildableConveyorBase::EstimatedMaxNumGrab_ThreadSafe( float dt) const{ return uint8(); }
 void AFGBuildableConveyorBase::GainedSignificance_Implementation(){ }
 void AFGBuildableConveyorBase::LostSignificance_Implementation(){ }
 void AFGBuildableConveyorBase::PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker){ }
-void AFGBuildableConveyorBase::Factory_Tick( float deltaTime){ }
+void AFGBuildableConveyorBase::SetConveyorBucketID( int32 ID){ }
 bool AFGBuildableConveyorBase::Factory_PeekOutput_Implementation( const  UFGFactoryConnectionComponent* connection, TArray< FInventoryItem >& out_items, TSubclassOf< UFGItemDescriptor > type) const{ return bool(); }
 bool AFGBuildableConveyorBase::Factory_GrabOutput_Implementation(  UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf< UFGItemDescriptor > type){ return bool(); }
 void AFGBuildableConveyorBase::GetDismantleInventoryReturns( TArray< FInventoryStack >& out_returns) const{ }
@@ -35,3 +37,4 @@ void AFGBuildableConveyorBase::Factory_RemoveItemAt( int32 index){ }
 void AFGBuildableConveyorBase::Factory_DequeueItem(){ }
 void AFGBuildableConveyorBase::Factory_EnqueueItem( const FInventoryItem& item, float initialOffset){ }
 bool AFGBuildableConveyorBase::HasRoomOnBelt( float& out_availableSpace) const{ return bool(); }
+bool AFGBuildableConveyorBase::HasRoomOnBelt_ThreadSafe( float& out_availableSpace) const{ return bool(); }

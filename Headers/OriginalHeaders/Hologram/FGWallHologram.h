@@ -15,7 +15,6 @@ class FACTORYGAME_API AFGWallHologram : public AFGFactoryBuildingHologram
 public:
 	AFGWallHologram();
 
-	/** Begin */
 	virtual void BeginPlay() override;
 
 	// Begin AFGHologram interface

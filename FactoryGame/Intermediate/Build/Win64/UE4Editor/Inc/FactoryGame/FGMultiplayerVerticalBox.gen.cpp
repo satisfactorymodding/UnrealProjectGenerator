@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -39,7 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		{ "ModuleRelativePath", "UI/FGMultiplayerVerticalBox.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMultiplayerVerticalBox, "Sort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMultiplayerVerticalBox, nullptr, "Sort", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort, "Sort" }, // 2053258243
+		{ &Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort, "Sort" }, // 1230957710
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::Class_MetaDataParams[] = {
@@ -81,13 +81,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::ClassParams = {
 		&UFGMultiplayerVerticalBox::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x00A000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMultiplayerVerticalBox()
@@ -99,7 +103,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 3430983214);
+	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 1368090511);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMultiplayerVerticalBox>()
+	{
+		return UFGMultiplayerVerticalBox::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMultiplayerVerticalBox(Z_Construct_UClass_UFGMultiplayerVerticalBox, &UFGMultiplayerVerticalBox::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMultiplayerVerticalBox"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMultiplayerVerticalBox);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -48,8 +48,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildingDescriptor_eventGetBuildableClass_Parms, ReturnValue), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildingDescriptor_eventGetBuildableClass_Parms, inClass), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildingDescriptor_eventGetBuildableClass_Parms, ReturnValue), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildingDescriptor_eventGetBuildableClass_Parms, inClass), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::NewProp_inClass,
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		{ "ToolTip", "Get the buildable class for this building descriptor." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildingDescriptor, "GetBuildableClass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGBuildingDescriptor_eventGetBuildableClass_Parms), Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildingDescriptor, nullptr, "GetBuildableClass", sizeof(FGBuildingDescriptor_eventGetBuildableClass_Parms), Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -86,8 +86,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerConsumption_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerConsumption_Parms, inClass), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerConsumption_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerConsumption_Parms, inClass), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::NewProp_inClass,
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		{ "ToolTip", "Get the the power consumption of buildable." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildingDescriptor, "GetPowerConsumption", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGBuildingDescriptor_eventGetPowerConsumption_Parms), Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildingDescriptor, nullptr, "GetPowerConsumption", sizeof(FGBuildingDescriptor_eventGetPowerConsumption_Parms), Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -124,8 +124,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerProduction_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerProduction_Parms, inClass), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerProduction_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildingDescriptor_eventGetPowerProduction_Parms, inClass), Z_Construct_UClass_UFGBuildingDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::NewProp_inClass,
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		{ "ToolTip", "Get the the power production of buildable, 0 for non-producers." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildingDescriptor, "GetPowerProduction", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGBuildingDescriptor_eventGetPowerProduction_Parms), Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildingDescriptor, nullptr, "GetPowerProduction", sizeof(FGBuildingDescriptor_eventGetPowerProduction_Parms), Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -171,9 +171,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildingDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass, "GetBuildableClass" }, // 3116856466
-		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption, "GetPowerConsumption" }, // 263058599
-		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction, "GetPowerProduction" }, // 1023899857
+		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetBuildableClass, "GetBuildableClass" }, // 4002195813
+		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerConsumption, "GetPowerConsumption" }, // 468429043
+		{ &Z_Construct_UFunction_UFGBuildingDescriptor_GetPowerProduction, "GetPowerProduction" }, // 2006688838
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildingDescriptor_Statics::Class_MetaDataParams[] = {
@@ -190,7 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		{ "ToolTip", "The class to build." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass = { UE4CodeGen_Private::EPropertyClass::Class, "mBuildableClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGBuildingDescriptor, mBuildableClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass = { "mBuildableClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGBuildingDescriptor, mBuildableClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGBuildingDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGBuildingDescriptor_Statics::NewProp_mBuildableClass,
 	};
@@ -199,13 +199,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGBuildingDescriptor_Statics::ClassParams = {
 		&UFGBuildingDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGBuildingDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGBuildingDescriptor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGBuildingDescriptor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGBuildingDescriptor_Statics::PropPointers),
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGBuildingDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGBuildingDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGBuildingDescriptor()
@@ -217,7 +221,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildingDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildingDescriptor, 3763117134);
+	IMPLEMENT_CLASS(UFGBuildingDescriptor, 3593105773);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGBuildingDescriptor>()
+	{
+		return UFGBuildingDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildingDescriptor(Z_Construct_UClass_UFGBuildingDescriptor, &UFGBuildingDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildingDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildingDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChatManager() {}
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ChatMessageAdded__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ChatMessageAdded__DelegateSignature", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -62,13 +62,17 @@ void EmptyLinkFunctionForGeneratedCodeFGChatManager() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EFGChatMessageType>()
+	{
+		return EFGChatMessageType_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFGChatMessageType(EFGChatMessageType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFGChatMessageType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFGChatMessageType_CRC() { return 2779832254U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFGChatMessageType_Hash() { return 1948155989U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFGChatMessageType()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFGChatMessageType"), 0, Get_Z_Construct_UEnum_FactoryGame_EFGChatMessageType_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFGChatMessageType"), 0, Get_Z_Construct_UEnum_FactoryGame_EFGChatMessageType_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -88,14 +92,14 @@ void EmptyLinkFunctionForGeneratedCodeFGChatManager() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EFGChatMessageType",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EFGChatMessageType",
 				"EFGChatMessageType",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -107,10 +111,14 @@ class UScriptStruct* FChatMessageStruct::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FChatMessageStruct, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ChatMessageStruct"), sizeof(FChatMessageStruct), Get_Z_Construct_UScriptStruct_FChatMessageStruct_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FChatMessageStruct, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ChatMessageStruct"), sizeof(FChatMessageStruct), Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FChatMessageStruct>()
+{
+	return FChatMessageStruct::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FChatMessageStruct(FChatMessageStruct::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ChatMessageStruct"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
@@ -161,15 +169,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType = { UE4CodeGen_Private::EPropertyClass::Enum, "MessageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FChatMessageStruct, MessageType), Z_Construct_UEnum_FactoryGame_EFGChatMessageType, METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType = { "MessageType", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChatMessageStruct, MessageType), Z_Construct_UEnum_FactoryGame_EFGChatMessageType, METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData[] = {
 		{ "ModuleRelativePath", "FGChatManager.h" },
 		{ "ToolTip", "The player who sent the message" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender = { UE4CodeGen_Private::EPropertyClass::Object, "Sender", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FChatMessageStruct, Sender), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender = { "Sender", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChatMessageStruct, Sender), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_Sender_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp_MetaData[] = {
 		{ "Category", "ChatMessageStruct" },
@@ -177,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "Synchronized time stamp of when the message was sent" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp = { UE4CodeGen_Private::EPropertyClass::Float, "ServerTimeStamp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FChatMessageStruct, ServerTimeStamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp = { "ServerTimeStamp", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChatMessageStruct, ServerTimeStamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_ServerTimeStamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString_MetaData[] = {
 		{ "Category", "ChatMessageStruct" },
@@ -185,7 +193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "The message that was sent" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString = { UE4CodeGen_Private::EPropertyClass::Str, "MessageString", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FChatMessageStruct, MessageString), METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString = { "MessageString", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChatMessageStruct, MessageString), METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageString_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChatMessageStruct_Statics::NewProp_MessageType_Underlying,
@@ -198,19 +206,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		nullptr,
 		&NewStructOps,
 		"ChatMessageStruct",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FChatMessageStruct),
 		alignof(FChatMessageStruct),
-		Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FChatMessageStruct()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ChatMessageStruct"), sizeof(FChatMessageStruct), Get_Z_Construct_UScriptStruct_FChatMessageStruct_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ChatMessageStruct"), sizeof(FChatMessageStruct), Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -220,7 +229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_CRC() { return 105253464U; }
+	uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash() { return 2748275261U; }
 	static FName NAME_AFGChatManager_Multicast_BroadcastChatMessage = FName(TEXT("Multicast_BroadcastChatMessage"));
 	void AFGChatManager::Multicast_BroadcastChatMessage(FChatMessageStruct const& newMessage)
 	{
@@ -257,8 +266,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChatManager_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGChatManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChatManager_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChatManager_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGChatManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGChatManager_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_Get_Statics::NewProp_worldContext,
@@ -272,7 +281,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "Get the chat manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGChatManager_eventGet_Parms), Z_Construct_UFunction_AFGChatManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "Get", sizeof(FGChatManager_eventGet_Parms), Z_Construct_UFunction_AFGChatManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -300,13 +309,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetChatMessageColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetChatMessageColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage = { UE4CodeGen_Private::EPropertyClass::Struct, "inMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetChatMessageColor_Parms, inMessage), Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage = { "inMessage", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetChatMessageColor_Parms, inMessage), Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::NewProp_inMessage,
@@ -317,7 +326,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "GetChatMessageColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14C22401, sizeof(FGChatManager_eventGetChatMessageColor_Parms), Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "GetChatMessageColor", sizeof(FGChatManager_eventGetChatMessageColor_Parms), Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageColor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_GetChatMessageColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -345,13 +354,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetChatMessageName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetChatMessageName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage = { UE4CodeGen_Private::EPropertyClass::Struct, "inMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetChatMessageName_Parms, inMessage), Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage = { "inMessage", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetChatMessageName_Parms, inMessage), Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::NewProp_inMessage,
@@ -362,7 +371,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "GetChatMessageName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGChatManager_eventGetChatMessageName_Parms), Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "GetChatMessageName", sizeof(FGChatManager_eventGetChatMessageName_Parms), Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetChatMessageName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_GetChatMessageName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -385,7 +394,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetMaxNumMessagesInHistory_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetMaxNumMessagesInHistory_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::NewProp_ReturnValue,
 	};
@@ -395,7 +404,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "GetMaxNumMessagesInHistory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGChatManager_eventGetMaxNumMessagesInHistory_Parms), Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "GetMaxNumMessagesInHistory", sizeof(FGChatManager_eventGetMaxNumMessagesInHistory_Parms), Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -418,7 +427,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetMessageVisibleDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetMessageVisibleDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::NewProp_ReturnValue,
 	};
@@ -428,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "GetMessageVisibleDuration", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGChatManager_eventGetMessageVisibleDuration_Parms), Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "GetMessageVisibleDuration", sizeof(FGChatManager_eventGetMessageVisibleDuration_Parms), Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -452,8 +461,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::NewProp_out_messages = { UE4CodeGen_Private::EPropertyClass::Array, "out_messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventGetReceivedChatMessages_Parms, out_messages), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::NewProp_out_messages_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::NewProp_out_messages = { "out_messages", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventGetReceivedChatMessages_Parms, out_messages), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::NewProp_out_messages_Inner = { "out_messages", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::NewProp_out_messages,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::NewProp_out_messages_Inner,
@@ -464,7 +473,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ModuleRelativePath", "FGChatManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "GetReceivedChatMessages", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGChatManager_eventGetReceivedChatMessages_Parms), Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "GetReceivedChatMessages", sizeof(FGChatManager_eventGetReceivedChatMessages_Parms), Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -491,7 +500,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage = { UE4CodeGen_Private::EPropertyClass::Struct, "newMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000082, 1, nullptr, STRUCT_OFFSET(FGChatManager_eventMulticast_BroadcastChatMessage_Parms, newMessage), Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage = { "newMessage", nullptr, (EPropertyFlags)0x0010000008000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGChatManager_eventMulticast_BroadcastChatMessage_Parms, newMessage), Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::NewProp_newMessage,
 	};
@@ -501,7 +510,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "Broadcast a chat message to all clients" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, "Multicast_BroadcastChatMessage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00024CC0, sizeof(FGChatManager_eventMulticast_BroadcastChatMessage_Parms), Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGChatManager, nullptr, "Multicast_BroadcastChatMessage", sizeof(FGChatManager_eventMulticast_BroadcastChatMessage_Parms), Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -548,13 +557,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGChatManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGChatManager_Get, "Get" }, // 2760926630
-		{ &Z_Construct_UFunction_AFGChatManager_GetChatMessageColor, "GetChatMessageColor" }, // 3870837446
-		{ &Z_Construct_UFunction_AFGChatManager_GetChatMessageName, "GetChatMessageName" }, // 3145377364
-		{ &Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory, "GetMaxNumMessagesInHistory" }, // 2772510425
-		{ &Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration, "GetMessageVisibleDuration" }, // 2629968652
-		{ &Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages, "GetReceivedChatMessages" }, // 796936967
-		{ &Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage, "Multicast_BroadcastChatMessage" }, // 577289745
+		{ &Z_Construct_UFunction_AFGChatManager_Get, "Get" }, // 630247053
+		{ &Z_Construct_UFunction_AFGChatManager_GetChatMessageColor, "GetChatMessageColor" }, // 766339308
+		{ &Z_Construct_UFunction_AFGChatManager_GetChatMessageName, "GetChatMessageName" }, // 851431085
+		{ &Z_Construct_UFunction_AFGChatManager_GetMaxNumMessagesInHistory, "GetMaxNumMessagesInHistory" }, // 2581326060
+		{ &Z_Construct_UFunction_AFGChatManager_GetMessageVisibleDuration, "GetMessageVisibleDuration" }, // 2576159378
+		{ &Z_Construct_UFunction_AFGChatManager_GetReceivedChatMessages, "GetReceivedChatMessages" }, // 3607709516
+		{ &Z_Construct_UFunction_AFGChatManager_Multicast_BroadcastChatMessage, "Multicast_BroadcastChatMessage" }, // 1283864898
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChatManager_Statics::Class_MetaDataParams[] = {
@@ -573,8 +582,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "An array of all the messages that the local player have received." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages = { UE4CodeGen_Private::EPropertyClass::Array, "mReceivedMessages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGChatManager, mReceivedMessages), METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mReceivedMessages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages = { "mReceivedMessages", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChatManager, mReceivedMessages), METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_Inner = { "mReceivedMessages", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FChatMessageStruct, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration_MetaData[] = {
 		{ "Category", "Chat" },
@@ -582,7 +591,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "How long a message will stay fresh and visible without opening the chat" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration = { UE4CodeGen_Private::EPropertyClass::Float, "mMessageVisibleDuration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGChatManager, mMessageVisibleDuration), METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration = { "mMessageVisibleDuration", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChatManager, mMessageVisibleDuration), METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMessageVisibleDuration_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory_MetaData[] = {
 		{ "Category", "Chat" },
@@ -590,7 +599,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "How many messages will we save in the chat history" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory = { UE4CodeGen_Private::EPropertyClass::Int, "mMaxNumMessagesInHistory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGChatManager, mMaxNumMessagesInHistory), METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory = { "mMaxNumMessagesInHistory", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChatManager, mMaxNumMessagesInHistory), METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_mMaxNumMessagesInHistory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded_MetaData[] = {
 		{ "Category", "Chat" },
@@ -598,7 +607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		{ "ToolTip", "Called when you get a new local message" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnChatMessageAdded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGChatManager, OnChatMessageAdded), Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded = { "OnChatMessageAdded", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGChatManager, OnChatMessageAdded), Z_Construct_UDelegateFunction_FactoryGame_ChatMessageAdded__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::NewProp_OnChatMessageAdded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGChatManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGChatManager_Statics::NewProp_mReceivedMessages_Inner,
@@ -611,13 +620,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGChatManager_Statics::ClassParams = {
 		&AFGChatManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGChatManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGChatManager_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::PropPointers),
+		0,
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGChatManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGChatManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGChatManager()
@@ -629,7 +642,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChatManager, 3495196169);
+	IMPLEMENT_CLASS(AFGChatManager, 622228728);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGChatManager>()
+	{
+		return AFGChatManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGChatManager(Z_Construct_UClass_AFGChatManager, &AFGChatManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGChatManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGChatManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

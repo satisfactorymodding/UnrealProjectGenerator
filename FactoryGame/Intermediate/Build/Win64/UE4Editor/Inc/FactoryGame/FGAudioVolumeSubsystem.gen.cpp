@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::ClassParams = {
 		&AFGAudioVolumeSubsystem::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008002A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x008002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGAudioVolumeSubsystem()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 1006059480);
+	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 1131157758);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGAudioVolumeSubsystem>()
+	{
+		return AFGAudioVolumeSubsystem::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAudioVolumeSubsystem(Z_Construct_UClass_AFGAudioVolumeSubsystem, &AFGAudioVolumeSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAudioVolumeSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAudioVolumeSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

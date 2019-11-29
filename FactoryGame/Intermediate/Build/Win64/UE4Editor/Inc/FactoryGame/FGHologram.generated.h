@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -280,6 +280,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGHologram>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Hologram_FGHologram_h
 
@@ -288,4 +290,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EHologramScrollMode::HSM_NONE) \
 	op(EHologramScrollMode::HSM_ROTATE) \
 	op(EHologramScrollMode::HSM_RAISE_LOWER) 
+
+enum class EHologramScrollMode : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EHologramScrollMode>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

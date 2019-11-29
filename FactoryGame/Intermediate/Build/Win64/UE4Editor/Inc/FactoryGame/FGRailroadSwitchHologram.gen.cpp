@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadSwitchHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRailroadSwitchHologram_Statics::ClassParams = {
 		&AFGRailroadSwitchHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRailroadSwitchHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadSwitchHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRailroadSwitchHologram()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadSwitchHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadSwitchHologram, 2842269);
+	IMPLEMENT_CLASS(AFGRailroadSwitchHologram, 3342345936);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadSwitchHologram>()
+	{
+		return AFGRailroadSwitchHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadSwitchHologram(Z_Construct_UClass_AFGRailroadSwitchHologram, &AFGRailroadSwitchHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadSwitchHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadSwitchHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 		{ "ToolTip", "Recalled if the storage subsystem isn't created" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCentralStorageContainer, "AddToCentralStorageSubsystem", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCentralStorageContainer, nullptr, "AddToCentralStorageSubsystem", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCentralStorageContainer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem, "AddToCentralStorageSubsystem" }, // 1328224403
+		{ &Z_Construct_UFunction_AFGCentralStorageContainer_AddToCentralStorageSubsystem, "AddToCentralStorageSubsystem" }, // 3640264886
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCentralStorageContainer_Statics::Class_MetaDataParams[] = {
@@ -83,13 +83,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCentralStorageContainer_Statics::ClassParams = {
 		&AFGCentralStorageContainer::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCentralStorageContainer_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCentralStorageContainer_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCentralStorageContainer()
@@ -101,7 +105,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCentralStorageContainer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCentralStorageContainer, 789494168);
+	IMPLEMENT_CLASS(AFGCentralStorageContainer, 3356734914);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCentralStorageContainer>()
+	{
+		return AFGCentralStorageContainer::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCentralStorageContainer(Z_Construct_UClass_AFGCentralStorageContainer, &AFGCentralStorageContainer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCentralStorageContainer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCentralStorageContainer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

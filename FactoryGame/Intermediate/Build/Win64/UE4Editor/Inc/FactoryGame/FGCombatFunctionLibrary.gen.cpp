@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -69,17 +69,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_radius = { UE4CodeGen_Private::EPropertyClass::Float, "radius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, radius), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_damage = { UE4CodeGen_Private::EPropertyClass::Float, "damage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, damage), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_damageType = { UE4CodeGen_Private::EPropertyClass::Class, "damageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, damageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_centerLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "centerLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, centerLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_radius = { "radius", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, radius), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, damage), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_damageType = { "damageType", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, damageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_centerLocation = { "centerLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, centerLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape = { UE4CodeGen_Private::EPropertyClass::Object, "collisionShape", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, collisionShape), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_controller = { UE4CodeGen_Private::EPropertyClass::Object, "controller", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, controller), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape = { "collisionShape", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, collisionShape), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_collisionShape_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_controller = { "controller", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms, controller), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_radius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::NewProp_damage,
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		{ "ToolTip", "Uses a shape to do damage within the shape\n@param controller - controller doing the damage\n@param collisionShape - shape we want to check for overlapping actors\n@param centerLocation - the location that damage origins from\n@param damageType - damagetype for the damage\n@param damage - how much damage\n@param radius - radial reach of the damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, "DoRadialDamageWithinCollision", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04822401, sizeof(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, nullptr, "DoRadialDamageWithinCollision", sizeof(FGCombatFunctionLibrary_eventDoRadialDamageWithinCollision_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -129,10 +129,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 	{
 		((FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms), &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_attackClass = { UE4CodeGen_Private::EPropertyClass::Class, "attackClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms, attackClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_victim = { UE4CodeGen_Private::EPropertyClass::Interface, "victim", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms, victim), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_attacker = { UE4CodeGen_Private::EPropertyClass::Object, "attacker", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms, attacker), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms), &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_attackClass = { "attackClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms, attackClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_victim = { "victim", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms, victim), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_attacker = { "attacker", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms, attacker), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::NewProp_attackClass,
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		{ "ToolTip", "Checks if the aggro target is within attack range of a attack\n@param aggroTarget - the aggro target we want to check if they are within our attack range\n@param attackClass - the attack that we want to check if we are within attack range for\n@return true if they can be attacked and hit from our pawns location" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, "IsWithinAttackRange", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, nullptr, "IsWithinAttackRange", sizeof(FGCombatFunctionLibrary_eventIsWithinAttackRange_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -180,10 +180,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 	{
 		((FGCombatFunctionLibrary_eventIsWithinRange_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCombatFunctionLibrary_eventIsWithinRange_Parms), &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_range = { UE4CodeGen_Private::EPropertyClass::Float, "range", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinRange_Parms, range), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_victim = { UE4CodeGen_Private::EPropertyClass::Interface, "victim", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinRange_Parms, victim), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_attacker = { UE4CodeGen_Private::EPropertyClass::Object, "attacker", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinRange_Parms, attacker), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCombatFunctionLibrary_eventIsWithinRange_Parms), &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_range = { "range", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinRange_Parms, range), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_victim = { "victim", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinRange_Parms, victim), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_attacker = { "attacker", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventIsWithinRange_Parms, attacker), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::NewProp_range,
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		{ "ToolTip", "Checks if the aggro target is within specified range\n@param aggroTarget - the aggro target we want to check if they are within our  range\n@param range - the range that we want to check if we are within\n@return true if they can be reached from this range" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, "IsWithinRange", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGCombatFunctionLibrary_eventIsWithinRange_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, nullptr, "IsWithinRange", sizeof(FGCombatFunctionLibrary_eventIsWithinRange_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -222,8 +222,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventTryGetCharacterFromDamageCauser_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::NewProp_damageCauser = { UE4CodeGen_Private::EPropertyClass::Object, "damageCauser", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCombatFunctionLibrary_eventTryGetCharacterFromDamageCauser_Parms, damageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventTryGetCharacterFromDamageCauser_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::NewProp_damageCauser = { "damageCauser", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCombatFunctionLibrary_eventTryGetCharacterFromDamageCauser_Parms, damageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::NewProp_damageCauser,
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		{ "ToolTip", "Try get a pawn from a damage causer in take damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, "TryGetCharacterFromDamageCauser", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGCombatFunctionLibrary_eventTryGetCharacterFromDamageCauser_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCombatFunctionLibrary, nullptr, "TryGetCharacterFromDamageCauser", sizeof(FGCombatFunctionLibrary_eventTryGetCharacterFromDamageCauser_Parms), Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -264,10 +264,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision, "DoRadialDamageWithinCollision" }, // 709760535
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange, "IsWithinAttackRange" }, // 3776542952
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange, "IsWithinRange" }, // 1972183324
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser, "TryGetCharacterFromDamageCauser" }, // 1712015008
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision, "DoRadialDamageWithinCollision" }, // 3659033489
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange, "IsWithinAttackRange" }, // 3250265600
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange, "IsWithinRange" }, // 3743802969
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser, "TryGetCharacterFromDamageCauser" }, // 3724653806
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::Class_MetaDataParams[] = {
@@ -280,13 +280,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::ClassParams = {
 		&UFGCombatFunctionLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGCombatFunctionLibrary()
@@ -298,7 +302,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 2837774257);
+	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 3824579792);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCombatFunctionLibrary>()
+	{
+		return UFGCombatFunctionLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCombatFunctionLibrary(Z_Construct_UClass_UFGCombatFunctionLibrary, &UFGCombatFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCombatFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCombatFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

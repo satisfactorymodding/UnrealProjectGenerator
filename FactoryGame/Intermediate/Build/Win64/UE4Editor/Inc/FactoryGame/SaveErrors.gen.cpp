@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,10 +21,14 @@ class UScriptStruct* FErrors::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FErrors_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FErrors, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Errors"), sizeof(FErrors), Get_Z_Construct_UScriptStruct_FErrors_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FErrors_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FErrors, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Errors"), sizeof(FErrors), Get_Z_Construct_UScriptStruct_FErrors_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FErrors>()
+{
+	return FErrors::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FErrors(FErrors::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("Errors"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
@@ -69,16 +73,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 		{ "ToolTip", "All unknown classes" },
 	};
 #endif
-	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses = { UE4CodeGen_Private::EPropertyClass::Set, "UnknownClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FErrors, UnknownClasses), METADATA_PARAMS(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_MetaData)) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_ElementProp = { UE4CodeGen_Private::EPropertyClass::Str, "UnknownClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses = { "UnknownClasses", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FErrors, UnknownClasses), METADATA_PARAMS(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_ElementProp = { "UnknownClasses", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_MetaData[] = {
 		{ "ModuleRelativePath", "SaveErrors.h" },
 		{ "ToolTip", "All unknown levels" },
 	};
 #endif
-	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels = { UE4CodeGen_Private::EPropertyClass::Set, "UnknownLevels", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FErrors, UnknownLevels), METADATA_PARAMS(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_MetaData)) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_ElementProp = { UE4CodeGen_Private::EPropertyClass::Str, "UnknownLevels", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels = { "UnknownLevels", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FErrors, UnknownLevels), METADATA_PARAMS(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_ElementProp = { "UnknownLevels", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FErrors_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_ElementProp,
@@ -90,19 +94,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 		nullptr,
 		&NewStructOps,
 		"Errors",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
 		sizeof(FErrors),
 		alignof(FErrors),
-		Z_Construct_UScriptStruct_FErrors_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FErrors_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FErrors_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FErrors_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FErrors()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FErrors_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FErrors_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Errors"), sizeof(FErrors), Get_Z_Construct_UScriptStruct_FErrors_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Errors"), sizeof(FErrors), Get_Z_Construct_UScriptStruct_FErrors_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -112,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FErrors_CRC() { return 4082905970U; }
+	uint32 Get_Z_Construct_UScriptStruct_FErrors_Hash() { return 2098426448U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

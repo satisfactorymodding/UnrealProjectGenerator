@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -58,12 +58,12 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_errorMessage = { UE4CodeGen_Private::EPropertyClass::Text, "errorMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms, errorMessage), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_errorMessage = { "errorMessage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms, errorMessage), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful_SetBit(void* Obj)
 	{
 		((_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms*)Obj)->wasSuccessful = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful = { UE4CodeGen_Private::EPropertyClass::Bool, "wasSuccessful", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), &Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful = { "wasSuccessful", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), &Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_errorMessage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::NewProp_wasSuccessful,
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ModuleRelativePath", "FGSaveSession.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "SaveWorldImplementationSignature__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "SaveWorldImplementationSignature__DelegateSignature", sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Called every time by timer to trigger a autosave. Can be called manually if we want to trigger a autosave for key events" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "Autosave", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "Autosave", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_Autosave()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -145,8 +145,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveSession_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGet_Parms, ReturnValue), Z_Construct_UClass_UFGSaveSession_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveSession_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveSession_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGet_Parms, ReturnValue), Z_Construct_UClass_UFGSaveSession_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveSession_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_Get_Statics::NewProp_worldContext,
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Get the save system from a world" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGSaveSession_eventGet_Parms), Z_Construct_UFunction_UFGSaveSession_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "Get", sizeof(FGSaveSession_eventGet_Parms), Z_Construct_UFunction_UFGSaveSession_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -184,8 +184,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetBuildVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetBuildVersion_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetBuildVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetBuildVersion_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::NewProp_header,
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Get the build version this save was saved with" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetBuildVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetBuildVersion_Parms), Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetBuildVersion", sizeof(FGSaveSession_eventGetBuildVersion_Parms), Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetBuildVersion()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -222,8 +222,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetMapName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetMapName_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetMapName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetMapName_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::NewProp_header,
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Get the map that this save was saved with" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetMapName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetMapName_Parms), Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetMapName", sizeof(FGSaveSession_eventGetMapName_Parms), Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetMapName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -260,8 +260,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetMapOptions_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetMapOptions_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetMapOptions_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetMapOptions_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::NewProp_header,
@@ -273,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Get the options that this save was saved with" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetMapOptions", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetMapOptions_Parms), Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetMapOptions", sizeof(FGSaveSession_eventGetMapOptions_Parms), Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetMapOptions()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -298,8 +298,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetName_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetName_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetName_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetName_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetName_Statics::NewProp_header,
@@ -311,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "The name of the save game" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetName_Parms), Z_Construct_UFunction_UFGSaveSession_GetName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetName", sizeof(FGSaveSession_eventGetName_Parms), Z_Construct_UFunction_UFGSaveSession_GetName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -336,8 +336,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetPlayDurationSeconds_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetPlayDurationSeconds_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetPlayDurationSeconds_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetPlayDurationSeconds_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::NewProp_header,
@@ -349,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "The name of the save game" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetPlayDurationSeconds", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetPlayDurationSeconds_Parms), Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetPlayDurationSeconds", sizeof(FGSaveSession_eventGetPlayDurationSeconds_Parms), Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -374,8 +374,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveDateTime_Parms, ReturnValue), Z_Construct_UScriptStruct_FDateTime, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveDateTime_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveDateTime_Parms, ReturnValue), Z_Construct_UScriptStruct_FDateTime, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveDateTime_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::NewProp_header,
@@ -387,7 +387,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "The time this was saved" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSaveDateTime", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14C22401, sizeof(FGSaveSession_eventGetSaveDateTime_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetSaveDateTime", sizeof(FGSaveSession_eventGetSaveDateTime_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -412,8 +412,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionID_Parms, session), Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionID_Parms, session), Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::NewProp_session,
@@ -426,7 +426,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ModuleRelativePath", "FGSaveSession.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSaveSessionID", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSaveSessionID_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetSaveSessionID", sizeof(FGSaveSession_eventGetSaveSessionID_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -451,8 +451,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionName_Parms, session), Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionName_Parms, session), Z_Construct_UScriptStruct_FSessionSaveStruct, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::NewProp_session,
@@ -464,7 +464,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Returns the name of this session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSaveSessionName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSaveSessionName_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetSaveSessionName", sizeof(FGSaveSession_eventGetSaveSessionName_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -489,8 +489,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Byte, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionVisibility_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESessionVisibility, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionVisibility_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionVisibility_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESessionVisibility, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSaveSessionVisibility_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::NewProp_header,
@@ -502,7 +502,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Returns saved visibility of the session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSaveSessionVisibility", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSaveSessionVisibility_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetSaveSessionVisibility", sizeof(FGSaveSession_eventGetSaveSessionVisibility_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -527,8 +527,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSessionID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSessionID_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSessionID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSessionID_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::NewProp_header,
@@ -541,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ModuleRelativePath", "FGSaveSession.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSessionID", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSessionID_Parms), Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetSessionID", sizeof(FGSaveSession_eventGetSessionID_Parms), Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetSessionID()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -566,8 +566,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSessionName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetSessionName_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSessionName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetSessionName_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::NewProp_header,
@@ -579,7 +579,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "The session name of the save game" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSessionName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSessionName_Parms), Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetSessionName", sizeof(FGSaveSession_eventGetSessionName_Parms), Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetSessionName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -604,8 +604,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::NewProp_header = { UE4CodeGen_Private::EPropertyClass::Struct, "header", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventGetVersion_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::NewProp_header = { "header", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventGetVersion_Parms, header), Z_Construct_UScriptStruct_FSaveHeader, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::NewProp_header,
@@ -617,7 +617,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Get the save version of a header" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetVersion_Parms), Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "GetVersion", sizeof(FGSaveSession_eventGetVersion_Parms), Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_GetVersion()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -647,8 +647,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	{
 		((FGSaveSession_eventLoadGame_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSaveSession_eventLoadGame_Parms), &Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_saveName = { UE4CodeGen_Private::EPropertyClass::Str, "saveName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventLoadGame_Parms, saveName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveSession_eventLoadGame_Parms), &Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_saveName = { "saveName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventLoadGame_Parms, saveName), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::NewProp_saveName,
@@ -660,7 +660,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Starts loading a game\n\n@param saveName - the save file's name without extension\n@return true if a save game with that name exists and load happend successfully" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "LoadGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSaveSession_eventLoadGame_Parms), Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "LoadGame", sizeof(FGSaveSession_eventLoadGame_Parms), Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_LoadGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -683,7 +683,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::NewProp_destroyedActor = { UE4CodeGen_Private::EPropertyClass::Object, "destroyedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventOnActorDestroyed_Parms, destroyedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::NewProp_destroyedActor = { "destroyedActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventOnActorDestroyed_Parms, destroyedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::NewProp_destroyedActor,
 	};
@@ -693,7 +693,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Called when a save actor placed in the level is destroyed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "OnActorDestroyed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGSaveSession_eventOnActorDestroyed_Parms), Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "OnActorDestroyed", sizeof(FGSaveSession_eventOnActorDestroyed_Parms), Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -723,8 +723,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	{
 		((FGSaveSession_eventSaveGame_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSaveSession_eventSaveGame_Parms), &Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_fileName = { UE4CodeGen_Private::EPropertyClass::Str, "fileName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveSession_eventSaveGame_Parms, fileName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveSession_eventSaveGame_Parms), &Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_fileName = { "fileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveSession_eventSaveGame_Parms, fileName), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::NewProp_fileName,
@@ -736,7 +736,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Starts off the chain that triggers a save, save won't happen immidiately, but at end of frame\nto ensure that we don't save a incorrect state (i.e, half the worlds actors is ticked)\n\n@param fileName - a valid filename that we want to save the game to\n@param return true if the file name is a valid file name" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "SaveGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSaveSession_eventSaveGame_Parms), Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, nullptr, "SaveGame", sizeof(FGSaveSession_eventSaveGame_Parms), Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveSession_SaveGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -778,23 +778,23 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveSession_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSaveSession_Autosave, "Autosave" }, // 133108905
-		{ &Z_Construct_UFunction_UFGSaveSession_Get, "Get" }, // 2018884321
-		{ &Z_Construct_UFunction_UFGSaveSession_GetBuildVersion, "GetBuildVersion" }, // 3952397702
-		{ &Z_Construct_UFunction_UFGSaveSession_GetMapName, "GetMapName" }, // 2107067262
-		{ &Z_Construct_UFunction_UFGSaveSession_GetMapOptions, "GetMapOptions" }, // 2148223484
-		{ &Z_Construct_UFunction_UFGSaveSession_GetName, "GetName" }, // 485141776
-		{ &Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds, "GetPlayDurationSeconds" }, // 3791853063
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime, "GetSaveDateTime" }, // 1764922148
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID, "GetSaveSessionID" }, // 2642391915
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName, "GetSaveSessionName" }, // 2963010324
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility, "GetSaveSessionVisibility" }, // 1502736884
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionID, "GetSessionID" }, // 2720000174
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionName, "GetSessionName" }, // 4048079253
-		{ &Z_Construct_UFunction_UFGSaveSession_GetVersion, "GetVersion" }, // 2475508450
-		{ &Z_Construct_UFunction_UFGSaveSession_LoadGame, "LoadGame" }, // 1333678545
-		{ &Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed, "OnActorDestroyed" }, // 3896762487
-		{ &Z_Construct_UFunction_UFGSaveSession_SaveGame, "SaveGame" }, // 1146016266
+		{ &Z_Construct_UFunction_UFGSaveSession_Autosave, "Autosave" }, // 661954461
+		{ &Z_Construct_UFunction_UFGSaveSession_Get, "Get" }, // 362910626
+		{ &Z_Construct_UFunction_UFGSaveSession_GetBuildVersion, "GetBuildVersion" }, // 3369252766
+		{ &Z_Construct_UFunction_UFGSaveSession_GetMapName, "GetMapName" }, // 1463168578
+		{ &Z_Construct_UFunction_UFGSaveSession_GetMapOptions, "GetMapOptions" }, // 2838891554
+		{ &Z_Construct_UFunction_UFGSaveSession_GetName, "GetName" }, // 4144440687
+		{ &Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds, "GetPlayDurationSeconds" }, // 279717796
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime, "GetSaveDateTime" }, // 2125667991
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID, "GetSaveSessionID" }, // 484645034
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName, "GetSaveSessionName" }, // 3062989726
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility, "GetSaveSessionVisibility" }, // 296243368
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionID, "GetSessionID" }, // 3568801413
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionName, "GetSessionName" }, // 4275901830
+		{ &Z_Construct_UFunction_UFGSaveSession_GetVersion, "GetVersion" }, // 3433638939
+		{ &Z_Construct_UFunction_UFGSaveSession_LoadGame, "LoadGame" }, // 3405341061
+		{ &Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed, "OnActorDestroyed" }, // 2260934917
+		{ &Z_Construct_UFunction_UFGSaveSession_SaveGame, "SaveGame" }, // 1857147269
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams[] = {
@@ -809,14 +809,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "The number of autosaves to rotate" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves = { UE4CodeGen_Private::EPropertyClass::Int, "mNumRotatingAutosaves", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000004000, 1, nullptr, STRUCT_OFFSET(UFGSaveSession, mNumRotatingAutosaves), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves = { "mNumRotatingAutosaves", nullptr, (EPropertyFlags)0x0020080000004000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSaveSession, mNumRotatingAutosaves), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData[] = {
 		{ "ModuleRelativePath", "FGSaveSession.h" },
 		{ "ToolTip", "How often in seconds to autosave, a value of < 0 means disabled" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mAutosaveInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000002000, 1, nullptr, STRUCT_OFFSET(UFGSaveSession, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval = { "mAutosaveInterval", nullptr, (EPropertyFlags)0x0020080000002000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSaveSession, mAutosaveInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData[] = {
 		{ "Category", "Save" },
@@ -824,7 +824,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "ToolTip", "Delegate to listen for the result of the SaveWorldImpelementation" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnSaveWorld", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(UFGSaveSession, mOnSaveWorld), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld = { "mOnSaveWorld", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSaveSession, mOnSaveWorld), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSaveSession_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval,
@@ -835,13 +835,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSaveSession_Statics::ClassParams = {
 		&UFGSaveSession::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGSaveSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGSaveSession_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::PropPointers),
+		0,
+		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSaveSession()
@@ -853,7 +857,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSession, 3712416323);
+	IMPLEMENT_CLASS(UFGSaveSession, 3856259219);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveSession>()
+	{
+		return UFGSaveSession::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveSession(Z_Construct_UClass_UFGSaveSession, &UFGSaveSession::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveSession"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveSession);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

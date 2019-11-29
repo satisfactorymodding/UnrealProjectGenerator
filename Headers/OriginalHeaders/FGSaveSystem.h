@@ -166,7 +166,7 @@ public:
 	/** Get the path to the save folder for EPIC user ID, will return path to common directory if it fails to get EPIC user ID */
 	static bool GetUserSaveDirectoryPath( const UWorld* world, FString& out_dirPath );
 
-	/** Get the path to the save folder for saves not connected to an EPIC user ID */
+	/** Get the path to the save folder for saves not connected to an EPIC user ID (offline play, PIE, etc) */
 	static FString GetCommonSaveDirectoryPath();
 
 	/** All directories to find save data from */
@@ -277,7 +277,6 @@ public:
 	/** Moves a save file present in /common/ to the currently logged in player's epic ID folder */
 	static bool MoveSaveFileFromCommonToEpicLocation( const UWorld* world, const FString& saveName );
 
-	/** Checks whether or not a save file is present in the common directory */
 	static bool SaveFileExistsInCommonSaveDirectory( const FString& saveName );
 
 	/** Set so that we use our internal saves */
@@ -319,8 +318,4 @@ protected:
 
 	/** We are currently using internal saves */
 	static bool mIsUsingBundledSaves;
-
-private:
-	/** If the old SaveGames folder exists under MyDocuments it will rename it  */
-	void RenameDeprecatedSaveFolder();
 };

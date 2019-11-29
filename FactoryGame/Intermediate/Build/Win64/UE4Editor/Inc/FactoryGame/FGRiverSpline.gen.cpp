@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 	{
 		((AFGRiverSpline*)Obj)->mShouldHaveAudio = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio = { UE4CodeGen_Private::EPropertyClass::Bool, "mShouldHaveAudio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000815, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGRiverSpline), &Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio = { "mShouldHaveAudio", nullptr, (EPropertyFlags)0x0020080000000815, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGRiverSpline), &Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		{ "ToolTip", "The component that has our sound spline" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSoundSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080020080008, 1, nullptr, STRUCT_OFFSET(AFGRiverSpline, mSoundSplineComponent_DEPRECATED), Z_Construct_UClass_UFGSoundSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent = { "mSoundSplineComponent", nullptr, (EPropertyFlags)0x0020080020080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRiverSpline, mSoundSplineComponent_DEPRECATED), Z_Construct_UClass_UFGSoundSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval_MetaData[] = {
 		{ "Category", "Audio" },
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		{ "UIMin", "100" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mEmitterInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGRiverSpline, mEmitterInterval), METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval = { "mEmitterInterval", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRiverSpline, mEmitterInterval), METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mEmitterInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent_MetaData[] = {
 		{ "Category", "Audio" },
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		{ "ToolTip", "The audio event this river plays" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent = { UE4CodeGen_Private::EPropertyClass::Object, "mAudioEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000815, 1, nullptr, STRUCT_OFFSET(AFGRiverSpline, mAudioEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent = { "mAudioEvent", nullptr, (EPropertyFlags)0x0020080000000815, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRiverSpline, mAudioEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mAudioEvent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mShouldHaveAudio,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRiverSpline_Statics::NewProp_mSoundSplineComponent,
@@ -116,13 +116,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRiverSpline_Statics::ClassParams = {
 		&AFGRiverSpline::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers),
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRiverSpline()
@@ -134,7 +138,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRiverSpline, 2939056333);
+	IMPLEMENT_CLASS(AFGRiverSpline, 1035141041);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGRiverSpline>()
+	{
+		return AFGRiverSpline::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRiverSpline(Z_Construct_UClass_AFGRiverSpline, &AFGRiverSpline::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRiverSpline"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRiverSpline);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

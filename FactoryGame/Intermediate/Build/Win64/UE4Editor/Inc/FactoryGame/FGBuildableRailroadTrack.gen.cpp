@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -30,10 +30,14 @@ class UScriptStruct* FRailroadTrackPosition::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FRailroadTrackPosition, Z_Construct_UPackage__Script_FactoryGame(), TEXT("RailroadTrackPosition"), sizeof(FRailroadTrackPosition), Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FRailroadTrackPosition, Z_Construct_UPackage__Script_FactoryGame(), TEXT("RailroadTrackPosition"), sizeof(FRailroadTrackPosition), Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FRailroadTrackPosition>()
+{
+	return FRailroadTrackPosition::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FRailroadTrackPosition(FRailroadTrackPosition::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("RailroadTrackPosition"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosition
@@ -81,21 +85,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "How are we rotated on this segment.\n 1: We travel forward by increasing the offset (Along the spline).\n-1: We travel forward by decreasing the offset (Against the spine)." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward = { UE4CodeGen_Private::EPropertyClass::Float, "Forward", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FRailroadTrackPosition, Forward), METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward = { "Forward", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRailroadTrackPosition, Forward), METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "Offset along the track." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset = { UE4CodeGen_Private::EPropertyClass::Float, "Offset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FRailroadTrackPosition, Offset), METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset = { "Offset", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRailroadTrackPosition, Offset), METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
 		{ "ToolTip", "This is the track segment this position is on.\nIf null then this is not a valid position." },
 	};
 #endif
-	const UE4CodeGen_Private::FWeakObjectPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track = { UE4CodeGen_Private::EPropertyClass::WeakObject, "Track", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000000, 1, nullptr, STRUCT_OFFSET(FRailroadTrackPosition, Track), Z_Construct_UClass_AFGBuildableRailroadTrack_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track_MetaData)) };
+	const UE4CodeGen_Private::FWeakObjectPropertyParams Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track = { "Track", nullptr, (EPropertyFlags)0x0014000000000000, UE4CodeGen_Private::EPropertyGenFlags::WeakObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRailroadTrackPosition, Track), Z_Construct_UClass_AFGBuildableRailroadTrack_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Track_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Forward,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::NewProp_Offset,
@@ -106,19 +110,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		nullptr,
 		&NewStructOps,
 		"RailroadTrackPosition",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FRailroadTrackPosition),
 		alignof(FRailroadTrackPosition),
-		Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRailroadTrackPosition()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("RailroadTrackPosition"), sizeof(FRailroadTrackPosition), Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("RailroadTrackPosition"), sizeof(FRailroadTrackPosition), Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -128,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_CRC() { return 2014655983U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash() { return 3137954858U; }
 	void AFGBuildableRailroadTrack::StaticRegisterNativesAFGBuildableRailroadTrack()
 	{
 		UClass* Class = AFGBuildableRailroadTrack::StaticClass();
@@ -151,7 +156,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableRailroadTrack_eventGetLength_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableRailroadTrack_eventGetLength_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::NewProp_ReturnValue,
 	};
@@ -162,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "Get the length of this track." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadTrack, "GetLength", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableRailroadTrack_eventGetLength_Parms), Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadTrack, nullptr, "GetLength", sizeof(FGBuildableRailroadTrack_eventGetLength_Parms), Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -193,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBuildableRailroadTrack_eventGetSplineComponent_Parms, ReturnValue), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableRailroadTrack_eventGetSplineComponent_Parms, ReturnValue), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::NewProp_ReturnValue,
 	};
@@ -204,7 +209,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "Get the spline for this track." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadTrack, "GetSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableRailroadTrack_eventGetSplineComponent_Parms), Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadTrack, nullptr, "GetSplineComponent", sizeof(FGBuildableRailroadTrack_eventGetSplineComponent_Parms), Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -260,8 +265,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength, "GetLength" }, // 1739822506
-		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent, "GetSplineComponent" }, // 2903961758
+		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetLength, "GetLength" }, // 729292308
+		{ &Z_Construct_UFunction_AFGBuildableRailroadTrack_GetSplineComponent, "GetSplineComponent" }, // 225020497
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::Class_MetaDataParams[] = {
@@ -281,7 +286,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 	{
 		((AFGBuildableRailroadTrack*)Obj)->mIsOwnedByPlatform = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsOwnedByPlatform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableRailroadTrack), &Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform = { "mIsOwnedByPlatform", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableRailroadTrack), &Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData[] = {
 		{ "EditInline", "true" },
@@ -289,7 +294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "This tracks connection component." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections = { UE4CodeGen_Private::EPropertyClass::Object, "mConnections", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080008, CPP_ARRAY_DIM(mConnections, AFGBuildableRailroadTrack), nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mConnections), Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections = { "mConnections", nullptr, (EPropertyFlags)0x0040000001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConnections, AFGBuildableRailroadTrack), STRUCT_OFFSET(AFGBuildableRailroadTrack, mConnections), Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadTrack.h" },
@@ -297,8 +302,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "Spline data saved in a compact form for saving and replicating. All the vectors are in local space." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData = { UE4CodeGen_Private::EPropertyClass::Array, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData = { "mSplineData", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRailroadTrack, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineData_Inner = { "mSplineData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
@@ -307,7 +312,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "The spline component for this train track." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mSplineComponent), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent = { "mSplineComponent", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRailroadTrack, mSplineComponent), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mSplineComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength_MetaData[] = {
 		{ "Category", "Track" },
@@ -315,7 +320,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "Length of the mesh to use for this track" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength = { UE4CodeGen_Private::EPropertyClass::Float, "mMeshLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mMeshLength), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength = { "mMeshLength", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRailroadTrack, mMeshLength), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMeshLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData[] = {
 		{ "Category", "Track" },
@@ -323,7 +328,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		{ "ToolTip", "Mesh to use for his track." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadTrack, mMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh = { "mMesh", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRailroadTrack, mMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mIsOwnedByPlatform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::NewProp_mConnections,
@@ -338,13 +343,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::ClassParams = {
 		&AFGBuildableRailroadTrack::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadTrack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableRailroadTrack()
@@ -356,7 +365,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 447396905);
+	IMPLEMENT_CLASS(AFGBuildableRailroadTrack, 4121056373);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadTrack>()
+	{
+		return AFGBuildableRailroadTrack::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadTrack(Z_Construct_UClass_AFGBuildableRailroadTrack, &AFGBuildableRailroadTrack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadTrack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadTrack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -33,6 +33,7 @@ public:
 	virtual void CalcVelocity( float dt, float friction, bool isFluid, float brakingDeceleration ) override;
 	virtual float GetMaxSpeed() const override;
 	virtual void SetDefaultMovementMode() override;
+	virtual float GetMaxJumpZVelocity() const override;
 	// End UCharacterMovementComponent
 
 
@@ -53,11 +54,24 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Sprint" )
 	FORCEINLINE bool GetWantsToSprint() const { return mWantsToSprint; }
 
+	/** Get mBaseVelocity */
+	UFUNCTION( BlueprintPure, Category = "Movement" )
+	FORCEINLINE FVector GetBaseVelocity() const { return mBaseVelocity; }
+
 	/** Set if the player wants to sprint or not */
 	void SetWantsToSprint( bool wantsToSprint );
 
+	/** Get mIsSliding */
+	FORCEINLINE bool IsSliding() const { return mIsSliding; }
+
 	/** Gets the accumulated impulse we want to apply */
 	FORCEINLINE FVector GetPendingImpulseToApply(){ return PendingImpulseToApply; }
+
+	/** Gets last slide time */
+	FORCEINLINE float GetLastSlideTime() const{ return mLastSlideTime; }
+
+	/** Gets last slide time */
+	FORCEINLINE float GetBoostJumpTimeWindow() const { return mBoostJumpTimeWindow; }
 
 	/** Setter for the chute */
 	FORCEINLINE void SetCachedParachute( class AFGParachute* inParachute ) { mCachedParachute = inParachute; } 
@@ -76,6 +90,14 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Ladder" )
 	class UFGLadderComponent* GetOnLadder() const;
 
+	/** updates if the player wants to slide*/
+	void UpdateWantsToSlide();
+
+	/** Get mBoostJumpVelocityMultiplier */
+	FORCEINLINE float GetBoostJumpVelocityMultiplier() const { return mBoostJumpVelocityMultiplier; }
+
+	/** Checks if we still can slide */
+	void UpdateSlideStatus();
 protected:
 	// Begin UCharacterMovementComponent
 	virtual void UpdateFromCompressedFlags(uint8 flags) override;
@@ -86,10 +108,7 @@ protected:
 
 	void SetOnLadder( class UFGLadderComponent* ladder );
 
-
-
 	virtual void PhysFlying( float deltaTime, int32 Iterations ) override;
-
 private:
 	/** Apply ladder climb physics */
 	void PhysLadder( float deltaTime, int32 iterations );
@@ -101,7 +120,7 @@ private:
 	void UpdateHookshot( float deltaSeconds, FVector oldLocation );
 
 	/** Checks if we still can sprint */
-	void UpdateSprintStatus( float delta );
+	void UpdateSprintStatus();
 
 	/** Updates everything that has to do with Parachute */
 	void UpdateParachute( float delta );
@@ -110,7 +129,13 @@ private:
 	void UpdateJumpingStilts( float deltaSeconds );
 
 	/** Returns true if the player is allowed to sprint */
-	bool CanSprint();
+	bool CanSprint() const;
+
+	/** Returns true if the player can slide with current values */
+	bool CanSlide() const;
+
+	/** Returns true if the player is allowed to start a slide */
+	bool CanStartSlide() const;
 
 	/** Returns or finds the jet pack */
 	class AFGJetPack* GetCachedJetPack();
@@ -124,6 +149,8 @@ private:
 	/** Returns or finds the parachute */
 	class AFGJumpingStilts* GetCachedJumpingStilts();
 
+	/** Ticks the slide timer so we know for how long the slide has been ongoing */
+	void TickSlide( float delta );
 public:
 	/** Timestamp of last time we jumped */
 	UPROPERTY( BlueprintReadOnly, Category = "Jump" )
@@ -146,6 +173,15 @@ public:
 
 	/** Keeps is the player sprinting this update or not? */
 	bool mIsSprinting;
+
+	/** True if the player wants to sprint */
+	bool mWantsToSlide;
+
+	/** Keeps is the player sprinting this update or not? */
+	bool mIsSliding;
+
+	/** Keep track of what status was for mIsSliding */
+	bool mLastIsSliding; 
 
 	/** The minimum dot value between velocity and character forward to allow sprint.*/
 	UPROPERTY( EditDefaultsOnly, BlueprintReadOnly, Category = "Sprint" )
@@ -181,6 +217,42 @@ private:
 	UPROPERTY()
 	UFGLadderComponent* mOnLadder;
 
+	/** Get velocity from curve when sliding */
+	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
+	UCurveFloat* mSlideCurve;
+
+	/** Gets the multiplier for slope velocity */
+	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
+	UCurveFloat* mSlopeCurve;
+
+	/** How long have we been sliding */
+	float mSlideTime;
+
+	/** Max angle ( in radians ) for allowing to slide */
+	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
+	float mMaxSlideAngle;
+
+	/** Velocity added from conveyor belts or other sources */
+	FVector mAddedVelocity;
+
+	/** Velocity for the actor without external influence like conveyor belts */
+	UPROPERTY()
+	FVector mBaseVelocity;
+
+	/* Multiplier for boost jump for Z velocity */
+	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
+	float mBoostJumpZMultiplier;
+
+	/* Multiplier for velocity in 2D when boost jumping */
+	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
+	float mBoostJumpVelocityMultiplier;
+
+	/** Timestamp for when we ended the last slide */
+	float mLastSlideTime;
+
+	/* How long time after a slide a jump can be input and be counted as a boost jump*/
+	UPROPERTY( EditDefaultsOnly, Category = "Movement" )
+	float mBoostJumpTimeWindow;
 
 	//Cheat
 	public:
@@ -216,6 +288,8 @@ public:
 	uint8 mSavedIsSprinting : 1;
 
 	uint8 mSavedIsParachuting : 1;
+
+	uint8 mSavedIsSliding : 1;
 
 	FVector mSavedHookLocation;
 };

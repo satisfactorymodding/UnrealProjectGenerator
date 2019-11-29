@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableWindTurbine_Statics::ClassParams = {
 		&AFGBuildableWindTurbine::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWindTurbine_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWindTurbine_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableWindTurbine()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 3669269228);
+	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 1646359188);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWindTurbine>()
+	{
+		return AFGBuildableWindTurbine::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWindTurbine(Z_Construct_UClass_AFGBuildableWindTurbine, &AFGBuildableWindTurbine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWindTurbine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWindTurbine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -42,13 +42,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EFactoryConnectionDirection>()
+	{
+		return EFactoryConnectionDirection_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFactoryConnectionDirection(EFactoryConnectionDirection_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFactoryConnectionDirection"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection_CRC() { return 2828550395U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection_Hash() { return 941565608U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFactoryConnectionDirection"), 0, Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFactoryConnectionDirection"), 0, Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -76,14 +80,14 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EFactoryConnectionDirection",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EFactoryConnectionDirection",
 				"EFactoryConnectionDirection",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -99,13 +103,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EFactoryConnectionConnector>()
+	{
+		return EFactoryConnectionConnector_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFactoryConnectionConnector(EFactoryConnectionConnector_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFactoryConnectionConnector"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_CRC() { return 2148547532U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash() { return 4260268664U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFactoryConnectionConnector"), 0, Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFactoryConnectionConnector"), 0, Get_Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -128,14 +136,14 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EFactoryConnectionConnector",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EFactoryConnectionConnector",
 				"EFactoryConnectionConnector",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -182,10 +190,10 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Class, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_out_OffsetBeyond = { UE4CodeGen_Private::EPropertyClass::Float, "out_OffsetBeyond", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms, out_OffsetBeyond), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_out_item = { UE4CodeGen_Private::EPropertyClass::Struct, "out_item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms, out_item), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_type = { "type", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_out_OffsetBeyond = { "out_OffsetBeyond", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms, out_OffsetBeyond), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_out_item = { "out_item", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms, out_item), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::NewProp_type,
@@ -200,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Grab the output on a connection (Grabs 1 resource).\n@param type - Type to grab if output has multiple types, nullptr for any.\n@param offset - if we are grabbing from a belt the item might have an offset beyond the belt's length\n@return valid resource descriptor on success; nullptr if no output of given type exists." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "Factory_GrabOutput", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "Factory_GrabOutput", sizeof(FGFactoryConnectionComponent_eventFactory_GrabOutput_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -232,9 +240,9 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Class, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_out_item = { UE4CodeGen_Private::EPropertyClass::Struct, "out_item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms, out_item), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_type = { "type", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_out_item = { "out_item", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms, out_item), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::NewProp_type,
@@ -247,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Internal function, for when overloading how to handle a grab, grabs our output from a inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "Factory_Internal_GrabOutputInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "Factory_Internal_GrabOutputInventory", sizeof(FGFactoryConnectionComponent_eventFactory_Internal_GrabOutputInventory_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -280,10 +288,10 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Class, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_out_items = { UE4CodeGen_Private::EPropertyClass::Array, "out_items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms, out_items), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_out_items_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_type = { "type", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_out_items = { "out_items", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms, out_items), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_out_items_Inner = { "out_items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::NewProp_type,
@@ -297,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Internal function, for when overloading how to handle a peek, peeks our output from a inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "Factory_Internal_PeekOutputInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "Factory_Internal_PeekOutputInventory", sizeof(FGFactoryConnectionComponent_eventFactory_Internal_PeekOutputInventory_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -330,10 +338,10 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Class, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_out_items = { UE4CodeGen_Private::EPropertyClass::Array, "out_items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms, out_items), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_out_items_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_type = { "type", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms, type), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_out_items = { "out_items", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms, out_items), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_out_items_Inner = { "out_items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::NewProp_type,
@@ -348,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Check this connection has a output\n@param type - Optionally check the type of the output, nullptr for any.\n@return true if it has output; false if no output or" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "Factory_PeekOutput", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "Factory_PeekOutput", sizeof(FGFactoryConnectionComponent_eventFactory_PeekOutput_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -372,8 +380,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetConnector_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetConnector_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::NewProp_ReturnValue_Underlying,
@@ -385,7 +393,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Return the connector used for this connection." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "GetConnector", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryConnectionComponent_eventGetConnector_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "GetConnector", sizeof(FGFactoryConnectionComponent_eventGetConnector_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -408,7 +416,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetConnectorClearance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetConnectorClearance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::NewProp_ReturnValue,
 	};
@@ -419,7 +427,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Return the clearance needed when routing a conveyor belt from this connection." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "GetConnectorClearance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryConnectionComponent_eventGetConnectorClearance_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "GetConnectorClearance", sizeof(FGFactoryConnectionComponent_eventGetConnectorClearance_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -443,8 +451,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetDirection_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetDirection_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::NewProp_ReturnValue_Underlying,
@@ -456,7 +464,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Return the direction for this connection." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "GetDirection", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryConnectionComponent_eventGetDirection_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "GetDirection", sizeof(FGFactoryConnectionComponent_eventGetDirection_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -487,7 +495,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryConnectionComponent_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::NewProp_ReturnValue,
 	};
@@ -498,7 +506,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Return the inventory associated with this connection." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "GetInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryConnectionComponent_eventGetInventory_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "GetInventory", sizeof(FGFactoryConnectionComponent_eventGetInventory_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -526,7 +534,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((FGFactoryConnectionComponent_eventIsConnected_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFactoryConnectionComponent_eventIsConnected_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFactoryConnectionComponent_eventIsConnected_Parms), &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::NewProp_ReturnValue,
 	};
@@ -537,7 +545,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Is this connection connected to anything.\n@return - true if connected; otherwise false. Always false if attached to hologram, snap only or bad index configuration." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, "IsConnected", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryConnectionComponent_eventIsConnected_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryConnectionComponent, nullptr, "IsConnected", sizeof(FGFactoryConnectionComponent_eventIsConnected_Parms), Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -599,15 +607,15 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput, "Factory_GrabOutput" }, // 905564740
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory, "Factory_Internal_GrabOutputInventory" }, // 1582850266
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory, "Factory_Internal_PeekOutputInventory" }, // 681871635
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput, "Factory_PeekOutput" }, // 1450137819
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector, "GetConnector" }, // 3487442117
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance, "GetConnectorClearance" }, // 38316970
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection, "GetDirection" }, // 422592364
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory, "GetInventory" }, // 1120349128
-		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected, "IsConnected" }, // 3152620520
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_GrabOutput, "Factory_GrabOutput" }, // 855034474
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_GrabOutputInventory, "Factory_Internal_GrabOutputInventory" }, // 4060364343
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_Internal_PeekOutputInventory, "Factory_Internal_PeekOutputInventory" }, // 2414149410
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_Factory_PeekOutput, "Factory_PeekOutput" }, // 488760587
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnector, "GetConnector" }, // 3194377030
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetConnectorClearance, "GetConnectorClearance" }, // 1768990620
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetDirection, "GetDirection" }, // 2499514412
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_GetInventory, "GetInventory" }, // 3928213840
+		{ &Z_Construct_UFunction_UFGFactoryConnectionComponent_IsConnected, "IsConnected" }, // 2243851271
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams[] = {
@@ -630,7 +638,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((UFGFactoryConnectionComponent*)Obj)->mForwardPeekAndGrabToBuildable = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable = { UE4CodeGen_Private::EPropertyClass::Bool, "mForwardPeekAndGrabToBuildable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable = { "mForwardPeekAndGrabToBuildable", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData[] = {
 		{ "EditInline", "true" },
@@ -638,7 +646,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "The inventory of this connection" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectionInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080008, 1, nullptr, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectionInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory = { "mConnectionInventory", nullptr, (EPropertyFlags)0x0020080001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectionInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryConnectionComponent.h" },
@@ -648,7 +656,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	{
 		((UFGFactoryConnectionComponent*)Obj)->mHasConnectedComponent = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasConnectedComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent = { "mHasConnectedComponent", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGFactoryConnectionComponent), &Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mHasConnectedComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -656,7 +664,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Connection to another component. If this is set we're connected." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectedComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080008, 1, nullptr, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectedComponent), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent = { "mConnectedComponent", nullptr, (EPropertyFlags)0x0020080001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectedComponent), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectedComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance_MetaData[] = {
 		{ "Category", "Connection" },
@@ -664,7 +672,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "How long the connector is extending, indicates where the connected conveyor may start turning." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance = { UE4CodeGen_Private::EPropertyClass::Float, "mConnectorClearance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectorClearance), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance = { "mConnectorClearance", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnectorClearance), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectorClearance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_MetaData[] = {
 		{ "Category", "Connection" },
@@ -672,8 +680,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Direction for this connection." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection = { UE4CodeGen_Private::EPropertyClass::Enum, "mDirection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryConnectionComponent, mDirection), Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection = { "mDirection", nullptr, (EPropertyFlags)0x0020080001010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mDirection), Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mDirection_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_MetaData[] = {
 		{ "Category", "Connection" },
@@ -681,8 +689,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		{ "ToolTip", "Physical type of connector used for this connection." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector = { UE4CodeGen_Private::EPropertyClass::Enum, "mConnector", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnector), Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector = { "mConnector", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryConnectionComponent, mConnector), Z_Construct_UEnum_FactoryGame_EFactoryConnectionConnector, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnector_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mForwardPeekAndGrabToBuildable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::NewProp_mConnectionInventory,
@@ -699,13 +707,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::ClassParams = {
 		&UFGFactoryConnectionComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::PropPointers),
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryConnectionComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFactoryConnectionComponent()
@@ -717,7 +729,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 2207351787);
+	IMPLEMENT_CLASS(UFGFactoryConnectionComponent, 563679631);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryConnectionComponent>()
+	{
+		return UFGFactoryConnectionComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactoryConnectionComponent(Z_Construct_UClass_UFGFactoryConnectionComponent, &UFGFactoryConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactoryConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactoryConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

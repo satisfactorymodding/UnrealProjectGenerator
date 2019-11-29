@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRemoteCallObject_eventGetGameState_Parms, ReturnValue), Z_Construct_UClass_AFGGameState_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRemoteCallObject_eventGetGameState_Parms, ReturnValue), Z_Construct_UClass_AFGGameState_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::NewProp_ReturnValue,
 	};
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 		{ "ToolTip", "Helper function to get the game state. Can't be done in BluePrint since the GetGameState function hides it world context pin" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRemoteCallObject, "GetGameState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGRemoteCallObject_eventGetGameState_Parms), Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRemoteCallObject, nullptr, "GetGameState", sizeof(FGRemoteCallObject_eventGetGameState_Parms), Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRemoteCallObject_GetGameState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRemoteCallObject_GetGameState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRemoteCallObject_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRemoteCallObject_GetGameState, "GetGameState" }, // 1852879572
+		{ &Z_Construct_UFunction_UFGRemoteCallObject_GetGameState, "GetGameState" }, // 3046557556
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRemoteCallObject_Statics::Class_MetaDataParams[] = {
@@ -94,13 +94,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRemoteCallObject_Statics::ClassParams = {
 		&UFGRemoteCallObject::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRemoteCallObject_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRemoteCallObject_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRemoteCallObject()
@@ -112,7 +116,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRemoteCallObject() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRemoteCallObject, 111022707);
+	IMPLEMENT_CLASS(UFGRemoteCallObject, 2420572653);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGRemoteCallObject>()
+	{
+		return UFGRemoteCallObject::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRemoteCallObject(Z_Construct_UClass_UFGRemoteCallObject, &UFGRemoteCallObject::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRemoteCallObject"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRemoteCallObject);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

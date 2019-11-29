@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -34,7 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPowerCircuitWidget_eventGetPowerCircuit_Parms, ReturnValue), Z_Construct_UClass_UFGPowerCircuit_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuitWidget_eventGetPowerCircuit_Parms, ReturnValue), Z_Construct_UClass_UFGPowerCircuit_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::NewProp_ReturnValue,
 	};
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		{ "ToolTip", "Delegate for getting the power circuit to display." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuitWidget, "GetPowerCircuit__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00120000, sizeof(FGPowerCircuitWidget_eventGetPowerCircuit_Parms), Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuitWidget, nullptr, "GetPowerCircuit__DelegateSignature", sizeof(FGPowerCircuitWidget_eventGetPowerCircuit_Parms), Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPowerCircuitWidget_eventGetPowerCircuit_Parms, ReturnValue), Z_Construct_UClass_UFGPowerCircuit_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuitWidget_eventGetPowerCircuit_Parms, ReturnValue), Z_Construct_UClass_UFGPowerCircuit_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::NewProp_ReturnValue,
 	};
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		{ "ToolTip", "@return Get the power circuit to display info for, may be null." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuitWidget, "GetPowerCircuit", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGPowerCircuitWidget_eventGetPowerCircuit_Parms), Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuitWidget, nullptr, "GetPowerCircuit", sizeof(FGPowerCircuitWidget_eventGetPowerCircuit_Parms), Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -124,8 +124,8 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPowerCircuitWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit, "GetPowerCircuit" }, // 3894665737
-		{ &Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature, "GetPowerCircuit__DelegateSignature" }, // 2380796178
+		{ &Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit, "GetPowerCircuit" }, // 1487311232
+		{ &Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature, "GetPowerCircuit__DelegateSignature" }, // 715902633
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuitWidget_Statics::Class_MetaDataParams[] = {
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		{ "ToolTip", "Power circuit we're observing." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit = { UE4CodeGen_Private::EPropertyClass::Object, "mPowerCircuit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGPowerCircuitWidget, mPowerCircuit), Z_Construct_UClass_UFGPowerCircuit_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit = { "mPowerCircuit", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuitWidget, mPowerCircuit), Z_Construct_UClass_UFGPowerCircuit_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent_MetaData[] = {
 		{ "Category", "Events" },
@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		{ "ToolTip", "Delegate for getting the number of items to display." },
 	};
 #endif
-	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent = { UE4CodeGen_Private::EPropertyClass::Delegate, "mGetPowerCircuitEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080001, 1, nullptr, STRUCT_OFFSET(UFGPowerCircuitWidget, mGetPowerCircuitEvent), Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent_MetaData)) };
+	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent = { "mGetPowerCircuitEvent", nullptr, (EPropertyFlags)0x0010000000080001, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuitWidget, mGetPowerCircuitEvent), Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGPowerCircuitWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mGetPowerCircuitEvent,
@@ -160,13 +160,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPowerCircuitWidget_Statics::ClassParams = {
 		&UFGPowerCircuitWidget::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGPowerCircuitWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGPowerCircuitWidget_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::PropPointers),
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuitWidget_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPowerCircuitWidget()
@@ -178,7 +182,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerCircuitWidget, 142632379);
+	IMPLEMENT_CLASS(UFGPowerCircuitWidget, 3151125325);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerCircuitWidget>()
+	{
+		return UFGPowerCircuitWidget::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerCircuitWidget(Z_Construct_UClass_UFGPowerCircuitWidget, &UFGPowerCircuitWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerCircuitWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerCircuitWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

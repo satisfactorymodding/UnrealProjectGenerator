@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -28,6 +28,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGEquipment_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments();
@@ -38,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryItem();
 	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EEquipmentSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGInventoryComponentBeltSlot_NoRegister();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor();
@@ -78,6 +81,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing();
@@ -87,6 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsSliding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked();
@@ -99,9 +105,12 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed();
@@ -128,6 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment();
@@ -153,13 +163,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ECameraMode>()
+	{
+		return ECameraMode_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECameraMode(ECameraMode_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECameraMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECameraMode_CRC() { return 2761527237U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECameraMode_Hash() { return 1026291119U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECameraMode()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ECameraMode"), 0, Get_Z_Construct_UEnum_FactoryGame_ECameraMode_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ECameraMode"), 0, Get_Z_Construct_UEnum_FactoryGame_ECameraMode_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -178,14 +192,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterPlayer() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"ECameraMode",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"ECameraMode",
 				"ECameraMode",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -197,10 +211,14 @@ class UScriptStruct* FDisabledInputGate::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDisabledInputGate, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DisabledInputGate"), sizeof(FDisabledInputGate), Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDisabledInputGate, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DisabledInputGate"), sizeof(FDisabledInputGate), Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDisabledInputGate>()
+{
+	return FDisabledInputGate::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDisabledInputGate(FDisabledInputGate::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DisabledInputGate"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
@@ -300,7 +318,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mVehicleRecording = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording = { UE4CodeGen_Private::EPropertyClass::Bool, "mVehicleRecording", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording = { "mVehicleRecording", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_MetaData[] = {
 		{ "Category", "Input" },
@@ -311,7 +329,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mUse = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse = { UE4CodeGen_Private::EPropertyClass::Bool, "mUse", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse = { "mUse", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_MetaData[] = {
 		{ "Category", "Input" },
@@ -322,7 +340,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mChat = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat = { UE4CodeGen_Private::EPropertyClass::Bool, "mChat", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat = { "mChat", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mChat_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_MetaData[] = {
 		{ "Category", "Input" },
@@ -333,7 +351,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mJump = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump = { UE4CodeGen_Private::EPropertyClass::Bool, "mJump", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump = { "mJump", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mJump_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_MetaData[] = {
 		{ "Category", "Input" },
@@ -344,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mHotbar = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar = { UE4CodeGen_Private::EPropertyClass::Bool, "mHotbar", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar = { "mHotbar", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mHotbar_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_MetaData[] = {
 		{ "Category", "Input" },
@@ -355,7 +373,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mToggleMap = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap = { UE4CodeGen_Private::EPropertyClass::Bool, "mToggleMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap = { "mToggleMap", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mToggleMap_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_MetaData[] = {
 		{ "Category", "Input" },
@@ -366,7 +384,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mInventory = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Bool, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory = { "mInventory", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_MetaData[] = {
 		{ "Category", "Input" },
@@ -377,7 +395,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mOpenCodex = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex = { UE4CodeGen_Private::EPropertyClass::Bool, "mOpenCodex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex = { "mOpenCodex", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mOpenCodex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_MetaData[] = {
 		{ "Category", "Input" },
@@ -388,7 +406,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mResourceScanner = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner = { UE4CodeGen_Private::EPropertyClass::Bool, "mResourceScanner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner = { "mResourceScanner", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mResourceScanner_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_MetaData[] = {
 		{ "Category", "Input" },
@@ -399,7 +417,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mFlashLight = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight = { UE4CodeGen_Private::EPropertyClass::Bool, "mFlashLight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight = { "mFlashLight", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mFlashLight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_MetaData[] = {
 		{ "Category", "Input" },
@@ -410,7 +428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mDismantle = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle = { UE4CodeGen_Private::EPropertyClass::Bool, "mDismantle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle = { "mDismantle", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mDismantle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_MetaData[] = {
 		{ "Category", "Input" },
@@ -421,7 +439,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FDisabledInputGate*)Obj)->mBuildGun = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun = { UE4CodeGen_Private::EPropertyClass::Bool, "mBuildGun", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun = { "mBuildGun", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(FDisabledInputGate), &Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mBuildGun_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mVehicleRecording,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDisabledInputGate_Statics::NewProp_mUse,
@@ -441,19 +459,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		nullptr,
 		&NewStructOps,
 		"DisabledInputGate",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDisabledInputGate),
 		alignof(FDisabledInputGate),
-		Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDisabledInputGate()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DisabledInputGate"), sizeof(FDisabledInputGate), Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DisabledInputGate"), sizeof(FDisabledInputGate), Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -463,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC() { return 1293852110U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash() { return 176273029U; }
 	void UFGUseState_ReviveInvalid_PlayerNotDead::StaticRegisterNativesUFGUseState_ReviveInvalid_PlayerNotDead()
 	{
 	}
@@ -496,13 +515,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::ClassParams = {
 		&UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead()
@@ -514,7 +537,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 4042680088);
+	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 2377614032);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ReviveInvalid_PlayerNotDead>()
+	{
+		return UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_ReviveInvalid_PlayerNotDead(Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead, &UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_ReviveInvalid_PlayerNotDead"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_ReviveInvalid_PlayerNotDead);
 	void UFGUseState_ReviveValid::StaticRegisterNativesUFGUseState_ReviveValid()
@@ -549,13 +576,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_ReviveValid_Statics::ClassParams = {
 		&UFGUseState_ReviveValid::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_ReviveValid_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_ReviveValid_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_ReviveValid()
@@ -567,7 +598,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 2481383059);
+	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 1558799613);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ReviveValid>()
+	{
+		return UFGUseState_ReviveValid::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_ReviveValid(Z_Construct_UClass_UFGUseState_ReviveValid, &UFGUseState_ReviveValid::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_ReviveValid"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_ReviveValid);
 	static FName NAME_AFGCharacterPlayer_CameraZoomIn = FName(TEXT("CameraZoomIn"));
@@ -630,6 +665,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	void AFGCharacterPlayer::OnReviveComplete()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnReviveComplete),NULL);
+	}
+	static FName NAME_AFGCharacterPlayer_OnSlideEndLocal = FName(TEXT("OnSlideEndLocal"));
+	void AFGCharacterPlayer::OnSlideEndLocal()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnSlideEndLocal),NULL);
+	}
+	static FName NAME_AFGCharacterPlayer_OnSlideStartLocal = FName(TEXT("OnSlideStartLocal"));
+	void AFGCharacterPlayer::OnSlideStartLocal()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_OnSlideStartLocal),NULL);
 	}
 	static FName NAME_AFGCharacterPlayer_OnSpawnDeathMarker = FName(TEXT("OnSpawnDeathMarker"));
 	void AFGCharacterPlayer::OnSpawnDeathMarker()
@@ -733,6 +778,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_StopFreeRotate3P),NULL);
 	}
+	static FName NAME_AFGCharacterPlayer_TickVisuals = FName(TEXT("TickVisuals"));
+	void AFGCharacterPlayer::TickVisuals(float dt)
+	{
+		FGCharacterPlayer_eventTickVisuals_Parms Parms;
+		Parms.dt=dt;
+		ProcessEvent(FindFunctionChecked(NAME_AFGCharacterPlayer_TickVisuals),&Parms);
+	}
 	void AFGCharacterPlayer::StaticRegisterNativesAFGCharacterPlayer()
 	{
 		UClass* Class = AFGCharacterPlayer::StaticClass();
@@ -741,11 +793,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "CameraZoomIn", &AFGCharacterPlayer::execCameraZoomIn },
 			{ "CameraZoomOut", &AFGCharacterPlayer::execCameraZoomOut },
 			{ "Client_Revived", &AFGCharacterPlayer::execClient_Revived },
+			{ "CrouchPressed", &AFGCharacterPlayer::execCrouchPressed },
+			{ "CrouchReleased", &AFGCharacterPlayer::execCrouchReleased },
 			{ "EquipEquipment", &AFGCharacterPlayer::execEquipEquipment },
 			{ "GetActiveAttachments", &AFGCharacterPlayer::execGetActiveAttachments },
 			{ "GetActiveCrosshairState", &AFGCharacterPlayer::execGetActiveCrosshairState },
 			{ "GetActiveEquipmentItem", &AFGCharacterPlayer::execGetActiveEquipmentItem },
 			{ "GetActiveEquipments", &AFGCharacterPlayer::execGetActiveEquipments },
+			{ "GetArmBoneLocation", &AFGCharacterPlayer::execGetArmBoneLocation },
 			{ "GetBeltSlot", &AFGCharacterPlayer::execGetBeltSlot },
 			{ "GetBestUsableActor", &AFGCharacterPlayer::execGetBestUsableActor },
 			{ "GetBuildGun", &AFGCharacterPlayer::execGetBuildGun },
@@ -769,6 +824,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "GetResourceScanner", &AFGCharacterPlayer::execGetResourceScanner },
 			{ "GetReviveProgress", &AFGCharacterPlayer::execGetReviveProgress },
 			{ "GetSpringArmComponent", &AFGCharacterPlayer::execGetSpringArmComponent },
+			{ "GetTotalPlayerArmEquipmentSlots", &AFGCharacterPlayer::execGetTotalPlayerArmEquipmentSlots },
+			{ "GetTotalPlayerInventorySlots", &AFGCharacterPlayer::execGetTotalPlayerInventorySlots },
 			{ "GetTrashSlot", &AFGCharacterPlayer::execGetTrashSlot },
 			{ "GetUseDistance", &AFGCharacterPlayer::execGetUseDistance },
 			{ "GetWantSprintBobbing", &AFGCharacterPlayer::execGetWantSprintBobbing },
@@ -777,6 +834,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "IsBuildGunEquipped", &AFGCharacterPlayer::execIsBuildGunEquipped },
 			{ "IsDrivingVehicle", &AFGCharacterPlayer::execIsDrivingVehicle },
 			{ "IsFirstPerson", &AFGCharacterPlayer::execIsFirstPerson },
+			{ "IsSliding", &AFGCharacterPlayer::execIsSliding },
 			{ "OnArmsSlotsUnlocked", &AFGCharacterPlayer::execOnArmsSlotsUnlocked },
 			{ "OnDisabledInputGateChanged", &AFGCharacterPlayer::execOnDisabledInputGateChanged },
 			{ "OnInventorySlotsUnlocked", &AFGCharacterPlayer::execOnInventorySlotsUnlocked },
@@ -785,6 +843,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 			{ "OnRep_ActiveEquipments", &AFGCharacterPlayer::execOnRep_ActiveEquipments },
 			{ "OnRep_DrivenVehicle", &AFGCharacterPlayer::execOnRep_DrivenVehicle },
 			{ "OnRep_InRadioactiveZone", &AFGCharacterPlayer::execOnRep_InRadioactiveZone },
+			{ "OnRep_IsSliding", &AFGCharacterPlayer::execOnRep_IsSliding },
 			{ "OnRep_PickupCounter", &AFGCharacterPlayer::execOnRep_PickupCounter },
 			{ "OnRep_RadiationIntensity", &AFGCharacterPlayer::execOnRep_RadiationIntensity },
 			{ "Server_CycleHandEquipmentPressed", &AFGCharacterPlayer::execServer_CycleHandEquipmentPressed },
@@ -828,7 +887,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::NewProp_toAdd = { UE4CodeGen_Private::EPropertyClass::Float, "toAdd", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventAddRadiationImmunity_Parms, toAdd), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::NewProp_toAdd = { "toAdd", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventAddRadiationImmunity_Parms, toAdd), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::NewProp_toAdd,
 	};
@@ -839,7 +898,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Adds or removes an amount of radiation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "AddRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventAddRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "AddRadiationImmunity", sizeof(FGCharacterPlayer_eventAddRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -863,7 +922,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Starts the free rotate mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "CameraZoomIn", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "CameraZoomIn", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -887,7 +946,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Stops the free rotate mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "CameraZoomOut", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "CameraZoomOut", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -911,13 +970,60 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Takes care of client side stuff when revived (eg. Enabling player input)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Client_Revived", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x81080CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Client_Revived", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x81080CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Start and stop crouch, called when player presses/releases Left Ctrl, as standard." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "CrouchPressed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "CrouchReleased", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -934,7 +1040,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::NewProp_equipment = { UE4CodeGen_Private::EPropertyClass::Object, "equipment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventEquipEquipment_Parms, equipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::NewProp_equipment = { "equipment", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventEquipEquipment_Parms, equipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::NewProp_equipment,
 	};
@@ -945,7 +1051,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Must be called on the owning client for the client to be able to switch the weapon" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "EquipEquipment", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventEquipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "EquipEquipment", sizeof(FGCharacterPlayer_eventEquipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -969,8 +1075,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveAttachments_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveAttachments_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::NewProp_ReturnValue_Inner,
@@ -982,7 +1088,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return - The attachments you have equipped" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetActiveAttachments", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetActiveAttachments_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetActiveAttachments", sizeof(FGCharacterPlayer_eventGetActiveAttachments_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1002,8 +1108,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveCrosshairState_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECrosshairState, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveCrosshairState_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECrosshairState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::NewProp_ReturnValue_Underlying,
@@ -1015,7 +1121,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return - The current desired state for the cross hair polled by the HUD." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetActiveCrosshairState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGCharacterPlayer_eventGetActiveCrosshairState_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetActiveCrosshairState", sizeof(FGCharacterPlayer_eventGetActiveCrosshairState_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1041,9 +1147,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveEquipmentItem_Parms, ReturnValue), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_slot = { UE4CodeGen_Private::EPropertyClass::Enum, "slot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveEquipmentItem_Parms, slot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_slot_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveEquipmentItem_Parms, ReturnValue), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_slot = { "slot", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveEquipmentItem_Parms, slot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_slot_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::NewProp_slot,
@@ -1056,7 +1162,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return The item given equipment slot; nullptr if nothing is equipped." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetActiveEquipmentItem", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetActiveEquipmentItem_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetActiveEquipmentItem", sizeof(FGCharacterPlayer_eventGetActiveEquipmentItem_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1080,8 +1186,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveEquipments_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetActiveEquipments_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::NewProp_ReturnValue_Inner,
@@ -1093,13 +1199,47 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return - The equipments you have equipped" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetActiveEquipments", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetActiveEquipments_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetActiveEquipments", sizeof(FGCharacterPlayer_eventGetActiveEquipments_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics
+	{
+		struct FGCharacterPlayer_eventGetArmBoneLocation_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetArmBoneLocation_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Returns the arm bone location offset we want to use depending on crouch/stand state *" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetArmBoneLocation", sizeof(FGCharacterPlayer_eventGetArmBoneLocation_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1124,7 +1264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetBeltSlot_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponentBeltSlot_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetBeltSlot_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponentBeltSlot_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::NewProp_ReturnValue,
 	};
@@ -1135,7 +1275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return This players belt inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetBeltSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetBeltSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetBeltSlot", sizeof(FGCharacterPlayer_eventGetBeltSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1158,7 +1298,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetBestUsableActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetBestUsableActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::NewProp_ReturnValue,
 	};
@@ -1169,7 +1309,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The best usable actor nearby." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetBestUsableActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCharacterPlayer_eventGetBestUsableActor_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetBestUsableActor", sizeof(FGCharacterPlayer_eventGetBestUsableActor_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1192,7 +1332,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetBuildGun_Parms, ReturnValue), Z_Construct_UClass_AFGBuildGun_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetBuildGun_Parms, ReturnValue), Z_Construct_UClass_AFGBuildGun_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::NewProp_ReturnValue,
 	};
@@ -1203,7 +1343,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Get Buildgun" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetBuildGun", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetBuildGun_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetBuildGun", sizeof(FGCharacterPlayer_eventGetBuildGun_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1234,7 +1374,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetCameraComponent_Parms, ReturnValue), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetCameraComponent_Parms, ReturnValue), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::NewProp_ReturnValue,
 	};
@@ -1245,7 +1385,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns Camera subobject *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetCameraComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetCameraComponent_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetCameraComponent", sizeof(FGCharacterPlayer_eventGetCameraComponent_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1269,8 +1409,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetCameraMode_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetCameraMode_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::NewProp_ReturnValue_Underlying,
@@ -1282,7 +1422,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Get current camera mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetCameraMode_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetCameraMode", sizeof(FGCharacterPlayer_eventGetCameraMode_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1313,7 +1453,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetCurrentLadderComponent_Parms, ReturnValue), Z_Construct_UClass_UFGLadderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetCurrentLadderComponent_Parms, ReturnValue), Z_Construct_UClass_UFGLadderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::NewProp_ReturnValue,
 	};
@@ -1324,7 +1464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "returns ladder we are currently on" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetCurrentLadderComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventGetCurrentLadderComponent_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetCurrentLadderComponent", sizeof(FGCharacterPlayer_eventGetCurrentLadderComponent_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1347,7 +1487,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetDesiredSprintHeadBobShake_Parms, ReturnValue), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetDesiredSprintHeadBobShake_Parms, ReturnValue), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::NewProp_ReturnValue,
 	};
@@ -1358,7 +1498,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Gets the camera bobbing animation we want to use when sprinting ( can vary with equipment )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetDesiredSprintHeadBobShake", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventGetDesiredSprintHeadBobShake_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetDesiredSprintHeadBobShake", sizeof(FGCharacterPlayer_eventGetDesiredSprintHeadBobShake_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1381,7 +1521,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetDesiredWalkHeadBobShake_Parms, ReturnValue), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetDesiredWalkHeadBobShake_Parms, ReturnValue), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::NewProp_ReturnValue,
 	};
@@ -1392,7 +1532,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Gets the camera bobbing animation we want to use when walking ( can vary with equipment )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetDesiredWalkHeadBobShake", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventGetDesiredWalkHeadBobShake_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetDesiredWalkHeadBobShake", sizeof(FGCharacterPlayer_eventGetDesiredWalkHeadBobShake_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1415,7 +1555,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetDrivenVehicle_Parms, ReturnValue), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetDrivenVehicle_Parms, ReturnValue), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::NewProp_ReturnValue,
 	};
@@ -1426,7 +1566,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The vehicle we are currently driving" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetDrivenVehicle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetDrivenVehicle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetDrivenVehicle", sizeof(FGCharacterPlayer_eventGetDrivenVehicle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1452,9 +1592,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentInSlot_Parms, ReturnValue), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_slot = { UE4CodeGen_Private::EPropertyClass::Enum, "slot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentInSlot_Parms, slot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_slot_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentInSlot_Parms, ReturnValue), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_slot = { "slot", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentInSlot_Parms, slot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_slot_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::NewProp_slot,
@@ -1467,7 +1607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return The active equipment in the given equipment slot; nullptr if nothing is equipped." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetEquipmentInSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetEquipmentInSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetEquipmentInSlot", sizeof(FGCharacterPlayer_eventGetEquipmentInSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1501,9 +1641,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentSlot_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponentEquipment_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_slot = { UE4CodeGen_Private::EPropertyClass::Enum, "slot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentSlot_Parms, slot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_slot_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentSlot_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponentEquipment_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_slot = { "slot", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetEquipmentSlot_Parms, slot), Z_Construct_UEnum_FactoryGame_EEquipmentSlot, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_slot_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::NewProp_slot,
@@ -1516,7 +1656,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return The inventory component for the given equipment slot." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetEquipmentSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetEquipmentSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetEquipmentSlot", sizeof(FGCharacterPlayer_eventGetEquipmentSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1547,7 +1687,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::NewProp_ReturnValue,
 	};
@@ -1558,7 +1698,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return This players inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetInventory_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetInventory", sizeof(FGCharacterPlayer_eventGetInventory_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1582,15 +1722,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventoryDropLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_stack = { UE4CodeGen_Private::EPropertyClass::Struct, "stack", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventoryDropLocation_Parms, stack), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventoryDropLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_stack = { "stack", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventoryDropLocation_Parms, stack), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component = { UE4CodeGen_Private::EPropertyClass::Object, "component", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080082, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventoryDropLocation_Parms, component), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component = { "component", nullptr, (EPropertyFlags)0x0010000000080082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetInventoryDropLocation_Parms, component), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_component_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::NewProp_stack,
@@ -1603,7 +1743,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Where to drop a inventory item if we drop one" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetInventoryDropLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820C00, sizeof(FGCharacterPlayer_eventGetInventoryDropLocation_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetInventoryDropLocation", sizeof(FGCharacterPlayer_eventGetInventoryDropLocation_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1634,7 +1774,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetMesh1P_Parms, ReturnValue), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetMesh1P_Parms, ReturnValue), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::NewProp_ReturnValue,
 	};
@@ -1645,7 +1785,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns Mesh1P subobject *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetMesh1P", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetMesh1P_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetMesh1P", sizeof(FGCharacterPlayer_eventGetMesh1P_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1676,7 +1816,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetOutline_Parms, ReturnValue), Z_Construct_UClass_UFGOutlineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetOutline_Parms, ReturnValue), Z_Construct_UClass_UFGOutlineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::NewProp_ReturnValue,
 	};
@@ -1686,7 +1826,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetOutline", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetOutline_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetOutline", sizeof(FGCharacterPlayer_eventGetOutline_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetOutline_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetOutline()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1709,7 +1849,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetPickupProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetPickupProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::NewProp_ReturnValue,
 	};
@@ -1720,7 +1860,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "returns the progress of reviving a player 0..1" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetPickupProgress", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGCharacterPlayer_eventGetPickupProgress_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetPickupProgress", sizeof(FGCharacterPlayer_eventGetPickupProgress_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1743,7 +1883,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationDamageAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationDamageAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::NewProp_ReturnValue,
 	};
@@ -1754,7 +1894,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns the angle from the players view to the accumulated radiation damage *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetRadiationDamageAngle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetRadiationDamageAngle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetRadiationDamageAngle", sizeof(FGCharacterPlayer_eventGetRadiationDamageAngle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1777,7 +1917,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationImmunity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationImmunity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::NewProp_ReturnValue,
 	};
@@ -1788,7 +1928,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns accumulated radioation immunity *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetRadiationImmunity", sizeof(FGCharacterPlayer_eventGetRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1811,7 +1951,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationIntensity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetRadiationIntensity_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::NewProp_ReturnValue,
 	};
@@ -1822,7 +1962,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns accumulated normalized radiation intensity at the the players location *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetRadiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetRadiationIntensity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetRadiationIntensity", sizeof(FGCharacterPlayer_eventGetRadiationIntensity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1845,7 +1985,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetResourceMiner_Parms, ReturnValue), Z_Construct_UClass_AFGResourceMiner_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetResourceMiner_Parms, ReturnValue), Z_Construct_UClass_AFGResourceMiner_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::NewProp_ReturnValue,
 	};
@@ -1856,7 +1996,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return This players resource miner." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetResourceMiner", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetResourceMiner_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetResourceMiner", sizeof(FGCharacterPlayer_eventGetResourceMiner_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1879,7 +2019,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetResourceScanner_Parms, ReturnValue), Z_Construct_UClass_AFGResourceScanner_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetResourceScanner_Parms, ReturnValue), Z_Construct_UClass_AFGResourceScanner_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::NewProp_ReturnValue,
 	};
@@ -1890,7 +2030,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return This players resource scanner." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetResourceScanner", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetResourceScanner_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetResourceScanner", sizeof(FGCharacterPlayer_eventGetResourceScanner_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1913,7 +2053,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetReviveProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetReviveProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::NewProp_ReturnValue,
 	};
@@ -1924,7 +2064,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "returns the progress of reviving a player 0..1" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetReviveProgress", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGCharacterPlayer_eventGetReviveProgress_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetReviveProgress", sizeof(FGCharacterPlayer_eventGetReviveProgress_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1955,7 +2095,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetSpringArmComponent_Parms, ReturnValue), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetSpringArmComponent_Parms, ReturnValue), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::NewProp_ReturnValue,
 	};
@@ -1966,13 +2106,79 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns spring arm subobject *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetSpringArmComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGCharacterPlayer_eventGetSpringArmComponent_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetSpringArmComponent", sizeof(FGCharacterPlayer_eventGetSpringArmComponent_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics
+	{
+		struct FGCharacterPlayer_eventGetTotalPlayerArmEquipmentSlots_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetTotalPlayerArmEquipmentSlots_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::Function_MetaDataParams[] = {
+		{ "Category", "General" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetTotalPlayerArmEquipmentSlots", sizeof(FGCharacterPlayer_eventGetTotalPlayerArmEquipmentSlots_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics
+	{
+		struct FGCharacterPlayer_eventGetTotalPlayerInventorySlots_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetTotalPlayerInventorySlots_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::Function_MetaDataParams[] = {
+		{ "Category", "General" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetTotalPlayerInventorySlots", sizeof(FGCharacterPlayer_eventGetTotalPlayerInventorySlots_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1997,7 +2203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetTrashSlot_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetTrashSlot_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::NewProp_ReturnValue,
 	};
@@ -2008,7 +2214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@return This players trash inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetTrashSlot", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventGetTrashSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetTrashSlot", sizeof(FGCharacterPlayer_eventGetTrashSlot_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2031,7 +2237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventGetUseDistance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventGetUseDistance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::NewProp_ReturnValue,
 	};
@@ -2042,7 +2248,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Returns distance we want to be able to use stuff from" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetUseDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGCharacterPlayer_eventGetUseDistance_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetUseDistance", sizeof(FGCharacterPlayer_eventGetUseDistance_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2070,7 +2276,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FGCharacterPlayer_eventGetWantSprintBobbing_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCharacterPlayer_eventGetWantSprintBobbing_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventGetWantSprintBobbing_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::NewProp_ReturnValue,
 	};
@@ -2081,7 +2287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Getter for mWantsSprintBobbing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "GetWantSprintBobbing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCharacterPlayer_eventGetWantSprintBobbing_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "GetWantSprintBobbing", sizeof(FGCharacterPlayer_eventGetWantSprintBobbing_Parms), Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2105,7 +2311,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Instantly goes to dismantle mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "HotKeyDismantle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "HotKeyDismantle", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2128,7 +2334,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventHotKeyRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventHotKeyRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::NewProp_recipe,
 	};
@@ -2139,7 +2345,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Instantly goes to build mode for selected recipe" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "HotKeyRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventHotKeyRecipe_Parms), Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "HotKeyRecipe", sizeof(FGCharacterPlayer_eventHotKeyRecipe_Parms), Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2167,7 +2373,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FGCharacterPlayer_eventIsBuildGunEquipped_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCharacterPlayer_eventIsBuildGunEquipped_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventIsBuildGunEquipped_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::NewProp_ReturnValue,
 	};
@@ -2178,7 +2384,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Is the build gun equipped" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "IsBuildGunEquipped", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventIsBuildGunEquipped_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "IsBuildGunEquipped", sizeof(FGCharacterPlayer_eventIsBuildGunEquipped_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2206,7 +2412,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FGCharacterPlayer_eventIsDrivingVehicle_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCharacterPlayer_eventIsDrivingVehicle_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventIsDrivingVehicle_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::NewProp_ReturnValue,
 	};
@@ -2217,7 +2423,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The vehicle we are currently driving" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "IsDrivingVehicle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventIsDrivingVehicle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "IsDrivingVehicle", sizeof(FGCharacterPlayer_eventIsDrivingVehicle_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2245,7 +2451,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FGCharacterPlayer_eventIsFirstPerson_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCharacterPlayer_eventIsFirstPerson_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventIsFirstPerson_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::NewProp_ReturnValue,
 	};
@@ -2256,13 +2462,52 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Are we in first person mode?" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "IsFirstPerson", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCharacterPlayer_eventIsFirstPerson_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "IsFirstPerson", sizeof(FGCharacterPlayer_eventIsFirstPerson_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics
+	{
+		struct FGCharacterPlayer_eventIsSliding_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FGCharacterPlayer_eventIsSliding_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventIsSliding_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Use" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Gets sliding status" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "IsSliding", sizeof(FGCharacterPlayer_eventIsSliding_Parms), Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_IsSliding()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_IsSliding_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2279,7 +2524,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::NewProp_newUnlockedSlots = { UE4CodeGen_Private::EPropertyClass::Int, "newUnlockedSlots", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnArmsSlotsUnlocked_Parms, newUnlockedSlots), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::NewProp_newUnlockedSlots = { "newUnlockedSlots", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnArmsSlotsUnlocked_Parms, newUnlockedSlots), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::NewProp_newUnlockedSlots,
 	};
@@ -2289,7 +2534,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Called when we unlock more arms slots" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnArmsSlotsUnlocked", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGCharacterPlayer_eventOnArmsSlotsUnlocked_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnArmsSlotsUnlocked", sizeof(FGCharacterPlayer_eventOnArmsSlotsUnlocked_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2308,7 +2553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::NewProp_newValue = { UE4CodeGen_Private::EPropertyClass::Struct, "newValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnDisabledInputGateChanged_Parms, newValue), Z_Construct_UScriptStruct_FDisabledInputGate, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::NewProp_newValue = { "newValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnDisabledInputGateChanged_Parms, newValue), Z_Construct_UScriptStruct_FDisabledInputGate, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::NewProp_newValue,
 	};
@@ -2318,7 +2563,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnDisabledInputGateChanged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080C00, sizeof(FGCharacterPlayer_eventOnDisabledInputGateChanged_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnDisabledInputGateChanged", sizeof(FGCharacterPlayer_eventOnDisabledInputGateChanged_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2341,7 +2586,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::NewProp_newUnlockedSlots = { UE4CodeGen_Private::EPropertyClass::Int, "newUnlockedSlots", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnInventorySlotsUnlocked_Parms, newUnlockedSlots), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::NewProp_newUnlockedSlots = { "newUnlockedSlots", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnInventorySlotsUnlocked_Parms, newUnlockedSlots), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::NewProp_newUnlockedSlots,
 	};
@@ -2351,7 +2596,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Called when we unlock more inventory slots" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnInventorySlotsUnlocked", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGCharacterPlayer_eventOnInventorySlotsUnlocked_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnInventorySlotsUnlocked", sizeof(FGCharacterPlayer_eventOnInventorySlotsUnlocked_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2376,8 +2621,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::NewProp_numAdded = { UE4CodeGen_Private::EPropertyClass::Int, "numAdded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnItemAddedToInventory_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnItemAddedToInventory_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::NewProp_numAdded = { "numAdded", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnItemAddedToInventory_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnItemAddedToInventory_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::NewProp_numAdded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::NewProp_itemClass,
@@ -2387,7 +2632,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnItemAddedToInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGCharacterPlayer_eventOnItemAddedToInventory_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnItemAddedToInventory", sizeof(FGCharacterPlayer_eventOnItemAddedToInventory_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2407,8 +2652,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "radiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms, radiationImmunity), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity = { UE4CodeGen_Private::EPropertyClass::Float, "radiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms, radiationIntensity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity = { "radiationImmunity", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms, radiationImmunity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity = { "radiationIntensity", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms, radiationIntensity), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationImmunity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::NewProp_radiationIntensity,
@@ -2420,7 +2665,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Called when we have updated radiation intensity." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRadiationIntensityUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRadiationIntensityUpdated", sizeof(FGCharacterPlayer_eventOnRadiationIntensityUpdated_Parms), Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2444,7 +2689,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Called when we start receiving radiation." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnReceiveRadiationStart", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnReceiveRadiationStart", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2468,7 +2713,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Called when we stop receiving radiation." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnReceiveRadiationStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnReceiveRadiationStop", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2490,7 +2735,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_ActiveAttachments", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_ActiveAttachments", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2513,7 +2758,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "OnReps" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_ActiveEquipments", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_ActiveEquipments", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2535,7 +2780,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_DrivenVehicle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_DrivenVehicle", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2557,13 +2802,35 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_InRadioactiveZone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_InRadioactiveZone", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_IsSliding", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2579,7 +2846,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_PickupCounter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_PickupCounter", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2601,7 +2868,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnRep_RadiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnRep_RadiationIntensity", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2625,13 +2892,61 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "called when a revive process is complete. Called on the player being revived." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnReviveComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnReviveComplete", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Movment" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Called when a slide has ended, local only" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnSlideEndLocal", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Movment" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Called when a slide has started, local only" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnSlideStartLocal", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -2649,7 +2964,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Called when we respawn but didn't get a death crate, so we can find our last death location." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "OnSpawnDeathMarker", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "OnSpawnDeathMarker", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2673,7 +2988,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Blueprint accessor for when an item was picked up, called on client/server/remote" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "PlayPickupEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "PlayPickupEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C080808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2692,7 +3007,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::NewProp_dir = { UE4CodeGen_Private::EPropertyClass::Int, "dir", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventServer_CycleHandEquipmentPressed_Parms, dir), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::NewProp_dir = { "dir", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventServer_CycleHandEquipmentPressed_Parms, dir), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::NewProp_dir,
 	};
@@ -2702,7 +3017,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Cycles hand equipments in equipment slots" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_CycleHandEquipmentPressed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80220CC0, sizeof(FGCharacterPlayer_eventServer_CycleHandEquipmentPressed_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_CycleHandEquipmentPressed", sizeof(FGCharacterPlayer_eventServer_CycleHandEquipmentPressed_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2721,7 +3036,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::NewProp_newEquipment = { UE4CodeGen_Private::EPropertyClass::Object, "newEquipment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventServer_EquipEquipment_Parms, newEquipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::NewProp_newEquipment = { "newEquipment", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventServer_EquipEquipment_Parms, newEquipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::NewProp_newEquipment,
 	};
@@ -2731,7 +3046,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Server function that are called from public clients of the same name" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_EquipEquipment", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGCharacterPlayer_eventServer_EquipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_EquipEquipment", sizeof(FGCharacterPlayer_eventServer_EquipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2754,7 +3069,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_OnUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_OnUse", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2777,7 +3092,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_OnUseReleased", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_OnUseReleased", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2796,7 +3111,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::NewProp_itemPickup = { UE4CodeGen_Private::EPropertyClass::Object, "itemPickup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventServer_PickUpItem_Parms, itemPickup), Z_Construct_UClass_AFGItemPickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::NewProp_itemPickup = { "itemPickup", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventServer_PickUpItem_Parms, itemPickup), Z_Construct_UClass_AFGItemPickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::NewProp_itemPickup,
 	};
@@ -2805,7 +3120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_PickUpItem", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGCharacterPlayer_eventServer_PickUpItem_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_PickUpItem", sizeof(FGCharacterPlayer_eventServer_PickUpItem_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2824,7 +3139,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::NewProp_playerToRevive = { UE4CodeGen_Private::EPropertyClass::Object, "playerToRevive", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventServer_RevivePlayer_Parms, playerToRevive), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::NewProp_playerToRevive = { "playerToRevive", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventServer_RevivePlayer_Parms, playerToRevive), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::NewProp_playerToRevive,
 	};
@@ -2834,7 +3149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_RevivePlayer", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGCharacterPlayer_eventServer_RevivePlayer_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_RevivePlayer", sizeof(FGCharacterPlayer_eventServer_RevivePlayer_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2853,7 +3168,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::NewProp_switchControl = { UE4CodeGen_Private::EPropertyClass::Object, "switchControl", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventServer_ToggleSwitchControl_Parms, switchControl), Z_Construct_UClass_AFGBuildableRailroadSwitchControl_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::NewProp_switchControl = { "switchControl", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventServer_ToggleSwitchControl_Parms, switchControl), Z_Construct_UClass_AFGBuildableRailroadSwitchControl_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::NewProp_switchControl,
 	};
@@ -2863,7 +3178,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@todo This should move to the replicator object... Toggles the switch on the server." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_ToggleSwitchControl", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80220CC0, sizeof(FGCharacterPlayer_eventServer_ToggleSwitchControl_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_ToggleSwitchControl", sizeof(FGCharacterPlayer_eventServer_ToggleSwitchControl_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2882,7 +3197,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::NewProp_newEquipment = { UE4CodeGen_Private::EPropertyClass::Object, "newEquipment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventServer_UnequipEquipment_Parms, newEquipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::NewProp_newEquipment = { "newEquipment", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventServer_UnequipEquipment_Parms, newEquipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::NewProp_newEquipment,
 	};
@@ -2891,7 +3206,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "Server_UnequipEquipment", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGCharacterPlayer_eventServer_UnequipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "Server_UnequipEquipment", sizeof(FGCharacterPlayer_eventServer_UnequipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2915,8 +3230,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::NewProp_newCameraMode = { UE4CodeGen_Private::EPropertyClass::Enum, "newCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventSetCameraMode_Parms, newCameraMode), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::NewProp_newCameraMode_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::NewProp_newCameraMode = { "newCameraMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventSetCameraMode_Parms, newCameraMode), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::NewProp_newCameraMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::NewProp_newCameraMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::NewProp_newCameraMode_Underlying,
@@ -2928,7 +3243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Set camera mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventSetCameraMode_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SetCameraMode", sizeof(FGCharacterPlayer_eventSetCameraMode_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2952,7 +3267,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Do stuff needed for first person mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetFirstPersonMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SetFirstPersonMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2980,7 +3295,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FGCharacterPlayer_eventSetMeshVisibility_Parms*)Obj)->isFirstPerson = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::NewProp_isFirstPerson = { UE4CodeGen_Private::EPropertyClass::Bool, "isFirstPerson", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCharacterPlayer_eventSetMeshVisibility_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::NewProp_isFirstPerson_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::NewProp_isFirstPerson = { "isFirstPerson", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventSetMeshVisibility_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::NewProp_isFirstPerson_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::NewProp_isFirstPerson,
 	};
@@ -2991,7 +3306,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Sets what mesh is visible on us ( 1p or 3p )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetMeshVisibility", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(FGCharacterPlayer_eventSetMeshVisibility_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SetMeshVisibility", sizeof(FGCharacterPlayer_eventSetMeshVisibility_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3014,7 +3329,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::NewProp_newImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "newImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventSetRadiationImmunity_Parms, newImmunity), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::NewProp_newImmunity = { "newImmunity", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventSetRadiationImmunity_Parms, newImmunity), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::NewProp_newImmunity,
 	};
@@ -3025,7 +3340,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Sets an amount of radiation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventSetRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SetRadiationImmunity", sizeof(FGCharacterPlayer_eventSetRadiationImmunity_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3049,7 +3364,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Do stuff needed for third person mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetThirdPersonMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SetThirdPersonMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3077,7 +3392,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((FGCharacterPlayer_eventSetWantSprintBobbing_Parms*)Obj)->wantBobbing = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::NewProp_wantBobbing = { UE4CodeGen_Private::EPropertyClass::Bool, "wantBobbing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCharacterPlayer_eventSetWantSprintBobbing_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::NewProp_wantBobbing_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::NewProp_wantBobbing = { "wantBobbing", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCharacterPlayer_eventSetWantSprintBobbing_Parms), &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::NewProp_wantBobbing_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::NewProp_wantBobbing,
 	};
@@ -3088,7 +3403,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Setter for mWantsSprintBobbing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SetWantSprintBobbing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventSetWantSprintBobbing_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SetWantSprintBobbing", sizeof(FGCharacterPlayer_eventSetWantSprintBobbing_Parms), Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3112,7 +3427,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "snaps the camera spring arm to its desired location, so no interp" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SnapSpringArmToDesiredLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SnapSpringArmToDesiredLocation", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3135,7 +3450,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "SpawnInitialGear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "SpawnInitialGear", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3159,7 +3474,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Start focus aiming" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StartFocusAim", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StartFocusAim", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3183,7 +3498,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Starts the free rotate mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StartFreeRotate3P", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StartFreeRotate3P", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3205,7 +3520,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StartReceivingRadiation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StartReceivingRadiation", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3229,7 +3544,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Stop focus aiming" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StopFocusAim", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StopFocusAim", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3253,7 +3568,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Stops the free rotate mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StopFreeRotate3P", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StopFreeRotate3P", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3275,13 +3590,43 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "StopReceivingRadiation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "StopReceivingRadiation", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_dt;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::NewProp_dt = { "dt", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventTickVisuals_Parms, dt), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::NewProp_dt,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Blueprint function that ticks visual things not needed on dedicated server" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "TickVisuals", sizeof(FGCharacterPlayer_eventTickVisuals_Parms), Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -3299,7 +3644,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Equips/unequips buildgun" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "ToggleBuildGun", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "ToggleBuildGun", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3322,7 +3667,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Switches between camera modes" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "ToggleCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "ToggleCameraMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3345,7 +3690,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::NewProp_equipment = { UE4CodeGen_Private::EPropertyClass::Object, "equipment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterPlayer_eventUnequipEquipment_Parms, equipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::NewProp_equipment = { "equipment", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterPlayer_eventUnequipEquipment_Parms, equipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::NewProp_equipment,
 	};
@@ -3356,7 +3701,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Must be called on the owning client to unequip one equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "UnequipEquipment", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCharacterPlayer_eventUnequipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "UnequipEquipment", sizeof(FGCharacterPlayer_eventUnequipEquipment_Parms), Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3380,7 +3725,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Set the camera mode to the one specified in mPlayerPreferredCameraMode" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, "UsePreferredCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCharacterPlayer, nullptr, "UsePreferredCameraMode", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3401,6 +3746,32 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mNoUpdate_MetaData[];
+#endif
+		static void NewProp_mNoUpdate_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mNoUpdate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mSlideToCrouchSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mSlideToCrouchSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStandSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mStandSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCrouchSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mCrouchSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mReplicatedIsSliding_MetaData[];
+#endif
+		static void NewProp_mReplicatedIsSliding_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mReplicatedIsSliding;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mCameraOffsetBlendSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mCameraOffsetBlendSpeed;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInRadioactiveZone_MetaData[];
 #endif
@@ -3639,88 +4010,98 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCharacterPlayer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity, "AddRadiationImmunity" }, // 4131439808
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn, "CameraZoomIn" }, // 1023265946
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut, "CameraZoomOut" }, // 127172358
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived, "Client_Revived" }, // 2466209573
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment, "EquipEquipment" }, // 3297833485
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments, "GetActiveAttachments" }, // 871315436
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState, "GetActiveCrosshairState" }, // 3842371095
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem, "GetActiveEquipmentItem" }, // 1971513109
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments, "GetActiveEquipments" }, // 177803049
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot, "GetBeltSlot" }, // 695580795
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor, "GetBestUsableActor" }, // 3192321912
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun, "GetBuildGun" }, // 687829108
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent, "GetCameraComponent" }, // 1748522843
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode, "GetCameraMode" }, // 1569064063
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent, "GetCurrentLadderComponent" }, // 2517851868
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake, "GetDesiredSprintHeadBobShake" }, // 1111157807
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake, "GetDesiredWalkHeadBobShake" }, // 3918157731
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle, "GetDrivenVehicle" }, // 1558351754
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot, "GetEquipmentInSlot" }, // 2670141492
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot, "GetEquipmentSlot" }, // 295951065
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventory, "GetInventory" }, // 440562611
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation, "GetInventoryDropLocation" }, // 2541613377
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P, "GetMesh1P" }, // 235107286
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetOutline, "GetOutline" }, // 493535227
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress, "GetPickupProgress" }, // 2135813453
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle, "GetRadiationDamageAngle" }, // 1104372252
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity, "GetRadiationImmunity" }, // 3152846021
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity, "GetRadiationIntensity" }, // 1808178099
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner, "GetResourceMiner" }, // 3558534803
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner, "GetResourceScanner" }, // 291886735
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress, "GetReviveProgress" }, // 2211659760
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent, "GetSpringArmComponent" }, // 3262032192
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot, "GetTrashSlot" }, // 1309034352
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance, "GetUseDistance" }, // 3442339042
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing, "GetWantSprintBobbing" }, // 3603441090
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle, "HotKeyDismantle" }, // 242825642
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe, "HotKeyRecipe" }, // 4119970416
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped, "IsBuildGunEquipped" }, // 4213641495
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle, "IsDrivingVehicle" }, // 2743116966
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson, "IsFirstPerson" }, // 973861977
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked, "OnArmsSlotsUnlocked" }, // 2010827427
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 1086641149
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked, "OnInventorySlotsUnlocked" }, // 1196500791
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory, "OnItemAddedToInventory" }, // 675385019
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 487139694
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 2947258268
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 2803271331
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments, "OnRep_ActiveAttachments" }, // 3854880280
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments, "OnRep_ActiveEquipments" }, // 2997009673
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle, "OnRep_DrivenVehicle" }, // 496748282
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone, "OnRep_InRadioactiveZone" }, // 3649657479
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter, "OnRep_PickupCounter" }, // 2235400158
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity, "OnRep_RadiationIntensity" }, // 492020511
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete, "OnReviveComplete" }, // 1551515358
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker, "OnSpawnDeathMarker" }, // 3828896683
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects, "PlayPickupEffects" }, // 1225697677
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed, "Server_CycleHandEquipmentPressed" }, // 3547758916
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment, "Server_EquipEquipment" }, // 1936469616
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse, "Server_OnUse" }, // 200169175
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased, "Server_OnUseReleased" }, // 2086572481
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem, "Server_PickUpItem" }, // 2069976823
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer, "Server_RevivePlayer" }, // 1278136291
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl, "Server_ToggleSwitchControl" }, // 868762312
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment, "Server_UnequipEquipment" }, // 657791852
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode, "SetCameraMode" }, // 3559135896
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode, "SetFirstPersonMode" }, // 3222909643
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility, "SetMeshVisibility" }, // 1507613465
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity, "SetRadiationImmunity" }, // 2664600606
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode, "SetThirdPersonMode" }, // 3848740884
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing, "SetWantSprintBobbing" }, // 2121733068
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation, "SnapSpringArmToDesiredLocation" }, // 487614580
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear, "SpawnInitialGear" }, // 1076118661
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim, "StartFocusAim" }, // 3357889769
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P, "StartFreeRotate3P" }, // 3874221431
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation, "StartReceivingRadiation" }, // 2271863784
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim, "StopFocusAim" }, // 3298587092
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P, "StopFreeRotate3P" }, // 2051109391
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation, "StopReceivingRadiation" }, // 1363004754
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun, "ToggleBuildGun" }, // 4225586843
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode, "ToggleCameraMode" }, // 825523200
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment, "UnequipEquipment" }, // 1658241153
-		{ &Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode, "UsePreferredCameraMode" }, // 2473695244
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_AddRadiationImmunity, "AddRadiationImmunity" }, // 2608051743
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomIn, "CameraZoomIn" }, // 3935644132
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CameraZoomOut, "CameraZoomOut" }, // 2421676588
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Client_Revived, "Client_Revived" }, // 1521793115
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchPressed, "CrouchPressed" }, // 950647065
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_CrouchReleased, "CrouchReleased" }, // 265366650
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_EquipEquipment, "EquipEquipment" }, // 2009776303
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveAttachments, "GetActiveAttachments" }, // 1399959022
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveCrosshairState, "GetActiveCrosshairState" }, // 34151913
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipmentItem, "GetActiveEquipmentItem" }, // 4215714992
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetActiveEquipments, "GetActiveEquipments" }, // 1186168559
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetArmBoneLocation, "GetArmBoneLocation" }, // 396113812
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBeltSlot, "GetBeltSlot" }, // 4131124130
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBestUsableActor, "GetBestUsableActor" }, // 2787890823
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetBuildGun, "GetBuildGun" }, // 1144277631
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraComponent, "GetCameraComponent" }, // 2253655128
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCameraMode, "GetCameraMode" }, // 606760630
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetCurrentLadderComponent, "GetCurrentLadderComponent" }, // 318826101
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredSprintHeadBobShake, "GetDesiredSprintHeadBobShake" }, // 4238982665
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDesiredWalkHeadBobShake, "GetDesiredWalkHeadBobShake" }, // 2583976197
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetDrivenVehicle, "GetDrivenVehicle" }, // 3567960073
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentInSlot, "GetEquipmentInSlot" }, // 2561004976
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetEquipmentSlot, "GetEquipmentSlot" }, // 231328968
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventory, "GetInventory" }, // 2827060283
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetInventoryDropLocation, "GetInventoryDropLocation" }, // 2807656916
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetMesh1P, "GetMesh1P" }, // 2848665011
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetOutline, "GetOutline" }, // 1987681733
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetPickupProgress, "GetPickupProgress" }, // 1459759907
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationDamageAngle, "GetRadiationDamageAngle" }, // 1965277011
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationImmunity, "GetRadiationImmunity" }, // 3978527836
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetRadiationIntensity, "GetRadiationIntensity" }, // 1824496867
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceMiner, "GetResourceMiner" }, // 1895884762
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetResourceScanner, "GetResourceScanner" }, // 722783786
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetReviveProgress, "GetReviveProgress" }, // 538257110
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetSpringArmComponent, "GetSpringArmComponent" }, // 3714147037
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerArmEquipmentSlots, "GetTotalPlayerArmEquipmentSlots" }, // 3107248852
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTotalPlayerInventorySlots, "GetTotalPlayerInventorySlots" }, // 1496947095
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetTrashSlot, "GetTrashSlot" }, // 132364014
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetUseDistance, "GetUseDistance" }, // 885867545
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_GetWantSprintBobbing, "GetWantSprintBobbing" }, // 3353222126
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyDismantle, "HotKeyDismantle" }, // 818809108
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_HotKeyRecipe, "HotKeyRecipe" }, // 4176152380
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsBuildGunEquipped, "IsBuildGunEquipped" }, // 1485150918
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsDrivingVehicle, "IsDrivingVehicle" }, // 843143681
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsFirstPerson, "IsFirstPerson" }, // 3428935848
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_IsSliding, "IsSliding" }, // 886214051
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnArmsSlotsUnlocked, "OnArmsSlotsUnlocked" }, // 2017181980
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 2951731547
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnInventorySlotsUnlocked, "OnInventorySlotsUnlocked" }, // 1165618911
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnItemAddedToInventory, "OnItemAddedToInventory" }, // 340157161
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 2260907307
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 608616971
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 1906442674
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveAttachments, "OnRep_ActiveAttachments" }, // 79215334
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_ActiveEquipments, "OnRep_ActiveEquipments" }, // 1493681604
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_DrivenVehicle, "OnRep_DrivenVehicle" }, // 2822208636
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_InRadioactiveZone, "OnRep_InRadioactiveZone" }, // 3085874586
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_IsSliding, "OnRep_IsSliding" }, // 2630402959
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_PickupCounter, "OnRep_PickupCounter" }, // 2829982152
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnRep_RadiationIntensity, "OnRep_RadiationIntensity" }, // 1158953770
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnReviveComplete, "OnReviveComplete" }, // 3000033210
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSlideEndLocal, "OnSlideEndLocal" }, // 1837403260
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSlideStartLocal, "OnSlideStartLocal" }, // 4109213245
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_OnSpawnDeathMarker, "OnSpawnDeathMarker" }, // 534926741
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_PlayPickupEffects, "PlayPickupEffects" }, // 3191076148
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_CycleHandEquipmentPressed, "Server_CycleHandEquipmentPressed" }, // 3769750983
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_EquipEquipment, "Server_EquipEquipment" }, // 1693478236
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUse, "Server_OnUse" }, // 3689236897
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_OnUseReleased, "Server_OnUseReleased" }, // 3529906375
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_PickUpItem, "Server_PickUpItem" }, // 3114903018
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_RevivePlayer, "Server_RevivePlayer" }, // 1345170089
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_ToggleSwitchControl, "Server_ToggleSwitchControl" }, // 844461310
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_Server_UnequipEquipment, "Server_UnequipEquipment" }, // 806626353
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetCameraMode, "SetCameraMode" }, // 3478834752
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetFirstPersonMode, "SetFirstPersonMode" }, // 681097863
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetMeshVisibility, "SetMeshVisibility" }, // 3530640653
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetRadiationImmunity, "SetRadiationImmunity" }, // 3258636662
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetThirdPersonMode, "SetThirdPersonMode" }, // 3583296837
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SetWantSprintBobbing, "SetWantSprintBobbing" }, // 1772814833
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SnapSpringArmToDesiredLocation, "SnapSpringArmToDesiredLocation" }, // 3967830260
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_SpawnInitialGear, "SpawnInitialGear" }, // 3237095322
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFocusAim, "StartFocusAim" }, // 1905143112
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartFreeRotate3P, "StartFreeRotate3P" }, // 634281461
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StartReceivingRadiation, "StartReceivingRadiation" }, // 2777292666
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFocusAim, "StopFocusAim" }, // 4103669454
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopFreeRotate3P, "StopFreeRotate3P" }, // 2519448203
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_StopReceivingRadiation, "StopReceivingRadiation" }, // 1468576868
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_TickVisuals, "TickVisuals" }, // 700109377
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleBuildGun, "ToggleBuildGun" }, // 3936492869
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_ToggleCameraMode, "ToggleCameraMode" }, // 2206812166
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_UnequipEquipment, "UnequipEquipment" }, // 1897312537
+		{ &Z_Construct_UFunction_AFGCharacterPlayer_UsePreferredCameraMode, "UsePreferredCameraMode" }, // 1711619187
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::Class_MetaDataParams[] = {
@@ -3732,6 +4113,60 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_MetaData[] = {
+		{ "Category", "FactoryGame|Movement|Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+	};
+#endif
+	void Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_SetBit(void* Obj)
+	{
+		((AFGCharacterPlayer*)Obj)->mNoUpdate = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate = { "mNoUpdate", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSlideToCrouchSpeed_MetaData[] = {
+		{ "Category", "FactoryGame|Movement|Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "How fast the blend is from slide to crouch" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSlideToCrouchSpeed = { "mSlideToCrouchSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mSlideToCrouchSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSlideToCrouchSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSlideToCrouchSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStandSpeed_MetaData[] = {
+		{ "Category", "FactoryGame|Movement|Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "How fast the blend is from crouch/slide to stand" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStandSpeed = { "mStandSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mStandSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStandSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStandSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed_MetaData[] = {
+		{ "Category", "FactoryGame|Movement|Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "How fast the blend is for crouch and slide" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed = { "mCrouchSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCrouchSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding_MetaData[] = {
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "Replicated value of sliding status. Used to let non owning player know whats happening" },
+	};
+#endif
+	void Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding_SetBit(void* Obj)
+	{
+		((AFGCharacterPlayer*)Obj)->mReplicatedIsSliding = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding = { "mReplicatedIsSliding", "OnRep_IsSliding", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed_MetaData[] = {
+		{ "Category", "FactoryGame|Movement|Crouch" },
+		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
+		{ "ToolTip", "How fast the blend is" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed = { "mCameraOffsetBlendSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCameraOffsetBlendSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Are we in a radioactive zone" },
@@ -3741,49 +4176,49 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((AFGCharacterPlayer*)Obj)->mInRadioactiveZone = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone = { UE4CodeGen_Private::EPropertyClass::Bool, "mInRadioactiveZone", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_InRadioActiveZone", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone = { "mInRadioactiveZone", "OnRep_InRadioActiveZone", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "How much immunity do we have for radiation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationImmunity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationImmunity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity = { "mRadiationImmunity", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationImmunity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "The angle from the players view to the accumulated radiation damage *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationDamageAngle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationDamageAngle), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle = { "mRadiationDamageAngle", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationDamageAngle), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "The accumulated normalized radiation intensity of the players current location" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity = { UE4CodeGen_Private::EPropertyClass::Float, "mRadiationIntensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_RadiationIntensity", STRUCT_OFFSET(AFGCharacterPlayer, mRadiationIntensity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity = { "mRadiationIntensity", "OnRep_RadiationIntensity", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mRadiationIntensity), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationIntensity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData[] = {
 		{ "Category", "HealthGeneration" },
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime = { UE4CodeGen_Private::EPropertyClass::Float, "mHealthGenerationWaitTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationWaitTime), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime = { "mHealthGenerationWaitTime", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationWaitTime), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationWaitTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData[] = {
 		{ "Category", "HealthGeneration" },
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mHealthGenerationInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationInterval), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval = { "mHealthGenerationInterval", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationInterval), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData[] = {
 		{ "Category", "HealthGeneration" },
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount = { UE4CodeGen_Private::EPropertyClass::Float, "mHealthGenerationAmount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationAmount), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount = { "mHealthGenerationAmount", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationAmount), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationAmount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold_MetaData[] = {
 		{ "Category", "HealthGeneration" },
@@ -3791,28 +4226,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Health Generation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold = { UE4CodeGen_Private::EPropertyClass::Float, "mHealthGenerationThreshold", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold = { "mHealthGenerationThreshold", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mHealthGenerationThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mHealthGenerationThreshold_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mOutlineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mOutlineComponent), Z_Construct_UClass_UFGOutlineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent = { "mOutlineComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mOutlineComponent), Z_Construct_UClass_UFGOutlineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mOutlineComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Saved vehicle currently driven by pawn.\nUsed by server to remember which vehicle we drove when saving.\nUsed by client to remember which vehicle we drove when leaving the vehicle." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle = { UE4CodeGen_Private::EPropertyClass::Object, "mSavedDrivenVehicle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mSavedDrivenVehicle), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle = { "mSavedDrivenVehicle", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mSavedDrivenVehicle), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSavedDrivenVehicle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Vehicle currently driven by pawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle = { UE4CodeGen_Private::EPropertyClass::Object, "mDrivenVehicle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_DrivenVehicle", STRUCT_OFFSET(AFGCharacterPlayer, mDrivenVehicle), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle = { "mDrivenVehicle", "OnRep_DrivenVehicle", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDrivenVehicle), Z_Construct_UClass_AFGDriveablePawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrivenVehicle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake_MetaData[] = {
 		{ "Category", "Movement" },
@@ -3820,7 +4255,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Reference to the default sprint head bob shake" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake = { UE4CodeGen_Private::EPropertyClass::Class, "mDefaultSprintHeadBobShake", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mDefaultSprintHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake = { "mDefaultSprintHeadBobShake", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDefaultSprintHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultSprintHeadBobShake_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData[] = {
 		{ "Category", "Movement" },
@@ -3828,21 +4263,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Reference to the default walk head bob shake" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake = { UE4CodeGen_Private::EPropertyClass::Class, "mDefaultWalkHeadBobShake", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mDefaultWalkHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake = { "mDefaultWalkHeadBobShake", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDefaultWalkHeadBobShake), Z_Construct_UClass_UCameraShake_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDefaultWalkHeadBobShake_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "The player that is reviving me" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver = { UE4CodeGen_Private::EPropertyClass::Object, "mReviver", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mReviver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver = { "mReviver", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mReviver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviver_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Counter used for replicating to remote clients when something is picked up" },
 	};
 #endif
-	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter = { UE4CodeGen_Private::EPropertyClass::Int8, "mPickupCounter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_PickupCounter", STRUCT_OFFSET(AFGCharacterPlayer, mPickupCounter), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter_MetaData)) };
+	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter = { "mPickupCounter", "OnRep_PickupCounter", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mPickupCounter), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupCounter_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance_MetaData[] = {
 		{ "Category", "Use" },
@@ -3850,7 +4285,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Maximum distance we use objects on" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mUseDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mUseDistance), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance = { "mUseDistance", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mUseDistance), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mUseDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_MetaData[] = {
 		{ "Category", "Camera" },
@@ -3862,7 +4297,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	{
 		((AFGCharacterPlayer*)Obj)->mAllowCameraToggling = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling = { UE4CodeGen_Private::EPropertyClass::Bool, "mAllowCameraToggling", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling = { "mAllowCameraToggling", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCharacterPlayer), &Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllowCameraToggling_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot_MetaData[] = {
 		{ "EditInline", "true" },
@@ -3870,7 +4305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The players inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot = { UE4CodeGen_Private::EPropertyClass::Object, "mTrashSlot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080028, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mTrashSlot), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot = { "mTrashSlot", nullptr, (EPropertyFlags)0x0040000000080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mTrashSlot), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mTrashSlot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot_MetaData[] = {
 		{ "EditInline", "true" },
@@ -3878,7 +4313,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The belt slot inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot = { UE4CodeGen_Private::EPropertyClass::Object, "mBeltSlot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080028, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mBeltSlot), Z_Construct_UClass_UFGInventoryComponentBeltSlot_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot = { "mBeltSlot", nullptr, (EPropertyFlags)0x0040000001080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mBeltSlot), Z_Construct_UClass_UFGInventoryComponentBeltSlot_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBeltSlot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
@@ -3886,7 +4321,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The players inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080028, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory = { "mInventory", nullptr, (EPropertyFlags)0x0040000001080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_MetaData[] = {
 		{ "Category", "Camera" },
@@ -3894,48 +4329,48 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "What camera mode were we in before we opened the" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode = { UE4CodeGen_Private::EPropertyClass::Enum, "mPlayerPreferredCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mPlayerPreferredCameraMode), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode = { "mPlayerPreferredCameraMode", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mPlayerPreferredCameraMode), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerPreferredCameraMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Current camera mode for the character" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode = { UE4CodeGen_Private::EPropertyClass::Enum, "mCurrentCameraMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mCurrentCameraMode), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode = { "mCurrentCameraMode", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCurrentCameraMode), Z_Construct_UEnum_FactoryGame_ECameraMode, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCurrentCameraMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Remote client representation of the equipment" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments = { UE4CodeGen_Private::EPropertyClass::Array, "mActiveAttachments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_ActiveAttachments", STRUCT_OFFSET(AFGCharacterPlayer, mActiveAttachments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mActiveAttachments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments = { "mActiveAttachments", "OnRep_ActiveAttachments", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mActiveAttachments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveAttachments_Inner = { "mActiveAttachments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "@todo They should be in the inventory later on. But right now this is what you toggle with" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments = { UE4CodeGen_Private::EPropertyClass::Array, "mAllAttachments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mAllAttachments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mAllAttachments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments = { "mAllAttachments", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mAllAttachments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAllAttachments_Inner = { "mAllAttachments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipmentAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Simulated on the client so they know what to unequip." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments = { UE4CodeGen_Private::EPropertyClass::Array, "mClientActiveEquipments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mClientActiveEquipments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mClientActiveEquipments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments = { "mClientActiveEquipments", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mClientActiveEquipments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mClientActiveEquipments_Inner = { "mClientActiveEquipments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "This is the equipment we hold in our hands." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments = { UE4CodeGen_Private::EPropertyClass::Array, "mActiveEquipments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_ActiveEquipments", STRUCT_OFFSET(AFGCharacterPlayer, mActiveEquipments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mActiveEquipments", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments = { "mActiveEquipments", "OnRep_ActiveEquipments", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mActiveEquipments), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mActiveEquipments_Inner = { "mActiveEquipments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent_MetaData[] = {
 		{ "Category", "FGCharacterPlayer" },
@@ -3944,29 +4379,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Spring arm for camera" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSpringArmComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080009, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mSpringArmComponent), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent = { "mSpringArmComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mSpringArmComponent), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSpringArmComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData[] = {
+		{ "Category", "FGCharacterPlayer" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Player camera" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mCameraComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent = { "mCameraComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
-		{ "ToolTip", "/ used for knowing which is the latest written safe ground position" },
+		{ "ToolTip", "used for knowing which is the latest written safe ground position" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead = { UE4CodeGen_Private::EPropertyClass::Int, "mLastSafeGroundPositionLoopHead", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mLastSafeGroundPositionLoopHead), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead = { "mLastSafeGroundPositionLoopHead", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mLastSafeGroundPositionLoopHead), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositionLoopHead_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "latest safe ground location positions" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions = { UE4CodeGen_Private::EPropertyClass::Struct, "mLastSafeGroundPositions", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, CPP_ARRAY_DIM(mLastSafeGroundPositions, AFGCharacterPlayer), nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mLastSafeGroundPositions), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions = { "mLastSafeGroundPositions", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mLastSafeGroundPositions, AFGCharacterPlayer), STRUCT_OFFSET(AFGCharacterPlayer, mLastSafeGroundPositions), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mLastSafeGroundPositions_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_MetaData[] = {
 		{ "Category", "Footstep" },
@@ -3974,8 +4410,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Effects to play when a foot hits the ground in first person" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent = { UE4CodeGen_Private::EPropertyClass::Array, "m1PFootstepEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, m1PFootstepEvent), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "m1PFootstepEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent = { "m1PFootstepEvent", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, m1PFootstepEvent), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEvent_Inner = { "m1PFootstepEvent", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_MetaData[] = {
 		{ "Category", "Footstep" },
@@ -3983,8 +4419,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Effects to play when a foot hits the ground in first person" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect = { UE4CodeGen_Private::EPropertyClass::Array, "m1PFootstepEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, m1PFootstepEffect), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "m1PFootstepEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FFootstepEffectSurface, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect = { "m1PFootstepEffect", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, m1PFootstepEffect), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PFootstepEffect_Inner = { "m1PFootstepEffect", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FFootstepEffectSurface, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect_MetaData[] = {
 		{ "Category", "Footstep" },
@@ -3992,7 +4428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Default effects to play when a foot hits the ground when the material doesn't exist in m1PFootstepEffect" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect = { UE4CodeGen_Private::EPropertyClass::Struct, "m1PDefaultFootstepEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, m1PDefaultFootstepEffect), Z_Construct_UScriptStruct_FFootstepEffect, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect = { "m1PDefaultFootstepEffect", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, m1PDefaultFootstepEffect), Z_Construct_UScriptStruct_FFootstepEffect, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_m1PDefaultFootstepEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect_MetaData[] = {
 		{ "Category", "Use" },
@@ -4000,7 +4436,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The pickup we are collecting" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect = { UE4CodeGen_Private::EPropertyClass::Object, "mPickupToCollect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000014, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mPickupToCollect), Z_Construct_UClass_AFGItemPickup_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect = { "mPickupToCollect", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mPickupToCollect), Z_Construct_UClass_AFGItemPickup_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPickupToCollect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive_MetaData[] = {
 		{ "Category", "Revive" },
@@ -4008,7 +4444,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The player that we are reviving" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive = { UE4CodeGen_Private::EPropertyClass::Object, "mPlayerToRevive", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000014, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mPlayerToRevive), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive = { "mPlayerToRevive", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mPlayerToRevive), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mPlayerToRevive_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval_MetaData[] = {
 		{ "Category", "Swimming" },
@@ -4016,7 +4452,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Time between each application of drowning damage (in seconds)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mDrownDamageInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mDrownDamageInterval), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval = { "mDrownDamageInterval", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDrownDamageInterval), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage_MetaData[] = {
 		{ "Category", "Swimming" },
@@ -4024,7 +4460,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The amount of damage to receive when drowning." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage = { UE4CodeGen_Private::EPropertyClass::Float, "mDrownDamage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mDrownDamage), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage = { "mDrownDamage", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDrownDamage), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType_MetaData[] = {
 		{ "Category", "Swimming" },
@@ -4032,7 +4468,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "@todo: This should not be specified for each pawn" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType = { UE4CodeGen_Private::EPropertyClass::Class, "mDrownDamageDamageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mDrownDamageDamageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType = { "mDrownDamageDamageType", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mDrownDamageDamageType), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mDrownDamageDamageType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -4040,8 +4476,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The starting resources for the player if we are NOT in shipping" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting = { UE4CodeGen_Private::EPropertyClass::Array, "mStartingResourceForTesting", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mStartingResourceForTesting), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mStartingResourceForTesting", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting = { "mStartingResourceForTesting", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mStartingResourceForTesting), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResourceForTesting_Inner = { "mStartingResourceForTesting", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -4049,8 +4485,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The starting resources for the player" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources = { UE4CodeGen_Private::EPropertyClass::Array, "mStartingResources", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mStartingResources), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mStartingResources", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources = { "mStartingResources", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mStartingResources), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStartingResources_Inner = { "mStartingResources", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration_MetaData[] = {
 		{ "Category", "Revive" },
@@ -4058,7 +4494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "time (in seconds) it takes to revive a fellow player" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration = { UE4CodeGen_Private::EPropertyClass::Float, "mReviveDuration", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mReviveDuration), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration = { "mReviveDuration", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mReviveDuration), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReviveDuration_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P_MetaData[] = {
 		{ "Category", "Character" },
@@ -4066,7 +4502,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Anim instance class to use in first person" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P = { UE4CodeGen_Private::EPropertyClass::Class, "mAnimInstanceClass1P", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mAnimInstanceClass1P), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P = { "mAnimInstanceClass1P", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mAnimInstanceClass1P), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass1P_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass_MetaData[] = {
 		{ "Category", "Character" },
@@ -4074,7 +4510,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Anim instance class to use in third person" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass = { UE4CodeGen_Private::EPropertyClass::Class, "mAnimInstanceClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010015, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mAnimInstanceClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass = { "mAnimInstanceClass", nullptr, (EPropertyFlags)0x0024080000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mAnimInstanceClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mAnimInstanceClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData[] = {
 		{ "Category", "FGCharacterPlayer" },
@@ -4082,28 +4518,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Of the usable actor we are looking at, UPROPERTY to prevent the AdditionalData to be garbage collected" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState = { UE4CodeGen_Private::EPropertyClass::Struct, "mCachedUseState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020088000000014, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mCachedUseState), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState = { "mCachedUseState", nullptr, (EPropertyFlags)0x0020088000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mCachedUseState), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCachedUseState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "The best usable actor nearby." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor = { UE4CodeGen_Private::EPropertyClass::Object, "mBestUsableActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mBestUsableActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor = { "mBestUsableActor", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mBestUsableActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBestUsableActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Reference to the resource miner" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner = { UE4CodeGen_Private::EPropertyClass::Object, "mResourceMiner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mResourceMiner), Z_Construct_UClass_AFGResourceMiner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner = { "mResourceMiner", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mResourceMiner), Z_Construct_UClass_AFGResourceMiner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceMiner_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner_MetaData[] = {
 		{ "ModuleRelativePath", "FGCharacterPlayer.h" },
 		{ "ToolTip", "Reference to the resource scanner" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner = { UE4CodeGen_Private::EPropertyClass::Object, "mResourceScanner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mResourceScanner), Z_Construct_UClass_AFGResourceScanner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner = { "mResourceScanner", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mResourceScanner), Z_Construct_UClass_AFGResourceScanner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mResourceScanner_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -4111,7 +4547,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "This is the infamous build gun." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun = { UE4CodeGen_Private::EPropertyClass::Object, "mBuildGun", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000034, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mBuildGun), Z_Construct_UClass_AFGBuildGun_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun = { "mBuildGun", nullptr, (EPropertyFlags)0x0020080001000034, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mBuildGun), Z_Construct_UClass_AFGBuildGun_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBuildGun_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy_MetaData[] = {
 		{ "Category", "Use" },
@@ -4119,7 +4555,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Actor that's used when trying to pickup foliage" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy = { UE4CodeGen_Private::EPropertyClass::Object, "mFoliagePickupProxy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000034, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mFoliagePickupProxy), Z_Construct_UClass_AFGFoliagePickup_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy = { "mFoliagePickupProxy", nullptr, (EPropertyFlags)0x0020080000000034, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mFoliagePickupProxy), Z_Construct_UClass_AFGFoliagePickup_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass_MetaData[] = {
 		{ "Category", "Use" },
@@ -4127,7 +4563,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "As we have no foliage actor to actually put pickup code in, we use this actor as a proxy" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass = { UE4CodeGen_Private::EPropertyClass::Class, "mFoliagePickupProxyClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mFoliagePickupProxyClass), Z_Construct_UClass_AFGFoliagePickup_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass = { "mFoliagePickupProxyClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mFoliagePickupProxyClass), Z_Construct_UClass_AFGFoliagePickup_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mFoliagePickupProxyClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -4135,7 +4571,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "The default arms animation when we're idle." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass = { UE4CodeGen_Private::EPropertyClass::Class, "mMesh1PAnimClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mMesh1PAnimClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass = { "mMesh1PAnimClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mMesh1PAnimClass), Z_Construct_UClass_UAnimInstance_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh1PAnimClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -4144,7 +4580,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Pawn mesh: 3rd person view" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P = { UE4CodeGen_Private::EPropertyClass::Object, "mMesh3P", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000b0009, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mMesh3P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P = { "mMesh3P", nullptr, (EPropertyFlags)0x00100000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mMesh3P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mMesh3P_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate_MetaData[] = {
 		{ "Category", "Camera" },
@@ -4152,7 +4588,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate = { UE4CodeGen_Private::EPropertyClass::Float, "mBaseLookUpRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000020015, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mBaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate = { "mBaseLookUpRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mBaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseLookUpRate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
@@ -4160,8 +4596,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		{ "ToolTip", "Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate = { UE4CodeGen_Private::EPropertyClass::Float, "mBaseTurnRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000020015, 1, nullptr, STRUCT_OFFSET(AFGCharacterPlayer, mBaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate = { "mBaseTurnRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCharacterPlayer, mBaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mBaseTurnRate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mNoUpdate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mSlideToCrouchSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mStandSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCrouchSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mReplicatedIsSliding,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mCameraOffsetBlendSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mInRadioactiveZone,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationImmunity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCharacterPlayer_Statics::NewProp_mRadiationDamageAngle,
@@ -4237,13 +4679,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCharacterPlayer_Statics::ClassParams = {
 		&AFGCharacterPlayer::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers),
 		"Game",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCharacterPlayer()
@@ -4255,7 +4701,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 2573294281);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 2081213443);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterPlayer>()
+	{
+		return AFGCharacterPlayer::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCharacterPlayer(Z_Construct_UClass_AFGCharacterPlayer, &AFGCharacterPlayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCharacterPlayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCharacterPlayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

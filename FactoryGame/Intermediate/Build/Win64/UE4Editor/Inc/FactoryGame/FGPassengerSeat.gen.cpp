@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPassengerSeat_eventGetOuterVehicle_Parms, ReturnValue), Z_Construct_UClass_AFGVehicle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPassengerSeat_eventGetOuterVehicle_Parms, ReturnValue), Z_Construct_UClass_AFGVehicle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::NewProp_ReturnValue,
 	};
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		{ "ToolTip", "Gets the actual vehicle this passenger seat belongs to" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPassengerSeat, "GetOuterVehicle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPassengerSeat_eventGetOuterVehicle_Parms), Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPassengerSeat, nullptr, "GetOuterVehicle", sizeof(FGPassengerSeat_eventGetOuterVehicle_Parms), Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		{ "ToolTip", "Called every frame when we have a local driver in the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPassengerSeat, "UpdateCamera", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPassengerSeat, nullptr, "UpdateCamera", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -116,8 +116,8 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPassengerSeat_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle, "GetOuterVehicle" }, // 2866962190
-		{ &Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera, "UpdateCamera" }, // 213002935
+		{ &Z_Construct_UFunction_AFGPassengerSeat_GetOuterVehicle, "GetOuterVehicle" }, // 2754908471
+		{ &Z_Construct_UFunction_AFGPassengerSeat_UpdateCamera, "UpdateCamera" }, // 3283193783
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPassengerSeat_Statics::Class_MetaDataParams[] = {
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		{ "ToolTip", "Instance of the vehicle this passenger seat belongs to" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle = { UE4CodeGen_Private::EPropertyClass::Object, "mOuterVehicle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000020, 1, nullptr, STRUCT_OFFSET(AFGPassengerSeat, mOuterVehicle), Z_Construct_UClass_AFGVehicle_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle = { "mOuterVehicle", nullptr, (EPropertyFlags)0x0010000001000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPassengerSeat, mOuterVehicle), Z_Construct_UClass_AFGVehicle_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGPassengerSeat_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPassengerSeat_Statics::NewProp_mOuterVehicle,
 	};
@@ -142,13 +142,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPassengerSeat_Statics::ClassParams = {
 		&AFGPassengerSeat::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGPassengerSeat_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGPassengerSeat_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGPassengerSeat_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGPassengerSeat_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPassengerSeat_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPassengerSeat_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPassengerSeat()
@@ -160,7 +164,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPassengerSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPassengerSeat, 4051925135);
+	IMPLEMENT_CLASS(AFGPassengerSeat, 722410081);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGPassengerSeat>()
+	{
+		return AFGPassengerSeat::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPassengerSeat(Z_Construct_UClass_AFGPassengerSeat, &AFGPassengerSeat::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPassengerSeat"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPassengerSeat);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

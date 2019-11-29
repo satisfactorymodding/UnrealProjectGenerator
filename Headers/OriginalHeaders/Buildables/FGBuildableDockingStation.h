@@ -3,6 +3,7 @@
 #pragma once
 
 #include "FGBuildableFactory.h"
+#include "FGReplicationDetailActor_DockingStation.h"
 #include "FGBuildableDockingStation.generated.h"
 
 /**
@@ -22,13 +23,17 @@ public:
 	virtual void Destroyed() override;
 	// End AActor interface
 
+	// Begin IFGReplicationDetailActorOwnerInterface
+	virtual UClass* GetReplicationDetailActorClass() const override { return AFGReplicationDetailActor_DockingStation::StaticClass(); };
+	// End IFGReplicationDetailActorOwnerInterface
+
 	/** @return a valid pointer to the fuel inventory */
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
-	FORCEINLINE class UFGInventoryComponent* GetFuelInventory() const{ return mFuelInventory; }
+	FORCEINLINE class UFGInventoryComponent* GetFuelInventory() const{ return mFuelInventoryHandler->GetActiveInventoryComponent(); }
 
 	/** Get the inventory the docked vehicle loads/unloads to  */
 	UFUNCTION( BlueprintPure, Category = "DockingStation" )
-	FORCEINLINE class UFGInventoryComponent* GetInventory() const{ return mInventory; }
+	FORCEINLINE class UFGInventoryComponent* GetInventory() const{ return mInventoryHandler->GetActiveInventoryComponent(); }
 
 	/** Get the docked actor if any. */
 	UFUNCTION( BlueprintPure, Category = "DockingStation" )
@@ -77,6 +82,10 @@ protected:
 	virtual bool CanProduce_Implementation() const override;
 	// End AFGBuildableFactory interface
 
+	virtual void OnRep_ReplicationDetailActor() override;
+
+	class AFGReplicationDetailActor_DockingStation* GetCastRepDetailsActor() const;
+
 	/** Set up the fuel inventory when replicated */
 	UFUNCTION()
 	void OnRep_FuelInventory();
@@ -121,6 +130,8 @@ private:
 	void LoadUnloadVehicleComplete();
 
 protected:
+	friend class AFGReplicationDetailActor_DockingStation;
+
 	/** All connection components tagged with this is considered fuel components */
 	static FName sFuelTag;
 
@@ -144,13 +155,11 @@ protected:
 	UPROPERTY( Replicated, Meta = (NoAutoJson = true) )
 	float mTransferProgress;
 
-	/** Inventory where we transfer items to when unloading from a vehicle  */
-	UPROPERTY( SaveGame, Replicated )
-	class UFGInventoryComponent* mInventory;
+	UPROPERTY()
+	class UFGReplicationDetailInventoryComponent* mFuelInventoryHandler;
 
-	/** Inventory for refueling the trucks. */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_FuelInventory )
-	class UFGInventoryComponent* mFuelInventory;
+	UPROPERTY()
+	class UFGReplicationDetailInventoryComponent* mInventoryHandler;
 
 	/** All connections that can pull in fuel to the docking station, (References hold by Components array, no need for UPROPERTY) */
 	TArray<class UFGFactoryConnectionComponent*> mFuelConnections;
@@ -177,4 +186,13 @@ protected:
 	/** Are we currently in the process of loading or unloading inventory */
 	UPROPERTY( SaveGame, Replicated, Meta = (NoAutoJson = true) )
 	bool mIsLoadUnloading;
+
+private:
+	/** Inventory where we transfer items to when unloading from a vehicle  */
+	UPROPERTY( SaveGame )
+	class UFGInventoryComponent* mInventory;
+
+	/** Inventory for refueling the trucks. */
+	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_FuelInventory )
+	class UFGInventoryComponent* mFuelInventory;
 };

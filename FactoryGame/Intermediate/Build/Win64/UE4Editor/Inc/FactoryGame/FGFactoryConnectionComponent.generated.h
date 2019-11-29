@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -260,6 +260,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGFactoryConnectionComponent>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGFactoryConnectionComponent_h
 
@@ -269,7 +271,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EFactoryConnectionDirection::FCD_OUTPUT) \
 	op(EFactoryConnectionDirection::FCD_ANY) \
 	op(EFactoryConnectionDirection::FCD_SNAP_ONLY) 
+
+enum class EFactoryConnectionDirection : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFactoryConnectionDirection>();
+
 #define FOREACH_ENUM_EFACTORYCONNECTIONCONNECTOR(op) \
 	op(EFactoryConnectionConnector::FCC_CONVEYOR) \
 	op(EFactoryConnectionConnector::FCC_PIPE) 
+
+enum class EFactoryConnectionConnector : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFactoryConnectionConnector>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

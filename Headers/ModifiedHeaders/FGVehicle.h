@@ -150,8 +150,6 @@ public:
 	//End IFGSignificanceInterface
 
 	//~ Begin IFGColorInterface
-	void SetPrimaryColor_Implementation( FLinearColor newColor );
-	void SetSecondaryColor_Implementation( FLinearColor newColor );
 	FLinearColor GetPrimaryColor_Implementation();
 	FLinearColor GetSecondaryColor_Implementation();
 	bool GetCanBeColored_Implementation(){ return true; }
@@ -223,6 +221,9 @@ public:
 	FORCEINLINE bool IsDestructible() { return mIsDestructible; }
 	
 	// Begin ADriveablePawn interface
+
+	/** Overridden to reset self driving status */
+	virtual bool DriverEnter( class AFGCharacterPlayer* driver ) override;
 	virtual bool DriverLeave( bool keepDriving = false ) override;
 	// End ADriveablePawn interface
 
@@ -306,16 +307,9 @@ protected:
 	void ShowOutline( EOutlineColor color ) const;
 	/** Hide the outline for the vehicle. */
 	void HideOutline();
-
 private:
 	/** Helpers */
 	void SetSelfDriving( bool newSelfDriving );
-
-	/** Rep notifies */
-	UFUNCTION()
-	void OnRep_PrimaryColor();
-	UFUNCTION()
-	void OnRep_SecondaryColor();
 
 	/** Notifies from out mesh */
 	UFUNCTION()
@@ -362,11 +356,11 @@ private:
 	TArray< FItemAmount > mDismantleRefund;
 
 	/** The primary color of this buildable */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_PrimaryColor )
+	UPROPERTY( SaveGame )
 	FLinearColor mPrimaryColor;
 
 	/** The primary color of this buildable */
-	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_SecondaryColor )
+	UPROPERTY( SaveGame )
 	FLinearColor mSecondaryColor;
 
 	/** If this vehicle is self driving. */

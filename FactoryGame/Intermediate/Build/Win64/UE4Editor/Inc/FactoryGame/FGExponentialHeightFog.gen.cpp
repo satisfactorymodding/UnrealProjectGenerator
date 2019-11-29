@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -27,10 +27,14 @@ class UScriptStruct* FExponentialFogSettings::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FExponentialFogSettings, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ExponentialFogSettings"), sizeof(FExponentialFogSettings), Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FExponentialFogSettings, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ExponentialFogSettings"), sizeof(FExponentialFogSettings), Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FExponentialFogSettings>()
+{
+	return FExponentialFogSettings::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FExponentialFogSettings(FExponentialFogSettings::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ExponentialFogSettings"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSettings
@@ -115,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "100000" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance = { UE4CodeGen_Private::EPropertyClass::Float, "FogCutoffDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FogCutoffDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance = { "FogCutoffDistance", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogCutoffDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -125,7 +129,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance = { UE4CodeGen_Private::EPropertyClass::Float, "StartDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, StartDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance = { "StartDistance", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, StartDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -135,7 +139,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity = { UE4CodeGen_Private::EPropertyClass::Float, "FogMaxOpacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FogMaxOpacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity = { "FogMaxOpacity", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogMaxOpacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogMaxOpacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -145,7 +149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "0.001" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff = { UE4CodeGen_Private::EPropertyClass::Float, "FogHeightFalloff", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FogHeightFalloff), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff = { "FogHeightFalloff", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogHeightFalloff), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeightFalloff_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -153,7 +157,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Controls the color of the directional inscattering, which is used to approximate inscattering from a directional light.\nNote: there must be a directional light with bUsedAsAtmosphereSunLight enabled for DirectionalInscattering to be used." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor = { UE4CodeGen_Private::EPropertyClass::Struct, "DirectionalInscatteringColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, DirectionalInscatteringColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor = { "DirectionalInscatteringColor", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, DirectionalInscatteringColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -161,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Controls the start distance from the viewer of the directional inscattering, which is used to approximate inscattering from a directional light.\nNote: there must be a directional light with bUsedAsAtmosphereSunLight enabled for DirectionalInscattering to be used." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance = { UE4CodeGen_Private::EPropertyClass::Float, "DirectionalInscatteringStartDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, DirectionalInscatteringStartDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance = { "DirectionalInscatteringStartDistance", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, DirectionalInscatteringStartDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringStartDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -171,7 +175,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "2" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent = { UE4CodeGen_Private::EPropertyClass::Float, "DirectionalInscatteringExponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, DirectionalInscatteringExponent), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent = { "DirectionalInscatteringExponent", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, DirectionalInscatteringExponent), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_DirectionalInscatteringExponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -181,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "1000" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance = { UE4CodeGen_Private::EPropertyClass::Float, "NonDirectionalInscatteringColorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, NonDirectionalInscatteringColorDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance = { "NonDirectionalInscatteringColorDistance", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, NonDirectionalInscatteringColorDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_NonDirectionalInscatteringColorDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -191,14 +195,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "1000" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance = { UE4CodeGen_Private::EPropertyClass::Float, "FullyDirectionalInscatteringColorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FullyDirectionalInscatteringColorDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance = { "FullyDirectionalInscatteringColorDistance", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FullyDirectionalInscatteringColorDistance), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FullyDirectionalInscatteringColorDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
 		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor = { UE4CodeGen_Private::EPropertyClass::Struct, "FogInscatteringColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FogInscatteringColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor = { "FogInscatteringColor", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogInscatteringColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogInscatteringColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -208,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity = { UE4CodeGen_Private::EPropertyClass::Float, "FogDensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FogDensity), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity = { "FogDensity", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogDensity), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogDensity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight_MetaData[] = {
 		{ "Category", "ExponentialHeightFog" },
@@ -216,7 +220,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "The ZValue of the fog" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight = { UE4CodeGen_Private::EPropertyClass::Float, "FogHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FExponentialFogSettings, FogHeight), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight = { "FogHeight", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FExponentialFogSettings, FogHeight), METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogHeight_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_FogCutoffDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::NewProp_StartDistance,
@@ -236,19 +240,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		nullptr,
 		&NewStructOps,
 		"ExponentialFogSettings",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FExponentialFogSettings),
 		alignof(FExponentialFogSettings),
-		Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FExponentialFogSettings()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ExponentialFogSettings"), sizeof(FExponentialFogSettings), Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ExponentialFogSettings"), sizeof(FExponentialFogSettings), Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -258,7 +263,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC() { return 358651353U; }
+	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash() { return 531340280U; }
 	void AFGDynamicExponentialFogVolume::StaticRegisterNativesAFGDynamicExponentialFogVolume()
 	{
 	}
@@ -402,7 +407,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "A preview of all the settings in the current fog-volume" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings = { UE4CodeGen_Private::EPropertyClass::Struct, "mPreviewSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800020801, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPreviewSettings), Z_Construct_UScriptStruct_FExponentialFogSettings, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings = { "mPreviewSettings", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPreviewSettings), Z_Construct_UScriptStruct_FExponentialFogSettings, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime_MetaData[] = {
 		{ "Category", "Preview" },
@@ -414,7 +419,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime = { UE4CodeGen_Private::EPropertyClass::Float, "mPreviewTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000801, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPreviewTime), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime = { "mPreviewTime", nullptr, (EPropertyFlags)0x0040000800000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPreviewTime), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewTime_MetaData)) };
 #endif // WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_MetaData[] = {
@@ -429,7 +434,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mEnableGain = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain = { UE4CodeGen_Private::EPropertyClass::Bool, "mEnableGain", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain = { "mEnableGain", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableGain_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -443,7 +448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mEnableContrast = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast = { UE4CodeGen_Private::EPropertyClass::Bool, "mEnableContrast", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast = { "mEnableContrast", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableContrast_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -456,7 +461,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mEnableSaturation = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation = { UE4CodeGen_Private::EPropertyClass::Bool, "mEnableSaturation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation = { "mEnableSaturation", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mEnableSaturation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -464,7 +469,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "The blend weight of the post process volume" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight = { UE4CodeGen_Private::EPropertyClass::Float, "mBlendWeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mBlendWeight), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight = { "mBlendWeight", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mBlendWeight), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendWeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity_MetaData[] = {
 		{ "Category", "SkySphere" },
@@ -473,7 +478,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "How the opakeness of the clouds change during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity = { UE4CodeGen_Private::EPropertyClass::Struct, "mCloudOpacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mCloudOpacity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity = { "mCloudOpacity", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mCloudOpacity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mCloudOpacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_MetaData[] = {
 		{ "Category", "SkySphere" },
@@ -487,7 +492,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mOverrideCloudOpacity = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity = { UE4CodeGen_Private::EPropertyClass::Bool, "mOverrideCloudOpacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity = { "mOverrideCloudOpacity", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudOpacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_MetaData[] = {
 		{ "Category", "SkySphere" },
@@ -501,7 +506,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mOverrideCloudColor = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor = { UE4CodeGen_Private::EPropertyClass::Bool, "mOverrideCloudColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor = { "mOverrideCloudColor", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideCloudColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_MetaData[] = {
 		{ "Category", "SkySphere" },
@@ -515,7 +520,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mOverrideZenithColor = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor = { UE4CodeGen_Private::EPropertyClass::Bool, "mOverrideZenithColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor = { "mOverrideZenithColor", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideZenithColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_MetaData[] = {
 		{ "Category", "SkySphere" },
@@ -528,7 +533,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	{
 		((AFGDynamicExponentialFogVolume*)Obj)->mOverrideHorizonColor = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor = { UE4CodeGen_Private::EPropertyClass::Bool, "mOverrideHorizonColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor = { "mOverrideHorizonColor", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDynamicExponentialFogVolume), &Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mOverrideHorizonColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -536,7 +541,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance = { UE4CodeGen_Private::EPropertyClass::Struct, "mFogCutoffDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogCutoffDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance = { "mFogCutoffDistance", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogCutoffDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogCutoffDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -544,7 +549,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance = { UE4CodeGen_Private::EPropertyClass::Struct, "mStartDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mStartDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance = { "mStartDistance", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mStartDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mStartDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -552,7 +557,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity = { UE4CodeGen_Private::EPropertyClass::Struct, "mFogMaxOpacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200c0000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogMaxOpacity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity = { "mFogMaxOpacity", nullptr, (EPropertyFlags)0x00200c0000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogMaxOpacity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogMaxOpacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -560,7 +565,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff = { UE4CodeGen_Private::EPropertyClass::Struct, "mFogHeightFalloff", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogHeightFalloff), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff = { "mFogHeightFalloff", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogHeightFalloff), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeightFalloff_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -568,7 +573,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance = { UE4CodeGen_Private::EPropertyClass::Struct, "mDirectionalInscatteringStartDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200c0000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mDirectionalInscatteringStartDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance = { "mDirectionalInscatteringStartDistance", nullptr, (EPropertyFlags)0x00200c0000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mDirectionalInscatteringStartDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringStartDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -576,7 +581,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent = { UE4CodeGen_Private::EPropertyClass::Struct, "mDirectionalInscatteringExponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200c0000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mDirectionalInscatteringExponent), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent = { "mDirectionalInscatteringExponent", nullptr, (EPropertyFlags)0x00200c0000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mDirectionalInscatteringExponent), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mDirectionalInscatteringExponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -584,7 +589,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance = { UE4CodeGen_Private::EPropertyClass::Struct, "mNonDirectionalInscatteringColorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200c0000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mNonDirectionalInscatteringColorDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance = { "mNonDirectionalInscatteringColorDistance", nullptr, (EPropertyFlags)0x00200c0000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mNonDirectionalInscatteringColorDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mNonDirectionalInscatteringColorDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -592,7 +597,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance = { UE4CodeGen_Private::EPropertyClass::Struct, "mFullyDirectionalInscatteringColorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200c0000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFullyDirectionalInscatteringColorDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance = { "mFullyDirectionalInscatteringColorDistance", nullptr, (EPropertyFlags)0x00200c0000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFullyDirectionalInscatteringColorDistance), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFullyDirectionalInscatteringColorDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -600,7 +605,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity = { UE4CodeGen_Private::EPropertyClass::Struct, "mFogDensity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogDensity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity = { "mFogDensity", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogDensity), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogDensity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight_MetaData[] = {
 		{ "Category", "HeightFog" },
@@ -608,7 +613,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "Interpolate the fog height during the day" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight = { UE4CodeGen_Private::EPropertyClass::Struct, "mFogHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000015, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogHeight), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight = { "mFogHeight", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mFogHeight), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mFogHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance_MetaData[] = {
 		{ "Category", "Shared" },
@@ -616,14 +621,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		{ "ToolTip", "The distance that the fog blends over" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mBlendDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mBlendDistance), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance = { "mBlendDistance", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mBlendDistance), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mBlendDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData[] = {
 		{ "Category", "Shared" },
 		{ "ModuleRelativePath", "FGExponentialHeightFog.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority = { UE4CodeGen_Private::EPropertyClass::Float, "mPriority", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPriority), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority = { "mPriority", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDynamicExponentialFogVolume, mPriority), METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPriority_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers[] = {
 #if WITH_EDITORONLY_DATA
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::NewProp_mPreviewSettings,
@@ -659,13 +664,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::ClassParams = {
 		&AFGDynamicExponentialFogVolume::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGDynamicExponentialFogVolume()
@@ -677,7 +686,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 3159623540);
+	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 4060475735);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGDynamicExponentialFogVolume>()
+	{
+		return AFGDynamicExponentialFogVolume::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDynamicExponentialFogVolume(Z_Construct_UClass_AFGDynamicExponentialFogVolume, &AFGDynamicExponentialFogVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDynamicExponentialFogVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDynamicExponentialFogVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -67,14 +67,14 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 		{ "ToolTip", "Material to use on the clearance component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial = { "mClearanceMaterial", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGFactoryHologram.h" },
 		{ "ToolTip", "Mesh we want to use in the component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh = { "mClearanceMesh", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 		{ "ToolTip", "Mesh component used to display the clearance mesh" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent = { "mClearanceMeshComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGFactoryHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh,
@@ -93,13 +93,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFactoryHologram_Statics::ClassParams = {
 		&AFGFactoryHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGFactoryHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGFactoryHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFactoryHologram()
@@ -111,7 +115,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFactoryHologram, 2809468096);
+	IMPLEMENT_CLASS(AFGFactoryHologram, 1373280720);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFactoryHologram>()
+	{
+		return AFGFactoryHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFactoryHologram(Z_Construct_UClass_AFGFactoryHologram, &AFGFactoryHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFactoryHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFactoryHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

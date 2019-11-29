@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 	{
 		((FGDismantleInterface_eventCanDismantle_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDismantleInterface_eventCanDismantle_Parms), &Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDismantleInterface_eventCanDismantle_Parms), &Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::NewProp_ReturnValue,
 	};
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Can this be dismantled." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "CanDismantle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48020C00, sizeof(FGDismantleInterface_eventCanDismantle_Parms), Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "CanDismantle", sizeof(FGDismantleInterface_eventCanDismantle_Parms), Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_CanDismantle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Dismantle this." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "Dismantle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "Dismantle", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_Dismantle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -150,8 +150,8 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::NewProp_out_refund = { UE4CodeGen_Private::EPropertyClass::Array, "out_refund", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventGetDismantleRefund_Parms, out_refund), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::NewProp_out_refund_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_refund", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::NewProp_out_refund = { "out_refund", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventGetDismantleRefund_Parms, out_refund), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::NewProp_out_refund_Inner = { "out_refund", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::NewProp_out_refund,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::NewProp_out_refund_Inner,
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "How much do we get back when dismantling this." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "GetDismantleRefund", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48420C00, sizeof(FGDismantleInterface_eventGetDismantleRefund_Parms), Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "GetDismantleRefund", sizeof(FGDismantleInterface_eventGetDismantleRefund_Parms), Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -187,14 +187,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_out_radius = { UE4CodeGen_Private::EPropertyClass::Float, "out_radius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms, out_radius), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_out_radius = { "out_radius", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms, out_radius), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "aimHitLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms, aimHitLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation = { "aimHitLocation", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms, aimHitLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_aimHitLocation_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::NewProp_out_radius,
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Returns the location where the refund should be spawned and the area\nif the player doesn't have room in the inventory.\n\n@param aimHitLocation - the location we aimed at when dismantling happened\n@param out_radius - radius we want to spawn stuff within" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "GetRefundSpawnLocationAndArea", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48C20C00, sizeof(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms), Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "GetRefundSpawnLocationAndArea", sizeof(FGDismantleInterface_eventGetRefundSpawnLocationAndArea_Parms), Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48C20C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Called prior to dismantle and prior to an upgrade from this actor to another actor.\nUse it to clear connections and other stuff that might interfere with upgrades." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "PreUpgrade", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "PreUpgrade", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventStartIsLookedAtForDismantle_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventStartIsLookedAtForDismantle_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::NewProp_byCharacter,
 	};
@@ -261,7 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Called on by the interface if we are looking at something we can dismantle." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "StartIsLookedAtForDismantle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGDismantleInterface_eventStartIsLookedAtForDismantle_Parms), Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "StartIsLookedAtForDismantle", sizeof(FGDismantleInterface_eventStartIsLookedAtForDismantle_Parms), Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventStopIsLookedAtForDismantle_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventStopIsLookedAtForDismantle_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::NewProp_byCharacter,
 	};
@@ -291,7 +291,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Called when we stop looking at the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "StopIsLookedAtForDismantle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGDismantleInterface_eventStopIsLookedAtForDismantle_Parms), Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "StopIsLookedAtForDismantle", sizeof(FGDismantleInterface_eventStopIsLookedAtForDismantle_Parms), Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -310,7 +310,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::NewProp_newActor = { UE4CodeGen_Private::EPropertyClass::Object, "newActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGDismantleInterface_eventUpgrade_Parms, newActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::NewProp_newActor = { "newActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDismantleInterface_eventUpgrade_Parms, newActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::NewProp_newActor,
 	};
@@ -321,7 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		{ "ToolTip", "Called when an upgrade is performed from this actor to another actor.\n@param newActor  The new actor that replaces this." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, "Upgrade", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGDismantleInterface_eventUpgrade_Parms), Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDismantleInterface, nullptr, "Upgrade", sizeof(FGDismantleInterface_eventUpgrade_Parms), Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDismantleInterface_Upgrade()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -350,14 +350,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDismantleInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDismantleInterface_CanDismantle, "CanDismantle" }, // 901090571
-		{ &Z_Construct_UFunction_UFGDismantleInterface_Dismantle, "Dismantle" }, // 279016651
-		{ &Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund, "GetDismantleRefund" }, // 3438251578
-		{ &Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea, "GetRefundSpawnLocationAndArea" }, // 1227334223
-		{ &Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade, "PreUpgrade" }, // 2891880130
-		{ &Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle, "StartIsLookedAtForDismantle" }, // 126978354
-		{ &Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle, "StopIsLookedAtForDismantle" }, // 455881096
-		{ &Z_Construct_UFunction_UFGDismantleInterface_Upgrade, "Upgrade" }, // 3981948302
+		{ &Z_Construct_UFunction_UFGDismantleInterface_CanDismantle, "CanDismantle" }, // 95956983
+		{ &Z_Construct_UFunction_UFGDismantleInterface_Dismantle, "Dismantle" }, // 975127788
+		{ &Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund, "GetDismantleRefund" }, // 2223577840
+		{ &Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea, "GetRefundSpawnLocationAndArea" }, // 4265645180
+		{ &Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade, "PreUpgrade" }, // 3112399586
+		{ &Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle, "StartIsLookedAtForDismantle" }, // 805256719
+		{ &Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle, "StopIsLookedAtForDismantle" }, // 2594673757
+		{ &Z_Construct_UFunction_UFGDismantleInterface_Upgrade, "Upgrade" }, // 2070729271
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDismantleInterface_Statics::Class_MetaDataParams[] = {
@@ -372,13 +372,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDismantleInterface_Statics::ClassParams = {
 		&UFGDismantleInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDismantleInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDismantleInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDismantleInterface()
@@ -390,7 +394,11 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleInterface, 1903124378);
+	IMPLEMENT_CLASS(UFGDismantleInterface, 1182245832);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGDismantleInterface>()
+	{
+		return UFGDismantleInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleInterface(Z_Construct_UClass_UFGDismantleInterface, &UFGDismantleInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleInterface);
 	static FName NAME_UFGDismantleInterface_CanDismantle = FName(TEXT("CanDismantle"));

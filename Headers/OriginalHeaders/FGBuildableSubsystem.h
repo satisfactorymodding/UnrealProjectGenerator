@@ -21,7 +21,7 @@ struct FDistanceBasedTickRate
 
 	UPROPERTY( EditDefaultsOnly, Category = "Factory" )
 	float Distance;
-	
+
 	UPROPERTY( EditDefaultsOnly, Category = "Factory" )
 	float TickRate;
 };
@@ -38,11 +38,40 @@ struct FBuildableBucket
 	TArray< class AFGBuildable* > Buildables;
 };
 
+USTRUCT()
+struct FConveyorBucket
+{
+	GENERATED_BODY()
+
+	FConveyorBucket(){}
+
+	UPROPERTY()
+	TArray< class AFGBuildableConveyorBase* > Conveyors;
+};
+
+USTRUCT()
+struct FBuildableGroupTimeData
+{
+	GENERATED_BODY()
+	
+	FBuildableGroupTimeData() :
+		RealSeconds( 0 ),
+		RealPartialSeconds( 0.f )
+	{}
+	
+	// Returns the combined time data as a double
+	double GetTimeAsDouble() { return ( double )RealSeconds + ( double )RealPartialSeconds; }
+
+	int32 RealSeconds;
+
+	float RealPartialSeconds;
+};
+
 /**
  * Subsystem responsible for spawning and maintaining buildables.
  * This enables and disables ticks on the buildable.
  */
-UCLASS()
+UCLASS( config = Game, defaultconfig, meta = ( DisplayName = "Buildable Subsystem" ) )
 class FACTORYGAME_API AFGBuildableSubsystem : public AFGSubsystem, public IFGSaveInterface
 {
 	GENERATED_BODY()
@@ -76,17 +105,45 @@ public:
 	static AFGBuildableSubsystem* Get( UObject* worldContext );
 
 	/**
-	 * Spawn a buildable at a specified location, you need to call FinishSpawning on the buildable after this to finalize the spawning.
-	 *
-	 * @param inClass - The class we want to spawn (need to be valid).
-	 * @param inTransform - where we want to spawn the buildable.
-	 */
+		* Spawn a buildable at a specified location, you need to call FinishSpawning on the buildable after this to finalize the spawning.
+		*
+		* @param inClass - The class we want to spawn (need to be valid).
+		* @param inTransform - where we want to spawn the buildable.
+		*/
 	class AFGBuildable* BeginSpawnBuildable( TSubclassOf< class AFGBuildable > inClass, const FTransform& inTransform );
 
 	/** Adds a buildable to the buildable array. */
 	void AddBuildable( class AFGBuildable* buildable );
+
+	/** Adds a conveyor to the conveyor buckets */
+	void AddConveyor( AFGBuildableConveyorBase* conveyor );
+
+	/** 
+	* Get the connected conveyor belt from the given connection. 
+	* Can return a nullptr if we have no belt connected or if the connected belt have bucket index assigned to -1 
+	*/
+	class AFGBuildableConveyorBase* GetConnectedConveyorBelt( class UFGFactoryConnectionComponent* connection );
+
 	/** Remove the buildable from the subsystem, this is called by the buildable when destroyed. */
 	void RemoveBuildable( class AFGBuildable* buildable );
+
+	/** Remove the conveyor from the subsystem */
+	void RemoveConveyor( AFGBuildableConveyorBase* conveyor );
+
+	/**
+	 *	Remove a conveyor from the bucket it's assigned to
+	 *	If it's the only conveyor in the bucket the bucket will be removed
+	 */
+	void RemoveConveyorFromBucket( AFGBuildableConveyorBase* conveyorToRemove );
+
+	/** Rearrange the conveyor buckets after we emptied a bucket */
+	void RearrangeConveyorBuckets( int32 emptiedBucketID );
+
+	/**
+	*	Splits up a conveyor bucket into two buckets
+	*	Empties the current bucket and adds all conveyors again into two buckets
+	*/
+	void RemoveAndSplitConveyorBucket( AFGBuildableConveyorBase* conveyorToRemove );
 
 	/** Get all buildables of the supplied type. */
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory" )
@@ -99,6 +156,30 @@ public:
 	/** Starts replaying of build effects in the build order of the buildings. */
 	UFUNCTION()
 	void ReplayBuildingEffects();
+
+	/** Check if a mesh component has a material instance manager matching its material */
+	bool HasMaterialInstanceManagerForMaterialInterface( UMaterialInterface* materialInterface );
+
+	/**
+	*	Attempts to get the correct colored material for a supplied factory building material.
+	*	If the material does not exist in the material map, a new dynamic instance is created, filled, and returned.
+	*/
+	class UFGFactoryMaterialInstanceManager* GetMaterialInstanceManagerForMaterialInterface( UMaterialInterface* materialInterface, bool canBeColored = true );
+
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
+	void SetColorSlotPrimary( uint8 index, FColor color );
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
+	void SetColorSlotSecondary( uint8 index, FColor color );
+
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
+	FColor GetColorSlotPrimary( uint8 index );
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
+	FColor GetColorSlotSecondary( uint8 index );
+
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
+	FLinearColor GetColorSlotPrimaryLinear( uint8 index );
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
+	FLinearColor GetColorSlotSecondaryLinear( uint8 index );
 
 	/** Debug */
 	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos ) override;
@@ -122,12 +203,17 @@ public:
 		return TStatId(); // not doing stats at the moment, or ever
 	}
 
+	UMaterial* GetFactoryDefaultMaterial()
+	{
+		return mDefaultFactoryMaterial;
+	}
+
 protected:
 	// Find and return a local player
 	class AFGPlayerController* GetLocalPlayerController() const;
 
 	/** Distance from a location to closest point of buildables AABB */
-	float GetDistanceSqToBoundingBox( const FVector& point,  class AFGBuildable* buildable ) const;
+	float GetDistanceSqToBoundingBox( const FVector& point, class AFGBuildable* buildable ) const;
 
 	/** Register/unregister our factory tick function */
 	void RegisterFactoryTickFunction( bool shouldRegister );
@@ -138,6 +224,15 @@ private:
 	void UpdateReplayEffects( float dt );
 
 	void AddBuildableMeshInstances( class AFGBuildable* buildable );
+
+	/** 
+	*	Called on a buildable when it is added to the subsystem to update its materials to utilize pooled DynamicMaterialInstances if they exist for the present factory materials 
+	*	If no FactoryMaterialInstanceManager can be matched with the present colorable factory materials on the mesh components on the buildable, a new manager object is created and applied
+	*/
+	void UpdateBuildableMaterialInstances( AFGBuildable* buildable );
+
+	/* Tick all factory buildings, conveyors and conveyor attachments */
+	void TickFactoryActors( float dt );
 
 public:
 	/** Distance used when calculating if a location is near a base */
@@ -152,26 +247,8 @@ public:
 	UPROPERTY( BlueprintAssignable, Category = "Build", DisplayName = "OnBuildableConstructedGlobal" )
 	FOnBuildableConstructedGlobal BuildableConstructedGlobalDelegate;
 
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
-	void setColorSlotPrimary( uint8 index, FColor color );
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
-	void setColorSlotSecondary( uint8 index, FColor color );
-
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
-	FColor getColorSlotPrimary( uint8 index );
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
-	FColor getColorSlotSecondary( uint8 index );
-
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
-	FLinearColor GetColorSlotPrimaryLinear( uint8 index );
-	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Factory|Customization" )
-	FLinearColor GetColorSlotSecondaryLinear( uint8 index );
-
-
-	UMaterial* GetFactoryDefaultMaterial()
-	{
-		return mDefaultFactoryMaterial;
-	}
+	/** Print all fixed factory tick information */
+	void DumpFixedFactoryTickValues() const;
 
 	/**
 	 * Used by UFGColoredInstanceMeshProxy to get an instance if it's not already been assigned
@@ -183,9 +260,44 @@ private:
 	UPROPERTY()
 	TArray< class AFGBuildable* > mBuildables;
 
-	/** Grouping buildings into buckets by class */
+	// Begin variables for parallelization
+	/** This contains all factory tickable buildings except conveyors and splitter/mergers */
+	TArray< class AFGBuildable* > mFactoryBuildings;
+
+	// Groupings of factory buildings for reduced thread count parallelization
+	TArray < TArray < class AFGBuildable* >> mFactoryBuildingGroups;
+
+	// Track if we need to rebuild the factory buildings groupings
+	bool mFactoryBuildingGroupsDirty;
+
+	/** All conveyor belts that can be executed in parallel sorted into buckets. 
+	*	Each bucket contains a complete section of belts in the order of output to input.
+	*	A bucket can contain a single conveyor belt, a section or a looped section
+	*	An exception exists for belts that connect to buildables with 2 outputs, those are added to a separate buckets
+	*/
+	TArray< FConveyorBucket* > mConveyorBuckets;
+
+	/** All conveyors that are not safe to execute in parallel
+	*	At the time of writing this is used only for conveyors connecting to buildings with multiple outputs
+	*/
+	TArray< AFGBuildableConveyorBase* > mSerialConveyorGroup;
+
+	// Groupings of conveyor buckets
+	TArray< TArray < FConveyorBucket* > > mConveyorBucketGroups;
+
+	// Track whether or not we need to repopulate our conveyor groups
+	bool mConveyorBucketGroupsDirty;
+
+	/** All conveyor attachments */
 	UPROPERTY()
-	TArray< FBuildableBucket> mBuildableBuckets;
+	TArray< class AFGBuildableConveyorAttachment* > mConveyorAttachments;
+
+	// Grouping of conveyor attachments for reduced thread count parallelization
+	TArray< TArray < class AFGBuildableConveyorAttachment* >> mConveyorAttachmentGroups;
+
+	// Track if we need to rebuild the attachments groupings
+	bool mConveyorAttachmentGroupsDirty;
+	// End variables for parallelization
 
 	/** Hierarchical instances for the factory buildings. */
 	UPROPERTY()
@@ -201,18 +313,49 @@ private:
 	UPROPERTY()
 	TMap< class UStaticMesh*, class UFGColoredInstanceManager* > mColoredInstances;
 
-
 	bool mColorSlotsAreDirty = false;
+
 	UPROPERTY( SaveGame, EditDefaultsOnly, Category = "Customization" )
 	FColor mColorSlotsPrimary[ BUILDABLE_COLORS_MAX_SLOTS ];
 
-	UPROPERTY( SaveGame, EditDefaultsOnly,  Category = "Customization" )
+	UPROPERTY( SaveGame, EditDefaultsOnly, Category = "Customization" )
 	FColor mColorSlotsSecondary[ BUILDABLE_COLORS_MAX_SLOTS ];
 
 	uint8 mColorSlotDirty[ BUILDABLE_COLORS_MAX_SLOTS ];
 
+	// Map of all Factory materials that are referenced by Factory buildings. Maps the materials name (and all dynamic instance mat names) to a manager class holding corresponding colored instances
+	// This is also used for non-colored materials, for example, the conveyor belt materials so that the same instance can be applied to many different belts
+	UPROPERTY()
+	TMap< FString, class UFGFactoryMaterialInstanceManager* > mFactoryColoredMaterialMap;
 
+	/** Begin Fixed Factory Tick Config Parameters */
+	UPROPERTY( config )
+	bool mUseFixedFactoryTick;
 
+	UPROPERTY( config )
+	float mMinFactoryTickRate;
+
+	UPROPERTY( config )
+	float mMaxFactoryTickRate;
+
+	UPROPERTY( config )
+	int mMaxTickSubsteps;
+	/** End Fixed Factory Tick Parameters*/
+
+	/** Time in MS of the minimum tick time (1.f / mMinFactoryTickRate)
+	*	Minimum factory tick refers to the maximum amount of time that is allowed to pass per factory tick. So minimum here is actually a larger number than max
+	*	A little confusing, but this way it can match its respective tickRate var by name: mMinFactoryTickRate, which appears in the config.
+	*/
+	float mMinFactoryTick;
+
+	/** Time in MS of the maximum tick time (1.f / mMaxFactoryTickRate)
+	*	Maximum factory tick refers to the minimum amount of time that is allowed to pass to execute a factory tick. Maximum here is actually a smaller number than min
+	*	Again, a little confusing, but this way it can match its respective tickRate var by name: mMaxFactoryTickRate, which appears in the config.
+	*/
+	float mMaxFactoryTick;
+
+	/** How much time did we not utilize the previous Factory update? */
+	float mFixedTickDebt;
 
 	/** Maximum number of buildables that we consider their optimization level during the same frame */
 	int32 mMaxConsideredBuildables;
@@ -249,21 +392,6 @@ private:
 	UPROPERTY( EditDefaultsOnly )
 	UMaterial* mDefaultFactoryMaterial;
 
-
-	enum class EPropagateColorState : uint8
-	{
-		SettingTransitionColor,
-		SettingHalfRealColor,
-		SettingRealColor,
-		SettingColorOnly,
-		Done
-	};
-
-	EPropagateColorState mColorPropState = EPropagateColorState::Done;
-	int32 mColorPropagationProgressIndex = 0;
-	float mColorPropagationTimer = 0;
-	/** Array with all the buildings that should replay their effect */
-	TArray< AFGBuildable* > mColorPropagationArray;
 	bool IsBasedOn( const UMaterialInterface* instance, const UMaterial* base );
 
 	//@todorefactor With meta = ( ShowOnlyInnerProperties ) it does not show and PrimaryActorTick seems to be all custom properties, so I moved to another category but could not expand.
@@ -271,9 +399,12 @@ private:
 	UPROPERTY( EditDefaultsOnly, Category = "Factory Tick", meta = ( NoAutoJson = true ) )
 	FFactoryTickFunction mFactoryTickFunction;
 
+	/** Tracking variable to see if our parallel tick group size has changed */
+	int32 mLastParallelTickGroupSize;
+
 	/** Factory Stat id of this object, 0 if nobody asked for it yet */
 	STAT( mutable TStatId mFactoryStatID; )
-public:
+
 };
 
 template< typename T >

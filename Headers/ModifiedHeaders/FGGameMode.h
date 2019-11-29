@@ -76,6 +76,7 @@ public:
 	FORCEINLINE float GetNightLength() const{ return mNightLength; }
 
 	/** Does this Game Mode function specifically as the main menu? */
+	UFUNCTION( BlueprintPure, Category = "Game Mode" )
 	FORCEINLINE bool IsMainMenuGameMode() const { return mIsMainMenu; }
 
 	/** Returns true if we should setup save for this gamemode */

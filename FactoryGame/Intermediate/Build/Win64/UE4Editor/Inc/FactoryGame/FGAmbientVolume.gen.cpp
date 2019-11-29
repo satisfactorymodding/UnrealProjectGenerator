@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		{ "ToolTip", "Range that this volume should be significant within" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange = { UE4CodeGen_Private::EPropertyClass::Float, "mSignificanceRange", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000801, 1, nullptr, STRUCT_OFFSET(AFGAmbientVolume, mSignificanceRange), METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange = { "mSignificanceRange", nullptr, (EPropertyFlags)0x0040000000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAmbientVolume, mSignificanceRange), METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance_MetaData[] = {
 		{ "Category", "Audio" },
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		{ "ToolTip", "How much further away than the attenuation distance do we want to start playing the ambient OnGeCloseSound" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mAdditionalAttenuationDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(AFGAmbientVolume, mAdditionalAttenuationDistance), METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance = { "mAdditionalAttenuationDistance", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAmbientVolume, mAdditionalAttenuationDistance), METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent_MetaData[] = {
 		{ "Category", "Audio" },
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		{ "ToolTip", "The audio component we want to move around" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mAudioComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0809, 1, nullptr, STRUCT_OFFSET(AFGAmbientVolume, mAudioComponent), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent = { "mAudioComponent", nullptr, (EPropertyFlags)0x00200800000a0809, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAmbientVolume, mAudioComponent), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings_MetaData[] = {
 		{ "Category", "Audio" },
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		{ "ToolTip", "The settings for the volume" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings = { UE4CodeGen_Private::EPropertyClass::Class, "mAmbientSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000801, 1, nullptr, STRUCT_OFFSET(AFGAmbientVolume, mAmbientSettings), Z_Construct_UClass_UFGAmbientSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings = { "mAmbientSettings", nullptr, (EPropertyFlags)0x0024080000000801, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAmbientVolume, mAmbientSettings), Z_Construct_UClass_UFGAmbientSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance,
@@ -115,13 +115,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGAmbientVolume_Statics::ClassParams = {
 		&AFGAmbientVolume::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGAmbientVolume()
@@ -133,7 +137,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientVolume, 226239402);
+	IMPLEMENT_CLASS(AFGAmbientVolume, 416019768);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGAmbientVolume>()
+	{
+		return AFGAmbientVolume::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAmbientVolume(Z_Construct_UClass_AFGAmbientVolume, &AFGAmbientVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAmbientVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAmbientVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

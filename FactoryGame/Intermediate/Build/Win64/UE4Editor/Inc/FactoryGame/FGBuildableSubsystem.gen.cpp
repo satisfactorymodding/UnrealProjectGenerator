@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -16,6 +16,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 	FACTORYGAME_API UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildable_NoRegister();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FBuildableGroupTimeData();
+	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FConveyorBucket();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FBuildableBucket();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FDistanceBasedTickRate();
@@ -24,22 +27,24 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGSubsystem();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_Get();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary();
-	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary();
 	FACTORYGAME_API UScriptStruct* Z_Construct_UScriptStruct_FFactoryTickFunction();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGFactoryMaterialInstanceManager_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGColoredInstanceManager_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGProductionIndicatorInstanceManager_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableConveyorAttachment_NoRegister();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGSaveInterface_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics
@@ -55,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::NewProp_buildable = { UE4CodeGen_Private::EPropertyClass::Object, "buildable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnBuildableConstructedGlobal_Parms, buildable), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::NewProp_buildable = { "buildable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnBuildableConstructedGlobal_Parms, buildable), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::NewProp_buildable,
 	};
@@ -64,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnBuildableConstructedGlobal__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnBuildableConstructedGlobal_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnBuildableConstructedGlobal__DelegateSignature", sizeof(_Script_FactoryGame_eventOnBuildableConstructedGlobal_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -74,15 +79,172 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSubsystem() {}
 		}
 		return ReturnFunction;
 	}
+class UScriptStruct* FBuildableGroupTimeData::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FBuildableGroupTimeData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FBuildableGroupTimeData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("BuildableGroupTimeData"), sizeof(FBuildableGroupTimeData), Get_Z_Construct_UScriptStruct_FBuildableGroupTimeData_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FBuildableGroupTimeData>()
+{
+	return FBuildableGroupTimeData::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FBuildableGroupTimeData(FBuildableGroupTimeData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("BuildableGroupTimeData"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableGroupTimeData
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableGroupTimeData()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("BuildableGroupTimeData")),new UScriptStruct::TCppStructOps<FBuildableGroupTimeData>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFBuildableGroupTimeData;
+	struct Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FBuildableGroupTimeData>();
+	}
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"BuildableGroupTimeData",
+		sizeof(FBuildableGroupTimeData),
+		alignof(FBuildableGroupTimeData),
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FBuildableGroupTimeData()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FBuildableGroupTimeData_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("BuildableGroupTimeData"), sizeof(FBuildableGroupTimeData), Get_Z_Construct_UScriptStruct_FBuildableGroupTimeData_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FBuildableGroupTimeData_Hash() { return 1506410447U; }
+class UScriptStruct* FConveyorBucket::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FConveyorBucket_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FConveyorBucket, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ConveyorBucket"), sizeof(FConveyorBucket), Get_Z_Construct_UScriptStruct_FConveyorBucket_Hash());
+	}
+	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FConveyorBucket>()
+{
+	return FConveyorBucket::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FConveyorBucket(FConveyorBucket::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ConveyorBucket"), false, nullptr, nullptr);
+static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBucket
+{
+	FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBucket()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ConveyorBucket")),new UScriptStruct::TCppStructOps<FConveyorBucket>);
+	}
+} ScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBucket;
+	struct Z_Construct_UScriptStruct_FConveyorBucket_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Conveyors_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Conveyors;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Conveyors_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConveyorBucket_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FConveyorBucket>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors_MetaData[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors = { "Conveyors", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FConveyorBucket, Conveyors), METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors_Inner = { "Conveyors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FConveyorBucket_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConveyorBucket_Statics::NewProp_Conveyors_Inner,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FConveyorBucket_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
+		nullptr,
+		&NewStructOps,
+		"ConveyorBucket",
+		sizeof(FConveyorBucket),
+		alignof(FConveyorBucket),
+		Z_Construct_UScriptStruct_FConveyorBucket_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBucket_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBucket_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBucket_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FConveyorBucket()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FConveyorBucket_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ConveyorBucket"), sizeof(FConveyorBucket), Get_Z_Construct_UScriptStruct_FConveyorBucket_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FConveyorBucket_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBucket_Hash() { return 2192075284U; }
 class UScriptStruct* FBuildableBucket::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FBuildableBucket, Z_Construct_UPackage__Script_FactoryGame(), TEXT("BuildableBucket"), sizeof(FBuildableBucket), Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FBuildableBucket, Z_Construct_UPackage__Script_FactoryGame(), TEXT("BuildableBucket"), sizeof(FBuildableBucket), Get_Z_Construct_UScriptStruct_FBuildableBucket_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FBuildableBucket>()
+{
+	return FBuildableBucket::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FBuildableBucket(FBuildableBucket::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("BuildableBucket"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableBucket
@@ -124,14 +286,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableBucket
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables = { UE4CodeGen_Private::EPropertyClass::Array, "Buildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FBuildableBucket, Buildables), METADATA_PARAMS(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "Buildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables = { "Buildables", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBuildableBucket, Buildables), METADATA_PARAMS(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_Inner = { "Buildables", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass_MetaData[] = {
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass = { UE4CodeGen_Private::EPropertyClass::Class, "BuildableClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000000, 1, nullptr, STRUCT_OFFSET(FBuildableBucket, BuildableClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass = { "BuildableClass", nullptr, (EPropertyFlags)0x0014000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBuildableBucket, BuildableClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_BuildableClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBuildableBucket_Statics::NewProp_Buildables_Inner,
@@ -142,19 +304,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableBucket
 		nullptr,
 		&NewStructOps,
 		"BuildableBucket",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FBuildableBucket),
 		alignof(FBuildableBucket),
-		Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FBuildableBucket_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FBuildableBucket()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("BuildableBucket"), sizeof(FBuildableBucket), Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("BuildableBucket"), sizeof(FBuildableBucket), Get_Z_Construct_UScriptStruct_FBuildableBucket_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -164,16 +327,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableBucket
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC() { return 2499527268U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_Hash() { return 772675449U; }
 class UScriptStruct* FDistanceBasedTickRate::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDistanceBasedTickRate, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DistanceBasedTickRate"), sizeof(FDistanceBasedTickRate), Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDistanceBasedTickRate, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DistanceBasedTickRate"), sizeof(FDistanceBasedTickRate), Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDistanceBasedTickRate>()
+{
+	return FDistanceBasedTickRate::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDistanceBasedTickRate(FDistanceBasedTickRate::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DistanceBasedTickRate"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickRate
@@ -217,14 +384,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate = { UE4CodeGen_Private::EPropertyClass::Float, "TickRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FDistanceBasedTickRate, TickRate), METADATA_PARAMS(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate = { "TickRate", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDistanceBasedTickRate, TickRate), METADATA_PARAMS(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance_MetaData[] = {
 		{ "Category", "Factory" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance = { UE4CodeGen_Private::EPropertyClass::Float, "Distance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FDistanceBasedTickRate, Distance), METADATA_PARAMS(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance = { "Distance", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDistanceBasedTickRate, Distance), METADATA_PARAMS(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_TickRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::NewProp_Distance,
@@ -234,19 +401,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		nullptr,
 		&NewStructOps,
 		"DistanceBasedTickRate",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDistanceBasedTickRate),
 		alignof(FDistanceBasedTickRate),
-		Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDistanceBasedTickRate()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DistanceBasedTickRate"), sizeof(FDistanceBasedTickRate), Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DistanceBasedTickRate"), sizeof(FDistanceBasedTickRate), Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -256,20 +424,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC() { return 60028849U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_Hash() { return 2845329128U; }
 	void AFGBuildableSubsystem::StaticRegisterNativesAFGBuildableSubsystem()
 	{
 		UClass* Class = AFGBuildableSubsystem::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Get", &AFGBuildableSubsystem::execGet },
-			{ "getColorSlotPrimary", &AFGBuildableSubsystem::execgetColorSlotPrimary },
+			{ "GetColorSlotPrimary", &AFGBuildableSubsystem::execGetColorSlotPrimary },
 			{ "GetColorSlotPrimaryLinear", &AFGBuildableSubsystem::execGetColorSlotPrimaryLinear },
-			{ "getColorSlotSecondary", &AFGBuildableSubsystem::execgetColorSlotSecondary },
+			{ "GetColorSlotSecondary", &AFGBuildableSubsystem::execGetColorSlotSecondary },
 			{ "GetColorSlotSecondaryLinear", &AFGBuildableSubsystem::execGetColorSlotSecondaryLinear },
 			{ "GetTypedBuildable", &AFGBuildableSubsystem::execGetTypedBuildable },
 			{ "ReplayBuildingEffects", &AFGBuildableSubsystem::execReplayBuildingEffects },
-			{ "setColorSlotPrimary", &AFGBuildableSubsystem::execsetColorSlotPrimary },
-			{ "setColorSlotSecondary", &AFGBuildableSubsystem::execsetColorSlotSecondary },
+			{ "SetColorSlotPrimary", &AFGBuildableSubsystem::execSetColorSlotPrimary },
+			{ "SetColorSlotSecondary", &AFGBuildableSubsystem::execSetColorSlotSecondary },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -288,8 +456,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGBuildableSubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGBuildableSubsystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::NewProp_worldContext,
@@ -303,7 +471,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Get the buildable subsystem in the current world, can be nullptr, e.g. on game ending (destroy) or game startup." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGBuildableSubsystem_eventGet_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "Get", sizeof(FGBuildableSubsystem_eventGet_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -313,9 +481,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics
 	{
-		struct FGBuildableSubsystem_eventgetColorSlotPrimary_Parms
+		struct FGBuildableSubsystem_eventGetColorSlotPrimary_Parms
 		{
 			uint8 index;
 			FColor ReturnValue;
@@ -328,25 +496,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotPrimary_Parms, ReturnValue), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotPrimary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimary_Parms, ReturnValue), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "getColorSlotPrimary", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventgetColorSlotPrimary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "GetColorSlotPrimary", sizeof(FGBuildableSubsystem_eventGetColorSlotPrimary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -365,8 +533,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::NewProp_index,
@@ -377,7 +545,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "GetColorSlotPrimaryLinear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "GetColorSlotPrimaryLinear", sizeof(FGBuildableSubsystem_eventGetColorSlotPrimaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -387,9 +555,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics
 	{
-		struct FGBuildableSubsystem_eventgetColorSlotSecondary_Parms
+		struct FGBuildableSubsystem_eventGetColorSlotSecondary_Parms
 		{
 			uint8 index;
 			FColor ReturnValue;
@@ -402,25 +570,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotSecondary_Parms, ReturnValue), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventgetColorSlotSecondary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondary_Parms, ReturnValue), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "getColorSlotSecondary", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventgetColorSlotSecondary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "GetColorSlotSecondary", sizeof(FGBuildableSubsystem_eventGetColorSlotSecondary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -439,8 +607,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::NewProp_index,
@@ -451,7 +619,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "GetColorSlotSecondaryLinear", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "GetColorSlotSecondaryLinear", sizeof(FGBuildableSubsystem_eventGetColorSlotSecondaryLinear_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -477,9 +645,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_out_buildables = { UE4CodeGen_Private::EPropertyClass::Array, "out_buildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetTypedBuildable_Parms, out_buildables), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_out_buildables_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "out_buildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventGetTypedBuildable_Parms, inClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_out_buildables = { "out_buildables", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetTypedBuildable_Parms, out_buildables), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_out_buildables_Inner = { "out_buildables", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventGetTypedBuildable_Parms, inClass), Z_Construct_UClass_AFGBuildable_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_out_buildables,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::NewProp_out_buildables_Inner,
@@ -492,7 +660,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Get all buildables of the supplied type." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "GetTypedBuildable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGBuildableSubsystem_eventGetTypedBuildable_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "GetTypedBuildable", sizeof(FGBuildableSubsystem_eventGetTypedBuildable_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -515,7 +683,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Starts replaying of build effects in the build order of the buildings." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "ReplayBuildingEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "ReplayBuildingEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -525,9 +693,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics
 	{
-		struct FGBuildableSubsystem_eventsetColorSlotPrimary_Parms
+		struct FGBuildableSubsystem_eventSetColorSlotPrimary_Parms
 		{
 			uint8 index;
 			FColor color;
@@ -540,31 +708,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::NewProp_color = { UE4CodeGen_Private::EPropertyClass::Struct, "color", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventsetColorSlotPrimary_Parms, color), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventsetColorSlotPrimary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::NewProp_color,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::NewProp_color = { "color", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventSetColorSlotPrimary_Parms, color), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventSetColorSlotPrimary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::NewProp_color,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "setColorSlotPrimary", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventsetColorSlotPrimary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "SetColorSlotPrimary", sizeof(FGBuildableSubsystem_eventSetColorSlotPrimary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics
+	struct Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics
 	{
-		struct FGBuildableSubsystem_eventsetColorSlotSecondary_Parms
+		struct FGBuildableSubsystem_eventSetColorSlotSecondary_Parms
 		{
 			uint8 index;
 			FColor color;
@@ -577,25 +745,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::NewProp_color = { UE4CodeGen_Private::EPropertyClass::Struct, "color", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventsetColorSlotSecondary_Parms, color), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Byte, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSubsystem_eventsetColorSlotSecondary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::NewProp_color,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::NewProp_index,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::NewProp_color = { "color", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventSetColorSlotSecondary_Parms, color), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSubsystem_eventSetColorSlotSecondary_Parms, index), nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::NewProp_color,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::NewProp_index,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, "setColorSlotSecondary", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGBuildableSubsystem_eventsetColorSlotSecondary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSubsystem, nullptr, "SetColorSlotSecondary", sizeof(FGBuildableSubsystem_eventSetColorSlotSecondary_Parms), Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -637,6 +805,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mDistanceBasedTickRate;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mDistanceBasedTickRate_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxTickSubsteps_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_mMaxTickSubsteps;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMaxFactoryTickRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMaxFactoryTickRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mMinFactoryTickRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mMinFactoryTickRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mUseFixedFactoryTick_MetaData[];
+#endif
+		static void NewProp_mUseFixedFactoryTick_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_mUseFixedFactoryTick;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFactoryColoredMaterialMap_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMapPropertyParams NewProp_mFactoryColoredMaterialMap;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_mFactoryColoredMaterialMap_Key_KeyProp;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFactoryColoredMaterialMap_ValueProp;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mColorSlotsSecondary_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mColorSlotsSecondary;
@@ -659,10 +850,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mBuildableInstancesActor;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildableBuckets_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mConveyorAttachments_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mBuildableBuckets;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_mBuildableBuckets_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_mConveyorAttachments;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mConveyorAttachments_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mBuildables_MetaData[];
 #endif
@@ -690,18 +881,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_Get, "Get" }, // 2837267337
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotPrimary, "getColorSlotPrimary" }, // 1460479420
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear, "GetColorSlotPrimaryLinear" }, // 575081935
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_getColorSlotSecondary, "getColorSlotSecondary" }, // 820777894
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear, "GetColorSlotSecondaryLinear" }, // 3536823358
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable, "GetTypedBuildable" }, // 3079218011
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects, "ReplayBuildingEffects" }, // 1608769726
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotPrimary, "setColorSlotPrimary" }, // 2667540674
-		{ &Z_Construct_UFunction_AFGBuildableSubsystem_setColorSlotSecondary, "setColorSlotSecondary" }, // 5080221
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_Get, "Get" }, // 1439025208
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimary, "GetColorSlotPrimary" }, // 1666003616
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotPrimaryLinear, "GetColorSlotPrimaryLinear" }, // 3350633194
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondary, "GetColorSlotSecondary" }, // 3585128458
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetColorSlotSecondaryLinear, "GetColorSlotSecondaryLinear" }, // 3720963803
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_GetTypedBuildable, "GetTypedBuildable" }, // 3603205011
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_ReplayBuildingEffects, "ReplayBuildingEffects" }, // 2518185595
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotPrimary, "SetColorSlotPrimary" }, // 1260990304
+		{ &Z_Construct_UFunction_AFGBuildableSubsystem_SetColorSlotSecondary, "SetColorSlotSecondary" }, // 506598053
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::Class_MetaDataParams[] = {
+		{ "DisplayName", "Buildable Subsystem" },
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGBuildableSubsystem.h" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
@@ -717,7 +909,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Controls if we should receive Factory_Tick and how frequent." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction = { UE4CodeGen_Private::EPropertyClass::Struct, "mFactoryTickFunction", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mFactoryTickFunction), Z_Construct_UScriptStruct_FFactoryTickFunction, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction = { "mFactoryTickFunction", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mFactoryTickFunction), Z_Construct_UScriptStruct_FFactoryTickFunction, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial_MetaData[] = {
 		{ "Category", "FGBuildableSubsystem" },
@@ -725,7 +917,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "used for comparing and finding materials of factory meshes" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultFactoryMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mDefaultFactoryMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial = { "mDefaultFactoryMaterial", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mDefaultFactoryMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault_MetaData[] = {
 		{ "Category", "Replay" },
@@ -733,7 +925,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "How much time between each build effect when replaying the whole factory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault = { UE4CodeGen_Private::EPropertyClass::Float, "mReplayEffectTimerDefault", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mReplayEffectTimerDefault), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault = { "mReplayEffectTimerDefault", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mReplayEffectTimerDefault), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffectTimerDefault_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation_MetaData[] = {
 		{ "Category", "Replay" },
@@ -741,7 +933,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "How much time can differ between each build effect" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation = { UE4CodeGen_Private::EPropertyClass::Float, "mReplayEffecTimeDilation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mReplayEffecTimeDilation), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation = { "mReplayEffecTimeDilation", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mReplayEffecTimeDilation), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mReplayEffecTimeDilation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_MetaData[] = {
 		{ "Category", "Factory" },
@@ -753,7 +945,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 	{
 		((AFGBuildableSubsystem*)Obj)->mFactoryOptimizationEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled = { UE4CodeGen_Private::EPropertyClass::Bool, "mFactoryOptimizationEnabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableSubsystem), &Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled = { "mFactoryOptimizationEnabled", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableSubsystem), &Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_MetaData[] = {
 		{ "Category", "Factory" },
@@ -761,61 +953,99 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Information about what distances we change the tick rate on" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate = { UE4CodeGen_Private::EPropertyClass::Array, "mDistanceBasedTickRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mDistanceBasedTickRate), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDistanceBasedTickRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FDistanceBasedTickRate, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate = { "mDistanceBasedTickRate", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mDistanceBasedTickRate), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_Inner = { "mDistanceBasedTickRate", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FDistanceBasedTickRate, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxTickSubsteps_MetaData[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxTickSubsteps = { "mMaxTickSubsteps", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mMaxTickSubsteps), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxTickSubsteps_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxTickSubsteps_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxFactoryTickRate_MetaData[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxFactoryTickRate = { "mMaxFactoryTickRate", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mMaxFactoryTickRate), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxFactoryTickRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxFactoryTickRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMinFactoryTickRate_MetaData[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMinFactoryTickRate = { "mMinFactoryTickRate", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mMinFactoryTickRate), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMinFactoryTickRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMinFactoryTickRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick_MetaData[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+		{ "ToolTip", "Begin Fixed Factory Tick Config Parameters" },
+	};
+#endif
+	void Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick_SetBit(void* Obj)
+	{
+		((AFGBuildableSubsystem*)Obj)->mUseFixedFactoryTick = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick = { "mUseFixedFactoryTick", nullptr, (EPropertyFlags)0x0040000000004000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableSubsystem), &Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_MetaData[] = {
+		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
+		{ "ToolTip", "Map of all Factory materials that are referenced by Factory buildings. Maps the materials name (and all dynamic instance mat names) to a manager class holding corresponding colored instances\nThis is also used for non-colored materials, for example, the conveyor belt materials so that the same instance can be applied to many different belts" },
+	};
+#endif
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap = { "mFactoryColoredMaterialMap", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mFactoryColoredMaterialMap), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_Key_KeyProp = { "mFactoryColoredMaterialMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_ValueProp = { "mFactoryColoredMaterialMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UFGFactoryMaterialInstanceManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary_MetaData[] = {
 		{ "Category", "Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary = { UE4CodeGen_Private::EPropertyClass::Struct, "mColorSlotsSecondary", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001010001, CPP_ARRAY_DIM(mColorSlotsSecondary, AFGBuildableSubsystem), nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsSecondary), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary = { "mColorSlotsSecondary", nullptr, (EPropertyFlags)0x0040000001010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mColorSlotsSecondary, AFGBuildableSubsystem), STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsSecondary), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary_MetaData[] = {
 		{ "Category", "Customization" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary = { UE4CodeGen_Private::EPropertyClass::Struct, "mColorSlotsPrimary", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001010001, CPP_ARRAY_DIM(mColorSlotsPrimary, AFGBuildableSubsystem), nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsPrimary), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary = { "mColorSlotsPrimary", nullptr, (EPropertyFlags)0x0040000001010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mColorSlotsPrimary, AFGBuildableSubsystem), STRUCT_OFFSET(AFGBuildableSubsystem, mColorSlotsPrimary), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances = { UE4CodeGen_Private::EPropertyClass::Map, "mColoredInstances", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000008, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mColoredInstances), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_Key_KeyProp = { UE4CodeGen_Private::EPropertyClass::Object, "mColoredInstances_Key", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_ValueProp = { UE4CodeGen_Private::EPropertyClass::Object, "mColoredInstances", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 1, Z_Construct_UClass_UFGColoredInstanceManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances = { "mColoredInstances", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mColoredInstances), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_Key_KeyProp = { "mColoredInstances_Key", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_ValueProp = { "mColoredInstances", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UFGColoredInstanceManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager = { UE4CodeGen_Private::EPropertyClass::Object, "mProductionIndicatorInstanceManager", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mProductionIndicatorInstanceManager), Z_Construct_UClass_UFGProductionIndicatorInstanceManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager = { "mProductionIndicatorInstanceManager", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mProductionIndicatorInstanceManager), Z_Construct_UClass_UFGProductionIndicatorInstanceManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor_MetaData[] = {
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 		{ "ToolTip", "Hierarchical instances for the factory buildings." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor = { UE4CodeGen_Private::EPropertyClass::Object, "mBuildableInstancesActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mBuildableInstancesActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor = { "mBuildableInstancesActor", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mBuildableInstancesActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments_MetaData[] = {
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
-		{ "ToolTip", "Grouping buildings into buckets by class" },
+		{ "ToolTip", "All conveyor attachments" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets = { UE4CodeGen_Private::EPropertyClass::Array, "mBuildableBuckets", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mBuildableBuckets), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mBuildableBuckets", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FBuildableBucket, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments = { "mConveyorAttachments", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mConveyorAttachments), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments_Inner = { "mConveyorAttachments", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildableConveyorAttachment_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_MetaData[] = {
 		{ "ModuleRelativePath", "FGBuildableSubsystem.h" },
 		{ "ToolTip", "List of all buildables." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables = { UE4CodeGen_Private::EPropertyClass::Array, "mBuildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mBuildables), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mBuildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables = { "mBuildables", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mBuildables), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_Inner = { "mBuildables", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate_MetaData[] = {
 		{ "Category", "Build" },
@@ -824,7 +1054,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Broadcast when a buildable or decor has been constructed. Regardless of who built it" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "BuildableConstructedGlobalDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, BuildableConstructedGlobalDelegate), Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate = { "BuildableConstructedGlobalDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, BuildableConstructedGlobalDelegate), Z_Construct_UDelegateFunction_FactoryGame_OnBuildableConstructedGlobal__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck_MetaData[] = {
 		{ "Category", "Factory" },
@@ -832,7 +1062,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "How many factories need to be within the close range for it to count as if a given location is near a base" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck = { UE4CodeGen_Private::EPropertyClass::Int, "mNumFactoriesNeededForCloseCheck", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mNumFactoriesNeededForCloseCheck), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck = { "mNumFactoriesNeededForCloseCheck", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mNumFactoriesNeededForCloseCheck), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mNumFactoriesNeededForCloseCheck_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose_MetaData[] = {
 		{ "Category", "Factory" },
@@ -840,7 +1070,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		{ "ToolTip", "Distance used when calculating if a location is near a base" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose = { UE4CodeGen_Private::EPropertyClass::Float, "mDistanceConsideredClose", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableSubsystem, mDistanceConsideredClose), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose = { "mDistanceConsideredClose", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSubsystem, mDistanceConsideredClose), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceConsideredClose_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableSubsystem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryTickFunction,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDefaultFactoryMaterial,
@@ -849,6 +1079,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryOptimizationEnabled,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mDistanceBasedTickRate_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxTickSubsteps,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMaxFactoryTickRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mMinFactoryTickRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mUseFixedFactoryTick,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_Key_KeyProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mFactoryColoredMaterialMap_ValueProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsSecondary,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColorSlotsPrimary,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances,
@@ -856,8 +1093,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mColoredInstances_ValueProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mProductionIndicatorInstanceManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableInstancesActor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildableBuckets_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mConveyorAttachments_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_mBuildables_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSubsystem_Statics::NewProp_BuildableConstructedGlobalDelegate,
@@ -872,13 +1109,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableSubsystem_Statics::ClassParams = {
 		&AFGBuildableSubsystem::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableSubsystem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::PropPointers),
-		nullptr,
+		"Game",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableSubsystem_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A6u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableSubsystem()
@@ -890,7 +1131,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSubsystem, 3642806442);
+	IMPLEMENT_CLASS(AFGBuildableSubsystem, 4099391378);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSubsystem>()
+	{
+		return AFGBuildableSubsystem::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSubsystem(Z_Construct_UClass_AFGBuildableSubsystem, &AFGBuildableSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

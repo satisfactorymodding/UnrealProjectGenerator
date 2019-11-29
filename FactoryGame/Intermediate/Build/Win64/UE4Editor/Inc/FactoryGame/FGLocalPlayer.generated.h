@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,10 +22,14 @@ struct FFGOnlineFriend;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FUpdatedFriends>();
+
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_64_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGOnlineFriend_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGOnlineFriend>();
 
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_166_DELEGATE \
 struct _Script_FactoryGame_eventOnLoginStateChanged_Parms \
@@ -156,6 +160,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_LoggedOutFromOnlineService>();
+
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_32_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_32_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_32_INCLASS_NO_PURE_DECLS \
@@ -224,6 +230,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_LostConnectionWithOnlineService>();
+
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_40_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_40_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_40_INCLASS_NO_PURE_DECLS \
@@ -291,6 +299,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGEM_FailedToLoginToOnlineService>();
 
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_176_RPC_WRAPPERS \
  \
@@ -485,6 +495,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGLocalPlayer>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGLocalPlayer_h

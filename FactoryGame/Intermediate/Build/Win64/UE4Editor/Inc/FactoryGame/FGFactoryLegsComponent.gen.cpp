@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -29,10 +29,14 @@ class UScriptStruct* FFeetOffset::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFeetOffset, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FeetOffset"), sizeof(FFeetOffset), Get_Z_Construct_UScriptStruct_FFeetOffset_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFeetOffset, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FeetOffset"), sizeof(FFeetOffset), Get_Z_Construct_UScriptStruct_FFeetOffset_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FFeetOffset>()
+{
+	return FFeetOffset::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FFeetOffset(FFeetOffset::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("FeetOffset"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
@@ -83,21 +87,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	{
 		((FFeetOffset*)Obj)->IsValidOffset = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset = { UE4CodeGen_Private::EPropertyClass::Bool, "IsValidOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FFeetOffset), &Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset = { "IsValidOffset", nullptr, (EPropertyFlags)0x0010000080000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FFeetOffset), &Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The offset along the Z axis from the parent mesh origo." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ = { UE4CodeGen_Private::EPropertyClass::Float, "OffsetZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, OffsetZ), METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ = { "OffsetZ", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFeetOffset, OffsetZ), METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData[] = {
 		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The name of the foot's socket." },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex = { UE4CodeGen_Private::EPropertyClass::Byte, "FeetIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, FeetIndex), nullptr, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex = { "FeetIndex", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFeetOffset, FeetIndex), nullptr, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ,
@@ -108,19 +112,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		nullptr,
 		&NewStructOps,
 		"FeetOffset",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FFeetOffset),
 		alignof(FFeetOffset),
-		Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFeetOffset()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FeetOffset"), sizeof(FFeetOffset), Get_Z_Construct_UScriptStruct_FFeetOffset_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FeetOffset"), sizeof(FFeetOffset), Get_Z_Construct_UScriptStruct_FFeetOffset_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -130,7 +135,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 745739224U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_Hash() { return 2443699590U; }
 	void UFGFactoryLegsComponent::StaticRegisterNativesUFGFactoryLegsComponent()
 	{
 		UClass* Class = UFGFactoryLegsComponent::StaticClass();
@@ -162,8 +167,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008000000588, 1, nullptr, STRUCT_OFFSET(FGFactoryLegsComponent_eventGetFootMeshComponents_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryLegsComponent_eventGetFootMeshComponents_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::NewProp_ReturnValue_Inner,
@@ -175,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "Get all the foot meshes." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryLegsComponent, "GetFootMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryLegsComponent_eventGetFootMeshComponents_Parms), Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryLegsComponent, nullptr, "GetFootMeshComponents", sizeof(FGFactoryLegsComponent_eventGetFootMeshComponents_Parms), Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -207,8 +212,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008000000588, 1, nullptr, STRUCT_OFFSET(FGFactoryLegsComponent_eventGetLegMeshComponents_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactoryLegsComponent_eventGetLegMeshComponents_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::NewProp_ReturnValue_Inner,
@@ -220,7 +225,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "Get all the leg meshes." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryLegsComponent, "GetLegMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFactoryLegsComponent_eventGetLegMeshComponents_Parms), Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactoryLegsComponent, nullptr, "GetLegMeshComponents", sizeof(FGFactoryLegsComponent_eventGetLegMeshComponents_Parms), Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -283,8 +288,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactoryLegsComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents, "GetFootMeshComponents" }, // 1439564623
-		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents, "GetLegMeshComponents" }, // 3105949579
+		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents, "GetFootMeshComponents" }, // 2644644471
+		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents, "GetLegMeshComponents" }, // 4280090328
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams[] = {
@@ -301,8 +306,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "Stored so that we know the offset of the feet" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset = { UE4CodeGen_Private::EPropertyClass::Array, "mCachedFeetOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mCachedFeetOffset), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mCachedFeetOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FFeetOffset, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset = { "mCachedFeetOffset", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mCachedFeetOffset), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_Inner = { "mCachedFeetOffset", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FFeetOffset, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -310,8 +315,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "The created foot components for this building" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mFootMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000002008, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mFootMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mFootMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents = { "mFootMeshComponents", nullptr, (EPropertyFlags)0x0040008000002008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mFootMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_Inner = { "mFootMeshComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -319,8 +324,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "The created leg components for this building" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mLegMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000002008, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mLegMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mLegMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents = { "mLegMeshComponents", nullptr, (EPropertyFlags)0x0040008000002008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mLegMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_Inner = { "mLegMeshComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride_MetaData[] = {
 		{ "Category", "Legs" },
@@ -328,7 +333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "The maximum length the legs can be." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxLegLengthOverride", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mMaxLegLengthOverride), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride = { "mMaxLegLengthOverride", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mMaxLegLengthOverride), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride_MetaData[] = {
 		{ "Category", "Legs" },
@@ -336,7 +341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "The mesh to be used as foots on factories" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride = { UE4CodeGen_Private::EPropertyClass::Object, "mFootMeshOverride", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mFootMeshOverride), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride = { "mFootMeshOverride", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mFootMeshOverride), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride_MetaData[] = {
 		{ "Category", "Legs" },
@@ -344,7 +349,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "The mesh to be used as legs on factories" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride = { UE4CodeGen_Private::EPropertyClass::Object, "mLegMeshOverride", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mLegMeshOverride), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride = { "mLegMeshOverride", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mLegMeshOverride), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_MetaData[] = {
 		{ "Category", "Legs" },
@@ -352,8 +357,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ToolTip", "Socket names on the parent mesh" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames = { UE4CodeGen_Private::EPropertyClass::Array, "mLegSocketNames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGFactoryLegsComponent, mLegSocketNames), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_MetaData)) };
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_Inner = { UE4CodeGen_Private::EPropertyClass::Name, "mLegSocketNames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames = { "mLegSocketNames", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactoryLegsComponent, mLegSocketNames), METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_Inner = { "mLegSocketNames", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_Inner,
@@ -375,13 +380,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::ClassParams = {
 		&UFGFactoryLegsComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x00A000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFactoryLegsComponent()
@@ -393,7 +402,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 2825480966);
+	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 897354894);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryLegsComponent>()
+	{
+		return UFGFactoryLegsComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactoryLegsComponent(Z_Construct_UClass_UFGFactoryLegsComponent, &UFGFactoryLegsComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactoryLegsComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactoryLegsComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

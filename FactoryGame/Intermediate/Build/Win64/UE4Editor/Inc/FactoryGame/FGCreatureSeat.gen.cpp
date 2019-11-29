@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCreatureSeat_eventGetMountedCreature_Parms, ReturnValue), Z_Construct_UClass_AFGCreature_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCreatureSeat_eventGetMountedCreature_Parms, ReturnValue), Z_Construct_UClass_AFGCreature_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::NewProp_ReturnValue,
 	};
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		{ "ToolTip", "Getter for creature" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureSeat, "GetMountedCreature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14040401, sizeof(FGCreatureSeat_eventGetMountedCreature_Parms), Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureSeat, nullptr, "GetMountedCreature", sizeof(FGCreatureSeat_eventGetMountedCreature_Parms), Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCreatureSeat_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature, "GetMountedCreature" }, // 2083189956
+		{ &Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature, "GetMountedCreature" }, // 1262069584
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSeat_Statics::Class_MetaDataParams[] = {
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		{ "ToolTip", "The creature this seat is on" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature = { UE4CodeGen_Private::EPropertyClass::Object, "mMountedCreature", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0011000001000024, 1, nullptr, STRUCT_OFFSET(AFGCreatureSeat, mMountedCreature), Z_Construct_UClass_AFGCreature_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature = { "mMountedCreature", nullptr, (EPropertyFlags)0x0011000001000024, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCreatureSeat, mMountedCreature), Z_Construct_UClass_AFGCreature_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCreatureSeat_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature,
 	};
@@ -112,13 +112,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCreatureSeat_Statics::ClassParams = {
 		&AFGCreatureSeat::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGCreatureSeat_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSeat_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGCreatureSeat_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSeat_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCreatureSeat_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureSeat_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCreatureSeat()
@@ -130,7 +134,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSeat, 1766847271);
+	IMPLEMENT_CLASS(AFGCreatureSeat, 2601661949);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureSeat>()
+	{
+		return AFGCreatureSeat::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreatureSeat(Z_Construct_UClass_AFGCreatureSeat, &AFGCreatureSeat::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreatureSeat"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreatureSeat);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

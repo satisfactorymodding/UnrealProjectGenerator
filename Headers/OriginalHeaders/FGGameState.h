@@ -10,10 +10,10 @@
 #include "FGResearchManager.h"
 #include "FGBuildingColorSlotStruct.h"
 #include "BuildableColorSlotBase.h"
+#include "FGUnlockSubsystem.h"
 #include "FGGameState.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FVisitedMapAreaDelegate, TSubclassOf< class UFGMapArea >, mapArea );
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FUnlockMoreInventorySlots, int32, newUnlockedSlots );
 
 /**
  * 
@@ -104,20 +104,11 @@ public:
 	FORCEINLINE class AFGCentralStorageSubsystem* GetCentralStorageSubsystem() const { return mCentralStorageSubsystem; }
 	FORCEINLINE class AFGRecipeManager* GetRecipeManager() const { return mRecipeManager; }
 	FORCEINLINE class AFGMapManager* GetMapManager() const { return mMapManager; }
+	FORCEINLINE class AFGUnlockSubsystem* GetUnlockSubsystem() const { return mUnlockSubsystem; }
 
 	/** Helper to access the actor representation manager */
 	UFUNCTION( BlueprintPure, Category = "Representation", meta = ( DeprecatedFunction, DeprecationMessage = "Use global getter instead" ) )
 	FORCEINLINE class AFGActorRepresentationManager* GetActorRepresentationManager() const { return mActorRepresentationManager; }
-
-	/** Returns the resources the player can use to scan for with the resource scanner */
-	FORCEINLINE TArray< TSubclassOf< class UFGResourceDescriptor > > GetScannableResources() const{ return mScannableResources; }	
-
-	/** Adds a new resource so it can be scanned for */
-	void AddScannableResource( TSubclassOf< UFGResourceDescriptor > newResource );
-
-	/** Removes all scannable resources. */
-	UFUNCTION( BlueprintCallable, Category = "Resource Scanner" )
-	void RemoveAllScannableResources() { mScannableResources.Empty(); }
 
 	/** Gives you all the visited map areas on the current level */
 	UFUNCTION( BlueprintCallable, Category = "Map Area" )
@@ -137,14 +128,6 @@ public:
 	/** Called on all players when any player enters a new map area. */
 	UPROPERTY( BlueprintAssignable, Category = "Map Area", DisplayName = "OnNewMapAreaEntered" )
 	FVisitedMapAreaDelegate MapAreaVisistedDelegate;
-
-	/** SERVER ONLY: Called when we unlocked more inventory slots */
-	UPROPERTY( BlueprintAssignable, Category = "Inventory" )
-	FUnlockMoreInventorySlots mOnUnlockedMoreInventorySlots;
-
-	/** SERVER ONLY: Called when we unlocked more arms slots */
-	UPROPERTY( BlueprintAssignable, Category = "Inventory" )
-	FUnlockMoreInventorySlots mOnUnlockedMoreArmsSlots;
 
 	/** Getter for Hub Part Class */
 	FORCEINLINE TSubclassOf< class UFGItemDescriptor > GetHubPartClass() { return mHubPartClass;  }
@@ -182,40 +165,6 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Message" )
 	void SendMessageToPlayer( TSubclassOf< class UFGMessageBase > inMessage, class APlayerController* controller );
 
-	/** Getter for mIsMapUnlocked */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	FORCEINLINE bool GetIsMapUnlocked() const { return mIsMapUnlocked; }
-
-	/** Getter for mNumAdditionalInventorySlots */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	FORCEINLINE int32 GetNumInventorySlotsUnlocked() const { return mNumAdditionalInventorySlots; }
-
-	/** Getter for mIsBuildingEfficiencyUnlocked */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	FORCEINLINE bool GetBuildingEfficiencyUnlocked() const { return mIsBuildingEfficiencyUnlocked; }
-
-	/** Getter for mIsBuildingOverclockUnlocked */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	FORCEINLINE bool GetBuildingOverclockUnlocked() const { return mIsBuildingOverclockUnlocked; }
-
-	/** Gets the total amount of inventory slots the player has available */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	int32 GetTotalPlayerInventorySlots() const;
-
-	/** Getter for mNumAdditionalArmEquipmentSlots */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	FORCEINLINE int32 GetNumArmEquipmentSlotsUnlocked() const { return mNumAdditionalArmEquipmentSlots; }
-
-	/** Sets the amount of arm equipment slots that are unlocked */
-	void SetNumAdditionalArmEquipmentSlots( int32 newNum );
-
-	/** Helper to give more inventory slots, makes sure we just give more slots */
-	FORCEINLINE void GiveMoreArmInventorySlots( int32 numAdditionalSlots ){ if( numAdditionalSlots >= 0 ){ SetNumAdditionalArmEquipmentSlots( GetNumArmEquipmentSlotsUnlocked() + numAdditionalSlots ); } }
-
-	/** Gets the total amount of arm equipment slots the player has available */
-	UFUNCTION( BlueprintPure, Category = "General" )
-	int32 GetTotalPlayerArmEquipmentSlots() const;
-	
 	/** The total time that has been played, including previous saves 
 	 * @note this will return wrong values between PreSave and PostSave.
 	 */
@@ -226,9 +175,6 @@ public:
 	FORCEINLINE FString GetSessionName() const { return mReplicatedSessionName; }
 
 	FORCEINLINE void SetSessionName( const FString& inName ) { mReplicatedSessionName = inName; }
-
-	/** We keep track of the resources we have scanned for. */
-	void AddResourceScannedFor( TSubclassOf< UFGResourceDescriptor > resourceScannedFor );
 
 	/*
 	 *	No need to be a ufunction, as it is only used to set a start state from loading so far, when the game loads on the server.
@@ -243,20 +189,9 @@ public:
 	UFUNCTION()
 	void OnRep_BuildingColorSlot();
 
-	/** Helper to give more inventory slots, makes sure we just give more slots */
-	FORCEINLINE void GiveMoreInventorySlots( int32 numAdditionalSlots ){ if( numAdditionalSlots >= 0 ){ SetNumberOfAdditionalInventorySlots( GetNumInventorySlotsUnlocked() + numAdditionalSlots ); } }
-
-	/** SERVER ONLY: Set the amount of additional inventory slots */
-	void SetNumberOfAdditionalInventorySlots( int32 numberOfSlots );
-
 	void ClaimPlayerColor( AFGPlayerState* playerState );
 	
 	void ReleasePlayerColor( AFGPlayerState* playerState );
-
-protected:
-	/** Function that will be fired from the PurchasedSchematicDelegate in FGSchematicManager */
-	UFUNCTION()
-	void OnSchematicPurchased( TSubclassOf< class UFGSchematic > newSchematic );
 
 private:
 	/** Helper to spawn subsystems. */
@@ -296,30 +231,6 @@ public:
 	UPROPERTY( SaveGame )
 	TArray< TSubclassOf< UFGRecipe > > mAvailableRecipes; //_DEPRECATED
 
-protected:
-	/*************************************************************
-	 * Default messages
-	 */
-
-	/** Message sent when the map is unlocked */
-	UPROPERTY( EditDefaultsOnly, Category = "Message" )
-	TSubclassOf< class UFGMessageBase > mMapUnlockedMessage;
-
-	/** Message sent when unlocking inventory slot */
-	UPROPERTY( EditDefaultsOnly, Category = "Message" )
-	TSubclassOf< class UFGMessageBase > mInventorySlotUnlockedMessage;
-
-	/** Message sent when unlocking building efficiency display */
-	UPROPERTY( EditDefaultsOnly, Category = "Message" )
-	TSubclassOf< class UFGMessageBase > mBuildingEfficiencyUnlockedMessage;
-
-	/** Message sent when unlocking overclocking of buildings */
-	UPROPERTY( EditDefaultsOnly, Category = "Message" )
-	TSubclassOf< class UFGMessageBase > mBuildingOverclockUnlockedMessage;
-
-	/** Message sent when unlocking arm equipment slot */
-	UPROPERTY( EditDefaultsOnly, Category = "Message" )
-	TSubclassOf< class UFGMessageBase > mArmEquipmentSlotUnlockedMessage;
 private:
 	/** Spawned subsystems */
 	UPROPERTY( SaveGame, Replicated )
@@ -350,10 +261,8 @@ private:
 	class AFGChatManager* mChatManager;
 	UPROPERTY()
 	class AFGCentralStorageSubsystem* mCentralStorageSubsystem;
-
-	/** These are the resources the players can use their scanner to find */
 	UPROPERTY( SaveGame, Replicated )
-	TArray< TSubclassOf< UFGResourceDescriptor > > mScannableResources;
+	class AFGUnlockSubsystem* mUnlockSubsystem;
 
 	/** This array keeps track of what map areas have been visited this game */
 	UPROPERTY( SaveGame, ReplicatedUsing = OnRep_MapAreaVisited )
@@ -366,22 +275,6 @@ private:
 	/** Cheat bool for not requiring power */
 	UPROPERTY( SaveGame, Replicated )
 	bool mCheatNoPower;
-
-	/** Did the player unlock the minimap? */
-	UPROPERTY( SaveGame, Replicated ) 
-	bool mIsMapUnlocked;
-
-	/** How many additional inventory slots have been unlocked for the players */
-	UPROPERTY( SaveGame, Replicated )
-	int32 mNumAdditionalInventorySlots;
-
-	/** Is the building efficiency display unlocked */
-	UPROPERTY( SaveGame, Replicated )
-	bool mIsBuildingEfficiencyUnlocked;
-
-	/** Is the building overclocking unlocked */
-	UPROPERTY( SaveGame, Replicated )
-	bool mIsBuildingOverclockUnlocked;
 	
 	/** There can only be one trading post in the game, so we keep track it here so that we also can replicate it to client */
 	UPROPERTY( SaveGame, Replicated )
@@ -394,10 +287,6 @@ private:
 	/** There can only be one tow truck in the game, so we keep track it here so that we also can replicate it to client */
 	UPROPERTY( SaveGame, Replicated )
 	bool mIsSpaceElevatorBuilt;
-
-	/** Starting slots for a players inventory */
-	UPROPERTY( EditDefaultsOnly )
-	int32 mDefaultPlayerInventorySlots;
 
 	/** Class used to construct the hub, this is used to guarantee players always have one if they don't have a hub */
 	UPROPERTY( EditDefaultsOnly )
@@ -419,14 +308,6 @@ private:
 	 */
 	UPROPERTY( Replicated, ReplicatedUsing = OnRep_BuildingColorSlot, EditDefaultsOnly, Category = "Customization" )
 	FFGBuildingColorSlotStruct mBuildingColorSlots[ BUILDABLE_COLORS_MAX_SLOTS ];
-
-	/** List with all resourcetypes that have been scanned for */
-	UPROPERTY()
-	TArray< TSubclassOf< UFGResourceDescriptor > > mResourcesScannedFor;
-
-	/** How many additional arm equipment slots have been unlocked for the players */
-	UPROPERTY( SaveGame, Replicated )
-	int32 mNumAdditionalArmEquipmentSlots;
 
 	/** The different colors to represent players over the network. We keep this if we need to loop back over the colors again*/
 	TArray< FSlotData > mPlayerColors;

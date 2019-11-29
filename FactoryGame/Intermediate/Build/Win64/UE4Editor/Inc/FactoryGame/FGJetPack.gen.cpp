@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	{
 		((FGJetPack_eventCanThrust_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGJetPack_eventCanThrust_Parms), &Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGJetPack_eventCanThrust_Parms), &Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::NewProp_ReturnValue,
 	};
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "This function calculates our new velocity when we are thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, "CanThrust", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, sizeof(FGJetPack_eventCanThrust_Parms), Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, nullptr, "CanThrust", sizeof(FGJetPack_eventCanThrust_Parms), Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_CanThrust_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPack_CanThrust()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGJetPack_eventGetCurrentFuel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGJetPack_eventGetCurrentFuel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::NewProp_ReturnValue,
 	};
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Returns the current amount of fuel for the jet pack. Please override." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, "GetCurrentFuel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C020C00, sizeof(FGJetPack_eventGetCurrentFuel_Parms), Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, nullptr, "GetCurrentFuel", sizeof(FGJetPack_eventGetCurrentFuel_Parms), Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetCurrentFuel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPack_GetCurrentFuel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGJetPack_eventGetMaxFuel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGJetPack_eventGetMaxFuel_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::NewProp_ReturnValue,
 	};
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Returns the maximum amount of fuel for the jet pack. Please override." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, "GetMaxFuel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x1C020C00, sizeof(FGJetPack_eventGetMaxFuel_Parms), Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, nullptr, "GetMaxFuel", sizeof(FGJetPack_eventGetMaxFuel_Parms), Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x1C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetMaxFuel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPack_GetMaxFuel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -183,8 +183,8 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGJetPack_eventGetNewVelocityWhenThrusting_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::NewProp_delta = { UE4CodeGen_Private::EPropertyClass::Float, "delta", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGJetPack_eventGetNewVelocityWhenThrusting_Parms, delta), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGJetPack_eventGetNewVelocityWhenThrusting_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::NewProp_delta = { "delta", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGJetPack_eventGetNewVelocityWhenThrusting_Parms, delta), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::NewProp_delta,
@@ -195,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "This function calculates our new velocity when we are thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, "GetNewVelocityWhenThrusting", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820800, sizeof(FGJetPack_eventGetNewVelocityWhenThrusting_Parms), Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, nullptr, "GetNewVelocityWhenThrusting", sizeof(FGJetPack_eventGetNewVelocityWhenThrusting_Parms), Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, "OnStartThrusting", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, nullptr, "OnStartThrusting", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_OnStartThrusting_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPack_OnStartThrusting()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Called when we stop thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, "OnStopThrusting", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPack, nullptr, "OnStopThrusting", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPack_OnStopThrusting_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPack_OnStopThrusting()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -280,12 +280,12 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGJetPack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGJetPack_CanThrust, "CanThrust" }, // 1535171383
-		{ &Z_Construct_UFunction_AFGJetPack_GetCurrentFuel, "GetCurrentFuel" }, // 3908326506
-		{ &Z_Construct_UFunction_AFGJetPack_GetMaxFuel, "GetMaxFuel" }, // 554713532
-		{ &Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting, "GetNewVelocityWhenThrusting" }, // 2032950030
-		{ &Z_Construct_UFunction_AFGJetPack_OnStartThrusting, "OnStartThrusting" }, // 2876633536
-		{ &Z_Construct_UFunction_AFGJetPack_OnStopThrusting, "OnStopThrusting" }, // 572220994
+		{ &Z_Construct_UFunction_AFGJetPack_CanThrust, "CanThrust" }, // 2541720872
+		{ &Z_Construct_UFunction_AFGJetPack_GetCurrentFuel, "GetCurrentFuel" }, // 3655661050
+		{ &Z_Construct_UFunction_AFGJetPack_GetMaxFuel, "GetMaxFuel" }, // 313433666
+		{ &Z_Construct_UFunction_AFGJetPack_GetNewVelocityWhenThrusting, "GetNewVelocityWhenThrusting" }, // 3345946806
+		{ &Z_Construct_UFunction_AFGJetPack_OnStartThrusting, "OnStartThrusting" }, // 2196058554
+		{ &Z_Construct_UFunction_AFGJetPack_OnStopThrusting, "OnStopThrusting" }, // 1791571486
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPack_Statics::Class_MetaDataParams[] = {
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	{
 		((AFGJetPack*)Obj)->mIsThrusting = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsThrusting", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000020815, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGJetPack), &Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting = { "mIsThrusting", nullptr, (EPropertyFlags)0x0020080000020815, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGJetPack), &Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp_MetaData[] = {
 		{ "Category", "FGJetPack" },
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "The duration we've held down thrust this flight, only resets when Landed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp = { UE4CodeGen_Private::EPropertyClass::Float, "mJumpTimeStamp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000020815, 1, nullptr, STRUCT_OFFSET(AFGJetPack, mJumpTimeStamp), METADATA_PARAMS(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp = { "mJumpTimeStamp", nullptr, (EPropertyFlags)0x0010000000020815, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGJetPack, mJumpTimeStamp), METADATA_PARAMS(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGJetPack_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGJetPack_Statics::NewProp_mIsThrusting,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGJetPack_Statics::NewProp_mJumpTimeStamp,
@@ -322,13 +322,17 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGJetPack_Statics::ClassParams = {
 		&AFGJetPack::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGJetPack_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGJetPack_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGJetPack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGJetPack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGJetPack()
@@ -340,7 +344,11 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPack, 688523817);
+	IMPLEMENT_CLASS(AFGJetPack, 1998977880);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGJetPack>()
+	{
+		return AFGJetPack::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGJetPack(Z_Construct_UClass_AFGJetPack, &AFGJetPack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGJetPack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGJetPack);
 	static FName NAME_AFGJetPackAttachment_OnStartThrusting = FName(TEXT("OnStartThrusting"));
@@ -374,7 +382,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Called when mIsThrusting is replicated" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPackAttachment, "OnRep_IsThrusting", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPackAttachment, nullptr, "OnRep_IsThrusting", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -397,7 +405,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPackAttachment, "OnStartThrusting", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPackAttachment, nullptr, "OnStartThrusting", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -420,7 +428,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		{ "ToolTip", "Called when we stop thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPackAttachment, "OnStopThrusting", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGJetPackAttachment, nullptr, "OnStopThrusting", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -455,9 +463,9 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGJetPackAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting, "OnRep_IsThrusting" }, // 2406739658
-		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting, "OnStartThrusting" }, // 3661310824
-		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting, "OnStopThrusting" }, // 2821159382
+		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnRep_IsThrusting, "OnRep_IsThrusting" }, // 686487633
+		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStartThrusting, "OnStartThrusting" }, // 654993587
+		{ &Z_Construct_UFunction_AFGJetPackAttachment_OnStopThrusting, "OnStopThrusting" }, // 176493907
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGJetPackAttachment_Statics::Class_MetaDataParams[] = {
@@ -474,7 +482,7 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	{
 		((AFGJetPackAttachment*)Obj)->mIsThrusting = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsThrusting", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_IsThrusting", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGJetPackAttachment), &Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting = { "mIsThrusting", "OnRep_IsThrusting", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGJetPackAttachment), &Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGJetPackAttachment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGJetPackAttachment_Statics::NewProp_mIsThrusting,
 	};
@@ -483,13 +491,17 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGJetPackAttachment_Statics::ClassParams = {
 		&AFGJetPackAttachment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGJetPackAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGJetPackAttachment_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGJetPackAttachment_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGJetPackAttachment_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGJetPackAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGJetPackAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGJetPackAttachment()
@@ -501,7 +513,11 @@ void EmptyLinkFunctionForGeneratedCodeFGJetPack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGJetPackAttachment, 3793763418);
+	IMPLEMENT_CLASS(AFGJetPackAttachment, 3978622721);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGJetPackAttachment>()
+	{
+		return AFGJetPackAttachment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGJetPackAttachment(Z_Construct_UClass_AFGJetPackAttachment, &AFGJetPackAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGJetPackAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGJetPackAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

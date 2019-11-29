@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -29,10 +29,14 @@ class UScriptStruct* FSignWallData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSignWallData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSignWallData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SignWallData"), sizeof(FSignWallData), Get_Z_Construct_UScriptStruct_FSignWallData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSignWallData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSignWallData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SignWallData"), sizeof(FSignWallData), Get_Z_Construct_UScriptStruct_FSignWallData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSignWallData>()
+{
+	return FSignWallData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSignWallData(FSignWallData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SignWallData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
@@ -80,7 +84,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Text to be displayed on the sign" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText = { UE4CodeGen_Private::EPropertyClass::Str, "SignText", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000004, 1, nullptr, STRUCT_OFFSET(FSignWallData, SignText), METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText = { "SignText", nullptr, (EPropertyFlags)0x0010000001000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSignWallData, SignText), METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex_MetaData[] = {
 		{ "Category", "SignWall" },
@@ -88,7 +92,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Index of the selected color for the background from the FGSignSettings color data array" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex = { UE4CodeGen_Private::EPropertyClass::Int, "BackgroundColorIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000004, 1, nullptr, STRUCT_OFFSET(FSignWallData, BackgroundColorIndex), METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex = { "BackgroundColorIndex", nullptr, (EPropertyFlags)0x0010000001000004, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSignWallData, BackgroundColorIndex), METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex_MetaData[] = {
 		{ "Category", "SignWall" },
@@ -96,7 +100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Index of the selected color for the text from the FGSignSettings color data array" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex = { UE4CodeGen_Private::EPropertyClass::Int, "TextColorIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000004, 1, nullptr, STRUCT_OFFSET(FSignWallData, TextColorIndex), METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex = { "TextColorIndex", nullptr, (EPropertyFlags)0x0010000001000004, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSignWallData, TextColorIndex), METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_TextColorIndex_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_SignText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSignWallData_Statics::NewProp_BackgroundColorIndex,
@@ -107,19 +111,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		nullptr,
 		&NewStructOps,
 		"SignWallData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSignWallData),
 		alignof(FSignWallData),
-		Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSignWallData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSignWallData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSignWallData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SignWallData"), sizeof(FSignWallData), Get_Z_Construct_UScriptStruct_FSignWallData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SignWallData"), sizeof(FSignWallData), Get_Z_Construct_UScriptStruct_FSignWallData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -129,7 +134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSignWallData_CRC() { return 3374909100U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSignWallData_Hash() { return 1440550879U; }
 	void AFGBuildableSignWall::StaticRegisterNativesAFGBuildableSignWall()
 	{
 		UClass* Class = AFGBuildableSignWall::StaticClass();
@@ -161,7 +166,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000582, 1, nullptr, STRUCT_OFFSET(FGBuildableSignWall_eventGetSignData_Parms, ReturnValue), Z_Construct_UScriptStruct_FSignWallData, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000008000582, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSignWall_eventGetSignData_Parms, ReturnValue), Z_Construct_UScriptStruct_FSignWallData, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::NewProp_ReturnValue,
 	};
@@ -171,7 +176,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ModuleRelativePath", "Buildables/FGBuildableSignWall.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSignWall, "GetSignData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableSignWall_eventGetSignData_Parms), Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSignWall, nullptr, "GetSignData", sizeof(FGBuildableSignWall_eventGetSignData_Parms), Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_GetSignData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSignWall_GetSignData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -194,7 +199,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Update sign components on replication" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSignWall, "OnRep_SignData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSignWall, nullptr, "OnRep_SignData", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -224,8 +229,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 	{
 		((FGBuildableSignWall_eventSetSignData_Parms*)Obj)->bUpdate = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_bUpdate = { UE4CodeGen_Private::EPropertyClass::Bool, "bUpdate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableSignWall_eventSetSignData_Parms), &Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_bUpdate_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_signData = { UE4CodeGen_Private::EPropertyClass::Struct, "signData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableSignWall_eventSetSignData_Parms, signData), Z_Construct_UScriptStruct_FSignWallData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_bUpdate = { "bUpdate", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableSignWall_eventSetSignData_Parms), &Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_bUpdate_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_signData = { "signData", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableSignWall_eventSetSignData_Parms, signData), Z_Construct_UScriptStruct_FSignWallData, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_bUpdate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::NewProp_signData,
@@ -238,7 +243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Called by server or client to update sign data" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSignWall, "SetSignData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBuildableSignWall_eventSetSignData_Parms), Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableSignWall, nullptr, "SetSignData", sizeof(FGBuildableSignWall_eventSetSignData_Parms), Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableSignWall_SetSignData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableSignWall_SetSignData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -284,9 +289,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableSignWall_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableSignWall_GetSignData, "GetSignData" }, // 4126177220
-		{ &Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData, "OnRep_SignData" }, // 915787522
-		{ &Z_Construct_UFunction_AFGBuildableSignWall_SetSignData, "SetSignData" }, // 2883031347
+		{ &Z_Construct_UFunction_AFGBuildableSignWall_GetSignData, "GetSignData" }, // 3589167167
+		{ &Z_Construct_UFunction_AFGBuildableSignWall_OnRep_SignData, "OnRep_SignData" }, // 4216042218
+		{ &Z_Construct_UFunction_AFGBuildableSignWall_SetSignData, "SetSignData" }, // 1100442732
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSignWall_Statics::Class_MetaDataParams[] = {
@@ -300,7 +305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ModuleRelativePath", "Buildables/FGBuildableSignWall.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData = { UE4CodeGen_Private::EPropertyClass::Struct, "mSignData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000101000020, 1, "OnRep_SignData", STRUCT_OFFSET(AFGBuildableSignWall, mSignData), Z_Construct_UScriptStruct_FSignWallData, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData = { "mSignData", "OnRep_SignData", (EPropertyFlags)0x0040000101000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSignWall, mSignData), Z_Construct_UScriptStruct_FSignWallData, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent_MetaData[] = {
 		{ "Category", "WallSign" },
@@ -309,7 +314,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Front text render component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mTextRenderComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableSignWall, mTextRenderComponent), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent = { "mTextRenderComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSignWall, mTextRenderComponent), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot_MetaData[] = {
 		{ "Category", "WallSign" },
@@ -318,7 +323,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Root component that parents the text objects" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot = { UE4CodeGen_Private::EPropertyClass::Object, "mTextDisplayRoot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableSignWall, mTextDisplayRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot = { "mTextDisplayRoot", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSignWall, mTextDisplayRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextDisplayRoot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot_MetaData[] = {
 		{ "Category", "WallSign" },
@@ -327,7 +332,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		{ "ToolTip", "Root Component that holds all the sign elements, text, mesh etc." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot = { UE4CodeGen_Private::EPropertyClass::Object, "mSignDisplayRoot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableSignWall, mSignDisplayRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot = { "mSignDisplayRoot", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableSignWall, mSignDisplayRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignDisplayRoot_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableSignWall_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mSignData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableSignWall_Statics::NewProp_mTextRenderComponent,
@@ -339,13 +344,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableSignWall_Statics::ClassParams = {
 		&AFGBuildableSignWall::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableSignWall_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableSignWall_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableSignWall_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableSignWall_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableSignWall()
@@ -357,7 +366,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSignWall, 2280673968);
+	IMPLEMENT_CLASS(AFGBuildableSignWall, 89133274);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableSignWall>()
+	{
+		return AFGBuildableSignWall::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSignWall(Z_Construct_UClass_AFGBuildableSignWall, &AFGBuildableSignWall::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSignWall"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSignWall);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

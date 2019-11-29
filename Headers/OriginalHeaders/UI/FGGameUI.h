@@ -5,6 +5,10 @@
 #include "FGBaseUI.h"
 #include "FGGameUI.generated.h"
 
+/** Delegate for when mouse button is pressed in Game UI. 
+This should be handle by a proper focus/UI system and this is a temporary workaround */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnMouseButtonDown, const FGeometry&, InGeometry, const FPointerEvent&, InMouseEvent );
+
 /**
 * Base class for all inventory widgets, contains a lot of helper functions to extract
 * interesting information buildings
@@ -40,6 +44,14 @@ public:
 	/** Adds to the stack */
 	UFUNCTION( BlueprintNativeEvent, BlueprintCallable, Category = "UI" )
 	void AddInteractWidget( UFGInteractWidget* widgetToAdd );
+
+	/* Pushes widget */
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "UI")
+	void PushWidget(UFGInteractWidget* Widget);
+
+	/* Removes widget */
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable , Category = "UI")
+	bool PopWidget(UFGInteractWidget* WidgetToRemove );
 
 	/** Returnswidget array with pending messages */
 	UFUNCTION( BlueprintPure, Category = "UI" )
@@ -112,6 +124,14 @@ public:
 	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "UI" )
 	void RemovePawnHUD();
 
+	/** Temp Solution to remove depenencies*/
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "UI" )
+	void ShowDirectionalSubtitle(const FText& Subtitle, AActor* Instigator, float Duration , bool bUseDuration );
+	
+	/** Temp Solution to remove depenencies*/
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "UI" )
+	void StopSubtitle(AActor* Instigator);
+
 	/** Called when we start receiving radiation. */
 	UFUNCTION( BlueprintImplementableEvent, Category = "Radiation" )
 	void OnReceiveRadiationStart();
@@ -124,9 +144,20 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, Category = "Radiation" )
 	void OnRadiationIntensityUpdated( float radiationIntensity, float radiationImmunity );
 
+protected:
+	// Begin UUserwidget interface
+	virtual FReply NativeOnPreviewMouseButtonDown( const FGeometry& InGeometry, const FPointerEvent& InMouseEvent ) override;
+	// End UUserwidget interface
+
 public:
 	/** Array with messages that the player has stocked up */
 	TArray< TSubclassOf< class UFGMessageBase > > mPendingMessages;
+
+	/** Delegate for when mouse button is pressed. The event will not be handled 
+	so if you already are listening for mouse input you might get this and your own event */
+	UPROPERTY( BlueprintAssignable, Category = "Mouse Event" )
+	FOnMouseButtonDown mOnMouseButtonDown;
+
 protected:
 	/** Do we want the inventory to be shown? */
 	bool mShowInventory;

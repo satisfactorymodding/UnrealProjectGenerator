@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_Attack() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAnimNotify_Attack_Statics::ClassParams = {
 		&UFGAnimNotify_Attack::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001120A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001120A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_Attack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_Attack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAnimNotify_Attack()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_Attack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_Attack, 1930964872);
+	IMPLEMENT_CLASS(UFGAnimNotify_Attack, 2469816686);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGAnimNotify_Attack>()
+	{
+		return UFGAnimNotify_Attack::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimNotify_Attack(Z_Construct_UClass_UFGAnimNotify_Attack, &UFGAnimNotify_Attack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimNotify_Attack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimNotify_Attack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

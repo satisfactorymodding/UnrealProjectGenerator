@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorComponent() {}
 		{ "ToolTip", "Dynamic instance of the material" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mIndicatorMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGProductionIndicatorComponent, mIndicatorMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial = { "mIndicatorMaterial", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGProductionIndicatorComponent, mIndicatorMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial,
 	};
@@ -69,13 +69,17 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::ClassParams = {
 		&UFGProductionIndicatorComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::PropPointers),
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGProductionIndicatorComponent()
@@ -87,7 +91,11 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorComponent, 1953801080);
+	IMPLEMENT_CLASS(UFGProductionIndicatorComponent, 2050468508);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGProductionIndicatorComponent>()
+	{
+		return UFGProductionIndicatorComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGProductionIndicatorComponent(Z_Construct_UClass_UFGProductionIndicatorComponent, &UFGProductionIndicatorComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGProductionIndicatorComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGProductionIndicatorComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

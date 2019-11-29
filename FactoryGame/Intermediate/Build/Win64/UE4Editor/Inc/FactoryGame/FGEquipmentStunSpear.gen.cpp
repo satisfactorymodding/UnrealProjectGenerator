@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "Start the damage chain" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, "DoAttack", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, nullptr, "DoAttack", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 	{
 		((FGEquipmentStunSpear_eventGetShouldPlaySecondSwing_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEquipmentStunSpear_eventGetShouldPlaySecondSwing_Parms), &Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEquipmentStunSpear_eventGetShouldPlaySecondSwing_Parms), &Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::NewProp_ReturnValue,
 	};
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "Getter for mShouldPlaySecondSwing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, "GetShouldPlaySecondSwing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGEquipmentStunSpear_eventGetShouldPlaySecondSwing_Parms), Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, nullptr, "GetShouldPlaySecondSwing", sizeof(FGEquipmentStunSpear_eventGetShouldPlaySecondSwing_Parms), Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ModuleRelativePath", "Equipment/FGEquipmentStunSpear.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, "OnHitTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, nullptr, "OnHitTarget", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "Called when the player clicks to \"fire\"" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, "PlayStunEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, nullptr, "PlayStunEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "server notified of hit from client to verify" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, "Server_ShockEnemy", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80280CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentStunSpear, nullptr, "Server_ShockEnemy", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -229,11 +229,11 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipmentStunSpear_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack, "DoAttack" }, // 3123159730
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing, "GetShouldPlaySecondSwing" }, // 4225818284
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget, "OnHitTarget" }, // 568654101
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects, "PlayStunEffects" }, // 2776538530
-		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy, "Server_ShockEnemy" }, // 783055984
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_DoAttack, "DoAttack" }, // 2785508344
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_GetShouldPlaySecondSwing, "GetShouldPlaySecondSwing" }, // 3469920913
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_OnHitTarget, "OnHitTarget" }, // 2879609905
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_PlayStunEffects, "PlayStunEffects" }, // 638156427
+		{ &Z_Construct_UFunction_AFGEquipmentStunSpear_Server_ShockEnemy, "Server_ShockEnemy" }, // 2867397826
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::Class_MetaDataParams[] = {
@@ -248,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "How much inf ront of character the attack is" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mAttackDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentStunSpear, mAttackDistance), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance = { "mAttackDistance", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentStunSpear, mAttackDistance), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage_MetaData[] = {
 		{ "Category", "Stun Spear" },
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "Damage amount" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage = { UE4CodeGen_Private::EPropertyClass::Int, "mDamage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentStunSpear, mDamage), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage = { "mDamage", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentStunSpear, mDamage), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime_MetaData[] = {
 		{ "Category", "Stun Spear" },
@@ -264,7 +264,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "The max amount of time between the first swing that will still trigger the second swing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime = { UE4CodeGen_Private::EPropertyClass::Float, "mSecondSwingCooldDownTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentStunSpear, mSecondSwingCooldDownTime), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime = { "mSecondSwingCooldDownTime", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentStunSpear, mSecondSwingCooldDownTime), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingCooldDownTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime_MetaData[] = {
 		{ "Category", "Stun Spear" },
@@ -272,7 +272,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "The max amount of time between the first swing that will still trigger the second swing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime = { UE4CodeGen_Private::EPropertyClass::Float, "mSecondSwingMaxTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentStunSpear, mSecondSwingMaxTime), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime = { "mSecondSwingMaxTime", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentStunSpear, mSecondSwingMaxTime), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mSecondSwingMaxTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass_MetaData[] = {
 		{ "Category", "Stun Spear" },
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "Damage type to use when hitting others" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass = { UE4CodeGen_Private::EPropertyClass::Class, "mDamageTypeClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentStunSpear, mDamageTypeClass), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass = { "mDamageTypeClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentStunSpear, mDamageTypeClass), Z_Construct_UClass_UFGDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamageTypeClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp_MetaData[] = {
 		{ "Category", "Stun Spear" },
@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp = { UE4CodeGen_Private::EPropertyClass::Object, "mCollisionComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(AFGEquipmentStunSpear, mCollisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp = { "mCollisionComp", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentStunSpear, mCollisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mCollisionComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGEquipmentStunSpear_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mAttackDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentStunSpear_Statics::NewProp_mDamage,
@@ -303,13 +303,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGEquipmentStunSpear_Statics::ClassParams = {
 		&AFGEquipmentStunSpear::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGEquipmentStunSpear_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGEquipmentStunSpear_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentStunSpear_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGEquipmentStunSpear()
@@ -321,7 +325,11 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentStunSpear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 1174413923);
+	IMPLEMENT_CLASS(AFGEquipmentStunSpear, 430052538);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentStunSpear>()
+	{
+		return AFGEquipmentStunSpear::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEquipmentStunSpear(Z_Construct_UClass_AFGEquipmentStunSpear, &AFGEquipmentStunSpear::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEquipmentStunSpear"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEquipmentStunSpear);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

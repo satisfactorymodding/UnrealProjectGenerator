@@ -329,8 +329,8 @@ private:
 
 
 	/** The physics is driven by the physics scene. */
-	void PreTickPhysics( FPhysScene* physScene, uint32 sceneType, float dt );
-	void UpdatePhysics( FPhysScene* physScene, uint32 sceneType, float dt );
+	void PreTickPhysics( FPhysScene* physScene, float dt );
+	void UpdatePhysics( FPhysScene* physScene, float dt );
 
 	void UpdateSimulationData( class AFGTrain* train, struct FTrainSimulationData& simData );
 
@@ -344,7 +344,7 @@ private:
 	int32 CreateTrackGraph();
 
 	/** Remove track graph. */
-	void RemoveTrackGraph( int graphID );
+	void RemoveTrackGraph( int32 graphID );
 
 	/** Adds a track to a graph, performs a merge if the track is connected to another graph. */
 	void AddTrackToGraph( class AFGBuildableRailroadTrack* track, int32 graphID );

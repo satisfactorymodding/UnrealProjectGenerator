@@ -10,3 +10,4 @@ void UFGCharacterAnimInstance::OnRadialDamageTaken_Implementation(){ }
 FRotator UFGCharacterAnimInstance::GetDesiredWalkRotation(){ return FRotator(); }
 FRotator UFGCharacterAnimInstance::GetDesiredRunLeanRotation(){ return FRotator(); }
 void UFGCharacterAnimInstance::TurnInPlaceEvent( float dt){ }
+FVector UFGCharacterAnimInstance::GetCharacterVelocity()const{ return FVector(); }

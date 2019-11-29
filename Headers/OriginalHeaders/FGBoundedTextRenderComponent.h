@@ -8,7 +8,7 @@
 
 /**
  * Clips Rendered Text defined by a bounding box. 
- * Todo: Only top alignment is supported for vertical clipping. Implement appropriate alignment clipping.
+ * @todo: Only top alignment is supported for vertical clipping. Implement appropriate alignment clipping.
  */
 UCLASS( meta = ( BlueprintSpawnableComponent ) )
 class FACTORYGAME_API UFGBoundedTextRenderComponent : public UTextRenderComponent

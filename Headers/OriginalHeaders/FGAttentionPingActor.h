@@ -30,7 +30,7 @@ public:
 	void OnRep_OwningPlayerState();
 
 	/** Called when we have the player state replicated so now we can spawn the effects */
-	UFUNCTION( BlueprintImplementableEvent, Category = "Attention Ping" )
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Attention Ping" )
 	void SpawnAttentionPingEffects();
 
 protected:

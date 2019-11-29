@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -82,8 +82,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::NewProp_out_dependentObjects = { UE4CodeGen_Private::EPropertyClass::Array, "out_dependentObjects", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventGatherDependencies_Parms, out_dependentObjects), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::NewProp_out_dependentObjects_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "out_dependentObjects", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::NewProp_out_dependentObjects = { "out_dependentObjects", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventGatherDependencies_Parms, out_dependentObjects), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::NewProp_out_dependentObjects_Inner = { "out_dependentObjects", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::NewProp_out_dependentObjects,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::NewProp_out_dependentObjects_Inner,
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Called before PreSaveGame, used to determine the order the objects is to be saved on disc @warning: make sure to NOT create any cyclic\ndependencies\n\n@param out_dependentObjects -        populate this with the object you are dependent on, no need to care about outer/owner, they are automatically\n                                                                     handled by calling code" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "GatherDependencies", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08420C00, sizeof(FGSaveInterface_eventGatherDependencies_Parms), Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "GatherDependencies", sizeof(FGSaveInterface_eventGatherDependencies_Parms), Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_GatherDependencies_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_GatherDependencies()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	{
 		((FGSaveInterface_eventNeedTransform_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSaveInterface_eventNeedTransform_Parms), &Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveInterface_eventNeedTransform_Parms), &Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::NewProp_ReturnValue,
 	};
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Only relevant for actors.\nIf returning true, then when loading, we are returned to the location that was stored when saving" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "NeedTransform", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGSaveInterface_eventNeedTransform_Parms), Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "NeedTransform", sizeof(FGSaveInterface_eventNeedTransform_Parms), Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_NeedTransform_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_NeedTransform()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -148,8 +148,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::NewProp_gameVersion = { UE4CodeGen_Private::EPropertyClass::Int, "gameVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPostLoadGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::NewProp_saveVersion = { UE4CodeGen_Private::EPropertyClass::Int, "saveVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPostLoadGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::NewProp_gameVersion = { "gameVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPostLoadGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::NewProp_saveVersion = { "saveVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPostLoadGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::NewProp_gameVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::NewProp_saveVersion,
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Called on all UObjects when they have gotten their data from serialization\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "PostLoadGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGSaveInterface_eventPostLoadGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "PostLoadGame", sizeof(FGSaveInterface_eventPostLoadGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostLoadGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_PostLoadGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -180,8 +180,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::NewProp_gameVersion = { UE4CodeGen_Private::EPropertyClass::Int, "gameVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPostSaveGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::NewProp_saveVersion = { UE4CodeGen_Private::EPropertyClass::Int, "saveVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPostSaveGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::NewProp_gameVersion = { "gameVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPostSaveGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::NewProp_saveVersion = { "saveVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPostSaveGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::NewProp_gameVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::NewProp_saveVersion,
@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Called on all UObjects right after they have written their data, so they can cleanup any mess done in PreSave\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "PostSaveGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGSaveInterface_eventPostSaveGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "PostSaveGame", sizeof(FGSaveInterface_eventPostSaveGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PostSaveGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_PostSaveGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -212,8 +212,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::NewProp_gameVersion = { UE4CodeGen_Private::EPropertyClass::Int, "gameVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPreLoadGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::NewProp_saveVersion = { UE4CodeGen_Private::EPropertyClass::Int, "saveVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPreLoadGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::NewProp_gameVersion = { "gameVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPreLoadGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::NewProp_saveVersion = { "saveVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPreLoadGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::NewProp_gameVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::NewProp_saveVersion,
@@ -224,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Called on all UObjects right after they will be loaded (or created prior to getting their data)\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "PreLoadGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGSaveInterface_eventPreLoadGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "PreLoadGame", sizeof(FGSaveInterface_eventPreLoadGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreLoadGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_PreLoadGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -244,8 +244,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::NewProp_gameVersion = { UE4CodeGen_Private::EPropertyClass::Int, "gameVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPreSaveGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::NewProp_saveVersion = { UE4CodeGen_Private::EPropertyClass::Int, "saveVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSaveInterface_eventPreSaveGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::NewProp_gameVersion = { "gameVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPreSaveGame_Parms, gameVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::NewProp_saveVersion = { "saveVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSaveInterface_eventPreSaveGame_Parms, saveVersion), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::NewProp_gameVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::NewProp_saveVersion,
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Called on all UObjects that will be saved right before the save is done\n\n@param saveVersion - the version of the save game, incremented when doing native conversions\n@param gameVersion - the version of the game, is the CL of our internal Perforce server, will be a large number > 40k" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "PreSaveGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGSaveInterface_eventPreSaveGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "PreSaveGame", sizeof(FGSaveInterface_eventPreSaveGame_Parms), Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_PreSaveGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_PreSaveGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	{
 		((FGSaveInterface_eventShouldSave_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSaveInterface_eventShouldSave_Parms), &Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSaveInterface_eventShouldSave_Parms), &Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::NewProp_ReturnValue,
 	};
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		{ "ToolTip", "Called before PreSaveGame, used to determine if the object want to be saved\n\n@return true if the object want to be saved" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, "ShouldSave", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48020C00, sizeof(FGSaveInterface_eventShouldSave_Parms), Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveInterface, nullptr, "ShouldSave", sizeof(FGSaveInterface_eventShouldSave_Parms), Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveInterface_ShouldSave_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSaveInterface_ShouldSave()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -319,13 +319,13 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSaveInterface_GatherDependencies, "GatherDependencies" }, // 3745301113
-		{ &Z_Construct_UFunction_UFGSaveInterface_NeedTransform, "NeedTransform" }, // 87215113
-		{ &Z_Construct_UFunction_UFGSaveInterface_PostLoadGame, "PostLoadGame" }, // 2199188490
-		{ &Z_Construct_UFunction_UFGSaveInterface_PostSaveGame, "PostSaveGame" }, // 728684504
-		{ &Z_Construct_UFunction_UFGSaveInterface_PreLoadGame, "PreLoadGame" }, // 2549022768
-		{ &Z_Construct_UFunction_UFGSaveInterface_PreSaveGame, "PreSaveGame" }, // 2280818583
-		{ &Z_Construct_UFunction_UFGSaveInterface_ShouldSave, "ShouldSave" }, // 2564391600
+		{ &Z_Construct_UFunction_UFGSaveInterface_GatherDependencies, "GatherDependencies" }, // 2582680917
+		{ &Z_Construct_UFunction_UFGSaveInterface_NeedTransform, "NeedTransform" }, // 1236149979
+		{ &Z_Construct_UFunction_UFGSaveInterface_PostLoadGame, "PostLoadGame" }, // 1429941774
+		{ &Z_Construct_UFunction_UFGSaveInterface_PostSaveGame, "PostSaveGame" }, // 1852312937
+		{ &Z_Construct_UFunction_UFGSaveInterface_PreLoadGame, "PreLoadGame" }, // 575205336
+		{ &Z_Construct_UFunction_UFGSaveInterface_PreSaveGame, "PreSaveGame" }, // 1213409714
+		{ &Z_Construct_UFunction_UFGSaveInterface_ShouldSave, "ShouldSave" }, // 220128015
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveInterface_Statics::Class_MetaDataParams[] = {
@@ -340,13 +340,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSaveInterface_Statics::ClassParams = {
 		&UFGSaveInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSaveInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSaveInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSaveInterface()
@@ -358,7 +362,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveInterface, 850047108);
+	IMPLEMENT_CLASS(UFGSaveInterface, 190210400);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveInterface>()
+	{
+		return UFGSaveInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveInterface(Z_Construct_UClass_UFGSaveInterface, &UFGSaveInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveInterface);
 	static FName NAME_UFGSaveInterface_GatherDependencies = FName(TEXT("GatherDependencies"));

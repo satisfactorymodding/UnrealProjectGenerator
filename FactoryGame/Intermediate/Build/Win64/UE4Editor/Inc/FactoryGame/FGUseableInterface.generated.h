@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,6 +22,8 @@ class UPrimitiveComponent;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__State() { return STRUCT_OFFSET(FUseState, State); }
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FUseState>();
 
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS
@@ -97,6 +99,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState>();
+
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_INCLASS_NO_PURE_DECLS \
@@ -164,6 +168,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_Valid>();
 
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_RPC_WRAPPERS \
 	virtual void UnregisterInteractingPlayer_Implementation(AFGCharacterPlayer* player) {}; \
@@ -527,6 +533,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseableInterface>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGUseableInterface_h

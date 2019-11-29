@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,13 +52,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRoadConnectionComponent_Statics::ClassParams = {
 		&UFGRoadConnectionComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRoadConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRoadConnectionComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRoadConnectionComponent()
@@ -70,7 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 2688148210);
+	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 338124494);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGRoadConnectionComponent>()
+	{
+		return UFGRoadConnectionComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRoadConnectionComponent(Z_Construct_UClass_UFGRoadConnectionComponent, &UFGRoadConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRoadConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRoadConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -28,6 +28,7 @@ struct FVector;
 	virtual bool GetActorShouldShowOnMap_Implementation() { return false; }; \
 	virtual bool GetActorShouldShowInCompass_Implementation() { return false; }; \
 	virtual ERepresentationType GetActorRepresentationType_Implementation() { return (ERepresentationType)0; }; \
+	virtual void SetActorRepresentationColor_Implementation(FLinearColor newColor) {}; \
 	virtual FLinearColor GetActorRepresentationColor_Implementation() { return FLinearColor(ForceInit); }; \
 	virtual FText SetActorRepresentationText_Implementation(FText const& newText) { return FText::GetEmpty(); }; \
 	virtual FText GetActorRepresentationText_Implementation() { return FText::GetEmpty(); }; \
@@ -93,6 +94,15 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(ERepresentationType*)Z_Param__Result=P_THIS->GetActorRepresentationType_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetActorRepresentationColor) \
+	{ \
+		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetActorRepresentationColor_Implementation(Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -186,6 +196,7 @@ struct FVector;
 	virtual bool GetActorShouldShowOnMap_Implementation() { return false; }; \
 	virtual bool GetActorShouldShowInCompass_Implementation() { return false; }; \
 	virtual ERepresentationType GetActorRepresentationType_Implementation() { return (ERepresentationType)0; }; \
+	virtual void SetActorRepresentationColor_Implementation(FLinearColor newColor) {}; \
 	virtual FLinearColor GetActorRepresentationColor_Implementation() { return FLinearColor(ForceInit); }; \
 	virtual FText SetActorRepresentationText_Implementation(FText const& newText) { return FText::GetEmpty(); }; \
 	virtual FText GetActorRepresentationText_Implementation() { return FText::GetEmpty(); }; \
@@ -251,6 +262,15 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(ERepresentationType*)Z_Param__Result=P_THIS->GetActorRepresentationType_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetActorRepresentationColor) \
+	{ \
+		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetActorRepresentationColor_Implementation(Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -482,6 +502,10 @@ struct FVector;
 		{ \
 		} \
 	}; \
+	struct FGActorRepresentationInterface_eventSetActorRepresentationColor_Parms \
+	{ \
+		FLinearColor newColor; \
+	}; \
 	struct FGActorRepresentationInterface_eventSetActorRepresentationText_Parms \
 	{ \
 		FText newText; \
@@ -569,6 +593,7 @@ public: \
 	static bool Execute_IsActorStatic(UObject* O); \
 	static bool Execute_RemoveAsRepresentation(UObject* O); \
 	static ECompassViewDistance Execute_SetActorCompassViewDistance(UObject* O, ECompassViewDistance compassViewDistance); \
+	static void Execute_SetActorRepresentationColor(UObject* O, FLinearColor newColor); \
 	static FText Execute_SetActorRepresentationText(UObject* O, FText const& newText); \
 	static bool Execute_UpdateRepresentation(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
@@ -595,6 +620,7 @@ public: \
 	static bool Execute_IsActorStatic(UObject* O); \
 	static bool Execute_RemoveAsRepresentation(UObject* O); \
 	static ECompassViewDistance Execute_SetActorCompassViewDistance(UObject* O, ECompassViewDistance compassViewDistance); \
+	static void Execute_SetActorRepresentationColor(UObject* O, FLinearColor newColor); \
 	static FText Execute_SetActorRepresentationText(UObject* O, FText const& newText); \
 	static bool Execute_UpdateRepresentation(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
@@ -623,6 +649,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGActorRepresentationInterface>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGActorRepresentationInterface_h

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -72,8 +72,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::NewProp_atLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "atLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventBroadcastPickup_Parms, atLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::NewProp_fromStaticMesh = { UE4CodeGen_Private::EPropertyClass::Object, "fromStaticMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventBroadcastPickup_Parms, fromStaticMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::NewProp_atLocation = { "atLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventBroadcastPickup_Parms, atLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::NewProp_fromStaticMesh = { "fromStaticMesh", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventBroadcastPickup_Parms, fromStaticMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::NewProp_atLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::NewProp_fromStaticMesh,
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		{ "ModuleRelativePath", "FGFoliagePickup.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, "BroadcastPickup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00824C40, sizeof(FGFoliagePickup_eventBroadcastPickup_Parms), Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, nullptr, "BroadcastPickup", sizeof(FGFoliagePickup_eventBroadcastPickup_Parms), Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00824C40, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -106,13 +106,13 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_atLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "atLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventPlayPickupEffect_Parms, atLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_atLocation = { "atLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventPlayPickupEffect_Parms, atLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData = { UE4CodeGen_Private::EPropertyClass::Object, "foliageUserData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventPlayPickupEffect_Parms, foliageUserData), Z_Construct_UClass_UFGFoliageResourceUserData_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData = { "foliageUserData", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventPlayPickupEffect_Parms, foliageUserData), Z_Construct_UClass_UFGFoliageResourceUserData_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_atLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::NewProp_foliageUserData,
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		{ "ModuleRelativePath", "FGFoliagePickup.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, "PlayPickupEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820808, sizeof(FGFoliagePickup_eventPlayPickupEffect_Parms), Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, nullptr, "PlayPickupEffect", sizeof(FGFoliagePickup_eventPlayPickupEffect_Parms), Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -143,9 +143,9 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_withTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "withTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventServer_PickupWithTransform_Parms, withTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_foliageRemoval = { UE4CodeGen_Private::EPropertyClass::Object, "foliageRemoval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventServer_PickupWithTransform_Parms, foliageRemoval), Z_Construct_UClass_AFGFoliageRemoval_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliagePickup_eventServer_PickupWithTransform_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_withTransform = { "withTransform", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventServer_PickupWithTransform_Parms, withTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_foliageRemoval = { "foliageRemoval", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventServer_PickupWithTransform_Parms, foliageRemoval), Z_Construct_UClass_AFGFoliageRemoval_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliagePickup_eventServer_PickupWithTransform_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_withTransform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::NewProp_foliageRemoval,
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		{ "ToolTip", "Sends to the server that something should be removed up at a specific location" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, "Server_PickupWithTransform", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80A80CC0, sizeof(FGFoliagePickup_eventServer_PickupWithTransform_Parms), Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, nullptr, "Server_PickupWithTransform", sizeof(FGFoliagePickup_eventServer_PickupWithTransform_Parms), Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A80CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -192,9 +192,9 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGFoliagePickup_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup, "BroadcastPickup" }, // 2365985535
-		{ &Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect, "PlayPickupEffect" }, // 1641748443
-		{ &Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform, "Server_PickupWithTransform" }, // 481128354
+		{ &Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup, "BroadcastPickup" }, // 3049570973
+		{ &Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect, "PlayPickupEffect" }, // 2385604699
+		{ &Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform, "Server_PickupWithTransform" }, // 4071847410
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliagePickup_Statics::Class_MetaDataParams[] = {
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		{ "ToolTip", "The mesh that should be outlining" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mPickupMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGFoliagePickup, mPickupMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh = { "mPickupMesh", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliagePickup, mPickupMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGFoliagePickup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh,
 	};
@@ -220,13 +220,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFoliagePickup_Statics::ClassParams = {
 		&AFGFoliagePickup::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A9u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGFoliagePickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGFoliagePickup_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGFoliagePickup_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGFoliagePickup_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009002A9u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFoliagePickup_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFoliagePickup_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFoliagePickup()
@@ -238,7 +242,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliagePickup, 3618663320);
+	IMPLEMENT_CLASS(AFGFoliagePickup, 3023188062);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliagePickup>()
+	{
+		return AFGFoliagePickup::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliagePickup(Z_Construct_UClass_AFGFoliagePickup, &AFGFoliagePickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliagePickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliagePickup);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

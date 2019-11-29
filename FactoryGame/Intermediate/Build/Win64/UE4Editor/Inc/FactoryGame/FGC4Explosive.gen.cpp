@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,7 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		{ "ToolTip", "Called when the server has blown this explosive" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGC4Explosive, "OnRep_IsDetonated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGC4Explosive, nullptr, "OnRep_IsDetonated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		{ "ToolTip", "Play the sound and particle effect for this explosion" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGC4Explosive, "PlayExplosionEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C08, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGC4Explosive, nullptr, "PlayExplosionEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C08, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -120,8 +120,8 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGC4Explosive_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated, "OnRep_IsDetonated" }, // 78034564
-		{ &Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects, "PlayExplosionEffects" }, // 413892318
+		{ &Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated, "OnRep_IsDetonated" }, // 2986527210
+		{ &Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects, "PlayExplosionEffects" }, // 2528864106
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::Class_MetaDataParams[] = {
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 	{
 		((AFGC4Explosive*)Obj)->mIsDetonated = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsDetonated", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080101000020, 1, "OnRep_IsDetonated", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGC4Explosive), &Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated = { "mIsDetonated", "OnRep_IsDetonated", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGC4Explosive), &Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType_MetaData[] = {
 		{ "Category", "Explosive" },
@@ -147,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		{ "ToolTip", "Damage type used for the radial apply damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType = { UE4CodeGen_Private::EPropertyClass::Class, "mDamageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGC4Explosive, mDamageType), Z_Construct_UClass_UDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType = { "mDamageType", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGC4Explosive, mDamageType), Z_Construct_UClass_UDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius_MetaData[] = {
 		{ "Category", "Explosive" },
@@ -155,7 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		{ "ToolTip", "Damage radius used for the radial apply damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mDamageRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGC4Explosive, mDamageRadius), METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius = { "mDamageRadius", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGC4Explosive, mDamageRadius), METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage_MetaData[] = {
 		{ "Category", "Explosive" },
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		{ "ToolTip", "Base damage used for the radial apply damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage = { UE4CodeGen_Private::EPropertyClass::Float, "mBaseDamage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGC4Explosive, mBaseDamage), METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage = { "mBaseDamage", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGC4Explosive, mBaseDamage), METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGC4Explosive_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType,
@@ -175,13 +175,17 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGC4Explosive_Statics::ClassParams = {
 		&AFGC4Explosive::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGC4Explosive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGC4Explosive_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGC4Explosive_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGC4Explosive_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGC4Explosive()
@@ -193,7 +197,11 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Explosive, 2631586253);
+	IMPLEMENT_CLASS(AFGC4Explosive, 3966316919);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGC4Explosive>()
+	{
+		return AFGC4Explosive::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGC4Explosive(Z_Construct_UClass_AFGC4Explosive, &AFGC4Explosive::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGC4Explosive"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGC4Explosive);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

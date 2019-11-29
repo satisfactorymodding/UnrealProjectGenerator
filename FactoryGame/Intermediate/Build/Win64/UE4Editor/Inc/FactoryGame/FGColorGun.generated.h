@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -16,10 +16,6 @@ enum class EFGColorGunTargetType : uint8;
 #define FACTORYGAME_FGColorGun_generated_h
 
 #define FactoryGame_Source_FactoryGame_FGColorGun_h_25_RPC_WRAPPERS \
-	virtual bool Sever_SetSecondaryColor_Validate(FLinearColor ); \
-	virtual void Sever_SetSecondaryColor_Implementation(FLinearColor newColor); \
-	virtual bool Sever_SetPrimaryColor_Validate(FLinearColor ); \
-	virtual void Sever_SetPrimaryColor_Implementation(FLinearColor newColor); \
 	virtual bool Sever_SetSecondaryColorForSlot_Validate(uint8 , FLinearColor ); \
 	virtual void Sever_SetSecondaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
 	virtual bool Sever_SetPrimaryColorForSlot_Validate(uint8 , FLinearColor ); \
@@ -48,52 +44,6 @@ enum class EFGColorGunTargetType : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FLinearColor*)Z_Param__Result=P_THIS->GetPrimaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSever_SetSecondaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetSecondaryColor_Validate(Z_Param_newColor)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetSecondaryColor_Validate")); \
-			return; \
-		} \
-		P_THIS->Sever_SetSecondaryColor_Implementation(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSecondaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSecondaryColor(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSever_SetPrimaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetPrimaryColor_Validate(Z_Param_newColor)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetPrimaryColor_Validate")); \
-			return; \
-		} \
-		P_THIS->Sever_SetPrimaryColor_Implementation(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetPrimaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPrimaryColor(Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -206,10 +156,6 @@ enum class EFGColorGunTargetType : uint8;
 
 
 #define FactoryGame_Source_FactoryGame_FGColorGun_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool Sever_SetSecondaryColor_Validate(FLinearColor ); \
-	virtual void Sever_SetSecondaryColor_Implementation(FLinearColor newColor); \
-	virtual bool Sever_SetPrimaryColor_Validate(FLinearColor ); \
-	virtual void Sever_SetPrimaryColor_Implementation(FLinearColor newColor); \
 	virtual bool Sever_SetSecondaryColorForSlot_Validate(uint8 , FLinearColor ); \
 	virtual void Sever_SetSecondaryColorForSlot_Implementation(uint8 slotIndex, FLinearColor newColor); \
 	virtual bool Sever_SetPrimaryColorForSlot_Validate(uint8 , FLinearColor ); \
@@ -238,52 +184,6 @@ enum class EFGColorGunTargetType : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FLinearColor*)Z_Param__Result=P_THIS->GetPrimaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSever_SetSecondaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetSecondaryColor_Validate(Z_Param_newColor)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetSecondaryColor_Validate")); \
-			return; \
-		} \
-		P_THIS->Sever_SetSecondaryColor_Implementation(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSecondaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSecondaryColor(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSever_SetPrimaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		if (!P_THIS->Sever_SetPrimaryColor_Validate(Z_Param_newColor)) \
-		{ \
-			RPC_ValidateFailed(TEXT("Sever_SetPrimaryColor_Validate")); \
-			return; \
-		} \
-		P_THIS->Sever_SetPrimaryColor_Implementation(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetPrimaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPrimaryColor(Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -404,17 +304,9 @@ enum class EFGColorGunTargetType : uint8;
 	{ \
 		uint8 slotIndex; \
 	}; \
-	struct FGColorGun_eventSever_SetPrimaryColor_Parms \
-	{ \
-		FLinearColor newColor; \
-	}; \
 	struct FGColorGun_eventSever_SetPrimaryColorForSlot_Parms \
 	{ \
 		uint8 slotIndex; \
-		FLinearColor newColor; \
-	}; \
-	struct FGColorGun_eventSever_SetSecondaryColor_Parms \
-	{ \
 		FLinearColor newColor; \
 	}; \
 	struct FGColorGun_eventSever_SetSecondaryColorForSlot_Parms \
@@ -509,6 +401,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGColorGun>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGColorGun_h
 
@@ -518,4 +412,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EFGColorGunTargetType::ECGT_nonColorable) \
 	op(EFGColorGunTargetType::ECGT_validTarget) \
 	op(EFGColorGunTargetType::ECGT_sameColorSlot) 
+
+enum class EFGColorGunTargetType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFGColorGunTargetType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

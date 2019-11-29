@@ -26,7 +26,7 @@ public:
 	static AFGCircuitSubsystem* Get( UWorld* world );
 
 	/** Get the circuit subsystem */
-	UFUNCTION( BlueprintPure, Category = "Circuit", Meta = ( DefaultToSelf = "worldContext" ) )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits", Meta = ( DefaultToSelf = "worldContext" ) )
 	static AFGCircuitSubsystem* GetCircuitSubsystem( UObject* worldContext );
 
 	// Begin IFGSaveInterface
@@ -39,7 +39,6 @@ public:
 	virtual bool ShouldSave_Implementation() const override;
 	// End IFSaveInterface
 
-	/** Ctor */
 	AFGCircuitSubsystem();
 
 	// Begin AActor interface
@@ -63,7 +62,7 @@ public:
 	 *
 	 * @note The returned pointer is only valid this tick or until a change is made to the circuitry by calling CreateCircuit, RemoveCircuit, ConnectComponents.
 	 */
-	UFUNCTION( BlueprintCallable, BlueprintPure = false, Category = "Circuit" )
+	UFUNCTION( BlueprintCallable, BlueprintPure = false, Category = "FactoryGame|Circuits" )
 	FORCEINLINE class UFGCircuit* FindCircuit( int32 circuitID ) const { return mCircuits.FindRef( circuitID ); }
 
 	/** Template version of find circuit. */
@@ -102,11 +101,11 @@ public:
 
 protected:
 	/** Called when a power circuit lost power. */
-	UFUNCTION( BlueprintImplementableEvent, Category = "Power Circuit" )
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Circuits|Power" )
 	void PowerCircuit_OnFuseSet();
 
 	/** Called when a power circuit had it's power restored. */
-	UFUNCTION( BlueprintImplementableEvent, Category = "Power Circuit" )
+	UFUNCTION( BlueprintImplementableEvent, Category = "FactoryGame|Circuits|Power" )
 	void PowerCircuit_OnFuseReset();
 
 private:
@@ -114,38 +113,15 @@ private:
 	UFUNCTION()
 	void OnRep_ReplicatedCircuits();
 
-	/** Get a new UCID. */
+	/** Get a new unique ID. */
 	int32 GenerateUniqueCircuitID();
 
-	/**
-	 * Merge two circuits into one.
-	 *
-	 * @param first - First circuit.
-	 * @param second - Second circuit.
-	 */
+	/** Internal helpers to manage circuits. */
 	void MergeCircuits( int32 first, int32 second );
-
-	/**
-	 * Create a new circuit.
-	 *
-	 * @param circuitClass Type of circuit to create.
-	 *
-	 * @return - The circuit.
-	 *
-	 * @note This invalidates any pointers to a circuit.
-	 */
 	int32 CreateCircuit( TSubclassOf< class UFGCircuit > circuitClass );
-
-	/**
-	 * Remove a circuit.
-	 *
-	 * @note This invalidates any pointers to a circuit.
-	 */
 	void RemoveCircuit( int32 circuitID );
 
-	/**
-	 * Adds a connection component to a circuit, performs a circuit merge if the component is already connected to another circuit.
-	 */
+	/** Adds a connection component to a circuit, performs a circuit merge if the component is already connected to another circuit. */
 	void AddComponentToCircuit( class UFGCircuitConnectionComponent* component, int32 circuitID );
 
 private:

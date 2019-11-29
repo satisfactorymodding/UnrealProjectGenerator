@@ -76,6 +76,10 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Schematic" )
 	static TArray< TSubclassOf< class UFGRecipe > > GetRecipes( TSubclassOf< UFGSchematic > inClass );
 
+	/** Returns the unlocks granted by this schematic */
+	UFUNCTION( BlueprintPure, Category = "Schematic" )
+	static TArray< UFGUnlock* > GetUnlocks( TSubclassOf< UFGSchematic > inClass );
+
 	/** Returns mTechOnionTier */
 	UFUNCTION( BlueprintPure, Category = "Schematic" )
 	static int32 GetTechTier( TSubclassOf< UFGSchematic > inClass );
@@ -151,6 +155,12 @@ public:
 #endif
 	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
 	//~ End AssetInterface
+
+#if WITH_EDITORONLY_DATA
+	/** This uses all the old unlock data to create new FGUnlock objects for the new system */
+	void MigrateDataToNewUnlockSystem();
+#endif
+
 protected:
 	/** What type of schematic is this. */
 	UPROPERTY( EditDefaultsOnly, Category = "Schematic" )
@@ -176,32 +186,36 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Cost" )
 	float mShipTravelTimeAfterPurchase;
 
+	/** The unlocks you get when purchasing */
+	UPROPERTY( EditDefaultsOnly, Instanced, Category = "Unlocks" )
+	TArray< class UFGUnlock* > mUnlocks;
+
 	/** The recipes you get when purchasing */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	TArray< TSubclassOf< UFGRecipe > > mRecipes;
 
 	/**  These are the resources that are scannable */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	TArray< TSubclassOf< UFGResourceDescriptor > > mResourcesToAddToScanner;
 
 	/** Does this schematic unlock the map? */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	bool mUnlocksMap;
 
 	/** Does this schematic unlock the build efficiency display? */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	bool mUnlocksBuildEfficiency;
 
 	/** Does this schematic unlock the build overclock functionality? */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	bool mUnlocksBuildOverclock;
 
 	/** Number of inventory slots this schematic adds to the players inventory */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	int32 mNumInventorySlotsToUnlock;
 
 	/** Number of arm equipment slots this schematic adds to the players inventory */
-	UPROPERTY( EditDefaultsOnly, Category = "Unlocks" )
+	UPROPERTY( VisibleDefaultsOnly, Category = "Unlocks" )
 	int32 mNumArmEquipmentSlotsToUnlock;
 
 	/** Icon used when displaying this schematic */

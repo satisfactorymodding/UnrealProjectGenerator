@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -44,8 +44,8 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGDecorDescriptor_eventGetDecorMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGDecorDescriptor_eventGetDecorMesh_Parms, inClass), Z_Construct_UClass_UFGDecorDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDecorDescriptor_eventGetDecorMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDecorDescriptor_eventGetDecorMesh_Parms, inClass), Z_Construct_UClass_UFGDecorDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::NewProp_inClass,
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		{ "ToolTip", "Get the mesh of the decor." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDecorDescriptor, "GetDecorMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGDecorDescriptor_eventGetDecorMesh_Parms), Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDecorDescriptor, nullptr, "GetDecorMesh", sizeof(FGDecorDescriptor_eventGetDecorMesh_Parms), Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDecorDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh, "GetDecorMesh" }, // 3512348685
+		{ &Z_Construct_UFunction_UFGDecorDescriptor_GetDecorMesh, "GetDecorMesh" }, // 2211554343
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDecorDescriptor_Statics::Class_MetaDataParams[] = {
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		{ "ToolTip", "The static mesh for the decor." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDecorMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGDecorDescriptor, mDecorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh = { "mDecorMesh", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDecorDescriptor, mDecorMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGDecorDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDecorDescriptor_Statics::NewProp_mDecorMesh,
 	};
@@ -118,13 +118,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDecorDescriptor_Statics::ClassParams = {
 		&UFGDecorDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGDecorDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGDecorDescriptor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGDecorDescriptor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGDecorDescriptor_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDecorDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDecorDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDecorDescriptor()
@@ -136,7 +140,11 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDecorDescriptor, 813548791);
+	IMPLEMENT_CLASS(UFGDecorDescriptor, 2574938460);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGDecorDescriptor>()
+	{
+		return UFGDecorDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDecorDescriptor(Z_Construct_UClass_UFGDecorDescriptor, &UFGDecorDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDecorDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDecorDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -108,6 +108,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildGuide>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h
 
@@ -115,4 +117,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define FOREACH_ENUM_EGUIDELINETYPE(op) \
 	op(EGuideLineType::GLT_Default) \
 	op(EGuideLineType::GLT_ConveyorBelt) 
+
+enum class EGuideLineType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EGuideLineType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

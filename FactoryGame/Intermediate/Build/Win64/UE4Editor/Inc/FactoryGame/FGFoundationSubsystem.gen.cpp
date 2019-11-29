@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -27,10 +27,14 @@ class UScriptStruct* FBuilding::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FBuilding_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FBuilding, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Building"), sizeof(FBuilding), Get_Z_Construct_UScriptStruct_FBuilding_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FBuilding, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Building"), sizeof(FBuilding), Get_Z_Construct_UScriptStruct_FBuilding_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FBuilding>()
+{
+	return FBuilding::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FBuilding(FBuilding::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("Building"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
@@ -69,8 +73,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		{ "ToolTip", "Which buildables belong to this building." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables = { UE4CodeGen_Private::EPropertyClass::Array, "Buildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FBuilding, Buildables), METADATA_PARAMS(Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "Buildables", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables = { "Buildables", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBuilding, Buildables), METADATA_PARAMS(Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_Inner = { "Buildables", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBuilding_Statics::NewProp_Buildables_Inner,
@@ -80,19 +84,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		nullptr,
 		&NewStructOps,
 		"Building",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FBuilding),
 		alignof(FBuilding),
-		Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FBuilding_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FBuilding()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FBuilding_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Building"), sizeof(FBuilding), Get_Z_Construct_UScriptStruct_FBuilding_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Building"), sizeof(FBuilding), Get_Z_Construct_UScriptStruct_FBuilding_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -102,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBuilding_CRC() { return 4049208561U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash() { return 2498160441U; }
 	void AFGFoundationSubsystem::StaticRegisterNativesAFGFoundationSubsystem()
 	{
 	}
@@ -147,9 +152,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		{ "ToolTip", "All the buildings in the game, map with foundation ID and the building struct." },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings = { UE4CodeGen_Private::EPropertyClass::Map, "mBuildings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGFoundationSubsystem, mBuildings), METADATA_PARAMS(Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_MetaData)) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_Key_KeyProp = { UE4CodeGen_Private::EPropertyClass::Int, "mBuildings_Key", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_ValueProp = { UE4CodeGen_Private::EPropertyClass::Struct, "mBuildings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 1, Z_Construct_UScriptStruct_FBuilding, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings = { "mBuildings", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoundationSubsystem, mBuildings), METADATA_PARAMS(Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_Key_KeyProp = { "mBuildings_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_ValueProp = { "mBuildings", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UScriptStruct_FBuilding, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGFoundationSubsystem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFoundationSubsystem_Statics::NewProp_mBuildings_Key_KeyProp,
@@ -163,13 +168,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFoundationSubsystem_Statics::ClassParams = {
 		&AFGFoundationSubsystem::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGFoundationSubsystem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGFoundationSubsystem_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGFoundationSubsystem_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGFoundationSubsystem_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFoundationSubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFoundationSubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFoundationSubsystem()
@@ -181,7 +190,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoundationSubsystem, 1560854177);
+	IMPLEMENT_CLASS(AFGFoundationSubsystem, 1117539155);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFoundationSubsystem>()
+	{
+		return AFGFoundationSubsystem::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoundationSubsystem(Z_Construct_UClass_AFGFoundationSubsystem, &AFGFoundationSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoundationSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoundationSubsystem);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGFoundationSubsystem)

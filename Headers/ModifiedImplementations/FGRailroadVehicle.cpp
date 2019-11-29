@@ -10,6 +10,8 @@ void AFGRailroadVehicle::Destroyed(){ }
 void AFGRailroadVehicle::Serialize( FArchive& ar){ Super::Serialize(ar ); }
 void AFGRailroadVehicle::Tick( float dt){ }
 bool AFGRailroadVehicle::CanDismantle_Implementation() const{ return bool(); }
+void AFGRailroadVehicle::GainedSignificance_Implementation(){ }
+void AFGRailroadVehicle::LostSignificance_Implementation(){ }
 void AFGRailroadVehicle::UpdateAnimation(){ }
 UFGRailroadVehicleMovementComponent* AFGRailroadVehicle::GetRailroadVehicleMovementComponent() const{ return nullptr; }
 bool AFGRailroadVehicle::IsDocked() const{ return bool(); }

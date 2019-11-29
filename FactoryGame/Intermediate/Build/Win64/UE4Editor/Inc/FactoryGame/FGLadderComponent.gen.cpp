@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -71,26 +71,26 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult = { UE4CodeGen_Private::EPropertyClass::Struct, "sweepResult", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, sweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult = { "sweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, sweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult_MetaData)) };
 	void Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_isFromSweep_SetBit(void* Obj)
 	{
 		((FGLadderComponent_eventBeginPotentialClimberOverlap_Parms*)Obj)->isFromSweep = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_isFromSweep = { UE4CodeGen_Private::EPropertyClass::Bool, "isFromSweep", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms), &Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_isFromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherBodyIndex = { UE4CodeGen_Private::EPropertyClass::Int, "otherBodyIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_isFromSweep = { "isFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms), &Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_isFromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherBodyIndex = { "otherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp = { UE4CodeGen_Private::EPropertyClass::Object, "otherComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_other = { UE4CodeGen_Private::EPropertyClass::Object, "other", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp = { "otherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_other = { "other", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp = { UE4CodeGen_Private::EPropertyClass::Object, "overlappedComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp = { "overlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_sweepResult,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::NewProp_isFromSweep,
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		{ "ToolTip", "Callbacks" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLadderComponent, "BeginPotentialClimberOverlap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00440401, sizeof(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms), Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLadderComponent, nullptr, "BeginPotentialClimberOverlap", sizeof(FGLadderComponent_eventBeginPotentialClimberOverlap_Parms), Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -140,20 +140,20 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherBodyIndex = { UE4CodeGen_Private::EPropertyClass::Int, "otherBodyIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherBodyIndex = { "otherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, otherBodyIndex), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp = { UE4CodeGen_Private::EPropertyClass::Object, "otherComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_other = { UE4CodeGen_Private::EPropertyClass::Object, "other", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp = { "otherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, otherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_other = { "other", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp = { UE4CodeGen_Private::EPropertyClass::Object, "overlappedComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp = { "overlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGLadderComponent_eventEndPotentialClimberOverlap_Parms, overlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_overlappedComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherBodyIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::NewProp_otherComp,
@@ -165,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		{ "ModuleRelativePath", "FGLadderComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLadderComponent, "EndPotentialClimberOverlap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGLadderComponent_eventEndPotentialClimberOverlap_Parms), Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGLadderComponent, nullptr, "EndPotentialClimberOverlap", sizeof(FGLadderComponent_eventEndPotentialClimberOverlap_Parms), Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -208,8 +208,8 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGLadderComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap, "BeginPotentialClimberOverlap" }, // 3239836504
-		{ &Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap, "EndPotentialClimberOverlap" }, // 1856171170
+		{ &Z_Construct_UFunction_UFGLadderComponent_BeginPotentialClimberOverlap, "BeginPotentialClimberOverlap" }, // 2752522025
+		{ &Z_Construct_UFunction_UFGLadderComponent_EndPotentialClimberOverlap, "EndPotentialClimberOverlap" }, // 3714560619
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLadderComponent_Statics::Class_MetaDataParams[] = {
@@ -227,8 +227,8 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		{ "ToolTip", "List of players that can potentially climb on the ladder, i.e. within grab distance.\nPlayers that do climb on the ladder is also in this list." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers = { UE4CodeGen_Private::EPropertyClass::Array, "mPotentialClimbers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGLadderComponent, mPotentialClimbers), METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mPotentialClimbers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers = { "mPotentialClimbers", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGLadderComponent, mPotentialClimbers), METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_Inner = { "mPotentialClimbers", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle_MetaData[] = {
 		{ "Category", "Ladder" },
@@ -236,7 +236,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		{ "ToolTip", "Angle in degrees. If the player must be looking and moving within this angle relative to the ladder or else they will hop off." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle = { UE4CodeGen_Private::EPropertyClass::Float, "mEndClimbingLookAngle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGLadderComponent, mEndClimbingLookAngle), METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle = { "mEndClimbingLookAngle", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGLadderComponent, mEndClimbingLookAngle), METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mEndClimbingLookAngle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle_MetaData[] = {
 		{ "Category", "Ladder" },
@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		{ "ToolTip", "Climbable angle in degrees. The player must be looking and moving within this angle relative to the ladder to climb it." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle = { UE4CodeGen_Private::EPropertyClass::Float, "mClimbableLookAngle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGLadderComponent, mClimbableLookAngle), METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle = { "mClimbableLookAngle", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGLadderComponent, mClimbableLookAngle), METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mClimbableLookAngle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGLadderComponent_Statics::NewProp_mPotentialClimbers_Inner,
@@ -256,13 +256,17 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGLadderComponent_Statics::ClassParams = {
 		&UFGLadderComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::PropPointers),
+		0,
+		0x00B010A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGLadderComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGLadderComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGLadderComponent()
@@ -274,7 +278,11 @@ void EmptyLinkFunctionForGeneratedCodeFGLadderComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGLadderComponent, 2381196442);
+	IMPLEMENT_CLASS(UFGLadderComponent, 1367556902);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGLadderComponent>()
+	{
+		return UFGLadderComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGLadderComponent(Z_Construct_UClass_UFGLadderComponent, &UFGLadderComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGLadderComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGLadderComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

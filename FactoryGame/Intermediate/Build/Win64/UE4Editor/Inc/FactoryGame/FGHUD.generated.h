@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -586,6 +586,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGHUD>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGHUD_h
 
@@ -600,4 +602,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ECrosshairState::ECS_Dismantle) \
 	op(ECrosshairState::ECS_Build) \
 	op(ECrosshairState::ECS_Custom) 
+
+enum class ECrosshairState : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ECrosshairState>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

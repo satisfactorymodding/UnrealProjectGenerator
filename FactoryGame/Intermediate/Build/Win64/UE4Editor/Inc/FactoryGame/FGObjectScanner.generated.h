@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,6 +21,8 @@ struct FColor;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__RequiredSchematic() { return STRUCT_OFFSET(FScannableDetails, RequiredSchematic); }
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FScannableDetails>();
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_73_RPC_WRAPPERS \
  \
@@ -218,6 +220,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGObjectScanner>();
+
 #define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_219_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ScannerLightColor) \
@@ -366,6 +370,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGObjectScannerAttachment>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h

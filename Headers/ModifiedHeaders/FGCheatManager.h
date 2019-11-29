@@ -11,9 +11,7 @@
 #include "Interfaces/OnlineSharedCloudInterface.h"
 #include "FGCheatManager.generated.h"
 
-/**
- * 
- */
+
 UCLASS( Within = PlayerController, Config = Editor )
 class FACTORYGAME_API UFGCheatManager : public UCheatManager
 {
@@ -31,7 +29,7 @@ public:
 	virtual void NoPower( bool enabled );
 
 	UFUNCTION( exec)
-		virtual bool NoPower_Get();
+	virtual bool NoPower_Get();
 
 	UFUNCTION( exec, Category = "GUI" )
 	virtual void NoMessages( bool enabled );
@@ -40,7 +38,13 @@ public:
 	virtual bool NoMessages_Get();
 
 	UFUNCTION( exec, Category = "World/Time" )
-	virtual void TurboMode( bool enabled );
+	virtual void TurboBuildMode( bool enabled );
+
+	UFUNCTION( exec )
+	virtual bool TurboBuildMode_Get();
+
+	UFUNCTION( exec, Category = "World/Time" )
+	virtual void TurboProductionMode( bool enabled );
 
 	UFUNCTION( exec, Category = "World/Time" )
 	virtual bool TurboMode_Get();
@@ -50,10 +54,6 @@ public:
 
 	UFUNCTION( exec, Category = "Resources:-1", meta = ( ToolTip="Give the number of items specified." ))
 	virtual void GiveItemsSingle( TSubclassOf< class UFGItemDescriptor > resource, int32 NumberOfItems );
-
-
-	
-
 	UFUNCTION( exec, Category = "Player/Camera" )
 	virtual void PlayerFly( bool flyModeEnabled );
 	UFUNCTION( exec, Category = "Player/Camera" )
@@ -63,28 +63,27 @@ public:
 	virtual void PlayerNoClipModeOnFly( bool gohstMode );
 	UFUNCTION( exec, Category = "Player/Camera" )
 	virtual bool PlayerNoClipModeOnFly_Get();
-	
 
 	UFUNCTION( exec )
 	virtual void ClearGiveItemPopularList();
 	
 	UFUNCTION( exec, category = "Research" )
-	virtual void GiefALLSchematics();
+	virtual void GiveALLSchematics();
 
 	UFUNCTION( exec, category = "Research" )
-	void GiefAllSchematicsAndPhases();
+	void GiveAllSchematicsAndPhases();
 
 	UFUNCTION( exec, category = "Research" )
-	virtual void GiefAvailableSchematics();
+	virtual void GiveAvailableSchematics();
 
 	UFUNCTION( exec, category = "Research" )
-	virtual void GiefCheatSchematics();
+	virtual void GiveCheatSchematics();
 
-	UFUNCTION( exec)
-	virtual void GiefStorySchematics();
+	UFUNCTION( exec )
+	virtual void GiveStorySchematics();
 
 	UFUNCTION( exec, category = "Research" )
-	void GiefStartingResearch();
+	void GiveStartingResearch();
 	
 	UFUNCTION( exec, category = "Factory|Uncommon" )
 	virtual void RebuildPowerCircuits();
@@ -102,7 +101,7 @@ public:
 	UFUNCTION( exec, category = "Player/Camera" )
 	bool EnablePlayerFOV_Get();
 	
-	UFUNCTION( exec, category = "Player/Camera|test category" )
+	UFUNCTION( exec, category = "Player/Camera" )
 	void DestroyPawn();
 
 	UFUNCTION( exec )
@@ -183,7 +182,7 @@ public:
 	void DumpFactoryStatsToLog();
 
 	UFUNCTION( exec, category = "Research" )
-	void GiefSchematicsOfTier( int32 tier );
+	void GiveSchematicsOfTier( int32 tier );
 
 	UFUNCTION( exec, category = "Research" )
 	void SetGamePhase( EGamePhase phase );
@@ -246,6 +245,9 @@ public:
 
 	UFUNCTION( exec, category = "Log" )
 	void DumpSignificanceManagedObjects();
+
+	UFUNCTION( exec, category = "Log" )
+	void DumpDynamicOptionsSettings();
 
 	UFUNCTION( exec, category = "Save/Load" )
 	void PurgeInactiveClientsFromSave( bool fetchInventories );
@@ -345,6 +347,15 @@ public:
 
 	UFUNCTION( exec )
 	void RebuildFactoryLegsOneTileAroundPlayer();
+
+	UFUNCTION( exec )
+	void ResetGamePhases();
+
+	UFUNCTION( exec )
+	void DumpGamePhases();
+
+	UFUNCTION( exec )
+	void ToggleTrainSelfDriving();
 
 public:
 	/** This is used to make picking the same classes in the cheat board easier */

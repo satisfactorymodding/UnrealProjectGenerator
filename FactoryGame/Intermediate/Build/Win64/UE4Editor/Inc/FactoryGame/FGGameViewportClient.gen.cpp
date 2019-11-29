@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGameViewportClient() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameViewportClient_Statics::ClassParams = {
 		&UFGGameViewportClient::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A8u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A8u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGGameViewportClient_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGGameViewportClient_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGGameViewportClient()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameViewportClient() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameViewportClient, 1842552089);
+	IMPLEMENT_CLASS(UFGGameViewportClient, 2724027613);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGGameViewportClient>()
+	{
+		return UFGGameViewportClient::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameViewportClient(Z_Construct_UClass_UFGGameViewportClient, &UFGGameViewportClient::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameViewportClient"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameViewportClient);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

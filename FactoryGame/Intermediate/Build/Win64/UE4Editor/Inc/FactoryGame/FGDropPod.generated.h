@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -10,6 +10,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFGItemDescriptor;
 struct FDropPackage;
+class AFGCharacterPlayer;
 class UFGInventoryComponent;
 #ifdef FACTORYGAME_FGDropPod_generated_h
 #error "FGDropPod.generated.h already included, missing '#pragma once' in FGDropPod.h"
@@ -17,6 +18,7 @@ class UFGInventoryComponent;
 #define FACTORYGAME_FGDropPod_generated_h
 
 #define FactoryGame_Source_FactoryGame_FGDropPod_h_18_RPC_WRAPPERS \
+	virtual void OnRepair_Implementation(AFGCharacterPlayer* InteractingCharacter); \
 	virtual void RollLoot_Implementation(); \
 	virtual void OnOpened_Implementation(); \
  \
@@ -44,6 +46,15 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FDropPackage*)Z_Param__Result=P_THIS->RollDropPackage(Z_Param_includedItems); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnRepair) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_InteractingCharacter); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRepair_Implementation(Z_Param_InteractingCharacter); \
 		P_NATIVE_END; \
 	} \
  \
@@ -89,6 +100,7 @@ class UFGInventoryComponent;
 
 
 #define FactoryGame_Source_FactoryGame_FGDropPod_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void OnRepair_Implementation(AFGCharacterPlayer* InteractingCharacter); \
 	virtual void RollLoot_Implementation(); \
 	virtual void OnOpened_Implementation(); \
  \
@@ -116,6 +128,15 @@ class UFGInventoryComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FDropPackage*)Z_Param__Result=P_THIS->RollDropPackage(Z_Param_includedItems); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnRepair) \
+	{ \
+		P_GET_OBJECT(AFGCharacterPlayer,Z_Param_InteractingCharacter); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRepair_Implementation(Z_Param_InteractingCharacter); \
 		P_NATIVE_END; \
 	} \
  \
@@ -160,7 +181,13 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGDropPod_h_18_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_FGDropPod_h_18_EVENT_PARMS \
+	struct FGDropPod_eventOnRepair_Parms \
+	{ \
+		AFGCharacterPlayer* InteractingCharacter; \
+	};
+
+
 #define FactoryGame_Source_FactoryGame_FGDropPod_h_18_CALLBACK_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGDropPod_h_18_INCLASS_NO_PURE_DECLS \
 private: \
@@ -239,6 +266,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGDropPod>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGDropPod_h

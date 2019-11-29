@@ -74,25 +74,6 @@ public:
 	UFUNCTION( BlueprintImplementableEvent, Category = "Color Gun" )
 	void OnTargetStateChanged( EFGColorGunTargetType targetType);
 
-	//Deprecated functions
-
-	/**[DEPRECATED]  Set the color slot used when firing */
-	UFUNCTION( BlueprintCallable, Category = "Color Gun" )
-	void SetPrimaryColor( FLinearColor newColor );
-
-	/**[DEPRECATED]  Sets the primary color on the server */
-	UFUNCTION( Server, Reliable, WithValidation )
-	void Sever_SetPrimaryColor( FLinearColor newColor );
-
-
-	/*[DEPRECATED] * Set the secondary color used when firing */
-	UFUNCTION( BlueprintCallable, Category = "Color Gun" )
-	void SetSecondaryColor( FLinearColor newColor );
-
-	/**[DEPRECATED]  Sets the primary color on the server */
-	UFUNCTION( Server, Reliable, WithValidation )
-	void Sever_SetSecondaryColor( FLinearColor newColor );
-
 	/**[DEPRECATED]  Get the primary color */
 	UFUNCTION( BlueprintPure, Category = "Color Gun" )
 	FORCEINLINE FLinearColor GetPrimaryColor() const { return mPrimaryColor_DEPRECATED; }

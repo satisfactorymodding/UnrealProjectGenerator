@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,11 +24,15 @@ class UFGSchematic;
 	FORCEINLINE static uint32 __PPO__ResearchCollected() { return STRUCT_OFFSET(FResearchMessageData, ResearchCollected); }
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchMessageData>();
+
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_99_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSchematicMessagePair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicUnlocked() { return STRUCT_OFFSET(FSchematicMessagePair, SchematicUnlocked); }
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSchematicMessagePair>();
 
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_56_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemFoundData_Statics; \
@@ -37,11 +41,15 @@ class UFGSchematic;
 	FORCEINLINE static uint32 __PPO__ItemClass() { return STRUCT_OFFSET(FItemFoundData, ItemClass); }
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemFoundData>();
+
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicClass() { return STRUCT_OFFSET(FMapAreaVisitedData, SchematicClass); }
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapAreaVisitedData>();
 
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_155_RPC_WRAPPERS \
  \
@@ -269,6 +277,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGStorySubsystem>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGStorySubsystem_h

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		{ "ToolTip", "Update the preview of the planet in the editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlanet, "UpdatePreview", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlanet, nullptr, "UpdatePreview", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlanet_UpdatePreview_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPlanet_UpdatePreview()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -77,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPlanet_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPlanet_UpdatePreview, "UpdatePreview" }, // 423752292
+		{ &Z_Construct_UFunction_AFGPlanet_UpdatePreview, "UpdatePreview" }, // 1438773675
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlanet_Statics::Class_MetaDataParams[] = {
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime = { UE4CodeGen_Private::EPropertyClass::Float, "mPreviewTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000801, 1, nullptr, STRUCT_OFFSET(AFGPlanet, mPreviewTime), METADATA_PARAMS(Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime = { "mPreviewTime", nullptr, (EPropertyFlags)0x0040000800000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPlanet, mPreviewTime), METADATA_PARAMS(Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGPlanet_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPlanet_Statics::NewProp_mPreviewTime,
 	};
@@ -107,13 +107,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPlanet_Statics::ClassParams = {
 		&AFGPlanet::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		IF_WITH_EDITORONLY_DATA(Z_Construct_UClass_AFGPlanet_Statics::PropPointers, nullptr), IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::PropPointers), 0),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		IF_WITH_EDITORONLY_DATA(Z_Construct_UClass_AFGPlanet_Statics::PropPointers, nullptr),
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::PropPointers), 0),
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPlanet_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPlanet()
@@ -125,7 +129,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlanet, 1554878359);
+	IMPLEMENT_CLASS(AFGPlanet, 1681856514);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGPlanet>()
+	{
+		return AFGPlanet::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlanet(Z_Construct_UClass_AFGPlanet, &AFGPlanet::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlanet"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlanet);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

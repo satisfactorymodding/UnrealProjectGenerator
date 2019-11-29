@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -136,10 +136,16 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGCrate>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGCrate_h
 
 
 #define FOREACH_ENUM_EFGCRATEICONTYPE(op) \
 	op(EFGCrateIconType::CIT_DeathIcon) 
+
+enum class EFGCrateIconType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFGCrateIconType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

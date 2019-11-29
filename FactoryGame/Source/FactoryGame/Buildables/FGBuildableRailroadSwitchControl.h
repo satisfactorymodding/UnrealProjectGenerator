@@ -46,6 +46,16 @@ public:
 	/** Toggle the switch position to the next track. */
 	void ToggleSwitchPosition();
 
+	/** Called when switch changes position, server only */
+	UFUNCTION()
+	void OnSwitchPositionChanged( int32 newPosition );
+
+	/** Let blueprint get a chance to update the visuals after the switch  */
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "FactoryGame|Railroad|Switch" )
+	void UpdateSwitchPositionVisuals();
+protected:
+	UFUNCTION()
+	void OnRep_SwitchPosition();
 private:
 	friend class AFGRailroadTrackHologram;
 
@@ -54,6 +64,6 @@ private:
 	class UFGRailroadTrackConnectionComponent* mControlledConnection;
 
 	/** Current switch position read from the controlled connection, polled each tick. */
-	UPROPERTY( Replicated, Meta = (NoAutoJson = true) )
+	UPROPERTY( ReplicatedUsing = OnRep_SwitchPosition, Meta = (NoAutoJson = true) )
 	int32 mSwitchPosition;
 };

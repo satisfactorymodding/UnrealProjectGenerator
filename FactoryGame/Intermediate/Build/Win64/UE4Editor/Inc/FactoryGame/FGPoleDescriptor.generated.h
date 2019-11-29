@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -19,6 +19,8 @@ struct FPoleHeightMesh;
 	friend struct Z_Construct_UScriptStruct_FPoleHeightMesh_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPoleHeightMesh>();
 
 #define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_RPC_WRAPPERS \
  \
@@ -116,6 +118,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGPoleDescriptor>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h

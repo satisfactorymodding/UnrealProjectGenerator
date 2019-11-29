@@ -51,7 +51,7 @@ public:
 	void UpdateRenderedComponents();
 
 	/** Set the distance we want to preview the stage from */
-	DEPRECATED( 4.16, "SetPreviewDistance has been replaced by SetPreviewView" )
+	UE_DEPRECATED( 4.16, "SetPreviewDistance has been replaced by SetPreviewView" )
 	UFUNCTION( BlueprintCallable, Category="Stage", meta = ( DeprecatedFunction, DeprecationMessage = "SetPreviewDistance has been replaced by SetView" ) )
 	void SetPreviewDistance( float distance );
 

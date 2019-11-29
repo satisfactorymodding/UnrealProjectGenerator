@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -87,8 +87,8 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventCanDriverEnter_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventCanDriverEnter_Parms), &Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_character = { UE4CodeGen_Private::EPropertyClass::Object, "character", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGDriveablePawn_eventCanDriverEnter_Parms, character), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventCanDriverEnter_Parms), &Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_character = { "character", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDriveablePawn_eventCanDriverEnter_Parms, character), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::NewProp_character,
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Can we drive this. (server and locally controlled client)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "CanDriverEnter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020400, sizeof(FGDriveablePawn_eventCanDriverEnter_Parms), Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "CanDriverEnter", sizeof(FGDriveablePawn_eventCanDriverEnter_Parms), Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -130,8 +130,8 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventDriverEnter_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventDriverEnter_Parms), &Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_driver = { UE4CodeGen_Private::EPropertyClass::Object, "driver", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGDriveablePawn_eventDriverEnter_Parms, driver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventDriverEnter_Parms), &Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_driver = { "driver", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDriveablePawn_eventDriverEnter_Parms, driver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::NewProp_driver,
@@ -143,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Make player the new driver of this vehicle.\n@note Call this on server only." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "DriverEnter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020404, sizeof(FGDriveablePawn_eventDriverEnter_Parms), Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "DriverEnter", sizeof(FGDriveablePawn_eventDriverEnter_Parms), Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020404, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_DriverEnter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -174,12 +174,12 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventDriverLeave_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventDriverLeave_Parms), &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventDriverLeave_Parms), &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_keepDriving_SetBit(void* Obj)
 	{
 		((FGDriveablePawn_eventDriverLeave_Parms*)Obj)->keepDriving = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_keepDriving = { UE4CodeGen_Private::EPropertyClass::Bool, "keepDriving", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventDriverLeave_Parms), &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_keepDriving_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_keepDriving = { "keepDriving", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventDriverLeave_Parms), &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_keepDriving_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::NewProp_keepDriving,
@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Called when player wants to get out.\n@note Call this on server only.\n\n@param keepDriving    True if we want to leave the without setting IsDriving to false (turn off the vehicle)." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "DriverLeave", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020404, sizeof(FGDriveablePawn_eventDriverLeave_Parms), Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "DriverLeave", sizeof(FGDriveablePawn_eventDriverLeave_Parms), Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020404, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_DriverLeave()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -215,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGDriveablePawn_eventGetDriver_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDriveablePawn_eventGetDriver_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::NewProp_ReturnValue,
 	};
@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Gets the driving pawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "GetDriver", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventGetDriver_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "GetDriver", sizeof(FGDriveablePawn_eventGetDriver_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_GetDriver()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGDriveablePawn_eventGetDriverExitOffset_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDriveablePawn_eventGetDriverExitOffset_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::NewProp_ReturnValue,
 	};
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return exit offset to try to place the driver at (local space)." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "GetDriverExitOffset", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54820401, sizeof(FGDriveablePawn_eventGetDriverExitOffset_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "GetDriverExitOffset", sizeof(FGDriveablePawn_eventGetDriverExitOffset_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGDriveablePawn_eventGetDriverSeatAnimation_Parms, ReturnValue), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDriveablePawn_eventGetDriverSeatAnimation_Parms, ReturnValue), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::NewProp_ReturnValue,
 	};
@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return animation to set on the driver; null if no animation set." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "GetDriverSeatAnimation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventGetDriverSeatAnimation_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "GetDriverSeatAnimation", sizeof(FGDriveablePawn_eventGetDriverSeatAnimation_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -317,7 +317,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Name, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGDriveablePawn_eventGetDriverSeatSocket_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDriveablePawn_eventGetDriverSeatSocket_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::NewProp_ReturnValue,
 	};
@@ -328,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return socket to attach the driver to; none if no socket set." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "GetDriverSeatSocket", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventGetDriverSeatSocket_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "GetDriverSeatSocket", sizeof(FGDriveablePawn_eventGetDriverSeatSocket_Parms), Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -356,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventHasPendingDriver_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventHasPendingDriver_Parms), &Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventHasPendingDriver_Parms), &Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::NewProp_ReturnValue,
 	};
@@ -367,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return true if another driver is about to enter." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "HasPendingDriver", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventHasPendingDriver_Parms), Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "HasPendingDriver", sizeof(FGDriveablePawn_eventHasPendingDriver_Parms), Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -395,7 +395,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventIsDriverVisible_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventIsDriverVisible_Parms), &Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventIsDriverVisible_Parms), &Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::NewProp_ReturnValue,
 	};
@@ -406,7 +406,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return true if the driver should be visible." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "IsDriverVisible", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventIsDriverVisible_Parms), Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "IsDriverVisible", sizeof(FGDriveablePawn_eventIsDriverVisible_Parms), Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -434,7 +434,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventIsDriving_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventIsDriving_Parms), &Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventIsDriving_Parms), &Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::NewProp_ReturnValue,
 	};
@@ -445,7 +445,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return true if this vehicle is being driven." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "IsDriving", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventIsDriving_Parms), Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "IsDriving", sizeof(FGDriveablePawn_eventIsDriving_Parms), Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_IsDriving()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -468,7 +468,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Rep notifies" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "OnRep_IsDriving", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "OnRep_IsDriving", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -492,7 +492,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Places the driver at a valid location when they leave the vehicle." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "PlaceExitingDriver", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "PlaceExitingDriver", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -516,7 +516,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Called when the driver has entered (human or ai)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "ReceiveOnDriverEnter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "ReceiveOnDriverEnter", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -540,7 +540,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Called when the driver is about to leave (human or ai)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "ReceiveOnDriverLeave", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "ReceiveOnDriverLeave", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -568,7 +568,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((FGDriveablePawn_eventShouldAttachDriver_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGDriveablePawn_eventShouldAttachDriver_Parms), &Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGDriveablePawn_eventShouldAttachDriver_Parms), &Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::NewProp_ReturnValue,
 	};
@@ -579,7 +579,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "@return true if the driver should be attached." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, "ShouldAttachDriver", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGDriveablePawn_eventShouldAttachDriver_Parms), Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDriveablePawn, nullptr, "ShouldAttachDriver", sizeof(FGDriveablePawn_eventShouldAttachDriver_Parms), Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -641,21 +641,21 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGDriveablePawn_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter, "CanDriverEnter" }, // 2557464892
-		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverEnter, "DriverEnter" }, // 2998448450
-		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave, "DriverLeave" }, // 2172192586
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriver, "GetDriver" }, // 2742660953
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset, "GetDriverExitOffset" }, // 298126460
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation, "GetDriverSeatAnimation" }, // 322043948
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket, "GetDriverSeatSocket" }, // 805776988
-		{ &Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver, "HasPendingDriver" }, // 2364032924
-		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible, "IsDriverVisible" }, // 3127009897
-		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriving, "IsDriving" }, // 3156876381
-		{ &Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving, "OnRep_IsDriving" }, // 279527480
-		{ &Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver, "PlaceExitingDriver" }, // 2040357924
-		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter, "ReceiveOnDriverEnter" }, // 3840198299
-		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave, "ReceiveOnDriverLeave" }, // 2370650361
-		{ &Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver, "ShouldAttachDriver" }, // 2361955563
+		{ &Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter, "CanDriverEnter" }, // 3849381122
+		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverEnter, "DriverEnter" }, // 3491147756
+		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave, "DriverLeave" }, // 1707822475
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriver, "GetDriver" }, // 1456830100
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset, "GetDriverExitOffset" }, // 230509242
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation, "GetDriverSeatAnimation" }, // 2222689689
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket, "GetDriverSeatSocket" }, // 592844062
+		{ &Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver, "HasPendingDriver" }, // 1043056240
+		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible, "IsDriverVisible" }, // 496444516
+		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriving, "IsDriving" }, // 3655466465
+		{ &Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving, "OnRep_IsDriving" }, // 3136596146
+		{ &Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver, "PlaceExitingDriver" }, // 675371153
+		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter, "ReceiveOnDriverEnter" }, // 83136384
+		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave, "ReceiveOnDriverLeave" }, // 999690715
+		{ &Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver, "ShouldAttachDriver" }, // 3644035998
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::Class_MetaDataParams[] = {
@@ -675,14 +675,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((AFGDriveablePawn*)Obj)->mIsDriving = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsDriving", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_IsDriving", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving = { "mIsDriving", "OnRep_IsDriving", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver_MetaData[] = {
 		{ "ModuleRelativePath", "FGDriveablePawn.h" },
 		{ "ToolTip", "The driver, not saved, pawns remember their last driven vehicle and enters it in begin play." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver = { UE4CodeGen_Private::EPropertyClass::Object, "mDriver", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGDriveablePawn, mDriver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver = { "mDriver", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDriveablePawn, mDriver), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset_MetaData[] = {
 		{ "Category", "Driveable" },
@@ -690,7 +690,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Where to place the driver upon exiting (local space), set from FVehicleSeat" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "mDriverExitOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGDriveablePawn, mDriverExitOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset = { "mDriverExitOffset", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDriveablePawn, mDriverExitOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation_MetaData[] = {
 		{ "Category", "Driveable" },
@@ -698,7 +698,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Animation to play on the character player when in the driver seat, set from FVehicleSeat" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation = { UE4CodeGen_Private::EPropertyClass::Object, "mDriverSeatAnimation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGDriveablePawn, mDriverSeatAnimation), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation = { "mDriverSeatAnimation", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDriveablePawn, mDriverSeatAnimation), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket_MetaData[] = {
 		{ "Category", "Driveable" },
@@ -706,7 +706,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		{ "ToolTip", "Socket to attach the driver to, if mShouldAttachDriver is true, set from FVehicleSeat" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket = { UE4CodeGen_Private::EPropertyClass::Name, "mDriverSeatSocket", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGDriveablePawn, mDriverSeatSocket), METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket = { "mDriverSeatSocket", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDriveablePawn, mDriverSeatSocket), METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_MetaData[] = {
 		{ "Category", "Driveable" },
@@ -718,7 +718,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((AFGDriveablePawn*)Obj)->mIsDriverVisible = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsDriverVisible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible = { "mIsDriverVisible", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_MetaData[] = {
 		{ "Category", "Driveable" },
@@ -730,7 +730,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	{
 		((AFGDriveablePawn*)Obj)->mShouldAttachDriver = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver = { UE4CodeGen_Private::EPropertyClass::Bool, "mShouldAttachDriver", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver = { "mShouldAttachDriver", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGDriveablePawn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver,
@@ -748,13 +748,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGDriveablePawn_Statics::ClassParams = {
 		&AFGDriveablePawn::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGDriveablePawn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGDriveablePawn_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGDriveablePawn()
@@ -766,7 +770,11 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDriveablePawn, 1521946407);
+	IMPLEMENT_CLASS(AFGDriveablePawn, 970091084);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGDriveablePawn>()
+	{
+		return AFGDriveablePawn::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDriveablePawn(Z_Construct_UClass_AFGDriveablePawn, &AFGDriveablePawn::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDriveablePawn"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDriveablePawn);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

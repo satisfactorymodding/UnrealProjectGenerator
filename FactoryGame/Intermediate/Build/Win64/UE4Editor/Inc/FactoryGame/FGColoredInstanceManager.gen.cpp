@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 		{ "ModuleRelativePath", "FGColoredInstanceManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mInstanceComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mInstanceComponents, UFGColoredInstanceManager), nullptr, STRUCT_OFFSET(UFGColoredInstanceManager, mInstanceComponents), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents = { "mInstanceComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mInstanceComponents, UFGColoredInstanceManager), STRUCT_OFFSET(UFGColoredInstanceManager, mInstanceComponents), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents,
 	};
@@ -67,13 +67,17 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGColoredInstanceManager_Statics::ClassParams = {
 		&UFGColoredInstanceManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::PropPointers),
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGColoredInstanceManager()
@@ -85,7 +89,11 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceManager, 2367011225);
+	IMPLEMENT_CLASS(UFGColoredInstanceManager, 3083442377);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGColoredInstanceManager>()
+	{
+		return UFGColoredInstanceManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColoredInstanceManager(Z_Construct_UClass_UFGColoredInstanceManager, &UFGColoredInstanceManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColoredInstanceManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColoredInstanceManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

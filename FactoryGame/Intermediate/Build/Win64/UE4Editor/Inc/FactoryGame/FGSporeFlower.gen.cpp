@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,8 +52,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 	{
 		((FGSporeFlower_eventActorShouldTriggerFlower_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSporeFlower_eventActorShouldTriggerFlower_Parms), &Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_actor = { UE4CodeGen_Private::EPropertyClass::Object, "actor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSporeFlower_eventActorShouldTriggerFlower_Parms, actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSporeFlower_eventActorShouldTriggerFlower_Parms), &Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_actor = { "actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSporeFlower_eventActorShouldTriggerFlower_Parms, actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::NewProp_actor,
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		{ "ToolTip", "Test if an actor should trigger spore flower to rise" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSporeFlower, "ActorShouldTriggerFlower", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGSporeFlower_eventActorShouldTriggerFlower_Parms), Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSporeFlower, nullptr, "ActorShouldTriggerFlower", sizeof(FGSporeFlower_eventActorShouldTriggerFlower_Parms), Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSporeFlower_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower, "ActorShouldTriggerFlower" }, // 2800551553
+		{ &Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower, "ActorShouldTriggerFlower" }, // 3931232954
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSporeFlower_Statics::Class_MetaDataParams[] = {
@@ -121,8 +121,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		{ "ToolTip", "Holds a list of all actors inside trigger spehere" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors = { UE4CodeGen_Private::EPropertyClass::Array, "mTriggerActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGSporeFlower, mTriggerActors), METADATA_PARAMS(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mTriggerActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors = { "mTriggerActors", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSporeFlower, mTriggerActors), METADATA_PARAMS(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_Inner = { "mTriggerActors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_MetaData[] = {
 		{ "Category", "SporeFlower" },
@@ -130,8 +130,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		{ "ToolTip", "These actor types will trigger the spore flower to emit" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses = { UE4CodeGen_Private::EPropertyClass::Array, "mTriggerActorClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGSporeFlower, mTriggerActorClasses), METADATA_PARAMS(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mTriggerActorClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses = { "mTriggerActorClasses", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSporeFlower, mTriggerActorClasses), METADATA_PARAMS(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_Inner = { "mTriggerActorClasses", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGSporeFlower_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_Inner,
@@ -148,13 +148,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSporeFlower_Statics::ClassParams = {
 		&AFGSporeFlower::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGSporeFlower_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGSporeFlower_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSporeFlower_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSporeFlower_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSporeFlower()
@@ -166,7 +170,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSporeFlower, 2962264248);
+	IMPLEMENT_CLASS(AFGSporeFlower, 647138146);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGSporeFlower>()
+	{
+		return AFGSporeFlower::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSporeFlower(Z_Construct_UClass_AFGSporeFlower, &AFGSporeFlower::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSporeFlower"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSporeFlower);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

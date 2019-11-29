@@ -6,6 +6,7 @@
 #include "FGGameUserSettings.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FArachnophobiaModeChangedDelegate, bool, isArachnophobiaMode );
+DECLARE_DYNAMIC_DELEGATE( FOptionUpdated );
 
 /**
  * Name and value combination for the options with audio
@@ -24,6 +25,19 @@ struct FAudioVolumeMap
 	float Value;
 };
 
+/**
+* Holds delegates to be called when a specific option is changed 
+*/
+USTRUCT()
+struct FOptionUpdateDelegateData
+{
+	GENERATED_BODY();
+public:
+
+	UPROPERTY()
+	TArray<FOptionUpdated> OptionUpdatedDelegates;
+};
+
 UCLASS(BlueprintType)
 class UFGGameUserSettings : public UGameUserSettings
 {
@@ -35,6 +49,7 @@ public:
 	virtual void SetToDefaults() override; // Only video settings
 	virtual void ResetToCurrentSettings() override; // Only video settings
 	virtual void ValidateSettings() override;
+	virtual void LoadSettings( bool bForceReload = false ) override;
 	//~End GameUserSettings interfaces
 
 	/** Reset audio settings to default settings */
@@ -200,8 +215,88 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
 	void SetShowBreakNotification( bool enabled );
 
+	/** Get the option value for a bool */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Settings" )
+	bool GetBoolOptionValue( FString cvar );
+	
+	/** Set the option value for a bool */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void SetBoolOptionValue( FString cvar, bool value, bool updateInstantly = false, bool requireRestart = false );
+
+	/** Get the option value for a integer */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Settings" )
+	int32 GetIntOptionValue( FString cvar );
+
+	/** Set the option value for a integer */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void SetIntOptionValue( FString cvar, int32 value, bool updateInstantly = false, bool requireRestart = false );
+
+	/** Get the option value for a float */
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Settings" )
+	float GetFloatOptionValue( FString cvar );
+	
+	/** Set the option value for a float */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void SetFloatOptionValue( FString cvar, float value, bool updateInstantly = false, bool requireRestart = false );
+
+	/** Update the console variable with a new int value */
+	void SetCvarValue( FString cvar, int32 value );
+	
+	/** Update the console variable with a new float value */
+	void SetCvarValue( FString cvar, float value );
+	
+	/** Setup the default value for an int option, registers a cvar if it doesn't already exists */
+	void SetDefaultIntOptionValue( FString cvar, int32 value, FString tooltip );
+
+	/** Setup the default value for an float option, registers a cvar if it doesn't already exists */
+	void SetDefaultFloatOptionValue( FString cvar, float value, FString tooltip );
+	
+	void SetupDefaultOptionsValues();
+
+	/** Register an int console variable */
+	void RegisterConsoleVariable( FString cvar, int32 value, FString tooltip );
+
+	/** Register a float console variable */
+	void RegisterConsoleVariable( FString cvar, float value, FString tooltip );
+	
+	/** Apply settings that have been changed and are pending */
+	void ApplyPendingChanges();
+	
+	/** Apply changes that require a restart, only do this when exiting the game */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void ApplyRestartRequiredChanges();
+
+	static void CVarSinkHandler();
+
+	/** CVar sink. Update the internal values so they are the same as the console variables  */
+	void UpdateCvars();
+
+	/** Subscribe to changes for this option. The given delegate will be called when cvar is updated  */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void SubscribeToDynamicOptionUpdate( FString cvar, const FOptionUpdated& optionUpdatedDelegate );
+
+	/** Unsubscribe to changes for this option  */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void UnsubscribeToDynamicOptionUpdate( FString cvar, const FOptionUpdated& optionUpdatedDelegate );
+	
+	/** Unsubscribe to all changes for options this object have subscribed to  */
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Settings" )
+	void UnsubscribeToAllDynamicOptionUpdate( UObject* boundObject );
+	
+	/** Debug */
+	void DumpDynamicOptionsSettings();
+
 private:
 	void UpdateFoliageQualityChanges();
+
+	/** Can we use this cvar? trims and checks for empty string */
+	bool ValidateCVar( FString &cvar );
+
+	void SetOptionValue( FString cvar, int32 value );
+	void SetOptionValue( FString cvar, float value );
+
+	void BroadcastDynamicOptionUpdate( FString cvar );
+
 public:
 	/** Called when arachnophobia mode is changed */
 	UPROPERTY( BlueprintAssignable, Category = "Arachnophobia", DisplayName = "OnArachnophobiaModeChanged" )
@@ -269,9 +364,38 @@ protected:
 	UPROPERTY( Config )
 	bool mShowBreakNotification;
 
+	/** Delegate used for broadcasting updates to subscribed options */
+	UPROPERTY()
+	FOptionUpdated OptionUpdatedDelegate;
+
 private:
+
+	/** The changed values that we want to save to file */
+	UPROPERTY( Config )
+	TMap<FString, int32> mIntValues;
+	UPROPERTY( Config )
+	TMap<FString, float> mFloatValues;
+
+	/** What we should apply when we save */
+	TMap<FString, int32> mPendingIntValueChanges;
+	TMap<FString, float> mPendingFloatValueChanges;
+
+	/** What we should apply when we exit the game. These options requires a restart to be changed */
+	TMap<FString, int32> mRestartRequiredIntValueChanges;
+	TMap<FString, float> mRestartRequiredFloatValueChanges;
+
+	/** The default option values for reset */
+	TMap<FString, int32> mDefaultIntValues;
+	TMap<FString, float> mDefaultFloatValues;
+
+	/** All options that have been subscribed to and the delegates that will be called when the relevant option updates */
+	TMap<FString, FOptionUpdateDelegateData> SubscribedOptions;
+
+	/** CVar sink that let use listen for changes in CVars and update or internal values accordingly */
+	static FAutoConsoleVariableSink mCVarSink;
+
+	/** const variables */
 	static const FString MOTION_BLUR_QUALITY;
 	static const FString HZBO_SETTING;
 	static const TMap<FString, int32> NETWORK_QUALITY_CONFIG_MAPPINGS;
 };
-

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGeoThermalGeneratorHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGGeoThermalGeneratorHologram_Statics::ClassParams = {
 		&AFGGeoThermalGeneratorHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGeoThermalGeneratorHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGeoThermalGeneratorHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGeoThermalGeneratorHologram()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGeoThermalGeneratorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 448995842);
+	IMPLEMENT_CLASS(AFGGeoThermalGeneratorHologram, 1951501792);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGGeoThermalGeneratorHologram>()
+	{
+		return AFGGeoThermalGeneratorHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGeoThermalGeneratorHologram(Z_Construct_UClass_AFGGeoThermalGeneratorHologram, &AFGGeoThermalGeneratorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGeoThermalGeneratorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGeoThermalGeneratorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

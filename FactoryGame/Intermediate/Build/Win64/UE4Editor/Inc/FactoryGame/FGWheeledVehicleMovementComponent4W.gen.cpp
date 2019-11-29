@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWheeledVehicleMovementComponent4W_eventGetLargestLateralSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicleMovementComponent4W_eventGetLargestLateralSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::NewProp_ReturnValue,
 	};
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "ToolTip", "returns the current largest lat slip of the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, "GetLargestLateralSlip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGWheeledVehicleMovementComponent4W_eventGetLargestLateralSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, nullptr, "GetLargestLateralSlip", sizeof(FGWheeledVehicleMovementComponent4W_eventGetLargestLateralSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWheeledVehicleMovementComponent4W_eventGetLargestLongitudinalSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicleMovementComponent4W_eventGetLargestLongitudinalSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::NewProp_ReturnValue,
 	};
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "ToolTip", "returns the current largest long slip of the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, "GetLargestLongitudinalSlip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGWheeledVehicleMovementComponent4W_eventGetLargestLongitudinalSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, nullptr, "GetLargestLongitudinalSlip", sizeof(FGWheeledVehicleMovementComponent4W_eventGetLargestLongitudinalSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWheeledVehicleMovementComponent4W_eventGetLargestTireLoadValue_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicleMovementComponent4W_eventGetLargestTireLoadValue_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::NewProp_ReturnValue,
 	};
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "ToolTip", "returns the current largest tire load of the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, "GetLargestTireLoadValue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGWheeledVehicleMovementComponent4W_eventGetLargestTireLoadValue_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, nullptr, "GetLargestTireLoadValue", sizeof(FGWheeledVehicleMovementComponent4W_eventGetLargestTireLoadValue_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -170,9 +170,9 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 3733087498
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 289080312
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 3358036206
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 2083297966
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 2063467599
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent4W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 3558711018
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::Class_MetaDataParams[] = {
@@ -191,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency = { UE4CodeGen_Private::EPropertyClass::Float, "mDownShiftLatency", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent4W, mDownShiftLatency), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency = { "mDownShiftLatency", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent4W, mDownShiftLatency), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio = { UE4CodeGen_Private::EPropertyClass::Float, "mSlopeShiftRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent4W, mSlopeShiftRatio), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio = { "mSlopeShiftRatio", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent4W, mSlopeShiftRatio), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		{ "ToolTip", "Max slope Angle Limit (in degrees) in order to use all of SlopeShiftRatio" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit = { UE4CodeGen_Private::EPropertyClass::Float, "mDSOLMaxSlopeAngleLimit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent4W, mDSOLMaxSlopeAngleLimit), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit = { "mDSOLMaxSlopeAngleLimit", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent4W, mDSOLMaxSlopeAngleLimit), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -225,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 	{
 		((UFGWheeledVehicleMovementComponent4W*)Obj)->mUseDSOLGearbox = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseDSOLGearbox", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGWheeledVehicleMovementComponent4W), &Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox = { "mUseDSOLGearbox", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGWheeledVehicleMovementComponent4W), &Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mUseDSOLGearbox_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mDownShiftLatency,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::NewProp_mSlopeShiftRatio,
@@ -237,13 +237,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::ClassParams = {
 		&UFGWheeledVehicleMovementComponent4W::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers),
+		0,
+		0x00A000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W()
@@ -255,7 +259,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 1633439633);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 1546071698);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent4W>()
+	{
+		return UFGWheeledVehicleMovementComponent4W::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWheeledVehicleMovementComponent4W(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, &UFGWheeledVehicleMovementComponent4W::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWheeledVehicleMovementComponent4W"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWheeledVehicleMovementComponent4W);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

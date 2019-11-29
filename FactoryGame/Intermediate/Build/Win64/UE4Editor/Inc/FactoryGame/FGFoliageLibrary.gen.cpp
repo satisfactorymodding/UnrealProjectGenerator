@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageLibrary() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageLibrary_Statics::ClassParams = {
 		&UFGFoliageLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageLibrary()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageLibrary, 2435061967);
+	IMPLEMENT_CLASS(UFGFoliageLibrary, 3970456833);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageLibrary>()
+	{
+		return UFGFoliageLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageLibrary(Z_Construct_UClass_UFGFoliageLibrary, &UFGFoliageLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

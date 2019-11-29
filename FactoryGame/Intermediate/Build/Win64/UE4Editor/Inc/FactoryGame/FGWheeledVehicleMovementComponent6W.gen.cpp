@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -38,13 +38,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent6W() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EWheelOrder6W>()
+	{
+		return EWheelOrder6W_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EWheelOrder6W(EWheelOrder6W_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EWheelOrder6W"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EWheelOrder6W_CRC() { return 3349448607U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EWheelOrder6W_Hash() { return 2612187160U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EWheelOrder6W()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EWheelOrder6W"), 0, Get_Z_Construct_UEnum_FactoryGame_EWheelOrder6W_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EWheelOrder6W"), 0, Get_Z_Construct_UEnum_FactoryGame_EWheelOrder6W_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -65,14 +69,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent6W() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EWheelOrder6W",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::Regular,
+				"EWheelOrder6W",
 				"EWheelOrder6W",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -84,10 +88,14 @@ class UScriptStruct* FVehicleTransmissionData6W::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleTransmissionData6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleTransmissionData6W"), sizeof(FVehicleTransmissionData6W), Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleTransmissionData6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleTransmissionData6W"), sizeof(FVehicleTransmissionData6W), Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FVehicleTransmissionData6W>()
+{
+	return FVehicleTransmissionData6W::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FVehicleTransmissionData6W(FVehicleTransmissionData6W::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("VehicleTransmissionData6W"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissionData6W
@@ -158,7 +166,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength = { UE4CodeGen_Private::EPropertyClass::Float, "ClutchStrength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, ClutchStrength), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength = { "ClutchStrength", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, ClutchStrength), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio_MetaData[] = {
 		{ "Category", "Setup" },
@@ -170,7 +178,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio = { UE4CodeGen_Private::EPropertyClass::Float, "NeutralGearUpRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, NeutralGearUpRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio = { "NeutralGearUpRatio", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, NeutralGearUpRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio_MetaData[] = {
 		{ "Category", "Setup" },
@@ -178,7 +186,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "ToolTip", "Reverse gear ratio" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio = { UE4CodeGen_Private::EPropertyClass::Float, "ReverseGearRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, ReverseGearRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio = { "ReverseGearRatio", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, ReverseGearRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ReverseGearRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_MetaData[] = {
 		{ "Category", "Setup" },
@@ -186,8 +194,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "ToolTip", "Forward gear ratios (up to 30)" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears = { UE4CodeGen_Private::EPropertyClass::Array, "ForwardGears", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, ForwardGears), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ForwardGears", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FVehicleGearData6W, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears = { "ForwardGears", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, ForwardGears), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ForwardGears_Inner = { "ForwardGears", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVehicleGearData6W, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio_MetaData[] = {
 		{ "Category", "Setup" },
@@ -195,7 +203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "ToolTip", "The final gear ratio multiplies the transmission gear ratios." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio = { UE4CodeGen_Private::EPropertyClass::Float, "FinalRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, FinalRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio = { "FinalRatio", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, FinalRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_FinalRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency_MetaData[] = {
 		{ "Category", "Setup" },
@@ -206,7 +214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency = { UE4CodeGen_Private::EPropertyClass::Float, "GearAutoBoxLatency", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, GearAutoBoxLatency), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency = { "GearAutoBoxLatency", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, GearAutoBoxLatency), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearAutoBoxLatency_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime_MetaData[] = {
 		{ "Category", "Setup" },
@@ -216,7 +224,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime = { UE4CodeGen_Private::EPropertyClass::Float, "GearSwitchTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleTransmissionData6W, GearSwitchTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime = { "GearSwitchTime", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleTransmissionData6W, GearSwitchTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_GearSwitchTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -229,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 	{
 		((FVehicleTransmissionData6W*)Obj)->bUseGearAutoBox = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox = { UE4CodeGen_Private::EPropertyClass::Bool, "bUseGearAutoBox", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FVehicleTransmissionData6W), &Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox = { "bUseGearAutoBox", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FVehicleTransmissionData6W), &Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_bUseGearAutoBox_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_ClutchStrength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::NewProp_NeutralGearUpRatio,
@@ -246,19 +254,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		nullptr,
 		&NewStructOps,
 		"VehicleTransmissionData6W",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FVehicleTransmissionData6W),
 		alignof(FVehicleTransmissionData6W),
-		Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FVehicleTransmissionData6W()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleTransmissionData6W"), sizeof(FVehicleTransmissionData6W), Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleTransmissionData6W"), sizeof(FVehicleTransmissionData6W), Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -268,16 +277,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleTransmissio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_CRC() { return 852082265U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Hash() { return 2433402777U; }
 class UScriptStruct* FVehicleGearData6W::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleGearData6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleGearData6W"), sizeof(FVehicleGearData6W), Get_Z_Construct_UScriptStruct_FVehicleGearData6W_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleGearData6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleGearData6W"), sizeof(FVehicleGearData6W), Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FVehicleGearData6W>()
+{
+	return FVehicleGearData6W::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FVehicleGearData6W(FVehicleGearData6W::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("VehicleGearData6W"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
@@ -328,7 +341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio = { UE4CodeGen_Private::EPropertyClass::Float, "UpRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleGearData6W, UpRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio = { "UpRatio", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleGearData6W, UpRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio_MetaData[] = {
 		{ "Category", "Setup" },
@@ -340,7 +353,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio = { UE4CodeGen_Private::EPropertyClass::Float, "DownRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleGearData6W, DownRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio = { "DownRatio", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleGearData6W, DownRatio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio_MetaData[] = {
 		{ "Category", "Setup" },
@@ -348,7 +361,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		{ "ToolTip", "Determines the amount of torque multiplication" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio = { UE4CodeGen_Private::EPropertyClass::Float, "Ratio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleGearData6W, Ratio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio = { "Ratio", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleGearData6W, Ratio), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_Ratio_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_UpRatio,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::NewProp_DownRatio,
@@ -359,19 +372,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		nullptr,
 		&NewStructOps,
 		"VehicleGearData6W",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FVehicleGearData6W),
 		alignof(FVehicleGearData6W),
-		Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleGearData6W_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FVehicleGearData6W()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleGearData6W"), sizeof(FVehicleGearData6W), Get_Z_Construct_UScriptStruct_FVehicleGearData6W_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleGearData6W"), sizeof(FVehicleGearData6W), Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -381,16 +395,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleGearData6W
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_CRC() { return 3881481469U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleGearData6W_Hash() { return 1803558133U; }
 class UScriptStruct* FVehicleEngineData6W::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleEngineData6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleEngineData6W"), sizeof(FVehicleEngineData6W), Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleEngineData6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleEngineData6W"), sizeof(FVehicleEngineData6W), Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FVehicleEngineData6W>()
+{
+	return FVehicleEngineData6W::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FVehicleEngineData6W(FVehicleEngineData6W::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("VehicleEngineData6W"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6W
@@ -451,7 +469,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged = { UE4CodeGen_Private::EPropertyClass::Float, "DampingRateZeroThrottleClutchDisengaged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleEngineData6W, DampingRateZeroThrottleClutchDisengaged), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged = { "DampingRateZeroThrottleClutchDisengaged", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleEngineData6W, DampingRateZeroThrottleClutchDisengaged), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged_MetaData[] = {
 		{ "Category", "Setup" },
@@ -461,7 +479,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged = { UE4CodeGen_Private::EPropertyClass::Float, "DampingRateZeroThrottleClutchEngaged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleEngineData6W, DampingRateZeroThrottleClutchEngaged), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged = { "DampingRateZeroThrottleClutchEngaged", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleEngineData6W, DampingRateZeroThrottleClutchEngaged), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle_MetaData[] = {
 		{ "Category", "Setup" },
@@ -471,7 +489,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle = { UE4CodeGen_Private::EPropertyClass::Float, "DampingRateFullThrottle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010040000000001, 1, nullptr, STRUCT_OFFSET(FVehicleEngineData6W, DampingRateFullThrottle), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle = { "DampingRateFullThrottle", nullptr, (EPropertyFlags)0x0010040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleEngineData6W, DampingRateFullThrottle), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateFullThrottle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI_MetaData[] = {
 		{ "Category", "Setup" },
@@ -481,7 +499,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		{ "UIMin", "0.01" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI = { UE4CodeGen_Private::EPropertyClass::Float, "MOI", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleEngineData6W, MOI), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI = { "MOI", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleEngineData6W, MOI), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MOI_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM_MetaData[] = {
 		{ "Category", "Setup" },
@@ -491,7 +509,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		{ "UIMin", "0.01" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM = { UE4CodeGen_Private::EPropertyClass::Float, "MaxRPM", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleEngineData6W, MaxRPM), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM = { "MaxRPM", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleEngineData6W, MaxRPM), METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_MaxRPM_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve_MetaData[] = {
 		{ "Category", "Setup" },
@@ -499,7 +517,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		{ "ToolTip", "Torque (Nm) at a given RPM" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve = { UE4CodeGen_Private::EPropertyClass::Struct, "TorqueCurve", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleEngineData6W, TorqueCurve), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve = { "TorqueCurve", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleEngineData6W, TorqueCurve), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_TorqueCurve_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchDisengaged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::NewProp_DampingRateZeroThrottleClutchEngaged,
@@ -513,19 +531,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		nullptr,
 		&NewStructOps,
 		"VehicleEngineData6W",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FVehicleEngineData6W),
 		alignof(FVehicleEngineData6W),
-		Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FVehicleEngineData6W()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleEngineData6W"), sizeof(FVehicleEngineData6W), Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleEngineData6W"), sizeof(FVehicleEngineData6W), Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -535,16 +554,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleEngineData6
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_CRC() { return 199092690U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleEngineData6W_Hash() { return 4260582544U; }
 class UScriptStruct* FVehicleDifferential6WData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleDifferential6WData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleDifferential6WData"), sizeof(FVehicleDifferential6WData), Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FVehicleDifferential6WData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("VehicleDifferential6WData"), sizeof(FVehicleDifferential6WData), Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FVehicleDifferential6WData>()
+{
+	return FVehicleDifferential6WData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FVehicleDifferential6WData(FVehicleDifferential6WData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("VehicleDifferential6WData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferential6WData
@@ -583,7 +606,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferentia
 		{ "ToolTip", "Type of differential" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig = { UE4CodeGen_Private::EPropertyClass::Struct, "DifferentialConfig", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FVehicleDifferential6WData, DifferentialConfig), Z_Construct_UScriptStruct_FDifferentialSetup6W, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig = { "DifferentialConfig", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FVehicleDifferential6WData, DifferentialConfig), Z_Construct_UScriptStruct_FDifferentialSetup6W, METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::NewProp_DifferentialConfig,
 	};
@@ -592,19 +615,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferentia
 		nullptr,
 		&NewStructOps,
 		"VehicleDifferential6WData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FVehicleDifferential6WData),
 		alignof(FVehicleDifferential6WData),
-		Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FVehicleDifferential6WData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleDifferential6WData"), sizeof(FVehicleDifferential6WData), Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("VehicleDifferential6WData"), sizeof(FVehicleDifferential6WData), Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -614,16 +638,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleDifferentia
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_CRC() { return 2815184850U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleDifferential6WData_Hash() { return 3860428074U; }
 class UScriptStruct* FDifferentialSetup6W::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDifferentialSetup6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DifferentialSetup6W"), sizeof(FDifferentialSetup6W), Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDifferentialSetup6W, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DifferentialSetup6W"), sizeof(FDifferentialSetup6W), Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDifferentialSetup6W>()
+{
+	return FDifferentialSetup6W::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDifferentialSetup6W(FDifferentialSetup6W::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DifferentialSetup6W"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6W
@@ -677,7 +705,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	{
 		((FDifferentialSetup6W*)Obj)->Rear = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear = { UE4CodeGen_Private::EPropertyClass::Bool, "Rear", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FDifferentialSetup6W), &Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear = { "Rear", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FDifferentialSetup6W), &Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_MetaData[] = {
 		{ "Category", "Setup" },
@@ -688,7 +716,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	{
 		((FDifferentialSetup6W*)Obj)->Mid = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid = { UE4CodeGen_Private::EPropertyClass::Bool, "Mid", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FDifferentialSetup6W), &Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid = { "Mid", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FDifferentialSetup6W), &Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_MetaData[] = {
 		{ "Category", "Setup" },
@@ -699,7 +727,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	{
 		((FDifferentialSetup6W*)Obj)->Front = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front = { UE4CodeGen_Private::EPropertyClass::Bool, "Front", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FDifferentialSetup6W), &Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front = { "Front", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FDifferentialSetup6W), &Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Front_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Rear,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::NewProp_Mid,
@@ -710,19 +738,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		nullptr,
 		&NewStructOps,
 		"DifferentialSetup6W",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDifferentialSetup6W),
 		alignof(FDifferentialSetup6W),
-		Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDifferentialSetup6W()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DifferentialSetup6W"), sizeof(FDifferentialSetup6W), Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DifferentialSetup6W"), sizeof(FDifferentialSetup6W), Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -732,7 +761,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_CRC() { return 450530258U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDifferentialSetup6W_Hash() { return 1610889100U; }
 	void UFGWheeledVehicleMovementComponent6W::StaticRegisterNativesUFGWheeledVehicleMovementComponent6W()
 	{
 		UClass* Class = UFGWheeledVehicleMovementComponent6W::StaticClass();
@@ -756,7 +785,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWheeledVehicleMovementComponent6W_eventGetLargestLateralSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicleMovementComponent6W_eventGetLargestLateralSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::NewProp_ReturnValue,
 	};
@@ -767,7 +796,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "returns the current largest lat slip of the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, "GetLargestLateralSlip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGWheeledVehicleMovementComponent6W_eventGetLargestLateralSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, nullptr, "GetLargestLateralSlip", sizeof(FGWheeledVehicleMovementComponent6W_eventGetLargestLateralSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -790,7 +819,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWheeledVehicleMovementComponent6W_eventGetLargestLongitudinalSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicleMovementComponent6W_eventGetLargestLongitudinalSlip_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::NewProp_ReturnValue,
 	};
@@ -801,7 +830,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "returns the current largest long slip of the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, "GetLargestLongitudinalSlip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGWheeledVehicleMovementComponent6W_eventGetLargestLongitudinalSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, nullptr, "GetLargestLongitudinalSlip", sizeof(FGWheeledVehicleMovementComponent6W_eventGetLargestLongitudinalSlip_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -824,7 +853,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWheeledVehicleMovementComponent6W_eventGetLargestTireLoadValue_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWheeledVehicleMovementComponent6W_eventGetLargestTireLoadValue_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::NewProp_ReturnValue,
 	};
@@ -835,7 +864,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "returns the current largest tire load of the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, "GetLargestTireLoadValue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGWheeledVehicleMovementComponent6W_eventGetLargestTireLoadValue_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, nullptr, "GetLargestTireLoadValue", sizeof(FGWheeledVehicleMovementComponent6W_eventGetLargestTireLoadValue_Parms), Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -902,9 +931,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 2367089678
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 3704160269
-		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 1270528967
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLateralSlip, "GetLargestLateralSlip" }, // 2121909826
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestLongitudinalSlip, "GetLargestLongitudinalSlip" }, // 4067107192
+		{ &Z_Construct_UFunction_UFGWheeledVehicleMovementComponent6W_GetLargestTireLoadValue, "GetLargestTireLoadValue" }, // 2216712791
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::Class_MetaDataParams[] = {
@@ -927,7 +956,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy = { UE4CodeGen_Private::EPropertyClass::Float, "AckermannAccuracy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040040000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, AckermannAccuracy), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy = { "AckermannAccuracy", nullptr, (EPropertyFlags)0x0040040000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, AckermannAccuracy), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve_MetaData[] = {
 		{ "Category", "SteeringSetup" },
@@ -935,7 +964,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "Maximum steering versus forward speed (km/h)" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve = { UE4CodeGen_Private::EPropertyClass::Struct, "SteeringCurve", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, SteeringCurve), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve = { "SteeringCurve", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, SteeringCurve), Z_Construct_UScriptStruct_FRuntimeFloatCurve, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -945,7 +974,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency = { UE4CodeGen_Private::EPropertyClass::Float, "mDownShiftLatency", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, mDownShiftLatency), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency = { "mDownShiftLatency", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, mDownShiftLatency), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDownShiftLatency_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -953,7 +982,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "Transmission data" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup = { UE4CodeGen_Private::EPropertyClass::Struct, "TransmissionSetup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, TransmissionSetup), Z_Construct_UScriptStruct_FVehicleTransmissionData6W, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup = { "TransmissionSetup", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, TransmissionSetup), Z_Construct_UScriptStruct_FVehicleTransmissionData6W, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_TransmissionSetup_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -965,7 +994,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio = { UE4CodeGen_Private::EPropertyClass::Float, "mSlopeShiftRatio", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, mSlopeShiftRatio), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio = { "mSlopeShiftRatio", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, mSlopeShiftRatio), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mSlopeShiftRatio_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -974,7 +1003,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "Max slope Angle Limit (in degrees) in order to use all of SlopeShiftRatio" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit = { UE4CodeGen_Private::EPropertyClass::Float, "mDSOLMaxSlopeAngleLimit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, mDSOLMaxSlopeAngleLimit), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit = { "mDSOLMaxSlopeAngleLimit", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, mDSOLMaxSlopeAngleLimit), METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mDSOLMaxSlopeAngleLimit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -987,7 +1016,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	{
 		((UFGWheeledVehicleMovementComponent6W*)Obj)->mUseDSOLGearbox = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseDSOLGearbox", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGWheeledVehicleMovementComponent6W), &Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox = { "mUseDSOLGearbox", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGWheeledVehicleMovementComponent6W), &Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_mUseDSOLGearbox_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -995,7 +1024,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "Differential" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup = { UE4CodeGen_Private::EPropertyClass::Struct, "DifferentialSetup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, DifferentialSetup), Z_Construct_UScriptStruct_FVehicleDifferential6WData, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup = { "DifferentialSetup", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, DifferentialSetup), Z_Construct_UScriptStruct_FVehicleDifferential6WData, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_DifferentialSetup_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup_MetaData[] = {
 		{ "Category", "MechanicalSetup" },
@@ -1003,7 +1032,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		{ "ToolTip", "Engine" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup = { UE4CodeGen_Private::EPropertyClass::Struct, "EngineSetup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, EngineSetup), Z_Construct_UScriptStruct_FVehicleEngineData6W, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup = { "EngineSetup", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWheeledVehicleMovementComponent6W, EngineSetup), Z_Construct_UScriptStruct_FVehicleEngineData6W, METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_EngineSetup_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_AckermannAccuracy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::NewProp_SteeringCurve,
@@ -1020,13 +1049,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::ClassParams = {
 		&UFGWheeledVehicleMovementComponent6W::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::PropPointers),
+		0,
+		0x00A000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W()
@@ -1038,7 +1071,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDifferentialSetup6
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 853356683);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent6W, 2777336950);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent6W>()
+	{
+		return UFGWheeledVehicleMovementComponent6W::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWheeledVehicleMovementComponent6W(Z_Construct_UClass_UFGWheeledVehicleMovementComponent6W, &UFGWheeledVehicleMovementComponent6W::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWheeledVehicleMovementComponent6W"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWheeledVehicleMovementComponent6W);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGWheeledVehicleMovementComponent6W)

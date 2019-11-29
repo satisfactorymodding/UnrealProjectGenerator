@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		{ "ToolTip", "Game can become public after this, and the current visibility is applied" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameSession, "IntroSequenceUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameSession, nullptr, "IntroSequenceUpdated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		{ "ToolTip", "Make sure we have a tutorial intro managere" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameSession, "ListenForIntroSequenceUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGGameSession, nullptr, "ListenForIntroSequenceUpdated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -94,8 +94,8 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGGameSession_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated, "IntroSequenceUpdated" }, // 4054430205
-		{ &Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated, "ListenForIntroSequenceUpdated" }, // 2343784054
+		{ &Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated, "IntroSequenceUpdated" }, // 1632041034
+		{ &Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated, "ListenForIntroSequenceUpdated" }, // 254329409
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameSession_Statics::Class_MetaDataParams[] = {
@@ -110,13 +110,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGGameSession_Statics::ClassParams = {
 		&AFGGameSession::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		"Game",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGameSession_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGameSession_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGameSession()
@@ -128,7 +132,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameSession, 3158301549);
+	IMPLEMENT_CLASS(AFGGameSession, 1114963970);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGGameSession>()
+	{
+		return AFGGameSession::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGameSession(Z_Construct_UClass_AFGGameSession, &AFGGameSession::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGameSession"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGameSession);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

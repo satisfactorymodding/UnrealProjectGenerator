@@ -23,6 +23,7 @@ bool UFGFactoryConnectionComponent::Factory_Internal_GrabOutputInventory( FInven
 void UFGFactoryConnectionComponent::DisplayDebug( int32 connectionIndex,  UCanvas* canvas, const  FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
 void UFGFactoryConnectionComponent::SortComponentList( TInlineComponentArray<UFGFactoryConnectionComponent*>& io_components){ }
 uint8 UFGFactoryConnectionComponent::MaxNumGrab( float delta) const{ return uint8(); }
+uint8 UFGFactoryConnectionComponent::EstimatedMaxNumGrab_ThreadSafe( float delta) const{ return uint8(); }
 UFGFactoryConnectionComponent* UFGFactoryConnectionComponent::FindCompatibleOverlappingConnections(
 		 UFGFactoryConnectionComponent* component,
 		const FVector& location,

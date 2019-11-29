@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,10 +22,14 @@ class AFGGamePhaseManager;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPhaseCost>();
+
 #define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPhaseTierInfo_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPhaseTierInfo>();
 
 #define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_87_DELEGATE \
 struct _Script_FactoryGame_eventOnGamePhaseUpdated_Parms \
@@ -300,6 +304,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGGamePhaseManager>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGamePhaseManager_h

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,18 +43,18 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCircuit_eventGetCircuitID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCircuit_eventGetCircuitID_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Circuit" },
+		{ "Category", "FactoryGame|Circuits|Circuit" },
 		{ "ModuleRelativePath", "FGCircuit.h" },
 		{ "ToolTip", "@return This circuit's unique identifier; -1 if invalid." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCircuit, "GetCircuitID", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGCircuit_eventGetCircuitID_Parms), Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCircuit, nullptr, "GetCircuitID", sizeof(FGCircuit_eventGetCircuitID_Parms), Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCircuit_GetCircuitID()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCircuit_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCircuit_GetCircuitID, "GetCircuitID" }, // 3057245869
+		{ &Z_Construct_UFunction_UFGCircuit_GetCircuitID, "GetCircuitID" }, // 3685125577
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::Class_MetaDataParams[] = {
@@ -126,8 +126,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 		{ "ToolTip", "All players interacting with a building that's connected to this circuit" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers = { UE4CodeGen_Private::EPropertyClass::Array, "mInteractingPlayers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGCircuit, mInteractingPlayers), METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mInteractingPlayers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers = { "mInteractingPlayers", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCircuit, mInteractingPlayers), METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_Inner = { "mInteractingPlayers", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData[] = {
 		{ "ModuleRelativePath", "FGCircuit.h" },
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 	{
 		((UFGCircuit*)Obj)->mHasChanged = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(UFGCircuit), &Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged = { "mHasChanged", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGCircuit), &Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_MetaData[] = {
 		{ "ModuleRelativePath", "FGCircuit.h" },
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 	{
 		((UFGCircuit*)Obj)->mNeedFullRebuild = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild = { UE4CodeGen_Private::EPropertyClass::Bool, "mNeedFullRebuild", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(UFGCircuit), &Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild = { "mNeedFullRebuild", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UFGCircuit), &Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -157,15 +157,15 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 		{ "ToolTip", "List of all the components (nodes) in this circuit." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020088001000008, 1, nullptr, STRUCT_OFFSET(UFGCircuit, mComponents), METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents = { "mComponents", nullptr, (EPropertyFlags)0x0020088001000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCircuit, mComponents), METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_Inner = { "mComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID_MetaData[] = {
 		{ "ModuleRelativePath", "FGCircuit.h" },
 		{ "ToolTip", "The id used to identify this circuit." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID = { UE4CodeGen_Private::EPropertyClass::Int, "mCircuitID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(UFGCircuit, mCircuitID), METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID = { "mCircuitID", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCircuit, mCircuitID), METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGCircuit_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_Inner,
@@ -183,13 +183,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCircuit_Statics::ClassParams = {
 		&UFGCircuit::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGCircuit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGCircuit_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGCircuit()
@@ -201,7 +205,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCircuit, 2034522441);
+	IMPLEMENT_CLASS(UFGCircuit, 2222574826);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCircuit>()
+	{
+		return UFGCircuit::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCircuit(Z_Construct_UClass_UFGCircuit, &UFGCircuit::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCircuit"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCircuit);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

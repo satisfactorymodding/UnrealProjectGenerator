@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -315,6 +315,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGDockableInterface>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGDockableInterface_h
 
@@ -324,4 +326,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EDockStationType::DST_TRUCK) \
 	op(EDockStationType::DST_TRAIN) \
 	op(EDockStationType::DST_LAST_ENUM) 
+
+enum class EDockStationType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EDockStationType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

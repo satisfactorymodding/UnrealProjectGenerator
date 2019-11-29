@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleStackable() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGConveyorPoleStackable_Statics::ClassParams = {
 		&AFGConveyorPoleStackable::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGConveyorPoleStackable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorPoleStackable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGConveyorPoleStackable()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleStackable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 1891825645);
+	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 3210645640);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorPoleStackable>()
+	{
+		return AFGConveyorPoleStackable::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorPoleStackable(Z_Construct_UClass_AFGConveyorPoleStackable, &AFGConveyorPoleStackable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorPoleStackable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorPoleStackable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

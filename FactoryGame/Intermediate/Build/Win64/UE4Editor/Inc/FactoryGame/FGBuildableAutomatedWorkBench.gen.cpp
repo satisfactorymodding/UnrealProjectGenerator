@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::NewProp_newManufacturingSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "newManufacturingSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableAutomatedWorkBench_eventSetManufacturingSpeed_Parms, newManufacturingSpeed), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::NewProp_newManufacturingSpeed = { "newManufacturingSpeed", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableAutomatedWorkBench_eventSetManufacturingSpeed_Parms, newManufacturingSpeed), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::NewProp_newManufacturingSpeed,
 	};
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		{ "ToolTip", "The player can increase the manufacturing speed in the UI \"minigame\"" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableAutomatedWorkBench, "SetManufacturingSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBuildableAutomatedWorkBench_eventSetManufacturingSpeed_Parms), Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableAutomatedWorkBench, nullptr, "SetManufacturingSpeed", sizeof(FGBuildableAutomatedWorkBench_eventSetManufacturingSpeed_Parms), Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed, "SetManufacturingSpeed" }, // 3406827811
+		{ &Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed, "SetManufacturingSpeed" }, // 2350814263
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::Class_MetaDataParams[] = {
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		{ "ToolTip", "Size of the input inventory for the workbench" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize = { UE4CodeGen_Private::EPropertyClass::Int, "mInputInventorySize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableAutomatedWorkBench, mInputInventorySize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize = { "mInputInventorySize", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableAutomatedWorkBench, mInputInventorySize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize,
 	};
@@ -110,13 +110,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::ClassParams = {
 		&AFGBuildableAutomatedWorkBench::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableAutomatedWorkBench()
@@ -128,7 +132,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 3493690420);
+	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 3920223772);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableAutomatedWorkBench>()
+	{
+		return AFGBuildableAutomatedWorkBench::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAutomatedWorkBench(Z_Construct_UClass_AFGBuildableAutomatedWorkBench, &AFGBuildableAutomatedWorkBench::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAutomatedWorkBench"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAutomatedWorkBench);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

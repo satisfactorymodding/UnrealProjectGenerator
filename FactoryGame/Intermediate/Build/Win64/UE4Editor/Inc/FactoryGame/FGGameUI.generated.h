@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -8,6 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FGeometry;
+struct FPointerEvent;
 class UFGAudioMessage;
 class UFGMessageBase;
 class UFGInteractWidget;
@@ -15,12 +17,28 @@ struct FPopupData;
 class UFGPopupWidget;
 struct FTutorialHintData;
 class UUserWidget;
+class AActor;
 #ifdef FACTORYGAME_FGGameUI_generated_h
 #error "FGGameUI.generated.h already included, missing '#pragma once' in FGGameUI.h"
 #endif
 #define FACTORYGAME_FGGameUI_generated_h
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_14_DELEGATE \
+struct _Script_FactoryGame_eventOnMouseButtonDown_Parms \
+{ \
+	FGeometry InGeometry; \
+	FPointerEvent InMouseEvent; \
+}; \
+static inline void FOnMouseButtonDown_DelegateWrapper(const FMulticastScriptDelegate& OnMouseButtonDown, FGeometry const& InGeometry, FPointerEvent const& InMouseEvent) \
+{ \
+	_Script_FactoryGame_eventOnMouseButtonDown_Parms Parms; \
+	Parms.InGeometry=InGeometry; \
+	Parms.InMouseEvent=InMouseEvent; \
+	OnMouseButtonDown.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_RPC_WRAPPERS \
 	virtual void RemoveAudioMessage_Implementation(); \
 	virtual bool CanReceiveMessage_Implementation(TSubclassOf<UFGMessageBase>  inMessage); \
 	virtual void HandlePendingMessages_Implementation(); \
@@ -163,7 +181,7 @@ class UUserWidget;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void RemoveAudioMessage_Implementation(); \
 	virtual bool CanReceiveMessage_Implementation(TSubclassOf<UFGMessageBase>  inMessage); \
 	virtual void HandlePendingMessages_Implementation(); \
@@ -306,7 +324,7 @@ class UUserWidget;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_EVENT_PARMS \
 	struct FGGameUI_eventAddCheatWidget_Parms \
 	{ \
 		FPopupData popupData; \
@@ -346,14 +364,40 @@ class UUserWidget;
 		float radiationIntensity; \
 		float radiationImmunity; \
 	}; \
+	struct FGGameUI_eventPopWidget_Parms \
+	{ \
+		UFGInteractWidget* WidgetToRemove; \
+		bool ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		FGGameUI_eventPopWidget_Parms() \
+			: ReturnValue(false) \
+		{ \
+		} \
+	}; \
+	struct FGGameUI_eventPushWidget_Parms \
+	{ \
+		UFGInteractWidget* Widget; \
+	}; \
 	struct FGGameUI_eventReceivedMessage_Parms \
 	{ \
 		TSubclassOf<UFGMessageBase>  inMessage; \
+	}; \
+	struct FGGameUI_eventShowDirectionalSubtitle_Parms \
+	{ \
+		FText Subtitle; \
+		AActor* Instigator; \
+		float Duration; \
+		bool bUseDuration; \
+	}; \
+	struct FGGameUI_eventStopSubtitle_Parms \
+	{ \
+		AActor* Instigator; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGGameUI(); \
 	friend struct Z_Construct_UClass_UFGGameUI_Statics; \
@@ -362,7 +406,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameUI)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_INCLASS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGGameUI(); \
 	friend struct Z_Construct_UClass_UFGGameUI_Statics; \
@@ -371,7 +415,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameUI)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGameUI(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameUI) \
@@ -384,7 +428,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGameUI(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -397,39 +441,41 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameUI); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameUI)
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mInteractWidgetStack() { return STRUCT_OFFSET(UFGGameUI, mInteractWidgetStack); } \
 	FORCEINLINE static uint32 __PPO__mCurrentAudioMessage() { return STRUCT_OFFSET(UFGGameUI, mCurrentAudioMessage); } \
 	FORCEINLINE static uint32 __PPO__mMinTimeBetweenAudioMessage() { return STRUCT_OFFSET(UFGGameUI, mMinTimeBetweenAudioMessage); }
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_15_PROLOG \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_20_PROLOG \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_INCLASS \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_INCLASS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_18_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_UI_FGGameUI_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGGameUI>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_UI_FGGameUI_h

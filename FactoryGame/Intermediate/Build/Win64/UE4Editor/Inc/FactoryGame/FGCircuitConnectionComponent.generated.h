@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UFGCircuitConnectionComponent;
 #ifdef FACTORYGAME_FGCircuitConnectionComponent_generated_h
 #error "FGCircuitConnectionComponent.generated.h already included, missing '#pragma once' in FGCircuitConnectionComponent.h"
 #endif
@@ -36,6 +37,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsHidden(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execRemoveHiddenConnection) \
+	{ \
+		P_GET_OBJECT(UFGCircuitConnectionComponent,Z_Param_other); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RemoveHiddenConnection(Z_Param_other); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddHiddenConnection) \
+	{ \
+		P_GET_OBJECT(UFGCircuitConnectionComponent,Z_Param_other); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AddHiddenConnection(Z_Param_other); \
 		P_NATIVE_END; \
 	} \
  \
@@ -95,6 +114,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->IsHidden(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execRemoveHiddenConnection) \
+	{ \
+		P_GET_OBJECT(UFGCircuitConnectionComponent,Z_Param_other); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->RemoveHiddenConnection(Z_Param_other); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAddHiddenConnection) \
+	{ \
+		P_GET_OBJECT(UFGCircuitConnectionComponent,Z_Param_other); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AddHiddenConnection(Z_Param_other); \
 		P_NATIVE_END; \
 	} \
  \
@@ -211,6 +248,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCircuitConnectionComponent>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGCircuitConnectionComponent_h

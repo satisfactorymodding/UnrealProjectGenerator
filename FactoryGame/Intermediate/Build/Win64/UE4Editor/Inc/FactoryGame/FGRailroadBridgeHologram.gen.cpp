@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 		{ "ToolTip", "Where we snapped." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedFoundation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, CPP_ARRAY_DIM(mSnappedFoundation, AFGRailroadBridgeHologram), nullptr, STRUCT_OFFSET(AFGRailroadBridgeHologram, mSnappedFoundation), Z_Construct_UClass_AFGBuildableFoundation_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation = { "mSnappedFoundation", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mSnappedFoundation, AFGRailroadBridgeHologram), STRUCT_OFFSET(AFGRailroadBridgeHologram, mSnappedFoundation), Z_Construct_UClass_AFGBuildableFoundation_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation,
 	};
@@ -66,13 +66,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::ClassParams = {
 		&AFGRailroadBridgeHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRailroadBridgeHologram()
@@ -84,7 +88,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 1022559016);
+	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 2326907351);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGRailroadBridgeHologram>()
+	{
+		return AFGRailroadBridgeHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadBridgeHologram(Z_Construct_UClass_AFGRailroadBridgeHologram, &AFGRailroadBridgeHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadBridgeHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadBridgeHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

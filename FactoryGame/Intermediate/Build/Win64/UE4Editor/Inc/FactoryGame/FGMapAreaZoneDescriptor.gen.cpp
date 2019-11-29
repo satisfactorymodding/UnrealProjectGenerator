@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::NewProp_out_zoneType = { UE4CodeGen_Private::EPropertyClass::Str, "out_zoneType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGMapAreaZoneDescriptor_eventGetZoneType_Parms, out_zoneType), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::NewProp_out_zoneType = { "out_zoneType", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapAreaZoneDescriptor_eventGetZoneType_Parms, out_zoneType), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::NewProp_out_zoneType,
 	};
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		{ "ModuleRelativePath", "FGMapAreaZoneDescriptor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaZoneDescriptor, "GetZoneType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGMapAreaZoneDescriptor_eventGetZoneType_Parms), Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaZoneDescriptor, nullptr, "GetZoneType", sizeof(FGMapAreaZoneDescriptor_eventGetZoneType_Parms), Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType, "GetZoneType" }, // 4080582481
+		{ &Z_Construct_UFunction_UFGMapAreaZoneDescriptor_GetZoneType, "GetZoneType" }, // 613255036
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::Class_MetaDataParams[] = {
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		{ "ToolTip", "Descriptive name of the zone type, this will be sent to music so that it can depend on it" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType = { UE4CodeGen_Private::EPropertyClass::Str, "mZoneType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGMapAreaZoneDescriptor, mZoneType), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType = { "mZoneType", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaZoneDescriptor, mZoneType), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::NewProp_mZoneType,
 	};
@@ -111,13 +111,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::ClassParams = {
 		&UFGMapAreaZoneDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers),
+		0,
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMapAreaZoneDescriptor()
@@ -129,7 +133,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 1092133228);
+	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 3481151265);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMapAreaZoneDescriptor>()
+	{
+		return UFGMapAreaZoneDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapAreaZoneDescriptor(Z_Construct_UClass_UFGMapAreaZoneDescriptor, &UFGMapAreaZoneDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapAreaZoneDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapAreaZoneDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

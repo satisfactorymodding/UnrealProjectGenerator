@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,13 +52,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGGasMask_Statics::ClassParams = {
 		&AFGGasMask::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGasMask_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGasMask_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGasMask()
@@ -70,7 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 164978232);
+	IMPLEMENT_CLASS(AFGGasMask, 1095712968);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMask>()
+	{
+		return AFGGasMask::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMask(Z_Construct_UClass_AFGGasMask, &AFGGasMask::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMask"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMask);
 	void AFGGasMaskAttachment::StaticRegisterNativesAFGGasMaskAttachment()
@@ -104,13 +112,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGGasMaskAttachment_Statics::ClassParams = {
 		&AFGGasMaskAttachment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGasMaskAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGasMaskAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGasMaskAttachment()
@@ -122,7 +134,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1491350085);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 3436301667);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMaskAttachment>()
+	{
+		return AFGGasMaskAttachment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMaskAttachment(Z_Construct_UClass_AFGGasMaskAttachment, &AFGGasMaskAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMaskAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMaskAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

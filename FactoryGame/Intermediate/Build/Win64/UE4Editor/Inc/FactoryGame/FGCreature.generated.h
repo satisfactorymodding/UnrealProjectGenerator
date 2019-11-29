@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -25,6 +25,8 @@ class AFGSplinePath;
 	friend struct Z_Construct_UScriptStruct_FMoveSpeedPair_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMoveSpeedPair>();
 
 #define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_13_DELEGATE \
 struct _Script_FactoryGame_eventRotationDoneDelegate_Parms \
@@ -518,6 +520,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGCreature>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Creature_FGCreature_h
 
@@ -527,6 +531,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EMoveSpeed::MS_Walk) \
 	op(EMoveSpeed::MS_Run) \
 	op(EMoveSpeed::MS_Sprint) 
+
+enum class EMoveSpeed : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EMoveSpeed>();
+
 #define FOREACH_ENUM_EENABLED(op) \
 	op(E_Enabled) \
 	op(E_Disabled) \

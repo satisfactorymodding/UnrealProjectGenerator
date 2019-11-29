@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGListView_eventGetNumRows_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGListView_eventGetNumRows_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::NewProp_ReturnValue,
 	};
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "ToolTip", "Delegate for getting the number of items to display." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGListView, "GetNumRows__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00120000, sizeof(FGListView_eventGetNumRows_Parms), Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGListView, nullptr, "GetNumRows__DelegateSignature", sizeof(FGListView_eventGetNumRows_Parms), Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -79,8 +79,8 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGListView_eventOnGenerateRow_Parms, ReturnValue), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_item = { UE4CodeGen_Private::EPropertyClass::Int, "item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGListView_eventOnGenerateRow_Parms, item), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGListView_eventOnGenerateRow_Parms, ReturnValue), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_item = { "item", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGListView_eventOnGenerateRow_Parms, item), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::NewProp_item,
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "ToolTip", "Delegate for constructing a UWidget for an item to display." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGListView, "OnGenerateRow__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00120000, sizeof(FGListView_eventOnGenerateRow_Parms), Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGListView, nullptr, "OnGenerateRow__DelegateSignature", sizeof(FGListView_eventOnGenerateRow_Parms), Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "ToolTip", "Tells the list view to refresh the items in the list." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGListView_Refresh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGListView, "Refresh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGListView_Refresh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGListView_Refresh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGListView_Refresh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGListView, nullptr, "Refresh", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGListView_Refresh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGListView_Refresh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGListView_Refresh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -165,9 +165,9 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGListView_Statics::FuncInfo[] = {
-		{ &Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature, "GetNumRows__DelegateSignature" }, // 672180409
-		{ &Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature, "OnGenerateRow__DelegateSignature" }, // 3024964042
-		{ &Z_Construct_UFunction_UFGListView_Refresh, "Refresh" }, // 368237371
+		{ &Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature, "GetNumRows__DelegateSignature" }, // 663170376
+		{ &Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature, "OnGenerateRow__DelegateSignature" }, // 2792278290
+		{ &Z_Construct_UFunction_UFGListView_Refresh, "Refresh" }, // 2043866699
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListView_Statics::Class_MetaDataParams[] = {
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "ToolTip", "Edit" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode = { UE4CodeGen_Private::EPropertyClass::Byte, "mSelectionMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000020001, 1, nullptr, STRUCT_OFFSET(UFGListView, mSelectionMode), Z_Construct_UEnum_Slate_ESelectionMode, METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode = { "mSelectionMode", nullptr, (EPropertyFlags)0x0020080000020001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGListView, mSelectionMode), Z_Construct_UEnum_Slate_ESelectionMode, METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent_MetaData[] = {
 		{ "Category", "Events" },
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "ToolTip", "Delegate for getting the number of items to display." },
 	};
 #endif
-	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent = { UE4CodeGen_Private::EPropertyClass::Delegate, "mGetNumRowsEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080001, 1, nullptr, STRUCT_OFFSET(UFGListView, mGetNumRowsEvent), Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent_MetaData)) };
+	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent = { "mGetNumRowsEvent", nullptr, (EPropertyFlags)0x0010000000080001, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGListView, mGetNumRowsEvent), Z_Construct_UDelegateFunction_UFGListView_GetNumRows__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent_MetaData[] = {
 		{ "Category", "Events" },
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		{ "ToolTip", "Delegate for constructing a UWidget for an item to display." },
 	};
 #endif
-	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent = { UE4CodeGen_Private::EPropertyClass::Delegate, "mOnGenerateRowEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080001, 1, nullptr, STRUCT_OFFSET(UFGListView, mOnGenerateRowEvent), Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent_MetaData)) };
+	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent = { "mOnGenerateRowEvent", nullptr, (EPropertyFlags)0x0010000000080001, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGListView, mOnGenerateRowEvent), Z_Construct_UDelegateFunction_UFGListView_OnGenerateRow__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::NewProp_mOnGenerateRowEvent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGListView_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGListView_Statics::NewProp_mSelectionMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGListView_Statics::NewProp_mGetNumRowsEvent,
@@ -215,13 +215,17 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGListView_Statics::ClassParams = {
 		&UFGListView::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGListView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGListView_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::PropPointers),
+		0,
+		0x00A000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGListView_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGListView_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGListView()
@@ -233,7 +237,11 @@ void EmptyLinkFunctionForGeneratedCodeFGListView() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGListView, 396937532);
+	IMPLEMENT_CLASS(UFGListView, 3046772336);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGListView>()
+	{
+		return UFGListView::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGListView(Z_Construct_UClass_UFGListView, &UFGListView::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGListView"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGListView);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

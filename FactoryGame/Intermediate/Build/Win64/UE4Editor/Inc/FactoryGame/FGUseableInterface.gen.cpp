@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -42,10 +42,14 @@ class UScriptStruct* FUseState::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FUseState_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FUseState, Z_Construct_UPackage__Script_FactoryGame(), TEXT("UseState"), sizeof(FUseState), Get_Z_Construct_UScriptStruct_FUseState_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FUseState_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FUseState, Z_Construct_UPackage__Script_FactoryGame(), TEXT("UseState"), sizeof(FUseState), Get_Z_Construct_UScriptStruct_FUseState_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FUseState>()
+{
+	return FUseState::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FUseState(FUseState::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("UseState"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
@@ -98,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Contains the usable state of the object, might be a error code" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State = { UE4CodeGen_Private::EPropertyClass::Class, "State", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000014, 1, nullptr, STRUCT_OFFSET(FUseState, State), Z_Construct_UClass_UFGUseState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0024080000000014, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUseState, State), Z_Construct_UClass_UFGUseState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent_MetaData[] = {
 		{ "Category", "UseState" },
@@ -107,7 +111,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Component that triggered the use" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent = { UE4CodeGen_Private::EPropertyClass::Object, "UseComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x001000000008001c, 1, nullptr, STRUCT_OFFSET(FUseState, UseComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent = { "UseComponent", nullptr, (EPropertyFlags)0x001000000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUseState, UseComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation_MetaData[] = {
 		{ "Category", "UseState" },
@@ -115,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Location of where the use happens" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "UseLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FUseState, UseLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation = { "UseLocation", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUseState, UseLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseLocation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData_MetaData[] = {
 		{ "Category", "UseState" },
@@ -123,7 +127,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Additional data that might be heavy to calculate several times the same frame, the reason it's cached here and not in the object, is that several players might want to cache different things" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData = { UE4CodeGen_Private::EPropertyClass::Object, "AdditionalData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FUseState, AdditionalData), Z_Construct_UClass_UFGUseState_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData = { "AdditionalData", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUseState, AdditionalData), Z_Construct_UClass_UFGUseState_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::NewProp_AdditionalData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FUseState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUseState_Statics::NewProp_State,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUseState_Statics::NewProp_UseComponent,
@@ -135,19 +139,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		nullptr,
 		&NewStructOps,
 		"UseState",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
 		sizeof(FUseState),
 		alignof(FUseState),
-		Z_Construct_UScriptStruct_FUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FUseState_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000005),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FUseState_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FUseState()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FUseState_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FUseState_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("UseState"), sizeof(FUseState), Get_Z_Construct_UScriptStruct_FUseState_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("UseState"), sizeof(FUseState), Get_Z_Construct_UScriptStruct_FUseState_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -157,7 +162,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUseState_CRC() { return 690566482U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUseState_Hash() { return 2790782735U; }
 	void UFGUseState::StaticRegisterNativesUFGUseState()
 	{
 	}
@@ -208,7 +213,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	{
 		((UFGUseState*)Obj)->mIsUsableState = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsUsableState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGUseState), &Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState = { "mIsUsableState", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGUseState), &Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_MetaData[] = {
 		{ "Category", "Use" },
@@ -220,7 +225,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	{
 		((UFGUseState*)Obj)->mWantAdditonalData = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData = { UE4CodeGen_Private::EPropertyClass::Bool, "mWantAdditonalData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGUseState), &Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData = { "mWantAdditonalData", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGUseState), &Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGUseState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGUseState_Statics::NewProp_mIsUsableState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGUseState_Statics::NewProp_mWantAdditonalData,
@@ -230,13 +235,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_Statics::ClassParams = {
 		&UFGUseState::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGUseState_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::PropPointers),
+		0,
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState()
@@ -248,7 +257,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState, 2913254929);
+	IMPLEMENT_CLASS(UFGUseState, 4117821197);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState>()
+	{
+		return UFGUseState::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState(Z_Construct_UClass_UFGUseState, &UFGUseState::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState);
 	void UFGUseState_Valid::StaticRegisterNativesUFGUseState_Valid()
@@ -283,13 +296,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_Valid_Statics::ClassParams = {
 		&UFGUseState_Valid::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Valid_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Valid_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_Valid()
@@ -301,7 +318,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Valid, 2059568180);
+	IMPLEMENT_CLASS(UFGUseState_Valid, 585189469);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_Valid>()
+	{
+		return UFGUseState_Valid::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_Valid(Z_Construct_UClass_UFGUseState_Valid, &UFGUseState_Valid::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_Valid"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_Valid);
 	FText IFGUseableInterface::GetLookAtDecription(AFGCharacterPlayer* byCharacter, FUseState const& state) const
@@ -374,14 +395,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventGetLookAtDecription_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventGetLookAtDecription_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state = { UE4CodeGen_Private::EPropertyClass::Struct, "state", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventGetLookAtDecription_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventGetLookAtDecription_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventGetLookAtDecription_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventGetLookAtDecription_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::NewProp_state,
@@ -394,7 +415,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called every frame when we are looked at, get a localized text on how we can be used\n\n@param byCharacter   Character that uses the object.\n@param state                 The state that describes how the object reacts to interaction" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "GetLookAtDecription", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x5C420C00, sizeof(FGUseableInterface_eventGetLookAtDecription_Parms), Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "GetLookAtDecription", sizeof(FGUseableInterface_eventGetLookAtDecription_Parms), Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x5C420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -418,7 +439,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	{
 		((FGUseableInterface_eventIsUseable_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGUseableInterface_eventIsUseable_Parms), &Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGUseableInterface_eventIsUseable_Parms), &Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::NewProp_ReturnValue,
 	};
@@ -429,7 +450,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Checks if this actor is usable (a good example of a not useable actor is a alive enemy)\nThis should primarily be used when we don't want the outline to show up\n@note Called on both server and client.\n\n@return      true if this object is in a useable state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "IsUseable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48020C00, sizeof(FGUseableInterface_eventIsUseable_Parms), Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "IsUseable", sizeof(FGUseableInterface_eventIsUseable_Parms), Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_IsUseable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_IsUseable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -457,8 +478,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state = { UE4CodeGen_Private::EPropertyClass::Struct, "state", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventOnUse_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventOnUse_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventOnUse_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventOnUse_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_state,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::NewProp_byCharacter,
@@ -470,7 +491,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called when a character tries to use this actor.\n@note Called on both server and client.\n\n@param byCharacter   Character that uses the object.\n@param state                 The state that describes how the object reacts to interaction" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "OnUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08420C00, sizeof(FGUseableInterface_eventOnUse_Parms), Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "OnUse", sizeof(FGUseableInterface_eventOnUse_Parms), Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_OnUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -498,8 +519,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state = { UE4CodeGen_Private::EPropertyClass::Struct, "state", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventOnUseStop_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventOnUseStop_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventOnUseStop_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventOnUseStop_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_state,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::NewProp_byCharacter,
@@ -511,7 +532,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called when a character releases the use button\n@note Called on both server and client.\n\n@param byCharacter    Character that uses the object.\n@param state                  The state that describes how the object reacts to interaction" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "OnUseStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08420C00, sizeof(FGUseableInterface_eventOnUseStop_Parms), Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "OnUseStop", sizeof(FGUseableInterface_eventOnUseStop_Parms), Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_OnUseStop_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_OnUseStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -530,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::NewProp_player = { UE4CodeGen_Private::EPropertyClass::Object, "player", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventRegisterInteractingPlayer_Parms, player), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::NewProp_player = { "player", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventRegisterInteractingPlayer_Parms, player), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::NewProp_player,
 	};
@@ -541,7 +562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called from widgets that are opened by the use functionality" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "RegisterInteractingPlayer", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGUseableInterface_eventRegisterInteractingPlayer_Parms), Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "RegisterInteractingPlayer", sizeof(FGUseableInterface_eventRegisterInteractingPlayer_Parms), Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -569,8 +590,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state = { UE4CodeGen_Private::EPropertyClass::Struct, "state", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventStartIsLookedAt_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventStartIsLookedAt_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventStartIsLookedAt_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventStartIsLookedAt_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_state,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::NewProp_byCharacter,
@@ -582,7 +603,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called on by the interface if we are looking at something that's useable" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "StartIsLookedAt", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08420C00, sizeof(FGUseableInterface_eventStartIsLookedAt_Parms), Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "StartIsLookedAt", sizeof(FGUseableInterface_eventStartIsLookedAt_Parms), Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -610,8 +631,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state = { UE4CodeGen_Private::EPropertyClass::Struct, "state", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000182, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventStopIsLookedAt_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventStopIsLookedAt_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventStopIsLookedAt_Parms, state), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventStopIsLookedAt_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_state,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::NewProp_byCharacter,
@@ -623,7 +644,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called when we stop looking at the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "StopIsLookedAt", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08420C00, sizeof(FGUseableInterface_eventStopIsLookedAt_Parms), Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "StopIsLookedAt", sizeof(FGUseableInterface_eventStopIsLookedAt_Parms), Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -642,7 +663,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::NewProp_player = { UE4CodeGen_Private::EPropertyClass::Object, "player", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventUnregisterInteractingPlayer_Parms, player), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::NewProp_player = { "player", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventUnregisterInteractingPlayer_Parms, player), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::NewProp_player,
 	};
@@ -653,7 +674,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Called from widgets that are opened by the use functionality" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "UnregisterInteractingPlayer", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGUseableInterface_eventUnregisterInteractingPlayer_Parms), Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "UnregisterInteractingPlayer", sizeof(FGUseableInterface_eventUnregisterInteractingPlayer_Parms), Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -681,20 +702,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_out_useState = { UE4CodeGen_Private::EPropertyClass::Struct, "out_useState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008008000180, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, out_useState), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_out_useState = { "out_useState", nullptr, (EPropertyFlags)0x0010008008000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, out_useState), Z_Construct_UScriptStruct_FUseState, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit = { UE4CodeGen_Private::EPropertyClass::Object, "componentHit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, componentHit), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit = { "componentHit", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, componentHit), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "atLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, atLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation = { "atLocation", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, atLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_atLocation_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGUseableInterface_eventUpdateUseState_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_out_useState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::NewProp_componentHit,
@@ -708,7 +729,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		{ "ToolTip", "Get the current use state for a object\n@param byCharacter   The character that want to use the object\n@param atLocation    Location on the object where the use is triggered (simulated location on client).\n@param componentHit  The component that the trace hit when looking at the object" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, "UpdateUseState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x48C20C00, sizeof(FGUseableInterface_eventUpdateUseState_Parms), Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGUseableInterface, nullptr, "UpdateUseState", sizeof(FGUseableInterface_eventUpdateUseState_Parms), Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48C20C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGUseableInterface_UpdateUseState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGUseableInterface_UpdateUseState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -737,15 +758,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGUseableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription, "GetLookAtDecription" }, // 336830154
-		{ &Z_Construct_UFunction_UFGUseableInterface_IsUseable, "IsUseable" }, // 1796321551
-		{ &Z_Construct_UFunction_UFGUseableInterface_OnUse, "OnUse" }, // 923445602
-		{ &Z_Construct_UFunction_UFGUseableInterface_OnUseStop, "OnUseStop" }, // 2787754529
-		{ &Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer, "RegisterInteractingPlayer" }, // 2975623512
-		{ &Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt, "StartIsLookedAt" }, // 3861965847
-		{ &Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt, "StopIsLookedAt" }, // 1425875187
-		{ &Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer, "UnregisterInteractingPlayer" }, // 4289899813
-		{ &Z_Construct_UFunction_UFGUseableInterface_UpdateUseState, "UpdateUseState" }, // 3454312441
+		{ &Z_Construct_UFunction_UFGUseableInterface_GetLookAtDecription, "GetLookAtDecription" }, // 1321331063
+		{ &Z_Construct_UFunction_UFGUseableInterface_IsUseable, "IsUseable" }, // 1136572136
+		{ &Z_Construct_UFunction_UFGUseableInterface_OnUse, "OnUse" }, // 1743476151
+		{ &Z_Construct_UFunction_UFGUseableInterface_OnUseStop, "OnUseStop" }, // 1988596226
+		{ &Z_Construct_UFunction_UFGUseableInterface_RegisterInteractingPlayer, "RegisterInteractingPlayer" }, // 1899526737
+		{ &Z_Construct_UFunction_UFGUseableInterface_StartIsLookedAt, "StartIsLookedAt" }, // 1181732175
+		{ &Z_Construct_UFunction_UFGUseableInterface_StopIsLookedAt, "StopIsLookedAt" }, // 3822511063
+		{ &Z_Construct_UFunction_UFGUseableInterface_UnregisterInteractingPlayer, "UnregisterInteractingPlayer" }, // 2999315746
+		{ &Z_Construct_UFunction_UFGUseableInterface_UpdateUseState, "UpdateUseState" }, // 2308972575
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseableInterface_Statics::Class_MetaDataParams[] = {
@@ -760,13 +781,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseableInterface_Statics::ClassParams = {
 		&UFGUseableInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseableInterface()
@@ -778,7 +803,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseableInterface, 477287644);
+	IMPLEMENT_CLASS(UFGUseableInterface, 2548644175);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGUseableInterface>()
+	{
+		return UFGUseableInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseableInterface(Z_Construct_UClass_UFGUseableInterface, &UFGUseableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseableInterface);
 	static FName NAME_UFGUseableInterface_GetLookAtDecription = FName(TEXT("GetLookAtDecription"));

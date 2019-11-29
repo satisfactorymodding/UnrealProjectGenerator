@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -36,10 +36,14 @@ class UScriptStruct* FFogOfWarQueuePair::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFogOfWarQueuePair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FogOfWarQueuePair"), sizeof(FFogOfWarQueuePair), Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FFogOfWarQueuePair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("FogOfWarQueuePair"), sizeof(FFogOfWarQueuePair), Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FFogOfWarQueuePair>()
+{
+	return FFogOfWarQueuePair::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FFogOfWarQueuePair(FFogOfWarQueuePair::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("FogOfWarQueuePair"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
@@ -76,7 +80,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ModuleRelativePath", "FGMapManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController = { UE4CodeGen_Private::EPropertyClass::Object, "playerController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FFogOfWarQueuePair, playerController), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController = { "playerController", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FFogOfWarQueuePair, playerController), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::NewProp_playerController,
 	};
@@ -85,19 +89,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		nullptr,
 		&NewStructOps,
 		"FogOfWarQueuePair",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FFogOfWarQueuePair),
 		alignof(FFogOfWarQueuePair),
-		Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFogOfWarQueuePair()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FogOfWarQueuePair"), sizeof(FFogOfWarQueuePair), Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("FogOfWarQueuePair"), sizeof(FFogOfWarQueuePair), Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -107,7 +112,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC() { return 177936900U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_Hash() { return 2495199223U; }
 	void AFGMapManager::StaticRegisterNativesAFGMapManager()
 	{
 		UClass* Class = AFGMapManager::StaticClass();
@@ -135,8 +140,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMapManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGMapManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMapManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGMapManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGMapManager_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGMapManager_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGMapManager_Get_Statics::NewProp_worldContext,
@@ -150,7 +155,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ToolTip", "Get the map manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMapManager_eventGet_Parms), Z_Construct_UFunction_AFGMapManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, nullptr, "Get", sizeof(FGMapManager_eventGet_Parms), Z_Construct_UFunction_AFGMapManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGMapManager_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -173,7 +178,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMapManager_eventGetFogOfWarTexture_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapManager_eventGetFogOfWarTexture_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::NewProp_ReturnValue,
 	};
@@ -184,7 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ToolTip", "End IFSaveInterface" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, "GetFogOfWarTexture", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGMapManager_eventGetFogOfWarTexture_Parms), Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, nullptr, "GetFogOfWarTexture", sizeof(FGMapManager_eventGetFogOfWarTexture_Parms), Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -207,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::NewProp_actorRepresentation = { UE4CodeGen_Private::EPropertyClass::Object, "actorRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMapManager_eventOnActorRepresentationAdded_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::NewProp_actorRepresentation = { "actorRepresentation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapManager_eventOnActorRepresentationAdded_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::NewProp_actorRepresentation,
 	};
@@ -216,7 +221,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ModuleRelativePath", "FGMapManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, "OnActorRepresentationAdded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGMapManager_eventOnActorRepresentationAdded_Parms), Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, nullptr, "OnActorRepresentationAdded", sizeof(FGMapManager_eventOnActorRepresentationAdded_Parms), Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -239,7 +244,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::NewProp_actorRepresentation = { UE4CodeGen_Private::EPropertyClass::Object, "actorRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMapManager_eventOnActorRepresentationRemoved_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::NewProp_actorRepresentation = { "actorRepresentation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapManager_eventOnActorRepresentationRemoved_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::NewProp_actorRepresentation,
 	};
@@ -248,7 +253,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ModuleRelativePath", "FGMapManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, "OnActorRepresentationRemoved", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGMapManager_eventOnActorRepresentationRemoved_Parms), Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, nullptr, "OnActorRepresentationRemoved", sizeof(FGMapManager_eventOnActorRepresentationRemoved_Parms), Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -271,7 +276,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::NewProp_actorRepresentation = { UE4CodeGen_Private::EPropertyClass::Object, "actorRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMapManager_eventOnActorRepresentationUpdated_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::NewProp_actorRepresentation = { "actorRepresentation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapManager_eventOnActorRepresentationUpdated_Parms, actorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::NewProp_actorRepresentation,
 	};
@@ -280,7 +285,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ModuleRelativePath", "FGMapManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, "OnActorRepresentationUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGMapManager_eventOnActorRepresentationUpdated_Parms), Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGMapManager, nullptr, "OnActorRepresentationUpdated", sizeof(FGMapManager_eventOnActorRepresentationUpdated_Parms), Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -338,11 +343,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGMapManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGMapManager_Get, "Get" }, // 462942502
-		{ &Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture, "GetFogOfWarTexture" }, // 1455847404
-		{ &Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded, "OnActorRepresentationAdded" }, // 2485899621
-		{ &Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved, "OnActorRepresentationRemoved" }, // 2220920621
-		{ &Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated, "OnActorRepresentationUpdated" }, // 1464443488
+		{ &Z_Construct_UFunction_AFGMapManager_Get, "Get" }, // 2475769734
+		{ &Z_Construct_UFunction_AFGMapManager_GetFogOfWarTexture, "GetFogOfWarTexture" }, // 620570493
+		{ &Z_Construct_UFunction_AFGMapManager_OnActorRepresentationAdded, "OnActorRepresentationAdded" }, // 1445442684
+		{ &Z_Construct_UFunction_AFGMapManager_OnActorRepresentationRemoved, "OnActorRepresentationRemoved" }, // 1218857971
+		{ &Z_Construct_UFunction_AFGMapManager_OnActorRepresentationUpdated, "OnActorRepresentationUpdated" }, // 1589308115
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMapManager_Statics::Class_MetaDataParams[] = {
@@ -359,45 +364,45 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		{ "ToolTip", "The currently active dynamic actor representations that reveal fog of war" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors = { UE4CodeGen_Private::EPropertyClass::Array, "mDynamicFogOfWarRevealActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGMapManager, mDynamicFogOfWarRevealActors), METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mDynamicFogOfWarRevealActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors = { "mDynamicFogOfWarRevealActors", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGMapManager, mDynamicFogOfWarRevealActors), METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_Inner = { "mDynamicFogOfWarRevealActors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapManager.h" },
 		{ "ToolTip", "Actor representation manager to get representations updates to calculate fog of war data" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager = { UE4CodeGen_Private::EPropertyClass::Object, "mActorRepresentationManager", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000002000, 1, nullptr, STRUCT_OFFSET(AFGMapManager, mActorRepresentationManager), Z_Construct_UClass_AFGActorRepresentationManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager = { "mActorRepresentationManager", nullptr, (EPropertyFlags)0x0040000000002000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGMapManager, mActorRepresentationManager), Z_Construct_UClass_AFGActorRepresentationManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mActorRepresentationManager_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapManager.h" },
 		{ "ToolTip", "Queue to handle clients waiting for fog of war transfer" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue = { UE4CodeGen_Private::EPropertyClass::Array, "mFogOfWarTransferQueue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGMapManager, mFogOfWarTransferQueue), METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mFogOfWarTransferQueue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FFogOfWarQueuePair, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue = { "mFogOfWarTransferQueue", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGMapManager, mFogOfWarTransferQueue), METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTransferQueue_Inner = { "mFogOfWarTransferQueue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FFogOfWarQueuePair, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapManager.h" },
 		{ "ToolTip", "Capture actor used for translate world locations to map locations" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedMinimapCaptureActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGMapManager, mCachedMinimapCaptureActor), Z_Construct_UClass_AFGMinimapCaptureActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor = { "mCachedMinimapCaptureActor", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGMapManager, mCachedMinimapCaptureActor), Z_Construct_UClass_AFGMinimapCaptureActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mCachedMinimapCaptureActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapManager.h" },
 		{ "ToolTip", "The fog of war texture that is used for the map" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture = { UE4CodeGen_Private::EPropertyClass::Object, "mFogOfWarTexture", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGMapManager, mFogOfWarTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture = { "mFogOfWarTexture", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGMapManager, mFogOfWarTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarTexture_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapManager.h" },
 		{ "ToolTip", "The raw pixel data for the fog of war texture. Each element represents a channel for a pixel" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData = { UE4CodeGen_Private::EPropertyClass::Array, "mFogOfWarRawData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGMapManager, mFogOfWarRawData), METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_Inner = { UE4CodeGen_Private::EPropertyClass::Byte, "mFogOfWarRawData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData = { "mFogOfWarRawData", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGMapManager, mFogOfWarRawData), METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGMapManager_Statics::NewProp_mFogOfWarRawData_Inner = { "mFogOfWarRawData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGMapManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGMapManager_Statics::NewProp_mDynamicFogOfWarRevealActors_Inner,
@@ -417,13 +422,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGMapManager_Statics::ClassParams = {
 		&AFGMapManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGMapManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGMapManager_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGMapManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGMapManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGMapManager()
@@ -435,7 +444,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGMapManager, 3791238321);
+	IMPLEMENT_CLASS(AFGMapManager, 2581873043);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGMapManager>()
+	{
+		return AFGMapManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGMapManager(Z_Construct_UClass_AFGMapManager, &AFGMapManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGMapManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGMapManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 	{
 		((FGPopupWidgetContent_eventGetShouldOkayBeEnabled_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPopupWidgetContent_eventGetShouldOkayBeEnabled_Parms), &Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPopupWidgetContent_eventGetShouldOkayBeEnabled_Parms), &Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::NewProp_ReturnValue,
 	};
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "ToolTip", "Called by the popup widget to determine if its buttons should be enabled" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, "GetShouldOkayBeEnabled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, sizeof(FGPopupWidgetContent_eventGetShouldOkayBeEnabled_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, nullptr, "GetShouldOkayBeEnabled", sizeof(FGPopupWidgetContent_eventGetShouldOkayBeEnabled_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "ToolTip", "Called when the containing popup is closed without confirmation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, "NotifyPopupCanceled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, nullptr, "NotifyPopupCanceled", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "ToolTip", "Called when the containing popup is confirmed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, "NotifyPopupConfirmed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, nullptr, "NotifyPopupConfirmed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::NewProp_instigator = { UE4CodeGen_Private::EPropertyClass::Object, "instigator", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGPopupWidgetContent_eventSetInstigatorAndInitialize_Parms, instigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::NewProp_instigator = { "instigator", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPopupWidgetContent_eventSetInstigatorAndInitialize_Parms, instigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::NewProp_instigator,
 	};
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "ToolTip", "Assigns the UObject which is meant to implement the FGPopupInstigatorInterface" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, "SetInstigatorAndInitialize", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, sizeof(FGPopupWidgetContent_eventSetInstigatorAndInitialize_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, nullptr, "SetInstigatorAndInitialize", sizeof(FGPopupWidgetContent_eventSetInstigatorAndInitialize_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -194,13 +194,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc = { UE4CodeGen_Private::EPropertyClass::Text, "desc", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPopupWidgetContent_eventSetOptionalTextElements_Parms, desc), METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc = { "desc", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPopupWidgetContent_eventSetOptionalTextElements_Parms, desc), METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title = { UE4CodeGen_Private::EPropertyClass::Text, "title", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPopupWidgetContent_eventSetOptionalTextElements_Parms, title), METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title = { "title", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPopupWidgetContent_eventSetOptionalTextElements_Parms, title), METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_desc,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::NewProp_title,
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, "SetOptionalTextElements", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C420800, sizeof(FGPopupWidgetContent_eventSetOptionalTextElements_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPopupWidgetContent, nullptr, "SetOptionalTextElements", sizeof(FGPopupWidgetContent_eventSetOptionalTextElements_Parms), Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -249,11 +249,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPopupWidgetContent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled, "GetShouldOkayBeEnabled" }, // 4287935229
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled, "NotifyPopupCanceled" }, // 502929569
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed, "NotifyPopupConfirmed" }, // 2050529925
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize, "SetInstigatorAndInitialize" }, // 4254342730
-		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements, "SetOptionalTextElements" }, // 1668589832
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_GetShouldOkayBeEnabled, "GetShouldOkayBeEnabled" }, // 558776349
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupCanceled, "NotifyPopupCanceled" }, // 465208617
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_NotifyPopupConfirmed, "NotifyPopupConfirmed" }, // 1307409900
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetInstigatorAndInitialize, "SetInstigatorAndInitialize" }, // 399304943
+		{ &Z_Construct_UFunction_UFGPopupWidgetContent_SetOptionalTextElements, "SetOptionalTextElements" }, // 4173072725
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidgetContent_Statics::Class_MetaDataParams[] = {
@@ -268,14 +268,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget = { UE4CodeGen_Private::EPropertyClass::Object, "mPopupWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x001000000008000c, 1, nullptr, STRUCT_OFFSET(UFGPopupWidgetContent, mPopupWidget), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget = { "mPopupWidget", nullptr, (EPropertyFlags)0x001000000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPopupWidgetContent, mPopupWidget), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData[] = {
 		{ "Category", "PopupContent" },
 		{ "ModuleRelativePath", "FGPopupWidgetContent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator = { UE4CodeGen_Private::EPropertyClass::Object, "mInstigator", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(UFGPopupWidgetContent, mInstigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator = { "mInstigator", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPopupWidgetContent, mInstigator), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGPopupWidgetContent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mPopupWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPopupWidgetContent_Statics::NewProp_mInstigator,
@@ -285,13 +285,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPopupWidgetContent_Statics::ClassParams = {
 		&UFGPopupWidgetContent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGPopupWidgetContent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGPopupWidgetContent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::PropPointers),
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPopupWidgetContent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPopupWidgetContent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPopupWidgetContent()
@@ -303,7 +307,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupWidgetContent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidgetContent, 1457090125);
+	IMPLEMENT_CLASS(UFGPopupWidgetContent, 3636517974);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupWidgetContent>()
+	{
+		return UFGPopupWidgetContent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPopupWidgetContent(Z_Construct_UClass_UFGPopupWidgetContent, &UFGPopupWidgetContent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPopupWidgetContent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPopupWidgetContent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

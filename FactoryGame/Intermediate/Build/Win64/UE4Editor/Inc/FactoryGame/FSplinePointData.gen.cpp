@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,10 +22,14 @@ class UScriptStruct* FSplinePointData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSplinePointData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SplinePointData"), sizeof(FSplinePointData), Get_Z_Construct_UScriptStruct_FSplinePointData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSplinePointData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SplinePointData"), sizeof(FSplinePointData), Get_Z_Construct_UScriptStruct_FSplinePointData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSplinePointData>()
+{
+	return FSplinePointData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSplinePointData(FSplinePointData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SplinePointData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
@@ -72,21 +76,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		{ "ModuleRelativePath", "FSplinePointData.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent = { UE4CodeGen_Private::EPropertyClass::Struct, "LeaveTangent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(FSplinePointData, LeaveTangent), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent = { "LeaveTangent", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSplinePointData, LeaveTangent), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent_MetaData[] = {
 		{ "Category", "SplinePoint" },
 		{ "ModuleRelativePath", "FSplinePointData.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent = { UE4CodeGen_Private::EPropertyClass::Struct, "ArriveTangent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(FSplinePointData, ArriveTangent), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent = { "ArriveTangent", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSplinePointData, ArriveTangent), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location_MetaData[] = {
 		{ "Category", "SplinePoint" },
 		{ "ModuleRelativePath", "FSplinePointData.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location = { UE4CodeGen_Private::EPropertyClass::Struct, "Location", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(FSplinePointData, Location), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSplinePointData, Location), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_Location_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_LeaveTangent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSplinePointData_Statics::NewProp_ArriveTangent,
@@ -97,19 +101,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		nullptr,
 		&NewStructOps,
 		"SplinePointData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSplinePointData),
 		alignof(FSplinePointData),
-		Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SplinePointData"), sizeof(FSplinePointData), Get_Z_Construct_UScriptStruct_FSplinePointData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SplinePointData"), sizeof(FSplinePointData), Get_Z_Construct_UScriptStruct_FSplinePointData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -119,7 +124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_CRC() { return 3073337976U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_Hash() { return 2486081013U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

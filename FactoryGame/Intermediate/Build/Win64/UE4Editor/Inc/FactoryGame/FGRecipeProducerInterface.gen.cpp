@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRecipeProducerInterface_Statics::ClassParams = {
 		&UFGRecipeProducerInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRecipeProducerInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRecipeProducerInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRecipeProducerInterface()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 406059334);
+	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 3670242272);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGRecipeProducerInterface>()
+	{
+		return UFGRecipeProducerInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRecipeProducerInterface(Z_Construct_UClass_UFGRecipeProducerInterface, &UFGRecipeProducerInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRecipeProducerInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRecipeProducerInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

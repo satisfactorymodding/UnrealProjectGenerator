@@ -14,7 +14,7 @@ void UFGOutlineComponent::ShowDismantlePendingMaterial( TArray<class AActor*> ac
 void UFGOutlineComponent::ShowDismantlePendingMaterial(  AActor* actorPendingDismantle){ }
 void UFGOutlineComponent::ShowDismantlePendingMaterial(  UFGSplineComponent* splineComponent){ }
 void UFGOutlineComponent::ShowDismantlePendingMaterial(  UProxyInstancedStaticMeshComponent* proxyMesh){ }
-void UFGOutlineComponent::HideDismantlePendingMaterial(){ }
+void UFGOutlineComponent::HideAllDismantlePendingMaterial(){ }
 void UFGOutlineComponent::ShowActorOutline(  AActor* actorToOutline, EOutlineColor color){ }
 void UFGOutlineComponent::HideActorOutline(  AActor* actorToDisableOutlineOn){ }
 void UFGOutlineComponent::ShowDismantlePendingMaterialOnActor(  AActor* actorPendingForDismantle){ }

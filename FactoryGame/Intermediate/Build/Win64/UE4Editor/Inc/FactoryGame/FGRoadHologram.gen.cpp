@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 		{ "ToolTip", "The connection we snapped to." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mSnappedConnectionComponents, AFGRoadHologram), nullptr, STRUCT_OFFSET(AFGRoadHologram, mSnappedConnectionComponents), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents = { "mSnappedConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mSnappedConnectionComponents, AFGRoadHologram), STRUCT_OFFSET(AFGRoadHologram, mSnappedConnectionComponents), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 		{ "ToolTip", "The connections we have." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mConnectionComponents, AFGRoadHologram), nullptr, STRUCT_OFFSET(AFGRoadHologram, mConnectionComponents), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents = { "mConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConnectionComponents, AFGRoadHologram), STRUCT_OFFSET(AFGRoadHologram, mConnectionComponents), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRoadHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mSnappedConnectionComponents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRoadHologram_Statics::NewProp_mConnectionComponents,
@@ -81,13 +81,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRoadHologram_Statics::ClassParams = {
 		&AFGRoadHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGRoadHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGRoadHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRoadHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRoadHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRoadHologram()
@@ -99,7 +103,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRoadHologram, 3955282976);
+	IMPLEMENT_CLASS(AFGRoadHologram, 3591167036);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGRoadHologram>()
+	{
+		return AFGRoadHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRoadHologram(Z_Construct_UClass_AFGRoadHologram, &AFGRoadHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRoadHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRoadHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

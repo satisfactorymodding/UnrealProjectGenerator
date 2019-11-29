@@ -135,23 +135,23 @@ public:
 	UFGPowerCircuit();
 
 	/** Resets the fuse. */
-	UFUNCTION( BlueprintCallable, Category = "Power" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Circuits|PowerCircuit" )
 	void ResetFuse();
 
 	/** @return true if the fuse is triggered; false otherwise. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	bool IsFuseTriggered() { return mIsFuseTriggered; }
 
 	/** Get the stats for this circuit. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	void GetStats( FPowerCircuitStats& out_stats ) const { out_stats = mPowerStats; }
 
 	/** Get the graph point from the index in our stats,  @return false if the index is invalid */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	static bool GetGraphPointAtIndex( const FPowerCircuitStats& stats, int32 idx, FPowerGraphPoint& out_item ){ return stats.GetGraphPointAtIndex( idx, out_item ); }
 
 	/** Get how many graph points there is in our stats */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerCircuit" )
 	static int32 GetNumGraphPoint( const FPowerCircuitStats& stats ){ return stats.GetNumGraphPoints(); }
 
 	/** Debug */

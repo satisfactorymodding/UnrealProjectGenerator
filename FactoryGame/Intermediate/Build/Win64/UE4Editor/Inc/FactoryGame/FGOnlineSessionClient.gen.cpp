@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,10 +24,14 @@ class UScriptStruct* FPendingInvite::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPendingInvite, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PendingInvite"), sizeof(FPendingInvite), Get_Z_Construct_UScriptStruct_FPendingInvite_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPendingInvite, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PendingInvite"), sizeof(FPendingInvite), Get_Z_Construct_UScriptStruct_FPendingInvite_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FPendingInvite>()
+{
+	return FPendingInvite::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPendingInvite(FPendingInvite::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("PendingInvite"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
@@ -60,19 +64,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		nullptr,
 		&NewStructOps,
 		"PendingInvite",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FPendingInvite),
 		alignof(FPendingInvite),
-		nullptr, 0,
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPendingInvite_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPendingInvite_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPendingInvite()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PendingInvite"), sizeof(FPendingInvite), Get_Z_Construct_UScriptStruct_FPendingInvite_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PendingInvite"), sizeof(FPendingInvite), Get_Z_Construct_UScriptStruct_FPendingInvite_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -82,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC() { return 245938950U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash() { return 1843763605U; }
 	void UFGOnlineSessionClient::StaticRegisterNativesUFGOnlineSessionClient()
 	{
 	}
@@ -114,13 +119,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGOnlineSessionClient_Statics::ClassParams = {
 		&UFGOnlineSessionClient::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGOnlineSessionClient()
@@ -132,7 +141,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOnlineSessionClient, 2063025887);
+	IMPLEMENT_CLASS(UFGOnlineSessionClient, 1496645504);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGOnlineSessionClient>()
+	{
+		return UFGOnlineSessionClient::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGOnlineSessionClient(Z_Construct_UClass_UFGOnlineSessionClient, &UFGOnlineSessionClient::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGOnlineSessionClient"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGOnlineSessionClient);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

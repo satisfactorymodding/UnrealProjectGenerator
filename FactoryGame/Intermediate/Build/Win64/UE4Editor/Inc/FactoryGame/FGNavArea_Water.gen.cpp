@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGNavArea_Water() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGNavArea_Water_Statics::ClassParams = {
 		&UFGNavArea_Water::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x003000A4u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x003000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGNavArea_Water_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGNavArea_Water_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGNavArea_Water()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGNavArea_Water() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNavArea_Water, 2649859438);
+	IMPLEMENT_CLASS(UFGNavArea_Water, 1138583285);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGNavArea_Water>()
+	{
+		return UFGNavArea_Water::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGNavArea_Water(Z_Construct_UClass_UFGNavArea_Water, &UFGNavArea_Water::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGNavArea_Water"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGNavArea_Water);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

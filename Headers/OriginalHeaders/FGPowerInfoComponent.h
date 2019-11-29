@@ -41,24 +41,24 @@ public:
 	 * @return The power circuit this is connected to; nullptr if not connected.
 	 * @note This can be changed/removed at any time so do not save copies to it.
 	 */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	class UFGPowerCircuit* GetPowerCircuit() const;
 
 	/**
 	 * @return true if the connected to a circuit.
 	 */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	FORCEINLINE bool IsConnected() const { return mCircuitID != INDEX_NONE; }
 
 	/**
 	 * @return true if we have power; false if we do not have power.
 	 * @note This is updated once per frame so if setting target consumption the result is available next frame.
 	 */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	bool HasPower() const { return mHasPower; }
 
 	/** @return true if the grid is overloaded and the fuse has been triggered; false otherwise. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	bool IsFuseTriggered() const { return mIsFuseTriggered; }
 
 	/**
@@ -66,10 +66,10 @@ public:
 	 * This is only a request, use GetActualConsumption to see what is actually consumed.
 	 * @note This call is asynchronous and the result is available next frame.
 	 */
-	UFUNCTION( BlueprintCallable, Category = "Power" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Circuits|PowerInfo" )
 	void SetTargetConsumption( float newConsumption );
 	/** Get the target power consumption. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetTargetConsumption() const;
 
 	/**
@@ -77,17 +77,17 @@ public:
 	 * @note This is updated once per frame when the power subsystem is ticked.
 	 * @return The actual power consumed.
 	 */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetActualConsumption() const;
 
 	/**
 	 * Set the power we always provide to the circuit. This can not be regulated.
 	 * E.g. A wind turbine always generate power when there's wind.
 	 */
-	UFUNCTION( BlueprintCallable, Category = "Power" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Circuits|PowerInfo" )
 	void SetBaseProduction( float newProduction );
 	/** Get the base power production. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetBaseProduction() const;
 
 	/**
@@ -95,10 +95,10 @@ public:
 	 * Use GetRegulatedDynamicProduction to see the actual production needed.
 	 * @note Asynchronous.
 	 */
-	UFUNCTION( BlueprintCallable, Category = "Power" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Circuits|PowerInfo" )
 	void SetDynamicProductionCapacity( float newProduction );
 	/** Get the maximum dynamic power production. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetDynamicProductionCapacity() const;
 
 	/**
@@ -106,11 +106,11 @@ public:
 	 * This is in the range [0,1+] and if >1 the demand is greater than the available production, i.e. the circuit is overloaded.
 	 * @return Dynamic demand factor.
 	 */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetDynamicProductionDemandFactor() const;
 
 	/** Get the dynamic power production we provide to the circuit. */
-	UFUNCTION( BlueprintPure, Category = "Power" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerInfo" )
 	float GetRegulatedDynamicProduction() const;
 
 	/**

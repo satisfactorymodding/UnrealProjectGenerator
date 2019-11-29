@@ -33,11 +33,12 @@ struct FFGHeightData
 {
 	GENERATED_BODY()
 
-	FFGHeightData(){
-		lowestZ = 9999999.0f;
-		highestZ = -9999999.0f;
-		minZ = -9999999.0f;
-		maxZ = 9999999.0f;
+	FFGHeightData() :
+		minZ( -9999999.0f ),
+		maxZ( 9999999.0f ),
+		lowestZ( 9999999.0f ),
+		highestZ( -9999999.0f )
+	{
 	}
 
 	float minZ;
@@ -49,7 +50,7 @@ struct FFGHeightData
 	TArray< int32 > noHitIndexes;
 	TArray< int32 > deepHitIndexes;
 
-	void FFGHeightData::AddHitLocation( int32 index, float zValue )
+	void AddHitLocation( int32 index, float zValue )
 	{
 		zHitLocations[ index ] = zValue;
 		lowestZ = FMath::Clamp(FMath::Min( zValue, lowestZ ), minZ, maxZ);

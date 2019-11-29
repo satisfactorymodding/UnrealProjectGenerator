@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -48,8 +48,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMapArea_eventGetAreaDisplayName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMapArea_eventGetAreaDisplayName_Parms, inClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapArea_eventGetAreaDisplayName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapArea_eventGetAreaDisplayName_Parms, inClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::NewProp_inClass,
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		{ "ToolTip", "Get area display name" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapArea, "GetAreaDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMapArea_eventGetAreaDisplayName_Parms), Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapArea, nullptr, "GetAreaDisplayName", sizeof(FGMapArea_eventGetAreaDisplayName_Parms), Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -86,8 +86,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMapArea_eventGetUserSetAreaDisplayName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMapArea_eventGetUserSetAreaDisplayName_Parms, inClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapArea_eventGetUserSetAreaDisplayName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapArea_eventGetUserSetAreaDisplayName_Parms, inClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::NewProp_inClass,
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		{ "ToolTip", "Get area display name" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapArea, "GetUserSetAreaDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMapArea_eventGetUserSetAreaDisplayName_Parms), Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapArea, nullptr, "GetUserSetAreaDisplayName", sizeof(FGMapArea_eventGetUserSetAreaDisplayName_Parms), Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -124,8 +124,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGMapArea_eventGetZoneType_Parms, ReturnValue), Z_Construct_UClass_UFGMapAreaZoneDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMapArea_eventGetZoneType_Parms, inClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapArea_eventGetZoneType_Parms, ReturnValue), Z_Construct_UClass_UFGMapAreaZoneDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapArea_eventGetZoneType_Parms, inClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::NewProp_inClass,
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		{ "ToolTip", "Get the CDO of the zone type" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapArea, "GetZoneType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMapArea_eventGetZoneType_Parms), Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapArea, nullptr, "GetZoneType", sizeof(FGMapArea_eventGetZoneType_Parms), Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapArea_GetZoneType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapArea_GetZoneType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -179,9 +179,9 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMapArea_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName, "GetAreaDisplayName" }, // 159420923
-		{ &Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName, "GetUserSetAreaDisplayName" }, // 858620280
-		{ &Z_Construct_UFunction_UFGMapArea_GetZoneType, "GetZoneType" }, // 974068500
+		{ &Z_Construct_UFunction_UFGMapArea_GetAreaDisplayName, "GetAreaDisplayName" }, // 1334393626
+		{ &Z_Construct_UFunction_UFGMapArea_GetUserSetAreaDisplayName, "GetUserSetAreaDisplayName" }, // 2354733732
+		{ &Z_Construct_UFunction_UFGMapArea_GetZoneType, "GetZoneType" }, // 487119427
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::Class_MetaDataParams[] = {
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		{ "ToolTip", "This is the name the player has given this area" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName = { UE4CodeGen_Private::EPropertyClass::Text, "mUserSetDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(UFGMapArea, mUserSetDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName = { "mUserSetDisplayName", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapArea, mUserSetDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType_MetaData[] = {
 		{ "Category", "MapArea" },
@@ -205,7 +205,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		{ "ToolTip", "What kind of zone this is" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType = { UE4CodeGen_Private::EPropertyClass::Class, "mZoneType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGMapArea, mZoneType), Z_Construct_UClass_UFGMapAreaZoneDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType = { "mZoneType", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapArea, mZoneType), Z_Construct_UClass_UFGMapAreaZoneDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "MapArea" },
@@ -213,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		{ "ToolTip", "This is the name we at CSS gave this area" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName = { UE4CodeGen_Private::EPropertyClass::Text, "mDisplayName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGMapArea, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName = { "mDisplayName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapArea, mDisplayName), METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::NewProp_mDisplayName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMapArea_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMapArea_Statics::NewProp_mUserSetDisplayName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMapArea_Statics::NewProp_mZoneType,
@@ -224,13 +224,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMapArea_Statics::ClassParams = {
 		&UFGMapArea::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMapArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMapArea_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMapArea_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMapArea_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMapArea()
@@ -242,7 +246,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMapArea() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapArea, 3641629489);
+	IMPLEMENT_CLASS(UFGMapArea, 4166395127);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMapArea>()
+	{
+		return UFGMapArea::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapArea(Z_Construct_UClass_UFGMapArea, &UFGMapArea::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapArea"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapArea);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

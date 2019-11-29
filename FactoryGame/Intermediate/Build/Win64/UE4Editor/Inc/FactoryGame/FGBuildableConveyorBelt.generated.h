@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -84,6 +84,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ConveyorBeltValid>();
+
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_42_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_42_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_42_INCLASS_NO_PURE_DECLS \
@@ -152,6 +154,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ConveyorBeltFullInventory>();
+
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_57_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_57_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_57_INCLASS_NO_PURE_DECLS \
@@ -219,6 +223,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ConveyorBeltEmpty>();
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h_69_RPC_WRAPPERS \
  \
@@ -362,6 +368,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableConveyorBelt>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBelt_h

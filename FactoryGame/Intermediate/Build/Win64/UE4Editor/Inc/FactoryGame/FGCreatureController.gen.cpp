@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,8 +60,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::NewProp_Stimulus = { UE4CodeGen_Private::EPropertyClass::Struct, "Stimulus", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCreatureController_eventOnTargetPerceptionUpdated_Parms, Stimulus), Z_Construct_UScriptStruct_FAIStimulus, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::NewProp_inActor = { UE4CodeGen_Private::EPropertyClass::Object, "inActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCreatureController_eventOnTargetPerceptionUpdated_Parms, inActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::NewProp_Stimulus = { "Stimulus", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCreatureController_eventOnTargetPerceptionUpdated_Parms, Stimulus), Z_Construct_UScriptStruct_FAIStimulus, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::NewProp_inActor = { "inActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCreatureController_eventOnTargetPerceptionUpdated_Parms, inActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::NewProp_Stimulus,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::NewProp_inActor,
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		{ "ModuleRelativePath", "AI/FGCreatureController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, "OnTargetPerceptionUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020400, sizeof(FGCreatureController_eventOnTargetPerceptionUpdated_Parms), Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, nullptr, "OnTargetPerceptionUpdated", sizeof(FGCreatureController_eventOnTargetPerceptionUpdated_Parms), Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 	{
 		((FGCreatureController_eventSetEnabled_Parms*)Obj)->enabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::NewProp_enabled = { UE4CodeGen_Private::EPropertyClass::Bool, "enabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCreatureController_eventSetEnabled_Parms), &Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::NewProp_enabled = { "enabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCreatureController_eventSetEnabled_Parms), &Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::NewProp_enabled_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::NewProp_enabled,
 	};
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		{ "ToolTip", "toggles if the ai should be active" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, "SetEnabled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCreatureController_eventSetEnabled_Parms), Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, nullptr, "SetEnabled", sizeof(FGCreatureController_eventSetEnabled_Parms), Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_SetEnabled_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCreatureController_SetEnabled()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		{ "ToolTip", "Started panicking for some reason" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, "StartPanic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, nullptr, "StartPanic", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_StartPanic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCreatureController_StartPanic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		{ "ToolTip", "now chilling tha grill" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, "StopPanic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreatureController, nullptr, "StopPanic", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreatureController_StopPanic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCreatureController_StopPanic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -187,10 +187,10 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCreatureController_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated, "OnTargetPerceptionUpdated" }, // 1144050428
-		{ &Z_Construct_UFunction_AFGCreatureController_SetEnabled, "SetEnabled" }, // 4106727478
-		{ &Z_Construct_UFunction_AFGCreatureController_StartPanic, "StartPanic" }, // 3743505674
-		{ &Z_Construct_UFunction_AFGCreatureController_StopPanic, "StopPanic" }, // 2015381672
+		{ &Z_Construct_UFunction_AFGCreatureController_OnTargetPerceptionUpdated, "OnTargetPerceptionUpdated" }, // 788324772
+		{ &Z_Construct_UFunction_AFGCreatureController_SetEnabled, "SetEnabled" }, // 4006090076
+		{ &Z_Construct_UFunction_AFGCreatureController_StartPanic, "StartPanic" }, // 3009644547
+		{ &Z_Construct_UFunction_AFGCreatureController_StopPanic, "StopPanic" }, // 3749666725
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureController_Statics::Class_MetaDataParams[] = {
@@ -205,13 +205,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCreatureController_Statics::ClassParams = {
 		&AFGCreatureController::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x009002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCreatureController_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCreatureController_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCreatureController()
@@ -223,7 +227,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureController, 1585699820);
+	IMPLEMENT_CLASS(AFGCreatureController, 1862963299);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCreatureController>()
+	{
+		return AFGCreatureController::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreatureController(Z_Construct_UClass_AFGCreatureController, &AFGCreatureController::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreatureController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreatureController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

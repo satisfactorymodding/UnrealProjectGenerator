@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -62,13 +62,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemyController() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EIgnore>()
+	{
+		return EIgnore_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EIgnore(EIgnore_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EIgnore"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EIgnore_CRC() { return 3871879704U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EIgnore_Hash() { return 843671291U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EIgnore()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EIgnore"), 0, Get_Z_Construct_UEnum_FactoryGame_EIgnore_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EIgnore"), 0, Get_Z_Construct_UEnum_FactoryGame_EIgnore_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -94,14 +98,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemyController() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EIgnore",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EIgnore",
 				"EIgnore",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -113,10 +117,14 @@ class UScriptStruct* FAggroEntry::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FAggroEntry, Z_Construct_UPackage__Script_FactoryGame(), TEXT("AggroEntry"), sizeof(FAggroEntry), Get_Z_Construct_UScriptStruct_FAggroEntry_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FAggroEntry, Z_Construct_UPackage__Script_FactoryGame(), TEXT("AggroEntry"), sizeof(FAggroEntry), Get_Z_Construct_UScriptStruct_FAggroEntry_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FAggroEntry>()
+{
+	return FAggroEntry::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FAggroEntry(FAggroEntry::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("AggroEntry"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
@@ -169,29 +177,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore = { UE4CodeGen_Private::EPropertyClass::Enum, "Ignore", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FAggroEntry, Ignore), Z_Construct_UEnum_FactoryGame_EIgnore, METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore = { "Ignore", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAggroEntry, Ignore), Z_Construct_UEnum_FactoryGame_EIgnore, METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime_MetaData[] = {
 		{ "Category", "Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime = { UE4CodeGen_Private::EPropertyClass::Float, "LastHurtTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FAggroEntry, LastHurtTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime = { "LastHurtTime", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAggroEntry, LastHurtTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_LastHurtTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro_MetaData[] = {
 		{ "Category", "Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro = { UE4CodeGen_Private::EPropertyClass::Float, "Aggro", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FAggroEntry, Aggro), METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro = { "Aggro", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAggroEntry, Aggro), METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Aggro_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget_MetaData[] = {
 		{ "Category", "Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget = { UE4CodeGen_Private::EPropertyClass::Interface, "AggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000004, 1, nullptr, STRUCT_OFFSET(FAggroEntry, AggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget_MetaData)) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget = { "AggroTarget", nullptr, (EPropertyFlags)0x0014000000000004, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAggroEntry, AggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_AggroTarget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAggroEntry_Statics::NewProp_Ignore_Underlying,
@@ -204,19 +212,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		nullptr,
 		&NewStructOps,
 		"AggroEntry",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FAggroEntry),
 		alignof(FAggroEntry),
-		Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FAggroEntry_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FAggroEntry()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("AggroEntry"), sizeof(FAggroEntry), Get_Z_Construct_UScriptStruct_FAggroEntry_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("AggroEntry"), sizeof(FAggroEntry), Get_Z_Construct_UScriptStruct_FAggroEntry_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -226,7 +235,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_CRC() { return 293792404U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_Hash() { return 1359138506U; }
 	static FName NAME_AFGEnemyController_ClearAllAggroTargetsAndUpdate = FName(TEXT("ClearAllAggroTargetsAndUpdate"));
 	void AFGEnemyController::ClearAllAggroTargetsAndUpdate()
 	{
@@ -292,13 +301,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_damage = { UE4CodeGen_Private::EPropertyClass::Float, "damage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventAddToAggroByTarget_Parms, damage), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventAddToAggroByTarget_Parms, damage), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target = { UE4CodeGen_Private::EPropertyClass::Interface, "target", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000082, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventAddToAggroByTarget_Parms, target), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target_MetaData)) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target = { "target", nullptr, (EPropertyFlags)0x0014000000000082, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventAddToAggroByTarget_Parms, target), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_damage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::NewProp_target,
@@ -310,7 +319,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Adds aggro to the specified target\n\n@param aggroTarget - The target to add aggro to.\n@param aggroToAdd - How much aggro do we want to add to the target." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "AddToAggroByTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGEnemyController_eventAddToAggroByTarget_Parms), Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "AddToAggroByTarget", sizeof(FGEnemyController_eventAddToAggroByTarget_Parms), Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -333,7 +342,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::NewProp_aggroTarget = { UE4CodeGen_Private::EPropertyClass::Interface, "aggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventAggroTargetAdded_Parms, aggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::NewProp_aggroTarget = { "aggroTarget", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventAggroTargetAdded_Parms, aggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::NewProp_aggroTarget,
 	};
@@ -343,7 +352,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Called whenever a new aggro target is added" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "AggroTargetAdded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGEnemyController_eventAggroTargetAdded_Parms), Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "AggroTargetAdded", sizeof(FGEnemyController_eventAggroTargetAdded_Parms), Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -366,7 +375,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::NewProp_aggroTarget = { UE4CodeGen_Private::EPropertyClass::Interface, "aggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventAggroTargetRemoved_Parms, aggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::NewProp_aggroTarget = { "aggroTarget", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventAggroTargetRemoved_Parms, aggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::NewProp_aggroTarget,
 	};
@@ -375,7 +384,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "AggroTargetRemoved", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGEnemyController_eventAggroTargetRemoved_Parms), Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "AggroTargetRemoved", sizeof(FGEnemyController_eventAggroTargetRemoved_Parms), Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -405,8 +414,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	{
 		((FGEnemyController_eventCanSeeActor_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEnemyController_eventCanSeeActor_Parms), &Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_target = { UE4CodeGen_Private::EPropertyClass::Object, "target", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventCanSeeActor_Parms, target), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEnemyController_eventCanSeeActor_Parms), &Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_target = { "target", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventCanSeeActor_Parms, target), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::NewProp_target,
@@ -418,7 +427,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Checks to see if we see an actor or not.\n\n@param target - the actor we want to trace against" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "CanSeeActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGEnemyController_eventCanSeeActor_Parms), Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "CanSeeActor", sizeof(FGEnemyController_eventCanSeeActor_Parms), Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_CanSeeActor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_CanSeeActor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -441,7 +450,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "ClearAllAggroTargetsAndUpdate", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "ClearAllAggroTargetsAndUpdate", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -465,7 +474,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Finds an appropriate target from the list of aggro targets that exist" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "FindAndAssignTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "FindAndAssignTarget", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -489,7 +498,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Gathers all aggro targets into the current list. Note, this doesn't clear the current aggro list" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GatherAggroTargets", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GatherAggroTargets", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -512,7 +521,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetAggroThreshold_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetAggroThreshold_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::NewProp_ReturnValue,
 	};
@@ -522,7 +531,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "aggro thresholds for setting a target and releasing a target may be different" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetAggroThreshold", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGEnemyController_eventGetAggroThreshold_Parms), Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetAggroThreshold", sizeof(FGEnemyController_eventGetAggroThreshold_Parms), Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -545,7 +554,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetAttackPatternIndex_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetAttackPatternIndex_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::NewProp_ReturnValue,
 	};
@@ -556,7 +565,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Returns index of current pattern" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetAttackPatternIndex", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGEnemyController_eventGetAttackPatternIndex_Parms), Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetAttackPatternIndex", sizeof(FGEnemyController_eventGetAttackPatternIndex_Parms), Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -579,7 +588,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetCurrentAttackFromPattern_Parms, ReturnValue), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetCurrentAttackFromPattern_Parms, ReturnValue), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::NewProp_ReturnValue,
 	};
@@ -590,7 +599,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Returns the attack class found in the attack pattern" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetCurrentAttackFromPattern", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGEnemyController_eventGetCurrentAttackFromPattern_Parms), Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetCurrentAttackFromPattern", sizeof(FGEnemyController_eventGetCurrentAttackFromPattern_Parms), Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -613,7 +622,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Interface, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetMostDesirableAggroTarget_Parms, ReturnValue), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetMostDesirableAggroTarget_Parms, ReturnValue), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::NewProp_ReturnValue,
 	};
@@ -624,7 +633,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Returns the aggro target that currently has the most aggro" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetMostDesirableAggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGEnemyController_eventGetMostDesirableAggroTarget_Parms), Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetMostDesirableAggroTarget", sizeof(FGEnemyController_eventGetMostDesirableAggroTarget_Parms), Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -649,8 +658,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesire_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::NewProp_aggroTarget = { UE4CodeGen_Private::EPropertyClass::Interface, "aggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesire_Parms, aggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesire_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::NewProp_aggroTarget = { "aggroTarget", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesire_Parms, aggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::NewProp_aggroTarget,
@@ -662,7 +671,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Gets targeting desire from a aggro target" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetTargetingDesire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGEnemyController_eventGetTargetingDesire_Parms), Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetTargetingDesire", sizeof(FGEnemyController_eventGetTargetingDesire_Parms), Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -687,8 +696,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesireFromAggroEntry_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::NewProp_outTarget = { UE4CodeGen_Private::EPropertyClass::Struct, "outTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesireFromAggroEntry_Parms, outTarget), Z_Construct_UScriptStruct_FAggroEntry, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesireFromAggroEntry_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::NewProp_outTarget = { "outTarget", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetTargetingDesireFromAggroEntry_Parms, outTarget), Z_Construct_UScriptStruct_FAggroEntry, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::NewProp_outTarget,
@@ -700,7 +709,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Get targeting desire from an AggroEntry.\n\n@param target - entry to calculate desire for.\n\n@return - the targeting desire." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetTargetingDesireFromAggroEntry", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGEnemyController_eventGetTargetingDesireFromAggroEntry_Parms), Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetTargetingDesireFromAggroEntry", sizeof(FGEnemyController_eventGetTargetingDesireFromAggroEntry_Parms), Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -723,7 +732,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventGetTargetLastValidLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventGetTargetLastValidLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::NewProp_ReturnValue,
 	};
@@ -734,7 +743,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Returns the last valid location for target" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "GetTargetLastValidLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14820401, sizeof(FGEnemyController_eventGetTargetLastValidLocation_Parms), Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "GetTargetLastValidLocation", sizeof(FGEnemyController_eventGetTargetLastValidLocation_Parms), Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -767,13 +776,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	{
 		((FGEnemyController_eventIsOnIgnoreList_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEnemyController_eventIsOnIgnoreList_Parms), &Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEnemyController_eventIsOnIgnoreList_Parms), &Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface = { UE4CodeGen_Private::EPropertyClass::Interface, "aggroTargetInterface", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000082, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventIsOnIgnoreList_Parms, aggroTargetInterface), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface_MetaData)) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface = { "aggroTargetInterface", nullptr, (EPropertyFlags)0x0014000000000082, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventIsOnIgnoreList_Parms, aggroTargetInterface), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::NewProp_aggroTargetInterface,
@@ -785,7 +794,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Called when gathering aggro targets and cleaning up invalid aggro targets.\nUsed to filter out ignored aggro targets.\n\n@return - If we should ignore this target altogether." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "IsOnIgnoreList", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEnemyController_eventIsOnIgnoreList_Parms), Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "IsOnIgnoreList", sizeof(FGEnemyController_eventIsOnIgnoreList_Parms), Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -804,7 +813,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::NewProp_lostActor = { UE4CodeGen_Private::EPropertyClass::Object, "lostActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventOnAggroTargetLost_Parms, lostActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::NewProp_lostActor = { "lostActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventOnAggroTargetLost_Parms, lostActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::NewProp_lostActor,
 	};
@@ -815,7 +824,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Called when we lose an aggro target and have no other target set" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "OnAggroTargetLost", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, sizeof(FGEnemyController_eventOnAggroTargetLost_Parms), Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "OnAggroTargetLost", sizeof(FGEnemyController_eventOnAggroTargetLost_Parms), Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -839,7 +848,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Do stuff when we found a new target" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "OnAggroTargetUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "OnAggroTargetUpdated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -873,16 +882,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageCauser = { UE4CodeGen_Private::EPropertyClass::Object, "damageCauser", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_instigatedBy = { UE4CodeGen_Private::EPropertyClass::Object, "instigatedBy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, instigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageCauser = { "damageCauser", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_instigatedBy = { "instigatedBy", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, instigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType = { UE4CodeGen_Private::EPropertyClass::Object, "damageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000082, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType_MetaData)) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageAmount = { UE4CodeGen_Private::EPropertyClass::Float, "damageAmount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damageAmount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damagedActor = { UE4CodeGen_Private::EPropertyClass::Object, "damagedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damagedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType = { "damageType", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageType_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageAmount = { "damageAmount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damageAmount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damagedActor = { "damagedActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventOnPawnTakeDamage_Parms, damagedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_damageCauser,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::NewProp_instigatedBy,
@@ -896,7 +905,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Called when our controlled pawn takes damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "OnPawnTakeDamage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, sizeof(FGEnemyController_eventOnPawnTakeDamage_Parms), Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "OnPawnTakeDamage", sizeof(FGEnemyController_eventOnPawnTakeDamage_Parms), Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -920,7 +929,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Sweeps through all aggro entries and removes the invalid ones" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "RemoveInvalidAggroTargets", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "RemoveInvalidAggroTargets", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -944,7 +953,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Resets the variable mLastValidLocation to an invalid location" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "ResetLastValidTargetLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "ResetLastValidTargetLocation", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -967,7 +976,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::NewProp_newAggroTargetInterface = { UE4CodeGen_Private::EPropertyClass::Interface, "newAggroTargetInterface", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventSetCurrentAggroTarget_Parms, newAggroTargetInterface), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::NewProp_newAggroTargetInterface = { "newAggroTargetInterface", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventSetCurrentAggroTarget_Parms, newAggroTargetInterface), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::NewProp_newAggroTargetInterface,
 	};
@@ -978,7 +987,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Assigns a new aggrotarget" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "SetCurrentAggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGEnemyController_eventSetCurrentAggroTarget_Parms), Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "SetCurrentAggroTarget", sizeof(FGEnemyController_eventSetCurrentAggroTarget_Parms), Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1011,13 +1020,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	{
 		((FGEnemyController_eventShouldAddAggroTarget_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEnemyController_eventShouldAddAggroTarget_Parms), &Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEnemyController_eventShouldAddAggroTarget_Parms), &Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface = { UE4CodeGen_Private::EPropertyClass::Interface, "aggroTargetInterface", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000082, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventShouldAddAggroTarget_Parms, aggroTargetInterface), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface_MetaData)) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface = { "aggroTargetInterface", nullptr, (EPropertyFlags)0x0014000000000082, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventShouldAddAggroTarget_Parms, aggroTargetInterface), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::NewProp_aggroTargetInterface,
@@ -1029,7 +1038,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Called when gathering aggro targets and cleaning up invalid aggro targets.\nUse this if you want to filter away aggro targets.\n\n@return - If we should aggro against this target." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "ShouldAddAggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGEnemyController_eventShouldAddAggroTarget_Parms), Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "ShouldAddAggroTarget", sizeof(FGEnemyController_eventShouldAddAggroTarget_Parms), Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1052,7 +1061,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Updates our current aggro, and then makes sure we assign a new target" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "UpdateAggroAndFindAndAssignTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "UpdateAggroAndFindAndAssignTarget", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1082,8 +1091,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	{
 		((FGEnemyController_eventUpdateAggroTargets_Parms*)Obj)->fullCheck = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_fullCheck = { UE4CodeGen_Private::EPropertyClass::Bool, "fullCheck", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGEnemyController_eventUpdateAggroTargets_Parms), &Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_fullCheck_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_dt = { UE4CodeGen_Private::EPropertyClass::Float, "dt", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEnemyController_eventUpdateAggroTargets_Parms, dt), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_fullCheck = { "fullCheck", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGEnemyController_eventUpdateAggroTargets_Parms), &Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_fullCheck_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_dt = { "dt", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEnemyController_eventUpdateAggroTargets_Parms, dt), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_fullCheck,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::NewProp_dt,
@@ -1096,7 +1105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Updates the list of all aggrotargets.\n\n@param deltaTime - time since last update.\n@param full - if a full update should be done. (expensive)\n                                      Extended checks every target if it should still be in the aggro list." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "UpdateAggroTargets", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGEnemyController_eventUpdateAggroTargets_Parms), Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "UpdateAggroTargets", sizeof(FGEnemyController_eventUpdateAggroTargets_Parms), Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1120,7 +1129,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Updates the attack from attackpattern to the next in line ( will loop )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, "UpdateAttackPattern", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEnemyController, nullptr, "UpdateAttackPattern", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1226,31 +1235,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEnemyController_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget, "AddToAggroByTarget" }, // 3421867332
-		{ &Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded, "AggroTargetAdded" }, // 3101132454
-		{ &Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved, "AggroTargetRemoved" }, // 3206723556
-		{ &Z_Construct_UFunction_AFGEnemyController_CanSeeActor, "CanSeeActor" }, // 3579341617
-		{ &Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate, "ClearAllAggroTargetsAndUpdate" }, // 1494928140
-		{ &Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget, "FindAndAssignTarget" }, // 413324910
-		{ &Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets, "GatherAggroTargets" }, // 449663656
-		{ &Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold, "GetAggroThreshold" }, // 798420661
-		{ &Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex, "GetAttackPatternIndex" }, // 1627567392
-		{ &Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern, "GetCurrentAttackFromPattern" }, // 1959774749
-		{ &Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget, "GetMostDesirableAggroTarget" }, // 942889683
-		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire, "GetTargetingDesire" }, // 3297026102
-		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry, "GetTargetingDesireFromAggroEntry" }, // 3710580462
-		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation, "GetTargetLastValidLocation" }, // 1802953615
-		{ &Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList, "IsOnIgnoreList" }, // 3569916670
-		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost, "OnAggroTargetLost" }, // 3240876332
-		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated, "OnAggroTargetUpdated" }, // 1195976520
-		{ &Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage, "OnPawnTakeDamage" }, // 1885123504
-		{ &Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets, "RemoveInvalidAggroTargets" }, // 2312544754
-		{ &Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation, "ResetLastValidTargetLocation" }, // 3590303944
-		{ &Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget, "SetCurrentAggroTarget" }, // 745275761
-		{ &Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget, "ShouldAddAggroTarget" }, // 2892662436
-		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget, "UpdateAggroAndFindAndAssignTarget" }, // 497342037
-		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets, "UpdateAggroTargets" }, // 1169209432
-		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern, "UpdateAttackPattern" }, // 1338791652
+		{ &Z_Construct_UFunction_AFGEnemyController_AddToAggroByTarget, "AddToAggroByTarget" }, // 4172084794
+		{ &Z_Construct_UFunction_AFGEnemyController_AggroTargetAdded, "AggroTargetAdded" }, // 790306080
+		{ &Z_Construct_UFunction_AFGEnemyController_AggroTargetRemoved, "AggroTargetRemoved" }, // 3213505266
+		{ &Z_Construct_UFunction_AFGEnemyController_CanSeeActor, "CanSeeActor" }, // 1148233446
+		{ &Z_Construct_UFunction_AFGEnemyController_ClearAllAggroTargetsAndUpdate, "ClearAllAggroTargetsAndUpdate" }, // 2099986033
+		{ &Z_Construct_UFunction_AFGEnemyController_FindAndAssignTarget, "FindAndAssignTarget" }, // 3367508450
+		{ &Z_Construct_UFunction_AFGEnemyController_GatherAggroTargets, "GatherAggroTargets" }, // 540898192
+		{ &Z_Construct_UFunction_AFGEnemyController_GetAggroThreshold, "GetAggroThreshold" }, // 4065368055
+		{ &Z_Construct_UFunction_AFGEnemyController_GetAttackPatternIndex, "GetAttackPatternIndex" }, // 2407218069
+		{ &Z_Construct_UFunction_AFGEnemyController_GetCurrentAttackFromPattern, "GetCurrentAttackFromPattern" }, // 52228404
+		{ &Z_Construct_UFunction_AFGEnemyController_GetMostDesirableAggroTarget, "GetMostDesirableAggroTarget" }, // 2882974533
+		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesire, "GetTargetingDesire" }, // 2919344749
+		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetingDesireFromAggroEntry, "GetTargetingDesireFromAggroEntry" }, // 3698848407
+		{ &Z_Construct_UFunction_AFGEnemyController_GetTargetLastValidLocation, "GetTargetLastValidLocation" }, // 3711121491
+		{ &Z_Construct_UFunction_AFGEnemyController_IsOnIgnoreList, "IsOnIgnoreList" }, // 551401476
+		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetLost, "OnAggroTargetLost" }, // 802462424
+		{ &Z_Construct_UFunction_AFGEnemyController_OnAggroTargetUpdated, "OnAggroTargetUpdated" }, // 248354923
+		{ &Z_Construct_UFunction_AFGEnemyController_OnPawnTakeDamage, "OnPawnTakeDamage" }, // 4083633266
+		{ &Z_Construct_UFunction_AFGEnemyController_RemoveInvalidAggroTargets, "RemoveInvalidAggroTargets" }, // 2015195259
+		{ &Z_Construct_UFunction_AFGEnemyController_ResetLastValidTargetLocation, "ResetLastValidTargetLocation" }, // 2464725179
+		{ &Z_Construct_UFunction_AFGEnemyController_SetCurrentAggroTarget, "SetCurrentAggroTarget" }, // 1106182890
+		{ &Z_Construct_UFunction_AFGEnemyController_ShouldAddAggroTarget, "ShouldAddAggroTarget" }, // 2466589216
+		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroAndFindAndAssignTarget, "UpdateAggroAndFindAndAssignTarget" }, // 4219297380
+		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAggroTargets, "UpdateAggroTargets" }, // 4293311386
+		{ &Z_Construct_UFunction_AFGEnemyController_UpdateAttackPattern, "UpdateAttackPattern" }, // 2184401221
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::Class_MetaDataParams[] = {
@@ -1267,7 +1276,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Time we should ignore targets when panicking" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime = { UE4CodeGen_Private::EPropertyClass::Float, "mPanicIgnoreTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mPanicIgnoreTime), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime = { "mPanicIgnoreTime", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mPanicIgnoreTime), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1276,8 +1285,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "List of aggro target classes that we should not aggro against" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses = { UE4CodeGen_Private::EPropertyClass::Array, "mIgnoredAggroTargetClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mIgnoredAggroTargetClasses), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_MetaData)) };
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_Inner = { UE4CodeGen_Private::EPropertyClass::SoftClass, "mIgnoredAggroTargetClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses = { "mIgnoredAggroTargetClasses", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mIgnoredAggroTargetClasses), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses_Inner = { "mIgnoredAggroTargetClasses", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_MetaData[] = {
 		{ "Category", "AI" },
@@ -1285,8 +1294,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Array with attacks that determine order of attacks" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern = { UE4CodeGen_Private::EPropertyClass::Array, "mAttackPattern", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAttackPattern), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAttackPattern", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern = { "mAttackPattern", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAttackPattern), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAttackPattern_Inner = { "mAttackPattern", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1294,7 +1303,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "This is the aggro target that at the last check was the most desirable.\nNOTE: Only set this variable through SetCurrentAggroTarget()." },
 	};
 #endif
-	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget = { UE4CodeGen_Private::EPropertyClass::Interface, "mCurrentAggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000014, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mCurrentAggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget_MetaData)) };
+	const UE4CodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget = { "mCurrentAggroTarget", nullptr, (EPropertyFlags)0x0014000000000014, UE4CodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mCurrentAggroTarget), Z_Construct_UClass_UFGAggroTargetInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mCurrentAggroTarget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1302,7 +1311,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "if aggro goes below this value the target is invalid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold = { UE4CodeGen_Private::EPropertyClass::Float, "mLoseAggroThreshold", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mLoseAggroThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold = { "mLoseAggroThreshold", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mLoseAggroThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mLoseAggroThreshold_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1310,7 +1319,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Minimum aggro the enemy needs to add a target to its aggro list" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold = { UE4CodeGen_Private::EPropertyClass::Float, "mGainAggroThreshold", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mGainAggroThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold = { "mGainAggroThreshold", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mGainAggroThreshold), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mGainAggroThreshold_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1318,7 +1327,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Curve for determining the distance aggro added" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve = { UE4CodeGen_Private::EPropertyClass::Object, "mAggroDistanceCurve", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAggroDistanceCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve = { "mAggroDistanceCurve", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAggroDistanceCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceCurve_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1326,7 +1335,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "We want static actors to be ignored a long time" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown = { UE4CodeGen_Private::EPropertyClass::Float, "mStaticIgnoreCooldown", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mStaticIgnoreCooldown), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown = { "mStaticIgnoreCooldown", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mStaticIgnoreCooldown), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mStaticIgnoreCooldown_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1334,7 +1343,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "How long should the targets be on the ignore list" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown = { UE4CodeGen_Private::EPropertyClass::Float, "mDefaultIgnoreCooldown", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mDefaultIgnoreCooldown), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown = { "mDefaultIgnoreCooldown", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mDefaultIgnoreCooldown), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mDefaultIgnoreCooldown_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1342,7 +1351,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "We only switch mCurrentTarget if the new targets desirablility is this factor larger than the old one." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor = { UE4CodeGen_Private::EPropertyClass::Float, "mTargetSwitchFactor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mTargetSwitchFactor), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor = { "mTargetSwitchFactor", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mTargetSwitchFactor), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTargetSwitchFactor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1350,8 +1359,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "All actors that this actor can aggro to sorted by desirability in DESC ( index 0 is most desirable)" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries = { UE4CodeGen_Private::EPropertyClass::Array, "mSortedAggroEntries", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mSortedAggroEntries), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSortedAggroEntries", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FAggroEntry, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries = { "mSortedAggroEntries", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mSortedAggroEntries), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mSortedAggroEntries_Inner = { "mSortedAggroEntries", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FAggroEntry, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1359,22 +1368,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "All actors that this actor can aggro to" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries = { UE4CodeGen_Private::EPropertyClass::Array, "mAggroEntries", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAggroEntries), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mAggroEntries", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FAggroEntry, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries = { "mAggroEntries", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAggroEntries), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroEntries_Inner = { "mAggroEntries", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FAggroEntry, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight_MetaData[] = {
 		{ "Category", "Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight = { UE4CodeGen_Private::EPropertyClass::Float, "mAggroDistanceWeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAggroDistanceWeight), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight = { "mAggroDistanceWeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAggroDistanceWeight), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroDistanceWeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight_MetaData[] = {
 		{ "Category", "Aggro" },
 		{ "ModuleRelativePath", "AI/FGEnemyController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight = { UE4CodeGen_Private::EPropertyClass::Float, "mAggroAggroWeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAggroAggroWeight), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight = { "mAggroAggroWeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAggroAggroWeight), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroAggroWeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1382,7 +1391,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Aggro weigths" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight = { UE4CodeGen_Private::EPropertyClass::Float, "mAggroBaseWeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAggroBaseWeight), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight = { "mAggroBaseWeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAggroBaseWeight), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroBaseWeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1390,7 +1399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "The highest aggro for all aggro targets" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax = { UE4CodeGen_Private::EPropertyClass::Float, "mAggroTargetsAggroMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mAggroTargetsAggroMax), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax = { "mAggroTargetsAggroMax", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mAggroTargetsAggroMax), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mAggroTargetsAggroMax_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1398,7 +1407,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "How long time should it take to lose all aggro from damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro = { UE4CodeGen_Private::EPropertyClass::Float, "mTimeToLoseAllAggro", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mTimeToLoseAllAggro), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro = { "mTimeToLoseAllAggro", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mTimeToLoseAllAggro), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mTimeToLoseAllAggro_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval_MetaData[] = {
 		{ "Category", "Aggro" },
@@ -1406,7 +1415,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		{ "ToolTip", "Specifies how often we need to update all aggro" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mUpdateAggroInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGEnemyController, mUpdateAggroInterval), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval = { "mUpdateAggroInterval", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEnemyController, mUpdateAggroInterval), METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mUpdateAggroInterval_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGEnemyController_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mPanicIgnoreTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEnemyController_Statics::NewProp_mIgnoredAggroTargetClasses,
@@ -1436,13 +1445,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGEnemyController_Statics::ClassParams = {
 		&AFGEnemyController::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGEnemyController_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGEnemyController_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::PropPointers),
+		0,
+		0x009002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGEnemyController_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGEnemyController_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGEnemyController()
@@ -1454,7 +1467,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEnemyController, 2350314208);
+	IMPLEMENT_CLASS(AFGEnemyController, 3718746471);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGEnemyController>()
+	{
+		return AFGEnemyController::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEnemyController(Z_Construct_UClass_AFGEnemyController, &AFGEnemyController::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEnemyController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEnemyController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

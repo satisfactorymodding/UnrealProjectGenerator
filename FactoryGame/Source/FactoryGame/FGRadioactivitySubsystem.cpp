@@ -16,11 +16,18 @@ void AFGRadioactivitySubsystem::SetEmitter( UObject* owner,
 					 TSubclassOf< UFGItemDescriptor > itemClass,
 					 int32 itemAmount,
 					 int32 UID ){ }
+void AFGRadioactivitySubsystem::SetEmitter_Threadsafe( UObject* owner,
+								USceneComponent* attachRoot,
+								const FVector& attachLocation,
+								TSubclassOf< UFGItemDescriptor > itemClass,
+								int32 itemAmount,
+								int32 UID ){ }
 void AFGRadioactivitySubsystem::SetEmitter( UObject* owner,
 					 USceneComponent* attachRoot,
 					 const FVector& attachLocation,
 					 float decay,
 					 int32 UID ){ }
+void AFGRadioactivitySubsystem::RemoveEmitter_Threadsafe( UObject* owner, int32 UID){ }
 void AFGRadioactivitySubsystem::RemoveEmitter( UObject* owner, int32 UID){ }
 void AFGRadioactivitySubsystem::ResetEmitters( UObject* owner){ }
 void AFGRadioactivitySubsystem::RemoveEmitters( UObject* owner){ }

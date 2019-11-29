@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -90,13 +90,17 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ECantJoinReason>()
+	{
+		return ECantJoinReason_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECantJoinReason(ECantJoinReason_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECantJoinReason"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECantJoinReason_CRC() { return 4090190233U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECantJoinReason_Hash() { return 4235873777U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECantJoinReason()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ECantJoinReason"), 0, Get_Z_Construct_UEnum_FactoryGame_ECantJoinReason_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ECantJoinReason"), 0, Get_Z_Construct_UEnum_FactoryGame_ECantJoinReason_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -126,14 +130,14 @@ void EmptyLinkFunctionForGeneratedCodeFGNetworkLibrary() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"ECantJoinReason",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::Regular,
+				"ECantJoinReason",
 				"ECantJoinReason",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -145,10 +149,14 @@ class UScriptStruct* FUserFeedbackFrontEndData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("UserFeedbackFrontEndData"), sizeof(FUserFeedbackFrontEndData), Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("UserFeedbackFrontEndData"), sizeof(FUserFeedbackFrontEndData), Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FUserFeedbackFrontEndData>()
+{
+	return FUserFeedbackFrontEndData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FUserFeedbackFrontEndData(FUserFeedbackFrontEndData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("UserFeedbackFrontEndData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontEndData
@@ -197,14 +205,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body = { UE4CodeGen_Private::EPropertyClass::Str, "body", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FUserFeedbackFrontEndData, body), METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body = { "body", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUserFeedbackFrontEndData, body), METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData[] = {
 		{ "Category", "User Feedback" },
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback = { UE4CodeGen_Private::EPropertyClass::Str, "typeOfFeedback", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FUserFeedbackFrontEndData, typeOfFeedback), METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback = { "typeOfFeedback", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUserFeedbackFrontEndData, typeOfFeedback), METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_MetaData[] = {
 		{ "Category", "User Feedback" },
@@ -215,7 +223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 	{
 		((FUserFeedbackFrontEndData*)Obj)->isSatisfactory = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory = { UE4CodeGen_Private::EPropertyClass::Bool, "isSatisfactory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FUserFeedbackFrontEndData), &Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory = { "isSatisfactory", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FUserFeedbackFrontEndData), &Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_isSatisfactory_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_body,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::NewProp_typeOfFeedback,
@@ -226,19 +234,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		nullptr,
 		&NewStructOps,
 		"UserFeedbackFrontEndData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FUserFeedbackFrontEndData),
 		alignof(FUserFeedbackFrontEndData),
-		Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FUserFeedbackFrontEndData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("UserFeedbackFrontEndData"), sizeof(FUserFeedbackFrontEndData), Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("UserFeedbackFrontEndData"), sizeof(FUserFeedbackFrontEndData), Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -248,16 +257,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC() { return 340382062U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash() { return 3672434563U; }
 class UScriptStruct* FOnlinePresence::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FOnlinePresence, Z_Construct_UPackage__Script_FactoryGame(), TEXT("OnlinePresence"), sizeof(FOnlinePresence), Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FOnlinePresence, Z_Construct_UPackage__Script_FactoryGame(), TEXT("OnlinePresence"), sizeof(FOnlinePresence), Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FOnlinePresence>()
+{
+	return FOnlinePresence::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FOnlinePresence(FOnlinePresence::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("OnlinePresence"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
@@ -290,19 +303,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		nullptr,
 		&NewStructOps,
 		"OnlinePresence",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FOnlinePresence),
 		alignof(FOnlinePresence),
-		nullptr, 0,
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FOnlinePresence_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FOnlinePresence_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FOnlinePresence()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("OnlinePresence"), sizeof(FOnlinePresence), Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("OnlinePresence"), sizeof(FOnlinePresence), Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -312,7 +326,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC() { return 615963923U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash() { return 195193203U; }
 	void UFGPresenceLibrary::StaticRegisterNativesUFGPresenceLibrary()
 	{
 		UClass* Class = UFGPresenceLibrary::StaticClass();
@@ -348,14 +362,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceFromNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceFromNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId = { UE4CodeGen_Private::EPropertyClass::Struct, "netId", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceFromNetId_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceFromNetId_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId = { "netId", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceFromNetId_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceFromNetId_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::NewProp_netId,
@@ -369,7 +383,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the presence of a friend" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "GetPresenceFromNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventGetPresenceFromNetId_Parms), Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "GetPresenceFromNetId", sizeof(FGPresenceLibrary_eventGetPresenceFromNetId_Parms), Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -397,13 +411,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceString_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceString_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence = { UE4CodeGen_Private::EPropertyClass::Struct, "presence", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceString_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence = { "presence", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetPresenceString_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::NewProp_presence,
@@ -416,7 +430,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the presence string" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "GetPresenceString", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventGetPresenceString_Parms), Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "GetPresenceString", sizeof(FGPresenceLibrary_eventGetPresenceString_Parms), Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -444,13 +458,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetSessionFromPresence_Parms, ReturnValue), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetSessionFromPresence_Parms, ReturnValue), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence = { UE4CodeGen_Private::EPropertyClass::Struct, "presence", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventGetSessionFromPresence_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence = { "presence", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventGetSessionFromPresence_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::NewProp_presence,
@@ -462,7 +476,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the a session for the players presence" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "GetSessionFromPresence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventGetSessionFromPresence_Parms), Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "GetSessionFromPresence", sizeof(FGPresenceLibrary_eventGetSessionFromPresence_Parms), Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -495,13 +509,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGPresenceLibrary_eventIsOnline_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPresenceLibrary_eventIsOnline_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPresenceLibrary_eventIsOnline_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence = { UE4CodeGen_Private::EPropertyClass::Struct, "presence", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventIsOnline_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence = { "presence", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventIsOnline_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::NewProp_presence,
@@ -514,7 +528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Return true if the presence is online, false if the presence isn't valid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "IsOnline", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventIsOnline_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "IsOnline", sizeof(FGPresenceLibrary_eventIsOnline_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsOnline_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_IsOnline()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -547,13 +561,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGPresenceLibrary_eventIsPlayingOtherGame_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPresenceLibrary_eventIsPlayingOtherGame_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPresenceLibrary_eventIsPlayingOtherGame_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence = { UE4CodeGen_Private::EPropertyClass::Struct, "presence", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventIsPlayingOtherGame_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence = { "presence", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventIsPlayingOtherGame_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::NewProp_presence,
@@ -565,7 +579,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "@return true if the user is playing another game" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "IsPlayingOtherGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventIsPlayingOtherGame_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "IsPlayingOtherGame", sizeof(FGPresenceLibrary_eventIsPlayingOtherGame_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -598,13 +612,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGPresenceLibrary_eventIsPlayingThisGame_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPresenceLibrary_eventIsPlayingThisGame_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPresenceLibrary_eventIsPlayingThisGame_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence = { UE4CodeGen_Private::EPropertyClass::Struct, "presence", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventIsPlayingThisGame_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence = { "presence", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventIsPlayingThisGame_Parms, presence), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::NewProp_presence,
@@ -616,7 +630,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "@return true if the user is playing satisfactory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "IsPlayingThisGame", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventIsPlayingThisGame_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "IsPlayingThisGame", sizeof(FGPresenceLibrary_eventIsPlayingThisGame_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -649,13 +663,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGPresenceLibrary_eventIsValid_OnlinePresence_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPresenceLibrary_eventIsValid_OnlinePresence_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPresenceLibrary_eventIsValid_OnlinePresence_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a = { UE4CodeGen_Private::EPropertyClass::Struct, "a", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventIsValid_OnlinePresence_Parms, a), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a = { "a", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventIsValid_OnlinePresence_Parms, a), Z_Construct_UScriptStruct_FOnlinePresence, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::NewProp_a,
@@ -670,7 +684,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Returns true if a OnlinePresence is valid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "IsValid_OnlinePresence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventIsValid_OnlinePresence_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "IsValid_OnlinePresence", sizeof(FGPresenceLibrary_eventIsValid_OnlinePresence_Parms), Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -705,14 +719,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGPresenceLibrary_eventNetIdHasValidPresence_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPresenceLibrary_eventNetIdHasValidPresence_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPresenceLibrary_eventNetIdHasValidPresence_Parms), &Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId = { UE4CodeGen_Private::EPropertyClass::Struct, "netId", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventNetIdHasValidPresence_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGPresenceLibrary_eventNetIdHasValidPresence_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId = { "netId", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventNetIdHasValidPresence_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPresenceLibrary_eventNetIdHasValidPresence_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::NewProp_netId,
@@ -726,7 +740,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the presence of a friend" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, "NetIdHasValidPresence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPresenceLibrary_eventNetIdHasValidPresence_Parms), Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPresenceLibrary, nullptr, "NetIdHasValidPresence", sizeof(FGPresenceLibrary_eventNetIdHasValidPresence_Parms), Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -755,14 +769,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPresenceLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId, "GetPresenceFromNetId" }, // 4200963966
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString, "GetPresenceString" }, // 135490454
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence, "GetSessionFromPresence" }, // 2893124784
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsOnline, "IsOnline" }, // 1768570401
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame, "IsPlayingOtherGame" }, // 3005771407
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame, "IsPlayingThisGame" }, // 1284233724
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence, "IsValid_OnlinePresence" }, // 1104344879
-		{ &Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence, "NetIdHasValidPresence" }, // 1233788466
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceFromNetId, "GetPresenceFromNetId" }, // 1047496072
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetPresenceString, "GetPresenceString" }, // 3932307219
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_GetSessionFromPresence, "GetSessionFromPresence" }, // 897803081
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsOnline, "IsOnline" }, // 1393746224
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingOtherGame, "IsPlayingOtherGame" }, // 3655224186
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsPlayingThisGame, "IsPlayingThisGame" }, // 146275144
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_IsValid_OnlinePresence, "IsValid_OnlinePresence" }, // 689918543
+		{ &Z_Construct_UFunction_UFGPresenceLibrary_NetIdHasValidPresence, "NetIdHasValidPresence" }, // 493687076
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPresenceLibrary_Statics::Class_MetaDataParams[] = {
@@ -776,13 +790,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPresenceLibrary_Statics::ClassParams = {
 		&UFGPresenceLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPresenceLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPresenceLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPresenceLibrary()
@@ -794,7 +812,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPresenceLibrary, 888300271);
+	IMPLEMENT_CLASS(UFGPresenceLibrary, 1587342158);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGPresenceLibrary>()
+	{
+		return UFGPresenceLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPresenceLibrary(Z_Construct_UClass_UFGPresenceLibrary, &UFGPresenceLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPresenceLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPresenceLibrary);
 	void UFGFriendsLibrary::StaticRegisterNativesUFGFriendsLibrary()
@@ -839,19 +861,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B = { UE4CodeGen_Private::EPropertyClass::Struct, "B", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms, B), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B = { "B", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms, B), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A = { UE4CodeGen_Private::EPropertyClass::Struct, "A", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms, A), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A = { "A", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms, A), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_A_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::NewProp_B,
@@ -867,7 +889,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Test if the input friends are equal\n@param A - friend\n@param B - friend to compare with\n@returns True if the friend are the same, false otherwise" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "EqualEqual_FriendFriend", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms), Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "EqualEqual_FriendFriend", sizeof(FGFriendsLibrary_eventEqualEqual_FriendFriend_Parms), Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -897,14 +919,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendFromNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendFromNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId = { UE4CodeGen_Private::EPropertyClass::Struct, "netId", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendFromNetId_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_friendOf = { UE4CodeGen_Private::EPropertyClass::Object, "friendOf", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendFromNetId_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId = { "netId", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendFromNetId_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_friendOf = { "friendOf", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendFromNetId_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::NewProp_netId,
@@ -917,7 +939,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get a friend from a net id" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "GetFriendFromNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventGetFriendFromNetId_Parms), Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "GetFriendFromNetId", sizeof(FGFriendsLibrary_eventGetFriendFromNetId_Parms), Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -954,15 +976,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGFriendsLibrary_eventGetFriendName_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFriendsLibrary_eventGetFriendName_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_out_displayName = { UE4CodeGen_Private::EPropertyClass::Str, "out_displayName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendName_Parms, out_displayName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFriendsLibrary_eventGetFriendName_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_out_displayName = { "out_displayName", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendName_Parms, out_displayName), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend = { UE4CodeGen_Private::EPropertyClass::Struct, "onlineFriend", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendName_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_friendOf = { UE4CodeGen_Private::EPropertyClass::Object, "friendOf", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendName_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend = { "onlineFriend", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendName_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_onlineFriend_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_friendOf = { "friendOf", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendName_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::NewProp_out_displayName,
@@ -976,7 +998,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "@return Get the name of the friend" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "GetFriendName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventGetFriendName_Parms), Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "GetFriendName", sizeof(FGFriendsLibrary_eventGetFriendName_Parms), Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1004,13 +1026,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendUniqueNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendUniqueNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend = { UE4CodeGen_Private::EPropertyClass::Struct, "onlineFriend", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendUniqueNetId_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend = { "onlineFriend", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventGetFriendUniqueNetId_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::NewProp_onlineFriend,
@@ -1022,7 +1044,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the session the current friend is in" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "GetFriendUniqueNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventGetFriendUniqueNetId_Parms), Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "GetFriendUniqueNetId", sizeof(FGFriendsLibrary_eventGetFriendUniqueNetId_Parms), Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1052,14 +1074,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Byte, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventIsFriendJoinable_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECantJoinReason, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventIsFriendJoinable_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECantJoinReason, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend = { UE4CodeGen_Private::EPropertyClass::Struct, "onlineFriend", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventIsFriendJoinable_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_friendOf = { UE4CodeGen_Private::EPropertyClass::Object, "friendOf", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventIsFriendJoinable_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend = { "onlineFriend", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventIsFriendJoinable_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_friendOf = { "friendOf", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventIsFriendJoinable_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::NewProp_onlineFriend,
@@ -1072,7 +1094,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Is the friend joinable publicly *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "IsFriendJoinable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventIsFriendJoinable_Parms), Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "IsFriendJoinable", sizeof(FGFriendsLibrary_eventIsFriendJoinable_Parms), Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1105,13 +1127,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGFriendsLibrary_eventIsValid_Friend_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFriendsLibrary_eventIsValid_Friend_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFriendsLibrary_eventIsValid_Friend_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a = { UE4CodeGen_Private::EPropertyClass::Struct, "a", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventIsValid_Friend_Parms, a), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a = { "a", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventIsValid_Friend_Parms, a), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::NewProp_a,
@@ -1126,7 +1148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Returns true if a OnlinePresence is valid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "IsValid_Friend", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventIsValid_Friend_Parms), Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "IsValid_Friend", sizeof(FGFriendsLibrary_eventIsValid_Friend_Parms), Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1161,14 +1183,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGFriendsLibrary_eventIsWaitingForData_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFriendsLibrary_eventIsWaitingForData_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFriendsLibrary_eventIsWaitingForData_Parms), &Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend = { UE4CodeGen_Private::EPropertyClass::Struct, "onlineFriend", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventIsWaitingForData_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_friendOf = { UE4CodeGen_Private::EPropertyClass::Object, "friendOf", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFriendsLibrary_eventIsWaitingForData_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend = { "onlineFriend", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventIsWaitingForData_Parms, onlineFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_friendOf = { "friendOf", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFriendsLibrary_eventIsWaitingForData_Parms, friendOf), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::NewProp_onlineFriend,
@@ -1181,7 +1203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "@return true if the friend is waiting for data, true is bad data is passed in" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, "IsWaitingForData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGFriendsLibrary_eventIsWaitingForData_Parms), Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFriendsLibrary, nullptr, "IsWaitingForData", sizeof(FGFriendsLibrary_eventIsWaitingForData_Parms), Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1210,13 +1232,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFriendsLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend, "EqualEqual_FriendFriend" }, // 3372250072
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId, "GetFriendFromNetId" }, // 1810513374
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName, "GetFriendName" }, // 1357003020
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId, "GetFriendUniqueNetId" }, // 962390821
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable, "IsFriendJoinable" }, // 2854747516
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend, "IsValid_Friend" }, // 2970834265
-		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData, "IsWaitingForData" }, // 1262373257
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_EqualEqual_FriendFriend, "EqualEqual_FriendFriend" }, // 2145593094
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendFromNetId, "GetFriendFromNetId" }, // 1562345132
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendName, "GetFriendName" }, // 3229098459
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_GetFriendUniqueNetId, "GetFriendUniqueNetId" }, // 2600367709
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsFriendJoinable, "IsFriendJoinable" }, // 626435374
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsValid_Friend, "IsValid_Friend" }, // 1204024570
+		{ &Z_Construct_UFunction_UFGFriendsLibrary_IsWaitingForData, "IsWaitingForData" }, // 1034481134
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFriendsLibrary_Statics::Class_MetaDataParams[] = {
@@ -1229,13 +1251,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFriendsLibrary_Statics::ClassParams = {
 		&UFGFriendsLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFriendsLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFriendsLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFriendsLibrary()
@@ -1247,7 +1273,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFriendsLibrary, 1016789361);
+	IMPLEMENT_CLASS(UFGFriendsLibrary, 3922190597);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFriendsLibrary>()
+	{
+		return UFGFriendsLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFriendsLibrary(Z_Construct_UClass_UFGFriendsLibrary, &UFGFriendsLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFriendsLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFriendsLibrary);
 	void UFGSessionLibrary::StaticRegisterNativesUFGSessionLibrary()
@@ -1290,13 +1320,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGSessionLibrary_eventCheckIsCompatibleVersion_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms, session), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms, session), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::NewProp_session,
@@ -1307,7 +1337,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "CheckIsCompatibleVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "CheckIsCompatibleVersion", sizeof(FGSessionLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1335,13 +1365,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetMaxNumberOfPlayers_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetMaxNumberOfPlayers_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetMaxNumberOfPlayers_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetMaxNumberOfPlayers_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::NewProp_session,
@@ -1353,7 +1383,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the max number of players in a session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "GetMaxNumberOfPlayers", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSessionLibrary_eventGetMaxNumberOfPlayers_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "GetMaxNumberOfPlayers", sizeof(FGSessionLibrary_eventGetMaxNumberOfPlayers_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1378,8 +1408,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetMySession_Parms, ReturnValue), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::NewProp_localPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "localPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetMySession_Parms, localPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetMySession_Parms, ReturnValue), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::NewProp_localPlayer = { "localPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetMySession_Parms, localPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::NewProp_localPlayer,
@@ -1391,7 +1421,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the session information about my session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "GetMySession", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGSessionLibrary_eventGetMySession_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "GetMySession", sizeof(FGSessionLibrary_eventGetMySession_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetMySession_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetMySession()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1419,13 +1449,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionSettings_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionSettings_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::NewProp_session,
@@ -1437,7 +1467,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the settings from a session *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "GetSessionSettings", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSessionLibrary_eventGetSessionSettings_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "GetSessionSettings", sizeof(FGSessionLibrary_eventGetSessionSettings_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1465,13 +1495,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Byte, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionVisibility_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESessionVisibility, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionVisibility_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ESessionVisibility, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionVisibility_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventGetSessionVisibility_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::NewProp_session,
@@ -1483,7 +1513,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the settings from a session *" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "GetSessionVisibility", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSessionLibrary_eventGetSessionVisibility_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "GetSessionVisibility", sizeof(FGSessionLibrary_eventGetSessionVisibility_Parms), Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1518,14 +1548,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGSessionLibrary_eventInOnlineSession_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSessionLibrary_eventInOnlineSession_Parms), &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSessionLibrary_eventInOnlineSession_Parms), &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId = { UE4CodeGen_Private::EPropertyClass::Struct, "playerId", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventInOnlineSession_Parms, playerId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventInOnlineSession_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId = { "playerId", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventInOnlineSession_Parms, playerId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventInOnlineSession_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::NewProp_playerId,
@@ -1539,7 +1569,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Check if a local player is in a game session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "InOnlineSession", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSessionLibrary_eventInOnlineSession_Parms), Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "InOnlineSession", sizeof(FGSessionLibrary_eventInOnlineSession_Parms), Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1569,8 +1599,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGSessionLibrary_eventIsInGameSession_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSessionLibrary_eventIsInGameSession_Parms), &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_localPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "localPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventIsInGameSession_Parms, localPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSessionLibrary_eventIsInGameSession_Parms), &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_localPlayer = { "localPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventIsInGameSession_Parms, localPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::NewProp_localPlayer,
@@ -1582,7 +1612,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Check if a local player is in a game session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "IsInGameSession", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGSessionLibrary_eventIsInGameSession_Parms), Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "IsInGameSession", sizeof(FGSessionLibrary_eventIsInGameSession_Parms), Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1612,8 +1642,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGSessionLibrary_eventIsSessionValid_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSessionLibrary_eventIsSessionValid_Parms), &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventIsSessionValid_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSessionLibrary_eventIsSessionValid_Parms), &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventIsSessionValid_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::NewProp_session,
@@ -1628,7 +1658,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "return true if the session is valid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "IsSessionValid", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGSessionLibrary_eventIsSessionValid_Parms), Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "IsSessionValid", sizeof(FGSessionLibrary_eventIsSessionValid_Parms), Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1661,8 +1691,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventJoinSession_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventJoinSession_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventJoinSession_Parms, session), Z_Construct_UScriptStruct_FBlueprintSessionResult, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventJoinSession_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_session,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::NewProp_worldContext,
@@ -1675,7 +1705,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Join a session gracefully" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "JoinSession", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGSessionLibrary_eventJoinSession_Parms), Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "JoinSession", sizeof(FGSessionLibrary_eventJoinSession_Parms), Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_JoinSession_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_JoinSession()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1700,8 +1730,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::NewProp_visibility = { UE4CodeGen_Private::EPropertyClass::Byte, "visibility", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventSetSessionVisibility_Parms, visibility), Z_Construct_UEnum_FactoryGame_ESessionVisibility, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSessionLibrary_eventSetSessionVisibility_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::NewProp_visibility = { "visibility", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventSetSessionVisibility_Parms, visibility), Z_Construct_UEnum_FactoryGame_ESessionVisibility, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSessionLibrary_eventSetSessionVisibility_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::NewProp_visibility,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::NewProp_worldContext,
@@ -1714,7 +1744,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "@SERVER: Sets the current visibility of the session" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, "SetSessionVisibility", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGSessionLibrary_eventSetSessionVisibility_Parms), Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSessionLibrary, nullptr, "SetSessionVisibility", sizeof(FGSessionLibrary_eventSetSessionVisibility_Parms), Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1743,16 +1773,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSessionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 1602874172
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers, "GetMaxNumberOfPlayers" }, // 3004128871
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMySession, "GetMySession" }, // 1845218155
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings, "GetSessionSettings" }, // 3024472161
-		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility, "GetSessionVisibility" }, // 2887604366
-		{ &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession, "InOnlineSession" }, // 3690877298
-		{ &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession, "IsInGameSession" }, // 399421711
-		{ &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid, "IsSessionValid" }, // 3812454504
-		{ &Z_Construct_UFunction_UFGSessionLibrary_JoinSession, "JoinSession" }, // 4108885520
-		{ &Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility, "SetSessionVisibility" }, // 4256934186
+		{ &Z_Construct_UFunction_UFGSessionLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 1648334523
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMaxNumberOfPlayers, "GetMaxNumberOfPlayers" }, // 2784721927
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetMySession, "GetMySession" }, // 4052893357
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionSettings, "GetSessionSettings" }, // 3583771824
+		{ &Z_Construct_UFunction_UFGSessionLibrary_GetSessionVisibility, "GetSessionVisibility" }, // 1942149798
+		{ &Z_Construct_UFunction_UFGSessionLibrary_InOnlineSession, "InOnlineSession" }, // 283750338
+		{ &Z_Construct_UFunction_UFGSessionLibrary_IsInGameSession, "IsInGameSession" }, // 1461749666
+		{ &Z_Construct_UFunction_UFGSessionLibrary_IsSessionValid, "IsSessionValid" }, // 3771220835
+		{ &Z_Construct_UFunction_UFGSessionLibrary_JoinSession, "JoinSession" }, // 1761835657
+		{ &Z_Construct_UFunction_UFGSessionLibrary_SetSessionVisibility, "SetSessionVisibility" }, // 1073714301
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSessionLibrary_Statics::Class_MetaDataParams[] = {
@@ -1765,13 +1795,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSessionLibrary_Statics::ClassParams = {
 		&UFGSessionLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSessionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSessionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSessionLibrary()
@@ -1783,7 +1817,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSessionLibrary, 2234585898);
+	IMPLEMENT_CLASS(UFGSessionLibrary, 1514482233);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSessionLibrary>()
+	{
+		return UFGSessionLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSessionLibrary(Z_Construct_UClass_UFGSessionLibrary, &UFGSessionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSessionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSessionLibrary);
 	void UFGInviteLibrary::StaticRegisterNativesUFGInviteLibrary()
@@ -1822,8 +1860,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite = { UE4CodeGen_Private::EPropertyClass::Struct, "invite", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventDiscardInvite_Parms, invite), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventDiscardInvite_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite = { "invite", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventDiscardInvite_Parms, invite), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventDiscardInvite_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_invite,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::NewProp_worldContext,
@@ -1835,7 +1873,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Discard a pending invite" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, "DiscardInvite", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGInviteLibrary_eventDiscardInvite_Parms), Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, nullptr, "DiscardInvite", sizeof(FGInviteLibrary_eventDiscardInvite_Parms), Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1865,14 +1903,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteFromSender_Parms, ReturnValue), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteFromSender_Parms, ReturnValue), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender = { UE4CodeGen_Private::EPropertyClass::Struct, "sender", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteFromSender_Parms, sender), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteFromSender_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender = { "sender", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteFromSender_Parms, sender), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteFromSender_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::NewProp_sender,
@@ -1886,7 +1924,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get invites from a sender" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, "GetInviteFromSender", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGInviteLibrary_eventGetInviteFromSender_Parms), Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, nullptr, "GetInviteFromSender", sizeof(FGInviteLibrary_eventGetInviteFromSender_Parms), Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1914,13 +1952,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteSenderUniqueNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteSenderUniqueNetId_Parms, ReturnValue), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite = { UE4CodeGen_Private::EPropertyClass::Struct, "invite", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteSenderUniqueNetId_Parms, invite), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite = { "invite", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetInviteSenderUniqueNetId_Parms, invite), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::NewProp_invite,
@@ -1932,7 +1970,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get net id of a invite" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, "GetInviteSenderUniqueNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGInviteLibrary_eventGetInviteSenderUniqueNetId_Parms), Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, nullptr, "GetInviteSenderUniqueNetId", sizeof(FGInviteLibrary_eventGetInviteSenderUniqueNetId_Parms), Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1958,9 +1996,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_out_invites = { UE4CodeGen_Private::EPropertyClass::Array, "out_invites", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetPendingInvites_Parms, out_invites), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_out_invites_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_invites", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventGetPendingInvites_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_out_invites = { "out_invites", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetPendingInvites_Parms, out_invites), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_out_invites_Inner = { "out_invites", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventGetPendingInvites_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_out_invites,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::NewProp_out_invites_Inner,
@@ -1974,7 +2012,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get invites that's not accepted or rejected" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, "GetPendingInvites", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGInviteLibrary_eventGetPendingInvites_Parms), Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, nullptr, "GetPendingInvites", sizeof(FGInviteLibrary_eventGetPendingInvites_Parms), Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2007,8 +2045,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite = { UE4CodeGen_Private::EPropertyClass::Struct, "invite", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventJoinInvite_Parms, invite), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventJoinInvite_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite = { "invite", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventJoinInvite_Parms, invite), Z_Construct_UScriptStruct_FPendingInvite, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventJoinInvite_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_invite,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::NewProp_worldContext,
@@ -2020,7 +2058,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Join a pending invite" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, "JoinInvite", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGInviteLibrary_eventJoinInvite_Parms), Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, nullptr, "JoinInvite", sizeof(FGInviteLibrary_eventJoinInvite_Parms), Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_JoinInvite_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGInviteLibrary_JoinInvite()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2053,8 +2091,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend = { UE4CodeGen_Private::EPropertyClass::Struct, "toFriend", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventSendInviteToFriend_Parms, toFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_fromPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "fromPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGInviteLibrary_eventSendInviteToFriend_Parms, fromPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend = { "toFriend", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventSendInviteToFriend_Parms, toFriend), Z_Construct_UScriptStruct_FFGOnlineFriend, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_fromPlayer = { "fromPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInviteLibrary_eventSendInviteToFriend_Parms, fromPlayer), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_toFriend,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::NewProp_fromPlayer,
@@ -2066,7 +2104,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Sends a invite to a friend" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, "SendInviteToFriend", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGInviteLibrary_eventSendInviteToFriend_Parms), Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInviteLibrary, nullptr, "SendInviteToFriend", sizeof(FGInviteLibrary_eventSendInviteToFriend_Parms), Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2095,12 +2133,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInviteLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite, "DiscardInvite" }, // 3617605263
-		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender, "GetInviteFromSender" }, // 4271580507
-		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId, "GetInviteSenderUniqueNetId" }, // 3561804860
-		{ &Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites, "GetPendingInvites" }, // 3129824177
-		{ &Z_Construct_UFunction_UFGInviteLibrary_JoinInvite, "JoinInvite" }, // 780144052
-		{ &Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend, "SendInviteToFriend" }, // 4244400773
+		{ &Z_Construct_UFunction_UFGInviteLibrary_DiscardInvite, "DiscardInvite" }, // 3200505999
+		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteFromSender, "GetInviteFromSender" }, // 1831191547
+		{ &Z_Construct_UFunction_UFGInviteLibrary_GetInviteSenderUniqueNetId, "GetInviteSenderUniqueNetId" }, // 1210698234
+		{ &Z_Construct_UFunction_UFGInviteLibrary_GetPendingInvites, "GetPendingInvites" }, // 3985562397
+		{ &Z_Construct_UFunction_UFGInviteLibrary_JoinInvite, "JoinInvite" }, // 1388819217
+		{ &Z_Construct_UFunction_UFGInviteLibrary_SendInviteToFriend, "SendInviteToFriend" }, // 1365574273
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInviteLibrary_Statics::Class_MetaDataParams[] = {
@@ -2113,13 +2151,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInviteLibrary_Statics::ClassParams = {
 		&UFGInviteLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInviteLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInviteLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGInviteLibrary()
@@ -2131,7 +2173,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInviteLibrary, 4220676167);
+	IMPLEMENT_CLASS(UFGInviteLibrary, 1039405925);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGInviteLibrary>()
+	{
+		return UFGInviteLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInviteLibrary(Z_Construct_UClass_UFGInviteLibrary, &UFGInviteLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInviteLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInviteLibrary);
 	void UFGNetworkLibrary::StaticRegisterNativesUFGNetworkLibrary()
@@ -2175,13 +2221,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session = { UE4CodeGen_Private::EPropertyClass::Struct, "session", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms, session), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session = { "session", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms, session), Z_Construct_UScriptStruct_FFGOnlineSessionSettings, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::NewProp_session,
@@ -2192,7 +2238,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "CheckIsCompatibleVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "CheckIsCompatibleVersion", sizeof(FGNetworkLibrary_eventCheckIsCompatibleVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2230,19 +2276,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b = { UE4CodeGen_Private::EPropertyClass::Struct, "b", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms, b), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b = { "b", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms, b), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a = { UE4CodeGen_Private::EPropertyClass::Struct, "a", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms, a), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a = { "a", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms, a), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_a_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::NewProp_b,
@@ -2258,7 +2304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Compare two net ids" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "EqualEqual_NetIdNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms), Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "EqualEqual_NetIdNetId", sizeof(FGNetworkLibrary_eventEqualEqual_NetIdNetId_Parms), Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2284,9 +2330,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Enum, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetCachedNATType_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_ReturnValue_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetCachedNATType_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventGetCachedNATType_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventGetCachedNATType_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::NewProp_ReturnValue_Underlying,
@@ -2300,7 +2346,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the last cached value of our NAT-type" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "GetCachedNATType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGNetworkLibrary_eventGetCachedNATType_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "GetCachedNATType", sizeof(FGNetworkLibrary_eventGetCachedNATType_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2323,7 +2369,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Str, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetLocalBuildVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventGetLocalBuildVersion_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::NewProp_ReturnValue,
 	};
@@ -2333,7 +2379,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "GetLocalBuildVersion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGNetworkLibrary_eventGetLocalBuildVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "GetLocalBuildVersion", sizeof(FGNetworkLibrary_eventGetLocalBuildVersion_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2373,20 +2419,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_out_name = { UE4CodeGen_Private::EPropertyClass::Str, "out_name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms, out_name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_out_name = { "out_name", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms, out_name), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId = { UE4CodeGen_Private::EPropertyClass::Struct, "netId", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId = { "netId", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms, netId), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_netId_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier = { UE4CodeGen_Private::EPropertyClass::Object, "querier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000082, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms, querier), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier = { "querier", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms, querier), Z_Construct_UClass_ULocalPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_querier_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::NewProp_out_name,
@@ -2401,7 +2447,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Get the name from a unique net id" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "GetNameFromUniqueNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "GetNameFromUniqueNetId", sizeof(FGNetworkLibrary_eventGetNameFromUniqueNetId_Parms), Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2431,8 +2477,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventIsServer_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventIsServer_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventIsServer_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventIsServer_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventIsServer_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::NewProp_worldContext,
@@ -2441,11 +2487,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Network" },
 		{ "DefaultToSelf", "worldContext" },
+		{ "DeprecatedFunction", "" },
+		{ "DeprecationMessage", "UFGNetworkLibrary::IsServer is deprecated as it's a duplicate of UKismetSystemLibrary::IsServer, please use that function instead" },
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
-		{ "ToolTip", "Return true if this is on a server (playing singleplayer is same as server)\n@param worldContext - a object that we can get the world from" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "IsServer", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGNetworkLibrary_eventIsServer_Parms), Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "IsServer", sizeof(FGNetworkLibrary_eventIsServer_Parms), Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsServer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_IsServer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2478,13 +2525,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventIsValid_UniqueNetId_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventIsValid_UniqueNetId_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventIsValid_UniqueNetId_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a = { UE4CodeGen_Private::EPropertyClass::Struct, "a", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventIsValid_UniqueNetId_Parms, a), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a = { "a", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventIsValid_UniqueNetId_Parms, a), Z_Construct_UScriptStruct_FUniqueNetIdRepl, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::NewProp_a,
@@ -2499,7 +2546,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Returns true if a UniqueNetId is valid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "IsValid_UniqueNetId", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGNetworkLibrary_eventIsValid_UniqueNetId_Parms), Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "IsValid_UniqueNetId", sizeof(FGNetworkLibrary_eventIsValid_UniqueNetId_Parms), Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2525,9 +2572,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventNATTypeToText_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_NatType = { UE4CodeGen_Private::EPropertyClass::Enum, "NatType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventNATTypeToText_Parms, NatType), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_NatType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventNATTypeToText_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_NatType = { "NatType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventNATTypeToText_Parms, NatType), Z_Construct_UEnum_FactoryGame_ECachedNATType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_NatType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::NewProp_NatType,
@@ -2542,7 +2589,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "NATTypeToText", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGNetworkLibrary_eventNATTypeToText_Parms), Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "NATTypeToText", sizeof(FGNetworkLibrary_eventNATTypeToText_Parms), Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2575,13 +2622,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventOpenWebURL_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventOpenWebURL_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventOpenWebURL_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url = { UE4CodeGen_Private::EPropertyClass::Str, "Url", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventOpenWebURL_Parms, Url), METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url = { "Url", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventOpenWebURL_Parms, Url), METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::NewProp_Url,
@@ -2593,7 +2640,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Opens a webpage to the specified url.\n(In the case of steam, this opens the steam overlay with a webpage. Dunno what happens elsewhere).\n@note: DO NOT INCLUDE HTTP:// IN THE URL.\n@return returns true if it succeeds." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "OpenWebURL", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGNetworkLibrary_eventOpenWebURL_Parms), Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "OpenWebURL", sizeof(FGNetworkLibrary_eventOpenWebURL_Parms), Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2616,7 +2663,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventQueryNATType_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventQueryNATType_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::NewProp_worldContext,
 	};
@@ -2628,7 +2675,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ToolTip", "Query our current NAT-type" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "QueryNATType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGNetworkLibrary_eventQueryNATType_Parms), Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "QueryNATType", sizeof(FGNetworkLibrary_eventQueryNATType_Parms), Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2660,9 +2707,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	{
 		((FGNetworkLibrary_eventSubmitFeedback_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGNetworkLibrary_eventSubmitFeedback_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_playerController = { UE4CodeGen_Private::EPropertyClass::Object, "playerController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventSubmitFeedback_Parms, playerController), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_frontEndFeedbackData = { UE4CodeGen_Private::EPropertyClass::Struct, "frontEndFeedbackData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGNetworkLibrary_eventSubmitFeedback_Parms, frontEndFeedbackData), Z_Construct_UScriptStruct_FUserFeedbackFrontEndData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGNetworkLibrary_eventSubmitFeedback_Parms), &Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_playerController = { "playerController", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventSubmitFeedback_Parms, playerController), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_frontEndFeedbackData = { "frontEndFeedbackData", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGNetworkLibrary_eventSubmitFeedback_Parms, frontEndFeedbackData), Z_Construct_UScriptStruct_FUserFeedbackFrontEndData, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::NewProp_playerController,
@@ -2674,7 +2721,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		{ "ModuleRelativePath", "FGNetworkLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, "SubmitFeedback", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGNetworkLibrary_eventSubmitFeedback_Parms), Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGNetworkLibrary, nullptr, "SubmitFeedback", sizeof(FGNetworkLibrary_eventSubmitFeedback_Parms), Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2703,17 +2750,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGNetworkLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 3492804951
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId, "EqualEqual_NetIdNetId" }, // 4182903183
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType, "GetCachedNATType" }, // 1698216470
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion, "GetLocalBuildVersion" }, // 2505124071
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId, "GetNameFromUniqueNetId" }, // 848504109
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsServer, "IsServer" }, // 1827147706
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId, "IsValid_UniqueNetId" }, // 1159321116
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText, "NATTypeToText" }, // 1541439007
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL, "OpenWebURL" }, // 2934176905
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType, "QueryNATType" }, // 1512066464
-		{ &Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback, "SubmitFeedback" }, // 3636169201
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_CheckIsCompatibleVersion, "CheckIsCompatibleVersion" }, // 3524110517
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_EqualEqual_NetIdNetId, "EqualEqual_NetIdNetId" }, // 3362090596
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetCachedNATType, "GetCachedNATType" }, // 778388715
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetLocalBuildVersion, "GetLocalBuildVersion" }, // 3814116462
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_GetNameFromUniqueNetId, "GetNameFromUniqueNetId" }, // 2008797347
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsServer, "IsServer" }, // 3199468773
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_IsValid_UniqueNetId, "IsValid_UniqueNetId" }, // 3886795426
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_NATTypeToText, "NATTypeToText" }, // 2910955337
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_OpenWebURL, "OpenWebURL" }, // 2296282450
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_QueryNATType, "QueryNATType" }, // 3176606502
+		{ &Z_Construct_UFunction_UFGNetworkLibrary_SubmitFeedback, "SubmitFeedback" }, // 277636267
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGNetworkLibrary_Statics::Class_MetaDataParams[] = {
@@ -2726,13 +2773,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGNetworkLibrary_Statics::ClassParams = {
 		&UFGNetworkLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGNetworkLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGNetworkLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGNetworkLibrary()
@@ -2744,7 +2795,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNetworkLibrary, 4183077739);
+	IMPLEMENT_CLASS(UFGNetworkLibrary, 2163023102);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGNetworkLibrary>()
+	{
+		return UFGNetworkLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGNetworkLibrary(Z_Construct_UClass_UFGNetworkLibrary, &UFGNetworkLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGNetworkLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGNetworkLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

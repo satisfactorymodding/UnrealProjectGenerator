@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWorldCreationInterface_Statics::ClassParams = {
 		&UFGWorldCreationInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWorldCreationInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWorldCreationInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWorldCreationInterface()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorldCreationInterface, 446862225);
+	IMPLEMENT_CLASS(UFGWorldCreationInterface, 1943379721);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGWorldCreationInterface>()
+	{
+		return UFGWorldCreationInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWorldCreationInterface(Z_Construct_UClass_UFGWorldCreationInterface, &UFGWorldCreationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWorldCreationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWorldCreationInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

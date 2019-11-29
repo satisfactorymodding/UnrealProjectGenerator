@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ToolTip", "Start AFGWeapon Event notify calls" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyBeginPrimaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyBeginPrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ModuleRelativePath", "FGWeaponChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyBeginSecondaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyBeginSecondaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ModuleRelativePath", "FGWeaponChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyEndPrimaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyEndPrimaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ModuleRelativePath", "FGWeaponChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyEndSecondaryFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyEndSecondaryFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ModuleRelativePath", "FGWeaponChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyFailedToFire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyFailedToFire", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ToolTip", "For instances when the actual fire happens after a delay on ending primary fire\n     This could be an anim notify or set by a timer etc.\n     This is special behavior and must be hooked up on a per weapon basis" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyPrimaryFireExecuted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyPrimaryFireExecuted", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ModuleRelativePath", "FGWeaponChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyReloadComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyReloadComplete", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		{ "ModuleRelativePath", "FGWeaponChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyReloading_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, "NotifyReloading", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyReloading_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyReloading_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWeaponChild_NotifyReloading_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWeaponChild, nullptr, "NotifyReloading", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWeaponChild_NotifyReloading_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWeaponChild_NotifyReloading_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGWeaponChild_NotifyReloading()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -292,14 +292,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWeaponChild_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire, "NotifyBeginPrimaryFire" }, // 199931480
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire, "NotifyBeginSecondaryFire" }, // 1749780971
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire, "NotifyEndPrimaryFire" }, // 846729629
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire, "NotifyEndSecondaryFire" }, // 1452618788
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire, "NotifyFailedToFire" }, // 3295285201
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted, "NotifyPrimaryFireExecuted" }, // 977530957
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete, "NotifyReloadComplete" }, // 2789786990
-		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyReloading, "NotifyReloading" }, // 3683390369
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyBeginPrimaryFire, "NotifyBeginPrimaryFire" }, // 3881511489
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyBeginSecondaryFire, "NotifyBeginSecondaryFire" }, // 4037549839
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyEndPrimaryFire, "NotifyEndPrimaryFire" }, // 2265508835
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyEndSecondaryFire, "NotifyEndSecondaryFire" }, // 1237784560
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyFailedToFire, "NotifyFailedToFire" }, // 4074801585
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyPrimaryFireExecuted, "NotifyPrimaryFireExecuted" }, // 3494371505
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyReloadComplete, "NotifyReloadComplete" }, // 2910637711
+		{ &Z_Construct_UFunction_AFGWeaponChild_NotifyReloading, "NotifyReloading" }, // 655245353
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWeaponChild_Statics::Class_MetaDataParams[] = {
@@ -318,7 +318,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 	{
 		((AFGWeaponChild*)Obj)->mIsLoaded = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsLoaded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGWeaponChild), &Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded = { "mIsLoaded", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGWeaponChild), &Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGWeaponChild_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGWeaponChild_Statics::NewProp_mIsLoaded,
 	};
@@ -327,13 +327,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGWeaponChild_Statics::ClassParams = {
 		&AFGWeaponChild::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGWeaponChild_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponChild_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGWeaponChild_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGWeaponChild_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGWeaponChild_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGWeaponChild_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGWeaponChild()
@@ -345,7 +349,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWeaponChild() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWeaponChild, 2505006458);
+	IMPLEMENT_CLASS(AFGWeaponChild, 2799844363);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGWeaponChild>()
+	{
+		return AFGWeaponChild::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWeaponChild(Z_Construct_UClass_AFGWeaponChild, &AFGWeaponChild::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWeaponChild"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWeaponChild);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

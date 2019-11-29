@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -682,10 +682,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableFactory); \
 	FORCEINLINE static uint32 __PPO__mReplicationDetailActor() { return STRUCT_OFFSET(AFGBuildableFactory, mReplicationDetailActor); } \
 	FORCEINLINE static uint32 __PPO__OnReplicationDetailActorCreatedEvent() { return STRUCT_OFFSET(AFGBuildableFactory, OnReplicationDetailActorCreatedEvent); } \
 	FORCEINLINE static uint32 __PPO__mInventoryPotential() { return STRUCT_OFFSET(AFGBuildableFactory, mInventoryPotential); } \
-	FORCEINLINE static uint32 __PPO__mCurrentProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentProductivity); } \
 	FORCEINLINE static uint32 __PPO__mSignificanceBias() { return STRUCT_OFFSET(AFGBuildableFactory, mSignificanceBias); } \
 	FORCEINLINE static uint32 __PPO__mEffectUpdateInterval() { return STRUCT_OFFSET(AFGBuildableFactory, mEffectUpdateInterval); } \
-	FORCEINLINE static uint32 __PPO__mAddToSignificanceManager() { return STRUCT_OFFSET(AFGBuildableFactory, mAddToSignificanceManager); }
+	FORCEINLINE static uint32 __PPO__mCurrentProductivity() { return STRUCT_OFFSET(AFGBuildableFactory, mCurrentProductivity); }
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h_43_PROLOG \
@@ -716,6 +715,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableFactory>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableFactory_h
 
@@ -726,4 +727,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EProductionStatus::IS_PRODUCING_WITH_CRYSTAL) \
 	op(EProductionStatus::IS_STANDBY) \
 	op(EProductionStatus::IS_ERROR) 
+
+enum class EProductionStatus : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EProductionStatus>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

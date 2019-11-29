@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGFreightWagon_eventGetFreightInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFreightWagon_eventGetFreightInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::NewProp_ReturnValue,
 	};
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ToolTip", "Get the inventory where we store the cargo." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, "GetFreightInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFreightWagon_eventGetFreightInventory_Parms), Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, nullptr, "GetFreightInventory", sizeof(FGFreightWagon_eventGetFreightInventory_Parms), Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFreightWagon_eventGetFreightInventoryFilledPercent_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFreightWagon_eventGetFreightInventoryFilledPercent_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::NewProp_ReturnValue,
 	};
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ToolTip", "Get the inventory where we store the cargo." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, "GetFreightInventoryFilledPercent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGFreightWagon_eventGetFreightInventoryFilledPercent_Parms), Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, nullptr, "GetFreightInventoryFilledPercent", sizeof(FGFreightWagon_eventGetFreightInventoryFilledPercent_Parms), Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, "InitializeInventoryComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, nullptr, "InitializeInventoryComponent", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -155,8 +155,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::NewProp_numAdded = { UE4CodeGen_Private::EPropertyClass::Int, "numAdded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFreightWagon_eventOnItemAddedToFreight_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGFreightWagon_eventOnItemAddedToFreight_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::NewProp_numAdded = { "numAdded", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFreightWagon_eventOnItemAddedToFreight_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFreightWagon_eventOnItemAddedToFreight_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::NewProp_numAdded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::NewProp_itemClass,
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, "OnItemAddedToFreight", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGFreightWagon_eventOnItemAddedToFreight_Parms), Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, nullptr, "OnItemAddedToFreight", sizeof(FGFreightWagon_eventOnItemAddedToFreight_Parms), Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -191,8 +191,8 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::NewProp_numRemoved = { UE4CodeGen_Private::EPropertyClass::Int, "numRemoved", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFreightWagon_eventOnItemRemovedFromFreight_Parms, numRemoved), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGFreightWagon_eventOnItemRemovedFromFreight_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::NewProp_numRemoved = { "numRemoved", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFreightWagon_eventOnItemRemovedFromFreight_Parms, numRemoved), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFreightWagon_eventOnItemRemovedFromFreight_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::NewProp_numRemoved,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::NewProp_itemClass,
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, "OnItemRemovedFromFreight", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGFreightWagon_eventOnItemRemovedFromFreight_Parms), Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFreightWagon, nullptr, "OnItemRemovedFromFreight", sizeof(FGFreightWagon_eventOnItemRemovedFromFreight_Parms), Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -261,11 +261,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGFreightWagon_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory, "GetFreightInventory" }, // 3112956500
-		{ &Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent, "GetFreightInventoryFilledPercent" }, // 3288025612
-		{ &Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent, "InitializeInventoryComponent" }, // 3360490441
-		{ &Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight, "OnItemAddedToFreight" }, // 3509152172
-		{ &Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight, "OnItemRemovedFromFreight" }, // 275391927
+		{ &Z_Construct_UFunction_AFGFreightWagon_GetFreightInventory, "GetFreightInventory" }, // 463961349
+		{ &Z_Construct_UFunction_AFGFreightWagon_GetFreightInventoryFilledPercent, "GetFreightInventoryFilledPercent" }, // 570360628
+		{ &Z_Construct_UFunction_AFGFreightWagon_InitializeInventoryComponent, "InitializeInventoryComponent" }, // 1969845899
+		{ &Z_Construct_UFunction_AFGFreightWagon_OnItemAddedToFreight, "OnItemAddedToFreight" }, // 3279544012
+		{ &Z_Construct_UFunction_AFGFreightWagon_OnItemRemovedFromFreight, "OnItemRemovedFromFreight" }, // 3238730204
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::Class_MetaDataParams[] = {
@@ -281,21 +281,21 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision = { UE4CodeGen_Private::EPropertyClass::Object, "mCargoOverlapCollision", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mCargoOverlapCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision = { "mCargoOverlapCollision", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mCargoOverlapCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar_MetaData[] = {
 		{ "Category", "FreightWagon" },
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar = { UE4CodeGen_Private::EPropertyClass::Float, "mLaunchCharacterScalar", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mLaunchCharacterScalar), METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar = { "mLaunchCharacterScalar", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mLaunchCharacterScalar), METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mCargoMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mCargoMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent = { "mCargoMeshComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mCargoMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -303,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ToolTip", "The size of the inventory for this wagon." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize = { UE4CodeGen_Private::EPropertyClass::Int, "mInventorySize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mInventorySize), METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize = { "mInventorySize", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mInventorySize), METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mInventorySize_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory_MetaData[] = {
 		{ "EditInline", "true" },
@@ -311,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ToolTip", "Responsible for handling our inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mStorageInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080028, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory = { "mStorageInventory", nullptr, (EPropertyFlags)0x0040000001080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mStorageInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -321,14 +321,14 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		{ "ToolTip", "vehicle simulation component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement = { UE4CodeGen_Private::EPropertyClass::Object, "mVehicleMovement", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000b001d, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mVehicleMovement), Z_Construct_UClass_UFGRailroadVehicleMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement = { "mVehicleMovement", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mVehicleMovement), Z_Construct_UClass_UFGRailroadVehicleMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mVehicleMovement_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_MetaData[] = {
 		{ "ModuleRelativePath", "FGFreightWagon.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters = { UE4CodeGen_Private::EPropertyClass::Array, "mLaunchedCharacters", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGFreightWagon, mLaunchedCharacters), METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mLaunchedCharacters", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters = { "mLaunchedCharacters", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFreightWagon, mLaunchedCharacters), METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchedCharacters_Inner = { "mLaunchedCharacters", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGFreightWagon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mCargoOverlapCollision,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFreightWagon_Statics::NewProp_mLaunchCharacterScalar,
@@ -344,13 +344,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFreightWagon_Statics::ClassParams = {
 		&AFGFreightWagon::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGFreightWagon_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGFreightWagon_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFreightWagon_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFreightWagon_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFreightWagon()
@@ -362,7 +366,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFreightWagon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFreightWagon, 4133697225);
+	IMPLEMENT_CLASS(AFGFreightWagon, 3590332737);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFreightWagon>()
+	{
+		return AFGFreightWagon::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFreightWagon(Z_Construct_UClass_AFGFreightWagon, &AFGFreightWagon::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFreightWagon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFreightWagon);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

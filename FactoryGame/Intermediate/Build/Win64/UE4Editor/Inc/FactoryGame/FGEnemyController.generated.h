@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,6 +24,8 @@ struct FAggroEntry;
 	friend struct Z_Construct_UScriptStruct_FAggroEntry_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FAggroEntry>();
 
 #define FactoryGame_Source_FactoryGame_AI_FGEnemyController_h_93_RPC_WRAPPERS \
 	virtual void OnAggroTargetUpdated_Implementation(); \
@@ -518,6 +520,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGEnemyController>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_AI_FGEnemyController_h
 
@@ -528,4 +532,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EIgnore::I_NOT_VALID) \
 	op(EIgnore::I_NO_PATH) \
 	op(EIgnore::I_LastEnum) 
+
+enum class EIgnore : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EIgnore>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

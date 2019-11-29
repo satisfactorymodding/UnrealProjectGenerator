@@ -40,6 +40,11 @@ public:
 	virtual bool CanDismantle_Implementation() const override;
 	//~ End IFGDismantleInterface
 
+	//Begin IFGSignificanceInterface
+	virtual void GainedSignificance_Implementation() override;
+	virtual	void LostSignificance_Implementation() override;
+	//End IFGSignificanceInterface
+
 	/** Update the animations for this vehicle, this is called after the whole train has been moved. */
 	void UpdateAnimation();
 

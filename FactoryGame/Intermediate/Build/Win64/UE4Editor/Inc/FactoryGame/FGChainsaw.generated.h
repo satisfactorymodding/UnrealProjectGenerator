@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -23,6 +23,8 @@ struct FVector;
 	friend struct Z_Construct_UScriptStruct_FPickedUpInstance_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPickedUpInstance>();
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_RPC_WRAPPERS \
 	virtual bool Server_StopSawing_Validate(); \
@@ -349,6 +351,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGChainsaw>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h

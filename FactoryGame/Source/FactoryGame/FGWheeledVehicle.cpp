@@ -9,6 +9,8 @@ void AFGWheeledVehicle::BeginPlay(){ }
 void AFGWheeledVehicle::Destroyed(){ }
 void AFGWheeledVehicle::Tick( float dt){ }
 void AFGWheeledVehicle::DisplayDebug( UCanvas* canvas, const FDebugDisplayInfo& debugDisplay, float& YL, float& YPos){ }
+void AFGWheeledVehicle::GainedSignificance_Implementation(){ }
+void AFGWheeledVehicle::LostSignificance_Implementation(){ }
 bool AFGWheeledVehicle::CanDock_Implementation( EDockStationType atStation) const{ return bool(); }
 UFGInventoryComponent* AFGWheeledVehicle::GetDockInventory_Implementation() const{ return nullptr; }
 UFGInventoryComponent* AFGWheeledVehicle::GetDockFuelInventory_Implementation() const{ return nullptr; }
@@ -40,6 +42,7 @@ float AFGWheeledVehicle::GetFuelBurnRatio(){ return float(); }
 UFGTargetPointLinkedList* AFGWheeledVehicle::GetTargetNodeLinkedList(){ return nullptr; }
 void AFGWheeledVehicle::RemoveTargetPoint(  AFGTargetPoint* targetToRemove){ }
 void AFGWheeledVehicle::SetPathFromArray( TArray<  AFGTargetPoint* > targetPoints){ }
+void AFGWheeledVehicle::Multicast_PlayFoliageDestroyedEffect_Implementation(  UParticleSystem* destroyEffect,  UAkAudioEvent* destroyAudioEvent, FVector location){ }
 void AFGWheeledVehicle::OnOverlapBegin( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult){ }
 void AFGWheeledVehicle::OnOverlapEnd( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex){ }
 void AFGWheeledVehicle::ManageFakeForces( float DeltaTime){ }

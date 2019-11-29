@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -65,15 +65,15 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 		{ "ToolTip", "Used when upgrading." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mSnappedConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000008, 1, nullptr, STRUCT_OFFSET(AFGAttachmentSplitterHologram, mSnappedConnectionComponents), METADATA_PARAMS(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents = { "mSnappedConnectionComponents", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAttachmentSplitterHologram, mSnappedConnectionComponents), METADATA_PARAMS(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_Inner = { "mSnappedConnectionComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGAttachmentSplitterHologram.h" },
 		{ "ToolTip", "If we're upgrading another actor." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter = { UE4CodeGen_Private::EPropertyClass::Object, "mUpgradedSplitter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGAttachmentSplitterHologram, mUpgradedSplitter), Z_Construct_UClass_AFGBuildableAttachmentSplitter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter = { "mUpgradedSplitter", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAttachmentSplitterHologram, mUpgradedSplitter), Z_Construct_UClass_AFGBuildableAttachmentSplitter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_Inner,
@@ -84,13 +84,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::ClassParams = {
 		&AFGAttachmentSplitterHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGAttachmentSplitterHologram()
@@ -102,7 +106,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 282044072);
+	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 3813132182);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGAttachmentSplitterHologram>()
+	{
+		return AFGAttachmentSplitterHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAttachmentSplitterHologram(Z_Construct_UClass_AFGAttachmentSplitterHologram, &AFGAttachmentSplitterHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAttachmentSplitterHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAttachmentSplitterHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

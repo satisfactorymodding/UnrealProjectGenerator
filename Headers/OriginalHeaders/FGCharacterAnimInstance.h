@@ -58,6 +58,9 @@ public:
 private: 
 	/** Event fired when creature turns in place */
 	void TurnInPlaceEvent( float dt );
+protected:
+	/** Gets velocity of the character */
+	virtual FVector GetCharacterVelocity()const;
 public:
 	/** in degrees */
 	UPROPERTY( BlueprintReadOnly, Category = "Anim" )

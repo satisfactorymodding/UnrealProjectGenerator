@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 		{ "NoAutoJson", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentInventoryIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInventoryIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex = { "mCurrentInventoryIndex", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInventoryIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentMerger.h" },
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 		{ "ToolTip", "Cycles through the inputs, stores the input we want to check next. Index is for the mInputs array." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentInputIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInputIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex = { "mCurrentInputIndex", nullptr, (EPropertyFlags)0x0040000001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInputIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex,
@@ -77,13 +77,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::ClassParams = {
 		&AFGBuildableAttachmentMerger::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableAttachmentMerger()
@@ -95,7 +99,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 2503068382);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 2756383104);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableAttachmentMerger>()
+	{
+		return AFGBuildableAttachmentMerger::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAttachmentMerger(Z_Construct_UClass_AFGBuildableAttachmentMerger, &AFGBuildableAttachmentMerger::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAttachmentMerger"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAttachmentMerger);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

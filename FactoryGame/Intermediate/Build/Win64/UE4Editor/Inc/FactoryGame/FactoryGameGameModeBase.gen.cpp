@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGameGameModeBase() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFactoryGameGameModeBase_Statics::ClassParams = {
 		&AFactoryGameGameModeBase::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A8u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009002A8u,
 		METADATA_PARAMS(Z_Construct_UClass_AFactoryGameGameModeBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFactoryGameGameModeBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFactoryGameGameModeBase()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGameGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFactoryGameGameModeBase, 3277894300);
+	IMPLEMENT_CLASS(AFactoryGameGameModeBase, 3053817614);
+	template<> FACTORYGAME_API UClass* StaticClass<AFactoryGameGameModeBase>()
+	{
+		return AFactoryGameGameModeBase::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFactoryGameGameModeBase(Z_Construct_UClass_AFactoryGameGameModeBase, &AFactoryGameGameModeBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFactoryGameGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFactoryGameGameModeBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

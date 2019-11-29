@@ -63,8 +63,7 @@ public:
 	/** @return The inventory containing possible loot */
 	UFUNCTION( BlueprintPure, Category = "Drop Pod" )
 	FORCEINLINE class UFGInventoryComponent* GetLootInventory() const { return mInventory; }
-
-
+	
 protected:
 	/** Open the drop pod. */
 	UFUNCTION( BlueprintCallable, Category = "Drop Pod" )
@@ -77,6 +76,11 @@ protected:
 	/** Called on server, rolls the loot for the drop pod. */
 	UFUNCTION( BlueprintNativeEvent, Category = "Drop Pod" )
 	void RollLoot();
+
+	/** Event called when player tries to repair the drop-pod.*/
+	UFUNCTION( BlueprintNativeEvent, BlueprintCallable, Category = "Drop Pod")
+	void OnRepair(class AFGCharacterPlayer* InteractingCharacter);
+
 
 	/** Roll a package to drop and adds the items to the loot inventory. Call this on server only. */
 	UFUNCTION( BlueprintCallable, Category = "Drop Pod" )

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 		{ "ToolTip", "Shared implementation for world creation" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp = { UE4CodeGen_Private::EPropertyClass::Struct, "mEngineCommonImp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(UFGGameEngine, mEngineCommonImp), Z_Construct_UScriptStruct_FFGEngineCommon, METADATA_PARAMS(Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp = { "mEngineCommonImp", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGGameEngine, mEngineCommonImp), Z_Construct_UScriptStruct_FFGEngineCommon, METADATA_PARAMS(Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGGameEngine_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGGameEngine_Statics::NewProp_mEngineCommonImp,
 	};
@@ -70,13 +70,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameEngine_Statics::ClassParams = {
 		&UFGGameEngine::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000AEu,
-		nullptr, 0,
-		Z_Construct_UClass_UFGGameEngine_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGGameEngine_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x000000AEu,
 		METADATA_PARAMS(Z_Construct_UClass_UFGGameEngine_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGGameEngine()
@@ -88,7 +92,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameEngine, 2655583218);
+	IMPLEMENT_CLASS(UFGGameEngine, 3523516141);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGGameEngine>()
+	{
+		return UFGGameEngine::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameEngine(Z_Construct_UClass_UFGGameEngine, &UFGGameEngine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameEngine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameEngine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

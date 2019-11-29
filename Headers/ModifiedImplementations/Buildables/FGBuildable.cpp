@@ -25,8 +25,6 @@ void AFGBuildable::GatherDependencies_Implementation( TArray< UObject* >& out_de
 bool AFGBuildable::NeedTransform_Implementation(){ return bool(); }
 bool AFGBuildable::ShouldSave_Implementation() const{ return bool(); }
 void AFGBuildable::SetColorSlot_Implementation( uint8 newColor){ }
-void AFGBuildable::SetPrimaryColor_Implementation( FLinearColor newColor){ }
-void AFGBuildable::SetSecondaryColor_Implementation( FLinearColor newColor){ }
 uint8 AFGBuildable::GetColorSlot_Implementation(){ return uint8(); }
 FLinearColor AFGBuildable::GetPrimaryColor_Implementation(){ return FLinearColor(); }
 FLinearColor AFGBuildable::GetSecondaryColor_Implementation(){ return FLinearColor(); }
@@ -71,6 +69,7 @@ void AFGBuildable::ShowHighlightEffect(){ }
 void AFGBuildable::RemoveHighlightEffect(){ }
 void AFGBuildable::SetHiddenIngameAndHideInstancedMeshes( bool hide ){ }
 TSubclassOf< AFGBuildable > AFGBuildable::GetBuildableClassFromRecipe( TSubclassOf<  UFGRecipe > inRecipe){ return TSubclassOf<AFGBuildable>(); }
+UShapeComponent* AFGBuildable::GetClearanceComponent(){ return nullptr; }
 void AFGBuildable::PlayConstructSound_Implementation(){ }
 void AFGBuildable::PlayDismantleSound_Implementation(){ }
 void AFGBuildable::RegisterInteractingPlayerWithCircuit(  AFGCharacterPlayer* player){ }
@@ -79,20 +78,22 @@ void AFGBuildable::OnReplicatingDetailsChanged(){ }
 bool AFGBuildable::Factory_PeekOutput_Implementation( const  UFGFactoryConnectionComponent* connection, TArray< FInventoryItem >& out_items, TSubclassOf< UFGItemDescriptor > type) const{ return bool(); }
 bool AFGBuildable::Factory_GrabOutput_Implementation(  UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf< UFGItemDescriptor > type){ return bool(); }
 uint8 AFGBuildable::MaxNumGrab( float delta) const{ return uint8(); }
+uint8 AFGBuildable::EstimatedMaxNumGrab_ThreadSafe( float delta) const{ return uint8(); }
 bool AFGBuildable::VerifyDefaults( FString& out_message){ return bool(); }
 void AFGBuildable::GetDismantleRefundReturns( TArray< FInventoryStack >& out_returns) const{ }
 void AFGBuildable::GetDismantleInventoryReturns( TArray< FInventoryStack >& out_returns) const{ }
-UShapeComponent* AFGBuildable::GetClearanceComponent(){ return nullptr; }
 void AFGBuildable::TogglePendingDismantleMaterial( bool enabled){ }
 void AFGBuildable::ReapplyColorSlot(){ }
+bool AFGBuildable::HasMaterialInstanceManagerForMaterialName( const FString& lookupName){ return bool(); }
+UFGFactoryMaterialInstanceManager* AFGBuildable::GetMaterialInstanceManagerForMaterialName( const FString& lookupName){ return nullptr; }
+bool AFGBuildable::AddMaterialInstanceManagerForMaterialName( const FString& lookupName,  UFGFactoryMaterialInstanceManager* materialInstanceManager){ return bool(); }
 void AFGBuildable::CreateFactoryStatID() const{ }
 void AFGBuildable::SetReplicateDetails( bool replicateDetails){ }
 bool AFGBuildable::CheckFactoryConnectionComponents( FString& out_message){ return bool(); }
 void AFGBuildable::OnRep_ColorSlot(){ }
-void AFGBuildable::OnRep_PrimaryColor(){ }
-void AFGBuildable::OnRep_SecondaryColor(){ }
 void AFGBuildable::OnRep_DidFirstTimeUse(){ }
 uint8 AFGBuildable::GetNumPowerConnections() const{ return uint8(); }
 uint8 AFGBuildable::GetNumFactoryConnections() const{ return uint8(); }
+uint8 AFGBuildable::GetNumFactoryOuputConnections() const{ return uint8(); }
 FOnReplicationDetailActorStateChange AFGBuildable::OnBuildableReplicationDetailActorStateChange = FOnReplicationDetailActorStateChange();
 FOnRegisteredPlayerChanged AFGBuildable::OnRegisterPlayerChange = FOnRegisteredPlayerChanged();

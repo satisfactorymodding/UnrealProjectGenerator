@@ -3,8 +3,8 @@
 #include "FGEnemyController.h"
 
 AFGEnemyController::AFGEnemyController( const FObjectInitializer& ObjectInitializer ) : Super(ObjectInitializer) { }
-void AFGEnemyController::Possess( APawn* InPawn){ }
-void AFGEnemyController::UnPossess(){ }
+void AFGEnemyController::OnPossess( APawn* InPawn){ }
+void AFGEnemyController::OnUnPossess(){ }
 void AFGEnemyController::StartPanic_Implementation(){ }
 void AFGEnemyController::RemoveAggroEntryByTarget( TScriptInterface< IFGAggroTargetInterface > target){ }
 bool AFGEnemyController::IsOnIgnoreList( const TScriptInterface< IFGAggroTargetInterface > aggroTargetInterface) const{ return bool(); }

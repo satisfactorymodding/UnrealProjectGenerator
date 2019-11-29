@@ -15,12 +15,6 @@ void AFGColorGun::Sever_SetSecondaryColorForSlot_Implementation( uint8 slotIndex
 bool AFGColorGun::Sever_SetSecondaryColorForSlot_Validate( uint8 slotIndex, FLinearColor newColor){ return bool(); }
 FLinearColor AFGColorGun::GetPrimaryColorForSlot(uint8 index) const{ return FLinearColor(); }
 FLinearColor AFGColorGun::GetSecondaryColorForSlot( uint8 index) const{ return FLinearColor(); }
-void AFGColorGun::SetPrimaryColor( FLinearColor newColor){ }
-void AFGColorGun::Sever_SetPrimaryColor_Implementation( FLinearColor newColor){ }
-bool AFGColorGun::Sever_SetPrimaryColor_Validate( FLinearColor newColor){ return bool(); }
-void AFGColorGun::SetSecondaryColor( FLinearColor newColor){ }
-void AFGColorGun::Sever_SetSecondaryColor_Implementation( FLinearColor newColor){ }
-bool AFGColorGun::Sever_SetSecondaryColor_Validate( FLinearColor newColor){ return bool(); }
 void AFGColorGun::Equip(  AFGCharacterPlayer* character){ }
 void AFGColorGun::Tick( float DeltaSeconds){ }
 void AFGColorGun::ApplyCrosshairState(){ }

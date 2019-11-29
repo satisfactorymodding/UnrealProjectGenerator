@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -32,10 +32,14 @@ class UScriptStruct* FColorMapAreaPair::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FColorMapAreaPair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ColorMapAreaPair"), sizeof(FColorMapAreaPair), Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FColorMapAreaPair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ColorMapAreaPair"), sizeof(FColorMapAreaPair), Get_Z_Construct_UScriptStruct_FColorMapAreaPair_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FColorMapAreaPair>()
+{
+	return FColorMapAreaPair::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FColorMapAreaPair(FColorMapAreaPair::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ColorMapAreaPair"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
@@ -96,33 +100,33 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY = { UE4CodeGen_Private::EPropertyClass::Int, "MaxY", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FColorMapAreaPair, MaxY), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY = { "MaxY", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FColorMapAreaPair, MaxY), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX = { UE4CodeGen_Private::EPropertyClass::Int, "MaxX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FColorMapAreaPair, MaxX), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX = { "MaxX", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FColorMapAreaPair, MaxX), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY = { UE4CodeGen_Private::EPropertyClass::Int, "MinY", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FColorMapAreaPair, MinY), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY = { "MinY", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FColorMapAreaPair, MinY), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 		{ "ToolTip", "A top left pixel that together with MaxX/MaxY encompasses the entire area" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX = { UE4CodeGen_Private::EPropertyClass::Int, "MinX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FColorMapAreaPair, MinX), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX = { "MinX", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FColorMapAreaPair, MinX), METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MinX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea_MetaData[] = {
 		{ "Category", "ColorMapAreaPair" },
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea = { UE4CodeGen_Private::EPropertyClass::Class, "MapArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FColorMapAreaPair, MapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea = { "MapArea", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FColorMapAreaPair, MapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MapArea_MetaData)) };
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor_MetaData[] = {
@@ -130,7 +134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor = { UE4CodeGen_Private::EPropertyClass::Struct, "PaletteColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000800030001, 1, nullptr, STRUCT_OFFSET(FColorMapAreaPair, PaletteColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor = { "PaletteColor", nullptr, (EPropertyFlags)0x0010000800030001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FColorMapAreaPair, PaletteColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_PaletteColor_MetaData)) };
 #endif // WITH_EDITORONLY_DATA
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::NewProp_MaxY,
@@ -147,19 +151,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		nullptr,
 		&NewStructOps,
 		"ColorMapAreaPair",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FColorMapAreaPair),
 		alignof(FColorMapAreaPair),
-		Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FColorMapAreaPair()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ColorMapAreaPair"), sizeof(FColorMapAreaPair), Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ColorMapAreaPair"), sizeof(FColorMapAreaPair), Get_Z_Construct_UScriptStruct_FColorMapAreaPair_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -169,7 +174,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC() { return 271803988U; }
+	uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_Hash() { return 2711966254U; }
 	void UFGMapAreaTexture::StaticRegisterNativesUFGMapAreaTexture()
 	{
 		UClass* Class = UFGMapAreaTexture::StaticClass();
@@ -192,7 +197,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMapAreaTexture_eventGetFogOfWarTexture_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapAreaTexture_eventGetFogOfWarTexture_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::NewProp_ReturnValue,
 	};
@@ -203,7 +208,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		{ "ToolTip", "Returns the current fog of war texture that has been generated" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaTexture, "GetFogOfWarTexture", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGMapAreaTexture_eventGetFogOfWarTexture_Parms), Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaTexture, nullptr, "GetFogOfWarTexture", sizeof(FGMapAreaTexture_eventGetFogOfWarTexture_Parms), Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -226,7 +231,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::NewProp_newMapArea = { UE4CodeGen_Private::EPropertyClass::Class, "newMapArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMapAreaTexture_eventOnNewMapAreaVisisted_Parms, newMapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::NewProp_newMapArea = { "newMapArea", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapAreaTexture_eventOnNewMapAreaVisisted_Parms, newMapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::NewProp_newMapArea,
 	};
@@ -236,7 +241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		{ "ToolTip", "Called when any player enters a new area on the map, should case a redraw of the fog of war texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaTexture, "OnNewMapAreaVisisted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGMapAreaTexture_eventOnNewMapAreaVisisted_Parms), Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapAreaTexture, nullptr, "OnNewMapAreaVisisted", sizeof(FGMapAreaTexture_eventOnNewMapAreaVisisted_Parms), Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -305,8 +310,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMapAreaTexture_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture, "GetFogOfWarTexture" }, // 3294988145
-		{ &Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted, "OnNewMapAreaVisisted" }, // 2775582800
+		{ &Z_Construct_UFunction_UFGMapAreaTexture_GetFogOfWarTexture, "GetFogOfWarTexture" }, // 2023834777
+		{ &Z_Construct_UFunction_UFGMapAreaTexture_OnNewMapAreaVisisted, "OnNewMapAreaVisisted" }, // 735277801
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::Class_MetaDataParams[] = {
@@ -321,52 +326,52 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedGameState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mCachedGameState), Z_Construct_UClass_AFGGameState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState = { "mCachedGameState", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mCachedGameState), Z_Construct_UClass_AFGGameState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 		{ "ToolTip", "The width of the data and the texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth = { UE4CodeGen_Private::EPropertyClass::Int, "mDataWidth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mDataWidth), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth = { "mDataWidth", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mDataWidth), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mDataWidth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 		{ "ToolTip", "A cached camera in the Skye" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor = { UE4CodeGen_Private::EPropertyClass::Object, "mCaptureActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mCaptureActor), Z_Construct_UClass_AFGMinimapCaptureActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor = { "mCaptureActor", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mCaptureActor), Z_Construct_UClass_AFGMinimapCaptureActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCaptureActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_MetaData[] = {
 		{ "Category", "2. Assign areas to match Palette" },
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea = { UE4CodeGen_Private::EPropertyClass::Array, "mColorToArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mColorToArea), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mColorToArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FColorMapAreaPair, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea = { "mColorToArea", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mColorToArea), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorToArea_Inner = { "mColorToArea", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FColorMapAreaPair, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 		{ "ToolTip", "This are all the unique colors found in the texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette = { UE4CodeGen_Private::EPropertyClass::Array, "mColorPalette", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mColorPalette), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mColorPalette", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette = { "mColorPalette", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mColorPalette), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mColorPalette_Inner = { "mColorPalette", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 		{ "ToolTip", "This is where we store the raw data we generated from the texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData = { UE4CodeGen_Private::EPropertyClass::Array, "mAreaData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mAreaData), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_Inner = { UE4CodeGen_Private::EPropertyClass::Byte, "mAreaData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData = { "mAreaData", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mAreaData), METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaData_Inner = { "mAreaData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture_MetaData[] = {
 		{ "ModuleRelativePath", "FGMapAreaTexture.h" },
 		{ "ToolTip", "The current fog of war is generated to this texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture = { UE4CodeGen_Private::EPropertyClass::Object, "mFogOfWarTexture", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mFogOfWarTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture = { "mFogOfWarTexture", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mFogOfWarTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mFogOfWarTexture_MetaData)) };
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture_MetaData[] = {
@@ -375,7 +380,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		{ "ToolTip", "This is the texture that the level designers made to define areas on the map" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture = { UE4CodeGen_Private::EPropertyClass::Object, "mAreaTexture", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800010001, 1, nullptr, STRUCT_OFFSET(UFGMapAreaTexture, mAreaTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture = { "mAreaTexture", nullptr, (EPropertyFlags)0x0040000800010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapAreaTexture, mAreaTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mAreaTexture_MetaData)) };
 #endif // WITH_EDITORONLY_DATA
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMapAreaTexture_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMapAreaTexture_Statics::NewProp_mCachedGameState,
@@ -397,13 +402,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMapAreaTexture_Statics::ClassParams = {
 		&UFGMapAreaTexture::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMapAreaTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMapAreaTexture_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaTexture_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaTexture_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMapAreaTexture()
@@ -415,7 +424,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapAreaTexture, 2364363428);
+	IMPLEMENT_CLASS(UFGMapAreaTexture, 383022675);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMapAreaTexture>()
+	{
+		return UFGMapAreaTexture::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapAreaTexture(Z_Construct_UClass_UFGMapAreaTexture, &UFGMapAreaTexture::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapAreaTexture"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapAreaTexture);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

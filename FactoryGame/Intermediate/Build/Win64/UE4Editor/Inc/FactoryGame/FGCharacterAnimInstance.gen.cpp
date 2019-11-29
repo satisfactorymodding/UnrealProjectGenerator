@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetAccelerationVectorLength_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetAccelerationVectorLength_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::NewProp_ReturnValue,
 	};
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Returns velocitys direction in degrees" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "GetAccelerationVectorLength", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCharacterAnimInstance_eventGetAccelerationVectorLength_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "GetAccelerationVectorLength", sizeof(FGCharacterAnimInstance_eventGetAccelerationVectorLength_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetCachedCharacter_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetCachedCharacter_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::NewProp_ReturnValue,
 	};
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "cached character of this animation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "GetCachedCharacter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCharacterAnimInstance_eventGetCachedCharacter_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "GetCachedCharacter", sizeof(FGCharacterAnimInstance_eventGetCachedCharacter_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetDesiredRunLeanRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetDesiredRunLeanRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::NewProp_ReturnValue,
 	};
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Return desired character rotation based on floor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "GetDesiredRunLeanRotation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14820401, sizeof(FGCharacterAnimInstance_eventGetDesiredRunLeanRotation_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "GetDesiredRunLeanRotation", sizeof(FGCharacterAnimInstance_eventGetDesiredRunLeanRotation_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetDesiredWalkRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetDesiredWalkRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::NewProp_ReturnValue,
 	};
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Return desired character rotation based on floor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "GetDesiredWalkRotation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14820401, sizeof(FGCharacterAnimInstance_eventGetDesiredWalkRotation_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "GetDesiredWalkRotation", sizeof(FGCharacterAnimInstance_eventGetDesiredWalkRotation_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::NewProp_ReturnValue,
 	};
@@ -228,7 +228,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Returns velocity" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "GetVelocity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14820401, sizeof(FGCharacterAnimInstance_eventGetVelocity_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "GetVelocity", sizeof(FGCharacterAnimInstance_eventGetVelocity_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetVelocityDirection_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventGetVelocityDirection_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::NewProp_ReturnValue,
 	};
@@ -262,7 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Returns velocitys direction in degrees" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "GetVelocityDirection", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCharacterAnimInstance_eventGetVelocityDirection_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "GetVelocityDirection", sizeof(FGCharacterAnimInstance_eventGetVelocityDirection_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Our pawn has taken any damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "OnAnyDamageTaken", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "OnAnyDamageTaken", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -305,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::NewProp_shootDIrection = { UE4CodeGen_Private::EPropertyClass::Struct, "shootDIrection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCharacterAnimInstance_eventOnPointDamageTaken_Parms, shootDIrection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::NewProp_shootDIrection = { "shootDIrection", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCharacterAnimInstance_eventOnPointDamageTaken_Parms, shootDIrection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::NewProp_shootDIrection,
 	};
@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Our pawn has taken point damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "OnPointDamageTaken", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C820C00, sizeof(FGCharacterAnimInstance_eventOnPointDamageTaken_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "OnPointDamageTaken", sizeof(FGCharacterAnimInstance_eventOnPointDamageTaken_Parms), Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Our pawn has taken radial damage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, "OnRadialDamageTaken", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCharacterAnimInstance, nullptr, "OnRadialDamageTaken", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -562,15 +562,15 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCharacterAnimInstance_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength, "GetAccelerationVectorLength" }, // 2785065776
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter, "GetCachedCharacter" }, // 367885618
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation, "GetDesiredRunLeanRotation" }, // 218760500
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation, "GetDesiredWalkRotation" }, // 4110316868
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity, "GetVelocity" }, // 2033753561
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection, "GetVelocityDirection" }, // 1252621773
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken, "OnAnyDamageTaken" }, // 228278497
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken, "OnPointDamageTaken" }, // 216212729
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken, "OnRadialDamageTaken" }, // 3019289840
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength, "GetAccelerationVectorLength" }, // 1513507898
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter, "GetCachedCharacter" }, // 586355985
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation, "GetDesiredRunLeanRotation" }, // 339131129
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation, "GetDesiredWalkRotation" }, // 822996849
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity, "GetVelocity" }, // 1513880098
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection, "GetVelocityDirection" }, // 40938422
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken, "OnAnyDamageTaken" }, // 2386316351
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken, "OnPointDamageTaken" }, // 2977775313
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken, "OnRadialDamageTaken" }, // 2196560883
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::Class_MetaDataParams[] = {
@@ -587,8 +587,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "What to collide against in pre land" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels = { UE4CodeGen_Private::EPropertyClass::Array, "mPreLandCollisionChannels", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mPreLandCollisionChannels), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_Inner = { UE4CodeGen_Private::EPropertyClass::Byte, "mPreLandCollisionChannels", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UEnum_Engine_ECollisionChannel, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels = { "mPreLandCollisionChannels", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mPreLandCollisionChannels), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_Inner = { "mPreLandCollisionChannels", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_Engine_ECollisionChannel, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier_MetaData[] = {
 		{ "Category", "Anim" },
@@ -596,7 +596,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Multiplier for velocity that determines how long the preland trace is" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier = { UE4CodeGen_Private::EPropertyClass::Float, "mPreLandVelocityMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mPreLandVelocityMultiplier), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier = { "mPreLandVelocityMultiplier", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mPreLandVelocityMultiplier), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_MetaData[] = {
 		{ "Category", "Anim" },
@@ -608,7 +608,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mPreLand = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand = { UE4CodeGen_Private::EPropertyClass::Bool, "mPreLand", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand = { "mPreLand", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_MetaData[] = {
 		{ "Category", "Anim" },
@@ -620,7 +620,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mUsePreLand = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand = { UE4CodeGen_Private::EPropertyClass::Bool, "mUsePreLand", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand = { "mUsePreLand", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_MetaData[] = {
 		{ "Category", "Anim" },
@@ -632,7 +632,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mGetDeltaPitchRotation = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation = { UE4CodeGen_Private::EPropertyClass::Bool, "mGetDeltaPitchRotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation = { "mGetDeltaPitchRotation", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
@@ -640,7 +640,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Interpspeed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mAimPitchInterpSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimPitchInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed = { "mAimPitchInterpSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimPitchInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch_MetaData[] = {
 		{ "Category", "Anim" },
@@ -648,7 +648,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Look up" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch = { UE4CodeGen_Private::EPropertyClass::Float, "mAimPitch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimPitch), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch = { "mAimPitch", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimPitch), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue_MetaData[] = {
 		{ "Category", "Anim" },
@@ -656,7 +656,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "when should we turn to the left" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue = { UE4CodeGen_Private::EPropertyClass::Float, "mYawAimMinValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawAimMinValue), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue = { "mYawAimMinValue", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawAimMinValue), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue_MetaData[] = {
 		{ "Category", "Anim" },
@@ -664,7 +664,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "When should we turn to the right" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue = { UE4CodeGen_Private::EPropertyClass::Float, "mYawAimMaxValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawAimMaxValue), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue = { "mYawAimMaxValue", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawAimMaxValue), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_MetaData[] = {
 		{ "Category", "Anim" },
@@ -676,7 +676,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mCanUpdateActorRotationReference = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanUpdateActorRotationReference", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference = { "mCanUpdateActorRotationReference", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_MetaData[] = {
 		{ "Category", "Anim" },
@@ -688,7 +688,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mUseTurnInPlace = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseTurnInPlace", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace = { "mUseTurnInPlace", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime_MetaData[] = {
 		{ "Category", "Anim" },
@@ -696,7 +696,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "How long the turn should take" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime = { UE4CodeGen_Private::EPropertyClass::Float, "mTurnInPlaceDefaultTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mTurnInPlaceDefaultTime), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime = { "mTurnInPlaceDefaultTime", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mTurnInPlaceDefaultTime), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_MetaData[] = {
 		{ "Category", "Anim" },
@@ -708,7 +708,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mAllowedToTurn = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn = { UE4CodeGen_Private::EPropertyClass::Bool, "mAllowedToTurn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn = { "mAllowedToTurn", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
@@ -716,7 +716,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Configable interp speed for root rotation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mRootRotationInterpSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mRootRotationInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed = { "mRootRotationInterpSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mRootRotationInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
@@ -724,7 +724,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Editable for Bigges sake" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mYawRotationInterpSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawRotationInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed = { "mYawRotationInterpSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawRotationInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength_MetaData[] = {
 		{ "Category", "Anim" },
@@ -732,7 +732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Editable for Bigges sake" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength = { UE4CodeGen_Private::EPropertyClass::Float, "mYawRotationStrength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawRotationStrength), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength = { "mYawRotationStrength", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawRotationStrength), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick_MetaData[] = {
 		{ "Category", "Anim" },
@@ -740,7 +740,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Last Rotation saved" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick = { UE4CodeGen_Private::EPropertyClass::Struct, "mActorRotationLastTick", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorRotationLastTick), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick = { "mActorRotationLastTick", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorRotationLastTick), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime_MetaData[] = {
 		{ "Category", "Anim" },
@@ -748,7 +748,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime = { UE4CodeGen_Private::EPropertyClass::Float, "mAimYawReductionCurrentTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYawReductionCurrentTime), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime = { "mAimYawReductionCurrentTime", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYawReductionCurrentTime), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime_MetaData[] = {
 		{ "Category", "Anim" },
@@ -756,7 +756,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime = { UE4CodeGen_Private::EPropertyClass::Float, "mAimYawReductionStartTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYawReductionStartTime), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime = { "mAimYawReductionStartTime", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYawReductionStartTime), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference_MetaData[] = {
 		{ "Category", "Anim" },
@@ -764,7 +764,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference = { UE4CodeGen_Private::EPropertyClass::Struct, "mActorRotationForwardVectorReference", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorRotationForwardVectorReference), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference = { "mActorRotationForwardVectorReference", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorRotationForwardVectorReference), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector_MetaData[] = {
 		{ "Category", "Anim" },
@@ -772,7 +772,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector = { UE4CodeGen_Private::EPropertyClass::Struct, "mActorRotationForwardVector", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorRotationForwardVector), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector = { "mActorRotationForwardVector", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorRotationForwardVector), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve_MetaData[] = {
 		{ "Category", "Anim" },
@@ -780,7 +780,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Rotation values when turning right" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve = { UE4CodeGen_Private::EPropertyClass::Object, "mTurnRightCurve", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mTurnRightCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve = { "mTurnRightCurve", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mTurnRightCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve_MetaData[] = {
 		{ "Category", "Anim" },
@@ -788,7 +788,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Rotation values when turning left" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve = { UE4CodeGen_Private::EPropertyClass::Object, "mTurnLeftCurve", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mTurnLeftCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve = { "mTurnLeftCurve", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mTurnLeftCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_MetaData[] = {
 		{ "Category", "Anim" },
@@ -800,7 +800,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mTurnInPlaceComplete = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete = { UE4CodeGen_Private::EPropertyClass::Bool, "mTurnInPlaceComplete", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete = { "mTurnInPlaceComplete", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_MetaData[] = {
 		{ "Category", "Anim" },
@@ -812,7 +812,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mTurnInPlaceRight = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight = { UE4CodeGen_Private::EPropertyClass::Bool, "mTurnInPlaceRight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight = { "mTurnInPlaceRight", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_MetaData[] = {
 		{ "Category", "Anim" },
@@ -824,7 +824,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mTurnInPlaceLeft = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft = { UE4CodeGen_Private::EPropertyClass::Bool, "mTurnInPlaceLeft", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft = { "mTurnInPlaceLeft", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation_MetaData[] = {
 		{ "Category", "Anim" },
@@ -832,7 +832,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Rotation of root component" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation = { UE4CodeGen_Private::EPropertyClass::Struct, "mRootRotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mRootRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation = { "mRootRotation", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mRootRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
@@ -840,7 +840,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Configable interpspeed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mAimYawInterpSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYawInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed = { "mAimYawInterpSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYawInterpSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw_MetaData[] = {
 		{ "Category", "Anim" },
@@ -848,7 +848,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Where do we want to aim" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw = { UE4CodeGen_Private::EPropertyClass::Float, "mAimYaw", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYaw), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw = { "mAimYaw", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAimYaw), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta_MetaData[] = {
 		{ "Category", "Anim" },
@@ -856,7 +856,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Used for lean/run calculations" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta = { UE4CodeGen_Private::EPropertyClass::Float, "mYawDelta", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawDelta), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta = { "mYawDelta", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mYawDelta), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_MetaData[] = {
 		{ "Category", "Anim" },
@@ -868,7 +868,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mIsAccelerating = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsAccelerating", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating = { "mIsAccelerating", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_MetaData[] = {
 		{ "Category", "Anim" },
@@ -880,7 +880,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	{
 		((UFGCharacterAnimInstance*)Obj)->mIsStandingStill = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsStandingStill", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill = { "mIsStandingStill", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGCharacterAnimInstance), &Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation_MetaData[] = {
 		{ "Category", "Anim" },
@@ -888,7 +888,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Walk rotation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation = { UE4CodeGen_Private::EPropertyClass::Float, "mWalkRotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mWalkRotation), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation = { "mWalkRotation", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mWalkRotation), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ_MetaData[] = {
 		{ "Category", "Anim" },
@@ -896,7 +896,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Speed in movement Z" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ = { UE4CodeGen_Private::EPropertyClass::Float, "mSpeedZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mSpeedZ), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ = { "mSpeedZ", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mSpeedZ), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame_MetaData[] = {
 		{ "Category", "Anim" },
@@ -904,7 +904,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Saved speed from last time we checked" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame = { UE4CodeGen_Private::EPropertyClass::Float, "mSpeedLastFrame", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mSpeedLastFrame), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame = { "mSpeedLastFrame", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mSpeedLastFrame), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed_MetaData[] = {
 		{ "Category", "Anim" },
@@ -912,7 +912,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Speed in movement" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed = { "mSpeed", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode_MetaData[] = {
 		{ "Category", "Anim" },
@@ -920,7 +920,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Cached default value of movement mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode = { UE4CodeGen_Private::EPropertyClass::Byte, "mCachedDefaultWalkMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mCachedDefaultWalkMode), Z_Construct_UEnum_Engine_EMovementMode, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode = { "mCachedDefaultWalkMode", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mCachedDefaultWalkMode), Z_Construct_UEnum_Engine_EMovementMode, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode_MetaData[] = {
 		{ "Category", "Anim" },
@@ -928,7 +928,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Caching movement mode" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode = { UE4CodeGen_Private::EPropertyClass::Byte, "mCachedMovementMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mCachedMovementMode), Z_Construct_UEnum_Engine_EMovementMode, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode = { "mCachedMovementMode", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mCachedMovementMode), Z_Construct_UEnum_Engine_EMovementMode, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter_MetaData[] = {
 		{ "Category", "Anim" },
@@ -936,7 +936,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Caching the character one" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mCachedCharacter), Z_Construct_UClass_AFGCharacterBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter = { "mCachedCharacter", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mCachedCharacter), Z_Construct_UClass_AFGCharacterBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform_MetaData[] = {
 		{ "Category", "Anim" },
@@ -944,7 +944,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Velocity normalized in local space" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "mActorTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform = { "mActorTransform", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mActorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized_MetaData[] = {
 		{ "Category", "Anim" },
@@ -952,7 +952,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Acceleration normalized in local space" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized = { UE4CodeGen_Private::EPropertyClass::Struct, "mAccelerationLocalNormalized", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAccelerationLocalNormalized), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized = { "mAccelerationLocalNormalized", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAccelerationLocalNormalized), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized_MetaData[] = {
 		{ "Category", "Anim" },
@@ -960,7 +960,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Velocity normalized in local space" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized = { UE4CodeGen_Private::EPropertyClass::Struct, "mVelocityLocalNormalized", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mVelocityLocalNormalized), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized = { "mVelocityLocalNormalized", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mVelocityLocalNormalized), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity_MetaData[] = {
 		{ "Category", "Anim" },
@@ -968,7 +968,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "Velocity" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity = { UE4CodeGen_Private::EPropertyClass::Struct, "mVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity = { "mVelocity", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength_MetaData[] = {
 		{ "Category", "Anim" },
@@ -976,7 +976,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "acceleration length normalized" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength = { UE4CodeGen_Private::EPropertyClass::Float, "mAccelerationVectorLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mAccelerationVectorLength), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength = { "mAccelerationVectorLength", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mAccelerationVectorLength), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection_MetaData[] = {
 		{ "Category", "Anim" },
@@ -984,7 +984,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		{ "ToolTip", "in degrees" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection = { UE4CodeGen_Private::EPropertyClass::Float, "mDirection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UFGCharacterAnimInstance, mDirection), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection = { "mDirection", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCharacterAnimInstance, mDirection), METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGCharacterAnimInstance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_Inner,
@@ -1038,13 +1038,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCharacterAnimInstance_Statics::ClassParams = {
 		&UFGCharacterAnimInstance::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A8u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGCharacterAnimInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGCharacterAnimInstance_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::PropPointers),
+		0,
+		0x009000A8u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterAnimInstance_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGCharacterAnimInstance()
@@ -1056,7 +1060,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCharacterAnimInstance, 4267619933);
+	IMPLEMENT_CLASS(UFGCharacterAnimInstance, 642752066);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCharacterAnimInstance>()
+	{
+		return UFGCharacterAnimInstance::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCharacterAnimInstance(Z_Construct_UClass_UFGCharacterAnimInstance, &UFGCharacterAnimInstance::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCharacterAnimInstance"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCharacterAnimInstance);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -6,6 +6,7 @@
 #include "FGBuildableRailroadTrack.h"
 #include "FGRailroadTrackConnectionComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnRailRoadConnectionSwitched, int32, newSwitch );
 
 /**
  * The actual track connection placed in the editor.
@@ -130,13 +131,15 @@ public:
 	void SetStation( class AFGBuildableRailroadStation* station ) { mStation = station; }
 	void SetSignal( class AFGBuildableRailroadSignal* signal ) { mSignal = signal; }
 	void SetTrackPosition( const FRailroadTrackPosition& position );
-
 private:
 	//@todotrains Verify building switches at both sides of a connection, the weird bug some people report.
 	/** Internal helper functions to add/remove connection. */
 	void AddConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
 	void RemoveConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
-
+public:
+	/** Delegate to fire when changing switch on a track */
+	UPROPERTY()
+	FOnRailRoadConnectionSwitched mRailRoadSwitchDelegate;
 private:
 	/** Position of this connection component on the track. */
 	FRailroadTrackPosition mTrackPosition;

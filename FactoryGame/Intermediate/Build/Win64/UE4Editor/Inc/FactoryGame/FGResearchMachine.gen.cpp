@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventGetMachineUser_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventGetMachineUser_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::NewProp_ReturnValue,
 	};
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ToolTip", "Returns current M.A.M. user" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "GetMachineUser", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGResearchMachine_eventGetMachineUser_Parms), Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "GetMachineUser", sizeof(FGResearchMachine_eventGetMachineUser_Parms), Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetMachineUser_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_GetMachineUser()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventGetResearchMeshComponent_Parms, ReturnValue), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventGetResearchMeshComponent_Parms, ReturnValue), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::NewProp_ReturnValue,
 	};
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ToolTip", "Returns the Static Mesh Component that displays the mesh of what is being researched" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "GetResearchMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchMachine_eventGetResearchMeshComponent_Parms), Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "GetResearchMeshComponent", sizeof(FGResearchMachine_eventGetResearchMeshComponent_Parms), Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 	{
 		((FGResearchMachine_eventIsResearchBeingConducted_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchMachine_eventIsResearchBeingConducted_Parms), &Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchMachine_eventIsResearchBeingConducted_Parms), &Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::NewProp_ReturnValue,
 	};
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "IsResearchBeingConducted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchMachine_eventIsResearchBeingConducted_Parms), Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "IsResearchBeingConducted", sizeof(FGResearchMachine_eventIsResearchBeingConducted_Parms), Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "OnRep_ResearchMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "OnRep_ResearchMesh", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventOnResearchConcluded_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventOnResearchConcluded_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::NewProp_researchRecipe,
 	};
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "OnResearchConcluded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGResearchMachine_eventOnResearchConcluded_Parms), Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "OnResearchConcluded", sizeof(FGResearchMachine_eventOnResearchConcluded_Parms), Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -233,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventOnResearchStarted_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventOnResearchStarted_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::NewProp_researchRecipe,
 	};
@@ -242,7 +242,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "OnResearchStarted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGResearchMachine_eventOnResearchStarted_Parms), Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "OnResearchStarted", sizeof(FGResearchMachine_eventOnResearchStarted_Parms), Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -265,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::NewProp_player = { UE4CodeGen_Private::EPropertyClass::Object, "player", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventSetMachineUser_Parms, player), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::NewProp_player = { "player", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventSetMachineUser_Parms, player), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::NewProp_player,
 	};
@@ -275,7 +275,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "SetMachineUser", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchMachine_eventSetMachineUser_Parms), Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "SetMachineUser", sizeof(FGResearchMachine_eventSetMachineUser_Parms), Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetMachineUser_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_SetMachineUser()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -306,7 +306,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "staticMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventSetResearchMeshComponent_Parms, staticMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent = { "staticMeshComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventSetResearchMeshComponent_Parms, staticMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::NewProp_staticMeshComponent,
 	};
@@ -317,7 +317,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ToolTip", "Sets the Static Mesh Component that displays the mesh of what is being researched" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "SetResearchMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchMachine_eventSetResearchMeshComponent_Parms), Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "SetResearchMeshComponent", sizeof(FGResearchMachine_eventSetResearchMeshComponent_Parms), Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::NewProp_curveScale = { UE4CodeGen_Private::EPropertyClass::Object, "curveScale", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventSetResearchMeshCurveScale_Parms, curveScale), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::NewProp_curveScale = { "curveScale", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventSetResearchMeshCurveScale_Parms, curveScale), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::NewProp_curveScale,
 	};
@@ -351,7 +351,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ToolTip", "Sets the curve float for the mesh that is being researched" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "SetResearchMeshCurveScale", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchMachine_eventSetResearchMeshCurveScale_Parms), Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "SetResearchMeshCurveScale", sizeof(FGResearchMachine_eventSetResearchMeshCurveScale_Parms), Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -374,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchMachine_eventSetResearchRecipe_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchMachine_eventSetResearchRecipe_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::NewProp_researchRecipe,
 	};
@@ -384,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, "SetResearchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchMachine_eventSetResearchRecipe_Parms), Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchMachine, nullptr, "SetResearchRecipe", sizeof(FGResearchMachine_eventSetResearchRecipe_Parms), Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -435,16 +435,16 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGResearchMachine_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGResearchMachine_GetMachineUser, "GetMachineUser" }, // 2504203958
-		{ &Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent, "GetResearchMeshComponent" }, // 239225383
-		{ &Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 1206389308
-		{ &Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh, "OnRep_ResearchMesh" }, // 1560421015
-		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded, "OnResearchConcluded" }, // 1602005982
-		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted, "OnResearchStarted" }, // 2584843783
-		{ &Z_Construct_UFunction_UFGResearchMachine_SetMachineUser, "SetMachineUser" }, // 1606106893
-		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent, "SetResearchMeshComponent" }, // 4294770797
-		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale, "SetResearchMeshCurveScale" }, // 1230784552
-		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe, "SetResearchRecipe" }, // 2067814678
+		{ &Z_Construct_UFunction_UFGResearchMachine_GetMachineUser, "GetMachineUser" }, // 4096953233
+		{ &Z_Construct_UFunction_UFGResearchMachine_GetResearchMeshComponent, "GetResearchMeshComponent" }, // 286177053
+		{ &Z_Construct_UFunction_UFGResearchMachine_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 683601843
+		{ &Z_Construct_UFunction_UFGResearchMachine_OnRep_ResearchMesh, "OnRep_ResearchMesh" }, // 3491378315
+		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchConcluded, "OnResearchConcluded" }, // 3647545399
+		{ &Z_Construct_UFunction_UFGResearchMachine_OnResearchStarted, "OnResearchStarted" }, // 4280178785
+		{ &Z_Construct_UFunction_UFGResearchMachine_SetMachineUser, "SetMachineUser" }, // 809405173
+		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshComponent, "SetResearchMeshComponent" }, // 2510894567
+		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchMeshCurveScale, "SetResearchMeshCurveScale" }, // 474494109
+		{ &Z_Construct_UFunction_UFGResearchMachine_SetResearchRecipe, "SetResearchRecipe" }, // 3219191148
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchMachine_Statics::Class_MetaDataParams[] = {
@@ -461,33 +461,33 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve = { UE4CodeGen_Private::EPropertyClass::Object, "mItemScaleCurve", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGResearchMachine, mItemScaleCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve = { "mItemScaleCurve", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResearchMachine, mItemScaleCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 		{ "ToolTip", "This holds the actual mesh to be displayed by the assigned Static Mesh Component for mResearchingMeshComponent" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mResearchingMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_ResearchMesh", STRUCT_OFFSET(UFGResearchMachine, mResearchingMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh = { "mResearchingMesh", "OnRep_ResearchMesh", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResearchMachine, mResearchingMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mResearchingMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(UFGResearchMachine, mResearchingMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent = { "mResearchingMeshComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResearchMachine, mResearchingMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine = { UE4CodeGen_Private::EPropertyClass::Object, "mPlayerUsingMachine", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(UFGResearchMachine, mPlayerUsingMachine), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine = { "mPlayerUsingMachine", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResearchMachine, mPlayerUsingMachine), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mPlayerUsingMachine_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchMachine.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "mCurrentResearchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000020, 1, nullptr, STRUCT_OFFSET(UFGResearchMachine, mCurrentResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe = { "mCurrentResearchRecipe", nullptr, (EPropertyFlags)0x0024080000000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResearchMachine, mCurrentResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mCurrentResearchRecipe_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mItemScaleCurve,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResearchMachine_Statics::NewProp_mResearchingMesh,
@@ -503,13 +503,17 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGResearchMachine_Statics::ClassParams = {
 		&UFGResearchMachine::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGResearchMachine_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGResearchMachine_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGResearchMachine()
@@ -521,7 +525,11 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchMachine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchMachine, 400235788);
+	IMPLEMENT_CLASS(UFGResearchMachine, 3351972804);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGResearchMachine>()
+	{
+		return UFGResearchMachine::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResearchMachine(Z_Construct_UClass_UFGResearchMachine, &UFGResearchMachine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResearchMachine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResearchMachine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

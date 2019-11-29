@@ -15,7 +15,6 @@ void AFGTutorialIntroManager::GatherDependencies_Implementation( TArray< UObject
 bool AFGTutorialIntroManager::NeedTransform_Implementation(){ return bool(); }
 bool AFGTutorialIntroManager::ShouldSave_Implementation() const{ return bool(); }
 void AFGTutorialIntroManager::AddPlayer(  AFGCharacterPlayer* inPlayer){ }
-void AFGTutorialIntroManager::OnResourceScannedFor( TSubclassOf< UFGResourceDescriptor > resourceScannedFor){ }
 void AFGTutorialIntroManager::OnDismantleDropPod(){ }
 void AFGTutorialIntroManager::SetTradingPostLevel( int32 newLevel){ }
 void AFGTutorialIntroManager::SetInputGatesFromTutorialLevel(  AFGPlayerController* playerController){ }
@@ -40,4 +39,4 @@ void AFGTutorialIntroManager::OnPlayerAddedItemToArmSlot( TSubclassOf<  UFGItemD
 void AFGTutorialIntroManager::SetTradingpostBuilt( bool hasbuilt){ }
 void AFGTutorialIntroManager::OnIntroDone(){ }
 void AFGTutorialIntroManager::OnRep_TradingPostLevel(){ }
-bool AFGTutorialIntroManager::ShouldSkipTutorialDueToPIE() const{ return bool(); }
+bool AFGTutorialIntroManager::ShouldSkipTutorial() const{ return bool(); }

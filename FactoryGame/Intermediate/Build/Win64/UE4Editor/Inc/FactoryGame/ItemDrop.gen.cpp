@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -25,10 +25,14 @@ class UScriptStruct* FItemDropWithChance::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemDropWithChance, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemDropWithChance"), sizeof(FItemDropWithChance), Get_Z_Construct_UScriptStruct_FItemDropWithChance_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemDropWithChance, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemDropWithChance"), sizeof(FItemDropWithChance), Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FItemDropWithChance>()
+{
+	return FItemDropWithChance::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FItemDropWithChance(FItemDropWithChance::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ItemDropWithChance"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
@@ -73,7 +77,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		{ "ToolTip", "The drop to be given if we gain the item" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop = { UE4CodeGen_Private::EPropertyClass::Struct, "Drop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(FItemDropWithChance, Drop), Z_Construct_UScriptStruct_FItemDrop, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop = { "Drop", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemDropWithChance, Drop), Z_Construct_UScriptStruct_FItemDrop, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance_MetaData[] = {
 		{ "Category", "DropPackage" },
@@ -83,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		{ "UIMin", "0.000000" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance = { UE4CodeGen_Private::EPropertyClass::Float, "DropChance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(FItemDropWithChance, DropChance), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance = { "DropChance", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemDropWithChance, DropChance), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_Drop,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemDropWithChance_Statics::NewProp_DropChance,
@@ -93,19 +97,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		nullptr,
 		&NewStructOps,
 		"ItemDropWithChance",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FItemDropWithChance),
 		alignof(FItemDropWithChance),
-		Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemDropWithChance()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemDropWithChance"), sizeof(FItemDropWithChance), Get_Z_Construct_UScriptStruct_FItemDropWithChance_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemDropWithChance"), sizeof(FItemDropWithChance), Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -115,16 +120,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_CRC() { return 340864998U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash() { return 2577592151U; }
 class UScriptStruct* FItemDrop::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemDrop_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemDrop, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemDrop"), sizeof(FItemDrop), Get_Z_Construct_UScriptStruct_FItemDrop_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemDrop, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemDrop"), sizeof(FItemDrop), Get_Z_Construct_UScriptStruct_FItemDrop_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FItemDrop>()
+{
+	return FItemDrop::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FItemDrop(FItemDrop::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ItemDrop"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
@@ -168,7 +177,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		{ "ToolTip", "Range of items you can get" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems = { UE4CodeGen_Private::EPropertyClass::Struct, "NumItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FItemDrop, NumItems), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems = { "NumItems", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemDrop, NumItems), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "DropPackage" },
@@ -176,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		{ "ToolTip", "Item class" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass = { UE4CodeGen_Private::EPropertyClass::Class, "ItemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000015, 1, nullptr, STRUCT_OFFSET(FItemDrop, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass = { "ItemClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemDrop, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_NumItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemDrop_Statics::NewProp_ItemClass,
@@ -186,19 +195,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		nullptr,
 		&NewStructOps,
 		"ItemDrop",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FItemDrop),
 		alignof(FItemDrop),
-		Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDrop_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemDrop()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FItemDrop_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemDrop"), sizeof(FItemDrop), Get_Z_Construct_UScriptStruct_FItemDrop_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemDrop"), sizeof(FItemDrop), Get_Z_Construct_UScriptStruct_FItemDrop_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -208,7 +218,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemDrop_CRC() { return 1378101539U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash() { return 1928461506U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

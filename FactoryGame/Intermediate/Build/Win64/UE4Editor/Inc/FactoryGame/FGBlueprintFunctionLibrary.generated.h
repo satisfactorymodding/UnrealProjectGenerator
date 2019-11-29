@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -1093,6 +1093,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGBlueprintFunctionLibrary>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGBlueprintFunctionLibrary_h
 
@@ -1102,4 +1104,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EOutlineColor::OC_USABLE) \
 	op(EOutlineColor::OC_HOLOGRAM) \
 	op(EOutlineColor::OC_RED) 
+
+enum class EOutlineColor : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EOutlineColor>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

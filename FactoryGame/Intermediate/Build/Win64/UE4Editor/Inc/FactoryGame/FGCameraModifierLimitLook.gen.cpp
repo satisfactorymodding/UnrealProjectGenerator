@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGCameraModifierLimitLook_eventGetDefaultLookRotator_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCameraModifierLimitLook_eventGetDefaultLookRotator_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::NewProp_ReturnValue,
 	};
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		{ "ToolTip", "Gets the default rotation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCameraModifierLimitLook, "GetDefaultLookRotator", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14820401, sizeof(FGCameraModifierLimitLook_eventGetDefaultLookRotator_Parms), Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCameraModifierLimitLook, nullptr, "GetDefaultLookRotator", sizeof(FGCameraModifierLimitLook_eventGetDefaultLookRotator_Parms), Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -77,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::NewProp_inRotator = { UE4CodeGen_Private::EPropertyClass::Struct, "inRotator", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCameraModifierLimitLook_eventSetDefaultLookRotator_Parms, inRotator), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::NewProp_inRotator = { "inRotator", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCameraModifierLimitLook_eventSetDefaultLookRotator_Parms, inRotator), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::NewProp_inRotator,
 	};
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		{ "ToolTip", "Sets the default rotation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCameraModifierLimitLook, "SetDefaultLookRotator", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGCameraModifierLimitLook_eventSetDefaultLookRotator_Parms), Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGCameraModifierLimitLook, nullptr, "SetDefaultLookRotator", sizeof(FGCameraModifierLimitLook_eventSetDefaultLookRotator_Parms), Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -126,8 +126,8 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator, "GetDefaultLookRotator" }, // 88926032
-		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator, "SetDefaultLookRotator" }, // 2182258359
+		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator, "GetDefaultLookRotator" }, // 2706352865
+		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator, "SetDefaultLookRotator" }, // 631804363
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::Class_MetaDataParams[] = {
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		{ "ToolTip", "The max rotation in yaw ( abs value )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxYaw", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCameraModifierLimitLook, mMaxYaw), METADATA_PARAMS(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw = { "mMaxYaw", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCameraModifierLimitLook, mMaxYaw), METADATA_PARAMS(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch_MetaData[] = {
 		{ "Category", "Limited Look" },
@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		{ "ToolTip", "The max rotation in pitch ( abs value )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxPitch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGCameraModifierLimitLook, mMaxPitch), METADATA_PARAMS(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch = { "mMaxPitch", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGCameraModifierLimitLook, mMaxPitch), METADATA_PARAMS(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch,
@@ -160,13 +160,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::ClassParams = {
 		&UFGCameraModifierLimitLook::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGCameraModifierLimitLook()
@@ -178,7 +182,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCameraModifierLimitLook, 1962063743);
+	IMPLEMENT_CLASS(UFGCameraModifierLimitLook, 1941533620);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGCameraModifierLimitLook>()
+	{
+		return UFGCameraModifierLimitLook::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCameraModifierLimitLook(Z_Construct_UClass_UFGCameraModifierLimitLook, &UFGCameraModifierLimitLook::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCameraModifierLimitLook"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCameraModifierLimitLook);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

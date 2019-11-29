@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -45,6 +45,8 @@ class AFGEquipmentAttachment;
 	friend struct Z_Construct_UScriptStruct_FDisabledInputGate_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDisabledInputGate>();
 
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_73_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_73_RPC_WRAPPERS_NO_PURE_DECLS
@@ -114,6 +116,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveInvalid_PlayerNotDead>();
+
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_84_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_84_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_84_INCLASS_NO_PURE_DECLS \
@@ -182,6 +186,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGUseState_ReviveValid>();
+
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_95_RPC_WRAPPERS \
 	virtual bool Server_PickUpItem_Validate(AFGItemPickup* ); \
 	virtual void Server_PickUpItem_Implementation(AFGItemPickup* itemPickup); \
@@ -213,6 +219,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	virtual void StopFocusAim_Implementation(); \
 	virtual void StartFocusAim_Implementation(); \
 	virtual ECrosshairState GetActiveCrosshairState_Implementation(); \
+ \
+	DECLARE_FUNCTION(execOnRep_IsSliding) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_IsSliding(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_RadiationIntensity) \
 	{ \
@@ -344,11 +358,43 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetTotalPlayerArmEquipmentSlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerArmEquipmentSlots(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetTotalPlayerInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerInventorySlots(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsSliding) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsSliding(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetBestUsableActor) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(AActor**)Z_Param__Result=P_THIS->GetBestUsableActor(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetArmBoneLocation) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetArmBoneLocation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -657,6 +703,22 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			return; \
 		} \
 		P_THIS->Server_CycleHandEquipmentPressed_Implementation(Z_Param_dir); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCrouchReleased) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CrouchReleased(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCrouchPressed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CrouchPressed(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -916,6 +978,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	virtual void StartFocusAim_Implementation(); \
 	virtual ECrosshairState GetActiveCrosshairState_Implementation(); \
  \
+	DECLARE_FUNCTION(execOnRep_IsSliding) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_IsSliding(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execOnRep_RadiationIntensity) \
 	{ \
 		P_FINISH; \
@@ -1046,11 +1116,43 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetTotalPlayerArmEquipmentSlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerArmEquipmentSlots(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetTotalPlayerInventorySlots) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=P_THIS->GetTotalPlayerInventorySlots(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIsSliding) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->IsSliding(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetBestUsableActor) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(AActor**)Z_Param__Result=P_THIS->GetBestUsableActor(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetArmBoneLocation) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetArmBoneLocation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1359,6 +1461,22 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			return; \
 		} \
 		P_THIS->Server_CycleHandEquipmentPressed_Implementation(Z_Param_dir); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCrouchReleased) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CrouchReleased(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCrouchPressed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CrouchPressed(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -1641,6 +1759,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	struct FGCharacterPlayer_eventServer_UnequipEquipment_Parms \
 	{ \
 		AFGEquipment* newEquipment; \
+	}; \
+	struct FGCharacterPlayer_eventTickVisuals_Parms \
+	{ \
+		float dt; \
 	};
 
 
@@ -1743,7 +1865,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCharacterPlayer); \
 	FORCEINLINE static uint32 __PPO__mRadiationIntensity() { return STRUCT_OFFSET(AFGCharacterPlayer, mRadiationIntensity); } \
 	FORCEINLINE static uint32 __PPO__mRadiationDamageAngle() { return STRUCT_OFFSET(AFGCharacterPlayer, mRadiationDamageAngle); } \
 	FORCEINLINE static uint32 __PPO__mRadiationImmunity() { return STRUCT_OFFSET(AFGCharacterPlayer, mRadiationImmunity); } \
-	FORCEINLINE static uint32 __PPO__mInRadioactiveZone() { return STRUCT_OFFSET(AFGCharacterPlayer, mInRadioactiveZone); }
+	FORCEINLINE static uint32 __PPO__mInRadioactiveZone() { return STRUCT_OFFSET(AFGCharacterPlayer, mInRadioactiveZone); } \
+	FORCEINLINE static uint32 __PPO__mCameraOffsetBlendSpeed() { return STRUCT_OFFSET(AFGCharacterPlayer, mCameraOffsetBlendSpeed); } \
+	FORCEINLINE static uint32 __PPO__mReplicatedIsSliding() { return STRUCT_OFFSET(AFGCharacterPlayer, mReplicatedIsSliding); } \
+	FORCEINLINE static uint32 __PPO__mCrouchSpeed() { return STRUCT_OFFSET(AFGCharacterPlayer, mCrouchSpeed); } \
+	FORCEINLINE static uint32 __PPO__mStandSpeed() { return STRUCT_OFFSET(AFGCharacterPlayer, mStandSpeed); } \
+	FORCEINLINE static uint32 __PPO__mSlideToCrouchSpeed() { return STRUCT_OFFSET(AFGCharacterPlayer, mSlideToCrouchSpeed); }
 
 
 #define FactoryGame_Source_FactoryGame_FGCharacterPlayer_h_92_PROLOG \
@@ -1774,6 +1901,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGCharacterPlayer>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGCharacterPlayer_h
 
@@ -1782,4 +1911,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ECameraMode::ECM_None) \
 	op(ECameraMode::ECM_FirstPerson) \
 	op(ECameraMode::ECM_ThirdPerson) 
+
+enum class ECameraMode : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ECameraMode>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

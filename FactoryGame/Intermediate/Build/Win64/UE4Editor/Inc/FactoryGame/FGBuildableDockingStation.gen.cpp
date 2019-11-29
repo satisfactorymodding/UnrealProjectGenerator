@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -34,6 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_Undock();
+	FACTORYGAME_API UClass* Z_Construct_UClass_UFGReplicationDetailInventoryComponent_NoRegister();
 // End Cross Module References
 	static FName NAME_AFGBuildableDockingStation_OnBeginLoadVehicle = FName(TEXT("OnBeginLoadVehicle"));
 	void AFGBuildableDockingStation::OnBeginLoadVehicle()
@@ -87,8 +88,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((FGBuildableDockingStation_eventDock_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableDockingStation_eventDock_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_actor = { UE4CodeGen_Private::EPropertyClass::Object, "actor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableDockingStation_eventDock_Parms, actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableDockingStation_eventDock_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_actor = { "actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDockingStation_eventDock_Parms, actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::NewProp_actor,
@@ -100,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Dock an actor to this docking station." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "Dock", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020400, sizeof(FGBuildableDockingStation_eventDock_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "Dock", sizeof(FGBuildableDockingStation_eventDock_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_Dock()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -132,9 +133,9 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((FGBuildableDockingStation_eventFilterFuelClasses_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableDockingStation_eventFilterFuelClasses_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_idx = { UE4CodeGen_Private::EPropertyClass::Int, "idx", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableDockingStation_eventFilterFuelClasses_Parms, idx), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_object = { UE4CodeGen_Private::EPropertyClass::Class, "object", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBuildableDockingStation_eventFilterFuelClasses_Parms, object), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableDockingStation_eventFilterFuelClasses_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_idx = { "idx", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDockingStation_eventFilterFuelClasses_Parms, idx), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_object = { "object", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDockingStation_eventFilterFuelClasses_Parms, object), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::NewProp_idx,
@@ -146,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Filter out what we consider as fuel for our fuel inventory.\n@see IsValidFuel" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "FilterFuelClasses", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x40080401, sizeof(FGBuildableDockingStation_eventFilterFuelClasses_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "FilterFuelClasses", sizeof(FGBuildableDockingStation_eventFilterFuelClasses_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -169,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableDockingStation_eventGetDockedActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDockingStation_eventGetDockedActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::NewProp_ReturnValue,
 	};
@@ -180,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Get the docked actor if any." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "GetDockedActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableDockingStation_eventGetDockedActor_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "GetDockedActor", sizeof(FGBuildableDockingStation_eventGetDockedActor_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -211,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBuildableDockingStation_eventGetFuelInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDockingStation_eventGetFuelInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::NewProp_ReturnValue,
 	};
@@ -222,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "@return a valid pointer to the fuel inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "GetFuelInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableDockingStation_eventGetFuelInventory_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "GetFuelInventory", sizeof(FGBuildableDockingStation_eventGetFuelInventory_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -253,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBuildableDockingStation_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableDockingStation_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::NewProp_ReturnValue,
 	};
@@ -264,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Get the inventory the docked vehicle loads/unloads to" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "GetInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableDockingStation_eventGetInventory_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "GetInventory", sizeof(FGBuildableDockingStation_eventGetInventory_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -292,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((FGBuildableDockingStation_eventGetIsInLoadMode_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableDockingStation_eventGetIsInLoadMode_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableDockingStation_eventGetIsInLoadMode_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::NewProp_ReturnValue,
 	};
@@ -303,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Get whether this station should load or unload from vehicles" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "GetIsInLoadMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020400, sizeof(FGBuildableDockingStation_eventGetIsInLoadMode_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "GetIsInLoadMode", sizeof(FGBuildableDockingStation_eventGetIsInLoadMode_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -331,7 +332,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((FGBuildableDockingStation_eventIsLoadUnloading_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableDockingStation_eventIsLoadUnloading_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableDockingStation_eventIsLoadUnloading_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::NewProp_ReturnValue,
 	};
@@ -342,7 +343,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Get whether this station is currently loading or unloading from vehicles" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "IsLoadUnloading", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020400, sizeof(FGBuildableDockingStation_eventIsLoadUnloading_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "IsLoadUnloading", sizeof(FGBuildableDockingStation_eventIsLoadUnloading_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -366,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Called when we start loading the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "OnBeginLoadVehicle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "OnBeginLoadVehicle", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -390,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Called when we start unloading the vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "OnBeginUnloadVehicle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "OnBeginUnloadVehicle", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -413,7 +414,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Set up the fuel inventory when replicated" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "OnRep_FuelInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "OnRep_FuelInventory", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -437,7 +438,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Notify for when unload and/or load transfers are completed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "OnTransferComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "OnTransferComplete", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -465,7 +466,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((FGBuildableDockingStation_eventSetIsInLoadMode_Parms*)Obj)->isInLoadMode = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::NewProp_isInLoadMode = { UE4CodeGen_Private::EPropertyClass::Bool, "isInLoadMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableDockingStation_eventSetIsInLoadMode_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::NewProp_isInLoadMode_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::NewProp_isInLoadMode = { "isInLoadMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableDockingStation_eventSetIsInLoadMode_Parms), &Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::NewProp_isInLoadMode_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::NewProp_isInLoadMode,
 	};
@@ -476,7 +477,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Set whether this station should load or unload from vehicles" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "SetIsInLoadMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020400, sizeof(FGBuildableDockingStation_eventSetIsInLoadMode_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "SetIsInLoadMode", sizeof(FGBuildableDockingStation_eventSetIsInLoadMode_Parms), Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -500,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Undock the docked actor." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, "Undock", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020400, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableDockingStation, nullptr, "Undock", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableDockingStation_Undock()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -521,6 +522,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFuelInventory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFuelInventory;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInventory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mInventory;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mIsLoadUnloading_MetaData[];
 #endif
@@ -545,13 +554,13 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mDockedActor;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFuelInventory_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInventoryHandler_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFuelInventory;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mInventoryHandler;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mInventory_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mFuelInventoryHandler_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mInventory;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mFuelInventoryHandler;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mTransferProgress_MetaData[];
 #endif
@@ -581,19 +590,19 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableDockingStation_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Dock, "Dock" }, // 2854945123
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses, "FilterFuelClasses" }, // 822746084
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor, "GetDockedActor" }, // 3841276921
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory, "GetFuelInventory" }, // 2491755864
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory, "GetInventory" }, // 2322231205
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode, "GetIsInLoadMode" }, // 4064280641
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading, "IsLoadUnloading" }, // 3031724955
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle, "OnBeginLoadVehicle" }, // 315992865
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle, "OnBeginUnloadVehicle" }, // 934392773
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory, "OnRep_FuelInventory" }, // 932860018
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete, "OnTransferComplete" }, // 1758221258
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode, "SetIsInLoadMode" }, // 152133119
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Undock, "Undock" }, // 3198013276
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Dock, "Dock" }, // 2239019307
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses, "FilterFuelClasses" }, // 2558906185
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor, "GetDockedActor" }, // 1730666322
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory, "GetFuelInventory" }, // 1447980971
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory, "GetInventory" }, // 2494163157
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode, "GetIsInLoadMode" }, // 4255628533
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading, "IsLoadUnloading" }, // 989030535
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle, "OnBeginLoadVehicle" }, // 1112375382
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle, "OnBeginUnloadVehicle" }, // 3351019575
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory, "OnRep_FuelInventory" }, // 3919824857
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete, "OnTransferComplete" }, // 183209278
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode, "SetIsInLoadMode" }, // 198171140
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Undock, "Undock" }, // 3011390313
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::Class_MetaDataParams[] = {
@@ -602,6 +611,22 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Base class for docking stations in the game, this is a load/unload station depending on the conveyor connections given." },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ToolTip", "Inventory for refueling the trucks." },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory = { "mFuelInventory", "OnRep_FuelInventory", (EPropertyFlags)0x0040000101080028, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mFuelInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ToolTip", "Inventory where we transfer items to when unloading from a vehicle" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory = { "mInventory", nullptr, (EPropertyFlags)0x0040000001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
@@ -613,7 +638,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((AFGBuildableDockingStation*)Obj)->mIsLoadUnloading = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsLoadUnloading", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading = { "mIsLoadUnloading", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData[] = {
 		{ "Category", "DockingStation" },
@@ -621,7 +646,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "How much of a stack to transfer in each separate transfer moment" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize = { UE4CodeGen_Private::EPropertyClass::Float, "mStackTransferSize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mStackTransferSize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize = { "mStackTransferSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mStackTransferSize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
@@ -633,7 +658,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((AFGBuildableDockingStation*)Obj)->mIsInLoadMode = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsInLoadMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode = { "mIsInLoadMode", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
@@ -645,30 +670,28 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	{
 		((AFGBuildableDockingStation*)Obj)->mHasDockedActor = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasDockedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor = { "mHasDockedActor", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "The actor docked to this station." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor = { UE4CodeGen_Private::EPropertyClass::Object, "mDockedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mDockedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor = { "mDockedActor", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mDockedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventoryHandler_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
-		{ "ToolTip", "Inventory for refueling the trucks." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mFuelInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080101080028, 1, "OnRep_FuelInventory", STRUCT_OFFSET(AFGBuildableDockingStation, mFuelInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventoryHandler = { "mInventoryHandler", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mInventoryHandler), Z_Construct_UClass_UFGReplicationDetailInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventoryHandler_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventoryHandler_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventoryHandler_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
-		{ "ToolTip", "Inventory where we transfer items to when unloading from a vehicle" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080028, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventoryHandler = { "mFuelInventoryHandler", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mFuelInventoryHandler), Z_Construct_UClass_UFGReplicationDetailInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventoryHandler_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventoryHandler_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
@@ -676,7 +699,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "Current progress on transfer from/to docking station ( in seconds )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress = { UE4CodeGen_Private::EPropertyClass::Float, "mTransferProgress", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mTransferProgress), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress = { "mTransferProgress", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mTransferProgress), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed_MetaData[] = {
 		{ "Category", "DockingStation" },
@@ -684,7 +707,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "How long time it takes to transfer 1 stack of fuel from/to docking station ( in seconds )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mFuelTransferSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mFuelTransferSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed = { "mFuelTransferSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mFuelTransferSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed_MetaData[] = {
 		{ "Category", "DockingStation" },
@@ -692,7 +715,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "How long time it takes to transfer one stack of item from/to docking station ( in seconds )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mTransferSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mTransferSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed = { "mTransferSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mTransferSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY_MetaData[] = {
 		{ "Category", "DockingStation" },
@@ -700,7 +723,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "SizeY of storage inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY = { UE4CodeGen_Private::EPropertyClass::Int8, "mStorageSizeY", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mStorageSizeY), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY_MetaData)) };
+	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY = { "mStorageSizeY", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mStorageSizeY), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX_MetaData[] = {
 		{ "Category", "DockingStation" },
@@ -708,15 +731,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		{ "ToolTip", "SizeX of storage inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX = { UE4CodeGen_Private::EPropertyClass::Int8, "mStorageSizeX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mStorageSizeX), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX_MetaData)) };
+	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX = { "mStorageSizeX", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableDockingStation, mStorageSizeX), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableDockingStation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventoryHandler,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventoryHandler,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed,
@@ -728,13 +753,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::ClassParams = {
 		&AFGBuildableDockingStation::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableDockingStation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableDockingStation_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableDockingStation()
@@ -746,7 +775,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDockingStation, 1085486574);
+	IMPLEMENT_CLASS(AFGBuildableDockingStation, 553798314);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableDockingStation>()
+	{
+		return AFGBuildableDockingStation::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableDockingStation(Z_Construct_UClass_AFGBuildableDockingStation, &AFGBuildableDockingStation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableDockingStation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableDockingStation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -59,6 +59,10 @@ class IFGActorRepresentationInterface
 	UFUNCTION( BlueprintNativeEvent, Category = "Representation" )
 	FLinearColor GetActorRepresentationColor();
 
+	/** Set the color to use for this actors representation */
+	UFUNCTION( BlueprintCallable, BlueprintNativeEvent, Category = "Representation" )
+	void SetActorRepresentationColor( FLinearColor newColor );
+
 	/** Fetches the representation type to use for this actor */
 	UFUNCTION( BlueprintNativeEvent, Category = "Representation" )
 	ERepresentationType GetActorRepresentationType();

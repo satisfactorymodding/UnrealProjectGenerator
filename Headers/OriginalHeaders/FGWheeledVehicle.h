@@ -150,6 +150,12 @@ public:
 	virtual void DisplayDebug(class UCanvas* canvas, const FDebugDisplayInfo& debugDisplay, float& YL, float& YPos) override;
 	// End AActor interface
 
+	// Begin IFGSignificanceInterface
+	virtual void GainedSignificance_Implementation() override;
+	virtual	void LostSignificance_Implementation() override;
+
+	//End IFGSignificanceInterface
+
 	//~ Begin IFGDockableInterface
 	virtual bool CanDock_Implementation( EDockStationType atStation ) const override;
 	virtual class UFGInventoryComponent* GetDockInventory_Implementation() const override;
@@ -285,9 +291,13 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Path" )
 	void SetPathVisibility( bool inVisible ) { mIsPathVisible = inVisible; }
 
-	/** Blueprint accessor for when foliage was destroyed */
-	UFUNCTION( BlueprintImplementableEvent, BlueprintCallable, Category = "Character" )
-	void PlayFoliageDestroyedEffect( class UParticleSystem* destroyEffect, class UAkAudioEvent* destroyAudioEvent, FVector location );
+	/** Multicast from server when foliage was destroyed */
+	UFUNCTION( NetMulticast, Unreliable, Category = "Character" )
+	void Multicast_PlayFoliageDestroyedEffect( class UParticleSystem* destroyEffect, class UAkAudioEvent* destroyAudioEvent, FVector location );
+
+	/** Blueprint client accessor for when foliage was destroyed */
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Character" )
+	void Client_PlayFoliageDestroyedEffect( class UParticleSystem* destroyEffect, class UAkAudioEvent* destroyAudioEvent, FVector location );
 
 	UFUNCTION()
 	void OnOverlapBegin( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult );
@@ -309,6 +319,12 @@ public:
 	/** retrieves the world location of where the drift force should be applied. eg. use a blueprint to position it */
 	UFUNCTION( BlueprintImplementableEvent, Category = "Vehicle" )
 	FVector GetDriftForceOffset();
+
+	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "Vehicle" )
+	void CloseVehicleTrunk( class AFGCharacterPlayer* player );
+
+	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "Vehicle" )
+	void OpenVehicleTrunk( class AFGCharacterPlayer* player );
 
 protected:
 	// Begin AFGVehicle interface
@@ -547,6 +563,7 @@ private:
 	UPROPERTY( EditDefaultsOnly, Category = "Vehicle" )
 	int32 mInventorySize;
 
+	UPROPERTY()
 	/** A complete collection of all tire particles gathered per tire */
 	TArray< FTireParticleCollection > mTireParticleCollection;
 

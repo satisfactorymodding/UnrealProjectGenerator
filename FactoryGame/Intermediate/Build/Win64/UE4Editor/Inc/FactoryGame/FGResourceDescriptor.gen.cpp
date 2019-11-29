@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -80,8 +80,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	{
 		((FGResourceDescriptor_eventCanBeHandMined_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResourceDescriptor_eventCanBeHandMined_Parms), &Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventCanBeHandMined_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResourceDescriptor_eventCanBeHandMined_Parms), &Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventCanBeHandMined_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::NewProp_inClass,
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The static mesh we want the ResourceNode to use when it has this class selected" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "CanBeHandMined", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventCanBeHandMined_Parms), Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "CanBeHandMined", sizeof(FGResourceDescriptor_eventCanBeHandMined_Parms), Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -118,8 +118,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetCollectSpeedMultiplier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetCollectSpeedMultiplier_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetCollectSpeedMultiplier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetCollectSpeedMultiplier_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::NewProp_inClass,
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "A multiplier for this resource to set if it is fast or slow to pick up. 1.0 = normal" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetCollectSpeedMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetCollectSpeedMultiplier_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetCollectSpeedMultiplier", sizeof(FGResourceDescriptor_eventGetCollectSpeedMultiplier_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -156,8 +156,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetCompasTexture_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetCompasTexture_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetCompasTexture_Parms, ReturnValue), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetCompasTexture_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::NewProp_inClass,
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Texture to show in the compass when this resource has been scanned and found." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetCompasTexture", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetCompasTexture_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetCompasTexture", sizeof(FGResourceDescriptor_eventGetCompasTexture_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -194,8 +194,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::NewProp_inClass,
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Returns the decal this resource use (if any)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetDecalMaterial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetDecalMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDecalMaterial", sizeof(FGResourceDescriptor_eventGetDecalMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -232,8 +232,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalSize_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalSize_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalSize_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDecalSize_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::NewProp_inClass,
@@ -245,7 +245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "If we are using a decal, then this returns how big that decal should be" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetDecalSize", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetDecalSize_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDecalSize", sizeof(FGResourceDescriptor_eventGetDecalSize_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -270,8 +270,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::NewProp_inClass,
@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Returns the material this resource deposit use (if any)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetDepositMaterial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetDepositMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDepositMaterial", sizeof(FGResourceDescriptor_eventGetDepositMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -308,8 +308,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMesh_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDepositMesh_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::NewProp_inClass,
@@ -321,7 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The static mesh we want the Resource Deposit to use when it has this class selected" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetDepositMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetDepositMesh_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDepositMesh", sizeof(FGResourceDescriptor_eventGetDepositMesh_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -346,8 +346,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDestroyedParticle_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetDestroyedParticle_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDestroyedParticle_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetDestroyedParticle_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::NewProp_inClass,
@@ -359,7 +359,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Gets particle for when node gets destroyed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetDestroyedParticle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetDestroyedParticle_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetDestroyedParticle", sizeof(FGResourceDescriptor_eventGetDestroyedParticle_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -384,8 +384,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetFactoryMiningParticle_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetFactoryMiningParticle_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetFactoryMiningParticle_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetFactoryMiningParticle_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::NewProp_inClass,
@@ -397,7 +397,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Gets particle for factory mining" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetFactoryMiningParticle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetFactoryMiningParticle_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetFactoryMiningParticle", sizeof(FGResourceDescriptor_eventGetFactoryMiningParticle_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -422,8 +422,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetGroundMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetGroundMesh_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetGroundMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetGroundMesh_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::NewProp_inClass,
@@ -435,7 +435,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The static mesh we want the ResourceNode to use when it has this class selected" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetGroundMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetGroundMesh_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetGroundMesh", sizeof(FGResourceDescriptor_eventGetGroundMesh_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -460,8 +460,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Name, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningAudioName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningAudioName_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningAudioName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningAudioName_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::NewProp_inClass,
@@ -473,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Gets name used in audio event for mining manually" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetManualMiningAudioName", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetManualMiningAudioName_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetManualMiningAudioName", sizeof(FGResourceDescriptor_eventGetManualMiningAudioName_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -498,8 +498,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningParticle_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningParticle_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningParticle_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetManualMiningParticle_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::NewProp_inClass,
@@ -511,7 +511,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Gets particle for manual mining" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetManualMiningParticle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetManualMiningParticle_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetManualMiningParticle", sizeof(FGResourceDescriptor_eventGetManualMiningParticle_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -536,8 +536,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetMeshOverrideMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetMeshOverrideMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetMeshOverrideMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetMeshOverrideMaterial_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::NewProp_inClass,
@@ -549,7 +549,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "If this is non-null, then we will use this material instead of the material specified in the mGroundMesh" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetMeshOverrideMaterial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResourceDescriptor_eventGetMeshOverrideMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetMeshOverrideMaterial", sizeof(FGResourceDescriptor_eventGetMeshOverrideMaterial_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -574,8 +574,8 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetPingColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResourceDescriptor_eventGetPingColor_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetPingColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResourceDescriptor_eventGetPingColor_Parms, inClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::NewProp_inClass,
@@ -587,7 +587,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The color the ping should have for this material" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, "GetPingColor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14822401, sizeof(FGResourceDescriptor_eventGetPingColor_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResourceDescriptor, nullptr, "GetPingColor", sizeof(FGResourceDescriptor_eventGetPingColor_Parms), Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -669,20 +669,20 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGResourceDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined, "CanBeHandMined" }, // 2033232270
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier, "GetCollectSpeedMultiplier" }, // 1919068132
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture, "GetCompasTexture" }, // 635515220
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial, "GetDecalMaterial" }, // 1568386352
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize, "GetDecalSize" }, // 1430996169
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial, "GetDepositMaterial" }, // 3760244501
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh, "GetDepositMesh" }, // 2426889745
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle, "GetDestroyedParticle" }, // 3492087507
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle, "GetFactoryMiningParticle" }, // 1844641115
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh, "GetGroundMesh" }, // 2314956960
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName, "GetManualMiningAudioName" }, // 1178069993
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle, "GetManualMiningParticle" }, // 1950158497
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial, "GetMeshOverrideMaterial" }, // 562119711
-		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor, "GetPingColor" }, // 2537422822
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_CanBeHandMined, "CanBeHandMined" }, // 3968844337
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCollectSpeedMultiplier, "GetCollectSpeedMultiplier" }, // 3202415191
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetCompasTexture, "GetCompasTexture" }, // 2205249604
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalMaterial, "GetDecalMaterial" }, // 1662104448
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDecalSize, "GetDecalSize" }, // 610067233
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMaterial, "GetDepositMaterial" }, // 2999512854
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDepositMesh, "GetDepositMesh" }, // 1092546186
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetDestroyedParticle, "GetDestroyedParticle" }, // 2289763299
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetFactoryMiningParticle, "GetFactoryMiningParticle" }, // 2667145455
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetGroundMesh, "GetGroundMesh" }, // 1258807323
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningAudioName, "GetManualMiningAudioName" }, // 3294534823
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetManualMiningParticle, "GetManualMiningParticle" }, // 3535211960
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetMeshOverrideMaterial, "GetMeshOverrideMaterial" }, // 501441266
+		{ &Z_Construct_UFunction_UFGResourceDescriptor_GetPingColor, "GetPingColor" }, // 1131307661
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::Class_MetaDataParams[] = {
@@ -698,7 +698,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "name of sound to play when mining by hand" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName = { UE4CodeGen_Private::EPropertyClass::Name, "mManualMiningAudioName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mManualMiningAudioName), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName = { "mManualMiningAudioName", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mManualMiningAudioName), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData[] = {
 		{ "Category", "Item|FX" },
@@ -706,7 +706,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Particle to show when mining with machine" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle = { UE4CodeGen_Private::EPropertyClass::Object, "mDestroyedParticle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mDestroyedParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle = { "mDestroyedParticle", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDestroyedParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData[] = {
 		{ "Category", "Item|FX" },
@@ -714,7 +714,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Particle to show when mining with machine" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle = { UE4CodeGen_Private::EPropertyClass::Object, "mFactoryMiningParticle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mFactoryMiningParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle = { "mFactoryMiningParticle", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mFactoryMiningParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mFactoryMiningParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle_MetaData[] = {
 		{ "Category", "Item|FX" },
@@ -722,7 +722,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Particle to show when mining by hand" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle = { UE4CodeGen_Private::EPropertyClass::Object, "mManualMiningParticle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mManualMiningParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle = { "mManualMiningParticle", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mManualMiningParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture_MetaData[] = {
 		{ "Category", "Item|Resource" },
@@ -730,7 +730,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "Texture to show in the compass when this resource has been scanned and found." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture = { UE4CodeGen_Private::EPropertyClass::Object, "mCompassTexture", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mCompassTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture = { "mCompassTexture", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mCompassTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCompassTexture_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier_MetaData[] = {
 		{ "Category", "Item|Resource" },
@@ -738,7 +738,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "A multiplier for this resource to set if it is fast or slow to pick up. 1.0 = normal" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier = { UE4CodeGen_Private::EPropertyClass::Float, "mCollectSpeedMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mCollectSpeedMultiplier), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier = { "mCollectSpeedMultiplier", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mCollectSpeedMultiplier), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mCollectSpeedMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor_MetaData[] = {
 		{ "Category", "Item|Resource" },
@@ -746,7 +746,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The color the ping should have for this material" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor = { UE4CodeGen_Private::EPropertyClass::Struct, "mPingColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mPingColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor = { "mPingColor", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mPingColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mPingColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize_MetaData[] = {
 		{ "Category", "Item|World" },
@@ -755,7 +755,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "How big will the decal on the ground be (and the collision for it) if we have mUseMaterialDecal enabled" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize = { UE4CodeGen_Private::EPropertyClass::Float, "mDecalSize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mDecalSize), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize = { "mDecalSize", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDecalSize), METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalSize_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData[] = {
 		{ "Category", "Item|World" },
@@ -763,7 +763,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The decal this resource use (if any)" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDecalMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mDecalMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial = { "mDecalMaterial", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDecalMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDecalMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride_MetaData[] = {
 		{ "Category", "Item|World" },
@@ -771,7 +771,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "If this is non-null, then we will use this material instead of the material specified in the mGroundMesh" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride = { UE4CodeGen_Private::EPropertyClass::Object, "mGroundMeshMaterialOverride", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mGroundMeshMaterialOverride), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride = { "mGroundMeshMaterialOverride", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mGroundMeshMaterialOverride), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMeshMaterialOverride_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData[] = {
 		{ "Category", "Item|World" },
@@ -779,7 +779,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The material this resource deposit use (if any)" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDepositMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mDepositMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial = { "mDepositMaterial", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDepositMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData[] = {
 		{ "Category", "Item|World" },
@@ -788,7 +788,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The static mesh we want the Resource Deposit to use when it has this class selected" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDepositMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mDepositMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh = { "mDepositMesh", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mDepositMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDepositMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh_MetaData[] = {
 		{ "Category", "Item|World" },
@@ -797,7 +797,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		{ "ToolTip", "The static mesh we want the ResourceNode to use when it has this class selected" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mGroundMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGResourceDescriptor, mGroundMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh = { "mGroundMesh", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGResourceDescriptor, mGroundMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mGroundMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGResourceDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mManualMiningAudioName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGResourceDescriptor_Statics::NewProp_mDestroyedParticle,
@@ -818,13 +818,17 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGResourceDescriptor_Statics::ClassParams = {
 		&UFGResourceDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGResourceDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGResourceDescriptor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::PropPointers),
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGResourceDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGResourceDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGResourceDescriptor()
@@ -836,7 +840,11 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptor, 3427090916);
+	IMPLEMENT_CLASS(UFGResourceDescriptor, 2577111030);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGResourceDescriptor>()
+	{
+		return UFGResourceDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceDescriptor(Z_Construct_UClass_UFGResourceDescriptor, &UFGResourceDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

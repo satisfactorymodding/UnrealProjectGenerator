@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGItemDescriptorBiomass_Statics::ClassParams = {
 		&UFGItemDescriptorBiomass::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptorBiomass_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptorBiomass_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGItemDescriptorBiomass()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorBiomass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 1738402770);
+	IMPLEMENT_CLASS(UFGItemDescriptorBiomass, 3676129715);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGItemDescriptorBiomass>()
+	{
+		return UFGItemDescriptorBiomass::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptorBiomass(Z_Construct_UClass_UFGItemDescriptorBiomass, &UFGItemDescriptorBiomass::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptorBiomass"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptorBiomass);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

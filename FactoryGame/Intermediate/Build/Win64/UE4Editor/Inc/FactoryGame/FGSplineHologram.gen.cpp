@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		{ "ToolTip", "Update the spline on the client." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSplineHologram, "OnRep_SplineData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080400, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSplineHologram, nullptr, "OnRep_SplineData", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSplineHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData, "OnRep_SplineData" }, // 3226700768
+		{ &Z_Construct_UFunction_AFGSplineHologram_OnRep_SplineData, "OnRep_SplineData" }, // 2572620666
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::Class_MetaDataParams[] = {
@@ -97,8 +97,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		{ "ToolTip", "This is the data needed to create the spline component (local space)." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData = { UE4CodeGen_Private::EPropertyClass::Array, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_SplineData", STRUCT_OFFSET(AFGSplineHologram, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData = { "mSplineData", "OnRep_SplineData", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSplineHologram, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_Inner = { "mSplineData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		{ "ToolTip", "The spline component we're placing." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGSplineHologram, mSplineComponent), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent = { "mSplineComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSplineHologram, mSplineComponent), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGSplineHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplineHologram_Statics::NewProp_mSplineData_Inner,
@@ -118,13 +118,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSplineHologram_Statics::ClassParams = {
 		&AFGSplineHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGSplineHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGSplineHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSplineHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSplineHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSplineHologram()
@@ -136,7 +140,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplineHologram, 2281275347);
+	IMPLEMENT_CLASS(AFGSplineHologram, 166043190);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGSplineHologram>()
+	{
+		return AFGSplineHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSplineHologram(Z_Construct_UClass_AFGSplineHologram, &AFGSplineHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSplineHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSplineHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

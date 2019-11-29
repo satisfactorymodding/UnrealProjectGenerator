@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,10 +49,14 @@ class UScriptStruct* FCouplerSetup::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FCouplerSetup_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCouplerSetup, Z_Construct_UPackage__Script_FactoryGame(), TEXT("CouplerSetup"), sizeof(FCouplerSetup), Get_Z_Construct_UScriptStruct_FCouplerSetup_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FCouplerSetup_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCouplerSetup, Z_Construct_UPackage__Script_FactoryGame(), TEXT("CouplerSetup"), sizeof(FCouplerSetup), Get_Z_Construct_UScriptStruct_FCouplerSetup_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FCouplerSetup>()
+{
+	return FCouplerSetup::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FCouplerSetup(FCouplerSetup::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("CouplerSetup"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCouplerSetup
@@ -96,7 +100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCouplerSetup
 		{ "ToolTip", "How long is the couplers arm, from the bone to the point where is attaches to the other coupler." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length = { UE4CodeGen_Private::EPropertyClass::Float, "Length", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FCouplerSetup, Length), METADATA_PARAMS(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length = { "Length", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCouplerSetup, Length), METADATA_PARAMS(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName_MetaData[] = {
 		{ "Category", "CouplerSetup" },
@@ -104,7 +108,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCouplerSetup
 		{ "ToolTip", "Bone name on mesh where the coupler's base is attached." },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName = { UE4CodeGen_Private::EPropertyClass::Name, "BoneName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FCouplerSetup, BoneName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName = { "BoneName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCouplerSetup, BoneName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCouplerSetup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_Length,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCouplerSetup_Statics::NewProp_BoneName,
@@ -114,19 +118,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCouplerSetup
 		nullptr,
 		&NewStructOps,
 		"CouplerSetup",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
 		sizeof(FCouplerSetup),
 		alignof(FCouplerSetup),
-		Z_Construct_UScriptStruct_FCouplerSetup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FCouplerSetup_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FCouplerSetup_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FCouplerSetup_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FCouplerSetup()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FCouplerSetup_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FCouplerSetup_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("CouplerSetup"), sizeof(FCouplerSetup), Get_Z_Construct_UScriptStruct_FCouplerSetup_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("CouplerSetup"), sizeof(FCouplerSetup), Get_Z_Construct_UScriptStruct_FCouplerSetup_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -136,16 +141,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCouplerSetup
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCouplerSetup_CRC() { return 1436460336U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCouplerSetup_Hash() { return 535957204U; }
 class UScriptStruct* FWheelsetSetup::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FWheelsetSetup_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FWheelsetSetup, Z_Construct_UPackage__Script_FactoryGame(), TEXT("WheelsetSetup"), sizeof(FWheelsetSetup), Get_Z_Construct_UScriptStruct_FWheelsetSetup_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FWheelsetSetup_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FWheelsetSetup, Z_Construct_UPackage__Script_FactoryGame(), TEXT("WheelsetSetup"), sizeof(FWheelsetSetup), Get_Z_Construct_UScriptStruct_FWheelsetSetup_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FWheelsetSetup>()
+{
+	return FWheelsetSetup::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FWheelsetSetup(FWheelsetSetup::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("WheelsetSetup"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
@@ -194,7 +203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 	{
 		((FWheelsetSetup*)Obj)->CanSwivel = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel = { UE4CodeGen_Private::EPropertyClass::Bool, "CanSwivel", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FWheelsetSetup), &Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel = { "CanSwivel", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FWheelsetSetup), &Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName_MetaData[] = {
 		{ "Category", "WheelsetSetup" },
@@ -202,7 +211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Bone name on mesh where the wheelset/bogie is located." },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName = { UE4CodeGen_Private::EPropertyClass::Name, "BoneName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(FWheelsetSetup, BoneName), METADATA_PARAMS(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName = { "BoneName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWheelsetSetup, BoneName), METADATA_PARAMS(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWheelsetSetup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_CanSwivel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWheelsetSetup_Statics::NewProp_BoneName,
@@ -212,19 +221,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		nullptr,
 		&NewStructOps,
 		"WheelsetSetup",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
 		sizeof(FWheelsetSetup),
 		alignof(FWheelsetSetup),
-		Z_Construct_UScriptStruct_FWheelsetSetup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FWheelsetSetup_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FWheelsetSetup_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FWheelsetSetup()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FWheelsetSetup_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FWheelsetSetup_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("WheelsetSetup"), sizeof(FWheelsetSetup), Get_Z_Construct_UScriptStruct_FWheelsetSetup_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("WheelsetSetup"), sizeof(FWheelsetSetup), Get_Z_Construct_UScriptStruct_FWheelsetSetup_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -234,7 +244,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FWheelsetSetup_CRC() { return 2620561246U; }
+	uint32 Get_Z_Construct_UScriptStruct_FWheelsetSetup_Hash() { return 3269762755U; }
 	void UFGRailroadVehicleMovementComponent::StaticRegisterNativesUFGRailroadVehicleMovementComponent()
 	{
 		UClass* Class = UFGRailroadVehicleMovementComponent::StaticClass();
@@ -278,7 +288,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetAirBrakingForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetAirBrakingForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::NewProp_ReturnValue,
 	};
@@ -289,7 +299,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get air braking force. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetAirBrakingForce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetAirBrakingForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetAirBrakingForce", sizeof(FGRailroadVehicleMovementComponent_eventGetAirBrakingForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -312,7 +322,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetBrakingForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetBrakingForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::NewProp_ReturnValue,
 	};
@@ -323,7 +333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the force by the dynamic + air brakes, this has no direction. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetBrakingForce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetBrakingForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetBrakingForce", sizeof(FGRailroadVehicleMovementComponent_eventGetBrakingForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -353,14 +363,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention_MetaData[] = {
 		{ "DisplayName", "Extention" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention = { UE4CodeGen_Private::EPropertyClass::Float, "out_extention", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms, out_extention), METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention_MetaData)) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention = { "out_extention", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms, out_extention), METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms, index), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::NewProp_out_extention,
@@ -373,7 +383,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the couplers rotation for a coupler." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetCouplerRotationAndExtention", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54C20401, sizeof(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetCouplerRotationAndExtention", sizeof(FGRailroadVehicleMovementComponent_eventGetCouplerRotationAndExtention_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54C20401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -396,7 +406,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetDynamicBrakingForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetDynamicBrakingForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::NewProp_ReturnValue,
 	};
@@ -407,7 +417,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get dynamic braking force. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetDynamicBrakingForce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetDynamicBrakingForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetDynamicBrakingForce", sizeof(FGRailroadVehicleMovementComponent_eventGetDynamicBrakingForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -430,7 +440,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetForwardSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetForwardSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::NewProp_ReturnValue,
 	};
@@ -441,7 +451,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Speed of this vehicle along the track. In the direction of the train. [cm/s]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetForwardSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetForwardSpeed_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetForwardSpeed", sizeof(FGRailroadVehicleMovementComponent_eventGetForwardSpeed_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -464,7 +474,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::NewProp_ReturnValue,
 	};
@@ -475,7 +485,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the total mass (gross) of this vehicle, tare + payload. [kg]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetMass", sizeof(FGRailroadVehicleMovementComponent_eventGetMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -498,7 +508,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxAirBrakingEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxAirBrakingEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::NewProp_ReturnValue,
 	};
@@ -509,7 +519,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get max air braking force. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMaxAirBrakingEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMaxAirBrakingEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetMaxAirBrakingEffort", sizeof(FGRailroadVehicleMovementComponent_eventGetMaxAirBrakingEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -532,7 +542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::NewProp_ReturnValue,
 	};
@@ -543,7 +553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get max dynamic braking force. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMaxDynamicBrakingEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetMaxDynamicBrakingEffort", sizeof(FGRailroadVehicleMovementComponent_eventGetMaxDynamicBrakingEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -566,7 +576,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxForwardSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxForwardSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::NewProp_ReturnValue,
 	};
@@ -577,7 +587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Arbitrary maximum speed of this vehicle along the track. [cm/s]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMaxForwardSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMaxForwardSpeed_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetMaxForwardSpeed", sizeof(FGRailroadVehicleMovementComponent_eventGetMaxForwardSpeed_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -600,7 +610,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::NewProp_ReturnValue,
 	};
@@ -611,7 +621,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get maximum tractive force for this vehicle. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetMaxTractiveEffort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetMaxTractiveEffort", sizeof(FGRailroadVehicleMovementComponent_eventGetMaxTractiveEffort_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -634,7 +644,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetNumWheelsets_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetNumWheelsets_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::NewProp_ReturnValue,
 	};
@@ -645,7 +655,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get number of wheel sets" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetNumWheelsets", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetNumWheelsets_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetNumWheelsets", sizeof(FGRailroadVehicleMovementComponent_eventGetNumWheelsets_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -668,7 +678,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetPayloadMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetPayloadMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::NewProp_ReturnValue,
 	};
@@ -679,7 +689,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the current payload mass for vehicle. [kg]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetPayloadMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetPayloadMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetPayloadMass", sizeof(FGRailroadVehicleMovementComponent_eventGetPayloadMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -702,7 +712,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetRelativeForwardSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetRelativeForwardSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::NewProp_ReturnValue,
 	};
@@ -713,7 +723,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Speed of this vehicle in relative to it's orientation. [cm/s]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetRelativeForwardSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetRelativeForwardSpeed_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetRelativeForwardSpeed", sizeof(FGRailroadVehicleMovementComponent_eventGetRelativeForwardSpeed_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -736,7 +746,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTareMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTareMass_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::NewProp_ReturnValue,
 	};
@@ -747,7 +757,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the unloaded mass of this vehicle, tare. [kg]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetTareMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetTareMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetTareMass", sizeof(FGRailroadVehicleMovementComponent_eventGetTareMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -770,7 +780,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTrackCurvature_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTrackCurvature_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::NewProp_ReturnValue,
 	};
@@ -781,7 +791,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Expressed as degree of curvature over 30 m. [radians]\n5 degrees means the forward direction (of the track) changes by 5 degrees over 30 m." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetTrackCurvature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetTrackCurvature_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetTrackCurvature", sizeof(FGRailroadVehicleMovementComponent_eventGetTrackCurvature_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -804,7 +814,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTrackGrade_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTrackGrade_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::NewProp_ReturnValue,
 	};
@@ -815,7 +825,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Slope of the track. [radians]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetTrackGrade", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetTrackGrade_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetTrackGrade", sizeof(FGRailroadVehicleMovementComponent_eventGetTrackGrade_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -838,7 +848,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTractiveForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetTractiveForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::NewProp_ReturnValue,
 	};
@@ -849,7 +859,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the tractive force for this vehicle, this have a direction. [N] [kg cm/s^2]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetTractiveForce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetTractiveForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetTractiveForce", sizeof(FGRailroadVehicleMovementComponent_eventGetTractiveForce_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -872,7 +882,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelRotation_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelRotation_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::NewProp_ReturnValue,
 	};
@@ -883,7 +893,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the rotation for the wheels around the axle. [degrees]." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetWheelRotation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetWheelRotation_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetWheelRotation", sizeof(FGRailroadVehicleMovementComponent_eventGetWheelRotation_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -906,7 +916,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::NewProp_ReturnValue,
 	};
@@ -917,7 +927,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the angle of the boogie relative to the locomotive. [radians]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetWheelsetAngle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetWheelsetAngle_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetWheelsetAngle", sizeof(FGRailroadVehicleMovementComponent_eventGetWheelsetAngle_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -942,8 +952,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetOffset_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetOffset_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetOffset_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetOffset_Parms, index), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::NewProp_index,
@@ -955,7 +965,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the offset for a wheelset relative to the root bone along the forward (X) axis." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetWheelsetOffset", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventGetWheelsetOffset_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetWheelsetOffset", sizeof(FGRailroadVehicleMovementComponent_eventGetWheelsetOffset_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -980,8 +990,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetRotation_Parms, index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventGetWheelsetRotation_Parms, index), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::NewProp_index,
@@ -993,7 +1003,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Get the rotation for a wheelset." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "GetWheelsetRotation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54820401, sizeof(FGRailroadVehicleMovementComponent_eventGetWheelsetRotation_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "GetWheelsetRotation", sizeof(FGRailroadVehicleMovementComponent_eventGetWheelsetRotation_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1021,7 +1031,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 	{
 		((FGRailroadVehicleMovementComponent_eventIsMoving_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGRailroadVehicleMovementComponent_eventIsMoving_Parms), &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGRailroadVehicleMovementComponent_eventIsMoving_Parms), &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::NewProp_ReturnValue,
 	};
@@ -1032,7 +1042,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "If this vehicle is moving. Within a small threshold." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "IsMoving", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRailroadVehicleMovementComponent_eventIsMoving_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "IsMoving", sizeof(FGRailroadVehicleMovementComponent_eventIsMoving_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1055,7 +1065,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::NewProp_payload = { UE4CodeGen_Private::EPropertyClass::Float, "payload", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventSetPayloadMass_Parms, payload), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::NewProp_payload = { "payload", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRailroadVehicleMovementComponent_eventSetPayloadMass_Parms, payload), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::NewProp_payload,
 	};
@@ -1066,7 +1076,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Set the current payload mass for vehicle. [kg]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, "SetPayloadMass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRailroadVehicleMovementComponent_eventSetPayloadMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGRailroadVehicleMovementComponent, nullptr, "SetPayloadMass", sizeof(FGRailroadVehicleMovementComponent_eventSetPayloadMass_Parms), Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1146,29 +1156,29 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce, "GetAirBrakingForce" }, // 4135474293
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce, "GetBrakingForce" }, // 4152663313
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention, "GetCouplerRotationAndExtention" }, // 2424052886
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce, "GetDynamicBrakingForce" }, // 1791354070
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed, "GetForwardSpeed" }, // 365438481
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass, "GetMass" }, // 2441211346
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort, "GetMaxAirBrakingEffort" }, // 1898230000
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort, "GetMaxDynamicBrakingEffort" }, // 3189017068
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed, "GetMaxForwardSpeed" }, // 2081455493
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort, "GetMaxTractiveEffort" }, // 3208242970
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets, "GetNumWheelsets" }, // 3959814359
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass, "GetPayloadMass" }, // 1234262908
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed, "GetRelativeForwardSpeed" }, // 4259226267
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass, "GetTareMass" }, // 2996486759
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature, "GetTrackCurvature" }, // 2458871299
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade, "GetTrackGrade" }, // 1581625861
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce, "GetTractiveForce" }, // 2010746147
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation, "GetWheelRotation" }, // 3370756130
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle, "GetWheelsetAngle" }, // 1123140458
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset, "GetWheelsetOffset" }, // 2198380841
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation, "GetWheelsetRotation" }, // 2318994671
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving, "IsMoving" }, // 2527196894
-		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass, "SetPayloadMass" }, // 1310609012
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetAirBrakingForce, "GetAirBrakingForce" }, // 1517424080
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetBrakingForce, "GetBrakingForce" }, // 2207105575
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetCouplerRotationAndExtention, "GetCouplerRotationAndExtention" }, // 3316725519
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetDynamicBrakingForce, "GetDynamicBrakingForce" }, // 1466830852
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetForwardSpeed, "GetForwardSpeed" }, // 3384870896
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMass, "GetMass" }, // 2827114650
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxAirBrakingEffort, "GetMaxAirBrakingEffort" }, // 3366302642
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxDynamicBrakingEffort, "GetMaxDynamicBrakingEffort" }, // 1464576266
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxForwardSpeed, "GetMaxForwardSpeed" }, // 3968069367
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetMaxTractiveEffort, "GetMaxTractiveEffort" }, // 2050707420
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetNumWheelsets, "GetNumWheelsets" }, // 2212779723
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetPayloadMass, "GetPayloadMass" }, // 501706788
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetRelativeForwardSpeed, "GetRelativeForwardSpeed" }, // 3221807857
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTareMass, "GetTareMass" }, // 3285835408
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackCurvature, "GetTrackCurvature" }, // 637170980
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTrackGrade, "GetTrackGrade" }, // 142726202
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetTractiveForce, "GetTractiveForce" }, // 1312541384
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelRotation, "GetWheelRotation" }, // 3607682460
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetAngle, "GetWheelsetAngle" }, // 1700217759
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetOffset, "GetWheelsetOffset" }, // 79786337
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_GetWheelsetRotation, "GetWheelsetRotation" }, // 2684853796
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_IsMoving, "IsMoving" }, // 1896797548
+		{ &Z_Construct_UFunction_UFGRailroadVehicleMovementComponent_SetPayloadMass, "SetPayloadMass" }, // 1991620299
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::Class_MetaDataParams[] = {
@@ -1187,7 +1197,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxAirBrakingEffort", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMaxAirBrakingEffort), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort = { "mMaxAirBrakingEffort", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMaxAirBrakingEffort), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1197,7 +1207,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient = { UE4CodeGen_Private::EPropertyClass::Float, "mCurvatureResistanceCoefficient", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mCurvatureResistanceCoefficient), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient = { "mCurvatureResistanceCoefficient", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mCurvatureResistanceCoefficient), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1207,7 +1217,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient = { UE4CodeGen_Private::EPropertyClass::Float, "mRollingResistanceCoefficient", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mRollingResistanceCoefficient), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient = { "mRollingResistanceCoefficient", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mRollingResistanceCoefficient), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mRollingResistanceCoefficient_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1217,7 +1227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.01" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight = { UE4CodeGen_Private::EPropertyClass::Float, "mChassisHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mChassisHeight), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight = { "mChassisHeight", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mChassisHeight), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1227,7 +1237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.01" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth = { UE4CodeGen_Private::EPropertyClass::Float, "mChassisWidth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mChassisWidth), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth = { "mChassisWidth", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mChassisWidth), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mChassisWidth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1235,7 +1245,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "DragCoefficient of the vehicle chassis. Good values [0.4, 0.8]." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient = { UE4CodeGen_Private::EPropertyClass::Float, "mDragCoefficient", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mDragCoefficient), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient = { "mDragCoefficient", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mDragCoefficient), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mDragCoefficient_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1245,7 +1255,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass = { UE4CodeGen_Private::EPropertyClass::Float, "mPayloadMass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mPayloadMass), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass = { "mPayloadMass", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mPayloadMass), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mPayloadMass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1255,7 +1265,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.01" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMaxVelocity), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity = { "mMaxVelocity", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMaxVelocity), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxVelocity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1265,7 +1275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "UIMin", "0.01" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass = { UE4CodeGen_Private::EPropertyClass::Float, "mMass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMass), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass = { "mMass", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mMass), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1273,8 +1283,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Couplers for this train. Front is 0 and back is 1." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups = { UE4CodeGen_Private::EPropertyClass::Array, "mCouplerSetups", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mCouplerSetups), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mCouplerSetups", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FCouplerSetup, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups = { "mCouplerSetups", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mCouplerSetups), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCouplerSetups_Inner = { "mCouplerSetups", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCouplerSetup, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1282,7 +1292,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "The radius of the wheels. [cm]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mWheelRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelRadius), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius = { "mWheelRadius", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelRadius), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_MetaData[] = {
 		{ "Category", "VehicleSetup" },
@@ -1290,8 +1300,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		{ "ToolTip", "Wheelsets for this train. Front is 0 and back is 1." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups = { UE4CodeGen_Private::EPropertyClass::Array, "mWheelsetSetups", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelsetSetups), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mWheelsetSetups", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FWheelsetSetup, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups = { "mWheelsetSetups", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGRailroadVehicleMovementComponent, mWheelsetSetups), METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mWheelsetSetups_Inner = { "mWheelsetSetups", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FWheelsetSetup, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mMaxAirBrakingEffort,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::NewProp_mCurvatureResistanceCoefficient,
@@ -1313,13 +1323,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::ClassParams = {
 		&UFGRailroadVehicleMovementComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::PropPointers),
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadVehicleMovementComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRailroadVehicleMovementComponent()
@@ -1331,7 +1345,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFWheelsetSetup
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadVehicleMovementComponent, 1348022225);
+	IMPLEMENT_CLASS(UFGRailroadVehicleMovementComponent, 2255844438);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGRailroadVehicleMovementComponent>()
+	{
+		return UFGRailroadVehicleMovementComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadVehicleMovementComponent(Z_Construct_UClass_UFGRailroadVehicleMovementComponent, &UFGRailroadVehicleMovementComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadVehicleMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadVehicleMovementComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

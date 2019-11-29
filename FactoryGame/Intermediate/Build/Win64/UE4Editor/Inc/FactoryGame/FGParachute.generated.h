@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -81,6 +81,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGParachuteCameraShake>();
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGParachute_h_27_RPC_WRAPPERS \
 	virtual FVector ModifyVelocity_Implementation(float deltaTime, FVector const& oldVelocity); \
@@ -216,6 +218,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGParachute>();
+
 #define FactoryGame_Source_FactoryGame_Equipment_FGParachute_h_75_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_IsDeployed) \
@@ -315,6 +319,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGParachuteAttachment>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGParachute_h

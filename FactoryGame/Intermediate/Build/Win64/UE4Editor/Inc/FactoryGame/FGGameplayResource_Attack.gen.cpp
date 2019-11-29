@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayResource_Attack() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGameplayTaskResource_Attack_Statics::ClassParams = {
 		&UFGameplayTaskResource_Attack::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A4u,
-		nullptr, 0,
-		nullptr, 0,
 		"Game",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGameplayTaskResource_Attack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGameplayTaskResource_Attack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGameplayTaskResource_Attack()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGGameplayResource_Attack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGameplayTaskResource_Attack, 2036911386);
+	IMPLEMENT_CLASS(UFGameplayTaskResource_Attack, 1514977008);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGameplayTaskResource_Attack>()
+	{
+		return UFGameplayTaskResource_Attack::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGameplayTaskResource_Attack(Z_Construct_UClass_UFGameplayTaskResource_Attack, &UFGameplayTaskResource_Attack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGameplayTaskResource_Attack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGameplayTaskResource_Attack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

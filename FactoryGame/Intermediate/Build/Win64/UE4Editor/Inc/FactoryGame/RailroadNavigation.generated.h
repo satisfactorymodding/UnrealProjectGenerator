@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,4 +21,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	op(ERailroadPathFindingResult::RNQR_Error) \
 	op(ERailroadPathFindingResult::RNQR_Unreachable) \
 	op(ERailroadPathFindingResult::RNQR_Success) 
+
+enum class ERailroadPathFindingResult : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ERailroadPathFindingResult>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

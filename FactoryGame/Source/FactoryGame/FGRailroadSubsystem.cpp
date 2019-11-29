@@ -42,12 +42,12 @@ void AFGRailroadSubsystem::InitializeStationNames(){ }
 AFGTrain* AFGRailroadSubsystem::CreateTrain( AFGRailroadVehicle* vehicle) const{ return nullptr; }
 void AFGRailroadSubsystem::RemoveTrain(  AFGTrain* train){ }
 void AFGRailroadSubsystem::ReconnectTrainToThirdRail( AFGTrain* train){ }
-void AFGRailroadSubsystem::PreTickPhysics( FPhysScene* physScene, uint32 sceneType, float dt){ }
-void AFGRailroadSubsystem::UpdatePhysics( FPhysScene* physScene, uint32 sceneType, float dt){ }
+void AFGRailroadSubsystem::PreTickPhysics( FPhysScene* physScene, float dt){ }
+void AFGRailroadSubsystem::UpdatePhysics( FPhysScene* physScene, float dt){ }
 void AFGRailroadSubsystem::UpdateSimulationData(  AFGTrain* train,  FTrainSimulationData& simData){ }
 void AFGRailroadSubsystem::OnTrainOrderChanged(  AFGTrain* trainID){ }
 void AFGRailroadSubsystem::MergeTrackGraphs( int32 first, int32 second){ }
 int32 AFGRailroadSubsystem::CreateTrackGraph(){ return int32(); }
-void AFGRailroadSubsystem::RemoveTrackGraph( int graphID){ }
+void AFGRailroadSubsystem::RemoveTrackGraph( int32 graphID){ }
 void AFGRailroadSubsystem::AddTrackToGraph(  AFGBuildableRailroadTrack* track, int32 graphID){ }
 int32 AFGRailroadSubsystem::GenerateUniqueTrackGraphID(){ return int32(); }

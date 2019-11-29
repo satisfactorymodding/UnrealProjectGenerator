@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,15 +24,21 @@ struct FTransform;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCachedSplineMeshToMaterialObject>();
+
 #define FactoryGame_Source_FactoryGame_FGOutlineComponent_h_30_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCachedMeshToMaterialObject>();
+
 #define FactoryGame_Source_FactoryGame_FGOutlineComponent_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCachedMaterialInterfaceArray>();
 
 #define FactoryGame_Source_FactoryGame_FGOutlineComponent_h_54_RPC_WRAPPERS \
  \
@@ -260,6 +266,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGOutlineComponent>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGOutlineComponent_h

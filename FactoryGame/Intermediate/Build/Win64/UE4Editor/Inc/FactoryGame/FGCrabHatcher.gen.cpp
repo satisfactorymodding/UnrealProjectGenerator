@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	{
 		((FGCrabHatcher_eventGetDidSpawnCrabs_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCrabHatcher_eventGetDidSpawnCrabs_Parms), &Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCrabHatcher_eventGetDidSpawnCrabs_Parms), &Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::NewProp_ReturnValue,
 	};
@@ -77,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "GetDidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCrabHatcher_eventGetDidSpawnCrabs_Parms), Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "GetDidSpawnCrabs", sizeof(FGCrabHatcher_eventGetDidSpawnCrabs_Parms), Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	{
 		((FGCrabHatcher_eventGetThreatNearby_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCrabHatcher_eventGetThreatNearby_Parms), &Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCrabHatcher_eventGetThreatNearby_Parms), &Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::NewProp_ReturnValue,
 	};
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Get for mThreatNearby" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "GetThreatNearby", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCrabHatcher_eventGetThreatNearby_Parms), Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "GetThreatNearby", sizeof(FGCrabHatcher_eventGetThreatNearby_Parms), Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "OnRep_DidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "OnRep_DidSpawnCrabs", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -161,7 +161,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::NewProp_animLength = { UE4CodeGen_Private::EPropertyClass::Float, "animLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGCrabHatcher_eventSetAnimationLength_Parms, animLength), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::NewProp_animLength = { "animLength", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGCrabHatcher_eventSetAnimationLength_Parms, animLength), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::NewProp_animLength,
 	};
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Set for mAnimationLength" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "SetAnimationLength", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCrabHatcher_eventSetAnimationLength_Parms), Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "SetAnimationLength", sizeof(FGCrabHatcher_eventSetAnimationLength_Parms), Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	{
 		((FGCrabHatcher_eventSetDidSpawnCrabs_Parms*)Obj)->inDidSPawn = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::NewProp_inDidSPawn = { UE4CodeGen_Private::EPropertyClass::Bool, "inDidSPawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCrabHatcher_eventSetDidSpawnCrabs_Parms), &Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::NewProp_inDidSPawn_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::NewProp_inDidSPawn = { "inDidSPawn", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCrabHatcher_eventSetDidSpawnCrabs_Parms), &Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::NewProp_inDidSPawn_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::NewProp_inDidSPawn,
 	};
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Set for mDidSpawnCrabs" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "SetDidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCrabHatcher_eventSetDidSpawnCrabs_Parms), Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "SetDidSpawnCrabs", sizeof(FGCrabHatcher_eventSetDidSpawnCrabs_Parms), Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -239,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	{
 		((FGCrabHatcher_eventSetThreatNearby_Parms*)Obj)->inNearby = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::NewProp_inNearby = { UE4CodeGen_Private::EPropertyClass::Bool, "inNearby", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGCrabHatcher_eventSetThreatNearby_Parms), &Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::NewProp_inNearby_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::NewProp_inNearby = { "inNearby", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGCrabHatcher_eventSetThreatNearby_Parms), &Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::NewProp_inNearby_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::NewProp_inNearby,
 	};
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Set for mThreatNearby" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "SetThreatNearby", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGCrabHatcher_eventSetThreatNearby_Parms), Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "SetThreatNearby", sizeof(FGCrabHatcher_eventSetThreatNearby_Parms), Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -274,7 +274,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Call to BP to spawn the crab babies" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "SpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "SpawnCrabs", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -298,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Call to BP when expansion starts" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "StartExpanding", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, nullptr, "StartExpanding", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGCrabHatcher_StartExpanding()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -346,14 +346,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCrabHatcher_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs, "GetDidSpawnCrabs" }, // 1568743654
-		{ &Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby, "GetThreatNearby" }, // 2107056043
-		{ &Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs, "OnRep_DidSpawnCrabs" }, // 684119306
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength, "SetAnimationLength" }, // 1739298920
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs, "SetDidSpawnCrabs" }, // 3272467000
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby, "SetThreatNearby" }, // 2959071078
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs, "SpawnCrabs" }, // 797187866
-		{ &Z_Construct_UFunction_AFGCrabHatcher_StartExpanding, "StartExpanding" }, // 1333305881
+		{ &Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs, "GetDidSpawnCrabs" }, // 3136911999
+		{ &Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby, "GetThreatNearby" }, // 3796102332
+		{ &Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs, "OnRep_DidSpawnCrabs" }, // 391634469
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength, "SetAnimationLength" }, // 2439951052
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs, "SetDidSpawnCrabs" }, // 158192564
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby, "SetThreatNearby" }, // 479326422
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs, "SpawnCrabs" }, // 2027684208
+		{ &Z_Construct_UFunction_AFGCrabHatcher_StartExpanding, "StartExpanding" }, // 27133565
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::Class_MetaDataParams[] = {
@@ -369,14 +369,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		{ "ToolTip", "Time when timer reach it's end" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax = { UE4CodeGen_Private::EPropertyClass::Float, "mThreatTimerMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCrabHatcher, mThreatTimerMax), METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax = { "mThreatTimerMax", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrabHatcher, mThreatTimerMax), METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData[] = {
 		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Time enemy has been under threat" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer = { UE4CodeGen_Private::EPropertyClass::Float, "mThreatTimer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGCrabHatcher, mThreatTimer), METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer = { "mThreatTimer", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrabHatcher, mThreatTimer), METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData[] = {
 		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
@@ -387,7 +387,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	{
 		((AFGCrabHatcher*)Obj)->mDidSpawnCrabs = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_DidSpawnCrabs", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCrabHatcher), &Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs = { "mDidSpawnCrabs", "OnRep_DidSpawnCrabs", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCrabHatcher), &Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_MetaData[] = {
 		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
@@ -398,7 +398,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	{
 		((AFGCrabHatcher*)Obj)->mThreatNearby = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby = { UE4CodeGen_Private::EPropertyClass::Bool, "mThreatNearby", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCrabHatcher), &Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby = { "mThreatNearby", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCrabHatcher), &Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCrabHatcher_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer,
@@ -410,13 +410,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCrabHatcher_Statics::ClassParams = {
 		&AFGCrabHatcher::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGCrabHatcher_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGCrabHatcher_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCrabHatcher()
@@ -428,7 +432,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrabHatcher, 3736334325);
+	IMPLEMENT_CLASS(AFGCrabHatcher, 3453805429);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCrabHatcher>()
+	{
+		return AFGCrabHatcher::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrabHatcher(Z_Construct_UClass_AFGCrabHatcher, &AFGCrabHatcher::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrabHatcher"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrabHatcher);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

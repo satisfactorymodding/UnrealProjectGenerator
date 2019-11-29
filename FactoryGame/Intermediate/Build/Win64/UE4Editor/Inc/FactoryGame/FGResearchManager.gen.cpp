@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventResearchNewAvailable_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventResearchNewAvailable_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::NewProp_researchRecipe,
 	};
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ResearchNewAvailable__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventResearchNewAvailable_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchNewAvailable__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchNewAvailable_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -115,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventResearchResultsClaimed_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventResearchResultsClaimed_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::NewProp_researchRecipe,
 	};
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ResearchResultsClaimed__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventResearchResultsClaimed_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchResultsClaimed__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchResultsClaimed_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -147,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventResearchCompletedDelegate_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventResearchCompletedDelegate_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::NewProp_researchRecipe,
 	};
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ResearchCompletedDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventResearchCompletedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchCompletedDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchCompletedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventPaidOffResearchDelegate_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventPaidOffResearchDelegate_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::NewProp_researchRecipe,
 	};
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "PaidOffResearchDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventPaidOffResearchDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "PaidOffResearchDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventPaidOffResearchDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventResearchStartedDelegate_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventResearchStartedDelegate_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::NewProp_researchRecipe,
 	};
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResearchManager() {}
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ResearchStartedDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventResearchStartedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "ResearchStartedDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventResearchStartedDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -235,10 +235,14 @@ class UScriptStruct* FCompletedResearch::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCompletedResearch, Z_Construct_UPackage__Script_FactoryGame(), TEXT("CompletedResearch"), sizeof(FCompletedResearch), Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCompletedResearch, Z_Construct_UPackage__Script_FactoryGame(), TEXT("CompletedResearch"), sizeof(FCompletedResearch), Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FCompletedResearch>()
+{
+	return FCompletedResearch::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FCompletedResearch(FCompletedResearch::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("CompletedResearch"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
@@ -293,8 +297,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards = { UE4CodeGen_Private::EPropertyClass::Array, "PendingRewards", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FCompletedResearch, PendingRewards), METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "PendingRewards", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FResearchRecipeReward, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards = { "PendingRewards", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCompletedResearch, PendingRewards), METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_Inner = { "PendingRewards", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchRecipeReward, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_MetaData[] = {
 		{ "Category", "CompletedResearch" },
@@ -305,14 +309,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 	{
 		((FCompletedResearch*)Obj)->RewardHasBeenClaimed = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed = { UE4CodeGen_Private::EPropertyClass::Bool, "RewardHasBeenClaimed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FCompletedResearch), &Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed = { "RewardHasBeenClaimed", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FCompletedResearch), &Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardHasBeenClaimed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData[] = {
 		{ "Category", "CompletedResearch" },
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "ResearchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001010001, 1, nullptr, STRUCT_OFFSET(FCompletedResearch, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe = { "ResearchRecipe", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCompletedResearch, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_ResearchRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_MetaData[] = {
 		{ "Category", "CompletedResearch" },
@@ -323,7 +327,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 	{
 		((FCompletedResearch*)Obj)->RewardRequiresSelection = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection = { UE4CodeGen_Private::EPropertyClass::Bool, "RewardRequiresSelection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FCompletedResearch), &Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection = { "RewardRequiresSelection", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FCompletedResearch), &Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_RewardRequiresSelection_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCompletedResearch_Statics::NewProp_PendingRewards_Inner,
@@ -336,19 +340,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		nullptr,
 		&NewStructOps,
 		"CompletedResearch",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FCompletedResearch),
 		alignof(FCompletedResearch),
-		Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FCompletedResearch()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("CompletedResearch"), sizeof(FCompletedResearch), Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("CompletedResearch"), sizeof(FCompletedResearch), Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -358,16 +363,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC() { return 13264817U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash() { return 4157574386U; }
 class UScriptStruct* FResearchTime::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FResearchTime_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FResearchTime, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ResearchTime"), sizeof(FResearchTime), Get_Z_Construct_UScriptStruct_FResearchTime_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FResearchTime, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ResearchTime"), sizeof(FResearchTime), Get_Z_Construct_UScriptStruct_FResearchTime_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FResearchTime>()
+{
+	return FResearchTime::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FResearchTime(FResearchTime::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ResearchTime"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
@@ -410,14 +419,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp = { UE4CodeGen_Private::EPropertyClass::Float, "ResearchCompleteTimestamp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FResearchTime, ResearchCompleteTimestamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp = { "ResearchCompleteTimestamp", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchTime, ResearchCompleteTimestamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData[] = {
 		{ "Category", "ResearchTime" },
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "ResearchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001010001, 1, nullptr, STRUCT_OFFSET(FResearchTime, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe = { "ResearchRecipe", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchTime, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchCompleteTimestamp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FResearchTime_Statics::NewProp_ResearchRecipe,
@@ -427,19 +436,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		nullptr,
 		&NewStructOps,
 		"ResearchTime",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FResearchTime),
 		alignof(FResearchTime),
-		Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchTime()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FResearchTime_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ResearchTime"), sizeof(FResearchTime), Get_Z_Construct_UScriptStruct_FResearchTime_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ResearchTime"), sizeof(FResearchTime), Get_Z_Construct_UScriptStruct_FResearchTime_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -449,16 +459,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_CRC() { return 1105276304U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash() { return 2566905056U; }
 class UScriptStruct* FResearchCost::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FResearchCost_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FResearchCost, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ResearchCost"), sizeof(FResearchCost), Get_Z_Construct_UScriptStruct_FResearchCost_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FResearchCost, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ResearchCost"), sizeof(FResearchCost), Get_Z_Construct_UScriptStruct_FResearchCost_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FResearchCost>()
+{
+	return FResearchCost::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FResearchCost(FResearchCost::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ResearchCost"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
@@ -503,15 +517,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost = { UE4CodeGen_Private::EPropertyClass::Array, "Cost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FResearchCost, Cost), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "Cost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost = { "Cost", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchCost, Cost), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_Inner = { "Cost", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData[] = {
 		{ "Category", "ResearchCost" },
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "ResearchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001010001, 1, nullptr, STRUCT_OFFSET(FResearchCost, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe = { "ResearchRecipe", nullptr, (EPropertyFlags)0x0014000001010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchCost, ResearchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_ResearchRecipe_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FResearchCost_Statics::NewProp_Cost_Inner,
@@ -522,19 +536,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		nullptr,
 		&NewStructOps,
 		"ResearchCost",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FResearchCost),
 		alignof(FResearchCost),
-		Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchCost()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FResearchCost_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ResearchCost"), sizeof(FResearchCost), Get_Z_Construct_UScriptStruct_FResearchCost_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ResearchCost"), sizeof(FResearchCost), Get_Z_Construct_UScriptStruct_FResearchCost_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -544,7 +559,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_CRC() { return 1903798010U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash() { return 3771894880U; }
 	void AFGResearchManager::StaticRegisterNativesAFGResearchManager()
 	{
 		UClass* Class = AFGResearchManager::StaticClass();
@@ -600,7 +615,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventAddDecorPoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventAddDecorPoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::NewProp_amount,
 	};
@@ -611,7 +626,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Adds decor points to the ResearchManager" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "AddDecorPoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventAddDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "AddDecorPoints", sizeof(FGResearchManager_eventAddDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddDecorPoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_AddDecorPoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -634,7 +649,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventAddStructurePoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventAddStructurePoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::NewProp_amount,
 	};
@@ -645,7 +660,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Adds structure points to the ResearchManager" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "AddStructurePoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventAddStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "AddStructurePoints", sizeof(FGResearchManager_eventAddStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_AddStructurePoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_AddStructurePoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -675,8 +690,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventCanConsumeDecorPoints_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventCanConsumeDecorPoints_Parms), &Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventCanConsumeDecorPoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventCanConsumeDecorPoints_Parms), &Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventCanConsumeDecorPoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::NewProp_amount,
@@ -688,7 +703,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns whether or not the amount of decor points can be fully consumed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "CanConsumeDecorPoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventCanConsumeDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "CanConsumeDecorPoints", sizeof(FGResearchManager_eventCanConsumeDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -718,8 +733,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventCanConsumeStructurePoints_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventCanConsumeStructurePoints_Parms), &Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventCanConsumeStructurePoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventCanConsumeStructurePoints_Parms), &Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventCanConsumeStructurePoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::NewProp_amount,
@@ -731,7 +746,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns whether or not the amount of structure points can be fully consumed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "CanConsumeStructurePoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventCanConsumeStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "CanConsumeStructurePoints", sizeof(FGResearchManager_eventCanConsumeStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -761,8 +776,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventCanResearchBeInitiated_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventCanResearchBeInitiated_Parms), &Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventCanResearchBeInitiated_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventCanResearchBeInitiated_Parms), &Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventCanResearchBeInitiated_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::NewProp_researchRecipe,
@@ -773,7 +788,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "CanResearchBeInitiated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventCanResearchBeInitiated_Parms), Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "CanResearchBeInitiated", sizeof(FGResearchManager_eventCanResearchBeInitiated_Parms), Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -803,8 +818,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventCanResearchRewardBeClaimed_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventCanResearchRewardBeClaimed_Parms), &Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventCanResearchRewardBeClaimed_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventCanResearchRewardBeClaimed_Parms), &Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventCanResearchRewardBeClaimed_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::NewProp_researchRecipe,
@@ -816,7 +831,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Checks to see if rewards can be claimed for research. Will also return false if research hasn't been completed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "CanResearchRewardBeClaimed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventCanResearchRewardBeClaimed_Parms), Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "CanResearchRewardBeClaimed", sizeof(FGResearchManager_eventCanResearchRewardBeClaimed_Parms), Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -850,10 +865,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventClaimResearchResults_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventClaimResearchResults_Parms), &Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_selectedRewardIndex = { UE4CodeGen_Private::EPropertyClass::Int, "selectedRewardIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventClaimResearchResults_Parms, selectedRewardIndex), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_completedResearch = { UE4CodeGen_Private::EPropertyClass::Class, "completedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventClaimResearchResults_Parms, completedResearch), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_instigatorPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "instigatorPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventClaimResearchResults_Parms, instigatorPlayer), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventClaimResearchResults_Parms), &Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_selectedRewardIndex = { "selectedRewardIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventClaimResearchResults_Parms, selectedRewardIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_completedResearch = { "completedResearch", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventClaimResearchResults_Parms, completedResearch), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_instigatorPlayer = { "instigatorPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventClaimResearchResults_Parms, instigatorPlayer), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::NewProp_selectedRewardIndex,
@@ -867,7 +882,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Tries to claim rewards from completed research. If rewards have already been claimed then no results will be returned. Returns true if research could be claimed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "ClaimResearchResults", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventClaimResearchResults_Parms), Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "ClaimResearchResults", sizeof(FGResearchManager_eventClaimResearchResults_Parms), Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -892,8 +907,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventConsumeDecorPoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventConsumeDecorPoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventConsumeDecorPoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventConsumeDecorPoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::NewProp_amount,
@@ -905,7 +920,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Tries to consume the amount of decor points that is inputed. Returns the amount of points that were actually consumed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "ConsumeDecorPoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventConsumeDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "ConsumeDecorPoints", sizeof(FGResearchManager_eventConsumeDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -930,8 +945,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventConsumeStructurePoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Int, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventConsumeStructurePoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventConsumeStructurePoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventConsumeStructurePoints_Parms, amount), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::NewProp_amount,
@@ -943,7 +958,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Tries to consume the amount of structure points that is inputed. Returns the amount of points that were actually consumed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "ConsumeStructurePoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventConsumeStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "ConsumeStructurePoints", sizeof(FGResearchManager_eventConsumeStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -971,7 +986,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventContainsAnyCompletedButUnclaimedResearch_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventContainsAnyCompletedButUnclaimedResearch_Parms), &Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventContainsAnyCompletedButUnclaimedResearch_Parms), &Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::NewProp_ReturnValue,
 	};
@@ -982,7 +997,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Whether or not there is any research that has been completed but not claimed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "ContainsAnyCompletedButUnclaimedResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventContainsAnyCompletedButUnclaimedResearch_Parms), Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "ContainsAnyCompletedButUnclaimedResearch", sizeof(FGResearchManager_eventContainsAnyCompletedButUnclaimedResearch_Parms), Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1007,8 +1022,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGResearchManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGResearchManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_Get_Statics::NewProp_worldContext,
@@ -1021,7 +1036,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGResearchManager_eventGet_Parms), Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "Get", sizeof(FGResearchManager_eventGet_Parms), Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1045,8 +1060,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::NewProp_out_ResearchRecipes = { UE4CodeGen_Private::EPropertyClass::Array, "out_ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetAllAccessibleResearch_Parms, out_ResearchRecipes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::NewProp_out_ResearchRecipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::NewProp_out_ResearchRecipes = { "out_ResearchRecipes", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetAllAccessibleResearch_Parms, out_ResearchRecipes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::NewProp_out_ResearchRecipes_Inner = { "out_ResearchRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::NewProp_out_ResearchRecipes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::NewProp_out_ResearchRecipes_Inner,
@@ -1058,7 +1073,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns all available research in the M.A.M." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetAllAccessibleResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGResearchManager_eventGetAllAccessibleResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetAllAccessibleResearch", sizeof(FGResearchManager_eventGetAllAccessibleResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1082,8 +1097,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::NewProp_out_ResearchRecipes = { UE4CodeGen_Private::EPropertyClass::Array, "out_ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetAllCompletedAndClaimedResearch_Parms, out_ResearchRecipes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::NewProp_out_ResearchRecipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::NewProp_out_ResearchRecipes = { "out_ResearchRecipes", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetAllCompletedAndClaimedResearch_Parms, out_ResearchRecipes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::NewProp_out_ResearchRecipes_Inner = { "out_ResearchRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::NewProp_out_ResearchRecipes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::NewProp_out_ResearchRecipes_Inner,
@@ -1095,7 +1110,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns all research that has both been completed and have had their rewards claimed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetAllCompletedAndClaimedResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGResearchManager_eventGetAllCompletedAndClaimedResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetAllCompletedAndClaimedResearch", sizeof(FGResearchManager_eventGetAllCompletedAndClaimedResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1119,8 +1134,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::NewProp_out_ResearchRecipes = { UE4CodeGen_Private::EPropertyClass::Array, "out_ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetAllResearchRecipes_Parms, out_ResearchRecipes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::NewProp_out_ResearchRecipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::NewProp_out_ResearchRecipes = { "out_ResearchRecipes", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetAllResearchRecipes_Parms, out_ResearchRecipes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::NewProp_out_ResearchRecipes_Inner = { "out_ResearchRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::NewProp_out_ResearchRecipes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::NewProp_out_ResearchRecipes_Inner,
@@ -1132,7 +1147,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns every possible research recipe that is in the game\n@note Calling this is only valid after PopulateResearchLists has been run." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetAllResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGResearchManager_eventGetAllResearchRecipes_Parms), Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetAllResearchRecipes", sizeof(FGResearchManager_eventGetAllResearchRecipes_Parms), Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1165,8 +1180,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000582, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetCompletedResearchRewardByRecipe_Parms, ReturnValue), Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_completedResearch = { UE4CodeGen_Private::EPropertyClass::Class, "completedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetCompletedResearchRewardByRecipe_Parms, completedResearch), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetCompletedResearchRewardByRecipe_Parms, ReturnValue), Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_completedResearch = { "completedResearch", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetCompletedResearchRewardByRecipe_Parms, completedResearch), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::NewProp_completedResearch,
@@ -1178,7 +1193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Get the research reward package from a given completed recipe" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetCompletedResearchRewardByRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGResearchManager_eventGetCompletedResearchRewardByRecipe_Parms), Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetCompletedResearchRewardByRecipe", sizeof(FGResearchManager_eventGetCompletedResearchRewardByRecipe_Parms), Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1201,7 +1216,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetDecorPoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetDecorPoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::NewProp_ReturnValue,
 	};
@@ -1212,7 +1227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns the amount of decor points the ResearchManager currently has." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetDecorPoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventGetDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetDecorPoints", sizeof(FGResearchManager_eventGetDecorPoints_Parms), Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetDecorPoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetDecorPoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1237,8 +1252,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetOngoingResearchTimeLeft_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetOngoingResearchTimeLeft_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetOngoingResearchTimeLeft_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetOngoingResearchTimeLeft_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::NewProp_researchRecipe,
@@ -1250,7 +1265,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns how much time there is left for a specific research. If the research in question isn't ongoing it will return -1.f" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetOngoingResearchTimeLeft", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventGetOngoingResearchTimeLeft_Parms), Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetOngoingResearchTimeLeft", sizeof(FGResearchManager_eventGetOngoingResearchTimeLeft_Parms), Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1276,9 +1291,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_out_cost = { UE4CodeGen_Private::EPropertyClass::Array, "out_cost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetPayOffBalanceForResearch_Parms, out_cost), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_out_cost_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_cost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetPayOffBalanceForResearch_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_out_cost = { "out_cost", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetPayOffBalanceForResearch_Parms, out_cost), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_out_cost_Inner = { "out_cost", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetPayOffBalanceForResearch_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_out_cost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::NewProp_out_cost_Inner,
@@ -1291,7 +1306,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns how much is left to pay off for a specific type of research (if available)." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetPayOffBalanceForResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGResearchManager_eventGetPayOffBalanceForResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetPayOffBalanceForResearch", sizeof(FGResearchManager_eventGetPayOffBalanceForResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1314,7 +1329,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetResearchBeingConducted_Parms, ReturnValue), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetResearchBeingConducted_Parms, ReturnValue), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::NewProp_ReturnValue,
 	};
@@ -1324,7 +1339,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetResearchBeingConducted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventGetResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetResearchBeingConducted", sizeof(FGResearchManager_eventGetResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1349,8 +1364,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetResearchDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetResearchDuration_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetResearchDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetResearchDuration_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::NewProp_researchRecipe,
@@ -1361,7 +1376,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetResearchDuration", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventGetResearchDuration_Parms), Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetResearchDuration", sizeof(FGResearchManager_eventGetResearchDuration_Parms), Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetResearchDuration_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetResearchDuration()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1395,9 +1410,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000582, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetRewardsFromCompletedResearch_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FResearchRecipeReward, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_completedResearch = { UE4CodeGen_Private::EPropertyClass::Struct, "completedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetRewardsFromCompletedResearch_Parms, completedResearch), Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetRewardsFromCompletedResearch_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchRecipeReward, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_completedResearch = { "completedResearch", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetRewardsFromCompletedResearch_Parms, completedResearch), Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::NewProp_ReturnValue_Inner,
@@ -1410,7 +1425,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Get the rewards associated with a completed research" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetRewardsFromCompletedResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGResearchManager_eventGetRewardsFromCompletedResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetRewardsFromCompletedResearch", sizeof(FGResearchManager_eventGetRewardsFromCompletedResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1433,7 +1448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGetStructurePoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGetStructurePoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::NewProp_ReturnValue,
 	};
@@ -1444,7 +1459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns the amount of structure points the ResearchManager currently has." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GetStructurePoints", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventGetStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GetStructurePoints", sizeof(FGResearchManager_eventGetStructurePoints_Parms), Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GetStructurePoints_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GetStructurePoints()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1474,8 +1489,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventGiveAccessToResearch_Parms*)Obj)->accessedViaCheats = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_accessedViaCheats = { UE4CodeGen_Private::EPropertyClass::Bool, "accessedViaCheats", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventGiveAccessToResearch_Parms), &Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_accessedViaCheats_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_researchRecipeClass = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipeClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventGiveAccessToResearch_Parms, researchRecipeClass), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_accessedViaCheats = { "accessedViaCheats", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventGiveAccessToResearch_Parms), &Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_accessedViaCheats_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_researchRecipeClass = { "researchRecipeClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventGiveAccessToResearch_Parms, researchRecipeClass), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_accessedViaCheats,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::NewProp_researchRecipeClass,
@@ -1488,7 +1503,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Gives access to a research recipe in the M.A.M." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "GiveAccessToResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventGiveAccessToResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "GiveAccessToResearch", sizeof(FGResearchManager_eventGiveAccessToResearch_Parms), Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1518,8 +1533,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventInitiateResearch_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventInitiateResearch_Parms), &Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventInitiateResearch_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventInitiateResearch_Parms), &Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventInitiateResearch_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::NewProp_researchRecipe,
@@ -1531,7 +1546,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Initiates research if the given research has been payed off and ready to start\nReturns whether research was successfully started." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "InitiateResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventInitiateResearch_Parms), Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "InitiateResearch", sizeof(FGResearchManager_eventInitiateResearch_Parms), Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_InitiateResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_InitiateResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1559,7 +1574,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventIsAnyResearchBeingConducted_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventIsAnyResearchBeingConducted_Parms), &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsAnyResearchBeingConducted_Parms), &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::NewProp_ReturnValue,
 	};
@@ -1569,7 +1584,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "IsAnyResearchBeingConducted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventIsAnyResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsAnyResearchBeingConducted", sizeof(FGResearchManager_eventIsAnyResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1599,8 +1614,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventIsCompletedResearchResultSelectable_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms), &Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms), &Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::NewProp_researchRecipe,
@@ -1611,7 +1626,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "IsCompletedResearchResultSelectable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms), Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsCompletedResearchResultSelectable", sizeof(FGResearchManager_eventIsCompletedResearchResultSelectable_Parms), Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1641,8 +1656,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::NewProp_researchRecipe,
@@ -1654,7 +1669,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Checks whether a piece of research is accessible and paid off (i.e. can be initiated/conducted)." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "IsResearchAccessibleAndPaidOff", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsResearchAccessibleAndPaidOff", sizeof(FGResearchManager_eventIsResearchAccessibleAndPaidOff_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1684,8 +1699,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventIsResearchBeingConducted_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventIsResearchBeingConducted_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventIsResearchBeingConducted_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsResearchBeingConducted_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventIsResearchBeingConducted_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::NewProp_researchRecipe,
@@ -1697,7 +1712,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Checks whether a piece of research is currently being conducted." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "IsResearchBeingConducted", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventIsResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsResearchBeingConducted", sizeof(FGResearchManager_eventIsResearchBeingConducted_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1727,8 +1742,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventIsResearchComplete_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventIsResearchComplete_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventIsResearchComplete_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsResearchComplete_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventIsResearchComplete_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::NewProp_researchRecipe,
@@ -1740,7 +1755,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Checks whether a specific piece of research has completed (i.e. can be claimed)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "IsResearchComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventIsResearchComplete_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsResearchComplete", sizeof(FGResearchManager_eventIsResearchComplete_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_IsResearchComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1770,8 +1785,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((FGResearchManager_eventIsResearchRecipeAccessible_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGResearchManager_eventIsResearchRecipeAccessible_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventIsResearchRecipeAccessible_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGResearchManager_eventIsResearchRecipeAccessible_Parms), &Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventIsResearchRecipeAccessible_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::NewProp_researchRecipe,
@@ -1783,7 +1798,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Returns whether a piece of research available/unlocked for the player?" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "IsResearchRecipeAccessible", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResearchManager_eventIsResearchRecipeAccessible_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "IsResearchRecipeAccessible", sizeof(FGResearchManager_eventIsResearchRecipeAccessible_Parms), Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1806,7 +1821,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventOnResearchTimerComplete_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventOnResearchTimerComplete_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::NewProp_researchRecipe,
 	};
@@ -1815,7 +1830,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "OnResearchTimerComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGResearchManager_eventOnResearchTimerComplete_Parms), Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "OnResearchTimerComplete", sizeof(FGResearchManager_eventOnResearchTimerComplete_Parms), Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1847,15 +1862,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventorySlotIndex = { UE4CodeGen_Private::EPropertyClass::Int, "inventorySlotIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, inventorySlotIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventorySlotIndex = { "inventorySlotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, inventorySlotIndex), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory = { UE4CodeGen_Private::EPropertyClass::Object, "inventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, inventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory = { "inventory", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, inventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventory_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffFromInventory_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::NewProp_inventorySlotIndex,
@@ -1869,7 +1884,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Attempts to pay off research from inventory slot at given index" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "PayOffFromInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventPayOffFromInventory_Parms), Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "PayOffFromInventory", sizeof(FGResearchManager_eventPayOffFromInventory_Parms), Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1896,9 +1911,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffOnResearch_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffOnResearch_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_payOff = { UE4CodeGen_Private::EPropertyClass::Struct, "payOff", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventPayOffOnResearch_Parms, payOff), Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffOnResearch_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffOnResearch_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_payOff = { "payOff", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventPayOffOnResearch_Parms, payOff), Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::NewProp_researchRecipe,
@@ -1911,7 +1926,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Pays off a specific type of research. Durp." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "PayOffOnResearch", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventPayOffOnResearch_Parms), Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "PayOffOnResearch", sizeof(FGResearchManager_eventPayOffOnResearch_Parms), Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1936,8 +1951,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::NewProp_selectedIndex = { UE4CodeGen_Private::EPropertyClass::Int, "selectedIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventSetSelectedRewardIndexByRecipe_Parms, selectedIndex), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::NewProp_completedResearch = { UE4CodeGen_Private::EPropertyClass::Class, "completedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventSetSelectedRewardIndexByRecipe_Parms, completedResearch), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::NewProp_selectedIndex = { "selectedIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventSetSelectedRewardIndexByRecipe_Parms, selectedIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::NewProp_completedResearch = { "completedResearch", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventSetSelectedRewardIndexByRecipe_Parms, completedResearch), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::NewProp_selectedIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::NewProp_completedResearch,
@@ -1949,7 +1964,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Set the selected reward index for a given researchRecipe" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "SetSelectedRewardIndexByRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventSetSelectedRewardIndexByRecipe_Parms), Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "SetSelectedRewardIndexByRecipe", sizeof(FGResearchManager_eventSetSelectedRewardIndexByRecipe_Parms), Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1972,7 +1987,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGResearchManager_eventUnlockResearchWithItem_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGResearchManager_eventUnlockResearchWithItem_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::NewProp_itemClass,
 	};
@@ -1983,7 +1998,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Tries to unlock research with item. If no research is affiliated with the item or already unlocked, nothing happens.." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, "UnlockResearchWithItem", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGResearchManager_eventUnlockResearchWithItem_Parms), Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResearchManager, nullptr, "UnlockResearchWithItem", sizeof(FGResearchManager_eventUnlockResearchWithItem_Parms), Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2077,41 +2092,41 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResearchManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResearchManager_AddDecorPoints, "AddDecorPoints" }, // 677524646
-		{ &Z_Construct_UFunction_AFGResearchManager_AddStructurePoints, "AddStructurePoints" }, // 2266488833
-		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints, "CanConsumeDecorPoints" }, // 722636833
-		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints, "CanConsumeStructurePoints" }, // 4066553181
-		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated, "CanResearchBeInitiated" }, // 3713804873
-		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed, "CanResearchRewardBeClaimed" }, // 1377260452
-		{ &Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults, "ClaimResearchResults" }, // 3351759123
-		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints, "ConsumeDecorPoints" }, // 2674439713
-		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints, "ConsumeStructurePoints" }, // 1269362674
-		{ &Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch, "ContainsAnyCompletedButUnclaimedResearch" }, // 1786385752
-		{ &Z_Construct_UFunction_AFGResearchManager_Get, "Get" }, // 3545735378
-		{ &Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch, "GetAllAccessibleResearch" }, // 1943192376
-		{ &Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch, "GetAllCompletedAndClaimedResearch" }, // 1759562246
-		{ &Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes, "GetAllResearchRecipes" }, // 4151322214
-		{ &Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe, "GetCompletedResearchRewardByRecipe" }, // 1190703039
-		{ &Z_Construct_UFunction_AFGResearchManager_GetDecorPoints, "GetDecorPoints" }, // 29937677
-		{ &Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft, "GetOngoingResearchTimeLeft" }, // 3027448255
-		{ &Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch, "GetPayOffBalanceForResearch" }, // 3638259666
-		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted, "GetResearchBeingConducted" }, // 2880651568
-		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchDuration, "GetResearchDuration" }, // 2069644083
-		{ &Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch, "GetRewardsFromCompletedResearch" }, // 4180001848
-		{ &Z_Construct_UFunction_AFGResearchManager_GetStructurePoints, "GetStructurePoints" }, // 517022902
-		{ &Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch, "GiveAccessToResearch" }, // 4058252682
-		{ &Z_Construct_UFunction_AFGResearchManager_InitiateResearch, "InitiateResearch" }, // 1863954764
-		{ &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted, "IsAnyResearchBeingConducted" }, // 3290105979
-		{ &Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable, "IsCompletedResearchResultSelectable" }, // 3898218841
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff, "IsResearchAccessibleAndPaidOff" }, // 3603199592
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 3317983946
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete, "IsResearchComplete" }, // 3286362808
-		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible, "IsResearchRecipeAccessible" }, // 1983770924
-		{ &Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete, "OnResearchTimerComplete" }, // 3873965417
-		{ &Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory, "PayOffFromInventory" }, // 2611161010
-		{ &Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch, "PayOffOnResearch" }, // 982730680
-		{ &Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe, "SetSelectedRewardIndexByRecipe" }, // 82024185
-		{ &Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem, "UnlockResearchWithItem" }, // 2477137416
+		{ &Z_Construct_UFunction_AFGResearchManager_AddDecorPoints, "AddDecorPoints" }, // 4036727841
+		{ &Z_Construct_UFunction_AFGResearchManager_AddStructurePoints, "AddStructurePoints" }, // 492745429
+		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeDecorPoints, "CanConsumeDecorPoints" }, // 4006510360
+		{ &Z_Construct_UFunction_AFGResearchManager_CanConsumeStructurePoints, "CanConsumeStructurePoints" }, // 2725082600
+		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchBeInitiated, "CanResearchBeInitiated" }, // 2027346470
+		{ &Z_Construct_UFunction_AFGResearchManager_CanResearchRewardBeClaimed, "CanResearchRewardBeClaimed" }, // 1185623805
+		{ &Z_Construct_UFunction_AFGResearchManager_ClaimResearchResults, "ClaimResearchResults" }, // 3071058131
+		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeDecorPoints, "ConsumeDecorPoints" }, // 945903225
+		{ &Z_Construct_UFunction_AFGResearchManager_ConsumeStructurePoints, "ConsumeStructurePoints" }, // 2043332209
+		{ &Z_Construct_UFunction_AFGResearchManager_ContainsAnyCompletedButUnclaimedResearch, "ContainsAnyCompletedButUnclaimedResearch" }, // 3809021826
+		{ &Z_Construct_UFunction_AFGResearchManager_Get, "Get" }, // 4040491394
+		{ &Z_Construct_UFunction_AFGResearchManager_GetAllAccessibleResearch, "GetAllAccessibleResearch" }, // 2158610314
+		{ &Z_Construct_UFunction_AFGResearchManager_GetAllCompletedAndClaimedResearch, "GetAllCompletedAndClaimedResearch" }, // 1658350709
+		{ &Z_Construct_UFunction_AFGResearchManager_GetAllResearchRecipes, "GetAllResearchRecipes" }, // 3174806619
+		{ &Z_Construct_UFunction_AFGResearchManager_GetCompletedResearchRewardByRecipe, "GetCompletedResearchRewardByRecipe" }, // 3799518327
+		{ &Z_Construct_UFunction_AFGResearchManager_GetDecorPoints, "GetDecorPoints" }, // 1880992630
+		{ &Z_Construct_UFunction_AFGResearchManager_GetOngoingResearchTimeLeft, "GetOngoingResearchTimeLeft" }, // 3464297366
+		{ &Z_Construct_UFunction_AFGResearchManager_GetPayOffBalanceForResearch, "GetPayOffBalanceForResearch" }, // 821486509
+		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchBeingConducted, "GetResearchBeingConducted" }, // 408630131
+		{ &Z_Construct_UFunction_AFGResearchManager_GetResearchDuration, "GetResearchDuration" }, // 1398767548
+		{ &Z_Construct_UFunction_AFGResearchManager_GetRewardsFromCompletedResearch, "GetRewardsFromCompletedResearch" }, // 1040492859
+		{ &Z_Construct_UFunction_AFGResearchManager_GetStructurePoints, "GetStructurePoints" }, // 3368814688
+		{ &Z_Construct_UFunction_AFGResearchManager_GiveAccessToResearch, "GiveAccessToResearch" }, // 2657929417
+		{ &Z_Construct_UFunction_AFGResearchManager_InitiateResearch, "InitiateResearch" }, // 903259925
+		{ &Z_Construct_UFunction_AFGResearchManager_IsAnyResearchBeingConducted, "IsAnyResearchBeingConducted" }, // 1641428747
+		{ &Z_Construct_UFunction_AFGResearchManager_IsCompletedResearchResultSelectable, "IsCompletedResearchResultSelectable" }, // 178339233
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchAccessibleAndPaidOff, "IsResearchAccessibleAndPaidOff" }, // 2653296141
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchBeingConducted, "IsResearchBeingConducted" }, // 3869048919
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchComplete, "IsResearchComplete" }, // 225343110
+		{ &Z_Construct_UFunction_AFGResearchManager_IsResearchRecipeAccessible, "IsResearchRecipeAccessible" }, // 3806281653
+		{ &Z_Construct_UFunction_AFGResearchManager_OnResearchTimerComplete, "OnResearchTimerComplete" }, // 3454405069
+		{ &Z_Construct_UFunction_AFGResearchManager_PayOffFromInventory, "PayOffFromInventory" }, // 3104822460
+		{ &Z_Construct_UFunction_AFGResearchManager_PayOffOnResearch, "PayOffOnResearch" }, // 3073491311
+		{ &Z_Construct_UFunction_AFGResearchManager_SetSelectedRewardIndexByRecipe, "SetSelectedRewardIndexByRecipe" }, // 2891776681
+		{ &Z_Construct_UFunction_AFGResearchManager_UnlockResearchWithItem, "UnlockResearchWithItem" }, // 3518116383
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::Class_MetaDataParams[] = {
@@ -2128,52 +2143,52 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints = { UE4CodeGen_Private::EPropertyClass::Int, "mStructurePoints", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mStructurePoints), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints = { "mStructurePoints", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mStructurePoints), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints = { UE4CodeGen_Private::EPropertyClass::Int, "mDecorPoints", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mDecorPoints), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints = { "mDecorPoints", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mDecorPoints), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 		{ "ToolTip", "Used to track timestamps during saving" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch = { UE4CodeGen_Private::EPropertyClass::Array, "mSavedOngoingResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mSavedOngoingResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSavedOngoingResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FResearchTime, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch = { "mSavedOngoingResearch", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mSavedOngoingResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mSavedOngoingResearch_Inner = { "mSavedOngoingResearch", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchTime, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 		{ "ToolTip", "What research that is currently being analyzed. i.e. that has started their timer and is ticking down." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch = { UE4CodeGen_Private::EPropertyClass::Array, "mOngoingResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mOngoingResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mOngoingResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FResearchTime, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch = { "mOngoingResearch", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mOngoingResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mOngoingResearch_Inner = { "mOngoingResearch", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchTime, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 		{ "ToolTip", "What research has been conducted and is complete." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch = { UE4CodeGen_Private::EPropertyClass::Array, "mCompletedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mCompletedResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mCompletedResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch = { "mCompletedResearch", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mCompletedResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCompletedResearch_Inner = { "mCompletedResearch", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCompletedResearch, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 		{ "ToolTip", "Keeps track of what research is available to be conducted by the player and how much they've been paid off" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts = { UE4CodeGen_Private::EPropertyClass::Array, "mResearchCosts", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mResearchCosts), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mResearchCosts", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FResearchCost, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts = { "mResearchCosts", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mResearchCosts), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mResearchCosts_Inner = { "mResearchCosts", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchCost, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData[] = {
 		{ "ModuleRelativePath", "FGResearchManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes = { UE4CodeGen_Private::EPropertyClass::Array, "mAllResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mAllResearchRecipes), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAllResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes = { "mAllResearchRecipes", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mAllResearchRecipes), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mAllResearchRecipes_Inner = { "mAllResearchRecipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_MetaData[] = {
 		{ "Category", "Research" },
@@ -2181,8 +2196,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "What research that is available at start of the game." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch = { UE4CodeGen_Private::EPropertyClass::Array, "mDefaultStartingResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, mDefaultStartingResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mDefaultStartingResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch = { "mDefaultStartingResearch", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, mDefaultStartingResearch), METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDefaultStartingResearch_Inner = { "mDefaultStartingResearch", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData[] = {
 		{ "Category", "Research" },
@@ -2194,7 +2209,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	{
 		((AFGResearchManager*)Obj)->mCanConductMultipleResearch = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanConductMultipleResearch", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGResearchManager), &Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch = { "mCanConductMultipleResearch", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGResearchManager), &Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mCanConductMultipleResearch_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
@@ -2203,7 +2218,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Called when new research is available" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "ResearchNewAvailableDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, ResearchNewAvailableDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate = { "ResearchNewAvailableDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, ResearchNewAvailableDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchNewAvailable__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchNewAvailableDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
@@ -2212,7 +2227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Called when research results are collected from completed research" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "ResearchResultsClaimedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, ResearchResultsClaimedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate = { "ResearchResultsClaimedDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, ResearchResultsClaimedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchResultsClaimed__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchResultsClaimedDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
@@ -2221,7 +2236,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Called when ongoing research has completed" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "ResearchCompletedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, ResearchCompletedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate = { "ResearchCompletedDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, ResearchCompletedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchCompletedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchCompletedDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
@@ -2230,7 +2245,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Called when a piece of research has been payed off in full" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "PaidOffResearchDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, PaidOffResearchDelegate), Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate = { "PaidOffResearchDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, PaidOffResearchDelegate), Z_Construct_UDelegateFunction_FactoryGame_PaidOffResearchDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_PaidOffResearchDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate_MetaData[] = {
 		{ "Category", "Events|Research" },
@@ -2239,7 +2254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		{ "ToolTip", "Called when a research recipe is started" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "ResearchStartedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGResearchManager, ResearchStartedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate = { "ResearchStartedDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGResearchManager, ResearchStartedDelegate), Z_Construct_UDelegateFunction_FactoryGame_ResearchStartedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::NewProp_ResearchStartedDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGResearchManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mStructurePoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGResearchManager_Statics::NewProp_mDecorPoints,
@@ -2270,13 +2285,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGResearchManager_Statics::ClassParams = {
 		&AFGResearchManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGResearchManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGResearchManager_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGResearchManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGResearchManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGResearchManager()
@@ -2288,7 +2307,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResearchManager, 836710684);
+	IMPLEMENT_CLASS(AFGResearchManager, 2876528765);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGResearchManager>()
+	{
+		return AFGResearchManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResearchManager(Z_Construct_UClass_AFGResearchManager, &AFGResearchManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResearchManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResearchManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

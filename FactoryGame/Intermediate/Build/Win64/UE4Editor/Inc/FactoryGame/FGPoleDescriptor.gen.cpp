@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -27,10 +27,14 @@ class UScriptStruct* FPoleHeightMesh::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPoleHeightMesh, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PoleHeightMesh"), sizeof(FPoleHeightMesh), Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPoleHeightMesh, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PoleHeightMesh"), sizeof(FPoleHeightMesh), Get_Z_Construct_UScriptStruct_FPoleHeightMesh_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FPoleHeightMesh>()
+{
+	return FPoleHeightMesh::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPoleHeightMesh(FPoleHeightMesh::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("PoleHeightMesh"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
@@ -75,7 +79,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		{ "ToolTip", "Pole height for the current mesh." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height = { UE4CodeGen_Private::EPropertyClass::Float, "Height", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FPoleHeightMesh, Height), METADATA_PARAMS(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height = { "Height", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPoleHeightMesh, Height), METADATA_PARAMS(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh_MetaData[] = {
 		{ "Category", "PoleHeightMesh" },
@@ -83,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		{ "ToolTip", "Mesh for the current pole height." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FPoleHeightMesh, Mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPoleHeightMesh, Mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh,
@@ -93,19 +97,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		nullptr,
 		&NewStructOps,
 		"PoleHeightMesh",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FPoleHeightMesh),
 		alignof(FPoleHeightMesh),
-		Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPoleHeightMesh()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PoleHeightMesh"), sizeof(FPoleHeightMesh), Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PoleHeightMesh"), sizeof(FPoleHeightMesh), Get_Z_Construct_UScriptStruct_FPoleHeightMesh_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -115,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC() { return 4273912187U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_Hash() { return 1323142206U; }
 	void UFGPoleDescriptor::StaticRegisterNativesUFGPoleDescriptor()
 	{
 		UClass* Class = UFGPoleDescriptor::StaticClass();
@@ -140,9 +145,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_out_heightMeshes = { UE4CodeGen_Private::EPropertyClass::Array, "out_heightMeshes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGPoleDescriptor_eventGetHeightMeshes_Parms, out_heightMeshes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_out_heightMeshes_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "out_heightMeshes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FPoleHeightMesh, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGPoleDescriptor_eventGetHeightMeshes_Parms, inClass), Z_Construct_UClass_UFGPoleDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_out_heightMeshes = { "out_heightMeshes", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPoleDescriptor_eventGetHeightMeshes_Parms, out_heightMeshes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_out_heightMeshes_Inner = { "out_heightMeshes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPoleHeightMesh, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPoleDescriptor_eventGetHeightMeshes_Parms, inClass), Z_Construct_UClass_UFGPoleDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_out_heightMeshes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::NewProp_out_heightMeshes_Inner,
@@ -155,7 +160,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		{ "ToolTip", "Get the heights for this pole." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPoleDescriptor, "GetHeightMeshes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPoleDescriptor_eventGetHeightMeshes_Parms), Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPoleDescriptor, nullptr, "GetHeightMeshes", sizeof(FGPoleDescriptor_eventGetHeightMeshes_Parms), Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -190,7 +195,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPoleDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes, "GetHeightMeshes" }, // 3342554915
+		{ &Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes, "GetHeightMeshes" }, // 3174855234
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPoleDescriptor_Statics::Class_MetaDataParams[] = {
@@ -208,8 +213,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		{ "ToolTip", "Array with meshes and their heights for the pole." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes = { UE4CodeGen_Private::EPropertyClass::Array, "mHeightMeshes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGPoleDescriptor, mHeightMeshes), METADATA_PARAMS(Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mHeightMeshes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FPoleHeightMesh, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes = { "mHeightMeshes", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPoleDescriptor, mHeightMeshes), METADATA_PARAMS(Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_Inner = { "mHeightMeshes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPoleHeightMesh, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGPoleDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_Inner,
@@ -219,13 +224,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPoleDescriptor_Statics::ClassParams = {
 		&UFGPoleDescriptor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGPoleDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGPoleDescriptor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGPoleDescriptor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGPoleDescriptor_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPoleDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPoleDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPoleDescriptor()
@@ -237,7 +246,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPoleDescriptor, 879088571);
+	IMPLEMENT_CLASS(UFGPoleDescriptor, 3956728395);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGPoleDescriptor>()
+	{
+		return UFGPoleDescriptor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPoleDescriptor(Z_Construct_UClass_UFGPoleDescriptor, &UFGPoleDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPoleDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPoleDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

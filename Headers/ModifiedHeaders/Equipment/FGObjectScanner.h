@@ -52,9 +52,9 @@ struct FScannableDetails
 	float NewDetectionRange;
 
 	FScannableDetails() :
+		PreCacheAllOfType( true ),
 		ShouldOverrideDetectionRange( false ),
-		NewDetectionRange( 1000.0f ),
-		PreCacheAllOfType( true )
+		NewDetectionRange( 1000.0f )
 	{
 
 	}

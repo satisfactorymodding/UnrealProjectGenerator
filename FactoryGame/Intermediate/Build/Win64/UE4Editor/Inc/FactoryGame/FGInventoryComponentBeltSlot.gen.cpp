@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::ClassParams = {
 		&UFGInventoryComponentBeltSlot::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGInventoryComponentBeltSlot()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 3871029486);
+	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 760719776);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponentBeltSlot>()
+	{
+		return UFGInventoryComponentBeltSlot::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentBeltSlot(Z_Construct_UClass_UFGInventoryComponentBeltSlot, &UFGInventoryComponentBeltSlot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentBeltSlot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentBeltSlot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

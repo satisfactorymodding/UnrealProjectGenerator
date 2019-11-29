@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerPoleHologram() {}
 		{ "ToolTip", "The connection wires snap to, used when placing a pole automatically." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection = { UE4CodeGen_Private::EPropertyClass::Object, "mSnapConnection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGPowerPoleHologram, mSnapConnection), Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection = { "mSnapConnection", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPowerPoleHologram, mSnapConnection), Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGPowerPoleHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection,
 	};
@@ -68,13 +68,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerPoleHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPowerPoleHologram_Statics::ClassParams = {
 		&AFGPowerPoleHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGPowerPoleHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGPowerPoleHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGPowerPoleHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGPowerPoleHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPowerPoleHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPowerPoleHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPowerPoleHologram()
@@ -86,7 +90,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPowerPoleHologram, 3189358074);
+	IMPLEMENT_CLASS(AFGPowerPoleHologram, 3907155375);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGPowerPoleHologram>()
+	{
+		return AFGPowerPoleHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPowerPoleHologram(Z_Construct_UClass_AFGPowerPoleHologram, &AFGPowerPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPowerPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPowerPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

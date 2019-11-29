@@ -6,7 +6,9 @@ void AFGBuildableHologram::GetLifetimeReplicatedProps( TArray< FLifetimeProperty
 AFGBuildableHologram::AFGBuildableHologram(){ }
 void AFGBuildableHologram::SetBuildableClass( TSubclassOf<  AFGBuildable > buildableClass){ }
 void AFGBuildableHologram::BeginPlay(){ }
+bool AFGBuildableHologram::IsValidHitResult( const FHitResult& hitResult) const{ return bool(); }
 void AFGBuildableHologram::SetHologramLocationAndRotation( const FHitResult& hitResult){ }
+bool AFGBuildableHologram::applyBuildingSnapping( FRotator &newRotation, FVector &newLocation, AFGBuildable* snapTarget, FVector traceStart, FVector traceEnd){ return bool(); }
 void AFGBuildableHologram::AdjustForGround( const FHitResult& hitResult, FVector& out_adjustedLocation, FRotator& out_adjustedRotation){ }
 AActor* AFGBuildableHologram::Construct( TArray< AActor* >& out_children){ return nullptr; }
 TSubclassOf< AActor > AFGBuildableHologram::GetActorClass() const{ return TSubclassOf<AActor>(); }
@@ -16,7 +18,7 @@ int32 AFGBuildableHologram::GetRotationStep() const{ return int32(); }
 void AFGBuildableHologram::SnapToFloor(  AFGBuildableFactoryBuilding* floor, FVector& location, FRotator& rotation){ }
 void AFGBuildableHologram::CheckValidFloor(){ }
 void AFGBuildableHologram::CheckClearance(){ }
-bool AFGBuildableHologram::CheckClearanceForPrimitive( UPrimitiveComponent* comp, const FComponentQueryParams& params ){ return bool(); }
+bool AFGBuildableHologram::CheckClearanceForPrimitive( UPrimitiveComponent* comp, const FComponentQueryParams& params , bool allowSnapAndMoveAlongBuildings ){ return bool(); }
 void AFGBuildableHologram::ConfigureSnappedBuilding(  AFGBuildable* inBuildable) const{ }
 void AFGBuildableHologram::ConfigureSnappedPower(  AFGBuildable* inBuildable) const{ }
 void AFGBuildableHologram::ConfigureActor(  AFGBuildable* inBuildable) const{ }

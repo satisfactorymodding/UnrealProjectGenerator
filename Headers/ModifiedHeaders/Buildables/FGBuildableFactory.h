@@ -419,6 +419,17 @@ private:
 
 	class UFGReplicationDetailInventoryComponent* mInventoryPotentialHandler;
 
+	/** A bias to the significance value */
+	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
+	float mSignificanceBias;
+
+	/** How often effect update should update */
+	UPROPERTY( EditDefaultsOnly, Category = "Anim" )
+	float mEffectUpdateInterval;
+
+	/** Accumulator for the effect update interval */
+	float mEffectUpdateAccumulator;
+
 	/** A replicated compressed version of the productivity */
 	UPROPERTY( Replicated, Meta = (NoAutoJson = true) )
 	uint8 mCurrentProductivity;
@@ -462,20 +473,9 @@ private:
 	uint8 mHasUpdateEffects : 1;
 
 	/** Indicates if the factory is within significance distance */
-	bool mIsSignificant;
-
-	/** A bias to the significance value */
-	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
-	float mSignificanceBias;
-
-	/** How often effect update should update */
-	UPROPERTY( EditDefaultsOnly, Category = "Anim" )
-	float mEffectUpdateInterval;
-
-	/** Accumulator for the effect update interval */
-	float mEffectUpdateAccumulator;
+	uint8 mIsSignificant : 1;
 protected:
 	/** Indicates if the factory should be handled by significance manager */
 	UPROPERTY( EditDefaultsOnly, Category = "Significance" )
-	bool mAddToSignificanceManager;
+	uint8 mAddToSignificanceManager : 1;
 };

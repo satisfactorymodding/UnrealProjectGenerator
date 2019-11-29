@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,7 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAttentionPingActor_eventGetOwningPlayerState_Parms, ReturnValue), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttentionPingActor_eventGetOwningPlayerState_Parms, ReturnValue), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::NewProp_ReturnValue,
 	};
@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		{ "ToolTip", "player state of the player that spawned this actor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, "GetOwningPlayerState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGAttentionPingActor_eventGetOwningPlayerState_Parms), Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, nullptr, "GetOwningPlayerState", sizeof(FGAttentionPingActor_eventGetOwningPlayerState_Parms), Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		{ "ModuleRelativePath", "FGAttentionPingActor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, "OnRep_OwningPlayerState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, nullptr, "OnRep_OwningPlayerState", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		{ "ToolTip", "Called when we have the player state replicated so now we can spawn the effects" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, "SpawnAttentionPingEffects", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGAttentionPingActor, nullptr, "SpawnAttentionPingEffects", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -140,9 +140,9 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGAttentionPingActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState, "GetOwningPlayerState" }, // 2682694130
-		{ &Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState, "OnRep_OwningPlayerState" }, // 2403005820
-		{ &Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects, "SpawnAttentionPingEffects" }, // 621518612
+		{ &Z_Construct_UFunction_AFGAttentionPingActor_GetOwningPlayerState, "GetOwningPlayerState" }, // 1508582624
+		{ &Z_Construct_UFunction_AFGAttentionPingActor_OnRep_OwningPlayerState, "OnRep_OwningPlayerState" }, // 2124312570
+		{ &Z_Construct_UFunction_AFGAttentionPingActor_SpawnAttentionPingEffects, "SpawnAttentionPingEffects" }, // 2663038388
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttentionPingActor_Statics::Class_MetaDataParams[] = {
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		{ "ToolTip", "The player state of the pawn that spawned this actor" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState = { UE4CodeGen_Private::EPropertyClass::Object, "mOwningPlayerState", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_OwningPlayerState", STRUCT_OFFSET(AFGAttentionPingActor, mOwningPlayerState), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState = { "mOwningPlayerState", "OnRep_OwningPlayerState", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGAttentionPingActor, mOwningPlayerState), Z_Construct_UClass_AFGPlayerState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGAttentionPingActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGAttentionPingActor_Statics::NewProp_mOwningPlayerState,
 	};
@@ -167,13 +167,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGAttentionPingActor_Statics::ClassParams = {
 		&AFGAttentionPingActor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGAttentionPingActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGAttentionPingActor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGAttentionPingActor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGAttentionPingActor_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGAttentionPingActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGAttentionPingActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGAttentionPingActor()
@@ -185,7 +189,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAttentionPingActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttentionPingActor, 2785944906);
+	IMPLEMENT_CLASS(AFGAttentionPingActor, 919832477);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGAttentionPingActor>()
+	{
+		return AFGAttentionPingActor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAttentionPingActor(Z_Construct_UClass_AFGAttentionPingActor, &AFGAttentionPingActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAttentionPingActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAttentionPingActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

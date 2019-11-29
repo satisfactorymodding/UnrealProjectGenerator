@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 		{ "ModuleRelativePath", "FGCrashSiteDebrisActor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000090009, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebrisActor, mMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh = { "mMesh", nullptr, (EPropertyFlags)0x0020080000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebrisActor, mMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh,
 	};
@@ -71,13 +71,17 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::ClassParams = {
 		&AFGCrashSiteDebrisActor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCrashSiteDebrisActor()
@@ -89,7 +93,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 283910006);
+	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 1671126592);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCrashSiteDebrisActor>()
+	{
+		return AFGCrashSiteDebrisActor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrashSiteDebrisActor(Z_Construct_UClass_AFGCrashSiteDebrisActor, &AFGCrashSiteDebrisActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrashSiteDebrisActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrashSiteDebrisActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

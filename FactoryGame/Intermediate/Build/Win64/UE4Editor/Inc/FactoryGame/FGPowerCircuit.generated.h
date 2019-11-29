@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,10 +22,14 @@ struct FPowerGraphPoint;
 	FORCEINLINE static uint32 __PPO__FirstIndex() { return STRUCT_OFFSET(FPowerCircuitStats, FirstIndex); }
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPowerCircuitStats>();
+
 #define FactoryGame_Source_FactoryGame_FGPowerCircuit_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPowerGraphPoint_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPowerGraphPoint>();
 
 #define FactoryGame_Source_FactoryGame_FGPowerCircuit_h_133_RPC_WRAPPERS \
  \
@@ -195,6 +199,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGPowerCircuit>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGPowerCircuit_h

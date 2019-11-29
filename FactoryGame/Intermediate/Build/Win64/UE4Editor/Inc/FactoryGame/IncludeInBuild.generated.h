@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,4 +22,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	op(EIncludeInBuilds::IIB_Development) \
 	op(EIncludeInBuilds::IIB_PrivateBuilds) \
 	op(EIncludeInBuilds::IIB_PublicBuilds) 
+
+enum class EIncludeInBuilds : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EIncludeInBuilds>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

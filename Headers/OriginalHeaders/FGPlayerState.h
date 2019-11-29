@@ -131,7 +131,7 @@ public:
 	FUniqueNetIdRepl GetUniqeNetId();
 
 	/** @returns string representation of users SteamID */
-	DEPRECATED( 4.20, "GetSteamID has been replaced by GetUserID" )
+	UE_DEPRECATED( 4.20, "GetSteamID has been replaced by GetUserID" )
 	UFUNCTION( BlueprintPure, Category="Networking", meta=(DeprecatedFunction, DeprecationMessage="Please use GetUserID instead") )
 	FString GetSteamID();
 

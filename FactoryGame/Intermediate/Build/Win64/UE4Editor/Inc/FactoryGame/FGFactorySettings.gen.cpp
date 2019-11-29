@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -39,10 +39,14 @@ class UScriptStruct* FCategory::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCategory, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Category"), sizeof(FCategory), Get_Z_Construct_UScriptStruct_FCategory_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FCategory_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCategory, Z_Construct_UPackage__Script_FactoryGame(), TEXT("Category"), sizeof(FCategory), Get_Z_Construct_UScriptStruct_FCategory_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FCategory>()
+{
+	return FCategory::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FCategory(FCategory::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("Category"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
@@ -86,7 +90,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Icon for the category" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon = { UE4CodeGen_Private::EPropertyClass::Struct, "Icon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(FCategory, Icon), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon = { "Icon", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCategory, Icon), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name_MetaData[] = {
 		{ "Category", "Category" },
@@ -94,7 +98,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Localized name of a category" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Text, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(FCategory, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCategory, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCategory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name,
@@ -104,19 +108,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		nullptr,
 		&NewStructOps,
 		"Category",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FCategory),
 		alignof(FCategory),
-		Z_Construct_UScriptStruct_FCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FCategory_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FCategory_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FCategory()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FCategory_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Category"), sizeof(FCategory), Get_Z_Construct_UScriptStruct_FCategory_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("Category"), sizeof(FCategory), Get_Z_Construct_UScriptStruct_FCategory_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -126,7 +131,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC() { return 1808606261U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCategory_Hash() { return 1903699244U; }
 	void UFGFactorySettings::StaticRegisterNativesUFGFactorySettings()
 	{
 		UClass* Class = UFGFactorySettings::StaticClass();
@@ -149,7 +154,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFactorySettings_eventGetRandomConstructionSound_Parms, ReturnValue), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactorySettings_eventGetRandomConstructionSound_Parms, ReturnValue), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::NewProp_ReturnValue,
 	};
@@ -160,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Get a random construction sound to play." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactorySettings, "GetRandomConstructionSound", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGFactorySettings_eventGetRandomConstructionSound_Parms), Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactorySettings, nullptr, "GetRandomConstructionSound", sizeof(FGFactorySettings_eventGetRandomConstructionSound_Parms), Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -183,7 +188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGFactorySettings_eventGetRandomDismantleSound_Parms, ReturnValue), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFactorySettings_eventGetRandomDismantleSound_Parms, ReturnValue), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::NewProp_ReturnValue,
 	};
@@ -194,7 +199,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Get a random dismantle sound to play." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactorySettings, "GetRandomDismantleSound", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGFactorySettings_eventGetRandomDismantleSound_Parms), Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGFactorySettings, nullptr, "GetRandomDismantleSound", sizeof(FGFactorySettings_eventGetRandomDismantleSound_Parms), Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -351,8 +356,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactorySettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound, "GetRandomConstructionSound" }, // 1915410916
-		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound, "GetRandomDismantleSound" }, // 1180790245
+		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound, "GetRandomConstructionSound" }, // 940357022
+		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound, "GetRandomDismantleSound" }, // 1276888590
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::Class_MetaDataParams[] = {
@@ -368,8 +373,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Names if the input actions that defines the shortcuts. This maps directly to their index (so first entry here should mean that it should call ExecuteShortcut 0)" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap = { UE4CodeGen_Private::EPropertyClass::Array, "mShortcutMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mShortcutMap), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData)) };
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_Inner = { UE4CodeGen_Private::EPropertyClass::Name, "mShortcutMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap = { "mShortcutMap", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mShortcutMap), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_Inner = { "mShortcutMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData[] = {
 		{ "Category", "Shortcuts" },
@@ -377,7 +382,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The class we want to spawn for recipe shortcuts" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass = { UE4CodeGen_Private::EPropertyClass::Class, "mRecipeShortcutClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mRecipeShortcutClass), Z_Construct_UClass_UFGRecipeShortcut_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass = { "mRecipeShortcutClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mRecipeShortcutClass), Z_Construct_UClass_UFGRecipeShortcut_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData[] = {
 		{ "Category", "Shortcuts" },
@@ -385,7 +390,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The class we want to spawn for dismantle shortcuts" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass = { UE4CodeGen_Private::EPropertyClass::Class, "mDismantleShortcutClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDismantleShortcutClass), Z_Construct_UClass_UFGDismantleShortcut_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass = { "mDismantleShortcutClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDismantleShortcutClass), Z_Construct_UClass_UFGDismantleShortcut_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData[] = {
 		{ "Category", "Legs" },
@@ -393,7 +398,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Maximum length when we want to spawn the legs" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxFeetLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mMaxFeetLength), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength = { "mMaxFeetLength", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mMaxFeetLength), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh_MetaData[] = {
 		{ "Category", "Legs" },
@@ -401,7 +406,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The mesh to be used as foots on factories" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mFootMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mFootMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh = { "mFootMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mFootMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh_MetaData[] = {
 		{ "Category", "Legs" },
@@ -409,7 +414,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The mesh to be used as legs on factories" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mLegMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mLegMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh = { "mLegMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mLegMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -417,7 +422,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The default resource miner class to spawn" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass = { UE4CodeGen_Private::EPropertyClass::Class, "mResourceMinerClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mResourceMinerClass), Z_Construct_UClass_AFGResourceMiner_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass = { "mResourceMinerClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mResourceMinerClass), Z_Construct_UClass_AFGResourceMiner_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -425,7 +430,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The default resource scanner class to spawn" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass = { UE4CodeGen_Private::EPropertyClass::Class, "mResourceScannerClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mResourceScannerClass), Z_Construct_UClass_AFGResourceScanner_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass = { "mResourceScannerClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mResourceScannerClass), Z_Construct_UClass_AFGResourceScanner_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -433,7 +438,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "The default buildgun class to spawn" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass = { UE4CodeGen_Private::EPropertyClass::Class, "mBuildGunClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mBuildGunClass), Z_Construct_UClass_AFGBuildGun_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass = { "mBuildGunClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mBuildGunClass), Z_Construct_UClass_AFGBuildGun_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial_MetaData[] = {
 		{ "Category", "Buildable|Dismantle" },
@@ -441,7 +446,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material used when looking at buildings for dismantle" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDismantlePendingMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDismantlePendingMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial = { "mDismantlePendingMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDismantlePendingMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
@@ -449,7 +454,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Effect to play when a building is dismantled //[DavalliusA:Mon/01-04-2019] seems to never ba used? //@TODO: see if we can't remove this" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect = { UE4CodeGen_Private::EPropertyClass::Class, "mDismantleEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDismantleEffect), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect = { "mDismantleEffect", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDismantleEffect), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
@@ -457,7 +462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Effect to play when a building is built //[DavalliusA:Mon/01-04-2019] seems to only be used for replays? //@TODO: see if we can't store this in a way more suitable for replays... a waste to have it in a global class like this" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect = { UE4CodeGen_Private::EPropertyClass::Class, "mBuildEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mBuildEffect), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect = { "mBuildEffect", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mBuildEffect), Z_Construct_UClass_UFGMaterialEffect_Build_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
@@ -465,8 +470,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Default sound played when dismantling a building, a random from the list is played." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds = { UE4CodeGen_Private::EPropertyClass::Array, "mDismantleSounds", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDismantleSounds), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mDismantleSounds", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds = { "mDismantleSounds", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDismantleSounds), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_Inner = { "mDismantleSounds", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
@@ -474,8 +479,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Default sound played when constructing a building, a random from the list is played." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds = { UE4CodeGen_Private::EPropertyClass::Array, "mConstructionSounds", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mConstructionSounds), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mConstructionSounds", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds = { "mConstructionSounds", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mConstructionSounds), METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_Inner = { "mConstructionSounds", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData[] = {
 		{ "Category", "Buildable" },
@@ -483,7 +488,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Crate spawned when we dismantle an actor or when we die. It will be filled with the refund if it doesn't fit in the players inventory." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate = { UE4CodeGen_Private::EPropertyClass::Class, "mInventoryDropCrate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mInventoryDropCrate), Z_Construct_UClass_AFGCrate_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate = { "mInventoryDropCrate", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mInventoryDropCrate), Z_Construct_UClass_AFGCrate_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial_MetaData[] = {
 		{ "Category", "BuildGuides|Alignment" },
@@ -491,7 +496,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material applied to build guides specifically for conveyor belts to visualize alignment in build mode. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mConveyorBuildGuideMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mConveyorBuildGuideMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial = { "mConveyorBuildGuideMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mConveyorBuildGuideMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial_MetaData[] = {
 		{ "Category", "BuildGuides|Alignment" },
@@ -499,7 +504,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material applied to build guides to visualize alignment in build mode. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mBuildGuideMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mBuildGuideMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial = { "mBuildGuideMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mBuildGuideMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh_MetaData[] = {
 		{ "Category", "BuildGuides|Alignment" },
@@ -507,7 +512,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Mesh used to visualize alignment in build mode. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mBuildGuideMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mBuildGuideMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh = { "mBuildGuideMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mBuildGuideMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound_MetaData[] = {
 		{ "Category", "Hologram|Sound" },
@@ -515,7 +520,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Snapping sound for holograms, e.g. when a conveyor snaps to an output." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound = { UE4CodeGen_Private::EPropertyClass::Object, "mHologramSnapSound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mHologramSnapSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound = { "mHologramSnapSound", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mHologramSnapSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound_MetaData[] = {
 		{ "Category", "Hologram|Sound" },
@@ -523,7 +528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Default sound loop placed on holograms." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound = { UE4CodeGen_Private::EPropertyClass::Object, "mHologramLoopSound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mHologramLoopSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound = { "mHologramLoopSound", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mHologramLoopSound), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial_MetaData[] = {
 		{ "Category", "Hologram|Clearance" },
@@ -531,7 +536,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for clearance. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mClearanceMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial = { "mClearanceMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mClearanceMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh_MetaData[] = {
 		{ "Category", "Hologram|Clearance" },
@@ -539,7 +544,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Mesh used to visualize the clearance mesh on factories @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mClearanceMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh = { "mClearanceMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mClearanceMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
@@ -547,7 +552,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Mesh used to visualize power connections. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultPowerConnectionMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultPowerConnectionMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh = { "mDefaultPowerConnectionMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultPowerConnectionMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
@@ -555,7 +560,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Mesh used to visualize input or output connections direction. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultConveyorConnectionArrowMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultConveyorConnectionArrowMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh = { "mDefaultConveyorConnectionArrowMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultConveyorConnectionArrowMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
@@ -563,7 +568,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Mesh used to visualize input or output connections location. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultConveyorConnectionFrameMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultConveyorConnectionFrameMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh = { "mDefaultConveyorConnectionFrameMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultConveyorConnectionFrameMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -571,7 +576,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for power connections. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultPowerConnectionMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultPowerConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial = { "mDefaultPowerConnectionMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultPowerConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -579,7 +584,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for output connections. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultOutputConnectionMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultOutputConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial = { "mDefaultOutputConnectionMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultOutputConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -587,7 +592,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for input connections. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultInputConnectionMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultInputConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial = { "mDefaultInputConnectionMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultInputConnectionMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -595,7 +600,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for invalid placement. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultInvalidPlacementMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultInvalidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial = { "mDefaultInvalidPlacementMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultInvalidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -603,7 +608,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for valid placement. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultValidPlacementMaterialSimplified", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultValidPlacementMaterialSimplified), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified = { "mDefaultValidPlacementMaterialSimplified", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultValidPlacementMaterialSimplified), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
@@ -611,7 +616,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		{ "ToolTip", "Material on hologram for valid placement. @note Do not set in code!" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mDefaultValidPlacementMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGFactorySettings, mDefaultValidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial = { "mDefaultValidPlacementMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGFactorySettings, mDefaultValidPlacementMaterial), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGFactorySettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_Inner,
@@ -653,13 +658,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFactorySettings_Statics::ClassParams = {
 		&UFGFactorySettings::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGFactorySettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGFactorySettings_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::PropPointers),
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFactorySettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFactorySettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFactorySettings()
@@ -671,7 +680,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactorySettings, 3648553975);
+	IMPLEMENT_CLASS(UFGFactorySettings, 79568958);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFactorySettings>()
+	{
+		return UFGFactorySettings::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactorySettings(Z_Construct_UClass_UFGFactorySettings, &UFGFactorySettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactorySettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactorySettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

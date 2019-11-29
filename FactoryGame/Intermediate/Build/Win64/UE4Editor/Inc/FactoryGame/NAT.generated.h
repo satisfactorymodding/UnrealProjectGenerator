@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,4 +22,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	op(ECachedNATType::CNT_Moderate) \
 	op(ECachedNATType::CNT_Strict) \
 	op(ECachedNATType::CNT_TBD) 
+
+enum class ECachedNATType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ECachedNATType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

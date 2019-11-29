@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGExplosiveDestroyableInterface_eventGetDestroyEffect_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGExplosiveDestroyableInterface_eventGetDestroyEffect_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::NewProp_ReturnValue,
 	};
@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		{ "ToolTip", "Particle System to be played when destroyed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGExplosiveDestroyableInterface, "GetDestroyEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGExplosiveDestroyableInterface_eventGetDestroyEffect_Parms), Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGExplosiveDestroyableInterface, nullptr, "GetDestroyEffect", sizeof(FGExplosiveDestroyableInterface_eventGetDestroyEffect_Parms), Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 	{
 		((FGExplosiveDestroyableInterface_eventNotifyExploded_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGExplosiveDestroyableInterface_eventNotifyExploded_Parms), &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGExplosiveDestroyableInterface_eventNotifyExploded_Parms), &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::NewProp_ReturnValue,
 	};
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		{ "ToolTip", "Blueprint event for modifying BP objects when they are exploded" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGExplosiveDestroyableInterface, "NotifyExploded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGExplosiveDestroyableInterface_eventNotifyExploded_Parms), Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGExplosiveDestroyableInterface, nullptr, "NotifyExploded", sizeof(FGExplosiveDestroyableInterface_eventNotifyExploded_Parms), Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -126,8 +126,8 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 3472368319
-		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded, "NotifyExploded" }, // 2903231467
+		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 4263826654
+		{ &Z_Construct_UFunction_UFGExplosiveDestroyableInterface_NotifyExploded, "NotifyExploded" }, // 2722007027
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::Class_MetaDataParams[] = {
@@ -141,13 +141,17 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::ClassParams = {
 		&UFGExplosiveDestroyableInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGExplosiveDestroyableInterface()
@@ -159,7 +163,11 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 4263931015);
+	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 2240313307);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGExplosiveDestroyableInterface>()
+	{
+		return UFGExplosiveDestroyableInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGExplosiveDestroyableInterface(Z_Construct_UClass_UFGExplosiveDestroyableInterface, &UFGExplosiveDestroyableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGExplosiveDestroyableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGExplosiveDestroyableInterface);
 	static FName NAME_UFGExplosiveDestroyableInterface_GetDestroyEffect = FName(TEXT("GetDestroyEffect"));

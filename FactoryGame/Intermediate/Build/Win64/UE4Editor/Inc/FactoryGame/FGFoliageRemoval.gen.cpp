@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -34,10 +34,14 @@ class UScriptStruct* FRemovedInstanceArray::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FRemovedInstanceArray, Z_Construct_UPackage__Script_FactoryGame(), TEXT("RemovedInstanceArray"), sizeof(FRemovedInstanceArray), Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FRemovedInstanceArray, Z_Construct_UPackage__Script_FactoryGame(), TEXT("RemovedInstanceArray"), sizeof(FRemovedInstanceArray), Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FRemovedInstanceArray>()
+{
+	return FRemovedInstanceArray::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FRemovedInstanceArray(FRemovedInstanceArray::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("RemovedInstanceArray"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArray
@@ -81,15 +85,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		{ "ToolTip", "All the items that has been removed from the AFGFoliageRemoval" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items = { UE4CodeGen_Private::EPropertyClass::Array, "Items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FRemovedInstanceArray, Items), METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "Items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FRemovedInstance, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items = { "Items", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemovedInstanceArray, Items), METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FRemovedInstance, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData[] = {
 		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
 		{ "ToolTip", "Used to invoke the callback directly on the foliage removal instead of on FRemovedInstance" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover = { UE4CodeGen_Private::EPropertyClass::Object, "FoliageRemover", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, STRUCT_OFFSET(FRemovedInstanceArray, FoliageRemover), Z_Construct_UClass_AFGFoliageRemoval_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover = { "FoliageRemover", nullptr, (EPropertyFlags)0x0010000080000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemovedInstanceArray, FoliageRemover), Z_Construct_UClass_AFGFoliageRemoval_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_FoliageRemover_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::NewProp_Items_Inner,
@@ -100,19 +104,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		Z_Construct_UScriptStruct_FFastArraySerializer,
 		&NewStructOps,
 		"RemovedInstanceArray",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FRemovedInstanceArray),
 		alignof(FRemovedInstanceArray),
-		Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRemovedInstanceArray()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("RemovedInstanceArray"), sizeof(FRemovedInstanceArray), Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("RemovedInstanceArray"), sizeof(FRemovedInstanceArray), Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -122,16 +127,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC() { return 3609779295U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 4159472802U; }
 class UScriptStruct* FRemovedInstance::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FRemovedInstance, Z_Construct_UPackage__Script_FactoryGame(), TEXT("RemovedInstance"), sizeof(FRemovedInstance), Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FRemovedInstance, Z_Construct_UPackage__Script_FactoryGame(), TEXT("RemovedInstance"), sizeof(FRemovedInstance), Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FRemovedInstance>()
+{
+	return FRemovedInstance::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FRemovedInstance(FRemovedInstance::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("RemovedInstance"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
@@ -174,14 +183,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		{ "ToolTip", "Stored in localspace" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform = { UE4CodeGen_Private::EPropertyClass::Struct, "Transform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000081000000, 1, nullptr, STRUCT_OFFSET(FRemovedInstance, Transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform = { "Transform", nullptr, (EPropertyFlags)0x0010000081000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemovedInstance, Transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location_MetaData[] = {
 		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
 		{ "ToolTip", "Stored in localspace. Compressed location to get the id of the item, @todo: Toy around with different FVector_NetQuantize and see what works best" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location = { UE4CodeGen_Private::EPropertyClass::Struct, "Location", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FRemovedInstance, Location), Z_Construct_UScriptStruct_FVector_NetQuantize10, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FRemovedInstance, Location), Z_Construct_UScriptStruct_FVector_NetQuantize10, METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Transform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRemovedInstance_Statics::NewProp_Location,
@@ -191,19 +200,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		Z_Construct_UScriptStruct_FFastArraySerializerItem,
 		&NewStructOps,
 		"RemovedInstance",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FRemovedInstance),
 		alignof(FRemovedInstance),
-		Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRemovedInstance()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("RemovedInstance"), sizeof(FRemovedInstance), Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("RemovedInstance"), sizeof(FRemovedInstance), Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -213,7 +223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC() { return 3336851844U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash() { return 882054074U; }
 	void AFGFoliageRemoval::StaticRegisterNativesAFGFoliageRemoval()
 	{
 		UClass* Class = AFGFoliageRemoval::StaticClass();
@@ -236,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		{ "ToolTip", "Register with the foliage removal subsystem, retries if no one is created yet" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliageRemoval, "RegisterWithSubsystem", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliageRemoval, nullptr, "RegisterWithSubsystem", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -271,14 +281,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 	{
 		((FGFoliageRemoval_eventRemoveInstance_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFoliageRemoval_eventRemoveInstance_Parms), &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_instanceId = { UE4CodeGen_Private::EPropertyClass::Int, "instanceId", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliageRemoval_eventRemoveInstance_Parms, instanceId), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFoliageRemoval_eventRemoveInstance_Parms), &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_instanceId = { "instanceId", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliageRemoval_eventRemoveInstance_Parms, instanceId), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_localSpace_SetBit(void* Obj)
 	{
 		((FGFoliageRemoval_eventRemoveInstance_Parms*)Obj)->localSpace = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_localSpace = { UE4CodeGen_Private::EPropertyClass::Bool, "localSpace", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGFoliageRemoval_eventRemoveInstance_Parms), &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_localSpace_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_foliageTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "foliageTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGFoliageRemoval_eventRemoveInstance_Parms, foliageTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_localSpace = { "localSpace", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGFoliageRemoval_eventRemoveInstance_Parms), &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_localSpace_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_foliageTransform = { "foliageTransform", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGFoliageRemoval_eventRemoveInstance_Parms, foliageTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::NewProp_instanceId,
@@ -294,7 +304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		{ "ToolTip", "Remove a instance from the level\n\nSERVER ONLY\n@param foliageTransform - a transform for the instance\n@param localSpace - if true, then the foliageTransform is sent in localspace\n@param instanceId - optional, if this is set (not -1), then we can faster lookup the instance, sadly, it's not stable, so we won't be able to rely only on these" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliageRemoval, "RemoveInstance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGFoliageRemoval_eventRemoveInstance_Parms), Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliageRemoval, nullptr, "RemoveInstance", sizeof(FGFoliageRemoval_eventRemoveInstance_Parms), Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -345,8 +355,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGFoliageRemoval_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem, "RegisterWithSubsystem" }, // 2549816782
-		{ &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance, "RemoveInstance" }, // 261286991
+		{ &Z_Construct_UFunction_AFGFoliageRemoval_RegisterWithSubsystem, "RegisterWithSubsystem" }, // 4002995082
+		{ &Z_Construct_UFunction_AFGFoliageRemoval_RemoveInstance, "RemoveInstance" }, // 1184918758
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::Class_MetaDataParams[] = {
@@ -360,21 +370,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		{ "ToolTip", "ServerOnly: The bounds of the level we have foliage in (@todo: Can we remove this savegame tag?)" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds = { UE4CodeGen_Private::EPropertyClass::Struct, "mLevelBounds", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGFoliageRemoval, mLevelBounds), Z_Construct_UScriptStruct_FBox, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds = { "mLevelBounds", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mLevelBounds), Z_Construct_UScriptStruct_FBox, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData[] = {
 		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
 		{ "ToolTip", "The name of mesh component to use the level" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName = { UE4CodeGen_Private::EPropertyClass::Name, "mFoliageTypeName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGFoliageRemoval, mFoliageTypeName), METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName = { "mFoliageTypeName", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mFoliageTypeName), METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName_MetaData[] = {
 		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
 		{ "ToolTip", "The name of the level that this actor removes foliage from, so that the foliage system can find it" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName = { UE4CodeGen_Private::EPropertyClass::Name, "mLevelName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGFoliageRemoval, mLevelName), METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName = { "mLevelName", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mLevelName), METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -382,14 +392,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		{ "ToolTip", "This needs to be a UPROPERTY as it will become null:ed when the level this actor is associated with is streamed out" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGFoliageRemoval, mMeshComponent), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent = { "mMeshComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mMeshComponent), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances_MetaData[] = {
 		{ "ModuleRelativePath", "FGFoliageRemoval.h" },
 		{ "ToolTip", "Instances to remove, has custom \"ReplicatedUsing\", so we get a notify for each instance replicated" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances = { UE4CodeGen_Private::EPropertyClass::Struct, "mRemovedInstances", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGFoliageRemoval, mRemovedInstances), Z_Construct_UScriptStruct_FRemovedInstanceArray, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances = { "mRemovedInstances", nullptr, (EPropertyFlags)0x0020080001000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGFoliageRemoval, mRemovedInstances), Z_Construct_UScriptStruct_FRemovedInstanceArray, METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mRemovedInstances_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGFoliageRemoval_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mLevelBounds,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGFoliageRemoval_Statics::NewProp_mFoliageTypeName,
@@ -405,13 +415,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFoliageRemoval_Statics::ClassParams = {
 		&AFGFoliageRemoval::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGFoliageRemoval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGFoliageRemoval_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemoval_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemoval_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFoliageRemoval()
@@ -423,7 +437,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemoval, 23794548);
+	IMPLEMENT_CLASS(AFGFoliageRemoval, 1058553210);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemoval>()
+	{
+		return AFGFoliageRemoval::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliageRemoval(Z_Construct_UClass_AFGFoliageRemoval, &AFGFoliageRemoval::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliageRemoval"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliageRemoval);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

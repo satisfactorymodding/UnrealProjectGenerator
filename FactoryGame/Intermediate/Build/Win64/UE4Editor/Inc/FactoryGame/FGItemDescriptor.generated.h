@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,6 +24,8 @@ enum class EResourceForm : uint8;
 	friend struct Z_Construct_UScriptStruct_FItemView_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemView>();
 
 #define FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS \
  \
@@ -372,6 +374,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGItemDescriptor>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h
 
@@ -383,6 +387,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EStackSize::SS_BIG) \
 	op(EStackSize::SS_HUGE) \
 	op(EStackSize::SS_LAST_ENUM) 
+
+enum class EStackSize : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EStackSize>();
+
 #define FOREACH_ENUM_ERESOURCEFORM(op) \
 	op(EResourceForm::RF_INVALID) \
 	op(EResourceForm::RF_SOLID) \
@@ -390,4 +398,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EResourceForm::RF_GAS) \
 	op(EResourceForm::RF_HEAT) \
 	op(EResourceForm::RF_LAST_ENUM) 
+
+enum class EResourceForm : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EResourceForm>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

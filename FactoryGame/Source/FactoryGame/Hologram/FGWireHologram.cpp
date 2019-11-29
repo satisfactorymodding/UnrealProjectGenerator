@@ -12,6 +12,7 @@ bool AFGWireHologram::MultiStepPlacement(){ return bool(); }
 void AFGWireHologram::SetHologramLocationAndRotation( const FHitResult& hitResult){ }
 void AFGWireHologram::OnInvalidHitResult(){ }
 void AFGWireHologram::SpawnChildren(  UFGBuildGunStateBuild* state){ }
+void AFGWireHologram::ScrollRotate( int32 delta, int32 step){ }
 void AFGWireHologram::ConfigureActor(  AFGBuildable* inBuildable) const{ }
 void AFGWireHologram::Destroyed(){ }
 void AFGWireHologram::CheckValidPlacement(){ }

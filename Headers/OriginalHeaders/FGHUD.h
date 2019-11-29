@@ -72,7 +72,7 @@ public:
 	void SetPreviewActorClass( TSubclassOf<AActor> actorClass );
 
 	/** Set the distance we preview the actor from */
-	DEPRECATED( 4.16, "SetPreviewDistance is deprecated, use SetPreviewView instead" )
+	UE_DEPRECATED( 4.16, "SetPreviewDistance is deprecated, use SetPreviewView instead" )
 	UFUNCTION( BlueprintCallable, Category="ActorPreview", meta = ( DeprecatedFunction, DeprecationMessage = "SetPreviewDistance is deprecated, use SetPreviewView instead" ) )
 	void SetPreviewDistance( float previewDistance );
 

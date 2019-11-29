@@ -101,9 +101,11 @@ public:
 	 * First part [0,offset] and second part [offset,length].
 	 * @note Callee is responsible for not creating snakes or 'zero belts'.
 	 *       I.e. Do not split to close to the beginning or end.
+	 *		 Will dismantle the current conveyor belt on successful split
+	 * @param connectNewConveyors - Should the new conveyors be connected to each other after the split
 	 * @return The second part of the splitted conveyor; nullptr on failure to split.
 	 */
-	static TArray< AFGBuildableConveyorBelt* > Split( AFGBuildableConveyorBelt* conveyor, float offset );
+	static TArray< AFGBuildableConveyorBelt* > Split( AFGBuildableConveyorBelt* conveyor, float offset, bool connectNewConveyors );
 
 	/**
 	 * Merge two conveyors.
@@ -144,6 +146,8 @@ protected:
 private:
 	void UpdateItemTransformTick( const FConveyorBeltItem& item, TMap<FName, int32>& instanceCounts, class AFGRadioactivitySubsystem* radioactiveSubsystem );
 
+	/** Get the that have the "moving conveyor material" in it */
+	void GetConveyorMaterials( TArray<UMaterialInterface*, TInlineAllocator<4>>& out_materials );
 private:
 	friend class AFGConveyorBeltHologram;
 

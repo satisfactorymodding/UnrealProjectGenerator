@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConveyorLiftHologram, "OnRep_ArrowDirection", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConveyorLiftHologram, nullptr, "OnRep_ArrowDirection", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConveyorLiftHologram, "OnRep_TopTransform", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGConveyorLiftHologram, nullptr, "OnRep_TopTransform", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -140,8 +140,8 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGConveyorLiftHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection, "OnRep_ArrowDirection" }, // 2419847247
-		{ &Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform, "OnRep_TopTransform" }, // 1705516290
+		{ &Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_ArrowDirection, "OnRep_ArrowDirection" }, // 2827446242
+		{ &Z_Construct_UFunction_AFGConveyorLiftHologram_OnRep_TopTransform, "OnRep_TopTransform" }, // 1032103198
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::Class_MetaDataParams[] = {
@@ -157,53 +157,53 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		{ "ToolTip", "Arrow to indicate the direction of the lift while placing it." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mArrowComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mArrowComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent = { "mArrowComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mArrowComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 		{ "ToolTip", "Used to replicate the direction arrow." },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection = { UE4CodeGen_Private::EPropertyClass::Enum, "mArrowDirection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_ArrowDirection", STRUCT_OFFSET(AFGConveyorLiftHologram, mArrowDirection), Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection = { "mArrowDirection", "OnRep_ArrowDirection", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mArrowDirection), Z_Construct_UEnum_FactoryGame_EFactoryConnectionDirection, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mJointMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mJointMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh = { "mJointMesh", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mJointMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mJointMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mTopMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mTopMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh = { "mTopMesh", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mTopMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mMidMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mMidMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh = { "mMidMesh", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mMidMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mMidMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mBottomMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mBottomMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh = { "mBottomMesh", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mBottomMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mBottomMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 		{ "ToolTip", "Transform of the top part of the lift." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "mTopTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_TopTransform", STRUCT_OFFSET(AFGConveyorLiftHologram, mTopTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform = { "mTopTransform", "OnRep_TopTransform", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mTopTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mTopTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGConveyorLiftHologram.h" },
 		{ "ToolTip", "If we upgrade another conveyor lift this is the belt we replace." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift = { UE4CodeGen_Private::EPropertyClass::Object, "mUpgradedConveyorLift", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mUpgradedConveyorLift), Z_Construct_UClass_AFGBuildableConveyorLift_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift = { "mUpgradedConveyorLift", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorLiftHologram, mUpgradedConveyorLift), Z_Construct_UClass_AFGBuildableConveyorLift_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mUpgradedConveyorLift_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		{ "ToolTip", "The connections we've made." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mSnappedConnectionComponents, AFGConveyorLiftHologram), nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mSnappedConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents = { "mSnappedConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mSnappedConnectionComponents, AFGConveyorLiftHologram), STRUCT_OFFSET(AFGConveyorLiftHologram, mSnappedConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		{ "ToolTip", "The two connection components for this conveyor." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mConnectionComponents, AFGConveyorLiftHologram), nullptr, STRUCT_OFFSET(AFGConveyorLiftHologram, mConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents = { "mConnectionComponents", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, CPP_ARRAY_DIM(mConnectionComponents, AFGConveyorLiftHologram), STRUCT_OFFSET(AFGConveyorLiftHologram, mConnectionComponents), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mConnectionComponents_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGConveyorLiftHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorLiftHologram_Statics::NewProp_mArrowDirection,
@@ -238,13 +238,17 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGConveyorLiftHologram_Statics::ClassParams = {
 		&AFGConveyorLiftHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGConveyorLiftHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGConveyorLiftHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorLiftHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGConveyorLiftHologram()
@@ -256,7 +260,11 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorLiftHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorLiftHologram, 1345979792);
+	IMPLEMENT_CLASS(AFGConveyorLiftHologram, 1439430864);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorLiftHologram>()
+	{
+		return AFGConveyorLiftHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorLiftHologram(Z_Construct_UClass_AFGConveyorLiftHologram, &AFGConveyorLiftHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorLiftHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorLiftHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -91,9 +91,6 @@ public:
 	/** A player was added to the game */
 	void AddPlayer( class AFGCharacterPlayer* inPlayer );
 
-	/** Gamestate tells us what resource was just scanned for */
-	void OnResourceScannedFor( TSubclassOf< UFGResourceDescriptor > resourceScannedFor );
-
 	/** Called when the drop pod is dismantled. */
 	void OnDismantleDropPod();
 
@@ -209,8 +206,8 @@ protected:
 	UPROPERTY( SaveGame )
 	bool mTradingPostBuilt;
 
-	/** Returns true if we should skip the tutorial as we are in PIE */
-	bool ShouldSkipTutorialDueToPIE() const;
+	/** Returns true if we should skip the tutorial */
+	bool ShouldSkipTutorial() const;
 
 	/** Set when the player force skips the intro sequence (landing of the pod up until full player control is regained) */
 	bool mIsSkippingIntro;

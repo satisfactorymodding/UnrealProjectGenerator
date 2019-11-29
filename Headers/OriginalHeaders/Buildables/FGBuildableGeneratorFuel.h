@@ -74,6 +74,10 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Power" )
 	FORCEINLINE TSubclassOf< class UFGItemDescriptor > GetCurrentFuelClass() const { return mCurrentFuelClass; }
 
+	/** Returns all fuel classes this generator can use */
+	UFUNCTION( BlueprintPure, Category = "Power" )
+	FORCEINLINE TArray< TSubclassOf< class UFGItemDescriptor > > GetAvailableFuelClasses() const { return mAvailableFuelClasses; }
+
 protected:
 	/** Try to collect fuel from an input. */
 	void Factory_CollectFuel();

@@ -6,6 +6,7 @@ void UFGGameUserSettings::ApplyNonResolutionSettings(){ }
 void UFGGameUserSettings::SetToDefaults(){ }
 void UFGGameUserSettings::ResetToCurrentSettings(){ }
 void UFGGameUserSettings::ValidateSettings(){ }
+void UFGGameUserSettings::LoadSettings( bool bForceReload ){ }
 void UFGGameUserSettings::SetAudioToDefaults(){ }
 void UFGGameUserSettings::ResetAudioToCurrentSettings(){ }
 UFGGameUserSettings* UFGGameUserSettings::GetFGGameUserSettings(){ return nullptr; }
@@ -35,4 +36,30 @@ void UFGGameUserSettings::SetHeadBobScale( float newHeadBobScale){ }
 void UFGGameUserSettings::SetAutosaveInterval( int32 newInterval){ }
 void UFGGameUserSettings::ApplyAutosaveInterval(){ }
 void UFGGameUserSettings::SetShowBreakNotification( bool enabled){ }
+bool UFGGameUserSettings::GetBoolOptionValue( FString cvar){ return bool(); }
+void UFGGameUserSettings::SetBoolOptionValue( FString cvar, bool value, bool updateInstantly , bool requireRestart ){ }
+int32 UFGGameUserSettings::GetIntOptionValue( FString cvar){ return int32(); }
+void UFGGameUserSettings::SetIntOptionValue( FString cvar, int32 value, bool updateInstantly , bool requireRestart ){ }
+float UFGGameUserSettings::GetFloatOptionValue( FString cvar){ return float(); }
+void UFGGameUserSettings::SetFloatOptionValue( FString cvar, float value, bool updateInstantly , bool requireRestart ){ }
+void UFGGameUserSettings::SetCvarValue( FString cvar, int32 value){ }
+void UFGGameUserSettings::SetCvarValue( FString cvar, float value){ }
+void UFGGameUserSettings::SetDefaultIntOptionValue( FString cvar, int32 value, FString tooltip){ }
+void UFGGameUserSettings::SetDefaultFloatOptionValue( FString cvar, float value, FString tooltip){ }
+void UFGGameUserSettings::SetupDefaultOptionsValues(){ }
+void UFGGameUserSettings::RegisterConsoleVariable( FString cvar, int32 value, FString tooltip){ }
+void UFGGameUserSettings::RegisterConsoleVariable( FString cvar, float value, FString tooltip){ }
+void UFGGameUserSettings::ApplyPendingChanges(){ }
+void UFGGameUserSettings::ApplyRestartRequiredChanges(){ }
+void UFGGameUserSettings::CVarSinkHandler(){ }
+void UFGGameUserSettings::UpdateCvars(){ }
+void UFGGameUserSettings::SubscribeToDynamicOptionUpdate( FString cvar, const FOptionUpdated& optionUpdatedDelegate){ }
+void UFGGameUserSettings::UnsubscribeToDynamicOptionUpdate( FString cvar, const FOptionUpdated& optionUpdatedDelegate){ }
+void UFGGameUserSettings::UnsubscribeToAllDynamicOptionUpdate( UObject* boundObject){ }
+void UFGGameUserSettings::DumpDynamicOptionsSettings(){ }
 void UFGGameUserSettings::UpdateFoliageQualityChanges(){ }
+bool UFGGameUserSettings::ValidateCVar( FString &cvar){ return bool(); }
+void UFGGameUserSettings::SetOptionValue( FString cvar, int32 value){ }
+void UFGGameUserSettings::SetOptionValue( FString cvar, float value){ }
+void UFGGameUserSettings::BroadcastDynamicOptionUpdate( FString cvar){ }
+FAutoConsoleVariableSink UFGGameUserSettings::mCVarSink = NULL;

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -64,13 +64,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_Statics::ClassParams = {
 		&UFGFoliageIdentifier::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier()
@@ -82,7 +86,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier, 127818798);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier, 2555828810);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier>()
+	{
+		return UFGFoliageIdentifier::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier(Z_Construct_UClass_UFGFoliageIdentifier, &UFGFoliageIdentifier::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier);
 	void UFGFoliageIdentifier_RemovableByBuildings::StaticRegisterNativesUFGFoliageIdentifier_RemovableByBuildings()
@@ -117,13 +125,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::ClassParams = {
 		&UFGFoliageIdentifier_RemovableByBuildings::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings()
@@ -135,7 +147,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 181677286);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 144336304);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_RemovableByBuildings>()
+	{
+		return UFGFoliageIdentifier_RemovableByBuildings::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_RemovableByBuildings(Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings, &UFGFoliageIdentifier_RemovableByBuildings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_RemovableByBuildings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_RemovableByBuildings);
 	void UFGFoliageIdentifier_Pickupable::StaticRegisterNativesUFGFoliageIdentifier_Pickupable()
@@ -170,13 +186,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::ClassParams = {
 		&UFGFoliageIdentifier_Pickupable::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_Pickupable()
@@ -188,7 +208,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 4126207774);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 2215050165);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_Pickupable>()
+	{
+		return UFGFoliageIdentifier_Pickupable::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_Pickupable(Z_Construct_UClass_UFGFoliageIdentifier_Pickupable, &UFGFoliageIdentifier_Pickupable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_Pickupable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_Pickupable);
 	void UFGFoliageIdentifier_Chainsawable::StaticRegisterNativesUFGFoliageIdentifier_Chainsawable()
@@ -223,13 +247,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::ClassParams = {
 		&UFGFoliageIdentifier_Chainsawable::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable()
@@ -241,7 +269,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 1983490681);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 837169450);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_Chainsawable>()
+	{
+		return UFGFoliageIdentifier_Chainsawable::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_Chainsawable(Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable, &UFGFoliageIdentifier_Chainsawable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_Chainsawable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_Chainsawable);
 	void UFGFoliageIdentifier_ChainsawableXmasTree::StaticRegisterNativesUFGFoliageIdentifier_ChainsawableXmasTree()
@@ -276,13 +308,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::ClassParams = {
 		&UFGFoliageIdentifier_ChainsawableXmasTree::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree()
@@ -294,7 +330,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 197259789);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 3895074486);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_ChainsawableXmasTree>()
+	{
+		return UFGFoliageIdentifier_ChainsawableXmasTree::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_ChainsawableXmasTree(Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree, &UFGFoliageIdentifier_ChainsawableXmasTree::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_ChainsawableXmasTree"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_ChainsawableXmasTree);
 	void UFGFoliageIdentifier_VehicleDestroyable::StaticRegisterNativesUFGFoliageIdentifier_VehicleDestroyable()
@@ -329,13 +369,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::ClassParams = {
 		&UFGFoliageIdentifier_VehicleDestroyable::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable()
@@ -347,7 +391,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 1551555784);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 1716874764);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_VehicleDestroyable>()
+	{
+		return UFGFoliageIdentifier_VehicleDestroyable::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_VehicleDestroyable(Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable, &UFGFoliageIdentifier_VehicleDestroyable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_VehicleDestroyable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_VehicleDestroyable);
 	void UFGFoliageIdentifier_ExplosiveDestroyable::StaticRegisterNativesUFGFoliageIdentifier_ExplosiveDestroyable()
@@ -382,13 +430,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::ClassParams = {
 		&UFGFoliageIdentifier_ExplosiveDestroyable::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable()
@@ -400,7 +452,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 209735289);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 361397951);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_ExplosiveDestroyable>()
+	{
+		return UFGFoliageIdentifier_ExplosiveDestroyable::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_ExplosiveDestroyable(Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable, &UFGFoliageIdentifier_ExplosiveDestroyable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_ExplosiveDestroyable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_ExplosiveDestroyable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

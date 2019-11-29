@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAssetManager_Statics::ClassParams = {
 		&UFGAssetManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAssetManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAssetManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAssetManager()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAssetManager, 3720883066);
+	IMPLEMENT_CLASS(UFGAssetManager, 3471624161);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGAssetManager>()
+	{
+		return UFGAssetManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAssetManager(Z_Construct_UClass_UFGAssetManager, &UFGAssetManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAssetManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAssetManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

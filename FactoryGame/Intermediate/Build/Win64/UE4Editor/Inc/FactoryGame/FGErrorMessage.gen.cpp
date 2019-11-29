@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -30,13 +30,17 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EErrorResponse>()
+	{
+		return EErrorResponse_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EErrorResponse(EErrorResponse_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EErrorResponse"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EErrorResponse_CRC() { return 1046194537U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EErrorResponse_Hash() { return 592569954U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EErrorResponse()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EErrorResponse"), 0, Get_Z_Construct_UEnum_FactoryGame_EErrorResponse_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EErrorResponse"), 0, Get_Z_Construct_UEnum_FactoryGame_EErrorResponse_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -61,14 +65,14 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EErrorResponse",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::Regular,
+				"EErrorResponse",
 				"EErrorResponse",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -97,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Text, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGErrorMessage_eventGetErrorMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGErrorMessage_eventGetErrorMessage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::NewProp_ReturnValue,
 	};
@@ -108,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		{ "ToolTip", "Get a localized error message" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGErrorMessage, "GetErrorMessage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGErrorMessage_eventGetErrorMessage_Parms), Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGErrorMessage, nullptr, "GetErrorMessage", sizeof(FGErrorMessage_eventGetErrorMessage_Parms), Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -131,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Byte, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGErrorMessage_eventGetErrorResponse_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EErrorResponse, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGErrorMessage_eventGetErrorResponse_Parms, ReturnValue), Z_Construct_UEnum_FactoryGame_EErrorResponse, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::NewProp_ReturnValue,
 	};
@@ -142,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		{ "ToolTip", "Get if the error sends the user to main menu" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGErrorMessage, "GetErrorResponse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGErrorMessage_eventGetErrorResponse_Parms), Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGErrorMessage, nullptr, "GetErrorResponse", sizeof(FGErrorMessage_eventGetErrorResponse_Parms), Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -180,8 +184,8 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGErrorMessage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage, "GetErrorMessage" }, // 2658117336
-		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse, "GetErrorResponse" }, // 2765265961
+		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorMessage, "GetErrorMessage" }, // 415187787
+		{ &Z_Construct_UFunction_UFGErrorMessage_GetErrorResponse, "GetErrorResponse" }, // 2881122100
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGErrorMessage_Statics::Class_MetaDataParams[] = {
@@ -199,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		{ "ToolTip", "Shows how this error should be handled" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse = { UE4CodeGen_Private::EPropertyClass::Byte, "mErrorResponse", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGErrorMessage, mErrorResponse), Z_Construct_UEnum_FactoryGame_EErrorResponse, METADATA_PARAMS(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse = { "mErrorResponse", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGErrorMessage, mErrorResponse), Z_Construct_UEnum_FactoryGame_EErrorResponse, METADATA_PARAMS(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage_MetaData[] = {
 		{ "Category", "Error" },
@@ -207,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		{ "ToolTip", "Localized error message that we can push" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage = { UE4CodeGen_Private::EPropertyClass::Text, "mErrorMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGErrorMessage, mErrorMessage), METADATA_PARAMS(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage = { "mErrorMessage", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGErrorMessage, mErrorMessage), METADATA_PARAMS(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorResponse,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGErrorMessage_Statics::NewProp_mErrorMessage,
@@ -217,13 +221,17 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGErrorMessage_Statics::ClassParams = {
 		&UFGErrorMessage::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers),
+		0,
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGErrorMessage_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGErrorMessage()
@@ -235,7 +243,11 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGErrorMessage, 1630291914);
+	IMPLEMENT_CLASS(UFGErrorMessage, 2021819786);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGErrorMessage>()
+	{
+		return UFGErrorMessage::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGErrorMessage(Z_Construct_UClass_UFGErrorMessage, &UFGErrorMessage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGErrorMessage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGErrorMessage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

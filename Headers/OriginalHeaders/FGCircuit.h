@@ -27,7 +27,6 @@ public:
 	virtual bool IsNameStableForNetworking() const override;
 	virtual void PreReplication( IRepChangedPropertyTracker& ChangedPropertyTracker );
 
-	/** Ctor */
 	UFGCircuit();
 
 	/** Cleanup code */
@@ -47,7 +46,7 @@ public:
 	virtual UWorld* GetWorld() const override;
 
 	/** @return This circuit's unique identifier; -1 if invalid. */
-	UFUNCTION( BlueprintPure, Category = "Circuit" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|Circuit" )
 	FORCEINLINE int32 GetCircuitID() const { return mCircuitID; }
 
 	/**

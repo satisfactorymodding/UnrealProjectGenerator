@@ -23,14 +23,6 @@ class IFGColorInterface
 	UFUNCTION( BlueprintNativeEvent, Category = "Factory Color" )
 	void SetColorSlot( uint8 index );
 
-	/** Sets the primary color for the buildable */
-	UFUNCTION( BlueprintNativeEvent, Category = "Factory Color" )
-	void SetPrimaryColor( FLinearColor newColor );
-
-	/** Sets the secondary color for the buildable */
-	UFUNCTION( BlueprintNativeEvent, Category = "Factory Color" )
-	void SetSecondaryColor( FLinearColor newColor );
-
 	/** Returns the primary color of this building */
 	UFUNCTION( BlueprintNativeEvent, Category = "Factory Color" )
 	FLinearColor GetPrimaryColor();
@@ -38,7 +30,6 @@ class IFGColorInterface
 	/** Returns the primary color of this building */
 	UFUNCTION( BlueprintNativeEvent, Category = "Factory Color" )
 	FLinearColor GetSecondaryColor();
-
 
 	/** Returns the color slot index of this building */
 	UFUNCTION( BlueprintNativeEvent, Category = "Factory Color" )

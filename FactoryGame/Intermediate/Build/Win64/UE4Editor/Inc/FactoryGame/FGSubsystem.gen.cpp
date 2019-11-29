@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,13 +52,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSubsystem_Statics::ClassParams = {
 		&AFGSubsystem::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSubsystem()
@@ -70,7 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSubsystem, 1792149614);
+	IMPLEMENT_CLASS(AFGSubsystem, 2300369995);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGSubsystem>()
+	{
+		return AFGSubsystem::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSubsystem(Z_Construct_UClass_AFGSubsystem, &AFGSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

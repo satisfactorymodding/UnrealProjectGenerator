@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFoundationHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFoundationHologram_Statics::ClassParams = {
 		&AFGFoundationHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFoundationHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFoundationHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFoundationHologram()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFoundationHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoundationHologram, 2384437839);
+	IMPLEMENT_CLASS(AFGFoundationHologram, 808651243);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFoundationHologram>()
+	{
+		return AFGFoundationHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoundationHologram(Z_Construct_UClass_AFGFoundationHologram, &AFGFoundationHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoundationHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoundationHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

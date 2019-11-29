@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,13 +60,17 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGConnectionComponent_Statics::ClassParams = {
 		&UFGConnectionComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A5u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		ARRAY_COUNT(InterfaceParams),
+		0x00B000A5u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGConnectionComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGConnectionComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGConnectionComponent()
@@ -78,7 +82,11 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConnectionComponent, 1075377935);
+	IMPLEMENT_CLASS(UFGConnectionComponent, 3270448782);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGConnectionComponent>()
+	{
+		return UFGConnectionComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConnectionComponent(Z_Construct_UClass_UFGConnectionComponent, &UFGConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConnectionComponent);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGConnectionComponent)

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -31,13 +31,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EPlayOnDamageEvent>()
+	{
+		return EPlayOnDamageEvent_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPlayOnDamageEvent(EPlayOnDamageEvent_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EPlayOnDamageEvent"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent_CRC() { return 4073514520U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent_Hash() { return 2891122170U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EPlayOnDamageEvent"), 0, Get_Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EPlayOnDamageEvent"), 0, Get_Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -59,14 +63,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EPlayOnDamageEvent",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::Regular,
+				"EPlayOnDamageEvent",
 				"EPlayOnDamageEvent",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -82,13 +86,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EOverrideSetting>()
+	{
+		return EOverrideSetting_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EOverrideSetting(EOverrideSetting_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EOverrideSetting"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EOverrideSetting_CRC() { return 919718222U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EOverrideSetting_Hash() { return 4032947147U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EOverrideSetting()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EOverrideSetting"), 0, Get_Z_Construct_UEnum_FactoryGame_EOverrideSetting_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EOverrideSetting"), 0, Get_Z_Construct_UEnum_FactoryGame_EOverrideSetting_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -108,14 +116,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EOverrideSetting",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::Regular,
+				"EOverrideSetting",
 				"EOverrideSetting",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
@@ -199,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 	{
 		((UFGDamageType*)Obj)->mShouldShockEnemy = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy = { UE4CodeGen_Private::EPropertyClass::Bool, "mShouldShockEnemy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGDamageType), &Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy = { "mShouldShockEnemy", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGDamageType), &Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ_MetaData[] = {
 		{ "Category", "DamageType" },
@@ -207,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		{ "ToolTip", "How much extra impulse should be added in Z direction for this damage type" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ = { UE4CodeGen_Private::EPropertyClass::Float, "mDamageImpulseZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mDamageImpulseZ), METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ = { "mDamageImpulseZ", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mDamageImpulseZ), METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_MetaData[] = {
 		{ "Category", "DamageType" },
@@ -219,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 	{
 		((UFGDamageType*)Obj)->mShouldDamageDestructible = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible = { UE4CodeGen_Private::EPropertyClass::Bool, "mShouldDamageDestructible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGDamageType), &Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible = { "mShouldDamageDestructible", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGDamageType), &Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting_MetaData[] = {
 		{ "Category", "DamageType|Vfx" },
@@ -227,14 +235,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		{ "ToolTip", "Specify if the audio from this damage type should overrride the damage effect in hit pawn, or add to it" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting = { UE4CodeGen_Private::EPropertyClass::Byte, "mImpactParticleSetting", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mImpactParticleSetting), Z_Construct_UEnum_FactoryGame_EOverrideSetting, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting = { "mImpactParticleSetting", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mImpactParticleSetting), Z_Construct_UEnum_FactoryGame_EOverrideSetting, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData[] = {
 		{ "Category", "DamageType|Vfx" },
 		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn = { UE4CodeGen_Private::EPropertyClass::Byte, "mPlayImpactParticleOn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mPlayImpactParticleOn), Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn = { "mPlayImpactParticleOn", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mPlayImpactParticleOn), Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle_MetaData[] = {
 		{ "Category", "DamageType|Vfx" },
@@ -242,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		{ "ToolTip", "When pawn take damage from a source, they play this take damage event" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle = { UE4CodeGen_Private::EPropertyClass::Object, "mImpactParticle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mImpactParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle = { "mImpactParticle", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mImpactParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting_MetaData[] = {
 		{ "Category", "DamageType|Audio" },
@@ -250,14 +258,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		{ "ToolTip", "Specify if the audio from this damage type should overrride the damage sound in hit pawn, or add to it" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting = { UE4CodeGen_Private::EPropertyClass::Byte, "mImpactAudioSetting", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mImpactAudioSetting), Z_Construct_UEnum_FactoryGame_EOverrideSetting, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting = { "mImpactAudioSetting", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mImpactAudioSetting), Z_Construct_UEnum_FactoryGame_EOverrideSetting, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData[] = {
 		{ "Category", "DamageType|Audio" },
 		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn = { UE4CodeGen_Private::EPropertyClass::Byte, "mPlayImpactAudioOn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mPlayImpactAudioOn), Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn = { "mPlayImpactAudioOn", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mPlayImpactAudioOn), Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent_MetaData[] = {
 		{ "Category", "DamageType|Audio" },
@@ -265,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		{ "ToolTip", "When pawn take damage from a source, they play this take damage event" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent = { UE4CodeGen_Private::EPropertyClass::Object, "mImpactAudioEvent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mImpactAudioEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent = { "mImpactAudioEvent", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDamageType, mImpactAudioEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGDamageType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ,
@@ -282,13 +290,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDamageType_Statics::ClassParams = {
 		&UFGDamageType::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000100A0u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGDamageType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGDamageType_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::PropPointers),
+		0,
+		0x000100A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDamageType()
@@ -300,7 +312,11 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDamageType, 2048364546);
+	IMPLEMENT_CLASS(UFGDamageType, 720311811);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGDamageType>()
+	{
+		return UFGDamageType::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDamageType(Z_Construct_UClass_UFGDamageType, &UFGDamageType::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDamageType"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDamageType);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

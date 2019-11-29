@@ -16,6 +16,8 @@ void AFGCharacterPlayer::UnPossessed(){ }
 void AFGCharacterPlayer::OnRep_Controller(){ }
 void AFGCharacterPlayer::AddControllerPitchInput( float Val){ }
 void AFGCharacterPlayer::Jump(){ }
+void AFGCharacterPlayer::OnJumped_Implementation(){ }
+void AFGCharacterPlayer::OnEndCrouch( float HalfHeightAdjust, float ScaledHalfHeightAdjust){ }
 void AFGCharacterPlayer::Died( AActor* died){ }
 const FFootstepEffect& AFGCharacterPlayer::GetFootstepEffect( const FHitResult& hitResult) const{ return *(new FFootstepEffect); }
 void AFGCharacterPlayer::OnTakeDamage( AActor* damagedActor, float damageAmount, const  UDamageType* damageType,  AController* instigatedBy, AActor* damageCauser){ }
@@ -69,6 +71,9 @@ void AFGCharacterPlayer::UsePreferredCameraMode(){ }
 bool AFGCharacterPlayer::IsFirstPerson() const{ return bool(); }
 void AFGCharacterPlayer::SprintPressed(){ }
 void AFGCharacterPlayer::SprintReleased(){ }
+void AFGCharacterPlayer::CrouchPressed(){ }
+void AFGCharacterPlayer::CrouchReleased(){ }
+void AFGCharacterPlayer::TickCameraOffset( float dt){ }
 void AFGCharacterPlayer::CycleHandEquipmentPressedUp(){ }
 void AFGCharacterPlayer::CycleHandEquipmentPressedDown(){ }
 void AFGCharacterPlayer::Server_CycleHandEquipmentPressed_Implementation( int32 dir){ }
@@ -103,6 +108,8 @@ bool AFGCharacterPlayer::CheatToggleGhostFlyIsActive(){ return bool(); }
 bool AFGCharacterPlayer::CheatToggleFlyModeIsActive(){ return bool(); }
 void AFGCharacterPlayer::CheatToggleFlyMode(){ }
 void AFGCharacterPlayer::CheatTeleport(){ }
+void AFGCharacterPlayer::OnSlideStart(){ }
+void AFGCharacterPlayer::OnSlideEnd(){ }
 void AFGCharacterPlayer::SetupPlayerInputComponent(  UInputComponent* InputComponent){ }
 void AFGCharacterPlayer::OnInventorySlotsUnlocked( int32 newUnlockedSlots){ }
 void AFGCharacterPlayer::OnArmsSlotsUnlocked( int32 newUnlockedSlots){ }
@@ -138,7 +145,9 @@ float AFGCharacterPlayer::GetPickupProgress(){ return float(); }
 void AFGCharacterPlayer::StartReceivingRadiation(){ }
 void AFGCharacterPlayer::StopReceivingRadiation(){ }
 void AFGCharacterPlayer::TornOff(){ }
+void AFGCharacterPlayer::DebugBuildablesInFrustum(){ }
 void AFGCharacterPlayer::UpdateHUDCrosshair(){ }
+bool AFGCharacterPlayer::IsSliding(){ return bool(); }
 AFGEquipment* AFGCharacterPlayer::SpawnEquipment( TSubclassOf< AFGEquipment > equipmentClass, AActor* owner ){ return nullptr; }
 AFGEquipmentAttachment* AFGCharacterPlayer::SpawnAttachmentForEquipment( AFGEquipment* equipment){ return nullptr; }
 AFGEquipmentAttachment* AFGCharacterPlayer::SpawnSecondaryAttachmentForEquipment( AFGEquipment* equipment){ return nullptr; }
@@ -147,6 +156,8 @@ void AFGCharacterPlayer::NotifyGameStatePlayerAdded(){ }
 UFGGameUI* AFGCharacterPlayer::GetGameUI(){ return nullptr; }
 void AFGCharacterPlayer::UpdateGameUIRadiationStatus(){ }
 void AFGCharacterPlayer::UpdateGameUIRadiationIntensity(){ }
+int32 AFGCharacterPlayer::GetTotalPlayerInventorySlots() const{ return int32(); }
+int32 AFGCharacterPlayer::GetTotalPlayerArmEquipmentSlots() const{ return int32(); }
 void AFGCharacterPlayer::Server_EquipEquipment_Implementation( AFGEquipment* newEquipment){ }
 bool AFGCharacterPlayer::Server_EquipEquipment_Validate( AFGEquipment* newEquipment){ return bool(); }
 void AFGCharacterPlayer::Server_UnequipEquipment_Implementation( AFGEquipment* newEquipment){ }
@@ -159,12 +170,16 @@ void AFGCharacterPlayer::Server_OnUseReleased_Implementation(){ }
 bool AFGCharacterPlayer::Server_OnUseReleased_Validate(){ return bool(); }
 void AFGCharacterPlayer::Server_PickUpItem_Implementation(  AFGItemPickup* itemPickup){ }
 bool AFGCharacterPlayer::Server_PickUpItem_Validate(  AFGItemPickup* itemPickup){ return bool(); }
+void AFGCharacterPlayer::OnSlideStatusUpdated(){ }
 void AFGCharacterPlayer::OnRep_ActiveEquipments(){ }
 void AFGCharacterPlayer::OnRep_ActiveAttachments(){ }
 void AFGCharacterPlayer::OnRep_DrivenVehicle(){ }
 void AFGCharacterPlayer::OnRep_PickupCounter(){ }
 void AFGCharacterPlayer::OnRep_InRadioactiveZone(){ }
 void AFGCharacterPlayer::OnRep_RadiationIntensity(){ }
+void AFGCharacterPlayer::OnRep_IsSliding(){ }
+void AFGCharacterPlayer::InitializePreferredCameraMode(){ }
+void AFGCharacterPlayer::DoUnSlide(){ }
 FOnPersistentEquipmentSpawned AFGCharacterPlayer::OnPersistentEquipmentSpawned = FOnPersistentEquipmentSpawned();
 FOnEquipmentEquipped AFGCharacterPlayer::OnEquipmentEquipped = FOnEquipmentEquipped();
 FOnEquipmentUnequipped AFGCharacterPlayer::OnEquipmentUnequipped = FOnEquipmentUnequipped();

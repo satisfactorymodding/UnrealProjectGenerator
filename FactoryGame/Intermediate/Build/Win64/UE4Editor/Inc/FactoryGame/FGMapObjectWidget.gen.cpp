@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -75,9 +75,9 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 	{
 		((FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms*)Obj)->visible = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms), &Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_representationType = { UE4CodeGen_Private::EPropertyClass::Enum, "representationType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms, representationType), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_representationType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_visible = { "visible", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms), &Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_representationType = { "representationType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms, representationType), Z_Construct_UEnum_FactoryGame_ERepresentationType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_representationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_visible,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::NewProp_representationType,
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, "OnActorRepresentationFiltered", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms), Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, nullptr, "OnActorRepresentationFiltered", sizeof(FGMapObjectWidget_eventOnActorRepresentationFiltered_Parms), Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, "OnActorRepresentationUpdated", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, nullptr, "OnActorRepresentationUpdated", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 	{
 		((FGMapObjectWidget_eventOnObjectFiltered_Parms*)Obj)->visible = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::NewProp_visible = { UE4CodeGen_Private::EPropertyClass::Bool, "visible", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGMapObjectWidget_eventOnObjectFiltered_Parms), &Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::NewProp_visible = { "visible", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGMapObjectWidget_eventOnObjectFiltered_Parms), &Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::NewProp_visible_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::NewProp_visible,
 	};
@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, "OnObjectFiltered", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMapObjectWidget_eventOnObjectFiltered_Parms), Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, nullptr, "OnObjectFiltered", sizeof(FGMapObjectWidget_eventOnObjectFiltered_Parms), Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::NewProp_normalizedLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "normalizedLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMapObjectWidget_eventOnObjectMoved_Parms, normalizedLocation), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::NewProp_normalizedLocation = { "normalizedLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMapObjectWidget_eventOnObjectMoved_Parms, normalizedLocation), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::NewProp_normalizedLocation,
 	};
@@ -174,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, "OnObjectMoved", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08880800, sizeof(FGMapObjectWidget_eventOnObjectMoved_Parms), Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMapObjectWidget, nullptr, "OnObjectMoved", sizeof(FGMapObjectWidget_eventOnObjectMoved_Parms), Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08880800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -221,10 +221,10 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMapObjectWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered, "OnActorRepresentationFiltered" }, // 2701070466
-		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated, "OnActorRepresentationUpdated" }, // 1832521055
-		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered, "OnObjectFiltered" }, // 2178073518
-		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved, "OnObjectMoved" }, // 4166069725
+		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationFiltered, "OnActorRepresentationFiltered" }, // 4100685617
+		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnActorRepresentationUpdated, "OnActorRepresentationUpdated" }, // 2516149199
+		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnObjectFiltered, "OnObjectFiltered" }, // 4192025976
+		{ &Z_Construct_UFunction_UFGMapObjectWidget_OnObjectMoved, "OnObjectMoved" }, // 435291915
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapObjectWidget_Statics::Class_MetaDataParams[] = {
@@ -237,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor = { UE4CodeGen_Private::EPropertyClass::Object, "mMinimapCaptureActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMapObjectWidget, mMinimapCaptureActor), Z_Construct_UClass_AFGMinimapCaptureActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor = { "mMinimapCaptureActor", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapObjectWidget, mMinimapCaptureActor), Z_Construct_UClass_AFGMinimapCaptureActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_MetaData[] = {
 		{ "Category", "Map" },
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 	{
 		((UFGMapObjectWidget*)Obj)->mFilteredVisibility = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility = { UE4CodeGen_Private::EPropertyClass::Bool, "mFilteredVisibility", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000014, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGMapObjectWidget), &Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility = { "mFilteredVisibility", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGMapObjectWidget), &Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget_MetaData[] = {
 		{ "Category", "Map" },
@@ -258,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget = { UE4CodeGen_Private::EPropertyClass::Object, "mMapWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x002108000008001c, 1, nullptr, STRUCT_OFFSET(UFGMapObjectWidget, mMapWidget), Z_Construct_UClass_UFGMapWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget = { "mMapWidget", nullptr, (EPropertyFlags)0x002108000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapObjectWidget, mMapWidget), Z_Construct_UClass_UFGMapWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMapWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation_MetaData[] = {
 		{ "Category", "Map" },
@@ -266,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		{ "ModuleRelativePath", "UI/FGMapObjectWidget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation = { UE4CodeGen_Private::EPropertyClass::Object, "mActorRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0021080000000014, 1, nullptr, STRUCT_OFFSET(UFGMapObjectWidget, mActorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation = { "mActorRepresentation", nullptr, (EPropertyFlags)0x0021080000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMapObjectWidget, mActorRepresentation), Z_Construct_UClass_UFGActorRepresentation_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mActorRepresentation_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMapObjectWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mMinimapCaptureActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMapObjectWidget_Statics::NewProp_mFilteredVisibility,
@@ -278,13 +278,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMapObjectWidget_Statics::ClassParams = {
 		&UFGMapObjectWidget::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMapObjectWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMapObjectWidget_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::PropPointers),
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMapObjectWidget_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMapObjectWidget_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMapObjectWidget()
@@ -296,7 +300,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMapObjectWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapObjectWidget, 278671942);
+	IMPLEMENT_CLASS(UFGMapObjectWidget, 4239481049);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMapObjectWidget>()
+	{
+		return UFGMapObjectWidget::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapObjectWidget(Z_Construct_UClass_UFGMapObjectWidget, &UFGMapObjectWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapObjectWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapObjectWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -55,6 +55,7 @@ void AFGBuildGun::OnDismantleToggleMultiSelectStateReleased(){ }
 void AFGBuildGun::GotoMenuState(){ }
 void AFGBuildGun::GotoBuildState( TSubclassOf<  UFGRecipe > recipe){ }
 void AFGBuildGun::GotoDismantleState(){ }
+void AFGBuildGun::SetAllowCleranceHit( bool allow){ }
 void AFGBuildGun::AddEquipmentActionBindings(){ }
 void AFGBuildGun::Server_PrimaryFire_Implementation(){ }
 bool AFGBuildGun::Server_PrimaryFire_Validate(){ return bool(); }

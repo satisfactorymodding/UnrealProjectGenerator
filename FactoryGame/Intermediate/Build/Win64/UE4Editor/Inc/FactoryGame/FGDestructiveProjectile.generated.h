@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -17,6 +17,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	friend struct Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDestroyedFoliageEffectData>();
 
 #define FactoryGame_Source_FactoryGame_FGDestructiveProjectile_h_48_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGDestructiveProjectile_h_48_RPC_WRAPPERS_NO_PURE_DECLS
@@ -91,6 +93,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGDestructiveProjectile>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGDestructiveProjectile_h

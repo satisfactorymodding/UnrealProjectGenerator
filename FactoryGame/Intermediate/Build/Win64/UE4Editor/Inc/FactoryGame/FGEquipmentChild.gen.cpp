@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGEquipmentChild_eventGetAttachSocketTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipmentChild_eventGetAttachSocketTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::NewProp_ReturnValue,
 	};
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		{ "ModuleRelativePath", "FGEquipmentChild.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, "GetAttachSocketTransform", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04820401, sizeof(FGEquipmentChild_eventGetAttachSocketTransform_Parms), Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, nullptr, "GetAttachSocketTransform", sizeof(FGEquipmentChild_eventGetAttachSocketTransform_Parms), Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::NewProp_character = { UE4CodeGen_Private::EPropertyClass::Object, "character", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGEquipmentChild_eventOnEquip_Parms, character), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::NewProp_character = { "character", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGEquipmentChild_eventOnEquip_Parms, character), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::NewProp_character,
 	};
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		{ "ToolTip", "Called by after equip has run allowing for blueprint functionality" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, "OnEquip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGEquipmentChild_eventOnEquip_Parms), Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, nullptr, "OnEquip", sizeof(FGEquipmentChild_eventOnEquip_Parms), Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_OnEquip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentChild_OnEquip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		{ "ToolTip", "Called by after Unequip has run allowing for blueprint functionality" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, "OnUnEquip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGEquipmentChild, nullptr, "OnUnEquip", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -161,9 +161,9 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEquipmentChild_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform, "GetAttachSocketTransform" }, // 1950700730
-		{ &Z_Construct_UFunction_AFGEquipmentChild_OnEquip, "OnEquip" }, // 3055606424
-		{ &Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip, "OnUnEquip" }, // 2430487345
+		{ &Z_Construct_UFunction_AFGEquipmentChild_GetAttachSocketTransform, "GetAttachSocketTransform" }, // 1764723219
+		{ &Z_Construct_UFunction_AFGEquipmentChild_OnEquip, "OnEquip" }, // 2355441045
+		{ &Z_Construct_UFunction_AFGEquipmentChild_OnUnEquip, "OnUnEquip" }, // 3449365434
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentChild_Statics::Class_MetaDataParams[] = {
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		{ "ToolTip", "The socket to attach any child equipment to" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket = { UE4CodeGen_Private::EPropertyClass::Name, "mAttachSocket", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGEquipmentChild, mAttachSocket), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket = { "mAttachSocket", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentChild, mAttachSocket), METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		{ "ToolTip", "stores a reference to the FGEquipment that spawned this class" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment = { UE4CodeGen_Private::EPropertyClass::Object, "mParentEquipment", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000014, 1, nullptr, STRUCT_OFFSET(AFGEquipmentChild, mParentEquipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment = { "mParentEquipment", nullptr, (EPropertyFlags)0x0020080000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGEquipmentChild, mParentEquipment), Z_Construct_UClass_AFGEquipment_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGEquipmentChild_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mAttachSocket,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGEquipmentChild_Statics::NewProp_mParentEquipment,
@@ -197,13 +197,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGEquipmentChild_Statics::ClassParams = {
 		&AFGEquipmentChild::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGEquipmentChild_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGEquipmentChild_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGEquipmentChild_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGEquipmentChild_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGEquipmentChild()
@@ -215,7 +219,11 @@ void EmptyLinkFunctionForGeneratedCodeFGEquipmentChild() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEquipmentChild, 151836693);
+	IMPLEMENT_CLASS(AFGEquipmentChild, 2652076615);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGEquipmentChild>()
+	{
+		return AFGEquipmentChild::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEquipmentChild(Z_Construct_UClass_AFGEquipmentChild, &AFGEquipmentChild::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEquipmentChild"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEquipmentChild);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

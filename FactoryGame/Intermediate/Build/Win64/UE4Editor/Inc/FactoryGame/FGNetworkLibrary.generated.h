@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -29,10 +29,14 @@ class APlayerController;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FUserFeedbackFrontEndData>();
+
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOnlinePresence_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FOnlinePresence>();
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_68_RPC_WRAPPERS \
  \
@@ -256,6 +260,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGPresenceLibrary>();
+
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_106_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execIsValid_Friend) \
@@ -467,6 +473,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGFriendsLibrary>();
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_145_RPC_WRAPPERS \
  \
@@ -728,6 +736,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGSessionLibrary>();
+
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_196_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDiscardInvite) \
@@ -919,6 +929,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGInviteLibrary>();
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_226_RPC_WRAPPERS \
  \
@@ -1197,6 +1209,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGNetworkLibrary>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGNetworkLibrary_h

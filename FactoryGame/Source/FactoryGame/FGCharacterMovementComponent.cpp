@@ -9,6 +9,7 @@ bool UFGCharacterMovementComponent::DoJump( bool isReplayingMoves){ return bool(
 void UFGCharacterMovementComponent::CalcVelocity( float dt, float friction, bool isFluid, float brakingDeceleration){ }
 float UFGCharacterMovementComponent::GetMaxSpeed() const{ return float(); }
 void UFGCharacterMovementComponent::SetDefaultMovementMode(){ }
+float UFGCharacterMovementComponent::GetMaxJumpZVelocity() const{ return float(); }
 void UFGCharacterMovementComponent::ServerSetHookLocation_Implementation( const FVector& hookLocation){ }
 bool UFGCharacterMovementComponent::ServerSetHookLocation_Validate( const FVector& hookLocation){ return bool(); }
 void UFGCharacterMovementComponent::SetHookLocation( const FVector& hookLocation){ }
@@ -18,6 +19,8 @@ void UFGCharacterMovementComponent::StartClimbLadder(  UFGLadderComponent* ladde
 void UFGCharacterMovementComponent::StopClimbLadder(){ }
 void UFGCharacterMovementComponent::JumpOffLadder(){ }
 UFGLadderComponent* UFGCharacterMovementComponent::GetOnLadder() const{ return nullptr; }
+void UFGCharacterMovementComponent::UpdateWantsToSlide(){ }
+void UFGCharacterMovementComponent::UpdateSlideStatus(){ }
 void UFGCharacterMovementComponent::UpdateFromCompressedFlags(uint8 flags){ }
 void UFGCharacterMovementComponent::OnMovementUpdated(float deltaSeconds, const FVector & oldLocation, const FVector & oldVelocity){ }
 void UFGCharacterMovementComponent::OnMovementModeChanged( EMovementMode PreviousMovementMode, uint8 PreviousCustomMode){ }
@@ -27,15 +30,17 @@ void UFGCharacterMovementComponent::PhysFlying( float deltaTime, int32 Iteration
 void UFGCharacterMovementComponent::PhysLadder( float deltaTime, int32 iterations){ }
 void UFGCharacterMovementComponent::UpdateJetPack( float deltaSeconds){ }
 void UFGCharacterMovementComponent::UpdateHookshot( float deltaSeconds, FVector oldLocation){ }
-void UFGCharacterMovementComponent::UpdateSprintStatus( float delta){ }
+void UFGCharacterMovementComponent::UpdateSprintStatus(){ }
 void UFGCharacterMovementComponent::UpdateParachute( float delta){ }
 void UFGCharacterMovementComponent::UpdateJumpingStilts( float deltaSeconds){ }
-bool UFGCharacterMovementComponent::CanSprint(){ return bool(); }
+bool UFGCharacterMovementComponent::CanSprint() const{ return bool(); }
+bool UFGCharacterMovementComponent::CanSlide() const{ return bool(); }
+bool UFGCharacterMovementComponent::CanStartSlide() const{ return bool(); }
 AFGJetPack* UFGCharacterMovementComponent::GetCachedJetPack(){ return nullptr; }
 AFGHookshot* UFGCharacterMovementComponent::GetCachedHookshot(){ return nullptr; }
 AFGParachute* UFGCharacterMovementComponent::GetCachedParachute(){ return nullptr; }
 AFGJumpingStilts* UFGCharacterMovementComponent::GetCachedJumpingStilts(){ return nullptr; }
-void UFGCharacterMovementComponent::ZeroOutFallVelocity(){ }
+void UFGCharacterMovementComponent::TickSlide( float delta){ }
 void FSavedMove_FGMovement::Clear(){ }
 uint8 FSavedMove_FGMovement::GetCompressedFlags() const{ return uint8(); }
 bool FSavedMove_FGMovement::CanCombineWith(const FSavedMovePtr& newMove, ACharacter* character, float maxDelta) const{ return bool(); }

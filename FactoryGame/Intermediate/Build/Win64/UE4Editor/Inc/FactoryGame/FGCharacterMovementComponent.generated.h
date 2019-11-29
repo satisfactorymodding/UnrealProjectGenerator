@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,6 +24,14 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFGLadderComponent**)Z_Param__Result=P_THIS->GetOnLadder(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetBaseVelocity) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=P_THIS->GetBaseVelocity(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -67,6 +75,14 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(UFGLadderComponent**)Z_Param__Result=P_THIS->GetOnLadder(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetBaseVelocity) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=P_THIS->GetBaseVelocity(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -156,7 +172,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGCharacterMovementComponent); \
 	FORCEINLINE static uint32 __PPO__mCachedParachute() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedParachute); } \
 	FORCEINLINE static uint32 __PPO__mCachedHookshot() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedHookshot); } \
 	FORCEINLINE static uint32 __PPO__mCachedJumpingStilts() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedJumpingStilts); } \
-	FORCEINLINE static uint32 __PPO__mOnLadder() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mOnLadder); }
+	FORCEINLINE static uint32 __PPO__mOnLadder() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mOnLadder); } \
+	FORCEINLINE static uint32 __PPO__mSlideCurve() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mSlideCurve); } \
+	FORCEINLINE static uint32 __PPO__mSlopeCurve() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mSlopeCurve); } \
+	FORCEINLINE static uint32 __PPO__mMaxSlideAngle() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mMaxSlideAngle); } \
+	FORCEINLINE static uint32 __PPO__mBaseVelocity() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mBaseVelocity); } \
+	FORCEINLINE static uint32 __PPO__mBoostJumpZMultiplier() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mBoostJumpZMultiplier); } \
+	FORCEINLINE static uint32 __PPO__mBoostJumpVelocityMultiplier() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mBoostJumpVelocityMultiplier); } \
+	FORCEINLINE static uint32 __PPO__mBoostJumpTimeWindow() { return STRUCT_OFFSET(UFGCharacterMovementComponent, mBoostJumpTimeWindow); }
 
 
 #define FactoryGame_Source_FactoryGame_FGCharacterMovementComponent_h_20_PROLOG \
@@ -187,6 +210,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCharacterMovementComponent>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGCharacterMovementComponent_h
 
@@ -194,4 +219,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define FOREACH_ENUM_ECUSTOMMOVEMENTMODE(op) \
 	op(ECustomMovementMode::CMM_None) \
 	op(ECustomMovementMode::CMM_Ladder) 
+
+enum class ECustomMovementMode : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ECustomMovementMode>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

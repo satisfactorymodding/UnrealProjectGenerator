@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -25,13 +25,17 @@ void EmptyLinkFunctionForGeneratedCodeIncludeInBuild() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<EIncludeInBuilds>()
+	{
+		return EIncludeInBuilds_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EIncludeInBuilds(EIncludeInBuilds_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EIncludeInBuilds"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EIncludeInBuilds_CRC() { return 1060213158U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EIncludeInBuilds_Hash() { return 1792595149U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EIncludeInBuilds()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EIncludeInBuilds"), 0, Get_Z_Construct_UEnum_FactoryGame_EIncludeInBuilds_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EIncludeInBuilds"), 0, Get_Z_Construct_UEnum_FactoryGame_EIncludeInBuilds_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -60,14 +64,14 @@ void EmptyLinkFunctionForGeneratedCodeIncludeInBuild() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EIncludeInBuilds",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EIncludeInBuilds",
 				"EIncludeInBuilds",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);

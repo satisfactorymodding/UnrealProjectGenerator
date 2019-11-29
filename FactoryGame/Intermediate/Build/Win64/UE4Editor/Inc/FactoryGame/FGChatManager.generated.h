@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,6 +21,8 @@ class AFGChatManager;
 	friend struct Z_Construct_UScriptStruct_FChatMessageStruct_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FChatMessageStruct>();
 
 #define FactoryGame_Source_FactoryGame_FGChatManager_h_13_DELEGATE \
 static inline void FChatMessageAdded_DelegateWrapper(const FMulticastScriptDelegate& ChatMessageAdded) \
@@ -243,6 +245,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class AFGChatManager>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGChatManager_h
 
@@ -251,4 +255,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EFGChatMessageType::CMT_PlayerMessage) \
 	op(EFGChatMessageType::CMT_SystemMessage) \
 	op(EFGChatMessageType::CMT_AdaMessage) 
+
+enum class EFGChatMessageType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EFGChatMessageType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

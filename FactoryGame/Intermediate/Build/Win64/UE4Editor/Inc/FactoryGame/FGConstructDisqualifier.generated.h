@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -107,6 +107,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGConstructDisqualifier>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_40_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_40_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_40_INCLASS_NO_PURE_DECLS \
@@ -174,6 +176,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDInitializing>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_51_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_51_RPC_WRAPPERS_NO_PURE_DECLS
@@ -243,6 +247,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDInvalidAimLocation>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_62_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_62_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_62_INCLASS_NO_PURE_DECLS \
@@ -310,6 +316,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDUnaffordable>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_74_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_74_RPC_WRAPPERS_NO_PURE_DECLS
@@ -379,6 +387,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDInvalidPlacement>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_85_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_85_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_85_INCLASS_NO_PURE_DECLS \
@@ -446,6 +456,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDEncroachingClearance>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_96_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_96_RPC_WRAPPERS_NO_PURE_DECLS
@@ -515,6 +527,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDEncroachingPlayer>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_107_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_107_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_107_INCLASS_NO_PURE_DECLS \
@@ -582,6 +596,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDInvalidFloor>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_118_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_118_RPC_WRAPPERS_NO_PURE_DECLS
@@ -651,6 +667,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDUniqueBuilding>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_129_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_129_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_129_INCLASS_NO_PURE_DECLS \
@@ -718,6 +736,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustSnap>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_140_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_140_RPC_WRAPPERS_NO_PURE_DECLS
@@ -787,6 +807,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDShouldntSnap>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_151_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_151_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_151_INCLASS_NO_PURE_DECLS \
@@ -854,6 +876,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDNeedsResourceNode>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_162_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_162_RPC_WRAPPERS_NO_PURE_DECLS
@@ -923,6 +947,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDResourceNodeIsOccuped>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_173_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_173_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_173_INCLASS_NO_PURE_DECLS \
@@ -990,6 +1016,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDResourceDeposit>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_184_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_184_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1059,6 +1087,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireSnap>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_195_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_195_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_195_INCLASS_NO_PURE_DECLS \
@@ -1126,6 +1156,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireTooLong>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_206_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_206_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1195,6 +1227,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDWireTooManyConnections>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_217_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_217_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_217_INCLASS_NO_PURE_DECLS \
@@ -1262,6 +1296,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDBeltMustSnap>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_228_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_228_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1331,6 +1367,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooLong>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_239_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_239_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_239_INCLASS_NO_PURE_DECLS \
@@ -1398,6 +1436,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooShort>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_250_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_250_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1467,6 +1507,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorTooSteep>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_261_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_261_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_261_INCLASS_NO_PURE_DECLS \
@@ -1534,6 +1576,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorInvalidShape>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_272_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_272_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1603,6 +1647,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDConveyorAttachmentTooSharpTurn>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_283_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_283_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_283_INCLASS_NO_PURE_DECLS \
@@ -1670,6 +1716,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustHaveRailRoadTrack>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_294_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_294_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1739,6 +1787,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDMustAttachToTrainPlatform>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_305_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_305_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_305_INCLASS_NO_PURE_DECLS \
@@ -1806,6 +1856,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooLong>();
 
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_316_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_316_RPC_WRAPPERS_NO_PURE_DECLS
@@ -1875,6 +1927,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooShort>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_327_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_327_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_327_INCLASS_NO_PURE_DECLS \
@@ -1943,6 +1997,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTooSteep>();
+
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_338_RPC_WRAPPERS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_338_RPC_WRAPPERS_NO_PURE_DECLS
 #define FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h_338_INCLASS_NO_PURE_DECLS \
@@ -2010,6 +2066,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGCDTrackTrunToSharp>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGConstructDisqualifier_h

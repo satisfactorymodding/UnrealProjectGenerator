@@ -11,6 +11,8 @@ class FACTORYGAME_API AFGBeacon : public AActor
 {
 	GENERATED_BODY()
 public:
-
-	// This is just here so we can find these native.
+	/** Pickup the beacon by the provided player */
+	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "Beacon" )
+	void PickUpBeacon( class AFGCharacterPlayer* player );
+	
 };

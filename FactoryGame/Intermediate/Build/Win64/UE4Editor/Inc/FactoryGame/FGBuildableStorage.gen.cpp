@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBuildableStorage_eventGetStorageInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableStorage_eventGetStorageInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::NewProp_ReturnValue,
 	};
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "ToolTip", "Get the storage inventory from this storage box." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableStorage, "GetStorageInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableStorage_eventGetStorageInventory_Parms), Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableStorage, nullptr, "GetStorageInventory", sizeof(FGBuildableStorage_eventGetStorageInventory_Parms), Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableStorage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory, "GetStorageInventory" }, // 584793391
+		{ &Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory, "GetStorageInventory" }, // 340703269
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::Class_MetaDataParams[] = {
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "ToolTip", "The inventory to store everything in. Don't use this directly, use mStorageInventoryHandler->GetActiveInventoryComponent()" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mStorageInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080008, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory = { "mStorageInventory", nullptr, (EPropertyFlags)0x0040000001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStorage, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "ToolTip", "The size of the inventory for this storage." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY = { UE4CodeGen_Private::EPropertyClass::Int, "mInventorySizeY", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mInventorySizeY), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY = { "mInventorySizeY", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStorage, mInventorySizeY), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "ToolTip", "The size of the inventory for this storage." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX = { UE4CodeGen_Private::EPropertyClass::Int, "mInventorySizeX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mInventorySizeX), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX = { "mInventorySizeX", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStorage, mInventorySizeX), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -153,8 +153,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "ToolTip", "Default resources in a storage @todo Why this special case here, add the stuff in blueprint instead first time we're being built... I guess this is only used for the tutorial?" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources = { UE4CodeGen_Private::EPropertyClass::Array, "mDefaultResources", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mDefaultResources), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDefaultResources", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources = { "mDefaultResources", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStorage, mDefaultResources), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_Inner = { "mDefaultResources", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight_MetaData[] = {
 		{ "Category", "Storage" },
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		{ "ToolTip", "How far apart in Z do multiple storages stack." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight = { UE4CodeGen_Private::EPropertyClass::Float, "mStackingHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableStorage, mStackingHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight = { "mStackingHeight", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableStorage, mStackingHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableStorage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY,
@@ -176,13 +176,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableStorage_Statics::ClassParams = {
 		&AFGBuildableStorage::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableStorage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableStorage_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableStorage_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableStorage_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableStorage()
@@ -194,7 +198,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStorage, 77871324);
+	IMPLEMENT_CLASS(AFGBuildableStorage, 188275855);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableStorage>()
+	{
+		return AFGBuildableStorage::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableStorage(Z_Construct_UClass_AFGBuildableStorage, &AFGBuildableStorage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableStorage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableStorage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

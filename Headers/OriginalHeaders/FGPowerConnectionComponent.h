@@ -15,18 +15,18 @@ class FACTORYGAME_API UFGPowerConnectionComponent : public UFGCircuitConnectionC
 	GENERATED_BODY()
 public:
 	/** Set the power info for this connection. */
-	UFUNCTION( BlueprintCallable, Category = "PowerConnection" )
+	UFUNCTION( BlueprintCallable, Category = "FactoryGame|Circuits|PowerConnection" )
 	void SetPowerInfo( class UFGPowerInfoComponent* powerInfo );
 
 	/** Get the power info from which to get the consumption/production. */
-	UFUNCTION( BlueprintPure, Category = "PowerConnection" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerConnection" )
 	FORCEINLINE class UFGPowerInfoComponent* GetPowerInfo() const { return mPowerInfo; }
 
 	/**
 	 * @return The circuit this is connected to; nullptr if not connected.
 	 * @note This can be changed/removed at any time so do not save copies to it.
 	 */
-	UFUNCTION( BlueprintPure, Category = "PowerConnection" )
+	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|PowerConnection" )
 	class UFGPowerCircuit* GetPowerCircuit() const;
 
 protected:

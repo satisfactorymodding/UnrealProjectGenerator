@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -107,6 +107,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGMessageBase>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_UI_Message_FGMessageBase_h
 
@@ -116,4 +118,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EMessageType::MT_TUTORIAL) \
 	op(EMessageType::MT_SPAM) \
 	op(EMessageType::MT_UNDEFINED) 
+
+enum class EMessageType : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EMessageType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 		{ "ModuleRelativePath", "FGSplinePath.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline = { UE4CodeGen_Private::EPropertyClass::Object, "mSpline", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x001000000008001c, 1, nullptr, STRUCT_OFFSET(AFGSplinePath, mSpline), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline = { "mSpline", nullptr, (EPropertyFlags)0x001000000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSplinePath, mSpline), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGSplinePath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSplinePath_Statics::NewProp_mSpline,
 	};
@@ -66,13 +66,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSplinePath_Statics::ClassParams = {
 		&AFGSplinePath::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGSplinePath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGSplinePath_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGSplinePath_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGSplinePath_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSplinePath_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSplinePath_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSplinePath()
@@ -84,7 +88,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSplinePath() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSplinePath, 1614257704);
+	IMPLEMENT_CLASS(AFGSplinePath, 4117807601);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGSplinePath>()
+	{
+		return AFGSplinePath::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSplinePath(Z_Construct_UClass_AFGSplinePath, &AFGSplinePath::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSplinePath"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSplinePath);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

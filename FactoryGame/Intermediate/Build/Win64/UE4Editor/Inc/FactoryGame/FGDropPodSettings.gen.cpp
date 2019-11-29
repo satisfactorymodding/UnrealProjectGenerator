@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -29,10 +29,14 @@ class UScriptStruct* FDropPackage::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDropPackage_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDropPackage, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DropPackage"), sizeof(FDropPackage), Get_Z_Construct_UScriptStruct_FDropPackage_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDropPackage, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DropPackage"), sizeof(FDropPackage), Get_Z_Construct_UScriptStruct_FDropPackage_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDropPackage>()
+{
+	return FDropPackage::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDropPackage(FDropPackage::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DropPackage"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
@@ -86,7 +90,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "ToolTip", "We can not find this package if we haven't purchased this schematic." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "RequiredSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000001, 1, nullptr, STRUCT_OFFSET(FDropPackage, RequiredSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic = { "RequiredSchematic", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDropPackage, RequiredSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_MetaData[] = {
 		{ "Category", "DropPackage" },
@@ -94,8 +98,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "ToolTip", "Item contained in the package" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items = { UE4CodeGen_Private::EPropertyClass::Array, "Items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(FDropPackage, Items), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "Items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemDrop, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items = { "Items", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDropPackage, Items), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemDrop, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance_MetaData[] = {
 		{ "Category", "DropPackage" },
@@ -103,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "ToolTip", "Chance in roulette selection to get the package." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance = { UE4CodeGen_Private::EPropertyClass::Float, "DropChance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(FDropPackage, DropChance), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance = { "DropChance", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDropPackage, DropChance), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropChance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText_MetaData[] = {
 		{ "Category", "DropPackage" },
@@ -111,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "ToolTip", "Text showing up when finding the drop." },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText = { UE4CodeGen_Private::EPropertyClass::Text, "DropDisplayText", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(FDropPackage, DropDisplayText), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText = { "DropDisplayText", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDropPackage, DropDisplayText), METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_DropDisplayText_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_RequiredSchematic,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDropPackage_Statics::NewProp_Items,
@@ -124,19 +128,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		nullptr,
 		&NewStructOps,
 		"DropPackage",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDropPackage),
 		alignof(FDropPackage),
-		Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDropPackage()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDropPackage_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DropPackage"), sizeof(FDropPackage), Get_Z_Construct_UScriptStruct_FDropPackage_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DropPackage"), sizeof(FDropPackage), Get_Z_Construct_UScriptStruct_FDropPackage_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -146,7 +151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_CRC() { return 2766637339U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash() { return 620160393U; }
 	void UFGDropPodSettings::StaticRegisterNativesUFGDropPodSettings()
 	{
 		UClass* Class = UFGDropPodSettings::StaticClass();
@@ -178,8 +183,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000582, 1, nullptr, STRUCT_OFFSET(FGDropPodSettings_eventGetRandomDropPackage_Parms, ReturnValue), Z_Construct_UScriptStruct_FDropPackage, METADATA_PARAMS(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_world = { UE4CodeGen_Private::EPropertyClass::Object, "world", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGDropPodSettings_eventGetRandomDropPackage_Parms, world), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDropPodSettings_eventGetRandomDropPackage_Parms, ReturnValue), Z_Construct_UScriptStruct_FDropPackage, METADATA_PARAMS(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_world = { "world", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGDropPodSettings_eventGetRandomDropPackage_Parms, world), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::NewProp_world,
@@ -191,7 +196,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "ToolTip", "Get a random drop package" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDropPodSettings, "GetRandomDropPackage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGDropPodSettings_eventGetRandomDropPackage_Parms), Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGDropPodSettings, nullptr, "GetRandomDropPackage", sizeof(FGDropPodSettings_eventGetRandomDropPackage_Parms), Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -226,7 +231,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDropPodSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage, "GetRandomDropPackage" }, // 3439685718
+		{ &Z_Construct_UFunction_UFGDropPodSettings_GetRandomDropPackage, "GetRandomDropPackage" }, // 3242720232
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDropPodSettings_Statics::Class_MetaDataParams[] = {
@@ -242,8 +247,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		{ "ToolTip", "List of all available drop packages" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable = { UE4CodeGen_Private::EPropertyClass::Array, "mDropTable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGDropPodSettings, mDropTable), METADATA_PARAMS(Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDropTable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FDropPackage, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable = { "mDropTable", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGDropPodSettings, mDropTable), METADATA_PARAMS(Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_Inner = { "mDropTable", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FDropPackage, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGDropPodSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGDropPodSettings_Statics::NewProp_mDropTable_Inner,
@@ -253,13 +258,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDropPodSettings_Statics::ClassParams = {
 		&UFGDropPodSettings::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGDropPodSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGDropPodSettings_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGDropPodSettings_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGDropPodSettings_Statics::PropPointers),
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDropPodSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDropPodSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDropPodSettings()
@@ -271,7 +280,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDropPodSettings, 3214529022);
+	IMPLEMENT_CLASS(UFGDropPodSettings, 475153193);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGDropPodSettings>()
+	{
+		return UFGDropPodSettings::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDropPodSettings(Z_Construct_UClass_UFGDropPodSettings, &UFGDropPodSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDropPodSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDropPodSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

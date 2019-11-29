@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -39,10 +39,14 @@ class UScriptStruct* FConveyorBeltItems::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FConveyorBeltItems, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ConveyorBeltItems"), sizeof(FConveyorBeltItems), Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FConveyorBeltItems, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ConveyorBeltItems"), sizeof(FConveyorBeltItems), Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FConveyorBeltItems>()
+{
+	return FConveyorBeltItems::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FConveyorBeltItems(FConveyorBeltItems::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ConveyorBeltItems"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
@@ -75,19 +79,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
 		nullptr,
 		&NewStructOps,
 		"ConveyorBeltItems",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FConveyorBeltItems),
 		alignof(FConveyorBeltItems),
-		nullptr, 0,
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItems_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItems_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FConveyorBeltItems()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ConveyorBeltItems"), sizeof(FConveyorBeltItems), Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ConveyorBeltItems"), sizeof(FConveyorBeltItems), Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -97,16 +102,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC() { return 2470069133U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash() { return 3802701670U; }
 class UScriptStruct* FConveyorBeltItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FConveyorBeltItem, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ConveyorBeltItem"), sizeof(FConveyorBeltItem), Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FConveyorBeltItem, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ConveyorBeltItem"), sizeof(FConveyorBeltItem), Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FConveyorBeltItem>()
+{
+	return FConveyorBeltItem::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FConveyorBeltItem(FConveyorBeltItem::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ConveyorBeltItem"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
@@ -149,14 +158,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ToolTip", "The offset of this item along the conveyor belt in range [0,LENGTH].\n@todo This only need to replicate when the item is added to the conveyor as it is simulated locally on the client after that.\n      Having this replicated always works for now because we never mark an item as dirty after adding it.\n      I.e. we only do one replication per item." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset = { UE4CodeGen_Private::EPropertyClass::Float, "Offset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FConveyorBeltItem, Offset), METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset = { "Offset", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FConveyorBeltItem, Offset), METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBase.h" },
 		{ "ToolTip", "The type of this item." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item = { UE4CodeGen_Private::EPropertyClass::Struct, "Item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FConveyorBeltItem, Item), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FConveyorBeltItem, Item), Z_Construct_UScriptStruct_FInventoryItem, METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Offset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::NewProp_Item,
@@ -166,19 +175,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		nullptr,
 		&NewStructOps,
 		"ConveyorBeltItem",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FConveyorBeltItem),
 		alignof(FConveyorBeltItem),
-		Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FConveyorBeltItem()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ConveyorBeltItem"), sizeof(FConveyorBeltItem), Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ConveyorBeltItem"), sizeof(FConveyorBeltItem), Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -188,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC() { return 1674901614U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash() { return 71369389U; }
 	static FName NAME_UFGConveyorRemoteCallObject_Server_OnUse = FName(TEXT("Server_OnUse"));
 	void UFGConveyorRemoteCallObject::Server_OnUse(AFGBuildableConveyorBelt* target, AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion)
 	{
@@ -219,10 +229,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_repVersion = { UE4CodeGen_Private::EPropertyClass::Int8, "repVersion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, repVersion), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_itemIndex = { UE4CodeGen_Private::EPropertyClass::Int, "itemIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, itemIndex), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_byCharacter = { UE4CodeGen_Private::EPropertyClass::Object, "byCharacter", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_target = { UE4CodeGen_Private::EPropertyClass::Object, "target", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, target), Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_repVersion = { "repVersion", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, repVersion), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_itemIndex = { "itemIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, itemIndex), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_byCharacter = { "byCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, byCharacter), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_target = { "target", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGConveyorRemoteCallObject_eventServer_OnUse_Parms, target), Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_repVersion,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::NewProp_itemIndex,
@@ -235,7 +245,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGConveyorRemoteCallObject, "Server_OnUse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80220CC0, sizeof(FGConveyorRemoteCallObject_eventServer_OnUse_Parms), Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGConveyorRemoteCallObject, nullptr, "Server_OnUse", sizeof(FGConveyorRemoteCallObject_eventServer_OnUse_Parms), Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -270,7 +280,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse, "Server_OnUse" }, // 1174710948
+		{ &Z_Construct_UFunction_UFGConveyorRemoteCallObject_Server_OnUse, "Server_OnUse" }, // 1805610834
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::Class_MetaDataParams[] = {
@@ -289,7 +299,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	{
 		((UFGConveyorRemoteCallObject*)Obj)->mForceNetField_UFGConveyorRemoteCallObject = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject = { UE4CodeGen_Private::EPropertyClass::Bool, "mForceNetField_UFGConveyorRemoteCallObject", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGConveyorRemoteCallObject), &Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject = { "mForceNetField_UFGConveyorRemoteCallObject", nullptr, (EPropertyFlags)0x0010000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGConveyorRemoteCallObject), &Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::NewProp_mForceNetField_UFGConveyorRemoteCallObject,
 	};
@@ -298,13 +308,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::ClassParams = {
 		&UFGConveyorRemoteCallObject::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers),
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGConveyorRemoteCallObject()
@@ -316,7 +330,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 2483320348);
+	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 2943326409);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGConveyorRemoteCallObject>()
+	{
+		return UFGConveyorRemoteCallObject::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConveyorRemoteCallObject(Z_Construct_UClass_UFGConveyorRemoteCallObject, &UFGConveyorRemoteCallObject::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConveyorRemoteCallObject"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConveyorRemoteCallObject);
 	void UPresistentConveyorPackagingData::StaticRegisterNativesUPresistentConveyorPackagingData()
@@ -350,13 +368,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UPresistentConveyorPackagingData_Statics::ClassParams = {
 		&UPresistentConveyorPackagingData::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UPresistentConveyorPackagingData_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UPresistentConveyorPackagingData_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UPresistentConveyorPackagingData()
@@ -368,7 +390,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPresistentConveyorPackagingData, 4194157831);
+	IMPLEMENT_CLASS(UPresistentConveyorPackagingData, 1395832743);
+	template<> FACTORYGAME_API UClass* StaticClass<UPresistentConveyorPackagingData>()
+	{
+		return UPresistentConveyorPackagingData::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UPresistentConveyorPackagingData(Z_Construct_UClass_UPresistentConveyorPackagingData, &UPresistentConveyorPackagingData::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UPresistentConveyorPackagingData"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UPresistentConveyorPackagingData);
 	void AFGBuildableConveyorBase::StaticRegisterNativesAFGBuildableConveyorBase()
@@ -397,7 +423,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	{
 		((FGBuildableConveyorBase_eventGetIsSignificant_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGBuildableConveyorBase_eventGetIsSignificant_Parms), &Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGBuildableConveyorBase_eventGetIsSignificant_Parms), &Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::NewProp_ReturnValue,
 	};
@@ -407,7 +433,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConveyorBase, "GetIsSignificant", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableConveyorBase_eventGetIsSignificant_Parms), Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableConveyorBase, nullptr, "GetIsSignificant", sizeof(FGBuildableConveyorBase_eventGetIsSignificant_Parms), Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -458,7 +484,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConveyorBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant, "GetIsSignificant" }, // 3704222666
+		{ &Z_Construct_UFunction_AFGBuildableConveyorBase_GetIsSignificant, "GetIsSignificant" }, // 537701652
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBase_Statics::Class_MetaDataParams[] = {
@@ -476,7 +502,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ToolTip", "Second connection on conveyor belt" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1 = { UE4CodeGen_Private::EPropertyClass::Object, "mConnection1", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection1), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1 = { "mConnection1", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection1), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0_MetaData[] = {
 		{ "Category", "Conveyor" },
@@ -485,7 +511,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ToolTip", "First connection on conveyor belt, Connections are always in the same order, mConnection0 is the input, mConnection1 is the output." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0 = { UE4CodeGen_Private::EPropertyClass::Object, "mConnection0", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection0), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0 = { "mConnection0", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection0), Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBase.h" },
@@ -493,7 +519,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ToolTip", "All the locally simulated resource offsets on the conveyor belt." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems = { UE4CodeGen_Private::EPropertyClass::Struct, "mItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableConveyorBase, mItems), Z_Construct_UScriptStruct_FConveyorBeltItems, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems = { "mItems", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBase, mItems), Z_Construct_UScriptStruct_FConveyorBeltItems, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mItems_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed_MetaData[] = {
 		{ "Category", "Conveyor" },
@@ -501,13 +527,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		{ "ToolTip", "Speed of this conveyor." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableConveyorBase, mSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed = { "mSpeed", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBase, mSpeed), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject_MetaData[] = {
 		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject = { UE4CodeGen_Private::EPropertyClass::Object, "PresistentConveyorPackagingDataObject", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableConveyorBase, PresistentConveyorPackagingDataObject), Z_Construct_UClass_UPresistentConveyorPackagingData_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject = { "PresistentConveyorPackagingDataObject", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableConveyorBase, PresistentConveyorPackagingDataObject), Z_Construct_UClass_UPresistentConveyorPackagingData_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_PresistentConveyorPackagingDataObject_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableConveyorBase_Statics::NewProp_mConnection0,
@@ -523,13 +549,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableConveyorBase_Statics::ClassParams = {
 		&AFGBuildableConveyorBase::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableConveyorBase()
@@ -541,7 +571,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 2977900725);
+	IMPLEMENT_CLASS(AFGBuildableConveyorBase, 2635236546);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableConveyorBase>()
+	{
+		return AFGBuildableConveyorBase::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorBase(Z_Construct_UClass_AFGBuildableConveyorBase, &AFGBuildableConveyorBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorBase);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildableConveyorBase)

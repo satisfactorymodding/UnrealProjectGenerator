@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 	{
 		((UFGColoredInstanceMeshProxy*)Obj)->mBlockInstancing = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing = { UE4CodeGen_Private::EPropertyClass::Bool, "mBlockInstancing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGColoredInstanceMeshProxy), &Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing = { "mBlockInstancing", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGColoredInstanceMeshProxy), &Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_MetaData[] = {
 		{ "Category", "FGColoredInstanceMeshProxy" },
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 	{
 		((UFGColoredInstanceMeshProxy*)Obj)->mCanBecolored = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanBecolored", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGColoredInstanceMeshProxy), &Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored = { "mCanBecolored", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGColoredInstanceMeshProxy), &Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored,
@@ -91,13 +91,17 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::ClassParams = {
 		&UFGColoredInstanceMeshProxy::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A4u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::PropPointers),
+		0,
+		0x00B010A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGColoredInstanceMeshProxy()
@@ -109,7 +113,11 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 4080311401);
+	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 402296863);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGColoredInstanceMeshProxy>()
+	{
+		return UFGColoredInstanceMeshProxy::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColoredInstanceMeshProxy(Z_Construct_UClass_UFGColoredInstanceMeshProxy, &UFGColoredInstanceMeshProxy::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColoredInstanceMeshProxy"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColoredInstanceMeshProxy);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

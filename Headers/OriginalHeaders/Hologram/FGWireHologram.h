@@ -31,6 +31,7 @@ public:
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
 	virtual void OnInvalidHitResult() override;
 	virtual void SpawnChildren( class UFGBuildGunStateBuild* state ) override;
+	virtual void ScrollRotate( int32 delta, int32 step ) override;
 	// End AFGHologram Interface
 
 	// Begin AFGBuildableHologram Interface

@@ -229,7 +229,8 @@ public:
 	 * Return true if this is on a server (playing singleplayer is same as server)
 	 * @param worldContext - a object that we can get the world from
 	 */
-	UFUNCTION( BlueprintPure, Category="Network", Meta = ( DefaultToSelf = "worldContext" ) )
+	UE_DEPRECATED( 4.22, "Is duplicate of UKismetSystemLibrary::IsServer, please use that function instead")
+	UFUNCTION( BlueprintPure, Category="Network", Meta = ( DefaultToSelf = "worldContext", DeprecatedFunction, DeprecationMessage = "UFGNetworkLibrary::IsServer is deprecated as it's a duplicate of UKismetSystemLibrary::IsServer, please use that function instead" ) )
 	static bool IsServer( class UObject* worldContext );
 	
 	/** 

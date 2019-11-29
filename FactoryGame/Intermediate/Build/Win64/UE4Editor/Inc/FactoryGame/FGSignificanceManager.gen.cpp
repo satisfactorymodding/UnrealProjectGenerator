@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -26,10 +26,14 @@ class UScriptStruct* FGainSignificanceData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FGainSignificanceData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("GainSignificanceData"), sizeof(FGainSignificanceData), Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FGainSignificanceData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("GainSignificanceData"), sizeof(FGainSignificanceData), Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FGainSignificanceData>()
+{
+	return FGainSignificanceData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FGainSignificanceData(FGainSignificanceData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("GainSignificanceData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceData
@@ -61,19 +65,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		nullptr,
 		&NewStructOps,
 		"GainSignificanceData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FGainSignificanceData),
 		alignof(FGainSignificanceData),
-		nullptr, 0,
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FGainSignificanceData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FGainSignificanceData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FGainSignificanceData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("GainSignificanceData"), sizeof(FGainSignificanceData), Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("GainSignificanceData"), sizeof(FGainSignificanceData), Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -83,7 +88,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC() { return 2241743463U; }
+	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash() { return 2335528894U; }
 	void UFGSignificanceManager::StaticRegisterNativesUFGSignificanceManager()
 	{
 	}
@@ -134,16 +139,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		{ "ToolTip", "List of conveyor bases (belts and lifts) that were significant last time we checked" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases = { UE4CodeGen_Private::EPropertyClass::Array, "mPreviousSignificantConveyorBases", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantConveyorBases), METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mPreviousSignificantConveyorBases", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases = { "mPreviousSignificantConveyorBases", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantConveyorBases), METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_Inner = { "mPreviousSignificantConveyorBases", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_MetaData[] = {
 		{ "ModuleRelativePath", "FGSignificanceManager.h" },
 		{ "ToolTip", "List of factories that were significant last time we checked" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories = { UE4CodeGen_Private::EPropertyClass::Array, "mPreviousSignificantFactories", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantFactories), METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mPreviousSignificantFactories", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildableFactory_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories = { "mPreviousSignificantFactories", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSignificanceManager, mPreviousSignificantFactories), METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_Inner = { "mPreviousSignificantFactories", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGBuildableFactory_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData[] = {
 		{ "Category", "SignificanceManager" },
@@ -155,7 +160,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 	{
 		((UFGSignificanceManager*)Obj)->mIsEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsEnabled", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGSignificanceManager), &Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled = { "mIsEnabled", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSignificanceManager), &Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSignificanceManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_Inner,
@@ -168,13 +173,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSignificanceManager_Statics::ClassParams = {
 		&UFGSignificanceManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A6u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGSignificanceManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGSignificanceManager_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::PropPointers),
+		0,
+		0x001000A6u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSignificanceManager()
@@ -186,7 +195,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceManager, 1273685371);
+	IMPLEMENT_CLASS(UFGSignificanceManager, 1719423883);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSignificanceManager>()
+	{
+		return UFGSignificanceManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSignificanceManager(Z_Construct_UClass_UFGSignificanceManager, &UFGSignificanceManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSignificanceManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSignificanceManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

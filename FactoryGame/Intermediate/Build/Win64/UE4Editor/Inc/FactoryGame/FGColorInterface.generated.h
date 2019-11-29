@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,8 +22,6 @@ struct FLinearColor;
 	virtual uint8 GetColorSlot_Implementation() { return 0; }; \
 	virtual FLinearColor GetSecondaryColor_Implementation() { return FLinearColor(ForceInit); }; \
 	virtual FLinearColor GetPrimaryColor_Implementation() { return FLinearColor(ForceInit); }; \
-	virtual void SetSecondaryColor_Implementation(FLinearColor newColor) {}; \
-	virtual void SetPrimaryColor_Implementation(FLinearColor newColor) {}; \
 	virtual void SetColorSlot_Implementation(uint8 index) {}; \
  \
 	DECLARE_FUNCTION(execStopIsAimedAtForColor) \
@@ -73,24 +71,6 @@ struct FLinearColor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FLinearColor*)Z_Param__Result=P_THIS->GetPrimaryColor_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSecondaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSecondaryColor_Implementation(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetPrimaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPrimaryColor_Implementation(Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -111,8 +91,6 @@ struct FLinearColor;
 	virtual uint8 GetColorSlot_Implementation() { return 0; }; \
 	virtual FLinearColor GetSecondaryColor_Implementation() { return FLinearColor(ForceInit); }; \
 	virtual FLinearColor GetPrimaryColor_Implementation() { return FLinearColor(ForceInit); }; \
-	virtual void SetSecondaryColor_Implementation(FLinearColor newColor) {}; \
-	virtual void SetPrimaryColor_Implementation(FLinearColor newColor) {}; \
 	virtual void SetColorSlot_Implementation(uint8 index) {}; \
  \
 	DECLARE_FUNCTION(execStopIsAimedAtForColor) \
@@ -162,24 +140,6 @@ struct FLinearColor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(FLinearColor*)Z_Param__Result=P_THIS->GetPrimaryColor_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSecondaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSecondaryColor_Implementation(Z_Param_newColor); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetPrimaryColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_newColor); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetPrimaryColor_Implementation(Z_Param_newColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -237,14 +197,6 @@ struct FLinearColor;
 	struct FGColorInterface_eventSetColorSlot_Parms \
 	{ \
 		uint8 index; \
-	}; \
-	struct FGColorInterface_eventSetPrimaryColor_Parms \
-	{ \
-		FLinearColor newColor; \
-	}; \
-	struct FGColorInterface_eventSetSecondaryColor_Parms \
-	{ \
-		FLinearColor newColor; \
 	}; \
 	struct FGColorInterface_eventStartIsAimedAtForColor_Parms \
 	{ \
@@ -316,8 +268,6 @@ public: \
 	static FLinearColor Execute_GetPrimaryColor(UObject* O); \
 	static FLinearColor Execute_GetSecondaryColor(UObject* O); \
 	static void Execute_SetColorSlot(UObject* O, uint8 index); \
-	static void Execute_SetPrimaryColor(UObject* O, FLinearColor newColor); \
-	static void Execute_SetSecondaryColor(UObject* O, FLinearColor newColor); \
 	static void Execute_StartIsAimedAtForColor(UObject* O, AFGCharacterPlayer* byCharacter); \
 	static void Execute_StopIsAimedAtForColor(UObject* O, AFGCharacterPlayer* byCharacter); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
@@ -334,8 +284,6 @@ public: \
 	static FLinearColor Execute_GetPrimaryColor(UObject* O); \
 	static FLinearColor Execute_GetSecondaryColor(UObject* O); \
 	static void Execute_SetColorSlot(UObject* O, uint8 index); \
-	static void Execute_SetPrimaryColor(UObject* O, FLinearColor newColor); \
-	static void Execute_SetSecondaryColor(UObject* O, FLinearColor newColor); \
 	static void Execute_StartIsAimedAtForColor(UObject* O, AFGCharacterPlayer* byCharacter); \
 	static void Execute_StopIsAimedAtForColor(UObject* O, AFGCharacterPlayer* byCharacter); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
@@ -364,6 +312,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGColorInterface>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGColorInterface_h

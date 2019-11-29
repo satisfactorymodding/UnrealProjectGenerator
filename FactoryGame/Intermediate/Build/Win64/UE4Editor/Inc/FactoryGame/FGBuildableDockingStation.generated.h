@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -16,7 +16,7 @@ class UFGInventoryComponent;
 #endif
 #define FACTORYGAME_FGBuildableDockingStation_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execFilterFuelClasses) \
 	{ \
@@ -103,7 +103,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execFilterFuelClasses) \
 	{ \
@@ -190,9 +190,9 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableDockingStation(); \
 	friend struct Z_Construct_UClass_AFGBuildableDockingStation_Statics; \
@@ -201,7 +201,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableDockingStation)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableDockingStation(); \
 	friend struct Z_Construct_UClass_AFGBuildableDockingStation_Statics; \
@@ -210,7 +210,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildableDockingStation)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableDockingStation(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableDockingStation) \
@@ -223,7 +223,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableDockingStation(AFGBuildableDockingStation&&); \
@@ -234,47 +234,51 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableDockingStation); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableDockingStation)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mStorageSizeX() { return STRUCT_OFFSET(AFGBuildableDockingStation, mStorageSizeX); } \
 	FORCEINLINE static uint32 __PPO__mStorageSizeY() { return STRUCT_OFFSET(AFGBuildableDockingStation, mStorageSizeY); } \
 	FORCEINLINE static uint32 __PPO__mTransferSpeed() { return STRUCT_OFFSET(AFGBuildableDockingStation, mTransferSpeed); } \
 	FORCEINLINE static uint32 __PPO__mFuelTransferSpeed() { return STRUCT_OFFSET(AFGBuildableDockingStation, mFuelTransferSpeed); } \
 	FORCEINLINE static uint32 __PPO__mTransferProgress() { return STRUCT_OFFSET(AFGBuildableDockingStation, mTransferProgress); } \
-	FORCEINLINE static uint32 __PPO__mInventory() { return STRUCT_OFFSET(AFGBuildableDockingStation, mInventory); } \
-	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGBuildableDockingStation, mFuelInventory); } \
+	FORCEINLINE static uint32 __PPO__mFuelInventoryHandler() { return STRUCT_OFFSET(AFGBuildableDockingStation, mFuelInventoryHandler); } \
+	FORCEINLINE static uint32 __PPO__mInventoryHandler() { return STRUCT_OFFSET(AFGBuildableDockingStation, mInventoryHandler); } \
 	FORCEINLINE static uint32 __PPO__mDockedActor() { return STRUCT_OFFSET(AFGBuildableDockingStation, mDockedActor); } \
 	FORCEINLINE static uint32 __PPO__mIsInLoadMode() { return STRUCT_OFFSET(AFGBuildableDockingStation, mIsInLoadMode); } \
 	FORCEINLINE static uint32 __PPO__mStackTransferSize() { return STRUCT_OFFSET(AFGBuildableDockingStation, mStackTransferSize); } \
-	FORCEINLINE static uint32 __PPO__mIsLoadUnloading() { return STRUCT_OFFSET(AFGBuildableDockingStation, mIsLoadUnloading); }
+	FORCEINLINE static uint32 __PPO__mIsLoadUnloading() { return STRUCT_OFFSET(AFGBuildableDockingStation, mIsLoadUnloading); } \
+	FORCEINLINE static uint32 __PPO__mInventory() { return STRUCT_OFFSET(AFGBuildableDockingStation, mInventory); } \
+	FORCEINLINE static uint32 __PPO__mFuelInventory() { return STRUCT_OFFSET(AFGBuildableDockingStation, mFuelInventory); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_16_PROLOG \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_17_PROLOG \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_19_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildableDockingStation>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildableDockingStation_h

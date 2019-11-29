@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -25,13 +25,17 @@ void EmptyLinkFunctionForGeneratedCodeRailroadNavigation() {}
 		}
 		return Singleton;
 	}
+	template<> FACTORYGAME_API UEnum* StaticEnum<ERailroadPathFindingResult>()
+	{
+		return ERailroadPathFindingResult_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ERailroadPathFindingResult(ERailroadPathFindingResult_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ERailroadPathFindingResult"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult_CRC() { return 1364942989U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult_Hash() { return 899998277U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ERailroadPathFindingResult"), 0, Get_Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ERailroadPathFindingResult"), 0, Get_Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -53,14 +57,14 @@ void EmptyLinkFunctionForGeneratedCodeRailroadNavigation() {}
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_FactoryGame,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"ERailroadPathFindingResult",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"ERailroadPathFindingResult",
 				"ERailroadPathFindingResult",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -50,13 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorMultiPoleHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGConveyorMultiPoleHologram_Statics::ClassParams = {
 		&AFGConveyorMultiPoleHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGConveyorMultiPoleHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorMultiPoleHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGConveyorMultiPoleHologram()
@@ -68,7 +72,11 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorMultiPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorMultiPoleHologram, 3976363161);
+	IMPLEMENT_CLASS(AFGConveyorMultiPoleHologram, 2434970690);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorMultiPoleHologram>()
+	{
+		return AFGConveyorMultiPoleHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorMultiPoleHologram(Z_Construct_UClass_AFGConveyorMultiPoleHologram, &AFGConveyorMultiPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorMultiPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorMultiPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

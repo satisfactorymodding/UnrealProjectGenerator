@@ -58,4 +58,10 @@ public:
 	/** Subsystem used to remove foliage on the map. */
 	UPROPERTY( config, EditDefaultsOnly, Category = "Subsystem" )
 	TSubclassOf< class AFGFoliageRemovalSubsystem > mFoliageRemovalSubsystemClass;
+	/** Subsystem used to show effects near the player. */
+	UPROPERTY( config, EditDefaultsOnly, Category = "Subsystem" )
+	TSubclassOf< class AFGProximitySubsystem > mProximitySubsystemClass;
+	/** Subsystem responsible for handling unlocks */
+	UPROPERTY( config, EditDefaultsOnly, Category = "Subsystem" )
+	TSubclassOf< class AFGUnlockSubsystem > mUnlockSubsystem;
 };

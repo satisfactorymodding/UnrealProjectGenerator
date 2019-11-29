@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Starts the rendering of the rendertarget scene" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "BeginCapture", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "BeginCapture", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Capture a picture once" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "CaptureOnce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "CaptureOnce", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Stops the rendering of the rendertarget scene" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "EndCapture", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "EndCapture", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_EndCapture()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGRenderTargetStage_eventGetRenderTarget_Parms, ReturnValue), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRenderTargetStage_eventGetRenderTarget_Parms, ReturnValue), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::NewProp_ReturnValue,
 	};
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Get the render target that this stage renders to" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "GetRenderTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRenderTargetStage_eventGetRenderTarget_Parms), Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "GetRenderTarget", sizeof(FGRenderTargetStage_eventGetRenderTarget_Parms), Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGRenderTargetStage_eventGetStage_Parms, ReturnValue), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRenderTargetStage_eventGetStage_Parms, ReturnValue), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::NewProp_ReturnValue,
 	};
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Get the stage of this preview scene" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "GetStage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGRenderTargetStage_eventGetStage_Parms), Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "GetStage", sizeof(FGRenderTargetStage_eventGetStage_Parms), Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_GetStage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::NewProp_distance = { UE4CodeGen_Private::EPropertyClass::Float, "distance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGRenderTargetStage_eventSetPreviewDistance_Parms, distance), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::NewProp_distance = { "distance", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRenderTargetStage_eventSetPreviewDistance_Parms, distance), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::NewProp_distance,
 	};
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "SetPreviewDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRenderTargetStage_eventSetPreviewDistance_Parms), Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "SetPreviewDistance", sizeof(FGRenderTargetStage_eventSetPreviewDistance_Parms), Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view = { UE4CodeGen_Private::EPropertyClass::Struct, "view", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGRenderTargetStage_eventSetView_Parms, view), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view = { "view", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGRenderTargetStage_eventSetView_Parms, view), Z_Construct_UScriptStruct_FItemView, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::NewProp_view,
 	};
@@ -261,7 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Move the camera so it looks at the stage from this view" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "SetView", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGRenderTargetStage_eventSetView_Parms), Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "SetView", sizeof(FGRenderTargetStage_eventSetView_Parms), Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_SetView()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Call this when you have attached/detached components from our stage, this will make sure only they get rendered" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "UpdateRenderedComponents", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, nullptr, "UpdateRenderedComponents", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -340,14 +340,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRenderTargetStage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture, "BeginCapture" }, // 119699516
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce, "CaptureOnce" }, // 2557172553
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_EndCapture, "EndCapture" }, // 4042506707
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget, "GetRenderTarget" }, // 3971467353
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetStage, "GetStage" }, // 3405541675
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance, "SetPreviewDistance" }, // 525641
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetView, "SetView" }, // 402198405
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents, "UpdateRenderedComponents" }, // 4026830721
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture, "BeginCapture" }, // 2680291549
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce, "CaptureOnce" }, // 3311478185
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_EndCapture, "EndCapture" }, // 2550136814
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget, "GetRenderTarget" }, // 2286661207
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetStage, "GetStage" }, // 1848206185
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance, "SetPreviewDistance" }, // 278911227
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetView, "SetView" }, // 2050106783
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents, "UpdateRenderedComponents" }, // 1505148645
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::Class_MetaDataParams[] = {
@@ -367,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 	{
 		((AFGRenderTargetStage*)Obj)->mDynamicRenderTarget = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget = { UE4CodeGen_Private::EPropertyClass::Bool, "mDynamicRenderTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGRenderTargetStage), &Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget = { "mDynamicRenderTarget", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(AFGRenderTargetStage), &Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage_MetaData[] = {
 		{ "EditInline", "true" },
@@ -375,7 +375,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "The stage we want to change to preview the mesh when we do our preview, this is where the components will get attached when\nthey get set" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage = { UE4CodeGen_Private::EPropertyClass::Object, "mStage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGRenderTargetStage, mStage), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage = { "mStage", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRenderTargetStage, mStage), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent_MetaData[] = {
 		{ "Category", "FGRenderTargetStage" },
@@ -384,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "The scene captor component that will generate the result of our render target" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSceneCaptureComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000b0009, 1, nullptr, STRUCT_OFFSET(AFGRenderTargetStage, mSceneCaptureComponent), Z_Construct_UClass_USceneCaptureComponent2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent = { "mSceneCaptureComponent", nullptr, (EPropertyFlags)0x00200800000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRenderTargetStage, mSceneCaptureComponent), Z_Construct_UClass_USceneCaptureComponent2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
@@ -392,7 +392,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "Set the pixel format of a dynamic rendertarget" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat = { UE4CodeGen_Private::EPropertyClass::Byte, "mDynamicPixelFormat", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGRenderTargetStage, mDynamicPixelFormat), Z_Construct_UEnum_CoreUObject_EPixelFormat, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat = { "mDynamicPixelFormat", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRenderTargetStage, mDynamicPixelFormat), Z_Construct_UEnum_CoreUObject_EPixelFormat, METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
@@ -400,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "If we create a dynamic render target (that is, a new one every time), then this is it's y size" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY = { UE4CodeGen_Private::EPropertyClass::Int, "mDynamicRenderTargetSizeY", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGRenderTargetStage, mDynamicRenderTargetSizeY), METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY = { "mDynamicRenderTargetSizeY", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRenderTargetStage, mDynamicRenderTargetSizeY), METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
@@ -408,7 +408,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "ToolTip", "If we create a dynamic render target (that is, a new one every time), then this is it's x size" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX = { UE4CodeGen_Private::EPropertyClass::Int, "mDynamicRenderTargetSizeX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGRenderTargetStage, mDynamicRenderTargetSizeX), METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX = { "mDynamicRenderTargetSizeX", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRenderTargetStage, mDynamicRenderTargetSizeX), METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage,
@@ -422,13 +422,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRenderTargetStage_Statics::ClassParams = {
 		&AFGRenderTargetStage::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers),
+		0,
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRenderTargetStage()
@@ -440,7 +444,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRenderTargetStage, 96702858);
+	IMPLEMENT_CLASS(AFGRenderTargetStage, 1616060582);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGRenderTargetStage>()
+	{
+		return AFGRenderTargetStage::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRenderTargetStage(Z_Construct_UClass_AFGRenderTargetStage, &AFGRenderTargetStage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRenderTargetStage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRenderTargetStage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

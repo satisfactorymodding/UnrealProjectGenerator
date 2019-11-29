@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::NewProp_activeSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "activeSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventOnActiveSchematicChanged_Parms, activeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::NewProp_activeSchematic = { "activeSchematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventOnActiveSchematicChanged_Parms, activeSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::NewProp_activeSchematic,
 	};
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnActiveSchematicChanged__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnActiveSchematicChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "OnActiveSchematicChanged__DelegateSignature", sizeof(_Script_FactoryGame_eventOnActiveSchematicChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::NewProp_schematicManager = { UE4CodeGen_Private::EPropertyClass::Object, "schematicManager", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventPaidOffOnSchematicDelegate_Parms, schematicManager), Z_Construct_UClass_AFGSchematicManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::NewProp_schematicManager = { "schematicManager", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventPaidOffOnSchematicDelegate_Parms, schematicManager), Z_Construct_UClass_AFGSchematicManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::NewProp_schematicManager,
 	};
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "PaidOffOnSchematicDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventPaidOffOnSchematicDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "PaidOffOnSchematicDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventPaidOffOnSchematicDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::NewProp_purchasedSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "purchasedSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(_Script_FactoryGame_eventPurchasedSchematicDelegate_Parms, purchasedSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::NewProp_purchasedSchematic = { "purchasedSchematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_FactoryGame_eventPurchasedSchematicDelegate_Parms, purchasedSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::NewProp_purchasedSchematic,
 	};
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "PurchasedSchematicDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventPurchasedSchematicDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, nullptr, "PurchasedSchematicDelegate__DelegateSignature", sizeof(_Script_FactoryGame_eventPurchasedSchematicDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -154,10 +154,14 @@ class UScriptStruct* FSchematicCost::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSchematicCost, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SchematicCost"), sizeof(FSchematicCost), Get_Z_Construct_UScriptStruct_FSchematicCost_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSchematicCost, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SchematicCost"), sizeof(FSchematicCost), Get_Z_Construct_UScriptStruct_FSchematicCost_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSchematicCost>()
+{
+	return FSchematicCost::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSchematicCost(FSchematicCost::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SchematicCost"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
@@ -202,14 +206,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Amount paid off" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost = { UE4CodeGen_Private::EPropertyClass::Array, "ItemCost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001010001, 1, nullptr, STRUCT_OFFSET(FSchematicCost, ItemCost), METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ItemCost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost = { "ItemCost", nullptr, (EPropertyFlags)0x0010000001010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSchematicCost, ItemCost), METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_Inner = { "ItemCost", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic = { UE4CodeGen_Private::EPropertyClass::Class, "Schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001000000, 1, nullptr, STRUCT_OFFSET(FSchematicCost, Schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic = { "Schematic", nullptr, (EPropertyFlags)0x0014000001000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSchematicCost, Schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_Inner,
@@ -220,19 +224,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		nullptr,
 		&NewStructOps,
 		"SchematicCost",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSchematicCost),
 		alignof(FSchematicCost),
-		Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSchematicCost()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SchematicCost"), sizeof(FSchematicCost), Get_Z_Construct_UScriptStruct_FSchematicCost_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SchematicCost"), sizeof(FSchematicCost), Get_Z_Construct_UScriptStruct_FSchematicCost_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -242,7 +247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC() { return 2816202943U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_Hash() { return 99251275U; }
 	void AFGSchematicManager::StaticRegisterNativesAFGSchematicManager()
 	{
 		UClass* Class = AFGSchematicManager::StaticClass();
@@ -287,7 +292,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::NewProp_schematicClassToAdd = { UE4CodeGen_Private::EPropertyClass::Class, "schematicClassToAdd", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventAddAvailableSchematic_Parms, schematicClassToAdd), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::NewProp_schematicClassToAdd = { "schematicClassToAdd", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventAddAvailableSchematic_Parms, schematicClassToAdd), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::NewProp_schematicClassToAdd,
 	};
@@ -298,7 +303,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "adds a schematic to available schematics" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "AddAvailableSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSchematicManager_eventAddAvailableSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "AddAvailableSchematic", sizeof(FGSchematicManager_eventAddAvailableSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -328,8 +333,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventCanSetAsActiveSchematic_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventCanSetAsActiveSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_inSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "inSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventCanSetAsActiveSchematic_Parms, inSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventCanSetAsActiveSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_inSchematic = { "inSchematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventCanSetAsActiveSchematic_Parms, inSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::NewProp_inSchematic,
@@ -341,7 +346,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Can we set the passed schematic as the active one?" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "CanSetAsActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventCanSetAsActiveSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "CanSetAsActiveSchematic", sizeof(FGSchematicManager_eventCanSetAsActiveSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -366,8 +371,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGSchematicManager_Get_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGSchematicManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGSchematicManager_Get_Statics::NewProp_worldContext = { UE4CodeGen_Private::EPropertyClass::Object, "worldContext", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGSchematicManager_Get_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGet_Parms, ReturnValue), Z_Construct_UClass_AFGSchematicManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGSchematicManager_Get_Statics::NewProp_worldContext = { "worldContext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGet_Parms, worldContext), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_Get_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_Get_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_Get_Statics::NewProp_worldContext,
@@ -381,7 +386,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Get the schematic manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "Get", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGSchematicManager_eventGet_Parms), Z_Construct_UFunction_AFGSchematicManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_Get_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_Get_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_Get_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "Get", sizeof(FGSchematicManager_eventGet_Parms), Z_Construct_UFunction_AFGSchematicManager_Get_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_Get_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_Get_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_Get_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_Get()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -404,7 +409,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetActiveSchematic_Parms, ReturnValue), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetActiveSchematic_Parms, ReturnValue), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::NewProp_ReturnValue,
 	};
@@ -415,7 +420,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Get active Schematic." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventGetActiveSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetActiveSchematic", sizeof(FGSchematicManager_eventGetActiveSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -439,8 +444,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::NewProp_out_schematics = { UE4CodeGen_Private::EPropertyClass::Array, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::NewProp_out_schematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::NewProp_out_schematics,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::NewProp_out_schematics_Inner,
@@ -452,7 +457,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns every possible schematic that is in the game." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetAllSchematics", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGSchematicManager_eventGetAllSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetAllSchematics", sizeof(FGSchematicManager_eventGetAllSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -479,10 +484,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_out_schematics = { UE4CodeGen_Private::EPropertyClass::Array, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematicsOfType_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_out_schematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_type = { UE4CodeGen_Private::EPropertyClass::Enum, "type", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematicsOfType_Parms, type), Z_Construct_UEnum_FactoryGame_ESchematicType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_type_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematicsOfType_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_type = { "type", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAllSchematicsOfType_Parms, type), Z_Construct_UEnum_FactoryGame_ESchematicType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_out_schematics,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::NewProp_out_schematics_Inner,
@@ -496,7 +501,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns the all schematics of a type." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetAllSchematicsOfType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGSchematicManager_eventGetAllSchematicsOfType_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetAllSchematicsOfType", sizeof(FGSchematicManager_eventGetAllSchematicsOfType_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -520,8 +525,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::NewProp_out_schematics = { UE4CodeGen_Private::EPropertyClass::Array, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetAvailableSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::NewProp_out_schematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetAvailableSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::NewProp_out_schematics,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::NewProp_out_schematics_Inner,
@@ -533,7 +538,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns the available schematics in the game." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetAvailableSchematics", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGSchematicManager_eventGetAvailableSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetAvailableSchematics", sizeof(FGSchematicManager_eventGetAvailableSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -559,9 +564,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetCostFor_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_schematic = { UE4CodeGen_Private::EPropertyClass::Class, "schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetCostFor_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetCostFor_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetCostFor_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::NewProp_ReturnValue_Inner,
@@ -577,7 +582,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Gives you the base cost, after random, for a schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetCostFor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventGetCostFor_Parms), Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetCostFor", sizeof(FGSchematicManager_eventGetCostFor_Parms), Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetCostFor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetCostFor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -600,7 +605,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetHighestAvailableTechTier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetHighestAvailableTechTier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::NewProp_ReturnValue,
 	};
@@ -610,7 +615,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetHighestAvailableTechTier", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSchematicManager_eventGetHighestAvailableTechTier_Parms), Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetHighestAvailableTechTier", sizeof(FGSchematicManager_eventGetHighestAvailableTechTier_Parms), Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -633,7 +638,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetMaxAllowedTechTier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetMaxAllowedTechTier_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::NewProp_ReturnValue,
 	};
@@ -643,7 +648,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetMaxAllowedTechTier", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGSchematicManager_eventGetMaxAllowedTechTier_Parms), Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetMaxAllowedTechTier", sizeof(FGSchematicManager_eventGetMaxAllowedTechTier_Parms), Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -669,9 +674,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetPaidOffCostFor_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_schematic = { UE4CodeGen_Private::EPropertyClass::Class, "schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetPaidOffCostFor_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetPaidOffCostFor_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetPaidOffCostFor_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::NewProp_ReturnValue_Inner,
@@ -684,7 +689,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns how much the players has paid off on a schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetPaidOffCostFor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventGetPaidOffCostFor_Parms), Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetPaidOffCostFor", sizeof(FGSchematicManager_eventGetPaidOffCostFor_Parms), Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -708,8 +713,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics = { UE4CodeGen_Private::EPropertyClass::Array, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000180, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetPurchasedSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "out_schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics = { "out_schematics", nullptr, (EPropertyFlags)0x0014000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetPurchasedSchematics_Parms, out_schematics), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics_Inner = { "out_schematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::NewProp_out_schematics_Inner,
@@ -721,7 +726,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns all schematics the players have purchased." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetPurchasedSchematics", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x44420401, sizeof(FGSchematicManager_eventGetPurchasedSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetPurchasedSchematics", sizeof(FGSchematicManager_eventGetPurchasedSchematics_Parms), Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x44420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -747,9 +752,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetRemainingCostFor_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_schematic = { UE4CodeGen_Private::EPropertyClass::Class, "schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetRemainingCostFor_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetRemainingCostFor_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetRemainingCostFor_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::NewProp_ReturnValue_Inner,
@@ -762,7 +767,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns remaining cost for a certain schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetRemainingCostFor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventGetRemainingCostFor_Parms), Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetRemainingCostFor", sizeof(FGSchematicManager_eventGetRemainingCostFor_Parms), Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -785,7 +790,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGetTimeUntilShipReturn_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGetTimeUntilShipReturn_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::NewProp_ReturnValue,
 	};
@@ -796,7 +801,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns the time until the ship is back" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetTimeUntilShipReturn", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventGetTimeUntilShipReturn_Parms), Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GetTimeUntilShipReturn", sizeof(FGSchematicManager_eventGetTimeUntilShipReturn_Parms), Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -826,8 +831,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventGiveAccessToSchematic_Parms*)Obj)->accessedViaCheats = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_accessedViaCheats = { UE4CodeGen_Private::EPropertyClass::Bool, "accessedViaCheats", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventGiveAccessToSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_accessedViaCheats_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_schematicClass = { UE4CodeGen_Private::EPropertyClass::Class, "schematicClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventGiveAccessToSchematic_Parms, schematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_accessedViaCheats = { "accessedViaCheats", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventGiveAccessToSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_accessedViaCheats_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_schematicClass = { "schematicClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventGiveAccessToSchematic_Parms, schematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_accessedViaCheats,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::NewProp_schematicClass,
@@ -840,7 +845,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Give the player access to a schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GiveAccessToSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSchematicManager_eventGiveAccessToSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "GiveAccessToSchematic", sizeof(FGSchematicManager_eventGiveAccessToSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -870,8 +875,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventIsSchematicPaidOff_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventIsSchematicPaidOff_Parms), &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_schematic = { UE4CodeGen_Private::EPropertyClass::Class, "schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventIsSchematicPaidOff_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventIsSchematicPaidOff_Parms), &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventIsSchematicPaidOff_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::NewProp_schematic,
@@ -883,7 +888,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns how much the players has paid off on a schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "IsSchematicPaidOff", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventIsSchematicPaidOff_Parms), Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "IsSchematicPaidOff", sizeof(FGSchematicManager_eventIsSchematicPaidOff_Parms), Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -913,8 +918,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventIsSchematicPurchased_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventIsSchematicPurchased_Parms), &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_schematicClass = { UE4CodeGen_Private::EPropertyClass::Class, "schematicClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventIsSchematicPurchased_Parms, schematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventIsSchematicPurchased_Parms), &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_schematicClass = { "schematicClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventIsSchematicPurchased_Parms, schematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::NewProp_schematicClass,
@@ -926,7 +931,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "returns true if the passed schematic has been purchased" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "IsSchematicPurchased", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGSchematicManager_eventIsSchematicPurchased_Parms), Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "IsSchematicPurchased", sizeof(FGSchematicManager_eventIsSchematicPurchased_Parms), Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -954,7 +959,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventIsShipAtTradingPost_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventIsShipAtTradingPost_Parms), &Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventIsShipAtTradingPost_Parms), &Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::NewProp_ReturnValue,
 	};
@@ -965,7 +970,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Returns true if the ship is at the trading post" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "IsShipAtTradingPost", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGSchematicManager_eventIsShipAtTradingPost_Parms), Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "IsShipAtTradingPost", sizeof(FGSchematicManager_eventIsShipAtTradingPost_Parms), Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -989,7 +994,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Player initiated launch of the ship" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "LaunchShip", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "LaunchShip", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_LaunchShip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1011,7 +1016,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "OnRep_ActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "OnRep_ActiveSchematic", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1033,7 +1038,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "OnRep_PaidOffOnSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "OnRep_PaidOffOnSchematic", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1055,7 +1060,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "OnRep_PurchasedSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "OnRep_PurchasedSchematic", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1088,10 +1093,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventPayOffOnSchematic_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventPayOffOnSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_amount = { UE4CodeGen_Private::EPropertyClass::Array, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000180, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventPayOffOnSchematic_Parms, amount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_amount_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "amount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_schematic = { UE4CodeGen_Private::EPropertyClass::Class, "schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventPayOffOnSchematic_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventPayOffOnSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000008000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventPayOffOnSchematic_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_amount_Inner = { "amount", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_schematic = { "schematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventPayOffOnSchematic_Parms, schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::NewProp_amount,
@@ -1105,7 +1110,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Adds paid off amount on a schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "PayOffOnSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGSchematicManager_eventPayOffOnSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "PayOffOnSchematic", sizeof(FGSchematicManager_eventPayOffOnSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1135,8 +1140,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((FGSchematicManager_eventSetActiveSchematic_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGSchematicManager_eventSetActiveSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_newActiveSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "newActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGSchematicManager_eventSetActiveSchematic_Parms, newActiveSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGSchematicManager_eventSetActiveSchematic_Parms), &Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_newActiveSchematic = { "newActiveSchematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSchematicManager_eventSetActiveSchematic_Parms, newActiveSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::NewProp_newActiveSchematic,
@@ -1148,7 +1153,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Sets the new active schematic to sell stuff towards" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "SetActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSchematicManager_eventSetActiveSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, nullptr, "SetActiveSchematic", sizeof(FGSchematicManager_eventSetActiveSchematic_Parms), Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1236,30 +1241,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSchematicManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic, "AddAvailableSchematic" }, // 1516174092
-		{ &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic, "CanSetAsActiveSchematic" }, // 1314246809
-		{ &Z_Construct_UFunction_AFGSchematicManager_Get, "Get" }, // 3556730280
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic, "GetActiveSchematic" }, // 3910292899
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics, "GetAllSchematics" }, // 2223865138
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType, "GetAllSchematicsOfType" }, // 2518672044
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics, "GetAvailableSchematics" }, // 867160255
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetCostFor, "GetCostFor" }, // 1894022803
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier, "GetHighestAvailableTechTier" }, // 2287354605
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier, "GetMaxAllowedTechTier" }, // 1604876164
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor, "GetPaidOffCostFor" }, // 1799508789
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics, "GetPurchasedSchematics" }, // 3761398672
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor, "GetRemainingCostFor" }, // 2292237634
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn, "GetTimeUntilShipReturn" }, // 1056457683
-		{ &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic, "GiveAccessToSchematic" }, // 712789129
-		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff, "IsSchematicPaidOff" }, // 4073159344
-		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased, "IsSchematicPurchased" }, // 1185932247
-		{ &Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost, "IsShipAtTradingPost" }, // 4126061383
-		{ &Z_Construct_UFunction_AFGSchematicManager_LaunchShip, "LaunchShip" }, // 2948681663
-		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic, "OnRep_ActiveSchematic" }, // 3042716720
-		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic, "OnRep_PaidOffOnSchematic" }, // 1816767982
-		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic, "OnRep_PurchasedSchematic" }, // 3203219327
-		{ &Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic, "PayOffOnSchematic" }, // 1830800193
-		{ &Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic, "SetActiveSchematic" }, // 1954833598
+		{ &Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic, "AddAvailableSchematic" }, // 3837345435
+		{ &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic, "CanSetAsActiveSchematic" }, // 1665890385
+		{ &Z_Construct_UFunction_AFGSchematicManager_Get, "Get" }, // 103796079
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic, "GetActiveSchematic" }, // 601887843
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics, "GetAllSchematics" }, // 1565736745
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType, "GetAllSchematicsOfType" }, // 433466187
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics, "GetAvailableSchematics" }, // 1956732016
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetCostFor, "GetCostFor" }, // 1089239665
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier, "GetHighestAvailableTechTier" }, // 1428432378
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier, "GetMaxAllowedTechTier" }, // 3308450541
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor, "GetPaidOffCostFor" }, // 3994111706
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics, "GetPurchasedSchematics" }, // 2546227986
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor, "GetRemainingCostFor" }, // 3138043140
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn, "GetTimeUntilShipReturn" }, // 3037211989
+		{ &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic, "GiveAccessToSchematic" }, // 642972227
+		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff, "IsSchematicPaidOff" }, // 3778854663
+		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased, "IsSchematicPurchased" }, // 3915503050
+		{ &Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost, "IsShipAtTradingPost" }, // 1938552498
+		{ &Z_Construct_UFunction_AFGSchematicManager_LaunchShip, "LaunchShip" }, // 2218843593
+		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic, "OnRep_ActiveSchematic" }, // 3750186108
+		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic, "OnRep_PaidOffOnSchematic" }, // 1833547391
+		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic, "OnRep_PurchasedSchematic" }, // 3996257220
+		{ &Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic, "PayOffOnSchematic" }, // 2937015775
+		{ &Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic, "SetActiveSchematic" }, // 3080213143
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::Class_MetaDataParams[] = {
@@ -1279,7 +1284,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Message sent when trading post ship has returned" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage = { UE4CodeGen_Private::EPropertyClass::Class, "mShipReturnedMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mShipReturnedMessage), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage = { "mShipReturnedMessage", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mShipReturnedMessage), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier_MetaData[] = {
 		{ "Category", "Schematic" },
@@ -1291,7 +1296,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier = { UE4CodeGen_Private::EPropertyClass::Int, "mMaxAllowedTechTier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mMaxAllowedTechTier), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier = { "mMaxAllowedTechTier", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mMaxAllowedTechTier), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData[] = {
 		{ "Category", "Schematic" },
@@ -1302,21 +1307,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	{
 		((AFGSchematicManager*)Obj)->mHasTechTierLimit = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasTechTierLimit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGSchematicManager), &Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit = { "mHasTechTierLimit", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGSchematicManager), &Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 		{ "ToolTip", "Used to save the ship land timestamp" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave = { UE4CodeGen_Private::EPropertyClass::Float, "mShipLandTimeStampSave", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mShipLandTimeStampSave), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave = { "mShipLandTimeStampSave", nullptr, (EPropertyFlags)0x0020080001000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mShipLandTimeStampSave), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 		{ "ToolTip", "Time stamp for when the ship is gonna land back at the Trading Post." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp = { UE4CodeGen_Private::EPropertyClass::Float, "mShipLandTimeStamp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mShipLandTimeStamp), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp = { "mShipLandTimeStamp", nullptr, (EPropertyFlags)0x0020080000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mShipLandTimeStamp), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData[] = {
 		{ "Category", "Schematics" },
@@ -1324,22 +1329,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Called when we the schematic has been changed ." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnActiveSchematicChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080010080000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mOnActiveSchematicChanged), Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged = { "mOnActiveSchematicChanged", nullptr, (EPropertyFlags)0x0020080010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mOnActiveSchematicChanged), Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 		{ "ToolTip", "The active schematic the resources is being sold towards." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080101000020, 1, "OnRep_ActiveSchematic", STRUCT_OFFSET(AFGSchematicManager, mActiveSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic = { "mActiveSchematic", "OnRep_ActiveSchematic", (EPropertyFlags)0x0024080101000020, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mActiveSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 		{ "ToolTip", "This keeps track of what players have paid off on different schematics" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic = { UE4CodeGen_Private::EPropertyClass::Array, "mPaidOffSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080101000020, 1, "OnRep_PaidOffOnSchematic", STRUCT_OFFSET(AFGSchematicManager, mPaidOffSchematic), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mPaidOffSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSchematicCost, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic = { "mPaidOffSchematic", "OnRep_PaidOffOnSchematic", (EPropertyFlags)0x0020080101000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mPaidOffSchematic), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_Inner = { "mPaidOffSchematic", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSchematicCost, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_MetaData[] = {
 		{ "Category", "Schematic" },
@@ -1347,24 +1352,24 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Once schematic is purchased it ends up here" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics = { UE4CodeGen_Private::EPropertyClass::Array, "mPurchasedSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080101010021, 1, "OnRep_PurchasedSchematic", STRUCT_OFFSET(AFGSchematicManager, mPurchasedSchematics), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mPurchasedSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics = { "mPurchasedSchematics", "OnRep_PurchasedSchematic", (EPropertyFlags)0x0024080101010021, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mPurchasedSchematics), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_Inner = { "mPurchasedSchematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 		{ "ToolTip", "All schematics that are available to the player" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics = { UE4CodeGen_Private::EPropertyClass::Array, "mAvailableSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080001000020, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mAvailableSchematics), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAvailableSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics = { "mAvailableSchematics", nullptr, (EPropertyFlags)0x0024080001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mAvailableSchematics), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_Inner = { "mAvailableSchematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_MetaData[] = {
 		{ "ModuleRelativePath", "FGSchematicManager.h" },
 		{ "ToolTip", "All schematic assets that have been sucked up in the PopulateSchematicsList function. Contains cheats and all sort of schematic." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics = { UE4CodeGen_Private::EPropertyClass::Array, "mAllSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mAllSchematics), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAllSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics = { "mAllSchematics", nullptr, (EPropertyFlags)0x0024080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, mAllSchematics), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_Inner = { "mAllSchematics", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate_MetaData[] = {
 		{ "Category", "Events|Schematics" },
@@ -1373,7 +1378,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Called when a payment on a schematic occurs" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "PaidOffOnSchematicDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, PaidOffOnSchematicDelegate), Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate = { "PaidOffOnSchematicDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, PaidOffOnSchematicDelegate), Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate_MetaData[] = {
 		{ "Category", "Events|Schematics" },
@@ -1382,7 +1387,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ToolTip", "Called when we players are granted a schematic." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "PurchasedSchematicDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, PurchasedSchematicDelegate), Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate = { "PurchasedSchematicDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGSchematicManager, PurchasedSchematicDelegate), Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGSchematicManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mMaxAllowedTechTier,
@@ -1410,13 +1415,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSchematicManager_Statics::ClassParams = {
 		&AFGSchematicManager::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGSchematicManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGSchematicManager_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSchematicManager()
@@ -1428,7 +1437,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSchematicManager, 2036727879);
+	IMPLEMENT_CLASS(AFGSchematicManager, 3605992680);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGSchematicManager>()
+	{
+		return AFGSchematicManager::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSchematicManager(Z_Construct_UClass_AFGSchematicManager, &AFGSchematicManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSchematicManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSchematicManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

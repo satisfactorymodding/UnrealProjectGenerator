@@ -16,14 +16,13 @@ void AFGBuildableTrainPlatformCargo::NotifyTrainDocked(  AFGRailroadVehicle* rai
 void AFGBuildableTrainPlatformCargo::UpdateDockingSequence(){ }
 void AFGBuildableTrainPlatformCargo::UpdatePowerConnectionFromTrack(){ }
 void AFGBuildableTrainPlatformCargo::Factory_Tick( float dt){ }
-void AFGBuildableTrainPlatformCargo::Factory_TickProducing( float dt){ }
 void AFGBuildableTrainPlatformCargo::Factory_CollectInput_Implementation(){ }
 bool AFGBuildableTrainPlatformCargo::CanProduce_Implementation() const{ return bool(); }
 void AFGBuildableTrainPlatformCargo::OnRep_ReplicationDetailActor(){ }
 void AFGBuildableTrainPlatformCargo::OnRep_UpdateDockingStatus(){ }
 int32 AFGBuildableTrainPlatformCargo::GetFirstIndexWithItem( UFGInventoryComponent* inventory){ return int32(); }
-void AFGBuildableTrainPlatformCargo::Factory_TransferInventoryToTrain(){ }
-void AFGBuildableTrainPlatformCargo::Factory_TransferInventoryToPlatform(){ }
+void AFGBuildableTrainPlatformCargo::TransferInventoryToTrain(){ }
+void AFGBuildableTrainPlatformCargo::TransferInventoryToPlatform(){ }
 void AFGBuildableTrainPlatformCargo::LoadUnloadVehicleComplete(){ }
 void AFGBuildableTrainPlatformCargo::CheckCanPerformFullUnload(){ }
 void AFGBuildableTrainPlatformCargo::CheckCanPerformFullLoad(){ }

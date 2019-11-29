@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		{ "ToolTip", "The component that will do the damage to actors" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mDotComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0809, 1, nullptr, STRUCT_OFFSET(AFGDamageOverTimeVolume, mDotComponent), Z_Construct_UClass_UFGDotComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent = { "mDotComponent", nullptr, (EPropertyFlags)0x00200800000a0809, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDamageOverTimeVolume, mDotComponent), Z_Construct_UClass_UFGDotComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		{ "ToolTip", "Some damage over time volumes will want a post process effect attached to it" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings = { UE4CodeGen_Private::EPropertyClass::Class, "mPostProcessSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000801, 1, nullptr, STRUCT_OFFSET(AFGDamageOverTimeVolume, mPostProcessSettings), Z_Construct_UClass_UFGSharedPostProcessSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings = { "mPostProcessSettings", nullptr, (EPropertyFlags)0x0024080000000801, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGDamageOverTimeVolume, mPostProcessSettings), Z_Construct_UClass_UFGSharedPostProcessSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mDotComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::NewProp_mPostProcessSettings,
@@ -89,13 +89,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::ClassParams = {
 		&AFGDamageOverTimeVolume::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x008000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGDamageOverTimeVolume()
@@ -107,7 +111,11 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 866475054);
+	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 1205596650);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGDamageOverTimeVolume>()
+	{
+		return AFGDamageOverTimeVolume::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDamageOverTimeVolume(Z_Construct_UClass_AFGDamageOverTimeVolume, &AFGDamageOverTimeVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDamageOverTimeVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDamageOverTimeVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

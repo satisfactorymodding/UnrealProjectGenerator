@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -57,8 +57,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackActivationDistance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackActivationDistance_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackActivationDistance_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackActivationDistance_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::NewProp_inClass,
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get attack activation distance ( returns the attack range if the activation distance has not been set )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetAttackActivationDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetAttackActivationDistance_Parms), Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetAttackActivationDistance", sizeof(FGAttack_eventGetAttackActivationDistance_Parms), Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -95,8 +95,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackAngle_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackAngle_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackAngle_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::NewProp_inClass,
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get angle needed for this attack to hit" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetAttackAngle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetAttackAngle_Parms), Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetAttackAngle", sizeof(FGAttack_eventGetAttackAngle_Parms), Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackAngle_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetAttackAngle()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -133,8 +133,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackMontage_Parms, ReturnValue), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackMontage_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackMontage_Parms, ReturnValue), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackMontage_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::NewProp_inClass,
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get attack montage" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetAttackMontage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetAttackMontage_Parms), Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetAttackMontage", sizeof(FGAttack_eventGetAttackMontage_Parms), Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackMontage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetAttackMontage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -171,8 +171,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackRange_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetAttackRange_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackRange_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetAttackRange_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::NewProp_inClass,
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get attack range" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetAttackRange", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetAttackRange_Parms), Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetAttackRange", sizeof(FGAttack_eventGetAttackRange_Parms), Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetAttackRange_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetAttackRange()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -209,8 +209,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGAttack_GetDamage_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetDamage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetDamage_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetDamage_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGAttack_GetDamage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetDamage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetDamage_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetDamage_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetDamage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetDamage_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetDamage_Statics::NewProp_inClass,
@@ -222,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get damage this attack does" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetDamage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetDamage_Parms), Z_Construct_UFunction_UFGAttack_GetDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetDamage", sizeof(FGAttack_eventGetDamage_Parms), Z_Construct_UFunction_UFGAttack_GetDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetDamage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -247,8 +247,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetDamageType_Parms, ReturnValue), Z_Construct_UClass_UDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetDamageType_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetDamageType_Parms, ReturnValue), Z_Construct_UClass_UDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetDamageType_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::NewProp_inClass,
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get damage type for this attack" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetDamageType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetDamageType_Parms), Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetDamageType", sizeof(FGAttack_eventGetDamageType_Parms), Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetDamageType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetDamageType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -290,8 +290,8 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 	{
 		((FGAttack_eventGetStopsMovement_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGAttack_eventGetStopsMovement_Parms), &Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGAttack_eventGetStopsMovement_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGAttack_eventGetStopsMovement_Parms), &Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGAttack_eventGetStopsMovement_Parms, inClass), Z_Construct_UClass_UFGAttack_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::NewProp_inClass,
@@ -303,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Get for stop movement" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, "GetStopsMovement", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGAttack_eventGetStopsMovement_Parms), Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAttack, nullptr, "GetStopsMovement", sizeof(FGAttack_eventGetStopsMovement_Parms), Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAttack_GetStopsMovement_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGAttack_GetStopsMovement()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -362,13 +362,13 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAttack_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance, "GetAttackActivationDistance" }, // 3275664265
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackAngle, "GetAttackAngle" }, // 4211290238
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackMontage, "GetAttackMontage" }, // 2358477897
-		{ &Z_Construct_UFunction_UFGAttack_GetAttackRange, "GetAttackRange" }, // 153767308
-		{ &Z_Construct_UFunction_UFGAttack_GetDamage, "GetDamage" }, // 3250251038
-		{ &Z_Construct_UFunction_UFGAttack_GetDamageType, "GetDamageType" }, // 1809444327
-		{ &Z_Construct_UFunction_UFGAttack_GetStopsMovement, "GetStopsMovement" }, // 1858754908
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackActivationDistance, "GetAttackActivationDistance" }, // 2342107993
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackAngle, "GetAttackAngle" }, // 4192248135
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackMontage, "GetAttackMontage" }, // 1731027452
+		{ &Z_Construct_UFunction_UFGAttack_GetAttackRange, "GetAttackRange" }, // 3794884838
+		{ &Z_Construct_UFunction_UFGAttack_GetDamage, "GetDamage" }, // 1837302200
+		{ &Z_Construct_UFunction_UFGAttack_GetDamageType, "GetDamageType" }, // 1344224665
+		{ &Z_Construct_UFunction_UFGAttack_GetStopsMovement, "GetStopsMovement" }, // 4128449449
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::Class_MetaDataParams[] = {
@@ -384,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Angle that target must be within in order to hit with attack ( 180 = full circle hit area )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle = { UE4CodeGen_Private::EPropertyClass::Float, "mAttackAngle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGAttack, mAttackAngle), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle = { "mAttackAngle", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAttack, mAttackAngle), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType_MetaData[] = {
 		{ "Category", "FGAttack" },
@@ -392,7 +392,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Damage type that this attack uses" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType = { UE4CodeGen_Private::EPropertyClass::Class, "mDamageType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGAttack, mDamageType), Z_Construct_UClass_UDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType = { "mDamageType", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAttack, mDamageType), Z_Construct_UClass_UDamageType_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage_MetaData[] = {
 		{ "Category", "FGAttack" },
@@ -400,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "How much damage to do when hitting" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage = { UE4CodeGen_Private::EPropertyClass::Int, "mDamage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGAttack, mDamage), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage = { "mDamage", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAttack, mDamage), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance_MetaData[] = {
 		{ "Category", "FGAttack" },
@@ -408,7 +408,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "How far can we attack" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance = { UE4CodeGen_Private::EPropertyClass::Float, "mAttackActivationDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGAttack, mAttackActivationDistance), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance = { "mAttackActivationDistance", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAttack, mAttackActivationDistance), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackActivationDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange_MetaData[] = {
 		{ "Category", "FGAttack" },
@@ -416,7 +416,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "How far can we attack" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange = { UE4CodeGen_Private::EPropertyClass::Float, "mAttackRange", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGAttack, mAttackRange), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange = { "mAttackRange", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAttack, mAttackRange), METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackRange_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_MetaData[] = {
 		{ "Category", "FGAttack" },
@@ -428,7 +428,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 	{
 		((UFGAttack*)Obj)->mStopsMovement = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement = { UE4CodeGen_Private::EPropertyClass::Bool, "mStopsMovement", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGAttack), &Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement = { "mStopsMovement", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGAttack), &Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mStopsMovement_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage_MetaData[] = {
 		{ "Category", "FGAttack" },
@@ -436,7 +436,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		{ "ToolTip", "Animation to play when attacking" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage = { UE4CodeGen_Private::EPropertyClass::Object, "mAttackMontage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGAttack, mAttackMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage = { "mAttackMontage", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGAttack, mAttackMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackMontage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGAttack_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAttack_Statics::NewProp_mAttackAngle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGAttack_Statics::NewProp_mDamageType,
@@ -451,13 +451,17 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAttack_Statics::ClassParams = {
 		&UFGAttack::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGAttack_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGAttack_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::PropPointers),
+		0,
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAttack()
@@ -469,7 +473,11 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttack, 2009801598);
+	IMPLEMENT_CLASS(UFGAttack, 2826122762);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGAttack>()
+	{
+		return UFGAttack::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttack(Z_Construct_UClass_UFGAttack, &UFGAttack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

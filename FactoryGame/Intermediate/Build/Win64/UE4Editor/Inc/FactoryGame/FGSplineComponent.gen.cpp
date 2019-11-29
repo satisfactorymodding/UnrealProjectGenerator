@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,19 +60,19 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_thickness = { UE4CodeGen_Private::EPropertyClass::Float, "thickness", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSplineComponent_eventDrawDebugSpline_Parms, thickness), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_thickness = { "thickness", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSplineComponent_eventDrawDebugSpline_Parms, thickness), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2 = { UE4CodeGen_Private::EPropertyClass::Struct, "color2", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSplineComponent_eventDrawDebugSpline_Parms, color2), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2 = { "color2", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSplineComponent_eventDrawDebugSpline_Parms, color2), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1 = { UE4CodeGen_Private::EPropertyClass::Struct, "color1", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGSplineComponent_eventDrawDebugSpline_Parms, color1), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1 = { "color1", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSplineComponent_eventDrawDebugSpline_Parms, color1), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color1_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_thickness,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::NewProp_color2,
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "Draw the spline using debug lines." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSplineComponent, "DrawDebugSpline", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54C20401, sizeof(FGSplineComponent_eventDrawDebugSpline_Parms), Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSplineComponent, nullptr, "DrawDebugSpline", sizeof(FGSplineComponent_eventDrawDebugSpline_Parms), Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54C20401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::NewProp_material = { UE4CodeGen_Private::EPropertyClass::Object, "material", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSplineComponent_eventSetOverrideMaterial_Parms, material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::NewProp_material = { "material", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSplineComponent_eventSetOverrideMaterial_Parms, material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::NewProp_material,
 	};
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "Set the override material to use on the spline meshes, otherwise the default is used." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSplineComponent, "SetOverrideMaterial", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSplineComponent_eventSetOverrideMaterial_Parms), Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSplineComponent, nullptr, "SetOverrideMaterial", sizeof(FGSplineComponent_eventSetOverrideMaterial_Parms), Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "Update the spline meshes to fit on the spline." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSplineComponent, "UpdateSplineMeshes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSplineComponent, nullptr, "UpdateSplineMeshes", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -223,9 +223,9 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSplineComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline, "DrawDebugSpline" }, // 2971376906
-		{ &Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial, "SetOverrideMaterial" }, // 1898719542
-		{ &Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes, "UpdateSplineMeshes" }, // 3292927744
+		{ &Z_Construct_UFunction_UFGSplineComponent_DrawDebugSpline, "DrawDebugSpline" }, // 1131487033
+		{ &Z_Construct_UFunction_UFGSplineComponent_SetOverrideMaterial, "SetOverrideMaterial" }, // 1026087266
+		{ &Z_Construct_UFunction_UFGSplineComponent_UpdateSplineMeshes, "UpdateSplineMeshes" }, // 3905777524
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::Class_MetaDataParams[] = {
@@ -244,8 +244,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "The collisions that make up the spline." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mSplineCollisionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000008, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mSplineCollisionComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineCollisionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents = { "mSplineCollisionComponents", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mSplineCollisionComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_Inner = { "mSplineCollisionComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -253,8 +253,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "If we have enabled custom depth pass, then we store the custom depth spline meshes here" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mCustomDepthSplineMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000008, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mCustomDepthSplineMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mCustomDepthSplineMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents = { "mCustomDepthSplineMeshComponents", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mCustomDepthSplineMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCustomDepthSplineMeshComponents_Inner = { "mCustomDepthSplineMeshComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
@@ -262,8 +262,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "The meshes that make up the spline." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mSplineMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040008000000008, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mSplineMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineMeshComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents = { "mSplineMeshComponents", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mSplineMeshComponents), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshComponents_Inner = { "mSplineMeshComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData[] = {
 		{ "ModuleRelativePath", "FGSplineComponent.h" },
@@ -274,14 +274,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	{
 		((UFGSplineComponent*)Obj)->mUseInstancing = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing = { UE4CodeGen_Private::EPropertyClass::Bool, "mUseInstancing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGSplineComponent), &Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing = { "mUseInstancing", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSplineComponent), &Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mUseInstancing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial_MetaData[] = {
 		{ "ModuleRelativePath", "FGSplineComponent.h" },
 		{ "ToolTip", "The cached material, we cache this as the number of meshes grow/shrink as we drag the conveyor belt." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mOverrideMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mOverrideMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial = { "mOverrideMaterial", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mOverrideMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mOverrideMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset_MetaData[] = {
 		{ "Category", "Collision|Generated" },
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "Offset of the collision components. X is forward." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "mCollisionOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mCollisionOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset = { "mCollisionOffset", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mCollisionOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent_MetaData[] = {
 		{ "Category", "Collision|Generated" },
@@ -299,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "Extent of the collision components. X is forward." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent = { UE4CodeGen_Private::EPropertyClass::Struct, "mCollisionExtent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mCollisionExtent), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent = { "mCollisionExtent", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mCollisionExtent), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionExtent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing_MetaData[] = {
 		{ "Category", "Collision|Generated" },
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "Spacing between the collision components." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing = { UE4CodeGen_Private::EPropertyClass::Float, "mCollisionSpacing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mCollisionSpacing), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing = { "mCollisionSpacing", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mCollisionSpacing), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mCollisionSpacing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_MetaData[] = {
 		{ "Category", "Collision|Generated" },
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	{
 		((UFGSplineComponent*)Obj)->mGenerateCollisions = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions = { UE4CodeGen_Private::EPropertyClass::Bool, "mGenerateCollisions", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGSplineComponent), &Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions = { "mGenerateCollisions", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGSplineComponent), &Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mGenerateCollisions_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -328,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "The size of each spline mesh." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength = { UE4CodeGen_Private::EPropertyClass::Float, "mSplineMeshLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mSplineMeshLength), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength = { "mSplineMeshLength", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mSplineMeshLength), METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMeshLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -336,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		{ "ToolTip", "The mesh to repeat on curved sections." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGSplineComponent, mSplineMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh = { "mSplineMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSplineComponent, mSplineMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSplineComponent_Statics::NewProp_mSplineCollisionComponents_Inner,
@@ -358,13 +358,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSplineComponent_Statics::ClassParams = {
 		&UFGSplineComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::PropPointers),
+		0,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSplineComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSplineComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSplineComponent()
@@ -376,7 +380,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSplineComponent, 159066870);
+	IMPLEMENT_CLASS(UFGSplineComponent, 3279579079);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSplineComponent>()
+	{
+		return UFGSplineComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSplineComponent(Z_Construct_UClass_UFGSplineComponent, &UFGSplineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSplineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSplineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

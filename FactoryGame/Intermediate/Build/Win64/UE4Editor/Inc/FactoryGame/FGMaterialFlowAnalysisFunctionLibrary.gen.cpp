@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -33,10 +33,14 @@ class UScriptStruct* FMaterialFlowNode::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMaterialFlowNode, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MaterialFlowNode"), sizeof(FMaterialFlowNode), Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMaterialFlowNode, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MaterialFlowNode"), sizeof(FMaterialFlowNode), Get_Z_Construct_UScriptStruct_FMaterialFlowNode_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FMaterialFlowNode>()
+{
+	return FMaterialFlowNode::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FMaterialFlowNode(FMaterialFlowNode::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("MaterialFlowNode"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
@@ -96,8 +100,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		{ "ToolTip", "Child flow nodes, 0 for leaf nodes." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs = { UE4CodeGen_Private::EPropertyClass::Array, "Inputs", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowNode, Inputs), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "Inputs", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FMaterialFlowConnection, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs = { "Inputs", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowNode, Inputs), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_Inner = { "Inputs", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMaterialFlowConnection, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
@@ -105,8 +109,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		{ "ToolTip", "Parent flow nodes, 0 for root nodes." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs = { UE4CodeGen_Private::EPropertyClass::Array, "Outputs", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowNode, Outputs), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "Outputs", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FMaterialFlowConnection, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs = { "Outputs", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowNode, Outputs), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_Inner = { "Outputs", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMaterialFlowConnection, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
@@ -114,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		{ "ToolTip", "How many producers are needed for this recipe." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount = { UE4CodeGen_Private::EPropertyClass::Int, "ProducerCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowNode, ProducerCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount = { "ProducerCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowNode, ProducerCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
@@ -122,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		{ "ToolTip", "At which depth in the dependency tree is this item, root is 0." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth = { UE4CodeGen_Private::EPropertyClass::Int, "Depth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowNode, Depth), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth = { "Depth", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowNode, Depth), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
@@ -130,7 +134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		{ "ToolTip", "Recipe analyzed, nullptr for leaf nodes." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe = { UE4CodeGen_Private::EPropertyClass::Class, "Recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowNode, Recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe = { "Recipe", nullptr, (EPropertyFlags)0x0014000000000014, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowNode, Recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_Inner,
@@ -145,19 +149,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		nullptr,
 		&NewStructOps,
 		"MaterialFlowNode",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FMaterialFlowNode),
 		alignof(FMaterialFlowNode),
-		Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMaterialFlowNode()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MaterialFlowNode"), sizeof(FMaterialFlowNode), Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MaterialFlowNode"), sizeof(FMaterialFlowNode), Get_Z_Construct_UScriptStruct_FMaterialFlowNode_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -167,16 +172,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC() { return 1906394012U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_Hash() { return 3418108018U; }
 class UScriptStruct* FMaterialFlowConnection::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMaterialFlowConnection, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MaterialFlowConnection"), sizeof(FMaterialFlowConnection), Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMaterialFlowConnection, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MaterialFlowConnection"), sizeof(FMaterialFlowConnection), Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FMaterialFlowConnection>()
+{
+	return FMaterialFlowConnection::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FMaterialFlowConnection(FMaterialFlowConnection::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("MaterialFlowConnection"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnection
@@ -234,7 +243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		{ "ToolTip", "Total flow. [items/second]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow = { UE4CodeGen_Private::EPropertyClass::Float, "TotalFlow", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowConnection, TotalFlow), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow = { "TotalFlow", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowConnection, TotalFlow), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
@@ -242,7 +251,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		{ "ToolTip", "Total count. [items/cycle]" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount = { UE4CodeGen_Private::EPropertyClass::Int, "TotalCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowConnection, TotalCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount = { "TotalCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowConnection, TotalCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
@@ -250,7 +259,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		{ "ToolTip", "Base flow. [items/second]" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow = { UE4CodeGen_Private::EPropertyClass::Float, "Flow", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowConnection, Flow), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow = { "Flow", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowConnection, Flow), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
@@ -258,7 +267,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		{ "ToolTip", "Base count. [items/cycle]" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count = { UE4CodeGen_Private::EPropertyClass::Int, "Count", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowConnection, Count), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count = { "Count", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowConnection, Count), METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
@@ -266,7 +275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		{ "ToolTip", "Details about the material flow in this step." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor = { UE4CodeGen_Private::EPropertyClass::Class, "Descriptor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000014, 1, nullptr, STRUCT_OFFSET(FMaterialFlowConnection, Descriptor), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor = { "Descriptor", nullptr, (EPropertyFlags)0x0014000000000014, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMaterialFlowConnection, Descriptor), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount,
@@ -279,19 +288,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		nullptr,
 		&NewStructOps,
 		"MaterialFlowConnection",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FMaterialFlowConnection),
 		alignof(FMaterialFlowConnection),
-		Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMaterialFlowConnection()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MaterialFlowConnection"), sizeof(FMaterialFlowConnection), Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MaterialFlowConnection"), sizeof(FMaterialFlowConnection), Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -301,16 +311,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC() { return 3248845019U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_Hash() { return 3080126203U; }
 class UScriptStruct* FMaterialFlowGraph::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMaterialFlowGraph, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MaterialFlowGraph"), sizeof(FMaterialFlowGraph), Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMaterialFlowGraph, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MaterialFlowGraph"), sizeof(FMaterialFlowGraph), Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FMaterialFlowGraph>()
+{
+	return FMaterialFlowGraph::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FMaterialFlowGraph(FMaterialFlowGraph::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("MaterialFlowGraph"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
@@ -345,19 +359,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		nullptr,
 		&NewStructOps,
 		"MaterialFlowGraph",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FMaterialFlowGraph),
 		alignof(FMaterialFlowGraph),
-		nullptr, 0,
+		nullptr,
+		0,
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialFlowGraph_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialFlowGraph_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMaterialFlowGraph()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MaterialFlowGraph"), sizeof(FMaterialFlowGraph), Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MaterialFlowGraph"), sizeof(FMaterialFlowGraph), Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -367,7 +382,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC() { return 774880797U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_Hash() { return 3633732178U; }
 	void UFGMaterialFlowAnalysisFunctionLibrary::StaticRegisterNativesUFGMaterialFlowAnalysisFunctionLibrary()
 	{
 		UClass* Class = UFGMaterialFlowAnalysisFunctionLibrary::StaticClass();
@@ -396,13 +411,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphDepth_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphDepth_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph = { UE4CodeGen_Private::EPropertyClass::Struct, "graph", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphDepth_Parms, graph), Z_Construct_UScriptStruct_FMaterialFlowGraph, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph = { "graph", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphDepth_Parms, graph), Z_Construct_UScriptStruct_FMaterialFlowGraph, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::NewProp_graph,
@@ -414,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		{ "ToolTip", "Get the depth of the material flow graph." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, "GetGraphDepth", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphDepth_Parms), Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, nullptr, "GetGraphDepth", sizeof(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphDepth_Parms), Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -445,15 +460,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Array, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_ReturnValue_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FMaterialFlowNode, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_depth = { UE4CodeGen_Private::EPropertyClass::Int, "depth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms, depth), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMaterialFlowNode, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_depth = { "depth", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms, depth), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph = { UE4CodeGen_Private::EPropertyClass::Struct, "graph", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms, graph), Z_Construct_UScriptStruct_FMaterialFlowGraph, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph = { "graph", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms, graph), Z_Construct_UScriptStruct_FMaterialFlowGraph, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_graph_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::NewProp_ReturnValue_Inner,
@@ -468,7 +483,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		{ "ToolTip", "Get nodes in the material flow graph at a certain depth, -1 to get all nodes." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, "GetGraphNodes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms), Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, nullptr, "GetGraphNodes", sizeof(FGMaterialFlowAnalysisFunctionLibrary_eventGetGraphNodes_Parms), Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -496,10 +511,10 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms, ReturnValue), Z_Construct_UScriptStruct_FMaterialFlowGraph, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipeManager = { UE4CodeGen_Private::EPropertyClass::Object, "recipeManager", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms, recipeManager), Z_Construct_UClass_AFGRecipeManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipes = { UE4CodeGen_Private::EPropertyClass::Array, "recipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms, recipes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipes_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "recipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms, ReturnValue), Z_Construct_UScriptStruct_FMaterialFlowGraph, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipeManager = { "recipeManager", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms, recipeManager), Z_Construct_UClass_AFGRecipeManager_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipes = { "recipes", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms, recipes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipes_Inner = { "recipes", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::NewProp_recipeManager,
@@ -513,7 +528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		{ "ToolTip", "Perform a material flow analysis on the given recipe." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, "PerformMaterialFlowAnalysis", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms), Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, nullptr, "PerformMaterialFlowAnalysis", sizeof(FGMaterialFlowAnalysisFunctionLibrary_eventPerformMaterialFlowAnalysis_Parms), Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -542,9 +557,9 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth, "GetGraphDepth" }, // 1763549670
-		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes, "GetGraphNodes" }, // 2723721470
-		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis, "PerformMaterialFlowAnalysis" }, // 825485897
+		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth, "GetGraphDepth" }, // 2727854197
+		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes, "GetGraphNodes" }, // 2252056930
+		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis, "PerformMaterialFlowAnalysis" }, // 1612797757
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::Class_MetaDataParams[] = {
@@ -558,13 +573,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::ClassParams = {
 		&UFGMaterialFlowAnalysisFunctionLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary()
@@ -576,7 +595,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialFlowAnalysisFunctionLibrary, 3911994413);
+	IMPLEMENT_CLASS(UFGMaterialFlowAnalysisFunctionLibrary, 2677248218);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMaterialFlowAnalysisFunctionLibrary>()
+	{
+		return UFGMaterialFlowAnalysisFunctionLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialFlowAnalysisFunctionLibrary(Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, &UFGMaterialFlowAnalysisFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialFlowAnalysisFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialFlowAnalysisFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -266,6 +266,8 @@ public:
 	 */
 	UFUNCTION( BlueprintCallable, Category = "BuildGun" )
 	void GotoDismantleState();
+
+	void SetAllowCleranceHit( bool allow );
 protected:
 	/** Add custom bindings for this equipment */
 	virtual void AddEquipmentActionBindings() override;
@@ -342,6 +344,8 @@ protected:
 	/** The state to use when dismantling. */
 	UPROPERTY( EditDefaultsOnly, Category = "BuildGun|State" )
 	TSubclassOf< class UFGBuildGunStateDismantle > mDismantleStateClass;
+
+	bool mAllowCleranceRayHits = false;
 
 private:
 	/** All the states. */

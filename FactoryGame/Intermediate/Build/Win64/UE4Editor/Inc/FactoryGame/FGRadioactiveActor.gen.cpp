@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 		{ "ToolTip", "How much radiation this item gives out in the number of nucleus that decays per second.\n0 means no radiation and 1 is 10^15 (1 quadrillion) decays/s.\nGood values are in the range 0 to 1." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay = { UE4CodeGen_Private::EPropertyClass::Float, "mRadioactiveDecay", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000801, 1, nullptr, STRUCT_OFFSET(AFGRadioactiveActor, mRadioactiveDecay), METADATA_PARAMS(Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay = { "mRadioactiveDecay", nullptr, (EPropertyFlags)0x0040000000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGRadioactiveActor, mRadioactiveDecay), METADATA_PARAMS(Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGRadioactiveActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGRadioactiveActor_Statics::NewProp_mRadioactiveDecay,
 	};
@@ -68,13 +68,17 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRadioactiveActor_Statics::ClassParams = {
 		&AFGRadioactiveActor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGRadioactiveActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactiveActor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGRadioactiveActor_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGRadioactiveActor_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRadioactiveActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRadioactiveActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRadioactiveActor()
@@ -86,7 +90,11 @@ void EmptyLinkFunctionForGeneratedCodeFGRadioactiveActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRadioactiveActor, 3440885274);
+	IMPLEMENT_CLASS(AFGRadioactiveActor, 3448852314);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGRadioactiveActor>()
+	{
+		return AFGRadioactiveActor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRadioactiveActor(Z_Construct_UClass_AFGRadioactiveActor, &AFGRadioactiveActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRadioactiveActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRadioactiveActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

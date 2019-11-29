@@ -97,7 +97,6 @@ protected:
 
 	// Begin Factory_ interface
 	virtual void Factory_Tick( float dt ) override;
-	virtual void Factory_TickProducing( float dt ) override;
 	virtual void Factory_CollectInput_Implementation() override;
 	// End Factory_ interface
 
@@ -121,10 +120,10 @@ private:
 	int32 GetFirstIndexWithItem( UFGInventoryComponent* inventory );
 
 	// Loads all possible inventory from the platform inventory into the freight inventory
-	void Factory_TransferInventoryToTrain();
+	void TransferInventoryToTrain();
 
 	// Transfers all possible inventory from the train cart into the platform inventory
-	void Factory_TransferInventoryToPlatform();
+	void TransferInventoryToPlatform();
 
 	/** Done loading or unloading vehicle */
 	void LoadUnloadVehicleComplete();

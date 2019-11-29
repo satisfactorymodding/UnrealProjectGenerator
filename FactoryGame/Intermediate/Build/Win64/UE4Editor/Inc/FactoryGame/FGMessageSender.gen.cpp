@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -45,8 +45,8 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGMessageSender_eventGetSenderDefaultObject_Parms, ReturnValue), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::NewProp_inClass = { UE4CodeGen_Private::EPropertyClass::Class, "inClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGMessageSender_eventGetSenderDefaultObject_Parms, inClass), Z_Construct_UClass_UFGMessageSender_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMessageSender_eventGetSenderDefaultObject_Parms, ReturnValue), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::NewProp_inClass = { "inClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMessageSender_eventGetSenderDefaultObject_Parms, inClass), Z_Construct_UClass_UFGMessageSender_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::NewProp_inClass,
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		{ "ToolTip", "Gets the default object so we can access stuff like the texture etc" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMessageSender, "GetSenderDefaultObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGMessageSender_eventGetSenderDefaultObject_Parms), Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMessageSender, nullptr, "GetSenderDefaultObject", sizeof(FGMessageSender_eventGetSenderDefaultObject_Parms), Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMessageSender_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject, "GetSenderDefaultObject" }, // 253687976
+		{ &Z_Construct_UFunction_UFGMessageSender_GetSenderDefaultObject, "GetSenderDefaultObject" }, // 2624292615
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::Class_MetaDataParams[] = {
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		{ "ToolTip", "Image of the sender" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture = { UE4CodeGen_Private::EPropertyClass::Object, "mTexture", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageSender, mTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture = { "mTexture", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageSender, mTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail_MetaData[] = {
 		{ "Category", "Sender" },
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		{ "ToolTip", "Mail adress of the sender" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail = { UE4CodeGen_Private::EPropertyClass::Text, "mSenderMail", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageSender, mSenderMail), METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail = { "mSenderMail", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageSender, mSenderMail), METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName_MetaData[] = {
 		{ "Category", "Sender" },
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		{ "ToolTip", "Name of the sender" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName = { UE4CodeGen_Private::EPropertyClass::Text, "mSenderName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(UFGMessageSender, mSenderName), METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName = { "mSenderName", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMessageSender, mSenderName), METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMessageSender_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mTexture,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMessageSender_Statics::NewProp_mSenderMail,
@@ -145,13 +145,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMessageSender_Statics::ClassParams = {
 		&UFGMessageSender::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMessageSender_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMessageSender_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::PropPointers),
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMessageSender_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMessageSender_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMessageSender()
@@ -163,7 +167,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMessageSender() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMessageSender, 3338498027);
+	IMPLEMENT_CLASS(UFGMessageSender, 1754094290);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMessageSender>()
+	{
+		return UFGMessageSender::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMessageSender(Z_Construct_UClass_UFGMessageSender, &UFGMessageSender::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMessageSender"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMessageSender);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

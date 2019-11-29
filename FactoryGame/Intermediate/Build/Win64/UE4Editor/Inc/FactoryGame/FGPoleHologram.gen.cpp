@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPoleHologram, "OnRep_PoleMesh", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPoleHologram, nullptr, "OnRep_PoleMesh", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPoleHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh, "OnRep_PoleMesh" }, // 402585183
+		{ &Z_Construct_UFunction_AFGPoleHologram_OnRep_PoleMesh, "OnRep_PoleMesh" }, // 2949998519
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::Class_MetaDataParams[] = {
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		{ "ToolTip", "The scene component for adjusting the height of the pole." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mPoleHeightComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGPoleHologram, mPoleHeightComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent = { "mPoleHeightComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPoleHologram, mPoleHeightComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -109,14 +109,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		{ "ToolTip", "The pole mesh." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mPoleMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGPoleHologram, mPoleMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent = { "mPoleMeshComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPoleHologram, mPoleMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Hologram/FGPoleHologram.h" },
 		{ "ToolTip", "The most fitting mesh for our aim height." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh = { UE4CodeGen_Private::EPropertyClass::Struct, "mPoleMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_PoleMesh", STRUCT_OFFSET(AFGPoleHologram, mPoleMesh), Z_Construct_UScriptStruct_FPoleHeightMesh, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh = { "mPoleMesh", "OnRep_PoleMesh", (EPropertyFlags)0x0020080100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGPoleHologram, mPoleMesh), Z_Construct_UScriptStruct_FPoleHeightMesh, METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGPoleHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleHeightComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGPoleHologram_Statics::NewProp_mPoleMeshComponent,
@@ -127,13 +127,17 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPoleHologram_Statics::ClassParams = {
 		&AFGPoleHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGPoleHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGPoleHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPoleHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPoleHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPoleHologram()
@@ -145,7 +149,11 @@ void EmptyLinkFunctionForGeneratedCodeFGPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPoleHologram, 3099119572);
+	IMPLEMENT_CLASS(AFGPoleHologram, 3286649045);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGPoleHologram>()
+	{
+		return AFGPoleHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPoleHologram(Z_Construct_UClass_AFGPoleHologram, &AFGPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

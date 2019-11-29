@@ -13,6 +13,7 @@ void SFGCheatBoardWidget::ShowInputWindowFor( UNumericProperty* prop){ }
 void SFGCheatBoardWidget::ShowInputWindowFor( UClass* inClass){ }
 void SFGCheatBoardWidget::ShowInputWindowFor( UStrProperty* prop){ }
 void SFGCheatBoardWidget::ShowInputWindowFor( FLinearColor color){ }
+void SFGCheatBoardWidget::ShowInputWindowFor( UEnum* enumProp){ }
 void SFGCheatBoardWidget::SetFilterTextboxFocus() const{ }
 void SFGCheatBoardWidget::ResetMenu(){ }
 void SFGCheatBoardWidget::ShowMenu( CheatMenuCategory* newMenu, FString title, FString filtervalue){ }
@@ -28,6 +29,7 @@ void SFGCheatBoardWidget::OnHoverClearFilter(){ }
 void SFGCheatBoardWidget::applyFilterWithFilterString( bool selectTypItemIfNoSelection, bool handleAndPreserveSelection ){ }
 FReply SFGCheatBoardWidget::OnBoolParm( bool value){ return FReply::Unhandled(); }
 FReply SFGCheatBoardWidget::OnClassParm( UClass* inClass){ return FReply::Unhandled(); }
+FReply SFGCheatBoardWidget::OnNumInputClicked( int32 value){ return FReply::Unhandled(); }
 void SFGCheatBoardWidget::OnClassParmAction( UClass* inClass){ }
 void SFGCheatBoardWidget::OnSetColorFromColorPicker( FLinearColor newColor){ }
 UProperty* SFGCheatBoardWidget::GetNextProperty(){ return nullptr; }

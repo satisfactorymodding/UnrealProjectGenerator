@@ -41,7 +41,12 @@ public:
 	// End AActor interface
 
 	// AFGHologram interface
+
+	virtual bool IsValidHitResult( const FHitResult& hitResult ) const override;
 	virtual void SetHologramLocationAndRotation( const FHitResult& hitResult ) override;
+
+	bool applyBuildingSnapping( FRotator &newRotation, FVector &newLocation, AFGBuildable* snapTarget, FVector traceStart, FVector traceEnd );
+
 	virtual void AdjustForGround( const FHitResult& hitResult, FVector& out_adjustedLocation, FRotator& out_adjustedRotation ) override;
 	virtual AActor* Construct( TArray< AActor* >& out_children ) override;
 	// End AFGHologram interface
@@ -82,7 +87,7 @@ protected:
 	 * Do not override this, use CheckClearance in subclasses.
 	 * @return true if check found an overlap and added an disqualifier.
 	 */
-	bool CheckClearanceForPrimitive( UPrimitiveComponent* comp, const FComponentQueryParams& params = FComponentQueryParams::DefaultComponentQueryParams );
+	bool CheckClearanceForPrimitive( UPrimitiveComponent* comp, const FComponentQueryParams& params = FComponentQueryParams::DefaultComponentQueryParams, bool allowSnapAndMoveAlongBuildings = false );
 
 	/**
 	 * Configure the snapping to a building, i.e. foundation, floor etc.
@@ -161,4 +166,6 @@ protected:
 
 	/** If we have snapped to another buildable, i.e. foundation, floor etc, this is it. */
 	class AFGBuildable* mSnappedBuilding;
+
+	bool mIsAimingAtOtherBuilding = false;
 };

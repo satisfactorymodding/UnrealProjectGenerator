@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,10 +22,14 @@ class UScriptStruct* FSharedInventoryStatePtr::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSharedInventoryStatePtr, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SharedInventoryStatePtr"), sizeof(FSharedInventoryStatePtr), Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSharedInventoryStatePtr, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SharedInventoryStatePtr"), sizeof(FSharedInventoryStatePtr), Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSharedInventoryStatePtr>()
+{
+	return FSharedInventoryStatePtr::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSharedInventoryStatePtr(FSharedInventoryStatePtr::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SharedInventoryStatePtr"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventoryStatePtr
@@ -63,7 +67,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		{ "ToolTip", "The actor we've shared ownership over." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr = { UE4CodeGen_Private::EPropertyClass::Object, "ActorPtr", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(FSharedInventoryStatePtr, ActorPtr), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr = { "ActorPtr", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSharedInventoryStatePtr, ActorPtr), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::NewProp_ActorPtr,
 	};
@@ -72,19 +76,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		nullptr,
 		&NewStructOps,
 		"SharedInventoryStatePtr",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSharedInventoryStatePtr),
 		alignof(FSharedInventoryStatePtr),
-		Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSharedInventoryStatePtr()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SharedInventoryStatePtr"), sizeof(FSharedInventoryStatePtr), Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SharedInventoryStatePtr"), sizeof(FSharedInventoryStatePtr), Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -94,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC() { return 4277274023U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash() { return 1394716256U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

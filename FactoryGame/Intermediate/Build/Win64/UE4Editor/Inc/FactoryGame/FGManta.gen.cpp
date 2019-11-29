@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGManta_eventGetCurrentTime_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGManta_eventGetCurrentTime_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::NewProp_ReturnValue,
 	};
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Gets time variable" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGManta, "GetCurrentTime", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGManta_eventGetCurrentTime_Parms), Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGManta, nullptr, "GetCurrentTime", sizeof(FGManta_eventGetCurrentTime_Parms), Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGManta_GetCurrentTime()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGManta_eventGetSpline_Parms, ReturnValue), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGManta_eventGetSpline_Parms, ReturnValue), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGManta_GetSpline_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGManta_GetSpline_Statics::NewProp_ReturnValue,
 	};
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Gets spline" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGManta_GetSpline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGManta, "GetSpline", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGManta_eventGetSpline_Parms), Z_Construct_UFunction_AFGManta_GetSpline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetSpline_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGManta_GetSpline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetSpline_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGManta_GetSpline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGManta, nullptr, "GetSpline", sizeof(FGManta_eventGetSpline_Parms), Z_Construct_UFunction_AFGManta_GetSpline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetSpline_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGManta_GetSpline_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGManta_GetSpline_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGManta_GetSpline()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -168,8 +168,8 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGManta_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGManta_GetCurrentTime, "GetCurrentTime" }, // 370763588
-		{ &Z_Construct_UFunction_AFGManta_GetSpline, "GetSpline" }, // 2709165835
+		{ &Z_Construct_UFunction_AFGManta_GetCurrentTime, "GetCurrentTime" }, // 1727538893
+		{ &Z_Construct_UFunction_AFGManta_GetSpline, "GetSpline" }, // 877386270
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::Class_MetaDataParams[] = {
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 	{
 		((AFGManta*)Obj)->mIsClosedSplineLoop = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsClosedSplineLoop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGManta), &Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop = { "mIsClosedSplineLoop", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGManta), &Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_MetaData[] = {
 		{ "Category", "Manta" },
@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 	{
 		((AFGManta*)Obj)->mTickTransform = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform = { UE4CodeGen_Private::EPropertyClass::Bool, "mTickTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGManta), &Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform = { "mTickTransform", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGManta), &Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange_MetaData[] = {
 		{ "Category", "Significance" },
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Range that this volume should be significant within" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange = { UE4CodeGen_Private::EPropertyClass::Float, "mSignificanceRange", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGManta, mSignificanceRange), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange = { "mSignificanceRange", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mSignificanceRange), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop_MetaData[] = {
 		{ "Category", "Manta" },
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "How many seconds a complete loop should take ( defaults to 900 ie 15 minutes )" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop = { UE4CodeGen_Private::EPropertyClass::Float, "mSecondsPerLoop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000801, 1, nullptr, STRUCT_OFFSET(AFGManta, mSecondsPerLoop), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop = { "mSecondsPerLoop", nullptr, (EPropertyFlags)0x0040000000000801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mSecondsPerLoop), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData[] = {
 		{ "Category", "Manta" },
@@ -224,14 +224,14 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Magnitude of the offset to add" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude = { UE4CodeGen_Private::EPropertyClass::Float, "mOffsetMagnitude", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGManta, mOffsetMagnitude), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude = { "mOffsetMagnitude", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mOffsetMagnitude), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime_MetaData[] = {
 		{ "ModuleRelativePath", "FGManta.h" },
 		{ "ToolTip", "Current time ( value between 0.0 and mSecondsPerLoop" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime = { UE4CodeGen_Private::EPropertyClass::Float, "mCurrentTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGManta, mCurrentTime), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime = { "mCurrentTime", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mCurrentTime), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh_MetaData[] = {
 		{ "EditInline", "true" },
@@ -239,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Reference to the skel mesh that was added in BP" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGManta, mCachedMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh = { "mCachedMesh", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mCachedMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath_MetaData[] = {
 		{ "Category", "Manta" },
@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Path spline that this actor should set to follow" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath = { UE4CodeGen_Private::EPropertyClass::Object, "mSplinePath", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(AFGManta, mSplinePath), Z_Construct_UClass_AFGSplinePath_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath = { "mSplinePath", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mSplinePath), Z_Construct_UClass_AFGSplinePath_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline_MetaData[] = {
 		{ "EditInline", "true" },
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		{ "ToolTip", "Reference to the spline that was added in BP" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedSpline", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGManta, mCachedSpline), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline = { "mCachedSpline", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGManta, mCachedSpline), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGManta_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform,
@@ -275,13 +275,17 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGManta_Statics::ClassParams = {
 		&AFGManta::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGManta_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGManta_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGManta()
@@ -293,7 +297,11 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGManta, 2122827230);
+	IMPLEMENT_CLASS(AFGManta, 547900633);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGManta>()
+	{
+		return AFGManta::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGManta(Z_Construct_UClass_AFGManta, &AFGManta::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGManta"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGManta);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

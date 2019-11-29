@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -44,8 +44,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGSoundSplineComponent_eventGetEmitterInterval_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::NewProp_newEmitterInterval = { UE4CodeGen_Private::EPropertyClass::Float, "newEmitterInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSoundSplineComponent_eventGetEmitterInterval_Parms, newEmitterInterval), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSoundSplineComponent_eventGetEmitterInterval_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::NewProp_newEmitterInterval = { "newEmitterInterval", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSoundSplineComponent_eventGetEmitterInterval_Parms, newEmitterInterval), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::NewProp_newEmitterInterval,
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		{ "ToolTip", "Get the distance between each emitter of the spline" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSoundSplineComponent, "GetEmitterInterval", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGSoundSplineComponent_eventGetEmitterInterval_Parms), Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSoundSplineComponent, nullptr, "GetEmitterInterval", sizeof(FGSoundSplineComponent_eventGetEmitterInterval_Parms), Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::NewProp_newEmitterInterval = { UE4CodeGen_Private::EPropertyClass::Float, "newEmitterInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGSoundSplineComponent_eventSetEmitterInterval_Parms, newEmitterInterval), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::NewProp_newEmitterInterval = { "newEmitterInterval", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSoundSplineComponent_eventSetEmitterInterval_Parms, newEmitterInterval), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::NewProp_newEmitterInterval,
 	};
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		{ "ToolTip", "Set the interval of emitters" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSoundSplineComponent, "SetEmitterInterval", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSoundSplineComponent_eventSetEmitterInterval_Parms), Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSoundSplineComponent, nullptr, "SetEmitterInterval", sizeof(FGSoundSplineComponent_eventSetEmitterInterval_Parms), Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -127,8 +127,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSoundSplineComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval, "GetEmitterInterval" }, // 4283112658
-		{ &Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval, "SetEmitterInterval" }, // 4157618699
+		{ &Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval, "GetEmitterInterval" }, // 2314986718
+		{ &Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval, "SetEmitterInterval" }, // 2593801540
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams[] = {
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		{ "UIMin", "100" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval = { UE4CodeGen_Private::EPropertyClass::Float, "mEmitterInterval", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(UFGSoundSplineComponent, mEmitterInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval = { "mEmitterInterval", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSoundSplineComponent, mEmitterInterval), METADATA_PARAMS(Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval,
 	};
@@ -158,13 +158,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSoundSplineComponent_Statics::ClassParams = {
 		&UFGSoundSplineComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers),
+		0,
+		0x00A000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSoundSplineComponent()
@@ -176,7 +180,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSoundSplineComponent, 1772224031);
+	IMPLEMENT_CLASS(UFGSoundSplineComponent, 3646621002);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSoundSplineComponent>()
+	{
+		return UFGSoundSplineComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSoundSplineComponent(Z_Construct_UClass_UFGSoundSplineComponent, &UFGSoundSplineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSoundSplineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSoundSplineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

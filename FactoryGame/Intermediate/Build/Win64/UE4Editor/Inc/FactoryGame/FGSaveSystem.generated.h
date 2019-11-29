@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -23,15 +23,21 @@ class UFGSaveSystem;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSessionSaveStruct>();
+
 #define FactoryGame_Source_FactoryGame_FGSaveSystem_h_125_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMapRedirector_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMapRedirector>();
+
 #define FactoryGame_Source_FactoryGame_FGSaveSystem_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSaveHeader_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSaveHeader>();
 
 #define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_RPC_WRAPPERS \
  \
@@ -244,6 +250,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGSaveSystem>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGSaveSystem_h
 
@@ -252,4 +260,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ESaveExists::SE_DoesntExist) \
 	op(ESaveExists::SE_ExistsInSameSession) \
 	op(ESaveExists::SE_ExistsInOtherSession) 
+
+enum class ESaveExists : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<ESaveExists>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -18,13 +18,23 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 	FACTORYGAME_API UClass* Z_Construct_UClass_AFGBuildableFactory();
 	UPackage* Z_Construct_UPackage__Script_FactoryGame();
 	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged();
+	FACTORYGAME_API UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister();
 // End Cross Module References
+	static FName NAME_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals = FName(TEXT("UpdateSwitchPositionVisuals"));
+	void AFGBuildableRailroadSwitchControl::UpdateSwitchPositionVisuals()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals),NULL);
+	}
 	void AFGBuildableRailroadSwitchControl::StaticRegisterNativesAFGBuildableRailroadSwitchControl()
 	{
 		UClass* Class = AFGBuildableRailroadSwitchControl::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetSwitchPosition", &AFGBuildableRailroadSwitchControl::execGetSwitchPosition },
+			{ "OnRep_SwitchPosition", &AFGBuildableRailroadSwitchControl::execOnRep_SwitchPosition },
+			{ "OnSwitchPositionChanged", &AFGBuildableRailroadSwitchControl::execOnSwitchPositionChanged },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -41,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGBuildableRailroadSwitchControl_eventGetSwitchPosition_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableRailroadSwitchControl_eventGetSwitchPosition_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::NewProp_ReturnValue,
 	};
@@ -52,13 +62,92 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		{ "ToolTip", "Get the current switch location." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadSwitchControl, "GetSwitchPosition", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGBuildableRailroadSwitchControl_eventGetSwitchPosition_Parms), Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadSwitchControl, nullptr, "GetSwitchPosition", sizeof(FGBuildableRailroadSwitchControl_eventGetSwitchPosition_Parms), Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadSwitchControl.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadSwitchControl, nullptr, "OnRep_SwitchPosition", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics
+	{
+		struct FGBuildableRailroadSwitchControl_eventOnSwitchPositionChanged_Parms
+		{
+			int32 newPosition;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_newPosition;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::NewProp_newPosition = { "newPosition", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBuildableRailroadSwitchControl_eventOnSwitchPositionChanged_Parms, newPosition), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::NewProp_newPosition,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadSwitchControl.h" },
+		{ "ToolTip", "Called when switch changes position, server only" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadSwitchControl, nullptr, "OnSwitchPositionChanged", sizeof(FGBuildableRailroadSwitchControl_eventOnSwitchPositionChanged_Parms), Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals_Statics::Function_MetaDataParams[] = {
+		{ "Category", "FactoryGame|Railroad|Switch" },
+		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadSwitchControl.h" },
+		{ "ToolTip", "Let blueprint get a chance to update the visuals after the switch" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRailroadSwitchControl, nullptr, "UpdateSwitchPositionVisuals", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020808, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -90,7 +179,10 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition, "GetSwitchPosition" }, // 2195636280
+		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_GetSwitchPosition, "GetSwitchPosition" }, // 2707282325
+		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnRep_SwitchPosition, "OnRep_SwitchPosition" }, // 3078456244
+		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_OnSwitchPositionChanged, "OnSwitchPositionChanged" }, // 3905052394
+		{ &Z_Construct_UFunction_AFGBuildableRailroadSwitchControl_UpdateSwitchPositionVisuals, "UpdateSwitchPositionVisuals" }, // 3787951503
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::Class_MetaDataParams[] = {
@@ -108,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		{ "ToolTip", "Current switch position read from the controlled connection, polled each tick." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition = { UE4CodeGen_Private::EPropertyClass::Int, "mSwitchPosition", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadSwitchControl, mSwitchPosition), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition = { "mSwitchPosition", "OnRep_SwitchPosition", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRailroadSwitchControl, mSwitchPosition), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection_MetaData[] = {
 		{ "EditInline", "true" },
@@ -116,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		{ "ToolTip", "Connection we control." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection = { UE4CodeGen_Private::EPropertyClass::Object, "mControlledConnection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080008, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadSwitchControl, mControlledConnection), Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection = { "mControlledConnection", nullptr, (EPropertyFlags)0x0040000001080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRailroadSwitchControl, mControlledConnection), Z_Construct_UClass_UFGRailroadTrackConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mSwitchPosition,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::NewProp_mControlledConnection,
@@ -126,13 +218,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::ClassParams = {
 		&AFGBuildableRailroadSwitchControl::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadSwitchControl_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableRailroadSwitchControl()
@@ -144,7 +240,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSwitchControl() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 878547699);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSwitchControl, 608225645);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRailroadSwitchControl>()
+	{
+		return AFGBuildableRailroadSwitchControl::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadSwitchControl(Z_Construct_UClass_AFGBuildableRailroadSwitchControl, &AFGBuildableRailroadSwitchControl::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadSwitchControl"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadSwitchControl);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::NewProp_PC = { UE4CodeGen_Private::EPropertyClass::Object, "PC", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGVirtualCursorFunctionLibrary_eventDisableVirtualCursor_Parms, PC), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::NewProp_PC = { "PC", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVirtualCursorFunctionLibrary_eventDisableVirtualCursor_Parms, PC), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::NewProp_PC,
 	};
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 		{ "ModuleRelativePath", "UI/FGVirtualCursorFunctionLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVirtualCursorFunctionLibrary, "DisableVirtualCursor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGVirtualCursorFunctionLibrary_eventDisableVirtualCursor_Parms), Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVirtualCursorFunctionLibrary, nullptr, "DisableVirtualCursor", sizeof(FGVirtualCursorFunctionLibrary_eventDisableVirtualCursor_Parms), Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::NewProp_PC = { UE4CodeGen_Private::EPropertyClass::Object, "PC", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGVirtualCursorFunctionLibrary_eventEnableVirtualCursor_Parms, PC), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::NewProp_PC = { "PC", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVirtualCursorFunctionLibrary_eventEnableVirtualCursor_Parms, PC), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::NewProp_PC,
 	};
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 		{ "ModuleRelativePath", "UI/FGVirtualCursorFunctionLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVirtualCursorFunctionLibrary, "EnableVirtualCursor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGVirtualCursorFunctionLibrary_eventEnableVirtualCursor_Parms), Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVirtualCursorFunctionLibrary, nullptr, "EnableVirtualCursor", sizeof(FGVirtualCursorFunctionLibrary_eventEnableVirtualCursor_Parms), Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -115,8 +115,8 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVirtualCursorFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor, "DisableVirtualCursor" }, // 912274315
-		{ &Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor, "EnableVirtualCursor" }, // 865799845
+		{ &Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_DisableVirtualCursor, "DisableVirtualCursor" }, // 1188857902
+		{ &Z_Construct_UFunction_UFGVirtualCursorFunctionLibrary_EnableVirtualCursor, "EnableVirtualCursor" }, // 3261828837
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVirtualCursorFunctionLibrary_Statics::Class_MetaDataParams[] = {
@@ -129,13 +129,17 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGVirtualCursorFunctionLibrary_Statics::ClassParams = {
 		&UFGVirtualCursorFunctionLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVirtualCursorFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVirtualCursorFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGVirtualCursorFunctionLibrary()
@@ -147,7 +151,11 @@ void EmptyLinkFunctionForGeneratedCodeFGVirtualCursorFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVirtualCursorFunctionLibrary, 2732006798);
+	IMPLEMENT_CLASS(UFGVirtualCursorFunctionLibrary, 4049819756);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGVirtualCursorFunctionLibrary>()
+	{
+		return UFGVirtualCursorFunctionLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVirtualCursorFunctionLibrary(Z_Construct_UClass_UFGVirtualCursorFunctionLibrary, &UFGVirtualCursorFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVirtualCursorFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVirtualCursorFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

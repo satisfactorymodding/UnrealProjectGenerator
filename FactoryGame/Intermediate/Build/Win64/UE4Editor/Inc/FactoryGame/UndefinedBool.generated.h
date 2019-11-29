@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,4 +21,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	op(EUndefinedBool::UB_Undefined) \
 	op(EUndefinedBool::UB_False) \
 	op(EUndefinedBool::UB_True) 
+
+enum class EUndefinedBool : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EUndefinedBool>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

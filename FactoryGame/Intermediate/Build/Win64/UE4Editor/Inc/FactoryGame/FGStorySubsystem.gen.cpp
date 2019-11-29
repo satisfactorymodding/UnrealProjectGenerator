@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,10 +43,14 @@ class UScriptStruct* FResearchMessageData::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FResearchMessageData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ResearchMessageData"), sizeof(FResearchMessageData), Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FResearchMessageData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ResearchMessageData"), sizeof(FResearchMessageData), Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FResearchMessageData>()
+{
+	return FResearchMessageData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FResearchMessageData(FResearchMessageData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ResearchMessageData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageData
@@ -96,7 +100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		{ "ToolTip", "Associated research" },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected = { UE4CodeGen_Private::EPropertyClass::SoftClass, "ResearchCollected", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(FResearchMessageData, ResearchCollected), Z_Construct_UClass_UFGResearchRecipe_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected = { "ResearchCollected", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchMessageData, ResearchCollected), Z_Construct_UClass_UFGResearchRecipe_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_MetaData[] = {
 		{ "Category", "Story" },
@@ -104,8 +108,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		{ "ToolTip", "Message to display" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages = { UE4CodeGen_Private::EPropertyClass::Array, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FResearchMessageData, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages = { "Messages", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FResearchMessageData, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages_Inner = { "Messages", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_MetaData[] = {
 		{ "ModuleRelativePath", "FGStorySubsystem.h" },
@@ -115,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 	{
 		((FResearchMessageData*)Obj)->wasCollected = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected = { UE4CodeGen_Private::EPropertyClass::Bool, "wasCollected", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FResearchMessageData), &Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected = { "wasCollected", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FResearchMessageData), &Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_wasCollected_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_ResearchCollected,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FResearchMessageData_Statics::NewProp_Messages,
@@ -127,19 +131,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		nullptr,
 		&NewStructOps,
 		"ResearchMessageData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FResearchMessageData),
 		alignof(FResearchMessageData),
-		Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchMessageData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ResearchMessageData"), sizeof(FResearchMessageData), Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ResearchMessageData"), sizeof(FResearchMessageData), Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -149,16 +154,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC() { return 2794814126U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash() { return 3792148160U; }
 class UScriptStruct* FSchematicMessagePair::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSchematicMessagePair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SchematicMessagePair"), sizeof(FSchematicMessagePair), Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSchematicMessagePair, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SchematicMessagePair"), sizeof(FSchematicMessagePair), Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSchematicMessagePair>()
+{
+	return FSchematicMessagePair::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSchematicMessagePair(FSchematicMessagePair::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SchematicMessagePair"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePair
@@ -203,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		{ "ToolTip", "Associated schematic" },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked = { UE4CodeGen_Private::EPropertyClass::SoftClass, "SchematicUnlocked", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(FSchematicMessagePair, SchematicUnlocked), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked = { "SchematicUnlocked", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSchematicMessagePair, SchematicUnlocked), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_MetaData[] = {
 		{ "Category", "Story" },
@@ -211,8 +220,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		{ "ToolTip", "Message to display" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages = { UE4CodeGen_Private::EPropertyClass::Array, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FSchematicMessagePair, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages = { "Messages", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSchematicMessagePair, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages_Inner = { "Messages", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_SchematicUnlocked,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::NewProp_Messages,
@@ -223,19 +232,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		nullptr,
 		&NewStructOps,
 		"SchematicMessagePair",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSchematicMessagePair),
 		alignof(FSchematicMessagePair),
-		Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSchematicMessagePair()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SchematicMessagePair"), sizeof(FSchematicMessagePair), Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SchematicMessagePair"), sizeof(FSchematicMessagePair), Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -245,16 +255,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC() { return 2902202277U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash() { return 3357229105U; }
 class UScriptStruct* FItemFoundData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemFoundData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemFoundData"), sizeof(FItemFoundData), Get_Z_Construct_UScriptStruct_FItemFoundData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemFoundData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("ItemFoundData"), sizeof(FItemFoundData), Get_Z_Construct_UScriptStruct_FItemFoundData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FItemFoundData>()
+{
+	return FItemFoundData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FItemFoundData(FItemFoundData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("ItemFoundData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
@@ -308,7 +322,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		{ "ToolTip", "Item descriptor we are looking for" },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass = { UE4CodeGen_Private::EPropertyClass::SoftClass, "ItemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(FItemFoundData, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass = { "ItemClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemFoundData, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass_MetaData[] = {
 		{ "Category", "Story" },
@@ -316,7 +330,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		{ "ToolTip", "Schematic to unlock ( if any )" },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass = { UE4CodeGen_Private::EPropertyClass::SoftClass, "SchematicClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(FItemFoundData, SchematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass = { "SchematicClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemFoundData, SchematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_MetaData[] = {
 		{ "Category", "Story" },
@@ -324,8 +338,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		{ "ToolTip", "Message that should be added when Class is found for the first time" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages = { UE4CodeGen_Private::EPropertyClass::Array, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FItemFoundData, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages = { "Messages", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FItemFoundData, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_Messages_Inner = { "Messages", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_MetaData[] = {
 		{ "ModuleRelativePath", "FGStorySubsystem.h" },
@@ -336,7 +350,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 	{
 		((FItemFoundData*)Obj)->WasFound = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound = { UE4CodeGen_Private::EPropertyClass::Bool, "WasFound", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FItemFoundData), &Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound = { "WasFound", nullptr, (EPropertyFlags)0x0010000001000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FItemFoundData), &Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_WasFound_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_ItemClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItemFoundData_Statics::NewProp_SchematicClass,
@@ -349,19 +363,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		nullptr,
 		&NewStructOps,
 		"ItemFoundData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FItemFoundData),
 		alignof(FItemFoundData),
-		Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemFoundData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemFoundData"), sizeof(FItemFoundData), Get_Z_Construct_UScriptStruct_FItemFoundData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemFoundData"), sizeof(FItemFoundData), Get_Z_Construct_UScriptStruct_FItemFoundData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -371,16 +386,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_CRC() { return 1403819034U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_Hash() { return 1477152403U; }
 class UScriptStruct* FMapAreaVisitedData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMapAreaVisitedData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MapAreaVisitedData"), sizeof(FMapAreaVisitedData), Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMapAreaVisitedData, Z_Construct_UPackage__Script_FactoryGame(), TEXT("MapAreaVisitedData"), sizeof(FMapAreaVisitedData), Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FMapAreaVisitedData>()
+{
+	return FMapAreaVisitedData::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FMapAreaVisitedData(FMapAreaVisitedData::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("MapAreaVisitedData"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
@@ -429,7 +448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Schematic to unlock ( if any )" },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass = { UE4CodeGen_Private::EPropertyClass::SoftClass, "SchematicClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(FMapAreaVisitedData, SchematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass = { "SchematicClass", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMapAreaVisitedData, SchematicClass), Z_Construct_UClass_UFGSchematic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_MetaData[] = {
 		{ "Category", "Story" },
@@ -437,8 +456,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Message that should be added when MapAreaClass is found for the first time" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages = { UE4CodeGen_Private::EPropertyClass::Array, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FMapAreaVisitedData, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "Messages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages = { "Messages", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMapAreaVisitedData, Messages), METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages_Inner = { "Messages", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass_MetaData[] = {
 		{ "Category", "Story" },
@@ -446,7 +465,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Map area class we are looking for" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass = { UE4CodeGen_Private::EPropertyClass::Class, "MapAreaClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FMapAreaVisitedData, MapAreaClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass = { "MapAreaClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMapAreaVisitedData, MapAreaClass), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_MapAreaClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_SchematicClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::NewProp_Messages,
@@ -458,19 +477,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		nullptr,
 		&NewStructOps,
 		"MapAreaVisitedData",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FMapAreaVisitedData),
 		alignof(FMapAreaVisitedData),
-		Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMapAreaVisitedData()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MapAreaVisitedData"), sizeof(FMapAreaVisitedData), Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MapAreaVisitedData"), sizeof(FMapAreaVisitedData), Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -480,7 +500,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC() { return 3225030330U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash() { return 3183647036U; }
 	void AFGStorySubsystem::StaticRegisterNativesAFGStorySubsystem()
 	{
 		UClass* Class = AFGStorySubsystem::StaticClass();
@@ -509,7 +529,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::NewProp_inPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "inPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventAddPlayer_Parms, inPlayer), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::NewProp_inPlayer = { "inPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventAddPlayer_Parms, inPlayer), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::NewProp_inPlayer,
 	};
@@ -519,7 +539,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "A player was added to the game" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "AddPlayer", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventAddPlayer_Parms), Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "AddPlayer", sizeof(FGStorySubsystem_eventAddPlayer_Parms), Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_AddPlayer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_AddPlayer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -542,7 +562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::NewProp_mapArea = { UE4CodeGen_Private::EPropertyClass::Class, "mapArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnMapAreaVisited_Parms, mapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::NewProp_mapArea = { "mapArea", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnMapAreaVisited_Parms, mapArea), Z_Construct_UClass_UFGMapArea_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::NewProp_mapArea,
 	};
@@ -552,7 +572,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Delegate for when a map area is visited for the first time by anyone" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "OnMapAreaVisited", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventOnMapAreaVisited_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "OnMapAreaVisited", sizeof(FGStorySubsystem_eventOnMapAreaVisited_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -575,7 +595,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnNewResearchRecipeAvailable_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnNewResearchRecipeAvailable_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::NewProp_researchRecipe,
 	};
@@ -585,7 +605,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Called when a recipe has become available for research" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "OnNewResearchRecipeAvailable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventOnNewResearchRecipeAvailable_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "OnNewResearchRecipeAvailable", sizeof(FGStorySubsystem_eventOnNewResearchRecipeAvailable_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -610,8 +630,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::NewProp_numAdded = { UE4CodeGen_Private::EPropertyClass::Int, "numAdded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnPlayerAddedItemToInventory_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::NewProp_itemClass = { UE4CodeGen_Private::EPropertyClass::Class, "itemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnPlayerAddedItemToInventory_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::NewProp_numAdded = { "numAdded", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnPlayerAddedItemToInventory_Parms, numAdded), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::NewProp_itemClass = { "itemClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnPlayerAddedItemToInventory_Parms, itemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::NewProp_numAdded,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::NewProp_itemClass,
@@ -622,7 +642,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Called when a player gets an item in its inventory" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "OnPlayerAddedItemToInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventOnPlayerAddedItemToInventory_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "OnPlayerAddedItemToInventory", sizeof(FGStorySubsystem_eventOnPlayerAddedItemToInventory_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -645,7 +665,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnResearchRecipeTimerComplete_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnResearchRecipeTimerComplete_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::NewProp_researchRecipe,
 	};
@@ -655,7 +675,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Called when a recipe has completed is research in the MAM" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "OnResearchRecipeTimerComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventOnResearchRecipeTimerComplete_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "OnResearchRecipeTimerComplete", sizeof(FGStorySubsystem_eventOnResearchRecipeTimerComplete_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -678,7 +698,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::NewProp_researchRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "researchRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnResearchRewardClaimed_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::NewProp_researchRecipe = { "researchRecipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnResearchRewardClaimed_Parms, researchRecipe), Z_Construct_UClass_UFGResearchRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::NewProp_researchRecipe,
 	};
@@ -688,7 +708,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Called when the player claims the reward for a completed piece of research" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "OnResearchRewardClaimed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventOnResearchRewardClaimed_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "OnResearchRewardClaimed", sizeof(FGStorySubsystem_eventOnResearchRewardClaimed_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -711,7 +731,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::NewProp_newSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "newSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGStorySubsystem_eventOnSchematicPurchased_Parms, newSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::NewProp_newSchematic = { "newSchematic", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStorySubsystem_eventOnSchematicPurchased_Parms, newSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::NewProp_newSchematic,
 	};
@@ -721,7 +741,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Called when a schematic is unlocked" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "OnSchematicPurchased", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FGStorySubsystem_eventOnSchematicPurchased_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "OnSchematicPurchased", sizeof(FGStorySubsystem_eventOnSchematicPurchased_Parms), Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -744,7 +764,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "Sets up initial delegates" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, "SetupDelegates", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStorySubsystem, nullptr, "SetupDelegates", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -803,14 +823,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGStorySubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGStorySubsystem_AddPlayer, "AddPlayer" }, // 2489410560
-		{ &Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited, "OnMapAreaVisited" }, // 1944207378
-		{ &Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable, "OnNewResearchRecipeAvailable" }, // 1629982203
-		{ &Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory, "OnPlayerAddedItemToInventory" }, // 2916300189
-		{ &Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete, "OnResearchRecipeTimerComplete" }, // 1051523645
-		{ &Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed, "OnResearchRewardClaimed" }, // 2113192542
-		{ &Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased, "OnSchematicPurchased" }, // 2626693199
-		{ &Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates, "SetupDelegates" }, // 94954212
+		{ &Z_Construct_UFunction_AFGStorySubsystem_AddPlayer, "AddPlayer" }, // 2531076124
+		{ &Z_Construct_UFunction_AFGStorySubsystem_OnMapAreaVisited, "OnMapAreaVisited" }, // 1039244835
+		{ &Z_Construct_UFunction_AFGStorySubsystem_OnNewResearchRecipeAvailable, "OnNewResearchRecipeAvailable" }, // 1126434588
+		{ &Z_Construct_UFunction_AFGStorySubsystem_OnPlayerAddedItemToInventory, "OnPlayerAddedItemToInventory" }, // 60870111
+		{ &Z_Construct_UFunction_AFGStorySubsystem_OnResearchRecipeTimerComplete, "OnResearchRecipeTimerComplete" }, // 3632816964
+		{ &Z_Construct_UFunction_AFGStorySubsystem_OnResearchRewardClaimed, "OnResearchRewardClaimed" }, // 3861991382
+		{ &Z_Construct_UFunction_AFGStorySubsystem_OnSchematicPurchased, "OnSchematicPurchased" }, // 117041078
+		{ &Z_Construct_UFunction_AFGStorySubsystem_SetupDelegates, "SetupDelegates" }, // 1164230360
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::Class_MetaDataParams[] = {
@@ -826,22 +846,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ModuleRelativePath", "FGStorySubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage = { UE4CodeGen_Private::EPropertyClass::Class, "mNewResearchAvailableMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGStorySubsystem, mNewResearchAvailableMessage), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage = { "mNewResearchAvailableMessage", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStorySubsystem, mNewResearchAvailableMessage), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage_MetaData[] = {
 		{ "Category", "Story|Research" },
 		{ "ModuleRelativePath", "FGStorySubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage = { UE4CodeGen_Private::EPropertyClass::Class, "mResearchTimerCompleteMessage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGStorySubsystem, mResearchTimerCompleteMessage), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage = { "mResearchTimerCompleteMessage", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStorySubsystem, mResearchTimerCompleteMessage), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_MetaData[] = {
 		{ "Category", "Story|Research" },
 		{ "ModuleRelativePath", "FGStorySubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData = { UE4CodeGen_Private::EPropertyClass::Array, "mResearchMessageData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGStorySubsystem, mResearchMessageData), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mResearchMessageData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FResearchMessageData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData = { "mResearchMessageData", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStorySubsystem, mResearchMessageData), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchMessageData_Inner = { "mResearchMessageData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FResearchMessageData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_MetaData[] = {
 		{ "Category", "Story|Item" },
@@ -849,8 +869,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "array of item descriptor class/message and if they have been found already" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData = { UE4CodeGen_Private::EPropertyClass::Array, "mItemFoundData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001010001, 1, nullptr, STRUCT_OFFSET(AFGStorySubsystem, mItemFoundData), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mItemFoundData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemFoundData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData = { "mItemFoundData", nullptr, (EPropertyFlags)0x0040000001010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStorySubsystem, mItemFoundData), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mItemFoundData_Inner = { "mItemFoundData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FItemFoundData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_MetaData[] = {
 		{ "Category", "Story|Schematic" },
@@ -858,15 +878,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		{ "ToolTip", "array of schematic/message pairs" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData = { UE4CodeGen_Private::EPropertyClass::Array, "mSchematicMessageData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGStorySubsystem, mSchematicMessageData), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSchematicMessageData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSchematicMessagePair, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData = { "mSchematicMessageData", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStorySubsystem, mSchematicMessageData), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mSchematicMessageData_Inner = { "mSchematicMessageData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSchematicMessagePair, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_MetaData[] = {
 		{ "ModuleRelativePath", "FGStorySubsystem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers = { UE4CodeGen_Private::EPropertyClass::Array, "mActivePlayers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(AFGStorySubsystem, mActivePlayers), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mActivePlayers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers = { "mActivePlayers", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStorySubsystem, mActivePlayers), METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mActivePlayers_Inner = { "mActivePlayers", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGStorySubsystem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mNewResearchAvailableMessage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGStorySubsystem_Statics::NewProp_mResearchTimerCompleteMessage,
@@ -887,13 +907,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGStorySubsystem_Statics::ClassParams = {
 		&AFGStorySubsystem::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGStorySubsystem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGStorySubsystem_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGStorySubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGStorySubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGStorySubsystem()
@@ -905,7 +929,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStorySubsystem, 1088172713);
+	IMPLEMENT_CLASS(AFGStorySubsystem, 3727004101);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGStorySubsystem>()
+	{
+		return AFGStorySubsystem::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStorySubsystem(Z_Construct_UClass_AFGStorySubsystem, &AFGStorySubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStorySubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStorySubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

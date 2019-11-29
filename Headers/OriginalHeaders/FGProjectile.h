@@ -51,7 +51,7 @@ public:
 	void SetTargetLocation( FVector targetLocation ) { mTargetLocation = targetLocation; }
 
 	/** Function to set up explosion effects in Blueprint */
-	UFUNCTION( BlueprintImplementableEvent, Category = "Projectile" )
+	UFUNCTION( BlueprintImplementableEvent, BlueprintCosmetic, Category = "Projectile" )
 	void PlayExplosionEffects();
 
 	void SetProjectileData( FProjectileData projectileData );

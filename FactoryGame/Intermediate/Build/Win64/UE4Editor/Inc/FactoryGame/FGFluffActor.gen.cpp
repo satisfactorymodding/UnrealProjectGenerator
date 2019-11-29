@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGFluffActor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFluffActor_Statics::ClassParams = {
 		&AFGFluffActor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFluffActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFluffActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFluffActor()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGFluffActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFluffActor, 2833499637);
+	IMPLEMENT_CLASS(AFGFluffActor, 3926939269);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGFluffActor>()
+	{
+		return AFGFluffActor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFluffActor(Z_Construct_UClass_AFGFluffActor, &AFGFluffActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFluffActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFluffActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

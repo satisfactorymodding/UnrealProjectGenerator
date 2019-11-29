@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGInteractableMarker_eventGetTrackedActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInteractableMarker_eventGetTrackedActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::NewProp_ReturnValue,
 	};
@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGInteractableMarker, "GetTrackedActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGInteractableMarker_eventGetTrackedActor_Parms), Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGInteractableMarker, nullptr, "GetTrackedActor", sizeof(FGInteractableMarker_eventGetTrackedActor_Parms), Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGInteractableMarker, "OnSetActorTracked", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGInteractableMarker, nullptr, "OnSetActorTracked", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::NewProp_trackedActor = { UE4CodeGen_Private::EPropertyClass::Object, "trackedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGInteractableMarker_eventSetTrackedActor_Parms, trackedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::NewProp_trackedActor = { "trackedActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGInteractableMarker_eventSetTrackedActor_Parms, trackedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::NewProp_trackedActor,
 	};
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGInteractableMarker, "SetTrackedActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGInteractableMarker_eventSetTrackedActor_Parms), Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGInteractableMarker, nullptr, "SetTrackedActor", sizeof(FGInteractableMarker_eventSetTrackedActor_Parms), Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -168,9 +168,9 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGInteractableMarker_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor, "GetTrackedActor" }, // 3100459973
-		{ &Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked, "OnSetActorTracked" }, // 2257714696
-		{ &Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor, "SetTrackedActor" }, // 4041047906
+		{ &Z_Construct_UFunction_AFGInteractableMarker_GetTrackedActor, "GetTrackedActor" }, // 3249777581
+		{ &Z_Construct_UFunction_AFGInteractableMarker_OnSetActorTracked, "OnSetActorTracked" }, // 2753477727
+		{ &Z_Construct_UFunction_AFGInteractableMarker_SetTrackedActor, "SetTrackedActor" }, // 4148271915
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGInteractableMarker_Statics::Class_MetaDataParams[] = {
@@ -183,20 +183,20 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController = { UE4CodeGen_Private::EPropertyClass::Object, "mCachePlayerController", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGInteractableMarker, mCachePlayerController), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController = { "mCachePlayerController", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGInteractableMarker, mCachePlayerController), Z_Construct_UClass_AFGPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor_MetaData[] = {
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor = { UE4CodeGen_Private::EPropertyClass::Object, "mTrackedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGInteractableMarker, mTrackedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor = { "mTrackedActor", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGInteractableMarker, mTrackedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius_MetaData[] = {
 		{ "Category", "InteractableMarker" },
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mDesiredScreenRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(AFGInteractableMarker, mDesiredScreenRadius), METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius = { "mDesiredScreenRadius", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGInteractableMarker, mDesiredScreenRadius), METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mDesiredScreenRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh_MetaData[] = {
 		{ "Category", "InteractableMarker" },
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGInteractableMarker, mSplineMesh), Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh = { "mSplineMesh", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGInteractableMarker, mSplineMesh), Z_Construct_UClass_USplineMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mSplineMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget_MetaData[] = {
 		{ "Category", "InteractableMarker" },
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		{ "ModuleRelativePath", "FGInteractableMarker.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget = { UE4CodeGen_Private::EPropertyClass::Object, "mIconWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(AFGInteractableMarker, mIconWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget = { "mIconWidget", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGInteractableMarker, mIconWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mIconWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGInteractableMarker_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mCachePlayerController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGInteractableMarker_Statics::NewProp_mTrackedActor,
@@ -225,13 +225,17 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGInteractableMarker_Statics::ClassParams = {
 		&AFGInteractableMarker::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGInteractableMarker_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGInteractableMarker_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGInteractableMarker_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGInteractableMarker_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGInteractableMarker()
@@ -243,7 +247,11 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractableMarker() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractableMarker, 4218413870);
+	IMPLEMENT_CLASS(AFGInteractableMarker, 4203770747);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGInteractableMarker>()
+	{
+		return AFGInteractableMarker::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGInteractableMarker(Z_Construct_UClass_AFGInteractableMarker, &AFGInteractableMarker::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGInteractableMarker"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGInteractableMarker);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

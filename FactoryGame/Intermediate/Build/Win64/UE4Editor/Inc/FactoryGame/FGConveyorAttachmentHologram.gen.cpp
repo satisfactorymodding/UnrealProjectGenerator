@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		{ "ToolTip", "The conveyor we snapped to." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedConveyor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mSnappedConveyor), Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor = { "mSnappedConveyor", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mSnappedConveyor), Z_Construct_UClass_AFGBuildableConveyorBelt_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle_MetaData[] = {
 		{ "Category", "Conveyor Attachment" },
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		{ "ToolTip", "Used to limit the placement in turns. What's the maximum angle." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxValidTurnAngle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mMaxValidTurnAngle), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle = { "mMaxValidTurnAngle", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mMaxValidTurnAngle), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData[] = {
 		{ "Category", "Conveyor Attachment" },
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		{ "ToolTip", "Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset = { UE4CodeGen_Private::EPropertyClass::Float, "mMaxValidTurnOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mMaxValidTurnOffset), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset = { "mMaxValidTurnOffset", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGConveyorAttachmentHologram, mMaxValidTurnOffset), METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnOffset_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mSnappedConveyor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::NewProp_mMaxValidTurnAngle,
@@ -93,13 +93,17 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::ClassParams = {
 		&AFGConveyorAttachmentHologram::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGConveyorAttachmentHologram_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGConveyorAttachmentHologram()
@@ -111,7 +115,11 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorAttachmentHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 359585468);
+	IMPLEMENT_CLASS(AFGConveyorAttachmentHologram, 1014019513);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGConveyorAttachmentHologram>()
+	{
+		return AFGConveyorAttachmentHologram::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorAttachmentHologram(Z_Construct_UClass_AFGConveyorAttachmentHologram, &AFGConveyorAttachmentHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorAttachmentHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorAttachmentHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,8 +19,6 @@ void AFGVehicle::GainedSignificance_Implementation(){ }
 void AFGVehicle::LostSignificance_Implementation(){ }
 float AFGVehicle::GetSignificanceBias(){ return float(); }
 float AFGVehicle::GetSignificanceRange(){ return float(); }
-void AFGVehicle::SetPrimaryColor_Implementation( FLinearColor newColor){ }
-void AFGVehicle::SetSecondaryColor_Implementation( FLinearColor newColor){ }
 FLinearColor AFGVehicle::GetPrimaryColor_Implementation(){ return FLinearColor(); }
 FLinearColor AFGVehicle::GetSecondaryColor_Implementation(){ return FLinearColor(); }
 void AFGVehicle::StartIsAimedAtForColor_Implementation(  AFGCharacterPlayer* byCharacter){ }
@@ -58,6 +56,7 @@ bool AFGVehicle::IsAlive_Implementation() const{ return bool(); }
 FVector AFGVehicle::GetAttackLocation_Implementation() const{ return FVector(); }
 USkeletalMeshComponent* AFGVehicle::GetMesh() const{ return nullptr; }
 UFGHealthComponent* AFGVehicle::GetHealthComponent(){ return nullptr; }
+bool AFGVehicle::DriverEnter(  AFGCharacterPlayer* driver){ return bool(); }
 bool AFGVehicle::DriverLeave( bool keepDriving ){ return bool(); }
 bool AFGVehicle::CanSelfDriverEnter(  AAIController* ai) const{ return bool(); }
 bool AFGVehicle::SelfDriverEnter(  AAIController* ai){ return bool(); }
@@ -76,7 +75,5 @@ void AFGVehicle::DestroyVehicle(){ }
 void AFGVehicle::ShowOutline( EOutlineColor color) const{ }
 void AFGVehicle::HideOutline(){ }
 void AFGVehicle::SetSelfDriving( bool newSelfDriving){ }
-void AFGVehicle::OnRep_PrimaryColor(){ }
-void AFGVehicle::OnRep_SecondaryColor(){ }
 void AFGVehicle::UpdatePhysicsVolume( APhysicsVolume* physicsVolume){ }
 FName AFGVehicle::VehicleMeshComponentName = FName();

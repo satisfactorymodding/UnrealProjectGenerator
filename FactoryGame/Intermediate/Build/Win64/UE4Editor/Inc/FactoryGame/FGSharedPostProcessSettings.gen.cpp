@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		{ "ToolTip", "Priority of the post process effect" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority = { UE4CodeGen_Private::EPropertyClass::Float, "mPriority", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGSharedPostProcessSettings, mPriority), METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority = { "mPriority", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSharedPostProcessSettings, mPriority), METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		{ "ToolTip", "How much do we want to blend in the post process effect" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight = { UE4CodeGen_Private::EPropertyClass::Float, "mBlendWeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGSharedPostProcessSettings, mBlendWeight), METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight = { "mBlendWeight", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSharedPostProcessSettings, mBlendWeight), METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		{ "ToolTip", "At what distance do we want to blend in the post process settings for the water" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mBlendRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGSharedPostProcessSettings, mBlendRadius), METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius = { "mBlendRadius", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSharedPostProcessSettings, mBlendRadius), METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		{ "ToolTip", "Normal settings for post process" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings = { UE4CodeGen_Private::EPropertyClass::Struct, "mPostProcessSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGSharedPostProcessSettings, mPostProcessSettings), Z_Construct_UScriptStruct_FPostProcessSettings, METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings = { "mPostProcessSettings", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGSharedPostProcessSettings, mPostProcessSettings), Z_Construct_UScriptStruct_FPostProcessSettings, METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPostProcessSettings_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mPriority,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::NewProp_mBlendWeight,
@@ -108,13 +108,17 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::ClassParams = {
 		&UFGSharedPostProcessSettings::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers),
+		0,
+		0x000000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSharedPostProcessSettings()
@@ -126,7 +130,11 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 1078830981);
+	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 2057318404);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGSharedPostProcessSettings>()
+	{
+		return UFGSharedPostProcessSettings::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSharedPostProcessSettings(Z_Construct_UClass_UFGSharedPostProcessSettings, &UFGSharedPostProcessSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSharedPostProcessSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSharedPostProcessSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

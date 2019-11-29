@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGVehicleDestroyableInterface_eventGetDestroyAudioEvent_Parms, ReturnValue), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleDestroyableInterface_eventGetDestroyAudioEvent_Parms, ReturnValue), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::NewProp_ReturnValue,
 	};
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		{ "ToolTip", "Audio event to be posted when destroyed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleDestroyableInterface, "GetDestroyAudioEvent", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGVehicleDestroyableInterface_eventGetDestroyAudioEvent_Parms), Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleDestroyableInterface, nullptr, "GetDestroyAudioEvent", sizeof(FGVehicleDestroyableInterface_eventGetDestroyAudioEvent_Parms), Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGVehicleDestroyableInterface_eventGetDestroyEffect_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleDestroyableInterface_eventGetDestroyEffect_Parms, ReturnValue), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::NewProp_ReturnValue,
 	};
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		{ "ToolTip", "Particle System to be played when destroyed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleDestroyableInterface, "GetDestroyEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGVehicleDestroyableInterface_eventGetDestroyEffect_Parms), Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleDestroyableInterface, nullptr, "GetDestroyEffect", sizeof(FGVehicleDestroyableInterface_eventGetDestroyEffect_Parms), Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGVehicleDestroyableInterface_eventGetForceThreshold_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGVehicleDestroyableInterface_eventGetForceThreshold_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::NewProp_ReturnValue,
 	};
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		{ "ToolTip", "@returns the force required (if any) to destroy this object" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleDestroyableInterface, "GetForceThreshold", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGVehicleDestroyableInterface_eventGetForceThreshold_Parms), Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleDestroyableInterface, nullptr, "GetForceThreshold", sizeof(FGVehicleDestroyableInterface_eventGetForceThreshold_Parms), Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -160,9 +160,9 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent, "GetDestroyAudioEvent" }, // 389546640
-		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 3602495475
-		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold, "GetForceThreshold" }, // 950515450
+		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent, "GetDestroyAudioEvent" }, // 1241213341
+		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 2292255239
+		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold, "GetForceThreshold" }, // 84251254
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::Class_MetaDataParams[] = {
@@ -177,13 +177,17 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::ClassParams = {
 		&UFGVehicleDestroyableInterface::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGVehicleDestroyableInterface()
@@ -195,7 +199,11 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 3348192721);
+	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 1253567551);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGVehicleDestroyableInterface>()
+	{
+		return UFGVehicleDestroyableInterface::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleDestroyableInterface(Z_Construct_UClass_UFGVehicleDestroyableInterface, &UFGVehicleDestroyableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleDestroyableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleDestroyableInterface);
 	static FName NAME_UFGVehicleDestroyableInterface_GetDestroyAudioEvent = FName(TEXT("GetDestroyAudioEvent"));

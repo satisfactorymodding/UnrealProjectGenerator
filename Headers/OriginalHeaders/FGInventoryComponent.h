@@ -344,6 +344,11 @@ public:
 	UFUNCTION( BlueprintPure, Category = "Inventory" )
 	void GetInventoryStacks( TArray< FInventoryStack >& out_stacks ) const;
 
+	/** Returns the indexes of relevant stacks depending on the given items classes, 
+	indexes are sorted first by class and secondly in ascending stack size */ 
+	UFUNCTION( BlueprintPure, Category = "Inventory" )
+	TArray<int32> GetRelevantStackIndexes( TArray< TSubclassOf< class UFGItemDescriptor > > relevantClasses, int32 stackLimit );
+
 	/** Called when this inventory has been resized */
 	UPROPERTY( BlueprintAssignable, Category = "Inventory", DisplayName = "OnInventoryResized" )
 	FInventoryResized ResizeInventoryDelegate;

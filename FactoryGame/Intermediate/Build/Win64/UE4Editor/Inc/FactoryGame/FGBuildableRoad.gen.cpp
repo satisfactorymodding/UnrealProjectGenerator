@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -74,8 +74,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		{ "ToolTip", "Spline data saved in a compact form for saving and replicating. All the vectors are in local space." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData = { UE4CodeGen_Private::EPropertyClass::Array, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableRoad, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSplineData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData = { "mSplineData", nullptr, (EPropertyFlags)0x0040000001000020, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRoad, mSplineData), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_Inner = { "mSplineData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSplinePointData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		{ "ToolTip", "The spline component for this train track." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mSplineComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableRoad, mSplineComponent), Z_Construct_UClass_UFGSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent = { "mSplineComponent", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRoad, mSplineComponent), Z_Construct_UClass_UFGSplineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1_MetaData[] = {
 		{ "Category", "Road" },
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		{ "ToolTip", "Second connection on tack" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1 = { UE4CodeGen_Private::EPropertyClass::Object, "mConnection1", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableRoad, mConnection1), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1 = { "mConnection1", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRoad, mConnection1), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection1_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0_MetaData[] = {
 		{ "Category", "Road" },
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		{ "ToolTip", "First connection on track" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0 = { UE4CodeGen_Private::EPropertyClass::Object, "mConnection0", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AFGBuildableRoad, mConnection0), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0 = { "mConnection0", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableRoad, mConnection0), Z_Construct_UClass_UFGRoadConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mConnection0_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableRoad_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableRoad_Statics::NewProp_mSplineData_Inner,
@@ -115,13 +115,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableRoad_Statics::ClassParams = {
 		&AFGBuildableRoad::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A4u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGBuildableRoad_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGBuildableRoad_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::PropPointers),
+		0,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRoad_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRoad_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableRoad()
@@ -133,7 +137,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRoad() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRoad, 3119480365);
+	IMPLEMENT_CLASS(AFGBuildableRoad, 407238927);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableRoad>()
+	{
+		return AFGBuildableRoad::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRoad(Z_Construct_UClass_AFGBuildableRoad, &AFGBuildableRoad::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRoad"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRoad);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

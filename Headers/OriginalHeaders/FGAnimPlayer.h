@@ -23,6 +23,10 @@ public:
 
 	/** Sets value for back slot */
 	void CacheBackSlotData();
+private:
+	/* Begin AFGCharacterAnimInstance*/
+	virtual FVector GetCharacterVelocity() const override;
+	/* End AFGCharacterAnimInstance*/
 public: 
 	/** Is first or third person mesh? */
 	UPROPERTY( EditDefaultsOnly, Category = "Anim Player" )

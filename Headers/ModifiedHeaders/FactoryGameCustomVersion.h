@@ -46,6 +46,9 @@ struct FFactoryGameCustomVersion
 		// 2019-04-24: Changed so that fuel classes default values are separated from what's replicated to clients
 		ChangedFuelClassesStorage,
 
+		// 2019-10-02: Refactored unlock system and migrated schematic data to new unlock system
+		RefactoredUnlockSystem,
+
 		// -----<new versions can be added above this line>-------------------------------------------------
 		VersionPlusOne,
 		LatestVersion = VersionPlusOne - 1

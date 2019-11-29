@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGStartingPod_eventGetCachedPlayer_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGStartingPod_eventGetCachedPlayer_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::NewProp_ReturnValue,
 	};
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		{ "ToolTip", "Getter for player" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, "GetCachedPlayer", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGStartingPod_eventGetCachedPlayer_Parms), Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, nullptr, "GetCachedPlayer", sizeof(FGStartingPod_eventGetCachedPlayer_Parms), Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		{ "ModuleRelativePath", "FGStartingPod.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, "OnPlayerSkipIntroSequence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, nullptr, "OnPlayerSkipIntroSequence", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		{ "ToolTip", "Start the pod animation" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, "StartSequence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, nullptr, "StartSequence", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGStartingPod_StartSequence()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -158,9 +158,9 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGStartingPod_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer, "GetCachedPlayer" }, // 133541224
-		{ &Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence, "OnPlayerSkipIntroSequence" }, // 1160432212
-		{ &Z_Construct_UFunction_AFGStartingPod_StartSequence, "StartSequence" }, // 907969185
+		{ &Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer, "GetCachedPlayer" }, // 1629462787
+		{ &Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence, "OnPlayerSkipIntroSequence" }, // 4079020916
+		{ &Z_Construct_UFunction_AFGStartingPod_StartSequence, "StartSequence" }, // 1408658709
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::Class_MetaDataParams[] = {
@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		{ "ToolTip", "Main mesh" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mDropPodMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a001d, 1, nullptr, STRUCT_OFFSET(AFGStartingPod, mDropPodMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh = { "mDropPodMesh", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStartingPod, mDropPodMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_MetaData[] = {
 		{ "Category", "Dismantle" },
@@ -184,15 +184,15 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		{ "ToolTip", "Array containing how much to get back when dismantling this bad boy" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks = { UE4CodeGen_Private::EPropertyClass::Array, "mDismantleStacks", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010015, 1, nullptr, STRUCT_OFFSET(AFGStartingPod, mDismantleStacks), METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDismantleStacks", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks = { "mDismantleStacks", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStartingPod, mDismantleStacks), METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_Inner = { "mDismantleStacks", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer_MetaData[] = {
 		{ "ModuleRelativePath", "FGStartingPod.h" },
 		{ "ToolTip", "Player associated with this pod" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedPlayer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000020, 1, nullptr, STRUCT_OFFSET(AFGStartingPod, mCachedPlayer), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer = { "mCachedPlayer", nullptr, (EPropertyFlags)0x0010000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGStartingPod, mCachedPlayer), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGStartingPod_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks,
@@ -207,13 +207,17 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGStartingPod_Statics::ClassParams = {
 		&AFGStartingPod::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGStartingPod_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGStartingPod_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGStartingPod_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGStartingPod_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGStartingPod()
@@ -225,7 +229,11 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStartingPod, 3250995277);
+	IMPLEMENT_CLASS(AFGStartingPod, 3443209779);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGStartingPod>()
+	{
+		return AFGStartingPod::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStartingPod(Z_Construct_UClass_AFGStartingPod, &AFGStartingPod::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStartingPod"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStartingPod);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

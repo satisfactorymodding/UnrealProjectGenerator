@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -78,16 +78,16 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_popupClass = { UE4CodeGen_Private::EPropertyClass::Class, "popupClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, popupClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_PopupID = { UE4CodeGen_Private::EPropertyClass::Byte, "PopupID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, PopupID), Z_Construct_UEnum_FactoryGame_EPopupId, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_popupClass = { "popupClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, popupClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_PopupID = { "PopupID", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, PopupID), Z_Construct_UEnum_FactoryGame_EPopupId, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate = { UE4CodeGen_Private::EPropertyClass::Delegate, "ConfirmClickDelegate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, ConfirmClickDelegate), Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate_MetaData)) };
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_Body = { UE4CodeGen_Private::EPropertyClass::Text, "Body", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, Body), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_Title = { UE4CodeGen_Private::EPropertyClass::Text, "Title", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate = { "ConfirmClickDelegate", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, ConfirmClickDelegate), Z_Construct_UDelegateFunction_FactoryGame_PopupConfirmClicked__DelegateSignature, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_ConfirmClickDelegate_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_Body = { "Body", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, Body), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventAddPopup_Parms, Title), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_popupClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::NewProp_PopupID,
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "AddPopup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(FGBaseUI_eventAddPopup_Parms), Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "AddPopup", sizeof(FGBaseUI_eventAddPopup_Parms), Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_AddPopup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBaseUI_AddPopup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Closes a popup" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "ClosePopup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "ClosePopup", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBaseUI_ClosePopup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -159,8 +159,8 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventCreatePopupWidget_Parms, ReturnValue), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_popupData = { UE4CodeGen_Private::EPropertyClass::Struct, "popupData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008000000080, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventCreatePopupWidget_Parms, popupData), Z_Construct_UScriptStruct_FPopupData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventCreatePopupWidget_Parms, ReturnValue), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_popupData = { "popupData", nullptr, (EPropertyFlags)0x0010008000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventCreatePopupWidget_Parms, popupData), Z_Construct_UScriptStruct_FPopupData, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::NewProp_popupData,
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Creates a popup" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "CreatePopupWidget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, sizeof(FGBaseUI_eventCreatePopupWidget_Parms), Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "CreatePopupWidget", sizeof(FGBaseUI_eventCreatePopupWidget_Parms), Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventGetPopup_Parms, ReturnValue), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventGetPopup_Parms, ReturnValue), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::NewProp_ReturnValue,
 	};
@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Getter for popup" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "GetPopup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBaseUI_eventGetPopup_Parms), Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "GetPopup", sizeof(FGBaseUI_eventGetPopup_Parms), Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBaseUI_GetPopup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Removes a pending popup" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "PopPopupQueue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "PopPopupQueue", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBaseUI_PopPopupQueue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -269,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup = { UE4CodeGen_Private::EPropertyClass::Object, "inPopup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGBaseUI_eventSetPopup_Parms, inPopup), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup = { "inPopup", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGBaseUI_eventSetPopup_Parms, inPopup), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::NewProp_inPopup,
 	};
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Sets the popup variable" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, "SetPopup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGBaseUI_eventSetPopup_Parms), Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBaseUI, nullptr, "SetPopup", sizeof(FGBaseUI_eventSetPopup_Parms), Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGBaseUI_SetPopup()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -314,12 +314,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBaseUI_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 3908759871
-		{ &Z_Construct_UFunction_UFGBaseUI_ClosePopup, "ClosePopup" }, // 3392204301
-		{ &Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget, "CreatePopupWidget" }, // 607760847
-		{ &Z_Construct_UFunction_UFGBaseUI_GetPopup, "GetPopup" }, // 1505797349
-		{ &Z_Construct_UFunction_UFGBaseUI_PopPopupQueue, "PopPopupQueue" }, // 816341727
-		{ &Z_Construct_UFunction_UFGBaseUI_SetPopup, "SetPopup" }, // 647460329
+		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 3024325436
+		{ &Z_Construct_UFunction_UFGBaseUI_ClosePopup, "ClosePopup" }, // 1321730032
+		{ &Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget, "CreatePopupWidget" }, // 3300798763
+		{ &Z_Construct_UFunction_UFGBaseUI_GetPopup, "GetPopup" }, // 3833310404
+		{ &Z_Construct_UFunction_UFGBaseUI_PopPopupQueue, "PopPopupQueue" }, // 347399070
+		{ &Z_Construct_UFunction_UFGBaseUI_SetPopup, "SetPopup" }, // 1420863260
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBaseUI_Statics::Class_MetaDataParams[] = {
@@ -335,7 +335,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "ToolTip", "Current active popup" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup = { UE4CodeGen_Private::EPropertyClass::Object, "mActivePopup", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(UFGBaseUI, mActivePopup), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup = { "mActivePopup", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGBaseUI, mActivePopup), Z_Construct_UClass_UFGPopupWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGBaseUI_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup,
 	};
@@ -344,13 +344,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGBaseUI_Statics::ClassParams = {
 		&UFGBaseUI::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGBaseUI_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGBaseUI_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGBaseUI_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGBaseUI_Statics::PropPointers),
+		0,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGBaseUI_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGBaseUI_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGBaseUI()
@@ -362,7 +366,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBaseUI, 234251771);
+	IMPLEMENT_CLASS(UFGBaseUI, 1376260107);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGBaseUI>()
+	{
+		return UFGBaseUI::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBaseUI(Z_Construct_UClass_UFGBaseUI, &UFGBaseUI::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBaseUI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBaseUI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

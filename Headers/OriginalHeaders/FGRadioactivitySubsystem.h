@@ -47,6 +47,62 @@ public:
 	TArray< FRadioactiveEmitter > Emitters;
 };
 
+USTRUCT()
+struct FRemoveEmitterID
+{
+	GENERATED_BODY()
+public:
+	FRemoveEmitterID(){}
+
+	FRemoveEmitterID( UObject* owner, int32 UID ) :
+		Owner( owner ),
+		UID( UID )
+	{
+	}
+
+	UPROPERTY()
+	UObject* Owner;
+
+	int32 UID;
+};
+
+USTRUCT()
+struct FSetEmitterID
+{
+	GENERATED_BODY()
+public:
+	FSetEmitterID(){}
+
+	FSetEmitterID( UObject* owner,
+				   USceneComponent* attachRoot,
+				   FVector attachLocation,
+				   TSubclassOf< UFGItemDescriptor > itemClass,
+				   int32 itemAmount,
+				   int32 UID ) :
+		Owner( owner ),
+		AttachRoot( attachRoot ),
+		AttachLocation( attachLocation ),
+		ItemClass( itemClass ),
+		ItemAmount( itemAmount ),
+		UID( UID )
+	{
+	}
+
+	UPROPERTY()
+	UObject* Owner;
+
+	UPROPERTY()
+	USceneComponent* AttachRoot;
+
+	FVector AttachLocation;
+
+	TSubclassOf< UFGItemDescriptor > ItemClass;
+
+	int32 ItemAmount;
+
+	int32 UID;
+};
+
 
 /**
  * Actor for handling the radioactive items.
@@ -95,6 +151,14 @@ public:
 					 int32 itemAmount,
 					 int32 UID = INDEX_NONE );
 
+	/** Thread safe version of SetEmitter. Queues the add/update of an radioactive emitter */
+	void SetEmitter_Threadsafe( UObject* owner,
+								USceneComponent* attachRoot,
+								const FVector& attachLocation,
+								TSubclassOf< UFGItemDescriptor > itemClass,
+								int32 itemAmount,
+								int32 UID = INDEX_NONE );
+
 	/**
 	 * @see overload
 	 *
@@ -105,6 +169,9 @@ public:
 					 const FVector& attachLocation,
 					 float decay,
 					 int32 UID = INDEX_NONE );
+
+	/** Thread safe version of RemoveEmitter. Queues the removal of an radioactive emitter */
+	void RemoveEmitter_Threadsafe( UObject* owner, int32 UID );
 
 	/** Removes a specific emitter. */
 	void RemoveEmitter( UObject* owner, int32 UID );
@@ -141,6 +208,12 @@ private:
 	/** All the radioactive sources. */
 	UPROPERTY()
 	TMap< UObject*, FRadioactiveSource > mSources;
+
+	/** Thread safe queue for storing emitters that shall be removed */
+	TQueue< FRemoveEmitterID > mEmittersToRemove;
+
+	/** Thread safe queue for storing emitters that shall be set */
+	TQueue< FSetEmitterID > mEmittersToSet;
 
 	/** All actors that can take damage from radiation. */
 	UPROPERTY()

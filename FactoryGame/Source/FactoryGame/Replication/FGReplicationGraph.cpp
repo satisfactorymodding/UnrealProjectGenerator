@@ -20,7 +20,7 @@ void UFGReplicationGraph::OnCharacterPlayerUnequip(  AFGCharacterPlayer* pawn,  
 void UFGReplicationGraph::OnCharacterPlayerFoliagePickupSpawned(  AFGCharacterPlayer* pawn,  AFGFoliagePickup* foliagePickup){ }
 void UFGReplicationGraph::OnBuildableRegistedPlayerChanged(  AFGBuildable* buildable,  AFGCharacterPlayer* player, bool isInUse){ }
 void UFGReplicationGraph::OnFactoryProductionStatusChanged(  AFGBuildable* buildable, EProductionStatus oldStatus, EProductionStatus newStatus){ }
-EClassRepPolicy UFGReplicationGraph::GetMappingPolicy( const UClass* inClass){ return EClassRepPolicy(); }
+EClassRepPolicy UFGReplicationGraph::GetMappingPolicy( UClass* inClass){ return EClassRepPolicy(); }
 void UFGReplicationGraph::LogCurrentActorDependencyList( FGlobalActorReplicationInfo& actorInfo, FString& logMarker){ }
 UReplicationGraphNode_AlwaysRelevant_ForConnection* UFGReplicationGraph::GetAlwaysRelevantNodeForConnection( UNetConnection* Connection){ return nullptr; }
 void UFGReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorListsForConnection( const FConnectionGatherActorListParameters& Params){ }

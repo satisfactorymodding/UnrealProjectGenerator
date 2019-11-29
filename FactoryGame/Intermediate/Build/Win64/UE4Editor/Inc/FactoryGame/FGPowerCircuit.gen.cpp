@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -30,10 +30,14 @@ class UScriptStruct* FPowerCircuitStats::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPowerCircuitStats, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PowerCircuitStats"), sizeof(FPowerCircuitStats), Get_Z_Construct_UScriptStruct_FPowerCircuitStats_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPowerCircuitStats, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PowerCircuitStats"), sizeof(FPowerCircuitStats), Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FPowerCircuitStats>()
+{
+	return FPowerCircuitStats::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPowerCircuitStats(FPowerCircuitStats::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("PowerCircuitStats"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
@@ -98,15 +102,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		{ "ToolTip", "The index we count as the first index in our ring buffer" },
 	};
 #endif
-	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex = { UE4CodeGen_Private::EPropertyClass::Int8, "FirstIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, FirstIndex), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex_MetaData)) };
+	const UE4CodeGen_Private::FInt8PropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex = { "FirstIndex", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, FirstIndex), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_MetaData[] = {
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "All the points on the graph." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items = { UE4CodeGen_Private::EPropertyClass::Array, "Items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, Items), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "Items", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FPowerGraphPoint, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items = { "Items", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, Items), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FPowerGraphPoint, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed_MetaData[] = {
 		{ "Category", "PowerCircuitStats" },
@@ -114,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		{ "ToolTip", "How much power is consumed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed = { UE4CodeGen_Private::EPropertyClass::Float, "PowerConsumed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000014, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, PowerConsumed), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed = { "PowerConsumed", nullptr, (EPropertyFlags)0x0010000080000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, PowerConsumed), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerConsumed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced_MetaData[] = {
 		{ "Category", "PowerCircuitStats" },
@@ -122,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		{ "ToolTip", "How much power is produced." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced = { UE4CodeGen_Private::EPropertyClass::Float, "PowerProduced", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000014, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, PowerProduced), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced = { "PowerProduced", nullptr, (EPropertyFlags)0x0010000080000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, PowerProduced), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProduced_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity_MetaData[] = {
 		{ "Category", "PowerCircuitStats" },
@@ -130,7 +134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		{ "ToolTip", "How much power can be produced." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity = { UE4CodeGen_Private::EPropertyClass::Float, "PowerProductionCapacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000014, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, PowerProductionCapacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity = { "PowerProductionCapacity", nullptr, (EPropertyFlags)0x0010000080000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, PowerProductionCapacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_PowerProductionCapacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime_MetaData[] = {
 		{ "Category", "PowerCircuitStats" },
@@ -138,7 +142,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		{ "ToolTip", "For how long do we keep the stats." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime = { UE4CodeGen_Private::EPropertyClass::Float, "StatHistoryTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000014, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, StatHistoryTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime = { "StatHistoryTime", nullptr, (EPropertyFlags)0x0010000080000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, StatHistoryTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatHistoryTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime_MetaData[] = {
 		{ "Category", "PowerCircuitStats" },
@@ -146,7 +150,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		{ "ToolTip", "The duration between each stat." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime = { UE4CodeGen_Private::EPropertyClass::Float, "StatIntervalTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000014, 1, nullptr, STRUCT_OFFSET(FPowerCircuitStats, StatIntervalTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime = { "StatIntervalTime", nullptr, (EPropertyFlags)0x0010000080000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerCircuitStats, StatIntervalTime), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_StatIntervalTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_FirstIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::NewProp_Items,
@@ -162,19 +166,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		nullptr,
 		&NewStructOps,
 		"PowerCircuitStats",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FPowerCircuitStats),
 		alignof(FPowerCircuitStats),
-		Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPowerCircuitStats()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PowerCircuitStats"), sizeof(FPowerCircuitStats), Get_Z_Construct_UScriptStruct_FPowerCircuitStats_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PowerCircuitStats"), sizeof(FPowerCircuitStats), Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -184,16 +189,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_CRC() { return 1308467691U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash() { return 4235330176U; }
 class UScriptStruct* FPowerGraphPoint::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPowerGraphPoint, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PowerGraphPoint"), sizeof(FPowerGraphPoint), Get_Z_Construct_UScriptStruct_FPowerGraphPoint_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPowerGraphPoint, Z_Construct_UPackage__Script_FactoryGame(), TEXT("PowerGraphPoint"), sizeof(FPowerGraphPoint), Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FPowerGraphPoint>()
+{
+	return FPowerGraphPoint::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPowerGraphPoint(FPowerGraphPoint::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("PowerGraphPoint"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
@@ -241,14 +250,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity = { UE4CodeGen_Private::EPropertyClass::Float, "ProductionCapacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FPowerGraphPoint, ProductionCapacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity = { "ProductionCapacity", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerGraphPoint, ProductionCapacity), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced_MetaData[] = {
 		{ "Category", "PowerGraphPoint" },
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced = { UE4CodeGen_Private::EPropertyClass::Float, "Produced", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FPowerGraphPoint, Produced), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced = { "Produced", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerGraphPoint, Produced), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed_MetaData[] = {
 		{ "Category", "PowerGraphPoint" },
@@ -256,7 +265,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		{ "ToolTip", "Data for this point." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed = { UE4CodeGen_Private::EPropertyClass::Float, "Consumed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FPowerGraphPoint, Consumed), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed = { "Consumed", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPowerGraphPoint, Consumed), METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Consumed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_ProductionCapacity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::NewProp_Produced,
@@ -267,19 +276,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		nullptr,
 		&NewStructOps,
 		"PowerGraphPoint",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FPowerGraphPoint),
 		alignof(FPowerGraphPoint),
-		Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPowerGraphPoint()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PowerGraphPoint"), sizeof(FPowerGraphPoint), Get_Z_Construct_UScriptStruct_FPowerGraphPoint_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PowerGraphPoint"), sizeof(FPowerGraphPoint), Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -289,7 +299,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_CRC() { return 1174854456U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash() { return 1581317822U; }
 	void UFGPowerCircuit::StaticRegisterNativesUFGPowerCircuit()
 	{
 		UClass* Class = UFGPowerCircuit::StaticClass();
@@ -329,15 +339,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	{
 		((FGPowerCircuit_eventGetGraphPointAtIndex_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPowerCircuit_eventGetGraphPointAtIndex_Parms), &Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_out_item = { UE4CodeGen_Private::EPropertyClass::Struct, "out_item", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGPowerCircuit_eventGetGraphPointAtIndex_Parms, out_item), Z_Construct_UScriptStruct_FPowerGraphPoint, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_idx = { UE4CodeGen_Private::EPropertyClass::Int, "idx", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGPowerCircuit_eventGetGraphPointAtIndex_Parms, idx), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPowerCircuit_eventGetGraphPointAtIndex_Parms), &Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_out_item = { "out_item", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuit_eventGetGraphPointAtIndex_Parms, out_item), Z_Construct_UScriptStruct_FPowerGraphPoint, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_idx = { "idx", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuit_eventGetGraphPointAtIndex_Parms, idx), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats = { UE4CodeGen_Private::EPropertyClass::Struct, "stats", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPowerCircuit_eventGetGraphPointAtIndex_Parms, stats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats = { "stats", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuit_eventGetGraphPointAtIndex_Parms, stats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_stats_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::NewProp_out_item,
@@ -346,12 +356,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Power" },
+		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Get the graph point from the index in our stats,  @return false if the index is invalid" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, "GetGraphPointAtIndex", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPowerCircuit_eventGetGraphPointAtIndex_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "GetGraphPointAtIndex", sizeof(FGPowerCircuit_eventGetGraphPointAtIndex_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -379,25 +389,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Int, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGPowerCircuit_eventGetNumGraphPoint_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuit_eventGetNumGraphPoint_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats = { UE4CodeGen_Private::EPropertyClass::Struct, "stats", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGPowerCircuit_eventGetNumGraphPoint_Parms, stats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats = { "stats", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuit_eventGetNumGraphPoint_Parms, stats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::NewProp_stats,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Power" },
+		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Get how many graph points there is in our stats" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, "GetNumGraphPoint", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGPowerCircuit_eventGetNumGraphPoint_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "GetNumGraphPoint", sizeof(FGPowerCircuit_eventGetNumGraphPoint_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -420,18 +430,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::NewProp_out_stats = { UE4CodeGen_Private::EPropertyClass::Struct, "out_stats", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(FGPowerCircuit_eventGetStats_Parms, out_stats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::NewProp_out_stats = { "out_stats", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGPowerCircuit_eventGetStats_Parms, out_stats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::NewProp_out_stats,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Power" },
+		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Get the stats for this circuit." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, "GetStats", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54420401, sizeof(FGPowerCircuit_eventGetStats_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "GetStats", sizeof(FGPowerCircuit_eventGetStats_Parms), Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_GetStats_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPowerCircuit_GetStats()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -459,18 +469,18 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	{
 		((FGPowerCircuit_eventIsFuseTriggered_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGPowerCircuit_eventIsFuseTriggered_Parms), &Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGPowerCircuit_eventIsFuseTriggered_Parms), &Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Power" },
+		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "@return true if the fuse is triggered; false otherwise." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, "IsFuseTriggered", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPowerCircuit_eventIsFuseTriggered_Parms), Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "IsFuseTriggered", sizeof(FGPowerCircuit_eventIsFuseTriggered_Parms), Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -489,12 +499,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Power" },
+		{ "Category", "FactoryGame|Circuits|PowerCircuit" },
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Resets the fuse." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, "ResetFuse", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGPowerCircuit, nullptr, "ResetFuse", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGPowerCircuit_ResetFuse_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGPowerCircuit_ResetFuse()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -545,11 +555,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPowerCircuit_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex, "GetGraphPointAtIndex" }, // 1452015226
-		{ &Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint, "GetNumGraphPoint" }, // 1703347313
-		{ &Z_Construct_UFunction_UFGPowerCircuit_GetStats, "GetStats" }, // 1186427117
-		{ &Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered, "IsFuseTriggered" }, // 387674587
-		{ &Z_Construct_UFunction_UFGPowerCircuit_ResetFuse, "ResetFuse" }, // 1816386140
+		{ &Z_Construct_UFunction_UFGPowerCircuit_GetGraphPointAtIndex, "GetGraphPointAtIndex" }, // 533981443
+		{ &Z_Construct_UFunction_UFGPowerCircuit_GetNumGraphPoint, "GetNumGraphPoint" }, // 3591420885
+		{ &Z_Construct_UFunction_UFGPowerCircuit_GetStats, "GetStats" }, // 3719044561
+		{ &Z_Construct_UFunction_UFGPowerCircuit_IsFuseTriggered, "IsFuseTriggered" }, // 2856439553
+		{ &Z_Construct_UFunction_UFGPowerCircuit_ResetFuse, "ResetFuse" }, // 4006600868
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::Class_MetaDataParams[] = {
@@ -564,7 +574,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		{ "ToolTip", "The power consumption/production over time. Used for feedback." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats = { UE4CodeGen_Private::EPropertyClass::Struct, "mPowerStats", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(UFGPowerCircuit, mPowerStats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats = { "mPowerStats", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuit, mPowerStats), Z_Construct_UScriptStruct_FPowerCircuitStats, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData[] = {
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
@@ -575,28 +585,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	{
 		((UFGPowerCircuit*)Obj)->mIsFuseTriggered = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsFuseTriggered", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGPowerCircuit), &Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered = { "mIsFuseTriggered", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGPowerCircuit), &Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed_MetaData[] = {
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Total amount of energy consumed in the circuit." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed = { UE4CodeGen_Private::EPropertyClass::Float, "mPowerConsumed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGPowerCircuit, mPowerConsumed), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed = { "mPowerConsumed", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuit, mPowerConsumed), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerConsumed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced_MetaData[] = {
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Total amount of energy produced in the circuit." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced = { UE4CodeGen_Private::EPropertyClass::Float, "mPowerProduced", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGPowerCircuit, mPowerProduced), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced = { "mPowerProduced", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuit, mPowerProduced), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProduced_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity_MetaData[] = {
 		{ "ModuleRelativePath", "FGPowerCircuit.h" },
 		{ "ToolTip", "Total amount of energy that can be produced in the circuit. Used for stats." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity = { UE4CodeGen_Private::EPropertyClass::Float, "mPowerProductionCapacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGPowerCircuit, mPowerProductionCapacity), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity = { "mPowerProductionCapacity", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGPowerCircuit, mPowerProductionCapacity), METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerProductionCapacity_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGPowerCircuit_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mPowerStats,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGPowerCircuit_Statics::NewProp_mIsFuseTriggered,
@@ -609,13 +619,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPowerCircuit_Statics::ClassParams = {
 		&UFGPowerCircuit::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGPowerCircuit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGPowerCircuit_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPowerCircuit_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPowerCircuit_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPowerCircuit()
@@ -627,7 +641,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerCircuit, 152928643);
+	IMPLEMENT_CLASS(UFGPowerCircuit, 28306627);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerCircuit>()
+	{
+		return UFGPowerCircuit::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerCircuit(Z_Construct_UClass_UFGPowerCircuit, &UFGPowerCircuit::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerCircuit"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerCircuit);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

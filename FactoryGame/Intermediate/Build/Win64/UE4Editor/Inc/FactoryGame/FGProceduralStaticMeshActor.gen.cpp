@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,13 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeFGProceduralStaticMeshActor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGProceduralStaticMeshActor_Statics::ClassParams = {
 		&AFGProceduralStaticMeshActor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGProceduralStaticMeshActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGProceduralStaticMeshActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGProceduralStaticMeshActor()
@@ -69,7 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFGProceduralStaticMeshActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 328301577);
+	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 3459273955);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGProceduralStaticMeshActor>()
+	{
+		return AFGProceduralStaticMeshActor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGProceduralStaticMeshActor(Z_Construct_UClass_AFGProceduralStaticMeshActor, &AFGProceduralStaticMeshActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGProceduralStaticMeshActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGProceduralStaticMeshActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

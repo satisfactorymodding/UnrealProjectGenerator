@@ -188,14 +188,14 @@ public:
 	/**
 	 * Get a version string to show to the user
 	 */
-	DEPRECATED(4.20, "Use GetVersionString from FGVersionBlueprintLibrary instead")
+	UE_DEPRECATED(4.20, "Use GetVersionString from FGVersionBlueprintLibrary instead")
 	UFUNCTION( BlueprintPure, Category = "Version", meta=(DeprecatedFunction,DeprecationMessage = "Use GetVersionString from FGVersionBlueprintLibrary instead") )
 	static FString GetVersionString();
 	
 	/**
 	* Returns true if this build is alpha. If Shipping, then Alpha. :)
 	*/
-	DEPRECATED(4.20, "Use IsPublicBuild from FGVersionBlueprintLibrary instead")
+	UE_DEPRECATED(4.20, "Use IsPublicBuild from FGVersionBlueprintLibrary instead")
 	UFUNCTION( BlueprintPure, Category = "Version", meta=(DeprecatedFunction,DeprecationMessage = "Use IsPublicBuild from FGVersionBlueprintLibrary instead") )
 	static bool IsAlphaBuild();
 

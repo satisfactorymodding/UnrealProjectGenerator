@@ -67,7 +67,7 @@ public:
 	void SetMouseSensitivity( float newSense );
 
 	/** Get current sensitivity */
-	DEPRECATED(4.21, "Use GetMouseSensitivityX/GetMouseSensitivityY instead")
+	UE_DEPRECATED(4.21, "Use GetMouseSensitivityX/GetMouseSensitivityY instead")
 	UFUNCTION( BlueprintPure, Category = "Input", meta=(DeprecatedFunction,DeprecationMessage = "Use GetMouseSensitivityX/GetMouseSensitivityY instead") )
 	float GetMouseSensitivity();
 
@@ -80,7 +80,7 @@ public:
 	float GetMouseSensitivityY();
 
 	/** Get default value for mouse sensitivity */
-	DEPRECATED(4.21, "Use GetDefaultMouseSensitivityX/GetDefaultMouseSensitivityY instead")
+	UE_DEPRECATED(4.21, "Use GetDefaultMouseSensitivityX/GetDefaultMouseSensitivityY instead")
 	UFUNCTION( BlueprintPure, Category = "Input", meta=(DeprecatedFunction,DeprecationMessage = "Use GetDefaultMouseSensitivityX/GetDefaultMouseSensitivityY instead") )
 	float GetDefaultMouseSensitivity();
 

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -8,11 +8,11 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UShapeComponent;
 class UFGInteractWidget;
 class UFGFactoryConnectionComponent;
 struct FInventoryItem;
 class UFGItemDescriptor;
+class UShapeComponent;
 class AActor;
 class UMeshComponent;
 struct FInventoryStack;
@@ -21,14 +21,14 @@ struct FInventoryStack;
 #endif
 #define FACTORYGAME_FGBuildable_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_28_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_33_DELEGATE \
 static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticastScriptDelegate& BuildableDismantledSignature) \
 { \
 	BuildableDismantledSignature.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_RPC_WRAPPERS \
 	virtual bool Factory_GrabOutput_Implementation(UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf<UFGItemDescriptor>  type); \
 	virtual bool Factory_PeekOutput_Implementation(const UFGFactoryConnectionComponent* connection, TArray<FInventoryItem>& out_items, TSubclassOf<UFGItemDescriptor>  type) const; \
 	virtual void PlayDismantleSound_Implementation(); \
@@ -51,22 +51,6 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnRep_SecondaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_SecondaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_PrimaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_PrimaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execOnRep_ColorSlot) \
 	{ \
 		P_FINISH; \
@@ -80,14 +64,6 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ReapplyColorSlot(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetClearanceComponent) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UShapeComponent**)Z_Param__Result=P_THIS->GetClearanceComponent(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -138,6 +114,14 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetClearanceComponent) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UShapeComponent**)Z_Param__Result=P_THIS->GetClearanceComponent(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRemoveHighlightEffect) \
 	{ \
 		P_FINISH; \
@@ -180,7 +164,7 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Factory_GrabOutput_Implementation(UFGFactoryConnectionComponent* connection, FInventoryItem& out_item, float& out_OffsetBeyond, TSubclassOf<UFGItemDescriptor>  type); \
 	virtual bool Factory_PeekOutput_Implementation(const UFGFactoryConnectionComponent* connection, TArray<FInventoryItem>& out_items, TSubclassOf<UFGItemDescriptor>  type) const; \
 	virtual void PlayDismantleSound_Implementation(); \
@@ -203,22 +187,6 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execOnRep_SecondaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_SecondaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOnRep_PrimaryColor) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OnRep_PrimaryColor(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execOnRep_ColorSlot) \
 	{ \
 		P_FINISH; \
@@ -232,14 +200,6 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->ReapplyColorSlot(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetClearanceComponent) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UShapeComponent**)Z_Param__Result=P_THIS->GetClearanceComponent(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -290,6 +250,14 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetClearanceComponent) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(UShapeComponent**)Z_Param__Result=P_THIS->GetClearanceComponent(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRemoveHighlightEffect) \
 	{ \
 		P_FINISH; \
@@ -332,7 +300,7 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_EVENT_PARMS \
 	struct FGBuildable_eventFactory_GrabOutput_Parms \
 	{ \
 		UFGFactoryConnectionComponent* connection; \
@@ -370,34 +338,34 @@ static inline void FBuildableDismantledSignature_DelegateWrapper(const FMulticas
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildable, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildable(); \
 	friend struct Z_Construct_UClass_AFGBuildable_Statics; \
 public: \
 	DECLARE_CLASS(AFGBuildable, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGBuildable) \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildable*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildable(); \
 	friend struct Z_Construct_UClass_AFGBuildable_Statics; \
 public: \
 	DECLARE_CLASS(AFGBuildable, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGBuildable) \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildable*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildable(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildable) \
@@ -410,7 +378,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildable(AFGBuildable&&); \
@@ -421,8 +389,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildable); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildable)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFactoryTickFunction() { return STRUCT_OFFSET(AFGBuildable, mFactoryTickFunction); } \
+	FORCEINLINE static uint32 __PPO__mMaterialNameToInstanceManager() { return STRUCT_OFFSET(AFGBuildable, mMaterialNameToInstanceManager); } \
 	FORCEINLINE static uint32 __PPO__mPrimaryColor() { return STRUCT_OFFSET(AFGBuildable, mPrimaryColor); } \
 	FORCEINLINE static uint32 __PPO__mSecondaryColor() { return STRUCT_OFFSET(AFGBuildable, mSecondaryColor); } \
 	FORCEINLINE static uint32 __PPO__mColorSlot() { return STRUCT_OFFSET(AFGBuildable, mColorSlot); } \
@@ -441,7 +410,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildable); \
 	FORCEINLINE static uint32 __PPO__mCameraDistanceSq() { return STRUCT_OFFSET(AFGBuildable, mCameraDistanceSq); } \
 	FORCEINLINE static uint32 __PPO__mBuildingID() { return STRUCT_OFFSET(AFGBuildable, mBuildingID); } \
 	FORCEINLINE static uint32 __PPO__mDismantleRefund() { return STRUCT_OFFSET(AFGBuildable, mDismantleRefund); } \
-	FORCEINLINE static uint32 __PPO__mIsUseable() { return STRUCT_OFFSET(AFGBuildable, mIsUseable); } \
 	FORCEINLINE static uint32 __PPO__mInteractWidgetClass() { return STRUCT_OFFSET(AFGBuildable, mInteractWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__mInteractingPlayers() { return STRUCT_OFFSET(AFGBuildable, mInteractingPlayers); } \
 	FORCEINLINE static uint32 __PPO__mBuiltWithRecipe() { return STRUCT_OFFSET(AFGBuildable, mBuiltWithRecipe); } \
@@ -449,33 +417,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildable); \
 	FORCEINLINE static uint32 __PPO__mCachedShapeComponent() { return STRUCT_OFFSET(AFGBuildable, mCachedShapeComponent); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_41_PROLOG \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_46_PROLOG \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_44_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h_49_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGBuildable>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Buildables_FGBuildable_h

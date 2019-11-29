@@ -19,12 +19,8 @@ public:
 
 	virtual void GetLifetimeReplicatedProps( TArray< FLifetimeProperty >& OutLifetimeProps ) const override;
 
-	//virtual void StartIsLookedAt_Implementation( class AFGCharacterPlayer* byCharacter, const FUseState& state ) override;
-	//virtual void StopIsLookedAt_Implementation( class AFGCharacterPlayer* byCharacter, const FUseState& state ) override;
 	virtual void StartIsLookedAtForConnection( class AFGCharacterPlayer* byCharacter ) override;
 	virtual void StopIsLookedAtForConnection( class AFGCharacterPlayer* byCharacter ) override;
-	//virtual void StartIsLookedAtForDismantle_Implementation( class AFGCharacterPlayer* byCharacter ) override;
-	//virtual void StopIsLookedAtForDismantle_Implementation( class AFGCharacterPlayer* byCharacter ) override;
 
 	void ShowConnectionFeedback();
 	void HideConnectionFeedback();
@@ -46,22 +42,20 @@ public:
 	UFUNCTION( BlueprintPure, Category = "PowerPole" )
 	FORCEINLINE int32 GetCachedNumConnections() { return mCachedNumConnectionsToPole; }
 
+	UFUNCTION( BlueprintImplementableEvent, Category = "PowerPole")
+	void OnShowConnectionFeedback();
+
 	void OnPowerConnectionChanged(class UFGCircuitConnectionComponent* connection);
 
 	/** Updates the cached number of connections this power pole currently have. */
 	void MarkConnectionsDirty();
 
-	//@TODO:[DavalliusA:Tue/05-03-2019] only used for transferring mesh data from old to new instance system. Remove later.
-	virtual void PostLoad() override;
-	virtual void PostInitializeComponents() override;
-
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "PowerPole")
-	class UWidgetComponent* mConnectionsWidget;
+	class UWidgetComponent* mConnectionsWidgetComponent;
 
-	//virtual void TogglePendingDismantleMaterial( bool enabled ) override;
-
-
+	UPROPERTY( EditDefaultsOnly, Category = "PowerPole")
+	TSubclassOf<class UUserWidget> mConnectionWidgetClass;
 
 private:
 	/** The connection on this pole. */
@@ -69,8 +63,6 @@ private:
 	class UFGPowerConnectionComponent* mPowerConnection;
 
 	/** The mesh component for this pole. */
-	//UPROPERTY( VisibleAnywhere )
-		//class UProxyInstancedStaticMeshComponent* mMeshComponent; //@TODO:[DavalliusA:Tue/05-03-2019] remove later //[DavalliusA:Tue/05-03-2019] removed as the transfer to the new proxy instance system is done
 	UPROPERTY( VisibleAnywhere )
 	class UFGColoredInstanceMeshProxy* mMeshComponentProxy = nullptr;
 

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -63,13 +63,17 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGParachuteCameraShake_Statics::ClassParams = {
 		&UFGParachuteCameraShake::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001010A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGParachuteCameraShake_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGParachuteCameraShake_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGParachuteCameraShake()
@@ -81,7 +85,11 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGParachuteCameraShake, 3032965484);
+	IMPLEMENT_CLASS(UFGParachuteCameraShake, 2956796272);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGParachuteCameraShake>()
+	{
+		return UFGParachuteCameraShake::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGParachuteCameraShake(Z_Construct_UClass_UFGParachuteCameraShake, &UFGParachuteCameraShake::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGParachuteCameraShake"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGParachuteCameraShake);
 	static FName NAME_AFGParachute_ModifyVelocity = FName(TEXT("ModifyVelocity"));
@@ -130,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	{
 		((FGParachute_eventIsDeployed_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGParachute_eventIsDeployed_Parms), &Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGParachute_eventIsDeployed_Parms), &Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::NewProp_ReturnValue,
 	};
@@ -140,7 +148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "Is the parachute deployed or not" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, "IsDeployed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGParachute_eventIsDeployed_Parms), Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, nullptr, "IsDeployed", sizeof(FGParachute_eventIsDeployed_Parms), Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_IsDeployed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachute_IsDeployed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -164,14 +172,14 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Struct, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGParachute_eventModifyVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGParachute_eventModifyVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity = { UE4CodeGen_Private::EPropertyClass::Struct, "oldVelocity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000008000182, 1, nullptr, STRUCT_OFFSET(FGParachute_eventModifyVelocity_Parms, oldVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity_MetaData)) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_deltaTime = { UE4CodeGen_Private::EPropertyClass::Float, "deltaTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGParachute_eventModifyVelocity_Parms, deltaTime), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity = { "oldVelocity", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGParachute_eventModifyVelocity_Parms, oldVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_deltaTime = { "deltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGParachute_eventModifyVelocity_Parms, deltaTime), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::NewProp_oldVelocity,
@@ -183,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "This function calculates our new velocity when we are deployed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, "ModifyVelocity", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08C20C00, sizeof(FGParachute_eventModifyVelocity_Parms), Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, nullptr, "ModifyVelocity", sizeof(FGParachute_eventModifyVelocity_Parms), Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_ModifyVelocity_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachute_ModifyVelocity()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -206,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "Called when we start deploying" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, "OnDeployed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, nullptr, "OnDeployed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_OnDeployed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachute_OnDeployed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -229,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "Called when we stop deploying" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, "OnDeployStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachute, nullptr, "OnDeployStop", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachute_OnDeployStop_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachute_OnDeployStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -263,10 +271,10 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGParachute_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGParachute_IsDeployed, "IsDeployed" }, // 465096695
-		{ &Z_Construct_UFunction_AFGParachute_ModifyVelocity, "ModifyVelocity" }, // 2552378138
-		{ &Z_Construct_UFunction_AFGParachute_OnDeployed, "OnDeployed" }, // 2816129638
-		{ &Z_Construct_UFunction_AFGParachute_OnDeployStop, "OnDeployStop" }, // 847764908
+		{ &Z_Construct_UFunction_AFGParachute_IsDeployed, "IsDeployed" }, // 2427173322
+		{ &Z_Construct_UFunction_AFGParachute_ModifyVelocity, "ModifyVelocity" }, // 1579390082
+		{ &Z_Construct_UFunction_AFGParachute_OnDeployed, "OnDeployed" }, // 4208656223
+		{ &Z_Construct_UFunction_AFGParachute_OnDeployStop, "OnDeployStop" }, // 884656037
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachute_Statics::Class_MetaDataParams[] = {
@@ -281,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "The velocity we fall at using the parachute." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ = { UE4CodeGen_Private::EPropertyClass::Float, "mTerminalVelocityZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGParachute, mTerminalVelocityZ), METADATA_PARAMS(Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ = { "mTerminalVelocityZ", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGParachute, mTerminalVelocityZ), METADATA_PARAMS(Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGParachute_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGParachute_Statics::NewProp_mTerminalVelocityZ,
 	};
@@ -290,13 +298,17 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGParachute_Statics::ClassParams = {
 		&AFGParachute::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGParachute_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGParachute_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGParachute_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGParachute_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGParachute()
@@ -308,7 +320,11 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachute, 2721545435);
+	IMPLEMENT_CLASS(AFGParachute, 3848771483);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGParachute>()
+	{
+		return AFGParachute::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGParachute(Z_Construct_UClass_AFGParachute, &AFGParachute::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGParachute"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGParachute);
 	static FName NAME_AFGParachuteAttachment_OnDeployed = FName(TEXT("OnDeployed"));
@@ -342,7 +358,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachuteAttachment, "OnDeployed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachuteAttachment, nullptr, "OnDeployed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -365,7 +381,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "Called when we start thrusting" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachuteAttachment, "OnDeployStop", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachuteAttachment, nullptr, "OnDeployStop", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -388,7 +404,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		{ "ToolTip", "Called when mIsDeployed is replicated" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachuteAttachment, "OnRep_IsDeployed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGParachuteAttachment, nullptr, "OnRep_IsDeployed", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -423,9 +439,9 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGParachuteAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed, "OnDeployed" }, // 2405947511
-		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop, "OnDeployStop" }, // 899848828
-		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed, "OnRep_IsDeployed" }, // 3831751690
+		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployed, "OnDeployed" }, // 2352062841
+		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnDeployStop, "OnDeployStop" }, // 783279460
+		{ &Z_Construct_UFunction_AFGParachuteAttachment_OnRep_IsDeployed, "OnRep_IsDeployed" }, // 2591403985
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGParachuteAttachment_Statics::Class_MetaDataParams[] = {
@@ -442,7 +458,7 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	{
 		((AFGParachuteAttachment*)Obj)->mIsDeployed = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsDeployed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_IsDeployed", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGParachuteAttachment), &Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed = { "mIsDeployed", "OnRep_IsDeployed", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGParachuteAttachment), &Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGParachuteAttachment_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGParachuteAttachment_Statics::NewProp_mIsDeployed,
 	};
@@ -451,13 +467,17 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGParachuteAttachment_Statics::ClassParams = {
 		&AFGParachuteAttachment::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_AFGParachuteAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGParachuteAttachment_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_AFGParachuteAttachment_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_AFGParachuteAttachment_Statics::PropPointers),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGParachuteAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGParachuteAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGParachuteAttachment()
@@ -469,7 +489,11 @@ void EmptyLinkFunctionForGeneratedCodeFGParachute() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGParachuteAttachment, 1148130836);
+	IMPLEMENT_CLASS(AFGParachuteAttachment, 2809662395);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGParachuteAttachment>()
+	{
+		return AFGParachuteAttachment::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGParachuteAttachment(Z_Construct_UClass_AFGParachuteAttachment, &AFGParachuteAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGParachuteAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGParachuteAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

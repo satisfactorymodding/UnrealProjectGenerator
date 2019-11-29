@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -36,10 +36,14 @@ class UScriptStruct* FSimulatedItemDropTransform::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSimulatedItemDropTransform, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SimulatedItemDropTransform"), sizeof(FSimulatedItemDropTransform), Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSimulatedItemDropTransform, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SimulatedItemDropTransform"), sizeof(FSimulatedItemDropTransform), Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSimulatedItemDropTransform>()
+{
+	return FSimulatedItemDropTransform::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSimulatedItemDropTransform(FSimulatedItemDropTransform::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SimulatedItemDropTransform"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropTransform
@@ -77,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "ItemDropTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FSimulatedItemDropTransform, ItemDropTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform = { "ItemDropTransform", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedItemDropTransform, ItemDropTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::NewProp_ItemDropTransform,
 	};
@@ -86,19 +90,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 		nullptr,
 		&NewStructOps,
 		"SimulatedItemDropTransform",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSimulatedItemDropTransform),
 		alignof(FSimulatedItemDropTransform),
-		Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSimulatedItemDropTransform()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SimulatedItemDropTransform"), sizeof(FSimulatedItemDropTransform), Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SimulatedItemDropTransform"), sizeof(FSimulatedItemDropTransform), Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -108,16 +113,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_CRC() { return 2348465013U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash() { return 3398807790U; }
 class UScriptStruct* FSimulatedActorTransform::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSimulatedActorTransform, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SimulatedActorTransform"), sizeof(FSimulatedActorTransform), Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSimulatedActorTransform, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SimulatedActorTransform"), sizeof(FSimulatedActorTransform), Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSimulatedActorTransform>()
+{
+	return FSimulatedActorTransform::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSimulatedActorTransform(FSimulatedActorTransform::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SimulatedActorTransform"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTransform
@@ -159,13 +168,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "ActorTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FSimulatedActorTransform, ActorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform = { "ActorTransform", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedActorTransform, ActorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData[] = {
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass = { UE4CodeGen_Private::EPropertyClass::Class, "ActorClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000000, 1, nullptr, STRUCT_OFFSET(FSimulatedActorTransform, ActorClass), Z_Construct_UClass_AFGCrashSiteDebrisActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass = { "ActorClass", nullptr, (EPropertyFlags)0x0014000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedActorTransform, ActorClass), Z_Construct_UClass_AFGCrashSiteDebrisActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorTransform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::NewProp_ActorClass,
@@ -175,19 +184,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 		nullptr,
 		&NewStructOps,
 		"SimulatedActorTransform",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSimulatedActorTransform),
 		alignof(FSimulatedActorTransform),
-		Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSimulatedActorTransform()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SimulatedActorTransform"), sizeof(FSimulatedActorTransform), Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SimulatedActorTransform"), sizeof(FSimulatedActorTransform), Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -197,16 +207,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_CRC() { return 1147916642U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash() { return 2105192501U; }
 class UScriptStruct* FSimulatedMeshTransform::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSimulatedMeshTransform, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SimulatedMeshTransform"), sizeof(FSimulatedMeshTransform), Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSimulatedMeshTransform, Z_Construct_UPackage__Script_FactoryGame(), TEXT("SimulatedMeshTransform"), sizeof(FSimulatedMeshTransform), Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FSimulatedMeshTransform>()
+{
+	return FSimulatedMeshTransform::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSimulatedMeshTransform(FSimulatedMeshTransform::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("SimulatedMeshTransform"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTransform
@@ -248,13 +262,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "MeshTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FSimulatedMeshTransform, MeshTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform = { "MeshTransform", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedMeshTransform, MeshTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData[] = {
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh = { UE4CodeGen_Private::EPropertyClass::Object, "StaticMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FSimulatedMeshTransform, StaticMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh = { "StaticMesh", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSimulatedMeshTransform, StaticMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_MeshTransform,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::NewProp_StaticMesh,
@@ -264,19 +278,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 		nullptr,
 		&NewStructOps,
 		"SimulatedMeshTransform",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSimulatedMeshTransform),
 		alignof(FSimulatedMeshTransform),
-		Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSimulatedMeshTransform()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SimulatedMeshTransform"), sizeof(FSimulatedMeshTransform), Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SimulatedMeshTransform"), sizeof(FSimulatedMeshTransform), Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -286,16 +301,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_CRC() { return 3433485567U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash() { return 61516491U; }
 class UScriptStruct* FDebrisItemDrop::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDebrisItemDrop, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DebrisItemDrop"), sizeof(FDebrisItemDrop), Get_Z_Construct_UScriptStruct_FDebrisItemDrop_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDebrisItemDrop, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DebrisItemDrop"), sizeof(FDebrisItemDrop), Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDebrisItemDrop>()
+{
+	return FDebrisItemDrop::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDebrisItemDrop(FDebrisItemDrop::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DebrisItemDrop"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
@@ -339,7 +358,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		{ "ToolTip", "Item to create pickup for." },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass = { UE4CodeGen_Private::EPropertyClass::SoftClass, "ItemClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(FDebrisItemDrop, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass_MetaData)) };
+	const UE4CodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass = { "ItemClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDebrisItemDrop, ItemClass), Z_Construct_UClass_UFGItemDescriptor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems_MetaData[] = {
 		{ "Category", "Item" },
@@ -347,7 +366,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		{ "ToolTip", "How many items to spawn, note that the upper limit is guaranteed while the lower limit is not." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems = { UE4CodeGen_Private::EPropertyClass::Struct, "NumItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FDebrisItemDrop, NumItems), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems = { "NumItems", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDebrisItemDrop, NumItems), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_ItemClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::NewProp_NumItems,
@@ -357,19 +376,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		nullptr,
 		&NewStructOps,
 		"DebrisItemDrop",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDebrisItemDrop),
 		alignof(FDebrisItemDrop),
-		Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDebrisItemDrop()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DebrisItemDrop"), sizeof(FDebrisItemDrop), Get_Z_Construct_UScriptStruct_FDebrisItemDrop_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DebrisItemDrop"), sizeof(FDebrisItemDrop), Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -379,16 +399,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_CRC() { return 3724670482U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash() { return 1058376583U; }
 class UScriptStruct* FDebrisActor::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDebrisActor, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DebrisActor"), sizeof(FDebrisActor), Get_Z_Construct_UScriptStruct_FDebrisActor_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDebrisActor, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DebrisActor"), sizeof(FDebrisActor), Get_Z_Construct_UScriptStruct_FDebrisActor_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDebrisActor>()
+{
+	return FDebrisActor::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDebrisActor(FDebrisActor::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DebrisActor"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
@@ -432,7 +456,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		{ "ToolTip", "How many to spawn, note that the upper limit is guaranteed while the lower limit is not." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num = { UE4CodeGen_Private::EPropertyClass::Struct, "Num", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FDebrisActor, Num), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num = { "Num", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDebrisActor, Num), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass_MetaData[] = {
 		{ "Category", "Actor" },
@@ -440,7 +464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		{ "ToolTip", "Mesh to spawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass = { UE4CodeGen_Private::EPropertyClass::Class, "ActorClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FDebrisActor, ActorClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass = { "ActorClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDebrisActor, ActorClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_Num,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDebrisActor_Statics::NewProp_ActorClass,
@@ -450,19 +474,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		nullptr,
 		&NewStructOps,
 		"DebrisActor",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDebrisActor),
 		alignof(FDebrisActor),
-		Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisActor_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDebrisActor()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DebrisActor"), sizeof(FDebrisActor), Get_Z_Construct_UScriptStruct_FDebrisActor_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DebrisActor"), sizeof(FDebrisActor), Get_Z_Construct_UScriptStruct_FDebrisActor_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -472,16 +497,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_CRC() { return 3981206899U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash() { return 364443143U; }
 class UScriptStruct* FDebrisMesh::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDebrisMesh, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DebrisMesh"), sizeof(FDebrisMesh), Get_Z_Construct_UScriptStruct_FDebrisMesh_CRC());
+		extern FACTORYGAME_API uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FDebrisMesh, Z_Construct_UPackage__Script_FactoryGame(), TEXT("DebrisMesh"), sizeof(FDebrisMesh), Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash());
 	}
 	return Singleton;
+}
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<FDebrisMesh>()
+{
+	return FDebrisMesh::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FDebrisMesh(FDebrisMesh::StaticStruct, TEXT("/Script/FactoryGame"), TEXT("DebrisMesh"), false, nullptr, nullptr);
 static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
@@ -525,7 +554,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "How many to spawn, note that the upper limit is guaranteed while the lower limit is not." },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num = { UE4CodeGen_Private::EPropertyClass::Struct, "Num", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FDebrisMesh, Num), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num = { "Num", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDebrisMesh, Num), Z_Construct_UScriptStruct_FInt32Interval, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -533,7 +562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Mesh to spawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FDebrisMesh, Mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDebrisMesh, Mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Num,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDebrisMesh_Statics::NewProp_Mesh,
@@ -543,19 +572,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		nullptr,
 		&NewStructOps,
 		"DebrisMesh",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FDebrisMesh),
 		alignof(FDebrisMesh),
-		Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers),
+		Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisMesh_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDebrisMesh()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_FactoryGame();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DebrisMesh"), sizeof(FDebrisMesh), Get_Z_Construct_UScriptStruct_FDebrisMesh_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("DebrisMesh"), sizeof(FDebrisMesh), Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -565,7 +595,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_CRC() { return 2083668679U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash() { return 2895397797U; }
 	void AFGCrashSiteDebris::StaticRegisterNativesAFGCrashSiteDebris()
 	{
 	}
@@ -670,16 +700,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData = { UE4CodeGen_Private::EPropertyClass::Array, "mSavedItemDropSimulationData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800020801, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedItemDropSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSavedItemDropSimulationData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800020000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSimulatedItemDropTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData = { "mSavedItemDropSimulationData", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedItemDropSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_Inner = { "mSavedItemDropSimulationData", nullptr, (EPropertyFlags)0x0000000800020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSimulatedItemDropTransform, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData[] = {
 		{ "Category", "Saved Simulation" },
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData = { UE4CodeGen_Private::EPropertyClass::Array, "mSavedActorSimulationData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800020801, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedActorSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSavedActorSimulationData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800020000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSimulatedActorTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData = { "mSavedActorSimulationData", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedActorSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedActorSimulationData_Inner = { "mSavedActorSimulationData", nullptr, (EPropertyFlags)0x0000000800020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSimulatedActorTransform, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_MetaData[] = {
 		{ "Category", "Saved Simulation" },
@@ -687,16 +717,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Transforms saved during physics simulation." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData = { UE4CodeGen_Private::EPropertyClass::Array, "mSavedMeshSimulationData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800020801, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedMeshSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mSavedMeshSimulationData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800020000, 1, nullptr, 0, Z_Construct_UScriptStruct_FSimulatedMeshTransform, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData = { "mSavedMeshSimulationData", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedMeshSimulationData), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedMeshSimulationData_Inner = { "mSavedMeshSimulationData", nullptr, (EPropertyFlags)0x0000000800020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FSimulatedMeshTransform, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData[] = {
 		{ "Category", "Saved Simulation" },
 		{ "ModuleRelativePath", "FGCrashSiteDebris.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors = { UE4CodeGen_Private::EPropertyClass::Array, "mSavedSimulatedItemDropActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800020801, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedSimulatedItemDropActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mSavedSimulatedItemDropActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800020000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors = { "mSavedSimulatedItemDropActors", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedSimulatedItemDropActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedItemDropActors_Inner = { "mSavedSimulatedItemDropActors", nullptr, (EPropertyFlags)0x0000000800020000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_MetaData[] = {
 		{ "Category", "Saved Simulation" },
@@ -704,8 +734,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Actors spawned by this crash site." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors = { UE4CodeGen_Private::EPropertyClass::Array, "mSavedSimulatedDebrisActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800020801, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedSimulatedDebrisActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mSavedSimulatedDebrisActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800020000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors = { "mSavedSimulatedDebrisActors", nullptr, (EPropertyFlags)0x0040000800020801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSavedSimulatedDebrisActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedSimulatedDebrisActors_Inner = { "mSavedSimulatedDebrisActors", nullptr, (EPropertyFlags)0x0000000800020000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -717,7 +747,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 	{
 		((AFGCrashSiteDebris*)Obj)->mRegenerateDebrisNextSimulation = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation = { UE4CodeGen_Private::EPropertyClass::Bool, "mRegenerateDebrisNextSimulation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000801, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCrashSiteDebris), &Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation = { "mRegenerateDebrisNextSimulation", nullptr, (EPropertyFlags)0x0040000800000801, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFGCrashSiteDebris), &Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mRegenerateDebrisNextSimulation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -725,7 +755,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Maximum distance from the center debris can end up, debris outside this radius is destroyed." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius = { UE4CodeGen_Private::EPropertyClass::Float, "mDespawnRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mDespawnRadius), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius = { "mDespawnRadius", nullptr, (EPropertyFlags)0x0040000800000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mDespawnRadius), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDespawnRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -737,7 +767,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "UIMin", "0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage = { UE4CodeGen_Private::EPropertyClass::Float, "mDebrisPenetrateGroundByPercentage", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mDebrisPenetrateGroundByPercentage), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage = { "mDebrisPenetrateGroundByPercentage", nullptr, (EPropertyFlags)0x0040000800000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mDebrisPenetrateGroundByPercentage), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisPenetrateGroundByPercentage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -745,7 +775,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "If we want the debris to spread a bit more." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier = { UE4CodeGen_Private::EPropertyClass::Float, "mSpawnRadiusMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSpawnRadiusMultiplier), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier = { "mSpawnRadiusMultiplier", nullptr, (EPropertyFlags)0x0040000800000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSpawnRadiusMultiplier), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnRadiusMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -753,7 +783,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "How far up to spawn the debris." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude = { UE4CodeGen_Private::EPropertyClass::Float, "mSpawnAltitude", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800000001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mSpawnAltitude), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude = { "mSpawnAltitude", nullptr, (EPropertyFlags)0x0040000800000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mSpawnAltitude), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSpawnAltitude_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops_MetaData[] = {
 		{ "Category", "Item Drops" },
@@ -761,7 +791,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "How many item drops to place, debris must be resimulated when this is updated." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops = { UE4CodeGen_Private::EPropertyClass::Int, "mNumItemDrops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800010001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mNumItemDrops), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops = { "mNumItemDrops", nullptr, (EPropertyFlags)0x0040000800010001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mNumItemDrops), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mNumItemDrops_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_MetaData[] = {
 		{ "Category", "Item Drops" },
@@ -769,8 +799,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Description of which parts to spawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops = { UE4CodeGen_Private::EPropertyClass::Array, "mItemDrops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800010001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mItemDrops), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mItemDrops", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FDebrisItemDrop, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops = { "mItemDrops", nullptr, (EPropertyFlags)0x0040000800010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mItemDrops), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mItemDrops_Inner = { "mItemDrops", nullptr, (EPropertyFlags)0x0000000800000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FDebrisItemDrop, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -778,8 +808,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Description of which actors to spawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors = { UE4CodeGen_Private::EPropertyClass::Array, "mDebrisActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800010001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mDebrisActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDebrisActors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FDebrisActor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors = { "mDebrisActors", nullptr, (EPropertyFlags)0x0040000800010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mDebrisActors), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisActors_Inner = { "mDebrisActors", nullptr, (EPropertyFlags)0x0000000800000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FDebrisActor, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_MetaData[] = {
 		{ "Category", "Simulation" },
@@ -787,8 +817,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		{ "ToolTip", "Description of which meshes to spawn." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes = { UE4CodeGen_Private::EPropertyClass::Array, "mDebrisMeshes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000800010001, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebris, mDebrisMeshes), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDebrisMeshes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000800000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FDebrisMesh, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes = { "mDebrisMeshes", nullptr, (EPropertyFlags)0x0040000800010001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGCrashSiteDebris, mDebrisMeshes), METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mDebrisMeshes_Inner = { "mDebrisMeshes", nullptr, (EPropertyFlags)0x0000000800000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FDebrisMesh, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGCrashSiteDebris_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGCrashSiteDebris_Statics::NewProp_mSavedItemDropSimulationData_Inner,
@@ -819,13 +849,17 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCrashSiteDebris_Statics::ClassParams = {
 		&AFGCrashSiteDebris::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		IF_WITH_EDITORONLY_DATA(Z_Construct_UClass_AFGCrashSiteDebris_Statics::PropPointers, nullptr), IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::PropPointers), 0),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		IF_WITH_EDITORONLY_DATA(Z_Construct_UClass_AFGCrashSiteDebris_Statics::PropPointers, nullptr),
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::PropPointers), 0),
+		0,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebris_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebris_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCrashSiteDebris()
@@ -837,7 +871,11 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebris, 1500789734);
+	IMPLEMENT_CLASS(AFGCrashSiteDebris, 422311320);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGCrashSiteDebris>()
+	{
+		return AFGCrashSiteDebris::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrashSiteDebris(Z_Construct_UClass_AFGCrashSiteDebris, &AFGCrashSiteDebris::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrashSiteDebris"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrashSiteDebris);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

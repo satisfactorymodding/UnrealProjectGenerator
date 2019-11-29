@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu = { UE4CodeGen_Private::EPropertyClass::Object, "prevMenu", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGMenuBase_eventOnMenuEnter_Parms, prevMenu), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu = { "prevMenu", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMenuBase_eventOnMenuEnter_Parms, prevMenu), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::NewProp_prevMenu,
 	};
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuEnter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMenuBase_eventOnMenuEnter_Parms), Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, nullptr, "OnMenuEnter", sizeof(FGMenuBase_eventOnMenuEnter_Parms), Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMenuBase_OnMenuEnter()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuEnterDone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, nullptr, "OnMenuEnterDone", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -124,13 +124,13 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	{
 		((FGMenuBase_eventOnMenuExit_Parms*)Obj)->noAnimation = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_noAnimation = { UE4CodeGen_Private::EPropertyClass::Bool, "noAnimation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGMenuBase_eventOnMenuExit_Parms), &Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_noAnimation_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_noAnimation = { "noAnimation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGMenuBase_eventOnMenuExit_Parms), &Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_noAnimation_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu = { UE4CodeGen_Private::EPropertyClass::Object, "prevMenu", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGMenuBase_eventOnMenuExit_Parms, prevMenu), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu = { "prevMenu", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGMenuBase_eventOnMenuExit_Parms, prevMenu), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_noAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::NewProp_prevMenu,
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuExit", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMenuBase_eventOnMenuExit_Parms), Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, nullptr, "OnMenuExit", sizeof(FGMenuBase_eventOnMenuExit_Parms), Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMenuBase_OnMenuExit()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuExitDone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, nullptr, "OnMenuExitDone", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -196,10 +196,10 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMenuBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnter, "OnMenuEnter" }, // 1588456578
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone, "OnMenuEnterDone" }, // 2908973815
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExit, "OnMenuExit" }, // 2004887834
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone, "OnMenuExitDone" }, // 2191460505
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnter, "OnMenuEnter" }, // 788228871
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone, "OnMenuEnterDone" }, // 926712985
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExit, "OnMenuExit" }, // 1275177185
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone, "OnMenuExitDone" }, // 215214300
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMenuBase_Statics::Class_MetaDataParams[] = {
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		{ "ToolTip", "Cached switcher owning this widget" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedOwner", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(UFGMenuBase, mCachedOwner), Z_Construct_UClass_UFGWidgetSwitcher_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner = { "mCachedOwner", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGMenuBase, mCachedOwner), Z_Construct_UClass_UFGWidgetSwitcher_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGMenuBase_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner,
 	};
@@ -225,13 +225,17 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMenuBase_Statics::ClassParams = {
 		&UFGMenuBase::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A010A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGMenuBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGMenuBase_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::PropPointers),
+		0,
+		0x00A010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMenuBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMenuBase()
@@ -243,7 +247,11 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMenuBase, 3034511341);
+	IMPLEMENT_CLASS(UFGMenuBase, 2998531639);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGMenuBase>()
+	{
+		return UFGMenuBase::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMenuBase(Z_Construct_UClass_UFGMenuBase, &UFGMenuBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMenuBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMenuBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

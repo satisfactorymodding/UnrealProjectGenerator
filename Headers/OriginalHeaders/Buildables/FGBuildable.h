@@ -14,6 +14,7 @@
 #include "FactoryTick.h"
 #include "FGColorInterface.h"
 #include "FGReplicationDetailActorOwnerInterface.h"
+#include "FGBuildableSubsystem.h"
 #include "FGBuildable.generated.h"
 
 //@todonow These should CAPS_CASE according to the coding standard
@@ -72,8 +73,6 @@ public:
 
 	//~ Begin IFGColorInterface
 	void SetColorSlot_Implementation( uint8 newColor );
-	void SetPrimaryColor_Implementation( FLinearColor newColor );
-	void SetSecondaryColor_Implementation( FLinearColor newColor );
 	uint8 GetColorSlot_Implementation();
 	FLinearColor GetPrimaryColor_Implementation();
 	FLinearColor GetSecondaryColor_Implementation();
@@ -225,6 +224,9 @@ public:
 	/** Event on when buildable's replication detail actor changes state */
 	static FOnReplicationDetailActorStateChange OnBuildableReplicationDetailActorStateChange;
 
+	UFUNCTION( BlueprintPure, Category = "Buildable" )
+	UShapeComponent* GetClearanceComponent();
+
 protected:
 	/** Plays construction sound, override this event to play a custom sound. */
 	UFUNCTION( BlueprintNativeEvent, BlueprintCosmetic, Category = "Buildable|Build Effect" )
@@ -267,6 +269,15 @@ protected:
 	virtual uint8 MaxNumGrab( float delta ) const;
 
 	/**
+	*	This tells how many estimated grabs this building can make this frame. It is estimated as it must be thread safe so it cannot guarentee 100 percent accuracy
+	*	Use this when checking max grabs from an outside class that may be accessing this buildable at the same time as another
+	*
+	*	@ param delta - the amount of time that will be used when this building updates
+	*/
+	virtual uint8 EstimatedMaxNumGrab_ThreadSafe( float delta ) const;
+
+
+	/**
 	 * Override this to verify the default configuration.
 	 * @param out_message - Designer friendly message to be displayed.
 	 * @return - true if the defaults are valid; false if the defaults are configured wrong.
@@ -290,17 +301,27 @@ protected:
 	/** @return true if this building is replicating detailed information about it; false otherwise. */
 	bool IsReplicatingDetails() const { return mReplicateDetails; }
 
-	UFUNCTION( BlueprintPure, Category = "Buildable" )
-	UShapeComponent* GetClearanceComponent();
 
 	/** Toggles the pending dismantle material on buildable */
 	virtual void TogglePendingDismantleMaterial( bool enabled );
 
-
-
 	/** Update the color from the current color slot*/
 	UFUNCTION( BlueprintCallable )
 	void ReapplyColorSlot();
+
+	/** Does this buildable have a material instance manager mapped to the given component? 
+	*	The component to material manager map is used to verify we have already updated the factory materials for a given component. 
+	*	@todoFactoryMaterialInstance:	Is this still needed? It was used before to ensure we didn't attempt to instance a component multiple times, but this should be done in AddBuildable in the subsystem now
+	*									Not, as it was before, in the OnRep_ColorSlot(). We should only be applying materials once... right? [Thoughts from Dylan as he writes the new system]
+	*/
+	bool HasMaterialInstanceManagerForMaterialName( const FString& lookupName );
+
+	/** Returns the Material Manager for a given component, or null if there is not one */
+	class UFGFactoryMaterialInstanceManager* GetMaterialInstanceManagerForMaterialName( const FString& lookupName );
+
+	/** Adds an entry for a given component mapping to its respective Material Instance Manager. Returns false if it could not add an entry (eg. It already exists or failed to create) */
+	bool AddMaterialInstanceManagerForMaterialName( const FString& lookupName, class UFGFactoryMaterialInstanceManager* materialInstanceManager );
+
 private:
 	/** Create a stat for the buildable */
 	void CreateFactoryStatID() const;
@@ -314,19 +335,9 @@ private:
 	/** Helper to verify the connection naming. */
 	bool CheckFactoryConnectionComponents( FString& out_message );
 
-
-
 	/** Let the client set colors. */
 	UFUNCTION()
 	void OnRep_ColorSlot();
-
-	/** Let the client set colors. */
-	UFUNCTION()
-	void OnRep_PrimaryColor();
-
-	/** Let the client set colors. */
-	UFUNCTION()
-	void OnRep_SecondaryColor();
 
 	/** Let client see the highlight */
 	UFUNCTION()
@@ -338,6 +349,10 @@ private:
 
 	/** Get the number of factory connections */
 	uint8 GetNumFactoryConnections() const;
+
+	/** Get the number of factory output connections */
+	uint8 GetNumFactoryOuputConnections() const;
+
 public:
 	/** The hologram class to use for constructing this object. */
 	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
@@ -354,6 +369,10 @@ public:
 	/** Delegate will trigger whenever the actor's use state has changed (Start, End) */
 	static FOnRegisteredPlayerChanged OnRegisterPlayerChange;
 
+	/** Max draw distance, inactive when < 0 */
+	UPROPERTY(EditDefaultsOnly,Category = "Rendering")
+	float MaxRenderDistance;
+
 	/** Vector used to determine highlighteffects location */
 	UPROPERTY( EditDefaultsOnly, Category = "Buildable" )
 	FVector mHighlightVector;
@@ -364,12 +383,16 @@ protected:
 	UPROPERTY( EditDefaultsOnly, Category = "Factory Tick", meta = (NoAutoJson = true) )
 	FFactoryTickFunction mFactoryTickFunction;
 
+	/** Map of colorable mesh materials to their respective colored factory material instance manager */
+	UPROPERTY()
+	TMap< FString, class UFGFactoryMaterialInstanceManager*> mMaterialNameToInstanceManager;
+
 	/** The primary color of this buildable */
-	UPROPERTY( SaveGame, /*ReplicatedUsing = OnRep_PrimaryColor,*/ meta = (NoAutoJson = true) )
+	UPROPERTY( SaveGame, meta = (NoAutoJson = true) )
 	FLinearColor mPrimaryColor;
 
 	/** The primary color of this buildable */
-	UPROPERTY( SaveGame, /*ReplicatedUsing = OnRep_SecondaryColor,*/ meta = (NoAutoJson = true) )
+	UPROPERTY( SaveGame, meta = (NoAutoJson = true) )
 	FLinearColor mSecondaryColor;
 
 	/** The color slot of this buildable */
@@ -463,10 +486,6 @@ private:
 	/** The cached main mesh of this buildable */
 	TArray< UMeshComponent* > mCachedMainMeshes;
 
-	/** If you can interact with this factory. */
-	UPROPERTY( EditDefaultsOnly, Category = "Interaction" )
-	bool mIsUseable;
-
 	/** The widget that will present our UI. */
 	UPROPERTY( EditDefaultsOnly, Category = "Interaction", meta = ( EditCondition = mIsUseable ) )
 	TSubclassOf< class UFGInteractWidget > mInteractWidgetClass;
@@ -480,6 +499,10 @@ private:
 	/** Players interacting with this building */
 	UPROPERTY()
 	TArray< class AFGCharacterPlayer* > mInteractingPlayers;
+
+	/** If you can interact with this buildable. */
+	UPROPERTY( EditDefaultsOnly, Category = "Interaction" )
+	uint8 mIsUseable:1;
 
 	/** If this buildable is replicating details, i.e. for the UI. */
 	uint8 mReplicateDetails:1;
@@ -508,8 +531,6 @@ private:
 	/** Caching the shapecomponent once we have gotten it */
 	UPROPERTY()
 	UShapeComponent* mCachedShapeComponent;
-
-	TMap<class UMeshComponent*, TArray<class UMaterialInterface*>> mCachedMeshMaterials;
 };
 
 /** Definition for GetDefaultComponents. */

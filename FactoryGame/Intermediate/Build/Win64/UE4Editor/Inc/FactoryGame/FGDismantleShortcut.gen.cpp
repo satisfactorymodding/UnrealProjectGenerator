@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,13 +49,17 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDismantleShortcut_Statics::ClassParams = {
 		&UFGDismantleShortcut::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDismantleShortcut_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDismantleShortcut_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDismantleShortcut()
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleShortcut, 499783229);
+	IMPLEMENT_CLASS(UFGDismantleShortcut, 408017749);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGDismantleShortcut>()
+	{
+		return UFGDismantleShortcut::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleShortcut(Z_Construct_UClass_UFGDismantleShortcut, &UFGDismantleShortcut::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleShortcut"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleShortcut);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

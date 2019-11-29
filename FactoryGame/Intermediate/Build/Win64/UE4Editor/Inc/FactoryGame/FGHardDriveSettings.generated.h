@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,6 +21,8 @@ struct FResearchRecipeReward;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__Schematic() { return STRUCT_OFFSET(FHardDriveSchematicDrop, Schematic); }
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FHardDriveSchematicDrop>();
 
 #define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_43_RPC_WRAPPERS \
  \
@@ -120,6 +122,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class UFGHardDriveSettings>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGHardDriveSettings_h

@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -18,10 +18,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRailroadVehicleInputRate>();
+
 #define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_32_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FReplicatedRailroadVehicleState>();
 
 #define FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h_95_RPC_WRAPPERS \
 	virtual bool ServerUpdateState_Validate(int32 , float , float , float , float ); \
@@ -339,6 +343,8 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FACTORYGAME_API UClass* StaticClass<class UFGLocomotiveMovementComponent>();
+
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGLocomotiveMovementComponent_h
 
@@ -347,4 +353,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EMultipleUnitControl::MUC_Disabled) \
 	op(EMultipleUnitControl::MUC_Master) \
 	op(EMultipleUnitControl::MUC_Slave) 
+
+enum class EMultipleUnitControl : uint8;
+template<> FACTORYGAME_API UEnum* StaticEnum<EMultipleUnitControl>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

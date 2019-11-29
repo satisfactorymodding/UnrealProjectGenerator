@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -54,13 +54,17 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::ClassParams = {
 		&UFGProductionIndicatorInstanceComponent::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B010A4u,
-		nullptr, 0,
-		nullptr, 0,
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x00B010A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGProductionIndicatorInstanceComponent()
@@ -72,7 +76,11 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 2752951606);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 2012764611);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGProductionIndicatorInstanceComponent>()
+	{
+		return UFGProductionIndicatorInstanceComponent::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGProductionIndicatorInstanceComponent(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent, &UFGProductionIndicatorInstanceComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGProductionIndicatorInstanceComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGProductionIndicatorInstanceComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

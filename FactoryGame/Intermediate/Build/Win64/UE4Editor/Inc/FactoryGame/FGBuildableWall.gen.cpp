@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 		{ "ToolTip", "Height of the wall" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight = { UE4CodeGen_Private::EPropertyClass::Float, "mHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGBuildableWall, mHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight = { "mHeight", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableWall, mHeight), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth_MetaData[] = {
 		{ "Category", "Wall" },
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 		{ "ToolTip", "Width of the wall" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth = { UE4CodeGen_Private::EPropertyClass::Float, "mWidth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010015, 1, nullptr, STRUCT_OFFSET(AFGBuildableWall, mWidth), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth = { "mWidth", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFGBuildableWall, mWidth), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFGBuildableWall_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mHeight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFGBuildableWall_Statics::NewProp_mWidth,
@@ -79,13 +79,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildableWall_Statics::ClassParams = {
 		&AFGBuildableWall::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009002A5u,
-		nullptr, 0,
-		Z_Construct_UClass_AFGBuildableWall_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFGBuildableWall_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::PropPointers),
+		0,
+		0x009002A5u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWall_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWall_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildableWall()
@@ -97,7 +101,11 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWall() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWall, 2032533277);
+	IMPLEMENT_CLASS(AFGBuildableWall, 2641757977);
+	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildableWall>()
+	{
+		return AFGBuildableWall::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWall(Z_Construct_UClass_AFGBuildableWall, &AFGBuildableWall::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWall"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWall);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

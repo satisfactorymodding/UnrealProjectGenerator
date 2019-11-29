@@ -90,8 +90,8 @@ public:
 	void ShowDismantlePendingMaterial( class UFGSplineComponent* splineComponent );
 	void ShowDismantlePendingMaterial( class UProxyInstancedStaticMeshComponent* proxyMesh );
 
-	/** Reapplies any cached materials on actors that have been switched from ShowDismantlePendingMaterial. */
-	void HideDismantlePendingMaterial();
+	/** Re-applies all cached materials on actors that have been switched from ShowDismantlePendingMaterial. */
+	void HideAllDismantlePendingMaterial();
 
 protected:
 	void ShowActorOutline( class AActor* actorToOutline, EOutlineColor color );

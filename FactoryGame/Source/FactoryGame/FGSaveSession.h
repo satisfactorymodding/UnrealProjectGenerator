@@ -49,7 +49,7 @@ public:
 	static FORCEINLINE FString GetName( UPARAM( ref ) FSaveHeader& header ) { return header.SaveName; }
 
 	/** The session ID of the save game */
-	DEPRECATED( 4.20, "Use GetSessionName instead" )
+	UE_DEPRECATED( 4.20, "Use GetSessionName instead" )
 	UFUNCTION( BlueprintPure, Category = "Save", meta = (DeprecatedFunction, DeprecationMessage = "Use GetSessionName instead") )
 	static FORCEINLINE FString GetSessionID( UPARAM( ref ) FSaveHeader& header ) { return header.SessionName; }
 
@@ -70,7 +70,7 @@ public:
 	static FORCEINLINE TEnumAsByte<ESessionVisibility> GetSaveSessionVisibility( UPARAM( ref ) FSaveHeader& header ) { return header.SessionVisibility; }
 
 	/** Returns the name of this session */
-	DEPRECATED( 4.20, "Use GetSaveSessionName instead" )
+	UE_DEPRECATED( 4.20, "Use GetSaveSessionName instead" )
 	UFUNCTION( BlueprintPure, Category = "Save Session", meta = (DeprecatedFunction, DeprecationMessage = "Use GetSaveSessionName instead")  )
 	static FORCEINLINE FString GetSaveSessionID( UPARAM( ref ) FSessionSaveStruct& session ) { return session.SessionName; }
 

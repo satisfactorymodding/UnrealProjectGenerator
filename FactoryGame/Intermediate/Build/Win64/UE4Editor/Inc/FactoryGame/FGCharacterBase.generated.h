@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -31,19 +31,33 @@ class UPrimitiveComponent;
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffectWater>();
+
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_34_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
+
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffectSurface>();
 
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffect_Statics; \
 	FACTORYGAME_API static class UScriptStruct* StaticStruct();
 
 
+template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffect>();
+
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_63_RPC_WRAPPERS \
 	virtual void PlayFootstepEffect_Implementation(int32 footDown, bool playSound); \
 	virtual int32 CalculateFallDamage_Implementation(float zSpeed) const; \
+ \
+	DECLARE_FUNCTION(execOnRep_IsPossessed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_IsPossessed(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_IsRagdolled) \
 	{ \
@@ -255,6 +269,14 @@ class UPrimitiveComponent;
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_63_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void PlayFootstepEffect_Implementation(int32 footDown, bool playSound); \
 	virtual int32 CalculateFallDamage_Implementation(float zSpeed) const; \
+ \
+	DECLARE_FUNCTION(execOnRep_IsPossessed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnRep_IsPossessed(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnRep_IsRagdolled) \
 	{ \
@@ -503,6 +525,10 @@ class UPrimitiveComponent;
 		const UDamageType* damageType; \
 		AActor* damageCauser; \
 	}; \
+	struct FGCharacterBase_eventOnLocallyPossessedChanged_Parms \
+	{ \
+		bool isLocallyPossessed; \
+	}; \
 	struct FGCharacterBase_eventPlayFootstepEffect_Parms \
 	{ \
 		int32 footDown; \
@@ -602,7 +628,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGCharacterBase); \
 	FORCEINLINE static uint32 __PPO__mIgnoredDamageTypes() { return STRUCT_OFFSET(AFGCharacterBase, mIgnoredDamageTypes); } \
 	FORCEINLINE static uint32 __PPO__mWeakspotMultiplier() { return STRUCT_OFFSET(AFGCharacterBase, mWeakspotMultiplier); } \
 	FORCEINLINE static uint32 __PPO__mWeakspotBoneNames() { return STRUCT_OFFSET(AFGCharacterBase, mWeakspotBoneNames); } \
-	FORCEINLINE static uint32 __PPO__mNormalDamageMultiplier() { return STRUCT_OFFSET(AFGCharacterBase, mNormalDamageMultiplier); }
+	FORCEINLINE static uint32 __PPO__mNormalDamageMultiplier() { return STRUCT_OFFSET(AFGCharacterBase, mNormalDamageMultiplier); } \
+	FORCEINLINE static uint32 __PPO__mIsPossessed() { return STRUCT_OFFSET(AFGCharacterBase, mIsPossessed); }
 
 
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_60_PROLOG \
@@ -632,6 +659,8 @@ public: \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> FACTORYGAME_API UClass* StaticClass<class AFGCharacterBase>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGCharacterBase_h

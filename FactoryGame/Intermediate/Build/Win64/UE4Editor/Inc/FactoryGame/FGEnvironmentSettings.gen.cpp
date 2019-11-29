@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvironmentSettings() {}
 		{ "ToolTip", "The collection containing the world bounds" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters = { UE4CodeGen_Private::EPropertyClass::Object, "mWorldBoundsParameters", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGEnvironmentSettings, mWorldBoundsParameters), Z_Construct_UClass_UMaterialParameterCollection_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters = { "mWorldBoundsParameters", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGEnvironmentSettings, mWorldBoundsParameters), Z_Construct_UClass_UMaterialParameterCollection_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGEnvironmentSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGEnvironmentSettings_Statics::NewProp_mWorldBoundsParameters,
 	};
@@ -67,13 +67,17 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvironmentSettings() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGEnvironmentSettings_Statics::ClassParams = {
 		&UFGEnvironmentSettings::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x001000A1u,
-		nullptr, 0,
-		Z_Construct_UClass_UFGEnvironmentSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGEnvironmentSettings_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFGEnvironmentSettings_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFGEnvironmentSettings_Statics::PropPointers),
+		0,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGEnvironmentSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGEnvironmentSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGEnvironmentSettings()
@@ -85,7 +89,11 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvironmentSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEnvironmentSettings, 1925730401);
+	IMPLEMENT_CLASS(UFGEnvironmentSettings, 3146956719);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGEnvironmentSettings>()
+	{
+		return UFGEnvironmentSettings::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEnvironmentSettings(Z_Construct_UClass_UFGEnvironmentSettings, &UFGEnvironmentSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEnvironmentSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEnvironmentSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

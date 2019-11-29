@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -95,14 +95,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((FGWorkBench_eventCanProduce_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGWorkBench_eventCanProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWorkBench_eventCanProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory = { UE4CodeGen_Private::EPropertyClass::Object, "inventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventCanProduce_Parms, inventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventCanProduce_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory = { "inventory", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventCanProduce_Parms, inventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventCanProduce_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::NewProp_inventory,
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "CanProduce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGWorkBench_eventCanProduce_Parms), Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "CanProduce", sizeof(FGWorkBench_eventCanProduce_Parms), Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_CanProduce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "CraftComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "CraftComplete", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_CraftComplete()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Class, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000580, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetCurrentRecipe_Parms, ReturnValue), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetCurrentRecipe_Parms, ReturnValue), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::NewProp_ReturnValue,
 	};
@@ -171,7 +171,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "The recipe we're currently running." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetCurrentRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventGetCurrentRecipe_Parms), Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetCurrentRecipe", sizeof(FGWorkBench_eventGetCurrentRecipe_Parms), Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -199,7 +199,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((FGWorkBench_eventGetHoldToProduce_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGWorkBench_eventGetHoldToProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWorkBench_eventGetHoldToProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::NewProp_ReturnValue,
 	};
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Returns the player that is working at this workbench." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetHoldToProduce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventGetHoldToProduce_Parms), Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetHoldToProduce", sizeof(FGWorkBench_eventGetHoldToProduce_Parms), Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080588, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::NewProp_ReturnValue,
 	};
@@ -252,7 +252,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "@return The inventory this workbench is set to work with" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGWorkBench_eventGetInventory_Parms), Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetInventory", sizeof(FGWorkBench_eventGetInventory_Parms), Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -275,7 +275,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetManufacturingProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetManufacturingProgress_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::NewProp_ReturnValue,
 	};
@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Manufacturing progress in range [0,1]." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetManufacturingProgress", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventGetManufacturingProgress_Parms), Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetManufacturingProgress", sizeof(FGWorkBench_eventGetManufacturingProgress_Parms), Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -309,7 +309,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetManufacturingSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetManufacturingSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::NewProp_ReturnValue,
 	};
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "The speed of wich we manufacture stuff" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetManufacturingSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGWorkBench_eventGetManufacturingSpeed_Parms), Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetManufacturingSpeed", sizeof(FGWorkBench_eventGetManufacturingSpeed_Parms), Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -343,7 +343,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetPlayerWorkingAtBench_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetPlayerWorkingAtBench_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::NewProp_ReturnValue,
 	};
@@ -354,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Returns the player that is working at this workbench." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetPlayerWorkingAtBench", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventGetPlayerWorkingAtBench_Parms), Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetPlayerWorkingAtBench", sizeof(FGWorkBench_eventGetPlayerWorkingAtBench_Parms), Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -377,7 +377,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Float, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetProduceClickSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetProduceClickSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::NewProp_ReturnValue,
 	};
@@ -388,7 +388,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Returns the click speed for producing" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetProduceClickSpeed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventGetProduceClickSpeed_Parms), Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetProduceClickSpeed", sizeof(FGWorkBench_eventGetProduceClickSpeed_Parms), Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -411,7 +411,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventGetWorkBenchUser_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventGetWorkBenchUser_Parms, ReturnValue), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::NewProp_ReturnValue,
 	};
@@ -422,7 +422,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Returns current workbench user" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "GetWorkBenchUser", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventGetWorkBenchUser_Parms), Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "GetWorkBenchUser", sizeof(FGWorkBench_eventGetWorkBenchUser_Parms), Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -450,7 +450,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((FGWorkBench_eventIsProducing_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGWorkBench_eventIsProducing_Parms), &Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWorkBench_eventIsProducing_Parms), &Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::NewProp_ReturnValue,
 	};
@@ -460,7 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "IsProducing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventIsProducing_Parms), Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "IsProducing", sizeof(FGWorkBench_eventIsProducing_Parms), Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_IsProducing()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -483,7 +483,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_Produce_Statics::NewProp_produceSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "produceSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventProduce_Parms, produceSpeed), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFGWorkBench_Produce_Statics::NewProp_produceSpeed = { "produceSpeed", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventProduce_Parms, produceSpeed), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_Produce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_Produce_Statics::NewProp_produceSpeed,
 	};
@@ -495,7 +495,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Produce one step" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_Produce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "Produce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventProduce_Parms), Z_Construct_UFunction_UFGWorkBench_Produce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_Produce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_Produce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_Produce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_Produce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "Produce", sizeof(FGWorkBench_eventProduce_Parms), Z_Construct_UFunction_UFGWorkBench_Produce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_Produce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_Produce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_Produce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_Produce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -523,13 +523,13 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventRemoveIngredientsAndAwardRewards_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventRemoveIngredientsAndAwardRewards_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory = { UE4CodeGen_Private::EPropertyClass::Object, "inventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventRemoveIngredientsAndAwardRewards_Parms, inventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory = { "inventory", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventRemoveIngredientsAndAwardRewards_Parms, inventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_recipe,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::NewProp_inventory,
@@ -541,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Called when we finish a product and wants to give it to the inventory passed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "RemoveIngredientsAndAwardRewards", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventRemoveIngredientsAndAwardRewards_Parms), Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "RemoveIngredientsAndAwardRewards", sizeof(FGWorkBench_eventRemoveIngredientsAndAwardRewards_Parms), Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -569,7 +569,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((FGWorkBench_eventSetHoldToProduce_Parms*)Obj)->newHold = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::NewProp_newHold = { UE4CodeGen_Private::EPropertyClass::Bool, "newHold", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGWorkBench_eventSetHoldToProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::NewProp_newHold_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::NewProp_newHold = { "newHold", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWorkBench_eventSetHoldToProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::NewProp_newHold_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::NewProp_newHold,
 	};
@@ -580,7 +580,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Change holdToProduce status from blueprint" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "SetHoldToProduce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventSetHoldToProduce_Parms), Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "SetHoldToProduce", sizeof(FGWorkBench_eventSetHoldToProduce_Parms), Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -611,7 +611,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory = { UE4CodeGen_Private::EPropertyClass::Object, "newInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventSetInventory_Parms, newInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory = { "newInventory", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventSetInventory_Parms, newInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::NewProp_newInventory,
 	};
@@ -622,7 +622,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "sets current inventory we want" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "SetInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventSetInventory_Parms), Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "SetInventory", sizeof(FGWorkBench_eventSetInventory_Parms), Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_SetInventory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -650,7 +650,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((FGWorkBench_eventSetIsPressingProduce_Parms*)Obj)->isPressingProduce = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::NewProp_isPressingProduce = { UE4CodeGen_Private::EPropertyClass::Bool, "isPressingProduce", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FGWorkBench_eventSetIsPressingProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::NewProp_isPressingProduce_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::NewProp_isPressingProduce = { "isPressingProduce", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FGWorkBench_eventSetIsPressingProduce_Parms), &Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::NewProp_isPressingProduce_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::NewProp_isPressingProduce,
 	};
@@ -661,7 +661,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "Set the mIsPressingProduce" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "SetIsPressingProduce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventSetIsPressingProduce_Parms), Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "SetIsPressingProduce", sizeof(FGWorkBench_eventSetIsPressingProduce_Parms), Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -684,7 +684,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::NewProp_recipe = { UE4CodeGen_Private::EPropertyClass::Class, "recipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventSetRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::NewProp_recipe = { "recipe", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventSetRecipe_Parms, recipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::NewProp_recipe,
 	};
@@ -694,7 +694,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "SetRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventSetRecipe_Parms), Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "SetRecipe", sizeof(FGWorkBench_eventSetRecipe_Parms), Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_SetRecipe()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -717,7 +717,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::NewProp_newUser = { UE4CodeGen_Private::EPropertyClass::Object, "newUser", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FGWorkBench_eventSetWorkBenchUser_Parms, newUser), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::NewProp_newUser = { "newUser", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGWorkBench_eventSetWorkBenchUser_Parms, newUser), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::NewProp_newUser,
 	};
@@ -728,7 +728,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "sets current workbench user" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "SetWorkBenchUser", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventSetWorkBenchUser_Parms), Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, nullptr, "SetWorkBenchUser", sizeof(FGWorkBench_eventSetWorkBenchUser_Parms), Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -797,24 +797,24 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWorkBench_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWorkBench_CanProduce, "CanProduce" }, // 1144273475
-		{ &Z_Construct_UFunction_UFGWorkBench_CraftComplete, "CraftComplete" }, // 2538426232
-		{ &Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe, "GetCurrentRecipe" }, // 4280571816
-		{ &Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce, "GetHoldToProduce" }, // 2107918370
-		{ &Z_Construct_UFunction_UFGWorkBench_GetInventory, "GetInventory" }, // 4099679366
-		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress, "GetManufacturingProgress" }, // 1635533104
-		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed, "GetManufacturingSpeed" }, // 2838815742
-		{ &Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench, "GetPlayerWorkingAtBench" }, // 240109344
-		{ &Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed, "GetProduceClickSpeed" }, // 343045124
-		{ &Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser, "GetWorkBenchUser" }, // 4232934493
-		{ &Z_Construct_UFunction_UFGWorkBench_IsProducing, "IsProducing" }, // 2017246218
-		{ &Z_Construct_UFunction_UFGWorkBench_Produce, "Produce" }, // 3140893174
-		{ &Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards, "RemoveIngredientsAndAwardRewards" }, // 143159569
-		{ &Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce, "SetHoldToProduce" }, // 753293485
-		{ &Z_Construct_UFunction_UFGWorkBench_SetInventory, "SetInventory" }, // 3519699129
-		{ &Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce, "SetIsPressingProduce" }, // 3808285706
-		{ &Z_Construct_UFunction_UFGWorkBench_SetRecipe, "SetRecipe" }, // 2894939572
-		{ &Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser, "SetWorkBenchUser" }, // 995967218
+		{ &Z_Construct_UFunction_UFGWorkBench_CanProduce, "CanProduce" }, // 4046377701
+		{ &Z_Construct_UFunction_UFGWorkBench_CraftComplete, "CraftComplete" }, // 1523186115
+		{ &Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe, "GetCurrentRecipe" }, // 3235757708
+		{ &Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce, "GetHoldToProduce" }, // 1353864985
+		{ &Z_Construct_UFunction_UFGWorkBench_GetInventory, "GetInventory" }, // 4131211290
+		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress, "GetManufacturingProgress" }, // 3406099605
+		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed, "GetManufacturingSpeed" }, // 4215128248
+		{ &Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench, "GetPlayerWorkingAtBench" }, // 1357667077
+		{ &Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed, "GetProduceClickSpeed" }, // 4011258096
+		{ &Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser, "GetWorkBenchUser" }, // 3548741013
+		{ &Z_Construct_UFunction_UFGWorkBench_IsProducing, "IsProducing" }, // 1079511386
+		{ &Z_Construct_UFunction_UFGWorkBench_Produce, "Produce" }, // 3726475965
+		{ &Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards, "RemoveIngredientsAndAwardRewards" }, // 3710579260
+		{ &Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce, "SetHoldToProduce" }, // 2731213572
+		{ &Z_Construct_UFunction_UFGWorkBench_SetInventory, "SetInventory" }, // 1061126469
+		{ &Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce, "SetIsPressingProduce" }, // 1489210774
+		{ &Z_Construct_UFunction_UFGWorkBench_SetRecipe, "SetRecipe" }, // 805337685
+		{ &Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser, "SetWorkBenchUser" }, // 693570409
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::Class_MetaDataParams[] = {
@@ -836,7 +836,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((UFGWorkBench*)Obj)->mHoldToProduce = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce = { UE4CodeGen_Private::EPropertyClass::Bool, "mHoldToProduce", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGWorkBench), &Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce = { "mHoldToProduce", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGWorkBench), &Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed_MetaData[] = {
 		{ "Category", "Workbench" },
@@ -844,7 +844,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "How much produce time a mouse click should represent" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mProduceClickSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mProduceClickSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed = { "mProduceClickSpeed", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mProduceClickSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
@@ -852,7 +852,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "The inventory this workbench is set to work with" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory = { "mInventory", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData[] = {
 		{ "ModuleRelativePath", "FGWorkBench.h" },
@@ -863,20 +863,20 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	{
 		((UFGWorkBench*)Obj)->mIsProducing = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsProducing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGWorkBench), &Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing = { "mIsProducing", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFGWorkBench), &Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData[] = {
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 		{ "ToolTip", "Manufacturing rate in product per second." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate = { UE4CodeGen_Private::EPropertyClass::Float, "mRecipeRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mRecipeRate), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate = { "mRecipeRate", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mRecipeRate), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData[] = {
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench = { UE4CodeGen_Private::EPropertyClass::Object, "mPlayerWorkingAtBench", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mPlayerWorkingAtBench), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench = { "mPlayerWorkingAtBench", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mPlayerWorkingAtBench), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData[] = {
 		{ "Category", "Workbench" },
@@ -884,21 +884,21 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "ToolTip", "The speed of which this manufacturer manufactures stuff. Slower for Work Bench" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mManufacturingSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mManufacturingSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed = { "mManufacturingSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mManufacturingSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData[] = {
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 		{ "ToolTip", "Manufacturing progress in range [0,1]." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress = { UE4CodeGen_Private::EPropertyClass::Float, "mCurrentManufacturingProgress", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mCurrentManufacturingProgress), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress = { "mCurrentManufacturingProgress", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mCurrentManufacturingProgress), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe_MetaData[] = {
 		{ "ModuleRelativePath", "FGWorkBench.h" },
 		{ "ToolTip", "The recipe we're currently running." },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "mCurrentRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000000, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mCurrentRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe = { "mCurrentRecipe", nullptr, (EPropertyFlags)0x0014000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFGWorkBench, mCurrentRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFGWorkBench_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed,
@@ -918,13 +918,17 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWorkBench_Statics::ClassParams = {
 		&UFGWorkBench::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A4u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		Z_Construct_UClass_UFGWorkBench_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::PropPointers),
 		"Engine",
 		&StaticCppClassTypeInfo,
-		InterfaceParams, ARRAY_COUNT(InterfaceParams),
+		DependentSingletons,
+		FuncInfo,
+		Z_Construct_UClass_UFGWorkBench_Statics::PropPointers,
+		InterfaceParams,
+		ARRAY_COUNT(DependentSingletons),
+		ARRAY_COUNT(FuncInfo),
+		ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::PropPointers),
+		ARRAY_COUNT(InterfaceParams),
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWorkBench()
@@ -936,7 +940,11 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorkBench, 2782656134);
+	IMPLEMENT_CLASS(UFGWorkBench, 3336290690);
+	template<> FACTORYGAME_API UClass* StaticClass<UFGWorkBench>()
+	{
+		return UFGWorkBench::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWorkBench(Z_Construct_UClass_UFGWorkBench, &UFGWorkBench::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWorkBench"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWorkBench);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,16 +19,18 @@ struct FConnectionItemStruct
 	FConnectionItemStruct() :
 		Connection( nullptr ),
 		Item( FInventoryItem() ),
+		IndexInInventory( 0 ),
 		OffsetBeyond( 0.0f ),
-		IndexInInventory( 0 )
+		Grabbed( false )
 	{
 	}
 
 	FConnectionItemStruct( UFGFactoryConnectionComponent* inConnection, FInventoryItem inItem, float inOffsetBeyond, int32 indexInInventory ) :
 		Connection( inConnection ),
 		Item( inItem ),
+		IndexInInventory( indexInInventory ),
 		OffsetBeyond( inOffsetBeyond ),
-		IndexInInventory( indexInInventory )
+		Grabbed( false )
 	{
 	}
 
@@ -45,6 +47,9 @@ struct FConnectionItemStruct
 
 	/** How far past the conveyor belt length this item is */
 	float OffsetBeyond;
+
+	/** To allow this to be thread safe, this bool marks if a table element has been consumed, to remove the need to delete from the table array */
+	bool Grabbed;
 };
 
 /**
