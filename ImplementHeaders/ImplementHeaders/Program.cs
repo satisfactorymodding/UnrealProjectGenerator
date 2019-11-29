@@ -225,15 +225,15 @@ namespace ImplementHeaders
 
                 if (!string.IsNullOrWhiteSpace(ufunction))
                 {
-                    if (ufunction.Contains("BlueprintImplementableEvent"))
+                    if (Regex.IsMatch(ufunction, @"\WBlueprintImplementableEvent\W"))
                     {
                         if (!CountOnly)
                             Console.WriteLine($"Skipped {className}::{functionName} (BlueprintImplementableEvent)");
                         continue;
                     }
-                    if (ufunction.Contains("BlueprintNativeEvent") || ufunction.Contains("Server") || ufunction.Contains("Client") || ufunction.Contains("NetMulticast"))
+                    if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") || Regex.IsMatch(ufunction, @"\WServer\W") || Regex.IsMatch(ufunction, @"\WClient\W") || Regex.IsMatch(ufunction, @"\WNetMulticast\W"))
                     {
-                        if (ufunction.Contains("BlueprintNativeEvent") && className.Contains("Interface"))
+                        if (Regex.IsMatch(ufunction, @"\WBlueprintNativeEvent\W") && className.Contains("Interface"))
                         {
                             if (!CountOnly)
                                 Console.WriteLine($"Skipped {className}::{functionName} (BlueprintNativeEvent in Interface)"); // https://answers.unrealengine.com/questions/832889/blueprintnativeevent-function-already-has-a-body.html
@@ -241,9 +241,9 @@ namespace ImplementHeaders
                         }
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName.Trim() + "_Implementation", parameters, isConst, template, isStatic);
                     }
-                    else if (ufunction.Contains("BlueprintPure") || ufunction.Contains("BlueprintCallable") || ufunction.ToLower().Contains("exec") || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
+                    else if (Regex.IsMatch(ufunction, @"\WBlueprintPure\W") || Regex.IsMatch(ufunction, @"\WBlueprintCallable\W") || Regex.IsMatch(ufunction.ToLower(), @"\Wexec\W") || Regex.Replace(TrimUselessSpaces(ufunction), @"( ?(?:Category ?= ?"".*?""|meta ?= ?"".*""|meta ?= ?\(.*?\))(?:,| )?)", "") == "UFUNCTION()")
                         ImplementFunction(implementations, className, isClass, isReturnConst, returnType, functionName, parameters, isConst, template, isStatic);
-                    if (ufunction.Contains("WithValidation"))
+                    if (Regex.IsMatch(ufunction, @"\WWithValidation\W"))
                         ImplementFunction(implementations, className, isClass, isReturnConst, "bool ", functionName.Trim() + "_Validate", parameters, isConst, template, isStatic);
                 }
                 else
