@@ -53,6 +53,7 @@ namespace ImplementHeaders
             }
             if (args.Length >= 3)
                 CountOnly = bool.Parse(args[2]);
+            Directory.Delete(args[1], true); // remove the old implementations
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             Implement(args[0], args[1]);
@@ -115,11 +116,12 @@ namespace ImplementHeaders
         private static List<string> ImplementClass(string className, string classContents)
         {
             List<string> implementations = new List<string>();
-            classContents = Regex.Replace(classContents, @"\/\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
-            classContents = Regex.Replace(classContents, @"\/\/.*", ""); // fix for comments causing some error
+            classContents = Regex.Replace(classContents, @"\/+\*(?:.|\s)*?\*\/", ""); // fix for comments containing brackets being matched as functions
+            classContents = Regex.Replace(classContents, @"\/{2,}.*", ""); // fix for comments causing some error
             classContents = Regex.Replace(classContents, @"\s*GENERATED.*?\(\)", ""); // fix for GENERATED... macros being matched
             classContents = Regex.Replace(classContents, @"\s*UPROPERTY ?\( ?(?:.|\s)*?;", ""); // fix for UPROPERTY... macros being matched
-            classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UPROPERTY... macros being matched
+            classContents = Regex.Replace(classContents, @"\s*UE_DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for UE_DEPRECATED... macros being matched
+            classContents = Regex.Replace(classContents, @"\s*DEPRECATED ?\( ?(?:.|\s)*?\)", ""); // fix for DEPRECATED... macros being matched
             // Implement with #if ... and delete it (fixes issues and requires less manual changes in the end)
             foreach (Match ifMacro in Regex.Matches(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)"))
             {
@@ -138,8 +140,8 @@ namespace ImplementHeaders
                 implementations.AddRange(ImplementStaticVars(ifContents, className));
                 implementations.Add($"#endif {ifMacro.Groups[3].Value.Trim()}");
             }
-            classContents = Regex.Replace(classContents, @"\s*#if (.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
-            foreach (Match match in Regex.Matches(classContents, @"^([ \t]*)(class|struct) ([^ ]*? )??([^ ]*?)( ?: ?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
+            classContents = Regex.Replace(classContents, @"\s*#if\s(.*?)\n((?:.|\n)*?)\n\s*#endif(.*)", "");
+            foreach (Match match in Regex.Matches(classContents, @"^([\s\t]*)(class|struct)\s([^\s]*?\s)??([^\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\1};", RegexOptions.Multiline)) // Match inner class/struct definition
             {
                 string innerClassName = match.Groups[4].Value;
                 string innerClassContents = match.Groups[6].Value;
@@ -156,20 +158,26 @@ namespace ImplementHeaders
         private static List<string> ImplementStaticVars(string content, string className)
         {
             List<string> implementations = new List<string>();
-            foreach (Match function in Regex.Matches(content, @"(?<!const )static\s+([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"(?<!const\s)static\s+([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
             {
                 string type = FixReturnType(function.Groups[1].Value).Trim();
                 string name = function.Groups[2].Value;
-                implementations.Add($"{type} {className}::{name} = {type}();");
+                if(type.Contains("FAutoConsoleVariableSink")) // for this classes there is no constructor with no params, but NULL works
+                    implementations.Add($"{type} {className}::{name} = NULL;");
+                else // but NULL doesn't work for everything
+                    implementations.Add($"{type} {className}::{name} = {type}();");
             }
             return implementations;
         }
 
         private static List<string> ImplementFunctions(string content, string className)
         {
+            content = Regex.Replace(content, @"\r\n\s*public:", "\r\n");
+            content = Regex.Replace(content, @"\r\n\s*private:", "\r\n");
+            content = Regex.Replace(content, @"\r\n\s*protected:", "\r\n");
             List<string> implementations = new List<string>();
             // Match function definition (including UFUNCTIONs), nothing to see here ... just walk away ... probably the reason for many missing implementations...
-            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual ?)?(static ?)?(const ?)?(class ?)?(explicit ?)?([^=()\n{}]*? )?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"^\s*(?:(UFUNCTION\s*\(.*?\))\s*)?(template\s*<\s*.*?>\s*)?(virtual\s?)?(static\s?)?(const\s?)?(class\s?)?(explicit\s?)?([^=()\n{}]*?\s)?\n*((?:[^=<>()\n{}]|operator.+)*?)(\([^{}]*?\))(\s*const)?(\s*override)?(.*);", RegexOptions.Multiline))
             {
                 // string comment = function.Groups[1].Value; // removed because regex took too long
                 string ufunction = function.Groups[1].Value;
@@ -372,7 +380,7 @@ namespace ImplementHeaders
 
         private static bool IsValidReturnType(string returnType)
         {
-            return !(new string[] { "return", "if", "else", "const", "struct", "for" /* fill with more as they show up */ }).Contains(returnType.Trim()) && !IsAllCaps(returnType) && !string.IsNullOrWhiteSpace(returnType) && !returnType.Contains("FORCEINLINE"); // FORCEINLINE are already implemented in header (?)
+            return !(new string[] { "return", "if", "else", "const", "struct", "for" /* fill with more as they show up */ }).Contains(returnType.Trim()) && !IsAllCaps(returnType) && !string.IsNullOrWhiteSpace(returnType) && !returnType.Contains("FORCEINLINE") && !returnType.Contains("+"); // FORCEINLINE are already implemented in header (?)
         }
     }
 }
