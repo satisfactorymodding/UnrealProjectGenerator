@@ -26,7 +26,7 @@ DECLARE_DELEGATE( FOnHotbarReplicated );
  * Collected data for a slot that is specified
  */
 USTRUCT( BlueprintType )
-struct FSlotData
+struct FACTORYGAME_API FSlotData
 {
 	GENERATED_BODY();
 
@@ -48,7 +48,7 @@ struct FSlotData
 * Data associated with a message
 */
 USTRUCT( BlueprintType )
-struct FMessageData
+struct FACTORYGAME_API FMessageData
 {
 	GENERATED_BODY();
 

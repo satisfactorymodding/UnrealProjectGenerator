@@ -108,7 +108,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDestroyedFoliageEffectData()
@@ -126,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Hash() { return 2679777181U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Hash() { return 1476898446U; }
 	void AFGDestructiveProjectile::StaticRegisterNativesAFGDestructiveProjectile()
 	{
 	}
@@ -247,7 +247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructiveProjectile, 4145561132);
+	IMPLEMENT_CLASS(AFGDestructiveProjectile, 3961579558);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDestructiveProjectile>()
 	{
 		return AFGDestructiveProjectile::StaticClass();

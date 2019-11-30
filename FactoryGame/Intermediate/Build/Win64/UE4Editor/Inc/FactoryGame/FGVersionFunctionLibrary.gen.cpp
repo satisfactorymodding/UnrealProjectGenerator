@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVersionFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVersionFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGVersionFunctionLibrary()
@@ -253,7 +253,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVersionFunctionLibrary, 2922513289);
+	IMPLEMENT_CLASS(UFGVersionFunctionLibrary, 2391847707);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGVersionFunctionLibrary>()
 	{
 		return UFGVersionFunctionLibrary::StaticClass();

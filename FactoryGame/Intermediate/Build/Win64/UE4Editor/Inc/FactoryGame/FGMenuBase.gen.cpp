@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::PropPointers),
 		0,
-		0x00A010A0u,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMenuBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMenuBase()
@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMenuBase, 2998531639);
+	IMPLEMENT_CLASS(UFGMenuBase, 2573484180);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMenuBase>()
 	{
 		return UFGMenuBase::StaticClass();

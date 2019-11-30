@@ -180,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 		Z_Construct_UScriptStruct_FMessageData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FMessageData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMessageData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMessageData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMessageData()
@@ -198,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMessageData_Hash() { return 165274518U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMessageData_Hash() { return 1245439689U; }
 class UScriptStruct* FSlotData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -279,7 +279,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		Z_Construct_UScriptStruct_FSlotData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSlotData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSlotData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSlotData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSlotData()
@@ -297,7 +297,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSlotData_Hash() { return 2220058532U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSlotData_Hash() { return 2255475979U; }
 	static FName NAME_AFGPlayerState_Server_RemoveRecipe = FName(TEXT("Server_RemoveRecipe"));
 	void AFGPlayerState::Server_RemoveRecipe(TSubclassOf<UFGRecipe>  recipe)
 	{

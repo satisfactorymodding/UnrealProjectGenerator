@@ -890,7 +890,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGInteractWidget_Statics::PropPointers),
 		0,
-		0x00A010A4u,
+		0x00B010A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInteractWidget_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInteractWidget_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGInteractWidget()
@@ -902,7 +902,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInteractWidget, 12320230);
+	IMPLEMENT_CLASS(UFGInteractWidget, 1178605627);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInteractWidget>()
 	{
 		return UFGInteractWidget::StaticClass();

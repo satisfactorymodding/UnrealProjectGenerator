@@ -9,7 +9,7 @@
 /**
  * Shared magic between holograms
  */
-struct FHologramHelpers
+struct FACTORYGAME_API FHologramHelpers
 {
 	/** 
 	 * Creates a clearance component
@@ -28,7 +28,7 @@ struct FHologramHelpers
 	static float CalcPoleHeight( const struct FHitResult& aimResult, const struct FVector& poleLocation );
 };
 
-struct FSplineUtils
+struct FACTORYGAME_API FSplineUtils
 {
 	/**
 	 * Helper to make an arc with a spline.
@@ -138,7 +138,7 @@ private:
 /**
  * Small util for building splines.
  */
-struct FSplineBuilder
+struct FACTORYGAME_API FSplineBuilder
 {
 	FSplineBuilder( TArray< FSplinePointData >& out_points ) : SplineData( out_points ) {}
 

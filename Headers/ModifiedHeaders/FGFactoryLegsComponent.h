@@ -11,7 +11,7 @@
 #include "FGFactoryLegsComponent.generated.h"
 
 USTRUCT()
-struct FFeetOffset
+struct FACTORYGAME_API FFeetOffset
 {
 	GENERATED_BODY()
 public:
@@ -36,7 +36,7 @@ public:
 };
 
 UCLASS( ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class UFGFactoryLegsComponent : public USceneComponent, public IFGSaveInterface
+class FACTORYGAME_API UFGFactoryLegsComponent : public USceneComponent, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

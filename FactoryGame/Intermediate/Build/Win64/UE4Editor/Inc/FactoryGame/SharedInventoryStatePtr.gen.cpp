@@ -81,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSharedInventoryStatePtr()
@@ -99,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash() { return 1394716256U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Hash() { return 3985599718U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

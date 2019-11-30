@@ -17,7 +17,7 @@ struct FSkySphereSettings;
 
 #define FactoryGame_Source_FactoryGame_FGSkySphere_h_12_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSkySphereSettings_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSkySphereSettings>();

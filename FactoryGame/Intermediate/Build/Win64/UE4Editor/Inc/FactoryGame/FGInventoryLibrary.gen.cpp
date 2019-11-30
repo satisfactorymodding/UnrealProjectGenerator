@@ -907,7 +907,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInventoryLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGInventoryLibrary()
@@ -919,7 +919,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryLibrary, 2198372240);
+	IMPLEMENT_CLASS(UFGInventoryLibrary, 2970239981);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryLibrary>()
 	{
 		return UFGInventoryLibrary::StaticClass();

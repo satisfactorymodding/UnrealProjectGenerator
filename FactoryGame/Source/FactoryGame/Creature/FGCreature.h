@@ -31,7 +31,7 @@ enum class EMoveSpeed :uint8
 };
 
 USTRUCT( BlueprintType ) 
-struct FMoveSpeedPair
+struct FACTORYGAME_API FMoveSpeedPair
 {
 	GENERATED_BODY()
 

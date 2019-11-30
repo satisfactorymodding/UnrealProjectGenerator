@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 		Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSimulatedItemDropTransform()
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedItemDropT
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash() { return 3398807790U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Hash() { return 951750423U; }
 class UScriptStruct* FSimulatedActorTransform::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -189,7 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 		Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSimulatedActorTransform()
@@ -207,7 +207,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedActorTran
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash() { return 2105192501U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedActorTransform_Hash() { return 2321474341U; }
 class UScriptStruct* FSimulatedMeshTransform::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -283,7 +283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 		Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSimulatedMeshTransform()
@@ -301,7 +301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSimulatedMeshTrans
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash() { return 61516491U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSimulatedMeshTransform_Hash() { return 2024473855U; }
 class UScriptStruct* FDebrisItemDrop::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -381,7 +381,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisItemDrop_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDebrisItemDrop()
@@ -399,7 +399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisItemDrop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash() { return 1058376583U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisItemDrop_Hash() { return 1756849398U; }
 class UScriptStruct* FDebrisActor::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -479,7 +479,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisActor_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisActor_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDebrisActor()
@@ -497,7 +497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisActor
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash() { return 364443143U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisActor_Hash() { return 3867971395U; }
 class UScriptStruct* FDebrisMesh::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -577,7 +577,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDebrisMesh_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDebrisMesh_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDebrisMesh()
@@ -595,7 +595,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDebrisMesh
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash() { return 2895397797U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDebrisMesh_Hash() { return 491661459U; }
 	void AFGCrashSiteDebris::StaticRegisterNativesAFGCrashSiteDebris()
 	{
 	}

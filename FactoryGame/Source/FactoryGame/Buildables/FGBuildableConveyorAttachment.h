@@ -16,7 +16,7 @@
 * This is a struct that will assign an item to a certain connection. Used by splitters to cycle outputs so all items dont always go to one output
 */
 USTRUCT()
-struct FConnectionItemStruct
+struct FACTORYGAME_API FConnectionItemStruct
 {
 	GENERATED_BODY()
 

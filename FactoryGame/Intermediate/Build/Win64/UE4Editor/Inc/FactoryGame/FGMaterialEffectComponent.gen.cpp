@@ -127,7 +127,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo()
@@ -145,7 +145,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Hash() { return 2906224573U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Hash() { return 1849736011U; }
 	static FName NAME_UFGMaterialEffectComponent_OnEnded = FName(TEXT("OnEnded"));
 	void UFGMaterialEffectComponent::OnEnded()
 	{

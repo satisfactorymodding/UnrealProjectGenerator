@@ -20,7 +20,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnShortcutsLayoutChanged );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnShortcutChanged );
 
 UCLASS( Config=Game)
-class AFGPlayerController : public AFGPlayerControllerBase
+class FACTORYGAME_API AFGPlayerController : public AFGPlayerControllerBase
 {
 	GENERATED_BODY()
 public:

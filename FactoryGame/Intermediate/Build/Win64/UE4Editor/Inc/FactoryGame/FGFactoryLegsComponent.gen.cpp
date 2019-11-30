@@ -117,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFeetOffset()
@@ -135,7 +135,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_Hash() { return 2443699590U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_Hash() { return 2910437484U; }
 	void UFGFactoryLegsComponent::StaticRegisterNativesUFGFactoryLegsComponent()
 	{
 		UClass* Class = UFGFactoryLegsComponent::StaticClass();
@@ -390,7 +390,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x00A000A4u,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFactoryLegsComponent()
@@ -402,7 +402,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 897354894);
+	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 1477471115);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFactoryLegsComponent>()
 	{
 		return UFGFactoryLegsComponent::StaticClass();

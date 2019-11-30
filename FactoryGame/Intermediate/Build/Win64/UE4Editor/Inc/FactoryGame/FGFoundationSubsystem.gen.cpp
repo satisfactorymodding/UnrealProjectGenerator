@@ -89,7 +89,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FBuilding_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FBuilding()
@@ -107,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash() { return 2498160441U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBuilding_Hash() { return 282739653U; }
 	void AFGFoundationSubsystem::StaticRegisterNativesAFGFoundationSubsystem()
 	{
 	}

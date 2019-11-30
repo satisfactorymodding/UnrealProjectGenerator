@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_FullInventory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_FullInventory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_FullInventory()
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_FullInventory, 3300907226);
+	IMPLEMENT_CLASS(UFGUseState_FullInventory, 3020589563);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_FullInventory>()
 	{
 		return UFGUseState_FullInventory::StaticClass();
@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_Collecting_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Collecting_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_Collecting()
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Collecting, 3794830004);
+	IMPLEMENT_CLASS(UFGUseState_Collecting, 2772777957);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_Collecting>()
 	{
 		return UFGUseState_Collecting::StaticClass();
@@ -674,7 +674,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A1u,
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGItemPickup()
@@ -686,7 +686,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup, 202607380);
+	IMPLEMENT_CLASS(AFGItemPickup, 3751208250);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGItemPickup>()
 	{
 		return AFGItemPickup::StaticClass();

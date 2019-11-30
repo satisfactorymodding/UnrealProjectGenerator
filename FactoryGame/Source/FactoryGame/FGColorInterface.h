@@ -9,7 +9,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGColorInterface : public UInterface
+class FACTORYGAME_API UFGColorInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -19,7 +19,7 @@ class UFGColorInterface : public UInterface
 /**
 *
 */
-class IFGColorInterface
+class FACTORYGAME_API IFGColorInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

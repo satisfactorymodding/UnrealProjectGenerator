@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		0,
 		0,
 		0,
-		0x008002A0u,
+		0x009002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGAudioVolumeSubsystem()
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 1131157758);
+	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 3212704026);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAudioVolumeSubsystem>()
 	{
 		return AFGAudioVolumeSubsystem::StaticClass();

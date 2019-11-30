@@ -23,7 +23,7 @@ enum class ESchematicType : uint8;
 
 #define FactoryGame_Source_FactoryGame_FGSchematic_h_44_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMultipleItemStruct_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMultipleItemStruct>();

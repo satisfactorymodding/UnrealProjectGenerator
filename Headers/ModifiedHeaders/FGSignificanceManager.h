@@ -26,7 +26,7 @@ enum class EFGSignificanceType : uint8
 };
 
 USTRUCT() 
-struct FGainSignificanceData
+struct FACTORYGAME_API FGainSignificanceData
 {
 	GENERATED_BODY()
 	EFGSignificanceType SignificanceType; 

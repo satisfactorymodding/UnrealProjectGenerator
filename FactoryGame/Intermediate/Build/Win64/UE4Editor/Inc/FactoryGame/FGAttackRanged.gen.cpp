@@ -143,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackRanged() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackRanged, 35294304);
+	IMPLEMENT_CLASS(UFGAttackRanged, 1554265306);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttackRanged>()
 	{
 		return UFGAttackRanged::StaticClass();

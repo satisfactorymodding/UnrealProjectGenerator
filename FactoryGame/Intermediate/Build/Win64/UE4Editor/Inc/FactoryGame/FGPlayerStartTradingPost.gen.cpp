@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerStartTradingPost() {}
 		0,
 		0,
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPlayerStartTradingPost_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerStartTradingPost_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPlayerStartTradingPost()
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerStartTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 845068253);
+	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 3747424354);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerStartTradingPost>()
 	{
 		return AFGPlayerStartTradingPost::StaticClass();

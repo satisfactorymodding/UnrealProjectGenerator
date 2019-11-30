@@ -102,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMaterialAndSlotName()
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialAndSlotName_Hash() { return 3059676974U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialAndSlotName_Hash() { return 423793927U; }
 	void AFGSuitBase::StaticRegisterNativesAFGSuitBase()
 	{
 	}
@@ -259,7 +259,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_AFGSuitBaseAttachment_Statics::PropPointers),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSuitBaseAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSuitBaseAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSuitBaseAttachment()
@@ -271,7 +271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 993168658);
+	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 2743496077);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSuitBaseAttachment>()
 	{
 		return AFGSuitBaseAttachment::StaticClass();

@@ -116,7 +116,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSignWallData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignWallData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSignWallData()
@@ -134,7 +134,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignWallData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSignWallData_Hash() { return 1440550879U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSignWallData_Hash() { return 1889323913U; }
 	void AFGBuildableSignWall::StaticRegisterNativesAFGBuildableSignWall()
 	{
 		UClass* Class = AFGBuildableSignWall::StaticClass();

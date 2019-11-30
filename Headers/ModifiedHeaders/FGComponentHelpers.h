@@ -5,7 +5,7 @@
 
 DECLARE_DELEGATE_RetVal_ThreeParams( class USceneComponent*, FComponentDuplicator, class USceneComponent*, class UActorComponent*, const FName& );
 
-class FGComponentHelpers
+class FACTORYGAME_API FGComponentHelpers
 {
 public:
 	/**

@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		0,
 		0,
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGasMask_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGasMask_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGasMask()
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 1095712968);
+	IMPLEMENT_CLASS(AFGGasMask, 1107624167);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMask>()
 	{
 		return AFGGasMask::StaticClass();
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		0,
 		0,
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGGasMaskAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGGasMaskAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGGasMaskAttachment()
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 3436301667);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1842852081);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGGasMaskAttachment>()
 	{
 		return AFGGasMaskAttachment::StaticClass();

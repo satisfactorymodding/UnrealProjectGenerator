@@ -16,7 +16,7 @@ struct FSplitterSortRule;
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableSplitterSmart_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSplitterSortRule_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSplitterSortRule>();

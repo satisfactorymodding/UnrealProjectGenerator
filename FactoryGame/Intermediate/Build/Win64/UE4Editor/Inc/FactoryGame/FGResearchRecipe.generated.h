@@ -18,7 +18,7 @@ class UFGItemDescriptor;
 
 #define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchRecipeReward_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResearchRecipeReward>();

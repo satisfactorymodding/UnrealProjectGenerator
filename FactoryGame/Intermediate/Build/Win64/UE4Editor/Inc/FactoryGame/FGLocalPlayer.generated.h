@@ -19,14 +19,14 @@ struct FFGOnlineFriend;
 
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_149_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FUpdatedFriends_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FUpdatedFriends>();
 
 #define FactoryGame_Source_FactoryGame_FGLocalPlayer_h_64_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGOnlineFriend_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGOnlineFriend>();

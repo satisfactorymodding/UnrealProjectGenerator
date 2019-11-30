@@ -239,7 +239,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FUserFeedbackFrontEndData()
@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash() { return 3672434563U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Hash() { return 2428888769U; }
 class UScriptStruct* FOnlinePresence::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -308,7 +308,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FOnlinePresence_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FOnlinePresence_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FOnlinePresence()
@@ -326,7 +326,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash() { return 195193203U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_Hash() { return 4010856968U; }
 	void UFGPresenceLibrary::StaticRegisterNativesUFGPresenceLibrary()
 	{
 		UClass* Class = UFGPresenceLibrary::StaticClass();
@@ -800,7 +800,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPresenceLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPresenceLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPresenceLibrary()
@@ -812,7 +812,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPresenceLibrary, 1587342158);
+	IMPLEMENT_CLASS(UFGPresenceLibrary, 2614083734);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPresenceLibrary>()
 	{
 		return UFGPresenceLibrary::StaticClass();
@@ -1261,7 +1261,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFriendsLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFriendsLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFriendsLibrary()
@@ -1273,7 +1273,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFriendsLibrary, 3922190597);
+	IMPLEMENT_CLASS(UFGFriendsLibrary, 1433342690);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFriendsLibrary>()
 	{
 		return UFGFriendsLibrary::StaticClass();
@@ -1805,7 +1805,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSessionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSessionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSessionLibrary()
@@ -1817,7 +1817,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSessionLibrary, 1514482233);
+	IMPLEMENT_CLASS(UFGSessionLibrary, 3867426030);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSessionLibrary>()
 	{
 		return UFGSessionLibrary::StaticClass();
@@ -2161,7 +2161,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInviteLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInviteLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGInviteLibrary()
@@ -2173,7 +2173,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInviteLibrary, 1039405925);
+	IMPLEMENT_CLASS(UFGInviteLibrary, 2348852762);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInviteLibrary>()
 	{
 		return UFGInviteLibrary::StaticClass();
@@ -2783,7 +2783,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGNetworkLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGNetworkLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGNetworkLibrary()
@@ -2795,7 +2795,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNetworkLibrary, 2163023102);
+	IMPLEMENT_CLASS(UFGNetworkLibrary, 3306252934);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGNetworkLibrary>()
 	{
 		return UFGNetworkLibrary::StaticClass();

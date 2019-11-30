@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers),
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGErrorMessage_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGErrorMessage()
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGErrorMessage, 2021819786);
+	IMPLEMENT_CLASS(UFGErrorMessage, 1771918338);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGErrorMessage>()
 	{
 		return UFGErrorMessage::StaticClass();

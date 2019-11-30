@@ -10,7 +10,7 @@
 #include "FGWeaponProjectileFire.generated.h"
 
 USTRUCT()
-struct FProjectileData
+struct FACTORYGAME_API FProjectileData
 {
 	GENERATED_USTRUCT_BODY()
 

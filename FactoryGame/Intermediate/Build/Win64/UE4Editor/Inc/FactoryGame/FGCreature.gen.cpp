@@ -278,7 +278,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMoveSpeedPair()
@@ -296,7 +296,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMoveSpeedPair_Hash() { return 602290959U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMoveSpeedPair_Hash() { return 1396862450U; }
 	static FName NAME_AFGCreature_CancelRotationMovement = FName(TEXT("CancelRotationMovement"));
 	void AFGCreature::CancelRotationMovement()
 	{
@@ -1532,7 +1532,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreature, 3692062331);
+	IMPLEMENT_CLASS(AFGCreature, 2748746213);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCreature>()
 	{
 		return AFGCreature::StaticClass();

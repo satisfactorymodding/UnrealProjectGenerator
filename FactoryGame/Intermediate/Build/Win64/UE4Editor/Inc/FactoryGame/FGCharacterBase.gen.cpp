@@ -147,7 +147,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 		Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFootstepEffectWater()
@@ -165,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectWater_Hash() { return 3465037273U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectWater_Hash() { return 1704817410U; }
 class UScriptStruct* FFootstepEffectSurface::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -246,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 		Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFootstepEffectSurface()
@@ -264,7 +264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectSurface_Hash() { return 587281178U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectSurface_Hash() { return 2252616446U; }
 class UScriptStruct* FFootstepEffect::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -344,7 +344,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		Z_Construct_UScriptStruct_FFootstepEffect_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffect_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFootstepEffect_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffect_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFootstepEffect()
@@ -362,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_Hash() { return 2985913667U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_Hash() { return 3467505291U; }
 	static FName NAME_AFGCharacterBase_CalculateFallDamage = FName(TEXT("CalculateFallDamage"));
 	int32 AFGCharacterBase::CalculateFallDamage(float zSpeed) const
 	{
@@ -2225,7 +2225,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCharacterBase_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCharacterBase()
@@ -2237,7 +2237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterBase, 3879855679);
+	IMPLEMENT_CLASS(AFGCharacterBase, 1848219675);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterBase>()
 	{
 		return AFGCharacterBase::StaticClass();

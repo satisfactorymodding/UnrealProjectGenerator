@@ -63,3 +63,5 @@ void UFGGameUserSettings::SetOptionValue( FString cvar, int32 value){ }
 void UFGGameUserSettings::SetOptionValue( FString cvar, float value){ }
 void UFGGameUserSettings::BroadcastDynamicOptionUpdate( FString cvar){ }
 FAutoConsoleVariableSink UFGGameUserSettings::mCVarSink = NULL;
+const FString UFGGameUserSettings::MOTION_BLUR_QUALITY = FString();
+const FString UFGGameUserSettings::HZBO_SETTING = FString();

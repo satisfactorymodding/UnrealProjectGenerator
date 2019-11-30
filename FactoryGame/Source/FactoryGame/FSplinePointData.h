@@ -4,7 +4,7 @@
 #include "FSplinePointData.generated.h"
 
 USTRUCT(BlueprintType)
-struct FSplinePointData
+struct FACTORYGAME_API FSplinePointData
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SplinePoint)

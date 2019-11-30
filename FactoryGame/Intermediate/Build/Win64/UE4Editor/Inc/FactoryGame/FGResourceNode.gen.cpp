@@ -253,7 +253,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		Z_Construct_UScriptStruct_FPurityTextPair_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPurityTextPair_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPurityTextPair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPurityTextPair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPurityTextPair()
@@ -271,7 +271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPurityTextPair_Hash() { return 3825005130U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPurityTextPair_Hash() { return 514852669U; }
 	void UFGUseState_NodeFullInventory::StaticRegisterNativesUFGUseState_NodeFullInventory()
 	{
 	}
@@ -314,7 +314,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_NodeFullInventory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_NodeFullInventory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_NodeFullInventory()
@@ -326,7 +326,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_NodeFullInventory, 1314815657);
+	IMPLEMENT_CLASS(UFGUseState_NodeFullInventory, 3133919732);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_NodeFullInventory>()
 	{
 		return UFGUseState_NodeFullInventory::StaticClass();
@@ -375,7 +375,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_NonConveyorResource_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_NonConveyorResource_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_NonConveyorResource()
@@ -387,7 +387,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_NonConveyorResource, 3789190536);
+	IMPLEMENT_CLASS(UFGUseState_NonConveyorResource, 4215300094);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_NonConveyorResource>()
 	{
 		return UFGUseState_NonConveyorResource::StaticClass();

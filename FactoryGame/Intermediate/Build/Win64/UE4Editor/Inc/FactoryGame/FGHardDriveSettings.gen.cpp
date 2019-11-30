@@ -105,7 +105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FHardDriveSchematicDrop()
@@ -123,7 +123,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash() { return 3891567298U; }
+	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Hash() { return 14910069U; }
 	void UFGHardDriveSettings::StaticRegisterNativesUFGHardDriveSettings()
 	{
 		UClass* Class = UFGHardDriveSettings::StaticClass();

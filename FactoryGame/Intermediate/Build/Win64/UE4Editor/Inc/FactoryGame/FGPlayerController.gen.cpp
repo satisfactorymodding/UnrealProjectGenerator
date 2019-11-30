@@ -2925,7 +2925,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::PropPointers),
 		0,
-		0x008002A4u,
+		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPlayerController()
@@ -2937,7 +2937,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 902719513);
+	IMPLEMENT_CLASS(AFGPlayerController, 3852215722);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlayerController>()
 	{
 		return AFGPlayerController::StaticClass();

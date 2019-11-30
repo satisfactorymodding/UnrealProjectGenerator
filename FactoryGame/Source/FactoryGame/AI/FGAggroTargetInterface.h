@@ -10,7 +10,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGAggroTargetInterface : public UInterface
+class FACTORYGAME_API UFGAggroTargetInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -20,7 +20,7 @@ class UFGAggroTargetInterface : public UInterface
 /**
 * @brief Interface for everything that can be in the inventory
 */
-class IFGAggroTargetInterface
+class FACTORYGAME_API IFGAggroTargetInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

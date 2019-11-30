@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::PropPointers),
 		0,
-		0x00A010A0u,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWidgetMultiplayer()
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 807431134);
+	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 3528227455);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWidgetMultiplayer>()
 	{
 		return UFGWidgetMultiplayer::StaticClass();

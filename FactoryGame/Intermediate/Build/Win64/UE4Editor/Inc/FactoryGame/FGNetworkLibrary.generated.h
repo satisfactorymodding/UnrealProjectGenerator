@@ -26,14 +26,14 @@ class APlayerController;
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_49_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FUserFeedbackFrontEndData>();
 
 #define FactoryGame_Source_FactoryGame_FGNetworkLibrary_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOnlinePresence_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FOnlinePresence>();

@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers),
 		0,
-		0x00A000A4u,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W()
@@ -259,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 1546071698);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 2562128765);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWheeledVehicleMovementComponent4W>()
 	{
 		return UFGWheeledVehicleMovementComponent4W::StaticClass();

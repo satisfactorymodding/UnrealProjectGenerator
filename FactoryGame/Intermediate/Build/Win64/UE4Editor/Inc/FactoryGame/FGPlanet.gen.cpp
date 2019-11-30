@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		ARRAY_COUNT(FuncInfo),
 		IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::PropPointers), 0),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGPlanet_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGPlanet()
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlanet, 1681856514);
+	IMPLEMENT_CLASS(AFGPlanet, 1523110047);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGPlanet>()
 	{
 		return AFGPlanet::StaticClass();

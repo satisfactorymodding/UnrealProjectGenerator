@@ -8,7 +8,7 @@
 #include "FGRecipeShortcut.generated.h"
 
 UCLASS()
-class UFGRecipeShortcut : public UFGHotbarShortcut
+class FACTORYGAME_API UFGRecipeShortcut : public UFGHotbarShortcut
 {
 	GENERATED_BODY()
 public:

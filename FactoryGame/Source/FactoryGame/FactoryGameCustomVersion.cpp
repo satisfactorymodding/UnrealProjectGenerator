@@ -2,3 +2,4 @@
 
 #include "FactoryGameCustomVersion.h"
 
+const FGuid FFactoryGameCustomVersion::GUID = FGuid();

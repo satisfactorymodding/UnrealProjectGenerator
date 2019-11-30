@@ -18,14 +18,14 @@ class UFGGameUserSettings;
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FOptionUpdateDelegateData>();
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAudioVolumeMap_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FAudioVolumeMap>();

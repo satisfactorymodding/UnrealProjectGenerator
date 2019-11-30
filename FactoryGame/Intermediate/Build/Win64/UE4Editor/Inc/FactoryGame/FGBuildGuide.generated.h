@@ -14,7 +14,7 @@ struct FVector;
 #endif
 #define FACTORYGAME_FGBuildGuide_generated_h
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetBuildGuideStartEnd) \
 	{ \
@@ -28,7 +28,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetBuildGuideStartEnd) \
 	{ \
@@ -42,7 +42,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildGuide(); \
 	friend struct Z_Construct_UClass_AFGBuildGuide_Statics; \
@@ -51,7 +51,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildGuide)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_INCLASS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildGuide(); \
 	friend struct Z_Construct_UClass_AFGBuildGuide_Statics; \
@@ -60,7 +60,7 @@ public: \
 	DECLARE_SERIALIZER(AFGBuildGuide)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildGuide(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildGuide) \
@@ -73,7 +73,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildGuide(AFGBuildGuide&&); \
@@ -84,26 +84,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildGuide); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildGuide)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_49_PROLOG
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_50_PROLOG
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_INCLASS \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_INCLASS \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_52_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Hologram_FGBuildGuide_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

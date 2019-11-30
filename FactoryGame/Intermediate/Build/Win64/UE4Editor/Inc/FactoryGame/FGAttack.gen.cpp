@@ -461,7 +461,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::PropPointers),
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAttack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAttack()
@@ -473,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttack, 2826122762);
+	IMPLEMENT_CLASS(UFGAttack, 3538317322);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttack>()
 	{
 		return UFGAttack::StaticClass();

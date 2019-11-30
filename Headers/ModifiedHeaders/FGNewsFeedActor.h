@@ -14,7 +14,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnNewsReceived, FText, news );
 
 USTRUCT()
-struct FNewsFeedMap
+struct FACTORYGAME_API FNewsFeedMap
 {
 	GENERATED_BODY()
 

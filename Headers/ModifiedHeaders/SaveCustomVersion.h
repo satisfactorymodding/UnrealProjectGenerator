@@ -1,12 +1,13 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
 #pragma once
+#include "Misc/Guid.h"
 
 /**
  * Custom serialization version for save games.
  * If a custom version is no longer supported and has been cleaned up, add the prefix DROPPED_.
  */
-struct FSaveCustomVersion
+struct FACTORYGAME_API FSaveCustomVersion
 {
 	enum Type
 	{

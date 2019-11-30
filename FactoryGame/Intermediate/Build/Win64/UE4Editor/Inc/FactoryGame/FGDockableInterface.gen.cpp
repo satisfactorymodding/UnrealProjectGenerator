@@ -434,7 +434,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDockableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDockableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDockableInterface()
@@ -446,7 +446,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDockableInterface, 3321694906);
+	IMPLEMENT_CLASS(UFGDockableInterface, 645013896);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDockableInterface>()
 	{
 		return UFGDockableInterface::StaticClass();

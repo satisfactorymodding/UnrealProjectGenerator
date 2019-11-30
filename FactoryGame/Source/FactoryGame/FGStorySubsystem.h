@@ -15,7 +15,7 @@
 #include "FGStorySubsystem.generated.h"
 
 USTRUCT( BlueprintType )
-struct FMapAreaVisitedData
+struct FACTORYGAME_API FMapAreaVisitedData
 {
 	GENERATED_BODY()
 
@@ -38,7 +38,7 @@ private:
 	TSoftClassPtr< class UFGSchematic > SchematicClass;
 };
 
-struct FFindByMapAreFound
+struct FACTORYGAME_API FFindByMapAreFound
 {
 	TSubclassOf< UObject > MapAreaFound;
 
@@ -51,7 +51,7 @@ struct FFindByMapAreFound
 };
 
 USTRUCT( BlueprintType )
-struct FItemFoundData
+struct FACTORYGAME_API FItemFoundData
 {
 	GENERATED_BODY()
 
@@ -81,7 +81,7 @@ private:
 	TSoftClassPtr< class UFGItemDescriptor > ItemClass;
 };
 
-struct FFindByItemFound
+struct FACTORYGAME_API FFindByItemFound
 {
 	TSubclassOf< UObject > ItemFound;
 
@@ -94,7 +94,7 @@ struct FFindByItemFound
 };
 
 USTRUCT( BlueprintType )
-struct FSchematicMessagePair
+struct FACTORYGAME_API FSchematicMessagePair
 {
 	GENERATED_BODY()
 
@@ -111,7 +111,7 @@ private:
 };
 
 USTRUCT(BlueprintType)
-struct FResearchMessageData
+struct FACTORYGAME_API FResearchMessageData
 {
 	GENERATED_BODY()
 
@@ -134,7 +134,7 @@ private:
 	TSoftClassPtr<class UFGResearchRecipe> ResearchCollected;
 };
 
-struct FFindBySchematicUnlocked
+struct FACTORYGAME_API FFindBySchematicUnlocked
 {
 	TSubclassOf< UObject > SchematicUnlocked;
 

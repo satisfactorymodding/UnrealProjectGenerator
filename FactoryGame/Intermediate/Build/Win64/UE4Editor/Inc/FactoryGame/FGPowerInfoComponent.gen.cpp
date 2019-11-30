@@ -663,7 +663,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x00A000A4u,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPowerInfoComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPowerInfoComponent()
@@ -675,7 +675,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerInfoComponent, 2249971559);
+	IMPLEMENT_CLASS(UFGPowerInfoComponent, 3331360515);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPowerInfoComponent>()
 	{
 		return UFGPowerInfoComponent::StaticClass();

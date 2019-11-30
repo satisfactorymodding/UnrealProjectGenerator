@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x000000AEu,
+		0x001000AEu,
 		METADATA_PARAMS(Z_Construct_UClass_UFGGameEngine_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGGameEngine()
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameEngine, 3523516141);
+	IMPLEMENT_CLASS(UFGGameEngine, 148122932);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameEngine>()
 	{
 		return UFGGameEngine::StaticClass();

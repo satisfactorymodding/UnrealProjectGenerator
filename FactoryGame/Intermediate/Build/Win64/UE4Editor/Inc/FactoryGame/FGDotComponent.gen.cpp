@@ -282,7 +282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGDotComponent_Statics::PropPointers),
 		0,
-		0x00A000A4u,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDotComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDotComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDotComponent()
@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDotComponent, 1030353110);
+	IMPLEMENT_CLASS(UFGDotComponent, 2356053392);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDotComponent>()
 	{
 		return UFGDotComponent::StaticClass();

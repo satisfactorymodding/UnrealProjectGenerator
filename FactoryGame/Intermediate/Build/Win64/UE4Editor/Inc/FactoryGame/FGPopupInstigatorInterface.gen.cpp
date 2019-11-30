@@ -154,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGPopupInstigatorInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGPopupInstigatorInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGPopupInstigatorInterface()
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupInstigatorInterface, 2727259078);
+	IMPLEMENT_CLASS(UFGPopupInstigatorInterface, 4144596215);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupInstigatorInterface>()
 	{
 		return UFGPopupInstigatorInterface::StaticClass();

@@ -33,7 +33,7 @@ enum class ECameraMode : uint8
 
 /** structure that holds variables per input whether it's allowed or not. NOTE: True if input is disabled. */
 USTRUCT( BlueprintType )
-struct FDisabledInputGate
+struct FACTORYGAME_API FDisabledInputGate
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -68,7 +68,7 @@ public:
 * not dead, cant revive
 */
 UCLASS()
-class UFGUseState_ReviveInvalid_PlayerNotDead : public UFGUseState
+class FACTORYGAME_API UFGUseState_ReviveInvalid_PlayerNotDead : public UFGUseState
 {
 	GENERATED_BODY()
 public:
@@ -79,7 +79,7 @@ public:
 * Revive valid
 */
 UCLASS()
-class UFGUseState_ReviveValid : public UFGUseState
+class FACTORYGAME_API UFGUseState_ReviveValid : public UFGUseState
 {
 	GENERATED_BODY()
 public:
@@ -90,7 +90,7 @@ public:
  * Base class for all player characters in the game.
  */
 UCLASS( config = Game )
-class AFGCharacterPlayer : public AFGCharacterBase, public IFGAggroTargetInterface, public IFGUseableInterface, public IFGRadiationInterface
+class FACTORYGAME_API AFGCharacterPlayer : public AFGCharacterBase, public IFGAggroTargetInterface, public IFGUseableInterface, public IFGRadiationInterface
 {
 	GENERATED_BODY()
 public:

@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRailroadFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRailroadFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRailroadFunctionLibrary()
@@ -306,7 +306,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadFunctionLibrary, 1559645276);
+	IMPLEMENT_CLASS(UFGRailroadFunctionLibrary, 1039816441);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRailroadFunctionLibrary>()
 	{
 		return UFGRailroadFunctionLibrary::StaticClass();

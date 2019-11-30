@@ -176,7 +176,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFoundationSideSelectionFlags()
@@ -194,7 +194,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash() { return 1773506502U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Hash() { return 3585759412U; }
 	void AFGBuildableFactoryBuilding::StaticRegisterNativesAFGBuildableFactoryBuilding()
 	{
 	}

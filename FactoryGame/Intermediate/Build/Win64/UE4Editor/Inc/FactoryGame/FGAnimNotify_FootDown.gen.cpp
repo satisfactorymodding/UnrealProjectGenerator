@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers),
 		0,
-		0x000120A0u,
+		0x001120A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAnimNotify_FootDown()
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 2081758282);
+	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 2431858038);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAnimNotify_FootDown>()
 	{
 		return UFGAnimNotify_FootDown::StaticClass();

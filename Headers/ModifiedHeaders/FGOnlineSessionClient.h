@@ -8,7 +8,7 @@
 #include "FGOnlineSessionClient.generated.h"
 
 USTRUCT(BlueprintType)
-struct FPendingInvite
+struct FACTORYGAME_API FPendingInvite
 {
 	GENERATED_BODY();
 public:
@@ -48,7 +48,7 @@ FORCEINLINE uint32 GetTypeHash( const FPendingInvite& invite )
 }
 
 UCLASS()
-class UFGOnlineSessionClient : public UOnlineSessionClient
+class FACTORYGAME_API UFGOnlineSessionClient : public UOnlineSessionClient
 {
 	GENERATED_BODY()
 public:

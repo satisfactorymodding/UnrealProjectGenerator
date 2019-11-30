@@ -378,7 +378,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::PropPointers),
 		0,
-		0x000000A4u,
+		0x001000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMusicManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMusicManager()
@@ -390,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMusicManager, 29999272);
+	IMPLEMENT_CLASS(UFGMusicManager, 2985190898);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMusicManager>()
 	{
 		return UFGMusicManager::StaticClass();

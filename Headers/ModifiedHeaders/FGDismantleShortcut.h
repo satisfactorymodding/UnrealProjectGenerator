@@ -5,7 +5,7 @@
 #include "FGDismantleShortcut.generated.h"
 
 UCLASS()
-class UFGDismantleShortcut : public UFGHotbarShortcut
+class FACTORYGAME_API UFGDismantleShortcut : public UFGHotbarShortcut
 {
 	GENERATED_BODY()
 public:

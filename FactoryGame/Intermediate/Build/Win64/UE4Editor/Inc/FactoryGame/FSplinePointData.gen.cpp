@@ -106,7 +106,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSplinePointData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSplinePointData()
@@ -124,7 +124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_Hash() { return 2486081013U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_Hash() { return 1991630874U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

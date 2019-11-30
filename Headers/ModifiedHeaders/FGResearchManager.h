@@ -22,7 +22,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FResearchNewAvailable, TSubclassOf<
 * Keeps track of research that is in a state of being paid off.
 */
 USTRUCT( BlueprintType )
-struct FResearchCost
+struct FACTORYGAME_API FResearchCost
 {
 	GENERATED_BODY()
 
@@ -62,7 +62,7 @@ FORCEINLINE bool IsValidForLoad( const FResearchCost& element ){ return element.
 * Keeps track of ongoing research and when it's supposed to be completed.
 */
 USTRUCT()
-struct FResearchTime
+struct FACTORYGAME_API FResearchTime
 {
 	GENERATED_BODY()
 
@@ -86,7 +86,7 @@ FORCEINLINE bool IsValidForLoad( const FResearchTime& element ){ return element.
 * whether the rewards have been claimed.
 */
 USTRUCT( BlueprintType )
-struct FCompletedResearch
+struct FACTORYGAME_API FCompletedResearch
 {
 	GENERATED_BODY()
 

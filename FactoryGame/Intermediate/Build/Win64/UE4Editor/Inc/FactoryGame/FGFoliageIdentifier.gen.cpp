@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier()
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier, 2555828810);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier, 2887081962);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier>()
 	{
 		return UFGFoliageIdentifier::StaticClass();
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings()
@@ -147,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 144336304);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 1474122112);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_RemovableByBuildings>()
 	{
 		return UFGFoliageIdentifier_RemovableByBuildings::StaticClass();
@@ -196,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_Pickupable()
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 2215050165);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 3893083148);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_Pickupable>()
 	{
 		return UFGFoliageIdentifier_Pickupable::StaticClass();
@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable()
@@ -269,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 837169450);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 7690970);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_Chainsawable>()
 	{
 		return UFGFoliageIdentifier_Chainsawable::StaticClass();
@@ -318,7 +318,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree()
@@ -330,7 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 3895074486);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 598918567);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_ChainsawableXmasTree>()
 	{
 		return UFGFoliageIdentifier_ChainsawableXmasTree::StaticClass();
@@ -379,7 +379,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable()
@@ -391,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 1716874764);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 2917437116);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_VehicleDestroyable>()
 	{
 		return UFGFoliageIdentifier_VehicleDestroyable::StaticClass();
@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable()
@@ -452,7 +452,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 361397951);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 2826231819);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGFoliageIdentifier_ExplosiveDestroyable>()
 	{
 		return UFGFoliageIdentifier_ExplosiveDestroyable::StaticClass();

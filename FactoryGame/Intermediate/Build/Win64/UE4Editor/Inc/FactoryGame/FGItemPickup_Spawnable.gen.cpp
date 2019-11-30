@@ -493,7 +493,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::PropPointers),
 		0,
-		0x008002A0u,
+		0x009002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGItemPickup_Spawnable()
@@ -505,7 +505,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 3318048036);
+	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 2124543053);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGItemPickup_Spawnable>()
 	{
 		return AFGItemPickup_Spawnable::StaticClass();

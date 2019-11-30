@@ -23,7 +23,7 @@ enum class EDockStationType : uint8
  * have a UCLASS to be able to access
  */
 UINTERFACE( Blueprintable )
-class UFGDockableInterface : public UInterface
+class FACTORYGAME_API UFGDockableInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -33,7 +33,7 @@ class UFGDockableInterface : public UInterface
 /**
  * @brief Interface for all dockable classes out there, i.e. trucks and trains.
  */
-class IFGDockableInterface
+class FACTORYGAME_API IFGDockableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

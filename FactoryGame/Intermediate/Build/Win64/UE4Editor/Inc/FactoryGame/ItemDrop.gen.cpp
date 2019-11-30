@@ -102,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDropWithChance_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemDropWithChance()
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDropWithChance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash() { return 2577592151U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemDropWithChance_Hash() { return 584611836U; }
 class UScriptStruct* FItemDrop::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -200,7 +200,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemDrop_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemDrop_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemDrop()
@@ -218,7 +218,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemDrop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash() { return 1928461506U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemDrop_Hash() { return 3801932516U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

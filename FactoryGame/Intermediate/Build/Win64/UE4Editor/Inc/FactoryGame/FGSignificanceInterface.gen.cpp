@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSignificanceInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSignificanceInterface()
@@ -213,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceInterface, 556002989);
+	IMPLEMENT_CLASS(UFGSignificanceInterface, 166508141);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSignificanceInterface>()
 	{
 		return UFGSignificanceInterface::StaticClass();

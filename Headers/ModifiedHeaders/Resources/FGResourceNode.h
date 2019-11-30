@@ -39,7 +39,7 @@ enum EResourcePurity
 };
 
 USTRUCT( BlueprintType )
-struct FPurityTextPair
+struct FACTORYGAME_API FPurityTextPair
 {
 	GENERATED_BODY()
 
@@ -62,7 +62,7 @@ struct FPurityTextPair
 * Use state when inventory of player looking at the node has a full inventory
 */
 UCLASS()
-class UFGUseState_NodeFullInventory : public UFGUseState
+class FACTORYGAME_API UFGUseState_NodeFullInventory : public UFGUseState
 {
 	GENERATED_BODY()
 
@@ -73,7 +73,7 @@ class UFGUseState_NodeFullInventory : public UFGUseState
 * The resource we are trying to pick can't be on a conveyor belt.
 */
 UCLASS()
-class UFGUseState_NonConveyorResource : public UFGUseState
+class FACTORYGAME_API UFGUseState_NonConveyorResource : public UFGUseState
 {
 	GENERATED_BODY()
 

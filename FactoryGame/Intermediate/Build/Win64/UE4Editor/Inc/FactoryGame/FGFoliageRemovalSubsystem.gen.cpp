@@ -752,7 +752,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGFoliageRemovalSubsystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGFoliageRemovalSubsystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGFoliageRemovalSubsystem()
@@ -764,7 +764,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 3119730114);
+	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 1886564263);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGFoliageRemovalSubsystem>()
 	{
 		return AFGFoliageRemovalSubsystem::StaticClass();

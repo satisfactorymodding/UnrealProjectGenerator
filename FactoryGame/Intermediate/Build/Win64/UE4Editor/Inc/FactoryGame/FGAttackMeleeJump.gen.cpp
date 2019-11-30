@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMeleeJump, 3958757977);
+	IMPLEMENT_CLASS(UFGAttackMeleeJump, 700226646);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttackMeleeJump>()
 	{
 		return UFGAttackMeleeJump::StaticClass();

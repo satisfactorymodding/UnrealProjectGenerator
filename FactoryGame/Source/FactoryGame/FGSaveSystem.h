@@ -1,4 +1,5 @@
 #pragma once
+#include "Misc/Guid.h"
 #include "Engine/World.h"
 #include "Array.h"
 #include "UnrealString.h"
@@ -32,7 +33,7 @@ typedef FString SessionNameType;
 
 /** The header with information about a save game */
 USTRUCT( BlueprintType )
-struct FSaveHeader
+struct FACTORYGAME_API FSaveHeader
 {
 	GENERATED_BODY()
 
@@ -120,7 +121,7 @@ struct FSaveHeader
  * For when a artist/LD has changed the name of a map
  */
 USTRUCT()
-struct FMapRedirector
+struct FACTORYGAME_API FMapRedirector
 {
 	GENERATED_BODY()
 
@@ -134,7 +135,7 @@ struct FMapRedirector
 };
 
 USTRUCT( BlueprintType )
-struct FSessionSaveStruct
+struct FACTORYGAME_API FSessionSaveStruct
 {
 	GENERATED_BODY()
 
@@ -157,7 +158,7 @@ struct FSessionSaveStruct
 };
 
 UCLASS(Config=Engine)
-class UFGSaveSystem : public UObject
+class FACTORYGAME_API UFGSaveSystem : public UObject
 {
 	GENERATED_BODY()
 public:

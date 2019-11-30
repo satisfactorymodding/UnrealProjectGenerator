@@ -12,7 +12,7 @@
 static const int MAX_DISMANTLE_LIMIT = 50;
 
 USTRUCT()
-struct FDismantleRefunds
+struct FACTORYGAME_API FDismantleRefunds
 {
 	GENERATED_BODY()
 

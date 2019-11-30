@@ -21,21 +21,21 @@ struct FTransform;
 
 #define FactoryGame_Source_FactoryGame_FGOutlineComponent_h_40_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCachedSplineMeshToMaterialObject>();
 
 #define FactoryGame_Source_FactoryGame_FGOutlineComponent_h_30_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCachedMeshToMaterialObject>();
 
 #define FactoryGame_Source_FactoryGame_FGOutlineComponent_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FCachedMaterialInterfaceArray>();

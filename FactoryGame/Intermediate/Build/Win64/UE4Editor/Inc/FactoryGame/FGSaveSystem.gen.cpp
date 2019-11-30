@@ -154,7 +154,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 		Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSessionSaveStruct()
@@ -172,7 +172,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSessionSaveStruct_Hash() { return 3619428646U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSessionSaveStruct_Hash() { return 90808730U; }
 class UScriptStruct* FMapRedirector::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -250,7 +250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 		Z_Construct_UScriptStruct_FMapRedirector_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FMapRedirector_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMapRedirector_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapRedirector_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMapRedirector()
@@ -268,7 +268,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMapRedirector_Hash() { return 3742546209U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMapRedirector_Hash() { return 1307921176U; }
 class UScriptStruct* FSaveHeader::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -320,7 +320,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSaveHeader_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSaveHeader_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSaveHeader()
@@ -338,7 +338,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSaveHeader_Hash() { return 1261917052U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSaveHeader_Hash() { return 757553678U; }
 	void UFGSaveSystem::StaticRegisterNativesUFGSaveSystem()
 	{
 		UClass* Class = UFGSaveSystem::StaticClass();
@@ -730,7 +730,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGSaveSystem_Statics::PropPointers),
 		0,
-		0x000000A4u,
+		0x001000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSaveSystem_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSystem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSaveSystem()
@@ -742,7 +742,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSystem, 3212961985);
+	IMPLEMENT_CLASS(UFGSaveSystem, 686077881);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveSystem>()
 	{
 		return UFGSaveSystem::StaticClass();

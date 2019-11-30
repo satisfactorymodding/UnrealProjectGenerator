@@ -8,7 +8,7 @@
  * Tick function that calls AFGBuildable::TickFactory
  */
 USTRUCT()
-struct FFactoryTickFunction : public FTickFunction
+struct FACTORYGAME_API FFactoryTickFunction : public FTickFunction
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -28,7 +28,7 @@ struct FFactoryTickFunction : public FTickFunction
 };
 
 template<>
-struct TStructOpsTypeTraits<FFactoryTickFunction> : public TStructOpsTypeTraitsBase2<FFactoryTickFunction>
+struct FACTORYGAME_API TStructOpsTypeTraits<FFactoryTickFunction> : public TStructOpsTypeTraitsBase2<FFactoryTickFunction>
 {
 	enum
 	{

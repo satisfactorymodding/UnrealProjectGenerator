@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDismantleShortcut_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDismantleShortcut_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDismantleShortcut()
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleShortcut, 408017749);
+	IMPLEMENT_CLASS(UFGDismantleShortcut, 1422588696);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDismantleShortcut>()
 	{
 		return UFGDismantleShortcut::StaticClass();

@@ -19,7 +19,7 @@ class UPrimitiveComponent;
 
 #define FactoryGame_Source_FactoryGame_FGUseableInterface_h_49_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FUseState_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__State() { return STRUCT_OFFSET(FUseState, State); }
 
 

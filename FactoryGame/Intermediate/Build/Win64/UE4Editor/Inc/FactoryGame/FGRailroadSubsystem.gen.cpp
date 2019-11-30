@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		Z_Construct_UScriptStruct_FTrackGraph_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FTrackGraph_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FTrackGraph_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FTrackGraph_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FTrackGraph()
@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTrackGraph_Hash() { return 399534751U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTrackGraph_Hash() { return 4293822060U; }
 	void AFGRailroadSubsystem::StaticRegisterNativesAFGRailroadSubsystem()
 	{
 		UClass* Class = AFGRailroadSubsystem::StaticClass();

@@ -273,7 +273,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		Z_Construct_UScriptStruct_FPopupData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPopupData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPopupData()
@@ -291,7 +291,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPopupData_Hash() { return 2056747501U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPopupData_Hash() { return 2384077932U; }
 	void UFGPopupWidget::StaticRegisterNativesUFGPopupWidget()
 	{
 		UClass* Class = UFGPopupWidget::StaticClass();
@@ -458,7 +458,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidget, 2498146185);
+	IMPLEMENT_CLASS(UFGPopupWidget, 7648200);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGPopupWidget>()
 	{
 		return UFGPopupWidget::StaticClass();

@@ -15,7 +15,7 @@ DECLARE_DYNAMIC_DELEGATE( FOptionUpdated );
  * Name and value combination for the options with audio
  */
 USTRUCT()
-struct FAudioVolumeMap
+struct FACTORYGAME_API FAudioVolumeMap
 {
 	GENERATED_BODY()
 	
@@ -32,7 +32,7 @@ struct FAudioVolumeMap
 * Holds delegates to be called when a specific option is changed 
 */
 USTRUCT()
-struct FOptionUpdateDelegateData
+struct FACTORYGAME_API FOptionUpdateDelegateData
 {
 	GENERATED_BODY();
 public:
@@ -42,7 +42,7 @@ public:
 };
 
 UCLASS(BlueprintType)
-class UFGGameUserSettings : public UGameUserSettings
+class FACTORYGAME_API UFGGameUserSettings : public UGameUserSettings
 {
 	GENERATED_BODY()
 public:

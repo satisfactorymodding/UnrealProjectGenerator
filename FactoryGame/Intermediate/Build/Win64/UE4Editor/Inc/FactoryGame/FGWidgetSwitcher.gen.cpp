@@ -297,7 +297,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::PropPointers),
 		0,
-		0x00A000A0u,
+		0x00B000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWidgetSwitcher_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWidgetSwitcher()
@@ -309,7 +309,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetSwitcher, 410431125);
+	IMPLEMENT_CLASS(UFGWidgetSwitcher, 1399035927);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWidgetSwitcher>()
 	{
 		return UFGWidgetSwitcher::StaticClass();

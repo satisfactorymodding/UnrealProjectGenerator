@@ -18,7 +18,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnMouseButtonDown, const FGeometr
 * interesting information buildings
 */
 UCLASS()
-class UFGGameUI : public UFGBaseUI
+class FACTORYGAME_API UFGGameUI : public UFGBaseUI
 {
 	GENERATED_BODY()
 public:

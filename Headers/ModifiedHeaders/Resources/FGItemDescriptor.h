@@ -42,7 +42,7 @@ enum class EStackSize : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FItemView
+struct FACTORYGAME_API FItemView
 {
 	GENERATED_BODY()
 

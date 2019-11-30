@@ -341,7 +341,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 		Z_Construct_UScriptStruct_FUpdatedFriends_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdatedFriends_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdatedFriends_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdatedFriends_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FUpdatedFriends()
@@ -359,7 +359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUpdatedFriends_Hash() { return 2294538962U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUpdatedFriends_Hash() { return 3412092741U; }
 class UScriptStruct* FFGOnlineFriend::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -410,7 +410,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFGOnlineFriend_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineFriend_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFGOnlineFriend()
@@ -428,7 +428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineFriend_Hash() { return 2488129402U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineFriend_Hash() { return 3262440439U; }
 	void UFGEM_LoggedOutFromOnlineService::StaticRegisterNativesUFGEM_LoggedOutFromOnlineService()
 	{
 	}
@@ -470,7 +470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService()
@@ -482,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 2183862343);
+	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 2113759007);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_LoggedOutFromOnlineService>()
 	{
 		return UFGEM_LoggedOutFromOnlineService::StaticClass();
@@ -530,7 +530,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService()
@@ -542,7 +542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LostConnectionWithOnlineService, 1045011466);
+	IMPLEMENT_CLASS(UFGEM_LostConnectionWithOnlineService, 2583918539);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_LostConnectionWithOnlineService>()
 	{
 		return UFGEM_LostConnectionWithOnlineService::StaticClass();
@@ -590,7 +590,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService()
@@ -602,7 +602,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_FailedToLoginToOnlineService, 1572716250);
+	IMPLEMENT_CLASS(UFGEM_FailedToLoginToOnlineService, 3903970874);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGEM_FailedToLoginToOnlineService>()
 	{
 		return UFGEM_FailedToLoginToOnlineService::StaticClass();

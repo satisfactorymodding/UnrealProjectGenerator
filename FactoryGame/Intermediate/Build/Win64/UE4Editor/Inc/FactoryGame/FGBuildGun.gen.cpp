@@ -1879,7 +1879,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		0,
 		0,
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGBuildGunAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGBuildGunAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGBuildGunAttachment()
@@ -1891,7 +1891,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGunAttachment, 308281426);
+	IMPLEMENT_CLASS(AFGBuildGunAttachment, 1791040372);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGBuildGunAttachment>()
 	{
 		return AFGBuildGunAttachment::StaticClass();

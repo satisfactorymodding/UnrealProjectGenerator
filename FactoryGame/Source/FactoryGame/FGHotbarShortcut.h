@@ -8,7 +8,7 @@
 #include "FGHotbarShortcut.generated.h"
 
 UCLASS(abstract,Blueprintable)
-class UFGHotbarShortcut : public UObject, public IFGSaveInterface
+class FACTORYGAME_API UFGHotbarShortcut : public UObject, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

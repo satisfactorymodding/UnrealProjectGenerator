@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x00A000A0u,
+		0x00B000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMultiplayerVerticalBox()
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 1368090511);
+	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 723259015);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMultiplayerVerticalBox>()
 	{
 		return UFGMultiplayerVerticalBox::StaticClass();

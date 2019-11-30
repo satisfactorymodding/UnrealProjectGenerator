@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGCombatFunctionLibrary()
@@ -302,7 +302,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 3824579792);
+	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 189365358);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGCombatFunctionLibrary>()
 	{
 		return UFGCombatFunctionLibrary::StaticClass();

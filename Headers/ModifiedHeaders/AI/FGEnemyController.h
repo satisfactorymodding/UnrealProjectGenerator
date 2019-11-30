@@ -26,7 +26,7 @@ enum class EIgnore : uint8
 * target is for our Pawn
 */
 USTRUCT( BlueprintType )
-struct FAggroEntry
+struct FACTORYGAME_API FAggroEntry
 {
 	GENERATED_BODY();
 
@@ -71,7 +71,7 @@ struct FAggroEntry
 	float						LastIgnoreTime;
 };
 
-struct FFindByAggroTarget
+struct FACTORYGAME_API FFindByAggroTarget
 {
 	TScriptInterface< IFGAggroTargetInterface >	AggroTarget;
 

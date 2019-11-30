@@ -226,7 +226,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 		Z_Construct_UScriptStruct_FVehicleSeat_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleSeat_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FVehicleSeat_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleSeat_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FVehicleSeat()
@@ -244,7 +244,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleSeat_Hash() { return 2423503626U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleSeat_Hash() { return 1770073556U; }
 class UScriptStruct* FVehiclePhysicsData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -295,7 +295,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FVehiclePhysicsData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehiclePhysicsData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FVehiclePhysicsData()
@@ -313,7 +313,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehiclePhysicsData_Hash() { return 2074782498U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehiclePhysicsData_Hash() { return 1226713977U; }
 	void UFGUseState_VehicleHasDriver::StaticRegisterNativesUFGUseState_VehicleHasDriver()
 	{
 	}
@@ -356,7 +356,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_VehicleHasDriver_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_VehicleHasDriver_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_VehicleHasDriver()
@@ -368,7 +368,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleHasDriver, 2534303262);
+	IMPLEMENT_CLASS(UFGUseState_VehicleHasDriver, 4103423507);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_VehicleHasDriver>()
 	{
 		return UFGUseState_VehicleHasDriver::StaticClass();
@@ -417,7 +417,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_VehicleInWater_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_VehicleInWater_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_VehicleInWater()
@@ -429,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleInWater, 3911026211);
+	IMPLEMENT_CLASS(UFGUseState_VehicleInWater, 905150343);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_VehicleInWater>()
 	{
 		return UFGUseState_VehicleInWater::StaticClass();
@@ -478,7 +478,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_VehicleOccupied_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_VehicleOccupied_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_VehicleOccupied()
@@ -490,7 +490,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleOccupied, 513212720);
+	IMPLEMENT_CLASS(UFGUseState_VehicleOccupied, 3884982991);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_VehicleOccupied>()
 	{
 		return UFGUseState_VehicleOccupied::StaticClass();

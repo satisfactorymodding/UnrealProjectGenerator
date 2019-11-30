@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::PropPointers),
 		0,
-		0x00A000A4u,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSoundSplineComponent()
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSoundSplineComponent, 3646621002);
+	IMPLEMENT_CLASS(UFGSoundSplineComponent, 3136355012);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSoundSplineComponent>()
 	{
 		return UFGSoundSplineComponent::StaticClass();

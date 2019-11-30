@@ -22,14 +22,14 @@ struct FInventoryStack;
 
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_76_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleSeat_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleSeat>();
 
 #define FactoryGame_Source_FactoryGame_FGVehicle_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehiclePhysicsData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehiclePhysicsData>();

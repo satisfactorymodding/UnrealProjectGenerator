@@ -11,7 +11,7 @@
 
 /** Holds the information necessary for spawning destroyed effects after all overlap calculations */
 USTRUCT()
-struct FDestroyedFoliageEffectData
+struct FACTORYGAME_API FDestroyedFoliageEffectData
 {
 	GENERATED_BODY()
 

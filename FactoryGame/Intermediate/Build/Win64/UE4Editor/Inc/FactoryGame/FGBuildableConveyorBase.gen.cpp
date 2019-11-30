@@ -84,7 +84,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItems_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItems_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FConveyorBeltItems()
@@ -102,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash() { return 3802701670U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_Hash() { return 1559693417U; }
 class UScriptStruct* FConveyorBeltItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -180,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FConveyorBeltItem()
@@ -198,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash() { return 71369389U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_Hash() { return 106764028U; }
 	static FName NAME_UFGConveyorRemoteCallObject_Server_OnUse = FName(TEXT("Server_OnUse"));
 	void UFGConveyorRemoteCallObject::Server_OnUse(AFGBuildableConveyorBelt* target, AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion)
 	{
@@ -318,7 +318,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers),
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGConveyorRemoteCallObject()
@@ -330,7 +330,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 2943326409);
+	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 4218795574);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGConveyorRemoteCallObject>()
 	{
 		return UFGConveyorRemoteCallObject::StaticClass();

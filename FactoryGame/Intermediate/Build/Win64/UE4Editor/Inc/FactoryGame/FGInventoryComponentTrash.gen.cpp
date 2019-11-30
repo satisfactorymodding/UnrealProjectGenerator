@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentTrash() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentTrash, 930788004);
+	IMPLEMENT_CLASS(UFGInventoryComponentTrash, 417487453);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponentTrash>()
 	{
 		return UFGInventoryComponentTrash::StaticClass();

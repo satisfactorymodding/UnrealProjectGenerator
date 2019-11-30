@@ -20,28 +20,28 @@ class AFGBuildableSubsystem;
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_63_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBuildableGroupTimeData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FBuildableGroupTimeData>();
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_52_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConveyorBucket_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FConveyorBucket>();
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_40_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBuildableBucket_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FBuildableBucket>();
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_28_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDistanceBasedTickRate>();

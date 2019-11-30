@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		0,
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRecipeProducerInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRecipeProducerInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRecipeProducerInterface()
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 3670242272);
+	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 3075823899);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRecipeProducerInterface>()
 	{
 		return UFGRecipeProducerInterface::StaticClass();

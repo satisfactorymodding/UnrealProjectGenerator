@@ -382,7 +382,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDismantleInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDismantleInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDismantleInterface()
@@ -394,7 +394,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleInterface, 1182245832);
+	IMPLEMENT_CLASS(UFGDismantleInterface, 2251847162);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDismantleInterface>()
 	{
 		return UFGDismantleInterface::StaticClass();

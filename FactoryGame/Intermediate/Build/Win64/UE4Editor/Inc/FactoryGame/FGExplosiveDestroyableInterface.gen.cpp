@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGExplosiveDestroyableInterface()
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 2240313307);
+	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 1594347886);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGExplosiveDestroyableInterface>()
 	{
 		return UFGExplosiveDestroyableInterface::StaticClass();

@@ -394,7 +394,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAggroTargetInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAggroTargetInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAggroTargetInterface()
@@ -406,7 +406,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAggroTargetInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAggroTargetInterface, 2932723611);
+	IMPLEMENT_CLASS(UFGAggroTargetInterface, 3502903886);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAggroTargetInterface>()
 	{
 		return UFGAggroTargetInterface::StaticClass();

@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialHintData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialHintData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FTutorialHintData()
@@ -275,7 +275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialHintData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash() { return 1152445765U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTutorialHintData_Hash() { return 3847387389U; }
 	void AFGTutorialIntroManager::StaticRegisterNativesAFGTutorialIntroManager()
 	{
 		UClass* Class = AFGTutorialIntroManager::StaticClass();

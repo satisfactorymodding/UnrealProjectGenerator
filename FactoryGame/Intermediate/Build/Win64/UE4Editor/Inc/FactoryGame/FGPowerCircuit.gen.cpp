@@ -171,7 +171,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerCircuitStats_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPowerCircuitStats()
@@ -189,7 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerCircuitStats
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash() { return 4235330176U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPowerCircuitStats_Hash() { return 1149849438U; }
 class UScriptStruct* FPowerGraphPoint::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -281,7 +281,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPowerGraphPoint_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPowerGraphPoint()
@@ -299,7 +299,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPowerGraphPoint
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash() { return 1581317822U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPowerGraphPoint_Hash() { return 13999269U; }
 	void UFGPowerCircuit::StaticRegisterNativesUFGPowerCircuit()
 	{
 		UClass* Class = UFGPowerCircuit::StaticClass();

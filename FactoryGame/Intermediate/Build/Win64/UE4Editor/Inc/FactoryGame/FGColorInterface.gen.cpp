@@ -342,7 +342,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGColorInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGColorInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGColorInterface()
@@ -354,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColorInterface, 2063434147);
+	IMPLEMENT_CLASS(UFGColorInterface, 1727678153);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGColorInterface>()
 	{
 		return UFGColorInterface::StaticClass();

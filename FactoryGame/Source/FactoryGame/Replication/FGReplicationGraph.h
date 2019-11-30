@@ -25,7 +25,7 @@ enum class EClassRepPolicy : uint8
 };
 
 USTRUCT()
-struct FConnectionAlwaysRelevant_NodePair
+struct FACTORYGAME_API FConnectionAlwaysRelevant_NodePair
 {
 	GENERATED_BODY()
 
@@ -157,7 +157,7 @@ private:
 };
 
 UCLASS()
-class UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
+class FACTORYGAME_API UFGReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_AlwaysRelevant_ForConnection
 {
 public:
 	GENERATED_BODY()

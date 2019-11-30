@@ -350,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSaveInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSaveInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSaveInterface()
@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveInterface, 190210400);
+	IMPLEMENT_CLASS(UFGSaveInterface, 375511563);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSaveInterface>()
 	{
 		return UFGSaveInterface::StaticClass();

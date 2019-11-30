@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 760719776);
+	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 2570505580);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponentBeltSlot>()
 	{
 		return UFGInventoryComponentBeltSlot::StaticClass();

@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 		Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFactoryClearanceData()
@@ -151,7 +151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryClearanceData_Hash() { return 4037653324U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryClearanceData_Hash() { return 744144270U; }
 class UScriptStruct* FConnectionRepresentation::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -228,7 +228,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FConnectionRepresentation()
@@ -246,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionRepresentation_Hash() { return 3375331117U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionRepresentation_Hash() { return 963124837U; }
 	static FName NAME_UFGBuildGunStateBuild_Client_OnBuildableConstructed = FName(TEXT("Client_OnBuildableConstructed"));
 	void UFGBuildGunStateBuild::Client_OnBuildableConstructed(TSubclassOf<UFGItemDescriptor>  desc)
 	{

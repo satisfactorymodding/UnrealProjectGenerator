@@ -211,7 +211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FChatMessageStruct_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FChatMessageStruct()
@@ -229,7 +229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFChatMessageStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash() { return 2748275261U; }
+	uint32 Get_Z_Construct_UScriptStruct_FChatMessageStruct_Hash() { return 3868739656U; }
 	static FName NAME_AFGChatManager_Multicast_BroadcastChatMessage = FName(TEXT("Multicast_BroadcastChatMessage"));
 	void AFGChatManager::Multicast_BroadcastChatMessage(FChatMessageStruct const& newMessage)
 	{

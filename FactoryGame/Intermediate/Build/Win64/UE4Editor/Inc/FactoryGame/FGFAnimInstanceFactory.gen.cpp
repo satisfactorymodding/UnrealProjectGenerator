@@ -386,7 +386,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FAnimInstanceProxyFactory()
@@ -404,7 +404,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Hash() { return 2699563315U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Hash() { return 2204389146U; }
 	void UFGFAnimInstanceFactory::StaticRegisterNativesUFGFAnimInstanceFactory()
 	{
 	}

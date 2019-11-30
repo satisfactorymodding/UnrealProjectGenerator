@@ -193,7 +193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		Z_Construct_UScriptStruct_FSkySphereSettings_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSkySphereSettings()
@@ -211,7 +211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_Hash() { return 2073188961U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_Hash() { return 1930785826U; }
 	static FName NAME_AFGSkySphere_ApplySkySphereSettings = FName(TEXT("ApplySkySphereSettings"));
 	void AFGSkySphere::ApplySkySphereSettings(FSkySphereSettings const& settings)
 	{
@@ -550,7 +550,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::PropPointers),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGSkySphere_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGSkySphere()
@@ -562,7 +562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 1482687813);
+	IMPLEMENT_CLASS(AFGSkySphere, 733875757);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGSkySphere>()
 	{
 		return AFGSkySphere::StaticClass();

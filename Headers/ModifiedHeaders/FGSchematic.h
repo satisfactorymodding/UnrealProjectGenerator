@@ -39,7 +39,7 @@ enum class ESchematicType :uint8
 
 /** Holds info about a schematic cost. */
 USTRUCT( BlueprintType )
-struct FMultipleItemStruct
+struct FACTORYGAME_API FMultipleItemStruct
 {
 	GENERATED_BODY()
 

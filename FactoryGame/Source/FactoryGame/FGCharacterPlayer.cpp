@@ -180,6 +180,8 @@ void AFGCharacterPlayer::OnRep_RadiationIntensity(){ }
 void AFGCharacterPlayer::OnRep_IsSliding(){ }
 void AFGCharacterPlayer::InitializePreferredCameraMode(){ }
 void AFGCharacterPlayer::DoUnSlide(){ }
+const FName AFGCharacterPlayer::ArmsInvComponentName = FName();
+const FName AFGCharacterPlayer::BackInvComponentName = FName();
 FOnPersistentEquipmentSpawned AFGCharacterPlayer::OnPersistentEquipmentSpawned = FOnPersistentEquipmentSpawned();
 FOnEquipmentEquipped AFGCharacterPlayer::OnEquipmentEquipped = FOnEquipmentEquipped();
 FOnEquipmentUnequipped AFGCharacterPlayer::OnEquipmentUnequipped = FOnEquipmentUnequipped();

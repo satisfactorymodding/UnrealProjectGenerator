@@ -18,21 +18,21 @@ class AActor;
 
 #define FactoryGame_Source_FactoryGame_FGRadioactivitySubsystem_h_77_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSetEmitterID_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FSetEmitterID>();
 
 #define FactoryGame_Source_FactoryGame_FGRadioactivitySubsystem_h_58_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRemoveEmitterID_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRemoveEmitterID>();
 
 #define FactoryGame_Source_FactoryGame_FGRadioactivitySubsystem_h_45_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRadioactiveSource_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRadioactiveSource>();

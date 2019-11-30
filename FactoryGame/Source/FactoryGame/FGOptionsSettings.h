@@ -28,7 +28,7 @@ enum class EOptionType : uint8
 };
 
 USTRUCT( BlueprintType )
-struct FOptionRowData
+struct FACTORYGAME_API FOptionRowData
 {
 	GENERATED_BODY()
 

@@ -5,7 +5,7 @@
 #include "FGSoundSplineComponent.generated.h"
 
 UCLASS(meta=(BlueprintSpawnableComponent))
-class UFGSoundSplineComponent : public UAkComponent
+class FACTORYGAME_API UFGSoundSplineComponent : public UAkComponent
 {
 	GENERATED_BODY()
 public:

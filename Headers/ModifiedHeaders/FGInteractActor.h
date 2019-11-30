@@ -6,7 +6,7 @@
 #include "FGInteractActor.generated.h"
 
 UCLASS( abstract )
-class AFGInteractActor : public AActor, public IFGUseableInterface
+class FACTORYGAME_API AFGInteractActor : public AActor, public IFGUseableInterface
 {
 	GENERATED_BODY()
 public:

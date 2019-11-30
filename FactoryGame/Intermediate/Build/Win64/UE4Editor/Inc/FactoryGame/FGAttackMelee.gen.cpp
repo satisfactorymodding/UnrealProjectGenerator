@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMelee() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMelee, 2795420705);
+	IMPLEMENT_CLASS(UFGAttackMelee, 2138530809);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttackMelee>()
 	{
 		return UFGAttackMelee::StaticClass();

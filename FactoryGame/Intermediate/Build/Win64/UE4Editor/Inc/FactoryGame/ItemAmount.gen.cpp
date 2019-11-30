@@ -99,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemAmount_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemAmount()
@@ -117,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash() { return 1295168897U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_Hash() { return 367179603U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

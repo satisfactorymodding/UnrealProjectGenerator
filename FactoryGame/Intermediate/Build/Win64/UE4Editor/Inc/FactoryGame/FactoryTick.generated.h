@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FactoryTick_h_13_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFactoryTickFunction_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	typedef FTickFunction Super;
 
 

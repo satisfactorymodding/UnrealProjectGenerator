@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRailroadTrackPosition()
@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadTrackPosit
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash() { return 3137954858U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRailroadTrackPosition_Hash() { return 3810159560U; }
 	void AFGBuildableRailroadTrack::StaticRegisterNativesAFGBuildableRailroadTrack()
 	{
 		UClass* Class = AFGBuildableRailroadTrack::StaticClass();

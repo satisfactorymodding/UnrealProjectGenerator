@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers),
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMapAreaZoneDescriptor()
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 3481151265);
+	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 673317138);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMapAreaZoneDescriptor>()
 	{
 		return UFGMapAreaZoneDescriptor::StaticClass();

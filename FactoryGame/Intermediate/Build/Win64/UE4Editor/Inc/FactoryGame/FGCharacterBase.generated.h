@@ -28,21 +28,21 @@ class UPrimitiveComponent;
 
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_48_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffectWater_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffectWater>();
 
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_34_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffectSurface>();
 
 #define FactoryGame_Source_FactoryGame_FGCharacterBase_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFootstepEffect_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFootstepEffect>();

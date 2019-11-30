@@ -303,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGDamageOverTime_Statics::PropPointers),
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDamageOverTime_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDamageOverTime_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDamageOverTime()
@@ -315,7 +315,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDamageOverTime, 1071358929);
+	IMPLEMENT_CLASS(UFGDamageOverTime, 2214588477);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDamageOverTime>()
 	{
 		return UFGDamageOverTime::StaticClass();

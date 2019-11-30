@@ -110,7 +110,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPickedUpInstance()
@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash() { return 3814665210U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_Hash() { return 1690036685U; }
 	static FName NAME_AFGChainsaw_BroadcastPickup = FName(TEXT("BroadcastPickup"));
 	void AFGChainsaw::BroadcastPickup(TArray<FPickedUpInstance> const& pickups, AFGFoliagePickup* instigatorPlayer)
 	{
@@ -666,7 +666,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::PropPointers),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGChainsaw_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGChainsaw()
@@ -678,7 +678,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChainsaw, 4160383161);
+	IMPLEMENT_CLASS(AFGChainsaw, 2210446837);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGChainsaw>()
 	{
 		return AFGChainsaw::StaticClass();

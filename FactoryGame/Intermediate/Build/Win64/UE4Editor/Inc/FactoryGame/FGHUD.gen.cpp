@@ -1472,7 +1472,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::PropPointers),
 		0,
-		0x008002ACu,
+		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_AFGHUD_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGHUD()
@@ -1484,7 +1484,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUD, 1568137470);
+	IMPLEMENT_CLASS(AFGHUD, 202180630);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGHUD>()
 	{
 		return AFGHUD::StaticClass();

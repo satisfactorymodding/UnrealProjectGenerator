@@ -229,7 +229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSchematicCost()
@@ -247,7 +247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_Hash() { return 99251275U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_Hash() { return 2367563656U; }
 	void AFGSchematicManager::StaticRegisterNativesAFGSchematicManager()
 	{
 		UClass* Class = AFGSchematicManager::StaticClass();

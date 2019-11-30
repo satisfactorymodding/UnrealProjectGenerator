@@ -345,7 +345,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FCompletedResearch_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FCompletedResearch()
@@ -363,7 +363,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash() { return 4157574386U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_Hash() { return 3756757626U; }
 class UScriptStruct* FResearchTime::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -441,7 +441,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchTime_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchTime()
@@ -459,7 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash() { return 2566905056U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_Hash() { return 1619184378U; }
 class UScriptStruct* FResearchCost::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -541,7 +541,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchCost_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchCost()
@@ -559,7 +559,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash() { return 3771894880U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_Hash() { return 3122897991U; }
 	void AFGResearchManager::StaticRegisterNativesAFGResearchManager()
 	{
 		UClass* Class = AFGResearchManager::StaticClass();

@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapFunctionLibrary() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGMapFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGMapFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGMapFunctionLibrary()
@@ -332,7 +332,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapFunctionLibrary, 2917499221);
+	IMPLEMENT_CLASS(UFGMapFunctionLibrary, 1405279573);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGMapFunctionLibrary>()
 	{
 		return UFGMapFunctionLibrary::StaticClass();

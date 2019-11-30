@@ -15,7 +15,7 @@
  * Default implementation for a powered building.
  */
 UCLASS( ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class UFGPowerInfoComponent : public UActorComponent, public IFGSaveInterface
+class FACTORYGAME_API UFGPowerInfoComponent : public UActorComponent, public IFGSaveInterface
 {
 	GENERATED_BODY()
 

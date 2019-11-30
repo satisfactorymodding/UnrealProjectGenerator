@@ -7,7 +7,7 @@
 
 
 UCLASS( abstract, BlueprintType )
-class UFGAttack : public UObject
+class FACTORYGAME_API UFGAttack : public UObject
 {
 	GENERATED_BODY()
 public:

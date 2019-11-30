@@ -245,7 +245,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FExponentialFogSettings()
@@ -263,7 +263,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash() { return 531340280U; }
+	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_Hash() { return 394251653U; }
 	void AFGDynamicExponentialFogVolume::StaticRegisterNativesAFGDynamicExponentialFogVolume()
 	{
 	}
@@ -674,7 +674,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGDynamicExponentialFogVolume()
@@ -686,7 +686,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 4060475735);
+	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 2360811240);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGDynamicExponentialFogVolume>()
 	{
 		return AFGDynamicExponentialFogVolume::StaticClass();

@@ -109,7 +109,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRemovedInstanceArray()
@@ -127,7 +127,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 4159472802U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_Hash() { return 1540106362U; }
 class UScriptStruct* FRemovedInstance::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -205,7 +205,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRemovedInstance_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRemovedInstance()
@@ -223,7 +223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash() { return 882054074U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_Hash() { return 2462011515U; }
 	void AFGFoliageRemoval::StaticRegisterNativesAFGFoliageRemoval()
 	{
 		UClass* Class = AFGFoliageRemoval::StaticClass();

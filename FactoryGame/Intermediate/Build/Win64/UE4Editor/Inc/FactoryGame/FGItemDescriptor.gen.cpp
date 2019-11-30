@@ -259,7 +259,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		Z_Construct_UScriptStruct_FItemView_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemView_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemView()
@@ -277,7 +277,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemView_Hash() { return 1708585902U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemView_Hash() { return 4212536550U; }
 	void UFGItemDescriptor::StaticRegisterNativesUFGItemDescriptor()
 	{
 		UClass* Class = UFGItemDescriptor::StaticClass();

@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGAmbientVolume_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGAmbientVolume()
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientVolume, 416019768);
+	IMPLEMENT_CLASS(AFGAmbientVolume, 3945414389);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGAmbientVolume>()
 	{
 		return AFGAmbientVolume::StaticClass();

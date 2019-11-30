@@ -15,7 +15,7 @@
  * Use state when inventory of player looking at the item has a full inventory
  */
 UCLASS()
-class UFGUseState_FullInventory : public UFGUseState
+class FACTORYGAME_API UFGUseState_FullInventory : public UFGUseState
 {
 	GENERATED_BODY()
 
@@ -26,7 +26,7 @@ class UFGUseState_FullInventory : public UFGUseState
 * Use state when the item is being collected but takes time
 */
 UCLASS()
-class UFGUseState_Collecting : public UFGUseState
+class FACTORYGAME_API UFGUseState_Collecting : public UFGUseState
 {
 	GENERATED_BODY()
 
@@ -37,7 +37,7 @@ class UFGUseState_Collecting : public UFGUseState
  * @todo: This looks like it should be a subclass of FGInteractActor
  */
 UCLASS(abstract)
-class AFGItemPickup : public AActor, public IFGUseableInterface, public IFGSaveInterface, public IFGSignificanceInterface
+class FACTORYGAME_API AFGItemPickup : public AActor, public IFGUseableInterface, public IFGSaveInterface, public IFGSignificanceInterface
 {
 	GENERATED_BODY()
 public:

@@ -215,7 +215,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 		Z_Construct_UScriptStruct_FPhaseCost_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPhaseCost_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPhaseCost_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPhaseCost_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPhaseCost()
@@ -233,7 +233,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPhaseCost_Hash() { return 1424450904U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPhaseCost_Hash() { return 2769798041U; }
 class UScriptStruct* FPhaseTierInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -340,7 +340,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPhaseTierInfo()
@@ -358,7 +358,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPhaseTierInfo_Hash() { return 646808959U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPhaseTierInfo_Hash() { return 2917851961U; }
 	void AFGGamePhaseManager::StaticRegisterNativesAFGGamePhaseManager()
 	{
 		UClass* Class = AFGGamePhaseManager::StaticClass();

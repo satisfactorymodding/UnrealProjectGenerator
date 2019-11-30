@@ -19,7 +19,7 @@
 
 
 UCLASS()
-class UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
+class FACTORYGAME_API UFGEM_LoggedOutFromOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -27,7 +27,7 @@ public:
 };
 
 UCLASS()
-class UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
+class FACTORYGAME_API UFGEM_LostConnectionWithOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -35,7 +35,7 @@ public:
 };
 
 UCLASS()
-class UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
+class FACTORYGAME_API UFGEM_FailedToLoginToOnlineService : public UFGErrorMessage
 {
 	GENERATED_BODY()
 public:
@@ -59,7 +59,7 @@ enum ELoginState
 };
 
 USTRUCT(BlueprintType)
-struct FFGOnlineFriend
+struct FACTORYGAME_API FFGOnlineFriend
 {
 	GENERATED_BODY()
 
@@ -102,7 +102,7 @@ FORCEINLINE uint32 GetTypeHash( const FFGOnlineFriend& onlineFriend )
 	return 0;
 }
 
-struct FSessionInformation
+struct FACTORYGAME_API FSessionInformation
 {
 	FSessionInformation() :
 		MapName(TEXT("")),
@@ -144,7 +144,7 @@ struct FSessionInformation
 
 // Workaround as it seems like you can't have a TArray<FFGOnlineFriends> exposed to a Dynamic multicast delegate
 USTRUCT(BlueprintType)
-struct FUpdatedFriends
+struct FACTORYGAME_API FUpdatedFriends
 {
 	GENERATED_BODY()
 

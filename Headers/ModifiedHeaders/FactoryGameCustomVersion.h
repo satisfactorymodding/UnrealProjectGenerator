@@ -3,7 +3,7 @@
 #include "Misc/Guid.h"
 
 // Custom serialization version for changes made in Dev-Framework stream
-struct FFactoryGameCustomVersion
+struct FACTORYGAME_API FFactoryGameCustomVersion
 {
 	enum Type
 	{

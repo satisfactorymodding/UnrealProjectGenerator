@@ -136,7 +136,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchMessageData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchMessageData()
@@ -154,7 +154,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash() { return 3792148160U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_Hash() { return 3247694711U; }
 class UScriptStruct* FSchematicMessagePair::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -237,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSchematicMessagePair()
@@ -255,7 +255,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash() { return 3357229105U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_Hash() { return 511918733U; }
 class UScriptStruct* FItemFoundData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -368,7 +368,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemFoundData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemFoundData()
@@ -386,7 +386,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_Hash() { return 1477152403U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_Hash() { return 2589976894U; }
 class UScriptStruct* FMapAreaVisitedData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -482,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FMapAreaVisitedData()
@@ -500,7 +500,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash() { return 3183647036U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_Hash() { return 1187995802U; }
 	void AFGStorySubsystem::StaticRegisterNativesAFGStorySubsystem()
 	{
 		UClass* Class = AFGStorySubsystem::StaticClass();

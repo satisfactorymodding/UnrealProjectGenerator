@@ -166,7 +166,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadVehicleInp
 		Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FRailroadVehicleInputRate()
@@ -184,7 +184,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadVehicleInp
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Hash() { return 1007732005U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Hash() { return 2576102076U; }
 class UScriptStruct* FReplicatedRailroadVehicleState::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -298,7 +298,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState()
@@ -316,7 +316,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Hash() { return 581172320U; }
+	uint32 Get_Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Hash() { return 4070244236U; }
 	static FName NAME_UFGLocomotiveMovementComponent_ServerUpdateState = FName(TEXT("ServerUpdateState"));
 	void UFGLocomotiveMovementComponent::ServerUpdateState(int32 inReverserInput, float inSteeringInput, float inThrottleInput, float inDynamicBrakeInput, float inAirBrakeInput)
 	{

@@ -150,7 +150,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 		Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResourceDepositPackage()
@@ -168,7 +168,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResourceDepositPackage_Hash() { return 3213610176U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResourceDepositPackage_Hash() { return 3064045192U; }
 class UScriptStruct* FItemSettings::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -261,7 +261,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		Z_Construct_UScriptStruct_FItemSettings_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FItemSettings_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FItemSettings_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemSettings_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FItemSettings()
@@ -279,7 +279,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemSettings_Hash() { return 4011088303U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemSettings_Hash() { return 2728066719U; }
 	void UFGResourceSettings::StaticRegisterNativesUFGResourceSettings()
 	{
 		UClass* Class = UFGResourceSettings::StaticClass();

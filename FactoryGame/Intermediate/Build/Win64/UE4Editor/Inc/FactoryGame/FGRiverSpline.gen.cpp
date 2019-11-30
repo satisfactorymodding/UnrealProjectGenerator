@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRiverSpline_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRiverSpline()
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRiverSpline, 1035141041);
+	IMPLEMENT_CLASS(AFGRiverSpline, 791521838);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRiverSpline>()
 	{
 		return AFGRiverSpline::StaticClass();

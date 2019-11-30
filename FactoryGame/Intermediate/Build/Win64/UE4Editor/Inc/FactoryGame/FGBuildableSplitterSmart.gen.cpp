@@ -132,7 +132,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		Z_Construct_UScriptStruct_FSplitterSortRule_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FSplitterSortRule_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FSplitterSortRule_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplitterSortRule_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSplitterSortRule()
@@ -150,7 +150,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplitterSortRule
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSplitterSortRule_Hash() { return 2312424684U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSplitterSortRule_Hash() { return 1704843251U; }
 	void AFGBuildableSplitterSmart::StaticRegisterNativesAFGBuildableSplitterSmart()
 	{
 		UClass* Class = AFGBuildableSplitterSmart::StaticClass();

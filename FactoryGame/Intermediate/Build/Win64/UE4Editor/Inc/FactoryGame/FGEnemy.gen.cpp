@@ -313,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEnemy, 1678604822);
+	IMPLEMENT_CLASS(AFGEnemy, 3971329590);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGEnemy>()
 	{
 		return AFGEnemy::StaticClass();

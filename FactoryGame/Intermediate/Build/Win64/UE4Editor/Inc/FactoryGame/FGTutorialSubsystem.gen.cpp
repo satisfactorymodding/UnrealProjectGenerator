@@ -105,7 +105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		Z_Construct_UScriptStruct_FTutorialData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FTutorialData()
@@ -123,7 +123,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTutorialData_Hash() { return 2283470123U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTutorialData_Hash() { return 2338571612U; }
 	void UFGTutorialSubsystem::StaticRegisterNativesUFGTutorialSubsystem()
 	{
 		UClass* Class = UFGTutorialSubsystem::StaticClass();

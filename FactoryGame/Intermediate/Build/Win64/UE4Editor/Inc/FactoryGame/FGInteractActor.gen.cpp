@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A1u,
+		0x009000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGInteractActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGInteractActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGInteractActor()
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractActor, 3760198305);
+	IMPLEMENT_CLASS(AFGInteractActor, 1608292545);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGInteractActor>()
 	{
 		return AFGInteractActor::StaticClass();

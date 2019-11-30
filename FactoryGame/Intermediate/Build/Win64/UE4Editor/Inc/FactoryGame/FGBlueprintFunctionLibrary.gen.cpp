@@ -2455,7 +2455,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGBlueprintFunctionLibrary()
@@ -2467,7 +2467,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 338536225);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 1895116690);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGBlueprintFunctionLibrary>()
 	{
 		return UFGBlueprintFunctionLibrary::StaticClass();

@@ -460,7 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGAmbientSettings_Statics::PropPointers),
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAmbientSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAmbientSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAmbientSettings()
@@ -472,7 +472,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAmbientSettings, 2687594150);
+	IMPLEMENT_CLASS(UFGAmbientSettings, 3075497806);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAmbientSettings>()
 	{
 		return UFGAmbientSettings::StaticClass();

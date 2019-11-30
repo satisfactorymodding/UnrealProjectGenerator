@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGRadiationInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGRadiationInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGRadiationInterface()
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRadiationInterface, 1588920146);
+	IMPLEMENT_CLASS(UFGRadiationInterface, 253169499);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGRadiationInterface>()
 	{
 		return UFGRadiationInterface::StaticClass();

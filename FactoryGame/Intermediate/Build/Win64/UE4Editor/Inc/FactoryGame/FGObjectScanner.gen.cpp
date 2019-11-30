@@ -194,7 +194,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		Z_Construct_UScriptStruct_FScannableDetails_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FScannableDetails_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FScannableDetails_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FScannableDetails_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FScannableDetails()
@@ -212,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FScannableDetails_Hash() { return 350122265U; }
+	uint32 Get_Z_Construct_UScriptStruct_FScannableDetails_Hash() { return 3957793703U; }
 	static FName NAME_AFGObjectScanner_PlayBeep = FName(TEXT("PlayBeep"));
 	void AFGObjectScanner::PlayBeep(bool isObjectInRange)
 	{
@@ -933,7 +933,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGObjectScannerAttachment_Statics::PropPointers),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGObjectScannerAttachment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGObjectScannerAttachment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGObjectScannerAttachment()
@@ -945,7 +945,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 35018871);
+	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 375378849);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGObjectScannerAttachment>()
 	{
 		return AFGObjectScannerAttachment::StaticClass();

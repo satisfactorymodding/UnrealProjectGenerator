@@ -133,7 +133,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDropPackage_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDropPackage()
@@ -151,7 +151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash() { return 620160393U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_Hash() { return 2674586695U; }
 	void UFGDropPodSettings::StaticRegisterNativesUFGDropPodSettings()
 	{
 		UClass* Class = UFGDropPodSettings::StaticClass();

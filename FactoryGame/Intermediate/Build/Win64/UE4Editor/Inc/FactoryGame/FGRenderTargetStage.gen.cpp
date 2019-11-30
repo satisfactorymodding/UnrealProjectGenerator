@@ -432,7 +432,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers),
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGRenderTargetStage_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGRenderTargetStage()
@@ -444,7 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRenderTargetStage, 1616060582);
+	IMPLEMENT_CLASS(AFGRenderTargetStage, 1691869332);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGRenderTargetStage>()
 	{
 		return AFGRenderTargetStage::StaticClass();

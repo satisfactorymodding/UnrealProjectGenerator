@@ -9,7 +9,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGRecipeProducerInterface : public UInterface
+class FACTORYGAME_API UFGRecipeProducerInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -19,7 +19,7 @@ class UFGRecipeProducerInterface : public UInterface
 /**
 *
 */ 
-class IFGRecipeProducerInterface
+class FACTORYGAME_API IFGRecipeProducerInterface
 {
 	GENERATED_IINTERFACE_BODY()
 };

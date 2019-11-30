@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers),
 		0,
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGSharedPostProcessSettings()
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 2057318404);
+	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 1903164617);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGSharedPostProcessSettings>()
 	{
 		return UFGSharedPostProcessSettings::StaticClass();

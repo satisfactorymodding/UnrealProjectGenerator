@@ -16,7 +16,7 @@ struct FTransform;
 
 #define FactoryGame_Source_FactoryGame_FGFoliageRemoval_h_43_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	typedef FFastArraySerializer Super;
 
 
@@ -24,7 +24,7 @@ template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FRemovedInstanceAr
 
 #define FactoryGame_Source_FactoryGame_FGFoliageRemoval_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRemovedInstance_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	typedef FFastArraySerializerItem Super;
 
 

@@ -2,3 +2,5 @@
 
 #include "SaveCustomVersion.h"
 
+const FGuid FSaveCustomVersion::GUID = FGuid();
+const FSaveCustomVersion::Type FSaveCustomVersion::MinSupportedVersion = FSaveCustomVersion::Type();

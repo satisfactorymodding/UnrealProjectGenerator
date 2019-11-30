@@ -20,14 +20,14 @@ struct FInventoryItem;
 
 #define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_75_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FInventoryStack_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FInventoryStack>();
 
 #define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FInventoryItem_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FInventoryItem>();

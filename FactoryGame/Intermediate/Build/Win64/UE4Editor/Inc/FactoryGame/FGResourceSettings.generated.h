@@ -18,14 +18,14 @@ struct FResourceDepositPackage;
 
 #define FactoryGame_Source_FactoryGame_FGResourceSettings_h_51_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResourceDepositPackage_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FResourceDepositPackage>();
 
 #define FactoryGame_Source_FactoryGame_FGResourceSettings_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemSettings_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FItemSettings>();

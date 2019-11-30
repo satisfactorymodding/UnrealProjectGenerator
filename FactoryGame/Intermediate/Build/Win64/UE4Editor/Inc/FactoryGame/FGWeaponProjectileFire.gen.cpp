@@ -232,7 +232,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FProjectileData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FProjectileData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FProjectileData()
@@ -250,7 +250,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFProjectileData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash() { return 2888699281U; }
+	uint32 Get_Z_Construct_UScriptStruct_FProjectileData_Hash() { return 2590313576U; }
 	void AFGWeaponProjectileFire::StaticRegisterNativesAFGWeaponProjectileFire()
 	{
 	}

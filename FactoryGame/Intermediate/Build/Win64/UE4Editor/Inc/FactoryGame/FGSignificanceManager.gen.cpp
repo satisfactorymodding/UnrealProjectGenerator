@@ -70,7 +70,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FGainSignificanceData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FGainSignificanceData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FGainSignificanceData()
@@ -88,7 +88,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash() { return 2335528894U; }
+	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_Hash() { return 697625214U; }
 	void UFGSignificanceManager::StaticRegisterNativesUFGSignificanceManager()
 	{
 	}

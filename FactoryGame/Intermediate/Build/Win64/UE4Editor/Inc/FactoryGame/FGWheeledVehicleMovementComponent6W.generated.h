@@ -15,35 +15,35 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_109_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleTransmissionData6W_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleTransmissionData6W>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_91_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleGearData6W_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleGearData6W>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_57_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleEngineData6W_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleEngineData6W>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_47_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FVehicleDifferential6WData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FVehicleDifferential6WData>();
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicleMovementComponent6W_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDifferentialSetup6W_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FDifferentialSetup6W>();

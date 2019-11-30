@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		0,
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGWorldCreationInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGWorldCreationInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGWorldCreationInterface()
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorldCreationInterface, 1943379721);
+	IMPLEMENT_CLASS(UFGWorldCreationInterface, 1335409095);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGWorldCreationInterface>()
 	{
 		return UFGWorldCreationInterface::StaticClass();

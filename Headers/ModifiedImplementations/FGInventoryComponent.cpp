@@ -5,6 +5,7 @@
 FInventoryItem::FInventoryItem(){ }
 FInventoryItem::FInventoryItem( TSubclassOf<  UFGItemDescriptor > itemClass){ }
 bool FInventoryItem::Serialize( FArchive& ar){ return bool(); }
+const FInventoryItem FInventoryItem::NullInventoryItem = FInventoryItem();
 FInventoryStack::FInventoryStack(){ }
 FInventoryStack::FInventoryStack( const FInventoryItem& item){ }
 FInventoryStack::FInventoryStack( int32 numItems, TSubclassOf<  UFGItemDescriptor > itemClass){ }

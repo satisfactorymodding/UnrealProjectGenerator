@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGSuitBase_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FMaterialAndSlotName>();

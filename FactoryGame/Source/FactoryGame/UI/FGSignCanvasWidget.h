@@ -14,7 +14,7 @@
  *	Custom widget that contains a canvas panel widget for holding sign design elements
  */
 UCLASS()
-class UFGSignCanvasWidget : public UUserWidget
+class FACTORYGAME_API UFGSignCanvasWidget : public UUserWidget
 {
 	GENERATED_BODY()
 	

@@ -19,7 +19,7 @@
 
 
 USTRUCT()
-struct FOnJoinSessionData
+struct FACTORYGAME_API FOnJoinSessionData
 {
 	GENERATED_BODY()
 
@@ -63,7 +63,7 @@ struct FOnJoinSessionData
 *
 */
 USTRUCT( BlueprintType )
-struct FFGModPackage
+struct FACTORYGAME_API FFGModPackage
 {
 	GENERATED_BODY()
 
@@ -93,7 +93,7 @@ struct FFGModPackage
 };
 
 USTRUCT( BlueprintType )
-struct FFGGameNetworkErrorMsg
+struct FACTORYGAME_API FFGGameNetworkErrorMsg
 {
 	GENERATED_BODY()
 	FFGGameNetworkErrorMsg( ENetworkFailure::Type _errorType, const FString& _errorMsg ) : errorType( _errorType ), errorMsg( _errorMsg )
@@ -118,7 +118,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnNetworkErrorRecieved, ENetworkF
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnNatTypeUpdated, ECachedNATType, natType );
 
 UCLASS()
-class UFGGameInstance : public UGameInstance
+class FACTORYGAME_API UFGGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 public:

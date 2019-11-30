@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		0,
 		ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::PropPointers),
 		0,
-		0x000100A0u,
+		0x001100A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGDamageType()
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDamageType, 720311811);
+	IMPLEMENT_CLASS(UFGDamageType, 3467315002);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGDamageType>()
 	{
 		return UFGDamageType::StaticClass();

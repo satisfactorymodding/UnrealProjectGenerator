@@ -12,7 +12,7 @@
  * shape, then we apply the specified dot to the actors specified in the UFGDamageOverTime class
  */
 UCLASS( hidecategories = ( Cooking, Collision, Rendering, Sockets ), ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent, DisplayName = "DotComponent" ) )
-class UFGDotComponent : public USceneComponent
+class FACTORYGAME_API UFGDotComponent : public USceneComponent
 {
 	GENERATED_BODY()
 public:

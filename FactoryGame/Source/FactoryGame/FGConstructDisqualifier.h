@@ -35,7 +35,7 @@ protected:
 };
 
 UCLASS()
-class UFGCDInitializing : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDInitializing : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -46,7 +46,7 @@ class UFGCDInitializing : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDInvalidAimLocation : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDInvalidAimLocation : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -57,7 +57,7 @@ class UFGCDInvalidAimLocation : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDUnaffordable : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDUnaffordable : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 	
@@ -69,7 +69,7 @@ class UFGCDUnaffordable : public UFGConstructDisqualifier
 
 
 UCLASS()
-class UFGCDInvalidPlacement : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDInvalidPlacement : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -80,7 +80,7 @@ class UFGCDInvalidPlacement : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDEncroachingClearance : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDEncroachingClearance : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -91,7 +91,7 @@ class UFGCDEncroachingClearance : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDEncroachingPlayer : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDEncroachingPlayer : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -102,7 +102,7 @@ class UFGCDEncroachingPlayer : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDInvalidFloor : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDInvalidFloor : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -113,7 +113,7 @@ class UFGCDInvalidFloor : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDUniqueBuilding : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDUniqueBuilding : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -124,7 +124,7 @@ class UFGCDUniqueBuilding : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDMustSnap : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDMustSnap : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -135,7 +135,7 @@ class UFGCDMustSnap : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDShouldntSnap : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDShouldntSnap : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -146,7 +146,7 @@ class UFGCDShouldntSnap : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDNeedsResourceNode : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDNeedsResourceNode : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -157,7 +157,7 @@ class UFGCDNeedsResourceNode : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDResourceNodeIsOccuped : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDResourceNodeIsOccuped : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -168,7 +168,7 @@ class UFGCDResourceNodeIsOccuped : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDResourceDeposit : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDResourceDeposit : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -179,7 +179,7 @@ class UFGCDResourceDeposit : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDWireSnap : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDWireSnap : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -190,7 +190,7 @@ class UFGCDWireSnap : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDWireTooLong : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDWireTooLong : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -201,7 +201,7 @@ class UFGCDWireTooLong : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDWireTooManyConnections : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDWireTooManyConnections : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -212,7 +212,7 @@ class UFGCDWireTooManyConnections : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDBeltMustSnap : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDBeltMustSnap : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -223,7 +223,7 @@ class UFGCDBeltMustSnap : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDConveyorTooLong : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDConveyorTooLong : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -234,7 +234,7 @@ class UFGCDConveyorTooLong : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDConveyorTooShort : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDConveyorTooShort : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -245,7 +245,7 @@ class UFGCDConveyorTooShort : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDConveyorTooSteep : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDConveyorTooSteep : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -256,7 +256,7 @@ class UFGCDConveyorTooSteep : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDConveyorInvalidShape : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDConveyorInvalidShape : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -267,7 +267,7 @@ class UFGCDConveyorInvalidShape : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDConveyorAttachmentTooSharpTurn : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDConveyorAttachmentTooSharpTurn : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -278,7 +278,7 @@ class UFGCDConveyorAttachmentTooSharpTurn : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDMustHaveRailRoadTrack : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDMustHaveRailRoadTrack : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -289,7 +289,7 @@ class UFGCDMustHaveRailRoadTrack : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDMustAttachToTrainPlatform : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDMustAttachToTrainPlatform : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -300,7 +300,7 @@ class UFGCDMustAttachToTrainPlatform : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDTrackTooLong : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDTrackTooLong : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -311,7 +311,7 @@ class UFGCDTrackTooLong : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDTrackTooShort : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDTrackTooShort : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -322,7 +322,7 @@ class UFGCDTrackTooShort : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDTrackTooSteep : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDTrackTooSteep : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 
@@ -333,7 +333,7 @@ class UFGCDTrackTooSteep : public UFGConstructDisqualifier
 };
 
 UCLASS()
-class UFGCDTrackTrunToSharp : public UFGConstructDisqualifier
+class FACTORYGAME_API UFGCDTrackTrunToSharp : public UFGConstructDisqualifier
 {
 	GENERATED_BODY()
 

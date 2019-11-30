@@ -181,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGConsumableEquipment_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGConsumableEquipment_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGConsumableEquipment()
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConsumableEquipment, 3150478711);
+	IMPLEMENT_CLASS(AFGConsumableEquipment, 3420354261);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGConsumableEquipment>()
 	{
 		return AFGConsumableEquipment::StaticClass();

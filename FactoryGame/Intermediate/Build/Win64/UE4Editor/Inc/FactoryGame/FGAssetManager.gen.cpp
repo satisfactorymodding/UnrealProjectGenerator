@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGAssetManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGAssetManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGAssetManager()
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAssetManager, 3471624161);
+	IMPLEMENT_CLASS(UFGAssetManager, 1904330812);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAssetManager>()
 	{
 		return UFGAssetManager::StaticClass();

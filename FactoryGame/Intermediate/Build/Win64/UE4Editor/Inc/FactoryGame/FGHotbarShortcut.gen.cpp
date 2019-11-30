@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		ARRAY_COUNT(InterfaceParams),
-		0x000000A1u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGHotbarShortcut_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGHotbarShortcut_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGHotbarShortcut()
@@ -262,7 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHotbarShortcut, 932434625);
+	IMPLEMENT_CLASS(UFGHotbarShortcut, 4265170088);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGHotbarShortcut>()
 	{
 		return UFGHotbarShortcut::StaticClass();

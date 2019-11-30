@@ -18,7 +18,7 @@ struct FColor;
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGObjectScanner_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FScannableDetails_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__RequiredSchematic() { return STRUCT_OFFSET(FScannableDetails, RequiredSchematic); }
 
 

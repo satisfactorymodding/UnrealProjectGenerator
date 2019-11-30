@@ -580,7 +580,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGProjectile_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGProjectile()
@@ -592,7 +592,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProjectile, 2137828266);
+	IMPLEMENT_CLASS(AFGProjectile, 1213026488);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGProjectile>()
 	{
 		return AFGProjectile::StaticClass();

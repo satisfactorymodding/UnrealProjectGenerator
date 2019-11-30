@@ -11,7 +11,7 @@
 #include "FGRailRoadVehicleAnim.generated.h"
 
 USTRUCT( BlueprintType )
-struct FAnimInstanceProxyRailRoadVehicle : public FAnimInstanceProxy
+struct FACTORYGAME_API FAnimInstanceProxyRailRoadVehicle : public FAnimInstanceProxy
 {
 	GENERATED_BODY()
 

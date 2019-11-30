@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFactoryGame_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xF59DEA5E,
+				0x35018D1B,
 				0xA09AAE3D,
 				METADATA_PARAMS(nullptr, 0)
 			};

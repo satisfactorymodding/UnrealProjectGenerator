@@ -830,7 +830,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGActorRepresentationInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGActorRepresentationInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGActorRepresentationInterface()
@@ -842,7 +842,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 3172956432);
+	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 4117965708);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGActorRepresentationInterface>()
 	{
 		return UFGActorRepresentationInterface::StaticClass();

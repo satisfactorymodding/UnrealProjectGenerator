@@ -69,7 +69,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FPendingInvite_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPendingInvite_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FPendingInvite()
@@ -87,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash() { return 1843763605U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_Hash() { return 382559858U; }
 	void UFGOnlineSessionClient::StaticRegisterNativesUFGOnlineSessionClient()
 	{
 	}
@@ -129,7 +129,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGOnlineSessionClient()
@@ -141,7 +141,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOnlineSessionClient, 1496645504);
+	IMPLEMENT_CLASS(UFGOnlineSessionClient, 3518845603);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGOnlineSessionClient>()
 	{
 		return UFGOnlineSessionClient::StaticClass();

@@ -464,7 +464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FDisabledInputGate()
@@ -482,7 +482,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash() { return 176273029U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_Hash() { return 4101388521U; }
 	void UFGUseState_ReviveInvalid_PlayerNotDead::StaticRegisterNativesUFGUseState_ReviveInvalid_PlayerNotDead()
 	{
 	}
@@ -525,7 +525,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead()
@@ -537,7 +537,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 2377614032);
+	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 2844783125);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ReviveInvalid_PlayerNotDead>()
 	{
 		return UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass();
@@ -586,7 +586,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGUseState_ReviveValid_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_ReviveValid_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGUseState_ReviveValid()
@@ -598,7 +598,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 1558799613);
+	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 1937389390);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGUseState_ReviveValid>()
 	{
 		return UFGUseState_ReviveValid::StaticClass();
@@ -4689,7 +4689,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x008000A0u,
+		0x009000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AFGCharacterPlayer_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AFGCharacterPlayer()
@@ -4701,7 +4701,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 2081213443);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 2448390346);
 	template<> FACTORYGAME_API UClass* StaticClass<AFGCharacterPlayer>()
 	{
 		return AFGCharacterPlayer::StaticClass();

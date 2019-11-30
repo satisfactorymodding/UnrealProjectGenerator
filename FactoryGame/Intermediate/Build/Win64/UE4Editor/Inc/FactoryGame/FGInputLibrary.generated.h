@@ -21,7 +21,7 @@ struct FInputAxisKeyMapping;
 
 #define FactoryGame_Source_FactoryGame_FGInputLibrary_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGKeyMapping_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FFGKeyMapping>();

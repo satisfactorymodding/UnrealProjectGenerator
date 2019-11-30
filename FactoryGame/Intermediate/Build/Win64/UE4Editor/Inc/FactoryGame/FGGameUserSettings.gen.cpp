@@ -196,7 +196,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOptionUpdateDelega
 		Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FOptionUpdateDelegateData()
@@ -214,7 +214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOptionUpdateDelega
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Hash() { return 1524312818U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOptionUpdateDelegateData_Hash() { return 1887593482U; }
 class UScriptStruct* FAudioVolumeMap::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -292,7 +292,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FAudioVolumeMap()
@@ -310,7 +310,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAudioVolumeMap_Hash() { return 2523071489U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAudioVolumeMap_Hash() { return 1881615868U; }
 	void UFGGameUserSettings::StaticRegisterNativesUFGGameUserSettings()
 	{
 		UClass* Class = UFGGameUserSettings::StaticClass();
@@ -2468,7 +2468,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::PropPointers),
 		0,
-		0x408000A4u,
+		0x409000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGGameUserSettings_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGGameUserSettings()
@@ -2480,7 +2480,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUserSettings, 22518193);
+	IMPLEMENT_CLASS(UFGGameUserSettings, 3982820234);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGGameUserSettings>()
 	{
 		return UFGGameUserSettings::StaticClass();

@@ -9,7 +9,7 @@
 /**
  * First step in the two step rocket. With this class we go through all objects we want to save/load and serialize their name, class and path                                                                    
  */
-class FArchiveObjectTOCProxy : public FArchiveProxy
+class FACTORYGAME_API FArchiveObjectTOCProxy : public FArchiveProxy
 {
 public:
 	/** ctor */

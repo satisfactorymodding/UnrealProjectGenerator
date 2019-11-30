@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGVehicleDestroyableInterface()
@@ -199,7 +199,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 1253567551);
+	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 3008494029);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGVehicleDestroyableInterface>()
 	{
 		return UFGVehicleDestroyableInterface::StaticClass();

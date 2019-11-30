@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackCustomRadial() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackCustomRadial, 910681509);
+	IMPLEMENT_CLASS(UFGAttackCustomRadial, 4025253920);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGAttackCustomRadial>()
 	{
 		return UFGAttackCustomRadial::StaticClass();

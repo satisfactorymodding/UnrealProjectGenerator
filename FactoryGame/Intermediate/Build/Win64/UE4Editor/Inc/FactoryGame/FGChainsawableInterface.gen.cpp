@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		ARRAY_COUNT(FuncInfo),
 		0,
 		0,
-		0x000040A1u,
+		0x001040A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGChainsawableInterface_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGChainsawableInterface_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGChainsawableInterface()
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGChainsawableInterface, 2226682446);
+	IMPLEMENT_CLASS(UFGChainsawableInterface, 109504536);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGChainsawableInterface>()
 	{
 		return UFGChainsawableInterface::StaticClass();

@@ -17,7 +17,7 @@ class UFGResourceDescriptor;
 
 #define FactoryGame_Source_FactoryGame_Resources_FGResourceNode_h_44_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPurityTextPair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 template<> FACTORYGAME_API UScriptStruct* StaticStruct<struct FPurityTextPair>();

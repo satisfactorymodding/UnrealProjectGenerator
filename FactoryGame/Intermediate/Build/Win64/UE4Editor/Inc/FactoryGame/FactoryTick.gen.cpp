@@ -67,7 +67,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		nullptr,
 		0,
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FFactoryTickFunction_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryTickFunction_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FFactoryTickFunction()
@@ -85,7 +85,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash() { return 621079230U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_Hash() { return 563007292U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

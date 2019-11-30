@@ -277,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGConsumableDescriptor_Statics::PropPointers),
 		0,
-		0x000000A0u,
+		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGConsumableDescriptor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGConsumableDescriptor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGConsumableDescriptor()
@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConsumableDescriptor, 216679248);
+	IMPLEMENT_CLASS(UFGConsumableDescriptor, 2782659378);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGConsumableDescriptor>()
 	{
 		return UFGConsumableDescriptor::StaticClass();

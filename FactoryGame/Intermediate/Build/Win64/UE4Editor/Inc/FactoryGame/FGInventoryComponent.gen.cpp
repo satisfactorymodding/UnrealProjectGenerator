@@ -303,7 +303,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryStack
 		Z_Construct_UScriptStruct_FInventoryStack_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FInventoryStack_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FInventoryStack_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FInventoryStack_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FInventoryStack()
@@ -321,7 +321,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryStack
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FInventoryStack_Hash() { return 1467211542U; }
+	uint32 Get_Z_Construct_UScriptStruct_FInventoryStack_Hash() { return 3557979164U; }
 class UScriptStruct* FInventoryItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -401,7 +401,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		Z_Construct_UScriptStruct_FInventoryItem_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FInventoryItem_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FInventoryItem_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FInventoryItem_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FInventoryItem()
@@ -419,7 +419,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FInventoryItem_Hash() { return 555066929U; }
+	uint32 Get_Z_Construct_UScriptStruct_FInventoryItem_Hash() { return 1837665660U; }
 	static FName NAME_UFGInventoryComponent_Server_SortInventory = FName(TEXT("Server_SortInventory"));
 	void UFGInventoryComponent::Server_SortInventory()
 	{
@@ -2139,7 +2139,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponent_Statics::PropPointers),
 		ARRAY_COUNT(InterfaceParams),
-		0x00A000A4u,
+		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFGInventoryComponent()
@@ -2151,7 +2151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponent, 246634028);
+	IMPLEMENT_CLASS(UFGInventoryComponent, 1271714944);
 	template<> FACTORYGAME_API UClass* StaticClass<UFGInventoryComponent>()
 	{
 		return UFGInventoryComponent::StaticClass();

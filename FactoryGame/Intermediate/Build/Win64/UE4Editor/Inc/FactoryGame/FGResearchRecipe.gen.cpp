@@ -130,7 +130,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::PropPointers,
 		ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FResearchRecipeReward()
@@ -148,7 +148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchRecipeReward_Hash() { return 3043165536U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchRecipeReward_Hash() { return 1529170243U; }
 	void UFGResearchRecipe::StaticRegisterNativesUFGResearchRecipe()
 	{
 		UClass* Class = UFGResearchRecipe::StaticClass();
