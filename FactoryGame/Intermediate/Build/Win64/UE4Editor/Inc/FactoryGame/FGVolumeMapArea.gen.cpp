@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGVolumeMapArea.h"
+#include "FactoryGame/Public/FGVolumeMapArea.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Map Area" },
-		{ "ModuleRelativePath", "FGVolumeMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGVolumeMapArea.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGVolumeMapArea, "GetMapArea", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54080401, sizeof(FGVolumeMapArea_eventGetMapArea_Parms), Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea_Statics::Function_MetaDataParams)) };
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGVolumeMapArea_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVolumeMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGVolumeMapArea.h" },
 		{ "ToolTip", "Called whenever a primitive component enters this volume" },
 	};
 #endif
@@ -173,14 +173,14 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGVolumeMapArea_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea, "GetMapArea" }, // 1400487750
-		{ &Z_Construct_UFunction_AFGVolumeMapArea_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 1495622561
+		{ &Z_Construct_UFunction_AFGVolumeMapArea_GetMapArea, "GetMapArea" }, // 2492481444
+		{ &Z_Construct_UFunction_AFGVolumeMapArea_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 3184566105
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVolumeMapArea_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Brush Physics Object Display Rendering Physics Input Blueprint" },
 		{ "IncludePath", "FGVolumeMapArea.h" },
-		{ "ModuleRelativePath", "FGVolumeMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGVolumeMapArea.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "This is a volume that will define the physical location of a map area." },
 	};
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVolumeMapArea_Statics::NewProp_mMapArea_MetaData[] = {
 		{ "Category", "Map Area" },
-		{ "ModuleRelativePath", "FGVolumeMapArea.h" },
+		{ "ModuleRelativePath", "Public/FGVolumeMapArea.h" },
 		{ "ToolTip", "This is the area this map defines." },
 	};
 #endif
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVolumeMapArea() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVolumeMapArea, 1854150863);
+	IMPLEMENT_CLASS(AFGVolumeMapArea, 2513404481);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGVolumeMapArea(Z_Construct_UClass_AFGVolumeMapArea, &AFGVolumeMapArea::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGVolumeMapArea"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGVolumeMapArea);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

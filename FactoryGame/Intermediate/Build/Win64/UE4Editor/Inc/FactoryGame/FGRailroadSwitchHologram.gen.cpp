@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGRailroadSwitchHologram.h"
+#include "FactoryGame/Public/Hologram/FGRailroadSwitchHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadSwitchHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadSwitchHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGRailroadSwitchHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadSwitchHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadSwitchHologram.h" },
 		{ "ToolTip", "Hologram for railroad switch controls." },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadSwitchHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadSwitchHologram, 2842269);
+	IMPLEMENT_CLASS(AFGRailroadSwitchHologram, 1349617703);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadSwitchHologram(Z_Construct_UClass_AFGRailroadSwitchHologram, &AFGRailroadSwitchHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadSwitchHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadSwitchHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

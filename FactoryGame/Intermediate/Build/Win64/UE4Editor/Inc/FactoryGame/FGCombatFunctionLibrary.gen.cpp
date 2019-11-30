@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCombatFunctionLibrary.h"
+#include "FactoryGame/Public/FGCombatFunctionLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCombatFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGCombatFunctionLibrary.h" },
 		{ "ToolTip", "Uses a shape to do damage within the shape\n@param controller - controller doing the damage\n@param collisionShape - shape we want to check for overlapping actors\n@param centerLocation - the location that damage origins from\n@param damageType - damagetype for the damage\n@param damage - how much damage\n@param radius - radial reach of the damage" },
 	};
 #endif
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "FGCombatFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGCombatFunctionLibrary.h" },
 		{ "ToolTip", "Checks if the aggro target is within attack range of a attack\n@param aggroTarget - the aggro target we want to check if they are within our attack range\n@param attackClass - the attack that we want to check if we are within attack range for\n@return true if they can be attacked and hit from our pawns location" },
 	};
 #endif
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "FGCombatFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGCombatFunctionLibrary.h" },
 		{ "ToolTip", "Checks if the aggro target is within specified range\n@param aggroTarget - the aggro target we want to check if they are within our  range\n@param range - the range that we want to check if we are within\n@return true if they can be reached from this range" },
 	};
 #endif
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGCombatFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGCombatFunctionLibrary.h" },
 		{ "ToolTip", "Try get a pawn from a damage causer in take damage" },
 	};
 #endif
@@ -264,15 +264,15 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision, "DoRadialDamageWithinCollision" }, // 709760535
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange, "IsWithinAttackRange" }, // 3776542952
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange, "IsWithinRange" }, // 1972183324
-		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser, "TryGetCharacterFromDamageCauser" }, // 1712015008
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_DoRadialDamageWithinCollision, "DoRadialDamageWithinCollision" }, // 1261392745
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinAttackRange, "IsWithinAttackRange" }, // 601610071
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_IsWithinRange, "IsWithinRange" }, // 648001865
+		{ &Z_Construct_UFunction_UFGCombatFunctionLibrary_TryGetCharacterFromDamageCauser, "TryGetCharacterFromDamageCauser" }, // 1904186420
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCombatFunctionLibrary.h" },
-		{ "ModuleRelativePath", "FGCombatFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGCombatFunctionLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::StaticCppClassTypeInfo = {
@@ -298,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 1453273441);
+	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 3418752150);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCombatFunctionLibrary(Z_Construct_UClass_UFGCombatFunctionLibrary, &UFGCombatFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCombatFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCombatFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

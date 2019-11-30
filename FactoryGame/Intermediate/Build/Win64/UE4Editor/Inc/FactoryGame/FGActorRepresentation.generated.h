@@ -21,7 +21,7 @@ class AActor;
 #endif
 #define FACTORYGAME_FGActorRepresentation_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_ActorRepresentationUpdated) \
 	{ \
@@ -160,7 +160,7 @@ class AActor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_ActorRepresentationUpdated) \
 	{ \
@@ -299,7 +299,7 @@ class AActor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGActorRepresentation(); \
 	friend struct Z_Construct_UClass_UFGActorRepresentation_Statics; \
@@ -308,7 +308,7 @@ public: \
 	DECLARE_SERIALIZER(UFGActorRepresentation)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGActorRepresentation(); \
 	friend struct Z_Construct_UClass_UFGActorRepresentation_Statics; \
@@ -317,7 +317,7 @@ public: \
 	DECLARE_SERIALIZER(UFGActorRepresentation)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGActorRepresentation(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGActorRepresentation) \
@@ -330,7 +330,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGActorRepresentation(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -343,7 +343,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGActorRepresentation); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGActorRepresentation)
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mRealActor() { return STRUCT_OFFSET(UFGActorRepresentation, mRealActor); } \
 	FORCEINLINE static uint32 __PPO__mActorLocation() { return STRUCT_OFFSET(UFGActorRepresentation, mActorLocation); } \
 	FORCEINLINE static uint32 __PPO__mActorRotation() { return STRUCT_OFFSET(UFGActorRepresentation, mActorRotation); } \
@@ -359,31 +359,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGActorRepresentation); \
 	FORCEINLINE static uint32 __PPO__mCompassViewDistance() { return STRUCT_OFFSET(UFGActorRepresentation, mCompassViewDistance); }
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_52_PROLOG
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_52_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGActorRepresentation_h_55_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGActorRepresentation_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGActorRepresentation_h
 
 
 #define FOREACH_ENUM_ECOMPASSVIEWDISTANCE(op) \

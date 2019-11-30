@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGActorRepresentationInterface.h"
+#include "FactoryGame/Public/FGActorRepresentationInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_AddAsRepresentation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Adds the actor to the actor representation manager" },
 	};
 #endif
@@ -222,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentationInterface, "GetActorCompassViewDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGActorRepresentationInterface_eventGetActorCompassViewDistance_Parms), Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance_Statics::Function_MetaDataParams)) };
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentationInterface, "GetActorFogOfWarRevealRadius", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGActorRepresentationInterface_eventGetActorFogOfWarRevealRadius_Parms), Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius_Statics::Function_MetaDataParams)) };
@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentationInterface, "GetActorFogOfWarRevealType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, sizeof(FGActorRepresentationInterface_eventGetActorFogOfWarRevealType_Parms), Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType_Statics::Function_MetaDataParams)) };
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Fetches the color to use for this actors representation" },
 	};
 #endif
@@ -342,7 +342,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Fetches the text to use for this actors representation" },
 	};
 #endif
@@ -372,7 +372,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationTexture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Fetches the texture to use for this actors representation" },
 	};
 #endif
@@ -405,7 +405,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Fetches the representation type to use for this actor" },
 	};
 #endif
@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorShouldShowInCompass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Should this actor ever be shown in the compass" },
 	};
 #endif
@@ -475,7 +475,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorShouldShowOnMap_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Should this actor ever be shown on the map" },
 	};
 #endif
@@ -505,7 +505,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetRealActorLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Called on the server to get the location of this actor so it can be replicated to clients." },
 	};
 #endif
@@ -535,7 +535,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_GetRealActorRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Called on the server to get the rotation of this actor so it can be replicated to clients." },
 	};
 #endif
@@ -570,7 +570,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_IsActorStatic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Tells us if the actor is static or not." },
 	};
 #endif
@@ -605,7 +605,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_RemoveAsRepresentation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Should be called when an actor is destroyed. Then we should remove this representation." },
 	};
 #endif
@@ -644,7 +644,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGActorRepresentationInterface, "SetActorCompassViewDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, sizeof(FGActorRepresentationInterface_eventSetActorCompassViewDistance_Parms), Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance_Statics::Function_MetaDataParams)) };
@@ -684,7 +684,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorRepresentationText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Set the text to use for this actors representation" },
 	};
 #endif
@@ -719,7 +719,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGActorRepresentationInterface_UpdateRepresentation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Representation" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ToolTip", "Updates the actor in the actor representation manager" },
 	};
 #endif
@@ -752,29 +752,29 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGActorRepresentationInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_AddAsRepresentation, "AddAsRepresentation" }, // 778730963
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance, "GetActorCompassViewDistance" }, // 2037694332
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius, "GetActorFogOfWarRevealRadius" }, // 886148796
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType, "GetActorFogOfWarRevealType" }, // 1324480561
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationColor, "GetActorRepresentationColor" }, // 2735225334
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationText, "GetActorRepresentationText" }, // 2829772932
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationTexture, "GetActorRepresentationTexture" }, // 1826708501
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationType, "GetActorRepresentationType" }, // 504737550
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorShouldShowInCompass, "GetActorShouldShowInCompass" }, // 2095911412
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorShouldShowOnMap, "GetActorShouldShowOnMap" }, // 826481816
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetRealActorLocation, "GetRealActorLocation" }, // 942373478
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetRealActorRotation, "GetRealActorRotation" }, // 2533528635
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_IsActorStatic, "IsActorStatic" }, // 2122117780
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_RemoveAsRepresentation, "RemoveAsRepresentation" }, // 178370383
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance, "SetActorCompassViewDistance" }, // 825975539
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorRepresentationText, "SetActorRepresentationText" }, // 3590991175
-		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_UpdateRepresentation, "UpdateRepresentation" }, // 3861936389
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_AddAsRepresentation, "AddAsRepresentation" }, // 698308793
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorCompassViewDistance, "GetActorCompassViewDistance" }, // 358893694
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealRadius, "GetActorFogOfWarRevealRadius" }, // 3282878675
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorFogOfWarRevealType, "GetActorFogOfWarRevealType" }, // 3227446743
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationColor, "GetActorRepresentationColor" }, // 3571850185
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationText, "GetActorRepresentationText" }, // 2138480381
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationTexture, "GetActorRepresentationTexture" }, // 3427826000
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorRepresentationType, "GetActorRepresentationType" }, // 113610644
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorShouldShowInCompass, "GetActorShouldShowInCompass" }, // 3454117092
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetActorShouldShowOnMap, "GetActorShouldShowOnMap" }, // 1746959008
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetRealActorLocation, "GetRealActorLocation" }, // 2134683187
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_GetRealActorRotation, "GetRealActorRotation" }, // 3178516131
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_IsActorStatic, "IsActorStatic" }, // 3399551219
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_RemoveAsRepresentation, "RemoveAsRepresentation" }, // 2117824236
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorCompassViewDistance, "SetActorCompassViewDistance" }, // 3042703195
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_SetActorRepresentationText, "SetActorRepresentationText" }, // 3073305857
+		{ &Z_Construct_UFunction_UFGActorRepresentationInterface_UpdateRepresentation, "UpdateRepresentation" }, // 917647486
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGActorRepresentationInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGActorRepresentationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGActorRepresentationInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -801,7 +801,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 2536555127);
+	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 1988594388);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGActorRepresentationInterface(Z_Construct_UClass_UFGActorRepresentationInterface, &UFGActorRepresentationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGActorRepresentationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGActorRepresentationInterface);
 	static FName NAME_UFGActorRepresentationInterface_AddAsRepresentation = FName(TEXT("AddAsRepresentation"));

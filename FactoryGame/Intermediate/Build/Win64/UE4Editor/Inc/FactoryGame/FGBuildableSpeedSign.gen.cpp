@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableSpeedSign.h"
+#include "FactoryGame/Public/Buildables/FGBuildableSpeedSign.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpeedSign() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableSpeedSign_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableSpeedSign.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableSpeedSign.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableSpeedSign.h" },
 		{ "ToolTip", "Vehicles can not go too fast past this." },
 	};
 #endif
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableSpeedSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableSpeedSign, 3121583358);
+	IMPLEMENT_CLASS(AFGBuildableSpeedSign, 4180689026);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableSpeedSign(Z_Construct_UClass_AFGBuildableSpeedSign, &AFGBuildableSpeedSign::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableSpeedSign"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableSpeedSign);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

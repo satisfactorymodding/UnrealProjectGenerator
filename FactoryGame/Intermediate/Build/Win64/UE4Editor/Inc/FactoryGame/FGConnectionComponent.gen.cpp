@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGConnectionComponent.h"
+#include "FactoryGame/Public/FGConnectionComponent.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGConnectionComponent.h" },
-		{ "ModuleRelativePath", "FGConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGConnectionComponent.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "Base class for connection components, i.e. factory, power, track connections..." },
 	};
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConnectionComponent, 1075377935);
+	IMPLEMENT_CLASS(UFGConnectionComponent, 3936496892);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConnectionComponent(Z_Construct_UClass_UFGConnectionComponent, &UFGConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConnectionComponent);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGConnectionComponent)

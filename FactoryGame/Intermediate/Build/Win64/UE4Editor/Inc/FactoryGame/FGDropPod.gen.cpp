@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDropPod.h"
+#include "FactoryGame/Public/FGDropPod.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDropPod, "GenerateDropPodInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(FGDropPod_eventGenerateDropPodInventory_Parms), Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory_Statics::Function_MetaDataParams)) };
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_GetLootInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "@return The inventory containing possible loot" },
 	};
 #endif
@@ -165,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_HasBeenOpened_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "@return true if this has been opened." },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_OnOpened_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "Called on server, rolls the loot for the drop pod." },
 	};
 #endif
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGDropPod, "OnRep_HasBeenOpened", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened_Statics::Function_MetaDataParams)) };
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_Open_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "Open the drop pod." },
 	};
 #endif
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_RollDropPackage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "bool excludeItems," },
 	};
 #endif
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDropPod_RollLoot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "Called on server, rolls the loot for the drop pod." },
 	};
 #endif
@@ -348,32 +348,32 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGDropPod_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory, "GenerateDropPodInventory" }, // 2562457711
-		{ &Z_Construct_UFunction_AFGDropPod_GetLootInventory, "GetLootInventory" }, // 1407671476
-		{ &Z_Construct_UFunction_AFGDropPod_HasBeenOpened, "HasBeenOpened" }, // 2650207560
-		{ &Z_Construct_UFunction_AFGDropPod_OnOpened, "OnOpened" }, // 4109988785
-		{ &Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened, "OnRep_HasBeenOpened" }, // 2825574570
-		{ &Z_Construct_UFunction_AFGDropPod_Open, "Open" }, // 2543586310
-		{ &Z_Construct_UFunction_AFGDropPod_RollDropPackage, "RollDropPackage" }, // 1590559032
-		{ &Z_Construct_UFunction_AFGDropPod_RollLoot, "RollLoot" }, // 2844571509
+		{ &Z_Construct_UFunction_AFGDropPod_GenerateDropPodInventory, "GenerateDropPodInventory" }, // 3650577504
+		{ &Z_Construct_UFunction_AFGDropPod_GetLootInventory, "GetLootInventory" }, // 1828129905
+		{ &Z_Construct_UFunction_AFGDropPod_HasBeenOpened, "HasBeenOpened" }, // 827179333
+		{ &Z_Construct_UFunction_AFGDropPod_OnOpened, "OnOpened" }, // 3861462184
+		{ &Z_Construct_UFunction_AFGDropPod_OnRep_HasBeenOpened, "OnRep_HasBeenOpened" }, // 3540509017
+		{ &Z_Construct_UFunction_AFGDropPod_Open, "Open" }, // 3360073875
+		{ &Z_Construct_UFunction_AFGDropPod_RollDropPackage, "RollDropPackage" }, // 3291356361
+		{ &Z_Construct_UFunction_AFGDropPod_RollLoot, "RollLoot" }, // 1045480633
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGDropPod.h" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "Contains the loot if any" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGDropPod_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001080028, 1, nullptr, STRUCT_OFFSET(AFGDropPod, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDropPod_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::NewProp_mHasBeenOpened_MetaData[] = {
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "True when this has been opened" },
 	};
 #endif
@@ -385,7 +385,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDropPod_Statics::NewProp_mAmountOfInventorySlots_MetaData[] = {
 		{ "Category", "Drop Pod" },
-		{ "ModuleRelativePath", "FGDropPod.h" },
+		{ "ModuleRelativePath", "Public/FGDropPod.h" },
 		{ "ToolTip", "The amount of available inventory slots for the drop pod" },
 	};
 #endif
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDropPod, 369307681);
+	IMPLEMENT_CLASS(AFGDropPod, 4006234935);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDropPod(Z_Construct_UClass_AFGDropPod, &AFGDropPod::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDropPod"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDropPod);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

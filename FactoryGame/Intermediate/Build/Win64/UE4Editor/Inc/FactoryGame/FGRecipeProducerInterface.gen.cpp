@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRecipeProducerInterface.h"
+#include "FactoryGame/Public/FGRecipeProducerInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRecipeProducerInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRecipeProducerInterface.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeProducerInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 1887015239);
+	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 3195329599);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRecipeProducerInterface(Z_Construct_UClass_UFGRecipeProducerInterface, &UFGRecipeProducerInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRecipeProducerInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRecipeProducerInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

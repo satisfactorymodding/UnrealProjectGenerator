@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCameraModifierLimitLook.h"
+#include "FactoryGame/Public/FGCameraModifierLimitLook.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Limited Look" },
-		{ "ModuleRelativePath", "FGCameraModifierLimitLook.h" },
+		{ "ModuleRelativePath", "Public/FGCameraModifierLimitLook.h" },
 		{ "ToolTip", "Gets the default rotation" },
 	};
 #endif
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Limited Look" },
-		{ "ModuleRelativePath", "FGCameraModifierLimitLook.h" },
+		{ "ModuleRelativePath", "Public/FGCameraModifierLimitLook.h" },
 		{ "ToolTip", "Sets the default rotation" },
 	};
 #endif
@@ -126,19 +126,19 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator, "GetDefaultLookRotator" }, // 88926032
-		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator, "SetDefaultLookRotator" }, // 2182258359
+		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_GetDefaultLookRotator, "GetDefaultLookRotator" }, // 1582478347
+		{ &Z_Construct_UFunction_UFGCameraModifierLimitLook_SetDefaultLookRotator, "SetDefaultLookRotator" }, // 386575734
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCameraModifierLimitLook.h" },
-		{ "ModuleRelativePath", "FGCameraModifierLimitLook.h" },
+		{ "ModuleRelativePath", "Public/FGCameraModifierLimitLook.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxYaw_MetaData[] = {
 		{ "Category", "Limited Look" },
-		{ "ModuleRelativePath", "FGCameraModifierLimitLook.h" },
+		{ "ModuleRelativePath", "Public/FGCameraModifierLimitLook.h" },
 		{ "ToolTip", "The max rotation in yaw ( abs value )" },
 	};
 #endif
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCameraModifierLimitLook_Statics::NewProp_mMaxPitch_MetaData[] = {
 		{ "Category", "Limited Look" },
-		{ "ModuleRelativePath", "FGCameraModifierLimitLook.h" },
+		{ "ModuleRelativePath", "Public/FGCameraModifierLimitLook.h" },
 		{ "ToolTip", "The max rotation in pitch ( abs value )" },
 	};
 #endif
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCameraModifierLimitLook() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCameraModifierLimitLook, 1962063743);
+	IMPLEMENT_CLASS(UFGCameraModifierLimitLook, 424967346);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCameraModifierLimitLook(Z_Construct_UClass_UFGCameraModifierLimitLook, &UFGCameraModifierLimitLook::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCameraModifierLimitLook"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCameraModifierLimitLook);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

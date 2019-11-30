@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGVehicleCollisionBoxComponent.h"
+#include "FactoryGame/Public/FGVehicleCollisionBoxComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGVehicleCollisionBoxComponent, "OnOverlapBegin", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00420401, sizeof(FGVehicleCollisionBoxComponent_eventOnOverlapBegin_Parms), Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin_Statics::Function_MetaDataParams)) };
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin, "OnOverlapBegin" }, // 2726066099
+		{ &Z_Construct_UFunction_UFGVehicleCollisionBoxComponent_OnOverlapBegin, "OnOverlapBegin" }, // 2680467273
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::Class_MetaDataParams[] = {
@@ -159,13 +159,13 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Object LOD Lighting TextureStreaming Object LOD Lighting TextureStreaming Activation Components|Activation Trigger" },
 		{ "IncludePath", "FGVehicleCollisionBoxComponent.h" },
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMinVelocityForAddedZ_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 		{ "ToolTip", "The minimum velocity required for any fudged Z values to take effect. This helps when player just runs against the vehicle." },
 	};
 #endif
@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxCollisionVelocity_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 		{ "ToolTip", "The maximum velocity that can be added on a collision." },
 	};
 #endif
@@ -181,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleCollisionBoxComponent_Statics::NewProp_mMaxAddedZVelocity_MetaData[] = {
 		{ "Category", "Vehicle Collision" },
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 		{ "ToolTip", "The maximum Z velocity that can be added on a collision." },
 	};
 #endif
@@ -191,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "Category", "Vehicle Collision" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "0.0" },
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 		{ "ToolTip", "Added Z Velocity multiplier. DOES NOT specify how much velocity. This number should be small 0.0-1.0 range" },
 		{ "UIMax", "1.0" },
 		{ "UIMin", "0.0" },
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		{ "Category", "Vehicle Collision" },
 		{ "ClampMax", "10.0" },
 		{ "ClampMin", "0.1" },
-		{ "ModuleRelativePath", "FGVehicleCollisionBoxComponent.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleCollisionBoxComponent.h" },
 		{ "ToolTip", "Multiplier for velocity change with all impacts." },
 		{ "UIMax", "10.0" },
 		{ "UIMin", "0.1" },
@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleCollisionBoxComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 322540195);
+	IMPLEMENT_CLASS(UFGVehicleCollisionBoxComponent, 917788491);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleCollisionBoxComponent(Z_Construct_UClass_UFGVehicleCollisionBoxComponent, &UFGVehicleCollisionBoxComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleCollisionBoxComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleCollisionBoxComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

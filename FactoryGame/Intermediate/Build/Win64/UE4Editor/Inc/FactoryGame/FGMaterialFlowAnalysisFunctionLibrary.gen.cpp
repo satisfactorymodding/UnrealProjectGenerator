@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMaterialFlowAnalysisFunctionLibrary.h"
+#include "FactoryGame/Public/FGMaterialFlowAnalysisFunctionLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -81,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FactoryGame|MaterialFlow" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Material flow node." },
 	};
 #endif
@@ -92,7 +92,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Inputs_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Child flow nodes, 0 for leaf nodes." },
 	};
 #endif
@@ -101,7 +101,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Outputs_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Parent flow nodes, 0 for root nodes." },
 	};
 #endif
@@ -110,7 +110,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_ProducerCount_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "How many producers are needed for this recipe." },
 	};
 #endif
@@ -118,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Depth_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "At which depth in the dependency tree is this item, root is 0." },
 	};
 #endif
@@ -126,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowNode_Statics::NewProp_Recipe_MetaData[] = {
 		{ "Category", "MaterialFlowNode" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Recipe analyzed, nullptr for leaf nodes." },
 	};
 #endif
@@ -167,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowNode
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC() { return 2460710067U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowNode_CRC() { return 270045026U; }
 class UScriptStruct* FMaterialFlowConnection::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -219,7 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FactoryGame|MaterialFlow" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Input/output in the flow analysis." },
 	};
 #endif
@@ -230,7 +230,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalFlow_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Total flow. [items/second]" },
 	};
 #endif
@@ -238,7 +238,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_TotalCount_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Total count. [items/cycle]" },
 	};
 #endif
@@ -246,7 +246,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Flow_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Base flow. [items/second]" },
 	};
 #endif
@@ -254,7 +254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Count_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Base count. [items/cycle]" },
 	};
 #endif
@@ -262,7 +262,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics::NewProp_Descriptor_MetaData[] = {
 		{ "Category", "MaterialFlowConnection" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Details about the material flow in this step." },
 	};
 #endif
@@ -301,7 +301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowConnec
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC() { return 2650018656U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowConnection_CRC() { return 4065005531U; }
 class UScriptStruct* FMaterialFlowGraph::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -332,7 +332,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMaterialFlowGraph_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FactoryGame|MaterialFlow" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "The resulting DAG from a flow analysis." },
 	};
 #endif
@@ -367,7 +367,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC() { return 2148391437U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialFlowGraph_CRC() { return 3923569951U; }
 	void UFGMaterialFlowAnalysisFunctionLibrary::StaticRegisterNativesUFGMaterialFlowAnalysisFunctionLibrary()
 	{
 		UClass* Class = UFGMaterialFlowAnalysisFunctionLibrary::StaticClass();
@@ -410,7 +410,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|MaterialFlow" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Get the depth of the material flow graph." },
 	};
 #endif
@@ -464,7 +464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|MaterialFlow" },
 		{ "CPP_Default_depth", "-1" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Get nodes in the material flow graph at a certain depth, -1 to get all nodes." },
 	};
 #endif
@@ -509,7 +509,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|MaterialFlow" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Perform a material flow analysis on the given recipe." },
 	};
 #endif
@@ -542,14 +542,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth, "GetGraphDepth" }, // 1763549670
-		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes, "GetGraphNodes" }, // 2723721470
-		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis, "PerformMaterialFlowAnalysis" }, // 825485897
+		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphDepth, "GetGraphDepth" }, // 2084552253
+		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_GetGraphNodes, "GetGraphNodes" }, // 2552818077
+		{ &Z_Construct_UFunction_UFGMaterialFlowAnalysisFunctionLibrary_PerformMaterialFlowAnalysis, "PerformMaterialFlowAnalysis" }, // 2623072108
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
-		{ "ModuleRelativePath", "FGMaterialFlowAnalysisFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialFlowAnalysisFunctionLibrary.h" },
 		{ "ToolTip", "Function library for material flow analysis in the factory." },
 	};
 #endif
@@ -576,7 +576,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialFlowGraph
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialFlowAnalysisFunctionLibrary, 1695704549);
+	IMPLEMENT_CLASS(UFGMaterialFlowAnalysisFunctionLibrary, 983698855);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialFlowAnalysisFunctionLibrary(Z_Construct_UClass_UFGMaterialFlowAnalysisFunctionLibrary, &UFGMaterialFlowAnalysisFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialFlowAnalysisFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialFlowAnalysisFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInteractActor.h"
+#include "FactoryGame/Public/FGInteractActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGInteractActor_OnInteract_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInteractActor.h" },
+		{ "ModuleRelativePath", "Public/FGInteractActor.h" },
 		{ "ToolTip", "Called when player interacts with this actor" },
 	};
 #endif
@@ -80,12 +80,12 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGInteractActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGInteractActor_OnInteract, "OnInteract" }, // 109116558
+		{ &Z_Construct_UFunction_AFGInteractActor_OnInteract, "OnInteract" }, // 3414364919
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGInteractActor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGInteractActor.h" },
-		{ "ModuleRelativePath", "FGInteractActor.h" },
+		{ "ModuleRelativePath", "Public/FGInteractActor.h" },
 	};
 #endif
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AFGInteractActor_Statics::InterfaceParams[] = {
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractActor, 2072577487);
+	IMPLEMENT_CLASS(AFGInteractActor, 3209526210);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGInteractActor(Z_Construct_UClass_AFGInteractActor, &AFGInteractActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGInteractActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGInteractActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

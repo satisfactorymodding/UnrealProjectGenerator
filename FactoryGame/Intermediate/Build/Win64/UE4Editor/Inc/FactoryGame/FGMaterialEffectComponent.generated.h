@@ -15,12 +15,12 @@ class UMeshComponent;
 #endif
 #define FACTORYGAME_FGMaterialEffectComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_18_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_RPC_WRAPPERS \
 	virtual void OnUpdate_Implementation(float deltaTime); \
 	virtual void OnEnded_Implementation(); \
 	virtual void OnStarted_Implementation(); \
@@ -116,7 +116,7 @@ class UMeshComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnUpdate_Implementation(float deltaTime); \
 	virtual void OnEnded_Implementation(); \
 	virtual void OnStarted_Implementation(); \
@@ -212,15 +212,15 @@ class UMeshComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_EVENT_PARMS \
 	struct FGMaterialEffectComponent_eventOnUpdate_Parms \
 	{ \
 		float deltaTime; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGMaterialEffectComponent(); \
 	friend struct Z_Construct_UClass_UFGMaterialEffectComponent_Statics; \
@@ -229,7 +229,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMaterialEffectComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGMaterialEffectComponent(); \
 	friend struct Z_Construct_UClass_UFGMaterialEffectComponent_Statics; \
@@ -238,7 +238,7 @@ public: \
 	DECLARE_SERIALIZER(UFGMaterialEffectComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGMaterialEffectComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGMaterialEffectComponent) \
@@ -251,7 +251,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGMaterialEffectComponent(UFGMaterialEffectComponent&&); \
@@ -262,43 +262,43 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGMaterialEffectComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGMaterialEffectComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMeshes() { return STRUCT_OFFSET(UFGMaterialEffectComponent, mMeshes); } \
 	FORCEINLINE static uint32 __PPO__mMaterial() { return STRUCT_OFFSET(UFGMaterialEffectComponent, mMaterial); } \
 	FORCEINLINE static uint32 __PPO__mAutoDestroy() { return STRUCT_OFFSET(UFGMaterialEffectComponent, mAutoDestroy); } \
 	FORCEINLINE static uint32 __PPO__mMids() { return STRUCT_OFFSET(UFGMaterialEffectComponent, mMids); }
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_36_PROLOG \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_36_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_INCLASS \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h_39_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGMaterialEffectComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

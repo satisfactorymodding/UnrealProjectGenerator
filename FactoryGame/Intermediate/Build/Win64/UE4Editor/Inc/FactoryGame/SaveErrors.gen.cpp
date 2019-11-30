@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/SaveErrors.h"
+#include "FactoryGame/Public/SaveErrors.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FErrors_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "SaveErrors.h" },
+		{ "ModuleRelativePath", "Public/SaveErrors.h" },
 		{ "ToolTip", "Errors we want to store to disc" },
 	};
 #endif
@@ -65,7 +65,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_MetaData[] = {
-		{ "ModuleRelativePath", "SaveErrors.h" },
+		{ "ModuleRelativePath", "Public/SaveErrors.h" },
 		{ "ToolTip", "All unknown classes" },
 	};
 #endif
@@ -73,7 +73,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownClasses_ElementProp = { UE4CodeGen_Private::EPropertyClass::Str, "UnknownClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FErrors_Statics::NewProp_UnknownLevels_MetaData[] = {
-		{ "ModuleRelativePath", "SaveErrors.h" },
+		{ "ModuleRelativePath", "Public/SaveErrors.h" },
 		{ "ToolTip", "All unknown levels" },
 	};
 #endif
@@ -112,7 +112,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFErrors
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FErrors_CRC() { return 4082905970U; }
+	uint32 Get_Z_Construct_UScriptStruct_FErrors_CRC() { return 1158107612U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

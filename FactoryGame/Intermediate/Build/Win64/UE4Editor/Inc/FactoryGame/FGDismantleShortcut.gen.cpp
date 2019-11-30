@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDismantleShortcut.h"
+#include "FactoryGame/Public/FGDismantleShortcut.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDismantleShortcut_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGDismantleShortcut.h" },
-		{ "ModuleRelativePath", "FGDismantleShortcut.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleShortcut.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGDismantleShortcut_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleShortcut, 4012322162);
+	IMPLEMENT_CLASS(UFGDismantleShortcut, 4068029976);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleShortcut(Z_Construct_UClass_UFGDismantleShortcut, &UFGDismantleShortcut::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleShortcut"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleShortcut);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

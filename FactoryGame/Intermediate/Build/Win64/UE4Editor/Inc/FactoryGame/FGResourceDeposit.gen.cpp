@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGResourceDeposit.h"
+#include "FactoryGame/Public/Resources/FGResourceDeposit.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceDeposit_GetMineAmount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Deposit" },
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "How much to mine per cycle" },
 	};
 #endif
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceDeposit_IsDepositEmpty_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Deposit" },
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "Is deposit empty?" },
 	};
 #endif
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceDeposit_OnRep_ResourceDepositEmptied_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "Called on client when resource deposit has been emptied" },
 	};
 #endif
@@ -155,7 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceDeposit_PlayDepletedEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Deposit" },
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "Function used to play effects and change mesh when a deposit is emptied" },
 	};
 #endif
@@ -214,21 +214,21 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResourceDeposit_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResourceDeposit_GetMineAmount, "GetMineAmount" }, // 1346881840
-		{ &Z_Construct_UFunction_AFGResourceDeposit_IsDepositEmpty, "IsDepositEmpty" }, // 3513441948
-		{ &Z_Construct_UFunction_AFGResourceDeposit_OnRep_ResourceDepositEmptied, "OnRep_ResourceDepositEmptied" }, // 110044117
-		{ &Z_Construct_UFunction_AFGResourceDeposit_PlayDepletedEffect, "PlayDepletedEffect" }, // 1608320765
+		{ &Z_Construct_UFunction_AFGResourceDeposit_GetMineAmount, "GetMineAmount" }, // 1264151253
+		{ &Z_Construct_UFunction_AFGResourceDeposit_IsDepositEmpty, "IsDepositEmpty" }, // 4085410464
+		{ &Z_Construct_UFunction_AFGResourceDeposit_OnRep_ResourceDepositEmptied, "OnRep_ResourceDepositEmptied" }, // 69959582
+		{ &Z_Construct_UFunction_AFGResourceDeposit_PlayDepletedEffect, "PlayDepletedEffect" }, // 1791411315
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Resources/FGResourceDeposit.h" },
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mOverrideResourceClass_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mOverrideResourceClass = { UE4CodeGen_Private::EPropertyClass::Class, "mOverrideResourceClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000801, 1, nullptr, STRUCT_OFFSET(AFGResourceDeposit, mOverrideResourceClass), Z_Construct_UClass_UFGResourceDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mOverrideResourceClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mOverrideResourceClass_MetaData)) };
@@ -236,21 +236,21 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mDepositMeshComponent_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "The mesh we use for displaying the resource deposit" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mDepositMeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mDepositMeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a000d, 1, nullptr, STRUCT_OFFSET(AFGResourceDeposit, mDepositMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mDepositMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mDepositMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mMineAmount_MetaData[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "How much to mine per cycle" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mMineAmount = { UE4CodeGen_Private::EPropertyClass::Int, "mMineAmount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGResourceDeposit, mMineAmount), METADATA_PARAMS(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mMineAmount_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mMineAmount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mIsEmptied_MetaData[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "is deposit emptied" },
 	};
 #endif
@@ -261,14 +261,14 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mIsEmptied = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsEmptied", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000101000020, 1, "OnRep_ResourceDepositEmptied", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGResourceDeposit), &Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mIsEmptied_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mIsEmptied_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mIsEmptied_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mResourceDepositTableIndex_MetaData[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "Index in the resource deposit table" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mResourceDepositTableIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mResourceDepositTableIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGResourceDeposit, mResourceDepositTableIndex), METADATA_PARAMS(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mResourceDepositTableIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mResourceDepositTableIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceDeposit_Statics::NewProp_mResourceDepositPackage_MetaData[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceDeposit.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDeposit.h" },
 		{ "ToolTip", "Valid if mLootTableIndex is not INDEX_NONE" },
 	};
 #endif
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDeposit() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceDeposit, 626148919);
+	IMPLEMENT_CLASS(AFGResourceDeposit, 1429352029);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceDeposit(Z_Construct_UClass_AFGResourceDeposit, &AFGResourceDeposit::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceDeposit"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceDeposit);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

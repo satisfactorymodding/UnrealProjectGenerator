@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/IncludeInBuild.h"
+#include "FactoryGame/Public/IncludeInBuild.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,7 +26,7 @@ void EmptyLinkFunctionForGeneratedCodeIncludeInBuild() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EIncludeInBuilds(EIncludeInBuilds_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EIncludeInBuilds"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EIncludeInBuilds_CRC() { return 1060213158U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EIncludeInBuilds_CRC() { return 2712063669U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EIncludeInBuilds()
 	{
 #if WITH_HOT_RELOAD
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeIncludeInBuild() {}
 				{ "IIB_PrivateBuilds.ToolTip", "The schematic will show up in builds marked as private (ie, local builds, and not builds sent to staging/main)" },
 				{ "IIB_PublicBuilds.DisplayName", "PublicBuilds" },
 				{ "IIB_PublicBuilds.ToolTip", "The schematic will always be included" },
-				{ "ModuleRelativePath", "IncludeInBuild.h" },
+				{ "ModuleRelativePath", "Public/IncludeInBuild.h" },
 				{ "ToolTip", "Where this schematic should be included. Cooker strips away builds that's marked for different build types" },
 			};
 #endif

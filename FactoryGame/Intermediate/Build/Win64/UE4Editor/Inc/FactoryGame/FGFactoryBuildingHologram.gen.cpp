@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGFactoryBuildingHologram.h"
+#include "FactoryGame/Public/Hologram/FGFactoryBuildingHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,13 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryBuildingHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGFactoryBuildingHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGFactoryBuildingHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryBuildingHologram.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGFactoryBuildingHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryBuildingHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mBuildingMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGFactoryBuildingHologram, mBuildingMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryBuildingHologram_Statics::NewProp_mBuildingMesh_MetaData)) };
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryBuildingHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFactoryBuildingHologram, 2094629418);
+	IMPLEMENT_CLASS(AFGFactoryBuildingHologram, 1593368239);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFactoryBuildingHologram(Z_Construct_UClass_AFGFactoryBuildingHologram, &AFGFactoryBuildingHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFactoryBuildingHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFactoryBuildingHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

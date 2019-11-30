@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGHardDriveSettings.h"
+#include "FactoryGame/Public/FGHardDriveSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -64,7 +64,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewStructOps()
@@ -74,7 +74,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_Schematic_MetaData[] = {
 		{ "Category", "HardDriveSchematic" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "@todonow: Remove BlueprintReadOnly on this and make a access function from BP for this Schematic that the hard drive might drop and it's drop chance. This might be null if the schematic isn't included in the build" },
 	};
 #endif
@@ -82,7 +82,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::NewProp_DropChance_MetaData[] = {
 		{ "Category", "HardDriveSchematic" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "Probability of this schematic showing up AFTER culling those that are not valid drops" },
 	};
 #endif
@@ -118,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_CRC() { return 4046244438U; }
+	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_CRC() { return 3761486818U; }
 	void UFGHardDriveSettings::StaticRegisterNativesUFGHardDriveSettings()
 	{
 		UClass* Class = UFGHardDriveSettings::StaticClass();
@@ -165,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGHardDriveSettings_GetResearchRewardPackages_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "* Called to fill in an array of research reward packages for storage and access from the MAM.\n* @note The research is assumed repeatable because of its inherent nature, thus the calledByResearch parameter is added back as a reward" },
 	};
 #endif
@@ -212,19 +212,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGHardDriveSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGHardDriveSettings_GetResearchRewardPackages, "GetResearchRewardPackages" }, // 3500883673
+		{ &Z_Construct_UFunction_UFGHardDriveSettings_GetResearchRewardPackages, "GetResearchRewardPackages" }, // 244912034
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHardDriveSettings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGHardDriveSettings.h" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "Settings for which schematics are returned from research" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mFallbackReturnItem_MetaData[] = {
 		{ "Category", "HardDrive" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "Fallback for returning hard drive if no research was available" },
 	};
 #endif
@@ -232,7 +232,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mPotentialSchematicDrops_MetaData[] = {
 		{ "Category", "HardDrive" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "Schematics to fill hard drive reward package with" },
 	};
 #endif
@@ -241,7 +241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHardDriveSettings_Statics::NewProp_mUniqueItemCount_MetaData[] = {
 		{ "Category", "HardDrive" },
-		{ "ModuleRelativePath", "FGHardDriveSettings.h" },
+		{ "ModuleRelativePath", "Public/FGHardDriveSettings.h" },
 		{ "ToolTip", "* This is the total quantity of unique elements Schematics that will be added to the reward package\n* @note This is the number of options the player can pick from" },
 	};
 #endif
@@ -275,7 +275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHardDriveSettings, 2865343453);
+	IMPLEMENT_CLASS(UFGHardDriveSettings, 1309060877);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHardDriveSettings(Z_Construct_UClass_UFGHardDriveSettings, &UFGHardDriveSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHardDriveSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHardDriveSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

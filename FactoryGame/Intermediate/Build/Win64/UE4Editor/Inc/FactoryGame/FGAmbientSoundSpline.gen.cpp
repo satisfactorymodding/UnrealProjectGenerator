@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAmbientSoundSpline.h"
+#include "FactoryGame/Public/FGAmbientSoundSpline.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGAmbientSoundSpline_GetSplineComponent_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGAmbientSoundSpline.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSoundSpline.h" },
 		{ "ToolTip", "Gets the spline component" },
 	};
 #endif
@@ -104,18 +104,18 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGAmbientSoundSpline_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGAmbientSoundSpline_GetSplineComponent, "GetSplineComponent" }, // 505700666
+		{ &Z_Construct_UFunction_AFGAmbientSoundSpline_GetSplineComponent, "GetSplineComponent" }, // 2378990707
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientSoundSpline_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGAmbientSoundSpline.h" },
-		{ "ModuleRelativePath", "FGAmbientSoundSpline.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSoundSpline.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientSoundSpline_Statics::NewProp_mSignificanceRange_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGAmbientSoundSpline.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSoundSpline.h" },
 		{ "ToolTip", "Range that this volume should be significant within" },
 	};
 #endif
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientSoundSpline_Statics::NewProp_mSoundSpline_MetaData[] = {
 		{ "Category", "Ambient Sound Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGAmbientSoundSpline.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSoundSpline.h" },
 		{ "ToolTip", "AkComponent that plays the sound on the spline." },
 	};
 #endif
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientSoundSpline_Statics::NewProp_mSpline_MetaData[] = {
 		{ "Category", "Ambient Sound Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGAmbientSoundSpline.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSoundSpline.h" },
 		{ "ToolTip", "Spline to put multiple positions along." },
 	};
 #endif
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSoundSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientSoundSpline, 3195678069);
+	IMPLEMENT_CLASS(AFGAmbientSoundSpline, 198133871);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAmbientSoundSpline(Z_Construct_UClass_AFGAmbientSoundSpline, &AFGAmbientSoundSpline::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAmbientSoundSpline"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAmbientSoundSpline);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/FGCreature.h"
+#include "FactoryGame/Public/Creature/FGCreature.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -77,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreature() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "RotationDoneDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventRotationDoneDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_RotationDoneDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreature() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMoveSpeed(EMoveSpeed_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EMoveSpeed"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EMoveSpeed_CRC() { return 2122236613U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EMoveSpeed_CRC() { return 628157689U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EMoveSpeed()
 	{
 #if WITH_HOT_RELOAD
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreature() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "Creature/FGCreature.h" },
+				{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 				{ "MS_Run.DisplayName", "Normal" },
 				{ "MS_Sprint.DisplayName", "Extra fast" },
 				{ "MS_Walk.DisplayName", "Slow speed" },
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreature() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEnabled(EEnabled_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EEnabled"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EEnabled_CRC() { return 3832420044U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EEnabled_CRC() { return 252924487U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EEnabled()
 	{
 #if WITH_HOT_RELOAD
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreature() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "Creature/FGCreature.h" },
+				{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 				{ "ToolTip", "@todo: We should probably change this to EUndefinedBool" },
 			};
 #endif
@@ -229,7 +229,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewStructOps()
@@ -239,14 +239,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_Speed_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_Speed = { UE4CodeGen_Private::EPropertyClass::Float, "Speed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FMoveSpeedPair, Speed), METADATA_PARAMS(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_Speed_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_Speed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_MoveSpeedType_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_MoveSpeedType = { UE4CodeGen_Private::EPropertyClass::Enum, "MoveSpeedType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(FMoveSpeedPair, MoveSpeedType), Z_Construct_UEnum_FactoryGame_EMoveSpeed, METADATA_PARAMS(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_MoveSpeedType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::NewProp_MoveSpeedType_MetaData)) };
@@ -283,7 +283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMoveSpeedPair_CRC() { return 4063635916U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMoveSpeedPair_CRC() { return 1562584703U; }
 	static FName NAME_AFGCreature_CancelRotationMovement = FName(TEXT("CancelRotationMovement"));
 	void AFGCreature::CancelRotationMovement()
 	{
@@ -425,7 +425,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_AiCalculateLeadTrajectory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "AI" },
 		{ "CPP_Default_leadScaling", "1.000000" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "* Calculate a trajectory to lead a target with a set interceptor speed (aka, bullet speed/charge speed), finding the earliest interception if multiple are possible\n      @targetPos Position of the target you are trying to intercept\n      @targetVelocity The movement velocity of the target you are truing to intercept\n      @fromPos The interceptors current position (aka the shooters position)\n      @interceptorSpeed the speed of the interception (aka, bullet speed/charge speed)\n      @isPosibleToLead indicated if the lead is possible (if you are moving too slow and your target is moving away, the lead might be impossible)\n      @leadScaling If set to 1, the lead will get an exact interception. If above 1 it will move a bit in front of the target, and below one it will come up a bit short. 0 = no lead, and all these calculations will be a waste, probably a lead of under 0.5 will also be a toooootal waste unless the target is likely to turn/slow down, but that should instead be reprecented in the velocity)\n\n      @InterceptPoint Position of interception if possible, otherwise an approximate logical position is set, so it looks like it at least tries to predict/hit" },
 	};
 #endif
@@ -449,7 +449,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_CancelRotationMovement_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Cancels the rotation movement" },
 	};
 #endif
@@ -472,7 +472,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_CheckRotationMovement_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Checks when we are done rotating and calls the complete delegate" },
 	};
 #endif
@@ -507,7 +507,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_ConfigureArachnophobiaMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Arachnophobia" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Sets up the Arachnophobia mode" },
 	};
 #endif
@@ -544,7 +544,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetArachnophobiaModeMaterials_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Arachnophobia" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Gets the array of sprites that may be used for arachnophobia mode" },
 	};
 #endif
@@ -578,7 +578,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetDayTimePctAsNight_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "How much of day time percentage ( 0.0 - 1.0 ) should count towards night time" },
 	};
 #endif
@@ -617,7 +617,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetIsArachnid_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Arachnophobia" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Is this creature an arachnid?" },
 	};
 #endif
@@ -656,7 +656,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetIsEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Gets the spline we are set to follow" },
 	};
 #endif
@@ -690,7 +690,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetSpawner_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Returns the spawner that created this creature. Can be null" },
 	};
 #endif
@@ -724,7 +724,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetSplinePath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Gets the spline we are set to follow" },
 	};
 #endif
@@ -758,7 +758,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_GetTargetRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Gets the target rotation" },
 	};
 #endif
@@ -797,7 +797,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_IsPersistent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Indicates if we are persistent ( not removed after a distance specified in AISystem )" },
 	};
 #endif
@@ -831,7 +831,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_Multicast_ConsumeItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Consume" },
 		{ "CPP_Default_amount", "1" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Notify when creature consumes a item" },
 	};
 #endif
@@ -869,7 +869,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_OnArachnophobiaModeChanged_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Called when the Arachnophobia mode setting is changed" },
 	};
 #endif
@@ -892,7 +892,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_OnRep_IsEnabled_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreature_OnRep_IsEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreature, "OnRep_IsEnabled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreature_OnRep_IsEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_OnRep_IsEnabled_Statics::Function_MetaDataParams)) };
@@ -914,7 +914,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_OnRep_TargetRotation_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCreature_OnRep_TargetRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCreature, "OnRep_TargetRotation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCreature_OnRep_TargetRotation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCreature_OnRep_TargetRotation_Statics::Function_MetaDataParams)) };
@@ -946,7 +946,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_PlayConsumeItemEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Consume" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Play effects when creature consumes a item" },
 	};
 #endif
@@ -983,7 +983,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_SetMoveSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Updates the movement speed ( server side )" },
 	};
 #endif
@@ -1022,7 +1022,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_SetPersistent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Sets if we should persist or not" },
 	};
 #endif
@@ -1046,7 +1046,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_SpawnDeathItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Called when creature died to spawn death item" },
 	};
 #endif
@@ -1076,7 +1076,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreature_StartRotationMovement_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Starts the rotation movement" },
 	};
 #endif
@@ -1214,39 +1214,39 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCreature_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCreature_AiCalculateLeadTrajectory, "AiCalculateLeadTrajectory" }, // 1132069431
-		{ &Z_Construct_UFunction_AFGCreature_CancelRotationMovement, "CancelRotationMovement" }, // 2695530367
-		{ &Z_Construct_UFunction_AFGCreature_CheckRotationMovement, "CheckRotationMovement" }, // 2078178707
-		{ &Z_Construct_UFunction_AFGCreature_ConfigureArachnophobiaMode, "ConfigureArachnophobiaMode" }, // 1195048757
-		{ &Z_Construct_UFunction_AFGCreature_GetArachnophobiaModeMaterials, "GetArachnophobiaModeMaterials" }, // 944225752
-		{ &Z_Construct_UFunction_AFGCreature_GetDayTimePctAsNight, "GetDayTimePctAsNight" }, // 4108932831
-		{ &Z_Construct_UFunction_AFGCreature_GetIsArachnid, "GetIsArachnid" }, // 3653974290
-		{ &Z_Construct_UFunction_AFGCreature_GetIsEnabled, "GetIsEnabled" }, // 3434935911
-		{ &Z_Construct_UFunction_AFGCreature_GetSpawner, "GetSpawner" }, // 107409168
-		{ &Z_Construct_UFunction_AFGCreature_GetSplinePath, "GetSplinePath" }, // 1210678575
-		{ &Z_Construct_UFunction_AFGCreature_GetTargetRotation, "GetTargetRotation" }, // 87959059
-		{ &Z_Construct_UFunction_AFGCreature_IsPersistent, "IsPersistent" }, // 2144126509
-		{ &Z_Construct_UFunction_AFGCreature_Multicast_ConsumeItem, "Multicast_ConsumeItem" }, // 3924426406
-		{ &Z_Construct_UFunction_AFGCreature_OnArachnophobiaModeChanged, "OnArachnophobiaModeChanged" }, // 1742002362
-		{ &Z_Construct_UFunction_AFGCreature_OnRep_IsEnabled, "OnRep_IsEnabled" }, // 1200752892
-		{ &Z_Construct_UFunction_AFGCreature_OnRep_TargetRotation, "OnRep_TargetRotation" }, // 554667597
-		{ &Z_Construct_UFunction_AFGCreature_PlayConsumeItemEffect, "PlayConsumeItemEffect" }, // 3868860597
-		{ &Z_Construct_UFunction_AFGCreature_SetMoveSpeed, "SetMoveSpeed" }, // 3493656071
-		{ &Z_Construct_UFunction_AFGCreature_SetPersistent, "SetPersistent" }, // 733962841
-		{ &Z_Construct_UFunction_AFGCreature_SpawnDeathItem, "SpawnDeathItem" }, // 2261106360
-		{ &Z_Construct_UFunction_AFGCreature_StartRotationMovement, "StartRotationMovement" }, // 1706622188
+		{ &Z_Construct_UFunction_AFGCreature_AiCalculateLeadTrajectory, "AiCalculateLeadTrajectory" }, // 176405386
+		{ &Z_Construct_UFunction_AFGCreature_CancelRotationMovement, "CancelRotationMovement" }, // 1095704330
+		{ &Z_Construct_UFunction_AFGCreature_CheckRotationMovement, "CheckRotationMovement" }, // 2153532270
+		{ &Z_Construct_UFunction_AFGCreature_ConfigureArachnophobiaMode, "ConfigureArachnophobiaMode" }, // 1877634435
+		{ &Z_Construct_UFunction_AFGCreature_GetArachnophobiaModeMaterials, "GetArachnophobiaModeMaterials" }, // 3171451891
+		{ &Z_Construct_UFunction_AFGCreature_GetDayTimePctAsNight, "GetDayTimePctAsNight" }, // 500861302
+		{ &Z_Construct_UFunction_AFGCreature_GetIsArachnid, "GetIsArachnid" }, // 224199420
+		{ &Z_Construct_UFunction_AFGCreature_GetIsEnabled, "GetIsEnabled" }, // 2765748840
+		{ &Z_Construct_UFunction_AFGCreature_GetSpawner, "GetSpawner" }, // 2456713845
+		{ &Z_Construct_UFunction_AFGCreature_GetSplinePath, "GetSplinePath" }, // 4278470075
+		{ &Z_Construct_UFunction_AFGCreature_GetTargetRotation, "GetTargetRotation" }, // 1033401911
+		{ &Z_Construct_UFunction_AFGCreature_IsPersistent, "IsPersistent" }, // 3256446091
+		{ &Z_Construct_UFunction_AFGCreature_Multicast_ConsumeItem, "Multicast_ConsumeItem" }, // 4098178768
+		{ &Z_Construct_UFunction_AFGCreature_OnArachnophobiaModeChanged, "OnArachnophobiaModeChanged" }, // 1354236281
+		{ &Z_Construct_UFunction_AFGCreature_OnRep_IsEnabled, "OnRep_IsEnabled" }, // 4231071953
+		{ &Z_Construct_UFunction_AFGCreature_OnRep_TargetRotation, "OnRep_TargetRotation" }, // 1299556576
+		{ &Z_Construct_UFunction_AFGCreature_PlayConsumeItemEffect, "PlayConsumeItemEffect" }, // 254833952
+		{ &Z_Construct_UFunction_AFGCreature_SetMoveSpeed, "SetMoveSpeed" }, // 633054518
+		{ &Z_Construct_UFunction_AFGCreature_SetPersistent, "SetPersistent" }, // 281234160
+		{ &Z_Construct_UFunction_AFGCreature_SpawnDeathItem, "SpawnDeathItem" }, // 4279558645
+		{ &Z_Construct_UFunction_AFGCreature_StartRotationMovement, "StartRotationMovement" }, // 3306567381
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "Creature/FGCreature.h" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mOwningSpawner_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Reference to the spawner that handles this creature" },
 	};
 #endif
@@ -1254,7 +1254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mDayTimePctCountAsNight_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "How much of day time percentage ( 0.0 - 1.0 ) should count towards night time" },
 	};
 #endif
@@ -1263,7 +1263,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mArachnophobia_Particle_MetaData[] = {
 		{ "Category", "FGCreature" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Particle for the arachnophobia mode" },
 	};
 #endif
@@ -1272,7 +1272,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mArachnophobia_Material_MetaData[] = {
 		{ "Category", "FGCreature" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Material for the arachnophobia mode" },
 	};
 #endif
@@ -1281,7 +1281,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mArachnophobia_Sprite_MetaData[] = {
 		{ "Category", "FGCreature" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Sprite for the arachnophobia mode" },
 	};
 #endif
@@ -1290,7 +1290,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mEyeLocationComponent_MetaData[] = {
 		{ "Category", "FGCreature" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Component used to determine eye location for a creature" },
 	};
 #endif
@@ -1298,7 +1298,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mRotationSpeedMultiplier_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Scale value for input vector when rotating and moving" },
 	};
 #endif
@@ -1306,7 +1306,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mMoveDuringRotation_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Used in combination with BTT_RotateToTarget if we need the creature to move while rotating" },
 	};
 #endif
@@ -1318,7 +1318,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringNight_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Can creatures spawn during night?" },
 	};
 #endif
@@ -1330,7 +1330,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringDay_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Can creatures spawn during day?" },
 	};
 #endif
@@ -1341,14 +1341,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringDay = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanSpawnDuringDay", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCreature), &Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringDay_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringDay_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mCanSpawnDuringDay_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Target rotation for custom rotate movement" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation = { UE4CodeGen_Private::EPropertyClass::Struct, "mTargetRotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_TargetRotation", STRUCT_OFFSET(AFGCreature, mTargetRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mTargetRotation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mRotationTimerHandle_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Timer handle used when rotating the pawn with our custom rotate movement" },
 	};
 #endif
@@ -1357,7 +1357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mActualAIControllerClass_MetaData[] = {
 		{ "Category", "Pawn" },
 		{ "DisplayName", "Actual AI Controller Class" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "We specify our own controller class because we need to delay the spawning. Set this instead of \"AIControllerClass" },
 	};
 #endif
@@ -1365,7 +1365,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mIsPersistent_MetaData[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Should this creature be able to persist in the world" },
 	};
 #endif
@@ -1377,7 +1377,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mShouldOptimizeMeshWhenVisible_MetaData[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Indicates if we should optimize this creatures mesh ( disable ticking ) when looking at it from a distance ( not good on large creatures )" },
 	};
 #endif
@@ -1389,7 +1389,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mMoveSpeedData_MetaData[] = {
 		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Array with information about different speeds that this creature can use" },
 	};
 #endif
@@ -1399,7 +1399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mRotationDoneDelegate_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "DisplayName", "OnRotationDone" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Called when we are done with rotation movement" },
 	};
 #endif
@@ -1407,7 +1407,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mSpline_MetaData[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Spline we are set to follow" },
 	};
 #endif
@@ -1415,14 +1415,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mItemToDrop_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Class of item to drop when dead" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGCreature_Statics::NewProp_mItemToDrop = { UE4CodeGen_Private::EPropertyClass::Class, "mItemToDrop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(AFGCreature, mItemToDrop), Z_Construct_UClass_AFGItemPickup_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGCreature_Statics::NewProp_mItemToDrop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCreature_Statics::NewProp_mItemToDrop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mIsEnabled_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "True if optimized by the AI system" },
 	};
 #endif
@@ -1430,7 +1430,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mIsArachnid_MetaData[] = {
 		{ "Category", "Arachnophobia" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Is creature considered an arachnid" },
 	};
 #endif
@@ -1442,7 +1442,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mArachnophobiaModeMaterials_MetaData[] = {
 		{ "Category", "Arachnophobia" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Materials that may be used on arachnids" },
 	};
 #endif
@@ -1451,7 +1451,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mNavigationRemovalRadius_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "Navigation outside this radius will be removed" },
 	};
 #endif
@@ -1459,7 +1459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreature_Statics::NewProp_mNavigationGenerationRadius_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Creature/FGCreature.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreature.h" },
 		{ "ToolTip", "How big navmesh do we want to generate" },
 	};
 #endif
@@ -1515,7 +1515,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreature, 1418260983);
+	IMPLEMENT_CLASS(AFGCreature, 854605029);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreature(Z_Construct_UClass_AFGCreature, &AFGCreature::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreature"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreature);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

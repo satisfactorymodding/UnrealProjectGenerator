@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGMultiplayerVerticalBox.h"
+#include "FactoryGame/Public/UI/FGMultiplayerVerticalBox.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGMultiplayerVerticalBox.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMultiplayerVerticalBox.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMultiplayerVerticalBox, "Sort", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort_Statics::Function_MetaDataParams)) };
@@ -68,12 +68,12 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort, "Sort" }, // 2053258243
+		{ &Z_Construct_UFunction_UFGMultiplayerVerticalBox_Sort, "Sort" }, // 311069645
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGMultiplayerVerticalBox.h" },
-		{ "ModuleRelativePath", "UI/FGMultiplayerVerticalBox.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMultiplayerVerticalBox.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::StaticCppClassTypeInfo = {
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 12328737);
+	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 788959454);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMultiplayerVerticalBox(Z_Construct_UClass_UFGMultiplayerVerticalBox, &UFGMultiplayerVerticalBox::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMultiplayerVerticalBox"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMultiplayerVerticalBox);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGGlobalSettings.h"
+#include "FactoryGame/Public/FGGlobalSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetDropPodSettingsCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetDropPodSettingsCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO_Statics::Function_MetaDataParams)) };
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetEnvironmentSettingsCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetEnvironmentSettingsCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO_Statics::Function_MetaDataParams)) };
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetFactorySettingsCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetFactorySettingsCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO_Statics::Function_MetaDataParams)) };
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetGlobalSettingsClassCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetGlobalSettingsClassCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO_Statics::Function_MetaDataParams)) };
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetHardDriveSettingsCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetHardDriveSettingsCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO_Statics::Function_MetaDataParams)) };
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetResourceSettingsCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetResourceSettingsCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO_Statics::Function_MetaDataParams)) };
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetSignSettingsCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetSignSettingsCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO_Statics::Function_MetaDataParams)) };
@@ -301,7 +301,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGGlobalSettings, "GetSubsystemClassesCDO", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGGlobalSettings_eventGetSubsystemClassesCDO_Parms), Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO_Statics::Function_MetaDataParams)) };
@@ -366,26 +366,26 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGGlobalSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO, "GetDropPodSettingsCDO" }, // 905736919
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO, "GetEnvironmentSettingsCDO" }, // 3609679903
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO, "GetFactorySettingsCDO" }, // 484851816
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO, "GetGlobalSettingsClassCDO" }, // 3992434682
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO, "GetHardDriveSettingsCDO" }, // 3748107852
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO, "GetResourceSettingsCDO" }, // 2829314589
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO, "GetSignSettingsCDO" }, // 1137732632
-		{ &Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO, "GetSubsystemClassesCDO" }, // 33972966
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetDropPodSettingsCDO, "GetDropPodSettingsCDO" }, // 1598258501
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetEnvironmentSettingsCDO, "GetEnvironmentSettingsCDO" }, // 1353090258
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetFactorySettingsCDO, "GetFactorySettingsCDO" }, // 2034061484
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetGlobalSettingsClassCDO, "GetGlobalSettingsClassCDO" }, // 2602991363
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetHardDriveSettingsCDO, "GetHardDriveSettingsCDO" }, // 2998668701
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetResourceSettingsCDO, "GetResourceSettingsCDO" }, // 2643525018
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetSignSettingsCDO, "GetSignSettingsCDO" }, // 4193613967
+		{ &Z_Construct_UFunction_UFGGlobalSettings_GetSubsystemClassesCDO, "GetSubsystemClassesCDO" }, // 2248225810
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGGlobalSettings.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mGlobalSettingsClassName_MetaData[] = {
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 		{ "ToolTip", "Default class for specifying the settings class" },
 	};
 #endif
@@ -393,21 +393,21 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSignSettings_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSignSettings = { UE4CodeGen_Private::EPropertyClass::Class, "mSignSettings", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGGlobalSettings, mSignSettings), Z_Construct_UClass_UFGSignSettings_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSignSettings_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSignSettings_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSubsystemClasses_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSubsystemClasses = { UE4CodeGen_Private::EPropertyClass::Class, "mSubsystemClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000010001, 1, nullptr, STRUCT_OFFSET(UFGGlobalSettings, mSubsystemClasses), Z_Construct_UClass_UFGSubsystemClasses_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSubsystemClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mSubsystemClasses_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mEnvironmentSettings_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 		{ "ToolTip", "Settings for drop pods" },
 	};
 #endif
@@ -415,7 +415,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mHardDriveSettings_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 		{ "ToolTip", "Settings for Hard Drive Research" },
 	};
 #endif
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mDropPodSettings_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 		{ "ToolTip", "Settings for drop pods" },
 	};
 #endif
@@ -431,7 +431,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mFactorySettings_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 		{ "ToolTip", "Settings for resources" },
 	};
 #endif
@@ -439,7 +439,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGlobalSettings_Statics::NewProp_mResourceSettings_MetaData[] = {
 		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "FGGlobalSettings.h" },
+		{ "ModuleRelativePath", "Public/FGGlobalSettings.h" },
 		{ "ToolTip", "Settings for resources" },
 	};
 #endif
@@ -477,7 +477,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGlobalSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGlobalSettings, 2995261187);
+	IMPLEMENT_CLASS(UFGGlobalSettings, 1051468389);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGlobalSettings(Z_Construct_UClass_UFGGlobalSettings, &UFGGlobalSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGlobalSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGlobalSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

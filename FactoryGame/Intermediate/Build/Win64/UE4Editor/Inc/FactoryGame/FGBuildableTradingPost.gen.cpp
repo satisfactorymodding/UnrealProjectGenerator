@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableTradingPost.h"
+#include "FactoryGame/Public/Buildables/FGBuildableTradingPost.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_AreChildBuildingsLoaded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Checks if all child buildings are created so that we can use them" },
 	};
 #endif
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_GetStorageInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Returns the inventory component used in the storage box" },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_GetTradingPostLevel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Returns level of trading post upgrade" },
 	};
 #endif
@@ -182,7 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableTradingPost, "OnRep_NeedPlayingBuildEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect_Statics::Function_MetaDataParams)) };
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_OnTradingPostUpgraded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "TradingPost" },
 		{ "CPP_Default_suppressBuildEffects", "false" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Upgrading the trading post to specified level" },
 	};
 #endif
@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_UpdateGeneratorVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Handles the generators visibility depending on tutorial step" },
 	};
 #endif
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Handles the MAM visibility depending on tutorial step" },
 	};
 #endif
@@ -292,7 +292,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableTradingPost_UpdateStorageVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Handles the storage visibility depending on tutorial step" },
 	};
 #endif
@@ -438,25 +438,25 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableTradingPost_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_AreChildBuildingsLoaded, "AreChildBuildingsLoaded" }, // 2088009160
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetStorageInventory, "GetStorageInventory" }, // 2666724757
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetTradingPostLevel, "GetTradingPostLevel" }, // 3797963937
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect, "OnRep_NeedPlayingBuildEffect" }, // 1110940982
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnTradingPostUpgraded, "OnTradingPostUpgraded" }, // 88400288
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateGeneratorVisibility, "UpdateGeneratorVisibility" }, // 143277659
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility, "UpdateMAMVisibility" }, // 2125267081
-		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateStorageVisibility, "UpdateStorageVisibility" }, // 726017931
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_AreChildBuildingsLoaded, "AreChildBuildingsLoaded" }, // 3185152823
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetStorageInventory, "GetStorageInventory" }, // 1120987990
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_GetTradingPostLevel, "GetTradingPostLevel" }, // 2589880917
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnRep_NeedPlayingBuildEffect, "OnRep_NeedPlayingBuildEffect" }, // 4068675246
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_OnTradingPostUpgraded, "OnTradingPostUpgraded" }, // 2609662637
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateGeneratorVisibility, "UpdateGeneratorVisibility" }, // 3415466615
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateMAMVisibility, "UpdateMAMVisibility" }, // 1053278830
+		{ &Z_Construct_UFunction_AFGBuildableTradingPost_UpdateStorageVisibility, "UpdateStorageVisibility" }, // 2682699242
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableTradingPost.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "The trading post, it has N inputs and sells inputed items for money." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mNeedPlayingBuildEffectNotification_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Bool to sync playing of build and upgrade effects" },
 	};
 #endif
@@ -469,7 +469,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBenchLocation_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Component used to determine work bench terminal location" },
 	};
 #endif
@@ -478,7 +478,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminalLocation_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Component used to determine Hub terminal location" },
 	};
 #endif
@@ -487,7 +487,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMLocation_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Component used to determine MAM location" },
 	};
 #endif
@@ -496,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageLocation_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Component used to determine storage location" },
 	};
 #endif
@@ -505,7 +505,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerator2Location_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Component used to determine generators location" },
 	};
 #endif
@@ -514,7 +514,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerator1Location_MetaData[] = {
 		{ "Category", "FGBuildableTradingPost" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Component used to determine generators location" },
 	};
 #endif
@@ -522,7 +522,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultResources_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "The starting resources in the tradingpost storage" },
 	};
 #endif
@@ -531,14 +531,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "The inventory to store everything in." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mStorageInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080028, 1, nullptr, STRUCT_OFFSET(AFGBuildableTradingPost, mStorageInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mSchematicManager_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "A cached schematic manager" },
 	};
 #endif
@@ -546,7 +546,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGroundSearchZDistance_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "How much up and down we should search for the ground around all child actors that's spawning AFGPlayerStartTradingPost" },
 	};
 #endif
@@ -554,7 +554,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mSpawningGroundZOffset_MetaData[] = {
 		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "How far above the ground the spawn-points should be adjusted" },
 	};
 #endif
@@ -562,7 +562,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mInputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Our input inventory where items are stored before put on ship" },
 	};
 #endif
@@ -570,7 +570,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAMVisibilityLevel_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "At what trading post level should the MAM be visible" },
 	};
 #endif
@@ -578,7 +578,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageVisibilityLevel_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "At what trading post level should the storage be visible" },
 	};
 #endif
@@ -586,7 +586,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorageInventorySize_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Size of the storage box" },
 	};
 #endif
@@ -594,7 +594,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGeneratorVisibilityLevels_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Arrays containing ints for what level  we should activate/show the generator" },
 	};
@@ -603,28 +603,28 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGeneratorVisibilityLevels_Inner = { UE4CodeGen_Private::EPropertyClass::Int, "mGeneratorVisibilityLevels", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created work bench" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench = { UE4CodeGen_Private::EPropertyClass::Object, "mWorkBench", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableTradingPost, mWorkBench), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mWorkBench_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created Hub Terminal" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal = { UE4CodeGen_Private::EPropertyClass::Object, "mHubTerminal", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableTradingPost, mHubTerminal), Z_Construct_UClass_AFGBuildableHubTerminal_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mHubTerminal_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created MAM" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM = { UE4CodeGen_Private::EPropertyClass::Object, "mMAM", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableTradingPost, mMAM), Z_Construct_UClass_AFGBuildable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mMAM_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mStorage_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created storage" },
 	};
 #endif
@@ -632,7 +632,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultWorkBenchRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Class of work bench to create with the trading post" },
 	};
 #endif
@@ -640,7 +640,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultHubTerminalRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Class of hub terminal to create with the trading post" },
 	};
 #endif
@@ -648,7 +648,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultMAMRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Class of MAM to create with the trading post" },
 	};
 #endif
@@ -656,14 +656,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultStorageRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Class of storage to create with the trading post" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultStorageRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "mDefaultStorageRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableTradingPost, mDefaultStorageRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultStorageRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultStorageRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mGenerators_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "References to the created generators" },
 	};
 #endif
@@ -672,7 +672,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableTradingPost_Statics::NewProp_mDefaultGeneratorRecipe_MetaData[] = {
 		{ "Category", "Trading Post" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableTradingPost.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableTradingPost.h" },
 		{ "ToolTip", "Class of generators to create with the trading post" },
 	};
 #endif
@@ -732,7 +732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableTradingPost, 1577334587);
+	IMPLEMENT_CLASS(AFGBuildableTradingPost, 3204297394);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableTradingPost(Z_Construct_UClass_AFGBuildableTradingPost, &AFGBuildableTradingPost::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableTradingPost"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableTradingPost);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

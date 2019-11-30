@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGProductionIndicatorComponent.h"
+#include "FactoryGame/Public/FGProductionIndicatorComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -51,12 +51,12 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorComponent() {}
 		{ "ClassGroupNames", "FactoryGame" },
 		{ "IncludePath", "FGProductionIndicatorComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGProductionIndicatorComponent.h" },
+		{ "ModuleRelativePath", "Public/FGProductionIndicatorComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGProductionIndicatorComponent_Statics::NewProp_mIndicatorMaterial_MetaData[] = {
-		{ "ModuleRelativePath", "FGProductionIndicatorComponent.h" },
+		{ "ModuleRelativePath", "Public/FGProductionIndicatorComponent.h" },
 		{ "ToolTip", "Dynamic instance of the material" },
 	};
 #endif
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorComponent, 1953801080);
+	IMPLEMENT_CLASS(UFGProductionIndicatorComponent, 2188384686);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGProductionIndicatorComponent(Z_Construct_UClass_UFGProductionIndicatorComponent, &UFGProductionIndicatorComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGProductionIndicatorComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGProductionIndicatorComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

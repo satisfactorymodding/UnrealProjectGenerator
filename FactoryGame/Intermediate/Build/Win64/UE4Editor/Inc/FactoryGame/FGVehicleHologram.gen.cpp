@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGVehicleHologram.h"
+#include "FactoryGame/Public/Hologram/FGVehicleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,13 +49,13 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGVehicleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGVehicleHologram.h" },
 		{ "ToolTip", "The base class for vehicle holograms such as trucks, trains etc." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGVehicleHologram_Statics::NewProp_mVehicleClass_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGVehicleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGVehicleHologram.h" },
 		{ "ToolTip", "The vehicle class that this hologram constructs." },
 	};
 #endif
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGVehicleHologram, 3286170832);
+	IMPLEMENT_CLASS(AFGVehicleHologram, 3637929755);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGVehicleHologram(Z_Construct_UClass_AFGVehicleHologram, &AFGVehicleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGVehicleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGVehicleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

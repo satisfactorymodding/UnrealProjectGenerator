@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGFloorHologram.h"
+#include "FactoryGame/Public/Hologram/FGFloorHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFloorHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFloorHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGFloorHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGFloorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFloorHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGFloorHologram_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFloorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFloorHologram, 834004736);
+	IMPLEMENT_CLASS(AFGFloorHologram, 1048104287);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFloorHologram(Z_Construct_UClass_AFGFloorHologram, &AFGFloorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFloorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFloorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

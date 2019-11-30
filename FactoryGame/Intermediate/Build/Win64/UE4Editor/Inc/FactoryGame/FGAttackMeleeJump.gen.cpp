@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttackMeleeJump.h"
+#include "FactoryGame/Public/AI/FGAttackMeleeJump.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpRange_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Range of the jump attack" },
 	};
 #endif
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpVelocity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Get Velocity when jumping ( excluding the Z velocity which is handled by the Jump() in Character" },
 	};
 #endif
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackMeleeJump_GetPreJumpMontage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Get pre jump montage" },
 	};
 #endif
@@ -181,20 +181,20 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAttackMeleeJump_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpRange, "GetJumpRange" }, // 2307143374
-		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpVelocity, "GetJumpVelocity" }, // 3625686930
-		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetPreJumpMontage, "GetPreJumpMontage" }, // 928193173
+		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpRange, "GetJumpRange" }, // 3306414696
+		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetJumpVelocity, "GetJumpVelocity" }, // 444888839
+		{ &Z_Construct_UFunction_UFGAttackMeleeJump_GetPreJumpMontage, "GetPreJumpMontage" }, // 609881848
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackMeleeJump_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "AI/FGAttackMeleeJump.h" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackMeleeJump_Statics::NewProp_mPreJumpMontage_MetaData[] = {
 		{ "Category", "FGAttackMeleeJump" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Animation to play before jumping" },
 	};
 #endif
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackMeleeJump_Statics::NewProp_mJumpVelocity_MetaData[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "Velocity when jumping ( excluding the Z velocity which is handled by the Jump() in Character" },
 	};
 #endif
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackMeleeJump_Statics::NewProp_mJumpRange_MetaData[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackMeleeJump.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMeleeJump.h" },
 		{ "ToolTip", "From where in relation to the target should the jump start" },
 	};
 #endif
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMeleeJump() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMeleeJump, 3097359413);
+	IMPLEMENT_CLASS(UFGAttackMeleeJump, 4179040165);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackMeleeJump(Z_Construct_UClass_UFGAttackMeleeJump, &UFGAttackMeleeJump::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackMeleeJump"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackMeleeJump);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

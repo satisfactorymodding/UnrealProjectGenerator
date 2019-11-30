@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBuildingColorSlotStruct.h"
+#include "FactoryGame/Public/FGBuildingColorSlotStruct.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGBuildingColorSlo
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGBuildingColorSlotStruct.h" },
+		{ "ModuleRelativePath", "Public/FGBuildingColorSlotStruct.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewStructOps()
@@ -63,13 +63,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGBuildingColorSlo
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_secondary_MetaData[] = {
-		{ "ModuleRelativePath", "FGBuildingColorSlotStruct.h" },
+		{ "ModuleRelativePath", "Public/FGBuildingColorSlotStruct.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_secondary = { UE4CodeGen_Private::EPropertyClass::Struct, "secondary", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FFGBuildingColorSlotStruct, secondary), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_secondary_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_secondary_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_primary_MetaData[] = {
-		{ "ModuleRelativePath", "FGBuildingColorSlotStruct.h" },
+		{ "ModuleRelativePath", "Public/FGBuildingColorSlotStruct.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_primary = { UE4CodeGen_Private::EPropertyClass::Struct, "primary", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FFGBuildingColorSlotStruct, primary), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_primary_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_Statics::NewProp_primary_MetaData)) };
@@ -104,7 +104,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGBuildingColorSlo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_CRC() { return 477038612U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGBuildingColorSlotStruct_CRC() { return 3605049381U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

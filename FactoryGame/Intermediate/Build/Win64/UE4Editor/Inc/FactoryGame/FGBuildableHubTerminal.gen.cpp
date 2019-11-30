@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableHubTerminal.h"
+#include "FactoryGame/Public/Buildables/FGBuildableHubTerminal.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,7 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Hub Terminal" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableHubTerminal.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableHubTerminal.h" },
 		{ "ToolTip", "Get the trading post" },
 	};
 #endif
@@ -86,17 +86,17 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableHubTerminal_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost, "GetTradingPost" }, // 2825051684
+		{ &Z_Construct_UFunction_AFGBuildableHubTerminal_GetTradingPost, "GetTradingPost" }, // 2427650132
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHubTerminal_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableHubTerminal.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableHubTerminal.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableHubTerminal.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableHubTerminal.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableHubTerminal.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost = { UE4CodeGen_Private::EPropertyClass::Object, "mTradingPost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableHubTerminal, mTradingPost), Z_Construct_UClass_AFGBuildableTradingPost_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableHubTerminal_Statics::NewProp_mTradingPost_MetaData)) };
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableHubTerminal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 1205048038);
+	IMPLEMENT_CLASS(AFGBuildableHubTerminal, 3701079279);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableHubTerminal(Z_Construct_UClass_AFGBuildableHubTerminal, &AFGBuildableHubTerminal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableHubTerminal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableHubTerminal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

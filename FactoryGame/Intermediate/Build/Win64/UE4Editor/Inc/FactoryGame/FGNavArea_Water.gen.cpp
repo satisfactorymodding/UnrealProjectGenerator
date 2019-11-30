@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGNavArea_Water.h"
+#include "FactoryGame/Public/AI/FGNavArea_Water.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNavArea_Water() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGNavArea_Water_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "AI/FGNavArea_Water.h" },
-		{ "ModuleRelativePath", "AI/FGNavArea_Water.h" },
+		{ "ModuleRelativePath", "Public/AI/FGNavArea_Water.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNavArea_Water() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNavArea_Water, 2649859438);
+	IMPLEMENT_CLASS(UFGNavArea_Water, 4051781716);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGNavArea_Water(Z_Construct_UClass_UFGNavArea_Water, &UFGNavArea_Water::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGNavArea_Water"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGNavArea_Water);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

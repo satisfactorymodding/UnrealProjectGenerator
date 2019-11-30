@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCrashSiteDebrisActor.h"
+#include "FactoryGame/Public/FGCrashSiteDebrisActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,14 +49,14 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCrashSiteDebrisActor.h" },
-		{ "ModuleRelativePath", "FGCrashSiteDebrisActor.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebrisActor.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData[] = {
 		{ "Category", "FGCrashSiteDebrisActor" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCrashSiteDebrisActor.h" },
+		{ "ModuleRelativePath", "Public/FGCrashSiteDebrisActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000090009, 1, nullptr, STRUCT_OFFSET(AFGCrashSiteDebrisActor, mMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrashSiteDebrisActor_Statics::NewProp_mMesh_MetaData)) };
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrashSiteDebrisActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 283910006);
+	IMPLEMENT_CLASS(AFGCrashSiteDebrisActor, 3376901277);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrashSiteDebrisActor(Z_Construct_UClass_AFGCrashSiteDebrisActor, &AFGCrashSiteDebrisActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrashSiteDebrisActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrashSiteDebrisActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

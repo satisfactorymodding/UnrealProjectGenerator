@@ -21,7 +21,7 @@ class UFGGlobalSettings;
 #endif
 #define FACTORYGAME_FGGlobalSettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetSignSettingsCDO) \
 	{ \
@@ -88,7 +88,7 @@ class UFGGlobalSettings;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetSignSettingsCDO) \
 	{ \
@@ -155,7 +155,7 @@ class UFGGlobalSettings;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGGlobalSettings(); \
 	friend struct Z_Construct_UClass_UFGGlobalSettings_Statics; \
@@ -166,7 +166,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGGlobalSettings(); \
 	friend struct Z_Construct_UClass_UFGGlobalSettings_Statics; \
@@ -177,7 +177,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGlobalSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGlobalSettings) \
@@ -190,7 +190,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGlobalSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -203,7 +203,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGlobalSettings); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGlobalSettings)
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mResourceSettings() { return STRUCT_OFFSET(UFGGlobalSettings, mResourceSettings); } \
 	FORCEINLINE static uint32 __PPO__mFactorySettings() { return STRUCT_OFFSET(UFGGlobalSettings, mFactorySettings); } \
 	FORCEINLINE static uint32 __PPO__mDropPodSettings() { return STRUCT_OFFSET(UFGGlobalSettings, mDropPodSettings); } \
@@ -214,31 +214,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGlobalSettings); \
 	FORCEINLINE static uint32 __PPO__mGlobalSettingsClassName() { return STRUCT_OFFSET(UFGGlobalSettings, mGlobalSettingsClassName); }
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_13_PROLOG
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_13_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_INCLASS \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGGlobalSettings_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGGlobalSettings_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGGlobalSettings_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

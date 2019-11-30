@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableGeneratorNuclear.h"
+#include "FactoryGame/Public/Buildables/FGBuildableGeneratorNuclear.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGeneratorNuclear_GetWasteInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nuclear" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorNuclear.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorNuclear.h" },
 		{ "ToolTip", "Returns the inventory for waste in the nuclear generator" },
 	};
 #endif
@@ -98,18 +98,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableGeneratorNuclear_GetWasteInventory, "GetWasteInventory" }, // 3683659066
+		{ &Z_Construct_UFunction_AFGBuildableGeneratorNuclear_GetWasteInventory, "GetWasteInventory" }, // 353998599
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableGeneratorNuclear.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorNuclear.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorNuclear.h" },
 		{ "ToolTip", "A generator that runs on nuclear fuel and produces waste." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mWasteLeftFromCurrentFuel_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorNuclear.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorNuclear.h" },
 		{ "ToolTip", "Waste left to produce from the current fuel rod" },
 	};
 #endif
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGeneratorNuclear_Statics::NewProp_mOutputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGeneratorNuclear.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGeneratorNuclear.h" },
 		{ "ToolTip", "Spent fuel rods goes here." },
 	};
 #endif
@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGeneratorNuclear() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGeneratorNuclear, 2884977187);
+	IMPLEMENT_CLASS(AFGBuildableGeneratorNuclear, 2505028369);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableGeneratorNuclear(Z_Construct_UClass_AFGBuildableGeneratorNuclear, &AFGBuildableGeneratorNuclear::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableGeneratorNuclear"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableGeneratorNuclear);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

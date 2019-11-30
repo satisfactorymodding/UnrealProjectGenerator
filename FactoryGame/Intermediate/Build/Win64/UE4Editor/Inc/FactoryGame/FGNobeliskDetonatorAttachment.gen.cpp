@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNobeliskDetonatorAttachment.h"
+#include "FactoryGame/Public/FGNobeliskDetonatorAttachment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonatorAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonatorAttachment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonatorAttachment, "Multicast_SetIsLoaded", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00024C40, sizeof(FGNobeliskDetonatorAttachment_eventMulticast_SetIsLoaded_Parms), Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded_Statics::Function_MetaDataParams)) };
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonatorAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonatorAttachment.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGNobeliskDetonatorAttachment, "OnIsLoadedSet", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet_Statics::Function_MetaDataParams)) };
@@ -122,20 +122,20 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded, "Multicast_SetIsLoaded" }, // 1031508499
-		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet, "OnIsLoadedSet" }, // 178329494
+		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_Multicast_SetIsLoaded, "Multicast_SetIsLoaded" }, // 3211965817
+		{ &Z_Construct_UFunction_AFGNobeliskDetonatorAttachment_OnIsLoadedSet, "OnIsLoadedSet" }, // 1678445831
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNobeliskDetonatorAttachment.h" },
-		{ "ModuleRelativePath", "FGNobeliskDetonatorAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonatorAttachment.h" },
 		{ "ToolTip", "Specialty Attachment class for handling the unique two-part behaviour of FGNobeliskDetonator Equipment.\nThis is the 3rd person attachment representing the FGWeapon : FGNobeliskDetonator" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskDetonatorAttachment.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskDetonatorAttachment.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGNobeliskDetonatorAttachment_Statics::NewProp_mIsLoaded_SetBit(void* Obj)
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskDetonatorAttachment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskDetonatorAttachment, 2141070351);
+	IMPLEMENT_CLASS(AFGNobeliskDetonatorAttachment, 3944152513);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGNobeliskDetonatorAttachment(Z_Construct_UClass_AFGNobeliskDetonatorAttachment, &AFGNobeliskDetonatorAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGNobeliskDetonatorAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGNobeliskDetonatorAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGAttachmentSplitterHologram.h"
+#include "FactoryGame/Public/Hologram/FGAttachmentSplitterHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,14 +54,14 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGAttachmentSplitterHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGAttachmentSplitterHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGAttachmentSplitterHologram.h" },
 		{ "ToolTip", "Adds up/downgrade for splitters." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGAttachmentSplitterHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGAttachmentSplitterHologram.h" },
 		{ "ToolTip", "Used when upgrading." },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mSnappedConnectionComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mSnappedConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UFGFactoryConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAttachmentSplitterHologram_Statics::NewProp_mUpgradedSplitter_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGAttachmentSplitterHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGAttachmentSplitterHologram.h" },
 		{ "ToolTip", "If we're upgrading another actor." },
 	};
 #endif
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttachmentSplitterHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 282044072);
+	IMPLEMENT_CLASS(AFGAttachmentSplitterHologram, 3304498382);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAttachmentSplitterHologram(Z_Construct_UClass_AFGAttachmentSplitterHologram, &AFGAttachmentSplitterHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAttachmentSplitterHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAttachmentSplitterHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

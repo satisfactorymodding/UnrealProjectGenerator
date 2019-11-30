@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRamp.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRamp.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRamp() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRamp_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableRamp.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRamp.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRamp.h" },
 		{ "ToolTip", "Base class for all kinds of ramps." },
 	};
 #endif
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRamp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRamp, 2088147042);
+	IMPLEMENT_CLASS(AFGBuildableRamp, 3858353349);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRamp(Z_Construct_UClass_AFGBuildableRamp, &AFGBuildableRamp::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRamp"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRamp);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

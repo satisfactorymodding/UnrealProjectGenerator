@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGWalkwayHologram.h"
+#include "FactoryGame/Public/Hologram/FGWalkwayHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWalkwayHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWalkwayHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGWalkwayHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGWalkwayHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWalkwayHologram.h" },
 		{ "ToolTip", "Hologram for walkways." },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWalkwayHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWalkwayHologram, 2896422807);
+	IMPLEMENT_CLASS(AFGWalkwayHologram, 1273086161);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWalkwayHologram(Z_Construct_UClass_AFGWalkwayHologram, &AFGWalkwayHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWalkwayHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWalkwayHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

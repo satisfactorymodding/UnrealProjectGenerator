@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGBaseUI.h"
+#include "FactoryGame/Public/UI/FGBaseUI.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		{ "CPP_Default_PopupID", "PID_OK" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use AddPopupWithCloseDelegate instead" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Adds a popup to the qu\xef\xbf\xbd" },
 	};
 #endif
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_ClosePopup_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Closes a popup" },
 	};
 #endif
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Creates a popup" },
 	};
 #endif
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_GetPopup_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Getter for popup" },
 	};
 #endif
@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_PopPopupQueue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Removes a pending popup" },
 	};
 #endif
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBaseUI_SetPopup_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Sets the popup variable" },
 	};
 #endif
@@ -314,24 +314,24 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBaseUI_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 3908759871
-		{ &Z_Construct_UFunction_UFGBaseUI_ClosePopup, "ClosePopup" }, // 3392204301
-		{ &Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget, "CreatePopupWidget" }, // 607760847
-		{ &Z_Construct_UFunction_UFGBaseUI_GetPopup, "GetPopup" }, // 1505797349
-		{ &Z_Construct_UFunction_UFGBaseUI_PopPopupQueue, "PopPopupQueue" }, // 816341727
-		{ &Z_Construct_UFunction_UFGBaseUI_SetPopup, "SetPopup" }, // 647460329
+		{ &Z_Construct_UFunction_UFGBaseUI_AddPopup, "AddPopup" }, // 1506659168
+		{ &Z_Construct_UFunction_UFGBaseUI_ClosePopup, "ClosePopup" }, // 3021920162
+		{ &Z_Construct_UFunction_UFGBaseUI_CreatePopupWidget, "CreatePopupWidget" }, // 52114082
+		{ &Z_Construct_UFunction_UFGBaseUI_GetPopup, "GetPopup" }, // 3423570742
+		{ &Z_Construct_UFunction_UFGBaseUI_PopPopupQueue, "PopPopupQueue" }, // 281083057
+		{ &Z_Construct_UFunction_UFGBaseUI_SetPopup, "SetPopup" }, // 1377280862
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBaseUI_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGBaseUI.h" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBaseUI_Statics::NewProp_mActivePopup_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGBaseUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGBaseUI.h" },
 		{ "ToolTip", "Current active popup" },
 	};
 #endif
@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBaseUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBaseUI, 234251771);
+	IMPLEMENT_CLASS(UFGBaseUI, 645571723);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBaseUI(Z_Construct_UClass_UFGBaseUI, &UFGBaseUI::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBaseUI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBaseUI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

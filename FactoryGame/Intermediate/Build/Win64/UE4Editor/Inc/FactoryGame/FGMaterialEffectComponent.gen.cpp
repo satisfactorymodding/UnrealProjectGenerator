@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMaterialEffectComponent.h"
+#include "FactoryGame/Public/FGMaterialEffectComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -77,7 +77,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::NewStructOps()
@@ -87,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::NewProp_TargetLocation_MetaData[] = {
 		{ "Category", "CostIngredientEffectActorInfo" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Where this cost actor should travel to" },
 	};
 #endif
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::NewProp_SpawnDelay_MetaData[] = {
 		{ "Category", "CostIngredientEffectActorInfo" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Delay between this and the previous cost actor spawned" },
 	};
 #endif
@@ -103,7 +103,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "CostIngredientEffectActorInfo" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "What class is this cost of" },
 	};
 #endif
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_CRC() { return 2999990367U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_CRC() { return 3639206950U; }
 	static FName NAME_UFGMaterialEffectComponent_OnEnded = FName(TEXT("OnEnded"));
 	void UFGMaterialEffectComponent::OnEnded()
 	{
@@ -199,7 +199,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_GetDuration_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Get the duration for this effect. [seconds]" },
 	};
 #endif
@@ -243,7 +243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshes_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Get the meshes which have the overridden material." },
 	};
 #endif
@@ -298,7 +298,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshesBounds_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Get the bounds of the meshes." },
 	};
 #endif
@@ -322,7 +322,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_OnEnded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Material Effect" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Called when the effect has ended and the material overrides have been cleared." },
 	};
 #endif
@@ -346,7 +346,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_OnStarted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Material Effect" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Called when the effect has been started and the materials have been overridden." },
 	};
 #endif
@@ -376,7 +376,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_OnUpdate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Material Effect" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Called when the effect is updated." },
 	};
 #endif
@@ -400,7 +400,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_PreStarted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Material Effect" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Called prior to the build effect starting and before the materials have been overridden." },
 	};
 #endif
@@ -433,7 +433,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_SetDuration_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Set the duration for this effect [seconds]. This is not replicated." },
 	};
 #endif
@@ -471,7 +471,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_SetMaterialScalarParameterValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Material Effect Parameter" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Set a scalar parameter on the effect." },
 	};
 #endif
@@ -515,7 +515,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffectComponent_SetMeshes_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Set the meshes to override material on, cannot be called after PreStarted." },
 	};
 #endif
@@ -568,16 +568,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMaterialEffectComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_GetDuration, "GetDuration" }, // 4151485523
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshes, "GetMeshes" }, // 3356733658
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshesBounds, "GetMeshesBounds" }, // 515584983
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_OnEnded, "OnEnded" }, // 373141508
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_OnStarted, "OnStarted" }, // 1512385406
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_OnUpdate, "OnUpdate" }, // 960112517
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_PreStarted, "PreStarted" }, // 3827831485
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_SetDuration, "SetDuration" }, // 3151098321
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_SetMaterialScalarParameterValue, "SetMaterialScalarParameterValue" }, // 1084948140
-		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_SetMeshes, "SetMeshes" }, // 3243483448
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_GetDuration, "GetDuration" }, // 1360946349
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshes, "GetMeshes" }, // 2619801511
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_GetMeshesBounds, "GetMeshesBounds" }, // 990746483
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_OnEnded, "OnEnded" }, // 2207059331
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_OnStarted, "OnStarted" }, // 2019366685
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_OnUpdate, "OnUpdate" }, // 3128812397
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_PreStarted, "PreStarted" }, // 1572845829
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_SetDuration, "SetDuration" }, // 258517060
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_SetMaterialScalarParameterValue, "SetMaterialScalarParameterValue" }, // 3161874980
+		{ &Z_Construct_UFunction_UFGMaterialEffectComponent_SetMeshes, "SetMeshes" }, // 3793352899
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffectComponent_Statics::Class_MetaDataParams[] = {
@@ -587,14 +587,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		{ "HideCategories", "Component Tick Collision" },
 		{ "IncludePath", "FGMaterialEffectComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Base class for material based effects on actors." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mMids_MetaData[] = {
 		{ "Category", "FGMaterialEffectComponent" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "The cached mids we apply effects to." },
 	};
 #endif
@@ -603,7 +603,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mAutoDestroy_MetaData[] = {
 		{ "Category", "Material Effect" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Should this effect be auto destroyed on finish." },
 	};
 #endif
@@ -615,7 +615,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mMaterial_MetaData[] = {
 		{ "Category", "Material Effect" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Material to display." },
 	};
 #endif
@@ -623,7 +623,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffectComponent_Statics::NewProp_mMeshes_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGMaterialEffectComponent.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffectComponent.h" },
 		{ "ToolTip", "Meshes affected by the material effect." },
 	};
 #endif
@@ -660,7 +660,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCostIngredientEffe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 516726024);
+	IMPLEMENT_CLASS(UFGMaterialEffectComponent, 1484785986);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialEffectComponent(Z_Construct_UClass_UFGMaterialEffectComponent, &UFGMaterialEffectComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialEffectComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialEffectComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

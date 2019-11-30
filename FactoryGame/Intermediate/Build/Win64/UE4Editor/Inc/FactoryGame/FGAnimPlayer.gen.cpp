@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAnimPlayer.h"
+#include "FactoryGame/Public/FGAnimPlayer.h"
 #include "Engine/Classes/Components/SkeletalMeshComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -66,13 +66,13 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "FGAnimPlayer.h" },
-		{ "ModuleRelativePath", "FGAnimPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGAnimPlayer.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mCharacter_MetaData[] = {
 		{ "Category", "Anim Player" },
-		{ "ModuleRelativePath", "FGAnimPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGAnimPlayer.h" },
 		{ "ToolTip", "Character this anim belongs to" },
 	};
 #endif
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mBacklotType_MetaData[] = {
 		{ "Category", "Anim Player" },
-		{ "ModuleRelativePath", "FGAnimPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGAnimPlayer.h" },
 		{ "ToolTip", "Saved value of back equipment" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mArmSlotType_MetaData[] = {
 		{ "Category", "Anim Player" },
-		{ "ModuleRelativePath", "FGAnimPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGAnimPlayer.h" },
 		{ "ToolTip", "Saved value of arm equipment" },
 	};
 #endif
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimPlayer_Statics::NewProp_mIsFirstPerson_MetaData[] = {
 		{ "Category", "Anim Player" },
-		{ "ModuleRelativePath", "FGAnimPlayer.h" },
+		{ "ModuleRelativePath", "Public/FGAnimPlayer.h" },
 		{ "ToolTip", "Is first or third person mesh?" },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimPlayer, 3060952701);
+	IMPLEMENT_CLASS(UFGAnimPlayer, 3192713768);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimPlayer(Z_Construct_UClass_UFGAnimPlayer, &UFGAnimPlayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimPlayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimPlayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

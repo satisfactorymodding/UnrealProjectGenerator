@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDamageOverTime.h"
+#include "FactoryGame/Public/FGDamageOverTime.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDamageOverTime_GetDamageAmount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dot" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "Returns how much damage the dot does every interval\n@return The damage to take; no damage if dotClass is nullptr." },
 	};
 #endif
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDamageOverTime_GetDamageClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dot" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "Returns the damage type of the dot-class\n@return nullptr if dotClass is nullptr" },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDamageOverTime_GetDamageInterval_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dot" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "Returns the the damage interval of the dot\n@return -1 if dotClass is nullptr" },
 	};
 #endif
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDamageOverTime_ShouldBeAppliedToActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dot" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "Returns true if this dot-class should be applied to the actor\n@return false if dotClass or actor is nullptr" },
 	};
 #endif
@@ -234,24 +234,24 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDamageOverTime_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDamageOverTime_GetDamageAmount, "GetDamageAmount" }, // 2395854940
-		{ &Z_Construct_UFunction_UFGDamageOverTime_GetDamageClass, "GetDamageClass" }, // 3062744322
-		{ &Z_Construct_UFunction_UFGDamageOverTime_GetDamageInterval, "GetDamageInterval" }, // 323960629
-		{ &Z_Construct_UFunction_UFGDamageOverTime_ShouldBeAppliedToActor, "ShouldBeAppliedToActor" }, // 796708172
+		{ &Z_Construct_UFunction_UFGDamageOverTime_GetDamageAmount, "GetDamageAmount" }, // 1959252967
+		{ &Z_Construct_UFunction_UFGDamageOverTime_GetDamageClass, "GetDamageClass" }, // 2543537995
+		{ &Z_Construct_UFunction_UFGDamageOverTime_GetDamageInterval, "GetDamageInterval" }, // 3756766301
+		{ &Z_Construct_UFunction_UFGDamageOverTime_ShouldBeAppliedToActor, "ShouldBeAppliedToActor" }, // 2873713446
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageOverTime_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGDamageOverTime.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "Shareable info about damage over time" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageOverTime_Statics::NewProp_mActorFilter_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "Only deal damage to subclasses of these actor classes" },
 	};
 #endif
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageOverTime_Statics::NewProp_mDamageClass_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "What type of damage should we give the character" },
 	};
 #endif
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageOverTime_Statics::NewProp_mDamageAmount_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "How much damage should the actor take each time it receives damage" },
 	};
 #endif
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageOverTime_Statics::NewProp_mDamageInterval_MetaData[] = {
 		{ "Category", "Damage" },
-		{ "ModuleRelativePath", "FGDamageOverTime.h" },
+		{ "ModuleRelativePath", "Public/FGDamageOverTime.h" },
 		{ "ToolTip", "How often should we damage actors inside of this cloud (in seconds)" },
 	};
 #endif
@@ -311,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTime() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDamageOverTime, 1344279795);
+	IMPLEMENT_CLASS(UFGDamageOverTime, 9920480);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDamageOverTime(Z_Construct_UClass_UFGDamageOverTime, &UFGDamageOverTime::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDamageOverTime"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDamageOverTime);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGResourceSettings.h"
+#include "FactoryGame/Public/FGResourceSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -82,7 +82,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::NewStructOps()
@@ -92,7 +92,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::NewProp_MiningAmount_MetaData[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "How much to get per \"mine cycle\"" },
 	};
 #endif
@@ -100,7 +100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::NewProp_MaxAmount_MetaData[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Amount of resources in deposit as max" },
 	};
 #endif
@@ -108,7 +108,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::NewProp_MinAmount_MetaData[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Amount of resources in deposit as minimum" },
 	};
 #endif
@@ -116,7 +116,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::NewProp_ResourceClass_MetaData[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "What resource class to use" },
 	};
 #endif
@@ -124,7 +124,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::NewProp_DropChance_MetaData[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Chance in roulette selection to get the package" },
 	};
 #endif
@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResourceDepositPackage_CRC() { return 3658793429U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResourceDepositPackage_CRC() { return 3136074599U; }
 class UScriptStruct* FItemSettings::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -205,7 +205,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemSettings_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FItemSettings_Statics::NewStructOps()
@@ -215,7 +215,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemSettings_Statics::NewProp_MasterMaterial_MetaData[] = {
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Material that should be used for each icon, need to have a parameter named Texture" },
 	};
 #endif
@@ -223,7 +223,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemSettings_Statics::NewProp_Resolution_MetaData[] = {
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "The x and y resolution of the icon (must be power of 2), -1 means no icon" },
 	};
 #endif
@@ -232,7 +232,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemSettings_Statics::NewProp_ResourceClass_MetaData[] = {
 		{ "AllowAbstract", "TRUE" },
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "The class (and it's subclasses) that we want to specify the resolution for" },
 	};
 #endif
@@ -269,7 +269,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemSettings_CRC() { return 642390243U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemSettings_CRC() { return 3404598817U; }
 	void UFGResourceSettings::StaticRegisterNativesUFGResourceSettings()
 	{
 		UClass* Class = UFGResourceSettings::StaticClass();
@@ -315,7 +315,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceSettings_GetRandomResourceDepositData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Get a random resource deposit package" },
 	};
 #endif
@@ -369,7 +369,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResourceSettings_GetResourceDepositDataFromClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Gets deposit data with a specified resource class\nreturns false if no deposit data existed with that resource class" },
 	};
 #endif
@@ -446,20 +446,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGResourceSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGResourceSettings_GetRandomResourceDepositData, "GetRandomResourceDepositData" }, // 1010998486
-		{ &Z_Construct_UFunction_UFGResourceSettings_GetResourceDepositDataFromClass, "GetResourceDepositDataFromClass" }, // 4107439225
+		{ &Z_Construct_UFunction_UFGResourceSettings_GetRandomResourceDepositData, "GetRandomResourceDepositData" }, // 4181069915
+		{ &Z_Construct_UFunction_UFGResourceSettings_GetResourceDepositDataFromClass, "GetResourceDepositDataFromClass" }, // 3409649084
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGResourceSettings.h" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 	};
 #endif
 #if WITH_EDITORONLY_DATA
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mIconSettings_MetaData[] = {
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Resolutions of different item classes" },
 	};
 #endif
@@ -468,7 +468,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mStageClass_MetaData[] = {
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "The stage that should be used to make icons" },
 	};
 #endif
@@ -477,7 +477,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mItemDropClass_MetaData[] = {
 		{ "Category", "Drops" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "The class of item we want to drop when we drop something" },
 	};
 #endif
@@ -485,7 +485,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mStackSizes_MetaData[] = {
 		{ "Category", "Items" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "How many of diffrent items can be in the same stack" },
 	};
 #endif
@@ -496,7 +496,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mDefaultItemMesh_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Mesh used on items that do not have their own specified." },
 	};
 #endif
@@ -504,7 +504,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mPurityMultiplier_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Index 0 is poor amount, 1 is normal and 2 is rich" },
 	};
 #endif
@@ -513,7 +513,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mResourceAmount_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "Index 0 is poor amount, 1 is normal and 2 is rich" },
 	};
 #endif
@@ -522,7 +522,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceSettings_Statics::NewProp_mResourceDepositTable_MetaData[] = {
 		{ "Category", "ResourceDepositPackage" },
-		{ "ModuleRelativePath", "FGResourceSettings.h" },
+		{ "ModuleRelativePath", "Public/FGResourceSettings.h" },
 		{ "ToolTip", "List of all available resource deposit packages" },
 	};
 #endif
@@ -570,7 +570,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceSettings, 4257192490);
+	IMPLEMENT_CLASS(UFGResourceSettings, 4248715035);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceSettings(Z_Construct_UClass_UFGResourceSettings, &UFGResourceSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

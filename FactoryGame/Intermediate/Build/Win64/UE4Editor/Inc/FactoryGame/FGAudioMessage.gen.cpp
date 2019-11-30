@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/Message/FGAudioMessage.h"
+#include "FactoryGame/Public/UI/Message/FGAudioMessage.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioMessage() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_AudioMessageConcludedDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_AudioMessageConcludedDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "AudioMessageConcludedDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00120000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_AudioMessageConcludedDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_AudioMessageConcludedDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::NewStructOps()
@@ -105,7 +105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::NewProp_SenderClass_MetaData[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Sender for this part of message" },
 	};
 #endif
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::NewProp_Subtitle_MetaData[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Subtitle to display" },
 	};
 #endif
@@ -121,7 +121,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::NewProp_AudioEvent_MetaData[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Audio to play" },
 	};
 #endif
@@ -158,7 +158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAudioSubtitlePair_CRC() { return 1924940516U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAudioSubtitlePair_CRC() { return 2411851916U; }
 	static FName NAME_UFGAudioMessage_PlayNextDialogue = FName(TEXT("PlayNextDialogue"));
 	void UFGAudioMessage::PlayNextDialogue()
 	{
@@ -197,7 +197,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "AudioMessage" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGAudioMessage, "AssignOnConcludedDelegate", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGAudioMessage_eventAssignOnConcludedDelegate_Parms), Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate_Statics::Function_MetaDataParams)) };
@@ -220,7 +220,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_CancelPlayback_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Removes all unplayed dialogues and stops the current one." },
 	};
 #endif
@@ -243,7 +243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_ContinuePlayback_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Continues playing next dialoge in the mDialogue array" },
 	};
 #endif
@@ -277,7 +277,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_GetCurrentDialogue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Gets current dialogue" },
 	};
 #endif
@@ -301,7 +301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "AudioMessage" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Does the setup for playing next part in the dialogue" },
 	};
 #endif
@@ -325,7 +325,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAudioMessage_StartPlayback_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Starts playing the first dialogue" },
 	};
 #endif
@@ -384,46 +384,46 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAudioMessage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate, "AssignOnConcludedDelegate" }, // 3123710517
-		{ &Z_Construct_UFunction_UFGAudioMessage_CancelPlayback, "CancelPlayback" }, // 3625655355
-		{ &Z_Construct_UFunction_UFGAudioMessage_ContinuePlayback, "ContinuePlayback" }, // 4097966705
-		{ &Z_Construct_UFunction_UFGAudioMessage_GetCurrentDialogue, "GetCurrentDialogue" }, // 1895503190
-		{ &Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue, "PlayNextDialogue" }, // 2918357005
-		{ &Z_Construct_UFunction_UFGAudioMessage_StartPlayback, "StartPlayback" }, // 923635913
+		{ &Z_Construct_UFunction_UFGAudioMessage_AssignOnConcludedDelegate, "AssignOnConcludedDelegate" }, // 2530829308
+		{ &Z_Construct_UFunction_UFGAudioMessage_CancelPlayback, "CancelPlayback" }, // 2904489615
+		{ &Z_Construct_UFunction_UFGAudioMessage_ContinuePlayback, "ContinuePlayback" }, // 700278398
+		{ &Z_Construct_UFunction_UFGAudioMessage_GetCurrentDialogue, "GetCurrentDialogue" }, // 4216200905
+		{ &Z_Construct_UFunction_UFGAudioMessage_PlayNextDialogue, "PlayNextDialogue" }, // 3119145441
+		{ &Z_Construct_UFunction_UFGAudioMessage_StartPlayback, "StartPlayback" }, // 433846068
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "UI/Message/FGAudioMessage.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageInputComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageInputComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mAudioMessageInputComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(UFGAudioMessage, mAudioMessageInputComponent), Z_Construct_UClass_UInputComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageInputComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageInputComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded_MetaData[] = {
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FDelegatePropertyParams Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded = { UE4CodeGen_Private::EPropertyClass::Delegate, "mAudioMessageConcluded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080000, 1, nullptr, STRUCT_OFFSET(UFGAudioMessage, mAudioMessageConcluded), Z_Construct_UDelegateFunction_FactoryGame_AudioMessageConcludedDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioMessageConcluded_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mSubtitleTimeMultiplier_MetaData[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Multiplier for time per character to display" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mSubtitleTimeMultiplier = { UE4CodeGen_Private::EPropertyClass::Float, "mSubtitleTimeMultiplier", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGAudioMessage, mSubtitleTimeMultiplier), METADATA_PARAMS(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mSubtitleTimeMultiplier_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mSubtitleTimeMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mCurrentDialogue_MetaData[] = {
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "Current dialogue that is displayed" },
 	};
 #endif
@@ -431,7 +431,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAudioEvents_MetaData[] = {
 		{ "Category", "Audio Message" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "The AK audio to play when \"showing\" this message" },
 	};
 #endif
@@ -440,7 +440,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAudioMessage_Statics::NewProp_mAkAudioComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/Message/FGAudioMessage.h" },
+		{ "ModuleRelativePath", "Public/UI/Message/FGAudioMessage.h" },
 		{ "ToolTip", "The Ak component" },
 	};
 #endif
@@ -477,7 +477,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAudioMessage, 1018522708);
+	IMPLEMENT_CLASS(UFGAudioMessage, 1608059989);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAudioMessage(Z_Construct_UClass_UFGAudioMessage, &UFGAudioMessage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAudioMessage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAudioMessage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

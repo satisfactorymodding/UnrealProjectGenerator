@@ -14,7 +14,7 @@ class UFGItemDescriptor;
 #endif
 #define FACTORYGAME_FGInventoryComponentTrash_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execIsValidItem) \
 	{ \
@@ -26,7 +26,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execIsValidItem) \
 	{ \
@@ -38,7 +38,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGInventoryComponentTrash(); \
 	friend struct Z_Construct_UClass_UFGInventoryComponentTrash_Statics; \
@@ -47,7 +47,7 @@ public: \
 	DECLARE_SERIALIZER(UFGInventoryComponentTrash)
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGInventoryComponentTrash(); \
 	friend struct Z_Construct_UClass_UFGInventoryComponentTrash_Statics; \
@@ -56,7 +56,7 @@ public: \
 	DECLARE_SERIALIZER(UFGInventoryComponentTrash)
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGInventoryComponentTrash(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGInventoryComponentTrash) \
@@ -69,7 +69,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGInventoryComponentTrash(UFGInventoryComponentTrash&&); \
@@ -80,32 +80,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGInventoryComponentTrash); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGInventoryComponentTrash)
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_10_PROLOG
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_10_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_INCLASS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h_13_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGInventoryComponentTrash_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGInventoryComponentTrash_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

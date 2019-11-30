@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/FGCreatureSeat.h"
+#include "FactoryGame/Public/Creature/FGCreatureSeat.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,7 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Creature" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSeat.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSeat.h" },
 		{ "ToolTip", "Getter for creature" },
 	};
 #endif
@@ -86,20 +86,20 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCreatureSeat_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature, "GetMountedCreature" }, // 2083189956
+		{ &Z_Construct_UFunction_AFGCreatureSeat_GetMountedCreature, "GetMountedCreature" }, // 1082699161
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSeat_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "Creature/FGCreatureSeat.h" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSeat.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSeat.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCreatureSeat_Statics::NewProp_mMountedCreature_MetaData[] = {
 		{ "Category", "FGCreatureSeat" },
 		{ "ExposeOnSpawn", "" },
-		{ "ModuleRelativePath", "Creature/FGCreatureSeat.h" },
+		{ "ModuleRelativePath", "Public/Creature/FGCreatureSeat.h" },
 		{ "ToolTip", "The creature this seat is on" },
 	};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCreatureSeat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreatureSeat, 1766847271);
+	IMPLEMENT_CLASS(AFGCreatureSeat, 2392486069);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreatureSeat(Z_Construct_UClass_AFGCreatureSeat, &AFGCreatureSeat::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreatureSeat"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreatureSeat);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

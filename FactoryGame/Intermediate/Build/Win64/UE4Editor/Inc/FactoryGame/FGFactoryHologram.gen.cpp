@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGFactoryHologram.h"
+#include "FactoryGame/Public/Hologram/FGFactoryHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,19 +58,19 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGFactoryHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGFactoryHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryHologram.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGFactoryHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryHologram.h" },
 		{ "ToolTip", "Material to use on the clearance component" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceMaterial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGFactoryHologram, mClearanceMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMaterial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMesh_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGFactoryHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryHologram.h" },
 		{ "ToolTip", "Mesh we want to use in the component" },
 	};
 #endif
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFactoryHologram_Statics::NewProp_mClearanceMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGFactoryHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFactoryHologram.h" },
 		{ "ToolTip", "Mesh component used to display the clearance mesh" },
 	};
 #endif
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFactoryHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFactoryHologram, 2809468096);
+	IMPLEMENT_CLASS(AFGFactoryHologram, 1304283354);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFactoryHologram(Z_Construct_UClass_AFGFactoryHologram, &AFGFactoryHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFactoryHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFactoryHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

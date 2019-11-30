@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/Enemy/FGEnemy.h"
+#include "FactoryGame/Public/Creature/Enemy/FGEnemy.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemy_GetAttackLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Enemy" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "Returns the location we want to originate an attack from" },
 	};
 #endif
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemy_GetCurrentAggroTarget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Enemy" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "Get aggrotarget" },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemy_GetCurrentAttackTask_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "Returns the current attack task ( can be nullptr )" },
 	};
 #endif
@@ -165,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemy_OnCurrentAggroTargetReplicated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Enemy" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "Called on both server and client when aggro target has changed" },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemy_OnRep_CurrentAggroTarget_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "Replicating mCurrentAggroTarget" },
 	};
 #endif
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGEnemy_PerformCustomRadialAttack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "Hook for us to be able to go to blueprrint in order to do the custom radial attack" },
 	};
 #endif
@@ -254,30 +254,30 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGEnemy_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGEnemy_GetAttackLocation, "GetAttackLocation" }, // 3018355167
-		{ &Z_Construct_UFunction_AFGEnemy_GetCurrentAggroTarget, "GetCurrentAggroTarget" }, // 2863258746
-		{ &Z_Construct_UFunction_AFGEnemy_GetCurrentAttackTask, "GetCurrentAttackTask" }, // 3850769788
-		{ &Z_Construct_UFunction_AFGEnemy_OnCurrentAggroTargetReplicated, "OnCurrentAggroTargetReplicated" }, // 859263988
-		{ &Z_Construct_UFunction_AFGEnemy_OnRep_CurrentAggroTarget, "OnRep_CurrentAggroTarget" }, // 2987632338
-		{ &Z_Construct_UFunction_AFGEnemy_PerformCustomRadialAttack, "PerformCustomRadialAttack" }, // 3844391126
+		{ &Z_Construct_UFunction_AFGEnemy_GetAttackLocation, "GetAttackLocation" }, // 388203892
+		{ &Z_Construct_UFunction_AFGEnemy_GetCurrentAggroTarget, "GetCurrentAggroTarget" }, // 3222893917
+		{ &Z_Construct_UFunction_AFGEnemy_GetCurrentAttackTask, "GetCurrentAttackTask" }, // 468702031
+		{ &Z_Construct_UFunction_AFGEnemy_OnCurrentAggroTargetReplicated, "OnCurrentAggroTargetReplicated" }, // 53340814
+		{ &Z_Construct_UFunction_AFGEnemy_OnRep_CurrentAggroTarget, "OnRep_CurrentAggroTarget" }, // 1916125444
+		{ &Z_Construct_UFunction_AFGEnemy_PerformCustomRadialAttack, "PerformCustomRadialAttack" }, // 1342220382
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemy_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "Creature/Enemy/FGEnemy.h" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemy_Statics::NewProp_mCurrentAggroTarget_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGEnemy_Statics::NewProp_mCurrentAggroTarget = { UE4CodeGen_Private::EPropertyClass::Object, "mCurrentAggroTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_CurrentAggroTarget", STRUCT_OFFSET(AFGEnemy, mCurrentAggroTarget), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGEnemy_Statics::NewProp_mCurrentAggroTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGEnemy_Statics::NewProp_mCurrentAggroTarget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGEnemy_Statics::NewProp_mCurrentAttack_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGEnemy.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGEnemy.h" },
 		{ "ToolTip", "The current attack that the pawn is issuing @todoai: Verify if clients need this replicated or if the task get a activate on clients too" },
 	};
 #endif
@@ -309,7 +309,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEnemy, 3808965268);
+	IMPLEMENT_CLASS(AFGEnemy, 1767053660);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEnemy(Z_Construct_UClass_AFGEnemy, &AFGEnemy::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEnemy"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEnemy);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

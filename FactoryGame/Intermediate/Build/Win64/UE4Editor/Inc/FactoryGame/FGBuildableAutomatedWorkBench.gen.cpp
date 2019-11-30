@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableAutomatedWorkBench.h"
+#include "FactoryGame/Public/Buildables/FGBuildableAutomatedWorkBench.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Automated WorkBench" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableAutomatedWorkBench.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAutomatedWorkBench.h" },
 		{ "ToolTip", "The player can increase the manufacturing speed in the UI \"minigame\"" },
 	};
 #endif
@@ -85,19 +85,19 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed, "SetManufacturingSpeed" }, // 3406827811
+		{ &Z_Construct_UFunction_AFGBuildableAutomatedWorkBench_SetManufacturingSpeed, "SetManufacturingSpeed" }, // 2639607980
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "FALSE" },
 		{ "IncludePath", "Buildables/FGBuildableAutomatedWorkBench.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableAutomatedWorkBench.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAutomatedWorkBench.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAutomatedWorkBench_Statics::NewProp_mInputInventorySize_MetaData[] = {
 		{ "Category", "Automated WorkBench" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableAutomatedWorkBench.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAutomatedWorkBench.h" },
 		{ "ToolTip", "Size of the input inventory for the workbench" },
 	};
 #endif
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAutomatedWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 3493690420);
+	IMPLEMENT_CLASS(AFGBuildableAutomatedWorkBench, 1529163942);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAutomatedWorkBench(Z_Construct_UClass_AFGBuildableAutomatedWorkBench, &AFGBuildableAutomatedWorkBench::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAutomatedWorkBench"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAutomatedWorkBench);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

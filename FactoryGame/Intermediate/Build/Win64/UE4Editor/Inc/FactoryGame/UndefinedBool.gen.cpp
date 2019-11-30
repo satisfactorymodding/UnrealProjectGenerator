@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UndefinedBool.h"
+#include "FactoryGame/Public/UndefinedBool.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,7 +26,7 @@ void EmptyLinkFunctionForGeneratedCodeUndefinedBool() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EUndefinedBool(EUndefinedBool_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EUndefinedBool"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EUndefinedBool_CRC() { return 3150039285U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EUndefinedBool_CRC() { return 4121200940U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EUndefinedBool()
 	{
 #if WITH_HOT_RELOAD
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeUndefinedBool() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "UndefinedBool.h" },
+				{ "ModuleRelativePath", "Public/UndefinedBool.h" },
 				{ "ToolTip", "A bool that can be undefined" },
 				{ "UB_False.ToolTip", "MODDING EDIT (= 0)" },
 				{ "UB_True.ToolTip", "MODDING EDIT (= 1)" },

@@ -13,13 +13,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGOnlineSessionSettings_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGOnlineSessionSettings_h_27_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGOnlineSessionSettings_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGOnlineSessionSettings_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGOnlineSessionSettings_h
 
 
 #define FOREACH_ENUM_ESESSIONVISIBILITY(op) \

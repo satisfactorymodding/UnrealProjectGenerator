@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSettings.h"
+#include "FactoryGame/Public/FGSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSettings() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGSettings.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSettings.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGSettings_Statics::StaticCppClassTypeInfo = {
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSettings, 1456080870);
+	IMPLEMENT_CLASS(UFGSettings, 3018472819);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSettings(Z_Construct_UClass_UFGSettings, &UFGSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

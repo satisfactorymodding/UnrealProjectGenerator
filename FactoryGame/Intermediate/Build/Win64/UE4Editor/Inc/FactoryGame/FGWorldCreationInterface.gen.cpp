@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWorldCreationInterface.h"
+#include "FactoryGame/Public/FGWorldCreationInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorldCreationInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGWorldCreationInterface.h" },
+		{ "ModuleRelativePath", "Public/FGWorldCreationInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorldCreationInterface, 1049902451);
+	IMPLEMENT_CLASS(UFGWorldCreationInterface, 3425423068);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWorldCreationInterface(Z_Construct_UClass_UFGWorldCreationInterface, &UFGWorldCreationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWorldCreationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWorldCreationInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

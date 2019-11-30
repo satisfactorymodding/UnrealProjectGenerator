@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGPowerPoleHologram.h"
+#include "FactoryGame/Public/Hologram/FGPowerPoleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,14 +48,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerPoleHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPowerPoleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGPowerPoleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGPowerPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPowerPoleHologram.h" },
 		{ "ToolTip", "Hologram for power poles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPowerPoleHologram_Statics::NewProp_mSnapConnection_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGPowerPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGPowerPoleHologram.h" },
 		{ "ToolTip", "The connection wires snap to, used when placing a pole automatically." },
 	};
 #endif
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPowerPoleHologram, 3189358074);
+	IMPLEMENT_CLASS(AFGPowerPoleHologram, 3985038576);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPowerPoleHologram(Z_Construct_UClass_AFGPowerPoleHologram, &AFGPowerPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPowerPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPowerPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

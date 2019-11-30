@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPowerConnectionComponent.h"
+#include "FactoryGame/Public/FGPowerConnectionComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerConnectionComponent_GetPowerCircuit_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerConnection" },
-		{ "ModuleRelativePath", "FGPowerConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerConnectionComponent.h" },
 		{ "ToolTip", "@return The circuit this is connected to; nullptr if not connected.\n@note This can be changed/removed at any time so do not save copies to it." },
 	};
 #endif
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerConnectionComponent_GetPowerInfo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerConnection" },
-		{ "ModuleRelativePath", "FGPowerConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerConnectionComponent.h" },
 		{ "ToolTip", "Get the power info from which to get the consumption/production." },
 	};
 #endif
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerConnectionComponent_SetPowerInfo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PowerConnection" },
-		{ "ModuleRelativePath", "FGPowerConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerConnectionComponent.h" },
 		{ "ToolTip", "Set the power info for this connection." },
 	};
 #endif
@@ -175,9 +175,9 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPowerConnectionComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPowerConnectionComponent_GetPowerCircuit, "GetPowerCircuit" }, // 3233766179
-		{ &Z_Construct_UFunction_UFGPowerConnectionComponent_GetPowerInfo, "GetPowerInfo" }, // 3995271302
-		{ &Z_Construct_UFunction_UFGPowerConnectionComponent_SetPowerInfo, "SetPowerInfo" }, // 3626236488
+		{ &Z_Construct_UFunction_UFGPowerConnectionComponent_GetPowerCircuit, "GetPowerCircuit" }, // 1071862351
+		{ &Z_Construct_UFunction_UFGPowerConnectionComponent_GetPowerInfo, "GetPowerInfo" }, // 4231847139
+		{ &Z_Construct_UFunction_UFGPowerConnectionComponent_SetPowerInfo, "SetPowerInfo" }, // 2704225747
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerConnectionComponent_Statics::Class_MetaDataParams[] = {
@@ -185,14 +185,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGPowerConnectionComponent.h" },
-		{ "ModuleRelativePath", "FGPowerConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerConnectionComponent.h" },
 		{ "ToolTip", "Special type of circuit connection that provides a connection to the power grid." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerConnectionComponent_Statics::NewProp_mPowerInfo_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGPowerConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGPowerConnectionComponent.h" },
 		{ "ToolTip", "The power info for this connection.\nShould be unique for each connection or a race condition can occur for setting the circuit ID on the power info." },
 	};
 #endif
@@ -223,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerConnectionComponent, 384524329);
+	IMPLEMENT_CLASS(UFGPowerConnectionComponent, 3710045130);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerConnectionComponent(Z_Construct_UClass_UFGPowerConnectionComponent, &UFGPowerConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

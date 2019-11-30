@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGStartingPod.h"
+#include "FactoryGame/Public/FGStartingPod.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Starting Pod" },
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 		{ "ToolTip", "Getter for player" },
 	};
 #endif
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Starting Pod" },
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGStartingPod, "OnPlayerSkipIntroSequence", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence_Statics::Function_MetaDataParams)) };
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGStartingPod_StartSequence_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Starting Pod" },
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 		{ "ToolTip", "Start the pod animation" },
 	};
 #endif
@@ -158,21 +158,21 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGStartingPod_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer, "GetCachedPlayer" }, // 133541224
-		{ &Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence, "OnPlayerSkipIntroSequence" }, // 1160432212
-		{ &Z_Construct_UFunction_AFGStartingPod_StartSequence, "StartSequence" }, // 907969185
+		{ &Z_Construct_UFunction_AFGStartingPod_GetCachedPlayer, "GetCachedPlayer" }, // 1266991581
+		{ &Z_Construct_UFunction_AFGStartingPod_OnPlayerSkipIntroSequence, "OnPlayerSkipIntroSequence" }, // 709393538
+		{ &Z_Construct_UFunction_AFGStartingPod_StartSequence, "StartSequence" }, // 4186554548
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGStartingPod.h" },
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDropPodMesh_MetaData[] = {
 		{ "Category", "Starting Pod" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 		{ "ToolTip", "Main mesh" },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_MetaData[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 		{ "ToolTip", "Array containing how much to get back when dismantling this bad boy" },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mDismantleStacks_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mDismantleStacks", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStartingPod_Statics::NewProp_mCachedPlayer_MetaData[] = {
-		{ "ModuleRelativePath", "FGStartingPod.h" },
+		{ "ModuleRelativePath", "Public/FGStartingPod.h" },
 		{ "ToolTip", "Player associated with this pod" },
 	};
 #endif
@@ -225,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStartingPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStartingPod, 3250995277);
+	IMPLEMENT_CLASS(AFGStartingPod, 1510262135);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStartingPod(Z_Construct_UClass_AFGStartingPod, &AFGStartingPod::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStartingPod"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStartingPod);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

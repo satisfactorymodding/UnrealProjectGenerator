@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBuildSubCategory.h"
+#include "FactoryGame/Public/FGBuildSubCategory.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildSubCategory() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildSubCategory_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGBuildSubCategory.h" },
-		{ "ModuleRelativePath", "FGBuildSubCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildSubCategory.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGBuildSubCategory_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildSubCategory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildSubCategory, 1284794367);
+	IMPLEMENT_CLASS(UFGBuildSubCategory, 2373834045);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildSubCategory(Z_Construct_UClass_UFGBuildSubCategory, &UFGBuildSubCategory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildSubCategory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildSubCategory);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

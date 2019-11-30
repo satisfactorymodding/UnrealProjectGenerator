@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInventoryComponentTrash.h"
+#include "FactoryGame/Public/FGInventoryComponentTrash.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentTrash() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponentTrash_IsValidItem_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponentTrash.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentTrash.h" },
 		{ "ToolTip", "Can item be trashed?" },
 	};
 #endif
@@ -90,12 +90,12 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentTrash() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInventoryComponentTrash_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInventoryComponentTrash_IsValidItem, "IsValidItem" }, // 1646424147
+		{ &Z_Construct_UFunction_UFGInventoryComponentTrash_IsValidItem, "IsValidItem" }, // 4008801095
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentTrash_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGInventoryComponentTrash.h" },
-		{ "ModuleRelativePath", "FGInventoryComponentTrash.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentTrash.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGInventoryComponentTrash_Statics::StaticCppClassTypeInfo = {
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentTrash() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentTrash, 973344427);
+	IMPLEMENT_CLASS(UFGInventoryComponentTrash, 268406497);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentTrash(Z_Construct_UClass_UFGInventoryComponentTrash, &UFGInventoryComponentTrash::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentTrash"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentTrash);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

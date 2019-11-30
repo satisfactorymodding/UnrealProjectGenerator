@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGColorGun.h"
+#include "FactoryGame/Public/FGColorGun.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFGColorGunTargetType(EFGColorGunTargetType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFGColorGunTargetType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFGColorGunTargetType_CRC() { return 868438468U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFGColorGunTargetType_CRC() { return 3309964119U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFGColorGunTargetType()
 	{
 #if WITH_HOT_RELOAD
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGColorGun.h" },
+				{ "ModuleRelativePath", "Public/FGColorGun.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_GetColorSlotIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Get the the currently active color slot index for the gun" },
 	};
 #endif
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_GetMaxNumColorSlots_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Gets the mac number of color slots" },
 	};
 #endif
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_GetPrimaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED]  Get the primary color" },
 	};
 #endif
@@ -289,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_GetPrimaryColorForSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Get the primary color for a given color slot index" },
 	};
 #endif
@@ -323,7 +323,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_GetSecondaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED] Get the Secondary color" },
 	};
 #endif
@@ -361,7 +361,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_GetSecondaryColorForSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Get the secondary color for a given color slot index" },
 	};
 #endif
@@ -384,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_OnSecondaryFirePressed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Called when we press secondary fire" },
 	};
 #endif
@@ -417,7 +417,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_OnTargetStateChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Opens the UI so that the player can select both colors" },
 	};
 #endif
@@ -451,7 +451,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_SetColorSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Sets the currently active color slot index for the gun" },
 	};
 #endif
@@ -485,7 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_SetPrimaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED]  Set the color slot used when firing" },
 	};
 #endif
@@ -523,7 +523,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_SetPrimaryColorForSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Set the secondary color for a given slot" },
 	};
 #endif
@@ -557,7 +557,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_SetSecondaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED] * Set the secondary color used when firing" },
 	};
 #endif
@@ -595,7 +595,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_SetSecondaryColorForSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Set the secondary color for a given slot index" },
 	};
 #endif
@@ -624,7 +624,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Sets the currently active color slot index for the gun on the server" },
 	};
 #endif
@@ -653,7 +653,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColor_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED]  Sets the primary color on the server" },
 	};
 #endif
@@ -685,7 +685,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Set the secondary color for a given slot on the server" },
 	};
 #endif
@@ -714,7 +714,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColor_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED]  Sets the primary color on the server" },
 	};
 #endif
@@ -746,7 +746,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Sets the primary color for a given slot index on the server" },
 	};
 #endif
@@ -770,7 +770,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGColorGun_ToggleColorPickerUI_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "Opens the UI so that the player can select both colors" },
 	};
 #endif
@@ -848,35 +848,35 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGColorGun_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGColorGun_GetColorSlotIndex, "GetColorSlotIndex" }, // 774473237
-		{ &Z_Construct_UFunction_AFGColorGun_GetMaxNumColorSlots, "GetMaxNumColorSlots" }, // 2316744271
-		{ &Z_Construct_UFunction_AFGColorGun_GetPrimaryColor, "GetPrimaryColor" }, // 2130665831
-		{ &Z_Construct_UFunction_AFGColorGun_GetPrimaryColorForSlot, "GetPrimaryColorForSlot" }, // 3740050085
-		{ &Z_Construct_UFunction_AFGColorGun_GetSecondaryColor, "GetSecondaryColor" }, // 3368690594
-		{ &Z_Construct_UFunction_AFGColorGun_GetSecondaryColorForSlot, "GetSecondaryColorForSlot" }, // 3200285050
-		{ &Z_Construct_UFunction_AFGColorGun_OnSecondaryFirePressed, "OnSecondaryFirePressed" }, // 1297439361
-		{ &Z_Construct_UFunction_AFGColorGun_OnTargetStateChanged, "OnTargetStateChanged" }, // 4147832909
-		{ &Z_Construct_UFunction_AFGColorGun_SetColorSlot, "SetColorSlot" }, // 1869016769
-		{ &Z_Construct_UFunction_AFGColorGun_SetPrimaryColor, "SetPrimaryColor" }, // 387003973
-		{ &Z_Construct_UFunction_AFGColorGun_SetPrimaryColorForSlot, "SetPrimaryColorForSlot" }, // 875863144
-		{ &Z_Construct_UFunction_AFGColorGun_SetSecondaryColor, "SetSecondaryColor" }, // 140065659
-		{ &Z_Construct_UFunction_AFGColorGun_SetSecondaryColorForSlot, "SetSecondaryColorForSlot" }, // 3461950461
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot, "Sever_SetColorSlot" }, // 2485330919
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColor, "Sever_SetPrimaryColor" }, // 3069711087
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot, "Sever_SetPrimaryColorForSlot" }, // 3740496879
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColor, "Sever_SetSecondaryColor" }, // 1086579150
-		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot, "Sever_SetSecondaryColorForSlot" }, // 3542820852
-		{ &Z_Construct_UFunction_AFGColorGun_ToggleColorPickerUI, "ToggleColorPickerUI" }, // 2494843826
+		{ &Z_Construct_UFunction_AFGColorGun_GetColorSlotIndex, "GetColorSlotIndex" }, // 4251523037
+		{ &Z_Construct_UFunction_AFGColorGun_GetMaxNumColorSlots, "GetMaxNumColorSlots" }, // 1174401744
+		{ &Z_Construct_UFunction_AFGColorGun_GetPrimaryColor, "GetPrimaryColor" }, // 335876224
+		{ &Z_Construct_UFunction_AFGColorGun_GetPrimaryColorForSlot, "GetPrimaryColorForSlot" }, // 3694753642
+		{ &Z_Construct_UFunction_AFGColorGun_GetSecondaryColor, "GetSecondaryColor" }, // 2048474654
+		{ &Z_Construct_UFunction_AFGColorGun_GetSecondaryColorForSlot, "GetSecondaryColorForSlot" }, // 3720480388
+		{ &Z_Construct_UFunction_AFGColorGun_OnSecondaryFirePressed, "OnSecondaryFirePressed" }, // 856126635
+		{ &Z_Construct_UFunction_AFGColorGun_OnTargetStateChanged, "OnTargetStateChanged" }, // 1024298038
+		{ &Z_Construct_UFunction_AFGColorGun_SetColorSlot, "SetColorSlot" }, // 2806199246
+		{ &Z_Construct_UFunction_AFGColorGun_SetPrimaryColor, "SetPrimaryColor" }, // 311327786
+		{ &Z_Construct_UFunction_AFGColorGun_SetPrimaryColorForSlot, "SetPrimaryColorForSlot" }, // 1112565566
+		{ &Z_Construct_UFunction_AFGColorGun_SetSecondaryColor, "SetSecondaryColor" }, // 1535942188
+		{ &Z_Construct_UFunction_AFGColorGun_SetSecondaryColorForSlot, "SetSecondaryColorForSlot" }, // 180402684
+		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetColorSlot, "Sever_SetColorSlot" }, // 2300464400
+		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColor, "Sever_SetPrimaryColor" }, // 2746696923
+		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetPrimaryColorForSlot, "Sever_SetPrimaryColorForSlot" }, // 953342726
+		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColor, "Sever_SetSecondaryColor" }, // 3416096981
+		{ &Z_Construct_UFunction_AFGColorGun_Sever_SetSecondaryColorForSlot, "Sever_SetSecondaryColorForSlot" }, // 1869032459
+		{ &Z_Construct_UFunction_AFGColorGun_ToggleColorPickerUI, "ToggleColorPickerUI" }, // 4144676146
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGColorGun.h" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mCurrentColorTarget_MetaData[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DavalliusA:Fri/01-03-2019] don't use the first color as default, as it will make players maybe not notice when thye fire on a building already using the default color" },
 	};
 #endif
@@ -884,7 +884,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mColorSlot_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "This will be the color slot used when shooting" },
 	};
 #endif
@@ -892,7 +892,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mValidTargetCrosshairTexture_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair texture used when aiming at a target isvalid" },
 	};
 #endif
@@ -900,7 +900,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mNonColorableTargetCrosshairTexture_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair texture used when aiming at a target that can't be colored" },
 	};
 #endif
@@ -908,7 +908,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mNonColorableTargetCrosshairColor_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair color used when aiming at a target that can't be colored" },
 	};
 #endif
@@ -916,7 +916,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mNoTargetCrosshairTexture_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair texture used when aiming at a target too far away or not aiming at a target at all" },
 	};
 #endif
@@ -924,7 +924,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mNoTargetCrosshairColor_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair color used when aiming at a target too far away or not aiming at a target at all" },
 	};
 #endif
@@ -932,7 +932,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mRedundantTargetCrosshairTexture_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair texture used when aiming at a target that already have the same color slot as you are painting" },
 	};
 #endif
@@ -940,21 +940,21 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mRedundantTargetCrosshairColor_MetaData[] = {
 		{ "Category", "Color Gun" },
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "crosshair color used when aiming at a target that already have the same color slot as you are painting" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGColorGun_Statics::NewProp_mRedundantTargetCrosshairColor = { UE4CodeGen_Private::EPropertyClass::Struct, "mRedundantTargetCrosshairColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGColorGun, mRedundantTargetCrosshairColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGColorGun_Statics::NewProp_mRedundantTargetCrosshairColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGColorGun_Statics::NewProp_mRedundantTargetCrosshairColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mSecondaryColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED] This will be the color used when shooting" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGColorGun_Statics::NewProp_mSecondaryColor = { UE4CodeGen_Private::EPropertyClass::Struct, "mSecondaryColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080020000000, 1, nullptr, STRUCT_OFFSET(AFGColorGun, mSecondaryColor_DEPRECATED), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AFGColorGun_Statics::NewProp_mSecondaryColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGColorGun_Statics::NewProp_mSecondaryColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGColorGun_Statics::NewProp_mPrimaryColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGColorGun.h" },
+		{ "ModuleRelativePath", "Public/FGColorGun.h" },
 		{ "ToolTip", "[DEPRECATED] This will be the color used when shooting" },
 	};
 #endif
@@ -995,7 +995,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGColorGun, 3456148980);
+	IMPLEMENT_CLASS(AFGColorGun, 3039314829);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGColorGun(Z_Construct_UClass_AFGColorGun, &AFGColorGun::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGColorGun"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGColorGun);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

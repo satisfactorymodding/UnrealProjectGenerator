@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGConveyorPoleHologram.h"
+#include "FactoryGame/Public/Hologram/FGConveyorPoleHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,14 +48,14 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorPoleHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGConveyorPoleHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorPoleHologram.h" },
 		{ "ToolTip", "Hologram for conveyor poles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorPoleHologram_Statics::NewProp_mSnapConnection_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGConveyorPoleHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGConveyorPoleHologram.h" },
 		{ "ToolTip", "The connection conveyors snap to, used when placing a pole automatically." },
 	};
 #endif
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorPoleHologram, 4294345021);
+	IMPLEMENT_CLASS(AFGConveyorPoleHologram, 875722694);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorPoleHologram(Z_Construct_UClass_AFGConveyorPoleHologram, &AFGConveyorPoleHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorPoleHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorPoleHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGProceduralStaticMeshActor.h"
+#include "FactoryGame/Public/FGProceduralStaticMeshActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProceduralStaticMeshActor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGProceduralStaticMeshActor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Input" },
 		{ "IncludePath", "FGProceduralStaticMeshActor.h" },
-		{ "ModuleRelativePath", "FGProceduralStaticMeshActor.h" },
+		{ "ModuleRelativePath", "Public/FGProceduralStaticMeshActor.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProceduralStaticMeshActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 328301577);
+	IMPLEMENT_CLASS(AFGProceduralStaticMeshActor, 1269285297);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGProceduralStaticMeshActor(Z_Construct_UClass_AFGProceduralStaticMeshActor, &AFGProceduralStaticMeshActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGProceduralStaticMeshActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGProceduralStaticMeshActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

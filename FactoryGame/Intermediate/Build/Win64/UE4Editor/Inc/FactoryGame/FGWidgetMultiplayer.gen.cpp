@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGWidgetMultiplayer.h"
+#include "FactoryGame/Public/UI/FGWidgetMultiplayer.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,20 +56,20 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetMultiplayer_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGWidgetMultiplayer.h" },
-		{ "ModuleRelativePath", "UI/FGWidgetMultiplayer.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mTitle_MetaData[] = {
 		{ "Category", "FGWidgetMultiplayer" },
-		{ "ModuleRelativePath", "UI/FGWidgetMultiplayer.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mTitle = { UE4CodeGen_Private::EPropertyClass::Str, "mTitle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(UFGWidgetMultiplayer, mTitle), METADATA_PARAMS(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mTitle_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mTitle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsPlayingSatisfactory_MetaData[] = {
 		{ "Category", "FGWidgetMultiplayer" },
-		{ "ModuleRelativePath", "UI/FGWidgetMultiplayer.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsPlayingSatisfactory_SetBit(void* Obj)
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline_MetaData[] = {
 		{ "Category", "FGWidgetMultiplayer" },
-		{ "ModuleRelativePath", "UI/FGWidgetMultiplayer.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetMultiplayer.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGWidgetMultiplayer_Statics::NewProp_mIsOnline_SetBit(void* Obj)
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 3227036644);
+	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 1996821165);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWidgetMultiplayer(Z_Construct_UClass_UFGWidgetMultiplayer, &UFGWidgetMultiplayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWidgetMultiplayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWidgetMultiplayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGRailroadHologram.h"
+#include "FactoryGame/Public/Hologram/FGRailroadHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,13 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGRailroadHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadHologram.h" },
 		{ "ToolTip", "Hologram base for railroad buildings, stations, signals, switch controls etc. but not special cases like tracks, vehicles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadHologram_Statics::NewProp_mSnappedTrackPosition_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGRailroadHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadHologram.h" },
 		{ "ToolTip", "The track position for this hologram. If valid this station has snapped to a track." },
 	};
 #endif
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadHologram, 3612646876);
+	IMPLEMENT_CLASS(AFGRailroadHologram, 526120618);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadHologram(Z_Construct_UClass_AFGRailroadHologram, &AFGRailroadHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

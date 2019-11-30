@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAnimNotify_FootDown.h"
+#include "FactoryGame/Public/FGAnimNotify_FootDown.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -52,13 +52,13 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "FGAnimNotify_FootDown.h" },
-		{ "ModuleRelativePath", "FGAnimNotify_FootDown.h" },
+		{ "ModuleRelativePath", "Public/FGAnimNotify_FootDown.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mPlaySound_MetaData[] = {
 		{ "Category", "Foot" },
-		{ "ModuleRelativePath", "FGAnimNotify_FootDown.h" },
+		{ "ModuleRelativePath", "Public/FGAnimNotify_FootDown.h" },
 		{ "ToolTip", "Should play a sound." },
 	};
 #endif
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::NewProp_mFootIndex_MetaData[] = {
 		{ "Category", "Foot" },
-		{ "ModuleRelativePath", "FGAnimNotify_FootDown.h" },
+		{ "ModuleRelativePath", "Public/FGAnimNotify_FootDown.h" },
 		{ "ToolTip", "Foot" },
 	};
 #endif
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 74875385);
+	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 3343611349);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimNotify_FootDown(Z_Construct_UClass_UFGAnimNotify_FootDown, &UFGAnimNotify_FootDown::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimNotify_FootDown"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimNotify_FootDown);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

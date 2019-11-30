@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGGameViewportClient.h"
+#include "FactoryGame/Public/FGGameViewportClient.h"
 #include "Engine/Classes/Engine/Engine.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameViewportClient() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameViewportClient_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGGameViewportClient.h" },
-		{ "ModuleRelativePath", "FGGameViewportClient.h" },
+		{ "ModuleRelativePath", "Public/FGGameViewportClient.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGGameViewportClient_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameViewportClient() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameViewportClient, 1842552089);
+	IMPLEMENT_CLASS(UFGGameViewportClient, 2664811355);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameViewportClient(Z_Construct_UClass_UFGGameViewportClient, &UFGGameViewportClient::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameViewportClient"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameViewportClient);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

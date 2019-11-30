@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliageIdentifier.h"
+#include "FactoryGame/Public/FGFoliageIdentifier.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGFoliageIdentifier.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Class to identify different types of foliage" },
 	};
 #endif
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier, 2125595067);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier, 1917540341);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier(Z_Construct_UClass_UFGFoliageIdentifier, &UFGFoliageIdentifier::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier);
 	void UFGFoliageIdentifier_RemovableByBuildings::StaticRegisterNativesUFGFoliageIdentifier_RemovableByBuildings()
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Foliage that can be removed by buildings" },
 	};
 #endif
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 2968807703);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_RemovableByBuildings, 2222202834);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_RemovableByBuildings(Z_Construct_UClass_UFGFoliageIdentifier_RemovableByBuildings, &UFGFoliageIdentifier_RemovableByBuildings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_RemovableByBuildings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_RemovableByBuildings);
 	void UFGFoliageIdentifier_Pickupable::StaticRegisterNativesUFGFoliageIdentifier_Pickupable()
@@ -161,7 +161,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_Pickupable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Foliage that can be picked up by hand" },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 970390984);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Pickupable, 3523085500);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_Pickupable(Z_Construct_UClass_UFGFoliageIdentifier_Pickupable, &UFGFoliageIdentifier_Pickupable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_Pickupable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_Pickupable);
 	void UFGFoliageIdentifier_Chainsawable::StaticRegisterNativesUFGFoliageIdentifier_Chainsawable()
@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Foliage that you need a chainsaw to be able to remove" },
 	};
 #endif
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 3962552509);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_Chainsawable, 3903604397);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_Chainsawable(Z_Construct_UClass_UFGFoliageIdentifier_Chainsawable, &UFGFoliageIdentifier_Chainsawable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_Chainsawable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_Chainsawable);
 	void UFGFoliageIdentifier_ChainsawableXmasTree::StaticRegisterNativesUFGFoliageIdentifier_ChainsawableXmasTree()
@@ -267,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "xmas tree :3" },
 	};
 #endif
@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 1650051568);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ChainsawableXmasTree, 1378436501);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_ChainsawableXmasTree(Z_Construct_UClass_UFGFoliageIdentifier_ChainsawableXmasTree, &UFGFoliageIdentifier_ChainsawableXmasTree::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_ChainsawableXmasTree"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_ChainsawableXmasTree);
 	void UFGFoliageIdentifier_VehicleDestroyable::StaticRegisterNativesUFGFoliageIdentifier_VehicleDestroyable()
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Will be destroyed by a vehicle that runs over it" },
 	};
 #endif
@@ -347,7 +347,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 3826649822);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_VehicleDestroyable, 2028490202);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_VehicleDestroyable(Z_Construct_UClass_UFGFoliageIdentifier_VehicleDestroyable, &UFGFoliageIdentifier_VehicleDestroyable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_VehicleDestroyable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_VehicleDestroyable);
 	void UFGFoliageIdentifier_ExplosiveDestroyable::StaticRegisterNativesUFGFoliageIdentifier_ExplosiveDestroyable()
@@ -373,7 +373,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageIdentifier.h" },
-		{ "ModuleRelativePath", "FGFoliageIdentifier.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageIdentifier.h" },
 		{ "ToolTip", "Will be destroyed by explosives" },
 	};
 #endif
@@ -400,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageIdentifier() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 1546521450);
+	IMPLEMENT_CLASS(UFGFoliageIdentifier_ExplosiveDestroyable, 2840589078);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageIdentifier_ExplosiveDestroyable(Z_Construct_UClass_UFGFoliageIdentifier_ExplosiveDestroyable, &UFGFoliageIdentifier_ExplosiveDestroyable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageIdentifier_ExplosiveDestroyable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageIdentifier_ExplosiveDestroyable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

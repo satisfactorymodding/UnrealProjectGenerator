@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGRailroadBridgeHologram.h"
+#include "FactoryGame/Public/Hologram/FGRailroadBridgeHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,12 +48,12 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGRailroadBridgeHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadBridgeHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadBridgeHologram.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadBridgeHologram_Statics::NewProp_mSnappedFoundation_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGRailroadBridgeHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadBridgeHologram.h" },
 		{ "ToolTip", "Where we snapped." },
 	};
 #endif
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadBridgeHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 1022559016);
+	IMPLEMENT_CLASS(AFGRailroadBridgeHologram, 1573746734);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadBridgeHologram(Z_Construct_UClass_AFGRailroadBridgeHologram, &AFGRailroadBridgeHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadBridgeHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadBridgeHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

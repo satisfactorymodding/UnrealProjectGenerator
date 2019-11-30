@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGResourceMiner.h"
+#include "FactoryGame/Public/Equipment/FGResourceMiner.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_DoMine_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "This is where we do the actual mining ( claim resource etc )" },
 	};
 #endif
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_GetResourceNode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "Gets the saved resource node" },
 	};
 #endif
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_RemoveEquipment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "Used to unequip this equipment from client" },
 	};
 #endif
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_Server_ExtractResources_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "server notified of hit from client to verify" },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_SetResourceNode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "Sets the node we are mining" },
 	};
 #endif
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_StartMining_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "Called when we start mining" },
 	};
 #endif
@@ -228,7 +228,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceMiner_StopMining_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "Called when we stop mining" },
 	};
 #endif
@@ -274,23 +274,23 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResourceMiner_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResourceMiner_DoMine, "DoMine" }, // 1570143474
-		{ &Z_Construct_UFunction_AFGResourceMiner_GetResourceNode, "GetResourceNode" }, // 253628581
-		{ &Z_Construct_UFunction_AFGResourceMiner_RemoveEquipment, "RemoveEquipment" }, // 605249669
-		{ &Z_Construct_UFunction_AFGResourceMiner_Server_ExtractResources, "Server_ExtractResources" }, // 2638948088
-		{ &Z_Construct_UFunction_AFGResourceMiner_SetResourceNode, "SetResourceNode" }, // 3163097459
-		{ &Z_Construct_UFunction_AFGResourceMiner_StartMining, "StartMining" }, // 2030887400
-		{ &Z_Construct_UFunction_AFGResourceMiner_StopMining, "StopMining" }, // 797863635
+		{ &Z_Construct_UFunction_AFGResourceMiner_DoMine, "DoMine" }, // 3072720615
+		{ &Z_Construct_UFunction_AFGResourceMiner_GetResourceNode, "GetResourceNode" }, // 3408225711
+		{ &Z_Construct_UFunction_AFGResourceMiner_RemoveEquipment, "RemoveEquipment" }, // 3544004487
+		{ &Z_Construct_UFunction_AFGResourceMiner_Server_ExtractResources, "Server_ExtractResources" }, // 661170164
+		{ &Z_Construct_UFunction_AFGResourceMiner_SetResourceNode, "SetResourceNode" }, // 150126445
+		{ &Z_Construct_UFunction_AFGResourceMiner_StartMining, "StartMining" }, // 3252691807
+		{ &Z_Construct_UFunction_AFGResourceMiner_StopMining, "StopMining" }, // 3591920262
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceMiner_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGResourceMiner.h" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceMiner_Statics::NewProp_mCachedResouceNode_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "The node we want to pick from" },
 	};
 #endif
@@ -298,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceMiner_Statics::NewProp_mPickArmsAnim_MetaData[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "Animation to play when picking." },
 	};
 #endif
@@ -306,7 +306,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceMiner_Statics::NewProp_mPickParticleSystem_MetaData[] = {
 		{ "Category", "Resource Miner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceMiner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceMiner.h" },
 		{ "ToolTip", "The effect the spawn when picking." },
 	};
 #endif
@@ -339,7 +339,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceMiner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceMiner, 3587267205);
+	IMPLEMENT_CLASS(AFGResourceMiner, 69112942);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceMiner(Z_Construct_UClass_AFGResourceMiner, &AFGResourceMiner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceMiner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceMiner);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

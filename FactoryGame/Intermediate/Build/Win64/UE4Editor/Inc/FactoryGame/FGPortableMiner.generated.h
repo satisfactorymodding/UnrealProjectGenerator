@@ -15,7 +15,7 @@ class UFGInventoryComponent;
 #endif
 #define FACTORYGAME_FGPortableMiner_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_IsProducing) \
 	{ \
@@ -66,7 +66,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_IsProducing) \
 	{ \
@@ -117,7 +117,7 @@ class UFGInventoryComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGPortableMiner(); \
 	friend struct Z_Construct_UClass_AFGPortableMiner_Statics; \
@@ -127,7 +127,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGPortableMiner*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGPortableMiner(); \
 	friend struct Z_Construct_UClass_AFGPortableMiner_Statics; \
@@ -137,7 +137,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AFGPortableMiner*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGPortableMiner(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGPortableMiner) \
@@ -150,7 +150,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGPortableMiner(AFGPortableMiner&&); \
@@ -161,35 +161,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGPortableMiner); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGPortableMiner)
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mIsProducing() { return STRUCT_OFFSET(AFGPortableMiner, mIsProducing); }
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_12_PROLOG
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_12_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_INCLASS \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGPortableMiner_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGPortableMiner_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGPortableMiner_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

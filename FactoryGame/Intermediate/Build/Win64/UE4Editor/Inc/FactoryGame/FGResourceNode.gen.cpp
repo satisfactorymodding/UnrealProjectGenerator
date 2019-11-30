@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGResourceNode.h"
+#include "FactoryGame/Public/Resources/FGResourceNode.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EResourcePurity(EResourcePurity_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EResourcePurity"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourcePurity_CRC() { return 474107692U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourcePurity_CRC() { return 99357536U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EResourcePurity()
 	{
 #if WITH_HOT_RELOAD
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+				{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 				{ "RP_Inpure.DisplayName", "Impure" },
 				{ "RP_MAX.Hidden", "" },
 				{ "RP_Normal.DisplayName", "Normal" },
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EResourceAmount(EResourceAmount_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EResourceAmount"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourceAmount_CRC() { return 1354748327U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourceAmount_CRC() { return 2018886886U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EResourceAmount()
 	{
 #if WITH_HOT_RELOAD
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNode() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+				{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 				{ "RA_Infinite.DisplayName", "Infinite" },
 				{ "RA_MAX.Hidden", "" },
 				{ "RA_Normal.DisplayName", "Normal" },
@@ -204,7 +204,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPurityTextPair_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FPurityTextPair_Statics::NewStructOps()
@@ -214,7 +214,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPurityTextPair_Statics::NewProp_Purity_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Enum to localize" },
 	};
 #endif
@@ -222,7 +222,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPurityTextPair_Statics::NewProp_Text_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Localizable text" },
 	};
 #endif
@@ -258,7 +258,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPurityTextPair_CRC() { return 3172526116U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPurityTextPair_CRC() { return 3105233160U; }
 	void UFGUseState_NodeFullInventory::StaticRegisterNativesUFGUseState_NodeFullInventory()
 	{
 	}
@@ -282,7 +282,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_NodeFullInventory_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Resources/FGResourceNode.h" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Use state when inventory of player looking at the node has a full inventory" },
 	};
 #endif
@@ -309,7 +309,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_NodeFullInventory, 3467678013);
+	IMPLEMENT_CLASS(UFGUseState_NodeFullInventory, 2864415937);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_NodeFullInventory(Z_Construct_UClass_UFGUseState_NodeFullInventory, &UFGUseState_NodeFullInventory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_NodeFullInventory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_NodeFullInventory);
 	void UFGUseState_NonConveyorResource::StaticRegisterNativesUFGUseState_NonConveyorResource()
@@ -335,7 +335,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_NonConveyorResource_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Resources/FGResourceNode.h" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "The resource we are trying to pick can't be on a conveyor belt." },
 	};
 #endif
@@ -362,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_NonConveyorResource, 3544331343);
+	IMPLEMENT_CLASS(UFGUseState_NonConveyorResource, 3518615685);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_NonConveyorResource(Z_Construct_UClass_UFGUseState_NonConveyorResource, &UFGUseState_NonConveyorResource::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_NonConveyorResource"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_NonConveyorResource);
 	static FName NAME_AFGResourceNode_ClearWidget = FName(TEXT("ClearWidget"));
@@ -432,7 +432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Is this resource node valid for placing an extractor on?" },
 	};
 #endif
@@ -456,7 +456,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_ClearWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Cleanup function for UI. Placed here so that both nodes and deposits can take the same code path" },
 	};
 #endif
@@ -494,7 +494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_ExtractResourceAndGiveToPlayer_Statics::Function_MetaDataParams[] = {
 		{ "CPP_Default_amount", "1" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Gives one resource to a player" },
 	};
 #endif
@@ -528,7 +528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Get a speed multiplier when extracting from this resource" },
 	};
 #endif
@@ -562,7 +562,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetExtractMultiplier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Getter for extract multiplier" },
 	};
 #endif
@@ -601,7 +601,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetIsLonerNode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "If true, this node will NEVER join another cluster of nodes, regardless of proximity." },
 	};
 #endif
@@ -635,7 +635,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResoucePurity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "For UI, returns the enum" },
 	};
 #endif
@@ -669,7 +669,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResoucePurityText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "For UI" },
 	};
 #endif
@@ -703,7 +703,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResoucesLeftText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "For UI" },
 	};
 #endif
@@ -736,7 +736,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResourceAmount_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Returns the mAmount" },
 	};
 #endif
@@ -770,7 +770,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResourceClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Query the resource node what kind of resource class is of" },
 	};
 #endif
@@ -804,7 +804,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_GetResourceName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Localized name" },
 	};
 #endif
@@ -843,7 +843,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGResourceNode, "HasAnyResources", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGResourceNode_eventHasAnyResources_Parms), Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGResourceNode_HasAnyResources_Statics::Function_MetaDataParams)) };
@@ -884,7 +884,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_InitResource_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Setup the resource so it's usable, sets up amount left" },
 	};
 #endif
@@ -923,7 +923,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_IsOccupied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Return true if the resource is occupied" },
 	};
 #endif
@@ -958,7 +958,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_OnIsOccupiedChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Let's blueprint know that we have changed occupied states" },
 	};
 #endif
@@ -981,7 +981,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_OnRep_IsOccupied_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Let the client know when we changed. mIsOccupied" },
 	};
 #endif
@@ -1020,7 +1020,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_SetIsOccupied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Set if the node is occupied by something" },
 	};
 #endif
@@ -1050,7 +1050,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceNode_ToggleResourcePickUI_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Opens or closes the picking ui" },
 	};
 #endif
@@ -1160,38 +1160,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResourceNode_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor, "CanPlaceResourceExtractor" }, // 3247302522
-		{ &Z_Construct_UFunction_AFGResourceNode_ClearWidget, "ClearWidget" }, // 1663655817
-		{ &Z_Construct_UFunction_AFGResourceNode_ExtractResourceAndGiveToPlayer, "ExtractResourceAndGiveToPlayer" }, // 2813840811
-		{ &Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier, "GetExtractionSpeedMultiplier" }, // 2946522467
-		{ &Z_Construct_UFunction_AFGResourceNode_GetExtractMultiplier, "GetExtractMultiplier" }, // 695263876
-		{ &Z_Construct_UFunction_AFGResourceNode_GetIsLonerNode, "GetIsLonerNode" }, // 2340006395
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucePurity, "GetResoucePurity" }, // 1829487270
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucePurityText, "GetResoucePurityText" }, // 1598789264
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucesLeftText, "GetResoucesLeftText" }, // 1786593879
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceAmount, "GetResourceAmount" }, // 1338968394
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceClass, "GetResourceClass" }, // 1270323913
-		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceName, "GetResourceName" }, // 407465694
-		{ &Z_Construct_UFunction_AFGResourceNode_HasAnyResources, "HasAnyResources" }, // 864753879
-		{ &Z_Construct_UFunction_AFGResourceNode_InitResource, "InitResource" }, // 1902468505
-		{ &Z_Construct_UFunction_AFGResourceNode_IsOccupied, "IsOccupied" }, // 1015562746
-		{ &Z_Construct_UFunction_AFGResourceNode_OnIsOccupiedChanged, "OnIsOccupiedChanged" }, // 3376345443
-		{ &Z_Construct_UFunction_AFGResourceNode_OnRep_IsOccupied, "OnRep_IsOccupied" }, // 2138734768
-		{ &Z_Construct_UFunction_AFGResourceNode_SetIsOccupied, "SetIsOccupied" }, // 1149869421
-		{ &Z_Construct_UFunction_AFGResourceNode_ToggleResourcePickUI, "ToggleResourcePickUI" }, // 1063848248
+		{ &Z_Construct_UFunction_AFGResourceNode_CanPlaceResourceExtractor, "CanPlaceResourceExtractor" }, // 2891795231
+		{ &Z_Construct_UFunction_AFGResourceNode_ClearWidget, "ClearWidget" }, // 2027035962
+		{ &Z_Construct_UFunction_AFGResourceNode_ExtractResourceAndGiveToPlayer, "ExtractResourceAndGiveToPlayer" }, // 894993162
+		{ &Z_Construct_UFunction_AFGResourceNode_GetExtractionSpeedMultiplier, "GetExtractionSpeedMultiplier" }, // 40900448
+		{ &Z_Construct_UFunction_AFGResourceNode_GetExtractMultiplier, "GetExtractMultiplier" }, // 3732914932
+		{ &Z_Construct_UFunction_AFGResourceNode_GetIsLonerNode, "GetIsLonerNode" }, // 3281724310
+		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucePurity, "GetResoucePurity" }, // 2517793161
+		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucePurityText, "GetResoucePurityText" }, // 2698421988
+		{ &Z_Construct_UFunction_AFGResourceNode_GetResoucesLeftText, "GetResoucesLeftText" }, // 2967499632
+		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceAmount, "GetResourceAmount" }, // 3024373557
+		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceClass, "GetResourceClass" }, // 2768752154
+		{ &Z_Construct_UFunction_AFGResourceNode_GetResourceName, "GetResourceName" }, // 2039091862
+		{ &Z_Construct_UFunction_AFGResourceNode_HasAnyResources, "HasAnyResources" }, // 1530036708
+		{ &Z_Construct_UFunction_AFGResourceNode_InitResource, "InitResource" }, // 2950135909
+		{ &Z_Construct_UFunction_AFGResourceNode_IsOccupied, "IsOccupied" }, // 3182114112
+		{ &Z_Construct_UFunction_AFGResourceNode_OnIsOccupiedChanged, "OnIsOccupiedChanged" }, // 3784781399
+		{ &Z_Construct_UFunction_AFGResourceNode_OnRep_IsOccupied, "OnRep_IsOccupied" }, // 3530909460
+		{ &Z_Construct_UFunction_AFGResourceNode_SetIsOccupied, "SetIsOccupied" }, // 3560263414
+		{ &Z_Construct_UFunction_AFGResourceNode_ToggleResourcePickUI, "ToggleResourcePickUI" }, // 2230568862
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "Resources/FGResourceNode.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDoSpawnParticle_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Bool for is we should spawn particle" },
 	};
 #endif
@@ -1203,7 +1203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mHighlightParticleSystemComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Particle system component" },
 	};
 #endif
@@ -1211,7 +1211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mHighlightParticleSystemTemplate_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Particle system component" },
 	};
 #endif
@@ -1219,7 +1219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurityTextArray_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Text mapped to resource purity" },
 	};
 #endif
@@ -1228,7 +1228,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mUseDefaultMesh_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Should we display the default mesh?" },
 	};
 #endif
@@ -1240,7 +1240,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mExtractMultiplier_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Multiplier that is applied in the end of extraction calculations. Is used for making deposits extract more than regular nodes" },
 	};
 #endif
@@ -1248,7 +1248,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mCanPlaceResourceExtractor_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Can this resource node be used for placing resource extractors on" },
 	};
 #endif
@@ -1260,7 +1260,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsLonerNode_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "If true, this node will NEVER join another cluster of nodes, regardless of proximity." },
 	};
 #endif
@@ -1271,7 +1271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsLonerNode = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsLonerNode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGResourceNode), &Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsLonerNode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsLonerNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsLonerNode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mRevealedOnMapBy_MetaData[] = {
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Radar tower modifies this to show this resource node in the map" },
 	};
 #endif
@@ -1280,7 +1280,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mIsOccupied_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "If true, then we are occupied by something" },
 	};
 #endif
@@ -1292,7 +1292,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourcesLeft_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "How much resources is left in this node" },
 	};
 #endif
@@ -1301,7 +1301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mBoxComponent_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "If we have no static mesh but a decal, then we use this for collision" },
 	};
 #endif
@@ -1310,7 +1310,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mDecalComponent_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "the decal that used for displaying the resource" },
 	};
 #endif
@@ -1319,7 +1319,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mStaticMeshComponent_MetaData[] = {
 		{ "Category", "Resources" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "The mesh we use for displaying the resource if it has a ground mesh" },
 	};
 #endif
@@ -1327,7 +1327,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mAmount_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "How pure the resource is" },
 	};
 #endif
@@ -1335,7 +1335,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mPurity_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "How pure the resource is" },
 	};
 #endif
@@ -1343,7 +1343,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNode_Statics::NewProp_mResourceClass_MetaData[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Resources/FGResourceNode.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceNode.h" },
 		{ "ToolTip", "Type of resource" },
 	};
 #endif
@@ -1397,7 +1397,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNode, 3071343781);
+	IMPLEMENT_CLASS(AFGResourceNode, 4160849846);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceNode(Z_Construct_UClass_AFGResourceNode, &AFGResourceNode::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceNode"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceNode);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

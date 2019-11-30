@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGGameSession.h"
+#include "FactoryGame/Public/FGGameSession.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -38,7 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGameSession.h" },
+		{ "ModuleRelativePath", "Public/FGGameSession.h" },
 		{ "ToolTip", "Game can become public after this, and the current visibility is applied" },
 	};
 #endif
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGameSession.h" },
+		{ "ModuleRelativePath", "Public/FGGameSession.h" },
 		{ "ToolTip", "Make sure we have a tutorial intro managere" },
 	};
 #endif
@@ -94,14 +94,14 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGGameSession_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated, "IntroSequenceUpdated" }, // 4054430205
-		{ &Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated, "ListenForIntroSequenceUpdated" }, // 2343784054
+		{ &Z_Construct_UFunction_AFGGameSession_IntroSequenceUpdated, "IntroSequenceUpdated" }, // 1211901610
+		{ &Z_Construct_UFunction_AFGGameSession_ListenForIntroSequenceUpdated, "ListenForIntroSequenceUpdated" }, // 2288290969
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGameSession_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGGameSession.h" },
-		{ "ModuleRelativePath", "FGGameSession.h" },
+		{ "ModuleRelativePath", "Public/FGGameSession.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGameSession, 3158301549);
+	IMPLEMENT_CLASS(AFGGameSession, 1300300084);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGameSession(Z_Construct_UClass_AFGGameSession, &AFGGameSession::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGameSession"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGameSession);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

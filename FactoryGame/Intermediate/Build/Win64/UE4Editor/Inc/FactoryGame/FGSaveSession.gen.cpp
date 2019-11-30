@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSaveSession.h"
+#include "FactoryGame/Public/FGSaveSession.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "SaveWorldImplementationSignature__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventSaveWorldImplementationSignature_Parms), Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_SaveWorldImplementationSignature__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_Autosave_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Called every time by timer to trigger a autosave. Can be called manually if we want to trigger a autosave for key events" },
 	};
 #endif
@@ -155,7 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_Get_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
 		{ "DisplayName", "GetSaveSession" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the save system from a world" },
 	};
 #endif
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetBuildVersion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the build version this save was saved with" },
 	};
 #endif
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetMapName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the map that this save was saved with" },
 	};
 #endif
@@ -269,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetMapOptions_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the options that this save was saved with" },
 	};
 #endif
@@ -307,7 +307,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The name of the save game" },
 	};
 #endif
@@ -345,7 +345,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The name of the save game" },
 	};
 #endif
@@ -383,7 +383,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The time this was saved" },
 	};
 #endif
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "Category", "Save Session" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetSaveSessionName instead" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSaveSessionID", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSaveSessionID_Parms), Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID_Statics::Function_MetaDataParams)) };
@@ -460,7 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save Session" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Returns the name of this session" },
 	};
 #endif
@@ -498,7 +498,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save Session" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Returns saved visibility of the session" },
 	};
 #endif
@@ -538,7 +538,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		{ "Category", "Save" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GetSessionName instead" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSession, "GetSessionID", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14422401, sizeof(FGSaveSession_eventGetSessionID_Parms), Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSession_GetSessionID_Statics::Function_MetaDataParams)) };
@@ -575,7 +575,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetSessionName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The session name of the save game" },
 	};
 #endif
@@ -613,7 +613,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_GetVersion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Get the save version of a header" },
 	};
 #endif
@@ -656,7 +656,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_LoadGame_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Starts loading a game\n\n@param saveName - the save file's name without extension\n@return true if a save game with that name exists and load happend successfully" },
 	};
 #endif
@@ -689,7 +689,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Called when a save actor placed in the level is destroyed" },
 	};
 #endif
@@ -732,7 +732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSession_SaveGame_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Starts off the chain that triggers a save, save won't happen immidiately, but at end of frame\nto ensure that we don't save a incorrect state (i.e, half the worlds actors is ticked)\n\n@param fileName - a valid filename that we want to save the game to\n@param return true if the file name is a valid file name" },
 	};
 #endif
@@ -778,41 +778,41 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveSession_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSaveSession_Autosave, "Autosave" }, // 133108905
-		{ &Z_Construct_UFunction_UFGSaveSession_Get, "Get" }, // 2018884321
-		{ &Z_Construct_UFunction_UFGSaveSession_GetBuildVersion, "GetBuildVersion" }, // 3952397702
-		{ &Z_Construct_UFunction_UFGSaveSession_GetMapName, "GetMapName" }, // 2107067262
-		{ &Z_Construct_UFunction_UFGSaveSession_GetMapOptions, "GetMapOptions" }, // 2148223484
-		{ &Z_Construct_UFunction_UFGSaveSession_GetName, "GetName" }, // 485141776
-		{ &Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds, "GetPlayDurationSeconds" }, // 3791853063
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime, "GetSaveDateTime" }, // 1764922148
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID, "GetSaveSessionID" }, // 2642391915
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName, "GetSaveSessionName" }, // 2963010324
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility, "GetSaveSessionVisibility" }, // 1502736884
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionID, "GetSessionID" }, // 2720000174
-		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionName, "GetSessionName" }, // 4048079253
-		{ &Z_Construct_UFunction_UFGSaveSession_GetVersion, "GetVersion" }, // 2475508450
-		{ &Z_Construct_UFunction_UFGSaveSession_LoadGame, "LoadGame" }, // 1333678545
-		{ &Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed, "OnActorDestroyed" }, // 3896762487
-		{ &Z_Construct_UFunction_UFGSaveSession_SaveGame, "SaveGame" }, // 1146016266
+		{ &Z_Construct_UFunction_UFGSaveSession_Autosave, "Autosave" }, // 835836899
+		{ &Z_Construct_UFunction_UFGSaveSession_Get, "Get" }, // 774040132
+		{ &Z_Construct_UFunction_UFGSaveSession_GetBuildVersion, "GetBuildVersion" }, // 1224786335
+		{ &Z_Construct_UFunction_UFGSaveSession_GetMapName, "GetMapName" }, // 633205045
+		{ &Z_Construct_UFunction_UFGSaveSession_GetMapOptions, "GetMapOptions" }, // 1688965108
+		{ &Z_Construct_UFunction_UFGSaveSession_GetName, "GetName" }, // 2919322545
+		{ &Z_Construct_UFunction_UFGSaveSession_GetPlayDurationSeconds, "GetPlayDurationSeconds" }, // 3040770587
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveDateTime, "GetSaveDateTime" }, // 4004490741
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionID, "GetSaveSessionID" }, // 1373332953
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionName, "GetSaveSessionName" }, // 3296054623
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSaveSessionVisibility, "GetSaveSessionVisibility" }, // 2135416793
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionID, "GetSessionID" }, // 1632911096
+		{ &Z_Construct_UFunction_UFGSaveSession_GetSessionName, "GetSessionName" }, // 3492989431
+		{ &Z_Construct_UFunction_UFGSaveSession_GetVersion, "GetVersion" }, // 564194160
+		{ &Z_Construct_UFunction_UFGSaveSession_LoadGame, "LoadGame" }, // 1163396069
+		{ &Z_Construct_UFunction_UFGSaveSession_OnActorDestroyed, "OnActorDestroyed" }, // 1056626204
+		{ &Z_Construct_UFunction_UFGSaveSession_SaveGame, "SaveGame" }, // 954977826
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSaveSession.h" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Handles serialization for save and load functionality" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData[] = {
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "The number of autosaves to rotate" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves = { UE4CodeGen_Private::EPropertyClass::Int, "mNumRotatingAutosaves", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000004000, 1, nullptr, STRUCT_OFFSET(UFGSaveSession, mNumRotatingAutosaves), METADATA_PARAMS(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mNumRotatingAutosaves_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mAutosaveInterval_MetaData[] = {
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "How often in seconds to autosave, a value of < 0 means disabled" },
 	};
 #endif
@@ -820,7 +820,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSession_Statics::NewProp_mOnSaveWorld_MetaData[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSession.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSession.h" },
 		{ "ToolTip", "Delegate to listen for the result of the SaveWorldImpelementation" },
 	};
 #endif
@@ -853,7 +853,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSession() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSession, 3712416323);
+	IMPLEMENT_CLASS(UFGSaveSession, 823884393);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveSession(Z_Construct_UClass_UFGSaveSession, &UFGSaveSession::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveSession"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveSession);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

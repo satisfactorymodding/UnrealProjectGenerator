@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGDecorHologram.h"
+#include "FactoryGame/Public/Hologram/FGDecorHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,12 +48,12 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDecorHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGDecorHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGDecorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGDecorHologram.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDecorHologram_Statics::NewProp_mDecorMesh_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGDecorHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGDecorHologram.h" },
 		{ "ToolTip", "The mesh we want to set to our decor to" },
 	};
 #endif
@@ -84,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDecorHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDecorHologram, 4035947495);
+	IMPLEMENT_CLASS(AFGDecorHologram, 3124450050);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDecorHologram(Z_Construct_UClass_AFGDecorHologram, &AFGDecorHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDecorHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDecorHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableConveyorAttachment.h"
+#include "FactoryGame/Public/Buildables/FGBuildableConveyorAttachment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -59,7 +59,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorAttachment.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorAttachment.h" },
 		{ "ToolTip", "This is a struct that will assign an item to a certain connection. Used by splitters to cycle outputs so all items dont always go to one output" },
 	};
 #endif
@@ -69,7 +69,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Item_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorAttachment.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorAttachment.h" },
 		{ "ToolTip", "The item to put on the connection" },
 	};
 #endif
@@ -77,7 +77,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::NewProp_Connection_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorAttachment.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorAttachment.h" },
 		{ "ToolTip", "The connection to put the item on" },
 	};
 #endif
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionItemStruct_CRC() { return 596874342U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionItemStruct_CRC() { return 3936044629U; }
 	void AFGBuildableConveyorAttachment::StaticRegisterNativesAFGBuildableConveyorAttachment()
 	{
 	}
@@ -142,13 +142,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorAttachment.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorAttachment.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorAttachment.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorAttachment_Statics::NewProp_mBufferInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorAttachment.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorAttachment.h" },
 		{ "ToolTip", "The inventory to store everything in. Don't use this directly, use mStorageInventoryHandler->GetActiveInventoryComponent()" },
 	};
 #endif
@@ -179,7 +179,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorAttachment, 2728934804);
+	IMPLEMENT_CLASS(AFGBuildableConveyorAttachment, 2227019539);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorAttachment(Z_Construct_UClass_AFGBuildableConveyorAttachment, &AFGBuildableConveyorAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

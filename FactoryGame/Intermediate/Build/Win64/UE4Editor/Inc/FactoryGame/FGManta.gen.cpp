@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGManta.h"
+#include "FactoryGame/Public/FGManta.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGManta_GetCurrentTime_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Gets time variable" },
 	};
 #endif
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGManta_GetSpline_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Gets spline" },
 	};
 #endif
@@ -168,19 +168,19 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGManta_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGManta_GetCurrentTime, "GetCurrentTime" }, // 370763588
-		{ &Z_Construct_UFunction_AFGManta_GetSpline, "GetSpline" }, // 2709165835
+		{ &Z_Construct_UFunction_AFGManta_GetCurrentTime, "GetCurrentTime" }, // 3790925224
+		{ &Z_Construct_UFunction_AFGManta_GetSpline, "GetSpline" }, // 2910061578
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGManta.h" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mIsClosedSplineLoop_MetaData[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Is the spline loop closed" },
 	};
 #endif
@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mTickTransform_MetaData[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Should we tick this mesh" },
 	};
 #endif
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mSignificanceRange_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Range that this volume should be significant within" },
 	};
 #endif
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mSecondsPerLoop_MetaData[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "How many seconds a complete loop should take ( defaults to 900 ie 15 minutes )" },
 	};
 #endif
@@ -220,14 +220,14 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Magnitude of the offset to add" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude = { UE4CodeGen_Private::EPropertyClass::Float, "mOffsetMagnitude", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGManta, mOffsetMagnitude), METADATA_PARAMS(Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGManta_Statics::NewProp_mOffsetMagnitude_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mCurrentTime_MetaData[] = {
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Current time ( value between 0.0 and mSecondsPerLoop" },
 	};
 #endif
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedMesh_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Reference to the skel mesh that was added in BP" },
 	};
 #endif
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mSplinePath_MetaData[] = {
 		{ "Category", "Manta" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Path spline that this actor should set to follow" },
 	};
 #endif
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGManta_Statics::NewProp_mCachedSpline_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGManta.h" },
+		{ "ModuleRelativePath", "Public/FGManta.h" },
 		{ "ToolTip", "Reference to the spline that was added in BP" },
 	};
 #endif
@@ -293,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManta() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGManta, 2122827230);
+	IMPLEMENT_CLASS(AFGManta, 1617314776);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGManta(Z_Construct_UClass_AFGManta, &AFGManta::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGManta"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGManta);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

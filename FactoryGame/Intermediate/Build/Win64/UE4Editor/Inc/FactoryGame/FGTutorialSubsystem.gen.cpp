@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGTutorialSubsystem.h"
+#include "FactoryGame/Public/FGTutorialSubsystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTutorialData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FTutorialData_Statics::NewStructOps()
@@ -76,14 +76,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_MessageID_MetaData[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_MessageID = { UE4CodeGen_Private::EPropertyClass::Class, "MessageID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FTutorialData, MessageID), Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_MessageID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_MessageID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_ClassBuilt_MetaData[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_ClassBuilt = { UE4CodeGen_Private::EPropertyClass::Class, "ClassBuilt", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(FTutorialData, ClassBuilt), Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_ClassBuilt_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialData_Statics::NewProp_ClassBuilt_MetaData)) };
@@ -118,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTutorialData_CRC() { return 1650527489U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTutorialData_CRC() { return 199620052U; }
 	void UFGTutorialSubsystem::StaticRegisterNativesUFGTutorialSubsystem()
 	{
 		UClass* Class = UFGTutorialSubsystem::StaticClass();
@@ -149,7 +149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGTutorialSubsystem_AddToBuiltClasses_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "Starts checking if we should show a tutorial for the thing that was built" },
 	};
 #endif
@@ -173,7 +173,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGTutorialSubsystem_ClearBuiltData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "Hax function for clearing all saved config data" },
 	};
 #endif
@@ -206,7 +206,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGTutorialSubsystem_OnBuildingBuilt_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "Called when the local player builds anything" },
 	};
 #endif
@@ -265,21 +265,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGTutorialSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGTutorialSubsystem_AddToBuiltClasses, "AddToBuiltClasses" }, // 562427999
-		{ &Z_Construct_UFunction_UFGTutorialSubsystem_ClearBuiltData, "ClearBuiltData" }, // 2612311754
-		{ &Z_Construct_UFunction_UFGTutorialSubsystem_OnBuildingBuilt, "OnBuildingBuilt" }, // 4078991841
+		{ &Z_Construct_UFunction_UFGTutorialSubsystem_AddToBuiltClasses, "AddToBuiltClasses" }, // 270566404
+		{ &Z_Construct_UFunction_UFGTutorialSubsystem_ClearBuiltData, "ClearBuiltData" }, // 852717061
+		{ &Z_Construct_UFunction_UFGTutorialSubsystem_OnBuildingBuilt, "OnBuildingBuilt" }, // 2918529962
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTutorialSubsystem_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGTutorialSubsystem.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mOwningPlayerState_MetaData[] = {
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "Needed to set up delegates" },
 	};
 #endif
@@ -287,7 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mTutorialData_MetaData[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "In this array we specify what buildings we want in-game tutorial for" },
 	};
 #endif
@@ -296,7 +296,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mIntroTutorialMessages_MetaData[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "Messages to display when first starting the game" },
 	};
 #endif
@@ -304,7 +304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mIntroTutorialMessages_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mIntroTutorialMessages", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGMessageBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mHasSeenIntroTutorial_MetaData[] = {
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "Used to indicate if we should push the intro messages" },
 	};
 #endif
@@ -315,7 +315,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mHasSeenIntroTutorial = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasSeenIntroTutorial", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGTutorialSubsystem), &Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mHasSeenIntroTutorial_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mHasSeenIntroTutorial_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mHasSeenIntroTutorial_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGTutorialSubsystem_Statics::NewProp_mBuildingsBuilt_MetaData[] = {
-		{ "ModuleRelativePath", "FGTutorialSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGTutorialSubsystem.h" },
 		{ "ToolTip", "classes of things we have build" },
 	};
 #endif
@@ -357,7 +357,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGTutorialSubsystem, 4286601572);
+	IMPLEMENT_CLASS(UFGTutorialSubsystem, 4264662535);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGTutorialSubsystem(Z_Construct_UClass_UFGTutorialSubsystem, &UFGTutorialSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGTutorialSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGTutorialSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

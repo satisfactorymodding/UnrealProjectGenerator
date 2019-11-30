@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGPoleDescriptor.h"
+#include "FactoryGame/Public/Resources/FGPoleDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -60,7 +60,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Resources/FGPoleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGPoleDescriptor.h" },
 		{ "ToolTip", "Defines a pole height." },
 	};
 #endif
@@ -71,7 +71,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Height_MetaData[] = {
 		{ "Category", "PoleHeightMesh" },
-		{ "ModuleRelativePath", "Resources/FGPoleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGPoleDescriptor.h" },
 		{ "ToolTip", "Pole height for the current mesh." },
 	};
 #endif
@@ -79,7 +79,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::NewProp_Mesh_MetaData[] = {
 		{ "Category", "PoleHeightMesh" },
-		{ "ModuleRelativePath", "Resources/FGPoleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGPoleDescriptor.h" },
 		{ "ToolTip", "Mesh for the current pole height." },
 	};
 #endif
@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC() { return 3497492486U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC() { return 1914077715U; }
 	void UFGPoleDescriptor::StaticRegisterNativesUFGPoleDescriptor()
 	{
 		UClass* Class = UFGPoleDescriptor::StaticClass();
@@ -151,7 +151,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Item|Building|Pole" },
-		{ "ModuleRelativePath", "Resources/FGPoleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGPoleDescriptor.h" },
 		{ "ToolTip", "Get the heights for this pole." },
 	};
 #endif
@@ -190,20 +190,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPoleDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes, "GetHeightMeshes" }, // 3342554915
+		{ &Z_Construct_UFunction_UFGPoleDescriptor_GetHeightMeshes, "GetHeightMeshes" }, // 1651877106
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPoleDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGPoleDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGPoleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGPoleDescriptor.h" },
 		{ "ToolTip", "Descriptors for poles defined by a set of meshes." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPoleDescriptor_Statics::NewProp_mHeightMeshes_MetaData[] = {
 		{ "Category", "Pole" },
-		{ "ModuleRelativePath", "Resources/FGPoleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGPoleDescriptor.h" },
 		{ "NoAutoJSON", "TRUE" },
 		{ "ToolTip", "Array with meshes and their heights for the pole." },
 	};
@@ -237,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPoleDescriptor, 879088571);
+	IMPLEMENT_CLASS(UFGPoleDescriptor, 3570943676);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPoleDescriptor(Z_Construct_UClass_UFGPoleDescriptor, &UFGPoleDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPoleDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPoleDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

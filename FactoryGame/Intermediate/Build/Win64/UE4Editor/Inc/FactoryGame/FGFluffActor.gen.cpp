@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFluffActor.h"
+#include "FactoryGame/Public/FGFluffActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFluffActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFluffActor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFluffActor.h" },
-		{ "ModuleRelativePath", "FGFluffActor.h" },
+		{ "ModuleRelativePath", "Public/FGFluffActor.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGFluffActor_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFluffActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFluffActor, 2833499637);
+	IMPLEMENT_CLASS(AFGFluffActor, 3491396479);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFluffActor(Z_Construct_UClass_AFGFluffActor, &AFGFluffActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFluffActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFluffActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

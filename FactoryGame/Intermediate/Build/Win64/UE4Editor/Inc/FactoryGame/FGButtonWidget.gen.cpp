@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGButtonWidget.h"
+#include "FactoryGame/Public/UI/FGButtonWidget.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGButtonWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGButtonWidget_SetButton_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
-		{ "ModuleRelativePath", "UI/FGButtonWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGButtonWidget.h" },
 		{ "ToolTip", "Sets our internal button that will be used for focus handling" },
 	};
 #endif
@@ -89,12 +89,12 @@ void EmptyLinkFunctionForGeneratedCodeFGButtonWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGButtonWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGButtonWidget_SetButton, "SetButton" }, // 1627958778
+		{ &Z_Construct_UFunction_UFGButtonWidget_SetButton, "SetButton" }, // 2399933340
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGButtonWidget_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGButtonWidget.h" },
-		{ "ModuleRelativePath", "UI/FGButtonWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGButtonWidget.h" },
 		{ "ToolTip", "Base class for a widget that should be a button ( regular button, checkbox etc )" },
 	};
 #endif
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGButtonWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGButtonWidget, 2559635309);
+	IMPLEMENT_CLASS(UFGButtonWidget, 88355066);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGButtonWidget(Z_Construct_UClass_UFGButtonWidget, &UFGButtonWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGButtonWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGButtonWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

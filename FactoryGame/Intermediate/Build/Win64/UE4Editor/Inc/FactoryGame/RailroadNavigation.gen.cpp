@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/RailroadNavigation.h"
+#include "FactoryGame/Public/RailroadNavigation.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,7 +26,7 @@ void EmptyLinkFunctionForGeneratedCodeRailroadNavigation() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ERailroadPathFindingResult(ERailroadPathFindingResult_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ERailroadPathFindingResult"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult_CRC() { return 1364942989U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult_CRC() { return 3855669647U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ERailroadPathFindingResult()
 	{
 #if WITH_HOT_RELOAD
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeRailroadNavigation() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "RailroadNavigation.h" },
+				{ "ModuleRelativePath", "Public/RailroadNavigation.h" },
 				{ "RNQR_Error.DisplayName", "Error" },
 				{ "RNQR_Success.DisplayName", "Success" },
 				{ "RNQR_Unreachable.DisplayName", "Unreachable" },

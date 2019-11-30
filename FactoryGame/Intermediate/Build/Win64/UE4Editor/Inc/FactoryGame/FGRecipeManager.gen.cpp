@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRecipeManager.h"
+#include "FactoryGame/Public/FGRecipeManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_FindRecipesByIngredient_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Recipe" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Find all recipes using the given item as an ingredient." },
 	};
 #endif
@@ -113,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_FindRecipesByProduct_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Recipe" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Find all recipes having the given item as an product." },
 	};
 #endif
@@ -153,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		{ "Category", "FactoryGame|Recipe" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetRecipeManager" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Get the game phase manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
@@ -198,7 +198,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_GetAffordableRecipesForProducer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Recipe" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Gets the available and affordable recipes for the given class, may not be null." },
 	};
 #endif
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_GetAllAvailableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Recipe" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Gets all available recipes." },
 	};
 #endif
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Recipe" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Gets the available recipes for the given class, may not be null." },
 	};
 #endif
@@ -319,7 +319,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRecipeManager_IsRecipeAvailable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Recipe" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "Is the past recipe available?" },
 	};
 #endif
@@ -359,26 +359,26 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRecipeManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRecipeManager_FindRecipesByIngredient, "FindRecipesByIngredient" }, // 972972885
-		{ &Z_Construct_UFunction_AFGRecipeManager_FindRecipesByProduct, "FindRecipesByProduct" }, // 229781261
-		{ &Z_Construct_UFunction_AFGRecipeManager_Get, "Get" }, // 2791985158
-		{ &Z_Construct_UFunction_AFGRecipeManager_GetAffordableRecipesForProducer, "GetAffordableRecipesForProducer" }, // 1049926480
-		{ &Z_Construct_UFunction_AFGRecipeManager_GetAllAvailableRecipes, "GetAllAvailableRecipes" }, // 3006172427
-		{ &Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducer, "GetAvailableRecipesForProducer" }, // 1182083173
-		{ &Z_Construct_UFunction_AFGRecipeManager_IsRecipeAvailable, "IsRecipeAvailable" }, // 3006085528
+		{ &Z_Construct_UFunction_AFGRecipeManager_FindRecipesByIngredient, "FindRecipesByIngredient" }, // 977030258
+		{ &Z_Construct_UFunction_AFGRecipeManager_FindRecipesByProduct, "FindRecipesByProduct" }, // 2826044922
+		{ &Z_Construct_UFunction_AFGRecipeManager_Get, "Get" }, // 4074284843
+		{ &Z_Construct_UFunction_AFGRecipeManager_GetAffordableRecipesForProducer, "GetAffordableRecipesForProducer" }, // 3465294703
+		{ &Z_Construct_UFunction_AFGRecipeManager_GetAllAvailableRecipes, "GetAllAvailableRecipes" }, // 2649527595
+		{ &Z_Construct_UFunction_AFGRecipeManager_GetAvailableRecipesForProducer, "GetAvailableRecipesForProducer" }, // 4235102448
+		{ &Z_Construct_UFunction_AFGRecipeManager_IsRecipeAvailable, "IsRecipeAvailable" }, // 3284582728
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRecipeManager_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGRecipeManager.h" },
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Handles everything to do with recipes in the game." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRecipeManager_Statics::NewProp_mAvailableRecipes_MetaData[] = {
-		{ "ModuleRelativePath", "FGRecipeManager.h" },
+		{ "ModuleRelativePath", "Public/FGRecipeManager.h" },
 		{ "ToolTip", "All recipes that are available to the producers, i.e. build gun, workbench, manufacturers etc." },
 	};
 #endif
@@ -414,7 +414,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRecipeManager, 178950621);
+	IMPLEMENT_CLASS(AFGRecipeManager, 3232126186);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRecipeManager(Z_Construct_UClass_AFGRecipeManager, &AFGRecipeManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRecipeManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRecipeManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

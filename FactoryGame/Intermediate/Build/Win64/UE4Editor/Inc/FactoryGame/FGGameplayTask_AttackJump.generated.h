@@ -18,7 +18,7 @@ class UFGGameplayTask_AttackJump;
 #endif
 #define FACTORYGAME_FGGameplayTask_AttackJump_generated_h
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnLandedCallback) \
 	{ \
@@ -51,7 +51,7 @@ class UFGGameplayTask_AttackJump;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnLandedCallback) \
 	{ \
@@ -84,7 +84,7 @@ class UFGGameplayTask_AttackJump;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGGameplayTask_AttackJump(); \
 	friend struct Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics; \
@@ -93,7 +93,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameplayTask_AttackJump)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGGameplayTask_AttackJump(); \
 	friend struct Z_Construct_UClass_UFGGameplayTask_AttackJump_Statics; \
@@ -102,7 +102,7 @@ public: \
 	DECLARE_SERIALIZER(UFGGameplayTask_AttackJump)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGGameplayTask_AttackJump(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameplayTask_AttackJump) \
@@ -115,7 +115,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGGameplayTask_AttackJump(UFGGameplayTask_AttackJump&&); \
@@ -126,36 +126,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGGameplayTask_AttackJump); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGGameplayTask_AttackJump)
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mOnJumpAttackFinished() { return STRUCT_OFFSET(UFGGameplayTask_AttackJump, mOnJumpAttackFinished); } \
 	FORCEINLINE static uint32 __PPO__mOnJumpAttackFailed() { return STRUCT_OFFSET(UFGGameplayTask_AttackJump, mOnJumpAttackFailed); }
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_14_PROLOG
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_14_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h_17_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Creature_Enemy_FGGameplayTask_AttackJump_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Creature_Enemy_FGGameplayTask_AttackJump_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDriveablePawn.h"
+#include "FactoryGame/Public/FGDriveablePawn.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Can we drive this. (server and locally controlled client)" },
 	};
 #endif
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_DriverEnter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Make player the new driver of this vehicle.\n@note Call this on server only." },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_DriverLeave_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
 		{ "CPP_Default_keepDriving", "false" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Called when player wants to get out.\n@note Call this on server only.\n\n@param keepDriving    True if we want to leave the without setting IsDriving to false (turn off the vehicle)." },
 	};
 #endif
@@ -222,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_GetDriver_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Gets the driving pawn." },
 	};
 #endif
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return exit offset to try to place the driver at (local space)." },
 	};
 #endif
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return animation to set on the driver; null if no animation set." },
 	};
 #endif
@@ -324,7 +324,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return socket to attach the driver to; none if no socket set." },
 	};
 #endif
@@ -363,7 +363,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return true if another driver is about to enter." },
 	};
 #endif
@@ -402,7 +402,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return true if the driver should be visible." },
 	};
 #endif
@@ -441,7 +441,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_IsDriving_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return true if this vehicle is being driven." },
 	};
 #endif
@@ -464,7 +464,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Rep notifies" },
 	};
 #endif
@@ -488,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Places the driver at a valid location when they leave the vehicle." },
 	};
 #endif
@@ -512,7 +512,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter_Statics::Function_MetaDataParams[] = {
 		{ "DisplayName", "OnDriverEnter" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Called when the driver has entered (human or ai)" },
 	};
 #endif
@@ -536,7 +536,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave_Statics::Function_MetaDataParams[] = {
 		{ "DisplayName", "OnDriverLeave" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Called when the driver is about to leave (human or ai)" },
 	};
 #endif
@@ -575,7 +575,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "@return true if the driver should be attached." },
 	};
 #endif
@@ -641,33 +641,33 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGDriveablePawn_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter, "CanDriverEnter" }, // 2557464892
-		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverEnter, "DriverEnter" }, // 2998448450
-		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave, "DriverLeave" }, // 2172192586
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriver, "GetDriver" }, // 2742660953
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset, "GetDriverExitOffset" }, // 298126460
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation, "GetDriverSeatAnimation" }, // 322043948
-		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket, "GetDriverSeatSocket" }, // 805776988
-		{ &Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver, "HasPendingDriver" }, // 2364032924
-		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible, "IsDriverVisible" }, // 3127009897
-		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriving, "IsDriving" }, // 3156876381
-		{ &Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving, "OnRep_IsDriving" }, // 279527480
-		{ &Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver, "PlaceExitingDriver" }, // 2040357924
-		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter, "ReceiveOnDriverEnter" }, // 3840198299
-		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave, "ReceiveOnDriverLeave" }, // 2370650361
-		{ &Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver, "ShouldAttachDriver" }, // 2361955563
+		{ &Z_Construct_UFunction_AFGDriveablePawn_CanDriverEnter, "CanDriverEnter" }, // 3487440165
+		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverEnter, "DriverEnter" }, // 1584276026
+		{ &Z_Construct_UFunction_AFGDriveablePawn_DriverLeave, "DriverLeave" }, // 2474764643
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriver, "GetDriver" }, // 3686440787
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverExitOffset, "GetDriverExitOffset" }, // 573967020
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatAnimation, "GetDriverSeatAnimation" }, // 639404346
+		{ &Z_Construct_UFunction_AFGDriveablePawn_GetDriverSeatSocket, "GetDriverSeatSocket" }, // 1115597449
+		{ &Z_Construct_UFunction_AFGDriveablePawn_HasPendingDriver, "HasPendingDriver" }, // 2467544542
+		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriverVisible, "IsDriverVisible" }, // 119612052
+		{ &Z_Construct_UFunction_AFGDriveablePawn_IsDriving, "IsDriving" }, // 2345273649
+		{ &Z_Construct_UFunction_AFGDriveablePawn_OnRep_IsDriving, "OnRep_IsDriving" }, // 1080827724
+		{ &Z_Construct_UFunction_AFGDriveablePawn_PlaceExitingDriver, "PlaceExitingDriver" }, // 1318777310
+		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverEnter, "ReceiveOnDriverEnter" }, // 1725762885
+		{ &Z_Construct_UFunction_AFGDriveablePawn_ReceiveOnDriverLeave, "ReceiveOnDriverLeave" }, // 799998730
+		{ &Z_Construct_UFunction_AFGDriveablePawn_ShouldAttachDriver, "ShouldAttachDriver" }, // 3159132789
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGDriveablePawn.h" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Base class for pawns that can be driven by a player character, this includes vehicles, remote drones and passenger seats." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData[] = {
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Is this vehicle being driven." },
 	};
 #endif
@@ -678,7 +678,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsDriving", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_IsDriving", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGDriveablePawn), &Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriving_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriver_MetaData[] = {
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "The driver, not saved, pawns remember their last driven vehicle and enters it in begin play." },
 	};
 #endif
@@ -686,7 +686,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverExitOffset_MetaData[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Where to place the driver upon exiting (local space), set from FVehicleSeat" },
 	};
 #endif
@@ -694,7 +694,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatAnimation_MetaData[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Animation to play on the character player when in the driver seat, set from FVehicleSeat" },
 	};
 #endif
@@ -702,7 +702,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mDriverSeatSocket_MetaData[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "Socket to attach the driver to, if mShouldAttachDriver is true, set from FVehicleSeat" },
 	};
 #endif
@@ -710,7 +710,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mIsDriverVisible_MetaData[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "True if the driver should be visible, set from FVehicleSeat" },
 	};
 #endif
@@ -722,7 +722,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDriveablePawn_Statics::NewProp_mShouldAttachDriver_MetaData[] = {
 		{ "Category", "Driveable" },
-		{ "ModuleRelativePath", "FGDriveablePawn.h" },
+		{ "ModuleRelativePath", "Public/FGDriveablePawn.h" },
 		{ "ToolTip", "True if the driver should be attached, false if this is a \"remote controlled\" pawn." },
 	};
 #endif
@@ -766,7 +766,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDriveablePawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDriveablePawn, 1521946407);
+	IMPLEMENT_CLASS(AFGDriveablePawn, 1125352022);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDriveablePawn(Z_Construct_UClass_AFGDriveablePawn, &AFGDriveablePawn::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDriveablePawn"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDriveablePawn);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

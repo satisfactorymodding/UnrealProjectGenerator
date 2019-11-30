@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGWindow.h"
+#include "FactoryGame/Public/UI/FGWindow.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWindow() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWindow_GetCloseButton_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGWindow.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWindow.h" },
 		{ "ToolTip", "Returns the close button in the title label" },
 	};
 #endif
@@ -87,12 +87,12 @@ void EmptyLinkFunctionForGeneratedCodeFGWindow() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWindow_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWindow_GetCloseButton, "GetCloseButton" }, // 2974200922
+		{ &Z_Construct_UFunction_UFGWindow_GetCloseButton, "GetCloseButton" }, // 416564734
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWindow_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGWindow.h" },
-		{ "ModuleRelativePath", "UI/FGWindow.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWindow.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGWindow_Statics::StaticCppClassTypeInfo = {
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWindow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWindow, 367792086);
+	IMPLEMENT_CLASS(UFGWindow, 3168780024);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWindow(Z_Construct_UClass_UFGWindow, &UFGWindow::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWindow"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWindow);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

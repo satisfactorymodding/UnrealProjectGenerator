@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGConsumableEquipment.h"
+#include "FactoryGame/Public/Equipment/FGConsumableEquipment.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Equipment/FGConsumableEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGConsumableEquipment.h" },
 		{ "ToolTip", "Get the consumeable currently in hands" },
 	};
 #endif
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Equipment/FGConsumableEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGConsumableEquipment.h" },
 		{ "ToolTip", "Plays effects when consuming stuff" },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGConsumableEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGConsumableEquipment.h" },
 		{ "ToolTip", "Only server implementation of primary fire" },
 	};
 #endif
@@ -155,14 +155,14 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGConsumableEquipment_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable, "GetConsumeable" }, // 4058287089
-		{ &Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects, "PlayConsumeEffects" }, // 899784107
-		{ &Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire, "Server_PrimaryFire" }, // 764286891
+		{ &Z_Construct_UFunction_AFGConsumableEquipment_GetConsumeable, "GetConsumeable" }, // 820361293
+		{ &Z_Construct_UFunction_AFGConsumableEquipment_PlayConsumeEffects, "PlayConsumeEffects" }, // 4159580775
+		{ &Z_Construct_UFunction_AFGConsumableEquipment_Server_PrimaryFire, "Server_PrimaryFire" }, // 330118155
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConsumableEquipment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGConsumableEquipment.h" },
-		{ "ModuleRelativePath", "Equipment/FGConsumableEquipment.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGConsumableEquipment.h" },
 		{ "ToolTip", "Used to hold consumeables, so we can eat berries, and consume medpacks a.s.o" },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConsumableEquipment, 1598537433);
+	IMPLEMENT_CLASS(AFGConsumableEquipment, 3349397377);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConsumableEquipment(Z_Construct_UClass_AFGConsumableEquipment, &AFGConsumableEquipment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConsumableEquipment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConsumableEquipment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

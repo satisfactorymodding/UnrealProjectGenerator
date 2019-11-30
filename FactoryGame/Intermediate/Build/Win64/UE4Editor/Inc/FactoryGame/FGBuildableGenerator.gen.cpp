@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableGenerator.h"
+#include "FactoryGame/Public/Buildables/FGBuildableGenerator.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_CalcPowerProductionCapacityForPotential_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Calculate the power this generator can produce with a given potential." },
 	};
 #endif
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Called to check if power production can be started." },
 	};
 #endif
@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_Factory_StartPowerProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Called when we start producing fuel." },
 	};
 #endif
@@ -174,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_Factory_StopPowerProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Called when we stop producing fuel." },
 	};
 #endif
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_Factory_TickPowerProduction_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Generator" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Tick the power production, consume any fuel, update base and dynamic production.\n@param dt - Time since last tick." },
 	};
 #endif
@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_GetDefaultPowerProductionCapacity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "The default amount power this generator can produce." },
 	};
 #endif
@@ -272,7 +272,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_GetLoadPercentage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Get the current load of this generator in the range [0,1]." },
 	};
 #endif
@@ -306,7 +306,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_GetPowerProductionCapacity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "The power this generator can produce." },
 	};
 #endif
@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableGenerator_IsFuseTriggered_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "@return true if the fuse is triggered." },
 	};
 #endif
@@ -391,26 +391,26 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableGenerator_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_CalcPowerProductionCapacityForPotential, "CalcPowerProductionCapacityForPotential" }, // 3272281424
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction, "CanStartPowerProduction" }, // 863717064
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_StartPowerProduction, "Factory_StartPowerProduction" }, // 6457480
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_StopPowerProduction, "Factory_StopPowerProduction" }, // 1262973254
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_TickPowerProduction, "Factory_TickPowerProduction" }, // 2205129227
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_GetDefaultPowerProductionCapacity, "GetDefaultPowerProductionCapacity" }, // 4163992664
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_GetLoadPercentage, "GetLoadPercentage" }, // 968647872
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_GetPowerProductionCapacity, "GetPowerProductionCapacity" }, // 3391291707
-		{ &Z_Construct_UFunction_AFGBuildableGenerator_IsFuseTriggered, "IsFuseTriggered" }, // 3533590084
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_CalcPowerProductionCapacityForPotential, "CalcPowerProductionCapacityForPotential" }, // 2417533489
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_CanStartPowerProduction, "CanStartPowerProduction" }, // 1647352159
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_StartPowerProduction, "Factory_StartPowerProduction" }, // 3478707914
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_StopPowerProduction, "Factory_StopPowerProduction" }, // 3059078664
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_Factory_TickPowerProduction, "Factory_TickPowerProduction" }, // 3470341954
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_GetDefaultPowerProductionCapacity, "GetDefaultPowerProductionCapacity" }, // 2612760829
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_GetLoadPercentage, "GetLoadPercentage" }, // 3860391050
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_GetPowerProductionCapacity, "GetPowerProductionCapacity" }, // 2688085891
+		{ &Z_Construct_UFunction_AFGBuildableGenerator_IsFuseTriggered, "IsFuseTriggered" }, // 1115482820
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGenerator_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableGenerator.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Base for all generators, i.e. coal, fuel, nuclear etc." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Is the fuse triggered." },
 	};
@@ -422,7 +422,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsFuseTriggered", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableGenerator), &Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mIsFuseTriggered_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mLoadPercentage_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Current load of this generator in the range [0,1]." },
 	};
 #endif
@@ -432,7 +432,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		{ "Category", "Power" },
 		{ "ClampMax", "4.0" },
 		{ "ClampMin", "1.0" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Exponent used in power production calculations.\nTo calculate maximum production: max = overclock ^ ( 1 / exponent )\nExample: 2.5 ^ ( 1 / 1.6 ) = 1.77      An exponent of 1.6 gives a maximum production of 177% at 2.5x overclock.\nIf exponent is 1.0 the function becomes linear." },
 	};
 #endif
@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableGenerator_Statics::NewProp_mPowerProduction_MetaData[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableGenerator.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableGenerator.h" },
 		{ "ToolTip", "Amount of power this generator produces in MW." },
 	};
 #endif
@@ -474,7 +474,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableGenerator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableGenerator, 2427462410);
+	IMPLEMENT_CLASS(AFGBuildableGenerator, 2846375693);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableGenerator(Z_Construct_UClass_AFGBuildableGenerator, &AFGBuildableGenerator::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableGenerator"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableGenerator);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGGasMask.h"
+#include "FactoryGame/Public/Equipment/FGGasMask.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGasMask_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGGasMask.h" },
-		{ "ModuleRelativePath", "Equipment/FGGasMask.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGGasMask.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGGasMask_Statics::StaticCppClassTypeInfo = {
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 2208234388);
+	IMPLEMENT_CLASS(AFGGasMask, 867687160);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMask(Z_Construct_UClass_AFGGasMask, &AFGGasMask::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMask"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMask);
 	void AFGGasMaskAttachment::StaticRegisterNativesAFGGasMaskAttachment()
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGasMaskAttachment_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGGasMask.h" },
-		{ "ModuleRelativePath", "Equipment/FGGasMask.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGGasMask.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGGasMaskAttachment_Statics::StaticCppClassTypeInfo = {
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 566783952);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 2338145664);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMaskAttachment(Z_Construct_UClass_AFGGasMaskAttachment, &AFGGasMaskAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMaskAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMaskAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,17 +19,17 @@ struct FItemAmount;
 #endif
 #define FACTORYGAME_FGBuildGunBuild_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_41_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFactoryClearanceData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_17_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConnectionRepresentation_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \
 	virtual void Client_OnBuildableConstructed_Implementation(TSubclassOf<UFGItemDescriptor>  desc); \
 	virtual void Client_OnResetHologram_Implementation(); \
  \
@@ -117,7 +117,7 @@ struct FItemAmount;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Client_OnBuildableConstructed_Implementation(TSubclassOf<UFGItemDescriptor>  desc); \
 	virtual void Client_OnResetHologram_Implementation(); \
  \
@@ -205,7 +205,7 @@ struct FItemAmount;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_EVENT_PARMS \
 	struct FGBuildGunStateBuild_eventClient_OnBuildableConstructed_Parms \
 	{ \
 		TSubclassOf<UFGItemDescriptor>  desc; \
@@ -216,8 +216,8 @@ struct FItemAmount;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateBuild(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateBuild_Statics; \
@@ -226,7 +226,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateBuild)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGBuildGunStateBuild(); \
 	friend struct Z_Construct_UClass_UFGBuildGunStateBuild_Statics; \
@@ -235,7 +235,7 @@ public: \
 	DECLARE_SERIALIZER(UFGBuildGunStateBuild)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGBuildGunStateBuild(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGBuildGunStateBuild) \
@@ -248,7 +248,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGBuildGunStateBuild(UFGBuildGunStateBuild&&); \
@@ -259,7 +259,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunStateBuild); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGBuildGunStateBuild)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mPendingRecipe() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mPendingRecipe); } \
 	FORCEINLINE static uint32 __PPO__mActiveRecipe() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mActiveRecipe); } \
 	FORCEINLINE static uint32 __PPO__mHologram() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mHologram); } \
@@ -268,36 +268,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGBuildGunStateBuild); \
 	FORCEINLINE static uint32 __PPO__mClearanceDetector() { return STRUCT_OFFSET(UFGBuildGunStateBuild, mClearanceDetector); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_68_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_68_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h_71_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Equipment_FGBuildGunBuild_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

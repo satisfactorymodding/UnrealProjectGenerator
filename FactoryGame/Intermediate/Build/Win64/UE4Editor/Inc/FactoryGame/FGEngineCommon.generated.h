@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FACTORYGAME_FGEngineCommon_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGEngineCommon_h_96_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGEngineCommon_h_96_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGEngineCommon_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__Engine() { return STRUCT_OFFSET(FFGEngineCommon, Engine); } \
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGEngineCommon_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGEngineCommon_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

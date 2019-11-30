@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBeacon.h"
+#include "FactoryGame/Public/FGBeacon.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBeacon_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGBeacon.h" },
-		{ "ModuleRelativePath", "FGBeacon.h" },
+		{ "ModuleRelativePath", "Public/FGBeacon.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGBeacon_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBeacon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBeacon, 1708390669);
+	IMPLEMENT_CLASS(AFGBeacon, 241621191);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBeacon(Z_Construct_UClass_AFGBeacon, &AFGBeacon::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBeacon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBeacon);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

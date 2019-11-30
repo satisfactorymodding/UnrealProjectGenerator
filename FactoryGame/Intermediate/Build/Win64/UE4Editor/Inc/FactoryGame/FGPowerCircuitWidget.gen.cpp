@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPowerCircuitWidget.h"
+#include "FactoryGame/Public/FGPowerCircuitWidget.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPowerCircuitWidget.h" },
+		{ "ModuleRelativePath", "Public/FGPowerCircuitWidget.h" },
 		{ "ToolTip", "Delegate for getting the power circuit to display." },
 	};
 #endif
@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power" },
-		{ "ModuleRelativePath", "FGPowerCircuitWidget.h" },
+		{ "ModuleRelativePath", "Public/FGPowerCircuitWidget.h" },
 		{ "ToolTip", "@return Get the power circuit to display info for, may be null." },
 	};
 #endif
@@ -124,19 +124,19 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGPowerCircuitWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit, "GetPowerCircuit" }, // 3894665737
-		{ &Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature, "GetPowerCircuit__DelegateSignature" }, // 2380796178
+		{ &Z_Construct_UFunction_UFGPowerCircuitWidget_GetPowerCircuit, "GetPowerCircuit" }, // 2779935769
+		{ &Z_Construct_UDelegateFunction_UFGPowerCircuitWidget_GetPowerCircuit__DelegateSignature, "GetPowerCircuit__DelegateSignature" }, // 437798635
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuitWidget_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGPowerCircuitWidget.h" },
-		{ "ModuleRelativePath", "FGPowerCircuitWidget.h" },
+		{ "ModuleRelativePath", "Public/FGPowerCircuitWidget.h" },
 		{ "ToolTip", "Base for widgets thats observes a power circuit." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGPowerCircuitWidget_Statics::NewProp_mPowerCircuit_MetaData[] = {
-		{ "ModuleRelativePath", "FGPowerCircuitWidget.h" },
+		{ "ModuleRelativePath", "Public/FGPowerCircuitWidget.h" },
 		{ "ToolTip", "Power circuit we're observing." },
 	};
 #endif
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		{ "Category", "Events" },
 		{ "DisplayName", "GetPowerCircuitEvent" },
 		{ "IsBindableEvent", "True" },
-		{ "ModuleRelativePath", "FGPowerCircuitWidget.h" },
+		{ "ModuleRelativePath", "Public/FGPowerCircuitWidget.h" },
 		{ "ToolTip", "Delegate for getting the number of items to display." },
 	};
 #endif
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerCircuitWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerCircuitWidget, 142632379);
+	IMPLEMENT_CLASS(UFGPowerCircuitWidget, 965576193);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerCircuitWidget(Z_Construct_UClass_UFGPowerCircuitWidget, &UFGPowerCircuitWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerCircuitWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerCircuitWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

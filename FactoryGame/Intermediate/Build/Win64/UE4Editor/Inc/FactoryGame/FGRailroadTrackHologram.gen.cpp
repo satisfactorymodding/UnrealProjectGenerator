@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGRailroadTrackHologram.h"
+#include "FactoryGame/Public/Hologram/FGRailroadTrackHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -83,13 +83,13 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGRailroadTrackHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "Hologram used to place train tracks." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mMesh_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "Cached from the default buildable." },
 	};
 #endif
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mSplineMeshes_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "All the generated spline meshes." },
 	};
 #endif
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mSnappedConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "The track connection we snap when building the track." },
 	};
 #endif
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mConnectionComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "The track connections we have." },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mSnapDistance_MetaData[] = {
 		{ "Category", "Tracks" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "From how far away we should snap to another track. [cm]" },
 	};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mMaxGrade_MetaData[] = {
 		{ "Category", "Tracks" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "Grade restriction of the track. [degrees]" },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mMinBendRadius_MetaData[] = {
 		{ "Category", "Tracks" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "Turn radius restriction of the track. [cm]" },
 	};
 #endif
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mMaxLength_MetaData[] = {
 		{ "Category", "Tracks" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "Length restriction of the track. [cm]" },
 	};
 #endif
@@ -154,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTrackHologram_Statics::NewProp_mMinLength_MetaData[] = {
 		{ "Category", "Tracks" },
-		{ "ModuleRelativePath", "Hologram/FGRailroadTrackHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGRailroadTrackHologram.h" },
 		{ "ToolTip", "Length restriction of the track. [cm]" },
 	};
 #endif
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadTrackHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadTrackHologram, 2578503426);
+	IMPLEMENT_CLASS(AFGRailroadTrackHologram, 1158515027);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadTrackHologram(Z_Construct_UClass_AFGRailroadTrackHologram, &AFGRailroadTrackHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadTrackHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadTrackHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

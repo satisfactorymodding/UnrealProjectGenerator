@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNobeliskExplosive.h"
+#include "FactoryGame/Public/FGNobeliskExplosive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -39,7 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGNobeliskExplosive_OnRep_DetonateIn_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNobeliskExplosive.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosive.h" },
 		{ "ToolTip", "Called when the server has blown this explosive" },
 	};
 #endif
@@ -89,18 +89,18 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGNobeliskExplosive_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGNobeliskExplosive_OnRep_DetonateIn, "OnRep_DetonateIn" }, // 975034327
+		{ &Z_Construct_UFunction_AFGNobeliskExplosive_OnRep_DetonateIn, "OnRep_DetonateIn" }, // 307517973
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosive_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGNobeliskExplosive.h" },
-		{ "ModuleRelativePath", "FGNobeliskExplosive.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosive.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mThrowRotation_MetaData[] = {
 		{ "Category", "Nobelisk" },
-		{ "ModuleRelativePath", "FGNobeliskExplosive.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosive.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mThrowRotation = { UE4CodeGen_Private::EPropertyClass::Struct, "mThrowRotation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGNobeliskExplosive, mThrowRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mThrowRotation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mThrowRotation_MetaData)) };
@@ -108,13 +108,13 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mEnvironmentDestructionSphere_MetaData[] = {
 		{ "Category", "FGNobeliskExplosive" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGNobeliskExplosive.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosive.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mEnvironmentDestructionSphere = { UE4CodeGen_Private::EPropertyClass::Object, "mEnvironmentDestructionSphere", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000090009, 1, nullptr, STRUCT_OFFSET(AFGNobeliskExplosive, mEnvironmentDestructionSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mEnvironmentDestructionSphere_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mEnvironmentDestructionSphere_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mDetonateIn_MetaData[] = {
-		{ "ModuleRelativePath", "FGNobeliskExplosive.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosive.h" },
 		{ "ToolTip", "Tells client to mark this to explode after a certain time" },
 	};
 #endif
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mRotatingMovementComp_MetaData[] = {
 		{ "Category", "Nobelisk" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGNobeliskExplosive.h" },
+		{ "ModuleRelativePath", "Public/FGNobeliskExplosive.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mRotatingMovementComp = { UE4CodeGen_Private::EPropertyClass::Object, "mRotatingMovementComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000090009, 1, nullptr, STRUCT_OFFSET(AFGNobeliskExplosive, mRotatingMovementComp), Z_Construct_UClass_URotatingMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mRotatingMovementComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGNobeliskExplosive_Statics::NewProp_mRotatingMovementComp_MetaData)) };
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGNobeliskExplosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGNobeliskExplosive, 2949574820);
+	IMPLEMENT_CLASS(AFGNobeliskExplosive, 1573553387);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGNobeliskExplosive(Z_Construct_UClass_AFGNobeliskExplosive, &AFGNobeliskExplosive::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGNobeliskExplosive"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGNobeliskExplosive);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGManufacturingButton.h"
+#include "FactoryGame/Public/UI/FGManufacturingButton.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "ManufacturePressed__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventManufacturePressed_Parms), Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_ManufacturePressed__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "Internal button was pressed" },
 	};
 #endif
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Manufacturing Button" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "Internal button was released, added BlueprintCallable to be able to simulate button release" },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGManufacturingButton_SetButton_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Manufacturing Button" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "Sets our internal button that will be used for focus handling" },
 	};
 #endif
@@ -190,20 +190,20 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGManufacturingButton_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton, "OnPressedButton" }, // 3154813816
-		{ &Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton, "OnReleasedButton" }, // 309416771
-		{ &Z_Construct_UFunction_UFGManufacturingButton_SetButton, "SetButton" }, // 3989733624
+		{ &Z_Construct_UFunction_UFGManufacturingButton_OnPressedButton, "OnPressedButton" }, // 4258586254
+		{ &Z_Construct_UFunction_UFGManufacturingButton_OnReleasedButton, "OnReleasedButton" }, // 2489073480
+		{ &Z_Construct_UFunction_UFGManufacturingButton_SetButton, "SetButton" }, // 20827881
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGManufacturingButton.h" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldProduceSpeed_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "produce speed when holding the button" },
 	};
 #endif
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mHoldTimeMax_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "How long to hold for a manufacture to be called" },
 	};
 #endif
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_mMinTimeBetweenPress_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "Minimum time between button presses to register a manufacture event" },
 	};
 #endif
@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGManufacturingButton_Statics::NewProp_OnManufacturePressed_MetaData[] = {
 		{ "Category", "Manufacturing Button" },
-		{ "ModuleRelativePath", "UI/FGManufacturingButton.h" },
+		{ "ModuleRelativePath", "Public/UI/FGManufacturingButton.h" },
 		{ "ToolTip", "Called when a valid press on manufacture happens" },
 	};
 #endif
@@ -261,7 +261,7 @@ void EmptyLinkFunctionForGeneratedCodeFGManufacturingButton() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGManufacturingButton, 399239873);
+	IMPLEMENT_CLASS(UFGManufacturingButton, 2871362889);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGManufacturingButton(Z_Construct_UClass_UFGManufacturingButton, &UFGManufacturingButton::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGManufacturingButton"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGManufacturingButton);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

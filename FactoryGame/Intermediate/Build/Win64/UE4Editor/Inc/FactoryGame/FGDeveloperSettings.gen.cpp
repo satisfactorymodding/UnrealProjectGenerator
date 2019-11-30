@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDeveloperSettings.h"
+#include "FactoryGame/Public/FGDeveloperSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,13 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::Class_MetaDataParams[] = {
 		{ "DisplayName", "Satisfactory Developer Settings" },
 		{ "IncludePath", "FGDeveloperSettings.h" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDeveloperSettings_Statics::NewProp_mGreedyFocusInPIE_MetaData[] = {
 		{ "Category", "Focus" },
-		{ "ModuleRelativePath", "FGDeveloperSettings.h" },
+		{ "ModuleRelativePath", "Public/FGDeveloperSettings.h" },
 		{ "ToolTip", "Should widgets grab focus back on focus lost in PIE" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDeveloperSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDeveloperSettings, 2243377774);
+	IMPLEMENT_CLASS(UFGDeveloperSettings, 3110396763);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDeveloperSettings(Z_Construct_UClass_UFGDeveloperSettings, &UFGDeveloperSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDeveloperSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDeveloperSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

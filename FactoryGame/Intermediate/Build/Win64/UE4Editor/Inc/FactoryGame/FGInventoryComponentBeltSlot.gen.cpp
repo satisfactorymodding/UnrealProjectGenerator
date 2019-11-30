@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInventoryComponentBeltSlot.h"
+#include "FactoryGame/Public/FGInventoryComponentBeltSlot.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGInventoryComponentBeltSlot.h" },
-		{ "ModuleRelativePath", "FGInventoryComponentBeltSlot.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponentBeltSlot.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGInventoryComponentBeltSlot_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 4244347305);
+	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 1046069560);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentBeltSlot(Z_Construct_UClass_UFGInventoryComponentBeltSlot, &UFGInventoryComponentBeltSlot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentBeltSlot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentBeltSlot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Creature/Enemy/FGCrabHatcher.h"
+#include "FactoryGame/Public/Creature/Enemy/FGCrabHatcher.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "GetDidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGCrabHatcher_eventGetDidSpawnCrabs_Parms), Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs_Statics::Function_MetaDataParams)) };
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Get for mThreatNearby" },
 	};
 #endif
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGCrabHatcher, "OnRep_DidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs_Statics::Function_MetaDataParams)) };
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Set for mAnimationLength" },
 	};
 #endif
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Set for mDidSpawnCrabs" },
 	};
 #endif
@@ -246,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Set for mThreatNearby" },
 	};
 #endif
@@ -270,7 +270,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Call to BP to spawn the crab babies" },
 	};
 #endif
@@ -294,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrabHatcher_StartExpanding_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Call to BP when expansion starts" },
 	};
 #endif
@@ -346,40 +346,40 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCrabHatcher_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs, "GetDidSpawnCrabs" }, // 1568743654
-		{ &Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby, "GetThreatNearby" }, // 2107056043
-		{ &Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs, "OnRep_DidSpawnCrabs" }, // 684119306
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength, "SetAnimationLength" }, // 1739298920
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs, "SetDidSpawnCrabs" }, // 3272467000
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby, "SetThreatNearby" }, // 2959071078
-		{ &Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs, "SpawnCrabs" }, // 797187866
-		{ &Z_Construct_UFunction_AFGCrabHatcher_StartExpanding, "StartExpanding" }, // 1333305881
+		{ &Z_Construct_UFunction_AFGCrabHatcher_GetDidSpawnCrabs, "GetDidSpawnCrabs" }, // 2932510864
+		{ &Z_Construct_UFunction_AFGCrabHatcher_GetThreatNearby, "GetThreatNearby" }, // 474156032
+		{ &Z_Construct_UFunction_AFGCrabHatcher_OnRep_DidSpawnCrabs, "OnRep_DidSpawnCrabs" }, // 103509003
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SetAnimationLength, "SetAnimationLength" }, // 1220674442
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SetDidSpawnCrabs, "SetDidSpawnCrabs" }, // 4041316386
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SetThreatNearby, "SetThreatNearby" }, // 779910403
+		{ &Z_Construct_UFunction_AFGCrabHatcher_SpawnCrabs, "SpawnCrabs" }, // 938912165
+		{ &Z_Construct_UFunction_AFGCrabHatcher_StartExpanding, "StartExpanding" }, // 3069025914
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "Creature/Enemy/FGCrabHatcher.h" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData[] = {
 		{ "Category", "Crab Hatcher" },
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Time when timer reach it's end" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax = { UE4CodeGen_Private::EPropertyClass::Float, "mThreatTimerMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGCrabHatcher, mThreatTimerMax), METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimerMax_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Time enemy has been under threat" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer = { UE4CodeGen_Private::EPropertyClass::Float, "mThreatTimer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000020, 1, nullptr, STRUCT_OFFSET(AFGCrabHatcher, mThreatTimer), METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatTimer_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Have crabs been spawned?" },
 	};
 #endif
@@ -390,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs = { UE4CodeGen_Private::EPropertyClass::Bool, "mDidSpawnCrabs", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080100000020, 1, "OnRep_DidSpawnCrabs", sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGCrabHatcher), &Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mDidSpawnCrabs_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrabHatcher_Statics::NewProp_mThreatNearby_MetaData[] = {
-		{ "ModuleRelativePath", "Creature/Enemy/FGCrabHatcher.h" },
+		{ "ModuleRelativePath", "Public/Creature/Enemy/FGCrabHatcher.h" },
 		{ "ToolTip", "Indicates if a threat is nearby" },
 	};
 #endif
@@ -428,7 +428,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrabHatcher, 4141394078);
+	IMPLEMENT_CLASS(AFGCrabHatcher, 3441207447);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrabHatcher(Z_Construct_UClass_AFGCrabHatcher, &AFGCrabHatcher::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrabHatcher"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrabHatcher);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

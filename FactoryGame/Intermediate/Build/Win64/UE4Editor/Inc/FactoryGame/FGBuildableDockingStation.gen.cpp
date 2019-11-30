@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableDockingStation.h"
+#include "FactoryGame/Public/Buildables/FGBuildableDockingStation.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_Dock_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Dock an actor to this docking station." },
 	};
 #endif
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Filter out what we consider as fuel for our fuel inventory.\n@see IsValidFuel" },
 	};
 #endif
@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Get the docked actor if any." },
 	};
 #endif
@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "@return a valid pointer to the fuel inventory" },
 	};
 #endif
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Get the inventory the docked vehicle loads/unloads to" },
 	};
 #endif
@@ -299,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Get whether this station should load or unload from vehicles" },
 	};
 #endif
@@ -338,7 +338,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Get whether this station is currently loading or unloading from vehicles" },
 	};
 #endif
@@ -362,7 +362,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Called when we start loading the vehicle" },
 	};
 #endif
@@ -386,7 +386,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Called when we start unloading the vehicle" },
 	};
 #endif
@@ -409,7 +409,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Set up the fuel inventory when replicated" },
 	};
 #endif
@@ -433,7 +433,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Notify for when unload and/or load transfers are completed" },
 	};
 #endif
@@ -472,7 +472,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Set whether this station should load or unload from vehicles" },
 	};
 #endif
@@ -496,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableDockingStation_Undock_Statics::Function_MetaDataParams[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Undock the docked actor." },
 	};
 #endif
@@ -581,30 +581,30 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableDockingStation_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Dock, "Dock" }, // 2854945123
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses, "FilterFuelClasses" }, // 822746084
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor, "GetDockedActor" }, // 3841276921
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory, "GetFuelInventory" }, // 2491755864
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory, "GetInventory" }, // 2322231205
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode, "GetIsInLoadMode" }, // 4064280641
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading, "IsLoadUnloading" }, // 3031724955
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle, "OnBeginLoadVehicle" }, // 315992865
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle, "OnBeginUnloadVehicle" }, // 934392773
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory, "OnRep_FuelInventory" }, // 932860018
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete, "OnTransferComplete" }, // 1758221258
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode, "SetIsInLoadMode" }, // 152133119
-		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Undock, "Undock" }, // 3198013276
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Dock, "Dock" }, // 2100716509
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_FilterFuelClasses, "FilterFuelClasses" }, // 3480085932
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetDockedActor, "GetDockedActor" }, // 1272795702
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetFuelInventory, "GetFuelInventory" }, // 1122110637
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetInventory, "GetInventory" }, // 3754520527
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_GetIsInLoadMode, "GetIsInLoadMode" }, // 2579997565
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_IsLoadUnloading, "IsLoadUnloading" }, // 3534554321
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginLoadVehicle, "OnBeginLoadVehicle" }, // 2543027036
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnBeginUnloadVehicle, "OnBeginUnloadVehicle" }, // 2056513933
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnRep_FuelInventory, "OnRep_FuelInventory" }, // 3578888043
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_OnTransferComplete, "OnTransferComplete" }, // 3377433145
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_SetIsInLoadMode, "SetIsInLoadMode" }, // 1824006030
+		{ &Z_Construct_UFunction_AFGBuildableDockingStation_Undock, "Undock" }, // 852450913
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableDockingStation.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Base class for docking stations in the game, this is a load/unload station depending on the conveyor connections given." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsLoadUnloading_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Are we currently in the process of loading or unloading inventory" },
 	};
@@ -617,14 +617,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "How much of a stack to transfer in each separate transfer moment" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize = { UE4CodeGen_Private::EPropertyClass::Float, "mStackTransferSize", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mStackTransferSize), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStackTransferSize_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Have the player specified that this station should either load or unload to vehicles?" },
 	};
@@ -636,7 +636,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsInLoadMode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mIsInLoadMode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "If an actor is docked to this station. Used to detect actor becomes invalid due to e.g. dismantle." },
 	};
@@ -648,7 +648,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasDockedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(AFGBuildableDockingStation), &Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mHasDockedActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mDockedActor_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "The actor docked to this station." },
 	};
 #endif
@@ -656,7 +656,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Inventory for refueling the trucks." },
 	};
 #endif
@@ -664,14 +664,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "Inventory where we transfer items to when unloading from a vehicle" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080028, 1, nullptr, STRUCT_OFFSET(AFGBuildableDockingStation, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferProgress_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Current progress on transfer from/to docking station ( in seconds )" },
 	};
@@ -680,7 +680,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mFuelTransferSpeed_MetaData[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "How long time it takes to transfer 1 stack of fuel from/to docking station ( in seconds )" },
 	};
 #endif
@@ -688,7 +688,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mTransferSpeed_MetaData[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "How long time it takes to transfer one stack of item from/to docking station ( in seconds )" },
 	};
 #endif
@@ -696,7 +696,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeY_MetaData[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "SizeY of storage inventory" },
 	};
 #endif
@@ -704,7 +704,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableDockingStation_Statics::NewProp_mStorageSizeX_MetaData[] = {
 		{ "Category", "DockingStation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableDockingStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableDockingStation.h" },
 		{ "ToolTip", "SizeX of storage inventory" },
 	};
 #endif
@@ -746,7 +746,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableDockingStation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableDockingStation, 1085486574);
+	IMPLEMENT_CLASS(AFGBuildableDockingStation, 510538298);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableDockingStation(Z_Construct_UClass_AFGBuildableDockingStation, &AFGBuildableDockingStation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableDockingStation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableDockingStation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

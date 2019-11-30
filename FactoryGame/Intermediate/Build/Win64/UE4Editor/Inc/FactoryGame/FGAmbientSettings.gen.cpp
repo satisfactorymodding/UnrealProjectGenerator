@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAmbientSettings.h"
+#include "FactoryGame/Public/FGAmbientSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_GetEnterInnerVolumeEvent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Get the event that is played whenever you get close to the ambient volume" },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_GetEnterOuterVolumeEvent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Get the event that is played whenever you get close to the ambient volume" },
 	};
 #endif
@@ -174,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_OnEnterInnerVolume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Called when the camera is entering the the ambient volume" },
 	};
 #endif
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_OnEnterOuterVolume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Called when we are getting close to the attenuation radius of the ambient volume" },
 	};
 #endif
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_OnExitInnerVolume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Called when the camera is leaving the ambient volume" },
 	};
 #endif
@@ -288,7 +288,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_OnExitOuterVolume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Called when we are far away from the attenuation radius of the ambient volume" },
 	};
 #endif
@@ -323,7 +323,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAmbientSettings_ShouldIgnoreListenerRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Check if we should ignore the rotation of the listener when inside the volume" },
 	};
 #endif
@@ -378,26 +378,26 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAmbientSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAmbientSettings_GetEnterInnerVolumeEvent, "GetEnterInnerVolumeEvent" }, // 2162642661
-		{ &Z_Construct_UFunction_UFGAmbientSettings_GetEnterOuterVolumeEvent, "GetEnterOuterVolumeEvent" }, // 1816733260
-		{ &Z_Construct_UFunction_UFGAmbientSettings_OnEnterInnerVolume, "OnEnterInnerVolume" }, // 1888104665
-		{ &Z_Construct_UFunction_UFGAmbientSettings_OnEnterOuterVolume, "OnEnterOuterVolume" }, // 100602637
-		{ &Z_Construct_UFunction_UFGAmbientSettings_OnExitInnerVolume, "OnExitInnerVolume" }, // 1506773946
-		{ &Z_Construct_UFunction_UFGAmbientSettings_OnExitOuterVolume, "OnExitOuterVolume" }, // 772202124
-		{ &Z_Construct_UFunction_UFGAmbientSettings_ShouldIgnoreListenerRotation, "ShouldIgnoreListenerRotation" }, // 3923197190
+		{ &Z_Construct_UFunction_UFGAmbientSettings_GetEnterInnerVolumeEvent, "GetEnterInnerVolumeEvent" }, // 767517477
+		{ &Z_Construct_UFunction_UFGAmbientSettings_GetEnterOuterVolumeEvent, "GetEnterOuterVolumeEvent" }, // 1733565596
+		{ &Z_Construct_UFunction_UFGAmbientSettings_OnEnterInnerVolume, "OnEnterInnerVolume" }, // 2084976376
+		{ &Z_Construct_UFunction_UFGAmbientSettings_OnEnterOuterVolume, "OnEnterOuterVolume" }, // 3556836724
+		{ &Z_Construct_UFunction_UFGAmbientSettings_OnExitInnerVolume, "OnExitInnerVolume" }, // 4284896986
+		{ &Z_Construct_UFunction_UFGAmbientSettings_OnExitOuterVolume, "OnExitOuterVolume" }, // 178132826
+		{ &Z_Construct_UFunction_UFGAmbientSettings_ShouldIgnoreListenerRotation, "ShouldIgnoreListenerRotation" }, // 624768941
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAmbientSettings_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGAmbientSettings.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAmbientSettings_Statics::NewProp_mIgnoreListenerRotation_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "If checked, then we don't rotate the audio source to match the rotation of the listener when inside the volume" },
 	};
 #endif
@@ -409,7 +409,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAmbientSettings_Statics::NewProp_mOnExitInnerVolumeEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Event to post when OnExit is triggered" },
 	};
 #endif
@@ -417,7 +417,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAmbientSettings_Statics::NewProp_mOnEnterInnerVolumeEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Event to post when OnEnter is triggered" },
 	};
 #endif
@@ -425,7 +425,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAmbientSettings_Statics::NewProp_mOnExitOuterVolumeEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Event to post when OnGetFar is triggered" },
 	};
 #endif
@@ -433,7 +433,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAmbientSettings_Statics::NewProp_mOnEnterOuterVolumeEvent_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientSettings.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientSettings.h" },
 		{ "ToolTip", "Event to post when OnGetClose is triggered" },
 	};
 #endif
@@ -468,7 +468,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAmbientSettings, 1521016722);
+	IMPLEMENT_CLASS(UFGAmbientSettings, 1493560159);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAmbientSettings(Z_Construct_UClass_UFGAmbientSettings, &UFGAmbientSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAmbientSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAmbientSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

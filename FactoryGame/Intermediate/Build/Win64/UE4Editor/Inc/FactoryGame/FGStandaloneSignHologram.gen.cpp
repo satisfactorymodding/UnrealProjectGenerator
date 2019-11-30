@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGStandaloneSignHologram.h"
+#include "FactoryGame/Public/Hologram/FGStandaloneSignHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStandaloneSignHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStandaloneSignHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGStandaloneSignHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGStandaloneSignHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGStandaloneSignHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGStandaloneSignHologram_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStandaloneSignHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStandaloneSignHologram, 2438120926);
+	IMPLEMENT_CLASS(AFGStandaloneSignHologram, 3241220815);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStandaloneSignHologram(Z_Construct_UClass_AFGStandaloneSignHologram, &AFGStandaloneSignHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStandaloneSignHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStandaloneSignHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

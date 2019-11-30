@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRailroadVehicle.h"
+#include "FactoryGame/Public/FGRailroadVehicle.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ERailroadVehicleCoupler(ERailroadVehicleCoupler_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ERailroadVehicleCoupler"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ERailroadVehicleCoupler_CRC() { return 432034330U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ERailroadVehicleCoupler_CRC() { return 4017940603U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ERailroadVehicleCoupler()
 	{
 #if WITH_HOT_RELOAD
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+				{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 				{ "RVC_BACK.DisplayName", "Back" },
 				{ "RVC_FRONT.DisplayName", "Front" },
 				{ "ToolTip", "Type of connections in the game." },
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_GetCoupledVehicleAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "@param at Coupler, valid values are 0 (front) and 1 (back).\n@return the vehicle coupled at index." },
 	};
 #endif
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_GetLength_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "@return The length of this vehicle." },
 	};
 #endif
@@ -198,7 +198,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_GetRailroadVehicleMovementComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "Get the railroad movement for this vehicle." },
 	};
 #endif
@@ -232,7 +232,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_GetTrackGraphID_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "Get the track id this vehicle is on; -1 if the track is invalid." },
 	};
 #endif
@@ -266,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_GetTrackPosition_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "Get the track position for this vehicle." },
 	};
 #endif
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_GetTrain_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "Get the train this vehicle is part of." },
 	};
 #endif
@@ -346,7 +346,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_IsCoupledAt_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "@param at Coupler, valid values are 0 (front) and 1 (back).\n@return the vehicle coupled at index." },
 	};
 #endif
@@ -385,7 +385,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadVehicle_IsOrientationReversed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "If this vehicles orientation is reversed in the train formation.\n@return true if forward for this vehicle is not the same as the trains forward." },
 	};
 #endif
@@ -436,34 +436,34 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRailroadVehicle_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetCoupledVehicleAt, "GetCoupledVehicleAt" }, // 283280052
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetLength, "GetLength" }, // 1656193117
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetRailroadVehicleMovementComponent, "GetRailroadVehicleMovementComponent" }, // 551731538
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetTrackGraphID, "GetTrackGraphID" }, // 3867254485
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetTrackPosition, "GetTrackPosition" }, // 1207880698
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetTrain, "GetTrain" }, // 1331175149
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_IsCoupledAt, "IsCoupledAt" }, // 3588958489
-		{ &Z_Construct_UFunction_AFGRailroadVehicle_IsOrientationReversed, "IsOrientationReversed" }, // 2237387090
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetCoupledVehicleAt, "GetCoupledVehicleAt" }, // 1045090774
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetLength, "GetLength" }, // 2107115229
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetRailroadVehicleMovementComponent, "GetRailroadVehicleMovementComponent" }, // 3414726795
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetTrackGraphID, "GetTrackGraphID" }, // 1543690118
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetTrackPosition, "GetTrackPosition" }, // 1610770077
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_GetTrain, "GetTrain" }, // 1319111359
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_IsCoupledAt, "IsCoupledAt" }, // 3927927904
+		{ &Z_Construct_UFunction_AFGRailroadVehicle_IsOrientationReversed, "IsOrientationReversed" }, // 3964490491
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "FGRailroadVehicle.h" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "Base vehicle for all railroad vehicles. E.g. locomotives, wagons etc." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrackPosition_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "Where along the track is the train." },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrackPosition = { UE4CodeGen_Private::EPropertyClass::Struct, "mTrackPosition", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGRailroadVehicle, mTrackPosition), Z_Construct_UScriptStruct_FRailroadTrackPosition, METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrackPosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrackPosition_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mIsOrientationReversed_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "If this vehicle is reversed in the train formation." },
 	};
 #endif
@@ -475,14 +475,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mLength_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "How long is this vehicle." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mLength = { UE4CodeGen_Private::EPropertyClass::Float, "mLength", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGRailroadVehicle, mLength), METADATA_PARAMS(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mLength_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mLength_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadVehicle_Statics::NewProp_mTrain_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadVehicle.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicle.h" },
 		{ "ToolTip", "The train this vehicle is part of, updated from the railroad subsystem" },
 	};
 #endif
@@ -516,7 +516,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadVehicle, 742753718);
+	IMPLEMENT_CLASS(AFGRailroadVehicle, 217598151);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadVehicle(Z_Construct_UClass_AFGRailroadVehicle, &AFGRailroadVehicle::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadVehicle"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadVehicle);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGRailroadVehicle)

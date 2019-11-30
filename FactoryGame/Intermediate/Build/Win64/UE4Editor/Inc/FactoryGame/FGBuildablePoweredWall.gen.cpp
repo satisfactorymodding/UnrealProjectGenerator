@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildablePoweredWall.h"
+#include "FactoryGame/Public/Buildables/FGBuildablePoweredWall.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePoweredWall() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildablePoweredWall_GetFoundationConnection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "PoweredWall" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePoweredWall.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePoweredWall.h" },
 		{ "ToolTip", "@return The hidden connection all buildings are supposed to connect to; otherwise nullptr, e.g. if not set up correcly." },
 	};
 #endif
@@ -87,12 +87,12 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePoweredWall() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildablePoweredWall_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildablePoweredWall_GetFoundationConnection, "GetFoundationConnection" }, // 523380483
+		{ &Z_Construct_UFunction_AFGBuildablePoweredWall_GetFoundationConnection, "GetFoundationConnection" }, // 2882595093
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildablePoweredWall_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildablePoweredWall.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildablePoweredWall.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildablePoweredWall.h" },
 		{ "ToolTip", "A wall with a power socket, provides the whole building with power." },
 	};
 #endif
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildablePoweredWall() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildablePoweredWall, 3194884388);
+	IMPLEMENT_CLASS(AFGBuildablePoweredWall, 2408949759);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildablePoweredWall(Z_Construct_UClass_AFGBuildablePoweredWall, &AFGBuildablePoweredWall::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildablePoweredWall"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildablePoweredWall);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

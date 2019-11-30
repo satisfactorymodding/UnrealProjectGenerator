@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSoundSplineComponent.h"
+#include "FactoryGame/Public/FGSoundSplineComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "TRUE" },
 		{ "Category", "Audio|Spline" },
-		{ "ModuleRelativePath", "FGSoundSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSoundSplineComponent.h" },
 		{ "ToolTip", "Get the distance between each emitter of the spline" },
 	};
 #endif
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "TRUE" },
 		{ "Category", "Audio|Spline" },
-		{ "ModuleRelativePath", "FGSoundSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSoundSplineComponent.h" },
 		{ "ToolTip", "Set the interval of emitters" },
 	};
 #endif
@@ -127,8 +127,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSoundSplineComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval, "GetEmitterInterval" }, // 4283112658
-		{ &Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval, "SetEmitterInterval" }, // 4157618699
+		{ &Z_Construct_UFunction_UFGSoundSplineComponent_GetEmitterInterval, "GetEmitterInterval" }, // 3786689216
+		{ &Z_Construct_UFunction_UFGSoundSplineComponent_SetEmitterInterval, "SetEmitterInterval" }, // 2554241355
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSoundSplineComponent_Statics::Class_MetaDataParams[] = {
@@ -136,14 +136,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		{ "BlueprintSpawnableComponent", "" },
 		{ "HideCategories", "Transform Rendering Mobility LOD Component Activation Trigger PhysicsVolume" },
 		{ "IncludePath", "FGSoundSplineComponent.h" },
-		{ "ModuleRelativePath", "FGSoundSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSoundSplineComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSoundSplineComponent_Statics::NewProp_mEmitterInterval_MetaData[] = {
 		{ "Category", "Audio" },
 		{ "ClampMin", "50" },
-		{ "ModuleRelativePath", "FGSoundSplineComponent.h" },
+		{ "ModuleRelativePath", "Public/FGSoundSplineComponent.h" },
 		{ "ToolTip", "Distance beween each emitter on our parent spline, this might be scaled slightly so that we get a point on both start and end" },
 		{ "UIMax", "1000" },
 		{ "UIMin", "100" },
@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSoundSplineComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSoundSplineComponent, 1541095960);
+	IMPLEMENT_CLASS(UFGSoundSplineComponent, 352045669);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSoundSplineComponent(Z_Construct_UClass_UFGSoundSplineComponent, &UFGSoundSplineComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSoundSplineComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSoundSplineComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

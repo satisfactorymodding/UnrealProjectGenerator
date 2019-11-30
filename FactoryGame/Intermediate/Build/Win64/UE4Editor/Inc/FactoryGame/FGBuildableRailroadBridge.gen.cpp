@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRailroadBridge.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRailroadBridge.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,7 +49,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadBridge_GetLength_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Railroad|Bridge" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadBridge.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadBridge.h" },
 		{ "ToolTip", "Get the length of the bridge" },
 	};
 #endif
@@ -92,18 +92,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRailroadBridge_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRailroadBridge_GetLength, "GetLength" }, // 142802606
+		{ &Z_Construct_UFunction_AFGBuildableRailroadBridge_GetLength, "GetLength" }, // 1984828140
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadBridge_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableRailroadBridge.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadBridge.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadBridge.h" },
 		{ "ToolTip", "A spline based bridge for rail roads, it can be built between 2 existing foundations, bridge and track is built separately." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadBridge_Statics::NewProp_mSplineData_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadBridge.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadBridge.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Spline data saved in a compact form for saving and replicating. All the vectors are in local space." },
 	};
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadBridge_Statics::NewProp_mSplineComponent_MetaData[] = {
 		{ "Category", "Spline" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadBridge.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadBridge.h" },
 		{ "ToolTip", "The spline component for this bridge." },
 	};
 #endif
@@ -147,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadBridge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadBridge, 3499568395);
+	IMPLEMENT_CLASS(AFGBuildableRailroadBridge, 978798106);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadBridge(Z_Construct_UClass_AFGBuildableRailroadBridge, &AFGBuildableRailroadBridge::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadBridge"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadBridge);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

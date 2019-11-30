@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableWire.h"
+#include "FactoryGame/Public/Buildables/FGBuildableWire.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableWire_GetConnection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Wire" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "ToolTip", "@return The connection connected at the end of the wire." },
 	};
 #endif
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableWire_GetLength_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable|Wire" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "ToolTip", "@return The distance between the points the wire connects." },
 	};
 #endif
@@ -153,20 +153,20 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableWire_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableWire_GetConnection, "GetConnection" }, // 2582593800
-		{ &Z_Construct_UFunction_AFGBuildableWire_GetLength, "GetLength" }, // 57513609
+		{ &Z_Construct_UFunction_AFGBuildableWire_GetConnection, "GetConnection" }, // 586278895
+		{ &Z_Construct_UFunction_AFGBuildableWire_GetLength, "GetLength" }, // 3434242234
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableWire.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "A wire that connects to wire connection components.\nThis is an edge in a circuit graph." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The two locations this wire span." },
 	};
@@ -174,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations = { UE4CodeGen_Private::EPropertyClass::Struct, "mLocations", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, CPP_ARRAY_DIM(mLocations, AFGBuildableWire), nullptr, STRUCT_OFFSET(AFGBuildableWire, mLocations), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLocations_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mConnections_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "ToolTip", "The connections made by this wire.\nWeak references as buildings can be removed and leave the cables hanging.\nThis is for mod stability or just different lifespan when dismantling building and wires." },
 	};
 #endif
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mWireMesh_MetaData[] = {
 		{ "Category", "Wire" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "ToolTip", "Mesh used to visualize the power line" },
 	};
 #endif
@@ -191,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mLengthPerCost_MetaData[] = {
 		{ "Category", "Wire" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "ToolTip", "How much length we get per unit cost, 0 to disable per length cost. [cm]" },
 	};
 #endif
@@ -199,7 +199,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWire_Statics::NewProp_mMaxLength_MetaData[] = {
 		{ "Category", "Wire" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWire.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWire.h" },
 		{ "ToolTip", "Maximum length a wire may be. [cm]" },
 	};
 #endif
@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWire() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWire, 2221337690);
+	IMPLEMENT_CLASS(AFGBuildableWire, 69728644);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWire(Z_Construct_UClass_AFGBuildableWire, &AFGBuildableWire::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWire"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWire);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildableWire)

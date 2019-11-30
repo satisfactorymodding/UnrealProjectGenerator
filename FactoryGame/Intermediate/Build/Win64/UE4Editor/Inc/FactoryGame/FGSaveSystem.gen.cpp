@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSaveSystem.h"
+#include "FactoryGame/Public/FGSaveSystem.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSystem() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ESaveExists(ESaveExists_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ESaveExists"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ESaveExists_CRC() { return 2514584978U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ESaveExists_CRC() { return 3631996560U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ESaveExists()
 	{
 #if WITH_HOT_RELOAD
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveSystem() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGSaveSystem.h" },
+				{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 				{ "SE_DoesntExist.DisplayName", "DoesntExist" },
 				{ "SE_ExistsInOtherSession.DisplayName", "ExistsInOtherSession" },
 				{ "SE_ExistsInSameSession.DisplayName", "ExistsInSameSession" },
@@ -116,7 +116,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::NewStructOps()
@@ -126,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::NewProp_SaveHeaders_MetaData[] = {
 		{ "Category", "SessionSaveStruct" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "The saves that are in this session" },
 	};
 #endif
@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSessionSaveStruct_CRC() { return 1753492082U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSessionSaveStruct_CRC() { return 844131908U; }
 class UScriptStruct* FMapRedirector::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -201,7 +201,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMapRedirector_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "For when a artist/LD has changed the name of a map" },
 	};
 #endif
@@ -211,14 +211,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMapRedirector_Statics::NewProp_NewMapName_MetaData[] = {
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "New map name" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FMapRedirector_Statics::NewProp_NewMapName = { UE4CodeGen_Private::EPropertyClass::Str, "NewMapName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FMapRedirector, NewMapName), METADATA_PARAMS(Z_Construct_UScriptStruct_FMapRedirector_Statics::NewProp_NewMapName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapRedirector_Statics::NewProp_NewMapName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMapRedirector_Statics::NewProp_OldMapName_MetaData[] = {
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Old map name" },
 	};
 #endif
@@ -254,7 +254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMapRedirector_CRC() { return 1859232379U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMapRedirector_CRC() { return 1980774236U; }
 class UScriptStruct* FSaveHeader::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -284,7 +284,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSaveHeader_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "The header with information about a save game" },
 	};
 #endif
@@ -319,7 +319,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSaveHeader_CRC() { return 1394760410U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSaveHeader_CRC() { return 628628043U; }
 	void UFGSaveSystem::StaticRegisterNativesUFGSaveSystem()
 	{
 		UClass* Class = UFGSaveSystem::StaticClass();
@@ -363,7 +363,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_DeleteSave_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Delete a save game\n\n@param saveName - the save file's name without extension\n@return true if we managed to delete the save" },
 	};
 #endif
@@ -409,7 +409,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_FindSaveGames_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Find all available save games from disc\n\n@param out_saveGames a list with the available save games" },
 	};
 #endif
@@ -448,7 +448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_Get_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
 		{ "DisplayName", "GetSaveSystem" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Get the save system from a world" },
 	};
 #endif
@@ -485,7 +485,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Loops through all save games and group them by session\nand sorts the saves by dates and then session by last save date" },
 	};
 #endif
@@ -546,7 +546,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_GetSaveExists_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Check if a save game exists, if you don't care about session name, pass in empty currentSessionName and check != ESaveExists::SE_DoesntExist" },
 	};
 #endif
@@ -589,7 +589,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSaveSystem, "IsSessionNameUsed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGSaveSystem_eventIsSessionNameUsed_Parms), Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed_Statics::Function_MetaDataParams)) };
@@ -631,7 +631,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Helper, used to verify if the save game name is valid" },
 	};
 #endif
@@ -670,23 +670,23 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSaveSystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSaveSystem_DeleteSave, "DeleteSave" }, // 60950381
-		{ &Z_Construct_UFunction_UFGSaveSystem_FindSaveGames, "FindSaveGames" }, // 4093339527
-		{ &Z_Construct_UFunction_UFGSaveSystem_Get, "Get" }, // 3915605280
-		{ &Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession, "GetAllSavesPerSession" }, // 3571107458
-		{ &Z_Construct_UFunction_UFGSaveSystem_GetSaveExists, "GetSaveExists" }, // 811507135
-		{ &Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed, "IsSessionNameUsed" }, // 4267752584
-		{ &Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName, "IsValidSaveName" }, // 100012255
+		{ &Z_Construct_UFunction_UFGSaveSystem_DeleteSave, "DeleteSave" }, // 1070848127
+		{ &Z_Construct_UFunction_UFGSaveSystem_FindSaveGames, "FindSaveGames" }, // 996637499
+		{ &Z_Construct_UFunction_UFGSaveSystem_Get, "Get" }, // 3085541353
+		{ &Z_Construct_UFunction_UFGSaveSystem_GetAllSavesPerSession, "GetAllSavesPerSession" }, // 1841849102
+		{ &Z_Construct_UFunction_UFGSaveSystem_GetSaveExists, "GetSaveExists" }, // 345661558
+		{ &Z_Construct_UFunction_UFGSaveSystem_IsSessionNameUsed, "IsSessionNameUsed" }, // 960853900
+		{ &Z_Construct_UFunction_UFGSaveSystem_IsValidSaveName, "IsValidSaveName" }, // 2986532845
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSystem_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSaveSystem.h" },
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSaveSystem_Statics::NewProp_mMapRedirectors_MetaData[] = {
-		{ "ModuleRelativePath", "FGSaveSystem.h" },
+		{ "ModuleRelativePath", "Public/FGSaveSystem.h" },
 		{ "ToolTip", "Redirects for the maps when someone renames a map" },
 	};
 #endif
@@ -719,7 +719,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSystem, 3496961593);
+	IMPLEMENT_CLASS(UFGSaveSystem, 3821585801);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveSystem(Z_Construct_UClass_UFGSaveSystem, &UFGSaveSystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveSystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveSystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

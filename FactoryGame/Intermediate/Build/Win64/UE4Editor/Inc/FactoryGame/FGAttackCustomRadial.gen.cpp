@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttackCustomRadial.h"
+#include "FactoryGame/Public/AI/FGAttackCustomRadial.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackCustomRadial() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "AI/FGAttackCustomRadial.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "AI/FGAttackCustomRadial.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackCustomRadial.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGAttackCustomRadial_Statics::StaticCppClassTypeInfo = {
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackCustomRadial() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackCustomRadial, 1055269260);
+	IMPLEMENT_CLASS(UFGAttackCustomRadial, 413313697);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackCustomRadial(Z_Construct_UClass_UFGAttackCustomRadial, &UFGAttackCustomRadial::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackCustomRadial"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackCustomRadial);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

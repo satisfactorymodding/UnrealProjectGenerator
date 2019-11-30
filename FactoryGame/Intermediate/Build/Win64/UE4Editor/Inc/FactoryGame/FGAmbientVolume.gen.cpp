@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAmbientVolume.h"
+#include "FactoryGame/Public/FGAmbientVolume.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -64,14 +64,14 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Cooking Mobile Brush Physics Object Display Rendering Physics Input Blueprint" },
 		{ "IncludePath", "FGAmbientVolume.h" },
-		{ "ModuleRelativePath", "FGAmbientVolume.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientVolume.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mSignificanceRange_MetaData[] = {
 		{ "Category", "Significance" },
-		{ "ModuleRelativePath", "FGAmbientVolume.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientVolume.h" },
 		{ "ToolTip", "Range that this volume should be significant within" },
 	};
 #endif
@@ -79,7 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAdditionalAttenuationDistance_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientVolume.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientVolume.h" },
 		{ "ToolTip", "How much further away than the attenuation distance do we want to start playing the ambient OnGeCloseSound" },
 	};
 #endif
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAudioComponent_MetaData[] = {
 		{ "Category", "Audio" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGAmbientVolume.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientVolume.h" },
 		{ "ToolTip", "The audio component we want to move around" },
 	};
 #endif
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGAmbientVolume_Statics::NewProp_mAmbientSettings_MetaData[] = {
 		{ "Category", "Audio" },
-		{ "ModuleRelativePath", "FGAmbientVolume.h" },
+		{ "ModuleRelativePath", "Public/FGAmbientVolume.h" },
 		{ "ToolTip", "The settings for the volume" },
 	};
 #endif
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientVolume, 1601178210);
+	IMPLEMENT_CLASS(AFGAmbientVolume, 3726523531);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAmbientVolume(Z_Construct_UClass_AFGAmbientVolume, &AFGAmbientVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAmbientVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAmbientVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

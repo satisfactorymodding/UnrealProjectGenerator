@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSporeFlower.h"
+#include "FactoryGame/Public/FGSporeFlower.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower_Statics::Function_MetaDataParams[] = {
 		{ "Category", "SporeFlower" },
-		{ "ModuleRelativePath", "FGSporeFlower.h" },
+		{ "ModuleRelativePath", "Public/FGSporeFlower.h" },
 		{ "ToolTip", "Test if an actor should trigger spore flower to rise" },
 	};
 #endif
@@ -106,18 +106,18 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSporeFlower_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower, "ActorShouldTriggerFlower" }, // 2800551553
+		{ &Z_Construct_UFunction_AFGSporeFlower_ActorShouldTriggerFlower, "ActorShouldTriggerFlower" }, // 4116699170
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSporeFlower_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSporeFlower.h" },
-		{ "ModuleRelativePath", "FGSporeFlower.h" },
+		{ "ModuleRelativePath", "Public/FGSporeFlower.h" },
 		{ "ToolTip", "todo: (a bigish one) this is just a start of what should be a much more complete nativization of the spore flower" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActors_MetaData[] = {
-		{ "ModuleRelativePath", "FGSporeFlower.h" },
+		{ "ModuleRelativePath", "Public/FGSporeFlower.h" },
 		{ "ToolTip", "Holds a list of all actors inside trigger spehere" },
 	};
 #endif
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSporeFlower_Statics::NewProp_mTriggerActorClasses_MetaData[] = {
 		{ "Category", "SporeFlower" },
-		{ "ModuleRelativePath", "FGSporeFlower.h" },
+		{ "ModuleRelativePath", "Public/FGSporeFlower.h" },
 		{ "ToolTip", "These actor types will trigger the spore flower to emit" },
 	};
 #endif
@@ -166,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSporeFlower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSporeFlower, 2962264248);
+	IMPLEMENT_CLASS(AFGSporeFlower, 3551248303);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSporeFlower(Z_Construct_UClass_AFGSporeFlower, &AFGSporeFlower::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSporeFlower"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSporeFlower);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

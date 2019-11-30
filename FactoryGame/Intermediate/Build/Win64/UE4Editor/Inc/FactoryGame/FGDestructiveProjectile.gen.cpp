@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDestructiveProjectile.h"
+#include "FactoryGame/Public/FGDestructiveProjectile.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -63,7 +63,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 		{ "ToolTip", "Holds the information necessary for spawning destroyed effects after all overlap calculations" },
 	};
 #endif
@@ -73,19 +73,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_Priority_MetaData[] = {
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_Priority = { UE4CodeGen_Private::EPropertyClass::Int, "Priority", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FDestroyedFoliageEffectData, Priority), METADATA_PARAMS(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_Priority_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_Priority_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_DestroyedEffect_MetaData[] = {
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_DestroyedEffect = { UE4CodeGen_Private::EPropertyClass::Object, "DestroyedEffect", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FDestroyedFoliageEffectData, DestroyedEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_DestroyedEffect_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_DestroyedEffect_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_SpawnLocation_MetaData[] = {
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_SpawnLocation = { UE4CodeGen_Private::EPropertyClass::Struct, "SpawnLocation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FDestroyedFoliageEffectData, SpawnLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_SpawnLocation_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::NewProp_SpawnLocation_MetaData)) };
@@ -121,7 +121,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_CRC() { return 2281766419U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_CRC() { return 2020914511U; }
 	void AFGDestructiveProjectile::StaticRegisterNativesAFGDestructiveProjectile()
 	{
 	}
@@ -164,14 +164,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructiveProjectile_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGDestructiveProjectile.h" },
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 		{ "ToolTip", "Base class for any projectile that should destroy foliage or actors\n   @todo: Optimize to collect overlapped foliage if attached to a static actor so that we don't need to populate on detonate" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructiveProjectile_Statics::NewProp_mMaxParticleSpawnsPerDetonation_MetaData[] = {
 		{ "Category", "Destruction" },
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 		{ "ToolTip", "Any amount of particle systems over this limit will not be spawned" },
 	};
 #endif
@@ -179,7 +179,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructiveProjectile_Statics::NewProp_mDestroysFoliage_MetaData[] = {
 		{ "Category", "Destruction" },
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 		{ "ToolTip", "Should foliage be considered for destruction" },
 	};
 #endif
@@ -191,7 +191,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructiveProjectile_Statics::NewProp_mDestroysRelevantActors_MetaData[] = {
 		{ "Category", "Destruction" },
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 		{ "ToolTip", "Should actors implementing destructable interfaces be considered for destruction" },
 	};
 #endif
@@ -204,7 +204,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGDestructiveProjectile_Statics::NewProp_mDestructionCollisionComp_MetaData[] = {
 		{ "Category", "Desctruction" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGDestructiveProjectile.h" },
+		{ "ModuleRelativePath", "Public/FGDestructiveProjectile.h" },
 		{ "ToolTip", "Collision Component used to determine which objects should be considered for destruction" },
 	};
 #endif
@@ -238,7 +238,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructiveProjectile, 560934604);
+	IMPLEMENT_CLASS(AFGDestructiveProjectile, 2987404029);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDestructiveProjectile(Z_Construct_UClass_AFGDestructiveProjectile, &AFGDestructiveProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDestructiveProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDestructiveProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

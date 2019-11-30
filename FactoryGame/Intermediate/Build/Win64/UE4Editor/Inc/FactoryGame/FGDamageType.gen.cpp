@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/DamageTypes/FGDamageType.h"
+#include "FactoryGame/Public/DamageTypes/FGDamageType.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -32,7 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPlayOnDamageEvent(EPlayOnDamageEvent_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EPlayOnDamageEvent"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent_CRC() { return 4073514520U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent_CRC() { return 2562817262U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent()
 	{
 #if WITH_HOT_RELOAD
@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+				{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 				{ "PODE_OnTakeAnyDamage.DisplayName", "OnTakeAnyDamage" },
 				{ "PODE_OnTakePointDamage.DisplayName", "OnTakePointDamage" },
 				{ "PODE_OnTakeRadialDamage.DisplayName", "OnTakeRadialDamage" },
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EOverrideSetting(EOverrideSetting_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EOverrideSetting"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EOverrideSetting_CRC() { return 919718222U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EOverrideSetting_CRC() { return 302422335U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EOverrideSetting()
 	{
 #if WITH_HOT_RELOAD
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+				{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 				{ "OS_Additive.DisplayName", "Additive" },
 				{ "OS_Override.DisplayName", "Override" },
 			};
@@ -184,14 +184,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "DamageTypes/FGDamageType.h" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldShockEnemy_MetaData[] = {
 		{ "Category", "DamageType" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "Should this damage type shock and scare the enemy, like the stun spear?" },
 	};
 #endif
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mDamageImpulseZ_MetaData[] = {
 		{ "Category", "DamageType" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "How much extra impulse should be added in Z direction for this damage type" },
 	};
 #endif
@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mShouldDamageDestructible_MetaData[] = {
 		{ "Category", "DamageType" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "Should this damage type hurt destrucrible actors?" },
 	};
 #endif
@@ -223,7 +223,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticleSetting_MetaData[] = {
 		{ "Category", "DamageType|Vfx" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "Specify if the audio from this damage type should overrride the damage effect in hit pawn, or add to it" },
 	};
 #endif
@@ -231,14 +231,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData[] = {
 		{ "Category", "DamageType|Vfx" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn = { UE4CodeGen_Private::EPropertyClass::Byte, "mPlayImpactParticleOn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mPlayImpactParticleOn), Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactParticleOn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactParticle_MetaData[] = {
 		{ "Category", "DamageType|Vfx" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "When pawn take damage from a source, they play this take damage event" },
 	};
 #endif
@@ -246,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioSetting_MetaData[] = {
 		{ "Category", "DamageType|Audio" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "Specify if the audio from this damage type should overrride the damage sound in hit pawn, or add to it" },
 	};
 #endif
@@ -254,14 +254,14 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData[] = {
 		{ "Category", "DamageType|Audio" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn = { UE4CodeGen_Private::EPropertyClass::Byte, "mPlayImpactAudioOn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000015, 1, nullptr, STRUCT_OFFSET(UFGDamageType, mPlayImpactAudioOn), Z_Construct_UEnum_FactoryGame_EPlayOnDamageEvent, METADATA_PARAMS(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::NewProp_mPlayImpactAudioOn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDamageType_Statics::NewProp_mImpactAudioEvent_MetaData[] = {
 		{ "Category", "DamageType|Audio" },
-		{ "ModuleRelativePath", "DamageTypes/FGDamageType.h" },
+		{ "ModuleRelativePath", "Public/DamageTypes/FGDamageType.h" },
 		{ "ToolTip", "When pawn take damage from a source, they play this take damage event" },
 	};
 #endif
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDamageType, 3463276833);
+	IMPLEMENT_CLASS(UFGDamageType, 2241236128);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDamageType(Z_Construct_UClass_UFGDamageType, &UFGDamageType::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDamageType"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDamageType);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGStackableStorageHologram.h"
+#include "FactoryGame/Public/Hologram/FGStackableStorageHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStackableStorageHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGStackableStorageHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGStackableStorageHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGStackableStorageHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGStackableStorageHologram.h" },
 		{ "ToolTip", "Hologram for stackable storage boxes." },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGStackableStorageHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGStackableStorageHologram, 3699630016);
+	IMPLEMENT_CLASS(AFGStackableStorageHologram, 3930522659);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGStackableStorageHologram(Z_Construct_UClass_AFGStackableStorageHologram, &AFGStackableStorageHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGStackableStorageHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGStackableStorageHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

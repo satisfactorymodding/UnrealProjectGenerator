@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRadarTower.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRadarTower.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "RadarTowerRadiusExpanded__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "GetCurrentExpansionStep", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableRadarTower_eventGetCurrentExpansionStep_Parms), Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep_Statics::Function_MetaDataParams)) };
@@ -120,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "GetCurrentRevealRadius", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableRadarTower_eventGetCurrentRevealRadius_Parms), Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius_Statics::Function_MetaDataParams)) };
@@ -153,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "GetMaxRevealRadius", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableRadarTower_eventGetMaxRevealRadius_Parms), Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius_Statics::Function_MetaDataParams)) };
@@ -186,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "GetMinRevealRadius", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableRadarTower_eventGetMinRevealRadius_Parms), Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius_Statics::Function_MetaDataParams)) };
@@ -219,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "GetNumRadarExpansionSteps", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableRadarTower_eventGetNumRadarExpansionSteps_Parms), Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps_Statics::Function_MetaDataParams)) };
@@ -252,7 +252,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "GetTimeToNextExpansion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGBuildableRadarTower_eventGetTimeToNextExpansion_Parms), Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion_Statics::Function_MetaDataParams)) };
@@ -274,7 +274,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRadarTower_Multicast_ExpandRadarRadius_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGBuildableRadarTower_Multicast_ExpandRadarRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGBuildableRadarTower, "Multicast_ExpandRadarRadius", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00044CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGBuildableRadarTower_Multicast_ExpandRadarRadius_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGBuildableRadarTower_Multicast_ExpandRadarRadius_Statics::Function_MetaDataParams)) };
@@ -335,31 +335,31 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRadarTower_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep, "GetCurrentExpansionStep" }, // 3390698503
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius, "GetCurrentRevealRadius" }, // 235479144
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius, "GetMaxRevealRadius" }, // 2756325461
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius, "GetMinRevealRadius" }, // 2077063388
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps, "GetNumRadarExpansionSteps" }, // 4243760344
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion, "GetTimeToNextExpansion" }, // 1376740921
-		{ &Z_Construct_UFunction_AFGBuildableRadarTower_Multicast_ExpandRadarRadius, "Multicast_ExpandRadarRadius" }, // 4260536199
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentExpansionStep, "GetCurrentExpansionStep" }, // 2022548940
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetCurrentRevealRadius, "GetCurrentRevealRadius" }, // 2465498937
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetMaxRevealRadius, "GetMaxRevealRadius" }, // 1283017134
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetMinRevealRadius, "GetMinRevealRadius" }, // 2833307327
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetNumRadarExpansionSteps, "GetNumRadarExpansionSteps" }, // 107302191
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_GetTimeToNextExpansion, "GetTimeToNextExpansion" }, // 676259703
+		{ &Z_Construct_UFunction_AFGBuildableRadarTower_Multicast_ExpandRadarRadius, "Multicast_ExpandRadarRadius" }, // 4248132194
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::Class_MetaDataParams[] = {
 		{ "AutoJson", "FALSE" },
 		{ "IncludePath", "Buildables/FGBuildableRadarTower.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "Radar Tower reveals nearby fog of war on the Map. Expanding over time until it reaches its max limit." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mTimeToNextExpansion_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mTimeToNextExpansion = { UE4CodeGen_Private::EPropertyClass::Float, "mTimeToNextExpansion", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableRadarTower, mTimeToNextExpansion), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mTimeToNextExpansion_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mTimeToNextExpansion_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mCurrentExpansionStep_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "The current expansion step" },
 	};
 #endif
@@ -367,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mRadarExpansionInterval_MetaData[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "The time between radar expansions" },
 	};
 #endif
@@ -375,7 +375,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mNumRadarExpansionSteps_MetaData[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "Total amount of steps the radar tower have between Min Reveal Radius to Max Reveal Radius" },
 	};
 #endif
@@ -383,7 +383,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mMaxRevealRadius_MetaData[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "The reveal radius when tower have fully expanded its range" },
 	};
 #endif
@@ -391,7 +391,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_mMinRevealRadius_MetaData[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 		{ "ToolTip", "The initial reveal radius" },
 	};
 #endif
@@ -399,7 +399,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_OnRadarTowerRadiusExpanded_MetaData[] = {
 		{ "Category", "Radar Tower" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRadarTower.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRadarTower.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_OnRadarTowerRadiusExpanded = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnRadarTowerRadiusExpanded", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGBuildableRadarTower, OnRadarTowerRadiusExpanded), Z_Construct_UDelegateFunction_FactoryGame_RadarTowerRadiusExpanded__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_OnRadarTowerRadiusExpanded_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRadarTower_Statics::NewProp_OnRadarTowerRadiusExpanded_MetaData)) };
@@ -435,7 +435,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRadarTower() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRadarTower, 330030478);
+	IMPLEMENT_CLASS(AFGBuildableRadarTower, 3090692860);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRadarTower(Z_Construct_UClass_AFGBuildableRadarTower, &AFGBuildableRadarTower::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRadarTower"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRadarTower);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

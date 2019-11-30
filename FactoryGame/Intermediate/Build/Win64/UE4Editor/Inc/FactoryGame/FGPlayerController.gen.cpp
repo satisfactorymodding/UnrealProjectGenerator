@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGPlayerController.h"
+#include "FactoryGame/Public/FGPlayerController.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnShortcutChanged__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnShortcutsLayoutChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnShortcutsLayoutChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnShortcutsLayoutChanged__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnShortcutsLayoutChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnShortcutsLayoutChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnToggleInteractionUI__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnToggleInteractionUI_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnToggleInteractionUI__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnToggleInventory__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnToggleInventory_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -244,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "DisabledInputGateDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventDisabledInputGateDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -276,7 +276,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_PlayerEnteredAreaDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PlayerEnteredAreaDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "PlayerEnteredAreaDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventPlayerEnteredAreaDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PlayerEnteredAreaDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PlayerEnteredAreaDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PlayerEnteredAreaDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PlayerEnteredAreaDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -496,7 +496,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Function that checks which map area our pawn is in" },
 	};
 #endif
@@ -525,7 +525,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Client_AddMessage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Gets called on the client" },
 	};
 #endif
@@ -568,7 +568,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Client_TransferFogOfWarData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Transfer fog of war data to the client" },
 	};
 #endif
@@ -591,7 +591,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Client_WaitForLevelStreaming", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x01040CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming_Statics::Function_MetaDataParams)) };
@@ -614,7 +614,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_CreateSequenceList_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Cheat" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Used to create our list of sequences" },
 	};
 #endif
@@ -638,7 +638,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "DecrementPhotoModeFOV", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV_Statics::Function_MetaDataParams)) };
@@ -676,7 +676,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "EnablePhotoMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(FGPlayerController_eventEnablePhotoMode_Parms), Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode_Statics::Function_MetaDataParams)) };
@@ -717,7 +717,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Chat" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "EnterChatMessage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(FGPlayerController_eventEnterChatMessage_Parms), Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_EnterChatMessage_Statics::Function_MetaDataParams)) };
@@ -750,7 +750,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Execute the hotbar shortcut with the specified index" },
 	};
 #endif
@@ -787,7 +787,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Get all hotbar shortcuts" },
 	};
 #endif
@@ -821,7 +821,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Map" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Returns the map area that the pawn is currently in" },
 	};
 #endif
@@ -855,7 +855,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Getter for current disabled input states" },
 	};
 #endif
@@ -889,7 +889,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Get the shortcut index dismantle have, -1 if it doesn't have any shortcut index assigned" },
 	};
 #endif
@@ -928,7 +928,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "GetHiResPhotoModeEnabled", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGPlayerController_eventGetHiResPhotoModeEnabled_Parms), Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled_Statics::Function_MetaDataParams)) };
@@ -966,7 +966,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "GetIsPhotoMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGPlayerController_eventGetIsPhotoMode_Parms), Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode_Statics::Function_MetaDataParams)) };
@@ -1007,7 +1007,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetObjectScreenRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "HUD" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Gets the size on the viewport of the given actor" },
 	};
 #endif
@@ -1041,7 +1041,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "GetPhotoModeFOV", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14080401, sizeof(FGPlayerController_eventGetPhotoModeFOV_Parms), Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV_Statics::Function_MetaDataParams)) };
@@ -1083,7 +1083,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetPlayerHasMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Gets called on the client" },
 	};
 #endif
@@ -1121,7 +1121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetRecipeShortcutIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Get the shortcut index of a recipe, -1 if it doesn't have any shortcut index assigned" },
 	};
 #endif
@@ -1160,7 +1160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetRemoteCallObjectOfClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Remote Call Object" },
 		{ "DeterminesOutputType", "inClass" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Get the RCO of the given class." },
 	};
 #endif
@@ -1202,7 +1202,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetScreenBasedObjectRadius_Statics::Function_MetaDataParams[] = {
 		{ "Category", "HUD" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Gets the object radius for a given actor in order to align with a desired screen space radius" },
 	};
 #endif
@@ -1245,7 +1245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Screenshot" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "GetScreenshotPath", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerController_eventGetScreenshotPath_Parms), Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath_Statics::Function_MetaDataParams)) };
@@ -1290,7 +1290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetShortcutIndexFromKey_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Converts a keyEvent to what shortcut it's associated with\n@return -1 if not associated with any shortcut, else the shortcut index" },
 	};
 #endif
@@ -1327,7 +1327,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Get all valid shortcuts" },
 	};
 #endif
@@ -1351,7 +1351,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "IncrementPhotoModeFOV", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV_Statics::Function_MetaDataParams)) };
@@ -1389,7 +1389,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "IsInTutorialMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGPlayerController_eventIsInTutorialMode_Parms), Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode_Statics::Function_MetaDataParams)) };
@@ -1427,7 +1427,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_IsRespawning_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Respawn" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "@return true if we're currently respawning." },
 	};
 #endif
@@ -1460,7 +1460,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_MaterialFlowAnalysis_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Exec to perform a MFA analysis." },
 	};
 #endif
@@ -1493,7 +1493,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_MaterialLookup_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Exec to perform a Material Lookup." },
 	};
 #endif
@@ -1532,7 +1532,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_NeedRespawn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Respawn" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "@return true if this player controller needs to respawn it's pawn, e.g. the pawn is dead." },
 	};
 #endif
@@ -1556,7 +1556,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "OnDisabledInputGateChanged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged_Statics::Function_MetaDataParams)) };
@@ -1579,7 +1579,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Respawn" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called on owning client when respawning starts" },
 	};
 #endif
@@ -1602,7 +1602,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "User pressed primary fire button" },
 	};
 #endif
@@ -1625,7 +1625,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "OnRep_IsRespawning", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning_Statics::Function_MetaDataParams)) };
@@ -1662,7 +1662,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sounds" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called on start of a local client player. Reutrn the component that should handle the wind for the player" },
 	};
 #endif
@@ -1697,7 +1697,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_OnStartRespawn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Respawn" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called on owning client when respawning starts" },
 	};
 #endif
@@ -1736,7 +1736,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Remote Call Object" },
 		{ "DeterminesOutputType", "inClass" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "RegisterRemoteCallObjectClass", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGPlayerController_eventRegisterRemoteCallObjectClass_Parms), Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass_Statics::Function_MetaDataParams)) };
@@ -1784,7 +1784,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Deals the damage on an impact from a projectile fired by a weapon" },
 	};
 #endif
@@ -1833,7 +1833,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_DealRadialDamage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Deals the radial damage from an exploding projectile fired by a weapon" },
 	};
 #endif
@@ -1856,7 +1856,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_FinishRespawn", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn_Statics::Function_MetaDataParams)) };
@@ -1878,7 +1878,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_RequestFogOfWarData_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Tells the server to start transferring fog of war data to the requesting client" },
 	};
 #endif
@@ -1903,7 +1903,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_Respawn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Respawn" },
 		{ "DisplayName", "Respawn" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Respawns the pawn, do not call this directly to respawn in-game, call StartRespawn instead." },
 	};
 #endif
@@ -1940,7 +1940,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_SendChatMessage", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGPlayerController_eventServer_SendChatMessage_Parms), Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage_Statics::Function_MetaDataParams)) };
@@ -1968,7 +1968,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_SetDismantleShortcutOnIndex", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGPlayerController_eventServer_SetDismantleShortcutOnIndex_Parms), Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams)) };
@@ -1999,7 +1999,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_SetRecipeShortcutOnIndex", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, sizeof(FGPlayerController_eventServer_SetRecipeShortcutOnIndex_Parms), Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex_Statics::Function_MetaDataParams)) };
@@ -2030,7 +2030,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_SpawnAttentionPingActor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80A40CC1, sizeof(FGPlayerController_eventServer_SpawnAttentionPingActor_Parms), Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor_Statics::Function_MetaDataParams)) };
@@ -2052,7 +2052,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_StartRespawn", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn_Statics::Function_MetaDataParams)) };
@@ -2074,7 +2074,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Server_Suicide_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_Server_Suicide_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "Server_Suicide", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80240CC1, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_Server_Suicide_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_Server_Suicide_Statics::Function_MetaDataParams)) };
@@ -2107,7 +2107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_SetDisabledInputGate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Disables the ability to use certain aspects connected to input in the game.\nWhen struct is changed, mDisabledInputGateChanged will broadcast to signal value changes.\n\nWhen true, the input is DISABLED." },
 	};
 #endif
@@ -2141,7 +2141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Set the specified shortcut on the index if it's valid" },
 	};
 #endif
@@ -2179,7 +2179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_SetRecipeShortcutOnIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Shortcut" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Set the specified hotbar shortcut on the index if it's valid" },
 	};
 #endif
@@ -2212,7 +2212,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_SetSessionName_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "SERVER ONLY: Mostly for the saves that have gotten a nulled out session name" },
 	};
 #endif
@@ -2236,7 +2236,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_StartRespawn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Respawn" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Begin respawning this controllers pawn, call Respawn when done playing any respawn effects." },
 	};
 #endif
@@ -2259,7 +2259,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_Suicide_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Suicide if we have a valid pawn" },
 	};
 #endif
@@ -2283,7 +2283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_TakePhoto_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_TakePhoto_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "TakePhoto", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_TakePhoto_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TakePhoto_Statics::Function_MetaDataParams)) };
@@ -2306,7 +2306,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_ToggleHiResPhotoMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_ToggleHiResPhotoMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "ToggleHiResPhotoMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_ToggleHiResPhotoMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_ToggleHiResPhotoMode_Statics::Function_MetaDataParams)) };
@@ -2329,7 +2329,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_TogglePhotoMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_TogglePhotoMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "TogglePhotoMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_TogglePhotoMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TogglePhotoMode_Statics::Function_MetaDataParams)) };
@@ -2352,7 +2352,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_TogglePhotoModeInstructionsWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_TogglePhotoModeInstructionsWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "TogglePhotoModeInstructionsWidget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_TogglePhotoModeInstructionsWidget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TogglePhotoModeInstructionsWidget_Statics::Function_MetaDataParams)) };
@@ -2390,7 +2390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_TrackAkComponents_Statics::Function_MetaDataParams[] = {
 		{ "CPP_Default_byClass", "true" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_TrackAkComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "TrackAkComponents", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080601, sizeof(FGPlayerController_eventTrackAkComponents_Parms), Z_Construct_UFunction_AFGPlayerController_TrackAkComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TrackAkComponents_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_TrackAkComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TrackAkComponents_Statics::Function_MetaDataParams)) };
@@ -2412,7 +2412,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_TrackAkComponentsWithNoPositionOrOwner_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_TrackAkComponentsWithNoPositionOrOwner_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "TrackAkComponentsWithNoPositionOrOwner", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080601, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_TrackAkComponentsWithNoPositionOrOwner_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TrackAkComponentsWithNoPositionOrOwner_Statics::Function_MetaDataParams)) };
@@ -2434,7 +2434,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGPlayerController_TrackAkMemoryPools_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGPlayerController_TrackAkMemoryPools_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGPlayerController, "TrackAkMemoryPools", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080601, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGPlayerController_TrackAkMemoryPools_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGPlayerController_TrackAkMemoryPools_Statics::Function_MetaDataParams)) };
@@ -2552,99 +2552,99 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGPlayerController_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea, "CheckPawnMapArea" }, // 3933783458
-		{ &Z_Construct_UFunction_AFGPlayerController_Client_AddMessage, "Client_AddMessage" }, // 411232896
-		{ &Z_Construct_UFunction_AFGPlayerController_Client_TransferFogOfWarData, "Client_TransferFogOfWarData" }, // 2450150324
-		{ &Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming, "Client_WaitForLevelStreaming" }, // 2423832686
-		{ &Z_Construct_UFunction_AFGPlayerController_CreateSequenceList, "CreateSequenceList" }, // 571680596
-		{ &Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV, "DecrementPhotoModeFOV" }, // 3033060284
-		{ &Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode, "EnablePhotoMode" }, // 3029159937
-		{ &Z_Construct_UFunction_AFGPlayerController_EnterChatMessage, "EnterChatMessage" }, // 2627504913
-		{ &Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut, "ExecuteShortcut" }, // 3790167402
-		{ &Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts, "GetAllShortcuts" }, // 542000538
-		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea, "GetCurrentMapArea" }, // 2051537128
-		{ &Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate, "GetDisabledInputGate" }, // 3966067167
-		{ &Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex, "GetDismantleShortcutIndex" }, // 1925573714
-		{ &Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled, "GetHiResPhotoModeEnabled" }, // 2154420557
-		{ &Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode, "GetIsPhotoMode" }, // 1584361382
-		{ &Z_Construct_UFunction_AFGPlayerController_GetObjectScreenRadius, "GetObjectScreenRadius" }, // 4051924482
-		{ &Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV, "GetPhotoModeFOV" }, // 3459751499
-		{ &Z_Construct_UFunction_AFGPlayerController_GetPlayerHasMessage, "GetPlayerHasMessage" }, // 1620760383
-		{ &Z_Construct_UFunction_AFGPlayerController_GetRecipeShortcutIndex, "GetRecipeShortcutIndex" }, // 1785659018
-		{ &Z_Construct_UFunction_AFGPlayerController_GetRemoteCallObjectOfClass, "GetRemoteCallObjectOfClass" }, // 639091215
-		{ &Z_Construct_UFunction_AFGPlayerController_GetScreenBasedObjectRadius, "GetScreenBasedObjectRadius" }, // 1466331204
-		{ &Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath, "GetScreenshotPath" }, // 3049775304
-		{ &Z_Construct_UFunction_AFGPlayerController_GetShortcutIndexFromKey, "GetShortcutIndexFromKey" }, // 683286195
-		{ &Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts, "GetValidShortcuts" }, // 3501907821
-		{ &Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV, "IncrementPhotoModeFOV" }, // 3527226940
-		{ &Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode, "IsInTutorialMode" }, // 3925503016
-		{ &Z_Construct_UFunction_AFGPlayerController_IsRespawning, "IsRespawning" }, // 888842232
-		{ &Z_Construct_UFunction_AFGPlayerController_MaterialFlowAnalysis, "MaterialFlowAnalysis" }, // 3767470494
-		{ &Z_Construct_UFunction_AFGPlayerController_MaterialLookup, "MaterialLookup" }, // 953131129
-		{ &Z_Construct_UFunction_AFGPlayerController_NeedRespawn, "NeedRespawn" }, // 2361050261
-		{ &Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 1296760994
-		{ &Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn, "OnFinishRespawn" }, // 982142392
-		{ &Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire, "OnPrimaryFire" }, // 2665134656
-		{ &Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning, "OnRep_IsRespawning" }, // 548605411
-		{ &Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind, "OnSetupMovementWind" }, // 1571267787
-		{ &Z_Construct_UFunction_AFGPlayerController_OnStartRespawn, "OnStartRespawn" }, // 2023442392
-		{ &Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass, "RegisterRemoteCallObjectClass" }, // 3472978884
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage, "Server_DealImpactDamage" }, // 749317536
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealRadialDamage, "Server_DealRadialDamage" }, // 3837621206
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn, "Server_FinishRespawn" }, // 2186985884
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_RequestFogOfWarData, "Server_RequestFogOfWarData" }, // 1329631753
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_Respawn, "Server_Respawn" }, // 1987153623
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage, "Server_SendChatMessage" }, // 176015978
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex, "Server_SetDismantleShortcutOnIndex" }, // 2377330562
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex, "Server_SetRecipeShortcutOnIndex" }, // 2367114826
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor, "Server_SpawnAttentionPingActor" }, // 686506833
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn, "Server_StartRespawn" }, // 2368060104
-		{ &Z_Construct_UFunction_AFGPlayerController_Server_Suicide, "Server_Suicide" }, // 2521207885
-		{ &Z_Construct_UFunction_AFGPlayerController_SetDisabledInputGate, "SetDisabledInputGate" }, // 3937913827
-		{ &Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex, "SetDismantleShortcutOnIndex" }, // 1638148664
-		{ &Z_Construct_UFunction_AFGPlayerController_SetRecipeShortcutOnIndex, "SetRecipeShortcutOnIndex" }, // 2652289331
-		{ &Z_Construct_UFunction_AFGPlayerController_SetSessionName, "SetSessionName" }, // 123755695
-		{ &Z_Construct_UFunction_AFGPlayerController_StartRespawn, "StartRespawn" }, // 1861279002
-		{ &Z_Construct_UFunction_AFGPlayerController_Suicide, "Suicide" }, // 1565781279
-		{ &Z_Construct_UFunction_AFGPlayerController_TakePhoto, "TakePhoto" }, // 3477279552
-		{ &Z_Construct_UFunction_AFGPlayerController_ToggleHiResPhotoMode, "ToggleHiResPhotoMode" }, // 2829435073
-		{ &Z_Construct_UFunction_AFGPlayerController_TogglePhotoMode, "TogglePhotoMode" }, // 1246860755
-		{ &Z_Construct_UFunction_AFGPlayerController_TogglePhotoModeInstructionsWidget, "TogglePhotoModeInstructionsWidget" }, // 3029372180
-		{ &Z_Construct_UFunction_AFGPlayerController_TrackAkComponents, "TrackAkComponents" }, // 455253290
-		{ &Z_Construct_UFunction_AFGPlayerController_TrackAkComponentsWithNoPositionOrOwner, "TrackAkComponentsWithNoPositionOrOwner" }, // 2953827163
-		{ &Z_Construct_UFunction_AFGPlayerController_TrackAkMemoryPools, "TrackAkMemoryPools" }, // 1355758870
+		{ &Z_Construct_UFunction_AFGPlayerController_CheckPawnMapArea, "CheckPawnMapArea" }, // 1832519055
+		{ &Z_Construct_UFunction_AFGPlayerController_Client_AddMessage, "Client_AddMessage" }, // 2384941667
+		{ &Z_Construct_UFunction_AFGPlayerController_Client_TransferFogOfWarData, "Client_TransferFogOfWarData" }, // 3675337854
+		{ &Z_Construct_UFunction_AFGPlayerController_Client_WaitForLevelStreaming, "Client_WaitForLevelStreaming" }, // 569177691
+		{ &Z_Construct_UFunction_AFGPlayerController_CreateSequenceList, "CreateSequenceList" }, // 586985406
+		{ &Z_Construct_UFunction_AFGPlayerController_DecrementPhotoModeFOV, "DecrementPhotoModeFOV" }, // 833960393
+		{ &Z_Construct_UFunction_AFGPlayerController_EnablePhotoMode, "EnablePhotoMode" }, // 1656763072
+		{ &Z_Construct_UFunction_AFGPlayerController_EnterChatMessage, "EnterChatMessage" }, // 3491563367
+		{ &Z_Construct_UFunction_AFGPlayerController_ExecuteShortcut, "ExecuteShortcut" }, // 2538038537
+		{ &Z_Construct_UFunction_AFGPlayerController_GetAllShortcuts, "GetAllShortcuts" }, // 3907944511
+		{ &Z_Construct_UFunction_AFGPlayerController_GetCurrentMapArea, "GetCurrentMapArea" }, // 1794101457
+		{ &Z_Construct_UFunction_AFGPlayerController_GetDisabledInputGate, "GetDisabledInputGate" }, // 3953028408
+		{ &Z_Construct_UFunction_AFGPlayerController_GetDismantleShortcutIndex, "GetDismantleShortcutIndex" }, // 1456180841
+		{ &Z_Construct_UFunction_AFGPlayerController_GetHiResPhotoModeEnabled, "GetHiResPhotoModeEnabled" }, // 558954074
+		{ &Z_Construct_UFunction_AFGPlayerController_GetIsPhotoMode, "GetIsPhotoMode" }, // 4018281028
+		{ &Z_Construct_UFunction_AFGPlayerController_GetObjectScreenRadius, "GetObjectScreenRadius" }, // 2672883026
+		{ &Z_Construct_UFunction_AFGPlayerController_GetPhotoModeFOV, "GetPhotoModeFOV" }, // 3693571345
+		{ &Z_Construct_UFunction_AFGPlayerController_GetPlayerHasMessage, "GetPlayerHasMessage" }, // 3681696345
+		{ &Z_Construct_UFunction_AFGPlayerController_GetRecipeShortcutIndex, "GetRecipeShortcutIndex" }, // 1417358888
+		{ &Z_Construct_UFunction_AFGPlayerController_GetRemoteCallObjectOfClass, "GetRemoteCallObjectOfClass" }, // 335902434
+		{ &Z_Construct_UFunction_AFGPlayerController_GetScreenBasedObjectRadius, "GetScreenBasedObjectRadius" }, // 4229336462
+		{ &Z_Construct_UFunction_AFGPlayerController_GetScreenshotPath, "GetScreenshotPath" }, // 2858999032
+		{ &Z_Construct_UFunction_AFGPlayerController_GetShortcutIndexFromKey, "GetShortcutIndexFromKey" }, // 3314816708
+		{ &Z_Construct_UFunction_AFGPlayerController_GetValidShortcuts, "GetValidShortcuts" }, // 3542955467
+		{ &Z_Construct_UFunction_AFGPlayerController_IncrementPhotoModeFOV, "IncrementPhotoModeFOV" }, // 191301158
+		{ &Z_Construct_UFunction_AFGPlayerController_IsInTutorialMode, "IsInTutorialMode" }, // 625501663
+		{ &Z_Construct_UFunction_AFGPlayerController_IsRespawning, "IsRespawning" }, // 3557357135
+		{ &Z_Construct_UFunction_AFGPlayerController_MaterialFlowAnalysis, "MaterialFlowAnalysis" }, // 2749296108
+		{ &Z_Construct_UFunction_AFGPlayerController_MaterialLookup, "MaterialLookup" }, // 2191829828
+		{ &Z_Construct_UFunction_AFGPlayerController_NeedRespawn, "NeedRespawn" }, // 3236750953
+		{ &Z_Construct_UFunction_AFGPlayerController_OnDisabledInputGateChanged, "OnDisabledInputGateChanged" }, // 3309660036
+		{ &Z_Construct_UFunction_AFGPlayerController_OnFinishRespawn, "OnFinishRespawn" }, // 227947576
+		{ &Z_Construct_UFunction_AFGPlayerController_OnPrimaryFire, "OnPrimaryFire" }, // 1697094489
+		{ &Z_Construct_UFunction_AFGPlayerController_OnRep_IsRespawning, "OnRep_IsRespawning" }, // 219600751
+		{ &Z_Construct_UFunction_AFGPlayerController_OnSetupMovementWind, "OnSetupMovementWind" }, // 1867333128
+		{ &Z_Construct_UFunction_AFGPlayerController_OnStartRespawn, "OnStartRespawn" }, // 710614108
+		{ &Z_Construct_UFunction_AFGPlayerController_RegisterRemoteCallObjectClass, "RegisterRemoteCallObjectClass" }, // 1512131601
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealImpactDamage, "Server_DealImpactDamage" }, // 2908193197
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_DealRadialDamage, "Server_DealRadialDamage" }, // 806857457
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_FinishRespawn, "Server_FinishRespawn" }, // 2244485177
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_RequestFogOfWarData, "Server_RequestFogOfWarData" }, // 3300909112
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_Respawn, "Server_Respawn" }, // 949467539
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_SendChatMessage, "Server_SendChatMessage" }, // 4163566883
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetDismantleShortcutOnIndex, "Server_SetDismantleShortcutOnIndex" }, // 2058725436
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_SetRecipeShortcutOnIndex, "Server_SetRecipeShortcutOnIndex" }, // 1683356636
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_SpawnAttentionPingActor, "Server_SpawnAttentionPingActor" }, // 3714196302
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_StartRespawn, "Server_StartRespawn" }, // 1656172260
+		{ &Z_Construct_UFunction_AFGPlayerController_Server_Suicide, "Server_Suicide" }, // 3702721305
+		{ &Z_Construct_UFunction_AFGPlayerController_SetDisabledInputGate, "SetDisabledInputGate" }, // 102517152
+		{ &Z_Construct_UFunction_AFGPlayerController_SetDismantleShortcutOnIndex, "SetDismantleShortcutOnIndex" }, // 1012480420
+		{ &Z_Construct_UFunction_AFGPlayerController_SetRecipeShortcutOnIndex, "SetRecipeShortcutOnIndex" }, // 233519036
+		{ &Z_Construct_UFunction_AFGPlayerController_SetSessionName, "SetSessionName" }, // 1544716320
+		{ &Z_Construct_UFunction_AFGPlayerController_StartRespawn, "StartRespawn" }, // 48568874
+		{ &Z_Construct_UFunction_AFGPlayerController_Suicide, "Suicide" }, // 3059305778
+		{ &Z_Construct_UFunction_AFGPlayerController_TakePhoto, "TakePhoto" }, // 438926726
+		{ &Z_Construct_UFunction_AFGPlayerController_ToggleHiResPhotoMode, "ToggleHiResPhotoMode" }, // 4197877971
+		{ &Z_Construct_UFunction_AFGPlayerController_TogglePhotoMode, "TogglePhotoMode" }, // 3577046613
+		{ &Z_Construct_UFunction_AFGPlayerController_TogglePhotoModeInstructionsWidget, "TogglePhotoModeInstructionsWidget" }, // 1606363862
+		{ &Z_Construct_UFunction_AFGPlayerController_TrackAkComponents, "TrackAkComponents" }, // 3711550673
+		{ &Z_Construct_UFunction_AFGPlayerController_TrackAkComponentsWithNoPositionOrOwner, "TrackAkComponentsWithNoPositionOrOwner" }, // 2611806124
+		{ &Z_Construct_UFunction_AFGPlayerController_TrackAkMemoryPools, "TrackAkMemoryPools" }, // 3620342401
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGPlayerController.h" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mPhotomodeInputComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mPhotomodeInputComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mPhotomodeInputComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mPhotomodeInputComponent), Z_Construct_UClass_UInputComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mPhotomodeInputComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mPhotomodeInputComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMaxPhotoModeFOV_MetaData[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMaxPhotoModeFOV = { UE4CodeGen_Private::EPropertyClass::Int, "mMaxPhotoModeFOV", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mMaxPhotoModeFOV), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMaxPhotoModeFOV_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMaxPhotoModeFOV_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMinPhotoModeFOV_MetaData[] = {
 		{ "Category", "Photo Mode" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMinPhotoModeFOV = { UE4CodeGen_Private::EPropertyClass::Int, "mMinPhotoModeFOV", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000010001, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mMinPhotoModeFOV), METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMinPhotoModeFOV_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMinPhotoModeFOV_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromJoin_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Did we died" },
 	};
 #endif
@@ -2655,7 +2655,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromJoin = { UE4CodeGen_Private::EPropertyClass::Bool, "mRespawnFromJoin", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGPlayerController), &Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromJoin_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromJoin_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromJoin_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Did we died" },
 	};
 #endif
@@ -2666,14 +2666,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath = { UE4CodeGen_Private::EPropertyClass::Bool, "mRespawnFromDeath", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGPlayerController), &Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRespawnFromDeath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCachedMapAreaTexture_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Cached info about the map areas" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCachedMapAreaTexture = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedMapAreaTexture", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mCachedMapAreaTexture), Z_Construct_UClass_UFGMapAreaTexture_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCachedMapAreaTexture_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCachedMapAreaTexture_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mIsRespawning_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "If we're currently in the state of respawning" },
 	};
 #endif
@@ -2685,13 +2685,13 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMovementWindComp_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMovementWindComp = { UE4CodeGen_Private::EPropertyClass::Object, "mMovementWindComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mMovementWindComp), Z_Construct_UClass_UAkComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMovementWindComp_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMovementWindComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCurrentMapArea_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "In what map area is our pawn right now ?" },
 	};
 #endif
@@ -2699,7 +2699,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mMapAreaCheckInterval_MetaData[] = {
 		{ "Category", "FGPlayerController" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "How often should we check which map area the pawn is in?" },
 	};
 #endif
@@ -2707,7 +2707,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mAttentionPingActorClass_MetaData[] = {
 		{ "Category", "Attention Ping" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "The class of the attention ping actor we want to use" },
 	};
 #endif
@@ -2715,14 +2715,14 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInputComponentChords_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "This input component should only be used for chords, Alt/Ctrl/Shift/Cmd + Any Key.\nThis will be on top of stack, since it only consumes input if entire chord is pressed, so a single left click will be let through" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInputComponentChords = { UE4CodeGen_Private::EPropertyClass::Object, "mInputComponentChords", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mInputComponentChords), Z_Construct_UClass_UInputComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInputComponentChords_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mInputComponentChords_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mRemoteCallObjects_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "The array of all remote call objects this player controller has" },
 	};
 #endif
@@ -2731,7 +2731,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_MetaData[] = {
 		{ "Category", "Sound" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Indicates if this playercontroller should trigger sound volumes" },
 	};
 #endif
@@ -2742,7 +2742,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanAffectAudioVolumes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGPlayerController), &Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mCanAffectAudioVolumes_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDisabledInputGateChanged_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDisabledInputGateChanged = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mDisabledInputGateChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, mDisabledInputGateChanged), Z_Construct_UDelegateFunction_FactoryGame_DisabledInputGateDelegate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDisabledInputGateChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_mDisabledInputGateChanged_MetaData)) };
@@ -2750,7 +2750,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_MapAreaEntered_MetaData[] = {
 		{ "Category", "Map Area" },
 		{ "DisplayName", "OnMapAreaEntered" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called when the pawn this controller is controlling enters a map area" },
 	};
 #endif
@@ -2758,7 +2758,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInteractionUI_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called when the player opens or closes the inventory" },
 	};
 #endif
@@ -2766,21 +2766,21 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called when the player opens or closes the inventory" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnToggleInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010100010080000, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, OnToggleInventory), Z_Construct_UDelegateFunction_FactoryGame_OnToggleInventory__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnToggleInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutChanged_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called when a shortcut has changed, e.g. activated or inactivated" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutChanged = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "OnShortcutChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000010080000, 1, nullptr, STRUCT_OFFSET(AFGPlayerController, OnShortcutChanged), Z_Construct_UDelegateFunction_FactoryGame_OnShortcutChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGPlayerController_Statics::NewProp_OnShortcutsLayoutChanged_MetaData[] = {
-		{ "ModuleRelativePath", "FGPlayerController.h" },
+		{ "ModuleRelativePath", "Public/FGPlayerController.h" },
 		{ "ToolTip", "Called when the shortcuts layout have changed, e.g. shortcut added." },
 	};
 #endif
@@ -2831,7 +2831,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerController, 2579159037);
+	IMPLEMENT_CLASS(AFGPlayerController, 1012492257);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerController(Z_Construct_UClass_AFGPlayerController, &AFGPlayerController::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

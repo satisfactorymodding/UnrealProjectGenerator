@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableManufacturer.h"
+#include "FactoryGame/Public/Buildables/FGBuildableManufacturer.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnNewRecipeDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnNewRecipeDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnNewRecipeDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_GetAvailableRecipes_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Recipe" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Gets all the recipes that can be produced.\n@note This is an expensive operation so cache the result.\n@param out_recipes Returns all recipes available to this machine." },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_GetCurrentRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Recipe" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Get the current recipe for manufacturing." },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_GetInputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Get the input inventory from this manufacturer." },
 	};
 #endif
@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_GetManufacturingSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Production" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Returns the speed of which this building manufacture recipes" },
 	};
 #endif
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_GetOutputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Get the output inventory from this manufacturer." },
 	};
 #endif
@@ -299,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropInputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Move all items in the input inventory to the given inventory.\n@return true if successful; false if the given inventory is full or does not support the given type of item." },
 	};
 #endif
@@ -342,7 +342,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropOutputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Move all items in the input output to the given inventory.\n@return true if successful; false if the given inventory is full or does not support the given type of item." },
 	};
 #endif
@@ -365,7 +365,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_OnRep_CurrentRecipe_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Called when NewRecipe is replicated" },
 	};
 #endif
@@ -399,7 +399,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableManufacturer_SetRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Factory|Recipe" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Set the current recipe for manufacturing.\n@note It is up to the caller to make sure input and output inventories are empty before changing recipe.\n      This is so the case when players inventory is full can be handled correctly.\n@param recipe - The new recipe." },
 	};
 #endif
@@ -458,26 +458,26 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableManufacturer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetAvailableRecipes, "GetAvailableRecipes" }, // 3621082296
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetCurrentRecipe, "GetCurrentRecipe" }, // 4045530824
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetInputInventory, "GetInputInventory" }, // 901798697
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetManufacturingSpeed, "GetManufacturingSpeed" }, // 212939021
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetOutputInventory, "GetOutputInventory" }, // 1138333807
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropInputInventory, "MoveOrDropInputInventory" }, // 653618332
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropOutputInventory, "MoveOrDropOutputInventory" }, // 905651169
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_OnRep_CurrentRecipe, "OnRep_CurrentRecipe" }, // 1896318393
-		{ &Z_Construct_UFunction_AFGBuildableManufacturer_SetRecipe, "SetRecipe" }, // 3681330805
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetAvailableRecipes, "GetAvailableRecipes" }, // 2761471090
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetCurrentRecipe, "GetCurrentRecipe" }, // 3437163855
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetInputInventory, "GetInputInventory" }, // 1196864600
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetManufacturingSpeed, "GetManufacturingSpeed" }, // 4067204889
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_GetOutputInventory, "GetOutputInventory" }, // 2883238107
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropInputInventory, "MoveOrDropInputInventory" }, // 473632377
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_MoveOrDropOutputInventory, "MoveOrDropOutputInventory" }, // 2682774427
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_OnRep_CurrentRecipe, "OnRep_CurrentRecipe" }, // 1865579496
+		{ &Z_Construct_UFunction_AFGBuildableManufacturer_SetRecipe, "SetRecipe" }, // 2235128379
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableManufacturer.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Base class for all buildings that are producing something out of something, i.e. constructors, smelters, refinery etc." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mCurrentRecipe_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "The recipe we're currently running." },
 	};
@@ -486,7 +486,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mOutputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Our output inventory, shared for all output connections." },
 	};
 #endif
@@ -494,14 +494,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mInputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Our input inventory, shared for all input connections." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mInputInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInputInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080008, 1, nullptr, STRUCT_OFFSET(AFGBuildableManufacturer, mInputInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mInputInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mInputInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mCurrentManufacturingProgress_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Manufacturing progress in range [0,1]." },
 	};
@@ -510,7 +510,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mManufacturingSpeed_MetaData[] = {
 		{ "Category", "Production" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "The speed of which this building manufacture recipes, this is a multiplier to the recipe speed" },
 	};
 #endif
@@ -518,7 +518,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableManufacturer_Statics::NewProp_mCurrentRecipeChanged_MetaData[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableManufacturer.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableManufacturer.h" },
 		{ "ToolTip", "Called when a new recipe has been set." },
 	};
 #endif
@@ -557,7 +557,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableManufacturer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableManufacturer, 3922955432);
+	IMPLEMENT_CLASS(AFGBuildableManufacturer, 196419767);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableManufacturer(Z_Construct_UClass_AFGBuildableManufacturer, &AFGBuildableManufacturer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableManufacturer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableManufacturer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

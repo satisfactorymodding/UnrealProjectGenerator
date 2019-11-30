@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGResourceScanner.h"
+#include "FactoryGame/Public/Equipment/FGResourceScanner.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -74,7 +74,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNodeClusterData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Holds information about resource node clusters. This could be saved in actors on the level for optimization." },
 	};
 #endif
@@ -85,7 +85,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNodeClusterData_Statics::NewProp_ResourceDescriptor_MetaData[] = {
 		{ "Category", "NodeClusterData" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "The resource descriptor of this cluster" },
 	};
 #endif
@@ -93,7 +93,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNodeClusterData_Statics::NewProp_MidPoint_MetaData[] = {
 		{ "Category", "NodeClusterData" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "The average location of all the nodes" },
 	};
 #endif
@@ -101,7 +101,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNodeClusterData_Statics::NewProp_Nodes_MetaData[] = {
 		{ "Category", "NodeClusterData" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Cost of schematic if there are more than once item in this array the true cost will be randomly selected." },
 	};
 #endif
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FNodeClusterData_CRC() { return 3452271283U; }
+	uint32 Get_Z_Construct_UScriptStruct_FNodeClusterData_CRC() { return 964174341U; }
 	static FName NAME_AFGResourceScanner_CloseResourceDescriptorSelectUI = FName(TEXT("CloseResourceDescriptorSelectUI"));
 	void AFGResourceScanner::CloseResourceDescriptorSelectUI()
 	{
@@ -185,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_CloseResourceDescriptorSelectUI_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Close the resource descriptor selection UI" },
 	};
 #endif
@@ -219,7 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_GetResourceDescriptorToScanFor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Returns the current resource descriptor class that we scan for nodes that has" },
 	};
 #endif
@@ -256,7 +256,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_GetScannableResources_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Returns the current resource descriptor classes that we should be able to chose from" },
 	};
 #endif
@@ -297,7 +297,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_PlayClusterEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "The function that play effects, sound and particle, in the world at the found node" },
 	};
 #endif
@@ -320,7 +320,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_Server_ScanReleased_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "server notified of when a scanning was made" },
 	};
 #endif
@@ -359,7 +359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_SetPressingScan_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Sets the status of mIsPressingScan" },
 	};
 #endif
@@ -393,7 +393,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_SetResourceDescriptorToScanFor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Set resource descriptor class we should scan for" },
 	};
 #endif
@@ -417,7 +417,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGResourceScanner_ShowResourceDescriptorSelectUI_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Show the resource descriptor selection UI" },
 	};
 #endif
@@ -486,25 +486,25 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGResourceScanner_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGResourceScanner_CloseResourceDescriptorSelectUI, "CloseResourceDescriptorSelectUI" }, // 3701333671
-		{ &Z_Construct_UFunction_AFGResourceScanner_GetResourceDescriptorToScanFor, "GetResourceDescriptorToScanFor" }, // 3876854588
-		{ &Z_Construct_UFunction_AFGResourceScanner_GetScannableResources, "GetScannableResources" }, // 3664421116
-		{ &Z_Construct_UFunction_AFGResourceScanner_PlayClusterEffects, "PlayClusterEffects" }, // 1367945894
-		{ &Z_Construct_UFunction_AFGResourceScanner_Server_ScanReleased, "Server_ScanReleased" }, // 3025540455
-		{ &Z_Construct_UFunction_AFGResourceScanner_SetPressingScan, "SetPressingScan" }, // 3044048901
-		{ &Z_Construct_UFunction_AFGResourceScanner_SetResourceDescriptorToScanFor, "SetResourceDescriptorToScanFor" }, // 190577443
-		{ &Z_Construct_UFunction_AFGResourceScanner_ShowResourceDescriptorSelectUI, "ShowResourceDescriptorSelectUI" }, // 2109504587
+		{ &Z_Construct_UFunction_AFGResourceScanner_CloseResourceDescriptorSelectUI, "CloseResourceDescriptorSelectUI" }, // 4247687262
+		{ &Z_Construct_UFunction_AFGResourceScanner_GetResourceDescriptorToScanFor, "GetResourceDescriptorToScanFor" }, // 1235714631
+		{ &Z_Construct_UFunction_AFGResourceScanner_GetScannableResources, "GetScannableResources" }, // 2756287462
+		{ &Z_Construct_UFunction_AFGResourceScanner_PlayClusterEffects, "PlayClusterEffects" }, // 1185894401
+		{ &Z_Construct_UFunction_AFGResourceScanner_Server_ScanReleased, "Server_ScanReleased" }, // 628057417
+		{ &Z_Construct_UFunction_AFGResourceScanner_SetPressingScan, "SetPressingScan" }, // 3961872763
+		{ &Z_Construct_UFunction_AFGResourceScanner_SetResourceDescriptorToScanFor, "SetResourceDescriptorToScanFor" }, // 697217080
+		{ &Z_Construct_UFunction_AFGResourceScanner_ShowResourceDescriptorSelectUI, "ShowResourceDescriptorSelectUI" }, // 860021973
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGResourceScanner.h" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Locates resources for the player." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mNodeClusters_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "A list of all the clusters of nodes non the level" },
 	};
 #endif
@@ -513,14 +513,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mDistBetweenNodesInCluster_MetaData[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "If nodes are closer that dist they are considered within the cluster" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mDistBetweenNodesInCluster = { UE4CodeGen_Private::EPropertyClass::Float, "mDistBetweenNodesInCluster", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGResourceScanner, mDistBetweenNodesInCluster), METADATA_PARAMS(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mDistBetweenNodesInCluster_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mDistBetweenNodesInCluster_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mIsWaitingForSelectionUI_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "True if we are waiting for the selection UI" },
 	};
 #endif
@@ -531,7 +531,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mIsWaitingForSelectionUI = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsWaitingForSelectionUI", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGResourceScanner), &Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mIsWaitingForSelectionUI_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mIsWaitingForSelectionUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mIsWaitingForSelectionUI_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mIsPressingScan_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "True in between OnScanPressed and OnScanReleased" },
 	};
 #endif
@@ -543,14 +543,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mHoldDownDurationForUI_MetaData[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Time needed to hold down the key to show the selection UI" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mHoldDownDurationForUI = { UE4CodeGen_Private::EPropertyClass::Float, "mHoldDownDurationForUI", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGResourceScanner, mHoldDownDurationForUI), METADATA_PARAMS(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mHoldDownDurationForUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mHoldDownDurationForUI_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mLastPressedTimeStamp_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "Keeps track of the last time we pressed Scan" },
 	};
 #endif
@@ -558,14 +558,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mNrOfClosestClustersToMark_MetaData[] = {
 		{ "Category", "Resource Scanner" },
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "How many node clusters should be marked" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mNrOfClosestClustersToMark = { UE4CodeGen_Private::EPropertyClass::Int, "mNrOfClosestClustersToMark", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGResourceScanner, mNrOfClosestClustersToMark), METADATA_PARAMS(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mNrOfClosestClustersToMark_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mNrOfClosestClustersToMark_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceScanner_Statics::NewProp_mResourceDescriptorToScanFor_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGResourceScanner.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGResourceScanner.h" },
 		{ "ToolTip", "This is the resource class to scan for" },
 	};
 #endif
@@ -604,7 +604,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceScanner, 937662334);
+	IMPLEMENT_CLASS(AFGResourceScanner, 2487474764);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceScanner(Z_Construct_UClass_AFGResourceScanner, &AFGResourceScanner::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceScanner"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceScanner);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

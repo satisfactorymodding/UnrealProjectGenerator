@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliageLibrary.h"
+#include "FactoryGame/Public/FGFoliageLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFoliageLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliageLibrary.h" },
-		{ "ModuleRelativePath", "FGFoliageLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGFoliageLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGFoliageLibrary_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFoliageLibrary, 2435061967);
+	IMPLEMENT_CLASS(UFGFoliageLibrary, 1230014710);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFoliageLibrary(Z_Construct_UClass_UFGFoliageLibrary, &UFGFoliageLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFoliageLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFoliageLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

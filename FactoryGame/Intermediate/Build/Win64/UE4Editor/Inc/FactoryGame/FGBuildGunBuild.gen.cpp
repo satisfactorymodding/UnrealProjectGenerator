@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGBuildGunBuild.h"
+#include "FactoryGame/Public/Equipment/FGBuildGunBuild.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -86,7 +86,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewStructOps()
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_mConnectionComponents_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_mConnectionComponents = { UE4CodeGen_Private::EPropertyClass::Array, "mConnectionComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010008000000000, 1, nullptr, STRUCT_OFFSET(FFactoryClearanceData, mConnectionComponents), METADATA_PARAMS(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_mConnectionComponents_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_mConnectionComponents_MetaData)) };
@@ -103,13 +103,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_ClearanceComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_ClearanceComponent = { UE4CodeGen_Private::EPropertyClass::Object, "ClearanceComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080008, 1, nullptr, STRUCT_OFFSET(FFactoryClearanceData, ClearanceComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_ClearanceComponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_ClearanceComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_Factory_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_Factory = { UE4CodeGen_Private::EPropertyClass::Object, "Factory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FFactoryClearanceData, Factory), Z_Construct_UClass_AFGBuildableFactory_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_Factory_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::NewProp_Factory_MetaData)) };
@@ -146,7 +146,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryClearanceData_CRC() { return 172204126U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryClearanceData_CRC() { return 3094847904U; }
 class UScriptStruct* FConnectionRepresentation::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -184,7 +184,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewStructOps()
@@ -194,14 +194,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionRepresentation_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionRepresentation = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectionRepresentation", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080008, 1, nullptr, STRUCT_OFFSET(FConnectionRepresentation, mConnectionRepresentation), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionRepresentation_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionRepresentation_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionComponent = { UE4CodeGen_Private::EPropertyClass::Object, "mConnectionComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080008, 1, nullptr, STRUCT_OFFSET(FConnectionRepresentation, mConnectionComponent), Z_Construct_UClass_UFGConnectionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionComponent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::NewProp_mConnectionComponent_MetaData)) };
@@ -236,7 +236,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionRepresentation_CRC() { return 3493497886U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionRepresentation_CRC() { return 2545971827U; }
 	static FName NAME_UFGBuildGunStateBuild_Client_OnBuildableConstructed = FName(TEXT("Client_OnBuildableConstructed"));
 	void UFGBuildGunStateBuild::Client_OnBuildableConstructed(TSubclassOf<UFGItemDescriptor>  desc)
 	{
@@ -350,7 +350,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunStateBuild, "BeginClearanceOverlap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00440401, sizeof(FGBuildGunStateBuild_eventBeginClearanceOverlap_Parms), Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap_Statics::Function_MetaDataParams)) };
@@ -378,7 +378,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_Client_OnBuildableConstructed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Helper to notify the client that something was built" },
 	};
 #endif
@@ -401,7 +401,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_Client_OnResetHologram_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Helper to notify the client." },
 	};
 #endif
@@ -462,7 +462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGBuildGunStateBuild, "EndClearanceOverlap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, sizeof(FGBuildGunStateBuild_eventEndClearanceOverlap_Parms), Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap_Statics::Function_MetaDataParams)) };
@@ -495,7 +495,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_GetDescriptor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Get the current descriptor, null if no descriptor is set." },
 	};
 #endif
@@ -529,7 +529,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_GetHologram_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Returns the hologram; null if hologram not spawned." },
 	};
 #endif
@@ -566,7 +566,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_GetHologramCost_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Returns the cost for building the hologram." },
 	};
 #endif
@@ -590,7 +590,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_OnActiveDescriptorChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Let blueprint know when we get a new descriptor, the new descriptor may be null." },
 	};
 #endif
@@ -625,7 +625,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_OnMultiStepPlacement_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Let blueprint know we performed a multi-step placement.\n@param isFinalStep - true if this was the last step, the thing is now built. Hologram is no longer guaranteed to exist on the the client." },
 	};
 #endif
@@ -648,7 +648,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_OnRep_Hologram_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Called whenever the hologram is udpated *" },
 	};
 #endif
@@ -672,7 +672,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_OnResetHologram_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Let blueprint know we reset the multi-step placement." },
 	};
 #endif
@@ -696,7 +696,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildGunStateBuild_ResetHologram_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGunState|Build" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Resets any changes made to the hologram.\n@note Must be called on the server." },
 	};
 #endif
@@ -755,37 +755,37 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildGunStateBuild_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap, "BeginClearanceOverlap" }, // 2678958636
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_Client_OnBuildableConstructed, "Client_OnBuildableConstructed" }, // 3096659967
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_Client_OnResetHologram, "Client_OnResetHologram" }, // 1029684438
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap, "EndClearanceOverlap" }, // 3188752287
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_GetDescriptor, "GetDescriptor" }, // 3537469108
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_GetHologram, "GetHologram" }, // 3135401855
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_GetHologramCost, "GetHologramCost" }, // 492843978
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnActiveDescriptorChanged, "OnActiveDescriptorChanged" }, // 2173253787
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnMultiStepPlacement, "OnMultiStepPlacement" }, // 113834668
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnRep_Hologram, "OnRep_Hologram" }, // 744665933
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnResetHologram, "OnResetHologram" }, // 4049704188
-		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_ResetHologram, "ResetHologram" }, // 1288540577
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_BeginClearanceOverlap, "BeginClearanceOverlap" }, // 4016000660
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_Client_OnBuildableConstructed, "Client_OnBuildableConstructed" }, // 2702803497
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_Client_OnResetHologram, "Client_OnResetHologram" }, // 4235933644
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_EndClearanceOverlap, "EndClearanceOverlap" }, // 3294522468
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_GetDescriptor, "GetDescriptor" }, // 2268198522
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_GetHologram, "GetHologram" }, // 3172268122
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_GetHologramCost, "GetHologramCost" }, // 2472850937
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnActiveDescriptorChanged, "OnActiveDescriptorChanged" }, // 1245395398
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnMultiStepPlacement, "OnMultiStepPlacement" }, // 92880775
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnRep_Hologram, "OnRep_Hologram" }, // 3327072408
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_OnResetHologram, "OnResetHologram" }, // 1458423415
+		{ &Z_Construct_UFunction_UFGBuildGunStateBuild_ResetHologram, "ResetHologram" }, // 773888377
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGBuildGunBuild.h" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Build guns build state." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mClearanceDetector_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Component that finds close clearances of nearby buildings and visualize them //@todo G2 2019-04-10 An improvement here would be to make this a component that can keep track of detected\n//                    overlaps so the state does not contain this easily self contained logic." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mClearanceDetector = { UE4CodeGen_Private::EPropertyClass::Object, "mClearanceDetector", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(UFGBuildGunStateBuild, mClearanceDetector), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mClearanceDetector_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mClearanceDetector_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mProximateClearances_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Contains all the proximate clearances volumes" },
 	};
 #endif
@@ -793,28 +793,28 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mProximateClearances_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mProximateClearances", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000008000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FFactoryClearanceData, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mUpgradedActor_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "The actor to replace (dismantle) when upgrading." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mUpgradedActor = { UE4CodeGen_Private::EPropertyClass::Object, "mUpgradedActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(UFGBuildGunStateBuild, mUpgradedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mUpgradedActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mUpgradedActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mHologram_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "The hologram to build." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mHologram = { UE4CodeGen_Private::EPropertyClass::Object, "mHologram", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000100000020, 1, "OnRep_Hologram", STRUCT_OFFSET(UFGBuildGunStateBuild, mHologram), Z_Construct_UClass_AFGHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mHologram_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mHologram_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mActiveRecipe_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "The currently active recipe, this decides which action will be used.\nNot replicated as the client sets it locally and then tells the server to set it." },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mActiveRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "mActiveRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000000000, 1, nullptr, STRUCT_OFFSET(UFGBuildGunStateBuild, mActiveRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mActiveRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mActiveRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildGunStateBuild_Statics::NewProp_mPendingRecipe_MetaData[] = {
-		{ "ModuleRelativePath", "Equipment/FGBuildGunBuild.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGBuildGunBuild.h" },
 		{ "ToolTip", "Recipe to activate when state is entered." },
 	};
 #endif
@@ -851,7 +851,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildGunStateBuild, 649688716);
+	IMPLEMENT_CLASS(UFGBuildGunStateBuild, 2387094738);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildGunStateBuild(Z_Construct_UClass_UFGBuildGunStateBuild, &UFGBuildGunStateBuild::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildGunStateBuild"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildGunStateBuild);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

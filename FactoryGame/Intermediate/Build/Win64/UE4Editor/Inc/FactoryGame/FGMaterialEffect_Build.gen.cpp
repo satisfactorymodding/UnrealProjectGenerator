@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMaterialEffect_Build.h"
+#include "FactoryGame/Public/FGMaterialEffect_Build.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "How much did the thing cost." },
 	};
 #endif
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "Who build the thing." },
 	};
 #endif
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "How fast is the thing built. [cm/s]" },
 	};
 #endif
@@ -168,28 +168,28 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMaterialEffect_Build_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost, "GetCost" }, // 2599726790
-		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator, "GetInstigator" }, // 1351004246
-		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed, "GetSpeed" }, // 3961213222
+		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetCost, "GetCost" }, // 4209444945
+		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetInstigator, "GetInstigator" }, // 3297729930
+		{ &Z_Construct_UFunction_UFGMaterialEffect_Build_GetSpeed, "GetSpeed" }, // 1205976964
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Component Tick Collision" },
 		{ "IncludePath", "FGMaterialEffect_Build.h" },
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "Material effect for building." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData[] = {
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "The speed of this effect." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGMaterialEffect_Build, mSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_MetaData[] = {
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "How much did this cost" },
 	};
 #endif
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mCost_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mCost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMaterialEffect_Build_Statics::NewProp_mInstigator_MetaData[] = {
-		{ "ModuleRelativePath", "FGMaterialEffect_Build.h" },
+		{ "ModuleRelativePath", "Public/FGMaterialEffect_Build.h" },
 		{ "ToolTip", "Who built this" },
 	};
 #endif
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMaterialEffect_Build() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 164421793);
+	IMPLEMENT_CLASS(UFGMaterialEffect_Build, 1712192014);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMaterialEffect_Build(Z_Construct_UClass_UFGMaterialEffect_Build, &UFGMaterialEffect_Build::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMaterialEffect_Build"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMaterialEffect_Build);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

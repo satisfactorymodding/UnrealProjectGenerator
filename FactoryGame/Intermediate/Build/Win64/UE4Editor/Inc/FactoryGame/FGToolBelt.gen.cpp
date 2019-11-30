@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGToolBelt.h"
+#include "FactoryGame/Public/Equipment/FGToolBelt.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,13 +46,13 @@ void EmptyLinkFunctionForGeneratedCodeFGToolBelt() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGToolBelt_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGToolBelt.h" },
-		{ "ModuleRelativePath", "Equipment/FGToolBelt.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGToolBelt.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGToolBelt_Statics::NewProp_mNumArmSlotsToUnlock_MetaData[] = {
 		{ "Category", "Belt" },
-		{ "ModuleRelativePath", "Equipment/FGToolBelt.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGToolBelt.h" },
 		{ "ToolTip", "How many arm slots are added by this belt" },
 	};
 #endif
@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFGToolBelt() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGToolBelt, 446592002);
+	IMPLEMENT_CLASS(AFGToolBelt, 367039214);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGToolBelt(Z_Construct_UClass_AFGToolBelt, &AFGToolBelt::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGToolBelt"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGToolBelt);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

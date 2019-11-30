@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGItemDescriptor.h"
+#include "FactoryGame/Public/Resources/FGItemDescriptor.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EStackSize(EStackSize_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EStackSize"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EStackSize_CRC() { return 2191352509U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EStackSize_CRC() { return 2950492433U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EStackSize()
 	{
 #if WITH_HOT_RELOAD
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+				{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 				{ "SS_BIG.DisplayName", "Big" },
 				{ "SS_HUGE.DisplayName", "Huge" },
 				{ "SS_LAST_ENUM.Hidden", "" },
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EResourceForm(EResourceForm_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EResourceForm"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourceForm_CRC() { return 1909696876U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EResourceForm_CRC() { return 2599784149U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EResourceForm()
 	{
 #if WITH_HOT_RELOAD
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptor() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+				{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 				{ "RF_GAS.DisplayName", "Gas" },
 				{ "RF_HEAT.DisplayName", "Heat" },
 				{ "RF_INVALID.DisplayName", "Invalid" },
@@ -200,7 +200,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemView_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FItemView_Statics::NewStructOps()
@@ -210,7 +210,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemView_Statics::NewProp_CameraPitch_MetaData[] = {
 		{ "Category", "View" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "How much \"down or up\" the camera should be angeled (in degrees) when crating the view" },
 	};
 #endif
@@ -218,7 +218,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemView_Statics::NewProp_FocalOffset_MetaData[] = {
 		{ "Category", "View" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "Where should the camera focus offsetted on the mesh" },
 	};
@@ -227,7 +227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FItemView_Statics::NewProp_Distance_MetaData[] = {
 		{ "Category", "View" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The distance to the object when creating it's view" },
 	};
 #endif
@@ -264,7 +264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC() { return 3837524762U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC() { return 1142397318U; }
 	void UFGItemDescriptor::StaticRegisterNativesUFGItemDescriptor()
 	{
 		UClass* Class = UFGItemDescriptor::StaticClass();
@@ -315,7 +315,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Returns if this item can be discarded" },
 	};
 #endif
@@ -353,7 +353,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The big icon of the item" },
 	};
 #endif
@@ -391,7 +391,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Energy value for this resource if used as fuel." },
 	};
 #endif
@@ -432,7 +432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetForm_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The state of this resource." },
 	};
 #endif
@@ -471,7 +471,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetIconView_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
 		{ "DevelopmentOnly", "" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Get the view to use when previewing this item" },
 	};
 #endif
@@ -509,7 +509,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Returns the item category" },
 	};
 #endif
@@ -547,7 +547,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Used to get the resource description in blueprints" },
 	};
 #endif
@@ -587,7 +587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "Category", "FactoryGame|Descriptor|Item" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Don't use the brush anymore, please use GetSmallIcon or GetBigIcon" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The icon to be used in UI." },
 	};
 #endif
@@ -625,7 +625,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The static mesh we want for representing the resource when they are in the production line.\n@return The items mesh; a default mesh if the item has no mesh specified, nullptr if inClass is nullptr." },
 	};
 #endif
@@ -663,7 +663,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetItemName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Used to get the resource name in blueprints" },
 	};
 #endif
@@ -701,7 +701,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Get the view to use when previewing this item" },
 	};
 #endif
@@ -739,7 +739,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "How much radiation this item gives out, 0 means it's not radioactive." },
 	};
 #endif
@@ -777,7 +777,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The small icon of the item" },
 	};
 #endif
@@ -815,7 +815,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptor_GetStackSize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Returns the number of items of a certain type we can stack in one inventory slot" },
 	};
 #endif
@@ -921,20 +921,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGItemDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded, "CanBeDiscarded" }, // 2325616794
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon, "GetBigIcon" }, // 2567019252
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue, "GetEnergyValue" }, // 1884830668
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetForm, "GetForm" }, // 4110883313
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetIconView, "GetIconView" }, // 2591459172
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory, "GetItemCategory" }, // 874524611
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription, "GetItemDescription" }, // 43972647
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon, "GetItemIcon" }, // 2015961453
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh, "GetItemMesh" }, // 3907276095
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemName, "GetItemName" }, // 1693631394
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView, "GetPreviewView" }, // 814638394
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay, "GetRadioactiveDecay" }, // 3625666009
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon, "GetSmallIcon" }, // 1165635708
-		{ &Z_Construct_UFunction_UFGItemDescriptor_GetStackSize, "GetStackSize" }, // 3423175679
+		{ &Z_Construct_UFunction_UFGItemDescriptor_CanBeDiscarded, "CanBeDiscarded" }, // 2976186447
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetBigIcon, "GetBigIcon" }, // 672408649
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetEnergyValue, "GetEnergyValue" }, // 3710876624
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetForm, "GetForm" }, // 4004956855
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetIconView, "GetIconView" }, // 1213058934
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemCategory, "GetItemCategory" }, // 3792467932
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemDescription, "GetItemDescription" }, // 1110740144
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemIcon, "GetItemIcon" }, // 1404070107
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemMesh, "GetItemMesh" }, // 402156660
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetItemName, "GetItemName" }, // 639477925
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetPreviewView, "GetPreviewView" }, // 2055386543
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetRadioactiveDecay, "GetRadioactiveDecay" }, // 1938454383
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetSmallIcon, "GetSmallIcon" }, // 2513758963
+		{ &Z_Construct_UFunction_UFGItemDescriptor_GetStackSize, "GetStackSize" }, // 1280683555
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::Class_MetaDataParams[] = {
@@ -943,7 +943,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGItemDescriptor.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "Base for all descriptors in the game like resource, equipment etc." },
 	};
@@ -952,7 +952,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconView_MetaData[] = {
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "NoAutoJSON", "TRUE" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "The distance to the object when rendering the icon" },
@@ -962,7 +962,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mIconYaw_MetaData[] = {
 		{ "Category", "Icon" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "NoAutoJSON", "TRUE" },
 		{ "ToolTip", "The jaw of the object when rendering the icon" },
 	};
@@ -972,7 +972,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mItemCategory_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The category for this item" },
 	};
 #endif
@@ -980,7 +980,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPreviewView_MetaData[] = {
 		{ "Category", "Preview" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "NoAutoJSON", "TRUE" },
 		{ "ShowOnlyInnerProperties", "" },
 		{ "ToolTip", "The view in the build menu for this item" },
@@ -990,7 +990,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mConveyorMesh_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The static mesh we want for representing the resource when they are in the production line." },
 	};
 #endif
@@ -999,7 +999,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mPersistentBigIcon_MetaData[] = {
 		{ "Category", "UI" },
 		{ "DisplayName", "Big Icon" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Big icon of the item, SHOULD only be loaded by demand, but right now persistent in memory" },
 	};
 #endif
@@ -1007,14 +1007,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Small icon of the item, always in memory" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon = { UE4CodeGen_Private::EPropertyClass::Object, "mSmallIcon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGItemDescriptor, mSmallIcon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mSmallIcon_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mInventoryIcon_MetaData[] = {
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "NoAutoJSON", "TRUE" },
 		{ "ToolTip", "Old brush used for UI, can't be DEPRECATED_ as it won't work in shipping builds during conversion then" },
 	};
@@ -1023,7 +1023,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mForm_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "The state of this resource (cannot change during it's lifetime)." },
 	};
 #endif
@@ -1033,7 +1033,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mRadioactiveDecay_MetaData[] = {
 		{ "Category", "Item" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "How much radiation this item gives out in the number of nucleus that decays per second.\n0 means no radiation and 1 is 10^15 (1 quadrillion) decays/s.\nGood values are in the range 0 to 1." },
 		{ "UIMax", "1" },
 		{ "UIMin", "0" },
@@ -1043,7 +1043,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mEnergyValue_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Energy value for this resource if used as fuel. In megawatt seconds (MWs), a.k.a. mega joule (MJ)" },
 	};
 #endif
@@ -1051,7 +1051,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mCanBeDiscarded_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Indicates if this item can be thrown in the trash or not" },
 	};
 #endif
@@ -1063,7 +1063,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mStackSize_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "How many of this item can be in the same slot in an inventory" },
 	};
 #endif
@@ -1074,7 +1074,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "Category", "Item" },
 		{ "EditCondition", "mUseDisplayNameAndDescription" },
 		{ "HideEditConditionToggle", "" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "MultiLine", "TRUE" },
 		{ "ToolTip", "Readable description of the item" },
 	};
@@ -1085,7 +1085,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		{ "Category", "Item" },
 		{ "EditCondition", "mUseDisplayNameAndDescription" },
 		{ "HideEditConditionToggle", "" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "Readable name of the item" },
 	};
 #endif
@@ -1093,7 +1093,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptor_Statics::NewProp_mUseDisplayNameAndDescription_MetaData[] = {
 		{ "Category", "FGItemDescriptor" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptor.h" },
 		{ "ToolTip", "If mDisplayName and mDisplayName is overridden and specified elsewhere.\nThis is specified in the native constructor and is meant to be per class.\nE.g. vehicle descriptors get name and description from the vehicle class so the defaults are useless.\n        // MODDING EDIT" },
 	};
 #endif
@@ -1147,7 +1147,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptor, 1649951314);
+	IMPLEMENT_CLASS(UFGItemDescriptor, 4131938594);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptor(Z_Construct_UClass_UFGItemDescriptor, &UFGItemDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptor);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGItemDescriptor)

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGGamePhaseManager.h"
+#include "FactoryGame/Public/FGGamePhaseManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGamePhaseManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnGamePhaseUpdated__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnGamePhaseUpdated_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnGamePhaseUpdated__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGamePhaseManager() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EGamePhase(EGamePhase_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EGamePhase"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EGamePhase_CRC() { return 2294990583U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EGamePhase_CRC() { return 1182253635U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EGamePhase()
 	{
 #if WITH_HOT_RELOAD
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGamePhaseManager() {}
 				{ "EGP_LateGame.DisplayName", "Expansion Phase" },
 				{ "EGP_MidGame.DisplayName", "Development Phase" },
 				{ "EGP_Victory.DisplayName", "Victory!" },
-				{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+				{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 				{ "ToolTip", "The three phases of the game.\n\n@todounlock  As I see this is not necessary, and it's not particularly modder friendly,\n             This could be replaced by an index into the array, then we don't need to do reverse look ups and stuff. -G2, 6 mars 19" },
 			};
 #endif
@@ -167,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseCost_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "This is used to specify the cost for the different phases of the game." },
 	};
 #endif
@@ -178,7 +178,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseCost_Statics::NewProp_Cost_MetaData[] = {
 		{ "Category", "PhaseCost" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Cost of this tier" },
 	};
 #endif
@@ -187,7 +187,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseCost_Statics::NewProp_GamePhase_MetaData[] = {
 		{ "Category", "PhaseCost" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "The phase to specify the cost for" },
 	};
 #endif
@@ -224,7 +224,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPhaseCost_CRC() { return 1278415841U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPhaseCost_CRC() { return 2687176697U; }
 class UScriptStruct* FPhaseTierInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -271,7 +271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Used for specifying what tiers are included in what game phase." },
 	};
 #endif
@@ -282,7 +282,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::NewProp_PhaseUnlockedMessage_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Message sent when this phase is unlocked" },
 	};
 #endif
@@ -290,7 +290,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::NewProp_Name_MetaData[] = {
 		{ "Category", "PhaseTierInfo" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Name of this phase." },
 	};
 #endif
@@ -298,7 +298,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::NewProp_LastTierOfPhase_MetaData[] = {
 		{ "Category", "PhaseTierInfo" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "What is the last tier of the phase specified previously." },
 	};
 #endif
@@ -306,7 +306,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::NewProp_GamePhase_MetaData[] = {
 		{ "Category", "PhaseTierInfo" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "The phase to specify tier for" },
 	};
 #endif
@@ -344,7 +344,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPhaseTierInfo_CRC() { return 881602592U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPhaseTierInfo_CRC() { return 2570165208U; }
 	void AFGGamePhaseManager::StaticRegisterNativesAFGGamePhaseManager()
 	{
 		UClass* Class = AFGGamePhaseManager::StaticClass();
@@ -388,7 +388,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		{ "Category", "GamePhase" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetGamePhaseManager" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Get the game phase manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
@@ -429,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_GetBaseCostForGamePhase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Returns the cost for the passed game phase" },
 	};
 #endif
@@ -470,7 +470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_GetCostForGamePhase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Returns the cost for the passed game phase" },
 	};
 #endif
@@ -504,7 +504,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "gets the game phase number" },
 	};
 #endif
@@ -542,7 +542,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseForSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "gets the game phase number" },
 	};
 #endif
@@ -580,7 +580,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseForTechTier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "gets the game phase number" },
 	};
 #endif
@@ -618,7 +618,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "gets the game phase name" },
 	};
 #endif
@@ -641,7 +641,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_OnRep_GamePhase_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Rep notify for mGamePhase" },
 	};
 #endif
@@ -683,7 +683,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_PayOffOnGamePhase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Pays off on a game phase" },
 	};
 #endif
@@ -717,7 +717,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGGamePhaseManager_SetGamePhase_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Updates the game phase number. Must be called from authority to take effect." },
 	};
 #endif
@@ -770,16 +770,16 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGGamePhaseManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_Get, "Get" }, // 1854985488
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetBaseCostForGamePhase, "GetBaseCostForGamePhase" }, // 3035401982
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetCostForGamePhase, "GetCostForGamePhase" }, // 3174713814
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhase, "GetGamePhase" }, // 1689835684
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseForSchematic, "GetGamePhaseForSchematic" }, // 1975223149
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseForTechTier, "GetGamePhaseForTechTier" }, // 3824736321
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseName, "GetGamePhaseName" }, // 1814712314
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_OnRep_GamePhase, "OnRep_GamePhase" }, // 3949859837
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_PayOffOnGamePhase, "PayOffOnGamePhase" }, // 4071015223
-		{ &Z_Construct_UFunction_AFGGamePhaseManager_SetGamePhase, "SetGamePhase" }, // 4002490281
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_Get, "Get" }, // 998163626
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetBaseCostForGamePhase, "GetBaseCostForGamePhase" }, // 3368302260
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetCostForGamePhase, "GetCostForGamePhase" }, // 3300249037
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhase, "GetGamePhase" }, // 3260344587
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseForSchematic, "GetGamePhaseForSchematic" }, // 2305253426
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseForTechTier, "GetGamePhaseForTechTier" }, // 1437335638
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_GetGamePhaseName, "GetGamePhaseName" }, // 1121333673
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_OnRep_GamePhase, "OnRep_GamePhase" }, // 3376640912
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_PayOffOnGamePhase, "PayOffOnGamePhase" }, // 3635734539
+		{ &Z_Construct_UFunction_AFGGamePhaseManager_SetGamePhase, "SetGamePhase" }, // 3862214739
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGamePhaseManager_Statics::Class_MetaDataParams[] = {
@@ -787,14 +787,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		{ "HideCategories", "Actor Tick Rendering Replication Input Actor Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGGamePhaseManager.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGamePhaseManager_Statics::NewProp_mOnGamePhaseChanged_MetaData[] = {
 		{ "Category", "Recipe" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Called when the game phase is updated" },
 	};
 #endif
@@ -802,7 +802,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGamePhaseManager_Statics::NewProp_mGamePhaseCosts_MetaData[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Speciefies what the different tiers cost" },
 	};
 #endif
@@ -811,7 +811,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGamePhaseManager_Statics::NewProp_mGamePhaseTierInfo_MetaData[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Specifies what game phases are connected to what tiers" },
 	};
 #endif
@@ -820,7 +820,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGGamePhaseManager_Statics::NewProp_mGamePhase_MetaData[] = {
 		{ "Category", "Progression" },
-		{ "ModuleRelativePath", "FGGamePhaseManager.h" },
+		{ "ModuleRelativePath", "Public/FGGamePhaseManager.h" },
 		{ "ToolTip", "Current GamePhase" },
 	};
 #endif
@@ -859,7 +859,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGamePhaseManager, 2125544473);
+	IMPLEMENT_CLASS(AFGGamePhaseManager, 1048308099);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGamePhaseManager(Z_Construct_UClass_AFGGamePhaseManager, &AFGGamePhaseManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGamePhaseManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGamePhaseManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

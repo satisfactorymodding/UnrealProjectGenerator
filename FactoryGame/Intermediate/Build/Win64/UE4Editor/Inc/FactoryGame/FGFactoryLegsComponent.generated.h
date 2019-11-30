@@ -14,12 +14,12 @@ class UStaticMeshComponent;
 #endif
 #define FACTORYGAME_FGFactoryLegsComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFeetOffset_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetFootMeshComponents) \
 	{ \
@@ -38,7 +38,7 @@ class UStaticMeshComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetFootMeshComponents) \
 	{ \
@@ -57,7 +57,7 @@ class UStaticMeshComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGFactoryLegsComponent(); \
 	friend struct Z_Construct_UClass_UFGFactoryLegsComponent_Statics; \
@@ -67,7 +67,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<UFGFactoryLegsComponent*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGFactoryLegsComponent(); \
 	friend struct Z_Construct_UClass_UFGFactoryLegsComponent_Statics; \
@@ -77,7 +77,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<UFGFactoryLegsComponent*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGFactoryLegsComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGFactoryLegsComponent) \
@@ -90,7 +90,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGFactoryLegsComponent(UFGFactoryLegsComponent&&); \
@@ -101,7 +101,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFactoryLegsComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGFactoryLegsComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mLegSocketNames() { return STRUCT_OFFSET(UFGFactoryLegsComponent, mLegSocketNames); } \
 	FORCEINLINE static uint32 __PPO__mLegMeshOverride() { return STRUCT_OFFSET(UFGFactoryLegsComponent, mLegMeshOverride); } \
 	FORCEINLINE static uint32 __PPO__mFootMeshOverride() { return STRUCT_OFFSET(UFGFactoryLegsComponent, mFootMeshOverride); } \
@@ -111,31 +111,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGFactoryLegsComponent); \
 	FORCEINLINE static uint32 __PPO__mCachedFeetOffset() { return STRUCT_OFFSET(UFGFactoryLegsComponent, mCachedFeetOffset); }
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_38_PROLOG
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_38_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_INCLASS \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h_41_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h_41_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGFactoryLegsComponent_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGFactoryLegsComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

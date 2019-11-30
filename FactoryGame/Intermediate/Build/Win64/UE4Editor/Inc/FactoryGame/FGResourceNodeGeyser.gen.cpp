@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGResourceNodeGeyser.h"
+#include "FactoryGame/Public/FGResourceNodeGeyser.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNodeGeyser() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGResourceNodeGeyser_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGResourceNodeGeyser.h" },
-		{ "ModuleRelativePath", "FGResourceNodeGeyser.h" },
+		{ "ModuleRelativePath", "Public/FGResourceNodeGeyser.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGResourceNodeGeyser_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceNodeGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 977616477);
+	IMPLEMENT_CLASS(AFGResourceNodeGeyser, 3973478312);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGResourceNodeGeyser(Z_Construct_UClass_AFGResourceNodeGeyser, &AFGResourceNodeGeyser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGResourceNodeGeyser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGResourceNodeGeyser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

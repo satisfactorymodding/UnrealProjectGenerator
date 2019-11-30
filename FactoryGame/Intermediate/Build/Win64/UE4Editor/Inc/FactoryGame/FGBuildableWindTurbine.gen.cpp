@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableWindTurbine.h"
+#include "FactoryGame/Public/Buildables/FGBuildableWindTurbine.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableWindTurbine_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableWindTurbine.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableWindTurbine.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableWindTurbine.h" },
 		{ "ToolTip", "Generates power from wind." },
 	};
 #endif
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableWindTurbine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 3669269228);
+	IMPLEMENT_CLASS(AFGBuildableWindTurbine, 1256568064);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableWindTurbine(Z_Construct_UClass_AFGBuildableWindTurbine, &AFGBuildableWindTurbine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableWindTurbine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableWindTurbine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

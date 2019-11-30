@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGWidgetSwitcher.h"
+#include "FactoryGame/Public/UI/FGWidgetSwitcher.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -34,7 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnMenuAnimDone__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnMenuAnimDone__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnMenuAnimDone__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnMenuAnimDone__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnMenuAnimDone__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnActiveWidgetSet__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnActiveWidgetSet_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWidgetSwitcher_EnterAnimationTookToLong_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 		{ "ToolTip", "Called if a childs Enter animation took too long. So we just skip it" },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWidgetSwitcher_ExitAnimationTookToLong_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 		{ "ToolTip", "Called if a childs Exit animation took too long. So we just skip it" },
 	};
 #endif
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWidgetSwitcher_FadeOut_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWidgetSwitcher_FadeOut_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWidgetSwitcher, "FadeOut", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWidgetSwitcher_FadeOut_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWidgetSwitcher_FadeOut_Statics::Function_MetaDataParams)) };
@@ -221,20 +221,20 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWidgetSwitcher_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWidgetSwitcher_EnterAnimationTookToLong, "EnterAnimationTookToLong" }, // 640161202
-		{ &Z_Construct_UFunction_UFGWidgetSwitcher_ExitAnimationTookToLong, "ExitAnimationTookToLong" }, // 2274633517
-		{ &Z_Construct_UFunction_UFGWidgetSwitcher_FadeOut, "FadeOut" }, // 426345052
+		{ &Z_Construct_UFunction_UFGWidgetSwitcher_EnterAnimationTookToLong, "EnterAnimationTookToLong" }, // 1680559028
+		{ &Z_Construct_UFunction_UFGWidgetSwitcher_ExitAnimationTookToLong, "ExitAnimationTookToLong" }, // 3604954979
+		{ &Z_Construct_UFunction_UFGWidgetSwitcher_FadeOut, "FadeOut" }, // 3174047942
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGWidgetSwitcher.h" },
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mExitingWidget_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 		{ "ToolTip", "Widget currently running it's exiting animation" },
 	};
 #endif
@@ -242,7 +242,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mEnteringWidget_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 		{ "ToolTip", "Widget currently running it's entering animation" },
 	};
 #endif
@@ -250,27 +250,27 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mPendingNewWidget_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 		{ "ToolTip", "Pending widget that will be set when the animations is done" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mPendingNewWidget = { UE4CodeGen_Private::EPropertyClass::Object, "mPendingNewWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080008, 1, nullptr, STRUCT_OFFSET(UFGWidgetSwitcher, mPendingNewWidget), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mPendingNewWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mPendingNewWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnFadoutDone_MetaData[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnFadoutDone = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnFadoutDone", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080010080000, 1, nullptr, STRUCT_OFFSET(UFGWidgetSwitcher, mOnFadoutDone), Z_Construct_UDelegateFunction_FactoryGame_OnMenuAnimDone__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnFadoutDone_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnFadoutDone_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnWidgetSet_MetaData[] = {
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnWidgetSet = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnWidgetSet", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080010080000, 1, nullptr, STRUCT_OFFSET(UFGWidgetSwitcher, mOnWidgetSet), Z_Construct_UDelegateFunction_FactoryGame_OnActiveWidgetSet__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnWidgetSet_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mOnWidgetSet_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mFadeOutTime_MetaData[] = {
 		{ "Category", "FGWidgetSwitcher" },
-		{ "ModuleRelativePath", "UI/FGWidgetSwitcher.h" },
+		{ "ModuleRelativePath", "Public/UI/FGWidgetSwitcher.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mFadeOutTime = { UE4CodeGen_Private::EPropertyClass::Float, "mFadeOutTime", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(UFGWidgetSwitcher, mFadeOutTime), METADATA_PARAMS(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mFadeOutTime_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::NewProp_mFadeOutTime_MetaData)) };
@@ -305,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetSwitcher, 345047247);
+	IMPLEMENT_CLASS(UFGWidgetSwitcher, 2099880207);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWidgetSwitcher(Z_Construct_UClass_UFGWidgetSwitcher, &UFGWidgetSwitcher::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWidgetSwitcher"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWidgetSwitcher);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

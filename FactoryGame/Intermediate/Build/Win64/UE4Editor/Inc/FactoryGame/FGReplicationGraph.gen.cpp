@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Replication/FGReplicationGraph.h"
+#include "FactoryGame/Public/Replication/FGReplicationGraph.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewStructOps()
@@ -75,13 +75,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_Node_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_Node = { UE4CodeGen_Private::EPropertyClass::Object, "Node", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FConnectionAlwaysRelevant_NodePair, Node), Z_Construct_UClass_UReplicationGraphNode_AlwaysRelevant_ForConnection_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_Node_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_Node_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_NetConnection_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_NetConnection = { UE4CodeGen_Private::EPropertyClass::Object, "NetConnection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FConnectionAlwaysRelevant_NodePair, NetConnection), Z_Construct_UClass_UNetConnection_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_NetConnection_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::NewProp_NetConnection_MetaData)) };
@@ -116,7 +116,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_CRC() { return 1053385460U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_CRC() { return 507224126U; }
 	void UFGReplicationGraph::StaticRegisterNativesUFGReplicationGraph()
 	{
 	}
@@ -179,12 +179,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Replication/FGReplicationGraph.h" },
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mActorsWithoutNetConnection_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 		{ "ToolTip", "Actors that are only supposed to replicate to their owning connection, but that did not have a connection on spawn" },
 	};
 #endif
@@ -192,7 +192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mActorsWithoutNetConnection_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mActorsWithoutNetConnection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mPersistentDependencyClasses_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 		{ "ToolTip", "Class types of equipment who's dependency to the pawn shouldn't be removed if they're unequipped." },
 	};
 #endif
@@ -200,42 +200,42 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mPersistentDependencyClasses_ElementProp = { UE4CodeGen_Private::EPropertyClass::Class, "mPersistentDependencyClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList = { UE4CodeGen_Private::EPropertyClass::Array, "mAlwaysRelevantForConnectionList", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGReplicationGraph, mAlwaysRelevantForConnectionList), METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantForConnectionList_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mAlwaysRelevantForConnectionList", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantNode_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 		{ "ToolTip", "Node that holds a list of actors that are always Net Relevant." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantNode = { UE4CodeGen_Private::EPropertyClass::Object, "mAlwaysRelevantNode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGReplicationGraph, mAlwaysRelevantNode), Z_Construct_UClass_UReplicationGraphNode_ActorList_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantNode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mGridNode_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 		{ "ToolTip", "Grid Node that divides the map into grids and determines if an actor should send network updates to a connection depending on the different pre-defined grids." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mGridNode = { UE4CodeGen_Private::EPropertyClass::Object, "mGridNode", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGReplicationGraph, mGridNode), Z_Construct_UClass_UReplicationGraphNode_GridSpatialization2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mGridNode_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mGridNode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantClasses_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantClasses = { UE4CodeGen_Private::EPropertyClass::Array, "mAlwaysRelevantClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGReplicationGraph, mAlwaysRelevantClasses), METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantClasses_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mAlwaysRelevantClasses_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAlwaysRelevantClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mNonSpatializedClasses_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mNonSpatializedClasses = { UE4CodeGen_Private::EPropertyClass::Array, "mNonSpatializedClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGReplicationGraph, mNonSpatializedClasses), METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mNonSpatializedClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mNonSpatializedClasses_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mNonSpatializedClasses_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mNonSpatializedClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UObject_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mSpatializedClasses_MetaData[] = {
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mSpatializedClasses = { UE4CodeGen_Private::EPropertyClass::Array, "mSpatializedClasses", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGReplicationGraph, mSpatializedClasses), METADATA_PARAMS(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mSpatializedClasses_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGReplicationGraph_Statics::NewProp_mSpatializedClasses_MetaData)) };
@@ -279,7 +279,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGReplicationGraph, 2608740892);
+	IMPLEMENT_CLASS(UFGReplicationGraph, 1426104312);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGReplicationGraph(Z_Construct_UClass_UFGReplicationGraph, &UFGReplicationGraph::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGReplicationGraph"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGReplicationGraph);
 	void UFGReplicationGraphNode_AlwaysRelevant_ForConnection::StaticRegisterNativesUFGReplicationGraphNode_AlwaysRelevant_ForConnection()
@@ -305,7 +305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Replication/FGReplicationGraph.h" },
-		{ "ModuleRelativePath", "Replication/FGReplicationGraph.h" },
+		{ "ModuleRelativePath", "Public/Replication/FGReplicationGraph.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection_Statics::StaticCppClassTypeInfo = {
@@ -331,7 +331,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGReplicationGraphNode_AlwaysRelevant_ForConnection, 389193339);
+	IMPLEMENT_CLASS(UFGReplicationGraphNode_AlwaysRelevant_ForConnection, 82359449);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection(Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection, &UFGReplicationGraphNode_AlwaysRelevant_ForConnection::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGReplicationGraphNode_AlwaysRelevant_ForConnection"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGReplicationGraphNode_AlwaysRelevant_ForConnection);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

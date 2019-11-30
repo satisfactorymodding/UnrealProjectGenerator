@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGWireHologram.h"
+#include "FactoryGame/Public/Hologram/FGWireHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Hologram" },
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGWireHologram, "OnAutomaticPoleDisableToggle", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGWireHologram_eventOnAutomaticPoleDisableToggle_Parms), Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle_Statics::Function_MetaDataParams)) };
@@ -113,34 +113,34 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGWireHologram_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle, "OnAutomaticPoleDisableToggle" }, // 2057917454
+		{ &Z_Construct_UFunction_AFGWireHologram_OnAutomaticPoleDisableToggle, "OnAutomaticPoleDisableToggle" }, // 3432287990
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGWireHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 		{ "ToolTip", "Hologram for placing wires between circuit connections." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mWireMesh_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 		{ "ToolTip", "The mesh we should stretch" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mWireMesh = { UE4CodeGen_Private::EPropertyClass::Object, "mWireMesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFGWireHologram, mWireMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mWireMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mWireMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mCurrentConnection_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 		{ "ToolTip", "Keeps track of what connection we are working with" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mCurrentConnection = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentConnection", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFGWireHologram, mCurrentConnection), METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mCurrentConnection_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mCurrentConnection_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mStartLocation_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 		{ "ToolTip", "The start location of this wire" },
 	};
 #endif
@@ -148,20 +148,20 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe_MetaData[] = {
 		{ "Category", "Power pole" },
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe = { UE4CodeGen_Private::EPropertyClass::Class, "mDefaultPowerPoleRecipe", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0044000000010001, 1, nullptr, STRUCT_OFFSET(AFGWireHologram, mDefaultPowerPoleRecipe), Z_Construct_UClass_UFGRecipe_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mDefaultPowerPoleRecipe_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPole_MetaData[] = {
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPole = { UE4CodeGen_Private::EPropertyClass::Object, "mPowerPole", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(AFGWireHologram, mPowerPole), Z_Construct_UClass_AFGPowerPoleHologram_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPole_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mPowerPole_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWireHologram_Statics::NewProp_mConnections_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Hologram/FGWireHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWireHologram.h" },
 		{ "ToolTip", "The two connection components we connect." },
 	};
 #endif
@@ -197,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWireHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWireHologram, 2227015552);
+	IMPLEMENT_CLASS(AFGWireHologram, 2554160290);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWireHologram(Z_Construct_UClass_AFGWireHologram, &AFGWireHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWireHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWireHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

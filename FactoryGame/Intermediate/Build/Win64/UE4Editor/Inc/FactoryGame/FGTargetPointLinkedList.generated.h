@@ -14,7 +14,7 @@ class AFGTargetPoint;
 #endif
 #define FACTORYGAME_FGTargetPointLinkedList_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execClearRecording) \
 	{ \
@@ -101,7 +101,7 @@ class AFGTargetPoint;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execClearRecording) \
 	{ \
@@ -188,7 +188,7 @@ class AFGTargetPoint;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGTargetPointLinkedList(); \
 	friend struct Z_Construct_UClass_UFGTargetPointLinkedList_Statics; \
@@ -198,7 +198,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<UFGTargetPointLinkedList*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGTargetPointLinkedList(); \
 	friend struct Z_Construct_UClass_UFGTargetPointLinkedList_Statics; \
@@ -208,7 +208,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<UFGTargetPointLinkedList*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGTargetPointLinkedList(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGTargetPointLinkedList) \
@@ -221,7 +221,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGTargetPointLinkedList(UFGTargetPointLinkedList&&); \
@@ -232,36 +232,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGTargetPointLinkedList); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGTargetPointLinkedList)
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mCurrentTarget() { return STRUCT_OFFSET(UFGTargetPointLinkedList, mCurrentTarget); } \
 	FORCEINLINE static uint32 __PPO__mMaxLength() { return STRUCT_OFFSET(UFGTargetPointLinkedList, mMaxLength); }
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_15_PROLOG
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_15_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_INCLASS \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h_19_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h_19_ENHANCED_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGTargetPointLinkedList_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGTargetPointLinkedList_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

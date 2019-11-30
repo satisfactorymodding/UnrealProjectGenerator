@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGWallHologram.h"
+#include "FactoryGame/Public/Hologram/FGWallHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWallHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGWallHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGWallHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGWallHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGWallHologram.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGWallHologram_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWallHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGWallHologram, 1700009743);
+	IMPLEMENT_CLASS(AFGWallHologram, 3979090437);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGWallHologram(Z_Construct_UClass_AFGWallHologram, &AFGWallHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGWallHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGWallHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

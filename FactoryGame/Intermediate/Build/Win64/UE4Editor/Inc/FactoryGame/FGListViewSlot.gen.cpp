@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGListViewSlot.h"
+#include "FactoryGame/Public/UI/FGListViewSlot.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListViewSlot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGListViewSlot_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGListViewSlot.h" },
-		{ "ModuleRelativePath", "UI/FGListViewSlot.h" },
+		{ "ModuleRelativePath", "Public/UI/FGListViewSlot.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "The Slot for the UFGListView, contains the widget that is laid out in the list." },
 	};
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGListViewSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGListViewSlot, 1007951526);
+	IMPLEMENT_CLASS(UFGListViewSlot, 4194410503);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGListViewSlot(Z_Construct_UClass_UFGListViewSlot, &UFGListViewSlot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGListViewSlot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGListViewSlot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

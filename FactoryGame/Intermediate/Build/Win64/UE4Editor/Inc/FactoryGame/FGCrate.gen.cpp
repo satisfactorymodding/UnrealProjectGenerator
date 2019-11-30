@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCrate.h"
+#include "FactoryGame/Public/FGCrate.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFGCrateIconType(EFGCrateIconType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EFGCrateIconType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EFGCrateIconType_CRC() { return 918727109U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EFGCrateIconType_CRC() { return 3499774964U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EFGCrateIconType()
 	{
 #if WITH_HOT_RELOAD
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "FGCrate.h" },
+				{ "ModuleRelativePath", "Public/FGCrate.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrate_FilterInventoryClasses_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCrate.h" },
+		{ "ModuleRelativePath", "Public/FGCrate.h" },
 		{ "ToolTip", "Bound to mItemFilter to filter what items can be used in the item slots." },
 	};
 #endif
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrate_GetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGCrate.h" },
+		{ "ModuleRelativePath", "Public/FGCrate.h" },
 		{ "ToolTip", "@return The crates inventory; cannot be null." },
 	};
 #endif
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCrate_OnRequestReprecentMarker_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "FGCrate.h" },
+		{ "ModuleRelativePath", "Public/FGCrate.h" },
 		{ "ToolTip", "Called when we want a crate to be visible on the compasse." },
 	};
 #endif
@@ -228,21 +228,21 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCrate_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCrate_FilterInventoryClasses, "FilterInventoryClasses" }, // 3110805457
-		{ &Z_Construct_UFunction_AFGCrate_GetInventory, "GetInventory" }, // 3176768621
-		{ &Z_Construct_UFunction_AFGCrate_OnRequestReprecentMarker, "OnRequestReprecentMarker" }, // 433078003
+		{ &Z_Construct_UFunction_AFGCrate_FilterInventoryClasses, "FilterInventoryClasses" }, // 152958684
+		{ &Z_Construct_UFunction_AFGCrate_GetInventory, "GetInventory" }, // 2887506139
+		{ &Z_Construct_UFunction_AFGCrate_OnRequestReprecentMarker, "OnRequestReprecentMarker" }, // 579015198
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrate_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCrate.h" },
-		{ "ModuleRelativePath", "FGCrate.h" },
+		{ "ModuleRelativePath", "Public/FGCrate.h" },
 		{ "ToolTip", "@todo Comment me please!" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrate_Statics::NewProp_mIconType_MetaData[] = {
 		{ "Category", "Compass" },
-		{ "ModuleRelativePath", "FGCrate.h" },
+		{ "ModuleRelativePath", "Public/FGCrate.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AFGCrate_Statics::NewProp_mIconType = { UE4CodeGen_Private::EPropertyClass::Enum, "mIconType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(AFGCrate, mIconType), Z_Construct_UEnum_FactoryGame_EFGCrateIconType, METADATA_PARAMS(Z_Construct_UClass_AFGCrate_Statics::NewProp_mIconType_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGCrate_Statics::NewProp_mIconType_MetaData)) };
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCrate_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCrate.h" },
+		{ "ModuleRelativePath", "Public/FGCrate.h" },
 		{ "ToolTip", "The inventory of this crate" },
 	};
 #endif
@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrate, 4193191661);
+	IMPLEMENT_CLASS(AFGCrate, 24320282);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrate(Z_Construct_UClass_AFGCrate, &AFGCrate::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrate"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrate);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

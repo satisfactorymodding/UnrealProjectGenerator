@@ -15,7 +15,7 @@ class UFGConstructDisqualifier;
 #endif
 #define FACTORYGAME_FGHologram_generated_h
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_RPC_WRAPPERS \
 	virtual void Client_PlaySnapSound_Implementation(); \
 	virtual bool Server_SetSnapToGuideLines_Validate(bool ); \
 	virtual void Server_SetSnapToGuideLines_Implementation(bool isEnabled); \
@@ -101,7 +101,7 @@ class UFGConstructDisqualifier;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void Client_PlaySnapSound_Implementation(); \
 	virtual bool Server_SetSnapToGuideLines_Validate(bool ); \
 	virtual void Server_SetSnapToGuideLines_Implementation(bool isEnabled); \
@@ -187,15 +187,15 @@ class UFGConstructDisqualifier;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_EVENT_PARMS \
 	struct FGHologram_eventServer_SetSnapToGuideLines_Parms \
 	{ \
 		bool isEnabled; \
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGHologram(); \
 	friend struct Z_Construct_UClass_AFGHologram_Statics; \
@@ -204,7 +204,7 @@ public: \
 	DECLARE_SERIALIZER(AFGHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGHologram(); \
 	friend struct Z_Construct_UClass_AFGHologram_Statics; \
@@ -213,7 +213,7 @@ public: \
 	DECLARE_SERIALIZER(AFGHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGHologram(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGHologram) \
@@ -226,7 +226,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGHologram(AFGHologram&&); \
@@ -237,7 +237,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGHologram); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGHologram)
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mValidHitClasses() { return STRUCT_OFFSET(AFGHologram, mValidHitClasses); } \
 	FORCEINLINE static uint32 __PPO__mRecipe() { return STRUCT_OFFSET(AFGHologram, mRecipe); } \
 	FORCEINLINE static uint32 __PPO__mLoopSound() { return STRUCT_OFFSET(AFGHologram, mLoopSound); } \
@@ -252,36 +252,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGHologram); \
 	FORCEINLINE static uint32 __PPO__mInitialScrollModeValue() { return STRUCT_OFFSET(AFGHologram, mInitialScrollModeValue); }
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_33_PROLOG \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_33_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_INCLASS \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Hologram_FGHologram_h_36_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Hologram_FGHologram_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Hologram_FGHologram_h
 
 
 #define FOREACH_ENUM_EHOLOGRAMSCROLLMODE(op) \

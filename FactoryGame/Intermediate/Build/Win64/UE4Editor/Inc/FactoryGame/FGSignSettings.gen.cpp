@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSignSettings.h"
+#include "FactoryGame/Public/FGSignSettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -78,7 +78,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignColorData_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FSignColorData_Statics::NewStructOps()
@@ -87,21 +87,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_BackgroundMaterialInstance_MetaData[] = {
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "The BACKGROUND material instance is created at runtime and stored here when it is needed" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_BackgroundMaterialInstance = { UE4CodeGen_Private::EPropertyClass::Object, "BackgroundMaterialInstance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FSignColorData, BackgroundMaterialInstance), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_BackgroundMaterialInstance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_BackgroundMaterialInstance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_IconMaterialInstance_MetaData[] = {
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "The ICON material instance is created at runtime and stored here when it is needed" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_IconMaterialInstance = { UE4CodeGen_Private::EPropertyClass::Object, "IconMaterialInstance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(FSignColorData, IconMaterialInstance), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_IconMaterialInstance_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_IconMaterialInstance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_TextMaterialInstance_MetaData[] = {
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "The TEXT material instance is created at runtime and stored here when it is needed" },
 	};
 #endif
@@ -109,7 +109,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_ColorName_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "A text name to display with the icon inside of menus" },
 	};
 #endif
@@ -117,7 +117,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSignColorData_Statics::NewProp_SignColor_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "The static mesh that will be rendered on the actual sign in the world" },
 	};
 #endif
@@ -156,7 +156,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSignColorData_CRC() { return 4179263699U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSignColorData_CRC() { return 4227081518U; }
 	void UFGSignSettings::StaticRegisterNativesUFGSignSettings()
 	{
 		UClass* Class = UFGSignSettings::StaticClass();
@@ -192,7 +192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignSettings_GetBackgroundMaterialInstanceFromIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Returns the corresponding background material instance from the sign color data array. If one does not exist yet it is created" },
 	};
 #endif
@@ -230,7 +230,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignSettings_GetIconMaterialInstanceFromIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Returns the corresponding icon material instance from the sign color data array. If one does not exist yet it is created" },
 	};
 #endif
@@ -275,7 +275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignSettings_GetSignColorData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSignSettings_GetSignColorData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSignSettings, "GetSignColorData", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14022401, sizeof(FGSignSettings_eventGetSignColorData_Parms), Z_Construct_UFunction_UFGSignSettings_GetSignColorData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGSignSettings_GetSignColorData_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSignSettings_GetSignColorData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGSignSettings_GetSignColorData_Statics::Function_MetaDataParams)) };
@@ -312,7 +312,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSignSettings_GetTextMaterialInstanceFromIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Returns the corresponding text material instance from the sign color data array. If one does not exist yet it is created" },
 	};
 #endif
@@ -379,22 +379,22 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSignSettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGSignSettings_GetBackgroundMaterialInstanceFromIndex, "GetBackgroundMaterialInstanceFromIndex" }, // 3365194755
-		{ &Z_Construct_UFunction_UFGSignSettings_GetIconMaterialInstanceFromIndex, "GetIconMaterialInstanceFromIndex" }, // 1928158471
-		{ &Z_Construct_UFunction_UFGSignSettings_GetSignColorData, "GetSignColorData" }, // 1009590885
-		{ &Z_Construct_UFunction_UFGSignSettings_GetTextMaterialInstanceFromIndex, "GetTextMaterialInstanceFromIndex" }, // 2078859776
+		{ &Z_Construct_UFunction_UFGSignSettings_GetBackgroundMaterialInstanceFromIndex, "GetBackgroundMaterialInstanceFromIndex" }, // 3919708519
+		{ &Z_Construct_UFunction_UFGSignSettings_GetIconMaterialInstanceFromIndex, "GetIconMaterialInstanceFromIndex" }, // 13993935
+		{ &Z_Construct_UFunction_UFGSignSettings_GetSignColorData, "GetSignColorData" }, // 4271059066
+		{ &Z_Construct_UFunction_UFGSignSettings_GetTextMaterialInstanceFromIndex, "GetTextMaterialInstanceFromIndex" }, // 1341066825
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSignSettings.h" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Master settings for Standalone Sign parameters and attributes" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mSignColorData_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Array of sign color data" },
 	};
 #endif
@@ -403,7 +403,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mBackgroundMaterialColorParam_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Parameter name of color adjustment FVector inside the background material" },
 	};
 #endif
@@ -411,7 +411,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mIconMaterialColorParam_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Parameter name of color adjustment FVector inside the icon material" },
 	};
 #endif
@@ -419,7 +419,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mTextMaterialColorParam_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Parameter name of color adjustment FVector inside the text material" },
 	};
 #endif
@@ -427,7 +427,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mBackgroundMeshMaterialIndex_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "The index in the sign mesh material array pointing to the screen / background material" },
 	};
 #endif
@@ -435,7 +435,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mBackgroundMaterial_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Base material to be used for sign background material instances" },
 	};
 #endif
@@ -443,7 +443,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mIconMaterial_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Base material to be used for icon material instances" },
 	};
 #endif
@@ -451,7 +451,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignSettings_Statics::NewProp_mTextMaterial_MetaData[] = {
 		{ "Category", "Sign Data Settings" },
-		{ "ModuleRelativePath", "FGSignSettings.h" },
+		{ "ModuleRelativePath", "Public/FGSignSettings.h" },
 		{ "ToolTip", "Base material to be used for text component material instances" },
 	};
 #endif
@@ -490,7 +490,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignSettings, 3497511378);
+	IMPLEMENT_CLASS(UFGSignSettings, 2130569226);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSignSettings(Z_Construct_UClass_UFGSignSettings, &UFGSignSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSignSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSignSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

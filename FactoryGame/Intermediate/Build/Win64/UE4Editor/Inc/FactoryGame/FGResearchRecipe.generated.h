@@ -16,12 +16,12 @@ class UFGItemDescriptor;
 #endif
 #define FACTORYGAME_FGResearchRecipe_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_20_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchRecipeReward_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execIsValidResearchRecipeReward) \
 	{ \
@@ -69,7 +69,7 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execIsValidResearchRecipeReward) \
 	{ \
@@ -117,31 +117,31 @@ class UFGItemDescriptor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGResearchRecipe, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGResearchRecipe(); \
 	friend struct Z_Construct_UClass_UFGResearchRecipe_Statics; \
 public: \
 	DECLARE_CLASS(UFGResearchRecipe, UFGRecipe, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGResearchRecipe) \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGResearchRecipe(); \
 	friend struct Z_Construct_UClass_UFGResearchRecipe_Statics; \
 public: \
 	DECLARE_CLASS(UFGResearchRecipe, UFGRecipe, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGResearchRecipe) \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_ARCHIVESERIALIZER
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_ARCHIVESERIALIZER
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGResearchRecipe(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGResearchRecipe) \
@@ -154,7 +154,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGResearchRecipe(UFGResearchRecipe&&); \
@@ -165,7 +165,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResearchRecipe); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGResearchRecipe)
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mTriggerItems() { return STRUCT_OFFSET(UFGResearchRecipe, mTriggerItems); } \
 	FORCEINLINE static uint32 __PPO__mIsRepeatable() { return STRUCT_OFFSET(UFGResearchRecipe, mIsRepeatable); } \
 	FORCEINLINE static uint32 __PPO__mRewardUsesDropPackage() { return STRUCT_OFFSET(UFGResearchRecipe, mRewardUsesDropPackage); } \
@@ -177,31 +177,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGResearchRecipe); \
 	FORCEINLINE static uint32 __PPO__mAssetBundleData() { return STRUCT_OFFSET(UFGResearchRecipe, mAssetBundleData); }
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_45_PROLOG
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_45_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_INCLASS \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGResearchRecipe_h_48_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGResearchRecipe_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGResearchRecipe_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

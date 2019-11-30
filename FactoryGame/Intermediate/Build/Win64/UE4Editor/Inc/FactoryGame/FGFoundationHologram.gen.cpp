@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGFoundationHologram.h"
+#include "FactoryGame/Public/Hologram/FGFoundationHologram.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoundationHologram() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoundationHologram_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick" },
 		{ "IncludePath", "Hologram/FGFoundationHologram.h" },
-		{ "ModuleRelativePath", "Hologram/FGFoundationHologram.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGFoundationHologram.h" },
 		{ "ToolTip", "Base hologram for foundation type buildables." },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoundationHologram() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoundationHologram, 2384437839);
+	IMPLEMENT_CLASS(AFGFoundationHologram, 1743838139);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoundationHologram(Z_Construct_UClass_AFGFoundationHologram, &AFGFoundationHologram::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoundationHologram"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoundationHologram);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

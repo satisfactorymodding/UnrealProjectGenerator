@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDotComponent.h"
+#include "FactoryGame/Public/FGDotComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -45,7 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDotComponent_DamageContainingActors_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDotComponent.h" },
+		{ "ModuleRelativePath", "Public/FGDotComponent.h" },
 		{ "ToolTip", "Called by timer to tell us to damage the containing actors" },
 	};
 #endif
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDotComponent_OnPrimitiveComponentEntered_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDotComponent.h" },
+		{ "ModuleRelativePath", "Public/FGDotComponent.h" },
 		{ "ToolTip", "Called whenever a primitive component enters the volume, this triggers check if we should start damage them" },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDotComponent_OnPrimitiveComponentExited_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGDotComponent.h" },
+		{ "ModuleRelativePath", "Public/FGDotComponent.h" },
 		{ "ToolTip", "Called whenever a primitive component enters the volume, stop damage them" },
 	};
 #endif
@@ -231,9 +231,9 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDotComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDotComponent_DamageContainingActors, "DamageContainingActors" }, // 3857074731
-		{ &Z_Construct_UFunction_UFGDotComponent_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 3821269093
-		{ &Z_Construct_UFunction_UFGDotComponent_OnPrimitiveComponentExited, "OnPrimitiveComponentExited" }, // 1133130020
+		{ &Z_Construct_UFunction_UFGDotComponent_DamageContainingActors, "DamageContainingActors" }, // 1036287214
+		{ &Z_Construct_UFunction_UFGDotComponent_OnPrimitiveComponentEntered, "OnPrimitiveComponentEntered" }, // 2734545310
+		{ &Z_Construct_UFunction_UFGDotComponent_OnPrimitiveComponentExited, "OnPrimitiveComponentExited" }, // 3794206291
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDotComponent_Statics::Class_MetaDataParams[] = {
@@ -242,13 +242,13 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		{ "DisplayName", "DotComponent" },
 		{ "HideCategories", "Cooking Collision Rendering Sockets Trigger PhysicsVolume" },
 		{ "IncludePath", "FGDotComponent.h" },
-		{ "ModuleRelativePath", "FGDotComponent.h" },
+		{ "ModuleRelativePath", "Public/FGDotComponent.h" },
 		{ "ToolTip", "Attach this to a PrimtiveComponent (like Box, Mesh or Brush) and the whenever someone is inside this\nshape, then we apply the specified dot to the actors specified in the UFGDamageOverTime class" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDotComponent_Statics::NewProp_mActorsToDamage_MetaData[] = {
-		{ "ModuleRelativePath", "FGDotComponent.h" },
+		{ "ModuleRelativePath", "Public/FGDotComponent.h" },
 		{ "ToolTip", "The actors we want to damage" },
 	};
 #endif
@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDotComponent_Statics::NewProp_mDotClass_MetaData[] = {
 		{ "Category", "Dot" },
-		{ "ModuleRelativePath", "FGDotComponent.h" },
+		{ "ModuleRelativePath", "Public/FGDotComponent.h" },
 		{ "ToolTip", "The dot we should apply to things in the primitive component we are attached to" },
 	};
 #endif
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDotComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDotComponent, 2984067645);
+	IMPLEMENT_CLASS(UFGDotComponent, 1417021309);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDotComponent(Z_Construct_UClass_UFGDotComponent, &UFGDotComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDotComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDotComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

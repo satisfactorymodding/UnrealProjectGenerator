@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableResourceExtractor.h"
+#include "FactoryGame/Public/Buildables/FGBuildableResourceExtractor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableResourceExtractor_GetMiningParticle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Gets particle for mining" },
 	};
 #endif
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableResourceExtractor_GetOutputInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Get the inventory we output the extracted resources to" },
 	};
 #endif
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableResourceExtractor_GetResourceNode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resource" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Get the resource node this miner is mining from." },
 	};
 #endif
@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableResourceExtractor_IsStartupComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Resources" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Are we done with startup animation" },
 	};
 #endif
@@ -237,29 +237,29 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_GetMiningParticle, "GetMiningParticle" }, // 617735344
-		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_GetOutputInventory, "GetOutputInventory" }, // 833946498
-		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_GetResourceNode, "GetResourceNode" }, // 1237437841
-		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_IsStartupComplete, "IsStartupComplete" }, // 569156540
+		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_GetMiningParticle, "GetMiningParticle" }, // 162168538
+		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_GetOutputInventory, "GetOutputInventory" }, // 4012865050
+		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_GetResourceNode, "GetResourceNode" }, // 4266503797
+		{ &Z_Construct_UFunction_AFGBuildableResourceExtractor_IsStartupComplete, "IsStartupComplete" }, // 4152643257
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableResourceExtractor.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "The base class for all resource extractors, i.e. miners and pumps." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOutputInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Our output inventory," },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOutputInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mOutputInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001080028, 1, nullptr, STRUCT_OFFSET(AFGBuildableResourceExtractor, mOutputInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOutputInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mOutputInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mCurrentExtractProgress_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Current extract progress in the range [0, 1]" },
 	};
@@ -267,7 +267,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mCurrentExtractProgress = { UE4CodeGen_Private::EPropertyClass::Float, "mCurrentExtractProgress", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000020, 1, nullptr, STRUCT_OFFSET(AFGBuildableResourceExtractor, mCurrentExtractProgress), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mCurrentExtractProgress_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mCurrentExtractProgress_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractResourceNode_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "The resource node we want to extract from" },
 	};
 #endif
@@ -275,14 +275,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractionOffset_MetaData[] = {
 		{ "Category", "Extraction" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractionOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "mExtractionOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AFGBuildableResourceExtractor, mExtractionOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractionOffset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractionOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mAllowedResourceForms_MetaData[] = {
 		{ "Category", "Extraction" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Can we mine solids, liquids, gases or many of the types." },
 	};
 #endif
@@ -293,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractCycleTime_MetaData[] = {
 		{ "Category", "Extraction" },
 		{ "ClampMin", "0.0001" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "How long does it take to complete one mining cycle. In seconds." },
 	};
 #endif
@@ -301,7 +301,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableResourceExtractor_Statics::NewProp_mExtractStartupTime_MetaData[] = {
 		{ "Category", "Extraction" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableResourceExtractor.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableResourceExtractor.h" },
 		{ "ToolTip", "Power up time for the extraction process, e.g. the time it takes for a drill to start spinning." },
 	};
 #endif
@@ -340,7 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableResourceExtractor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 2010998989);
+	IMPLEMENT_CLASS(AFGBuildableResourceExtractor, 4049530053);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableResourceExtractor(Z_Construct_UClass_AFGBuildableResourceExtractor, &AFGBuildableResourceExtractor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableResourceExtractor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableResourceExtractor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

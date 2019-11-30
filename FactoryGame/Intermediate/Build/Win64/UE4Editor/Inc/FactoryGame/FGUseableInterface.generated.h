@@ -17,15 +17,15 @@ class UPrimitiveComponent;
 #endif
 #define FACTORYGAME_FGUseableInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_49_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_49_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FUseState_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__State() { return STRUCT_OFFSET(FUseState, State); }
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState(); \
 	friend struct Z_Construct_UClass_UFGUseState_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState(); \
 	friend struct Z_Construct_UClass_UFGUseState_Statics; \
@@ -43,7 +43,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState) \
@@ -56,7 +56,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -69,37 +69,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mWantAdditonalData() { return STRUCT_OFFSET(UFGUseState, mWantAdditonalData); } \
 	FORCEINLINE static uint32 __PPO__mIsUsableState() { return STRUCT_OFFSET(UFGUseState, mIsUsableState); }
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_9_PROLOG
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_9_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_INCLASS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_12_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGUseState_Valid(); \
 	friend struct Z_Construct_UClass_UFGUseState_Valid_Statics; \
@@ -108,7 +108,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_Valid)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGUseState_Valid(); \
 	friend struct Z_Construct_UClass_UFGUseState_Valid_Statics; \
@@ -117,7 +117,7 @@ public: \
 	DECLARE_SERIALIZER(UFGUseState_Valid)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseState_Valid(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseState_Valid) \
@@ -130,7 +130,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseState_Valid(UFGUseState_Valid&&); \
@@ -141,31 +141,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseState_Valid); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGUseState_Valid)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_35_PROLOG
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_35_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_INCLASS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_38_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_RPC_WRAPPERS \
 	virtual void UnregisterInteractingPlayer_Implementation(AFGCharacterPlayer* player) {}; \
 	virtual void RegisterInteractingPlayer_Implementation(AFGCharacterPlayer* player) {}; \
 	virtual FText GetLookAtDecription_Implementation(AFGCharacterPlayer* byCharacter, FUseState const& state) const { return FText::GetEmpty(); }; \
@@ -265,7 +265,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void UnregisterInteractingPlayer_Implementation(AFGCharacterPlayer* player) {}; \
 	virtual void RegisterInteractingPlayer_Implementation(AFGCharacterPlayer* player) {}; \
 	virtual FText GetLookAtDecription_Implementation(AFGCharacterPlayer* byCharacter, FUseState const& state) const { return FText::GetEmpty(); }; \
@@ -365,7 +365,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_EVENT_PARMS \
 	struct FGUseableInterface_eventGetLookAtDecription_Parms \
 	{ \
 		AFGCharacterPlayer* byCharacter; \
@@ -419,8 +419,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGUseableInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseableInterface) \
@@ -433,7 +433,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGUseableInterface(UFGUseableInterface&&); \
@@ -444,7 +444,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGUseableInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGUseableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGUseableInterface(); \
 	friend struct Z_Construct_UClass_UFGUseableInterface_Statics; \
@@ -453,22 +453,22 @@ public: \
 	DECLARE_SERIALIZER(UFGUseableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGUseableInterface() {} \
 public: \
@@ -486,7 +486,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGUseableInterface() {} \
 public: \
@@ -504,32 +504,32 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_77_PROLOG \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_77_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_90_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_90_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGUseableInterface_h_90_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_90_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGUseableInterface_h_81_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h_81_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGUseableInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGUseableInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

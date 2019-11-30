@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFactoryLegsComponent.h"
+#include "FactoryGame/Public/FGFactoryLegsComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -66,7 +66,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFeetOffset_Statics::NewStructOps()
@@ -75,7 +75,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData[] = {
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "Does this foot have a valid offset, only used during hologram placement." },
 	};
 #endif
@@ -86,14 +86,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset = { UE4CodeGen_Private::EPropertyClass::Bool, "IsValidOffset", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FFeetOffset), &Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_IsValidOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData[] = {
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The offset along the Z axis from the parent mesh origo." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ = { UE4CodeGen_Private::EPropertyClass::Float, "OffsetZ", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000001000000, 1, nullptr, STRUCT_OFFSET(FFeetOffset, OffsetZ), METADATA_PARAMS(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_OffsetZ_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFeetOffset_Statics::NewProp_FeetIndex_MetaData[] = {
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The name of the foot's socket." },
 	};
 #endif
@@ -130,7 +130,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 2151974912U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 4054626282U; }
 	void UFGFactoryLegsComponent::StaticRegisterNativesUFGFactoryLegsComponent()
 	{
 		UClass* Class = UFGFactoryLegsComponent::StaticClass();
@@ -171,7 +171,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "Get all the foot meshes." },
 	};
 #endif
@@ -216,7 +216,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "Get all the leg meshes." },
 	};
 #endif
@@ -283,8 +283,8 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactoryLegsComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents, "GetFootMeshComponents" }, // 1439564623
-		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents, "GetLegMeshComponents" }, // 3105949579
+		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetFootMeshComponents, "GetFootMeshComponents" }, // 3310834448
+		{ &Z_Construct_UFunction_UFGFactoryLegsComponent_GetLegMeshComponents, "GetLegMeshComponents" }, // 2445812977
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::Class_MetaDataParams[] = {
@@ -292,12 +292,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGFactoryLegsComponent.h" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mCachedFeetOffset_MetaData[] = {
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "Stored so that we know the offset of the feet" },
 	};
 #endif
@@ -306,7 +306,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The created foot components for this building" },
 	};
 #endif
@@ -315,7 +315,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The created leg components for this building" },
 	};
 #endif
@@ -324,7 +324,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mMaxLegLengthOverride_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The maximum length the legs can be." },
 	};
 #endif
@@ -332,7 +332,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mFootMeshOverride_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The mesh to be used as foots on factories" },
 	};
 #endif
@@ -340,7 +340,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegMeshOverride_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "The mesh to be used as legs on factories" },
 	};
 #endif
@@ -348,7 +348,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactoryLegsComponent_Statics::NewProp_mLegSocketNames_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactoryLegsComponent.h" },
+		{ "ModuleRelativePath", "Public/FGFactoryLegsComponent.h" },
 		{ "ToolTip", "Socket names on the parent mesh" },
 	};
 #endif
@@ -393,7 +393,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 2540155945);
+	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 3337366110);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactoryLegsComponent(Z_Construct_UClass_UFGFactoryLegsComponent, &UFGFactoryLegsComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactoryLegsComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactoryLegsComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

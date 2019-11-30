@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAnimNotify_Landed.h"
+#include "FactoryGame/Public/FGAnimNotify_Landed.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_Landed() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimNotify_Landed_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "FGAnimNotify_Landed.h" },
-		{ "ModuleRelativePath", "FGAnimNotify_Landed.h" },
+		{ "ModuleRelativePath", "Public/FGAnimNotify_Landed.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGAnimNotify_Landed_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_Landed() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_Landed, 991698993);
+	IMPLEMENT_CLASS(UFGAnimNotify_Landed, 1572726431);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimNotify_Landed(Z_Construct_UClass_UFGAnimNotify_Landed, &UFGAnimNotify_Landed::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimNotify_Landed"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimNotify_Landed);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

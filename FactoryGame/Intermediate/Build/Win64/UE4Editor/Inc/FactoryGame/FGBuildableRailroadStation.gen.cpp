@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRailroadStation.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRailroadStation.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadStation_GetStationIdentifier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Station" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadStation.h" },
 		{ "ToolTip", "Get the station identifier for this station. Shared between server, client and used in time tables." },
 	};
 #endif
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadStation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableRailroadStation_OnNameChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|Station" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadStation.h" },
 		{ "ToolTip", "Called when the name of the station has changed." },
 	};
 #endif
@@ -127,26 +127,26 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadStation() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableRailroadStation_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableRailroadStation_GetStationIdentifier, "GetStationIdentifier" }, // 1484249346
-		{ &Z_Construct_UFunction_AFGBuildableRailroadStation_OnNameChanged, "OnNameChanged" }, // 2854491456
+		{ &Z_Construct_UFunction_AFGBuildableRailroadStation_GetStationIdentifier, "GetStationIdentifier" }, // 3119034028
+		{ &Z_Construct_UFunction_AFGBuildableRailroadStation_OnNameChanged, "OnNameChanged" }, // 244937949
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadStation_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableRailroadStation.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadStation.h" },
 		{ "ToolTip", "Base class for rail road stations. Not to be confused railroad docking stations." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mDockingLocomotive_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadStation.h" },
 		{ "ToolTip", "Reference to the docked locomotive." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mDockingLocomotive = { UE4CodeGen_Private::EPropertyClass::Object, "mDockingLocomotive", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableRailroadStation, mDockingLocomotive), Z_Construct_UClass_AFGLocomotive_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mDockingLocomotive_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mDockingLocomotive_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mDockedPlatformList_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadStation.h" },
 		{ "ToolTip", "When docked, this station will fill this array with every potential platform in its tail. 1 for each train segment" },
 	};
 #endif
@@ -154,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadStation() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mDockedPlatformList_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mDockedPlatformList", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildableTrainPlatform_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadStation_Statics::NewProp_mStationIdentifier_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadStation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadStation.h" },
 		{ "ToolTip", "Light weight representation about this station, the railroad subsystem is responsible for this." },
 	};
 #endif
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadStation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadStation, 110156876);
+	IMPLEMENT_CLASS(AFGBuildableRailroadStation, 2823979507);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadStation(Z_Construct_UClass_AFGBuildableRailroadStation, &AFGBuildableRailroadStation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadStation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadStation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

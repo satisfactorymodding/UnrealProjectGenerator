@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFactorySettings.h"
+#include "FactoryGame/Public/FGFactorySettings.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -72,7 +72,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCategory_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FCategory_Statics::NewStructOps()
@@ -82,7 +82,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Icon_MetaData[] = {
 		{ "Category", "Category" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Icon for the category" },
 	};
 #endif
@@ -90,7 +90,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCategory_Statics::NewProp_Name_MetaData[] = {
 		{ "Category", "Category" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Localized name of a category" },
 	};
 #endif
@@ -126,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC() { return 4048741807U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC() { return 3444361083U; }
 	void UFGFactorySettings::StaticRegisterNativesUFGFactorySettings()
 	{
 		UClass* Class = UFGFactorySettings::StaticClass();
@@ -156,7 +156,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Get a random construction sound to play." },
 	};
 #endif
@@ -190,7 +190,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Get a random dismantle sound to play." },
 	};
 #endif
@@ -351,20 +351,20 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGFactorySettings_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound, "GetRandomConstructionSound" }, // 1915410916
-		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound, "GetRandomDismantleSound" }, // 1180790245
+		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomConstructionSound, "GetRandomConstructionSound" }, // 1052380651
+		{ &Z_Construct_UFunction_UFGFactorySettings_GetRandomDismantleSound, "GetRandomDismantleSound" }, // 1379189292
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFactorySettings.h" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Common settings for the factory buildings and their holograms." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mShortcutMap_MetaData[] = {
 		{ "Category", "Shortcuts" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Names if the input actions that defines the shortcuts. This maps directly to their index (so first entry here should mean that it should call ExecuteShortcut 0)" },
 	};
 #endif
@@ -373,7 +373,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mRecipeShortcutClass_MetaData[] = {
 		{ "Category", "Shortcuts" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The class we want to spawn for recipe shortcuts" },
 	};
 #endif
@@ -381,7 +381,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleShortcutClass_MetaData[] = {
 		{ "Category", "Shortcuts" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The class we want to spawn for dismantle shortcuts" },
 	};
 #endif
@@ -389,7 +389,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mMaxFeetLength_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Maximum length when we want to spawn the legs" },
 	};
 #endif
@@ -397,7 +397,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mFootMesh_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The mesh to be used as foots on factories" },
 	};
 #endif
@@ -405,7 +405,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mLegMesh_MetaData[] = {
 		{ "Category", "Legs" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The mesh to be used as legs on factories" },
 	};
 #endif
@@ -413,7 +413,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceMinerClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The default resource miner class to spawn" },
 	};
 #endif
@@ -421,7 +421,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mResourceScannerClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The default resource scanner class to spawn" },
 	};
 #endif
@@ -429,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGunClass_MetaData[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "The default buildgun class to spawn" },
 	};
 #endif
@@ -437,7 +437,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantlePendingMaterial_MetaData[] = {
 		{ "Category", "Buildable|Dismantle" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material used when looking at buildings for dismantle" },
 	};
 #endif
@@ -445,7 +445,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleEffect_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Effect to play when a building is dismantled //[DavalliusA:Mon/01-04-2019] seems to never ba used? //@TODO: see if we can't remove this" },
 	};
 #endif
@@ -453,7 +453,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildEffect_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Effect to play when a building is built //[DavalliusA:Mon/01-04-2019] seems to only be used for replays? //@TODO: see if we can't store this in a way more suitable for replays... a waste to have it in a global class like this" },
 	};
 #endif
@@ -461,7 +461,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDismantleSounds_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Default sound played when dismantling a building, a random from the list is played." },
 	};
 #endif
@@ -470,7 +470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConstructionSounds_MetaData[] = {
 		{ "Category", "Buildable|Build Effect" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Default sound played when constructing a building, a random from the list is played." },
 	};
 #endif
@@ -479,7 +479,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mInventoryDropCrate_MetaData[] = {
 		{ "Category", "Buildable" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Crate spawned when we dismantle an actor or when we die. It will be filled with the refund if it doesn't fit in the players inventory." },
 	};
 #endif
@@ -487,7 +487,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mConveyorBuildGuideMaterial_MetaData[] = {
 		{ "Category", "BuildGuides|Alignment" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material applied to build guides specifically for conveyor belts to visualize alignment in build mode. @note Do not set in code!" },
 	};
 #endif
@@ -495,7 +495,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMaterial_MetaData[] = {
 		{ "Category", "BuildGuides|Alignment" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material applied to build guides to visualize alignment in build mode. @note Do not set in code!" },
 	};
 #endif
@@ -503,7 +503,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mBuildGuideMesh_MetaData[] = {
 		{ "Category", "BuildGuides|Alignment" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Mesh used to visualize alignment in build mode. @note Do not set in code!" },
 	};
 #endif
@@ -511,7 +511,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramSnapSound_MetaData[] = {
 		{ "Category", "Hologram|Sound" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Snapping sound for holograms, e.g. when a conveyor snaps to an output." },
 	};
 #endif
@@ -519,7 +519,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mHologramLoopSound_MetaData[] = {
 		{ "Category", "Hologram|Sound" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Default sound loop placed on holograms." },
 	};
 #endif
@@ -527,7 +527,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMaterial_MetaData[] = {
 		{ "Category", "Hologram|Clearance" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for clearance. @note Do not set in code!" },
 	};
 #endif
@@ -535,7 +535,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mClearanceMesh_MetaData[] = {
 		{ "Category", "Hologram|Clearance" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Mesh used to visualize the clearance mesh on factories @note Do not set in code!" },
 	};
 #endif
@@ -543,7 +543,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Mesh used to visualize power connections. @note Do not set in code!" },
 	};
 #endif
@@ -551,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionArrowMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Mesh used to visualize input or output connections direction. @note Do not set in code!" },
 	};
 #endif
@@ -559,7 +559,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultConveyorConnectionFrameMesh_MetaData[] = {
 		{ "Category", "Hologram|Connections" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Mesh used to visualize input or output connections location. @note Do not set in code!" },
 	};
 #endif
@@ -567,7 +567,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultPowerConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for power connections. @note Do not set in code!" },
 	};
 #endif
@@ -575,7 +575,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultOutputConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for output connections. @note Do not set in code!" },
 	};
 #endif
@@ -583,7 +583,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInputConnectionMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for input connections. @note Do not set in code!" },
 	};
 #endif
@@ -591,7 +591,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultInvalidPlacementMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for invalid placement. @note Do not set in code!" },
 	};
 #endif
@@ -599,7 +599,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterialSimplified_MetaData[] = {
 		{ "Category", "Hologram|Material" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for valid placement. @note Do not set in code!" },
 	};
 #endif
@@ -607,7 +607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFactorySettings_Statics::NewProp_mDefaultValidPlacementMaterial_MetaData[] = {
 		{ "Category", "Hologram|Material" },
-		{ "ModuleRelativePath", "FGFactorySettings.h" },
+		{ "ModuleRelativePath", "Public/FGFactorySettings.h" },
 		{ "ToolTip", "Material on hologram for valid placement. @note Do not set in code!" },
 	};
 #endif
@@ -671,7 +671,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactorySettings, 3648553975);
+	IMPLEMENT_CLASS(UFGFactorySettings, 2776315832);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactorySettings(Z_Construct_UClass_UFGFactorySettings, &UFGFactorySettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactorySettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactorySettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

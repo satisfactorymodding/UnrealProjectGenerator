@@ -26,7 +26,7 @@ class UObject;
 #endif
 #define FACTORYGAME_FGHUD_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_RPC_WRAPPERS \
 	virtual void SetCrustomCrosshairTexture_Implementation(UTexture2D* newTexture); \
 	virtual void UpdateCrosshairColorState_Implementation(FLinearColor const& newColor); \
 	virtual void UpdateCrosshairState_Implementation(AFGCharacterPlayer* player); \
@@ -246,7 +246,7 @@ class UObject;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void SetCrustomCrosshairTexture_Implementation(UTexture2D* newTexture); \
 	virtual void UpdateCrosshairColorState_Implementation(FLinearColor const& newColor); \
 	virtual void UpdateCrosshairState_Implementation(AFGCharacterPlayer* player); \
@@ -466,7 +466,7 @@ class UObject;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_EVENT_PARMS \
 	struct FGHUD_eventAddEquipmentHUD_Parms \
 	{ \
 		TSubclassOf<UUserWidget>  widgetClass; \
@@ -495,8 +495,8 @@ class UObject;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGHUD(); \
 	friend struct Z_Construct_UClass_AFGHUD_Statics; \
@@ -505,7 +505,7 @@ public: \
 	DECLARE_SERIALIZER(AFGHUD)
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGHUD(); \
 	friend struct Z_Construct_UClass_AFGHUD_Statics; \
@@ -514,7 +514,7 @@ public: \
 	DECLARE_SERIALIZER(AFGHUD)
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGHUD(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGHUD) \
@@ -527,7 +527,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGHUD(AFGHUD&&); \
@@ -538,7 +538,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGHUD); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGHUD)
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mGameUIClass() { return STRUCT_OFFSET(AFGHUD, mGameUIClass); } \
 	FORCEINLINE static uint32 __PPO__mRespawnUIClass() { return STRUCT_OFFSET(AFGHUD, mRespawnUIClass); } \
 	FORCEINLINE static uint32 __PPO__mDefaultCrosshair() { return STRUCT_OFFSET(AFGHUD, mDefaultCrosshair); } \
@@ -558,36 +558,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGHUD); \
 	FORCEINLINE static uint32 __PPO__mPawnHUD() { return STRUCT_OFFSET(AFGHUD, mPawnHUD); }
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_31_PROLOG \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_31_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_INCLASS \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGHUD_h_34_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGHUD_h_34_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGHUD_h_34_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGHUD_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGHUD_h
 
 
 #define FOREACH_ENUM_ECROSSHAIRSTATE(op) \

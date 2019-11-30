@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGColorInterface.h"
+#include "FactoryGame/Public/FGColorInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_GetCanBeColored_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Returns wherther the building can be colored right now or not" },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_GetColorSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Returns the color slot index of this building" },
 	};
 #endif
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Returns the primary color of this building" },
 	};
 #endif
@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Returns the primary color of this building" },
 	};
 #endif
@@ -230,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_SetColorSlot_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Sets the color slot for the buildable" },
 	};
 #endif
@@ -260,7 +260,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Sets the primary color for the buildable" },
 	};
 #endif
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Factory Color" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Sets the secondary color for the buildable" },
 	};
 #endif
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Called on by the interface if we are looking at something that's useable" },
 	};
 #endif
@@ -350,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Use" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ToolTip", "Called when we stop looking at the item" },
 	};
 #endif
@@ -383,21 +383,21 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGColorInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGColorInterface_GetCanBeColored, "GetCanBeColored" }, // 3818106438
-		{ &Z_Construct_UFunction_UFGColorInterface_GetColorSlot, "GetColorSlot" }, // 4086471325
-		{ &Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor, "GetPrimaryColor" }, // 1863479996
-		{ &Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor, "GetSecondaryColor" }, // 805787
-		{ &Z_Construct_UFunction_UFGColorInterface_SetColorSlot, "SetColorSlot" }, // 1906623779
-		{ &Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor, "SetPrimaryColor" }, // 1970121387
-		{ &Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor, "SetSecondaryColor" }, // 1039925950
-		{ &Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor, "StartIsAimedAtForColor" }, // 541473653
-		{ &Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor, "StopIsAimedAtForColor" }, // 215107436
+		{ &Z_Construct_UFunction_UFGColorInterface_GetCanBeColored, "GetCanBeColored" }, // 583568928
+		{ &Z_Construct_UFunction_UFGColorInterface_GetColorSlot, "GetColorSlot" }, // 3892614711
+		{ &Z_Construct_UFunction_UFGColorInterface_GetPrimaryColor, "GetPrimaryColor" }, // 2065429673
+		{ &Z_Construct_UFunction_UFGColorInterface_GetSecondaryColor, "GetSecondaryColor" }, // 3552355530
+		{ &Z_Construct_UFunction_UFGColorInterface_SetColorSlot, "SetColorSlot" }, // 2779566380
+		{ &Z_Construct_UFunction_UFGColorInterface_SetPrimaryColor, "SetPrimaryColor" }, // 1799266777
+		{ &Z_Construct_UFunction_UFGColorInterface_SetSecondaryColor, "SetSecondaryColor" }, // 525823049
+		{ &Z_Construct_UFunction_UFGColorInterface_StartIsAimedAtForColor, "StartIsAimedAtForColor" }, // 2926717638
+		{ &Z_Construct_UFunction_UFGColorInterface_StopIsAimedAtForColor, "StopIsAimedAtForColor" }, // 711955871
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGColorInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGColorInterface.h" },
+		{ "ModuleRelativePath", "Public/FGColorInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -424,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColorInterface, 307598494);
+	IMPLEMENT_CLASS(UFGColorInterface, 2706756196);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColorInterface(Z_Construct_UClass_UFGColorInterface, &UFGColorInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColorInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColorInterface);
 	static FName NAME_UFGColorInterface_GetCanBeColored = FName(TEXT("GetCanBeColored"));

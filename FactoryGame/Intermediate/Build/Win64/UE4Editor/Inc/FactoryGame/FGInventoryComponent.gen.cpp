@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInventoryComponent.h"
+#include "FactoryGame/Public/FGInventoryComponent.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnItemRemoved__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnItemRemoved__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnItemRemoved__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnItemRemoved_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnItemRemoved__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnItemRemoved__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnItemRemoved__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnItemRemoved__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnItemAdded__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnItemAdded_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnItemAdded__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "GetItemDropLocation__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00120000, sizeof(_Script_FactoryGame_eventGetItemDropLocation_Parms), Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_GetItemDropLocation__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "InventoryResized__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventInventoryResized_Parms), Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_InventoryResized__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -260,7 +260,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryStack
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInventoryStack_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Struct containing a stack of items, stacks is what the inventory handles.\nWhen handling single items outside an inventory, i.e. conveyor belt, the FInventoryItem struct is used.\nNote that single items in the inventory is described as a stack with 1 item." },
 	};
 #endif
@@ -271,7 +271,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryStack
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInventoryStack_Statics::NewProp_NumItems_MetaData[] = {
 		{ "Category", "InventoryStack" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Number of items in this stack." },
 	};
 #endif
@@ -279,7 +279,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryStack
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInventoryStack_Statics::NewProp_Item_MetaData[] = {
 		{ "Category", "InventoryStack" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Type of item in this stack." },
 	};
 #endif
@@ -315,7 +315,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryStack
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FInventoryStack_CRC() { return 283869408U; }
+	uint32 Get_Z_Construct_UScriptStruct_FInventoryStack_CRC() { return 1663413583U; }
 class UScriptStruct* FInventoryItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -354,7 +354,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInventoryItem_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Describes an item that can be placed in the inventory.\nAn item has a type and optionally a state.\nE.g. a weapon is of type 'Desc_NailGun' and has the state '9 nail loaded'." },
 	};
 #endif
@@ -364,7 +364,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInventoryItem_Statics::NewProp_ItemState_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Optionally store an actor, e.g. an equipment, so we can remember it's state." },
 	};
 #endif
@@ -372,7 +372,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInventoryItem_Statics::NewProp_ItemClass_MetaData[] = {
 		{ "Category", "InventoryItem" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "The type of item" },
 	};
 #endif
@@ -408,7 +408,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FInventoryItem_CRC() { return 736071700U; }
+	uint32 Get_Z_Construct_UScriptStruct_FInventoryItem_CRC() { return 3278304027U; }
 	static FName NAME_UFGInventoryComponent_Server_SortInventory = FName(TEXT("Server_SortInventory"));
 	void UFGInventoryComponent::Server_SortInventory()
 	{
@@ -480,7 +480,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_AddArbitrarySlotSize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Slot Size" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Adds or replaces a arbitrary size for a slot." },
 	};
 #endif
@@ -536,7 +536,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_AddStack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "CPP_Default_allowPartialAdd", "false" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Tries to add an item to our inventory, stack it if possible.\n@note Server only\n\n@param allowPartialAdd - If true we add what we can and ignore the rest; otherwise it assumes everything fits and warns otherwise.\n                         @note It is the callers responsibility to take care of the items that where not added.\n\n@return Number of items added, may be less than the input if partial adds are allowed." },
 	};
 #endif
@@ -581,7 +581,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_AddStacks_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Add the given items to the inventory.\n@note Server only\n\n@param stacks - Stacks to add, caller must ensure that the stacks fit in the inventory.\n\n@note It is the callers responsibility to ensure that the inventory has enough space to store the items." },
 	};
 #endif
@@ -641,7 +641,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_AddStackToIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "CPP_Default_allowPartial", "false" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Tries to add an item to our inventory at a give index, stack it if possible.\n@note Server only\n\n@param idx - A valid index in mInventoryStacks.\n@param item - The item to add.\n@param allowPartialAdd - If true we add what we can and ignore the rest; otherwise it assumes everything fits and warns otherwise.\n                         @note It is the callers responsibility to take care of the items that where not added.\n\n@return Number of items added, may be less than the input if partial adds are allowed." },
 	};
 #endif
@@ -684,7 +684,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_CanSplitStackAtIdx_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Split" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Returns true if we can split the stack that is on the passed idx" },
 	};
 #endif
@@ -708,7 +708,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_Empty_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Clears the inventory, ALL items will be forever gone!" },
 	};
 #endif
@@ -742,7 +742,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_FindEmptyIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "@return first empty index, -1 if none is found" },
 	};
 #endif
@@ -780,7 +780,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetAllowedItemOnIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Filter" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Set the allowed item type for this slot, can only be one item.\n@return Allowed item type if set; nullptr if any item is allowed or invalid index." },
 	};
 #endif
@@ -819,7 +819,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetCanBeRearranged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Can stuff in this inventory be rearranged, that is moved from one slot to the other?" },
 	};
 #endif
@@ -853,7 +853,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetFullestStackIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Returns index of the stack that has percentually the most items" },
 	};
 #endif
@@ -890,7 +890,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetInventoryStacks_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Get all stacks that's in the players inventory" },
 	};
 #endif
@@ -928,7 +928,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetNumItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Get the number of items we have of the specified class.\n\n@param itemClass - The items class.\n\n@return Total amount of the item we have in the inventory." },
 	};
 #endif
@@ -962,7 +962,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "The total size of the inventory, when accessing inventory linearly using indices." },
 	};
 #endif
@@ -1005,7 +1005,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetSlotSize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Slot Size" },
 		{ "CPP_Default_itemDesc", "None" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "This returns the arbitrary slot size if one is set, otherwise the stack size" },
 	};
 #endif
@@ -1052,7 +1052,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_GetStackFromIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Get the item of a slot.\n@note true if valid index, it is the callers responsibility to check if the slot contains an item or not.\n\n@param idx - A valid index in mInventoryStacks.\n@param out_item - The item on the location. If not a valid index this is undefined.\n\n@return true if valid index; false otherwise." },
 	};
 #endif
@@ -1091,7 +1091,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_HasAuthority_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Networking" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Checks if our owner has authority, and assumes that if they have, then so do we" },
 	};
 #endif
@@ -1142,7 +1142,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "@return true if we have enough space for the item; false if not or not allowed." },
 	};
 #endif
@@ -1193,7 +1193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForStack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Check if the inventory has enough space to store the given items." },
 	};
 #endif
@@ -1247,7 +1247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForStacks_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Check if the inventory has enough space to store the given items.\n@param stacks - Stacks to check enough space for.\n@return - true if the items can be stored in the inventory; false if the inventory has insufficent space or the type for any of the items cannot be stored in this inventory.\n\n@note This can be slow for large inventories and item quantities as it need to check every grid location, try stacking and consider stacking limits etc." },
 	};
 #endif
@@ -1294,7 +1294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_HasItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Check if the inventory has the given items, good for checking building costs etc.\n\n@param itemClass - Item type to check.\n@param num - Item amount to check.\n\n@return - true if the inventory has the amount requested." },
 	};
 #endif
@@ -1333,7 +1333,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_IsEmpty_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Check if the entire inventory is empty." },
 	};
 #endif
@@ -1376,7 +1376,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_IsIndexEmpty_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Check if the given index is empty." },
 	};
 #endif
@@ -1432,7 +1432,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_IsItemAllowed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "CPP_Default_idx", "-1" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "@return true if the item is allowed in this inventory" },
 	};
 #endif
@@ -1475,7 +1475,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_IsSomethingOnIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Opposite of IsIndexEmpty" },
 	};
 #endif
@@ -1518,7 +1518,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_IsValidIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "@return true if the index is a valid index." },
 	};
 #endif
@@ -1541,7 +1541,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_OnRep_InventoryStacks_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Used to call OnItemAdded/OnItemRemoved on clients" },
 	};
 #endif
@@ -1579,7 +1579,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_Remove_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Removes the number of specified items from the inventory.\n@note Server only\n\n@param itemClass - Type of items to remove.\n@param num - Number of items to remove. Must be >= 0. If count is more than the items available, a partial remove is done and a warning is raised." },
 	};
 #endif
@@ -1613,7 +1613,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_RemoveAllFromIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Clears the index, ALL items will be forever gone!" },
 	};
 #endif
@@ -1651,7 +1651,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_RemoveFromIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Removes number of items in the specified index.\n@note Server only\n\n@param idx - A valid index in mInventoryStacks.\n@param num - Number of items to remove. Must be >= 0. If count is more than the items available, nothing is removed." },
 	};
 #endif
@@ -1686,7 +1686,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_Resize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "CPP_Default_newSize", "1" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Changes the size of the inventory to something else than 1\n\n@param newSize How many itemslots does this component have" },
 	};
 #endif
@@ -1709,7 +1709,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInventoryComponent, "Server_SortInventory", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x80220CC0, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory_Statics::Function_MetaDataParams)) };
@@ -1746,7 +1746,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_SetAllowedItemOnIndex_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Filter" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Get the allowed item type for this slot.\n@param idx Slot index, function does nullptr if this is invalid.\n@param allowedItemClass Item type to allow, if nothing then all items are allowed." },
 	};
 #endif
@@ -1785,7 +1785,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_SetCanBeRearranged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Setter for mCanBeRearranged" },
 	};
 #endif
@@ -1809,7 +1809,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_SortInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Sorts the inventory in alphabetic order in the following manner:\n1) Equipment\n2) other" },
 	};
 #endif
@@ -1847,7 +1847,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryComponent_SplitStackAtIdx_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Split" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Splits the stack at the current index and moves the passed amount of items to first valid slot" },
 	};
 #endif
@@ -1922,41 +1922,41 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInventoryComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInventoryComponent_AddArbitrarySlotSize, "AddArbitrarySlotSize" }, // 3882185651
-		{ &Z_Construct_UFunction_UFGInventoryComponent_AddStack, "AddStack" }, // 2748562214
-		{ &Z_Construct_UFunction_UFGInventoryComponent_AddStacks, "AddStacks" }, // 2739943621
-		{ &Z_Construct_UFunction_UFGInventoryComponent_AddStackToIndex, "AddStackToIndex" }, // 401383863
-		{ &Z_Construct_UFunction_UFGInventoryComponent_CanSplitStackAtIdx, "CanSplitStackAtIdx" }, // 3801566784
-		{ &Z_Construct_UFunction_UFGInventoryComponent_Empty, "Empty" }, // 1354277397
-		{ &Z_Construct_UFunction_UFGInventoryComponent_FindEmptyIndex, "FindEmptyIndex" }, // 1361531905
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetAllowedItemOnIndex, "GetAllowedItemOnIndex" }, // 2115485783
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetCanBeRearranged, "GetCanBeRearranged" }, // 1844657658
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetFullestStackIndex, "GetFullestStackIndex" }, // 792546030
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetInventoryStacks, "GetInventoryStacks" }, // 3795496219
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetNumItems, "GetNumItems" }, // 3528141187
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear, "GetSizeLinear" }, // 1484181607
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSlotSize, "GetSlotSize" }, // 3613851132
-		{ &Z_Construct_UFunction_UFGInventoryComponent_GetStackFromIndex, "GetStackFromIndex" }, // 404570098
-		{ &Z_Construct_UFunction_UFGInventoryComponent_HasAuthority, "HasAuthority" }, // 3479494138
-		{ &Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForItem, "HasEnoughSpaceForItem" }, // 3872830063
-		{ &Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForStack, "HasEnoughSpaceForStack" }, // 3257781712
-		{ &Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForStacks, "HasEnoughSpaceForStacks" }, // 3749945647
-		{ &Z_Construct_UFunction_UFGInventoryComponent_HasItems, "HasItems" }, // 95221241
-		{ &Z_Construct_UFunction_UFGInventoryComponent_IsEmpty, "IsEmpty" }, // 993108774
-		{ &Z_Construct_UFunction_UFGInventoryComponent_IsIndexEmpty, "IsIndexEmpty" }, // 2259373674
-		{ &Z_Construct_UFunction_UFGInventoryComponent_IsItemAllowed, "IsItemAllowed" }, // 486818019
-		{ &Z_Construct_UFunction_UFGInventoryComponent_IsSomethingOnIndex, "IsSomethingOnIndex" }, // 3777993882
-		{ &Z_Construct_UFunction_UFGInventoryComponent_IsValidIndex, "IsValidIndex" }, // 2139246021
-		{ &Z_Construct_UFunction_UFGInventoryComponent_OnRep_InventoryStacks, "OnRep_InventoryStacks" }, // 2497777592
-		{ &Z_Construct_UFunction_UFGInventoryComponent_Remove, "Remove" }, // 3911465247
-		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveAllFromIndex, "RemoveAllFromIndex" }, // 780547222
-		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveFromIndex, "RemoveFromIndex" }, // 4020766139
-		{ &Z_Construct_UFunction_UFGInventoryComponent_Resize, "Resize" }, // 2691493338
-		{ &Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory, "Server_SortInventory" }, // 301244909
-		{ &Z_Construct_UFunction_UFGInventoryComponent_SetAllowedItemOnIndex, "SetAllowedItemOnIndex" }, // 2643390989
-		{ &Z_Construct_UFunction_UFGInventoryComponent_SetCanBeRearranged, "SetCanBeRearranged" }, // 1927547822
-		{ &Z_Construct_UFunction_UFGInventoryComponent_SortInventory, "SortInventory" }, // 775019316
-		{ &Z_Construct_UFunction_UFGInventoryComponent_SplitStackAtIdx, "SplitStackAtIdx" }, // 3087040003
+		{ &Z_Construct_UFunction_UFGInventoryComponent_AddArbitrarySlotSize, "AddArbitrarySlotSize" }, // 613785631
+		{ &Z_Construct_UFunction_UFGInventoryComponent_AddStack, "AddStack" }, // 3225904316
+		{ &Z_Construct_UFunction_UFGInventoryComponent_AddStacks, "AddStacks" }, // 274545358
+		{ &Z_Construct_UFunction_UFGInventoryComponent_AddStackToIndex, "AddStackToIndex" }, // 3762961884
+		{ &Z_Construct_UFunction_UFGInventoryComponent_CanSplitStackAtIdx, "CanSplitStackAtIdx" }, // 3062626039
+		{ &Z_Construct_UFunction_UFGInventoryComponent_Empty, "Empty" }, // 1332290198
+		{ &Z_Construct_UFunction_UFGInventoryComponent_FindEmptyIndex, "FindEmptyIndex" }, // 1950297357
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetAllowedItemOnIndex, "GetAllowedItemOnIndex" }, // 229267328
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetCanBeRearranged, "GetCanBeRearranged" }, // 2602874112
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetFullestStackIndex, "GetFullestStackIndex" }, // 3336486987
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetInventoryStacks, "GetInventoryStacks" }, // 2475480138
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetNumItems, "GetNumItems" }, // 536130950
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSizeLinear, "GetSizeLinear" }, // 1240663557
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetSlotSize, "GetSlotSize" }, // 3849663462
+		{ &Z_Construct_UFunction_UFGInventoryComponent_GetStackFromIndex, "GetStackFromIndex" }, // 1232373923
+		{ &Z_Construct_UFunction_UFGInventoryComponent_HasAuthority, "HasAuthority" }, // 3238882543
+		{ &Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForItem, "HasEnoughSpaceForItem" }, // 3545304153
+		{ &Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForStack, "HasEnoughSpaceForStack" }, // 938614639
+		{ &Z_Construct_UFunction_UFGInventoryComponent_HasEnoughSpaceForStacks, "HasEnoughSpaceForStacks" }, // 3774276838
+		{ &Z_Construct_UFunction_UFGInventoryComponent_HasItems, "HasItems" }, // 2623299010
+		{ &Z_Construct_UFunction_UFGInventoryComponent_IsEmpty, "IsEmpty" }, // 13357313
+		{ &Z_Construct_UFunction_UFGInventoryComponent_IsIndexEmpty, "IsIndexEmpty" }, // 3609078080
+		{ &Z_Construct_UFunction_UFGInventoryComponent_IsItemAllowed, "IsItemAllowed" }, // 2438994005
+		{ &Z_Construct_UFunction_UFGInventoryComponent_IsSomethingOnIndex, "IsSomethingOnIndex" }, // 510557311
+		{ &Z_Construct_UFunction_UFGInventoryComponent_IsValidIndex, "IsValidIndex" }, // 897533928
+		{ &Z_Construct_UFunction_UFGInventoryComponent_OnRep_InventoryStacks, "OnRep_InventoryStacks" }, // 2345636125
+		{ &Z_Construct_UFunction_UFGInventoryComponent_Remove, "Remove" }, // 2031034427
+		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveAllFromIndex, "RemoveAllFromIndex" }, // 2229902740
+		{ &Z_Construct_UFunction_UFGInventoryComponent_RemoveFromIndex, "RemoveFromIndex" }, // 183402200
+		{ &Z_Construct_UFunction_UFGInventoryComponent_Resize, "Resize" }, // 371074004
+		{ &Z_Construct_UFunction_UFGInventoryComponent_Server_SortInventory, "Server_SortInventory" }, // 2444662107
+		{ &Z_Construct_UFunction_UFGInventoryComponent_SetAllowedItemOnIndex, "SetAllowedItemOnIndex" }, // 2499141034
+		{ &Z_Construct_UFunction_UFGInventoryComponent_SetCanBeRearranged, "SetCanBeRearranged" }, // 3223352215
+		{ &Z_Construct_UFunction_UFGInventoryComponent_SortInventory, "SortInventory" }, // 150682745
+		{ &Z_Construct_UFunction_UFGInventoryComponent_SplitStackAtIdx, "SplitStackAtIdx" }, // 2977956583
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::Class_MetaDataParams[] = {
@@ -1964,14 +1964,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Custom" },
 		{ "IncludePath", "FGInventoryComponent.h" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "@brief Handles the different parts of the inventory for a actor\nComposed of several UFGInventoryComponents that does all the dirty work, this\nobject just collects them together and gives access to them\nThe outer object of this object needs to implement GetWorld" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mCanBeRearrange_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Can stuff in this inventory be rearranged, that is moved from one slot to the other?" },
 	};
 #endif
@@ -1982,7 +1982,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mCanBeRearrange = { UE4CodeGen_Private::EPropertyClass::Bool, "mCanBeRearrange", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGInventoryComponent), &Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mCanBeRearrange_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mCanBeRearrange_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mCanBeRearrange_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mAllowedItemDescriptors_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "This are the allowed inventory items, this we we can \"filter\" in BluePrint as well." },
 	};
 #endif
@@ -1990,7 +1990,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mAllowedItemDescriptors_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAllowedItemDescriptors", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGItemDescriptor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mArbitrarySlotSizes_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "In some rare cases we don't want to use the StackSize to limit the slot, so this way we can have larger or smaller slots" },
 	};
 #endif
@@ -1998,7 +1998,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mArbitrarySlotSizes_Inner = { UE4CodeGen_Private::EPropertyClass::Int, "mArbitrarySlotSizes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mInventoryStacks_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "All items in the inventory" },
 	};
 #endif
@@ -2006,7 +2006,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mInventoryStacks_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "mInventoryStacks", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mAdjustedSizeDiff_MetaData[] = {
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "When we resize the inventory we save how much bigger or smaller the inventory was made" },
 	};
 #endif
@@ -2014,7 +2014,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_mDefaultInventorySize_MetaData[] = {
 		{ "Category", "FGInventoryComponent" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "When we make an inventory by adding the component to an actor we use this to specify its size" },
 	};
 #endif
@@ -2023,7 +2023,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_OnItemRemovedDelegate_MetaData[] = {
 		{ "Category", "Inventory" },
 		{ "DisplayName", "OnItemRemoved" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Called when something has been removed from the inventory, @note: Client doesn't garantuee order of Added/Remove delegate" },
 	};
 #endif
@@ -2032,7 +2032,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_OnItemAddedDelegate_MetaData[] = {
 		{ "Category", "Inventory" },
 		{ "DisplayName", "OnItemAdded" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Called when this inventory has something added to it, @note: Client doesn't garantuee order of Added/Remove delegate" },
 	};
 #endif
@@ -2041,7 +2041,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryComponent_Statics::NewProp_ResizeInventoryDelegate_MetaData[] = {
 		{ "Category", "Inventory" },
 		{ "DisplayName", "OnInventoryResized" },
-		{ "ModuleRelativePath", "FGInventoryComponent.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryComponent.h" },
 		{ "ToolTip", "Called when this inventory has been resized" },
 	};
 #endif
@@ -2086,7 +2086,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFInventoryItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponent, 2342166624);
+	IMPLEMENT_CLASS(UFGInventoryComponent, 1963131908);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponent(Z_Construct_UClass_UFGInventoryComponent, &UFGInventoryComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponent);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGInventoryComponent)

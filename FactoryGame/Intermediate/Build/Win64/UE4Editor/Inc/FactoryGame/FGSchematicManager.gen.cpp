@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSchematicManager.h"
+#include "FactoryGame/Public/FGSchematicManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "OnActiveSchematicChanged__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventOnActiveSchematicChanged_Parms), Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "PaidOffOnSchematicDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventPaidOffOnSchematicDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PaidOffOnSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSchematicManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_FactoryGame, "PurchasedSchematicDelegate__DelegateSignature", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00130000, sizeof(_Script_FactoryGame_eventPurchasedSchematicDelegate_Parms), Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_FactoryGame_PurchasedSchematicDelegate__DelegateSignature_Statics::Function_MetaDataParams)) };
@@ -187,7 +187,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSchematicCost_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Holds info about a schematic and How much has been paid of on it." },
 	};
 #endif
@@ -198,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_MetaData[] = {
 		{ "Category", "SchematicCost" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Amount paid off" },
 	};
 #endif
@@ -206,7 +206,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_ItemCost_Inner = { UE4CodeGen_Private::EPropertyClass::Struct, "ItemCost", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UScriptStruct_FItemAmount, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic = { UE4CodeGen_Private::EPropertyClass::Class, "Schematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000001000000, 1, nullptr, STRUCT_OFFSET(FSchematicCost, Schematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::NewProp_Schematic_MetaData)) };
@@ -242,7 +242,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC() { return 226513918U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC() { return 3675905700U; }
 	void AFGSchematicManager::StaticRegisterNativesAFGSchematicManager()
 	{
 		UClass* Class = AFGSchematicManager::StaticClass();
@@ -294,7 +294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "adds a schematic to available schematics" },
 	};
 #endif
@@ -337,7 +337,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Can we set the passed schematic as the active one?" },
 	};
 #endif
@@ -377,7 +377,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "Category", "Schematic" },
 		{ "DefaultToSelf", "worldContext" },
 		{ "DisplayName", "GetSchematicManager" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Get the schematic manager from a world context, this should always return something unless you call it really early." },
 	};
 #endif
@@ -411,7 +411,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Get active Schematic." },
 	};
 #endif
@@ -448,7 +448,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns every possible schematic that is in the game." },
 	};
 #endif
@@ -492,7 +492,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns the all schematics of a type." },
 	};
 #endif
@@ -529,7 +529,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns the available schematics in the game." },
 	};
 #endif
@@ -573,7 +573,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Get the cost from the Schematic directly" },
 		{ "DisplayName", "GetCostFor_Deprecated" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Gives you the base cost, after random, for a schematic" },
 	};
 #endif
@@ -607,7 +607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetHighestAvailableTechTier", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGSchematicManager_eventGetHighestAvailableTechTier_Parms), Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier_Statics::Function_MetaDataParams)) };
@@ -640,7 +640,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "GetMaxAllowedTechTier", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGSchematicManager_eventGetMaxAllowedTechTier_Parms), Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier_Statics::Function_MetaDataParams)) };
@@ -680,7 +680,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns how much the players has paid off on a schematic" },
 	};
 #endif
@@ -717,7 +717,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns all schematics the players have purchased." },
 	};
 #endif
@@ -758,7 +758,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns remaining cost for a certain schematic" },
 	};
 #endif
@@ -792,7 +792,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Ship" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns the time until the ship is back" },
 	};
 #endif
@@ -836,7 +836,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
 		{ "CPP_Default_accessedViaCheats", "false" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Give the player access to a schematic" },
 	};
 #endif
@@ -879,7 +879,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns how much the players has paid off on a schematic" },
 	};
 #endif
@@ -922,7 +922,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "returns true if the passed schematic has been purchased" },
 	};
 #endif
@@ -961,7 +961,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Ship" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Returns true if the ship is at the trading post" },
 	};
 #endif
@@ -985,7 +985,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_LaunchShip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Ship" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Player initiated launch of the ship" },
 	};
 #endif
@@ -1008,7 +1008,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "OnRep_ActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic_Statics::Function_MetaDataParams)) };
@@ -1030,7 +1030,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "OnRep_PaidOffOnSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic_Statics::Function_MetaDataParams)) };
@@ -1052,7 +1052,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGSchematicManager, "OnRep_PurchasedSchematic", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00040401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic_Statics::Function_MetaDataParams)) };
@@ -1101,7 +1101,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Adds paid off amount on a schematic" },
 	};
 #endif
@@ -1144,7 +1144,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Sets the new active schematic to sell stuff towards" },
 	};
 #endif
@@ -1236,30 +1236,30 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSchematicManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic, "AddAvailableSchematic" }, // 1516174092
-		{ &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic, "CanSetAsActiveSchematic" }, // 1314246809
-		{ &Z_Construct_UFunction_AFGSchematicManager_Get, "Get" }, // 3556730280
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic, "GetActiveSchematic" }, // 3910292899
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics, "GetAllSchematics" }, // 2223865138
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType, "GetAllSchematicsOfType" }, // 2518672044
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics, "GetAvailableSchematics" }, // 867160255
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetCostFor, "GetCostFor" }, // 1894022803
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier, "GetHighestAvailableTechTier" }, // 2287354605
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier, "GetMaxAllowedTechTier" }, // 1604876164
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor, "GetPaidOffCostFor" }, // 1799508789
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics, "GetPurchasedSchematics" }, // 3761398672
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor, "GetRemainingCostFor" }, // 2292237634
-		{ &Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn, "GetTimeUntilShipReturn" }, // 1056457683
-		{ &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic, "GiveAccessToSchematic" }, // 712789129
-		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff, "IsSchematicPaidOff" }, // 4073159344
-		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased, "IsSchematicPurchased" }, // 1185932247
-		{ &Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost, "IsShipAtTradingPost" }, // 4126061383
-		{ &Z_Construct_UFunction_AFGSchematicManager_LaunchShip, "LaunchShip" }, // 2948681663
-		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic, "OnRep_ActiveSchematic" }, // 3042716720
-		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic, "OnRep_PaidOffOnSchematic" }, // 1816767982
-		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic, "OnRep_PurchasedSchematic" }, // 3203219327
-		{ &Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic, "PayOffOnSchematic" }, // 1830800193
-		{ &Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic, "SetActiveSchematic" }, // 1954833598
+		{ &Z_Construct_UFunction_AFGSchematicManager_AddAvailableSchematic, "AddAvailableSchematic" }, // 506102119
+		{ &Z_Construct_UFunction_AFGSchematicManager_CanSetAsActiveSchematic, "CanSetAsActiveSchematic" }, // 2461652910
+		{ &Z_Construct_UFunction_AFGSchematicManager_Get, "Get" }, // 3521328894
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetActiveSchematic, "GetActiveSchematic" }, // 3626187380
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematics, "GetAllSchematics" }, // 2848517242
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAllSchematicsOfType, "GetAllSchematicsOfType" }, // 1954654370
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetAvailableSchematics, "GetAvailableSchematics" }, // 3963272102
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetCostFor, "GetCostFor" }, // 2598492238
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetHighestAvailableTechTier, "GetHighestAvailableTechTier" }, // 3573221739
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetMaxAllowedTechTier, "GetMaxAllowedTechTier" }, // 540448385
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetPaidOffCostFor, "GetPaidOffCostFor" }, // 2675309176
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetPurchasedSchematics, "GetPurchasedSchematics" }, // 2164261936
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetRemainingCostFor, "GetRemainingCostFor" }, // 2989523458
+		{ &Z_Construct_UFunction_AFGSchematicManager_GetTimeUntilShipReturn, "GetTimeUntilShipReturn" }, // 4266468320
+		{ &Z_Construct_UFunction_AFGSchematicManager_GiveAccessToSchematic, "GiveAccessToSchematic" }, // 595934988
+		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPaidOff, "IsSchematicPaidOff" }, // 1073548356
+		{ &Z_Construct_UFunction_AFGSchematicManager_IsSchematicPurchased, "IsSchematicPurchased" }, // 445737124
+		{ &Z_Construct_UFunction_AFGSchematicManager_IsShipAtTradingPost, "IsShipAtTradingPost" }, // 2737014642
+		{ &Z_Construct_UFunction_AFGSchematicManager_LaunchShip, "LaunchShip" }, // 1516355295
+		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_ActiveSchematic, "OnRep_ActiveSchematic" }, // 2087607512
+		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PaidOffOnSchematic, "OnRep_PaidOffOnSchematic" }, // 3198685263
+		{ &Z_Construct_UFunction_AFGSchematicManager_OnRep_PurchasedSchematic, "OnRep_PurchasedSchematic" }, // 1032202847
+		{ &Z_Construct_UFunction_AFGSchematicManager_PayOffOnSchematic, "PayOffOnSchematic" }, // 415143365
+		{ &Z_Construct_UFunction_AFGSchematicManager_SetActiveSchematic, "SetActiveSchematic" }, // 3646932810
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::Class_MetaDataParams[] = {
@@ -1267,7 +1267,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "HideCategories", "Actor Tick Rendering Replication Input Actor Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGSchematicManager.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Keeps track of everything regarding schematics" },
 	};
@@ -1275,7 +1275,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipReturnedMessage_MetaData[] = {
 		{ "Category", "Message" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Message sent when trading post ship has returned" },
 	};
 #endif
@@ -1286,7 +1286,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		{ "ClampMax", "99999" },
 		{ "ClampMin", "0" },
 		{ "EditCondition", "mHasTechTierLimit" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "UIMax", "99999" },
 		{ "UIMin", "0" },
 	};
@@ -1295,7 +1295,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_SetBit(void* Obj)
@@ -1305,14 +1305,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasTechTierLimit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGSchematicManager), &Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mHasTechTierLimit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Used to save the ship land timestamp" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave = { UE4CodeGen_Private::EPropertyClass::Float, "mShipLandTimeStampSave", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080001000000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mShipLandTimeStampSave), METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStampSave_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mShipLandTimeStamp_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Time stamp for when the ship is gonna land back at the Trading Post." },
 	};
 #endif
@@ -1320,21 +1320,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData[] = {
 		{ "Category", "Schematics" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Called when we the schematic has been changed ." },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged = { UE4CodeGen_Private::EPropertyClass::MulticastDelegate, "mOnActiveSchematicChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080010080000, 1, nullptr, STRUCT_OFFSET(AFGSchematicManager, mOnActiveSchematicChanged), Z_Construct_UDelegateFunction_FactoryGame_OnActiveSchematicChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mOnActiveSchematicChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "The active schematic the resources is being sold towards." },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic = { UE4CodeGen_Private::EPropertyClass::Class, "mActiveSchematic", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080101000020, 1, "OnRep_ActiveSchematic", STRUCT_OFFSET(AFGSchematicManager, mActiveSchematic), Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mActiveSchematic_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPaidOffSchematic_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "This keeps track of what players have paid off on different schematics" },
 	};
 #endif
@@ -1343,7 +1343,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_MetaData[] = {
 		{ "Category", "Schematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Once schematic is purchased it ends up here" },
 	};
 #endif
@@ -1351,7 +1351,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mPurchasedSchematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mPurchasedSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "All schematics that are available to the player" },
 	};
 #endif
@@ -1359,7 +1359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAvailableSchematics_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "mAvailableSchematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGSchematic_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_mAllSchematics_MetaData[] = {
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "All schematic assets that have been sucked up in the PopulateSchematicsList function. Contains cheats and all sort of schematic." },
 	};
 #endif
@@ -1369,7 +1369,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PaidOffOnSchematicDelegate_MetaData[] = {
 		{ "Category", "Events|Schematics" },
 		{ "DisplayName", "OnPaidOffOnSchematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Called when a payment on a schematic occurs" },
 	};
 #endif
@@ -1378,7 +1378,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSchematicManager_Statics::NewProp_PurchasedSchematicDelegate_MetaData[] = {
 		{ "Category", "Events|Schematics" },
 		{ "DisplayName", "OnPurchasedSchematic" },
-		{ "ModuleRelativePath", "FGSchematicManager.h" },
+		{ "ModuleRelativePath", "Public/FGSchematicManager.h" },
 		{ "ToolTip", "Called when we players are granted a schematic." },
 	};
 #endif
@@ -1428,7 +1428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSchematicManager, 2036727879);
+	IMPLEMENT_CLASS(AFGSchematicManager, 1795563982);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSchematicManager(Z_Construct_UClass_AFGSchematicManager, &AFGSchematicManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSchematicManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSchematicManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

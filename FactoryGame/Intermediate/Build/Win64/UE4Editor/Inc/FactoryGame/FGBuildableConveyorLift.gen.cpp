@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableConveyorLift.h"
+#include "FactoryGame/Public/Buildables/FGBuildableConveyorLift.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -39,7 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "The transform of the top part.\nThe transform of the bottom part is the same as actor.\nIf the input and output is reversed so the input is at the top, the reverse flag is set.\nFrom this the mesh and connection transform is calculated." },
 	};
 #endif
@@ -116,19 +116,19 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableConveyorLift_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform, "OnRep_TopTransform" }, // 693774121
+		{ &Z_Construct_UFunction_AFGBuildableConveyorLift_OnRep_TopTransform, "OnRep_TopTransform" }, // 351186065
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableConveyorLift.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Base for conveyor lifts." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mItemMeshMap_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "NoAutoJson", "" },
 		{ "ToolTip", "Meshes for items." },
 	};
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mItemMeshMap_ValueProp = { UE4CodeGen_Private::EPropertyClass::Object, "mItemMeshMap", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 1, Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mIsReversed_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 	};
 #endif
 	void Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mIsReversed_SetBit(void* Obj)
@@ -148,14 +148,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mIsReversed = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsReversed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000020, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AFGBuildableConveyorLift), &Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mIsReversed_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mIsReversed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mIsReversed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform = { UE4CodeGen_Private::EPropertyClass::Struct, "mTopTransform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000101000020, 1, "OnRep_TopTransform", STRUCT_OFFSET(AFGBuildableConveyorLift, mTopTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopTransform_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mShelfMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Shelf placed under each item." },
 	};
 #endif
@@ -163,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mJointMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Mesh placed between two joined lift sections." },
 	};
 #endif
@@ -171,7 +171,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mBellowMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Mesh placed on the input/output as a bellow between a wall or factory." },
 	};
 #endif
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mTopMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Mesh at the top of the lift." },
 	};
 #endif
@@ -187,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mMidMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Mesh repeated for the mid section." },
 	};
 #endif
@@ -195,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mBottomMesh_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "Mesh at the bottom of the lift." },
 	};
 #endif
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableConveyorLift_Statics::NewProp_mMeshHeight_MetaData[] = {
 		{ "Category", "FGBuildableConveyorLift" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableConveyorLift.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableConveyorLift.h" },
 		{ "ToolTip", "What's the height of the meshes used." },
 	};
 #endif
@@ -245,7 +245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableConveyorLift() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableConveyorLift, 1311460047);
+	IMPLEMENT_CLASS(AFGBuildableConveyorLift, 2391921095);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableConveyorLift(Z_Construct_UClass_AFGBuildableConveyorLift, &AFGBuildableConveyorLift::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableConveyorLift"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableConveyorLift);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

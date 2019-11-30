@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGItemPickup_Spawnable.h"
+#include "FactoryGame/Public/FGItemPickup_Spawnable.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		{ "Category", "ItemDrop" },
 		{ "CPP_Default_itemDropClass", "None" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGItemPickup_Spawnable, "AddItemToWorldStackAtLocation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04C22401, sizeof(FGItemPickup_Spawnable_eventAddItemToWorldStackAtLocation_Parms), Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation_Statics::Function_MetaDataParams)) };
@@ -161,7 +161,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		{ "Category", "ItemDrop" },
 		{ "CPP_Default_itemDropClass", "None" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "Creates a item drop in the world\nNOTE: Server only\n\n@param world - the world we try to spawn the item drop in\n@param item - the item stack we want to drop\n@param spawnLocation - the location where we want to spawn the item drop in\n@param spawnRotation - the rotation where we want to spawn the item drop with\n@param itemDropClass - what class of item drop do we want to spawn, nullptr means default class that's specified in FGResourceSettings\n\n@return a valid item drop if everything went well" },
 	};
 #endif
@@ -246,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		{ "Category", "ItemDrop" },
 		{ "CPP_Default_itemDropClass", "None" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "Creates item drops in a sphere in the world around a location\nNOTE: Server only\n\n@param world - the world we try to spawn the item drops in\n@param items - the item stack we want to drop\n@param aroundLocation - the location where we want to spawn the item drop in\n@param sphereRadius - the rotation where we want to spawn the item drop with\n@param itemDropClass - what class of item drop do we want to spawn, nullptr means default class that's specified in FGResourceSettings\n\n@return a valid item drop if everything went well" },
 	};
 #endif
@@ -308,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationAndRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ItemDrop" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "Find the ground above/below the specified location and how to rotate a mesh to align with it\n\n@param world - the world we try to find the ground in\n@param fromLocation - the location we want to try to find the ground above/below\n@param actorsToIgnore - the actors we want to ignore when trying to find the ground\n@param out_location - location to put the item on the ground\n@param out_rotation - rotation to put the item on the ground\n\n@return a valid item drop if everything went well" },
 	};
 #endif
@@ -375,7 +375,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ItemDrop" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "Finds a suitable drop location in front of an actor, taking into account roofs, walls and such.\n\n@param world - the world we try to find the ground in\n@param fromLocation - the location we want to try to find the ground above/below\n@param actorsToIgnore - the actors we want to ignore when trying to find the ground\n@param out_location - location to put the item on the ground\n@param out_rotation - rotation to put the item on the ground\n\n@return a valid item drop if everything went well" },
 	};
 #endif
@@ -399,7 +399,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_Spawnable_PlaySpawnEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ItemDrop" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "Place to play spawn effect" },
 	};
 #endif
@@ -442,22 +442,22 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation, "AddItemToWorldStackAtLocation" }, // 1777158992
-		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDrop, "CreateItemDrop" }, // 643370651
-		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDropsInCylinder, "CreateItemDropsInCylinder" }, // 3916708280
-		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationAndRotation, "FindGroundLocationAndRotation" }, // 4021215133
-		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor, "FindGroundLocationInfrontOfActor" }, // 251416346
-		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_PlaySpawnEffect, "PlaySpawnEffect" }, // 2770566399
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_AddItemToWorldStackAtLocation, "AddItemToWorldStackAtLocation" }, // 1519372312
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDrop, "CreateItemDrop" }, // 1486352526
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_CreateItemDropsInCylinder, "CreateItemDropsInCylinder" }, // 3799552202
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationAndRotation, "FindGroundLocationAndRotation" }, // 2172502162
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_FindGroundLocationInfrontOfActor, "FindGroundLocationInfrontOfActor" }, // 3363814457
+		{ &Z_Construct_UFunction_AFGItemPickup_Spawnable_PlaySpawnEffect, "PlaySpawnEffect" }, // 2127785185
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGItemPickup_Spawnable.h" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::NewProp_mPlaySpawnEffect_MetaData[] = {
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "Should we play a spawn effect?" },
 	};
 #endif
@@ -469,7 +469,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::NewProp_mMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGItemPickup_Spawnable.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup_Spawnable.h" },
 		{ "ToolTip", "The mesh to represent the item" },
 	};
 #endif
@@ -501,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 1182215746);
+	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 3704348204);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup_Spawnable(Z_Construct_UClass_AFGItemPickup_Spawnable, &AFGItemPickup_Spawnable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup_Spawnable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup_Spawnable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableFoundation.h"
+#include "FactoryGame/Public/Buildables/FGBuildableFoundation.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,14 +55,14 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableFoundation.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFoundation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
 		{ "ToolTip", "A foundation to build your factory walls and floors on." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mDisableSnapOn_MetaData[] = {
 		{ "Category", "Foundation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFoundation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
 		{ "ToolTip", "Disable snapping on specific sides." },
 	};
 #endif
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mHeight_MetaData[] = {
 		{ "Category", "Foundation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFoundation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
 		{ "ToolTip", "Height of the foundation. Origo is assumed to be half way between." },
 	};
 #endif
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableFoundation_Statics::NewProp_mSize_MetaData[] = {
 		{ "Category", "Foundation" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableFoundation.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableFoundation.h" },
 		{ "ToolTip", "Size of the foundation (size of one side of the square)." },
 	};
 #endif
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableFoundation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableFoundation, 2258015886);
+	IMPLEMENT_CLASS(AFGBuildableFoundation, 2346115570);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableFoundation(Z_Construct_UClass_AFGBuildableFoundation, &AFGBuildableFoundation::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableFoundation"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableFoundation);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

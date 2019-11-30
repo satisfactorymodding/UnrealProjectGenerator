@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGInventoryLibrary.h"
+#include "FactoryGame/Public/FGInventoryLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_BreakInventoryItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Manual break for inventory item." },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_BreakInventoryStack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Manual break for inventory stack." },
 	};
 #endif
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateInventoryItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Helper to consolidate the given items into as few items as possible.\nE.g. consolidate this:    50 iron, 50 iron, 30 copper, 35 iron\n     into this:           135 iron, 30 copper\n\n@note This do not apply any stacking limits.\n        //@todoinventory RENAME Stacks" },
 	};
 #endif
@@ -254,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateItemsAmount_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Helper to consolidate the given items into as few items as possible.\nE.g. consolidate this:    50 iron, 50 iron, 30 copper, 35 iron\n     into this:           135 iron, 30 copper\n\n@note This do not apply any stacking limits." },
 	};
 #endif
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Dynamically create a default inventory component with a given size." },
 	};
 #endif
@@ -366,7 +366,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponentOfClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Dynamically create an inventory component of a given class with a given size." },
 	};
 #endif
@@ -407,7 +407,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Calculates how many inventory slots the passed number of items requires.\n\nASSUMES CONSOLIDATED ARRAY" },
 	};
 #endif
@@ -475,7 +475,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_GrabAllItemsFromInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
 		{ "CPP_Default_onlyGrabOfDesc", "None" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Tries to grab all items in the source and add them to the dest. I can't decide what optimal grabbing is, so this is just the easiest implementation.\n@note Server only\n\n@return true on success; false if something goes wrong during the move." },
 	};
 #endif
@@ -526,7 +526,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_HasItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "@return true if the stack has any items; false if the stack is empty." },
 	};
 #endif
@@ -577,7 +577,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_HasState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "@return true if this inventory item has a state; otherwise false." },
 	};
 #endif
@@ -628,7 +628,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_IsValidItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "@return true if the inventory item is a valid item; otherwise false." },
 	};
 #endif
@@ -674,7 +674,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Manual make for inventory item." },
 	};
 #endif
@@ -716,7 +716,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryStack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Manual make for inventory stack." },
 	};
 #endif
@@ -765,7 +765,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_MergeInventoryItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Helper to merge an inventory item into an array of other inventory items.\n\n@param items - Merge item into this array.\n@param item - This is the item to merge into the items array.\n\n@note This do not apply any stacking limits.\n        //@todoinventory RENAME Stack" },
 	};
 #endif
@@ -836,7 +836,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInventoryLibrary_MoveInventoryItem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "This is a UI helper function for drag n drop that automagically moves or swaps items.\nIt moves or swaps an item from a one location to another location. Verifying that the move or swap is allowed.\n@note Server only\n\n@return true on success; false if something goes wrong during the move.\n        //@todoinventory RENAME Stack" },
 	};
 #endif
@@ -869,26 +869,26 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInventoryLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_BreakInventoryItem, "BreakInventoryItem" }, // 523540434
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_BreakInventoryStack, "BreakInventoryStack" }, // 3260136372
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateInventoryItems, "ConsolidateInventoryItems" }, // 685361686
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateItemsAmount, "ConsolidateItemsAmount" }, // 236975551
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponent, "CreateInventoryComponent" }, // 301668592
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponentOfClass, "CreateInventoryComponentOfClass" }, // 304125986
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems, "GetMinNumSlotsForItems" }, // 4177253872
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_GrabAllItemsFromInventory, "GrabAllItemsFromInventory" }, // 3571656535
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_HasItems, "HasItems" }, // 24124249
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_HasState, "HasState" }, // 3040702323
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_IsValidItem, "IsValidItem" }, // 2633334510
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryItem, "MakeInventoryItem" }, // 918590388
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryStack, "MakeInventoryStack" }, // 3761101840
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_MergeInventoryItem, "MergeInventoryItem" }, // 3238043333
-		{ &Z_Construct_UFunction_UFGInventoryLibrary_MoveInventoryItem, "MoveInventoryItem" }, // 3859529168
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_BreakInventoryItem, "BreakInventoryItem" }, // 841440094
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_BreakInventoryStack, "BreakInventoryStack" }, // 1578214297
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateInventoryItems, "ConsolidateInventoryItems" }, // 2309563933
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_ConsolidateItemsAmount, "ConsolidateItemsAmount" }, // 3593982871
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponent, "CreateInventoryComponent" }, // 1785163846
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_CreateInventoryComponentOfClass, "CreateInventoryComponentOfClass" }, // 438763581
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GetMinNumSlotsForItems, "GetMinNumSlotsForItems" }, // 826099420
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_GrabAllItemsFromInventory, "GrabAllItemsFromInventory" }, // 3043554255
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_HasItems, "HasItems" }, // 3661958712
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_HasState, "HasState" }, // 1763288349
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_IsValidItem, "IsValidItem" }, // 2074633004
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryItem, "MakeInventoryItem" }, // 4109133513
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_MakeInventoryStack, "MakeInventoryStack" }, // 4044485967
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_MergeInventoryItem, "MergeInventoryItem" }, // 3359677229
+		{ &Z_Construct_UFunction_UFGInventoryLibrary_MoveInventoryItem, "MoveInventoryItem" }, // 3868360500
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInventoryLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGInventoryLibrary.h" },
-		{ "ModuleRelativePath", "FGInventoryLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGInventoryLibrary.h" },
 		{ "ToolTip", "Function library to provide the glue between c++ and the inventory in blueprint so we can handle inventory items with a state easy in blueprint." },
 	};
 #endif
@@ -915,7 +915,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryLibrary, 3632675);
+	IMPLEMENT_CLASS(UFGInventoryLibrary, 3595192248);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryLibrary(Z_Construct_UClass_UFGInventoryLibrary, &UFGInventoryLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

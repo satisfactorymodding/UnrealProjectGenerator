@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAnimNotify_Attack.h"
+#include "FactoryGame/Public/FGAnimNotify_Attack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_Attack() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAnimNotify_Attack_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "FGAnimNotify_Attack.h" },
-		{ "ModuleRelativePath", "FGAnimNotify_Attack.h" },
+		{ "ModuleRelativePath", "Public/FGAnimNotify_Attack.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGAnimNotify_Attack_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_Attack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_Attack, 1930964872);
+	IMPLEMENT_CLASS(UFGAnimNotify_Attack, 676764129);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimNotify_Attack(Z_Construct_UClass_UFGAnimNotify_Attack, &UFGAnimNotify_Attack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimNotify_Attack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimNotify_Attack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

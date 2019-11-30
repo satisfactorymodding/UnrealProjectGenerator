@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRoadConnectionComponent.h"
+#include "FactoryGame/Public/FGRoadConnectionComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGRoadConnectionComponent.h" },
-		{ "ModuleRelativePath", "FGRoadConnectionComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRoadConnectionComponent.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGRoadConnectionComponent_Statics::StaticCppClassTypeInfo = {
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRoadConnectionComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 2688148210);
+	IMPLEMENT_CLASS(UFGRoadConnectionComponent, 1112972464);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRoadConnectionComponent(Z_Construct_UClass_UFGRoadConnectionComponent, &UFGRoadConnectionComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRoadConnectionComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRoadConnectionComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

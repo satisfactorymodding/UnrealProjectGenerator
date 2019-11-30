@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGOnlineSessionClient.h"
+#include "FactoryGame/Public/FGOnlineSessionClient.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,7 +48,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPendingInvite_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGOnlineSessionClient.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionClient.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FPendingInvite_Statics::NewStructOps()
@@ -82,7 +82,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC() { return 4028914278U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC() { return 626463064U; }
 	void UFGOnlineSessionClient::StaticRegisterNativesUFGOnlineSessionClient()
 	{
 	}
@@ -106,7 +106,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGOnlineSessionClient_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGOnlineSessionClient.h" },
-		{ "ModuleRelativePath", "FGOnlineSessionClient.h" },
+		{ "ModuleRelativePath", "Public/FGOnlineSessionClient.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGOnlineSessionClient_Statics::StaticCppClassTypeInfo = {
@@ -132,7 +132,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOnlineSessionClient, 1473793938);
+	IMPLEMENT_CLASS(UFGOnlineSessionClient, 4136964370);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGOnlineSessionClient(Z_Construct_UClass_UFGOnlineSessionClient, &UFGOnlineSessionClient::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGOnlineSessionClient"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGOnlineSessionClient);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

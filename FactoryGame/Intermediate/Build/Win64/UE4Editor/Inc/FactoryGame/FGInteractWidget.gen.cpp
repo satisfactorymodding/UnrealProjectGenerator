@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGInteractWidget.h"
+#include "FactoryGame/Public/UI/FGInteractWidget.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetDefaultFocusWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Returns default focuswidget" },
 	};
 #endif
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetDesiredAlignmentSize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Gets the size we want" },
 	};
 #endif
@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetDesiredHorizontalAlignment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Gets the alignment we want" },
 	};
 #endif
@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetDesiredVerticalAlignment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Gets the vertical alignment we want" },
 	};
 #endif
@@ -265,7 +265,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetSupportsStacking_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Getter for mSupportsStacking" },
 	};
 #endif
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_GetUseGamepadCursor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Getter for gamepad cursor" },
 	};
 #endif
@@ -328,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_Init_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_Init_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, "Init", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_Init_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_Init_Statics::Function_MetaDataParams)) };
@@ -351,7 +351,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_OnConsume_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_OnConsume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, "OnConsume", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_OnConsume_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_OnConsume_Statics::Function_MetaDataParams)) };
@@ -374,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, "OnEscapePressed", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed_Statics::Function_MetaDataParams)) };
@@ -415,7 +415,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_SetDefaultFocusWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Sets default focuswidget" },
 	};
 #endif
@@ -449,7 +449,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_SetDesiredAlignmentSize_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Sets the size we want" },
 	};
 #endif
@@ -483,7 +483,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_SetDesiredHorizontalAlignment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Sets the alignment we want" },
 	};
 #endif
@@ -517,7 +517,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_SetDesiredVerticalAlignment_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Sets the vertical alignment we want" },
 	};
 #endif
@@ -541,7 +541,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_SetInputMode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_SetInputMode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, "SetInputMode", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_SetInputMode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_SetInputMode_Statics::Function_MetaDataParams)) };
@@ -564,7 +564,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_SetupDefaultFocus_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Sets up default focus for interact widgets ( usually given to the close button in the window" },
 	};
 #endif
@@ -588,7 +588,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreLookInput_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreLookInput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, "UpdateIgnoreLookInput", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreLookInput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreLookInput_Statics::Function_MetaDataParams)) };
@@ -611,7 +611,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreMoveInput_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreMoveInput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGInteractWidget, "UpdateIgnoreMoveInput", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreMoveInput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreMoveInput_Statics::Function_MetaDataParams)) };
@@ -703,28 +703,28 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGInteractWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGInteractWidget_GetDefaultFocusWidget, "GetDefaultFocusWidget" }, // 1742893983
-		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredAlignmentSize, "GetDesiredAlignmentSize" }, // 2150083749
-		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredHorizontalAlignment, "GetDesiredHorizontalAlignment" }, // 2921820072
-		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredVerticalAlignment, "GetDesiredVerticalAlignment" }, // 3641402384
-		{ &Z_Construct_UFunction_UFGInteractWidget_GetSupportsStacking, "GetSupportsStacking" }, // 1608012595
-		{ &Z_Construct_UFunction_UFGInteractWidget_GetUseGamepadCursor, "GetUseGamepadCursor" }, // 2763903423
-		{ &Z_Construct_UFunction_UFGInteractWidget_Init, "Init" }, // 4007766423
-		{ &Z_Construct_UFunction_UFGInteractWidget_OnConsume, "OnConsume" }, // 4055762417
-		{ &Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed, "OnEscapePressed" }, // 3292266828
-		{ &Z_Construct_UFunction_UFGInteractWidget_SetDefaultFocusWidget, "SetDefaultFocusWidget" }, // 368108027
-		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredAlignmentSize, "SetDesiredAlignmentSize" }, // 3230339048
-		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredHorizontalAlignment, "SetDesiredHorizontalAlignment" }, // 271134431
-		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredVerticalAlignment, "SetDesiredVerticalAlignment" }, // 2881523193
-		{ &Z_Construct_UFunction_UFGInteractWidget_SetInputMode, "SetInputMode" }, // 2390683795
-		{ &Z_Construct_UFunction_UFGInteractWidget_SetupDefaultFocus, "SetupDefaultFocus" }, // 4207765192
-		{ &Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreLookInput, "UpdateIgnoreLookInput" }, // 534704463
-		{ &Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreMoveInput, "UpdateIgnoreMoveInput" }, // 2985272582
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetDefaultFocusWidget, "GetDefaultFocusWidget" }, // 2037098803
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredAlignmentSize, "GetDesiredAlignmentSize" }, // 1172193228
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredHorizontalAlignment, "GetDesiredHorizontalAlignment" }, // 3536165284
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetDesiredVerticalAlignment, "GetDesiredVerticalAlignment" }, // 3413145672
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetSupportsStacking, "GetSupportsStacking" }, // 605208578
+		{ &Z_Construct_UFunction_UFGInteractWidget_GetUseGamepadCursor, "GetUseGamepadCursor" }, // 619280946
+		{ &Z_Construct_UFunction_UFGInteractWidget_Init, "Init" }, // 3654661997
+		{ &Z_Construct_UFunction_UFGInteractWidget_OnConsume, "OnConsume" }, // 3023425939
+		{ &Z_Construct_UFunction_UFGInteractWidget_OnEscapePressed, "OnEscapePressed" }, // 4123539880
+		{ &Z_Construct_UFunction_UFGInteractWidget_SetDefaultFocusWidget, "SetDefaultFocusWidget" }, // 2161695900
+		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredAlignmentSize, "SetDesiredAlignmentSize" }, // 3711990615
+		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredHorizontalAlignment, "SetDesiredHorizontalAlignment" }, // 2939110373
+		{ &Z_Construct_UFunction_UFGInteractWidget_SetDesiredVerticalAlignment, "SetDesiredVerticalAlignment" }, // 2312277603
+		{ &Z_Construct_UFunction_UFGInteractWidget_SetInputMode, "SetInputMode" }, // 519752924
+		{ &Z_Construct_UFunction_UFGInteractWidget_SetupDefaultFocus, "SetupDefaultFocus" }, // 3832999550
+		{ &Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreLookInput, "UpdateIgnoreLookInput" }, // 1293231757
+		{ &Z_Construct_UFunction_UFGInteractWidget_UpdateIgnoreMoveInput, "UpdateIgnoreMoveInput" }, // 2473282899
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGInteractWidget.h" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ToolTip", "Base class for all stackable widgets in the game." },
 	};
@@ -732,7 +732,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mSupportsStacking_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Does this widget support stacking widgets on top?" },
 	};
 #endif
@@ -744,7 +744,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidget_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Used to give focus to an object when nothing else has focus" },
 	};
 #endif
@@ -752,7 +752,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mUseGamepadCursor_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Should gamepad act as cursor when using this widget?" },
 	};
 #endif
@@ -764,7 +764,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDefaultFocusWidgetClass_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Class of the default widget we want to give focus to" },
 	};
 #endif
@@ -773,7 +773,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mInteractObject_MetaData[] = {
 		{ "Category", "FGInteractWidget" },
 		{ "ExposeOnSpawn", "" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Object that we interacted with in order to show this widget ( can be nullPeter )" },
 	};
 #endif
@@ -781,7 +781,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDesiredAlignmentSize_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Our desired horizontal size" },
 	};
 #endif
@@ -789,7 +789,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDesiredVerticalAlignment_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Our desired vetical alignment" },
 	};
 #endif
@@ -797,7 +797,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mDesiredHorizontalAlignment_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Our desired horizontal alignment" },
 	};
 #endif
@@ -805,7 +805,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mInputToPassThrough_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "@todo Some widgets do not want to eat any input so this list is filled manually with all actions in the game...\n There need to be a clear hierarchy of how input is handled and what to pass and not pass and if the default is pass all or pass none." },
 	};
 #endif
@@ -814,7 +814,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mRestoreFocusWhenLost_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Decides if the widget should restore focus when it looses it. (e.g. when the user clicks outside of the widget)" },
 	};
 #endif
@@ -826,7 +826,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mCaptureInput_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "Decides if we should share input with game or capture it completely" },
 	};
 #endif
@@ -838,7 +838,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mUseMouse_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "If we should take the mouse input from the player. The player won't be able to look around." },
 	};
 #endif
@@ -850,7 +850,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGInteractWidget_Statics::NewProp_mUseKeyboard_MetaData[] = {
 		{ "Category", "Input" },
-		{ "ModuleRelativePath", "UI/FGInteractWidget.h" },
+		{ "ModuleRelativePath", "Public/UI/FGInteractWidget.h" },
 		{ "ToolTip", "If we should take the keyboard input from the player. The player won't be able to move around." },
 	};
 #endif
@@ -898,7 +898,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInteractWidget, 457879484);
+	IMPLEMENT_CLASS(UFGInteractWidget, 3619812202);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInteractWidget(Z_Construct_UClass_UFGInteractWidget, &UFGInteractWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInteractWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInteractWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

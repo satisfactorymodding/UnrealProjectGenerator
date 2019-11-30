@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGAssetManager.h"
+#include "FactoryGame/Public/FGAssetManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAssetManager_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGAssetManager.h" },
-		{ "ModuleRelativePath", "FGAssetManager.h" },
+		{ "ModuleRelativePath", "Public/FGAssetManager.h" },
 		{ "ToolTip", "Help us discard packages that shouldn't be cooked and add assets that's should always be cooked" },
 	};
 #endif
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAssetManager, 4142669219);
+	IMPLEMENT_CLASS(UFGAssetManager, 4021858669);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAssetManager(Z_Construct_UClass_UFGAssetManager, &UFGAssetManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAssetManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAssetManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

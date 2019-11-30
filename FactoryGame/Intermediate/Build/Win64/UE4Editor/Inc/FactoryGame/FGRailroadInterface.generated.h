@@ -14,7 +14,7 @@ struct FRailroadTrackPosition;
 #endif
 #define FACTORYGAME_FGRailroadInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_RPC_WRAPPERS \
 	virtual int32 GetTrackGraphID_Implementation() const { return 0; }; \
 	virtual FRailroadTrackPosition GetTrackPosition_Implementation() const { return FRailroadTrackPosition(); }; \
 	virtual void UnregisteredFromTrack_Implementation() {}; \
@@ -54,7 +54,7 @@ struct FRailroadTrackPosition;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual int32 GetTrackGraphID_Implementation() const { return 0; }; \
 	virtual FRailroadTrackPosition GetTrackPosition_Implementation() const { return FRailroadTrackPosition(); }; \
 	virtual void UnregisteredFromTrack_Implementation() {}; \
@@ -94,7 +94,7 @@ struct FRailroadTrackPosition;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_EVENT_PARMS \
 	struct FGRailroadInterface_eventGetTrackGraphID_Parms \
 	{ \
 		int32 ReturnValue; \
@@ -115,8 +115,8 @@ struct FRailroadTrackPosition;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGRailroadInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadInterface) \
@@ -129,7 +129,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGRailroadInterface(UFGRailroadInterface&&); \
@@ -140,7 +140,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGRailroadInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGRailroadInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGRailroadInterface(); \
 	friend struct Z_Construct_UClass_UFGRailroadInterface_Statics; \
@@ -149,22 +149,22 @@ public: \
 	DECLARE_SERIALIZER(UFGRailroadInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGRailroadInterface() {} \
 public: \
@@ -177,7 +177,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGRailroadInterface() {} \
 public: \
@@ -190,32 +190,32 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_11_PROLOG \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_11_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_24_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRailroadInterface_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRailroadInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGRailroadInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGRailroadInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

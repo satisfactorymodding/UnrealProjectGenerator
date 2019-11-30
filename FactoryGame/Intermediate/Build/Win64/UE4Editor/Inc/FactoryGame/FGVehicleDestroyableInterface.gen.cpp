@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGVehicleDestroyableInterface.h"
+#include "FactoryGame/Public/FGVehicleDestroyableInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle Destroy Interface" },
-		{ "ModuleRelativePath", "FGVehicleDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleDestroyableInterface.h" },
 		{ "ToolTip", "Audio event to be posted when destroyed" },
 	};
 #endif
@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle Destroy Interface" },
-		{ "ModuleRelativePath", "FGVehicleDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleDestroyableInterface.h" },
 		{ "ToolTip", "Particle System to be played when destroyed" },
 	};
 #endif
@@ -127,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Vehicle Destroy Interface" },
-		{ "ModuleRelativePath", "FGVehicleDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleDestroyableInterface.h" },
 		{ "ToolTip", "@returns the force required (if any) to destroy this object" },
 	};
 #endif
@@ -160,15 +160,15 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent, "GetDestroyAudioEvent" }, // 389546640
-		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 3602495475
-		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold, "GetForceThreshold" }, // 950515450
+		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyAudioEvent, "GetDestroyAudioEvent" }, // 2210141638
+		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetDestroyEffect, "GetDestroyEffect" }, // 198577630
+		{ &Z_Construct_UFunction_UFGVehicleDestroyableInterface_GetForceThreshold, "GetForceThreshold" }, // 131140102
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGVehicleDestroyableInterface.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleDestroyableInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -195,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 1318618704);
+	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 839617345);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleDestroyableInterface(Z_Construct_UClass_UFGVehicleDestroyableInterface, &UFGVehicleDestroyableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleDestroyableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleDestroyableInterface);
 	static FName NAME_UFGVehicleDestroyableInterface_GetDestroyAudioEvent = FName(TEXT("GetDestroyAudioEvent"));

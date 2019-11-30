@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGFoliagePickup.h"
+#include "FactoryGame/Public/FGFoliagePickup.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliagePickup.h" },
+		{ "ModuleRelativePath", "Public/FGFoliagePickup.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, "BroadcastPickup", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00824C40, sizeof(FGFoliagePickup_eventBroadcastPickup_Parms), Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup_Statics::Function_MetaDataParams)) };
@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliagePickup.h" },
+		{ "ModuleRelativePath", "Public/FGFoliagePickup.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGFoliagePickup, "PlayPickupEffect", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08820808, sizeof(FGFoliagePickup_eventPlayPickupEffect_Parms), Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect_Statics::Function_MetaDataParams)) };
@@ -153,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGFoliagePickup.h" },
+		{ "ModuleRelativePath", "Public/FGFoliagePickup.h" },
 		{ "ToolTip", "Sends to the server that something should be removed up at a specific location" },
 	};
 #endif
@@ -192,19 +192,19 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGFoliagePickup_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup, "BroadcastPickup" }, // 2365985535
-		{ &Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect, "PlayPickupEffect" }, // 1641748443
-		{ &Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform, "Server_PickupWithTransform" }, // 481128354
+		{ &Z_Construct_UFunction_AFGFoliagePickup_BroadcastPickup, "BroadcastPickup" }, // 2990515322
+		{ &Z_Construct_UFunction_AFGFoliagePickup_PlayPickupEffect, "PlayPickupEffect" }, // 1272906660
+		{ &Z_Construct_UFunction_AFGFoliagePickup_Server_PickupWithTransform, "Server_PickupWithTransform" }, // 3052827664
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliagePickup_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGFoliagePickup.h" },
-		{ "ModuleRelativePath", "FGFoliagePickup.h" },
+		{ "ModuleRelativePath", "Public/FGFoliagePickup.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGFoliagePickup_Statics::NewProp_mPickupMesh_MetaData[] = {
-		{ "ModuleRelativePath", "FGFoliagePickup.h" },
+		{ "ModuleRelativePath", "Public/FGFoliagePickup.h" },
 		{ "ToolTip", "The mesh that should be outlining" },
 	};
 #endif
@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliagePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliagePickup, 3618663320);
+	IMPLEMENT_CLASS(AFGFoliagePickup, 923378959);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliagePickup(Z_Construct_UClass_AFGFoliagePickup, &AFGFoliagePickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliagePickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliagePickup);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

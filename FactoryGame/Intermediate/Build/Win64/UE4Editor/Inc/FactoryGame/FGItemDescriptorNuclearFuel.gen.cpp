@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGItemDescriptorNuclearFuel.h"
+#include "FactoryGame/Public/Resources/FGItemDescriptorNuclearFuel.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|NuclearFuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "@return The amount of waste to create" },
 	};
 #endif
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|NuclearFuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "@return The descriptor to use when the fuel is removed from the reactor (waste)." },
 	};
 #endif
@@ -135,21 +135,21 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated, "GetAmountWasteCreated" }, // 3664722894
-		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass, "GetSpentFuelClass" }, // 3420417838
+		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetAmountWasteCreated, "GetAmountWasteCreated" }, // 2109444207
+		{ &Z_Construct_UFunction_UFGItemDescriptorNuclearFuel_GetSpentFuelClass, "GetSpentFuelClass" }, // 3496838596
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGItemDescriptorNuclearFuel.h" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "Base descriptor for nuclear fuel." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mAmountOfWaste_MetaData[] = {
 		{ "Category", "Nuclear Fuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "How much waste to produce" },
 	};
 #endif
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGItemDescriptorNuclearFuel_Statics::NewProp_mSpentFuelClass_MetaData[] = {
 		{ "Category", "Nuclear Fuel" },
-		{ "ModuleRelativePath", "Resources/FGItemDescriptorNuclearFuel.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGItemDescriptorNuclearFuel.h" },
 		{ "ToolTip", "The descriptor to use when the fuel is removed from the reactor (waste)." },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemDescriptorNuclearFuel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 377032931);
+	IMPLEMENT_CLASS(UFGItemDescriptorNuclearFuel, 1388644262);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGItemDescriptorNuclearFuel(Z_Construct_UClass_UFGItemDescriptorNuclearFuel, &UFGItemDescriptorNuclearFuel::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGItemDescriptorNuclearFuel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGItemDescriptorNuclearFuel);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

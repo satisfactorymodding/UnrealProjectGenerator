@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCharacterAnimInstance.h"
+#include "FactoryGame/Public/FGCharacterAnimInstance.h"
 #include "Engine/Classes/Components/SkeletalMeshComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Animation" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Returns velocitys direction in degrees" },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Animation" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "cached character of this animation" },
 	};
 #endif
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Animation" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Return desired character rotation based on floor" },
 	};
 #endif
@@ -190,7 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Animation" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Return desired character rotation based on floor" },
 	};
 #endif
@@ -224,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Animation" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Returns velocity" },
 	};
 #endif
@@ -258,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Animation" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Returns velocitys direction in degrees" },
 	};
 #endif
@@ -282,7 +282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pawn" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Our pawn has taken any damage" },
 	};
 #endif
@@ -312,7 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pawn" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Our pawn has taken point damage" },
 	};
 #endif
@@ -336,7 +336,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pawn" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Our pawn has taken radial damage" },
 	};
 #endif
@@ -562,28 +562,28 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCharacterAnimInstance_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength, "GetAccelerationVectorLength" }, // 2785065776
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter, "GetCachedCharacter" }, // 367885618
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation, "GetDesiredRunLeanRotation" }, // 218760500
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation, "GetDesiredWalkRotation" }, // 4110316868
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity, "GetVelocity" }, // 2033753561
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection, "GetVelocityDirection" }, // 1252621773
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken, "OnAnyDamageTaken" }, // 228278497
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken, "OnPointDamageTaken" }, // 216212729
-		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken, "OnRadialDamageTaken" }, // 3019289840
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetAccelerationVectorLength, "GetAccelerationVectorLength" }, // 2850827830
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetCachedCharacter, "GetCachedCharacter" }, // 1293083225
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredRunLeanRotation, "GetDesiredRunLeanRotation" }, // 1808248437
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetDesiredWalkRotation, "GetDesiredWalkRotation" }, // 2841260939
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocity, "GetVelocity" }, // 3384859818
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_GetVelocityDirection, "GetVelocityDirection" }, // 3786798583
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnAnyDamageTaken, "OnAnyDamageTaken" }, // 3528853442
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnPointDamageTaken, "OnPointDamageTaken" }, // 1779211401
+		{ &Z_Construct_UFunction_UFGCharacterAnimInstance_OnRadialDamageTaken, "OnRadialDamageTaken" }, // 1628944288
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "FGCharacterAnimInstance.h" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Common base class for player and enemies so we can add functionality for hit animations and such" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandCollisionChannels_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "What to collide against in pre land" },
 	};
 #endif
@@ -592,7 +592,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLandVelocityMultiplier_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Multiplier for velocity that determines how long the preland trace is" },
 	};
 #endif
@@ -600,7 +600,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mPreLand_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Pre land value" },
 	};
 #endif
@@ -612,7 +612,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUsePreLand_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Should we do pre land calculations?" },
 	};
 #endif
@@ -624,7 +624,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mGetDeltaPitchRotation_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Used in the 1p anim of the player only" },
 	};
 #endif
@@ -636,7 +636,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitchInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Interpspeed" },
 	};
 #endif
@@ -644,7 +644,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimPitch_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Look up" },
 	};
 #endif
@@ -652,7 +652,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMinValue_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "when should we turn to the left" },
 	};
 #endif
@@ -660,7 +660,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawAimMaxValue_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "When should we turn to the right" },
 	};
 #endif
@@ -668,7 +668,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCanUpdateActorRotationReference_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "should we run the turn in place code" },
 	};
 #endif
@@ -680,7 +680,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mUseTurnInPlace_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "should we run the turn in place code" },
 	};
 #endif
@@ -692,7 +692,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceDefaultTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "How long the turn should take" },
 	};
 #endif
@@ -700,7 +700,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAllowedToTurn_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "reset variable for turn stuff" },
 	};
 #endif
@@ -712,7 +712,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotationInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Configable interp speed for root rotation" },
 	};
 #endif
@@ -720,7 +720,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Editable for Bigges sake" },
 	};
 #endif
@@ -728,7 +728,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawRotationStrength_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Editable for Bigges sake" },
 	};
 #endif
@@ -736,7 +736,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationLastTick_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Last Rotation saved" },
 	};
 #endif
@@ -744,7 +744,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionCurrentTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
@@ -752,7 +752,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawReductionStartTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
@@ -760,7 +760,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVectorReference_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
@@ -768,7 +768,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorRotationForwardVector_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "I don't even know anymore, converting BP stuff" },
 	};
 #endif
@@ -776,7 +776,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnRightCurve_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Rotation values when turning right" },
 	};
 #endif
@@ -784,7 +784,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnLeftCurve_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Rotation values when turning left" },
 	};
 #endif
@@ -792,7 +792,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceComplete_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "are we done turning?" },
 	};
 #endif
@@ -804,7 +804,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceRight_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "or right" },
 	};
 #endif
@@ -816,7 +816,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mTurnInPlaceLeft_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "should we turn left" },
 	};
 #endif
@@ -828,7 +828,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mRootRotation_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Rotation of root component" },
 	};
 #endif
@@ -836,7 +836,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYawInterpSpeed_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Configable interpspeed" },
 	};
 #endif
@@ -844,7 +844,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAimYaw_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Where do we want to aim" },
 	};
 #endif
@@ -852,7 +852,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mYawDelta_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Used for lean/run calculations" },
 	};
 #endif
@@ -860,7 +860,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsAccelerating_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Did we begin movement" },
 	};
 #endif
@@ -872,7 +872,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mIsStandingStill_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Are we standing still" },
 	};
 #endif
@@ -884,7 +884,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mWalkRotation_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Walk rotation" },
 	};
 #endif
@@ -892,7 +892,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedZ_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Speed in movement Z" },
 	};
 #endif
@@ -900,7 +900,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeedLastFrame_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Saved speed from last time we checked" },
 	};
 #endif
@@ -908,7 +908,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mSpeed_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Speed in movement" },
 	};
 #endif
@@ -916,7 +916,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedDefaultWalkMode_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Cached default value of movement mode" },
 	};
 #endif
@@ -924,7 +924,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedMovementMode_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Caching movement mode" },
 	};
 #endif
@@ -932,7 +932,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mCachedCharacter_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Caching the character one" },
 	};
 #endif
@@ -940,7 +940,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mActorTransform_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Velocity normalized in local space" },
 	};
 #endif
@@ -948,7 +948,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationLocalNormalized_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Acceleration normalized in local space" },
 	};
 #endif
@@ -956,7 +956,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocityLocalNormalized_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Velocity normalized in local space" },
 	};
 #endif
@@ -964,7 +964,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mVelocity_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "Velocity" },
 	};
 #endif
@@ -972,7 +972,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mAccelerationVectorLength_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "acceleration length normalized" },
 	};
 #endif
@@ -980,7 +980,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterAnimInstance_Statics::NewProp_mDirection_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "FGCharacterAnimInstance.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterAnimInstance.h" },
 		{ "ToolTip", "in degrees" },
 	};
 #endif
@@ -1056,7 +1056,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCharacterAnimInstance, 4267619933);
+	IMPLEMENT_CLASS(UFGCharacterAnimInstance, 1230006119);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCharacterAnimInstance(Z_Construct_UClass_UFGCharacterAnimInstance, &UFGCharacterAnimInstance::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCharacterAnimInstance"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCharacterAnimInstance);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

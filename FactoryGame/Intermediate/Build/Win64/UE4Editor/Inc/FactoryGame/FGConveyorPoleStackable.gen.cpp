@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGConveyorPoleStackable.h"
+#include "FactoryGame/Public/Buildables/FGConveyorPoleStackable.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleStackable() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGConveyorPoleStackable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGConveyorPoleStackable.h" },
-		{ "ModuleRelativePath", "Buildables/FGConveyorPoleStackable.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGConveyorPoleStackable.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFGConveyorPoleStackable_Statics::StaticCppClassTypeInfo = {
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConveyorPoleStackable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 1891825645);
+	IMPLEMENT_CLASS(AFGConveyorPoleStackable, 1817269159);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConveyorPoleStackable(Z_Construct_UClass_AFGConveyorPoleStackable, &AFGConveyorPoleStackable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConveyorPoleStackable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConveyorPoleStackable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

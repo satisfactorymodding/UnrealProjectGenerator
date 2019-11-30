@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Hologram/FGBuildGuide.h"
+#include "FactoryGame/Public/Hologram/FGBuildGuide.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -31,7 +31,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EGuideLineType(EGuideLineType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EGuideLineType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EGuideLineType_CRC() { return 1860962191U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EGuideLineType_CRC() { return 1543311822U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EGuideLineType()
 	{
 #if WITH_HOT_RELOAD
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "GLT_ConveyorBelt.DisplayName", "Conveyor Belt" },
 				{ "GLT_Default.DisplayName", "Default" },
-				{ "ModuleRelativePath", "Hologram/FGBuildGuide.h" },
+				{ "ModuleRelativePath", "Public/Hologram/FGBuildGuide.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BuildGuides" },
 		{ "CPP_Default_meshSize", "30.000000" },
-		{ "ModuleRelativePath", "Hologram/FGBuildGuide.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGBuildGuide.h" },
 		{ "ToolTip", "Sets the start and end points of the build guide, similar to DrawDebugLines()" },
 	};
 #endif
@@ -145,18 +145,18 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildGuide_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd, "SetBuildGuideStartEnd" }, // 985956978
+		{ &Z_Construct_UFunction_AFGBuildGuide_SetBuildGuideStartEnd, "SetBuildGuideStartEnd" }, // 2194715457
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGuide_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Hologram/FGBuildGuide.h" },
-		{ "ModuleRelativePath", "Hologram/FGBuildGuide.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGBuildGuide.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildGuide_Statics::NewProp_mGuideLineType_MetaData[] = {
 		{ "Category", "BuildGuides" },
-		{ "ModuleRelativePath", "Hologram/FGBuildGuide.h" },
+		{ "ModuleRelativePath", "Public/Hologram/FGBuildGuide.h" },
 		{ "ToolTip", "Defines what type of build guide line this is." },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGuide() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGuide, 4009939118);
+	IMPLEMENT_CLASS(AFGBuildGuide, 1401535673);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGuide(Z_Construct_UClass_AFGBuildGuide, &AFGBuildGuide::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGuide"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGuide);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

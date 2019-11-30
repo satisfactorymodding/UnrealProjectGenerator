@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGDismantleInterface.h"
+#include "FactoryGame/Public/FGDismantleInterface.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_CanDismantle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Can this be dismantled." },
 	};
 #endif
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_Dismantle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Dismantle this." },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "How much do we get back when dismantling this." },
 	};
 #endif
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Returns the location where the refund should be spawned and the area\nif the player doesn't have room in the inventory.\n\n@param aimHitLocation - the location we aimed at when dismantling happened\n@param out_radius - radius we want to spawn stuff within" },
 	};
 #endif
@@ -227,7 +227,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Called prior to dismantle and prior to an upgrade from this actor to another actor.\nUse it to clear connections and other stuff that might interfere with upgrades." },
 	};
 #endif
@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Called on by the interface if we are looking at something we can dismantle." },
 	};
 #endif
@@ -287,7 +287,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Called when we stop looking at the item" },
 	};
 #endif
@@ -317,7 +317,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGDismantleInterface_Upgrade_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Dismantle" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ToolTip", "Called when an upgrade is performed from this actor to another actor.\n@param newActor  The new actor that replaces this." },
 	};
 #endif
@@ -350,20 +350,20 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGDismantleInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGDismantleInterface_CanDismantle, "CanDismantle" }, // 901090571
-		{ &Z_Construct_UFunction_UFGDismantleInterface_Dismantle, "Dismantle" }, // 279016651
-		{ &Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund, "GetDismantleRefund" }, // 3438251578
-		{ &Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea, "GetRefundSpawnLocationAndArea" }, // 1227334223
-		{ &Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade, "PreUpgrade" }, // 2891880130
-		{ &Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle, "StartIsLookedAtForDismantle" }, // 126978354
-		{ &Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle, "StopIsLookedAtForDismantle" }, // 455881096
-		{ &Z_Construct_UFunction_UFGDismantleInterface_Upgrade, "Upgrade" }, // 3981948302
+		{ &Z_Construct_UFunction_UFGDismantleInterface_CanDismantle, "CanDismantle" }, // 7269257
+		{ &Z_Construct_UFunction_UFGDismantleInterface_Dismantle, "Dismantle" }, // 1869870772
+		{ &Z_Construct_UFunction_UFGDismantleInterface_GetDismantleRefund, "GetDismantleRefund" }, // 1164420742
+		{ &Z_Construct_UFunction_UFGDismantleInterface_GetRefundSpawnLocationAndArea, "GetRefundSpawnLocationAndArea" }, // 3171095018
+		{ &Z_Construct_UFunction_UFGDismantleInterface_PreUpgrade, "PreUpgrade" }, // 4115808912
+		{ &Z_Construct_UFunction_UFGDismantleInterface_StartIsLookedAtForDismantle, "StartIsLookedAtForDismantle" }, // 1493440458
+		{ &Z_Construct_UFunction_UFGDismantleInterface_StopIsLookedAtForDismantle, "StopIsLookedAtForDismantle" }, // 3016177657
+		{ &Z_Construct_UFunction_UFGDismantleInterface_Upgrade, "Upgrade" }, // 1590873631
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGDismantleInterface_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGDismantleInterface.h" },
+		{ "ModuleRelativePath", "Public/FGDismantleInterface.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
@@ -390,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleInterface, 3922714627);
+	IMPLEMENT_CLASS(UFGDismantleInterface, 2882004138);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleInterface(Z_Construct_UClass_UFGDismantleInterface, &UFGDismantleInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleInterface);
 	static FName NAME_UFGDismantleInterface_CanDismantle = FName(TEXT("CanDismantle"));

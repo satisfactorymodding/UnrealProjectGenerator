@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableAttachmentMerger.h"
+#include "FactoryGame/Public/Buildables/FGBuildableAttachmentMerger.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -50,19 +50,19 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableAttachmentMerger.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentMerger.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentMerger.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentMerger.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentMerger.h" },
 		{ "NoAutoJson", "" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentInventoryIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGBuildableAttachmentMerger, mCurrentInventoryIndex), METADATA_PARAMS(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInventoryIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableAttachmentMerger_Statics::NewProp_mCurrentInputIndex_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/FGBuildableAttachmentMerger.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableAttachmentMerger.h" },
 		{ "NoAutoJson", "" },
 		{ "ToolTip", "Cycles through the inputs, stores the input we want to check next. Index is for the mInputs array." },
 	};
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableAttachmentMerger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 2503068382);
+	IMPLEMENT_CLASS(AFGBuildableAttachmentMerger, 4288677370);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableAttachmentMerger(Z_Construct_UClass_AFGBuildableAttachmentMerger, &AFGBuildableAttachmentMerger::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableAttachmentMerger"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableAttachmentMerger);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

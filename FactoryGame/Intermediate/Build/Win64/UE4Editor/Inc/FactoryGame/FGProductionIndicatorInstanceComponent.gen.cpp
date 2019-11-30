@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGProductionIndicatorInstanceComponent.h"
+#include "FactoryGame/Public/FGProductionIndicatorInstanceComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		{ "HideCategories", "Object Activation Components|Activation Trigger" },
 		{ "IncludePath", "FGProductionIndicatorInstanceComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGProductionIndicatorInstanceComponent.h" },
+		{ "ModuleRelativePath", "Public/FGProductionIndicatorInstanceComponent.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGProductionIndicatorInstanceComponent_Statics::StaticCppClassTypeInfo = {
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProductionIndicatorInstanceComponent() {
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 2752951606);
+	IMPLEMENT_CLASS(UFGProductionIndicatorInstanceComponent, 1948908456);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGProductionIndicatorInstanceComponent(Z_Construct_UClass_UFGProductionIndicatorInstanceComponent, &UFGProductionIndicatorInstanceComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGProductionIndicatorInstanceComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGProductionIndicatorInstanceComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

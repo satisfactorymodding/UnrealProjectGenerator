@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSubsystemClasses.h"
+#include "FactoryGame/Public/FGSubsystemClasses.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -113,14 +113,14 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGSubsystemClasses.h" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "All subsystems" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mFoliageRemovalSubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem used to remove foliage on the map." },
 	};
 #endif
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mBuildableSubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem to manage all the buildables in the game." },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mMapManagerClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem that handles the map" },
 	};
 #endif
@@ -144,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mCentralStorageSubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem that handles the central storage." },
 	};
 #endif
@@ -152,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mChatManagerClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem that handles the chat messages." },
 	};
 #endif
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mRadioactivitySubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem that handles radioactivity in the world." },
 	};
 #endif
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mTutorialIntroManagerClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem to handle the tutorial." },
 	};
 #endif
@@ -176,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mResearchManagerClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem to handle all research (M.A.M.) done in the game" },
 	};
 #endif
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mGamePhaseManagerClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem to handle the game phase." },
 	};
 #endif
@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mSchematicManagerClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem to handle all schematics and recipes in the game." },
 	};
 #endif
@@ -200,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mCircuitSubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem that handles all the circuit simulations in the game, e.g. power grid." },
 	};
 #endif
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mRailroadSubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem that handles the rail network, signals and all the trains in the game." },
 	};
 #endif
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mTimeSubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "Subsystem to handle time of day." },
 	};
 #endif
@@ -224,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSubsystemClasses_Statics::NewProp_mStorySubsystemClass_MetaData[] = {
 		{ "Category", "Subsystem" },
-		{ "ModuleRelativePath", "FGSubsystemClasses.h" },
+		{ "ModuleRelativePath", "Public/FGSubsystemClasses.h" },
 		{ "ToolTip", "The collection containing the world bounds" },
 	};
 #endif
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSubsystemClasses() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSubsystemClasses, 975673160);
+	IMPLEMENT_CLASS(UFGSubsystemClasses, 2335871895);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSubsystemClasses(Z_Construct_UClass_UFGSubsystemClasses, &UFGSubsystemClasses::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSubsystemClasses"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSubsystemClasses);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

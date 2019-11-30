@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGWorkBench.h"
+#include "FactoryGame/Public/FGWorkBench.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "CanProduce", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(FGWorkBench_eventCanProduce_Parms), Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CanProduce_Statics::Function_MetaDataParams)) };
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "CraftComplete", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_CraftComplete_Statics::Function_MetaDataParams)) };
@@ -167,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "The recipe we're currently running." },
 	};
 #endif
@@ -206,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Returns the player that is working at this workbench." },
 	};
 #endif
@@ -248,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "@return The inventory this workbench is set to work with" },
 	};
 #endif
@@ -282,7 +282,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Manufacturing progress in range [0,1]." },
 	};
 #endif
@@ -316,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "The speed of wich we manufacture stuff" },
 	};
 #endif
@@ -350,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Returns the player that is working at this workbench." },
 	};
 #endif
@@ -384,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Returns the click speed for producing" },
 	};
 #endif
@@ -418,7 +418,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Returns current workbench user" },
 	};
 #endif
@@ -457,7 +457,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "IsProducing", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(FGWorkBench_eventIsProducing_Parms), Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_IsProducing_Statics::Function_MetaDataParams)) };
@@ -491,7 +491,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_Produce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
 		{ "CPP_Default_produceSpeed", "1.000000" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Produce one step" },
 	};
 #endif
@@ -537,7 +537,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Called when we finish a product and wants to give it to the inventory passed" },
 	};
 #endif
@@ -576,7 +576,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Change holdToProduce status from blueprint" },
 	};
 #endif
@@ -618,7 +618,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_SetInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "sets current inventory we want" },
 	};
 #endif
@@ -657,7 +657,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Set the mIsPressingProduce" },
 	};
 #endif
@@ -691,7 +691,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGWorkBench, "SetRecipe", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGWorkBench_eventSetRecipe_Parms), Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGWorkBench_SetRecipe_Statics::Function_MetaDataParams)) };
@@ -724,7 +724,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "sets current workbench user" },
 	};
 #endif
@@ -797,24 +797,24 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGWorkBench_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGWorkBench_CanProduce, "CanProduce" }, // 1144273475
-		{ &Z_Construct_UFunction_UFGWorkBench_CraftComplete, "CraftComplete" }, // 2538426232
-		{ &Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe, "GetCurrentRecipe" }, // 4280571816
-		{ &Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce, "GetHoldToProduce" }, // 2107918370
-		{ &Z_Construct_UFunction_UFGWorkBench_GetInventory, "GetInventory" }, // 4099679366
-		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress, "GetManufacturingProgress" }, // 1635533104
-		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed, "GetManufacturingSpeed" }, // 2838815742
-		{ &Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench, "GetPlayerWorkingAtBench" }, // 240109344
-		{ &Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed, "GetProduceClickSpeed" }, // 343045124
-		{ &Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser, "GetWorkBenchUser" }, // 4232934493
-		{ &Z_Construct_UFunction_UFGWorkBench_IsProducing, "IsProducing" }, // 2017246218
-		{ &Z_Construct_UFunction_UFGWorkBench_Produce, "Produce" }, // 3140893174
-		{ &Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards, "RemoveIngredientsAndAwardRewards" }, // 143159569
-		{ &Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce, "SetHoldToProduce" }, // 753293485
-		{ &Z_Construct_UFunction_UFGWorkBench_SetInventory, "SetInventory" }, // 3519699129
-		{ &Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce, "SetIsPressingProduce" }, // 3808285706
-		{ &Z_Construct_UFunction_UFGWorkBench_SetRecipe, "SetRecipe" }, // 2894939572
-		{ &Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser, "SetWorkBenchUser" }, // 995967218
+		{ &Z_Construct_UFunction_UFGWorkBench_CanProduce, "CanProduce" }, // 1578834759
+		{ &Z_Construct_UFunction_UFGWorkBench_CraftComplete, "CraftComplete" }, // 2831802107
+		{ &Z_Construct_UFunction_UFGWorkBench_GetCurrentRecipe, "GetCurrentRecipe" }, // 3397615322
+		{ &Z_Construct_UFunction_UFGWorkBench_GetHoldToProduce, "GetHoldToProduce" }, // 3864382649
+		{ &Z_Construct_UFunction_UFGWorkBench_GetInventory, "GetInventory" }, // 1553934545
+		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingProgress, "GetManufacturingProgress" }, // 1384005880
+		{ &Z_Construct_UFunction_UFGWorkBench_GetManufacturingSpeed, "GetManufacturingSpeed" }, // 581103616
+		{ &Z_Construct_UFunction_UFGWorkBench_GetPlayerWorkingAtBench, "GetPlayerWorkingAtBench" }, // 2319206884
+		{ &Z_Construct_UFunction_UFGWorkBench_GetProduceClickSpeed, "GetProduceClickSpeed" }, // 572728798
+		{ &Z_Construct_UFunction_UFGWorkBench_GetWorkBenchUser, "GetWorkBenchUser" }, // 3767901789
+		{ &Z_Construct_UFunction_UFGWorkBench_IsProducing, "IsProducing" }, // 2676062973
+		{ &Z_Construct_UFunction_UFGWorkBench_Produce, "Produce" }, // 1315393711
+		{ &Z_Construct_UFunction_UFGWorkBench_RemoveIngredientsAndAwardRewards, "RemoveIngredientsAndAwardRewards" }, // 455243780
+		{ &Z_Construct_UFunction_UFGWorkBench_SetHoldToProduce, "SetHoldToProduce" }, // 2514249064
+		{ &Z_Construct_UFunction_UFGWorkBench_SetInventory, "SetInventory" }, // 2728998571
+		{ &Z_Construct_UFunction_UFGWorkBench_SetIsPressingProduce, "SetIsPressingProduce" }, // 3414097679
+		{ &Z_Construct_UFunction_UFGWorkBench_SetRecipe, "SetRecipe" }, // 4039660604
+		{ &Z_Construct_UFunction_UFGWorkBench_SetWorkBenchUser, "SetWorkBenchUser" }, // 119652310
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::Class_MetaDataParams[] = {
@@ -822,13 +822,13 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGWorkBench.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mHoldToProduce_MetaData[] = {
 		{ "Category", "Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Should we use hold to produce" },
 	};
 #endif
@@ -840,7 +840,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mProduceClickSpeed_MetaData[] = {
 		{ "Category", "Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "How much produce time a mouse click should represent" },
 	};
 #endif
@@ -848,14 +848,14 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "The inventory this workbench is set to work with" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory = { UE4CodeGen_Private::EPropertyClass::Object, "mInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mInventory), Z_Construct_UClass_UFGInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mInventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Are we producing?" },
 	};
 #endif
@@ -866,35 +866,35 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsProducing", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGWorkBench), &Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mIsProducing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Manufacturing rate in product per second." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate = { UE4CodeGen_Private::EPropertyClass::Float, "mRecipeRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mRecipeRate), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mRecipeRate_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench = { UE4CodeGen_Private::EPropertyClass::Object, "mPlayerWorkingAtBench", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000020, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mPlayerWorkingAtBench), Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mPlayerWorkingAtBench_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData[] = {
 		{ "Category", "Workbench" },
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "The speed of which this manufacturer manufactures stuff. Slower for Work Bench" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "mManufacturingSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mManufacturingSpeed), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mManufacturingSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "Manufacturing progress in range [0,1]." },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress = { UE4CodeGen_Private::EPropertyClass::Float, "mCurrentManufacturingProgress", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFGWorkBench, mCurrentManufacturingProgress), METADATA_PARAMS(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentManufacturingProgress_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGWorkBench_Statics::NewProp_mCurrentRecipe_MetaData[] = {
-		{ "ModuleRelativePath", "FGWorkBench.h" },
+		{ "ModuleRelativePath", "Public/FGWorkBench.h" },
 		{ "ToolTip", "The recipe we're currently running." },
 	};
 #endif
@@ -936,7 +936,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorkBench() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorkBench, 2782656134);
+	IMPLEMENT_CLASS(UFGWorkBench, 2781244996);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWorkBench(Z_Construct_UClass_UFGWorkBench, &UFGWorkBench::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWorkBench"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWorkBench);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

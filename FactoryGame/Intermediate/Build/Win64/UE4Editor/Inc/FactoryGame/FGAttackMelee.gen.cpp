@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttackMelee.h"
+#include "FactoryGame/Public/AI/FGAttackMelee.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMelee() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "AI/FGAttackMelee.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "AI/FGAttackMelee.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackMelee.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGAttackMelee_Statics::StaticCppClassTypeInfo = {
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackMelee() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackMelee, 931715885);
+	IMPLEMENT_CLASS(UFGAttackMelee, 3570574303);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackMelee(Z_Construct_UClass_UFGAttackMelee, &UFGAttackMelee::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackMelee"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackMelee);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

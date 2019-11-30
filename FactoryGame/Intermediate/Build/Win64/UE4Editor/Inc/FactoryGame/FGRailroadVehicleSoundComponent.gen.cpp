@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRailroadVehicleSoundComponent.h"
+#include "FactoryGame/Public/FGRailroadVehicleSoundComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnAirBrakesApplied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Air brakes are applied." },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnAirBrakesReleased_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Air brakes are released." },
 	};
 #endif
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnDynamicBrakesApplied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Dynamic brakes are applied." },
 	};
 #endif
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnDynamicBrakesReleased_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Dynamic brakes are released." },
 	};
 #endif
@@ -208,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnStartedMoving_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Train started moving." },
 	};
 #endif
@@ -232,7 +232,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnStoppedMoving_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Train stopped moving." },
 	};
 #endif
@@ -256,7 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnThrottleApplied_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Throttle was applied." },
 	};
 #endif
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnThrottleReleased_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Throttle was released." },
 	};
 #endif
@@ -304,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_RestartSounds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Restart sounds after gaining significance" },
 	};
 #endif
@@ -328,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_StartIdleSounds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Starts playing idle sounds" },
 	};
 #endif
@@ -352,7 +352,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_StopAllSounds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Stops all sounds playing on this component" },
 	};
 #endif
@@ -376,7 +376,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_UpdateRTPCs_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Trains|Audio" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Let blueprint update the RTPC values." },
 	};
 #endif
@@ -434,18 +434,18 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnAirBrakesApplied, "OnAirBrakesApplied" }, // 425349842
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnAirBrakesReleased, "OnAirBrakesReleased" }, // 1436800718
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnDynamicBrakesApplied, "OnDynamicBrakesApplied" }, // 1679543876
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnDynamicBrakesReleased, "OnDynamicBrakesReleased" }, // 3497716627
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnStartedMoving, "OnStartedMoving" }, // 4077818366
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnStoppedMoving, "OnStoppedMoving" }, // 3441420452
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnThrottleApplied, "OnThrottleApplied" }, // 460079012
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnThrottleReleased, "OnThrottleReleased" }, // 3996341379
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_RestartSounds, "RestartSounds" }, // 1982588016
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_StartIdleSounds, "StartIdleSounds" }, // 982329038
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_StopAllSounds, "StopAllSounds" }, // 859622310
-		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_UpdateRTPCs, "UpdateRTPCs" }, // 2952315890
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnAirBrakesApplied, "OnAirBrakesApplied" }, // 514917650
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnAirBrakesReleased, "OnAirBrakesReleased" }, // 927181461
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnDynamicBrakesApplied, "OnDynamicBrakesApplied" }, // 1873829118
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnDynamicBrakesReleased, "OnDynamicBrakesReleased" }, // 2967094635
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnStartedMoving, "OnStartedMoving" }, // 3388681794
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnStoppedMoving, "OnStoppedMoving" }, // 2080227139
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnThrottleApplied, "OnThrottleApplied" }, // 1443844729
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_OnThrottleReleased, "OnThrottleReleased" }, // 2209407270
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_RestartSounds, "RestartSounds" }, // 2086956010
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_StartIdleSounds, "StartIdleSounds" }, // 3177945896
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_StopAllSounds, "StopAllSounds" }, // 3027322497
+		{ &Z_Construct_UFunction_UFGRailroadVehicleSoundComponent_UpdateRTPCs, "UpdateRTPCs" }, // 2225179113
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::Class_MetaDataParams[] = {
@@ -455,14 +455,14 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGRailroadVehicleSoundComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::NewProp_mAllVehicleCentersAkComponent_MetaData[] = {
 		{ "Category", "Ak" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Component to play events on all the locomotives and wagons. Location is the center of the actor bounds (colliding)." },
 	};
 #endif
@@ -471,7 +471,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::NewProp_mEnginesAkComponent_MetaData[] = {
 		{ "Category", "Ak" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Component to play events on the locomotives. Location is the center of the actor bounds (colliding)." },
 	};
 #endif
@@ -480,7 +480,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::NewProp_mWheelsetsAkComponent_MetaData[] = {
 		{ "Category", "Ak" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Component to play events on the wheelsets. Location is the bogie bone." },
 	};
 #endif
@@ -488,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::NewProp_mTrainOwner_MetaData[] = {
 		{ "Category", "Movement Components" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "train that owns this component" },
 	};
 #endif
@@ -497,7 +497,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::NewProp_mLocomotiveMovementComponent_MetaData[] = {
 		{ "Category", "Movement Components" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Movement component of the first locomotive in the train, may be none." },
 	};
 #endif
@@ -506,7 +506,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGRailroadVehicleSoundComponent_Statics::NewProp_mVehicleMovementComponent_MetaData[] = {
 		{ "Category", "Movement Components" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRailroadVehicleSoundComponent.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadVehicleSoundComponent.h" },
 		{ "ToolTip", "Movement component of the first vehicle in the train." },
 	};
 #endif
@@ -542,7 +542,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadVehicleSoundComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadVehicleSoundComponent, 2124481106);
+	IMPLEMENT_CLASS(UFGRailroadVehicleSoundComponent, 867828658);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadVehicleSoundComponent(Z_Construct_UClass_UFGRailroadVehicleSoundComponent, &UFGRailroadVehicleSoundComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadVehicleSoundComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadVehicleSoundComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGResourceDescriptorGeyser.h"
+#include "FactoryGame/Public/Resources/FGResourceDescriptorGeyser.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptorGeyser() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResourceDescriptorGeyser_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGResourceDescriptorGeyser.h" },
-		{ "ModuleRelativePath", "Resources/FGResourceDescriptorGeyser.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGResourceDescriptorGeyser.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGResourceDescriptorGeyser_Statics::StaticCppClassTypeInfo = {
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGResourceDescriptorGeyser() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 4235422581);
+	IMPLEMENT_CLASS(UFGResourceDescriptorGeyser, 3449781890);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResourceDescriptorGeyser(Z_Construct_UClass_UFGResourceDescriptorGeyser, &UFGResourceDescriptorGeyser::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResourceDescriptorGeyser"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResourceDescriptorGeyser);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

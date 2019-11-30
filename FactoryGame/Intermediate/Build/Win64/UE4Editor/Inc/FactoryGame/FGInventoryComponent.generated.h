@@ -18,17 +18,17 @@ struct FInventoryItem;
 #endif
 #define FACTORYGAME_FGInventoryComponent_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_75_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_75_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FInventoryStack_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_24_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FInventoryItem_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_114_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_114_DELEGATE \
 struct _Script_FactoryGame_eventOnItemRemoved_Parms \
 { \
 	TSubclassOf<UFGItemDescriptor>  itemClass; \
@@ -43,7 +43,7 @@ static inline void FOnItemRemoved_DelegateWrapper(const FMulticastScriptDelegate
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_112_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_112_DELEGATE \
 struct _Script_FactoryGame_eventOnItemAdded_Parms \
 { \
 	TSubclassOf<UFGItemDescriptor>  itemClass; \
@@ -58,7 +58,7 @@ static inline void FOnItemAdded_DelegateWrapper(const FMulticastScriptDelegate& 
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_110_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_110_DELEGATE \
 struct _Script_FactoryGame_eventGetItemDropLocation_Parms \
 { \
 	const UFGInventoryComponent* component; \
@@ -81,7 +81,7 @@ static inline FVector FGetItemDropLocation_DelegateWrapper(const FScriptDelegate
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_14_DELEGATE \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_14_DELEGATE \
 struct _Script_FactoryGame_eventInventoryResized_Parms \
 { \
 	int32 oldSize; \
@@ -96,7 +96,7 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_RPC_WRAPPERS \
 	virtual bool Server_SortInventory_Validate(); \
 	virtual void Server_SortInventory_Implementation(); \
  \
@@ -423,7 +423,7 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_SortInventory_Validate(); \
 	virtual void Server_SortInventory_Implementation(); \
  \
@@ -750,35 +750,35 @@ static inline void FInventoryResized_DelegateWrapper(const FMulticastScriptDeleg
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_EVENT_PARMS
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UFGInventoryComponent, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGInventoryComponent(); \
 	friend struct Z_Construct_UClass_UFGInventoryComponent_Statics; \
 public: \
 	DECLARE_CLASS(UFGInventoryComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGInventoryComponent) \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<UFGInventoryComponent*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGInventoryComponent(); \
 	friend struct Z_Construct_UClass_UFGInventoryComponent_Statics; \
 public: \
 	DECLARE_CLASS(UFGInventoryComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(UFGInventoryComponent) \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<UFGInventoryComponent*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGInventoryComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGInventoryComponent) \
@@ -791,7 +791,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGInventoryComponent(UFGInventoryComponent&&); \
@@ -802,7 +802,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGInventoryComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UFGInventoryComponent)
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDefaultInventorySize() { return STRUCT_OFFSET(UFGInventoryComponent, mDefaultInventorySize); } \
 	FORCEINLINE static uint32 __PPO__mAdjustedSizeDiff() { return STRUCT_OFFSET(UFGInventoryComponent, mAdjustedSizeDiff); } \
 	FORCEINLINE static uint32 __PPO__mInventoryStacks() { return STRUCT_OFFSET(UFGInventoryComponent, mInventoryStacks); } \
@@ -811,36 +811,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGInventoryComponent); \
 	FORCEINLINE static uint32 __PPO__mCanBeRearrange() { return STRUCT_OFFSET(UFGInventoryComponent, mCanBeRearrange); }
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_122_PROLOG \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_122_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_INCLASS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGInventoryComponent_h_125_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h_125_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGInventoryComponent_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGInventoryComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

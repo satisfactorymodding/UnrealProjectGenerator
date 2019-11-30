@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRenderTargetStage.h"
+#include "FactoryGame/Public/FGRenderTargetStage.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -56,7 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Starts the rendering of the rendertarget scene" },
 	};
 #endif
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Capture a picture once" },
 	};
 #endif
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_EndCapture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Stops the rendering of the rendertarget scene" },
 	};
 #endif
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Get the render target that this stage renders to" },
 	};
 #endif
@@ -180,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_GetStage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Get the stage of this preview scene" },
 	};
 #endif
@@ -216,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		{ "Category", "Stage" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "SetPreviewDistance has been replaced by SetView" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFGRenderTargetStage, "SetPreviewDistance", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(FGRenderTargetStage_eventSetPreviewDistance_Parms), Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance_Statics::Function_MetaDataParams)) };
@@ -257,7 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_SetView_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Move the camera so it looks at the stage from this view" },
 	};
 #endif
@@ -281,7 +281,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Stage" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Call this when you have attached/detached components from our stage, this will make sure only they get rendered" },
 	};
 #endif
@@ -340,26 +340,26 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRenderTargetStage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture, "BeginCapture" }, // 119699516
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce, "CaptureOnce" }, // 2557172553
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_EndCapture, "EndCapture" }, // 4042506707
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget, "GetRenderTarget" }, // 3971467353
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetStage, "GetStage" }, // 3405541675
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance, "SetPreviewDistance" }, // 525641
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetView, "SetView" }, // 402198405
-		{ &Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents, "UpdateRenderedComponents" }, // 4026830721
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_BeginCapture, "BeginCapture" }, // 3757242203
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_CaptureOnce, "CaptureOnce" }, // 2324629821
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_EndCapture, "EndCapture" }, // 934394161
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetRenderTarget, "GetRenderTarget" }, // 3746145001
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_GetStage, "GetStage" }, // 3556865702
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetPreviewDistance, "SetPreviewDistance" }, // 1317400260
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_SetView, "SetView" }, // 2198545820
+		{ &Z_Construct_UFunction_AFGRenderTargetStage_UpdateRenderedComponents, "UpdateRenderedComponents" }, // 455382108
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Input Actor" },
 		{ "IncludePath", "FGRenderTargetStage.h" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTarget_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "If true, then we create our own render target every time we want to play" },
 	};
 #endif
@@ -371,7 +371,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mStage_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "The stage we want to change to preview the mesh when we do our preview, this is where the components will get attached when\nthey get set" },
 	};
 #endif
@@ -380,7 +380,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mSceneCaptureComponent_MetaData[] = {
 		{ "Category", "FGRenderTargetStage" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "The scene captor component that will generate the result of our render target" },
 	};
 #endif
@@ -388,7 +388,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicPixelFormat_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "Set the pixel format of a dynamic rendertarget" },
 	};
 #endif
@@ -396,7 +396,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeY_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "If we create a dynamic render target (that is, a new one every time), then this is it's y size" },
 	};
 #endif
@@ -404,7 +404,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRenderTargetStage_Statics::NewProp_mDynamicRenderTargetSizeX_MetaData[] = {
 		{ "Category", "Stage|RenderTarget" },
-		{ "ModuleRelativePath", "FGRenderTargetStage.h" },
+		{ "ModuleRelativePath", "Public/FGRenderTargetStage.h" },
 		{ "ToolTip", "If we create a dynamic render target (that is, a new one every time), then this is it's x size" },
 	};
 #endif
@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRenderTargetStage, 3640677000);
+	IMPLEMENT_CLASS(AFGRenderTargetStage, 372816901);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRenderTargetStage(Z_Construct_UClass_AFGRenderTargetStage, &AFGRenderTargetStage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRenderTargetStage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRenderTargetStage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGMinimapCaptureActor.h"
+#include "FactoryGame/Public/FGMinimapCaptureActor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMinimapCaptureActor() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EHeightDataType(EHeightDataType_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EHeightDataType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EHeightDataType_CRC() { return 4104202029U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EHeightDataType_CRC() { return 429557596U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EHeightDataType()
 	{
 #if WITH_HOT_RELOAD
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMinimapCaptureActor() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+				{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -106,7 +106,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FFGHeightData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FFGHeightData_Statics::NewStructOps()
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGHeightData_CRC() { return 4075152720U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGHeightData_CRC() { return 1238563505U; }
 	void UFGHeightWaterUserData::StaticRegisterNativesUFGHeightWaterUserData()
 	{
 	}
@@ -164,7 +164,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHeightWaterUserData_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGMinimapCaptureActor.h" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGHeightWaterUserData_Statics::StaticCppClassTypeInfo = {
@@ -190,7 +190,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHeightWaterUserData, 4206245308);
+	IMPLEMENT_CLASS(UFGHeightWaterUserData, 18395739);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHeightWaterUserData(Z_Construct_UClass_UFGHeightWaterUserData, &UFGHeightWaterUserData::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHeightWaterUserData"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHeightWaterUserData);
 	void UFGHeightFoliageUserData::StaticRegisterNativesUFGHeightFoliageUserData()
@@ -216,7 +216,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHeightFoliageUserData_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGMinimapCaptureActor.h" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGHeightFoliageUserData_Statics::StaticCppClassTypeInfo = {
@@ -242,7 +242,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHeightFoliageUserData, 2000033256);
+	IMPLEMENT_CLASS(UFGHeightFoliageUserData, 4089822106);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHeightFoliageUserData(Z_Construct_UClass_UFGHeightFoliageUserData, &UFGHeightFoliageUserData::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHeightFoliageUserData"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHeightFoliageUserData);
 	void UFGHeightHideUserData::StaticRegisterNativesUFGHeightHideUserData()
@@ -268,7 +268,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGHeightHideUserData_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGMinimapCaptureActor.h" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGHeightHideUserData_Statics::StaticCppClassTypeInfo = {
@@ -294,7 +294,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHeightHideUserData, 2435507224);
+	IMPLEMENT_CLASS(UFGHeightHideUserData, 2504761502);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHeightHideUserData(Z_Construct_UClass_UFGHeightHideUserData, &UFGHeightHideUserData::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHeightHideUserData"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHeightHideUserData);
 	void AFGMinimapCaptureActor::StaticRegisterNativesAFGMinimapCaptureActor()
@@ -320,7 +320,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGMinimapCaptureActor_ExportHeightData_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "This function traces all over the level to find height info that can be used when we draw the minimap" },
 	};
 #endif
@@ -355,7 +355,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGMinimapCaptureActor_GetMapAreaTexture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Minimap" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "Returns the map area texture that has been specified on this capture actor" },
 	};
 #endif
@@ -429,21 +429,21 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGMinimapCaptureActor_Statics::FuncInfo[] = {
 #if WITH_EDITOR
-		{ &Z_Construct_UFunction_AFGMinimapCaptureActor_ExportHeightData, "ExportHeightData" }, // 664297390
+		{ &Z_Construct_UFunction_AFGMinimapCaptureActor_ExportHeightData, "ExportHeightData" }, // 1724444746
 #endif //WITH_EDITOR
-		{ &Z_Construct_UFunction_AFGMinimapCaptureActor_GetMapAreaTexture, "GetMapAreaTexture" }, // 3833941008
+		{ &Z_Construct_UFunction_AFGMinimapCaptureActor_GetMapAreaTexture, "GetMapAreaTexture" }, // 1239452831
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Collision Material Attachment Actor Collision Attachment Actor" },
 		{ "IncludePath", "FGMinimapCaptureActor.h" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mMapAreaTexture_MetaData[] = {
 		{ "Category", "Minimap" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "The areas defined as by this texture" },
 	};
 #endif
@@ -452,14 +452,14 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mHeightDataResolution_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mHeightDataResolution = { UE4CodeGen_Private::EPropertyClass::Int, "mHeightDataResolution", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000800000801, 1, nullptr, STRUCT_OFFSET(AFGMinimapCaptureActor, mHeightDataResolution), METADATA_PARAMS(Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mHeightDataResolution_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mHeightDataResolution_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mWaterDepthBufferMultiplier_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "Decides how big the buffer between \"no water\"-areas and the deepest water-area is" },
 	};
 #endif
@@ -467,7 +467,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mWaterMaxDepth_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "The max water depth considered, everything deeper than this will be clamped to this value" },
 	};
 #endif
@@ -475,7 +475,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mShowDepthOnWaterMap_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "Show depth on the water map" },
 	};
 #endif
@@ -487,7 +487,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mLayersForTerrain_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "Divides the terrain height map into the given amount of layers" },
 	};
 #endif
@@ -495,7 +495,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mIgnoreUserData_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "Should we ignore the userdata set on static meshes, all static meshes will be considered for the height data" },
 	};
 #endif
@@ -507,7 +507,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGMinimapCaptureActor_Statics::NewProp_mIncludeFoliage_MetaData[] = {
 		{ "Category", "Minimap Height" },
-		{ "ModuleRelativePath", "FGMinimapCaptureActor.h" },
+		{ "ModuleRelativePath", "Public/FGMinimapCaptureActor.h" },
 		{ "ToolTip", "Do we want the foliage to be considered for the height data generation?" },
 	};
 #endif
@@ -552,7 +552,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGMinimapCaptureActor, 3481572406);
+	IMPLEMENT_CLASS(AFGMinimapCaptureActor, 300612589);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGMinimapCaptureActor(Z_Construct_UClass_AFGMinimapCaptureActor, &AFGMinimapCaptureActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGMinimapCaptureActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGMinimapCaptureActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -14,7 +14,7 @@ class UParticleSystem;
 #endif
 #define FACTORYGAME_FGExplosiveDestroyableInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS \
 	virtual bool NotifyExploded_Implementation() { return false; }; \
 	virtual UParticleSystem* GetDestroyEffect_Implementation() { return NULL; }; \
  \
@@ -35,7 +35,7 @@ class UParticleSystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool NotifyExploded_Implementation() { return false; }; \
 	virtual UParticleSystem* GetDestroyEffect_Implementation() { return NULL; }; \
  \
@@ -56,7 +56,7 @@ class UParticleSystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_EVENT_PARMS \
 	struct FGExplosiveDestroyableInterface_eventGetDestroyEffect_Parms \
 	{ \
 		UParticleSystem* ReturnValue; \
@@ -79,8 +79,8 @@ class UParticleSystem;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGExplosiveDestroyableInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGExplosiveDestroyableInterface) \
@@ -93,7 +93,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGExplosiveDestroyableInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -106,7 +106,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGExplosiveDestroyableInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGExplosiveDestroyableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGExplosiveDestroyableInterface(); \
 	friend struct Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics; \
@@ -115,22 +115,22 @@ public: \
 	DECLARE_SERIALIZER(UFGExplosiveDestroyableInterface)
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGExplosiveDestroyableInterface() {} \
 public: \
@@ -141,7 +141,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGExplosiveDestroyableInterface() {} \
 public: \
@@ -152,32 +152,32 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_9_PROLOG \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_9_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_20_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_20_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGExplosiveDestroyableInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGExplosiveDestroyableInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

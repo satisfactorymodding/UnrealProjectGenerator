@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Equipment/FGHookshot.h"
+#include "FactoryGame/Public/Equipment/FGHookshot.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHookshot_MoveAudioSourceInFrontOfPlayer_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Move the audio in fron of the player" },
 	};
 #endif
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHookshot_OnFire_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Called locally when a player shoots the hookshot" },
 	};
 #endif
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHookshot_OnWireDetach_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Called whenever the wire is detached" },
 	};
 #endif
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHookshot_OwnerLanded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Called whenever the actor we are attached to landed" },
 	};
 #endif
@@ -196,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGHookshot_RestoreAudioSourceToOriginalLocation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Stop updating position in front of the player" },
 	};
 #endif
@@ -246,23 +246,23 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGHookshot_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGHookshot_MoveAudioSourceInFrontOfPlayer, "MoveAudioSourceInFrontOfPlayer" }, // 3983236368
-		{ &Z_Construct_UFunction_AFGHookshot_OnFire, "OnFire" }, // 556731739
-		{ &Z_Construct_UFunction_AFGHookshot_OnWireDetach, "OnWireDetach" }, // 511132148
-		{ &Z_Construct_UFunction_AFGHookshot_OwnerLanded, "OwnerLanded" }, // 263848143
-		{ &Z_Construct_UFunction_AFGHookshot_RestoreAudioSourceToOriginalLocation, "RestoreAudioSourceToOriginalLocation" }, // 1356239145
+		{ &Z_Construct_UFunction_AFGHookshot_MoveAudioSourceInFrontOfPlayer, "MoveAudioSourceInFrontOfPlayer" }, // 2680520582
+		{ &Z_Construct_UFunction_AFGHookshot_OnFire, "OnFire" }, // 675760208
+		{ &Z_Construct_UFunction_AFGHookshot_OnWireDetach, "OnWireDetach" }, // 1564157528
+		{ &Z_Construct_UFunction_AFGHookshot_OwnerLanded, "OwnerLanded" }, // 994448782
+		{ &Z_Construct_UFunction_AFGHookshot_RestoreAudioSourceToOriginalLocation, "RestoreAudioSourceToOriginalLocation" }, // 3243300894
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHookshot_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Equipment/FGHookshot.h" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHookshot_Statics::NewProp_mHookshotAudio_MetaData[] = {
 		{ "Category", "Equipment" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Component handling our hookshot sounds" },
 	};
 #endif
@@ -270,7 +270,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHookshot_Statics::NewProp_mBrakeAccelRate_MetaData[] = {
 		{ "Category", "FGHookshot" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "Accel bonus added when we are moving away from the grappled target." },
 	};
 #endif
@@ -278,7 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHookshot_Statics::NewProp_mAccelRate_MetaData[] = {
 		{ "Category", "FGHookshot" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "How fast do we accellerate toward the grappled target." },
 	};
 #endif
@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGHookshot_Statics::NewProp_mMaxHookDistance_MetaData[] = {
 		{ "Category", "FGHookshot" },
-		{ "ModuleRelativePath", "Equipment/FGHookshot.h" },
+		{ "ModuleRelativePath", "Public/Equipment/FGHookshot.h" },
 		{ "ToolTip", "How far we will trace to try and find something to attach to" },
 	};
 #endif
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHookshot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHookshot, 599244144);
+	IMPLEMENT_CLASS(AFGHookshot, 1495793405);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHookshot(Z_Construct_UClass_AFGHookshot, &AFGHookshot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHookshot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHookshot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

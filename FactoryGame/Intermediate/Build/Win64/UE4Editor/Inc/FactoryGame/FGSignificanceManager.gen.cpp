@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSignificanceManager.h"
+#include "FactoryGame/Public/FGSignificanceManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,7 +49,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FGainSignificanceData_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGSignificanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FGainSignificanceData_Statics::NewStructOps()
@@ -83,7 +83,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC() { return 3778106002U; }
+	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC() { return 1477511873U; }
 	void UFGSignificanceManager::StaticRegisterNativesUFGSignificanceManager()
 	{
 	}
@@ -125,12 +125,12 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGSignificanceManager.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGSignificanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_MetaData[] = {
-		{ "ModuleRelativePath", "FGSignificanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
 		{ "ToolTip", "List of conveyor bases (belts and lifts) that were significant last time we checked" },
 	};
 #endif
@@ -138,7 +138,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantConveyorBases_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mPreviousSignificantConveyorBases", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGBuildableConveyorBase_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mPreviousSignificantFactories_MetaData[] = {
-		{ "ModuleRelativePath", "FGSignificanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
 		{ "ToolTip", "List of factories that were significant last time we checked" },
 	};
 #endif
@@ -147,7 +147,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSignificanceManager_Statics::NewProp_mIsEnabled_MetaData[] = {
 		{ "Category", "SignificanceManager" },
-		{ "ModuleRelativePath", "FGSignificanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGSignificanceManager.h" },
 		{ "ToolTip", "Is the manager enabled" },
 	};
 #endif
@@ -186,7 +186,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceManager, 1273685371);
+	IMPLEMENT_CLASS(UFGSignificanceManager, 2999260010);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSignificanceManager(Z_Construct_UClass_UFGSignificanceManager, &UFGSignificanceManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSignificanceManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSignificanceManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGAttackRanged.h"
+#include "FactoryGame/Public/AI/FGAttackRanged.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackRanged() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGAttackRanged_SpawnProjectile_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Enemy|Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackRanged.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackRanged.h" },
 		{ "ToolTip", "Has the actual logic for spawning projectiles ( so that we can override in blueprint" },
 	};
 #endif
@@ -96,20 +96,20 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackRanged() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGAttackRanged_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGAttackRanged_SpawnProjectile, "SpawnProjectile" }, // 3017849574
+		{ &Z_Construct_UFunction_UFGAttackRanged_SpawnProjectile, "SpawnProjectile" }, // 322470577
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackRanged_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "AI/FGAttackRanged.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "AI/FGAttackRanged.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackRanged.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGAttackRanged_Statics::NewProp_mProjectileClass_MetaData[] = {
 		{ "Category", "Attack" },
-		{ "ModuleRelativePath", "AI/FGAttackRanged.h" },
+		{ "ModuleRelativePath", "Public/AI/FGAttackRanged.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UFGAttackRanged_Statics::NewProp_mProjectileClass = { UE4CodeGen_Private::EPropertyClass::Class, "mProjectileClass", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000010001, 1, nullptr, STRUCT_OFFSET(UFGAttackRanged, mProjectileClass), Z_Construct_UClass_AFGProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UFGAttackRanged_Statics::NewProp_mProjectileClass_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGAttackRanged_Statics::NewProp_mProjectileClass_MetaData)) };
@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackRanged() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackRanged, 1431163015);
+	IMPLEMENT_CLASS(UFGAttackRanged, 2434715956);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackRanged(Z_Construct_UClass_UFGAttackRanged, &UFGAttackRanged::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackRanged"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackRanged);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

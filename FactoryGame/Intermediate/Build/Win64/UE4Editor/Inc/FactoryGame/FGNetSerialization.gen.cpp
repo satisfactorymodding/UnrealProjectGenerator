@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGNetSerialization.h"
+#include "FactoryGame/Public/FGNetSerialization.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -45,7 +45,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCustomFastArraySerializer_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNetSerialization.h" },
+		{ "ModuleRelativePath", "Public/FGNetSerialization.h" },
 		{ "ToolTip", "Base struct for wrapping the array used in Custom Fast TArray Replication" },
 	};
 #endif
@@ -80,7 +80,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializer_CRC() { return 3682166549U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializer_CRC() { return 2536598812U; }
 class UScriptStruct* FCustomFastArraySerializerItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -122,7 +122,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGNetSerialization.h" },
+		{ "ModuleRelativePath", "Public/FGNetSerialization.h" },
 		{ "ToolTip", "Base struct for items using Custom Fast TArray Replication" },
 	};
 #endif
@@ -132,19 +132,19 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_MostRecentArrayReplicationKey_MetaData[] = {
-		{ "ModuleRelativePath", "FGNetSerialization.h" },
+		{ "ModuleRelativePath", "Public/FGNetSerialization.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_MostRecentArrayReplicationKey = { UE4CodeGen_Private::EPropertyClass::Int, "MostRecentArrayReplicationKey", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, STRUCT_OFFSET(FCustomFastArraySerializerItem, MostRecentArrayReplicationKey), METADATA_PARAMS(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_MostRecentArrayReplicationKey_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_MostRecentArrayReplicationKey_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationKey_MetaData[] = {
-		{ "ModuleRelativePath", "FGNetSerialization.h" },
+		{ "ModuleRelativePath", "Public/FGNetSerialization.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationKey = { UE4CodeGen_Private::EPropertyClass::Int, "ReplicationKey", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, STRUCT_OFFSET(FCustomFastArraySerializerItem, ReplicationKey), METADATA_PARAMS(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationKey_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationKey_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationID_MetaData[] = {
-		{ "ModuleRelativePath", "FGNetSerialization.h" },
+		{ "ModuleRelativePath", "Public/FGNetSerialization.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationID = { UE4CodeGen_Private::EPropertyClass::Int, "ReplicationID", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000080000000, 1, nullptr, STRUCT_OFFSET(FCustomFastArraySerializerItem, ReplicationID), METADATA_PARAMS(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationID_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::NewProp_ReplicationID_MetaData)) };
@@ -180,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_CRC() { return 1790946351U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_CRC() { return 3462901990U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

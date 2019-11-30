@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/Animation/FGFAnimInstanceFactory.h"
+#include "FactoryGame/Public/Buildables/Animation/FGFAnimInstanceFactory.h"
 #include "Engine/Classes/Components/SkeletalMeshComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -143,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewStructOps()
@@ -153,7 +153,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mIsFuelGeneratorOnline_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "True if generator has power and is producing" },
 	};
 #endif
@@ -165,7 +165,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mIsGenerator_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Is the owning actor a generator" },
 	};
 #endif
@@ -177,7 +177,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mUseRampUp_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "If we should use the ramp up system" },
 	};
 #endif
@@ -189,7 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mCycleComplete_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "A production cycle was completed" },
 	};
 #endif
@@ -201,7 +201,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mIsActivated_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mIsActivated_SetBit(void* Obj)
@@ -212,7 +212,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mIsProducing_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Factory is producing something" },
 	};
 #endif
@@ -224,7 +224,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mHasPower_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Factory has power" },
 	};
 #endif
@@ -236,7 +236,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mHasFuel_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "valid for generators!" },
 	};
 #endif
@@ -248,7 +248,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mLoadPercentage_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "From 0.0 - 1.0 Only valid for generators!" },
 	};
 #endif
@@ -256,7 +256,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mStartFrame_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Frame to...start?...i dunno" },
 	};
 #endif
@@ -264,7 +264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mDefaultCycleTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Actual animation length" },
 	};
 #endif
@@ -272,7 +272,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mCycleTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Length of production cycle" },
 	};
 #endif
@@ -280,7 +280,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mRecipePlayRate_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Play rate for recipe" },
 	};
 #endif
@@ -288,7 +288,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mLastProductionProgress_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Last frames production progress" },
 	};
 #endif
@@ -296,7 +296,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mRampDownTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Time factory should spend ramping up" },
 	};
 #endif
@@ -304,7 +304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mTimeNotProducing_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Time factory should not produce stuff" },
 	};
 #endif
@@ -312,7 +312,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mRampUpTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Time factory should spend ramping up" },
 	};
 #endif
@@ -320,7 +320,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mAnimPlayRate_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Multiplier for play rate" },
 	};
 #endif
@@ -328,7 +328,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mProductionCycleTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "saved production cycle time for the factory" },
 	};
 #endif
@@ -336,7 +336,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mProductionProgress_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "saved production progress for the factory" },
 	};
 #endif
@@ -344,7 +344,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::NewProp_mDeltaTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "saved DT" },
 	};
 #endif
@@ -399,7 +399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_CRC() { return 3401899146U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_CRC() { return 2334060071U; }
 	void UFGFAnimInstanceFactory::StaticRegisterNativesUFGFAnimInstanceFactory()
 	{
 	}
@@ -473,13 +473,13 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mSoundSpeedRTPCMaxValue_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Max value for RTPC range" },
 	};
 #endif
@@ -487,7 +487,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mSoundSpeedRTPCMinValue_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Min value for RTPC range" },
 	};
 #endif
@@ -495,7 +495,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mIsGenerator_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Is this factory a generator?" },
 	};
 #endif
@@ -506,7 +506,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mIsGenerator = { UE4CodeGen_Private::EPropertyClass::Bool, "mIsGenerator", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000010001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFGFAnimInstanceFactory), &Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mIsGenerator_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mIsGenerator_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mIsGenerator_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mSoundSpeedAccumulator_MetaData[] = {
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Accumulator for the interval" },
 	};
 #endif
@@ -514,7 +514,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mSoundSpeedRTPCInterval_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "How often RTPC for sound speed should update" },
 	};
 #endif
@@ -522,7 +522,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mSoundSpeedRTPC_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "RTPC for sound speed" },
 	};
 #endif
@@ -530,7 +530,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mDefaultCycleTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Actual animation length" },
 	};
 #endif
@@ -538,7 +538,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mRampDownTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Time factory should spend ramping up" },
 	};
 #endif
@@ -546,7 +546,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mRampUpTime_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "Time factory should spend ramping up" },
 	};
 #endif
@@ -554,7 +554,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mUseRampUp_MetaData[] = {
 		{ "Category", "Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 		{ "ToolTip", "If we should use the ramp up system" },
 	};
 #endif
@@ -567,7 +567,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mProxy_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Factory Anim" },
-		{ "ModuleRelativePath", "Buildables/Animation/FGFAnimInstanceFactory.h" },
+		{ "ModuleRelativePath", "Public/Buildables/Animation/FGFAnimInstanceFactory.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mProxy = { UE4CodeGen_Private::EPropertyClass::Struct, "mProxy", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000002014, 1, nullptr, STRUCT_OFFSET(UFGFAnimInstanceFactory, mProxy), Z_Construct_UScriptStruct_FAnimInstanceProxyFactory, METADATA_PARAMS(Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mProxy_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGFAnimInstanceFactory_Statics::NewProp_mProxy_MetaData)) };
@@ -607,7 +607,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFAnimInstanceFactory, 3612985502);
+	IMPLEMENT_CLASS(UFGFAnimInstanceFactory, 2071356305);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFAnimInstanceFactory(Z_Construct_UClass_UFGFAnimInstanceFactory, &UFGFAnimInstanceFactory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFAnimInstanceFactory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFAnimInstanceFactory);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

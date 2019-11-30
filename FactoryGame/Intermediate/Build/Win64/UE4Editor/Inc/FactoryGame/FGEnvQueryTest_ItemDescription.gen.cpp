@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/AI/FGEnvQueryTest_ItemDescription.h"
+#include "FactoryGame/Public/AI/FGEnvQueryTest_ItemDescription.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -48,14 +48,14 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "AI/FGEnvQueryTest_ItemDescription.h" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryTest_ItemDescription.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryTest_ItemDescription.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGEnvQueryTest_ItemDescription_Statics::NewProp_mItemDescriptorClass_MetaData[] = {
 		{ "Category", "Item Descriptor" },
-		{ "ModuleRelativePath", "AI/FGEnvQueryTest_ItemDescription.h" },
+		{ "ModuleRelativePath", "Public/AI/FGEnvQueryTest_ItemDescription.h" },
 		{ "ToolTip", "Class of what descriptor we are looking for" },
 	};
 #endif
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnvQueryTest_ItemDescription() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEnvQueryTest_ItemDescription, 1546045819);
+	IMPLEMENT_CLASS(UFGEnvQueryTest_ItemDescription, 2530139235);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEnvQueryTest_ItemDescription(Z_Construct_UClass_UFGEnvQueryTest_ItemDescription, &UFGEnvQueryTest_ItemDescription::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEnvQueryTest_ItemDescription"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEnvQueryTest_ItemDescription);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableStorage.h"
+#include "FactoryGame/Public/Buildables/FGBuildableStorage.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,7 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "ToolTip", "Get the storage inventory from this storage box." },
 	};
 #endif
@@ -112,19 +112,19 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGBuildableStorage_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory, "GetStorageInventory" }, // 584793391
+		{ &Z_Construct_UFunction_AFGBuildableStorage_GetStorageInventory, "GetStorageInventory" }, // 4110739924
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableStorage.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "ToolTip", "Base class for all storage boxes, large and small. May have an arbitrary number of inputs and outputs." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStorageInventory_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "ToolTip", "The inventory to store everything in. Don't use this directly, use mStorageInventoryHandler->GetActiveInventoryComponent()" },
 	};
 #endif
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeY_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "ToolTip", "The size of the inventory for this storage." },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mInventorySizeX_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "ToolTip", "The size of the inventory for this storage." },
 	};
 #endif
@@ -148,7 +148,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mDefaultResources_MetaData[] = {
 		{ "Category", "Inventory" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "NoAutoJson", "TRUE" },
 		{ "ToolTip", "Default resources in a storage @todo Why this special case here, add the stuff in blueprint instead first time we're being built... I guess this is only used for the tutorial?" },
 	};
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableStorage_Statics::NewProp_mStackingHeight_MetaData[] = {
 		{ "Category", "Storage" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableStorage.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableStorage.h" },
 		{ "ToolTip", "How far apart in Z do multiple storages stack." },
 	};
 #endif
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableStorage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableStorage, 77871324);
+	IMPLEMENT_CLASS(AFGBuildableStorage, 2261735947);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableStorage(Z_Construct_UClass_AFGBuildableStorage, &AFGBuildableStorage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableStorage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableStorage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

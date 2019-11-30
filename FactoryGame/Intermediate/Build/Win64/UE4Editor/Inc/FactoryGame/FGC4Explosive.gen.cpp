@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGC4Explosive.h"
+#include "FactoryGame/Public/FGC4Explosive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -45,7 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 		{ "ToolTip", "Called when the server has blown this explosive" },
 	};
 #endif
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Effects" },
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 		{ "ToolTip", "Play the sound and particle effect for this explosion" },
 	};
 #endif
@@ -120,18 +120,18 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGC4Explosive_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated, "OnRep_IsDetonated" }, // 78034564
-		{ &Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects, "PlayExplosionEffects" }, // 413892318
+		{ &Z_Construct_UFunction_AFGC4Explosive_OnRep_IsDetonated, "OnRep_IsDetonated" }, // 333735681
+		{ &Z_Construct_UFunction_AFGC4Explosive_PlayExplosionEffects, "PlayExplosionEffects" }, // 1617347334
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGC4Explosive.h" },
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mIsDetonated_MetaData[] = {
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 		{ "ToolTip", "Tells client to blow this shit up" },
 	};
 #endif
@@ -143,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageType_MetaData[] = {
 		{ "Category", "Explosive" },
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 		{ "ToolTip", "Damage type used for the radial apply damage" },
 	};
 #endif
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mDamageRadius_MetaData[] = {
 		{ "Category", "Explosive" },
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 		{ "ToolTip", "Damage radius used for the radial apply damage" },
 	};
 #endif
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGC4Explosive_Statics::NewProp_mBaseDamage_MetaData[] = {
 		{ "Category", "Explosive" },
-		{ "ModuleRelativePath", "FGC4Explosive.h" },
+		{ "ModuleRelativePath", "Public/FGC4Explosive.h" },
 		{ "ToolTip", "Base damage used for the radial apply damage" },
 	};
 #endif
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeFGC4Explosive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGC4Explosive, 2631586253);
+	IMPLEMENT_CLASS(AFGC4Explosive, 1769410923);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGC4Explosive(Z_Construct_UClass_AFGC4Explosive, &AFGC4Explosive::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGC4Explosive"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGC4Explosive);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

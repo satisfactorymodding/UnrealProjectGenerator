@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCircuit.h"
+#include "FactoryGame/Public/FGCircuit.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCircuit_GetCircuitID_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Circuit" },
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "@return This circuit's unique identifier; -1 if invalid." },
 	};
 #endif
@@ -109,20 +109,20 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCircuit_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCircuit_GetCircuitID, "GetCircuitID" }, // 3057245869
+		{ &Z_Construct_UFunction_UFGCircuit_GetCircuitID, "GetCircuitID" }, // 4214519254
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGCircuit.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "Abstract base for circuit implementations.\n\nRepresents and circuit.\nIt keeps track of which components are connected to the same circuit.\nWe can say that A and B are connected (indirectly or directly) but not if there is a wire directly between A and B.\nThe actual connection info is stored in the graph that is made up by all the components (nodes) and wires (edges).\n2 or more components are required to make up a circuit. It's not much of a circuit if you're the only one in it!" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_MetaData[] = {
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "All players interacting with a building that's connected to this circuit" },
 	};
 #endif
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mInteractingPlayers_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mInteractingPlayers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_AFGCharacterPlayer_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData[] = {
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "True if this circuit has changed." },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged = { UE4CodeGen_Private::EPropertyClass::Bool, "mHasChanged", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, sizeof(uint8), UE4CodeGen_Private::ENativeBool::NotNative, sizeof(UFGCircuit), &Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCircuit_Statics::NewProp_mHasChanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mNeedFullRebuild_MetaData[] = {
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "Do this circuit needs to be rebuilt, e.g. wires or components have been removed." },
 	};
 #endif
@@ -153,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "List of all the components (nodes) in this circuit." },
 	};
 #endif
@@ -161,7 +161,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCircuit_Statics::NewProp_mComponents_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UFGCircuitConnectionComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCircuit_Statics::NewProp_mCircuitID_MetaData[] = {
-		{ "ModuleRelativePath", "FGCircuit.h" },
+		{ "ModuleRelativePath", "Public/FGCircuit.h" },
 		{ "ToolTip", "The id used to identify this circuit." },
 	};
 #endif
@@ -201,7 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuit() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCircuit, 2034522441);
+	IMPLEMENT_CLASS(UFGCircuit, 2007445412);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCircuit(Z_Construct_UClass_UFGCircuit, &UFGCircuit::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCircuit"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCircuit);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

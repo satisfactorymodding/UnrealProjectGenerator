@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGConsumableDescriptor.h"
+#include "FactoryGame/Public/Resources/FGConsumableDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -60,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGConsumableDescriptor_ConsumedBy_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Consumable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "NEVER EVER change any state of this object in this function, it's the default object.\n\n@param player - the player consuming the consumeable" },
 	};
 #endif
@@ -98,7 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGConsumableDescriptor_GetFPOverrideMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Consumable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "The skeletal mesh we want for representing the resource when they are in the production line.\n@return The items mesh; a default mesh if the item has no mesh specified, nullptr if inClass is nullptr." },
 	};
 #endif
@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGConsumableDescriptor_GetTPOverrideMesh_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Consumable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "The static mesh we want for representing the item when viewed as thir person.\n@return The items mesh; a default mesh if the item has no mesh specified, nullptr if inClass is nullptr." },
 	};
 #endif
@@ -194,22 +194,22 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGConsumableDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGConsumableDescriptor_ConsumedBy, "ConsumedBy" }, // 2590747974
-		{ &Z_Construct_UFunction_UFGConsumableDescriptor_GetFPOverrideMesh, "GetFPOverrideMesh" }, // 433108518
-		{ &Z_Construct_UFunction_UFGConsumableDescriptor_GetTPOverrideMesh, "GetTPOverrideMesh" }, // 2735419329
+		{ &Z_Construct_UFunction_UFGConsumableDescriptor_ConsumedBy, "ConsumedBy" }, // 1785651717
+		{ &Z_Construct_UFunction_UFGConsumableDescriptor_GetFPOverrideMesh, "GetFPOverrideMesh" }, // 3552350869
+		{ &Z_Construct_UFunction_UFGConsumableDescriptor_GetTPOverrideMesh, "GetTPOverrideMesh" }, // 1769283245
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGConsumableDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "Item descriptor for consumable items." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::NewProp_mTPOverrideMesh_MetaData[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "The static mesh we want for representing the resource when it is in third person." },
 	};
 #endif
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::NewProp_mFPOverrideMesh_MetaData[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "The skeletal  mesh we want for representing the resource when it is in first person." },
 	};
 #endif
@@ -225,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::NewProp_mCustomLocation_MetaData[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "Custom local location of mesh in hands" },
 	};
 #endif
@@ -233,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::NewProp_mCustomRotation_MetaData[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "Custom local rotaion of mesh in hands" },
 	};
 #endif
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::NewProp_mCustomHandsMeshScale_MetaData[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "Custom scale of mesh in hands" },
 	};
 #endif
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGConsumableDescriptor_Statics::NewProp_mConsumeEvent_MetaData[] = {
 		{ "Category", "Consumeable" },
-		{ "ModuleRelativePath", "Resources/FGConsumableDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGConsumableDescriptor.h" },
 		{ "ToolTip", "Sound played when consuming" },
 	};
 #endif
@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConsumableDescriptor, 2229602738);
+	IMPLEMENT_CLASS(UFGConsumableDescriptor, 112585122);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConsumableDescriptor(Z_Construct_UClass_UFGConsumableDescriptor, &UFGConsumableDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConsumableDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConsumableDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

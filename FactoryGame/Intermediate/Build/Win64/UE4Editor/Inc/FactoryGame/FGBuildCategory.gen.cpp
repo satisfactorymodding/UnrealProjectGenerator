@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGBuildCategory.h"
+#include "FactoryGame/Public/FGBuildCategory.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildCategory() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildCategory_GetCategoryIcon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBuildCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildCategory.h" },
 		{ "ToolTip", "Get the icon for a category" },
 	};
 #endif
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildCategory() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGBuildCategory_GetCategoryName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBuildCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildCategory.h" },
 		{ "ToolTip", "Used to get the mDisplayName in blueprint." },
 	};
 #endif
@@ -135,21 +135,21 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildCategory() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGBuildCategory_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGBuildCategory_GetCategoryIcon, "GetCategoryIcon" }, // 2795024221
-		{ &Z_Construct_UFunction_UFGBuildCategory_GetCategoryName, "GetCategoryName" }, // 1208185504
+		{ &Z_Construct_UFunction_UFGBuildCategory_GetCategoryIcon, "GetCategoryIcon" }, // 4065260736
+		{ &Z_Construct_UFunction_UFGBuildCategory_GetCategoryName, "GetCategoryName" }, // 1601121622
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildCategory_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGBuildCategory.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGBuildCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildCategory.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildCategory_Statics::NewProp_mCategoryIcon_MetaData[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBuildCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildCategory.h" },
 		{ "ToolTip", "Icon for the category" },
 	};
 #endif
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildCategory() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGBuildCategory_Statics::NewProp_mDisplayName_MetaData[] = {
 		{ "Category", "Build Category" },
-		{ "ModuleRelativePath", "FGBuildCategory.h" },
+		{ "ModuleRelativePath", "Public/FGBuildCategory.h" },
 		{ "ToolTip", "Name of this build category" },
 	};
 #endif
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildCategory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBuildCategory, 2072011856);
+	IMPLEMENT_CLASS(UFGBuildCategory, 2328933767);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBuildCategory(Z_Construct_UClass_UFGBuildCategory, &UFGBuildCategory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBuildCategory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBuildCategory);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

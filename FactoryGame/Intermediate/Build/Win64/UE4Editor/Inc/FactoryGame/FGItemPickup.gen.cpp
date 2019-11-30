@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGItemPickup.h"
+#include "FactoryGame/Public/FGItemPickup.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_FullInventory_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGItemPickup.h" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Use state when inventory of player looking at the item has a full inventory" },
 	};
 #endif
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_FullInventory, 2842201172);
+	IMPLEMENT_CLASS(UFGUseState_FullInventory, 4277781343);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_FullInventory(Z_Construct_UClass_UFGUseState_FullInventory, &UFGUseState_FullInventory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_FullInventory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_FullInventory);
 	void UFGUseState_Collecting::StaticRegisterNativesUFGUseState_Collecting()
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGUseState_Collecting_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGItemPickup.h" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Use state when the item is being collected but takes time" },
 	};
 #endif
@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Collecting, 1191599058);
+	IMPLEMENT_CLASS(UFGUseState_Collecting, 324664684);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_Collecting(Z_Construct_UClass_UFGUseState_Collecting, &UFGUseState_Collecting::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_Collecting"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_Collecting);
 	static FName NAME_AFGItemPickup_OnPickup = FName(TEXT("OnPickup"));
@@ -195,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pickup" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Returns the normalized progress until collection is complete" },
 	};
 #endif
@@ -229,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_GetNumItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pickup" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Get the number of items the pickup have" },
 	};
 #endif
@@ -263,7 +263,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_GetPickupItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pickup" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Get the pickup items" },
 	};
 #endif
@@ -302,7 +302,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_IsPickedUp_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pickup" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Get if the item is picked up" },
 	};
 #endif
@@ -331,7 +331,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_OnPickup_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "SERVER and Client picking up: Called right after this item is added to the players inventory, for GameplayEffects.\nIf you want to do something only on the picking up client, check if byCharacter is locally controlled" },
 	};
 #endif
@@ -354,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Replicated and set when we are picked up" },
 	};
 #endif
@@ -397,7 +397,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_PickupByAmount_Statics::Function_MetaDataParams[] = {
 		{ "CPP_Default_amount", "1" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Pickup functionality so that we can pickup x amount of items and can be used by other than character\n\n@return true if there was enough items for pickup" },
 	};
 #endif
@@ -430,7 +430,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "SERVER and CLIENT picking up: Handles regular pick up logic. Only to be called from the Character when they are picking up the item from PickUpItem()." },
 	};
 #endif
@@ -453,7 +453,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Multicast to everyone so picking up clients can see effects" },
 	};
 #endif
@@ -487,7 +487,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGItemPickup_SetNumItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Pickup" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "Set the number of items" },
 	};
 #endif
@@ -551,21 +551,21 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGItemPickup_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress, "GetNormalizedCollectionProgress" }, // 3190390598
-		{ &Z_Construct_UFunction_AFGItemPickup_GetNumItems, "GetNumItems" }, // 2122380296
-		{ &Z_Construct_UFunction_AFGItemPickup_GetPickupItems, "GetPickupItems" }, // 3226405928
-		{ &Z_Construct_UFunction_AFGItemPickup_IsPickedUp, "IsPickedUp" }, // 1264545500
-		{ &Z_Construct_UFunction_AFGItemPickup_OnPickup, "OnPickup" }, // 238537278
-		{ &Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp, "OnRep_PickedUp" }, // 470444625
-		{ &Z_Construct_UFunction_AFGItemPickup_PickupByAmount, "PickupByAmount" }, // 2995895481
-		{ &Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter, "PickUpByCharacter" }, // 2833030810
-		{ &Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect, "PlayPickupEffect" }, // 2413956759
-		{ &Z_Construct_UFunction_AFGItemPickup_SetNumItems, "SetNumItems" }, // 523664539
+		{ &Z_Construct_UFunction_AFGItemPickup_GetNormalizedCollectionProgress, "GetNormalizedCollectionProgress" }, // 2032682241
+		{ &Z_Construct_UFunction_AFGItemPickup_GetNumItems, "GetNumItems" }, // 17735819
+		{ &Z_Construct_UFunction_AFGItemPickup_GetPickupItems, "GetPickupItems" }, // 410008070
+		{ &Z_Construct_UFunction_AFGItemPickup_IsPickedUp, "IsPickedUp" }, // 2488384435
+		{ &Z_Construct_UFunction_AFGItemPickup_OnPickup, "OnPickup" }, // 1014016038
+		{ &Z_Construct_UFunction_AFGItemPickup_OnRep_PickedUp, "OnRep_PickedUp" }, // 1145014252
+		{ &Z_Construct_UFunction_AFGItemPickup_PickupByAmount, "PickupByAmount" }, // 1163568047
+		{ &Z_Construct_UFunction_AFGItemPickup_PickUpByCharacter, "PickUpByCharacter" }, // 2401984218
+		{ &Z_Construct_UFunction_AFGItemPickup_PlayPickupEffect, "PlayPickupEffect" }, // 1883369257
+		{ &Z_Construct_UFunction_AFGItemPickup_SetNumItems, "SetNumItems" }, // 1332808210
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGItemPickup.h" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ToolTip", "@todo: This looks like it should be a subclass of FGInteractActor" },
 	};
@@ -573,7 +573,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mAudioEvent_MetaData[] = {
 		{ "Category", "AkComponent" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "The ak event to post for the sound" },
 	};
 #endif
@@ -582,7 +582,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mSoundComponent_MetaData[] = {
 		{ "Category", "Audio" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "ak component that plays sound" },
 	};
 #endif
@@ -590,7 +590,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mDestroyOnPickup_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "If set to true, then we destroy the item when it's pickup:ed" },
 	};
 #endif
@@ -602,21 +602,21 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "The items we want to be able to pickup" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems = { UE4CodeGen_Private::EPropertyClass::Struct, "mPickupItems", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080101000021, 1, "OnRep_PickedUp", STRUCT_OFFSET(AFGItemPickup, mPickupItems), Z_Construct_UScriptStruct_FInventoryStack, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mPickupItems_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData[] = {
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "/ Timer handler for item being picked up" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle = { UE4CodeGen_Private::EPropertyClass::Struct, "mCollectingTimerHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000000, 1, nullptr, STRUCT_OFFSET(AFGItemPickup, mCollectingTimerHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollectingTimerHandle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mCollector_MetaData[] = {
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "/ The player collecting the item" },
 	};
 #endif
@@ -624,7 +624,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGItemPickup_Statics::NewProp_mTimeToPickUp_MetaData[] = {
 		{ "Category", "Item" },
-		{ "ModuleRelativePath", "FGItemPickup.h" },
+		{ "ModuleRelativePath", "Public/FGItemPickup.h" },
 		{ "ToolTip", "/ The amount of time required to pickup < 0 == instant" },
 	};
 #endif
@@ -666,7 +666,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup, 266403411);
+	IMPLEMENT_CLASS(AFGItemPickup, 2670067812);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup(Z_Construct_UClass_AFGItemPickup, &AFGItemPickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGItemPickup)

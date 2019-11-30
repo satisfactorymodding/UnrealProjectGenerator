@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Resources/FGVehicleDescriptor.h"
+#include "FactoryGame/Public/Resources/FGVehicleDescriptor.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDescriptor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVehicleDescriptor_GetVehicleClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Descriptor|Vehicle" },
-		{ "ModuleRelativePath", "Resources/FGVehicleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGVehicleDescriptor.h" },
 		{ "ToolTip", "Get the vehicle class for this descriptor." },
 	};
 #endif
@@ -91,20 +91,20 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDescriptor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVehicleDescriptor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVehicleDescriptor_GetVehicleClass, "GetVehicleClass" }, // 799707981
+		{ &Z_Construct_UFunction_UFGVehicleDescriptor_GetVehicleClass, "GetVehicleClass" }, // 1617668549
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleDescriptor_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Icon Preview" },
 		{ "IncludePath", "Resources/FGVehicleDescriptor.h" },
-		{ "ModuleRelativePath", "Resources/FGVehicleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGVehicleDescriptor.h" },
 		{ "ToolTip", "Build descriptor for vehicles." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleDescriptor_Statics::NewProp_mVehicleClass_MetaData[] = {
 		{ "Category", "Vehicle" },
-		{ "ModuleRelativePath", "Resources/FGVehicleDescriptor.h" },
+		{ "ModuleRelativePath", "Public/Resources/FGVehicleDescriptor.h" },
 		{ "ToolTip", "The vehicle this descriptor describes." },
 	};
 #endif
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDescriptor, 1798460844);
+	IMPLEMENT_CLASS(UFGVehicleDescriptor, 1907059139);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleDescriptor(Z_Construct_UClass_UFGVehicleDescriptor, &UFGVehicleDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

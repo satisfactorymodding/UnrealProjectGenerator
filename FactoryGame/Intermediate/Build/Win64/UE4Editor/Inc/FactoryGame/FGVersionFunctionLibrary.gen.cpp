@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGVersionFunctionLibrary.h"
+#include "FactoryGame/Public/FGVersionFunctionLibrary.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -32,7 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EGameVersion(EGameVersion_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("EGameVersion"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_EGameVersion_CRC() { return 2558930916U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_EGameVersion_CRC() { return 3251652194U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_EGameVersion()
 	{
 #if WITH_HOT_RELOAD
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 				{ "GV_Experimental.DisplayName", "Experimental" },
 				{ "GV_Main.DisplayName", "Main" },
 				{ "GV_Other.DisplayName", "Other" },
-				{ "ModuleRelativePath", "FGVersionFunctionLibrary.h" },
+				{ "ModuleRelativePath", "Public/FGVersionFunctionLibrary.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -106,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVersionFunctionLibrary_GetGameVersion_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Development" },
-		{ "ModuleRelativePath", "FGVersionFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGVersionFunctionLibrary.h" },
 		{ "ToolTip", "Get what version of the game we are running" },
 	};
 #endif
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVersionFunctionLibrary_GetVersionString_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Version" },
-		{ "ModuleRelativePath", "FGVersionFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGVersionFunctionLibrary.h" },
 		{ "ToolTip", "Get a version string to show to the user" },
 	};
 #endif
@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGVersionFunctionLibrary_IsPublicBuild_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Version" },
-		{ "ModuleRelativePath", "FGVersionFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGVersionFunctionLibrary.h" },
 		{ "ToolTip", "Returns true if this build is a public build (ie, consumable for the public)" },
 	};
 #endif
@@ -212,14 +212,14 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGVersionFunctionLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGVersionFunctionLibrary_GetGameVersion, "GetGameVersion" }, // 1373663726
-		{ &Z_Construct_UFunction_UFGVersionFunctionLibrary_GetVersionString, "GetVersionString" }, // 2503056808
-		{ &Z_Construct_UFunction_UFGVersionFunctionLibrary_IsPublicBuild, "IsPublicBuild" }, // 2475156242
+		{ &Z_Construct_UFunction_UFGVersionFunctionLibrary_GetGameVersion, "GetGameVersion" }, // 2061581872
+		{ &Z_Construct_UFunction_UFGVersionFunctionLibrary_GetVersionString, "GetVersionString" }, // 2230552254
+		{ &Z_Construct_UFunction_UFGVersionFunctionLibrary_IsPublicBuild, "IsPublicBuild" }, // 4259160269
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVersionFunctionLibrary_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGVersionFunctionLibrary.h" },
-		{ "ModuleRelativePath", "FGVersionFunctionLibrary.h" },
+		{ "ModuleRelativePath", "Public/FGVersionFunctionLibrary.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFGVersionFunctionLibrary_Statics::StaticCppClassTypeInfo = {
@@ -245,7 +245,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVersionFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVersionFunctionLibrary, 762467542);
+	IMPLEMENT_CLASS(UFGVersionFunctionLibrary, 1779418306);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVersionFunctionLibrary(Z_Construct_UClass_UFGVersionFunctionLibrary, &UFGVersionFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVersionFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVersionFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

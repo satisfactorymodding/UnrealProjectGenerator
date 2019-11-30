@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGSkySphere.h"
+#include "FactoryGame/Public/FGSkySphere.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -90,7 +90,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewStructOps()
@@ -99,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_MetaData[] = {
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_SetBit(void* Obj)
@@ -109,7 +109,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity = { UE4CodeGen_Private::EPropertyClass::Bool, "OverrideCloudOpacity", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudOpacity_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_SetBit(void* Obj)
@@ -119,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor = { UE4CodeGen_Private::EPropertyClass::Bool, "OverrideCloudColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideCloudColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_SetBit(void* Obj)
@@ -129,7 +129,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor = { UE4CodeGen_Private::EPropertyClass::Bool, "OverrideZenithColor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(FSkySphereSettings), &Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideZenithColor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_MetaData[] = {
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 	};
 #endif
 	void Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_OverrideHorizonColor_SetBit(void* Obj)
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudOpacity_MetaData[] = {
 		{ "Category", "SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "opacity of the clouds after blending the skysphere curve with all volumes curves" },
 	};
 #endif
@@ -148,7 +148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_CloudColor_MetaData[] = {
 		{ "Category", "SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Color of the clouds after blending the skysphere curve with all volumes curves" },
 	};
 #endif
@@ -156,7 +156,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_ZenithColor_MetaData[] = {
 		{ "Category", "SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Color of the zenith after blending the skysphere curve with all volumes curves" },
 	};
 #endif
@@ -164,7 +164,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSkySphereSettings_Statics::NewProp_HorizonColor_MetaData[] = {
 		{ "Category", "SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Color of the horizon after blending the skysphere curve with all volumes curves" },
 	};
 #endif
@@ -206,7 +206,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_CRC() { return 4099149055U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_CRC() { return 708899003U; }
 	static FName NAME_AFGSkySphere_ApplySkySphereSettings = FName(TEXT("ApplySkySphereSettings"));
 	void AFGSkySphere::ApplySkySphereSettings(FSkySphereSettings const& settings)
 	{
@@ -253,7 +253,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSkySphere_ApplySkySphereSettings_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "End ICurvePanningInterface" },
 	};
 #endif
@@ -304,7 +304,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSkySphere_GetFloatCurveValue_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Color" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Expose getting a value from a FRuntimeFloatCurve to bp" },
 	};
 #endif
@@ -328,7 +328,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGSkySphere_UpdatePreview_Statics::Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Update the preview of the skyesphere in the editor" },
 	};
 #endif
@@ -410,15 +410,15 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGSkySphere_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGSkySphere_ApplySkySphereSettings, "ApplySkySphereSettings" }, // 1933601197
-		{ &Z_Construct_UFunction_AFGSkySphere_GetFloatCurveValue, "GetFloatCurveValue" }, // 677464562
-		{ &Z_Construct_UFunction_AFGSkySphere_UpdatePreview, "UpdatePreview" }, // 1823402088
+		{ &Z_Construct_UFunction_AFGSkySphere_ApplySkySphereSettings, "ApplySkySphereSettings" }, // 1848144099
+		{ &Z_Construct_UFunction_AFGSkySphere_GetFloatCurveValue, "GetFloatCurveValue" }, // 1228265353
+		{ &Z_Construct_UFunction_AFGSkySphere_UpdatePreview, "UpdatePreview" }, // 1158681819
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Input Rendering" },
 		{ "IncludePath", "FGSkySphere.h" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 	};
 #endif
 #if WITH_EDITORONLY_DATA
@@ -427,7 +427,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		{ "Category", "Preview" },
 		{ "ClampMax", "24" },
 		{ "ClampMin", "0" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How the sunlight changes during the day" },
 		{ "UIMax", "24" },
 		{ "UIMin", "0" },
@@ -438,7 +438,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunFogMultiplier_MetaData[] = {
 		{ "Category", "Curves|AtmosphericFog" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How does the sun multiplier change during the day in the atmospheric fog" },
 	};
 #endif
@@ -446,7 +446,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mStarBrightness_MetaData[] = {
 		{ "Category", "Curves|SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How does the stars brightness change during the day" },
 	};
 #endif
@@ -454,7 +454,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mCloudOpacity_MetaData[] = {
 		{ "Category", "Curves|SkySphere" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How the opakeness of the clouds change during the day" },
 	};
 #endif
@@ -462,7 +462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSkyLightIntensity_MetaData[] = {
 		{ "Category", "Curves|SkyLight" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How does the sky light intensity change during the day" },
 	};
 #endif
@@ -470,7 +470,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonLightShaftOcclusionCurve_MetaData[] = {
 		{ "Category", "Curves|Moon" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Changes how the lightshafts changes during the day" },
 	};
 #endif
@@ -478,7 +478,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonRotationPitch_MetaData[] = {
 		{ "Category", "Curves|Moon" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Unlogical property, basically tells how the moons location in it's curve should change during the day" },
 	};
 #endif
@@ -486,7 +486,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mMoonIntensity_MetaData[] = {
 		{ "Category", "Curves|Moon" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How does the moons intensity change during the NIGHT" },
 	};
 #endif
@@ -494,7 +494,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunLightShaftOcclusionCurve_MetaData[] = {
 		{ "Category", "Curves|Sun" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Changes how the lightshafts changes during the day" },
 	};
 #endif
@@ -502,7 +502,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunRotationPitch_MetaData[] = {
 		{ "Category", "Curves|Sun" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "Unlogical property, basically tells how the suns location in it's curve should change during the day" },
 	};
 #endif
@@ -510,7 +510,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGSkySphere_Statics::NewProp_mSunIntensity_MetaData[] = {
 		{ "Category", "Curves|Sun" },
-		{ "ModuleRelativePath", "FGSkySphere.h" },
+		{ "ModuleRelativePath", "Public/FGSkySphere.h" },
 		{ "ToolTip", "How does the suns intensity change during the day" },
 	};
 #endif
@@ -553,7 +553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 3617196920);
+	IMPLEMENT_CLASS(AFGSkySphere, 716106994);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSkySphere(Z_Construct_UClass_AFGSkySphere, &AFGSkySphere::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSkySphere"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSkySphere);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGColoredInstanceManager.h"
+#include "FactoryGame/Public/FGColoredInstanceManager.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -49,13 +49,13 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 		{ "ClassGroupNames", "FactoryGame" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "FGColoredInstanceManager.h" },
-		{ "ModuleRelativePath", "FGColoredInstanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGColoredInstanceManager.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGColoredInstanceManager.h" },
+		{ "ModuleRelativePath", "Public/FGColoredInstanceManager.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents = { UE4CodeGen_Private::EPropertyClass::Object, "mInstanceComponents", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, CPP_ARRAY_DIM(mInstanceComponents, UFGColoredInstanceManager), nullptr, STRUCT_OFFSET(UFGColoredInstanceManager, mInstanceComponents), Z_Construct_UClass_UHierarchicalInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGColoredInstanceManager_Statics::NewProp_mInstanceComponents_MetaData)) };
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceManager, 2367011225);
+	IMPLEMENT_CLASS(UFGColoredInstanceManager, 3473602376);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColoredInstanceManager(Z_Construct_UClass_UFGColoredInstanceManager, &UFGColoredInstanceManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColoredInstanceManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColoredInstanceManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

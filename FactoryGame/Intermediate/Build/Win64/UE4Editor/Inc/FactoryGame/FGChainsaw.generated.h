@@ -19,12 +19,12 @@ struct FVector;
 #endif
 #define FACTORYGAME_FGChainsaw_generated_h
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPickedUpInstance_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_RPC_WRAPPERS \
 	virtual bool Server_StopSawing_Validate(); \
 	virtual void Server_StopSawing_Implementation(); \
 	virtual void BroadcastPickup_Implementation(TArray<FPickedUpInstance> const& pickups, AFGFoliagePickup* instigatorPlayer); \
@@ -135,7 +135,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool Server_StopSawing_Validate(); \
 	virtual void Server_StopSawing_Implementation(); \
 	virtual void BroadcastPickup_Implementation(TArray<FPickedUpInstance> const& pickups, AFGFoliagePickup* instigatorPlayer); \
@@ -246,7 +246,7 @@ struct FVector;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_EVENT_PARMS \
 	struct FGChainsaw_eventBroadcastPickup_Parms \
 	{ \
 		TArray<FPickedUpInstance> pickups; \
@@ -270,8 +270,8 @@ struct FVector;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGChainsaw(); \
 	friend struct Z_Construct_UClass_AFGChainsaw_Statics; \
@@ -280,7 +280,7 @@ public: \
 	DECLARE_SERIALIZER(AFGChainsaw)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGChainsaw(); \
 	friend struct Z_Construct_UClass_AFGChainsaw_Statics; \
@@ -289,7 +289,7 @@ public: \
 	DECLARE_SERIALIZER(AFGChainsaw)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGChainsaw(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGChainsaw) \
@@ -302,7 +302,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGChainsaw(AFGChainsaw&&); \
@@ -313,7 +313,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGChainsaw); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGChainsaw)
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mFuelClass() { return STRUCT_OFFSET(AFGChainsaw, mFuelClass); } \
 	FORCEINLINE static uint32 __PPO__mEnergyConsumption() { return STRUCT_OFFSET(AFGChainsaw, mEnergyConsumption); } \
 	FORCEINLINE static uint32 __PPO__mSawDownTreeTime() { return STRUCT_OFFSET(AFGChainsaw, mSawDownTreeTime); } \
@@ -322,36 +322,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGChainsaw); \
 	FORCEINLINE static uint32 __PPO__mEnergyStored() { return STRUCT_OFFSET(AFGChainsaw, mEnergyStored); }
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_37_PROLOG \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_37_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_INCLASS \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_Equipment_FGChainsaw_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

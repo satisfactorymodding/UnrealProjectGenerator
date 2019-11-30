@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCircuitSubsystem.h"
+#include "FactoryGame/Public/FGCircuitSubsystem.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCircuitSubsystem_FindCircuit_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Circuit" },
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "Find the circuit with the given circuit ID.\n@return - The circuit if found; nullptr if no circuit exists with that id.\n\n@note The returned pointer is only valid this tick or until a change is made to the circuitry by calling CreateCircuit, RemoveCircuit, ConnectComponents." },
 	};
 #endif
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCircuitSubsystem_GetCircuitSubsystem_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Circuit" },
 		{ "DefaultToSelf", "worldContext" },
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "Get the circuit subsystem" },
 	};
 #endif
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCircuitSubsystem_OnRep_ReplicatedCircuits_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "Let the clients know about changes in the circuits." },
 	};
 #endif
@@ -157,7 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCircuitSubsystem_PowerCircuit_OnFuseReset_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power Circuit" },
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "Called when a power circuit had it's power restored." },
 	};
 #endif
@@ -181,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGCircuitSubsystem_PowerCircuit_OnFuseSet_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Power Circuit" },
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "Called when a power circuit lost power." },
 	};
 #endif
@@ -227,11 +227,11 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGCircuitSubsystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGCircuitSubsystem_FindCircuit, "FindCircuit" }, // 4002017308
-		{ &Z_Construct_UFunction_AFGCircuitSubsystem_GetCircuitSubsystem, "GetCircuitSubsystem" }, // 1979561052
-		{ &Z_Construct_UFunction_AFGCircuitSubsystem_OnRep_ReplicatedCircuits, "OnRep_ReplicatedCircuits" }, // 1291878434
-		{ &Z_Construct_UFunction_AFGCircuitSubsystem_PowerCircuit_OnFuseReset, "PowerCircuit_OnFuseReset" }, // 1265784316
-		{ &Z_Construct_UFunction_AFGCircuitSubsystem_PowerCircuit_OnFuseSet, "PowerCircuit_OnFuseSet" }, // 3292124069
+		{ &Z_Construct_UFunction_AFGCircuitSubsystem_FindCircuit, "FindCircuit" }, // 751810218
+		{ &Z_Construct_UFunction_AFGCircuitSubsystem_GetCircuitSubsystem, "GetCircuitSubsystem" }, // 2260221084
+		{ &Z_Construct_UFunction_AFGCircuitSubsystem_OnRep_ReplicatedCircuits, "OnRep_ReplicatedCircuits" }, // 3334956088
+		{ &Z_Construct_UFunction_AFGCircuitSubsystem_PowerCircuit_OnFuseReset, "PowerCircuit_OnFuseReset" }, // 188793889
+		{ &Z_Construct_UFunction_AFGCircuitSubsystem_PowerCircuit_OnFuseSet, "PowerCircuit_OnFuseSet" }, // 2718253777
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCircuitSubsystem_Statics::Class_MetaDataParams[] = {
@@ -239,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 		{ "HideCategories", "Actor Input Replication Rendering Actor Tick Actor Input Rendering Actor Tick Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGCircuitSubsystem.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "SerializeToFArchive", "" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Subsystem to handle all circuits, connects, disconnects." },
@@ -247,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCircuitSubsystem_Statics::NewProp_mReplicatedCircuits_MetaData[] = {
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "@todo There is no support for TMap replication, fix something better than this." },
 	};
 #endif
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFGCircuitSubsystem_Statics::NewProp_mReplicatedCircuits_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "mReplicatedCircuits", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UFGCircuit_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGCircuitSubsystem_Statics::NewProp_mCircuits_MetaData[] = {
-		{ "ModuleRelativePath", "FGCircuitSubsystem.h" },
+		{ "ModuleRelativePath", "Public/FGCircuitSubsystem.h" },
 		{ "ToolTip", "Map with all circuits and the circuit ID as the key." },
 	};
 #endif
@@ -295,7 +295,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCircuitSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCircuitSubsystem, 1666441599);
+	IMPLEMENT_CLASS(AFGCircuitSubsystem, 407074223);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCircuitSubsystem(Z_Construct_UClass_AFGCircuitSubsystem, &AFGCircuitSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCircuitSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCircuitSubsystem);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGCircuitSubsystem)

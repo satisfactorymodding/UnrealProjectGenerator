@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGGameUI.h"
+#include "FactoryGame/Public/UI/FGGameUI.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_AddCheatWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Adds the cheat widget" },
 	};
 #endif
@@ -232,7 +232,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_AddInteractWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Adds to the stack" },
 	};
 #endif
@@ -262,7 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_AddIntroTutorialInfo_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Adds new tutorial info to be displayed" },
 	};
 #endif
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_AddPawnHUD_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Allow the gameUI to add pawn specific HUD" },
 	};
 #endif
@@ -334,7 +334,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_AddPendingMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Adds a new message to the pending message array" },
 	};
 #endif
@@ -358,7 +358,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_CancelPressed_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called from ingame when the cancel key ( escape ) was pressed when no widget has focus" },
 	};
 #endif
@@ -396,7 +396,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_CanReceiveMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Is this a good time to get a message?" },
 	};
 #endif
@@ -420,7 +420,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_ClearHintOnTutorialStepCompleted_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Tutorial" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we update our current objective but are waiting to show the next" },
 	};
 #endif
@@ -462,7 +462,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_GetCurrentAudioMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Gets the current audio message being played ( can be null )" },
 	};
 #endif
@@ -507,7 +507,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_GetInteractWidgetStack_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Returnswidget stack" },
 	};
 #endif
@@ -544,7 +544,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_GetPendingMessages_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Returnswidget array with pending messages" },
 	};
 #endif
@@ -583,7 +583,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_GetShowInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Getter for mShowInventory" },
 	};
 #endif
@@ -622,7 +622,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_GetWindowWantsInventoryAddon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Getter for mWindowWantInventoryAddon" },
 	};
 #endif
@@ -646,7 +646,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_HandleFocusLost_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Event received when the focus has been lost to the viewport. Probably because a mouse button was pressed in \"nothing\"" },
 	};
 #endif
@@ -670,7 +670,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_HandlePendingMessages_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Handle pending messages and push them at appropriate time" },
 	};
 #endif
@@ -703,7 +703,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we have updated radiation intensity." },
 	};
 #endif
@@ -727,7 +727,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we start receiving radiation." },
 	};
 #endif
@@ -751,7 +751,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Radiation" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Called when we stop receiving radiation." },
 	};
 #endif
@@ -775,7 +775,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_PopAllWidgets_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Closes down all interact widgets" },
 	};
 #endif
@@ -805,7 +805,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_ReceivedMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Handle message. Usually grabbed from the pending message list at appropriate time" },
 	};
 #endif
@@ -829,7 +829,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Removes the audio message" },
 	};
 #endif
@@ -871,7 +871,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_RemoveInteractWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Removes from the stack" },
 	};
 #endif
@@ -895,7 +895,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_RemovePawnHUD_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Allow the gameUI to remove pawn specific HUD" },
 	};
 #endif
@@ -937,7 +937,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_SetCurrentAudioMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Sets the current audio message being played" },
 	};
 #endif
@@ -976,7 +976,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_SetShowInventory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Setter for show inventory" },
 	};
 #endif
@@ -1015,7 +1015,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Setter form WindowWantInventoryAddon" },
 	};
 #endif
@@ -1062,44 +1062,44 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGGameUI_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGGameUI_AddCheatWidget, "AddCheatWidget" }, // 23970937
-		{ &Z_Construct_UFunction_UFGGameUI_AddInteractWidget, "AddInteractWidget" }, // 1126429690
-		{ &Z_Construct_UFunction_UFGGameUI_AddIntroTutorialInfo, "AddIntroTutorialInfo" }, // 3673567723
-		{ &Z_Construct_UFunction_UFGGameUI_AddPawnHUD, "AddPawnHUD" }, // 633781530
-		{ &Z_Construct_UFunction_UFGGameUI_AddPendingMessage, "AddPendingMessage" }, // 4195854804
-		{ &Z_Construct_UFunction_UFGGameUI_CancelPressed, "CancelPressed" }, // 1120788338
-		{ &Z_Construct_UFunction_UFGGameUI_CanReceiveMessage, "CanReceiveMessage" }, // 3500407022
-		{ &Z_Construct_UFunction_UFGGameUI_ClearHintOnTutorialStepCompleted, "ClearHintOnTutorialStepCompleted" }, // 4221685688
-		{ &Z_Construct_UFunction_UFGGameUI_GetCurrentAudioMessage, "GetCurrentAudioMessage" }, // 2637898253
-		{ &Z_Construct_UFunction_UFGGameUI_GetInteractWidgetStack, "GetInteractWidgetStack" }, // 2298096566
-		{ &Z_Construct_UFunction_UFGGameUI_GetPendingMessages, "GetPendingMessages" }, // 3438905044
-		{ &Z_Construct_UFunction_UFGGameUI_GetShowInventory, "GetShowInventory" }, // 3687008061
-		{ &Z_Construct_UFunction_UFGGameUI_GetWindowWantsInventoryAddon, "GetWindowWantsInventoryAddon" }, // 1139155527
-		{ &Z_Construct_UFunction_UFGGameUI_HandleFocusLost, "HandleFocusLost" }, // 3999096934
-		{ &Z_Construct_UFunction_UFGGameUI_HandlePendingMessages, "HandlePendingMessages" }, // 203288894
-		{ &Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 2416612420
-		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 1032914564
-		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 3625446541
-		{ &Z_Construct_UFunction_UFGGameUI_PopAllWidgets, "PopAllWidgets" }, // 2484484686
-		{ &Z_Construct_UFunction_UFGGameUI_ReceivedMessage, "ReceivedMessage" }, // 84262149
-		{ &Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage, "RemoveAudioMessage" }, // 1146092044
-		{ &Z_Construct_UFunction_UFGGameUI_RemoveInteractWidget, "RemoveInteractWidget" }, // 430318774
-		{ &Z_Construct_UFunction_UFGGameUI_RemovePawnHUD, "RemovePawnHUD" }, // 929110746
-		{ &Z_Construct_UFunction_UFGGameUI_SetCurrentAudioMessage, "SetCurrentAudioMessage" }, // 3426185970
-		{ &Z_Construct_UFunction_UFGGameUI_SetShowInventory, "SetShowInventory" }, // 2835562469
-		{ &Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon, "SetWindowWantsInventoryAddon" }, // 3909579285
+		{ &Z_Construct_UFunction_UFGGameUI_AddCheatWidget, "AddCheatWidget" }, // 3130767559
+		{ &Z_Construct_UFunction_UFGGameUI_AddInteractWidget, "AddInteractWidget" }, // 1652192223
+		{ &Z_Construct_UFunction_UFGGameUI_AddIntroTutorialInfo, "AddIntroTutorialInfo" }, // 236708989
+		{ &Z_Construct_UFunction_UFGGameUI_AddPawnHUD, "AddPawnHUD" }, // 3016079329
+		{ &Z_Construct_UFunction_UFGGameUI_AddPendingMessage, "AddPendingMessage" }, // 111289319
+		{ &Z_Construct_UFunction_UFGGameUI_CancelPressed, "CancelPressed" }, // 3199905079
+		{ &Z_Construct_UFunction_UFGGameUI_CanReceiveMessage, "CanReceiveMessage" }, // 1129141706
+		{ &Z_Construct_UFunction_UFGGameUI_ClearHintOnTutorialStepCompleted, "ClearHintOnTutorialStepCompleted" }, // 3882691744
+		{ &Z_Construct_UFunction_UFGGameUI_GetCurrentAudioMessage, "GetCurrentAudioMessage" }, // 916001409
+		{ &Z_Construct_UFunction_UFGGameUI_GetInteractWidgetStack, "GetInteractWidgetStack" }, // 3585671539
+		{ &Z_Construct_UFunction_UFGGameUI_GetPendingMessages, "GetPendingMessages" }, // 986098814
+		{ &Z_Construct_UFunction_UFGGameUI_GetShowInventory, "GetShowInventory" }, // 187586652
+		{ &Z_Construct_UFunction_UFGGameUI_GetWindowWantsInventoryAddon, "GetWindowWantsInventoryAddon" }, // 639337398
+		{ &Z_Construct_UFunction_UFGGameUI_HandleFocusLost, "HandleFocusLost" }, // 183279543
+		{ &Z_Construct_UFunction_UFGGameUI_HandlePendingMessages, "HandlePendingMessages" }, // 1779978949
+		{ &Z_Construct_UFunction_UFGGameUI_OnRadiationIntensityUpdated, "OnRadiationIntensityUpdated" }, // 3193919174
+		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStart, "OnReceiveRadiationStart" }, // 1456838611
+		{ &Z_Construct_UFunction_UFGGameUI_OnReceiveRadiationStop, "OnReceiveRadiationStop" }, // 1291528023
+		{ &Z_Construct_UFunction_UFGGameUI_PopAllWidgets, "PopAllWidgets" }, // 1722726814
+		{ &Z_Construct_UFunction_UFGGameUI_ReceivedMessage, "ReceivedMessage" }, // 3145665588
+		{ &Z_Construct_UFunction_UFGGameUI_RemoveAudioMessage, "RemoveAudioMessage" }, // 2947355887
+		{ &Z_Construct_UFunction_UFGGameUI_RemoveInteractWidget, "RemoveInteractWidget" }, // 717939175
+		{ &Z_Construct_UFunction_UFGGameUI_RemovePawnHUD, "RemovePawnHUD" }, // 1598539172
+		{ &Z_Construct_UFunction_UFGGameUI_SetCurrentAudioMessage, "SetCurrentAudioMessage" }, // 4274848158
+		{ &Z_Construct_UFunction_UFGGameUI_SetShowInventory, "SetShowInventory" }, // 2970769690
+		{ &Z_Construct_UFunction_UFGGameUI_SetWindowWantsInventoryAddon, "SetWindowWantsInventoryAddon" }, // 1478131834
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUI_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "UI/FGGameUI.h" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Base class for all inventory widgets, contains a lot of helper functions to extract\ninteresting information buildings" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUI_Statics::NewProp_mMinTimeBetweenAudioMessage_MetaData[] = {
 		{ "Category", "UI" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "How much time must pass between receiving audio messages at least?" },
 	};
 #endif
@@ -1107,7 +1107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUI_Statics::NewProp_mCurrentAudioMessage_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "Message that is being played now ( can be null )" },
 	};
 #endif
@@ -1115,7 +1115,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGGameUI_Statics::NewProp_mInteractWidgetStack_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGGameUI.h" },
+		{ "ModuleRelativePath", "Public/UI/FGGameUI.h" },
 		{ "ToolTip", "A stack with widgets that are currently open" },
 	};
 #endif
@@ -1150,7 +1150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUI, 718008423);
+	IMPLEMENT_CLASS(UFGGameUI, 2692787961);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameUI(Z_Construct_UClass_UFGGameUI, &UFGGameUI::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameUI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameUI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

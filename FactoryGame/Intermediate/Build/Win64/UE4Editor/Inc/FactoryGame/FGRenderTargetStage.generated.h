@@ -16,7 +16,7 @@ class USceneComponent;
 #endif
 #define FACTORYGAME_FGRenderTargetStage_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetRenderTarget) \
 	{ \
@@ -85,7 +85,7 @@ class USceneComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetRenderTarget) \
 	{ \
@@ -154,7 +154,7 @@ class USceneComponent;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGRenderTargetStage(); \
 	friend struct Z_Construct_UClass_AFGRenderTargetStage_Statics; \
@@ -163,7 +163,7 @@ public: \
 	DECLARE_SERIALIZER(AFGRenderTargetStage)
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_INCLASS \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGRenderTargetStage(); \
 	friend struct Z_Construct_UClass_AFGRenderTargetStage_Statics; \
@@ -172,7 +172,7 @@ public: \
 	DECLARE_SERIALIZER(AFGRenderTargetStage)
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGRenderTargetStage(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGRenderTargetStage) \
@@ -185,7 +185,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGRenderTargetStage(AFGRenderTargetStage&&); \
@@ -196,7 +196,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRenderTargetStage); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGRenderTargetStage)
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mDynamicRenderTargetSizeX() { return STRUCT_OFFSET(AFGRenderTargetStage, mDynamicRenderTargetSizeX); } \
 	FORCEINLINE static uint32 __PPO__mDynamicRenderTargetSizeY() { return STRUCT_OFFSET(AFGRenderTargetStage, mDynamicRenderTargetSizeY); } \
 	FORCEINLINE static uint32 __PPO__mDynamicPixelFormat() { return STRUCT_OFFSET(AFGRenderTargetStage, mDynamicPixelFormat); } \
@@ -204,31 +204,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGRenderTargetStage); \
 	FORCEINLINE static uint32 __PPO__mStage() { return STRUCT_OFFSET(AFGRenderTargetStage, mStage); }
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_8_PROLOG
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_8_PROLOG
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_INCLASS \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_INCLASS \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGRenderTargetStage_h_11_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_FGRenderTargetStage_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_FGRenderTargetStage_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

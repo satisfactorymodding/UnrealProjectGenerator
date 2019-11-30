@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGResearchRecipe.h"
+#include "FactoryGame/Public/FGResearchRecipe.h"
 #include "Serialization/ArchiveUObjectFromStructuredArchive.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -77,7 +77,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewStructOps()
@@ -87,7 +87,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Schematics_MetaData[] = {
 		{ "Category", "ResearchRecipeReward" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Schematics = { UE4CodeGen_Private::EPropertyClass::Array, "Schematics", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000014, 1, nullptr, STRUCT_OFFSET(FResearchRecipeReward, Schematics), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Schematics_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Schematics_MetaData)) };
@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_ResearchRecipes_MetaData[] = {
 		{ "Category", "ResearchRecipeReward" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_ResearchRecipes = { UE4CodeGen_Private::EPropertyClass::Array, "ResearchRecipes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0014000000000014, 1, nullptr, STRUCT_OFFSET(FResearchRecipeReward, ResearchRecipes), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_ResearchRecipes_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_ResearchRecipes_MetaData)) };
@@ -103,7 +103,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Products_MetaData[] = {
 		{ "Category", "ResearchRecipeReward" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Products = { UE4CodeGen_Private::EPropertyClass::Array, "Products", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FResearchRecipeReward, Products), METADATA_PARAMS(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Products_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::NewProp_Products_MetaData)) };
@@ -143,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchRecipeReward_CRC() { return 2173216818U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchRecipeReward_CRC() { return 3672038630U; }
 	void UFGResearchRecipe::StaticRegisterNativesUFGResearchRecipe()
 	{
 		UClass* Class = UFGResearchRecipe::StaticClass();
@@ -180,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchRecipe, "GetResearchTime", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGResearchRecipe_eventGetResearchTime_Parms), Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime_Statics::Function_MetaDataParams)) };
@@ -220,7 +220,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchRecipe, "GetResearchTriggerItems", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGResearchRecipe_eventGetResearchTriggerItems_Parms), Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems_Statics::Function_MetaDataParams)) };
@@ -257,7 +257,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchRecipe_GetResearcResults_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", ", TArray<FItemAmount>& out_products, TArray<TSubclassOf<UFGResearchRecipe>>& out_recipes, TArray<TSubclassOf<class UFGSchematic>>& out_schematics" },
 	};
 #endif
@@ -300,7 +300,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchRecipe, "IsResearchRepeatable", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGResearchRecipe_eventIsResearchRepeatable_Parms), Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable_Statics::Function_MetaDataParams)) };
@@ -342,7 +342,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGResearchRecipe, "IsValidResearchRecipeReward", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(FGResearchRecipe_eventIsValidResearchRecipeReward_Parms), Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward_Statics::Function_MetaDataParams)) };
@@ -426,31 +426,31 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGResearchRecipe_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime, "GetResearchTime" }, // 3190318453
-		{ &Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems, "GetResearchTriggerItems" }, // 3054846237
-		{ &Z_Construct_UFunction_UFGResearchRecipe_GetResearcResults, "GetResearcResults" }, // 1862792181
-		{ &Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable, "IsResearchRepeatable" }, // 1004162176
-		{ &Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward, "IsValidResearchRecipeReward" }, // 2767200525
+		{ &Z_Construct_UFunction_UFGResearchRecipe_GetResearchTime, "GetResearchTime" }, // 2558766772
+		{ &Z_Construct_UFunction_UFGResearchRecipe_GetResearchTriggerItems, "GetResearchTriggerItems" }, // 3269242320
+		{ &Z_Construct_UFunction_UFGResearchRecipe_GetResearcResults, "GetResearcResults" }, // 2079083828
+		{ &Z_Construct_UFunction_UFGResearchRecipe_IsResearchRepeatable, "IsResearchRepeatable" }, // 3010297426
+		{ &Z_Construct_UFunction_UFGResearchRecipe_IsValidResearchRecipeReward, "IsValidResearchRecipeReward" }, // 1937952150
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGResearchRecipe.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "SerializeToFArchive", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mAssetBundleData_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "Asset Bundle data computed at save time. In cooked builds this is accessible from AssetRegistry" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mAssetBundleData = { UE4CodeGen_Private::EPropertyClass::Struct, "mAssetBundleData", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGResearchRecipe, mAssetBundleData), Z_Construct_UScriptStruct_FAssetBundleData, METADATA_PARAMS(Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mAssetBundleData_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mAssetBundleData_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mExcludeFromBuild_MetaData[] = {
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "Old property for excluding from build, remove when all UFGResearchRecipe is resaved on main" },
 	};
 #endif
@@ -463,7 +463,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mIncludeInBuilds_MetaData[] = {
 		{ "Category", "Cooking" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "Slightly misleading name, as this doesn't only apply to builds. If set to Never, it won't show up in editor" },
 	};
 #endif
@@ -476,7 +476,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		{ "ClampMax", "9999" },
 		{ "ClampMin", "0" },
 		{ "EditCondition", "!mRewardUsesDropPackage" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "UIMax", "9999" },
 		{ "UIMin", "0" },
 	};
@@ -488,7 +488,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		{ "ClampMax", "9999" },
 		{ "ClampMin", "0" },
 		{ "EditCondition", "!mRewardUsesDropPackage" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "UIMax", "9999" },
 		{ "UIMin", "0" },
 	};
@@ -498,7 +498,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedSchematics_MetaData[] = {
 		{ "Category", "Rewards" },
 		{ "EditCondition", "!mRewardUsesDropPackage" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "What schematics that will be purchased by completing this research" },
 	};
 #endif
@@ -508,7 +508,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mUnlockedResearch_MetaData[] = {
 		{ "Category", "Rewards" },
 		{ "EditCondition", "!mRewardUsesDropPackage" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "What research that will be unlocked in the research tree by completing this research" },
 	};
 #endif
@@ -517,7 +517,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mRewardUsesDropPackage_MetaData[] = {
 		{ "Category", "Rewards" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mRewardUsesDropPackage_SetBit(void* Obj)
@@ -528,7 +528,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mIsRepeatable_MetaData[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "Can this research be completed multiple times?" },
 	};
 #endif
@@ -540,7 +540,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGResearchRecipe_Statics::NewProp_mTriggerItems_MetaData[] = {
 		{ "Category", "Research" },
-		{ "ModuleRelativePath", "FGResearchRecipe.h" },
+		{ "ModuleRelativePath", "Public/FGResearchRecipe.h" },
 		{ "ToolTip", "Items that make this research available once it enters the players inventory" },
 	};
 #endif
@@ -587,7 +587,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGResearchRecipe, 3874173535);
+	IMPLEMENT_CLASS(UFGResearchRecipe, 658184088);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGResearchRecipe(Z_Construct_UClass_UFGResearchRecipe, &UFGResearchRecipe::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGResearchRecipe"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGResearchRecipe);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(UFGResearchRecipe)

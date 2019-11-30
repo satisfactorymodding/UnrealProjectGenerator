@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGVehicleWheel.h"
+#include "FactoryGame/Public/FGVehicleWheel.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -70,14 +70,14 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "FGVehicleWheel.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberStiffness_MetaData[] = {
 		{ "Category", "Wheel" },
 		{ "ClampMin", "1.0" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 		{ "ToolTip", "camber stiffness. measured in radians per kg... or something." },
 		{ "UIMin", "1.0" },
 	};
@@ -86,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxDroop_MetaData[] = {
 		{ "Category", "Wheel" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 		{ "ToolTip", "Wheel camber angle IN DEGREES" },
 	};
 #endif
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtMaxCompression_MetaData[] = {
 		{ "Category", "Wheel" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 		{ "ToolTip", "Wheel camber angle IN DEGREES" },
 	};
 #endif
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mCamberAtRest_MetaData[] = {
 		{ "Category", "Wheel" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 		{ "ToolTip", "Wheel camber angle IN DEGREES" },
 	};
 #endif
@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mAutoGenerateCollisionCylinder_MetaData[] = {
 		{ "Category", "Wheel" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 		{ "ToolTip", "Automatically generates a perfect collision cylinder that matches the wheel's dimensions." },
 	};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGVehicleWheel_Statics::NewProp_mInvertSteering_MetaData[] = {
 		{ "Category", "Wheel" },
-		{ "ModuleRelativePath", "FGVehicleWheel.h" },
+		{ "ModuleRelativePath", "Public/FGVehicleWheel.h" },
 		{ "ToolTip", "Set to true if a rear wheel. This can result in custom functionality for rear wheels." },
 	};
 #endif
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleWheel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleWheel, 2933017861);
+	IMPLEMENT_CLASS(UFGVehicleWheel, 3790392986);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleWheel(Z_Construct_UClass_UFGVehicleWheel, &UFGVehicleWheel::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleWheel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleWheel);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

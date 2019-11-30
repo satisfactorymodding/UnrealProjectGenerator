@@ -17,7 +17,7 @@ class AActor;
 #endif
 #define FACTORYGAME_FGAggroTargetInterface_generated_h
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS \
 	virtual FVector GetAttackLocation_Implementation() const { return FVector(ForceInit); }; \
 	virtual bool IsAlive_Implementation() const { return false; }; \
 	virtual float GetEnemyTargetDesirability_Implementation(AFGEnemyController* forController) { return 0; }; \
@@ -95,7 +95,7 @@ class AActor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual FVector GetAttackLocation_Implementation() const { return FVector(ForceInit); }; \
 	virtual bool IsAlive_Implementation() const { return false; }; \
 	virtual float GetEnemyTargetDesirability_Implementation(AFGEnemyController* forController) { return 0; }; \
@@ -173,7 +173,7 @@ class AActor;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_EVENT_PARMS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_EVENT_PARMS \
 	struct FGAggroTargetInterface_eventGetActor_Parms \
 	{ \
 		AActor* ReturnValue; \
@@ -245,8 +245,8 @@ class AActor;
 	};
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_CALLBACK_WRAPPERS
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_CALLBACK_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGAggroTargetInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAggroTargetInterface) \
@@ -259,7 +259,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UFGAggroTargetInterface(UFGAggroTargetInterface&&); \
@@ -270,7 +270,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGAggroTargetInterface); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGAggroTargetInterface)
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_GENERATED_UINTERFACE_BODY() \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUFGAggroTargetInterface(); \
 	friend struct Z_Construct_UClass_UFGAggroTargetInterface_Statics; \
@@ -279,22 +279,22 @@ public: \
 	DECLARE_SERIALIZER(UFGAggroTargetInterface)
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_GENERATED_UINTERFACE_BODY() \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_GENERATED_UINTERFACE_BODY() \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IFGAggroTargetInterface() {} \
 public: \
@@ -311,7 +311,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IFGAggroTargetInterface() {} \
 public: \
@@ -328,32 +328,32 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_12_PROLOG \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_EVENT_PARMS
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_12_PROLOG \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_EVENT_PARMS
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_25_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_25_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_CALLBACK_WRAPPERS \
-	FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_CALLBACK_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_AI_FGAggroTargetInterface_h
+#define CURRENT_FILE_ID FactoryGame_Source_FactoryGame_Public_AI_FGAggroTargetInterface_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

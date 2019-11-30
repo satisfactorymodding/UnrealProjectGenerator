@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGCharacterMovementComponent.h"
+#include "FactoryGame/Public/FGCharacterMovementComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -39,7 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ECustomMovementMode(ECustomMovementMode_StaticEnum, TEXT("/Script/FactoryGame"), TEXT("ECustomMovementMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_FactoryGame_ECustomMovementMode_CRC() { return 3571910704U; }
+	uint32 Get_Z_Construct_UEnum_FactoryGame_ECustomMovementMode_CRC() { return 2980850799U; }
 	UEnum* Z_Construct_UEnum_FactoryGame_ECustomMovementMode()
 	{
 #if WITH_HOT_RELOAD
@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 				{ "BlueprintType", "true" },
 				{ "CMM_Ladder.DisplayName", "Ladder" },
 				{ "CMM_None.DisplayName", "None" },
-				{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+				{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 				{ "ToolTip", "Custom states we can be in" },
 			};
 #endif
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterMovementComponent_GetIsSprinting_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "Get mIsSprinting" },
 	};
 #endif
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterMovementComponent_GetOnLadder_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Ladder" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "@return The ladder we're climbing on; nullptr if not climbing." },
 	};
 #endif
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterMovementComponent_GetWantsToSprint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "Get mGetWantsToSprint" },
 	};
 #endif
@@ -240,7 +240,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGCharacterMovementComponent_ServerSetHookLocation_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "End UCharacterMovementComponent" },
 	};
 #endif
@@ -319,49 +319,49 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGCharacterMovementComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_GetIsSprinting, "GetIsSprinting" }, // 2898380062
-		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_GetOnLadder, "GetOnLadder" }, // 820459946
-		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_GetWantsToSprint, "GetWantsToSprint" }, // 1168515813
-		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_ServerSetHookLocation, "ServerSetHookLocation" }, // 444790167
+		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_GetIsSprinting, "GetIsSprinting" }, // 111063659
+		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_GetOnLadder, "GetOnLadder" }, // 705184234
+		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_GetWantsToSprint, "GetWantsToSprint" }, // 1556617032
+		{ &Z_Construct_UFunction_UFGCharacterMovementComponent_ServerSetHookLocation, "ServerSetHookLocation" }, // 2649522655
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "FGCharacterMovementComponent.h" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mOnLadder_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "The ladder we're climbing; null if not climbing." },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mOnLadder = { UE4CodeGen_Private::EPropertyClass::Object, "mOnLadder", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000080008, 1, nullptr, STRUCT_OFFSET(UFGCharacterMovementComponent, mOnLadder), Z_Construct_UClass_UFGLadderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mOnLadder_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mOnLadder_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedJumpingStilts_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "A cached instance of the equipment that set our jumping stilts" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedJumpingStilts = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedJumpingStilts", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedJumpingStilts), Z_Construct_UClass_AFGJumpingStilts_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedJumpingStilts_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedJumpingStilts_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedHookshot_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "A cached instance of the equipment that set our hookshot location" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedHookshot = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedHookshot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedHookshot), Z_Construct_UClass_AFGHookshot_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedHookshot_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedHookshot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedParachute_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "A cached instance of the equipment that issued parachuting" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedParachute = { UE4CodeGen_Private::EPropertyClass::Object, "mCachedParachute", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000000, 1, nullptr, STRUCT_OFFSET(UFGCharacterMovementComponent, mCachedParachute), Z_Construct_UClass_AFGParachute_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedParachute_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedParachute_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mCachedJetPack_MetaData[] = {
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "A cached instance of the equipment that issued jet pack thrust" },
 	};
 #endif
@@ -369,7 +369,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mJumpOffLadderVelocity_MetaData[] = {
 		{ "Category", "Ladder" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "Force to apply when jumping off a ladder." },
 	};
 #endif
@@ -377,7 +377,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mSprintMinDotResult_MetaData[] = {
 		{ "Category", "Sprint" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "The minimum dot value between velocity and character forward to allow sprint." },
 	};
 #endif
@@ -385,7 +385,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mMaxSprintSpeed_MetaData[] = {
 		{ "Category", "Sprint" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "The speed at witch a character sprints //ReadWrite is only to enable blueprint prototoyping of shit." },
 	};
 #endif
@@ -393,7 +393,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mClimbSpeed_MetaData[] = {
 		{ "Category", "Sprint" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "The speed at which a character climbs ladders" },
 	};
 #endif
@@ -401,7 +401,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mIsParachuting_MetaData[] = {
 		{ "Category", "JetPack" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "If true, try to parachuting on next update. If false, try to stop parachuting on next update." },
 	};
 #endif
@@ -413,7 +413,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGCharacterMovementComponent_Statics::NewProp_mLastJumpTimeStamp_MetaData[] = {
 		{ "Category", "Jump" },
-		{ "ModuleRelativePath", "FGCharacterMovementComponent.h" },
+		{ "ModuleRelativePath", "Public/FGCharacterMovementComponent.h" },
 		{ "ToolTip", "Timestamp of last time we jumped" },
 	};
 #endif
@@ -454,7 +454,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCharacterMovementComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCharacterMovementComponent, 3231325336);
+	IMPLEMENT_CLASS(UFGCharacterMovementComponent, 1135409262);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCharacterMovementComponent(Z_Construct_UClass_UFGCharacterMovementComponent, &UFGCharacterMovementComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCharacterMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCharacterMovementComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

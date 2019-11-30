@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGColoredInstanceMeshProxy.h"
+#include "FactoryGame/Public/FGColoredInstanceMeshProxy.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -57,13 +57,13 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 		{ "HideCategories", "Object Activation Components|Activation Trigger" },
 		{ "IncludePath", "FGColoredInstanceMeshProxy.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "FGColoredInstanceMeshProxy.h" },
+		{ "ModuleRelativePath", "Public/FGColoredInstanceMeshProxy.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_MetaData[] = {
 		{ "Category", "FGColoredInstanceMeshProxy" },
-		{ "ModuleRelativePath", "FGColoredInstanceMeshProxy.h" },
+		{ "ModuleRelativePath", "Public/FGColoredInstanceMeshProxy.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mBlockInstancing_SetBit(void* Obj)
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_MetaData[] = {
 		{ "Category", "FGColoredInstanceMeshProxy" },
-		{ "ModuleRelativePath", "FGColoredInstanceMeshProxy.h" },
+		{ "ModuleRelativePath", "Public/FGColoredInstanceMeshProxy.h" },
 	};
 #endif
 	void Z_Construct_UClass_UFGColoredInstanceMeshProxy_Statics::NewProp_mCanBecolored_SetBit(void* Obj)
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColoredInstanceMeshProxy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 4080311401);
+	IMPLEMENT_CLASS(UFGColoredInstanceMeshProxy, 3747531192);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColoredInstanceMeshProxy(Z_Construct_UClass_UFGColoredInstanceMeshProxy, &UFGColoredInstanceMeshProxy::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColoredInstanceMeshProxy"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColoredInstanceMeshProxy);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/Buildables/FGBuildableRailroadSignal.h"
+#include "FactoryGame/Public/Buildables/FGBuildableRailroadSignal.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGBuildableRailroadSignal_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Buildables/FGBuildableRailroadSignal.h" },
-		{ "ModuleRelativePath", "Buildables/FGBuildableRailroadSignal.h" },
+		{ "ModuleRelativePath", "Public/Buildables/FGBuildableRailroadSignal.h" },
 		{ "ToolTip", "A signal for the railroad, these are placed on connection points and separate access to tracks by block signaling." },
 	};
 #endif
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildableRailroadSignal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 2178451348);
+	IMPLEMENT_CLASS(AFGBuildableRailroadSignal, 3427443434);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildableRailroadSignal(Z_Construct_UClass_AFGBuildableRailroadSignal, &AFGBuildableRailroadSignal::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildableRailroadSignal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildableRailroadSignal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

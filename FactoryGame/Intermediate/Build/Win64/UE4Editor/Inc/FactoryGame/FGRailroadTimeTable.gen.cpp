@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/FGRailroadTimeTable.h"
+#include "FactoryGame/Public/FGRailroadTimeTable.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -70,7 +70,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTimeTableStop_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "A stop entry in the time table." },
 	};
 #endif
@@ -81,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Duration_MetaData[] = {
 		{ "Category", "TimeTableStop" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Time to stay." },
 	};
 #endif
@@ -89,7 +89,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTimeTableStop_Statics::NewProp_Station_MetaData[] = {
 		{ "Category", "TimeTableStop" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Where to stop." },
 	};
 #endif
@@ -125,7 +125,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTimeTableStop_CRC() { return 4009315545U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTimeTableStop_CRC() { return 136077115U; }
 	void AFGRailroadTimeTable::StaticRegisterNativesAFGRailroadTimeTable()
 	{
 		UClass* Class = AFGRailroadTimeTable::StaticClass();
@@ -185,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_AddStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Add a stop to the time table." },
 	};
 #endif
@@ -219,7 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "@return Current stop the train is at or heading to." },
 	};
 #endif
@@ -253,7 +253,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get the number of stops." },
 	};
 #endif
@@ -287,7 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get the number of stops." },
 	};
 #endif
@@ -325,7 +325,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get the given stop.\n@return The stop at index, valid or invalid. If the index is invalid it returns an empty stop." },
 	};
 #endif
@@ -362,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_GetStops_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Get all stops in the time table." },
 	};
 #endif
@@ -386,7 +386,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Increment the current stop to the next one in order." },
 	};
 #endif
@@ -429,7 +429,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Is the index a valid stop.\nChecks if the index is valid and the 'Stop' actor is valid." },
 	};
 #endif
@@ -463,7 +463,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Remove a stop from the time table." },
 	};
 #endif
@@ -497,7 +497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "@param index Set the stop the train is heading to." },
 	};
 #endif
@@ -551,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFGRailroadTimeTable_SetStops_Statics::Function_MetaDataParams[] = {
 		{ "Category", "FactoryGame|Railroad|TimeTable" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Set all stops in the time table." },
 	};
 #endif
@@ -595,38 +595,38 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFGRailroadTimeTable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_AddStop, "AddStop" }, // 1689511582
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop, "GetCurrentStop" }, // 3416755627
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops, "GetMaxNumStops" }, // 3697530272
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops, "GetNumStops" }, // 1182107962
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStop, "GetStop" }, // 592278944
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStops, "GetStops" }, // 1672221149
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop, "IncrementCurrentStop" }, // 4225054399
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop, "IsValidStop" }, // 2889363042
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop, "RemoveStop" }, // 2630993500
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop, "SetCurrentStop" }, // 25312437
-		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetStops, "SetStops" }, // 3496785460
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_AddStop, "AddStop" }, // 433451827
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetCurrentStop, "GetCurrentStop" }, // 3282072271
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetMaxNumStops, "GetMaxNumStops" }, // 2416292665
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetNumStops, "GetNumStops" }, // 2270537188
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStop, "GetStop" }, // 117364059
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_GetStops, "GetStops" }, // 298176501
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IncrementCurrentStop, "IncrementCurrentStop" }, // 3675173674
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_IsValidStop, "IsValidStop" }, // 101306113
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_RemoveStop, "RemoveStop" }, // 2381149896
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetCurrentStop, "SetCurrentStop" }, // 1567961305
+		{ &Z_Construct_UFunction_AFGRailroadTimeTable_SetStops, "SetStops" }, // 1071767179
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTimeTable_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "HideCategories", "Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "FGRailroadTimeTable.h" },
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 		{ "ToolTip", "Object containing a trains time table and where it is right now." },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Current stop the train is at or heading to." },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop = { UE4CodeGen_Private::EPropertyClass::Int, "mCurrentStop", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000001000000, 1, nullptr, STRUCT_OFFSET(AFGRailroadTimeTable, mCurrentStop), METADATA_PARAMS(Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mCurrentStop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFGRailroadTimeTable_Statics::NewProp_mStops_MetaData[] = {
-		{ "ModuleRelativePath", "FGRailroadTimeTable.h" },
+		{ "ModuleRelativePath", "Public/FGRailroadTimeTable.h" },
 		{ "ToolTip", "Array of destinations this train will visit." },
 	};
 #endif
@@ -663,7 +663,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRailroadTimeTable, 2616782661);
+	IMPLEMENT_CLASS(AFGRailroadTimeTable, 2378627866);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRailroadTimeTable(Z_Construct_UClass_AFGRailroadTimeTable, &AFGRailroadTimeTable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRailroadTimeTable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRailroadTimeTable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

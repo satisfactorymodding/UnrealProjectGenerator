@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FactoryGame/UI/FGMenuBase.h"
+#include "FactoryGame/Public/UI/FGMenuBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMenuBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuEnter", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMenuBase_eventOnMenuEnter_Parms), Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnter_Statics::Function_MetaDataParams)) };
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMenuBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuEnterDone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone_Statics::Function_MetaDataParams)) };
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMenuBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuExit", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(FGMenuBase_eventOnMenuExit_Parms), Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExit_Statics::Function_MetaDataParams)) };
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMenuBase.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGMenuBase, "OnMenuExitDone", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone_Statics::Function_MetaDataParams)) };
@@ -196,23 +196,23 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FactoryGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGMenuBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnter, "OnMenuEnter" }, // 1588456578
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone, "OnMenuEnterDone" }, // 2908973815
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExit, "OnMenuExit" }, // 2004887834
-		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone, "OnMenuExitDone" }, // 2191460505
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnter, "OnMenuEnter" }, // 3899391062
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuEnterDone, "OnMenuEnterDone" }, // 1937772106
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExit, "OnMenuExit" }, // 2672701680
+		{ &Z_Construct_UFunction_UFGMenuBase_OnMenuExitDone, "OnMenuExitDone" }, // 1126433873
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMenuBase_Statics::Class_MetaDataParams[] = {
 		{ "DisableNativeTick", "" },
 		{ "IncludePath", "UI/FGMenuBase.h" },
-		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMenuBase.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGMenuBase_Statics::NewProp_mCachedOwner_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "UI/FGMenuBase.h" },
+		{ "ModuleRelativePath", "Public/UI/FGMenuBase.h" },
 		{ "ToolTip", "Cached switcher owning this widget" },
 	};
 #endif
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMenuBase, 631468625);
+	IMPLEMENT_CLASS(UFGMenuBase, 3689594913);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMenuBase(Z_Construct_UClass_UFGMenuBase, &UFGMenuBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMenuBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMenuBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
