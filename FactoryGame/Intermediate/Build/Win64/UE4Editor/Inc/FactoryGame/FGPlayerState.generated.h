@@ -26,12 +26,12 @@ struct FUniqueNetIdRepl;
 
 #define FactoryGame_Source_FactoryGame_FGPlayerState_h_53_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMessageData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGPlayerState_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSlotData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGPlayerState_h_21_DELEGATE \

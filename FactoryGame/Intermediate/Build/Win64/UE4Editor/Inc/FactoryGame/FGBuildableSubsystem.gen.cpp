@@ -143,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableBucket
 		&NewStructOps,
 		"BuildableBucket",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FBuildableBucket),
 		alignof(FBuildableBucket),
 		Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuildableBucket_Statics::PropPointers),
@@ -164,7 +164,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuildableBucket
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC() { return 2499527268U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBuildableBucket_CRC() { return 1022751061U; }
 class UScriptStruct* FDistanceBasedTickRate::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -235,7 +235,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		&NewStructOps,
 		"DistanceBasedTickRate",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FDistanceBasedTickRate),
 		alignof(FDistanceBasedTickRate),
 		Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics::PropPointers),
@@ -256,7 +256,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDistanceBasedTickR
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC() { return 60028849U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDistanceBasedTickRate_CRC() { return 3746801450U; }
 	void AFGBuildableSubsystem::StaticRegisterNativesAFGBuildableSubsystem()
 	{
 		UClass* Class = AFGBuildableSubsystem::StaticClass();

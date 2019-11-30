@@ -13,7 +13,7 @@
 DECLARE_DYNAMIC_DELEGATE( FAudioMessageConcludedDelegate );
 
 USTRUCT( BlueprintType )
-struct FAudioSubtitlePair
+struct FACTORYGAME_API FAudioSubtitlePair
 {
 	GENERATED_BODY()
 

@@ -137,7 +137,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 		&NewStructOps,
 		"FootstepEffectWater",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFootstepEffectWater),
 		alignof(FFootstepEffectWater),
 		Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffectWater_Statics::PropPointers),
@@ -158,7 +158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectWate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectWater_CRC() { return 2846527861U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectWater_CRC() { return 534499993U; }
 class UScriptStruct* FFootstepEffectSurface::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -231,7 +231,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 		&NewStructOps,
 		"FootstepEffectSurface",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFootstepEffectSurface),
 		alignof(FFootstepEffectSurface),
 		Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffectSurface_Statics::PropPointers),
@@ -252,7 +252,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffectSurf
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectSurface_CRC() { return 3462535371U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffectSurface_CRC() { return 312625232U; }
 class UScriptStruct* FFootstepEffect::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -324,7 +324,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		&NewStructOps,
 		"FootstepEffect",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFootstepEffect),
 		alignof(FFootstepEffect),
 		Z_Construct_UScriptStruct_FFootstepEffect_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFootstepEffect_Statics::PropPointers),
@@ -345,7 +345,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_CRC() { return 2333028783U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFootstepEffect_CRC() { return 2781219026U; }
 	static FName NAME_AFGCharacterBase_CalculateFallDamage = FName(TEXT("CalculateFallDamage"));
 	int32 AFGCharacterBase::CalculateFallDamage(float zSpeed) const
 	{
@@ -2115,7 +2115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCharacterBase_Statics::ClassParams = {
 		&AFGCharacterBase::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGCharacterBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterBase_Statics::PropPointers),
 		nullptr,
@@ -2132,7 +2132,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFootstepEffect
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterBase, 1544613043);
+	IMPLEMENT_CLASS(AFGCharacterBase, 2299658678);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCharacterBase(Z_Construct_UClass_AFGCharacterBase, &AFGCharacterBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCharacterBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCharacterBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

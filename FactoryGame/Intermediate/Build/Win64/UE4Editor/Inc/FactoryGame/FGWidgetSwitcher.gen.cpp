@@ -288,7 +288,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWidgetSwitcher_Statics::ClassParams = {
 		&UFGWidgetSwitcher::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
+		0x00B000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGWidgetSwitcher_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetSwitcher_Statics::PropPointers),
 		nullptr,
@@ -305,7 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetSwitcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetSwitcher, 2533001755);
+	IMPLEMENT_CLASS(UFGWidgetSwitcher, 345047247);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWidgetSwitcher(Z_Construct_UClass_UFGWidgetSwitcher, &UFGWidgetSwitcher::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWidgetSwitcher"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWidgetSwitcher);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

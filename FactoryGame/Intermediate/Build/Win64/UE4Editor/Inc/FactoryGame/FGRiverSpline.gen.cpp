@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRiverSpline_Statics::ClassParams = {
 		&AFGRiverSpline::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRiverSpline_Statics::PropPointers),
 		nullptr,
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRiverSpline() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRiverSpline, 2939056333);
+	IMPLEMENT_CLASS(AFGRiverSpline, 2275134291);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRiverSpline(Z_Construct_UClass_AFGRiverSpline, &AFGRiverSpline::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRiverSpline"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRiverSpline);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,4 +5,6 @@
 FFoundationSideSelectionFlags::FFoundationSideSelectionFlags(){ }
 FFoundationSideSelectionFlags::FFoundationSideSelectionFlags( bool defaults){ }
 FFoundationSideSelectionFlags FFoundationSideSelectionFlags::RotateEdges( int32 steps) const{ return FFoundationSideSelectionFlags(); }
+const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::NoEdges = FFoundationSideSelectionFlags();
+const FFoundationSideSelectionFlags FFoundationSideSelectionFlags::AllEdges = FFoundationSideSelectionFlags();
 AFGBuildableFactoryBuilding::AFGBuildableFactoryBuilding(){ }

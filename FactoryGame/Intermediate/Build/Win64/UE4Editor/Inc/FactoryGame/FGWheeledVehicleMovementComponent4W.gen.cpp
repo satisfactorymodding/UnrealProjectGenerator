@@ -238,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::ClassParams = {
 		&UFGWheeledVehicleMovementComponent4W::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W_Statics::PropPointers),
 		"Engine",
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWheeledVehicleMovementComponent4W() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 1633439633);
+	IMPLEMENT_CLASS(UFGWheeledVehicleMovementComponent4W, 3337247975);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWheeledVehicleMovementComponent4W(Z_Construct_UClass_UFGWheeledVehicleMovementComponent4W, &UFGWheeledVehicleMovementComponent4W::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWheeledVehicleMovementComponent4W"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWheeledVehicleMovementComponent4W);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

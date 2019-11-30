@@ -5,7 +5,7 @@
 #include "FGPlanet.generated.h"
 
 UCLASS()
-class AFGPlanet : public AActor
+class FACTORYGAME_API AFGPlanet : public AActor
 {
 	GENERATED_BODY()
 public:

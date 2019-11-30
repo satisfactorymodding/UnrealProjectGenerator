@@ -22,7 +22,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnBuildableConstructedGlobal, AFGB
 
 /** Distances where we switch tick rate */
 USTRUCT( BlueprintType )
-struct FDistanceBasedTickRate
+struct FACTORYGAME_API FDistanceBasedTickRate
 {
 	GENERATED_BODY()
 
@@ -34,7 +34,7 @@ struct FDistanceBasedTickRate
 };
 
 USTRUCT()
-struct FBuildableBucket
+struct FACTORYGAME_API FBuildableBucket
 {
 	GENERATED_BODY()
 

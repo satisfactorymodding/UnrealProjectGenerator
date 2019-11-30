@@ -210,7 +210,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGGameNetworkError
 		&NewStructOps,
 		"FGGameNetworkErrorMsg",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFGGameNetworkErrorMsg),
 		alignof(FFGGameNetworkErrorMsg),
 		Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics::PropPointers),
@@ -231,7 +231,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGGameNetworkError
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC() { return 3166577420U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_CRC() { return 1618899863U; }
 class UScriptStruct* FFGModPackage::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -342,7 +342,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGModPackage
 		&NewStructOps,
 		"FGModPackage",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFGModPackage),
 		alignof(FFGModPackage),
 		Z_Construct_UScriptStruct_FFGModPackage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGModPackage_Statics::PropPointers),
@@ -363,7 +363,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGModPackage
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGModPackage_CRC() { return 3025319314U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGModPackage_CRC() { return 3671500902U; }
 class UScriptStruct* FOnJoinSessionData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -420,7 +420,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		&NewStructOps,
 		"OnJoinSessionData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FOnJoinSessionData),
 		alignof(FOnJoinSessionData),
 		Z_Construct_UScriptStruct_FOnJoinSessionData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FOnJoinSessionData_Statics::PropPointers),
@@ -441,7 +441,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOnJoinSessionData_CRC() { return 75235556U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOnJoinSessionData_CRC() { return 1207712153U; }
 	void UFGGameInstance::StaticRegisterNativesUFGGameInstance()
 	{
 		UClass* Class = UFGGameInstance::StaticClass();
@@ -1132,7 +1132,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameInstance_Statics::ClassParams = {
 		&UFGGameInstance::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000ACu,
+		0x009000ACu,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGGameInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGGameInstance_Statics::PropPointers),
 		"Game",
@@ -1149,7 +1149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnJoinSessionData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameInstance, 2910851929);
+	IMPLEMENT_CLASS(UFGGameInstance, 4264673257);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameInstance(Z_Construct_UClass_UFGGameInstance, &UFGGameInstance::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameInstance"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameInstance);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

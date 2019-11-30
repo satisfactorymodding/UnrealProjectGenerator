@@ -73,7 +73,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		&NewStructOps,
 		"SharedInventoryStatePtr",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSharedInventoryStatePtr),
 		alignof(FSharedInventoryStatePtr),
 		Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSharedInventoryStatePtr_Statics::PropPointers),
@@ -94,7 +94,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSharedInventorySta
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC() { return 4277274023U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSharedInventoryStatePtr_CRC() { return 3256329690U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

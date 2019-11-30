@@ -19,7 +19,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FInventoryResized, int32, oldSize,
  * E.g. a weapon is of type 'Desc_NailGun' and has the state '9 nail loaded'.
  */
 USTRUCT( BlueprintType )
-struct FInventoryItem
+struct FACTORYGAME_API FInventoryItem
 {
 	GENERATED_BODY()
 public:
@@ -53,7 +53,7 @@ FORCEINLINE FString VarToFString( FInventoryItem var ){ return FString::Printf( 
 
 /** Enable custom serialization of FInventoryItem */
 template<>
-struct TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2< FInventoryItem >
+struct FACTORYGAME_API TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2< FInventoryItem >
 {
 	enum
 	{
@@ -70,7 +70,7 @@ struct TStructOpsTypeTraits< FInventoryItem > : public TStructOpsTypeTraitsBase2
  * Note that single items in the inventory is described as a stack with 1 item.
  */
 USTRUCT( BlueprintType )
-struct FInventoryStack
+struct FACTORYGAME_API FInventoryStack
 {
 	GENERATED_BODY()
 public:
@@ -96,7 +96,7 @@ public:
 FORCEINLINE bool IsValidForLoad( const FInventoryStack& element ){ return element.Item.ItemClass != nullptr; }
 
 template<>
-struct TStructOpsTypeTraits<FInventoryStack> : public TStructOpsTypeTraitsBase2<FInventoryStack>
+struct FACTORYGAME_API TStructOpsTypeTraits<FInventoryStack> : public TStructOpsTypeTraitsBase2<FInventoryStack>
 {
 	enum
 	{
@@ -120,7 +120,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams( FOnItemRemoved, TSubclassOf< UFGIt
  * The outer object of this object needs to implement GetWorld
  */
 UCLASS( BlueprintType, ClassGroup = ( Custom ), meta = ( BlueprintSpawnableComponent ) )
-class UFGInventoryComponent : public UActorComponent, public IFGSaveInterface
+class FACTORYGAME_API UFGInventoryComponent : public UActorComponent, public IFGSaveInterface
 {
 	GENERATED_BODY()
 public:

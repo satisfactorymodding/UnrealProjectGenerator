@@ -406,7 +406,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGDropPod_Statics::ClassParams = {
 		&AFGDropPod::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGDropPod_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGDropPod_Statics::PropPointers),
 		nullptr,
@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDropPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDropPod, 1432682175);
+	IMPLEMENT_CLASS(AFGDropPod, 369307681);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDropPod(Z_Construct_UClass_AFGDropPod, &AFGDropPod::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDropPod"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDropPod);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

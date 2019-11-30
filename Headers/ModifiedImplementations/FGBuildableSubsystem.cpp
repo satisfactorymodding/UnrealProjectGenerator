@@ -39,4 +39,3 @@ FColor AFGBuildableSubsystem::getColorSlotSecondary( uint8 index){ return FColor
 FLinearColor AFGBuildableSubsystem::GetColorSlotPrimaryLinear( uint8 index){ return FLinearColor(); }
 FLinearColor AFGBuildableSubsystem::GetColorSlotSecondaryLinear( uint8 index){ return FLinearColor(); }
 UFGColoredInstanceManager* AFGBuildableSubsystem::GetColoredInstanceManager(  UFGColoredInstanceMeshProxy* proxy){ return nullptr; }
-bool AFGBuildableSubsystem::IsBasedOn( const UMaterialInterface* instance, const UMaterial* base){ return bool(); }

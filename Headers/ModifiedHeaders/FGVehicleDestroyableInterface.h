@@ -12,7 +12,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGVehicleDestroyableInterface : public UInterface
+class FACTORYGAME_API UFGVehicleDestroyableInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -22,7 +22,7 @@ class UFGVehicleDestroyableInterface : public UInterface
 /**
  * Actors attached that implement this interface can be destroyed by a vehicle running over it.
  */
-class IFGVehicleDestroyableInterface
+class FACTORYGAME_API IFGVehicleDestroyableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

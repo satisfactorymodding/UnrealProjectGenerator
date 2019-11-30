@@ -10,7 +10,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FMaterialAndSlotName
+struct FACTORYGAME_API FMaterialAndSlotName
 {
 	GENERATED_BODY()
 public:
@@ -53,7 +53,7 @@ protected:
 };
 
 UCLASS()
-class AFGSuitBaseAttachment : public AFGEquipmentAttachment
+class FACTORYGAME_API AFGSuitBaseAttachment : public AFGEquipmentAttachment
 {
 	GENERATED_BODY()
 

@@ -17,7 +17,7 @@ struct FPoleHeightMesh;
 
 #define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPoleHeightMesh_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Resources_FGPoleDescriptor_h_38_RPC_WRAPPERS \

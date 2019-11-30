@@ -95,7 +95,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		&NewStructOps,
 		"ConnectionAlwaysRelevant_NodePair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FConnectionAlwaysRelevant_NodePair),
 		alignof(FConnectionAlwaysRelevant_NodePair),
 		Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_Statics::PropPointers),
@@ -116,7 +116,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_CRC() { return 135713138U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionAlwaysRelevant_NodePair_CRC() { return 1053385460U; }
 	void UFGReplicationGraph::StaticRegisterNativesUFGReplicationGraph()
 	{
 	}
@@ -314,7 +314,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection_Statics::ClassParams = {
 		&UFGReplicationGraphNode_AlwaysRelevant_ForConnection::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A8u,
+		0x001000A8u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -331,7 +331,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionAlwaysRe
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGReplicationGraphNode_AlwaysRelevant_ForConnection, 2039876621);
+	IMPLEMENT_CLASS(UFGReplicationGraphNode_AlwaysRelevant_ForConnection, 389193339);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection(Z_Construct_UClass_UFGReplicationGraphNode_AlwaysRelevant_ForConnection, &UFGReplicationGraphNode_AlwaysRelevant_ForConnection::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGReplicationGraphNode_AlwaysRelevant_ForConnection"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGReplicationGraphNode_AlwaysRelevant_ForConnection);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

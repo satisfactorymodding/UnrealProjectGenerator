@@ -16,7 +16,7 @@ class USplineComponent;
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRailroadTrackPosition_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableRailroadTrack_h_91_RPC_WRAPPERS \

@@ -142,7 +142,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 		&NewStructOps,
 		"SessionSaveStruct",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSessionSaveStruct),
 		alignof(FSessionSaveStruct),
 		Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSessionSaveStruct_Statics::PropPointers),
@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSessionSaveStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSessionSaveStruct_CRC() { return 721687311U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSessionSaveStruct_CRC() { return 1753492082U; }
 class UScriptStruct* FMapRedirector::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -233,7 +233,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 		&NewStructOps,
 		"MapRedirector",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FMapRedirector),
 		alignof(FMapRedirector),
 		Z_Construct_UScriptStruct_FMapRedirector_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapRedirector_Statics::PropPointers),
@@ -254,7 +254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapRedirector
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMapRedirector_CRC() { return 3297388858U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMapRedirector_CRC() { return 1859232379U; }
 class UScriptStruct* FSaveHeader::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -298,7 +298,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		&NewStructOps,
 		"SaveHeader",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSaveHeader),
 		alignof(FSaveHeader),
 		nullptr, 0,
@@ -319,7 +319,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSaveHeader_CRC() { return 3866905403U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSaveHeader_CRC() { return 1394760410U; }
 	void UFGSaveSystem::StaticRegisterNativesUFGSaveSystem()
 	{
 		UClass* Class = UFGSaveSystem::StaticClass();
@@ -702,7 +702,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSaveSystem_Statics::ClassParams = {
 		&UFGSaveSystem::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A4u,
+		0x001000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGSaveSystem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSaveSystem_Statics::PropPointers),
 		"Engine",
@@ -719,7 +719,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSaveHeader
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveSystem, 4217433143);
+	IMPLEMENT_CLASS(UFGSaveSystem, 3496961593);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveSystem(Z_Construct_UClass_UFGSaveSystem, &UFGSaveSystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveSystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveSystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

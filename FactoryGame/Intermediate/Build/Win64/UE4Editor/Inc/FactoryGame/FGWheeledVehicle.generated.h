@@ -29,32 +29,32 @@ class UAkAudioEvent;
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_125_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FReplicatedAddedVelocitiesState_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_93_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireParticleCollection_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_78_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FParticleTemplatePair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_66_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSurfaceParticlePair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_51_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireTrackDecalDetails_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_25_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTireData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWheeledVehicle_h_18_DELEGATE \

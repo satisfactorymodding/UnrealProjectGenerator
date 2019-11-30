@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 		&NewStructOps,
 		"FGKeyMapping",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFGKeyMapping),
 		alignof(FFGKeyMapping),
 		Z_Construct_UScriptStruct_FFGKeyMapping_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGKeyMapping_Statics::PropPointers),
@@ -149,7 +149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGKeyMapping
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGKeyMapping_CRC() { return 3264108970U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGKeyMapping_CRC() { return 2886354014U; }
 	void UFGInputLibrary::StaticRegisterNativesUFGInputLibrary()
 	{
 		UClass* Class = UFGInputLibrary::StaticClass();

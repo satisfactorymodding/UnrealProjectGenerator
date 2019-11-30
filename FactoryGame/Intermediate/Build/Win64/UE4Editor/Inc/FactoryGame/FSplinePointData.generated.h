@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FSplinePointData_h_9_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSplinePointData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #undef CURRENT_FILE_ID

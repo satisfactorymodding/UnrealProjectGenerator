@@ -46,7 +46,7 @@ bool SAVE_CLASS::ShouldSave_Implementation() const { return true; }
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGSaveInterface : public UInterface
+class FACTORYGAME_API UFGSaveInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -56,7 +56,7 @@ class UFGSaveInterface : public UInterface
 /**
 * @brief If you want your actor to be saved, implement this!
 */
-class IFGSaveInterface
+class FACTORYGAME_API IFGSaveInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

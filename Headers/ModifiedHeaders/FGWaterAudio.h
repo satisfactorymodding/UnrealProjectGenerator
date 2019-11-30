@@ -6,7 +6,7 @@
 #include "FGWaterAudio.generated.h"
 
 USTRUCT( BlueprintType )
-struct FPawnImpactAudio
+struct FACTORYGAME_API FPawnImpactAudio
 {
 	GENERATED_BODY()
 
@@ -20,7 +20,7 @@ struct FPawnImpactAudio
 };
 
 UCLASS(Abstract,Blueprintable)
-class UFGWaterAudio : public UObject
+class FACTORYGAME_API UFGWaterAudio : public UObject
 {
 	GENERATED_BODY()
 public:

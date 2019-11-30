@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerStartTradingPost() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPlayerStartTradingPost_Statics::ClassParams = {
 		&AFGPlayerStartTradingPost::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerStartTradingPost() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 1268319631);
+	IMPLEMENT_CLASS(AFGPlayerStartTradingPost, 789637849);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerStartTradingPost(Z_Construct_UClass_AFGPlayerStartTradingPost, &AFGPlayerStartTradingPost::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerStartTradingPost"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerStartTradingPost);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -139,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttackRanged() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttackRanged, 4114408048);
+	IMPLEMENT_CLASS(UFGAttackRanged, 1431163015);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttackRanged(Z_Construct_UClass_UFGAttackRanged, &UFGAttackRanged::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttackRanged"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttackRanged);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

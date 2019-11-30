@@ -24,17 +24,17 @@ class AFGResearchManager;
 
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_91_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCompletedResearch_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_67_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchTime_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchCost_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGResearchManager_h_19_DELEGATE \

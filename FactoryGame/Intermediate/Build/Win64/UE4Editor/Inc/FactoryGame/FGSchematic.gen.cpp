@@ -226,7 +226,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		&NewStructOps,
 		"MultipleItemStruct",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FMultipleItemStruct),
 		alignof(FMultipleItemStruct),
 		Z_Construct_UScriptStruct_FMultipleItemStruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMultipleItemStruct_Statics::PropPointers),
@@ -247,7 +247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMultipleItemStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMultipleItemStruct_CRC() { return 1073217039U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMultipleItemStruct_CRC() { return 2323341287U; }
 	void UFGSchematic::StaticRegisterNativesUFGSchematic()
 	{
 		UClass* Class = UFGSchematic::StaticClass();

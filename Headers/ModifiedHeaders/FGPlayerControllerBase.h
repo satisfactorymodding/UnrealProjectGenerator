@@ -12,7 +12,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnInputChanged );
 
 UCLASS()
-class AFGPlayerControllerBase : public APlayerController
+class FACTORYGAME_API AFGPlayerControllerBase : public APlayerController
 {
 	GENERATED_BODY()
 public:

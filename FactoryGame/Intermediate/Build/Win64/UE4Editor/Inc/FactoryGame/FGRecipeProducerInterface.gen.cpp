@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRecipeProducerInterface_Statics::ClassParams = {
 		&UFGRecipeProducerInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeProducerInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 406059334);
+	IMPLEMENT_CLASS(UFGRecipeProducerInterface, 1887015239);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRecipeProducerInterface(Z_Construct_UClass_UFGRecipeProducerInterface, &UFGRecipeProducerInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRecipeProducerInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRecipeProducerInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

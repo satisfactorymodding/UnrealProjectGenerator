@@ -898,7 +898,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInventoryLibrary_Statics::ClassParams = {
 		&UFGInventoryLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -915,7 +915,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryLibrary, 1444165876);
+	IMPLEMENT_CLASS(UFGInventoryLibrary, 3632675);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryLibrary(Z_Construct_UClass_UFGInventoryLibrary, &UFGInventoryLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

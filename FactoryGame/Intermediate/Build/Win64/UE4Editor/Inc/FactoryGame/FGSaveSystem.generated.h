@@ -18,22 +18,22 @@ class UFGSaveSystem;
 #endif
 #define FACTORYGAME_FGSaveSystem_generated_h
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_139_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_140_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSessionSaveStruct_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_125_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_126_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMapRedirector_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_37_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_38_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSaveHeader_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDeleteSave) \
 	{ \
@@ -101,7 +101,7 @@ class UFGSaveSystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDeleteSave) \
 	{ \
@@ -169,7 +169,7 @@ class UFGSaveSystem;
 	}
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFGSaveSystem(); \
 	friend struct Z_Construct_UClass_UFGSaveSystem_Statics; \
@@ -180,7 +180,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_INCLASS \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_INCLASS \
 private: \
 	static void StaticRegisterNativesUFGSaveSystem(); \
 	friend struct Z_Construct_UClass_UFGSaveSystem_Statics; \
@@ -191,7 +191,7 @@ public: \
 
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSaveSystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSaveSystem) \
@@ -204,7 +204,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFGSaveSystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -217,29 +217,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFGSaveSystem); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFGSaveSystem)
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mMapRedirectors() { return STRUCT_OFFSET(UFGSaveSystem, mMapRedirectors); }
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_159_PROLOG
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_160_PROLOG
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_INCLASS \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_INCLASS \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_FGSaveSystem_h_162_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_FGSaveSystem_h_163_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

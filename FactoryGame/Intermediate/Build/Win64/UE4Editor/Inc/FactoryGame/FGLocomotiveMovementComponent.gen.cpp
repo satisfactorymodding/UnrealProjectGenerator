@@ -154,7 +154,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadVehicleInp
 		&NewStructOps,
 		"RailroadVehicleInputRate",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FRailroadVehicleInputRate),
 		alignof(FRailroadVehicleInputRate),
 		Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRailroadVehicleInputRate_Statics::PropPointers),
@@ -175,7 +175,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRailroadVehicleInp
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRailroadVehicleInputRate_CRC() { return 1213367442U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRailroadVehicleInputRate_CRC() { return 2692309342U; }
 class UScriptStruct* FReplicatedRailroadVehicleState::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -281,7 +281,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		&NewStructOps,
 		"ReplicatedRailroadVehicleState",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FReplicatedRailroadVehicleState),
 		alignof(FReplicatedRailroadVehicleState),
 		Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_Statics::PropPointers),
@@ -302,7 +302,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedRailroad
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_CRC() { return 2937336437U; }
+	uint32 Get_Z_Construct_UScriptStruct_FReplicatedRailroadVehicleState_CRC() { return 450470067U; }
 	static FName NAME_UFGLocomotiveMovementComponent_ServerUpdateState = FName(TEXT("ServerUpdateState"));
 	void UFGLocomotiveMovementComponent::ServerUpdateState(int32 inReverserInput, float inSteeringInput, float inThrottleInput, float inDynamicBrakeInput, float inAirBrakeInput)
 	{

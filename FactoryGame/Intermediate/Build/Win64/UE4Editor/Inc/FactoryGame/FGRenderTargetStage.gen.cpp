@@ -423,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGRenderTargetStage_Statics::ClassParams = {
 		&AFGRenderTargetStage::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGRenderTargetStage_Statics::PropPointers),
 		nullptr,
@@ -440,7 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRenderTargetStage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGRenderTargetStage, 96702858);
+	IMPLEMENT_CLASS(AFGRenderTargetStage, 3640677000);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGRenderTargetStage(Z_Construct_UClass_AFGRenderTargetStage, &AFGRenderTargetStage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGRenderTargetStage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGRenderTargetStage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

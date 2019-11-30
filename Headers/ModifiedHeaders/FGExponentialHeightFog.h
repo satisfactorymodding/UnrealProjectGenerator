@@ -11,7 +11,7 @@
 #include "FGExponentialHeightFog.generated.h"
 
 USTRUCT()
-struct FExponentialFogSettings
+struct FACTORYGAME_API FExponentialFogSettings
 {
 	GENERATED_BODY()
 
@@ -84,7 +84,7 @@ struct FExponentialFogSettings
 
 // @todo: Should be renamed to something else, as it does a lot more than give settings to fog
 UCLASS(HideCategories=(Collision,Tags,Cooking,Actor,Mobile))
-class AFGDynamicExponentialFogVolume : public AVolume/*, public ICurvePanningInterface MODDING EDIT*/, public IInterface_PostProcessVolume
+class FACTORYGAME_API AFGDynamicExponentialFogVolume : public AVolume/*, public ICurvePanningInterface MODDING EDIT*/, public IInterface_PostProcessVolume
 {
 	GENERATED_BODY()
 public:

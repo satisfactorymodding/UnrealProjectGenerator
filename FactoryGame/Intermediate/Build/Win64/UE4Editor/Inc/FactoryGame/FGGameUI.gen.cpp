@@ -1133,7 +1133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameUI_Statics::ClassParams = {
 		&UFGGameUI::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A010A0u,
+		0x00B010A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGGameUI_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGGameUI_Statics::PropPointers),
 		nullptr,
@@ -1150,7 +1150,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameUI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUI, 3565166709);
+	IMPLEMENT_CLASS(UFGGameUI, 718008423);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameUI(Z_Construct_UClass_UFGGameUI, &UFGGameUI::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameUI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameUI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

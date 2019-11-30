@@ -484,7 +484,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::ClassParams = {
 		&AFGItemPickup_Spawnable::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008002A0u,
+		0x009002A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Spawnable_Statics::PropPointers),
 		nullptr,
@@ -501,7 +501,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup_Spawnable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 17543634);
+	IMPLEMENT_CLASS(AFGItemPickup_Spawnable, 1182215746);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup_Spawnable(Z_Construct_UClass_AFGItemPickup_Spawnable, &AFGItemPickup_Spawnable::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup_Spawnable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup_Spawnable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

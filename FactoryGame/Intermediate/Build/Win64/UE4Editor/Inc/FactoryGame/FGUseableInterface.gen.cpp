@@ -136,7 +136,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		&NewStructOps,
 		"UseState",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FUseState),
 		alignof(FUseState),
 		Z_Construct_UScriptStruct_FUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FUseState_Statics::PropPointers),
@@ -157,7 +157,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUseState_CRC() { return 690566482U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUseState_CRC() { return 3015111880U; }
 	void UFGUseState::StaticRegisterNativesUFGUseState()
 	{
 	}
@@ -231,7 +231,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_Statics::ClassParams = {
 		&UFGUseState::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGUseState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGUseState_Statics::PropPointers),
 		nullptr,
@@ -248,7 +248,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState, 2913254929);
+	IMPLEMENT_CLASS(UFGUseState, 2160898818);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState(Z_Construct_UClass_UFGUseState, &UFGUseState::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState);
 	void UFGUseState_Valid::StaticRegisterNativesUFGUseState_Valid()
@@ -284,7 +284,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_Valid_Statics::ClassParams = {
 		&UFGUseState_Valid::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -301,7 +301,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Valid, 2059568180);
+	IMPLEMENT_CLASS(UFGUseState_Valid, 200932392);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_Valid(Z_Construct_UClass_UFGUseState_Valid, &UFGUseState_Valid::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_Valid"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_Valid);
 	FText IFGUseableInterface::GetLookAtDecription(AFGCharacterPlayer* byCharacter, FUseState const& state) const
@@ -761,7 +761,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseableInterface_Statics::ClassParams = {
 		&UFGUseableInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -778,7 +778,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUseState
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseableInterface, 477287644);
+	IMPLEMENT_CLASS(UFGUseableInterface, 828235153);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseableInterface(Z_Construct_UClass_UFGUseableInterface, &UFGUseableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseableInterface);
 	static FName NAME_UFGUseableInterface_GetLookAtDecription = FName(TEXT("GetLookAtDecription"));

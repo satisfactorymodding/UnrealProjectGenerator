@@ -14,7 +14,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FArachnophobiaModeChangedDelegate, 
  * Name and value combination for the options with audio
  */
 USTRUCT()
-struct FAudioVolumeMap
+struct FACTORYGAME_API FAudioVolumeMap
 {
 	GENERATED_BODY()
 	
@@ -28,7 +28,7 @@ struct FAudioVolumeMap
 };
 
 UCLASS(BlueprintType)
-class UFGGameUserSettings : public UGameUserSettings
+class FACTORYGAME_API UFGGameUserSettings : public UGameUserSettings
 {
 	GENERATED_BODY()
 public:

@@ -15,12 +15,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_ItemDrop_h_35_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemDropWithChance_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_ItemDrop_h_10_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemDrop_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #undef CURRENT_FILE_ID

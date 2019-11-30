@@ -15,12 +15,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGNetSerialization_h_83_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCustomFastArraySerializer_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGNetSerialization_h_12_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #undef CURRENT_FILE_ID

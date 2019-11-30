@@ -101,7 +101,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		&NewStructOps,
 		"RemovedInstanceArray",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FRemovedInstanceArray),
 		alignof(FRemovedInstanceArray),
 		Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstanceArray_Statics::PropPointers),
@@ -122,7 +122,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstanceArr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC() { return 3609779295U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstanceArray_CRC() { return 1551041287U; }
 class UScriptStruct* FRemovedInstance::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -192,7 +192,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		&NewStructOps,
 		"RemovedInstance",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FRemovedInstance),
 		alignof(FRemovedInstance),
 		Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRemovedInstance_Statics::PropPointers),
@@ -213,7 +213,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRemovedInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC() { return 3336851844U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRemovedInstance_CRC() { return 1860854453U; }
 	void AFGFoliageRemoval::StaticRegisterNativesAFGFoliageRemoval()
 	{
 		UClass* Class = AFGFoliageRemoval::StaticClass();

@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPlanet_Statics::ClassParams = {
 		&AFGPlanet::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		IF_WITH_EDITORONLY_DATA(Z_Construct_UClass_AFGPlanet_Statics::PropPointers, nullptr), IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_AFGPlanet_Statics::PropPointers), 0),
 		nullptr,
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlanet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlanet, 1554878359);
+	IMPLEMENT_CLASS(AFGPlanet, 2441347010);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlanet(Z_Construct_UClass_AFGPlanet, &AFGPlanet::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlanet"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlanet);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

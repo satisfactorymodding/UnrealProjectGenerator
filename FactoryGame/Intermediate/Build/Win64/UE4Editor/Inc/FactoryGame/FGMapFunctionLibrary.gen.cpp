@@ -311,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapFunctionLibrary() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMapFunctionLibrary_Statics::ClassParams = {
 		&UFGMapFunctionLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -328,7 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapFunctionLibrary, 1682891952);
+	IMPLEMENT_CLASS(UFGMapFunctionLibrary, 243136155);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapFunctionLibrary(Z_Construct_UClass_UFGMapFunctionLibrary, &UFGMapFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

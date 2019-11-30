@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWorldCreationInterface_Statics::ClassParams = {
 		&UFGWorldCreationInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWorldCreationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWorldCreationInterface, 446862225);
+	IMPLEMENT_CLASS(UFGWorldCreationInterface, 1049902451);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWorldCreationInterface(Z_Construct_UClass_UFGWorldCreationInterface, &UFGWorldCreationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWorldCreationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWorldCreationInterface);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

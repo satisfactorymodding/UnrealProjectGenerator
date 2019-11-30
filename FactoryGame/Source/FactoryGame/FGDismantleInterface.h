@@ -12,7 +12,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGDismantleInterface : public UInterface
+class FACTORYGAME_API UFGDismantleInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -22,7 +22,7 @@ class UFGDismantleInterface : public UInterface
 /**
 * @brief Interface for all "dismantle-able" classes out there
 */
-class IFGDismantleInterface
+class FACTORYGAME_API IFGDismantleInterface
 {
 	GENERATED_IINTERFACE_BODY()
 
@@ -84,7 +84,7 @@ class IFGDismantleInterface
 /**
  * Shared magic between holograms
  */
-struct FDismantleHelpers
+struct FACTORYGAME_API FDismantleHelpers
 {
 	/**
 	 * @param dismantledActor	Actor to be dismantled.

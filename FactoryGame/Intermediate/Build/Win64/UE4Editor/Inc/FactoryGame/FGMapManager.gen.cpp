@@ -86,7 +86,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		&NewStructOps,
 		"FogOfWarQueuePair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFogOfWarQueuePair),
 		alignof(FFogOfWarQueuePair),
 		Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics::PropPointers),
@@ -107,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFogOfWarQueuePair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC() { return 177936900U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFogOfWarQueuePair_CRC() { return 1226515321U; }
 	void AFGMapManager::StaticRegisterNativesAFGMapManager()
 	{
 		UClass* Class = AFGMapManager::StaticClass();

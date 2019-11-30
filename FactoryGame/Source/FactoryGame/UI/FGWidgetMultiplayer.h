@@ -6,7 +6,7 @@
 #include "FGWidgetMultiplayer.generated.h"
 
 UCLASS()
-class UFGWidgetMultiplayer : public UUserWidget
+class FACTORYGAME_API UFGWidgetMultiplayer : public UUserWidget
 {
 	GENERATED_BODY()
 public:

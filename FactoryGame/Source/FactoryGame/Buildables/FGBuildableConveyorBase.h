@@ -21,7 +21,7 @@ using FG_ConveyorVersionType = int8;
 
 
 UCLASS()
-class UFGConveyorRemoteCallObject : public UFGRemoteCallObject
+class FACTORYGAME_API UFGConveyorRemoteCallObject : public UFGRemoteCallObject
 {
 	GENERATED_BODY()
 	public:
@@ -50,7 +50,7 @@ class UFGConveyorRemoteCallObject : public UFGRemoteCallObject
 * @see FConveyorBeltItems::NetDeltaSerialize for more comments about the features supported and not.
 */
 USTRUCT()
-struct FConveyorBeltItem
+struct FACTORYGAME_API FConveyorBeltItem
 {
 	GENERATED_BODY()
 public:
@@ -97,7 +97,7 @@ private:
 
 
 /** Custom INetDeltaBaseState used by our custom NetDeltaSerialize. Representing a snapshot of the state, enough to calculate a delta between this state and another.*/
-class FConveyorBeltItemsBaseState : public INetDeltaBaseState
+class FACTORYGAME_API FConveyorBeltItemsBaseState : public INetDeltaBaseState
 {
 public:
 
@@ -151,6 +151,7 @@ public:
 		NextToMoveOutItemID = other.NextToMoveOutItemID;
 		ArrayReplicationKeyLoopCounter = other.ArrayReplicationKeyLoopCounter;
 		PresistentClientInfoPtr = other.PresistentClientInfoPtr;
+		return *this; // MODDING EDIT: why did it ever work without this?
 	}
 
 	const FConveyorBeltItemsBaseState& operator=( FConveyorBeltItemsBaseState&& other )
@@ -164,7 +165,7 @@ public:
 		NextToMoveOutItemID = other.NextToMoveOutItemID;
 		ArrayReplicationKeyLoopCounter = other.ArrayReplicationKeyLoopCounter;
 		PresistentClientInfoPtr = other.PresistentClientInfoPtr;
-
+		return *this; // MODDING EDIT: why did it ever work without this?
 	}
 
 	virtual bool IsStateEqual( INetDeltaBaseState* otherState ) override
@@ -274,7 +275,7 @@ public:
 *   - Mapping of object references (objects that are replicated that is). Look at fast TArray replication on how to implement this if needed.
 */
 USTRUCT()
-struct FConveyorBeltItems
+struct FACTORYGAME_API FConveyorBeltItems
 {
 	static const uint8 NUM_HISTORY_VERSION = 27; //[DavalliusA:Thu/16-05-2019] should be enough to get about 2 sec back with 3 other clients connected and we were to send at max speed for each client separately 3*3*2
 
@@ -585,7 +586,7 @@ private:
 
 /** Enable custom net delta serialization for the above struct. */
 template<>
-struct TStructOpsTypeTraits< FConveyorBeltItems > : public TStructOpsTypeTraitsBase2< FConveyorBeltItems >
+struct FACTORYGAME_API TStructOpsTypeTraits< FConveyorBeltItems > : public TStructOpsTypeTraitsBase2< FConveyorBeltItems >
 {
 	enum
 	{

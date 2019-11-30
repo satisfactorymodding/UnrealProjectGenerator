@@ -12,7 +12,7 @@
 
 /** Data we need to know/save about spawns in this spawner */
 USTRUCT()
-struct FSpawnData
+struct FACTORYGAME_API FSpawnData
 {
 	GENERATED_BODY();
 

@@ -190,7 +190,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedAddedVel
 		&NewStructOps,
 		"ReplicatedAddedVelocitiesState",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FReplicatedAddedVelocitiesState),
 		alignof(FReplicatedAddedVelocitiesState),
 		Z_Construct_UScriptStruct_FReplicatedAddedVelocitiesState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FReplicatedAddedVelocitiesState_Statics::PropPointers),
@@ -211,7 +211,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFReplicatedAddedVel
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FReplicatedAddedVelocitiesState_CRC() { return 280265040U; }
+	uint32 Get_Z_Construct_UScriptStruct_FReplicatedAddedVelocitiesState_CRC() { return 2776175510U; }
 class UScriptStruct* FTireParticleCollection::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -270,7 +270,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireParticleCollec
 		&NewStructOps,
 		"TireParticleCollection",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FTireParticleCollection),
 		alignof(FTireParticleCollection),
 		Z_Construct_UScriptStruct_FTireParticleCollection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTireParticleCollection_Statics::PropPointers),
@@ -291,7 +291,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireParticleCollec
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTireParticleCollection_CRC() { return 2645626593U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTireParticleCollection_CRC() { return 3252710746U; }
 class UScriptStruct* FParticleTemplatePair::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -359,7 +359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFParticleTemplatePa
 		&NewStructOps,
 		"ParticleTemplatePair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FParticleTemplatePair),
 		alignof(FParticleTemplatePair),
 		Z_Construct_UScriptStruct_FParticleTemplatePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FParticleTemplatePair_Statics::PropPointers),
@@ -380,7 +380,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFParticleTemplatePa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FParticleTemplatePair_CRC() { return 773044069U; }
+	uint32 Get_Z_Construct_UScriptStruct_FParticleTemplatePair_CRC() { return 2772985917U; }
 class UScriptStruct* FSurfaceParticlePair::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -450,7 +450,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSurfaceParticlePai
 		&NewStructOps,
 		"SurfaceParticlePair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSurfaceParticlePair),
 		alignof(FSurfaceParticlePair),
 		Z_Construct_UScriptStruct_FSurfaceParticlePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSurfaceParticlePair_Statics::PropPointers),
@@ -471,7 +471,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSurfaceParticlePai
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSurfaceParticlePair_CRC() { return 1555719964U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSurfaceParticlePair_CRC() { return 3939181808U; }
 class UScriptStruct* FTireTrackDecalDetails::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -543,7 +543,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireTrackDecalDeta
 		&NewStructOps,
 		"TireTrackDecalDetails",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FTireTrackDecalDetails),
 		alignof(FTireTrackDecalDetails),
 		Z_Construct_UScriptStruct_FTireTrackDecalDetails_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTireTrackDecalDetails_Statics::PropPointers),
@@ -564,7 +564,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireTrackDecalDeta
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTireTrackDecalDetails_CRC() { return 3927885276U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTireTrackDecalDetails_CRC() { return 920556871U; }
 class UScriptStruct* FTireData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -688,7 +688,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		&NewStructOps,
 		"TireData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FTireData),
 		alignof(FTireData),
 		Z_Construct_UScriptStruct_FTireData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTireData_Statics::PropPointers),
@@ -709,7 +709,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTireData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTireData_CRC() { return 3934151423U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTireData_CRC() { return 1893835621U; }
 	static FName NAME_AFGWheeledVehicle_CreateInventoryItemDrops = FName(TEXT("CreateInventoryItemDrops"));
 	void AFGWheeledVehicle::CreateInventoryItemDrops()
 	{

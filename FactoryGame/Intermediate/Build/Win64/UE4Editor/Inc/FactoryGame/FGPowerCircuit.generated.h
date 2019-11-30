@@ -17,14 +17,14 @@ struct FPowerGraphPoint;
 
 #define FactoryGame_Source_FactoryGame_FGPowerCircuit_h_51_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPowerCircuitStats_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__Items() { return STRUCT_OFFSET(FPowerCircuitStats, Items); } \
 	FORCEINLINE static uint32 __PPO__FirstIndex() { return STRUCT_OFFSET(FPowerCircuitStats, FirstIndex); }
 
 
 #define FactoryGame_Source_FactoryGame_FGPowerCircuit_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPowerGraphPoint_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGPowerCircuit_h_133_RPC_WRAPPERS \

@@ -94,7 +94,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		&NewStructOps,
 		"MaterialAndSlotName",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FMaterialAndSlotName),
 		alignof(FMaterialAndSlotName),
 		Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMaterialAndSlotName_Statics::PropPointers),
@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMaterialAndSlotName_CRC() { return 2923607916U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMaterialAndSlotName_CRC() { return 406058112U; }
 	void AFGSuitBase::StaticRegisterNativesAFGSuitBase()
 	{
 	}
@@ -237,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSuitBaseAttachment_Statics::ClassParams = {
 		&AFGSuitBaseAttachment::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		Z_Construct_UClass_AFGSuitBaseAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGSuitBaseAttachment_Statics::PropPointers),
 		nullptr,
@@ -254,7 +254,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMaterialAndSlotNam
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 2663969381);
+	IMPLEMENT_CLASS(AFGSuitBaseAttachment, 754164766);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSuitBaseAttachment(Z_Construct_UClass_AFGSuitBaseAttachment, &AFGSuitBaseAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSuitBaseAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSuitBaseAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

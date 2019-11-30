@@ -98,7 +98,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		&NewStructOps,
 		"SplinePointData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSplinePointData),
 		alignof(FSplinePointData),
 		Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSplinePointData_Statics::PropPointers),
@@ -119,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSplinePointData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_CRC() { return 3073337976U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSplinePointData_CRC() { return 522279241U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

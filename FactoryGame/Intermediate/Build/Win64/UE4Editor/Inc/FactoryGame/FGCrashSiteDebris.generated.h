@@ -15,33 +15,33 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_122_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSimulatedItemDropTransform_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_104_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSimulatedActorTransform_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_86_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSimulatedMeshTransform_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_60_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDebrisItemDrop_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__ItemClass() { return STRUCT_OFFSET(FDebrisItemDrop, ItemClass); }
 
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_41_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDebrisActor_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_22_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDebrisMesh_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGCrashSiteDebris_h_136_RPC_WRAPPERS

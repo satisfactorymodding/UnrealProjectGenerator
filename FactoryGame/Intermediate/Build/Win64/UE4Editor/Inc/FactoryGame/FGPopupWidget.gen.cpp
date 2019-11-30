@@ -261,7 +261,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		&NewStructOps,
 		"PopupData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FPopupData),
 		alignof(FPopupData),
 		Z_Construct_UScriptStruct_FPopupData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPopupData_Statics::PropPointers),
@@ -282,7 +282,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPopupData_CRC() { return 2481499425U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPopupData_CRC() { return 727681494U; }
 	void UFGPopupWidget::StaticRegisterNativesUFGPopupWidget()
 	{
 		UClass* Class = UFGPopupWidget::StaticClass();
@@ -445,7 +445,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPopupData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupWidget, 406303662);
+	IMPLEMENT_CLASS(UFGPopupWidget, 4282164303);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPopupWidget(Z_Construct_UClass_UFGPopupWidget, &UFGPopupWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPopupWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPopupWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

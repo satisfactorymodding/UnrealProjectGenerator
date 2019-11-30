@@ -286,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrate() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrate, 1737511943);
+	IMPLEMENT_CLASS(AFGCrate, 4193191661);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrate(Z_Construct_UClass_AFGCrate, &AFGCrate::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrate"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrate);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

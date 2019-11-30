@@ -452,7 +452,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAttack_Statics::ClassParams = {
 		&UFGAttack::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGAttack_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGAttack_Statics::PropPointers),
 		nullptr,
@@ -469,7 +469,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAttack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAttack, 2009801598);
+	IMPLEMENT_CLASS(UFGAttack, 1189341567);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAttack(Z_Construct_UClass_UFGAttack, &UFGAttack::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAttack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAttack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAssetManager_Statics::ClassParams = {
 		&UFGAssetManager::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAssetManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAssetManager, 3720883066);
+	IMPLEMENT_CLASS(UFGAssetManager, 4142669219);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAssetManager(Z_Construct_UClass_UFGAssetManager, &UFGAssetManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAssetManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAssetManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,17 +19,17 @@ class UFGErrorMessage;
 
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_98_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGGameNetworkErrorMsg_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_68_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGModPackage_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOnJoinSessionData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGGameInstance_h_118_DELEGATE \

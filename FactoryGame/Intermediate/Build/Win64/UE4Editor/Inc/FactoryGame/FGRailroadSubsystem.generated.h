@@ -19,7 +19,7 @@ class AFGRailroadSubsystem;
 
 #define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTrackGraph_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadSubsystem_h_55_RPC_WRAPPERS \

@@ -22,7 +22,7 @@ enum class EResourceForm : uint8;
 
 #define FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h_47_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemView_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Resources_FGItemDescriptor_h_75_RPC_WRAPPERS \

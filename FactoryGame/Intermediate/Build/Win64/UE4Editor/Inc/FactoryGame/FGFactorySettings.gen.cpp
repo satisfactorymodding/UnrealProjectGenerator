@@ -105,7 +105,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		&NewStructOps,
 		"Category",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCategory),
 		alignof(FCategory),
 		Z_Construct_UScriptStruct_FCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCategory_Statics::PropPointers),
@@ -126,7 +126,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCategory
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC() { return 1808606261U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCategory_CRC() { return 4048741807U; }
 	void UFGFactorySettings::StaticRegisterNativesUFGFactorySettings()
 	{
 		UClass* Class = UFGFactorySettings::StaticClass();

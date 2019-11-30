@@ -881,7 +881,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInteractWidget_Statics::ClassParams = {
 		&UFGInteractWidget::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A010A4u,
+		0x00B010A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGInteractWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGInteractWidget_Statics::PropPointers),
 		"Engine",
@@ -898,7 +898,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInteractWidget, 3935150617);
+	IMPLEMENT_CLASS(UFGInteractWidget, 457879484);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInteractWidget(Z_Construct_UClass_UFGInteractWidget, &UFGInteractWidget::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInteractWidget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInteractWidget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

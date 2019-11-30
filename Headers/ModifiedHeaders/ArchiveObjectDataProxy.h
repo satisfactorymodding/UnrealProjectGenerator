@@ -10,7 +10,7 @@
 /**
  * This class transplants the byte data
  */
-class FArchiveObjectDataProxy : public FArchiveProxy
+class FACTORYGAME_API FArchiveObjectDataProxy : public FArchiveProxy
 {
 public:
 	/** Ctor */

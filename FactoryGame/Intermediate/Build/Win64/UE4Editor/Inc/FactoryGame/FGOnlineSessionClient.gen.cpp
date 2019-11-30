@@ -61,7 +61,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		&NewStructOps,
 		"PendingInvite",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPendingInvite),
 		alignof(FPendingInvite),
 		nullptr, 0,
@@ -82,7 +82,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC() { return 245938950U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPendingInvite_CRC() { return 4028914278U; }
 	void UFGOnlineSessionClient::StaticRegisterNativesUFGOnlineSessionClient()
 	{
 	}
@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGOnlineSessionClient_Statics::ClassParams = {
 		&UFGOnlineSessionClient::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -132,7 +132,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPendingInvite
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGOnlineSessionClient, 2063025887);
+	IMPLEMENT_CLASS(UFGOnlineSessionClient, 1473793938);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGOnlineSessionClient(Z_Construct_UClass_UFGOnlineSessionClient, &UFGOnlineSessionClient::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGOnlineSessionClient"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGOnlineSessionClient);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -21,12 +21,12 @@ struct FItemAmount;
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_41_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFactoryClearanceData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConnectionRepresentation_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGBuildGunBuild_h_71_RPC_WRAPPERS \

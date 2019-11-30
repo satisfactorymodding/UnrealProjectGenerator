@@ -237,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		&NewStructOps,
 		"ExponentialFogSettings",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FExponentialFogSettings),
 		alignof(FExponentialFogSettings),
 		Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FExponentialFogSettings_Statics::PropPointers),
@@ -258,7 +258,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC() { return 358651353U; }
+	uint32 Get_Z_Construct_UScriptStruct_FExponentialFogSettings_CRC() { return 1228011106U; }
 	void AFGDynamicExponentialFogVolume::StaticRegisterNativesAFGDynamicExponentialFogVolume()
 	{
 	}
@@ -660,7 +660,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::ClassParams = {
 		&AFGDynamicExponentialFogVolume::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGDynamicExponentialFogVolume_Statics::PropPointers),
 		nullptr,
@@ -677,7 +677,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFExponentialFogSett
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 3159623540);
+	IMPLEMENT_CLASS(AFGDynamicExponentialFogVolume, 583556022);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDynamicExponentialFogVolume(Z_Construct_UClass_AFGDynamicExponentialFogVolume, &AFGDynamicExponentialFogVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDynamicExponentialFogVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDynamicExponentialFogVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

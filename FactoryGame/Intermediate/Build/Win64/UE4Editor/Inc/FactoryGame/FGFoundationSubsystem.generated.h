@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGFoundationSubsystem_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBuilding_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGFoundationSubsystem_h_29_RPC_WRAPPERS

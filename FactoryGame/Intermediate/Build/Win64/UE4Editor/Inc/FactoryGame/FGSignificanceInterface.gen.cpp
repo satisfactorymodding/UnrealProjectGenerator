@@ -192,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSignificanceInterface_Statics::ClassParams = {
 		&UFGSignificanceInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSignificanceInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSignificanceInterface, 2781362459);
+	IMPLEMENT_CLASS(UFGSignificanceInterface, 3574100319);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSignificanceInterface(Z_Construct_UClass_UFGSignificanceInterface, &UFGSignificanceInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSignificanceInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSignificanceInterface);
 	static FName NAME_UFGSignificanceInterface_GainedSignificance = FName(TEXT("GainedSignificance"));

@@ -97,7 +97,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		&NewStructOps,
 		"TutorialData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FTutorialData),
 		alignof(FTutorialData),
 		Z_Construct_UScriptStruct_FTutorialData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTutorialData_Statics::PropPointers),
@@ -118,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTutorialData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTutorialData_CRC() { return 216338677U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTutorialData_CRC() { return 1650527489U; }
 	void UFGTutorialSubsystem::StaticRegisterNativesUFGTutorialSubsystem()
 	{
 		UClass* Class = UFGTutorialSubsystem::StaticClass();

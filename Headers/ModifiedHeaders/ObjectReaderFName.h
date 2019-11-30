@@ -10,7 +10,7 @@
  * Our modded version of object reader. When this is used we have already spawned/created dummy object. We then use this class 
  * to transplant the loaded data into those objects                                                                 
  **/
-class FObjectReaderFName : public FObjectReader
+class FACTORYGAME_API FObjectReaderFName : public FObjectReader
 {
 public:
 	FObjectReaderFName( UObject* Obj, TArray<uint8>& InBytes, int32 saveVersion, class UWorld* world );

@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGExponentialHeightFog_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FExponentialFogSettings_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGExponentialHeightFog_h_89_RPC_WRAPPERS

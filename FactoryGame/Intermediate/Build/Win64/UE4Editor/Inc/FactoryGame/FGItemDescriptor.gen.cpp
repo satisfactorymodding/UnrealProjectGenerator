@@ -243,7 +243,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		&NewStructOps,
 		"ItemView",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FItemView),
 		alignof(FItemView),
 		Z_Construct_UScriptStruct_FItemView_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemView_Statics::PropPointers),
@@ -264,7 +264,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemView
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC() { return 2116303488U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemView_CRC() { return 3837524762U; }
 	void UFGItemDescriptor::StaticRegisterNativesUFGItemDescriptor()
 	{
 		UClass* Class = UFGItemDescriptor::StaticClass();

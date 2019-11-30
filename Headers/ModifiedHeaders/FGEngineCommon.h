@@ -9,7 +9,7 @@
 /**
  * Filtered and gathered stats we get during each frame
  */
-struct FCollectedStats
+struct FACTORYGAME_API FCollectedStats
 {
 	// How long was the frame
 	float FrameTime;
@@ -27,7 +27,7 @@ struct FCollectedStats
 /** 
  * Interface for stats collectors for our nightly stats gathering from maps
  */
-struct IStatCollector
+struct FACTORYGAME_API IStatCollector
 {
 	virtual ~IStatCollector(){}
 

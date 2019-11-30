@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRecipeShortcut_Statics::ClassParams = {
 		&UFGRecipeShortcut::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGRecipeShortcut_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGRecipeShortcut_Statics::PropPointers),
 		nullptr,
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRecipeShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRecipeShortcut, 2746245340);
+	IMPLEMENT_CLASS(UFGRecipeShortcut, 850575577);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRecipeShortcut(Z_Construct_UClass_UFGRecipeShortcut, &UFGRecipeShortcut::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRecipeShortcut"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRecipeShortcut);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

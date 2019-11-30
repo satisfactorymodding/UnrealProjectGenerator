@@ -227,7 +227,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		&NewStructOps,
 		"UserFeedbackFrontEndData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FUserFeedbackFrontEndData),
 		alignof(FUserFeedbackFrontEndData),
 		Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_Statics::PropPointers),
@@ -248,7 +248,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUserFeedbackFrontE
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC() { return 340382062U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUserFeedbackFrontEndData_CRC() { return 4234294434U; }
 class UScriptStruct* FOnlinePresence::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -291,7 +291,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		&NewStructOps,
 		"OnlinePresence",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FOnlinePresence),
 		alignof(FOnlinePresence),
 		nullptr, 0,
@@ -312,7 +312,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC() { return 615963923U; }
+	uint32 Get_Z_Construct_UScriptStruct_FOnlinePresence_CRC() { return 1762381198U; }
 	void UFGPresenceLibrary::StaticRegisterNativesUFGPresenceLibrary()
 	{
 		UClass* Class = UFGPresenceLibrary::StaticClass();
@@ -777,7 +777,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPresenceLibrary_Statics::ClassParams = {
 		&UFGPresenceLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -794,7 +794,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPresenceLibrary, 888300271);
+	IMPLEMENT_CLASS(UFGPresenceLibrary, 2167985348);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPresenceLibrary(Z_Construct_UClass_UFGPresenceLibrary, &UFGPresenceLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPresenceLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPresenceLibrary);
 	void UFGFriendsLibrary::StaticRegisterNativesUFGFriendsLibrary()
@@ -1230,7 +1230,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFriendsLibrary_Statics::ClassParams = {
 		&UFGFriendsLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -1247,7 +1247,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFriendsLibrary, 1016789361);
+	IMPLEMENT_CLASS(UFGFriendsLibrary, 2825742125);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFriendsLibrary(Z_Construct_UClass_UFGFriendsLibrary, &UFGFriendsLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFriendsLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFriendsLibrary);
 	void UFGSessionLibrary::StaticRegisterNativesUFGSessionLibrary()
@@ -1766,7 +1766,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSessionLibrary_Statics::ClassParams = {
 		&UFGSessionLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -1783,7 +1783,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSessionLibrary, 2234585898);
+	IMPLEMENT_CLASS(UFGSessionLibrary, 298225014);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSessionLibrary(Z_Construct_UClass_UFGSessionLibrary, &UFGSessionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSessionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSessionLibrary);
 	void UFGInviteLibrary::StaticRegisterNativesUFGInviteLibrary()
@@ -2114,7 +2114,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGInviteLibrary_Statics::ClassParams = {
 		&UFGInviteLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -2131,7 +2131,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInviteLibrary, 4220676167);
+	IMPLEMENT_CLASS(UFGInviteLibrary, 2436642267);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInviteLibrary(Z_Construct_UClass_UFGInviteLibrary, &UFGInviteLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInviteLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInviteLibrary);
 	void UFGNetworkLibrary::StaticRegisterNativesUFGNetworkLibrary()
@@ -2727,7 +2727,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGNetworkLibrary_Statics::ClassParams = {
 		&UFGNetworkLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -2744,7 +2744,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFOnlinePresence
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGNetworkLibrary, 4183077739);
+	IMPLEMENT_CLASS(UFGNetworkLibrary, 1839410487);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGNetworkLibrary(Z_Construct_UClass_UFGNetworkLibrary, &UFGNetworkLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGNetworkLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGNetworkLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

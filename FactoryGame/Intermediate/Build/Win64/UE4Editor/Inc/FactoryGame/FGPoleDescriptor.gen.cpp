@@ -94,7 +94,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		&NewStructOps,
 		"PoleHeightMesh",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPoleHeightMesh),
 		alignof(FPoleHeightMesh),
 		Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPoleHeightMesh_Statics::PropPointers),
@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPoleHeightMesh
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC() { return 4273912187U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPoleHeightMesh_CRC() { return 3497492486U; }
 	void UFGPoleDescriptor::StaticRegisterNativesUFGPoleDescriptor()
 	{
 		UClass* Class = UFGPoleDescriptor::StaticClass();

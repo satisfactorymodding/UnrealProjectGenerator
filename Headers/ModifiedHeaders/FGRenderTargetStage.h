@@ -6,7 +6,7 @@
 #include "FGRenderTargetStage.generated.h"
 
 UCLASS(HideCategories=(Input,Actor))
-class AFGRenderTargetStage : public AActor
+class FACTORYGAME_API AFGRenderTargetStage : public AActor
 {
 	GENERATED_BODY()
 public:

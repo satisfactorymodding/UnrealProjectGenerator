@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRadiationInterface_Statics::ClassParams = {
 		&UFGRadiationInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRadiationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRadiationInterface, 3401195065);
+	IMPLEMENT_CLASS(UFGRadiationInterface, 1377477024);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRadiationInterface(Z_Construct_UClass_UFGRadiationInterface, &UFGRadiationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRadiationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRadiationInterface);
 	static FName NAME_UFGRadiationInterface_ReceiveRadiation = FName(TEXT("ReceiveRadiation"));

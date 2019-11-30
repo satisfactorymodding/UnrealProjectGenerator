@@ -205,7 +205,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		&NewStructOps,
 		"AggroEntry",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FAggroEntry),
 		alignof(FAggroEntry),
 		Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FAggroEntry_Statics::PropPointers),
@@ -226,7 +226,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAggroEntry
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_CRC() { return 293792404U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAggroEntry_CRC() { return 3182784844U; }
 	static FName NAME_AFGEnemyController_ClearAllAggroTargetsAndUpdate = FName(TEXT("ClearAllAggroTargetsAndUpdate"));
 	void AFGEnemyController::ClearAllAggroTargetsAndUpdate()
 	{

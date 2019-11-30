@@ -25,7 +25,7 @@ enum class EOutlineColor : uint8
 };
 
 UCLASS()
-class UFGBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
+class FACTORYGAME_API UFGBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:

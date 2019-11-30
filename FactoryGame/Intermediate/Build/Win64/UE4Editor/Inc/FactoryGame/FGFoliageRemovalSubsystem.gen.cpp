@@ -743,7 +743,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGFoliageRemovalSubsystem_Statics::ClassParams = {
 		&AFGFoliageRemovalSubsystem::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -760,7 +760,7 @@ void EmptyLinkFunctionForGeneratedCodeFGFoliageRemovalSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 4094457802);
+	IMPLEMENT_CLASS(AFGFoliageRemovalSubsystem, 39981768);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGFoliageRemovalSubsystem(Z_Construct_UClass_AFGFoliageRemovalSubsystem, &AFGFoliageRemovalSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGFoliageRemovalSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGFoliageRemovalSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

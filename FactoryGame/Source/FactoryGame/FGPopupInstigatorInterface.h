@@ -11,7 +11,7 @@
 
 // This class does not need to be modified.
 UINTERFACE( Blueprintable )
-class UFGPopupInstigatorInterface : public UInterface
+class FACTORYGAME_API UFGPopupInstigatorInterface : public UInterface
 {
 	GENERATED_BODY()
 };

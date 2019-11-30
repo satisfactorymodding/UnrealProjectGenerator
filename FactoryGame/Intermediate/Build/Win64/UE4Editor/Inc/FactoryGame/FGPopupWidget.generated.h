@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_UI_FGPopupWidget_h_26_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPopupData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_UI_FGPopupWidget_h_13_DELEGATE \

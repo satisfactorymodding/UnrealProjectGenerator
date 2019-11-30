@@ -221,7 +221,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		&NewStructOps,
 		"SchematicCost",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSchematicCost),
 		alignof(FSchematicCost),
 		Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicCost_Statics::PropPointers),
@@ -242,7 +242,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC() { return 2816202943U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicCost_CRC() { return 226513918U; }
 	void AFGSchematicManager::StaticRegisterNativesAFGSchematicManager()
 	{
 		UClass* Class = AFGSchematicManager::StaticClass();

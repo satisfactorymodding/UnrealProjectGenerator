@@ -107,7 +107,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		&NewStructOps,
 		"TrackGraph",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FTrackGraph),
 		alignof(FTrackGraph),
 		Z_Construct_UScriptStruct_FTrackGraph_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTrackGraph_Statics::PropPointers),
@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTrackGraph
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTrackGraph_CRC() { return 2977624861U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTrackGraph_CRC() { return 491612357U; }
 	void AFGRailroadSubsystem::StaticRegisterNativesAFGRailroadSubsystem()
 	{
 		UClass* Class = AFGRailroadSubsystem::StaticClass();

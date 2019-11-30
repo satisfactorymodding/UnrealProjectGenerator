@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentBeltSlot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 3871029486);
+	IMPLEMENT_CLASS(UFGInventoryComponentBeltSlot, 4244347305);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentBeltSlot(Z_Construct_UClass_UFGInventoryComponentBeltSlot, &UFGInventoryComponentBeltSlot::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentBeltSlot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentBeltSlot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -777,7 +777,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGPlayerControllerBase_Statics::ClassParams = {
 		&AFGPlayerControllerBase::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008002A4u,
+		0x009002A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGPlayerControllerBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGPlayerControllerBase_Statics::PropPointers),
 		"Game",
@@ -794,7 +794,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPlayerControllerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGPlayerControllerBase, 1802660154);
+	IMPLEMENT_CLASS(AFGPlayerControllerBase, 3249155280);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGPlayerControllerBase(Z_Construct_UClass_AFGPlayerControllerBase, &AFGPlayerControllerBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGPlayerControllerBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGPlayerControllerBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

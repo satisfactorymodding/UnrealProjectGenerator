@@ -407,7 +407,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGColorInterface_Statics::ClassParams = {
 		&UFGColorInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -424,7 +424,7 @@ void EmptyLinkFunctionForGeneratedCodeFGColorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGColorInterface, 1803143435);
+	IMPLEMENT_CLASS(UFGColorInterface, 307598494);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGColorInterface(Z_Construct_UClass_UFGColorInterface, &UFGColorInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGColorInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGColorInterface);
 	static FName NAME_UFGColorInterface_GetCanBeColored = FName(TEXT("GetCanBeColored"));

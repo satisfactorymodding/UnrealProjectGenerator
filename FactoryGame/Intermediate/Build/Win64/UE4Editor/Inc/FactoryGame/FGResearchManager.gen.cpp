@@ -337,7 +337,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		&NewStructOps,
 		"CompletedResearch",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCompletedResearch),
 		alignof(FCompletedResearch),
 		Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCompletedResearch_Statics::PropPointers),
@@ -358,7 +358,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCompletedResearch
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC() { return 13264817U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCompletedResearch_CRC() { return 1128947404U; }
 class UScriptStruct* FResearchTime::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -428,7 +428,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		&NewStructOps,
 		"ResearchTime",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FResearchTime),
 		alignof(FResearchTime),
 		Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchTime_Statics::PropPointers),
@@ -449,7 +449,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchTime
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_CRC() { return 1105276304U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchTime_CRC() { return 795160676U; }
 class UScriptStruct* FResearchCost::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -523,7 +523,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		&NewStructOps,
 		"ResearchCost",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FResearchCost),
 		alignof(FResearchCost),
 		Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchCost_Statics::PropPointers),
@@ -544,7 +544,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_CRC() { return 1903798010U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchCost_CRC() { return 536722190U; }
 	void AFGResearchManager::StaticRegisterNativesAFGResearchManager()
 	{
 		UClass* Class = AFGResearchManager::StaticClass();

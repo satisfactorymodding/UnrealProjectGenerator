@@ -373,7 +373,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDismantleInterface_Statics::ClassParams = {
 		&UFGDismantleInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -390,7 +390,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleInterface, 1903124378);
+	IMPLEMENT_CLASS(UFGDismantleInterface, 3922714627);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleInterface(Z_Construct_UClass_UFGDismantleInterface, &UFGDismantleInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleInterface);
 	static FName NAME_UFGDismantleInterface_CanDismantle = FName(TEXT("CanDismantle"));

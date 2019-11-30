@@ -571,7 +571,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGProjectile_Statics::ClassParams = {
 		&AFGProjectile::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGProjectile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGProjectile_Statics::PropPointers),
 		"Game",
@@ -588,7 +588,7 @@ void EmptyLinkFunctionForGeneratedCodeFGProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGProjectile, 2863935118);
+	IMPLEMENT_CLASS(AFGProjectile, 1835173076);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGProjectile(Z_Construct_UClass_AFGProjectile, &AFGProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

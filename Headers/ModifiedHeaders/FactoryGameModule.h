@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Modules/ModuleManager.h"
-class FFactoryGameModule : public FDefaultGameModuleImpl
+class FACTORYGAME_API FFactoryGameModule : public FDefaultGameModuleImpl
 {
 public:
 	/**

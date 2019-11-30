@@ -92,7 +92,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		&NewStructOps,
 		"ConnectionItemStruct",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FConnectionItemStruct),
 		alignof(FConnectionItemStruct),
 		Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionItemStruct_Statics::PropPointers),
@@ -113,7 +113,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionItemStru
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionItemStruct_CRC() { return 2831698750U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionItemStruct_CRC() { return 596874342U; }
 	void AFGBuildableConveyorAttachment::StaticRegisterNativesAFGBuildableConveyorAttachment()
 	{
 	}

@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWidgetMultiplayer_Statics::ClassParams = {
 		&UFGWidgetMultiplayer::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A010A0u,
+		0x00B010A0u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGWidgetMultiplayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWidgetMultiplayer_Statics::PropPointers),
 		nullptr,
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGWidgetMultiplayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 2009434472);
+	IMPLEMENT_CLASS(UFGWidgetMultiplayer, 3227036644);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWidgetMultiplayer(Z_Construct_UClass_UFGWidgetMultiplayer, &UFGWidgetMultiplayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWidgetMultiplayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWidgetMultiplayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

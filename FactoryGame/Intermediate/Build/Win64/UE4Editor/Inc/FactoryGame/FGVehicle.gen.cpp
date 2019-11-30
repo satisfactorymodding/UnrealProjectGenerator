@@ -220,7 +220,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 		&NewStructOps,
 		"VehicleSeat",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FVehicleSeat),
 		alignof(FVehicleSeat),
 		Z_Construct_UScriptStruct_FVehicleSeat_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FVehicleSeat_Statics::PropPointers),
@@ -241,7 +241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehicleSeat
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehicleSeat_CRC() { return 1723561684U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehicleSeat_CRC() { return 730438043U; }
 class UScriptStruct* FVehiclePhysicsData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -284,7 +284,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		&NewStructOps,
 		"VehiclePhysicsData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FVehiclePhysicsData),
 		alignof(FVehiclePhysicsData),
 		nullptr, 0,
@@ -305,7 +305,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FVehiclePhysicsData_CRC() { return 1410709606U; }
+	uint32 Get_Z_Construct_UScriptStruct_FVehiclePhysicsData_CRC() { return 932313289U; }
 	void UFGUseState_VehicleHasDriver::StaticRegisterNativesUFGUseState_VehicleHasDriver()
 	{
 	}
@@ -339,7 +339,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_VehicleHasDriver_Statics::ClassParams = {
 		&UFGUseState_VehicleHasDriver::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -356,7 +356,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleHasDriver, 303802665);
+	IMPLEMENT_CLASS(UFGUseState_VehicleHasDriver, 3099814486);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_VehicleHasDriver(Z_Construct_UClass_UFGUseState_VehicleHasDriver, &UFGUseState_VehicleHasDriver::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_VehicleHasDriver"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_VehicleHasDriver);
 	void UFGUseState_VehicleInWater::StaticRegisterNativesUFGUseState_VehicleInWater()
@@ -392,7 +392,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_VehicleInWater_Statics::ClassParams = {
 		&UFGUseState_VehicleInWater::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -409,7 +409,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleInWater, 2960231305);
+	IMPLEMENT_CLASS(UFGUseState_VehicleInWater, 2291553759);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_VehicleInWater(Z_Construct_UClass_UFGUseState_VehicleInWater, &UFGUseState_VehicleInWater::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_VehicleInWater"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_VehicleInWater);
 	void UFGUseState_VehicleOccupied::StaticRegisterNativesUFGUseState_VehicleOccupied()
@@ -445,7 +445,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_VehicleOccupied_Statics::ClassParams = {
 		&UFGUseState_VehicleOccupied::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -462,7 +462,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFVehiclePhysicsData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_VehicleOccupied, 3839373629);
+	IMPLEMENT_CLASS(UFGUseState_VehicleOccupied, 3828024461);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_VehicleOccupied(Z_Construct_UClass_UFGUseState_VehicleOccupied, &UFGUseState_VehicleOccupied::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_VehicleOccupied"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_VehicleOccupied);
 	static FName NAME_AFGVehicle_GetDismantleBlueprintReturns = FName(TEXT("GetDismantleBlueprintReturns"));

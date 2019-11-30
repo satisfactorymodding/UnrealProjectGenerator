@@ -99,7 +99,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 		&NewStructOps,
 		"PawnImpactAudio",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPawnImpactAudio),
 		alignof(FPawnImpactAudio),
 		Z_Construct_UScriptStruct_FPawnImpactAudio_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPawnImpactAudio_Statics::PropPointers),
@@ -120,7 +120,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPawnImpactAudio_CRC() { return 309051803U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPawnImpactAudio_CRC() { return 3127243434U; }
 	static FName NAME_UFGWaterAudio_OnCameraEnteredWater = FName(TEXT("OnCameraEnteredWater"));
 	void UFGWaterAudio::OnCameraEnteredWater(AFGWaterVolume* waterVolume, FVector enterLocation, AFGPlayerController* PC) const
 	{
@@ -359,7 +359,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGWaterAudio_Statics::ClassParams = {
 		&UFGWaterAudio::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGWaterAudio_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGWaterAudio_Statics::PropPointers),
 		nullptr,
@@ -376,7 +376,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPawnImpactAudio
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGWaterAudio, 477674120);
+	IMPLEMENT_CLASS(UFGWaterAudio, 415982814);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGWaterAudio(Z_Construct_UClass_UFGWaterAudio, &UFGWaterAudio::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGWaterAudio"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGWaterAudio);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

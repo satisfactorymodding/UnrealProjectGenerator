@@ -18,7 +18,7 @@ struct FResearchRecipeReward;
 
 #define FactoryGame_Source_FactoryGame_FGHardDriveSettings_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__Schematic() { return STRUCT_OFFSET(FHardDriveSchematicDrop, Schematic); }
 
 

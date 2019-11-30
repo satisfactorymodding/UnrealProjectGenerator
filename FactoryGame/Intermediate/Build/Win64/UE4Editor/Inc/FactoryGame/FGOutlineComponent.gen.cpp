@@ -115,7 +115,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedSplineMeshTo
 		&NewStructOps,
 		"CachedSplineMeshToMaterialObject",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCachedSplineMeshToMaterialObject),
 		alignof(FCachedSplineMeshToMaterialObject),
 		Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_Statics::PropPointers),
@@ -136,7 +136,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedSplineMeshTo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_CRC() { return 4285255686U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedSplineMeshToMaterialObject_CRC() { return 1821222020U; }
 class UScriptStruct* FCachedMeshToMaterialObject::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -198,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMeshToMateri
 		&NewStructOps,
 		"CachedMeshToMaterialObject",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCachedMeshToMaterialObject),
 		alignof(FCachedMeshToMaterialObject),
 		Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_Statics::PropPointers),
@@ -219,7 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMeshToMateri
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_CRC() { return 905484197U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedMeshToMaterialObject_CRC() { return 4005304080U; }
 class UScriptStruct* FCachedMaterialInterfaceArray::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -278,7 +278,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		&NewStructOps,
 		"CachedMaterialInterfaceArray",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCachedMaterialInterfaceArray),
 		alignof(FCachedMaterialInterfaceArray),
 		Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_Statics::PropPointers),
@@ -299,7 +299,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCachedMaterialInte
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_CRC() { return 2008757551U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCachedMaterialInterfaceArray_CRC() { return 785923473U; }
 	void UFGOutlineComponent::StaticRegisterNativesUFGOutlineComponent()
 	{
 		UClass* Class = UFGOutlineComponent::StaticClass();

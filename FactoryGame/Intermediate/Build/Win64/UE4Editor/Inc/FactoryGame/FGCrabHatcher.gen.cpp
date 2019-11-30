@@ -428,7 +428,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCrabHatcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCrabHatcher, 3736334325);
+	IMPLEMENT_CLASS(AFGCrabHatcher, 4141394078);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCrabHatcher(Z_Construct_UClass_AFGCrabHatcher, &AFGCrabHatcher::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCrabHatcher"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCrabHatcher);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

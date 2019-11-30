@@ -17,7 +17,7 @@
  * Debris meshes that can be spawned and how many.
  */
 USTRUCT()
-struct FDebrisMesh
+struct FACTORYGAME_API FDebrisMesh
 {
 	GENERATED_BODY()
 public:
@@ -36,7 +36,7 @@ public:
  * Debris actors that can be spawned and how many.
  */
 USTRUCT()
-struct FDebrisActor
+struct FACTORYGAME_API FDebrisActor
 {
 	GENERATED_BODY()
 public:
@@ -55,7 +55,7 @@ public:
  * Item drops that can be spawned and how many.
  */
 USTRUCT()
-struct FDebrisItemDrop
+struct FACTORYGAME_API FDebrisItemDrop
 {
 	GENERATED_BODY()
 public:
@@ -81,7 +81,7 @@ protected:
  * Struct containing the saved simulation for meshes.
  */
 USTRUCT()
-struct FSimulatedMeshTransform
+struct FACTORYGAME_API FSimulatedMeshTransform
 {
 	GENERATED_BODY()
 public:
@@ -99,7 +99,7 @@ public:
  * Struct containing the saved simulation for actors.
  */
 USTRUCT()
-struct FSimulatedActorTransform
+struct FACTORYGAME_API FSimulatedActorTransform
 {
 	GENERATED_BODY()
 public:
@@ -117,7 +117,7 @@ public:
  * Struct containing the saved simulation for actors.
  */
 USTRUCT()
-struct FSimulatedItemDropTransform
+struct FACTORYGAME_API FSimulatedItemDropTransform
 {
 	GENERATED_BODY()
 public:

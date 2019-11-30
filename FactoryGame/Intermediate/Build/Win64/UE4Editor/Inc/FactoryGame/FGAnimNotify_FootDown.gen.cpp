@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::ClassParams = {
 		&UFGAnimNotify_FootDown::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000120A0u,
+		0x001120A0u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGAnimNotify_FootDown_Statics::PropPointers),
 		nullptr,
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAnimNotify_FootDown() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 171249780);
+	IMPLEMENT_CLASS(UFGAnimNotify_FootDown, 74875385);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAnimNotify_FootDown(Z_Construct_UClass_UFGAnimNotify_FootDown, &UFGAnimNotify_FootDown::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAnimNotify_FootDown"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAnimNotify_FootDown);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -82,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMultiplayerVerticalBox_Statics::ClassParams = {
 		&UFGMultiplayerVerticalBox::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A0u,
+		0x00B000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMultiplayerVerticalBox() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 3430983214);
+	IMPLEMENT_CLASS(UFGMultiplayerVerticalBox, 12328737);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMultiplayerVerticalBox(Z_Construct_UClass_UFGMultiplayerVerticalBox, &UFGMultiplayerVerticalBox::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMultiplayerVerticalBox"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMultiplayerVerticalBox);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

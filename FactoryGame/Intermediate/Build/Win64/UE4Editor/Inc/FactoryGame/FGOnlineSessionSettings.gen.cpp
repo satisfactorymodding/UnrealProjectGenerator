@@ -220,7 +220,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		&NewStructOps,
 		"FGOnlineSessionSettings",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFGOnlineSessionSettings),
 		alignof(FFGOnlineSessionSettings),
 		Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFGOnlineSessionSettings_Statics::PropPointers),
@@ -241,7 +241,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineSessionSet
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_CRC() { return 4153974437U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineSessionSettings_CRC() { return 3413982936U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

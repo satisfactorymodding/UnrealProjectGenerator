@@ -1459,7 +1459,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGHUD_Statics::ClassParams = {
 		&AFGHUD::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008002ACu,
+		0x009002ACu,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGHUD_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGHUD_Statics::PropPointers),
 		"Game",
@@ -1476,7 +1476,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGHUD, 1032372910);
+	IMPLEMENT_CLASS(AFGHUD, 1268651580);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGHUD(Z_Construct_UClass_AFGHUD, &AFGHUD::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGHUD"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGHUD);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

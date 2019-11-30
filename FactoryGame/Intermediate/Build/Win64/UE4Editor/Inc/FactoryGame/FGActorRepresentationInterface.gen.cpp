@@ -784,7 +784,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGActorRepresentationInterface_Statics::ClassParams = {
 		&UFGActorRepresentationInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -801,7 +801,7 @@ void EmptyLinkFunctionForGeneratedCodeFGActorRepresentationInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 786266984);
+	IMPLEMENT_CLASS(UFGActorRepresentationInterface, 2536555127);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGActorRepresentationInterface(Z_Construct_UClass_UFGActorRepresentationInterface, &UFGActorRepresentationInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGActorRepresentationInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGActorRepresentationInterface);
 	static FName NAME_UFGActorRepresentationInterface_AddAsRepresentation = FName(TEXT("AddAsRepresentation"));

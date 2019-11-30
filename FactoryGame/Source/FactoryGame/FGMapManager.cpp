@@ -29,3 +29,4 @@ void AFGMapManager::DrawCircle( FVector2D centerPoint, float radius, float gradi
 void AFGMapManager::OnActorRepresentationAdded(  UFGActorRepresentation* actorRepresentation){ }
 void AFGMapManager::OnActorRepresentationUpdated(  UFGActorRepresentation* actorRepresentation){ }
 void AFGMapManager::OnActorRepresentationRemoved(  UFGActorRepresentation* actorRepresentation){ }
+const int32 AFGMapManager::PIXEL_OFFSET = int32();

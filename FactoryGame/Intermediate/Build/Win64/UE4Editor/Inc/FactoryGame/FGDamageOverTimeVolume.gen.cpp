@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::ClassParams = {
 		&AFGDamageOverTimeVolume::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGDamageOverTimeVolume_Statics::PropPointers),
 		nullptr,
@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageOverTimeVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 866475054);
+	IMPLEMENT_CLASS(AFGDamageOverTimeVolume, 1160184497);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDamageOverTimeVolume(Z_Construct_UClass_AFGDamageOverTimeVolume, &AFGDamageOverTimeVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDamageOverTimeVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDamageOverTimeVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

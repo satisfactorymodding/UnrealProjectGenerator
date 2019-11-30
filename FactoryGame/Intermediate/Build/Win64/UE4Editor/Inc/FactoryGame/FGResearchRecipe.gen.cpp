@@ -122,7 +122,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		&NewStructOps,
 		"ResearchRecipeReward",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FResearchRecipeReward),
 		alignof(FResearchRecipeReward),
 		Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchRecipeReward_Statics::PropPointers),
@@ -143,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchRecipeRewa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchRecipeReward_CRC() { return 181630826U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchRecipeReward_CRC() { return 2173216818U; }
 	void UFGResearchRecipe::StaticRegisterNativesUFGResearchRecipe()
 	{
 		UClass* Class = UFGResearchRecipe::StaticClass();

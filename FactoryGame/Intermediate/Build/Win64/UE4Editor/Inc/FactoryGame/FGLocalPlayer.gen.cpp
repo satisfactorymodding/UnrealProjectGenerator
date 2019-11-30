@@ -329,7 +329,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 		&NewStructOps,
 		"UpdatedFriends",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FUpdatedFriends),
 		alignof(FUpdatedFriends),
 		Z_Construct_UScriptStruct_FUpdatedFriends_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdatedFriends_Statics::PropPointers),
@@ -350,7 +350,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFUpdatedFriends
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUpdatedFriends_CRC() { return 3554245692U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUpdatedFriends_CRC() { return 4245701953U; }
 class UScriptStruct* FFGOnlineFriend::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -393,7 +393,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		&NewStructOps,
 		"FGOnlineFriend",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFGOnlineFriend),
 		alignof(FFGOnlineFriend),
 		nullptr, 0,
@@ -414,7 +414,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineFriend_CRC() { return 494354296U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGOnlineFriend_CRC() { return 1355427813U; }
 	void UFGEM_LoggedOutFromOnlineService::StaticRegisterNativesUFGEM_LoggedOutFromOnlineService()
 	{
 	}
@@ -447,7 +447,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService_Statics::ClassParams = {
 		&UFGEM_LoggedOutFromOnlineService::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -464,7 +464,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 1047518866);
+	IMPLEMENT_CLASS(UFGEM_LoggedOutFromOnlineService, 1292875505);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEM_LoggedOutFromOnlineService(Z_Construct_UClass_UFGEM_LoggedOutFromOnlineService, &UFGEM_LoggedOutFromOnlineService::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEM_LoggedOutFromOnlineService"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEM_LoggedOutFromOnlineService);
 	void UFGEM_LostConnectionWithOnlineService::StaticRegisterNativesUFGEM_LostConnectionWithOnlineService()
@@ -499,7 +499,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService_Statics::ClassParams = {
 		&UFGEM_LostConnectionWithOnlineService::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -516,7 +516,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_LostConnectionWithOnlineService, 2308158928);
+	IMPLEMENT_CLASS(UFGEM_LostConnectionWithOnlineService, 3467628768);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEM_LostConnectionWithOnlineService(Z_Construct_UClass_UFGEM_LostConnectionWithOnlineService, &UFGEM_LostConnectionWithOnlineService::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEM_LostConnectionWithOnlineService"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEM_LostConnectionWithOnlineService);
 	void UFGEM_FailedToLoginToOnlineService::StaticRegisterNativesUFGEM_FailedToLoginToOnlineService()
@@ -551,7 +551,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService_Statics::ClassParams = {
 		&UFGEM_FailedToLoginToOnlineService::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -568,7 +568,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGOnlineFriend
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGEM_FailedToLoginToOnlineService, 625670085);
+	IMPLEMENT_CLASS(UFGEM_FailedToLoginToOnlineService, 1879143248);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGEM_FailedToLoginToOnlineService(Z_Construct_UClass_UFGEM_FailedToLoginToOnlineService, &UFGEM_FailedToLoginToOnlineService::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGEM_FailedToLoginToOnlineService"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGEM_FailedToLoginToOnlineService);
 	void UFGLocalPlayer::StaticRegisterNativesUFGLocalPlayer()

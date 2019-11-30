@@ -102,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		&NewStructOps,
 		"PickedUpInstance",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPickedUpInstance),
 		alignof(FPickedUpInstance),
 		Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPickedUpInstance_Statics::PropPointers),
@@ -123,7 +123,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC() { return 2895702461U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPickedUpInstance_CRC() { return 1335025298U; }
 	static FName NAME_AFGChainsaw_BroadcastPickup = FName(TEXT("BroadcastPickup"));
 	void AFGChainsaw::BroadcastPickup(TArray<FPickedUpInstance> const& pickups, AFGFoliagePickup* instigatorPlayer)
 	{
@@ -652,7 +652,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGChainsaw_Statics::ClassParams = {
 		&AFGChainsaw::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGChainsaw_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGChainsaw_Statics::PropPointers),
 		nullptr,
@@ -669,7 +669,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPickedUpInstance
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGChainsaw, 1517381460);
+	IMPLEMENT_CLASS(AFGChainsaw, 3605336237);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGChainsaw(Z_Construct_UClass_AFGChainsaw, &AFGChainsaw::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGChainsaw"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGChainsaw);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

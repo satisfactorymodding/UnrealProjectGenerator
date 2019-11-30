@@ -100,7 +100,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		&NewStructOps,
 		"DestroyedFoliageEffectData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FDestroyedFoliageEffectData),
 		alignof(FDestroyedFoliageEffectData),
 		Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_Statics::PropPointers),
@@ -121,7 +121,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_CRC() { return 1396997798U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDestroyedFoliageEffectData_CRC() { return 2281766419U; }
 	void AFGDestructiveProjectile::StaticRegisterNativesAFGDestructiveProjectile()
 	{
 	}
@@ -238,7 +238,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDestroyedFoliageEf
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGDestructiveProjectile, 1114764487);
+	IMPLEMENT_CLASS(AFGDestructiveProjectile, 560934604);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGDestructiveProjectile(Z_Construct_UClass_AFGDestructiveProjectile, &AFGDestructiveProjectile::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGDestructiveProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGDestructiveProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

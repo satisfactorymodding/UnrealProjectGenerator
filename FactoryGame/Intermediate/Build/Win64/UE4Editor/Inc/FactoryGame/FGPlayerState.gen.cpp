@@ -172,7 +172,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 		&NewStructOps,
 		"MessageData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FMessageData),
 		alignof(FMessageData),
 		Z_Construct_UScriptStruct_FMessageData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMessageData_Statics::PropPointers),
@@ -193,7 +193,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMessageData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMessageData_CRC() { return 1407792740U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMessageData_CRC() { return 517724459U; }
 class UScriptStruct* FSlotData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -266,7 +266,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		&NewStructOps,
 		"SlotData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSlotData),
 		alignof(FSlotData),
 		Z_Construct_UScriptStruct_FSlotData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSlotData_Statics::PropPointers),
@@ -287,7 +287,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSlotData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSlotData_CRC() { return 1530629700U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSlotData_CRC() { return 3248771038U; }
 	static FName NAME_AFGPlayerState_Server_RemoveRecipe = FName(TEXT("Server_RemoveRecipe"));
 	void AFGPlayerState::Server_RemoveRecipe(TSubclassOf<UFGRecipe>  recipe)
 	{

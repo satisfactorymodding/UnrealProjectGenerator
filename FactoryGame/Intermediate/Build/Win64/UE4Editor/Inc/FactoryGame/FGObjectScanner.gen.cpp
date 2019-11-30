@@ -186,7 +186,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		&NewStructOps,
 		"ScannableDetails",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FScannableDetails),
 		alignof(FScannableDetails),
 		Z_Construct_UScriptStruct_FScannableDetails_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FScannableDetails_Statics::PropPointers),
@@ -207,7 +207,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FScannableDetails_CRC() { return 497307727U; }
+	uint32 Get_Z_Construct_UScriptStruct_FScannableDetails_CRC() { return 4272842592U; }
 	static FName NAME_AFGObjectScanner_PlayBeep = FName(TEXT("PlayBeep"));
 	void AFGObjectScanner::PlayBeep(bool isObjectInRange)
 	{
@@ -911,7 +911,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGObjectScannerAttachment_Statics::ClassParams = {
 		&AFGObjectScannerAttachment::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGObjectScannerAttachment_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGObjectScannerAttachment_Statics::PropPointers),
 		nullptr,
@@ -928,7 +928,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFScannableDetails
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 4275993380);
+	IMPLEMENT_CLASS(AFGObjectScannerAttachment, 563810044);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGObjectScannerAttachment(Z_Construct_UClass_AFGObjectScannerAttachment, &AFGObjectScannerAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGObjectScannerAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGObjectScannerAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

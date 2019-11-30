@@ -281,7 +281,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGCombatFunctionLibrary_Statics::ClassParams = {
 		&UFGCombatFunctionLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -298,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeFGCombatFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 2837774257);
+	IMPLEMENT_CLASS(UFGCombatFunctionLibrary, 1453273441);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGCombatFunctionLibrary(Z_Construct_UClass_UFGCombatFunctionLibrary, &UFGCombatFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGCombatFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGCombatFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

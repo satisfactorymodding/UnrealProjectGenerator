@@ -168,7 +168,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		&NewStructOps,
 		"FoundationSideSelectionFlags",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFoundationSideSelectionFlags),
 		alignof(FFoundationSideSelectionFlags),
 		Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_Statics::PropPointers),
@@ -189,7 +189,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFoundationSideSele
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC() { return 2925859095U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFoundationSideSelectionFlags_CRC() { return 4144372137U; }
 	void AFGBuildableFactoryBuilding::StaticRegisterNativesAFGBuildableFactoryBuilding()
 	{
 	}

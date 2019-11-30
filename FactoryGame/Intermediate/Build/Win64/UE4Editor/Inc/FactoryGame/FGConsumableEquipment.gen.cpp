@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGConsumableEquipment_Statics::ClassParams = {
 		&AFGConsumableEquipment::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableEquipment() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGConsumableEquipment, 993914681);
+	IMPLEMENT_CLASS(AFGConsumableEquipment, 1598537433);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGConsumableEquipment(Z_Construct_UClass_AFGConsumableEquipment, &AFGConsumableEquipment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGConsumableEquipment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGConsumableEquipment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

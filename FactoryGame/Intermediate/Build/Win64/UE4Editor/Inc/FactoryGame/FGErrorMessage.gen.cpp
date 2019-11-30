@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGErrorMessage_Statics::ClassParams = {
 		&UFGErrorMessage::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGErrorMessage_Statics::PropPointers),
 		nullptr,
@@ -235,7 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeFGErrorMessage() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGErrorMessage, 1630291914);
+	IMPLEMENT_CLASS(UFGErrorMessage, 1470070671);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGErrorMessage(Z_Construct_UClass_UFGErrorMessage, &UFGErrorMessage::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGErrorMessage"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGErrorMessage);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

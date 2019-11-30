@@ -91,7 +91,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		&NewStructOps,
 		"ItemAmount",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FItemAmount),
 		alignof(FItemAmount),
 		Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemAmount_Statics::PropPointers),
@@ -112,7 +112,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemAmount
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_CRC() { return 1926732149U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemAmount_CRC() { return 3739222701U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

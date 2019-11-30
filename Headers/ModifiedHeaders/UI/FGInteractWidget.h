@@ -12,7 +12,7 @@
  * Base class for all stackable widgets in the game.
  */
 UCLASS( config = Engine )
-class UFGInteractWidget : public UUserWidget
+class FACTORYGAME_API UFGInteractWidget : public UUserWidget
 {
 	GENERATED_BODY()
 public:

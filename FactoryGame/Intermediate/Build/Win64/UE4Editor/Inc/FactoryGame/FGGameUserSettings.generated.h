@@ -17,7 +17,7 @@ class UFGGameUserSettings;
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAudioVolumeMap_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGGameUserSettings_h_11_DELEGATE \

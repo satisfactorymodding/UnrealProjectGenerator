@@ -59,7 +59,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 		&NewStructOps,
 		"CustomFastArraySerializer",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCustomFastArraySerializer),
 		alignof(FCustomFastArraySerializer),
 		nullptr, 0,
@@ -80,7 +80,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializer_CRC() { return 3632846662U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializer_CRC() { return 3682166549U; }
 class UScriptStruct* FCustomFastArraySerializerItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -159,7 +159,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 		&NewStructOps,
 		"CustomFastArraySerializerItem",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FCustomFastArraySerializerItem),
 		alignof(FCustomFastArraySerializerItem),
 		Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_Statics::PropPointers),
@@ -180,7 +180,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFCustomFastArraySer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_CRC() { return 2986767840U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCustomFastArraySerializerItem_CRC() { return 1790946351U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

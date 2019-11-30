@@ -142,7 +142,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 		&NewStructOps,
 		"ResourceDepositPackage",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FResourceDepositPackage),
 		alignof(FResourceDepositPackage),
 		Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResourceDepositPackage_Statics::PropPointers),
@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResourceDepositPac
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResourceDepositPackage_CRC() { return 2252710510U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResourceDepositPackage_CRC() { return 3658793429U; }
 class UScriptStruct* FItemSettings::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -248,7 +248,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		&NewStructOps,
 		"ItemSettings",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FItemSettings),
 		alignof(FItemSettings),
 		Z_Construct_UScriptStruct_FItemSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemSettings_Statics::PropPointers),
@@ -269,7 +269,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemSettings_CRC() { return 1221461271U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemSettings_CRC() { return 642390243U; }
 	void UFGResourceSettings::StaticRegisterNativesUFGResourceSettings()
 	{
 		UClass* Class = UFGResourceSettings::StaticClass();

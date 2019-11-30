@@ -237,7 +237,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		&NewStructOps,
 		"PurityTextPair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPurityTextPair),
 		alignof(FPurityTextPair),
 		Z_Construct_UScriptStruct_FPurityTextPair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPurityTextPair_Statics::PropPointers),
@@ -258,7 +258,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPurityTextPair_CRC() { return 2480001369U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPurityTextPair_CRC() { return 3172526116U; }
 	void UFGUseState_NodeFullInventory::StaticRegisterNativesUFGUseState_NodeFullInventory()
 	{
 	}
@@ -292,7 +292,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_NodeFullInventory_Statics::ClassParams = {
 		&UFGUseState_NodeFullInventory::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -309,7 +309,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_NodeFullInventory, 198863983);
+	IMPLEMENT_CLASS(UFGUseState_NodeFullInventory, 3467678013);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_NodeFullInventory(Z_Construct_UClass_UFGUseState_NodeFullInventory, &UFGUseState_NodeFullInventory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_NodeFullInventory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_NodeFullInventory);
 	void UFGUseState_NonConveyorResource::StaticRegisterNativesUFGUseState_NonConveyorResource()
@@ -345,7 +345,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_NonConveyorResource_Statics::ClassParams = {
 		&UFGUseState_NonConveyorResource::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -362,7 +362,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPurityTextPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_NonConveyorResource, 855884862);
+	IMPLEMENT_CLASS(UFGUseState_NonConveyorResource, 3544331343);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_NonConveyorResource(Z_Construct_UClass_UFGUseState_NonConveyorResource, &UFGUseState_NonConveyorResource::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_NonConveyorResource"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_NonConveyorResource);
 	static FName NAME_AFGResourceNode_ClearWidget = FName(TEXT("ClearWidget"));

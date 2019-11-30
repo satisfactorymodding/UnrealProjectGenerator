@@ -165,6 +165,8 @@ void AFGCharacterPlayer::OnRep_DrivenVehicle(){ }
 void AFGCharacterPlayer::OnRep_PickupCounter(){ }
 void AFGCharacterPlayer::OnRep_InRadioactiveZone(){ }
 void AFGCharacterPlayer::OnRep_RadiationIntensity(){ }
+const FName AFGCharacterPlayer::ArmsInvComponentName = FName();
+const FName AFGCharacterPlayer::BackInvComponentName = FName();
 FOnPersistentEquipmentSpawned AFGCharacterPlayer::OnPersistentEquipmentSpawned = FOnPersistentEquipmentSpawned();
 FOnEquipmentEquipped AFGCharacterPlayer::OnEquipmentEquipped = FOnEquipmentEquipped();
 FOnEquipmentUnequipped AFGCharacterPlayer::OnEquipmentUnequipped = FOnEquipmentUnequipped();

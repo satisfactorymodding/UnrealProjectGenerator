@@ -262,7 +262,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		&NewStructOps,
 		"MoveSpeedPair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FMoveSpeedPair),
 		alignof(FMoveSpeedPair),
 		Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMoveSpeedPair_Statics::PropPointers),
@@ -283,7 +283,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMoveSpeedPair_CRC() { return 1483580045U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMoveSpeedPair_CRC() { return 4063635916U; }
 	static FName NAME_AFGCreature_CancelRotationMovement = FName(TEXT("CancelRotationMovement"));
 	void AFGCreature::CancelRotationMovement()
 	{
@@ -1515,7 +1515,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMoveSpeedPair
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCreature, 1365025663);
+	IMPLEMENT_CLASS(AFGCreature, 1418260983);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCreature(Z_Construct_UClass_AFGCreature, &AFGCreature::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCreature"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCreature);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

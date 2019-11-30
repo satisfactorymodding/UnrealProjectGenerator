@@ -12,7 +12,7 @@
 /**
  * Loading screen with support for a custom text.
  */
-class SFGLoadingScreen : public SCompoundWidget
+class FACTORYGAME_API SFGLoadingScreen : public SCompoundWidget
 {
 public:
 	static void Initialize();
@@ -43,7 +43,7 @@ private:
 /**
  * Loading Spinner
  */
-class SFGSpinnerLoader : public SCompoundWidget
+class FACTORYGAME_API SFGSpinnerLoader : public SCompoundWidget
 {
 public:
 	SLATE_BEGIN_ARGS( SFGSpinnerLoader ) :

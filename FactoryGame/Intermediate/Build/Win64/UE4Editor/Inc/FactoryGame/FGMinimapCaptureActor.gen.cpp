@@ -119,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		&NewStructOps,
 		"FGHeightData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFGHeightData),
 		alignof(FFGHeightData),
 		nullptr, 0,
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFGHeightData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFGHeightData_CRC() { return 1794150406U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFGHeightData_CRC() { return 4075152720U; }
 	void UFGHeightWaterUserData::StaticRegisterNativesUFGHeightWaterUserData()
 	{
 	}

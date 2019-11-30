@@ -20,12 +20,12 @@ class AFGBuildableSubsystem;
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_39_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBuildableBucket_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FDistanceBasedTickRate_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGBuildableSubsystem_h_21_DELEGATE \

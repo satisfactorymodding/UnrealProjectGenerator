@@ -12,7 +12,7 @@
 #include "FGHardDriveSettings.generated.h"
 
 USTRUCT( BlueprintType )
-struct FHardDriveSchematicDrop
+struct FACTORYGAME_API FHardDriveSchematicDrop
 {
 	GENERATED_BODY()
 

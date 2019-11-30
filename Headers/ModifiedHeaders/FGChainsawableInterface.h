@@ -12,7 +12,7 @@
 * have a UCLASS to be able to access
 */
 UINTERFACE( Blueprintable )
-class UFGChainsawableInterface : public UInterface
+class FACTORYGAME_API UFGChainsawableInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -22,7 +22,7 @@ class UFGChainsawableInterface : public UInterface
 /**
  * Actors attached that implement this interface will be considered by the chainsaw to be chainsawable.
  */
-class IFGChainsawableInterface
+class FACTORYGAME_API IFGChainsawableInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

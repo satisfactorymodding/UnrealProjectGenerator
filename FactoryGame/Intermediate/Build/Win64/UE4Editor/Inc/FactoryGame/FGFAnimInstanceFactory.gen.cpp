@@ -378,7 +378,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		&NewStructOps,
 		"AnimInstanceProxyFactory",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FAnimInstanceProxyFactory),
 		alignof(FAnimInstanceProxyFactory),
 		Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics::PropPointers),
@@ -399,7 +399,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAnimInstanceProxyF
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_CRC() { return 586103110U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_CRC() { return 3401899146U; }
 	void UFGFAnimInstanceFactory::StaticRegisterNativesUFGFAnimInstanceFactory()
 	{
 	}

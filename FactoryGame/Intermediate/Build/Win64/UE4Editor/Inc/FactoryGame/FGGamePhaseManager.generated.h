@@ -19,12 +19,12 @@ class AFGGamePhaseManager;
 
 #define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_70_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPhaseCost_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPhaseTierInfo_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGGamePhaseManager_h_87_DELEGATE \

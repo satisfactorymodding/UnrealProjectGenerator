@@ -83,7 +83,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		&NewStructOps,
 		"RadioactiveSource",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FRadioactiveSource),
 		alignof(FRadioactiveSource),
 		Z_Construct_UScriptStruct_FRadioactiveSource_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FRadioactiveSource_Statics::PropPointers),
@@ -104,7 +104,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFRadioactiveSource
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FRadioactiveSource_CRC() { return 612395837U; }
+	uint32 Get_Z_Construct_UScriptStruct_FRadioactiveSource_CRC() { return 1728074304U; }
 	void AFGRadioactivitySubsystem::StaticRegisterNativesAFGRadioactivitySubsystem()
 	{
 		UClass* Class = AFGRadioactivitySubsystem::StaticClass();

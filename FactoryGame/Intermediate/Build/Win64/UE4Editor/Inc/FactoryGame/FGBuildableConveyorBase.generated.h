@@ -15,14 +15,14 @@ class AFGCharacterPlayer;
 #endif
 #define FACTORYGAME_FGBuildableConveyorBase_generated_h
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_287_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_288_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConveyorBeltItems_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_55_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FConveyorBeltItem_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_26_RPC_WRAPPERS \
@@ -153,9 +153,9 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_RPC_WRAPPERS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_RPC_WRAPPERS_NO_PURE_DECLS
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_RPC_WRAPPERS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_RPC_WRAPPERS_NO_PURE_DECLS
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPresistentConveyorPackagingData(); \
 	friend struct Z_Construct_UClass_UPresistentConveyorPackagingData_Statics; \
@@ -164,7 +164,7 @@ public: \
 	DECLARE_SERIALIZER(UPresistentConveyorPackagingData)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_INCLASS \
 private: \
 	static void StaticRegisterNativesUPresistentConveyorPackagingData(); \
 	friend struct Z_Construct_UClass_UPresistentConveyorPackagingData_Statics; \
@@ -173,7 +173,7 @@ public: \
 	DECLARE_SERIALIZER(UPresistentConveyorPackagingData)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPresistentConveyorPackagingData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPresistentConveyorPackagingData) \
@@ -186,7 +186,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPresistentConveyorPackagingData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -199,31 +199,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPresistentConveyorPackagingData); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPresistentConveyorPackagingData)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_PRIVATE_PROPERTY_OFFSET
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_247_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_PRIVATE_PROPERTY_OFFSET
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_248_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_250_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_251_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_RPC_WRAPPERS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetIsSignificant) \
 	{ \
@@ -234,7 +234,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetIsSignificant) \
 	{ \
@@ -245,33 +245,33 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_ARCHIVESERIALIZER \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(AFGBuildableConveyorBase, NO_API)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_INCLASS_NO_PURE_DECLS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFGBuildableConveyorBase(); \
 	friend struct Z_Construct_UClass_AFGBuildableConveyorBase_Statics; \
 public: \
 	DECLARE_CLASS(AFGBuildableConveyorBase, AFGBuildable, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGBuildableConveyorBase) \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableConveyorBase*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_INCLASS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_INCLASS \
 private: \
 	static void StaticRegisterNativesAFGBuildableConveyorBase(); \
 	friend struct Z_Construct_UClass_AFGBuildableConveyorBase_Statics; \
 public: \
 	DECLARE_CLASS(AFGBuildableConveyorBase, AFGBuildable, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/FactoryGame"), NO_API) \
 	DECLARE_SERIALIZER(AFGBuildableConveyorBase) \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_ARCHIVESERIALIZER \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_ARCHIVESERIALIZER \
 	virtual UObject* _getUObject() const override { return const_cast<AFGBuildableConveyorBase*>(this); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_STANDARD_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFGBuildableConveyorBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFGBuildableConveyorBase) \
@@ -284,7 +284,7 @@ private: \
 public:
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_ENHANCED_CONSTRUCTORS \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFGBuildableConveyorBase(AFGBuildableConveyorBase&&); \
@@ -295,32 +295,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFGBuildableConveyorBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFGBuildableConveyorBase)
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_PRIVATE_PROPERTY_OFFSET \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__mSpeed() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mSpeed); } \
 	FORCEINLINE static uint32 __PPO__mItems() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mItems); } \
 	FORCEINLINE static uint32 __PPO__mConnection0() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection0); } \
 	FORCEINLINE static uint32 __PPO__mConnection1() { return STRUCT_OFFSET(AFGBuildableConveyorBase, mConnection1); }
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_601_PROLOG
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_GENERATED_BODY_LEGACY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_602_PROLOG
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_RPC_WRAPPERS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_INCLASS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_STANDARD_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_RPC_WRAPPERS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_INCLASS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_GENERATED_BODY \
+#define FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_PRIVATE_PROPERTY_OFFSET \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_RPC_WRAPPERS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_INCLASS_NO_PURE_DECLS \
-	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_604_ENHANCED_CONSTRUCTORS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_PRIVATE_PROPERTY_OFFSET \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_RPC_WRAPPERS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_INCLASS_NO_PURE_DECLS \
+	FactoryGame_Source_FactoryGame_Buildables_FGBuildableConveyorBase_h_605_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

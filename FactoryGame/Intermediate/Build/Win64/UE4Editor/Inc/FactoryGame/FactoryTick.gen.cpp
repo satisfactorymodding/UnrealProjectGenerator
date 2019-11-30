@@ -59,7 +59,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		&NewStructOps,
 		"FactoryTickFunction",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFactoryTickFunction),
 		alignof(FFactoryTickFunction),
 		nullptr, 0,
@@ -80,7 +80,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryTickFunctio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC() { return 1646029032U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryTickFunction_CRC() { return 2391546056U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

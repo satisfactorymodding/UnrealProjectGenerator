@@ -62,7 +62,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		&NewStructOps,
 		"GainSignificanceData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FGainSignificanceData),
 		alignof(FGainSignificanceData),
 		nullptr, 0,
@@ -83,7 +83,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFGainSignificanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC() { return 2241743463U; }
+	uint32 Get_Z_Construct_UScriptStruct_FGainSignificanceData_CRC() { return 3778106002U; }
 	void UFGSignificanceManager::StaticRegisterNativesUFGSignificanceManager()
 	{
 	}

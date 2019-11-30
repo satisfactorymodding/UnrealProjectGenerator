@@ -5,14 +5,14 @@
 #include "FGReplicationDetailActorOwnerInterface.generated.h"
 
 UINTERFACE( Blueprintable )
-class UFGReplicationDetailActorOwnerInterface : public UInterface
+class FACTORYGAME_API UFGReplicationDetailActorOwnerInterface : public UInterface
 {
 	
  GENERATED_BODY()
 	UFGReplicationDetailActorOwnerInterface(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {} 
 };
 
-class IFGReplicationDetailActorOwnerInterface
+class FACTORYGAME_API IFGReplicationDetailActorOwnerInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

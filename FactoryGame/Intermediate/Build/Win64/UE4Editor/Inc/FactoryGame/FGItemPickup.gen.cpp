@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_FullInventory_Statics::ClassParams = {
 		&UFGUseState_FullInventory::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_FullInventory, 1493801602);
+	IMPLEMENT_CLASS(UFGUseState_FullInventory, 2842201172);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_FullInventory(Z_Construct_UClass_UFGUseState_FullInventory, &UFGUseState_FullInventory::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_FullInventory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_FullInventory);
 	void UFGUseState_Collecting::StaticRegisterNativesUFGUseState_Collecting()
@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_Collecting_Statics::ClassParams = {
 		&UFGUseState_Collecting::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_Collecting, 437923691);
+	IMPLEMENT_CLASS(UFGUseState_Collecting, 1191599058);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_Collecting(Z_Construct_UClass_UFGUseState_Collecting, &UFGUseState_Collecting::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_Collecting"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_Collecting);
 	static FName NAME_AFGItemPickup_OnPickup = FName(TEXT("OnPickup"));
@@ -649,7 +649,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGItemPickup_Statics::ClassParams = {
 		&AFGItemPickup::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A1u,
+		0x009000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGItemPickup_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGItemPickup_Statics::PropPointers),
 		nullptr,
@@ -666,7 +666,7 @@ void EmptyLinkFunctionForGeneratedCodeFGItemPickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGItemPickup, 1520579238);
+	IMPLEMENT_CLASS(AFGItemPickup, 266403411);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGItemPickup(Z_Construct_UClass_AFGItemPickup, &AFGItemPickup::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGItemPickup"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGItemPickup);
 	IMPLEMENT_FSTRUCTUREDARCHIVE_SERIALIZER(AFGItemPickup)

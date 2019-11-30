@@ -145,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPopupInstigatorInterface_Statics::ClassParams = {
 		&UFGPopupInstigatorInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPopupInstigatorInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPopupInstigatorInterface, 3455313167);
+	IMPLEMENT_CLASS(UFGPopupInstigatorInterface, 553425672);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPopupInstigatorInterface(Z_Construct_UClass_UFGPopupInstigatorInterface, &UFGPopupInstigatorInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPopupInstigatorInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPopupInstigatorInterface);
 	static FName NAME_UFGPopupInstigatorInterface_NotifyPopupClosed = FName(TEXT("NotifyPopupClosed"));

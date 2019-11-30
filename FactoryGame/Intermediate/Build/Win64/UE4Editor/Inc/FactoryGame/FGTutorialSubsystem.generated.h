@@ -17,7 +17,7 @@ class UObject;
 
 #define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTutorialData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGTutorialSubsystem_h_44_RPC_WRAPPERS \

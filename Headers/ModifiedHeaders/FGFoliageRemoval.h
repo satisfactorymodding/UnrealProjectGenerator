@@ -12,7 +12,7 @@
 /** Data about removed instances */
 /** We can't send the id of the instance to clients, as that requires us to maintain a commandbuffer with all done commands to be able to get the same id's a server/client */
 USTRUCT()
-struct FRemovedInstance : public FFastArraySerializerItem
+struct FACTORYGAME_API FRemovedInstance : public FFastArraySerializerItem
 {
 	GENERATED_BODY()
 	
@@ -38,7 +38,7 @@ struct FRemovedInstance : public FFastArraySerializerItem
 
 /** Wrapper around the Items struct to enable custom delta serialization (we send a part of the data to the client every frame instead of sending it all in one frame) */
 USTRUCT()
-struct FRemovedInstanceArray : public FFastArraySerializer
+struct FACTORYGAME_API FRemovedInstanceArray : public FFastArraySerializer
 {
 	GENERATED_USTRUCT_BODY()
 
@@ -67,7 +67,7 @@ struct FRemovedInstanceArray : public FFastArraySerializer
 
 /** Enables NetDeltaSerialize in FRemovedInstanceArray with template magic */
 template<>
-struct TStructOpsTypeTraits< FRemovedInstanceArray > : public TStructOpsTypeTraitsBase2< FRemovedInstanceArray >
+struct FACTORYGAME_API TStructOpsTypeTraits< FRemovedInstanceArray > : public TStructOpsTypeTraitsBase2< FRemovedInstanceArray >
 {
 	enum
 	{

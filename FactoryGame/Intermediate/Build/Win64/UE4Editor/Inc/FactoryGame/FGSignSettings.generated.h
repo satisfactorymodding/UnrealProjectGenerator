@@ -17,7 +17,7 @@ struct FSignColorData;
 
 #define FactoryGame_Source_FactoryGame_FGSignSettings_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSignColorData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGSignSettings_h_49_RPC_WRAPPERS \

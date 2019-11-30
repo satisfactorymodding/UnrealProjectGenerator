@@ -309,7 +309,7 @@ void EmptyLinkFunctionForGeneratedCodeFGEnemy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGEnemy, 3331892913);
+	IMPLEMENT_CLASS(AFGEnemy, 3808965268);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGEnemy(Z_Construct_UClass_AFGEnemy, &AFGEnemy::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGEnemy"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGEnemy);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRailroadFunctionLibrary_Statics::ClassParams = {
 		&UFGRailroadFunctionLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -302,7 +302,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadFunctionLibrary, 4078692725);
+	IMPLEMENT_CLASS(UFGRailroadFunctionLibrary, 91589751);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadFunctionLibrary(Z_Construct_UClass_UFGRailroadFunctionLibrary, &UFGRailroadFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

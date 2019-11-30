@@ -109,7 +109,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		&NewStructOps,
 		"FeetOffset",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FFeetOffset),
 		alignof(FFeetOffset),
 		Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFeetOffset_Statics::PropPointers),
@@ -130,7 +130,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 745739224U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFeetOffset_CRC() { return 2151974912U; }
 	void UFGFactoryLegsComponent::StaticRegisterNativesUFGFactoryLegsComponent()
 	{
 		UClass* Class = UFGFactoryLegsComponent::StaticClass();
@@ -376,7 +376,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGFactoryLegsComponent_Statics::ClassParams = {
 		&UFGFactoryLegsComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGFactoryLegsComponent_Statics::PropPointers),
 		"Engine",
@@ -393,7 +393,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFeetOffset
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 2825480966);
+	IMPLEMENT_CLASS(UFGFactoryLegsComponent, 2540155945);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGFactoryLegsComponent(Z_Construct_UClass_UFGFactoryLegsComponent, &UFGFactoryLegsComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGFactoryLegsComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGFactoryLegsComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

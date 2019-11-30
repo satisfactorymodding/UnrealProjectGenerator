@@ -3,6 +3,7 @@
 #include "FGSaveSystem.h"
 
 FSaveHeader::FSaveHeader(){ }
+const FGuid FSaveHeader::GUID = FGuid();
 void UFGSaveSystem::Init(){ }
 FString UFGSaveSystem::GetSaveDirectoryPath(){ return FString(); }
 bool UFGSaveSystem::GetUserSaveDirectoryPath( const UWorld* world, FString& out_dirPath){ return bool(); }

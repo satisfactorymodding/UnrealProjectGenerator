@@ -17,7 +17,7 @@ class UMeshComponent;
 
 #define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCostIngredientEffectActorInfo_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGMaterialEffectComponent_h_39_RPC_WRAPPERS \

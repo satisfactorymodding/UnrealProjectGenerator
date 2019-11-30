@@ -59,3 +59,5 @@ float AFGHologram::ApplyScrollRotationTo( float base, bool onlyUseBaseForAlignme
 void AFGHologram::SetupComponents(){ }
 void AFGHologram::Client_PlaySnapSound_Implementation(){ }
 void AFGHologram::OnRep_InitialScrollModeValue(){ }
+const FName AFGHologram::HOLOGRAM_MESH_TAG = FName();
+const FName AFGHologram::HOLOGRAM_DEPTH_MESH_TAG = FName();

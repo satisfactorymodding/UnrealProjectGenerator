@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGExplosiveDestroyableInterface_Statics::ClassParams = {
 		&UFGExplosiveDestroyableInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -159,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeFGExplosiveDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 4263931015);
+	IMPLEMENT_CLASS(UFGExplosiveDestroyableInterface, 240499606);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGExplosiveDestroyableInterface(Z_Construct_UClass_UFGExplosiveDestroyableInterface, &UFGExplosiveDestroyableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGExplosiveDestroyableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGExplosiveDestroyableInterface);
 	static FName NAME_UFGExplosiveDestroyableInterface_GetDestroyEffect = FName(TEXT("GetDestroyEffect"));

@@ -125,7 +125,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 		&NewStructOps,
 		"FactoryClearanceData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FFactoryClearanceData),
 		alignof(FFactoryClearanceData),
 		Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FFactoryClearanceData_Statics::PropPointers),
@@ -146,7 +146,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFFactoryClearanceDa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FFactoryClearanceData_CRC() { return 2165866246U; }
+	uint32 Get_Z_Construct_UScriptStruct_FFactoryClearanceData_CRC() { return 172204126U; }
 class UScriptStruct* FConnectionRepresentation::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -215,7 +215,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		&NewStructOps,
 		"ConnectionRepresentation",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000205),
 		sizeof(FConnectionRepresentation),
 		alignof(FConnectionRepresentation),
 		Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FConnectionRepresentation_Statics::PropPointers),
@@ -236,7 +236,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConnectionRepresen
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConnectionRepresentation_CRC() { return 940665298U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConnectionRepresentation_CRC() { return 3493497886U; }
 	static FName NAME_UFGBuildGunStateBuild_Client_OnBuildableConstructed = FName(TEXT("Client_OnBuildableConstructed"));
 	void UFGBuildGunStateBuild::Client_OnBuildableConstructed(TSubclassOf<UFGItemDescriptor>  desc)
 	{

@@ -12,6 +12,7 @@ float FRailroadTrackPosition::GetForwardOffset() const{ return float(); }
 float FRailroadTrackPosition::GetReverseOffset() const{ return float(); }
 UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetForwardConnection() const{ return nullptr; }
 UFGRailroadTrackConnectionComponent* FRailroadTrackPosition::GetReverseConnection() const{ return nullptr; }
+const FRailroadTrackPosition FRailroadTrackPosition::InvalidTrackPosition = FRailroadTrackPosition();
 AFGBuildableRailroadTrack::AFGBuildableRailroadTrack(){ }
 void AFGBuildableRailroadTrack::GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps) const{ }
 void AFGBuildableRailroadTrack::BeginPlay(){ }

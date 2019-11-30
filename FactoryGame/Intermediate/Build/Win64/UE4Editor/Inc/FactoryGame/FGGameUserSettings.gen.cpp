@@ -163,7 +163,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		&NewStructOps,
 		"AudioVolumeMap",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FAudioVolumeMap),
 		alignof(FAudioVolumeMap),
 		Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FAudioVolumeMap_Statics::PropPointers),
@@ -184,7 +184,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAudioVolumeMap_CRC() { return 262175097U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAudioVolumeMap_CRC() { return 560545796U; }
 	void UFGGameUserSettings::StaticRegisterNativesUFGGameUserSettings()
 	{
 		UClass* Class = UFGGameUserSettings::StaticClass();
@@ -1818,7 +1818,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameUserSettings_Statics::ClassParams = {
 		&UFGGameUserSettings::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x408000A4u,
+		0x409000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGGameUserSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGGameUserSettings_Statics::PropPointers),
 		"GameUserSettings",
@@ -1835,7 +1835,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioVolumeMap
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameUserSettings, 308667499);
+	IMPLEMENT_CLASS(UFGGameUserSettings, 3853204206);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameUserSettings(Z_Construct_UClass_UFGGameUserSettings, &UFGGameUserSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameUserSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameUserSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

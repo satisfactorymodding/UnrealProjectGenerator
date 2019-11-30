@@ -97,7 +97,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		&NewStructOps,
 		"HardDriveSchematicDrop",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FHardDriveSchematicDrop),
 		alignof(FHardDriveSchematicDrop),
 		Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FHardDriveSchematicDrop_Statics::PropPointers),
@@ -118,7 +118,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFHardDriveSchematic
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_CRC() { return 2910693869U; }
+	uint32 Get_Z_Construct_UScriptStruct_FHardDriveSchematicDrop_CRC() { return 4046244438U; }
 	void UFGHardDriveSettings::StaticRegisterNativesUFGHardDriveSettings()
 	{
 		UClass* Class = UFGHardDriveSettings::StaticClass();

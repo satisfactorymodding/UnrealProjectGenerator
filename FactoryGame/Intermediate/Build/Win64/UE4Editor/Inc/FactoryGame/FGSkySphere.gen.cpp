@@ -185,7 +185,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		&NewStructOps,
 		"SkySphereSettings",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSkySphereSettings),
 		alignof(FSkySphereSettings),
 		Z_Construct_UScriptStruct_FSkySphereSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSkySphereSettings_Statics::PropPointers),
@@ -206,7 +206,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_CRC() { return 3084137858U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSkySphereSettings_CRC() { return 4099149055U; }
 	static FName NAME_AFGSkySphere_ApplySkySphereSettings = FName(TEXT("ApplySkySphereSettings"));
 	void AFGSkySphere::ApplySkySphereSettings(FSkySphereSettings const& settings)
 	{
@@ -536,7 +536,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGSkySphere_Statics::ClassParams = {
 		&AFGSkySphere::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGSkySphere_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGSkySphere_Statics::PropPointers),
 		nullptr,
@@ -553,7 +553,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSkySphereSettings
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGSkySphere, 4282667274);
+	IMPLEMENT_CLASS(AFGSkySphere, 3617196920);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGSkySphere(Z_Construct_UClass_AFGSkySphere, &AFGSkySphere::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGSkySphere"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGSkySphere);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

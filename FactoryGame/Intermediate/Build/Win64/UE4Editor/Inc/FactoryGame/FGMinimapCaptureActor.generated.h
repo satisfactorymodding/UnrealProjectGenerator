@@ -16,7 +16,7 @@ class UFGMapAreaTexture;
 
 #define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_37_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFGHeightData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGMinimapCaptureActor_h_19_RPC_WRAPPERS

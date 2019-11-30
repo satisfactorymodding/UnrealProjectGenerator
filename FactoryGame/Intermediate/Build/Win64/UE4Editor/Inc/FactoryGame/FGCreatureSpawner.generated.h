@@ -18,7 +18,7 @@ class AFGSplinePath;
 
 #define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSpawnData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Creature_FGCreatureSpawner_h_51_RPC_WRAPPERS \

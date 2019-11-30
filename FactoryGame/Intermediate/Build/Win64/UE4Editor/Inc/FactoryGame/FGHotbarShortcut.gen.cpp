@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGHotbarShortcut_Statics::ClassParams = {
 		&UFGHotbarShortcut::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -258,7 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeFGHotbarShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGHotbarShortcut, 1896810454);
+	IMPLEMENT_CLASS(UFGHotbarShortcut, 3783101011);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGHotbarShortcut(Z_Construct_UClass_UFGHotbarShortcut, &UFGHotbarShortcut::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGHotbarShortcut"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGHotbarShortcut);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

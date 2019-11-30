@@ -198,7 +198,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 		&NewStructOps,
 		"DismantleRefunds",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FDismantleRefunds),
 		alignof(FDismantleRefunds),
 		Z_Construct_UScriptStruct_FDismantleRefunds_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDismantleRefunds_Statics::PropPointers),
@@ -219,7 +219,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDismantleRefunds
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDismantleRefunds_CRC() { return 2940517512U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDismantleRefunds_CRC() { return 1280215975U; }
 	static FName NAME_UFGBuildGunStateDismantle_OnStartDismantle = FName(TEXT("OnStartDismantle"));
 	void UFGBuildGunStateDismantle::OnStartDismantle()
 	{

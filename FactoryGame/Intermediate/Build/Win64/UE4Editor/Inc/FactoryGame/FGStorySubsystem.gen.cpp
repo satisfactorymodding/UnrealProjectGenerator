@@ -128,7 +128,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		&NewStructOps,
 		"ResearchMessageData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FResearchMessageData),
 		alignof(FResearchMessageData),
 		Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FResearchMessageData_Statics::PropPointers),
@@ -149,7 +149,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFResearchMessageDat
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC() { return 2794814126U; }
+	uint32 Get_Z_Construct_UScriptStruct_FResearchMessageData_CRC() { return 283392322U; }
 class UScriptStruct* FSchematicMessagePair::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -224,7 +224,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		&NewStructOps,
 		"SchematicMessagePair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSchematicMessagePair),
 		alignof(FSchematicMessagePair),
 		Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSchematicMessagePair_Statics::PropPointers),
@@ -245,7 +245,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSchematicMessagePa
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC() { return 2902202277U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSchematicMessagePair_CRC() { return 665307389U; }
 class UScriptStruct* FItemFoundData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -350,7 +350,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		&NewStructOps,
 		"ItemFoundData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FItemFoundData),
 		alignof(FItemFoundData),
 		Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FItemFoundData_Statics::PropPointers),
@@ -371,7 +371,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFItemFoundData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_CRC() { return 1403819034U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemFoundData_CRC() { return 4193722203U; }
 class UScriptStruct* FMapAreaVisitedData::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -459,7 +459,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		&NewStructOps,
 		"MapAreaVisitedData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FMapAreaVisitedData),
 		alignof(FMapAreaVisitedData),
 		Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics::PropPointers),
@@ -480,7 +480,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFMapAreaVisitedData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC() { return 3225030330U; }
+	uint32 Get_Z_Construct_UScriptStruct_FMapAreaVisitedData_CRC() { return 1974906706U; }
 	void AFGStorySubsystem::StaticRegisterNativesAFGStorySubsystem()
 	{
 		UClass* Class = AFGStorySubsystem::StaticClass();

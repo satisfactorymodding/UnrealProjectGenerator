@@ -122,7 +122,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 		&NewStructOps,
 		"NewsFeedMap",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FNewsFeedMap),
 		alignof(FNewsFeedMap),
 		Z_Construct_UScriptStruct_FNewsFeedMap_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FNewsFeedMap_Statics::PropPointers),
@@ -143,7 +143,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNewsFeedMap
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FNewsFeedMap_CRC() { return 2360606753U; }
+	uint32 Get_Z_Construct_UScriptStruct_FNewsFeedMap_CRC() { return 3246845806U; }
 	void AFGNewsFeedActor::StaticRegisterNativesAFGNewsFeedActor()
 	{
 	}

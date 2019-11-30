@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMenuBase_Statics::ClassParams = {
 		&UFGMenuBase::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A010A0u,
+		0x00B010A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGMenuBase_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMenuBase_Statics::PropPointers),
 		nullptr,
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMenuBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMenuBase, 3034511341);
+	IMPLEMENT_CLASS(UFGMenuBase, 631468625);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMenuBase(Z_Construct_UClass_UFGMenuBase, &UFGMenuBase::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMenuBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMenuBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

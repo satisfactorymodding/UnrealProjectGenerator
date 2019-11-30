@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInventoryComponentTrash() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGInventoryComponentTrash, 541372396);
+	IMPLEMENT_CLASS(UFGInventoryComponentTrash, 973344427);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGInventoryComponentTrash(Z_Construct_UClass_UFGInventoryComponentTrash, &UFGInventoryComponentTrash::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGInventoryComponentTrash"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGInventoryComponentTrash);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

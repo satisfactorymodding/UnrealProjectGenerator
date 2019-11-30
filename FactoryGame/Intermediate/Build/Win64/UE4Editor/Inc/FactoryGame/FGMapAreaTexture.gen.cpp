@@ -148,7 +148,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		&NewStructOps,
 		"ColorMapAreaPair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FColorMapAreaPair),
 		alignof(FColorMapAreaPair),
 		Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FColorMapAreaPair_Statics::PropPointers),
@@ -169,7 +169,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFColorMapAreaPair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC() { return 271803988U; }
+	uint32 Get_Z_Construct_UScriptStruct_FColorMapAreaPair_CRC() { return 4080619899U; }
 	void UFGMapAreaTexture::StaticRegisterNativesUFGMapAreaTexture()
 	{
 		UClass* Class = UFGMapAreaTexture::StaticClass();

@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::ClassParams = {
 		&UFGMapAreaZoneDescriptor::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMapAreaZoneDescriptor_Statics::PropPointers),
 		nullptr,
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMapAreaZoneDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 1092133228);
+	IMPLEMENT_CLASS(UFGMapAreaZoneDescriptor, 3563247040);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMapAreaZoneDescriptor(Z_Construct_UClass_UFGMapAreaZoneDescriptor, &UFGMapAreaZoneDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMapAreaZoneDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMapAreaZoneDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

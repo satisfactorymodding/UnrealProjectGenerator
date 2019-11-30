@@ -52,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGAudioVolumeSubsystem_Statics::ClassParams = {
 		&AFGAudioVolumeSubsystem::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008002A0u,
+		0x009002A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAudioVolumeSubsystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 1006059480);
+	IMPLEMENT_CLASS(AFGAudioVolumeSubsystem, 1042679925);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAudioVolumeSubsystem(Z_Construct_UClass_AFGAudioVolumeSubsystem, &AFGAudioVolumeSubsystem::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAudioVolumeSubsystem"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAudioVolumeSubsystem);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

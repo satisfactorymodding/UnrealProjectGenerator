@@ -17,7 +17,7 @@ struct FNodeClusterData;
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGResourceScanner_h_13_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FNodeClusterData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGResourceScanner_h_41_RPC_WRAPPERS \

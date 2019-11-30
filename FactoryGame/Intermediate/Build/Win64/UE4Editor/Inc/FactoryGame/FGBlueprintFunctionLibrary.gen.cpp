@@ -2442,7 +2442,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGBlueprintFunctionLibrary_Statics::ClassParams = {
 		&UFGBlueprintFunctionLibrary::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -2459,7 +2459,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBlueprintFunctionLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 3463283799);
+	IMPLEMENT_CLASS(UFGBlueprintFunctionLibrary, 4090636255);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGBlueprintFunctionLibrary(Z_Construct_UClass_UFGBlueprintFunctionLibrary, &UFGBlueprintFunctionLibrary::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGBlueprintFunctionLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGBlueprintFunctionLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

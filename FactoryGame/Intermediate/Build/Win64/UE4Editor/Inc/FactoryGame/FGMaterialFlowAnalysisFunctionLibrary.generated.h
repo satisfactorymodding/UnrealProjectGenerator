@@ -19,17 +19,17 @@ class AFGRecipeManager;
 
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_79_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMaterialFlowNode_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_50_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMaterialFlowConnection_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMaterialFlowGraph_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGMaterialFlowAnalysisFunctionLibrary_h_110_RPC_WRAPPERS \

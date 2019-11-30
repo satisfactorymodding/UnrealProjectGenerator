@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGConsumableDescriptor_Statics::ClassParams = {
 		&UFGConsumableDescriptor::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGConsumableDescriptor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGConsumableDescriptor_Statics::PropPointers),
 		nullptr,
@@ -285,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeFGConsumableDescriptor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConsumableDescriptor, 2114558976);
+	IMPLEMENT_CLASS(UFGConsumableDescriptor, 2229602738);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConsumableDescriptor(Z_Construct_UClass_UFGConsumableDescriptor, &UFGConsumableDescriptor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConsumableDescriptor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConsumableDescriptor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

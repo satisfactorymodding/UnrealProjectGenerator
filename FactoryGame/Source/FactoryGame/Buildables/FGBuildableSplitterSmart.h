@@ -12,7 +12,7 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnSortRulesChanged );
 
 USTRUCT( BlueprintType )
-struct FSplitterSortRule
+struct FACTORYGAME_API FSplitterSortRule
 {
 	GENERATED_BODY()
 public:

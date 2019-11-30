@@ -76,7 +76,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
 		&NewStructOps,
 		"ConveyorBeltItems",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FConveyorBeltItems),
 		alignof(FConveyorBeltItems),
 		nullptr, 0,
@@ -97,7 +97,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItems
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC() { return 2470069133U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItems_CRC() { return 1024993181U; }
 class UScriptStruct* FConveyorBeltItem::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -167,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		&NewStructOps,
 		"ConveyorBeltItem",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FConveyorBeltItem),
 		alignof(FConveyorBeltItem),
 		Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FConveyorBeltItem_Statics::PropPointers),
@@ -188,7 +188,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC() { return 1674901614U; }
+	uint32 Get_Z_Construct_UScriptStruct_FConveyorBeltItem_CRC() { return 2162085697U; }
 	static FName NAME_UFGConveyorRemoteCallObject_Server_OnUse = FName(TEXT("Server_OnUse"));
 	void UFGConveyorRemoteCallObject::Server_OnUse(AFGBuildableConveyorBelt* target, AFGCharacterPlayer* byCharacter, int32 itemIndex, int8 repVersion)
 	{
@@ -299,7 +299,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::ClassParams = {
 		&UFGConveyorRemoteCallObject::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGConveyorRemoteCallObject_Statics::PropPointers),
 		nullptr,
@@ -316,7 +316,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFConveyorBeltItem
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 2483320348);
+	IMPLEMENT_CLASS(UFGConveyorRemoteCallObject, 3842208003);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGConveyorRemoteCallObject(Z_Construct_UClass_UFGConveyorRemoteCallObject, &UFGConveyorRemoteCallObject::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGConveyorRemoteCallObject"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGConveyorRemoteCallObject);
 	void UPresistentConveyorPackagingData::StaticRegisterNativesUPresistentConveyorPackagingData()

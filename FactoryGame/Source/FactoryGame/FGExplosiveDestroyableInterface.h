@@ -7,7 +7,7 @@
 #include "FGExplosiveDestroyableInterface.generated.h"
 
 UINTERFACE( Blueprintable )
-class UFGExplosiveDestroyableInterface : public UInterface
+class FACTORYGAME_API UFGExplosiveDestroyableInterface : public UInterface
 {
 	GENERATED_BODY()
 };

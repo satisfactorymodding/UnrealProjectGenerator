@@ -13,7 +13,7 @@
 #include "FGFactorySettings.generated.h"
 
 USTRUCT(BlueprintType)
-struct FCategory
+struct FACTORYGAME_API FCategory
 {
 	GENERATED_BODY()
 

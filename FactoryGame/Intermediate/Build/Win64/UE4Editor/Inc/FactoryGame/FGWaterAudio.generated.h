@@ -20,7 +20,7 @@ class AFGPlayerController;
 
 #define FactoryGame_Source_FactoryGame_FGWaterAudio_h_11_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPawnImpactAudio_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGWaterAudio_h_25_RPC_WRAPPERS \

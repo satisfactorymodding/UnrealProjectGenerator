@@ -137,7 +137,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		&NewStructOps,
 		"AudioSubtitlePair",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FAudioSubtitlePair),
 		alignof(FAudioSubtitlePair),
 		Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics::PropPointers),
@@ -158,7 +158,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFAudioSubtitlePair
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAudioSubtitlePair_CRC() { return 826047385U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAudioSubtitlePair_CRC() { return 1924940516U; }
 	static FName NAME_UFGAudioMessage_PlayNextDialogue = FName(TEXT("PlayNextDialogue"));
 	void UFGAudioMessage::PlayNextDialogue()
 	{

@@ -12,7 +12,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FTutorialData
+struct FACTORYGAME_API FTutorialData
 {
 	GENERATED_BODY()
 
@@ -23,7 +23,7 @@ struct FTutorialData
 	TSubclassOf< class UFGMessageBase > MessageID;
 };
 
-struct FFindByClassBuilt
+struct FACTORYGAME_API FFindByClassBuilt
 {
 	TSubclassOf< UObject > ClassBuilt;
 

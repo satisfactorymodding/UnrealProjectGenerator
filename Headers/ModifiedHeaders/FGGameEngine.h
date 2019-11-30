@@ -11,7 +11,7 @@
 
 
 UCLASS()
-class UFGGameEngine : public UGameEngine, public IFGWorldCreationInterface
+class FACTORYGAME_API UFGGameEngine : public UGameEngine, public IFGWorldCreationInterface
 {
 	GENERATED_BODY()
 public:

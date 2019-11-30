@@ -20,7 +20,7 @@ class UObject;
 
 #define FactoryGame_Source_FactoryGame_FGSchematicManager_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSchematicCost_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGSchematicManager_h_18_DELEGATE \

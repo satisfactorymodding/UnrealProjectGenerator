@@ -341,7 +341,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSaveInterface_Statics::ClassParams = {
 		&UFGSaveInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -358,7 +358,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSaveInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSaveInterface, 850047108);
+	IMPLEMENT_CLASS(UFGSaveInterface, 4060647293);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSaveInterface(Z_Construct_UClass_UFGSaveInterface, &UFGSaveInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSaveInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSaveInterface);
 	static FName NAME_UFGSaveInterface_GatherDependencies = FName(TEXT("GatherDependencies"));

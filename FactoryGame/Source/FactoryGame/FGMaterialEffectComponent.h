@@ -13,7 +13,7 @@
 
 
 USTRUCT( BlueprintType )
-struct FCostIngredientEffectActorInfo
+struct FACTORYGAME_API FCostIngredientEffectActorInfo
 {
 	GENERATED_BODY()
 

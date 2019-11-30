@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGChainsawableInterface_Statics::ClassParams = {
 		&UFGChainsawableInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -168,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeFGChainsawableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGChainsawableInterface, 2363501477);
+	IMPLEMENT_CLASS(UFGChainsawableInterface, 4229981153);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGChainsawableInterface(Z_Construct_UClass_UFGChainsawableInterface, &UFGChainsawableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGChainsawableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGChainsawableInterface);
 	static FName NAME_UFGChainsawableInterface_GetMeshComponent = FName(TEXT("GetMeshComponent"));

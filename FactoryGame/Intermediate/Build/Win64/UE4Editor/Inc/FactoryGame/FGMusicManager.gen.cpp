@@ -369,7 +369,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGMusicManager_Statics::ClassParams = {
 		&UFGMusicManager::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A4u,
+		0x001000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGMusicManager_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGMusicManager_Statics::PropPointers),
 		"Engine",
@@ -386,7 +386,7 @@ void EmptyLinkFunctionForGeneratedCodeFGMusicManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGMusicManager, 3386893561);
+	IMPLEMENT_CLASS(UFGMusicManager, 2495831501);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGMusicManager(Z_Construct_UClass_UFGMusicManager, &UFGMusicManager::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGMusicManager"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGMusicManager);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

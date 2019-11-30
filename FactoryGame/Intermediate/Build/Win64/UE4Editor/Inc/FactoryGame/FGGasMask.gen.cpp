@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGGasMask_Statics::ClassParams = {
 		&AFGGasMask::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMask, 164978232);
+	IMPLEMENT_CLASS(AFGGasMask, 2208234388);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMask(Z_Construct_UClass_AFGGasMask, &AFGGasMask::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMask"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMask);
 	void AFGGasMaskAttachment::StaticRegisterNativesAFGGasMaskAttachment()
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGGasMaskAttachment_Statics::ClassParams = {
 		&AFGGasMaskAttachment::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGasMask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGGasMaskAttachment, 1491350085);
+	IMPLEMENT_CLASS(AFGGasMaskAttachment, 566783952);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGGasMaskAttachment(Z_Construct_UClass_AFGGasMaskAttachment, &AFGGasMaskAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGGasMaskAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGGasMaskAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

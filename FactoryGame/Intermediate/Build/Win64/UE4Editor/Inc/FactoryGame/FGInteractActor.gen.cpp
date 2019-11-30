@@ -97,7 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGInteractActor_Statics::ClassParams = {
 		&AFGInteractActor::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A1u,
+		0x009000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -114,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeFGInteractActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGInteractActor, 2525395912);
+	IMPLEMENT_CLASS(AFGInteractActor, 2072577487);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGInteractActor(Z_Construct_UClass_AFGInteractActor, &AFGInteractActor::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGInteractActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGInteractActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

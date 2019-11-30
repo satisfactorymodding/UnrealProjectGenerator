@@ -19,7 +19,7 @@ class AFGMapManager;
 
 #define FactoryGame_Source_FactoryGame_FGMapManager_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FFogOfWarQueuePair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGMapManager_h_40_RPC_WRAPPERS \

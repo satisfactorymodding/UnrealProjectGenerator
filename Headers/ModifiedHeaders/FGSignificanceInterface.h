@@ -8,7 +8,7 @@
 
 // This class does not need to be modified.
 UINTERFACE( Blueprintable )
-class UFGSignificanceInterface : public UInterface
+class FACTORYGAME_API UFGSignificanceInterface : public UInterface
 {
 	GENERATED_BODY()
 };

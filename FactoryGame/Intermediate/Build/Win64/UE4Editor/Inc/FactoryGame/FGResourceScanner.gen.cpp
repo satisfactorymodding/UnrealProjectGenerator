@@ -119,7 +119,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		&NewStructOps,
 		"NodeClusterData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FNodeClusterData),
 		alignof(FNodeClusterData),
 		Z_Construct_UScriptStruct_FNodeClusterData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FNodeClusterData_Statics::PropPointers),
@@ -140,7 +140,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFNodeClusterData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FNodeClusterData_CRC() { return 1707821442U; }
+	uint32 Get_Z_Construct_UScriptStruct_FNodeClusterData_CRC() { return 3452271283U; }
 	static FName NAME_AFGResourceScanner_CloseResourceDescriptorSelectUI = FName(TEXT("CloseResourceDescriptorSelectUI"));
 	void AFGResourceScanner::CloseResourceDescriptorSelectUI()
 	{

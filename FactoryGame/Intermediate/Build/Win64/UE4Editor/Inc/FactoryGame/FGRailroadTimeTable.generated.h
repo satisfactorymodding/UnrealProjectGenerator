@@ -16,7 +16,7 @@ struct FTimeTableStop;
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTimeTableStop_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGRailroadTimeTable_h_35_RPC_WRAPPERS \

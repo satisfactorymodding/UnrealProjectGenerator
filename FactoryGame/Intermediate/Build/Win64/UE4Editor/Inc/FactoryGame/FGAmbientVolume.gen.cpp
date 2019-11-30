@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGAmbientVolume_Statics::ClassParams = {
 		&AFGAmbientVolume::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGAmbientVolume_Statics::PropPointers),
 		nullptr,
@@ -133,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGAmbientVolume, 226239402);
+	IMPLEMENT_CLASS(AFGAmbientVolume, 1601178210);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGAmbientVolume(Z_Construct_UClass_AFGAmbientVolume, &AFGAmbientVolume::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGAmbientVolume"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGAmbientVolume);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

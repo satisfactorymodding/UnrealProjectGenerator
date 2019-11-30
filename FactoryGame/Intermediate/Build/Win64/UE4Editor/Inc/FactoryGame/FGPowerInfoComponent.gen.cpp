@@ -654,7 +654,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGPowerInfoComponent_Statics::ClassParams = {
 		&UFGPowerInfoComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00A000A4u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGPowerInfoComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGPowerInfoComponent_Statics::PropPointers),
 		"Engine",
@@ -671,7 +671,7 @@ void EmptyLinkFunctionForGeneratedCodeFGPowerInfoComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGPowerInfoComponent, 997932547);
+	IMPLEMENT_CLASS(UFGPowerInfoComponent, 4037399124);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGPowerInfoComponent(Z_Construct_UClass_UFGPowerInfoComponent, &UFGPowerInfoComponent::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGPowerInfoComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGPowerInfoComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

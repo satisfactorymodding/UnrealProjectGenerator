@@ -104,7 +104,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		&NewStructOps,
 		"TimeTableStop",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FTimeTableStop),
 		alignof(FTimeTableStop),
 		Z_Construct_UScriptStruct_FTimeTableStop_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTimeTableStop_Statics::PropPointers),
@@ -125,7 +125,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFTimeTableStop
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FTimeTableStop_CRC() { return 1151518616U; }
+	uint32 Get_Z_Construct_UScriptStruct_FTimeTableStop_CRC() { return 4009315545U; }
 	void AFGRailroadTimeTable::StaticRegisterNativesAFGRailroadTimeTable()
 	{
 		UClass* Class = AFGRailroadTimeTable::StaticClass();

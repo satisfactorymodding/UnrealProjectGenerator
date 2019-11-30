@@ -20,7 +20,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE( FTranferStatusChanged );
 class FDebugDisplayInfo;
 
 USTRUCT( BlueprintType )
-struct FTireData
+struct FACTORYGAME_API FTireData
 {
 	GENERATED_BODY()
 
@@ -46,7 +46,7 @@ struct FTireData
 };
 
 USTRUCT( BlueprintType )
-struct FTireTrackDecalDetails
+struct FACTORYGAME_API FTireTrackDecalDetails
 {
 	GENERATED_BODY()
 
@@ -61,7 +61,7 @@ struct FTireTrackDecalDetails
 };
 
 USTRUCT( BlueprintType )
-struct FSurfaceParticlePair
+struct FACTORYGAME_API FSurfaceParticlePair
 {
 	GENERATED_BODY()
 
@@ -73,7 +73,7 @@ struct FSurfaceParticlePair
 };
 
 USTRUCT()
-struct FParticleTemplatePair
+struct FACTORYGAME_API FParticleTemplatePair
 {
 	GENERATED_BODY()
 
@@ -88,7 +88,7 @@ struct FParticleTemplatePair
 };
 
 USTRUCT()
-struct FTireParticleCollection
+struct FACTORYGAME_API FTireParticleCollection
 {
 	GENERATED_BODY()
 
@@ -97,7 +97,7 @@ struct FTireParticleCollection
 };
 
 /* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct DSOLDynGearboxData
+struct FACTORYGAME_API DSOLDynGearboxData
 {
 	bool mWasShiftingUp;
 	bool mWasShiftingDown;
@@ -107,7 +107,7 @@ struct DSOLDynGearboxData
 };
 
 /* DSOL (Don't shift on (wheel) load) dynamic gearbox data */
-struct DSOLSetupData
+struct FACTORYGAME_API DSOLSetupData
 {
 	int mNumberOfGears;
 	float mDownShiftLatency;
@@ -120,7 +120,7 @@ struct DSOLSetupData
 * between the 4W & 6W movement components
 */
 USTRUCT()
-struct FReplicatedAddedVelocitiesState
+struct FACTORYGAME_API FReplicatedAddedVelocitiesState
 {
 	GENERATED_USTRUCT_BODY()
 

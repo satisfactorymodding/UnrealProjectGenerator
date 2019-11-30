@@ -442,7 +442,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		&NewStructOps,
 		"DisabledInputGate",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FDisabledInputGate),
 		alignof(FDisabledInputGate),
 		Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDisabledInputGate_Statics::PropPointers),
@@ -463,7 +463,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC() { return 1293852110U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDisabledInputGate_CRC() { return 245277875U; }
 	void UFGUseState_ReviveInvalid_PlayerNotDead::StaticRegisterNativesUFGUseState_ReviveInvalid_PlayerNotDead()
 	{
 	}
@@ -497,7 +497,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead_Statics::ClassParams = {
 		&UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -514,7 +514,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 4042680088);
+	IMPLEMENT_CLASS(UFGUseState_ReviveInvalid_PlayerNotDead, 1150858971);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_ReviveInvalid_PlayerNotDead(Z_Construct_UClass_UFGUseState_ReviveInvalid_PlayerNotDead, &UFGUseState_ReviveInvalid_PlayerNotDead::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_ReviveInvalid_PlayerNotDead"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_ReviveInvalid_PlayerNotDead);
 	void UFGUseState_ReviveValid::StaticRegisterNativesUFGUseState_ReviveValid()
@@ -550,7 +550,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGUseState_ReviveValid_Statics::ClassParams = {
 		&UFGUseState_ReviveValid::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -567,7 +567,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 2481383059);
+	IMPLEMENT_CLASS(UFGUseState_ReviveValid, 3859066058);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGUseState_ReviveValid(Z_Construct_UClass_UFGUseState_ReviveValid, &UFGUseState_ReviveValid::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGUseState_ReviveValid"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGUseState_ReviveValid);
 	static FName NAME_AFGCharacterPlayer_CameraZoomIn = FName(TEXT("CameraZoomIn"));
@@ -4238,7 +4238,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGCharacterPlayer_Statics::ClassParams = {
 		&AFGCharacterPlayer::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AFGCharacterPlayer_Statics::PropPointers),
 		"Game",
@@ -4255,7 +4255,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDisabledInputGate
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGCharacterPlayer, 2573294281);
+	IMPLEMENT_CLASS(AFGCharacterPlayer, 2328905151);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGCharacterPlayer(Z_Construct_UClass_AFGCharacterPlayer, &AFGCharacterPlayer::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGCharacterPlayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGCharacterPlayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

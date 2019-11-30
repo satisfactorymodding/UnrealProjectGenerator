@@ -125,7 +125,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		&NewStructOps,
 		"DropPackage",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FDropPackage),
 		alignof(FDropPackage),
 		Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FDropPackage_Statics::PropPointers),
@@ -146,7 +146,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFDropPackage
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_CRC() { return 2766637339U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDropPackage_CRC() { return 3923076692U; }
 	void UFGDropPodSettings::StaticRegisterNativesUFGDropPodSettings()
 	{
 		UClass* Class = UFGDropPodSettings::StaticClass();

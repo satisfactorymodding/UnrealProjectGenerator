@@ -1850,7 +1850,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AFGBuildGunAttachment_Statics::ClassParams = {
 		&AFGBuildGunAttachment::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x008000A0u,
+		0x009000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -1867,7 +1867,7 @@ void EmptyLinkFunctionForGeneratedCodeFGBuildGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFGBuildGunAttachment, 4270996662);
+	IMPLEMENT_CLASS(AFGBuildGunAttachment, 2428845747);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFGBuildGunAttachment(Z_Construct_UClass_AFGBuildGunAttachment, &AFGBuildGunAttachment::StaticClass, TEXT("/Script/FactoryGame"), TEXT("AFGBuildGunAttachment"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFGBuildGunAttachment);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -214,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGRailroadInterface_Statics::ClassParams = {
 		&UFGRailroadInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -231,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeFGRailroadInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGRailroadInterface, 1749236179);
+	IMPLEMENT_CLASS(UFGRailroadInterface, 1838288510);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGRailroadInterface(Z_Construct_UClass_UFGRailroadInterface, &UFGRailroadInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGRailroadInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGRailroadInterface);
 	static FName NAME_UFGRailroadInterface_GetTrackGraphID = FName(TEXT("GetTrackGraphID"));

@@ -81,7 +81,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		&NewStructOps,
 		"Building",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FBuilding),
 		alignof(FBuilding),
 		Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FBuilding_Statics::PropPointers),
@@ -102,7 +102,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFBuilding
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBuilding_CRC() { return 4049208561U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBuilding_CRC() { return 1808123243U; }
 	void AFGFoundationSubsystem::StaticRegisterNativesAFGFoundationSubsystem()
 	{
 	}

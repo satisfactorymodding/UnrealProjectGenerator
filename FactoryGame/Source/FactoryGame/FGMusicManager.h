@@ -7,7 +7,7 @@
 #include "FGMusicManager.generated.h"
 
 UCLASS(Blueprintable,Config=Engine)
-class UFGMusicManager : public UObject
+class FACTORYGAME_API UFGMusicManager : public UObject
 {
 	GENERATED_BODY()
 public:

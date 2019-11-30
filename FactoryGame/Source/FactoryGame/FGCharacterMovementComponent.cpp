@@ -35,7 +35,6 @@ AFGJetPack* UFGCharacterMovementComponent::GetCachedJetPack(){ return nullptr; }
 AFGHookshot* UFGCharacterMovementComponent::GetCachedHookshot(){ return nullptr; }
 AFGParachute* UFGCharacterMovementComponent::GetCachedParachute(){ return nullptr; }
 AFGJumpingStilts* UFGCharacterMovementComponent::GetCachedJumpingStilts(){ return nullptr; }
-void UFGCharacterMovementComponent::ZeroOutFallVelocity(){ }
 void FSavedMove_FGMovement::Clear(){ }
 uint8 FSavedMove_FGMovement::GetCompressedFlags() const{ return uint8(); }
 bool FSavedMove_FGMovement::CanCombineWith(const FSavedMovePtr& newMove, ACharacter* character, float maxDelta) const{ return bool(); }

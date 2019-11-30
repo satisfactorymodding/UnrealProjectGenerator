@@ -23,7 +23,7 @@ class AFGSplinePath;
 
 #define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_36_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMoveSpeedPair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Creature_FGCreature_h_13_DELEGATE \

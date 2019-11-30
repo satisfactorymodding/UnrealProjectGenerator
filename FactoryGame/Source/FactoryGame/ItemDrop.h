@@ -5,7 +5,7 @@
 
 /** */
 USTRUCT(BlueprintType)
-struct FItemDrop
+struct FACTORYGAME_API FItemDrop
 {
 	GENERATED_BODY()
 
@@ -30,7 +30,7 @@ struct FItemDrop
 };
 
 USTRUCT(BlueprintType)
-struct FItemDropWithChance
+struct FACTORYGAME_API FItemDropWithChance
 {
 	GENERATED_BODY()
 

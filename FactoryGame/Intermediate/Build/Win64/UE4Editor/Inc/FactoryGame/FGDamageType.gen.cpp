@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDamageType_Statics::ClassParams = {
 		&UFGDamageType::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000100A0u,
+		0x001100A0u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGDamageType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGDamageType_Statics::PropPointers),
 		nullptr,
@@ -300,7 +300,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDamageType() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDamageType, 2048364546);
+	IMPLEMENT_CLASS(UFGDamageType, 3463276833);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDamageType(Z_Construct_UClass_UFGDamageType, &UFGDamageType::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDamageType"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDamageType);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

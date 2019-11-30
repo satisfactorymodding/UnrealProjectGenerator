@@ -203,7 +203,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 		&NewStructOps,
 		"PhaseCost",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPhaseCost),
 		alignof(FPhaseCost),
 		Z_Construct_UScriptStruct_FPhaseCost_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPhaseCost_Statics::PropPointers),
@@ -224,7 +224,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseCost
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPhaseCost_CRC() { return 4102305558U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPhaseCost_CRC() { return 1278415841U; }
 class UScriptStruct* FPhaseTierInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -323,7 +323,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		&NewStructOps,
 		"PhaseTierInfo",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FPhaseTierInfo),
 		alignof(FPhaseTierInfo),
 		Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FPhaseTierInfo_Statics::PropPointers),
@@ -344,7 +344,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFPhaseTierInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPhaseTierInfo_CRC() { return 2664938337U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPhaseTierInfo_CRC() { return 881602592U; }
 	void AFGGamePhaseManager::StaticRegisterNativesAFGGamePhaseManager()
 	{
 		UClass* Class = AFGGamePhaseManager::StaticClass();

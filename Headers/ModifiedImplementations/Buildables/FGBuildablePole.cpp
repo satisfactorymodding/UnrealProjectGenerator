@@ -8,3 +8,4 @@ void AFGBuildablePole::BeginPlay(){ }
 void AFGBuildablePole::SetPoleHeight( float height){ }
 void AFGBuildablePole::SetupConnectionComponent(){ }
 void AFGBuildablePole::PostLoad(){ Super::PostLoad(); }
+const FName AFGBuildablePole::PoleMeshName = FName();

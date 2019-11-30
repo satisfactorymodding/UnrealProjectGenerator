@@ -21,7 +21,7 @@ struct FVector;
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPickedUpInstance_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_Equipment_FGChainsaw_h_40_RPC_WRAPPERS \

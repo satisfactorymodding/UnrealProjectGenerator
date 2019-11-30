@@ -9,7 +9,7 @@
 * For blueprint support of the interface, we will never add anything to it, just use it to have a UCLASS to be able to access.
 */
 UINTERFACE( Blueprintable )
-class UFGRailroadInterface : public UInterface
+class FACTORYGAME_API UFGRailroadInterface : public UInterface
 {
 	
  GENERATED_BODY()
@@ -19,7 +19,7 @@ class UFGRailroadInterface : public UInterface
 /**
 * @brief Interface for all buildables that can be placed on the railroad track.
 */
-class IFGRailroadInterface
+class FACTORYGAME_API IFGRailroadInterface
 {
 	GENERATED_IINTERFACE_BODY()
 

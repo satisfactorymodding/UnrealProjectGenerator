@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGGameEngine_Statics::ClassParams = {
 		&UFGGameEngine::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000AEu,
+		0x001000AEu,
 		nullptr, 0,
 		Z_Construct_UClass_UFGGameEngine_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGGameEngine_Statics::PropPointers),
 		"Engine",
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFGGameEngine() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGGameEngine, 2655583218);
+	IMPLEMENT_CLASS(UFGGameEngine, 3624532615);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGGameEngine(Z_Construct_UClass_UFGGameEngine, &UFGGameEngine::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGGameEngine"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGGameEngine);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

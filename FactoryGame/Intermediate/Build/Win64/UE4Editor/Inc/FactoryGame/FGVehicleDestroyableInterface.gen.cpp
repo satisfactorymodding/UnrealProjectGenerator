@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGVehicleDestroyableInterface_Statics::ClassParams = {
 		&UFGVehicleDestroyableInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -195,7 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeFGVehicleDestroyableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 3348192721);
+	IMPLEMENT_CLASS(UFGVehicleDestroyableInterface, 1318618704);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGVehicleDestroyableInterface(Z_Construct_UClass_UFGVehicleDestroyableInterface, &UFGVehicleDestroyableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGVehicleDestroyableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGVehicleDestroyableInterface);
 	static FName NAME_UFGVehicleDestroyableInterface_GetDestroyAudioEvent = FName(TEXT("GetDestroyAudioEvent"));

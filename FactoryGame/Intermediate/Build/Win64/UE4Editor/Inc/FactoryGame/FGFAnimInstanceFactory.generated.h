@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_Buildables_Animation_FGFAnimInstanceFactory_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAnimInstanceProxyFactory_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	typedef FAnimInstanceProxy Super;
 
 

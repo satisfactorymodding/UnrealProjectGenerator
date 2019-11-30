@@ -16,7 +16,7 @@ struct FAudioSubtitlePair;
 
 #define FactoryGame_Source_FactoryGame_UI_Message_FGAudioMessage_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAudioSubtitlePair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_UI_Message_FGAudioMessage_h_13_DELEGATE \

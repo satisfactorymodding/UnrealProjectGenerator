@@ -421,7 +421,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDockableInterface_Statics::ClassParams = {
 		&UFGDockableInterface::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000040A1u,
+		0x001040A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
 		nullptr,
@@ -438,7 +438,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDockableInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDockableInterface, 2960773687);
+	IMPLEMENT_CLASS(UFGDockableInterface, 3047744922);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDockableInterface(Z_Construct_UClass_UFGDockableInterface, &UFGDockableInterface::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDockableInterface"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDockableInterface);
 	static FName NAME_UFGDockableInterface_CanDock = FName(TEXT("CanDock"));

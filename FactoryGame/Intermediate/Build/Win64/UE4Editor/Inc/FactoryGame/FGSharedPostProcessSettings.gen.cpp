@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::ClassParams = {
 		&UFGSharedPostProcessSettings::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		nullptr, 0,
 		Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGSharedPostProcessSettings_Statics::PropPointers),
 		nullptr,
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSharedPostProcessSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 1078830981);
+	IMPLEMENT_CLASS(UFGSharedPostProcessSettings, 524163422);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGSharedPostProcessSettings(Z_Construct_UClass_UFGSharedPostProcessSettings, &UFGSharedPostProcessSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGSharedPostProcessSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGSharedPostProcessSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

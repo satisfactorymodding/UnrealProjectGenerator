@@ -22,7 +22,7 @@ struct FAggroEntry;
 
 #define FactoryGame_Source_FactoryGame_AI_FGEnemyController_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAggroEntry_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_AI_FGEnemyController_h_93_RPC_WRAPPERS \

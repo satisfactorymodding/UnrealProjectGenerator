@@ -20,26 +20,26 @@ class UFGSchematic;
 
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_116_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FResearchMessageData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__ResearchCollected() { return STRUCT_OFFSET(FResearchMessageData, ResearchCollected); }
 
 
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_99_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSchematicMessagePair_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicUnlocked() { return STRUCT_OFFSET(FSchematicMessagePair, SchematicUnlocked); }
 
 
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_56_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemFoundData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicClass() { return STRUCT_OFFSET(FItemFoundData, SchematicClass); } \
 	FORCEINLINE static uint32 __PPO__ItemClass() { return STRUCT_OFFSET(FItemFoundData, ItemClass); }
 
 
 #define FactoryGame_Source_FactoryGame_FGStorySubsystem_h_20_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMapAreaVisitedData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct(); \
+	static class UScriptStruct* StaticStruct(); \
 	FORCEINLINE static uint32 __PPO__SchematicClass() { return STRUCT_OFFSET(FMapAreaVisitedData, SchematicClass); }
 
 

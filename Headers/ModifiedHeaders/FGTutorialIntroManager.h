@@ -34,7 +34,7 @@ enum class EIntroTutorialSteps :uint8
 };
 
 USTRUCT( BlueprintType )
-struct FTutorialHintData
+struct FACTORYGAME_API FTutorialHintData
 {
 	GENERATED_BODY()
 
@@ -51,7 +51,7 @@ struct FTutorialHintData
 	TSubclassOf< class UFGMessageBase > Message;
 };
 
-struct FFindByIntroID
+struct FACTORYGAME_API FFindByIntroID
 {
 	EIntroTutorialSteps TutorialStep;
 

@@ -146,7 +146,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		&NewStructOps,
 		"SpawnData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSpawnData),
 		alignof(FSpawnData),
 		Z_Construct_UScriptStruct_FSpawnData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnData_Statics::PropPointers),
@@ -167,7 +167,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSpawnData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSpawnData_CRC() { return 2525646994U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSpawnData_CRC() { return 775779429U; }
 	static FName NAME_AFGCreatureSpawner_DestroyCreatures = FName(TEXT("DestroyCreatures"));
 	void AFGCreatureSpawner::DestroyCreatures()
 	{

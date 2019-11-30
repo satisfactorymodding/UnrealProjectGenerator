@@ -13,7 +13,7 @@
 * interesting information buildings
 */
 UCLASS()
-class UFGGameUI : public UFGBaseUI
+class FACTORYGAME_API UFGGameUI : public UFGBaseUI
 {
 	GENERATED_BODY()
 public:

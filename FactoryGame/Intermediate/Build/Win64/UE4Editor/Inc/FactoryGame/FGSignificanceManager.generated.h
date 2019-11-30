@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FGainSignificanceData_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGSignificanceManager_h_42_RPC_WRAPPERS

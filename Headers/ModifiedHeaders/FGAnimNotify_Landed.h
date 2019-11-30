@@ -6,7 +6,7 @@
 #include "FGAnimNotify_Landed.generated.h"
 
 UCLASS()
-class UFGAnimNotify_Landed : public UAnimNotify
+class FACTORYGAME_API UFGAnimNotify_Landed : public UAnimNotify
 {
 	GENERATED_BODY()
 public:

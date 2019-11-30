@@ -135,7 +135,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 		&NewStructOps,
 		"SignColorData",
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000201),
 		sizeof(FSignColorData),
 		alignof(FSignColorData),
 		Z_Construct_UScriptStruct_FSignColorData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSignColorData_Statics::PropPointers),
@@ -156,7 +156,7 @@ static struct FScriptStruct_FactoryGame_StaticRegisterNativesFSignColorData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSignColorData_CRC() { return 1396771730U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSignColorData_CRC() { return 4179263699U; }
 	void UFGSignSettings::StaticRegisterNativesUFGSignSettings()
 	{
 		UClass* Class = UFGSignSettings::StaticClass();

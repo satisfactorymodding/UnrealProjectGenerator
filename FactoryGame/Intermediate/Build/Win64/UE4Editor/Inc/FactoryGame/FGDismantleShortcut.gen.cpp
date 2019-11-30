@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGDismantleShortcut_Statics::ClassParams = {
 		&UFGDismantleShortcut::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
+		0x001000A0u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeFGDismantleShortcut() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGDismantleShortcut, 499783229);
+	IMPLEMENT_CLASS(UFGDismantleShortcut, 4012322162);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGDismantleShortcut(Z_Construct_UClass_UFGDismantleShortcut, &UFGDismantleShortcut::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGDismantleShortcut"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGDismantleShortcut);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

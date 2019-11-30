@@ -451,7 +451,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFGAmbientSettings_Statics::ClassParams = {
 		&UFGAmbientSettings::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A1u,
+		0x001000A1u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		Z_Construct_UClass_UFGAmbientSettings_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_UFGAmbientSettings_Statics::PropPointers),
 		nullptr,
@@ -468,7 +468,7 @@ void EmptyLinkFunctionForGeneratedCodeFGAmbientSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGAmbientSettings, 3079220646);
+	IMPLEMENT_CLASS(UFGAmbientSettings, 1521016722);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFGAmbientSettings(Z_Construct_UClass_UFGAmbientSettings, &UFGAmbientSettings::StaticClass, TEXT("/Script/FactoryGame"), TEXT("UFGAmbientSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFGAmbientSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

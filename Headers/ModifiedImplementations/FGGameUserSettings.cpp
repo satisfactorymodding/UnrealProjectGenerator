@@ -36,3 +36,5 @@ void UFGGameUserSettings::SetAutosaveInterval( int32 newInterval){ }
 void UFGGameUserSettings::ApplyAutosaveInterval(){ }
 void UFGGameUserSettings::SetShowBreakNotification( bool enabled){ }
 void UFGGameUserSettings::UpdateFoliageQualityChanges(){ }
+const FString UFGGameUserSettings::MOTION_BLUR_QUALITY = FString();
+const FString UFGGameUserSettings::HZBO_SETTING = FString();

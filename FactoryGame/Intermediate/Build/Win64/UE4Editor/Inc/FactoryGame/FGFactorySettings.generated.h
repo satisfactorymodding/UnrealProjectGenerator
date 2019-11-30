@@ -16,7 +16,7 @@ class UAkAudioEvent;
 
 #define FactoryGame_Source_FactoryGame_FGFactorySettings_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCategory_Statics; \
-	FACTORYGAME_API static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct();
 
 
 #define FactoryGame_Source_FactoryGame_FGFactorySettings_h_44_RPC_WRAPPERS \
