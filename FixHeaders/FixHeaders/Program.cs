@@ -37,7 +37,8 @@ namespace FixHeaders
             {"FRuntimeFloatCurve", "Curves/CurveFloat.h" },
             {"UDeveloperSettings", "Engine/DeveloperSettings.h" },
             {"FBufferArchive", "Serialization/BufferArchive.h" },
-            {"UAkAudioEvent", "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h" }
+            {"UAkAudioEvent", "../../Plugins/Wwise/Source/AkAudio/Classes/AkAudioEvent.h" },
+            {"FGuid", "Misc/Guid.h" }
         };
 
         static void Main(string[] args)
@@ -71,7 +72,6 @@ namespace FixHeaders
                 Console.WriteLine("New Headers Save Path: ");
                 savePath = Console.ReadLine();
             }
-
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
@@ -205,14 +205,15 @@ namespace FixHeaders
                     file = file.Replace(m.Value, $"#include \"{GetFileRelative(upgradeRepoPath, m.Groups[1].Value, filePath)}\"");
                     FixedCount++;
                     hasChanges = true;
-                } catch(ArgumentNullException)
+                }
+                catch (ArgumentNullException)
                 {
                     // File was not found because it is UE file or .generated.h
                 }
             }
 
             // fix missing includes
-            foreach(KeyValuePair<string, string> doesInclude in NeededIncludes)
+            foreach (KeyValuePair<string, string> doesInclude in NeededIncludes)
             {
                 if (file.Contains(doesInclude.Key) && !file.Contains($"#include \"{doesInclude.Value}\""))
                 {
@@ -233,12 +234,24 @@ namespace FixHeaders
             file = Regex.Replace(file, @", ?CustomEventUsing ?= ?[^\s,\)]*", "");
 
             // fix CheatBoard
-            int CheatBoardCount = Regex.Matches(file, @",\s*CheatBoard").Count;
-            if (customEventCount > 0)
+            int cheatBoardCount = Regex.Matches(file, @",\s*CheatBoard").Count;
+            if (cheatBoardCount > 0)
                 hasChanges = true;
-            FixedCount += customEventCount;
+            FixedCount += cheatBoardCount;
             file = Regex.Replace(file, @",\s*CheatBoard", "");
 
+            // add FACTORYGAME_API
+            int factoryGameApi = 0;
+            file = Regex.Replace(file, @"^((?:UCLASS|UINTERFACE|USTRUCT|UENUM)\s*\(.*\)\r\n)?([ \t]*)(class|struct)\s(FACTORYGAME_API\s)?([\w<>\s]*?)(\s?:\s?.*?)?\s*{((?:.|\n)*?)^\2};", new MatchEvaluator((match) =>
+            {
+                if (match.Groups[1].Value.ToLower().Contains("minimalapi"))
+                    return match.Value;
+                factoryGameApi++;
+                return $"{match.Groups[1]}{match.Groups[2]}{match.Groups[3]} FACTORYGAME_API {match.Groups[5]}{match.Groups[6]}\r\n{{{match.Groups[7]}{match.Groups[2]}}};";
+            }), RegexOptions.Multiline);
+            if (factoryGameApi > 0)
+                hasChanges = true;
+            
             if (hasChanges)
                 FixedFileCount++;
 
