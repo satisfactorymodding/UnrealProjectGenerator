@@ -32,7 +32,8 @@ namespace ImplementHeaders
         private static readonly Dictionary<string, string> NestedStructs = new Dictionary<string, string>()
         {
             {"ItemHolderHistory", "FConveyorBeltItems::ItemHolderHistory" },
-            {"FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" }
+            {"FGenerateIconContext", "UFGItemDescriptor::FGenerateIconContext" },
+            {"Type", "FSaveCustomVersion::Type" }
         };
 
         static void Main(string[] args)
@@ -158,14 +159,15 @@ namespace ImplementHeaders
         private static List<string> ImplementStaticVars(string content, string className)
         {
             List<string> implementations = new List<string>();
-            foreach (Match function in Regex.Matches(content, @"(?<!const\s)static\s+([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
+            foreach (Match function in Regex.Matches(content, @"(const\s)?static\s(const\s)?\s*([\w\d_]*?)\s+([\w\d_]*?);", RegexOptions.Multiline))
             {
-                string type = FixReturnType(function.Groups[1].Value).Trim();
-                string name = function.Groups[2].Value;
+                string isConst = function.Groups[1].Value + function.Groups[2].Value;
+                string type = FixReturnType(function.Groups[3].Value).Trim();
+                string name = function.Groups[4].Value;
                 if(type.Contains("FAutoConsoleVariableSink")) // for this classes there is no constructor with no params, but NULL works
-                    implementations.Add($"{type} {className}::{name} = NULL;");
+                    implementations.Add($"{isConst}{type} {className}::{name} = NULL;");
                 else // but NULL doesn't work for everything
-                    implementations.Add($"{type} {className}::{name} = {type}();");
+                    implementations.Add($"{isConst}{type} {className}::{name} = {type}();");
             }
             return implementations;
         }
